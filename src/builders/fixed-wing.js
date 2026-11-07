@@ -151,8 +151,8 @@ function buildEngine(e, meta, lv, model) {
   nac.translate(e.x, e.y ?? 0, e.z ?? 0);
   const parts = [{ geometry: nac }];
   if (e.pylon !== false) {
-    const wingY = model.geometry.wing.y ?? 0;
-    const top = wingY + 0.15;
+    const w = model.geometry.wing;
+    const top = (w.y ?? 0) + Math.abs(e.z ?? 0) * Math.tan(((w.dihedralDeg ?? 0) * Math.PI) / 180);
     const bottom = (e.y ?? 0) + r * 0.6;
     if (top > bottom) {
       const py = new THREE.BoxGeometry(len * 0.7, top - bottom, r * 0.18);

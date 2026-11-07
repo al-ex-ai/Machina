@@ -1,5 +1,8 @@
 {
   "models": [
-    "models/aviation/a320neo.json"
+    "models/aviation/a320neo.json",
+    "models/aviation/b737-800.json",
+    "models/aviation/b787-9.json",
+    "models/aviation/a380-800.json"
   ]
 }

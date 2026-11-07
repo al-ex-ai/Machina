@@ -61,7 +61,7 @@ function writeHash() {
 }
 
 function renderTabs() {
-  $('#tabs').innerHTML = state.categories.map(c =>
+  $("#tabs").innerHTML = state.categories.filter(c => state.models.some(m => m.category === c.id)).map(c =>
     `<button type="button" data-cat="${esc(c.id)}" aria-pressed="${c.id === state.category}" title="${esc(c.description ?? '')}">${esc(c.label)}</button>`,
   ).join('');
 }
