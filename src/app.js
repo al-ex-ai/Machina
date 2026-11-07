@@ -292,6 +292,8 @@ function showModel(m, partId) {
     if (!partId) renderSheet();
   };
   if (m.asset) {
+    viewer.clear(); // never show the previous model while this one loads
+    $('#tree').innerHTML = '';
     $('#loading').hidden = false;
     loadAssetModel(m)
       .then(o => { const f = finalize(o, m); f.userData.detailed = true; done(f); })

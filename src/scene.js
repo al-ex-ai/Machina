@@ -294,11 +294,19 @@ export function createViewer(container) {
     invalidate(true);
   }
 
+  function clearModel() {
+    if (!model) return;
+    scene.remove(model);
+    model.traverse(o => { if (o.isMesh) { o.geometry.dispose(); for (const m of [o.material].flat()) m.dispose(); } });
+    model = null;
+    parts = [];
+    selected = hovered = null;
+    renderer.shadowMap.needsUpdate = true;
+    invalidate(true);
+  }
+
   function setModel(group) {
-    if (model) {
-      scene.remove(model);
-      model.traverse(o => { if (o.isMesh) { o.geometry.dispose(); for (const m of [o.material].flat()) m.dispose(); } });
-    }
+    clearModel();
     model = group;
     parts = [];
     model.traverse(o => { if (o.userData?.part) parts.push(o); });
@@ -335,6 +343,7 @@ export function createViewer(container) {
 
   return {
     setModel,
+    clear: clearModel,
     select: id => select(parts.find(p => p.userData.id === id) ?? null),
     setExplode(v) {
       explodeAmount = v;
