@@ -271,6 +271,9 @@
         "height": 0.04
       },
       "note": "The FlightGear model measures 11.44 m tall against the published 11.13 m."
+    },
+    "textureMap": {
+      "733_white.png": "733_machina.png"
     }
   },
   "parts": {

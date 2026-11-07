@@ -164,7 +164,8 @@ export async function loadAssetModel(model) {
   const textures = new Map();
   const optsFor = file => ({
     normalMaps: a.normalMaps,
-    loadTexture: tex => {
+    loadTexture: tex0 => {
+      const tex = a.textureMap?.[tex0] ?? tex0; // e.g. swap a white template for a painted livery
       const url = new URL(tex, new URL(base + file, location.href)).href;
       if (textures.has(url)) return textures.get(url);
       const t = new THREE.Texture();
