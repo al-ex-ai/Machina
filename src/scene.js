@@ -64,7 +64,7 @@ export function studioEnvironment(renderer) {
 
 export function createViewer(container) {
   const renderer = new THREE.WebGLRenderer({ antialias: true });
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5));
   renderer.shadowMap.enabled = true;
   renderer.shadowMap.type = THREE.PCFSoftShadowMap;
   renderer.outputColorSpace = THREE.SRGBColorSpace;
@@ -81,6 +81,7 @@ export function createViewer(container) {
     scene.environmentIntensity = 0.9;
     hdr.dispose();
     pmrem.dispose();
+    invalidate(true);
   });
   const camera = new THREE.PerspectiveCamera(40, 1, 0.1, 5000);
   const composer = new EffectComposer(renderer);
@@ -94,11 +95,27 @@ export function createViewer(container) {
   controls.dampingFactor = 0.08;
   controls.maxPolarAngle = Math.PI * 0.495;
 
+  // Render on demand. While the camera moves we draw fast frames (no ambient
+  // occlusion); once it rests we draw a single full-quality frame.
+  let dirty = true;
+  let fullPending = true;
+  let lastMove = 0;
+  let dragging = false;
+  function invalidate(full = false) {
+    dirty = true;
+    fullPending = true;
+    if (full) lastMove = 0;
+  }
+  controls.addEventListener('change', () => { lastMove = performance.now(); invalidate(); });
+  controls.addEventListener('start', () => { dragging = true; });
+  controls.addEventListener('end', () => { dragging = false; lastMove = performance.now(); });
+
   scene.add(new THREE.HemisphereLight('#ffffff', '#b9c2cc', 0.35));
   const sun = new THREE.DirectionalLight('#fff6ea', 2.2);
   sun.castShadow = true;
   sun.shadow.mapSize.set(2048, 2048);
   sun.shadow.bias = -0.0004;
+  sun.shadow.autoUpdate = false; // shadows only change with the model, not the camera
   scene.add(sun, sun.target);
 
   const ground = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), new THREE.ShadowMaterial({ opacity: 0.3 }));
@@ -137,6 +154,7 @@ export function createViewer(container) {
     const { clientWidth: w, clientHeight: h } = container;
     renderer.setSize(w, h, false);
     composer.setSize(w, h);
+    invalidate(true);
     camera.aspect = w / Math.max(h, 1);
     camera.updateProjectionMatrix();
   }
@@ -155,6 +173,7 @@ export function createViewer(container) {
   }
 
   function refreshPaint() {
+    invalidate(true);
     for (const p of parts) paint(p, null, 0);
     if (hovered && hovered !== selected) paint(hovered, HOVER, 0.35);
     if (selected) paint(selected, HIGHLIGHT, 0.55);
@@ -247,6 +266,8 @@ export function createViewer(container) {
     sc.updateProjectionMatrix();
 
     person.position.set(box.min.x - 2.5, 0, box.max.z * 0.4);
+    renderer.shadowMap.needsUpdate = true;
+    invalidate(true);
   }
 
   function setModel(group) {
@@ -266,7 +287,14 @@ export function createViewer(container) {
 
   function loop() {
     controls.update();
-    composer.render();
+    const now = performance.now();
+    if (dirty) {
+      renderer.render(scene, camera); // fast path: tone mapped straight to screen
+      dirty = false;
+    } else if (fullPending && !dragging && now - lastMove > 180) {
+      composer.render(); // full quality with ambient occlusion
+      fullPending = false;
+    }
     requestAnimationFrame(loop);
   }
   loop();
@@ -274,8 +302,14 @@ export function createViewer(container) {
   return {
     setModel,
     select: id => select(parts.find(p => p.userData.id === id) ?? null),
-    setExplode(v) { explodeAmount = v; if (model) applyExplode(); },
-    setPerson(v) { person.visible = v; },
+    setExplode(v) {
+      explodeAmount = v;
+      if (model) applyExplode();
+      renderer.shadowMap.needsUpdate = true;
+      lastMove = performance.now();
+      invalidate();
+    },
+    setPerson(v) { person.visible = v; renderer.shadowMap.needsUpdate = true; invalidate(true); },
     setTheme(isDark) {
       dark = isDark;
       scene.background = backdrop(isDark);

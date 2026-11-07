@@ -2,7 +2,9 @@
 // The model file's "asset" block says where the files are, which objects to
 // hide, and how named objects group into selectable parts.
 import * as THREE from 'three';
-import { parseAC } from './loaders/ac3d.js';
+import { buildAC, parseACInWorker } from './loaders/ac3d.js';
+
+const parsed = new Map(); // model id -> promise of parsed AC data, shared by the viewer and thumbnails
 
 /**
  * Group the loaded objects into parts. Objects that match no rule go into a
@@ -78,18 +80,23 @@ export const hideRules = model => (model.asset.hide ?? []).map(toRegExp);
 export async function loadAssetModel(model) {
   const a = model.asset;
   const base = `./${a.path.replace(/\/?$/, '/')}`;
-  const text = await fetch(base + a.file).then(r => { if (!r.ok) throw new Error(`${a.file}: ${r.status}`); return r.text(); });
+  if (!parsed.has(model.id)) parsed.set(model.id, parseACInWorker(base + a.file, hideRules(model)));
+  const data = await parsed.get(model.id);
   // Resolve only once every texture has loaded, so thumbnails never render blank.
   const manager = new THREE.LoadingManager();
   const done = new Promise(resolve => { manager.onLoad = resolve; manager.onError = () => {}; });
   let pending = 0;
-  const loader = new THREE.TextureLoader(manager);
-  const loaded = parseAC(text, {
-    hide: hideRules(model),
+  // ImageBitmapLoader decodes off the main thread; normal maps are halved to 2048 px on decode.
+  const plain = new THREE.ImageBitmapLoader(manager).setOptions({ imageOrientation: 'flipY', premultiplyAlpha: 'none' });
+  const halved = new THREE.ImageBitmapLoader(manager).setOptions({ imageOrientation: 'flipY', premultiplyAlpha: 'none', resizeWidth: 2048, resizeHeight: 2048, resizeQuality: 'high' });
+  const loaded = buildAC(data, {
     normalMaps: a.normalMaps,
     loadTexture: file => {
       pending++;
-      const t = loader.load(base + file);
+      const t = new THREE.Texture();
+      t.flipY = false;
+      const isNormal = /normal/i.test(file);
+      (isNormal ? halved : plain).load(base + file, bmp => { t.image = bmp; t.needsUpdate = true; });
       t.colorSpace = /normal/i.test(file) ? THREE.NoColorSpace : THREE.SRGBColorSpace;
       t.wrapS = t.wrapT = THREE.RepeatWrapping;
       t.anisotropy = 8;

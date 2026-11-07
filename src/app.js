@@ -33,6 +33,7 @@ const PLANNED = [
   { id: 'naval', label: 'Naval', description: 'Ships and submarines.' },
   { id: 'space', label: 'Space', description: 'Rockets and spacecraft.' },
   { id: 'automotive', label: 'Automotive', description: 'Cars and trucks.' },
+  { id: 'rotorcraft', label: 'Helicopters', description: 'Civil helicopters.' },
 ];
 
 const $ = sel => document.querySelector(sel);

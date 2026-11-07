@@ -4,10 +4,6 @@
     "models/aviation/b737-800.json",
     "models/aviation/b787-9.json",
     "models/aviation/a380-800.json",
-    "models/aviation/cessna-172s.json",
-    "models/military/f-16c.json",
-    "models/military/uh-60m.json",
-    "models/military/leopard-2a6.json",
-    "models/military/m1a2.json"
+    "models/aviation/cessna-172s.json"
   ]
 }

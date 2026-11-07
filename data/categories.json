@@ -1,4 +1,7 @@
 [
-  { "id": "aviation", "label": "Aviation", "description": "Civil airliners and light aircraft." },
-  { "id": "military", "label": "Military", "description": "Combat aircraft, helicopters and armored vehicles." }
+  {
+    "id": "aviation",
+    "label": "Aviation",
+    "description": "Civil airliners and light aircraft."
+  }
 ]
