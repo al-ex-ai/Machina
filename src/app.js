@@ -264,9 +264,9 @@ function renderModel(id, partId) {
         <aside class="rail">
           <div class="crumbs" style="padding:0 8px 14px"><a href="#/">Catalog</a><span class="sep">/</span><a href="#/c/${esc(cat.id)}">${esc(cat.label)}</a></div>
           <span class="label">Part tree</span>
-          <ul class="tree" id="tree"></ul>
+          <ul class="tree" id="tree" aria-label="Parts, grouped by system"></ul>
         </aside>
-        <section class="stage" id="stage">
+        <section class="stage" id="stage" aria-label="3D view of ${esc(m.name)}. Select parts from the part tree, or click them in the view.">
           <div class="hud-top">
             <div class="readout"><span>${esc(code(m))}</span><span>L <b>${m.specs.length_m}</b> m</span><span>${widthLabel(m) === 'span' ? 'S' : 'W'} <b>${widthOf(m)}</b> m</span><span>H <b>${m.specs.height_m}</b> m</span></div>
             <div class="stepper">
@@ -275,7 +275,7 @@ function renderModel(id, partId) {
             </div>
           </div>
           <div class="tip" id="tip" hidden></div>
-          <div class="loading" id="loading" hidden><span class="spinner"></span><span class="label">Loading detailed model</span></div>
+          <div class="loading" id="loading" role="status" aria-live="polite" hidden><span class="spinner"></span><span class="label">Loading detailed model</span></div>
           <div class="dock" role="toolbar" aria-label="Viewer tools">
             <label class="tool" title="Pull parts apart (E)">Explode <input id="explode" type="range" min="0" max="1" step="0.01" value="0"></label>
             <span class="sep"></span>
@@ -284,7 +284,7 @@ function renderModel(id, partId) {
             <button class="tool" id="reset" type="button" title="Reset the camera (R)">Reset <kbd>R</kbd></button>
           </div>
         </section>
-        <aside class="sheet" id="sheet"></aside>
+        <aside class="sheet" id="sheet" aria-live="polite"></aside>
       </div>`;
     $('#stage').prepend($('#stage-host'));
     const v = ensureViewer();
@@ -348,7 +348,7 @@ function groupedParts() {
 function renderTree() {
   $('#tree').innerHTML = [...groupedParts()].map(([sys, ps]) => `
     <li class="tree-sys" data-open="true">
-      <button type="button" data-toggle><svg class="chev" viewBox="0 0 10 10" fill="currentColor"><path d="M1 3l4 4 4-4z"/></svg>
+      <button type="button" data-toggle aria-expanded="true"><svg class="chev" aria-hidden="true" viewBox="0 0 10 10" fill="currentColor"><path d="M1 3l4 4 4-4z"/></svg>
         <span class="sys-dot" style="background:${SYSTEMS[sys]?.color ?? '#888'}"></span>${esc(SYSTEMS[sys]?.label ?? sys)}<span class="n">${ps.length}</span></button>
       <ul>${ps.map(p => `<li><button type="button" data-part="${esc(p.id)}">${esc(p.label)}</button></li>`).join('')}</ul>
     </li>`).join('');
@@ -431,6 +431,7 @@ document.addEventListener('click', e => {
   else if (t.dataset.toggle !== undefined) {
     const li = t.closest('.tree-sys');
     li.dataset.open = String(li.dataset.open !== 'true');
+    t.setAttribute('aria-expanded', li.dataset.open);
   } else if (t.dataset.back !== undefined) viewer?.select(null);
 });
 

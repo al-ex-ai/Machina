@@ -4,60 +4,52 @@ One milestone per week. Each milestone ends with everything committed, `npm test
 
 ## M0. Foundation (done)
 
-- Data-driven builders: fixed-wing, rotorcraft, tracked
-- Viewer: selectable parts, explode, person for scale, deep links
-- Four airliners measuring within 0.5% of published specs
-- Painted fuselages, detailed engines, studio lighting
+- Data-driven builders (fixed-wing, rotorcraft, tracked), selectable parts, explode, deep links
+- Generated airliners measured against published specs
 
-## M1. Original app design (in progress)
+## M1. Original app design (done)
 
-- [x] Own visual identity: "Hangar" design system, blueprint grid, mono data readouts, light and dark themes
-- [x] Home screen: hero with live stats, category cards, model gallery with rendered thumbnails, search
-- [x] Category pages with grouped galleries
-- [x] Model page: part tree, viewer with heads-up readout and tool dock, spec sheet, breadcrumbs, previous and next
-- [x] Keyboard: Esc deselects, E explodes, P person, R reset
-- [x] Military models live: F-16C, UH-60M, Leopard 2A6, M1A2, plus the Cessna 172S
-- [x] Spec-match test in `npm test`: every model within 2% of its published length, width and height
-- [ ] Phone-width pass and accessibility check
-- [ ] Light theme review
+- "Hangar" design system: blueprint grid, mono data readouts, light and dark themes (`?theme=light`)
+- Home with live stats, category cards, gallery with 3D thumbnails, search and sort
+- Category pages, model page with part tree, heads-up readout, tool dock, spec sheet, previous and next
+- Keyboard: Esc, E explode, P person, R reset, X x-ray
+- Phone layout: viewer first, scrolling navigation, compact dock
+- Accessibility: readable contrast in both themes, skip link, labelled 3D region, announced part details and loading, expand state on the part tree, reduced-motion support
 
-## M2. Realism, round two
+## M2. Real models (done, ahead of plan)
 
-- Better shapes: airliner nose droop, wing-root blend, raked tips, fighter blended body
-- Control surfaces as their own parts: flaps, slats, ailerons, elevators, rudder
-- Ground: soft contact shadows, ambient occlusion, tarmac or concrete floor
-- Tank detail: angled armor, bustle racks, smoke launchers, track links
+- Open-licensed FlightGear models loaded at runtime (AC3D loader, parsing in a Web Worker)
+- Asset pipeline: `scripts/import-fg.js`, sub-model placement with FlightGear offsets, file-scoped part rules, split rules for repeated parts, rest-on-tailwheel, texture swaps for custom liveries
+- Nine aircraft: A380, 747-400, 787-8, A320neo, 737-300 (Machina livery), Cessna 172 with cabin, Robin DR400, Piper J-3 Cub, EC135
+- Studio HDRI lighting, ambient occlusion, on-demand rendering, textures capped at 2048 px
+- X-ray view, 1.8 m scale figure
+- Verification: size against published specs with documented tolerances, left/right side check, license and credits required for every asset
 
 ## M3. Compare
 
-- Side by side or overlaid at true scale, any two to four models
+- Two to four models side by side or overlaid at true scale
 - Spec table with differences highlighted
-- Silhouette overlay (top, side, front) to see size at a glance
-- "Line-up" view: a row of models on one apron, sorted by any spec
+- Top, side and front silhouettes
+- A line-up of models on one apron, sorted by any spec
 
 ## M4. Deeper detail
 
-- Part tree: system, assembly, part, with a data sheet per part
-- Cutaway and x-ray modes to see inside (cabin, engine core, fuel tanks)
-- Labels with leader lines, measure tool (click two points)
-- Animations: gear retract, flaps, rotors spinning, turret and gun traverse
+- Animations from the FlightGear model data: flaps, slats, gear retraction, rotors and propellers
+- Labels with leader lines and a measure tool (click two points)
+- Cutaway view and richer part data sheets
+- Machina livery for engines and any remaining plain models
 
-## M5. More categories
+## M5. More aircraft and categories
 
-Each new kind of vehicle is one new builder plus its models.
-
-- Naval: hull builder for ships and submarines
-- Space: stack builder for rockets and spacecraft
-- Automotive: body builder for cars and trucks
-- Rail: locomotives and train sets
-- Military: fighters, transports, armored vehicles
+- Next FlightGear batch, each vetted for license, quality and size: 777, ATR 72, Concorde, Cessna Caravan, DHC-6 Twin Otter, DC-3, more helicopters
+- Space category from NASA's public-domain models: Space Shuttle, ISS, Hubble, Curiosity
+- Military set stays parked until asked for
 
 ## M6. Data and authoring
 
 - JSON Schema for model files, validated in CI
-- Spec-match test: every model must measure within tolerance of its published size
-- Model editor: sliders that reshape a model live and save the JSON
-- Contribution guide and 30+ models
+- Documented import workflow and contribution guide
+- Live part-mapping tool: click a mesh, assign it to a part, save the rules
 
 ## M7. Share
 
@@ -67,6 +59,6 @@ Each new kind of vehicle is one new builder plus its models.
 
 ## M8. Polish and release
 
-- Performance: instancing, level of detail, lazy loading
-- Accessibility pass, README with demos
-- Release v0.1
+- Compressed textures and a per-model size budget
+- Performance pass on phones
+- README with screenshots, release v0.1
