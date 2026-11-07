@@ -256,3 +256,5 @@ button { font: inherit; color: inherit; }
   .brand > :not(.brand-mark) { display: none; }
   .stats .stat b { font-size: 22px; }
 }
+.sort { display: inline-flex; align-items: center; gap: 8px; }
+.sort select { font: inherit; font-family: var(--font); font-size: 13px; letter-spacing: 0; text-transform: none; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; }

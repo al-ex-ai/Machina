@@ -36,6 +36,30 @@ const PLANNED = [
   { id: 'automotive', label: 'Automotive', description: 'Cars and trucks.' },
 ];
 
+// Sorting for galleries. "type" groups by kind of aircraft, biggest first within each.
+const GROUP_ORDER = ['Airliners', 'Light aircraft', 'Helicopters'];
+const SORTS = {
+  type: { label: 'Type, then size', cmp: (a, b) => groupRank(a) - groupRank(b) || b.specs.length_m - a.specs.length_m },
+  name: { label: 'Name', cmp: (a, b) => a.name.localeCompare(b.name) },
+  largest: { label: 'Largest first', cmp: (a, b) => b.specs.length_m - a.specs.length_m },
+  smallest: { label: 'Smallest first', cmp: (a, b) => a.specs.length_m - b.specs.length_m },
+  oldest: { label: 'First flight, oldest', cmp: (a, b) => (a.specs.first_flight ?? 9999) - (b.specs.first_flight ?? 9999) },
+  newest: { label: 'First flight, newest', cmp: (a, b) => (b.specs.first_flight ?? 0) - (a.specs.first_flight ?? 0) },
+  maker: { label: 'Manufacturer', cmp: (a, b) => (a.specs.manufacturer ?? '').localeCompare(b.specs.manufacturer ?? '') || a.name.localeCompare(b.name) },
+};
+const groupRank = m => { const i = GROUP_ORDER.indexOf(m.group); return i < 0 ? GROUP_ORDER.length : i; };
+let sortKey = (() => { try { return localStorage.getItem('machina-sort') || 'type'; } catch { return 'type'; } })();
+if (!SORTS[sortKey]) sortKey = 'type';
+const sorted = list => [...list].sort(SORTS[sortKey].cmp);
+const sortSelect = () => `<label class="sort label">Sort <select id="sort" aria-label="Sort models">${Object.entries(SORTS).map(([k, v]) => `<option value="${k}" ${k === sortKey ? 'selected' : ''}>${v.label}</option>`).join('')}</select></label>`;
+function onSort(rerender) {
+  document.getElementById('sort')?.addEventListener('change', e => {
+    sortKey = e.target.value;
+    try { localStorage.setItem('machina-sort', sortKey); } catch { /* storage unavailable */ }
+    rerender();
+  });
+}
+
 const $ = sel => document.querySelector(sel);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const num = v => (typeof v === 'number' ? v.toLocaleString('en-US') : v);
@@ -152,16 +176,19 @@ function renderHome() {
         </div>`).join('')}
       </div>
 
-      <div class="section-head"><h2>All models</h2><input class="search" id="search" type="search" placeholder="Search by name, maker or role" aria-label="Search models"></div>
-      <div class="gallery" id="gallery">${state.models.map(cardHTML).join('')}</div>
+      <div class="section-head"><h2>All models</h2><div class="toolbar-row">${sortSelect()}<input class="search" id="search" type="search" placeholder="Search by name, maker or role" aria-label="Search models"></div></div>
+      <div class="gallery" id="gallery"></div>
     </div></div>`;
   hydrateThumbs();
-  $('#search').addEventListener('input', e => {
-    const q = e.target.value.toLowerCase();
-    const list = state.models.filter(m => `${m.name} ${m.group} ${m.specs.manufacturer} ${m.specs.role}`.toLowerCase().includes(q));
+  const fill = () => {
+    const q = $('#search').value.toLowerCase();
+    const list = sorted(state.models.filter(m => `${m.name} ${m.group} ${m.specs.manufacturer} ${m.specs.role}`.toLowerCase().includes(q)));
     $('#gallery').innerHTML = list.map(cardHTML).join('') || '<p class="note">No models match.</p>';
     hydrateThumbs($('#gallery'));
-  });
+  };
+  fill();
+  $('#search').addEventListener('input', fill);
+  onSort(fill);
 }
 
 // ── Category ───────────────────────────────────────────
@@ -170,7 +197,7 @@ function renderCategory(id) {
   if (!cat) { location.hash = '#/'; return; }
   document.title = `${cat.label} · Machina`;
   const models = state.models.filter(m => m.category === id);
-  const groups = [...new Set(models.map(m => m.group))];
+  const groups = [...new Set(sorted(models).map(m => m.group))].sort((a, b) => (GROUP_ORDER.indexOf(a) + 1 || 99) - (GROUP_ORDER.indexOf(b) + 1 || 99));
   $('#page').innerHTML = `
     <div class="blueprint"><div class="page">
       <div class="crumbs"><a href="#/">Catalog</a><span class="sep">/</span><span>${esc(cat.label)}</span></div>
@@ -181,10 +208,12 @@ function renderCategory(id) {
           <div class="stat"><b>${groups.length}</b><span>groups</span></div>
         </div>
       </section>
+      <div class="section-head" style="margin-top:24px"><span></span>${sortSelect()}</div>
       ${groups.map(g => `<div class="group-title"><span class="label">${esc(g)}</span></div>
-        <div class="gallery">${models.filter(m => m.group === g).map(cardHTML).join('')}</div>`).join('')}
+        <div class="gallery">${sorted(models.filter(m => m.group === g)).map(cardHTML).join('')}</div>`).join('')}
     </div></div>`;
   hydrateThumbs();
+  onSort(() => renderCategory(id));
 }
 
 // ── Model ──────────────────────────────────────────────
@@ -225,7 +254,7 @@ function renderModel(id, partId) {
   document.title = `${m.name} · Machina`;
   if (!sameModel) {
     const cat = state.categories.find(c => c.id === m.category);
-    const list = state.models.filter(x => x.category === m.category);
+    const list = sorted(state.models.filter(x => x.category === m.category));
     const i = list.indexOf(m);
     const prev = list[(i - 1 + list.length) % list.length];
     const next = list[(i + 1) % list.length];
