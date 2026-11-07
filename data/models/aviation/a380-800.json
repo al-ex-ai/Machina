@@ -20,24 +20,382 @@
     "seats": "525 (typical three-class)"
   },
   "geometry": {
-    "fuselage": { "length": 72.72, "diameter": 7.14, "height": 8.41, "noseLength": 9.5, "tailLength": 20, "tailUpsweep": 0.6, "noseBluntness": 0.75 },
-    "wing": { "span": 79.75, "rootChord": 17.0, "tipChord": 4.0, "sweepDeg": 35, "dihedralDeg": 5.6, "x": 25.0, "y": -2.6, "thickness": 0.12 },
-    "winglet": { "height": 1.4, "sweepDeg": 45 },
-    "htail": { "span": 30.37, "rootChord": 9.5, "tipChord": 3.0, "sweepDeg": 37, "dihedralDeg": 6, "x": 57.8, "y": 1.5 },
-    "vtail": { "height": 14.0, "rootChord": 13.0, "tipChord": 4.5, "sweepDeg": 40, "x": 56.0, "y": 3.2 },
+    "fuselage": {
+      "length": 72.72,
+      "diameter": 7.14,
+      "height": 8.41,
+      "noseLength": 9.5,
+      "tailLength": 20,
+      "tailUpsweep": 0.6,
+      "noseBluntness": 0.75
+    },
+    "wing": {
+      "span": 79.75,
+      "rootChord": 17,
+      "tipChord": 4,
+      "sweepDeg": 35,
+      "dihedralDeg": 5.6,
+      "x": 25,
+      "y": -2.6,
+      "thickness": 0.12
+    },
+    "winglet": {
+      "height": 1.4,
+      "sweepDeg": 45
+    },
+    "htail": {
+      "span": 30.37,
+      "rootChord": 9.5,
+      "tipChord": 3,
+      "sweepDeg": 37,
+      "dihedralDeg": 6,
+      "x": 57.8,
+      "y": 1.5
+    },
+    "vtail": {
+      "height": 14,
+      "rootChord": 13,
+      "tipChord": 4.5,
+      "sweepDeg": 40,
+      "x": 56,
+      "y": 3.2
+    },
     "engines": [
-      { "kind": "turbofan", "mirror": true, "x": 31.0, "y": -3.3, "z": 15.4, "length": 7.0, "diameter": 3.8 },
-      { "kind": "turbofan", "mirror": true, "x": 38.5, "y": -2.2, "z": 25.8, "length": 7.0, "diameter": 3.8 }
+      {
+        "kind": "turbofan",
+        "mirror": true,
+        "x": 31,
+        "y": -3.3,
+        "z": 15.4,
+        "length": 7,
+        "diameter": 3.8
+      },
+      {
+        "kind": "turbofan",
+        "mirror": true,
+        "x": 38.5,
+        "y": -2.2,
+        "z": 25.8,
+        "length": 7,
+        "diameter": 3.8
+      }
     ],
-    "gear": { "attachY": -3.4, "height": 3.49, "wheelDiameter": 1.4, "nose": { "x": 6.0, "wheels": 2 }, "main": { "x": 37.5, "track": 12.46, "wheels": 2, "struts": 2, "strutSpacing": 3.6, "strutOffsetX": 3.0 } }
+    "gear": {
+      "attachY": -3.4,
+      "height": 3.49,
+      "wheelDiameter": 1.4,
+      "nose": {
+        "x": 6,
+        "wheels": 2
+      },
+      "main": {
+        "x": 37.5,
+        "track": 12.46,
+        "wheels": 2,
+        "struts": 2,
+        "strutSpacing": 3.6,
+        "strutOffsetX": 3
+      }
+    }
   },
   "parts": {
-    "engines": { "Type": "High-bypass turbofan", "Options": "Trent 900 or GP7200", "Fan diameter": "about 2.95 m" },
-    "fuselage": { "Decks": "Two full-length passenger decks" },
-    "gear": { "Layout": "Nose gear, two wing gears and two body gears, 22 wheels in total", "Note": "Simplified here to two wheels per leg" }
+    "engines": {
+      "Type": "High-bypass turbofan",
+      "Options": "Trent 900 or GP7200",
+      "Fan diameter": "about 2.95 m"
+    },
+    "fuselage": {
+      "Decks": "Two full-length passenger decks"
+    },
+    "gear": {
+      "Layout": "Nose gear, two wing gears and two body gears, 22 wheels in total",
+      "Note": "Simplified here to two wheels per leg"
+    }
   },
   "sources": [
-    { "label": "Airbus A380 aircraft characteristics", "url": "https://aircraft.airbus.com/en/customer-care/fleet-wide-care/airport-operations-and-technical-data/aircraft-characteristics" },
-    { "label": "Wikipedia: Airbus A380", "url": "https://en.wikipedia.org/wiki/Airbus_A380" }
-  ]
+    {
+      "label": "Airbus A380 aircraft characteristics",
+      "url": "https://aircraft.airbus.com/en/customer-care/fleet-wide-care/airport-operations-and-technical-data/aircraft-characteristics"
+    },
+    {
+      "label": "Wikipedia: Airbus A380",
+      "url": "https://en.wikipedia.org/wiki/Airbus_A380"
+    }
+  ],
+  "asset": {
+    "path": "assets/aircraft/a380",
+    "license": "GPL-2.0-or-later",
+    "author": "Ampere K., I. Cunningham, F. Dalvi, S. Hamilton and contributors",
+    "source": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/A380/",
+    "files": [
+      {
+        "file": "Models/a380.ac",
+        "offset": {
+          "x": -30,
+          "y": 0,
+          "z": -8.7
+        }
+      },
+      {
+        "file": "Models/Wings/wings.ac",
+        "offset": {
+          "x": 1.496,
+          "y": 0,
+          "z": -4.042
+        },
+        "fallback": {
+          "id": "wings",
+          "label": "Wings",
+          "system": "surfaces"
+        }
+      },
+      {
+        "file": "Models/Wings/cowling.ac",
+        "offset": {
+          "x": 9.525,
+          "y": -25.7,
+          "z": -4.672
+        },
+        "rotation": {
+          "pitch": 3
+        },
+        "fallback": {
+          "id": "engine-1",
+          "label": "Engine 1",
+          "system": "propulsion"
+        }
+      },
+      {
+        "file": "Models/Wings/cowling.ac",
+        "offset": {
+          "x": 1.212,
+          "y": -14.799,
+          "z": -5.629
+        },
+        "rotation": {
+          "pitch": 3
+        },
+        "fallback": {
+          "id": "engine-2",
+          "label": "Engine 2",
+          "system": "propulsion"
+        }
+      },
+      {
+        "file": "Models/Wings/cowling.ac",
+        "offset": {
+          "x": 1.212,
+          "y": 14.799,
+          "z": -5.629
+        },
+        "rotation": {
+          "pitch": 3
+        },
+        "fallback": {
+          "id": "engine-3",
+          "label": "Engine 3",
+          "system": "propulsion"
+        }
+      },
+      {
+        "file": "Models/Wings/cowling.ac",
+        "offset": {
+          "x": 9.525,
+          "y": 25.7,
+          "z": -4.672
+        },
+        "rotation": {
+          "pitch": 3
+        },
+        "fallback": {
+          "id": "engine-4",
+          "label": "Engine 4",
+          "system": "propulsion"
+        }
+      }
+    ],
+    "fallback": {
+      "id": "fuselage",
+      "label": "Fuselage",
+      "system": "structure"
+    },
+    "hide": [
+      "ohpanel",
+      "ohpanel.001",
+      "centreconsole",
+      "object",
+      "/light/"
+    ],
+    "parts": [
+      {
+        "id": "left-wing-outer",
+        "label": "Left wing",
+        "system": "surfaces",
+        "match": [
+          "/^wingsegL/",
+          "/^leadingL/",
+          "/^trailingL/",
+          "tipL"
+        ]
+      },
+      {
+        "id": "right-wing-outer",
+        "label": "Right wing",
+        "system": "surfaces",
+        "match": [
+          "/^wingsegR/",
+          "/^leadingR/",
+          "/^trailingR/",
+          "tipR"
+        ]
+      },
+      {
+        "id": "winglets",
+        "label": "Wingtip fences",
+        "system": "surfaces",
+        "match": [
+          "wingletL",
+          "wingletR"
+        ]
+      },
+      {
+        "id": "ailerons",
+        "label": "Ailerons",
+        "system": "controls",
+        "match": [
+          "/^aileron/"
+        ]
+      },
+      {
+        "id": "flaps",
+        "label": "Flaps",
+        "system": "controls",
+        "match": [
+          "/^flap/",
+          "/^slot/"
+        ]
+      },
+      {
+        "id": "slats",
+        "label": "Slats and droop nose",
+        "system": "controls",
+        "match": [
+          "/^slat/"
+        ]
+      },
+      {
+        "id": "spoilers",
+        "label": "Spoilers",
+        "system": "controls",
+        "match": [
+          "/^spoiler/"
+        ]
+      },
+      {
+        "id": "flap-fairings",
+        "label": "Flap track fairings",
+        "system": "surfaces",
+        "match": [
+          "/^FTF/"
+        ]
+      },
+      {
+        "id": "fin",
+        "label": "Vertical stabilizer",
+        "system": "surfaces",
+        "match": [
+          "vertstab"
+        ]
+      },
+      {
+        "id": "rudder",
+        "label": "Upper and lower rudder",
+        "system": "controls",
+        "match": [
+          "upperrudder",
+          "lowerrudder"
+        ]
+      },
+      {
+        "id": "nose-gear",
+        "label": "Nose gear",
+        "system": "gear",
+        "match": [
+          "/^n(lower|outer)strut/",
+          "noseaxle",
+          "collar",
+          "tyreln",
+          "tyrern",
+          "/^ng(lh|rh)/",
+          "/^nosewheelwell/",
+          "/steercyl/",
+          "linklower",
+          "linkupper"
+        ]
+      },
+      {
+        "id": "left-body-gear",
+        "label": "Left body gear",
+        "system": "gear",
+        "match": [
+          "/^b(fwd|mid|rear)axle/",
+          "/^b(lower|outer)strut/",
+          "btruck",
+          "/^btyre/"
+        ]
+      },
+      {
+        "id": "right-body-gear",
+        "label": "Right body gear",
+        "system": "gear",
+        "match": [
+          "/^rb(fwd|mid|rear)axle/",
+          "/^rb(lower|outer)strut/",
+          "rbtruck",
+          "/^rbtyre/"
+        ]
+      },
+      {
+        "id": "left-wing-gear",
+        "label": "Left wing gear",
+        "system": "gear",
+        "match": [
+          "/^w(fwd|rear)axle/",
+          "/^w(lower|outer)strut/",
+          "wtruck",
+          "/^tyrewl/"
+        ]
+      },
+      {
+        "id": "right-wing-gear",
+        "label": "Right wing gear",
+        "system": "gear",
+        "match": [
+          "/^rw(fwd|rear)axle/",
+          "/^rw(lower|outer)strut/",
+          "rwtruck",
+          "/^tyrerw/"
+        ]
+      },
+      {
+        "id": "gear-doors",
+        "label": "Landing gear doors and bays",
+        "system": "gear",
+        "match": [
+          "/bgdoor/",
+          "/wgdoor/",
+          "/^gearbay/",
+          "/bodyfairing/"
+        ]
+      },
+      {
+        "id": "doors",
+        "label": "Passenger doors",
+        "system": "structure",
+        "match": [
+          "/^door\\d/"
+        ]
+      }
+    ]
+  }
 }

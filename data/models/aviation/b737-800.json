@@ -20,21 +20,367 @@
     "seats": "162 to 189"
   },
   "geometry": {
-    "fuselage": { "length": 39.47, "diameter": 3.76, "height": 4.01, "noseLength": 5.0, "tailLength": 11.5, "tailUpsweep": 0.9, "noseBluntness": 0.55 },
-    "wing": { "span": 35.79, "rootChord": 6.5, "tipChord": 1.25, "sweepDeg": 28, "dihedralDeg": 6, "x": 13.5, "y": -1.25, "thickness": 0.13 },
-    "winglet": { "height": 2.5, "sweepDeg": 38 },
-    "htail": { "span": 14.35, "rootChord": 4.0, "tipChord": 1.3, "sweepDeg": 33, "dihedralDeg": 7, "x": 33.4, "y": 0.9 },
-    "vtail": { "height": 7.0, "rootChord": 6.0, "tipChord": 1.9, "sweepDeg": 38, "x": 31.0, "y": 2.15 },
-    "engines": [{ "kind": "turbofan", "mirror": true, "x": 12.6, "y": -1.9, "z": 4.9, "length": 3.6, "diameter": 2.0 }],
-    "gear": { "attachY": -1.6, "height": 1.8, "wheelDiameter": 1.1, "nose": { "x": 3.6, "wheels": 2 }, "main": { "x": 19.2, "track": 5.72, "wheels": 2 } }
+    "fuselage": {
+      "length": 39.47,
+      "diameter": 3.76,
+      "height": 4.01,
+      "noseLength": 5,
+      "tailLength": 11.5,
+      "tailUpsweep": 0.9,
+      "noseBluntness": 0.55
+    },
+    "wing": {
+      "span": 35.79,
+      "rootChord": 6.5,
+      "tipChord": 1.25,
+      "sweepDeg": 28,
+      "dihedralDeg": 6,
+      "x": 13.5,
+      "y": -1.25,
+      "thickness": 0.13
+    },
+    "winglet": {
+      "height": 2.5,
+      "sweepDeg": 38
+    },
+    "htail": {
+      "span": 14.35,
+      "rootChord": 4,
+      "tipChord": 1.3,
+      "sweepDeg": 33,
+      "dihedralDeg": 7,
+      "x": 33.4,
+      "y": 0.9
+    },
+    "vtail": {
+      "height": 7,
+      "rootChord": 6,
+      "tipChord": 1.9,
+      "sweepDeg": 38,
+      "x": 31,
+      "y": 2.15
+    },
+    "engines": [
+      {
+        "kind": "turbofan",
+        "mirror": true,
+        "x": 12.6,
+        "y": -1.9,
+        "z": 4.9,
+        "length": 3.6,
+        "diameter": 2
+      }
+    ],
+    "gear": {
+      "attachY": -1.6,
+      "height": 1.8,
+      "wheelDiameter": 1.1,
+      "nose": {
+        "x": 3.6,
+        "wheels": 2
+      },
+      "main": {
+        "x": 19.2,
+        "track": 5.72,
+        "wheels": 2
+      }
+    }
   },
   "parts": {
-    "engines": { "Type": "High-bypass turbofan", "Model": "CFM56-7B", "Note": "Nacelle flattened at the bottom for ground clearance" },
-    "wing": { "Winglets": "Blended winglets, about 2.5 m tall" },
-    "gear": { "Layout": "Tricycle, twin wheels, no main gear doors" }
+    "engines": {
+      "Type": "High-bypass turbofan",
+      "Model": "CFM56-7B",
+      "Note": "Nacelle flattened at the bottom for ground clearance"
+    },
+    "wing": {
+      "Winglets": "Blended winglets, about 2.5 m tall"
+    },
+    "gear": {
+      "Layout": "Tricycle, twin wheels, no main gear doors"
+    }
   },
   "sources": [
-    { "label": "Boeing 737 airport planning document", "url": "https://www.boeing.com/commercial/airports/plan_manuals" },
-    { "label": "Wikipedia: Boeing 737 Next Generation", "url": "https://en.wikipedia.org/wiki/Boeing_737_Next_Generation" }
-  ]
+    {
+      "label": "Boeing 737 airport planning document",
+      "url": "https://www.boeing.com/commercial/airports/plan_manuals"
+    },
+    {
+      "label": "Wikipedia: Boeing 737 Next Generation",
+      "url": "https://en.wikipedia.org/wiki/Boeing_737_Next_Generation"
+    }
+  ],
+  "asset": {
+    "path": "assets/aircraft/737-800",
+    "license": "GPL-2.0",
+    "author": "FlightGear 737-800 contributors",
+    "source": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/737-800/",
+    "files": [
+      {
+        "file": "Models/737-800.ac",
+        "offset": {
+          "x": -18.32
+        }
+      },
+      {
+        "file": "Models/LWing.ac",
+        "offset": {
+          "x": -18.32
+        },
+        "fallback": {
+          "id": "left-wing",
+          "label": "Left wing",
+          "system": "surfaces"
+        },
+        "parts": [
+          {
+            "id": "left-aileron",
+            "label": "Left aileron",
+            "system": "controls",
+            "match": [
+              "lhaileron",
+              "/^ailerontablh/"
+            ]
+          },
+          {
+            "id": "left-flaps",
+            "label": "Left flaps",
+            "system": "controls",
+            "match": [
+              "/flap/i"
+            ]
+          },
+          {
+            "id": "left-slats",
+            "label": "Left slats",
+            "system": "controls",
+            "match": [
+              "/^slat/",
+              "/^ible/",
+              "/oble$/",
+              "/^iblelh/"
+            ]
+          },
+          {
+            "id": "left-spoilers",
+            "label": "Left spoilers",
+            "system": "controls",
+            "match": [
+              "/^spoiler/"
+            ]
+          },
+          {
+            "id": "engine-1",
+            "label": "Engine 1",
+            "system": "propulsion",
+            "match": [
+              "/eng/i",
+              "/^fan/",
+              "/reverser/i",
+              "/^ductinner/",
+              "/^tailpipe/",
+              "/pylon/",
+              "/nacascoop/",
+              "/^No\\d/"
+            ]
+          },
+          {
+            "id": "left-main-gear",
+            "label": "Left main gear",
+            "system": "gear",
+            "match": [
+              "/^mglh/",
+              "/^mgl/",
+              "/^mgouter/",
+              "/strut/",
+              "/^lhgd/",
+              "/^lhmgd/",
+              "/^geardoor/"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "Models/RWing.ac",
+        "offset": {
+          "x": -18.32
+        },
+        "fallback": {
+          "id": "right-wing",
+          "label": "Right wing",
+          "system": "surfaces"
+        },
+        "parts": [
+          {
+            "id": "right-aileron",
+            "label": "Right aileron",
+            "system": "controls",
+            "match": [
+              "rhaileron",
+              "/^ailerontabrh/"
+            ]
+          },
+          {
+            "id": "right-flaps",
+            "label": "Right flaps",
+            "system": "controls",
+            "match": [
+              "/flap/i"
+            ]
+          },
+          {
+            "id": "right-slats",
+            "label": "Right slats",
+            "system": "controls",
+            "match": [
+              "/^slat/",
+              "/^ible/",
+              "/oble$/",
+              "/^iblerh/"
+            ]
+          },
+          {
+            "id": "right-spoilers",
+            "label": "Right spoilers",
+            "system": "controls",
+            "match": [
+              "/^spoiler/"
+            ]
+          },
+          {
+            "id": "engine-2",
+            "label": "Engine 2",
+            "system": "propulsion",
+            "match": [
+              "/eng/i",
+              "/^fan/",
+              "/reverser/i",
+              "/^ductinner/",
+              "/^tailpipe/",
+              "/pylon/",
+              "/nacascoop/",
+              "/^No\\d/"
+            ]
+          },
+          {
+            "id": "right-main-gear",
+            "label": "Right main gear",
+            "system": "gear",
+            "match": [
+              "/^mgrh/",
+              "/^mgr/",
+              "/^mgouter/",
+              "/strut/",
+              "/^rhgd/",
+              "/^rhmgd/",
+              "/^geardoor/"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "Models/winglet.ac",
+        "offset": {
+          "x": -18.32
+        },
+        "fallback": {
+          "id": "winglets",
+          "label": "Winglets",
+          "system": "surfaces"
+        }
+      },
+      {
+        "file": "Models/VertStab.ac",
+        "offset": {
+          "x": -18.32
+        },
+        "fallback": {
+          "id": "fin",
+          "label": "Vertical stabilizer",
+          "system": "surfaces"
+        },
+        "parts": [
+          {
+            "id": "rudder",
+            "label": "Rudder",
+            "system": "controls",
+            "match": [
+              "rudder"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "Models/HorzStab.ac",
+        "offset": {
+          "x": -18.32
+        },
+        "fallback": {
+          "id": "horizontal-stabilizer",
+          "label": "Horizontal stabilizer",
+          "system": "surfaces"
+        },
+        "parts": [
+          {
+            "id": "elevators",
+            "label": "Elevators",
+            "system": "controls",
+            "match": [
+              "/elevator/"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "Models/nosegear.ac",
+        "offset": {
+          "x": -18.32
+        },
+        "fallback": {
+          "id": "nose-gear",
+          "label": "Nose gear",
+          "system": "gear"
+        }
+      }
+    ],
+    "fallback": {
+      "id": "fuselage",
+      "label": "Fuselage",
+      "system": "structure"
+    },
+    "hide": [],
+    "parts": [
+      {
+        "id": "doors",
+        "label": "Passenger and service doors",
+        "system": "structure",
+        "match": [
+          "/^door/",
+          "/^dorrh/",
+          "/^Eexit/"
+        ]
+      },
+      {
+        "id": "cargo-doors",
+        "label": "Cargo doors",
+        "system": "structure",
+        "match": [
+          "/^cargodoor/"
+        ]
+      },
+      {
+        "id": "windows",
+        "label": "Windows",
+        "system": "glazing",
+        "match": [
+          "/^windows/"
+        ]
+      }
+    ],
+    "verify": {
+      "tolerance": {
+        "height": 0.04
+      },
+      "note": "The FlightGear model measures 12.93 m tall against the published 12.55 m."
+    }
+  }
 }

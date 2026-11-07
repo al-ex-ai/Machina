@@ -34,10 +34,12 @@ export function assembleParts(loaded, model) {
   const defaultFallback = model.asset.fallback ?? { id: 'airframe', label: 'Airframe details', system: 'structure' };
 
   const meshes = [];
-  for (const { group, fallback, offset, rotation } of sources) {
+  for (const { group, fallback, offset, rotation, parts: fileParts } of sources) {
     if (offset || rotation) applyFgPlacement(group, offset, rotation);
     group.updateMatrixWorld(true);
-    group.traverse(o => { if (o.isMesh) meshes.push([o, fallback ?? defaultFallback]); });
+    // File-scoped rules (for example a left wing file) win over the model-wide ones.
+    const local = (fileParts ?? []).map(r => ({ ...r, res: r.match.map(toRegExp) }));
+    group.traverse(o => { if (o.isMesh) meshes.push([o, fallback ?? defaultFallback, local]); });
   }
   // Rules with "split" divide their meshes into N parts by side-to-side position,
   // numbered from the left (+z), e.g. four engines with identical object names.
@@ -52,8 +54,8 @@ export function assembleParts(loaded, model) {
     list.forEach(([mesh], i) => { splitOf.set(mesh, k); if (gaps.includes(i)) k++; });
   }
 
-  for (const [mesh, fallback] of meshes) {
-    let rule = rules.find(r => r.res.some(re => re.test(mesh.name))) ?? fallback;
+  for (const [mesh, fallback, local] of meshes) {
+    let rule = local.find(r => r.res.some(re => re.test(mesh.name))) ?? rules.find(r => r.res.some(re => re.test(mesh.name))) ?? fallback;
     if (rule.split) {
       const k = splitOf.get(mesh) ?? 0;
       rule = { ...rule, baseId: rule.id, id: `${rule.id}-${k + 1}`, label: `${rule.label} ${k + 1}` };
