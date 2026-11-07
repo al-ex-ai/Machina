@@ -288,10 +288,17 @@ export function createViewer(container) {
   function loop() {
     controls.update();
     const now = performance.now();
-    if (dirty) {
-      renderer.render(scene, camera); // fast path: tone mapped straight to screen
+    const moving = dragging || now - lastMove < 180;
+    if (dirty && !moving) {
+      // Camera at rest (hover, selection, explode): go straight to full quality,
+      // so the image never alternates between the two looks.
+      composer.render();
       dirty = false;
-    } else if (fullPending && !dragging && now - lastMove > 180) {
+      fullPending = false;
+    } else if (dirty) {
+      renderer.render(scene, camera); // camera moving: fast frame without ambient occlusion
+      dirty = false;
+    } else if (fullPending && !moving) {
       composer.render(); // full quality with ambient occlusion
       fullPending = false;
     }
