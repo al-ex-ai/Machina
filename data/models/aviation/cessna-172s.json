@@ -144,6 +144,10 @@
     },
     "nose-gear": {
       "Type": "Oleo strut, steerable through the rudder pedals"
+    },
+    "seats": {
+      "Layout": "Two front seats and a rear bench",
+      "Capacity": "4 people"
     }
   },
   "sources": [
@@ -158,7 +162,6 @@
   ],
   "asset": {
     "path": "assets/aircraft/c172p",
-    "file": "c172-common.ac",
     "format": "ac3d",
     "flipZ": true,
     "license": "GPL-2.0",
@@ -177,7 +180,9 @@
       "/^courtesy/",
       "/^BeaconOff/",
       "PropellerCowlPlugs",
-      "sun_and_view_blocker"
+      "sun_and_view_blocker",
+      "/lighton/",
+      "glass_panal-fg1000-kap140"
     ],
     "parts": [
       {
@@ -421,6 +426,14 @@
         ]
       },
       {
+        "id": "seats",
+        "label": "Seats",
+        "system": "interior",
+        "match": [
+          "/seat/i"
+        ]
+      },
+      {
         "id": "cabin",
         "label": "Cabin interior and panel",
         "system": "interior",
@@ -445,6 +458,19 @@
         "width": 0.04
       },
       "note": "The FlightGear model measures 2.44 m tall and 11.32 m across against the published 2.72 m and 11.0 m."
-    }
+    },
+    "files": [
+      {
+        "file": "c172-common.ac"
+      },
+      {
+        "file": "c172sp-interior.ac",
+        "fallback": {
+          "id": "cabin",
+          "label": "Cabin interior and panel",
+          "system": "interior"
+        }
+      }
+    ]
   }
 }

@@ -9,10 +9,11 @@ const parsed = new Map(); // model id -> promise of parsed AC data, shared by th
 /**
  * Group the loaded objects into parts. Objects that match no rule go into a
  * catch-all "airframe" part so nothing is left unselectable.
- * @param {THREE.Group} loaded
+ * @param {THREE.Object3D | { group: THREE.Object3D, fallback?: object }[]} loaded one group, or one per asset file
  * @param {any} model
  */
 export function assembleParts(loaded, model) {
+  const sources = Array.isArray(loaded) ? loaded : [{ group: loaded }];
   const rules = (model.asset.parts ?? []).map(p => ({ ...p, res: p.match.map(toRegExp) }));
   const root = new THREE.Group();
   const flip = model.asset.flipZ ? new THREE.Matrix4().makeScale(1, 1, -1) : new THREE.Matrix4();
@@ -30,12 +31,14 @@ export function assembleParts(loaded, model) {
     }
     return groups.get(rule.id);
   };
-  const fallback = model.asset.fallback ?? { id: 'airframe', label: 'Airframe details', system: 'structure' };
+  const defaultFallback = model.asset.fallback ?? { id: 'airframe', label: 'Airframe details', system: 'structure' };
 
-  loaded.updateMatrixWorld(true);
   const meshes = [];
-  loaded.traverse(o => { if (o.isMesh) meshes.push(o); });
-  for (const mesh of meshes) {
+  for (const { group, fallback } of sources) {
+    group.updateMatrixWorld(true);
+    group.traverse(o => { if (o.isMesh) meshes.push([o, fallback ?? defaultFallback]); });
+  }
+  for (const [mesh, fallback] of meshes) {
     const rule = rules.find(r => r.res.some(re => re.test(mesh.name))) ?? fallback;
     const geo = mesh.geometry.clone().applyMatrix4(new THREE.Matrix4().multiplyMatrices(base, mesh.matrixWorld));
     if (model.asset.flipZ) flipWinding(geo);
@@ -76,12 +79,16 @@ function flipWinding(geo) {
 
 export const hideRules = model => (model.asset.hide ?? []).map(toRegExp);
 
+/** The asset files of a model: [{ file, fallback? }]. */
+export const assetFiles = model => model.asset.files ?? [{ file: model.asset.file }];
+
 /** Browser: fetch and build the detailed model. */
 export async function loadAssetModel(model) {
   const a = model.asset;
   const base = `./${a.path.replace(/\/?$/, '/')}`;
-  if (!parsed.has(model.id)) parsed.set(model.id, parseACInWorker(base + a.file, hideRules(model)));
-  const data = await parsed.get(model.id);
+  const files = assetFiles(model);
+  if (!parsed.has(model.id)) parsed.set(model.id, Promise.all(files.map(f => parseACInWorker(base + f.file, hideRules(model)))));
+  const datas = await parsed.get(model.id);
   // Resolve only once every texture has loaded, so thumbnails never render blank.
   const manager = new THREE.LoadingManager();
   const done = new Promise(resolve => { manager.onLoad = resolve; manager.onError = () => {}; });
@@ -89,7 +96,7 @@ export async function loadAssetModel(model) {
   // ImageBitmapLoader decodes off the main thread; normal maps are halved to 2048 px on decode.
   const plain = new THREE.ImageBitmapLoader(manager).setOptions({ imageOrientation: 'flipY', premultiplyAlpha: 'none' });
   const halved = new THREE.ImageBitmapLoader(manager).setOptions({ imageOrientation: 'flipY', premultiplyAlpha: 'none', resizeWidth: 2048, resizeHeight: 2048, resizeQuality: 'high' });
-  const loaded = buildAC(data, {
+  const opts = {
     normalMaps: a.normalMaps,
     loadTexture: file => {
       pending++;
@@ -102,7 +109,8 @@ export async function loadAssetModel(model) {
       t.anisotropy = 8;
       return t;
     },
-  });
+  };
+  const loaded = datas.map((d, i) => ({ group: buildAC(d, opts), fallback: files[i].fallback }));
   if (pending) await done;
   return assembleParts(loaded, model);
 }

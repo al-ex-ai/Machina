@@ -7,9 +7,9 @@
 
 ## Files used
 
-`c172-common.ac` (exterior model) and its textures and normal maps:
+`c172-common.ac` (exterior model), `Models/Interior/Panel/c172sp-panel/c172sp-interior.ac` (seats, cabin and instrument panel), and their textures and normal maps:
 `fuselage`, `wing`, `tail`, `glass-alpha`, `interior`, `panel_parts`, `lights`, `prop`, `panel`,
-and the `-normal` maps for fuselage, wing, tail and panel parts.
+the `-normal` maps for fuselage, wing, tail and panel parts, and `interior-fg1000`, `panel-fg1000`, `panelglass`.
 
 ## Changes
 

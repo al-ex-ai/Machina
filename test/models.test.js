@@ -45,19 +45,18 @@ for (const m of models) {
 
 // Detailed assets: parse in Node and check size against the specs, using the
 // model's own documented tolerance where the asset is known to differ.
-import { readFileSync, existsSync } from 'node:fs';
+import { existsSync } from 'node:fs';
 import { join } from 'node:path';
-import { parseAC } from '../src/loaders/ac3d.js';
-import { assembleParts, hideRules } from '../src/assets.js';
-import { finalize } from '../src/registry.js';
+import { loadAssetNode } from '../src/assets-node.js';
 
 for (const m of models.filter(x => x.asset)) {
   test(`${m.id}: detailed asset is licensed, credited and within its stated tolerance`, () => {
     const a = m.asset;
-    for (const k of ['path', 'file', 'license', 'author', 'source']) assert.ok(a[k], `asset missing "${k}"`);
+    for (const k of ['path', 'license', 'author', 'source']) assert.ok(a[k], `asset missing "${k}"`);
+    assert.ok(a.file || a.files?.length, 'asset needs file or files');
     assert.ok(existsSync(join(a.path, 'LICENSE')), 'asset folder needs a LICENSE file');
     assert.ok(existsSync(join(a.path, 'CREDITS.md')), 'asset folder needs a CREDITS.md file');
-    const obj = finalize(assembleParts(parseAC(readFileSync(join(a.path, a.file), 'utf8'), { hide: hideRules(m) }), m), m);
+    const obj = loadAssetNode(m);
     const ids = [];
     obj.traverse(o => { if (o.userData.part) ids.push(o.userData.id); });
     assert.ok(ids.length >= 10, `only ${ids.length} parts mapped`);
