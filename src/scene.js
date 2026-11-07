@@ -9,7 +9,7 @@ const HOVER = new THREE.Color('#ffb27a');
  * A soft studio environment for reflections: a sky-to-floor gradient dome with a
  * few bright softbox panels, prefiltered once with PMREM.
  */
-function studioEnvironment(renderer) {
+export function studioEnvironment(renderer) {
   const env = new THREE.Scene();
   const dome = new THREE.SphereGeometry(50, 48, 24);
   const colors = [];
@@ -64,7 +64,7 @@ export function createViewer(container) {
   sun.shadow.bias = -0.0004;
   scene.add(sun, sun.target);
 
-  const ground = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), new THREE.ShadowMaterial({ opacity: 0.18 }));
+  const ground = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), new THREE.ShadowMaterial({ opacity: 0.3 }));
   ground.rotation.x = -Math.PI / 2;
   ground.receiveShadow = true;
   scene.add(ground);
@@ -89,6 +89,7 @@ export function createViewer(container) {
   let selected = null;
   let hovered = null;
   let explodeAmount = 0;
+  let dark = document.documentElement.dataset.theme !== 'light';
   const listeners = { select: [], hover: [] };
 
   const raycaster = new THREE.Raycaster();
@@ -191,7 +192,7 @@ export function createViewer(container) {
     ground.scale.set(span, span, 1);
     if (grid) scene.remove(grid);
     const step = span > 300 ? 10 : span > 60 ? 5 : 1;
-    grid = new THREE.GridHelper(span, Math.round(span / step), '#c3cbd4', '#dde3e9');
+    grid = new THREE.GridHelper(span, Math.round(span / step), dark ? '#2b3a4b' : '#c3cbd4', dark ? '#18212c' : '#dde3e9');
     grid.material.transparent = true;
     grid.material.opacity = 0.55;
     grid.position.y = 0.001;
@@ -236,6 +237,16 @@ export function createViewer(container) {
     select: id => select(parts.find(p => p.userData.id === id) ?? null),
     setExplode(v) { explodeAmount = v; if (model) applyExplode(); },
     setPerson(v) { person.visible = v; },
+    setTheme(isDark) {
+      dark = isDark;
+      ground.material.opacity = isDark ? 0.45 : 0.2;
+      if (model) frame();
+    },
+    setHover(id) {
+      hovered = parts.find(p => p.userData.id === id) ?? null;
+      refreshPaint();
+    },
+    selectedId: () => selected?.userData.id ?? null,
     resetView() { if (model) frame(); },
     partSize(id) {
       const p = parts.find(q => q.userData.id === id);

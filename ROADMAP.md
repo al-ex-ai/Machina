@@ -9,13 +9,17 @@ One milestone per week. Each milestone ends with everything committed, `npm test
 - Four airliners measuring within 0.5% of published specs
 - Painted fuselages, detailed engines, studio lighting
 
-## M1. Original app design
+## M1. Original app design (in progress)
 
-- Own visual identity: name mark, color system, typography, light and dark themes
-- Home screen: category cards and a model gallery with rendered thumbnails
-- Model page: large viewer, spec sheet, part tree, clean toolbar
-- Responsive layout down to phone width, keyboard navigation
-- Military models added so both categories are live: F-16, UH-60, Leopard 2A6, M1A2
+- [x] Own visual identity: "Hangar" design system, blueprint grid, mono data readouts, light and dark themes
+- [x] Home screen: hero with live stats, category cards, model gallery with rendered thumbnails, search
+- [x] Category pages with grouped galleries
+- [x] Model page: part tree, viewer with heads-up readout and tool dock, spec sheet, breadcrumbs, previous and next
+- [x] Keyboard: Esc deselects, E explodes, P person, R reset
+- [x] Military models live: F-16C, UH-60M, Leopard 2A6, M1A2, plus the Cessna 172S
+- [x] Spec-match test in `npm test`: every model within 2% of its published length, width and height
+- [ ] Phone-width pass and accessibility check
+- [ ] Light theme review
 
 ## M2. Realism, round two
 

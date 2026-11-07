@@ -1,5 +1,5 @@
 // Build models in Node and print their measured size next to the published specs.
-// Usage: node --import ./test/register.js scripts/measure.js [model.json ...]
+// Usage: npm run measure [model.json ...]
 import * as THREE from 'three';
 import { readFileSync } from 'node:fs';
 import '../src/builders/index.js';

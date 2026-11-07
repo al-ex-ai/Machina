@@ -11,7 +11,8 @@
   },
   "scripts": {
     "start": "node server.js",
-    "test": "node --import ./test/register.js --test"
+    "test": "node --import ./scripts/node/register.js --test",
+    "measure": "node --import ./scripts/node/register.js scripts/measure.js"
   },
   "keywords": [
     "threejs",

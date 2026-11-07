@@ -1,40 +1,28 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Machina</title>
   <meta name="description" content="Data-driven 3D models of aircraft and vehicles, built from real specs, with every part selectable.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M1 9l14-5-5 9-2-3z' fill='%23ff8a3d'/%3E%3C/svg%3E">
+  <script>try { const t = localStorage.getItem('machina-theme'); if (t) document.documentElement.dataset.theme = t; } catch {}</script>
   <link rel="stylesheet" href="./src/style.css">
   <script type="importmap">
     { "imports": { "three": "./vendor/three/three.module.js", "three/addons/": "./vendor/three/" } }
   </script>
 </head>
 <body>
-  <div class="app">
-    <header class="top">
-      <div class="brand"><span class="mark" aria-hidden="true"></span>Machina</div>
-      <nav class="tabs" id="tabs" aria-label="Categories"></nav>
-    </header>
-
-    <aside class="catalog">
-      <input class="search" id="search" type="search" placeholder="Search models" aria-label="Search models">
-      <div id="list"></div>
-    </aside>
-
-    <main class="stage">
-      <div class="canvas" id="canvas"></div>
-      <div class="tip" id="tip" hidden></div>
-      <div class="toolbar">
-        <label class="ctl">Explode <input id="explode" type="range" min="0" max="1" step="0.01" value="0"></label>
-        <label class="ctl"><input id="person" type="checkbox"> Person for scale</label>
-        <button class="btn" id="reset" type="button">Reset view</button>
-      </div>
-    </main>
-
-    <aside class="panel" id="panel"></aside>
-  </div>
+  <header class="topbar">
+    <a class="brand" href="#/"><span class="brand-mark"><span></span></span>Machina</a>
+    <nav class="nav" id="nav" aria-label="Main"></nav>
+    <div class="topbar-end">
+      <button class="icon-btn" id="theme" type="button" aria-label="Toggle light and dark theme" title="Theme"></button>
+    </div>
+  </header>
+  <main id="page"></main>
+  <!-- The 3D viewer lives here and is moved into the model page when needed. -->
+  <div id="viewer-park" hidden><div class="stage-host" id="stage-host"></div></div>
   <script type="module" src="./src/app.js"></script>
 </body>
 </html>
