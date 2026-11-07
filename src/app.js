@@ -229,6 +229,7 @@ function renderModel(id, partId) {
     const i = list.indexOf(m);
     const prev = list[(i - 1 + list.length) % list.length];
     const next = list[(i + 1) % list.length];
+    parkViewer(); // keep the canvas alive while the page is rebuilt
     $('#page').innerHTML = `
       <div class="model-page">
         <aside class="rail">
