@@ -27,7 +27,11 @@ export function listBuilders() {
 export function buildModel(model) {
   const entry = builders.get(model.builder);
   if (!entry) throw new Error(`No builder registered for "${model.builder}"`);
-  const inner = entry.build(model);
+  return finalize(entry.build(model), model);
+}
+
+/** Center a built object on x and z and put its lowest point at y = 0. */
+export function finalize(inner, model) {
   const box = new THREE.Box3().setFromObject(inner);
   const center = box.getCenter(new THREE.Vector3());
   inner.position.set(-center.x, -box.min.y, -center.z);

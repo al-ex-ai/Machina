@@ -1,6 +1,7 @@
 // Machina app: hash router with home, category and model pages.
 import './builders/index.js';
-import { buildModel } from './registry.js';
+import { buildModel, finalize } from './registry.js';
+import { loadAssetModel } from './assets.js';
 import { createViewer } from './scene.js';
 import { SYSTEMS } from './parts/common.js';
 import { thumbnail } from './thumbs.js';
@@ -41,7 +42,7 @@ const widthOf = m => m.specs.wingspan_m ?? m.specs.rotor_diameter_m ?? m.specs.w
 const widthLabel = m => (m.specs.wingspan_m ? 'span' : m.specs.rotor_diameter_m ? 'rotor' : 'width');
 const code = m => m.id.toUpperCase();
 
-const state = { categories: [], models: [], part: null, model: null };
+const state = { categories: [], models: [], part: null, model: null, detail: true, loadToken: 0 };
 let viewer = null;
 
 // ── Theme ──────────────────────────────────────────────
@@ -239,9 +240,11 @@ function renderModel(id, partId) {
             </div>
           </div>
           <div class="tip" id="tip" hidden></div>
+          <div class="loading" id="loading" hidden><span class="spinner"></span><span class="label">Loading detailed model</span></div>
           <div class="dock" role="toolbar" aria-label="Viewer tools">
             <label class="tool" title="Pull parts apart (E)">Explode <input id="explode" type="range" min="0" max="1" step="0.01" value="0"></label>
             <span class="sep"></span>
+            ${m.asset ? `<button class="tool" id="detail" type="button" aria-pressed="${state.detail}" title="Switch between the detailed model and the generated blueprint (D)">Detailed <kbd>D</kbd></button>` : ''}
             <button class="tool" id="person" type="button" aria-pressed="false" title="Show a 1.8 m person (P)">Person <kbd>P</kbd></button>
             <button class="tool" id="reset" type="button" title="Reset the camera (R)">Reset <kbd>R</kbd></button>
           </div>
@@ -250,8 +253,11 @@ function renderModel(id, partId) {
       </div>`;
     $('#stage').prepend($('#stage-host'));
     const v = ensureViewer();
-    v.setModel(buildModel(m));
-    v.setExplode(0);
+    $('#detail')?.addEventListener('click', e => {
+      state.detail = e.currentTarget.getAttribute('aria-pressed') !== 'true';
+      e.currentTarget.setAttribute('aria-pressed', String(state.detail));
+      showModel(m, state.part);
+    });
     $('#explode').addEventListener('input', e => v.setExplode(Number(e.target.value)));
     $('#person').addEventListener('click', e => {
       const on = e.currentTarget.getAttribute('aria-pressed') !== 'true';
@@ -259,10 +265,32 @@ function renderModel(id, partId) {
       v.setPerson(on);
     });
     $('#reset').addEventListener('click', () => v.resetView());
-    renderTree();
+    showModel(m, partId);
+    return;
   }
   viewer.select(partId ?? null);
   if (!partId) renderSheet();
+}
+
+/** Put the detailed asset (when there is one and it is enabled) or the generated model on stage. */
+function showModel(m, partId) {
+  const token = ++state.loadToken;
+  const done = obj => {
+    if (token !== state.loadToken) return;
+    state.shownDetailed = Boolean(obj.userData.detailed);
+    viewer.setModel(obj);
+    viewer.setExplode(Number($('#explode')?.value ?? 0));
+    $('#loading').hidden = true;
+    renderTree();
+    viewer.select(partId ?? null);
+    if (!partId) renderSheet();
+  };
+  if (m.asset && state.detail) {
+    $('#loading').hidden = false;
+    loadAssetModel(m)
+      .then(o => { const f = finalize(o, m); f.userData.detailed = true; done(f); })
+      .catch(err => { console.error(err); done(buildModel(m)); });
+  } else done(buildModel(m));
 }
 
 function groupedParts() {
@@ -271,7 +299,8 @@ function groupedParts() {
     if (!by.has(p.system)) by.set(p.system, []);
     by.get(p.system).push(p);
   }
-  return by;
+  const order = Object.keys(SYSTEMS);
+  return new Map([...by].sort(([a], [b]) => order.indexOf(a) - order.indexOf(b)));
 }
 
 function renderTree() {
@@ -299,6 +328,19 @@ function specRows(m) {
   }).join('');
 }
 
+/** Compare the size on stage with the published specs and say so plainly. */
+function sizeBadge(m) {
+  const size = viewer?.modelSize();
+  if (!size) return '';
+  const want = { length: m.specs.length_m, [widthLabel(m) === 'span' ? 'span' : widthLabel(m)]: widthOf(m), height: m.specs.height_m };
+  const got = [size.x, size.z, size.y];
+  const off = Object.entries(want).map(([k, w], i) => [k, (got[i] - w) / w]).filter(([, e]) => Math.abs(e) > 0.02);
+  const measured = `Measured ${size.x.toFixed(2)} × ${size.z.toFixed(2)} × ${size.y.toFixed(2)} m`;
+  if (!off.length) return `<span class="verified" title="${measured}">● Size matches published specs</span>`;
+  const txt = off.map(([k, e]) => `${k} ${Math.abs(e * 100).toFixed(0)}% ${e > 0 ? 'over' : 'under'}`).join(', ');
+  return `<span class="verified warn" title="${measured}">● Differs from published specs: ${txt}</span>`;
+}
+
 function renderSheet() {
   const m = state.model;
   const sheet = $('#sheet');
@@ -324,9 +366,16 @@ function renderSheet() {
     <span class="label">${esc(m.group)} · ${esc(code(m))}</span>
     <h1>${esc(m.name)}</h1>
     <p class="sub">${esc(m.summary)}</p>
-    <span class="verified" title="Built size checked against the published length, span and height">● Size matches published specs</span>
+    ${sizeBadge(m)}
     <h2 class="label">Specifications</h2>
     <dl class="specs">${specRows(m)}</dl>
+    ${m.asset && state.shownDetailed ? `<h2 class="label">3D model</h2>
+    <dl class="specs">
+      <div><dt>Author</dt><dd>${esc(m.asset.author)}</dd></div>
+      <div><dt>License</dt><dd>${esc(m.asset.license)}</dd></div>
+      <div><dt>Source</dt><dd><a href="${esc(m.asset.source)}" target="_blank" rel="noopener noreferrer">${esc(m.asset.source.replace(/^https?:\/\//, ''))}</a></dd></div>
+    </dl>
+    ${m.asset.verify?.note ? `<p class="note">${esc(m.asset.verify.note)}</p>` : ''}` : ''}
     <h2 class="label">Sources</h2>
     <div class="sources">${(m.sources ?? []).map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.label)} ↗</a>`).join('')}</div>
     <p class="note">Overall dimensions follow the published specs. Shapes are simplified and part details are approximate.</p>`;
@@ -356,6 +405,7 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape') viewer?.select(null);
   else if (e.key === 'r' || e.key === 'R') viewer?.resetView();
   else if (e.key === 'p' || e.key === 'P') $('#person')?.click();
+  else if (e.key === 'd' || e.key === 'D') $('#detail')?.click();
   else if (e.key === 'e' || e.key === 'E') {
     const s = $('#explode');
     s.value = Number(s.value) > 0 ? 0 : 0.6;
@@ -377,7 +427,7 @@ async function boot() {
   for (const m of state.models) {
     let n = 0;
     const g = buildModel(m);
-    g.traverse(o => { if (o.userData.part) n++; if (o.isMesh) { o.geometry.dispose(); o.material.map?.dispose(); o.material.dispose(); } });
+    g.traverse(o => { if (o.userData.part) n++; if (o.isMesh) { o.geometry.dispose(); for (const mt of [o.material].flat()) { mt.map?.dispose(); mt.dispose(); } } });
     m._parts = n;
   }
   render();

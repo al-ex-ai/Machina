@@ -18,6 +18,10 @@ const FINISH = {
   armament: { roughness: 0.45, metalness: 0.55, clearcoat: 0 },
   mobility: { roughness: 0.8, metalness: 0.2, clearcoat: 0 },
   sensors: { roughness: 0.25, metalness: 0.4, clearcoat: 0.5 },
+  controls: { roughness: 0.42, metalness: 0.1, clearcoat: 0.4 },
+  lights: { roughness: 0.2, metalness: 0.3, clearcoat: 0.8 },
+  avionics: { roughness: 0.4, metalness: 0.5, clearcoat: 0.2 },
+  interior: { roughness: 0.7, metalness: 0.05, clearcoat: 0 },
 };
 
 /** Build a material for a system, with optional overrides. */
@@ -38,6 +42,7 @@ export function systemMaterial(system, livery = {}, opts = {}) {
 export const SYSTEMS = {
   structure: { label: 'Structure', color: '#d9dde3' },
   surfaces: { label: 'Flight surfaces', color: '#c3cad3' },
+  controls: { label: 'Control surfaces', color: '#9fb4c8' },
   propulsion: { label: 'Propulsion', color: '#55606e' },
   gear: { label: 'Landing gear', color: '#3a3f47' },
   glazing: { label: 'Glazing', color: '#4d6f91' },
@@ -45,6 +50,9 @@ export const SYSTEMS = {
   armament: { label: 'Armament', color: '#5f6452' },
   mobility: { label: 'Running gear', color: '#2d3034' },
   sensors: { label: 'Sensors', color: '#7a8594' },
+  lights: { label: 'Lights', color: '#e8c15a' },
+  avionics: { label: 'Antennas and probes', color: '#8f86c9' },
+  interior: { label: 'Cabin interior', color: '#a08a72' },
 };
 
 /**

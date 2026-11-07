@@ -1,6 +1,29 @@
 // Renderer, camera, lighting, selection and exploded view.
 import * as THREE from 'three';
-import { OrbitControls } from 'three/addons/OrbitControls.js';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { RGBELoader } from 'three/addons/loaders/RGBELoader.js';
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+import { GTAOPass } from 'three/addons/postprocessing/GTAOPass.js';
+import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
+
+const HDRI = './assets/hdri/studio_small_08.hdr'; // Poly Haven, CC0
+
+/** Vertical gradient used as the scene backdrop, matched to the UI theme. */
+function backdrop(dark) {
+  const c = document.createElement('canvas');
+  c.width = 2; c.height = 256;
+  const g = c.getContext('2d');
+  const grad = g.createLinearGradient(0, 0, 0, 256);
+  grad.addColorStop(0, dark ? '#18202b' : '#fbfcfd');
+  grad.addColorStop(0.62, dark ? '#0d1218' : '#e9edf1');
+  grad.addColorStop(1, dark ? '#06080b' : '#d6dde4');
+  g.fillStyle = grad;
+  g.fillRect(0, 0, 2, 256);
+  const t = new THREE.CanvasTexture(c);
+  t.colorSpace = THREE.SRGBColorSpace;
+  return t;
+}
 
 const HIGHLIGHT = new THREE.Color('#ff8a3d');
 const HOVER = new THREE.Color('#ffb27a');
@@ -40,7 +63,7 @@ export function studioEnvironment(renderer) {
 }
 
 export function createViewer(container) {
-  const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+  const renderer = new THREE.WebGLRenderer({ antialias: true });
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
   renderer.shadowMap.enabled = true;
   renderer.shadowMap.type = THREE.PCFSoftShadowMap;
@@ -51,7 +74,21 @@ export function createViewer(container) {
 
   const scene = new THREE.Scene();
   scene.environment = studioEnvironment(renderer);
+  scene.background = backdrop(document.documentElement.dataset.theme !== 'light');
+  new RGBELoader().load(HDRI, hdr => {
+    const pmrem = new THREE.PMREMGenerator(renderer);
+    scene.environment = pmrem.fromEquirectangular(hdr).texture;
+    scene.environmentIntensity = 0.9;
+    hdr.dispose();
+    pmrem.dispose();
+  });
   const camera = new THREE.PerspectiveCamera(40, 1, 0.1, 5000);
+  const composer = new EffectComposer(renderer);
+  composer.addPass(new RenderPass(scene, camera));
+  const gtao = new GTAOPass(scene, camera, 1, 1);
+  gtao.output = GTAOPass.OUTPUT.Default;
+  composer.addPass(gtao);
+  composer.addPass(new OutputPass());
   const controls = new OrbitControls(camera, renderer.domElement);
   controls.enableDamping = true;
   controls.dampingFactor = 0.08;
@@ -99,6 +136,7 @@ export function createViewer(container) {
   function resize() {
     const { clientWidth: w, clientHeight: h } = container;
     renderer.setSize(w, h, false);
+    composer.setSize(w, h);
     camera.aspect = w / Math.max(h, 1);
     camera.updateProjectionMatrix();
   }
@@ -112,7 +150,7 @@ export function createViewer(container) {
 
   function paint(part, color, intensity) {
     part?.traverse(o => {
-      if (o.isMesh) { o.material.emissive.copy(color ?? new THREE.Color(0)); o.material.emissiveIntensity = intensity; }
+      if (o.isMesh) for (const m of [o.material].flat()) { m.emissive?.copy(color ?? new THREE.Color(0)); m.emissiveIntensity = intensity; }
     });
   }
 
@@ -184,6 +222,7 @@ export function createViewer(container) {
     camera.far = dist * 20;
     camera.updateProjectionMatrix();
     controls.target.copy(center);
+    gtao.updateGtaoMaterial({ radius: radius * 0.05, distanceExponent: 1.5, thickness: radius * 0.02, scale: 1 });
     controls.minDistance = radius * 0.4;
     controls.maxDistance = dist * 4;
     controls.update();
@@ -213,7 +252,7 @@ export function createViewer(container) {
   function setModel(group) {
     if (model) {
       scene.remove(model);
-      model.traverse(o => { if (o.isMesh) { o.geometry.dispose(); o.material.dispose(); } });
+      model.traverse(o => { if (o.isMesh) { o.geometry.dispose(); for (const m of [o.material].flat()) m.dispose(); } });
     }
     model = group;
     parts = [];
@@ -227,7 +266,7 @@ export function createViewer(container) {
 
   function loop() {
     controls.update();
-    renderer.render(scene, camera);
+    composer.render();
     requestAnimationFrame(loop);
   }
   loop();
@@ -239,6 +278,7 @@ export function createViewer(container) {
     setPerson(v) { person.visible = v; },
     setTheme(isDark) {
       dark = isDark;
+      scene.background = backdrop(isDark);
       ground.material.opacity = isDark ? 0.45 : 0.2;
       if (model) frame();
     },
@@ -253,6 +293,7 @@ export function createViewer(container) {
       return p ? new THREE.Box3().setFromObject(p).getSize(new THREE.Vector3()) : null;
     },
     listParts: () => parts.map(p => p.userData),
+    modelSize: () => (model ? new THREE.Box3().setFromObject(model).getSize(new THREE.Vector3()) : null),
     on(event, fn) { listeners[event].push(fn); },
   };
 }

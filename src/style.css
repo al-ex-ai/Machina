@@ -228,3 +228,9 @@ button { font: inherit; color: inherit; }
   .dock { left: 8px; right: 8px; transform: none; overflow-x: auto; }
   .readout { display: none; }
 }
+
+.loading { position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; gap: 10px; background: color-mix(in srgb, var(--bg) 55%, transparent); z-index: 3; }
+.loading .spinner { width: 26px; height: 26px; border: 2px solid var(--line-2); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; }
+.specs dd a { color: var(--accent-ink); text-decoration: none; word-break: break-all; }
+.loading[hidden] { display: none; }
+.verified.warn { color: var(--accent-ink); background: var(--accent-soft); }

@@ -10,7 +10,7 @@
     "role": "Light utility aircraft",
     "first_flight": 1955,
     "length_m": 8.28,
-    "wingspan_m": 11.0,
+    "wingspan_m": 11,
     "height_m": 2.72,
     "mtow_kg": 1157,
     "max_speed_kmh": 302,
@@ -19,24 +19,432 @@
     "engine_type": "Lycoming IO-360-L2A, 180 hp",
     "seats": 4
   },
-  "paint": { "stripe": "#b3262e" },
-  "cabin": { "bigWindows": [[1.75, 0.9], [2.75, 0.8]], "doors": [1.7] },
+  "paint": {
+    "stripe": "#b3262e"
+  },
+  "cabin": {
+    "bigWindows": [
+      [
+        1.75,
+        0.9
+      ],
+      [
+        2.75,
+        0.8
+      ]
+    ],
+    "doors": [
+      1.7
+    ]
+  },
   "geometry": {
-    "fuselage": { "length": 7.8, "diameter": 1.2, "height": 1.45, "noseLength": 1.6, "tailLength": 4.2, "tailEndRatio": 0.15, "tailUpsweep": 0.6, "noseBluntness": 0.8 },
+    "fuselage": {
+      "length": 7.8,
+      "diameter": 1.2,
+      "height": 1.45,
+      "noseLength": 1.6,
+      "tailLength": 4.2,
+      "tailEndRatio": 0.15,
+      "tailUpsweep": 0.6,
+      "noseBluntness": 0.8
+    },
     "fairing": false,
-    "wing": { "span": 11.0, "rootChord": 1.63, "tipChord": 1.13, "sweepDeg": 0, "dihedralDeg": 1.7, "x": 2.2, "y": 0.65, "thickness": 0.15 },
-    "htail": { "span": 3.4, "rootChord": 1.4, "tipChord": 0.9, "sweepDeg": 5, "dihedralDeg": 0, "x": 6.55, "y": 0.0 },
-    "vtail": { "height": 1.25, "rootChord": 1.5, "tipChord": 0.7, "sweepDeg": 35, "x": 6.25, "y": 0.2 },
-    "engines": [{ "kind": "propeller", "x": 0, "y": 0, "diameter": 1.93, "blades": 2 }],
-    "gear": { "attachY": -0.6, "height": 0.675, "wheelDiameter": 0.5, "nose": { "x": 0.6, "wheels": 1 }, "main": { "x": 2.9, "track": 2.5, "wheels": 1 } }
+    "wing": {
+      "span": 11,
+      "rootChord": 1.63,
+      "tipChord": 1.13,
+      "sweepDeg": 0,
+      "dihedralDeg": 1.7,
+      "x": 2.2,
+      "y": 0.65,
+      "thickness": 0.15
+    },
+    "htail": {
+      "span": 3.4,
+      "rootChord": 1.4,
+      "tipChord": 0.9,
+      "sweepDeg": 5,
+      "dihedralDeg": 0,
+      "x": 6.55,
+      "y": 0
+    },
+    "vtail": {
+      "height": 1.25,
+      "rootChord": 1.5,
+      "tipChord": 0.7,
+      "sweepDeg": 35,
+      "x": 6.25,
+      "y": 0.2
+    },
+    "engines": [
+      {
+        "kind": "propeller",
+        "x": 0,
+        "y": 0,
+        "diameter": 1.93,
+        "blades": 2
+      }
+    ],
+    "gear": {
+      "attachY": -0.6,
+      "height": 0.675,
+      "wheelDiameter": 0.5,
+      "nose": {
+        "x": 0.6,
+        "wheels": 1
+      },
+      "main": {
+        "x": 2.9,
+        "track": 2.5,
+        "wheels": 1
+      }
+    }
   },
   "parts": {
-    "engines": { "Type": "Fixed-pitch two-blade propeller", "Engine": "Lycoming IO-360, four-cylinder piston" },
-    "wing": { "Layout": "High wing braced by struts", "Flaps": "Single-slotted, up to 30 degrees" },
-    "gear": { "Layout": "Fixed tricycle with spring-steel main legs" }
+    "engines": {
+      "Type": "Fixed-pitch two-blade propeller",
+      "Engine": "Lycoming IO-360, four-cylinder piston"
+    },
+    "wing": {
+      "Layout": "High wing braced by struts",
+      "Flaps": "Single-slotted, up to 30 degrees"
+    },
+    "gear": {
+      "Layout": "Fixed tricycle with spring-steel main legs"
+    },
+    "left-aileron": {
+      "Function": "Rolls the aircraft, moves opposite to the right aileron"
+    },
+    "right-aileron": {
+      "Function": "Rolls the aircraft, moves opposite to the left aileron"
+    },
+    "flaps": {
+      "Type": "Single-slotted",
+      "Travel": "0 to 30 degrees",
+      "Function": "More lift and drag for slow approaches"
+    },
+    "elevators": {
+      "Function": "Pitches the nose up and down"
+    },
+    "rudder": {
+      "Function": "Yaws the aircraft, driven by the pedals"
+    },
+    "propeller": {
+      "Type": "Fixed-pitch, two blades",
+      "Diameter": "about 1.93 m"
+    },
+    "engine-cowling": {
+      "Engine": "Lycoming IO-360-L2A, four-cylinder, 180 hp"
+    },
+    "left-main-gear": {
+      "Type": "Spring-steel leg with disc brake"
+    },
+    "right-main-gear": {
+      "Type": "Spring-steel leg with disc brake"
+    },
+    "nose-gear": {
+      "Type": "Oleo strut, steerable through the rudder pedals"
+    }
   },
   "sources": [
-    { "label": "Textron Aviation Cessna Skyhawk", "url": "https://cessna.txtav.com/en/piston/cessna-skyhawk" },
-    { "label": "Wikipedia: Cessna 172", "url": "https://en.wikipedia.org/wiki/Cessna_172" }
-  ]
+    {
+      "label": "Textron Aviation Cessna Skyhawk",
+      "url": "https://cessna.txtav.com/en/piston/cessna-skyhawk"
+    },
+    {
+      "label": "Wikipedia: Cessna 172",
+      "url": "https://en.wikipedia.org/wiki/Cessna_172"
+    }
+  ],
+  "asset": {
+    "path": "assets/aircraft/c172p",
+    "file": "c172-common.ac",
+    "format": "ac3d",
+    "flipZ": true,
+    "license": "GPL-2.0",
+    "author": "FlightGear c172p team",
+    "source": "https://github.com/c172p-team/c172p",
+    "normalMaps": {
+      "fuselage.png": "fuselage-normal.png",
+      "wing.png": "wing-normal.png",
+      "tail.png": "tail-normal.png",
+      "panel_parts.png": "panel_parts-normal.png"
+    },
+    "hide": [
+      "/HotSpot|Hotspot|hotspot/",
+      "/blocker/",
+      "/.Fast$/",
+      "/^courtesy/",
+      "/^BeaconOff/",
+      "PropellerCowlPlugs",
+      "sun_and_view_blocker"
+    ],
+    "parts": [
+      {
+        "id": "left-wing",
+        "label": "Left wing",
+        "system": "surfaces",
+        "match": [
+          "wing_left",
+          "wing_leading_edge_left",
+          "wing_1Ledge"
+        ]
+      },
+      {
+        "id": "right-wing",
+        "label": "Right wing",
+        "system": "surfaces",
+        "match": [
+          "wing_right",
+          "wing_leading_edge_right",
+          "wing_1Redge"
+        ]
+      },
+      {
+        "id": "wing-center",
+        "label": "Wing center section",
+        "system": "surfaces",
+        "match": [
+          "wing_center",
+          "wing_leading_edge_center",
+          "wing_1C",
+          "wing_0",
+          "fuelcompartment",
+          "wingventhole"
+        ]
+      },
+      {
+        "id": "left-aileron",
+        "label": "Left aileron",
+        "system": "controls",
+        "match": [
+          "leftaileron"
+        ]
+      },
+      {
+        "id": "right-aileron",
+        "label": "Right aileron",
+        "system": "controls",
+        "match": [
+          "rightaileron"
+        ]
+      },
+      {
+        "id": "flaps",
+        "label": "Flaps",
+        "system": "controls",
+        "match": [
+          "flaps"
+        ]
+      },
+      {
+        "id": "horizontal-stabilizer",
+        "label": "Horizontal stabilizer",
+        "system": "surfaces",
+        "match": [
+          "hstab"
+        ]
+      },
+      {
+        "id": "elevators",
+        "label": "Elevators",
+        "system": "controls",
+        "match": [
+          "elevatorleft",
+          "elevatorright"
+        ]
+      },
+      {
+        "id": "elevator-trim",
+        "label": "Elevator trim tab",
+        "system": "controls",
+        "match": [
+          "elevatortrim"
+        ]
+      },
+      {
+        "id": "fin",
+        "label": "Vertical stabilizer",
+        "system": "surfaces",
+        "match": [
+          "vstab.001"
+        ]
+      },
+      {
+        "id": "rudder",
+        "label": "Rudder",
+        "system": "controls",
+        "match": [
+          "rudder_1",
+          "/^ruddercable/"
+        ]
+      },
+      {
+        "id": "propeller",
+        "label": "Propeller and spinner",
+        "system": "propulsion",
+        "match": [
+          "Propeller",
+          "Spinner"
+        ]
+      },
+      {
+        "id": "engine-cowling",
+        "label": "Engine cowling and exhaust",
+        "system": "propulsion",
+        "match": [
+          "fuselage_cowling",
+          "fuselage_cowling_top",
+          "fuselageexhausthole",
+          "Exhaust",
+          "radiator",
+          "radi_box",
+          "oilcompartment",
+          "oilcompartmenthole",
+          "OilCap",
+          "oildoor"
+        ]
+      },
+      {
+        "id": "nose-gear",
+        "label": "Nose gear",
+        "system": "gear",
+        "match": [
+          "NoseWheel",
+          "NoseWheelStrut",
+          "Axle",
+          "TopLink",
+          "BottomLink",
+          "charniere3",
+          "charniere4"
+        ]
+      },
+      {
+        "id": "left-main-gear",
+        "label": "Left main gear",
+        "system": "gear",
+        "match": [
+          "LeftWheel",
+          "LeftWheelBrake",
+          "LeftWheelStrut"
+        ]
+      },
+      {
+        "id": "right-main-gear",
+        "label": "Right main gear",
+        "system": "gear",
+        "match": [
+          "RightWheel",
+          "RightWheelBrake",
+          "RightWheelStrut"
+        ]
+      },
+      {
+        "id": "wheel-fairings",
+        "label": "Wheel fairings",
+        "system": "gear",
+        "match": [
+          "/^fairingd/"
+        ]
+      },
+      {
+        "id": "left-door",
+        "label": "Left door and window",
+        "system": "structure",
+        "match": [
+          "leftdoor",
+          "leftdoorhandle",
+          "leftwindow",
+          "leftwindow_interior",
+          "windowframeleftext"
+        ]
+      },
+      {
+        "id": "right-door",
+        "label": "Right door and window",
+        "system": "structure",
+        "match": [
+          "rightdoor",
+          "rightdoorhandle",
+          "rightwindow",
+          "rightwindow_interior",
+          "windowframerightext"
+        ]
+      },
+      {
+        "id": "baggage-door",
+        "label": "Baggage door",
+        "system": "structure",
+        "match": [
+          "baggagedoorexterior",
+          "baggagedoorhandle"
+        ]
+      },
+      {
+        "id": "windshield",
+        "label": "Windshield and windows",
+        "system": "glazing",
+        "match": [
+          "glas",
+          "/^glas_/"
+        ]
+      },
+      {
+        "id": "lights",
+        "label": "Navigation, landing and beacon lights",
+        "system": "lights",
+        "match": [
+          "LeftNavLight",
+          "RightNavLight",
+          "RearNavLight",
+          "Beacon",
+          "BeaconMount",
+          "landinglight",
+          "landinglightcover",
+          "lightlanding",
+          "lighttaxi",
+          "taxilight"
+        ]
+      },
+      {
+        "id": "antennas",
+        "label": "Antennas and pitot tube",
+        "system": "avionics",
+        "match": [
+          "Antenna_ADF",
+          "Antenna_VOR",
+          "ELTAntenna",
+          "MarkerAntenna",
+          "TransponderAntenna",
+          "VHFAntenna",
+          "PitotTube"
+        ]
+      },
+      {
+        "id": "cabin",
+        "label": "Cabin interior and panel",
+        "system": "interior",
+        "match": [
+          "Panel_0",
+          "Panel_1",
+          "/^SeatMounts/",
+          "gloveboxdoor",
+          "gloveboxlock",
+          "carpethole"
+        ]
+      }
+    ],
+    "fallback": {
+      "id": "fuselage",
+      "label": "Fuselage",
+      "system": "structure"
+    },
+    "verify": {
+      "tolerance": {
+        "height": 0.12,
+        "width": 0.04
+      },
+      "note": "The FlightGear model measures 2.44 m tall and 11.32 m across against the published 2.72 m and 11.0 m."
+    }
+  }
 }

@@ -1,6 +1,7 @@
 // Renders small images of models for the gallery with one shared offscreen renderer.
 import * as THREE from 'three';
-import { buildModel } from './registry.js';
+import { buildModel, finalize } from './registry.js';
+import { loadAssetModel } from './assets.js';
 import { studioEnvironment } from './scene.js';
 
 const W = 640;
@@ -32,10 +33,9 @@ function setup() {
   return { renderer, scene, sun, ground, camera };
 }
 
-function render(model) {
+function render(model, obj) {
   ctx ??= setup();
   const { renderer, scene, sun, ground, camera } = ctx;
-  const obj = buildModel(model);
   scene.add(obj);
   const box = new THREE.Box3().setFromObject(obj);
   const size = box.getSize(new THREE.Vector3());
@@ -58,7 +58,9 @@ function render(model) {
   const url = renderer.domElement.toDataURL('image/png');
   scene.remove(obj);
   obj.traverse(o => {
-    if (o.isMesh) { o.geometry.dispose(); o.material.map?.dispose(); o.material.dispose(); }
+    if (!o.isMesh) return;
+    o.geometry.dispose();
+    for (const m of [o.material].flat()) { m.map?.dispose(); m.normalMap?.dispose(); m.dispose(); }
   });
   return url;
 }
@@ -66,10 +68,12 @@ function render(model) {
 /** Thumbnail data URL for a model, rendered once and cached. Renders run one at a time. */
 export function thumbnail(model) {
   if (cache.has(model.id)) return cache.get(model.id);
-  const p = (queue = queue.then(() => new Promise(resolve => {
-    const run = () => resolve(render(model));
-    (window.requestIdleCallback ?? setTimeout)(run);
-  })));
+  const p = (queue = queue.then(async () => {
+    let obj = null;
+    if (model.asset) obj = await loadAssetModel(model).then(o => finalize(o, model)).catch(() => null);
+    obj ??= buildModel(model);
+    return new Promise(resolve => (window.requestIdleCallback ?? setTimeout)(() => resolve(render(model, obj))));
+  }));
   cache.set(model.id, p);
   return p;
 }
