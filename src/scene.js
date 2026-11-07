@@ -5,23 +5,60 @@ import { OrbitControls } from 'three/addons/OrbitControls.js';
 const HIGHLIGHT = new THREE.Color('#ff8a3d');
 const HOVER = new THREE.Color('#ffb27a');
 
+/**
+ * A soft studio environment for reflections: a sky-to-floor gradient dome with a
+ * few bright softbox panels, prefiltered once with PMREM.
+ */
+function studioEnvironment(renderer) {
+  const env = new THREE.Scene();
+  const dome = new THREE.SphereGeometry(50, 48, 24);
+  const colors = [];
+  const pos = dome.attributes.position;
+  const top = new THREE.Color('#f4f7fb');
+  const horizon = new THREE.Color('#c9d2dc');
+  const floor = new THREE.Color('#6b7480');
+  const c = new THREE.Color();
+  for (let i = 0; i < pos.count; i++) {
+    const t = pos.getY(i) / 50;
+    if (t >= 0) c.copy(horizon).lerp(top, Math.pow(t, 0.6));
+    else c.copy(horizon).lerp(floor, Math.min(1, -t * 2.5));
+    colors.push(c.r, c.g, c.b);
+  }
+  dome.setAttribute('color', new THREE.Float32BufferAttribute(colors, 3));
+  env.add(new THREE.Mesh(dome, new THREE.MeshBasicMaterial({ vertexColors: true, side: THREE.BackSide })));
+  const panel = new THREE.MeshBasicMaterial({ color: new THREE.Color(4, 4, 4) });
+  for (const [x, y, z, w, h] of [[0, 40, 0, 40, 18], [-35, 18, 20, 4, 24], [30, 14, -25, 4, 18]]) {
+    const m = new THREE.Mesh(new THREE.PlaneGeometry(w, h), panel);
+    m.position.set(x, y, z);
+    m.lookAt(0, 0, 0);
+    env.add(m);
+  }
+  const pmrem = new THREE.PMREMGenerator(renderer);
+  const tex = pmrem.fromScene(env, 0.02).texture;
+  pmrem.dispose();
+  return tex;
+}
+
 export function createViewer(container) {
   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
   renderer.shadowMap.enabled = true;
   renderer.shadowMap.type = THREE.PCFSoftShadowMap;
   renderer.outputColorSpace = THREE.SRGBColorSpace;
+  renderer.toneMapping = THREE.ACESFilmicToneMapping;
+  renderer.toneMappingExposure = 1.05;
   container.appendChild(renderer.domElement);
 
   const scene = new THREE.Scene();
+  scene.environment = studioEnvironment(renderer);
   const camera = new THREE.PerspectiveCamera(40, 1, 0.1, 5000);
   const controls = new OrbitControls(camera, renderer.domElement);
   controls.enableDamping = true;
   controls.dampingFactor = 0.08;
   controls.maxPolarAngle = Math.PI * 0.495;
 
-  scene.add(new THREE.HemisphereLight('#ffffff', '#b9c2cc', 1.1));
-  const sun = new THREE.DirectionalLight('#ffffff', 1.6);
+  scene.add(new THREE.HemisphereLight('#ffffff', '#b9c2cc', 0.35));
+  const sun = new THREE.DirectionalLight('#fff6ea', 2.2);
   sun.castShadow = true;
   sun.shadow.mapSize.set(2048, 2048);
   sun.shadow.bias = -0.0004;
@@ -138,7 +175,7 @@ export function createViewer(container) {
     const size = box.getSize(new THREE.Vector3());
     const radius = size.length() / 2;
     const center = box.getCenter(new THREE.Vector3());
-    const dist = radius / Math.sin((camera.fov * Math.PI) / 360) * 0.95;
+    const dist = radius / Math.sin((camera.fov * Math.PI) / 360) * 0.78;
     camera.position.set(center.x - dist * 0.62, center.y + dist * 0.42, center.z + dist * 0.66);
     camera.near = radius / 100;
     camera.far = dist * 20;
