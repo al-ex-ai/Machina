@@ -15,9 +15,9 @@ function backdrop(dark) {
   c.width = 2; c.height = 256;
   const g = c.getContext('2d');
   const grad = g.createLinearGradient(0, 0, 0, 256);
-  grad.addColorStop(0, dark ? '#18202b' : '#fbfcfd');
-  grad.addColorStop(0.62, dark ? '#0d1218' : '#e9edf1');
-  grad.addColorStop(1, dark ? '#06080b' : '#d6dde4');
+  grad.addColorStop(0, dark ? '#33414f' : '#ffffff');
+  grad.addColorStop(0.62, dark ? '#212b36' : '#f1f4f7');
+  grad.addColorStop(1, dark ? '#141a21' : '#e2e8ee');
   g.fillStyle = grad;
   g.fillRect(0, 0, 2, 256);
   const t = new THREE.CanvasTexture(c);
@@ -250,7 +250,7 @@ export function createViewer(container) {
     ground.scale.set(span, span, 1);
     if (grid) scene.remove(grid);
     const step = span > 300 ? 10 : span > 60 ? 5 : 1;
-    grid = new THREE.GridHelper(span, Math.round(span / step), dark ? '#2b3a4b' : '#c3cbd4', dark ? '#18212c' : '#dde3e9');
+    grid = new THREE.GridHelper(span, Math.round(span / step), dark ? '#5a7086' : '#aab5c1', dark ? '#3a4a5b' : '#cfd7df');
     grid.material.transparent = true;
     grid.material.opacity = 0.55;
     grid.position.y = 0.001;
@@ -296,7 +296,9 @@ export function createViewer(container) {
       dirty = false;
       fullPending = false;
     } else if (dirty) {
-      renderer.render(scene, camera); // camera moving: fast frame without ambient occlusion
+      gtao.enabled = false; // camera moving: same pipeline, just without ambient occlusion
+      composer.render();
+      gtao.enabled = true;
       dirty = false;
     } else if (fullPending && !moving) {
       composer.render(); // full quality with ambient occlusion
