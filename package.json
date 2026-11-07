@@ -1,0 +1,24 @@
+{
+  "name": "machina",
+  "version": "0.1.0",
+  "description": "Data-driven 3D models of aircraft and vehicles, built from real specs, with every part selectable.",
+  "license": "MIT",
+  "author": "Alex Husniddinov",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "threejs",
+    "3d",
+    "aircraft",
+    "vehicles",
+    "procedural",
+    "visualization"
+  ]
+}
