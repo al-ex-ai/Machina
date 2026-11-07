@@ -171,13 +171,18 @@ export function createViewer(container) {
   const pointer = new THREE.Vector2();
   let down = null;
 
+  // While the viewer is parked off-page it measures 0 x 0. Ignore that size, and
+  // finish any framing that was asked for once the viewer is visible again.
+  let framePending = false;
   function resize() {
     const { clientWidth: w, clientHeight: h } = container;
+    if (!w || !h) return;
     renderer.setSize(w, h, false);
     composer.setSize(w, h);
     invalidate(true);
-    camera.aspect = w / Math.max(h, 1);
+    camera.aspect = w / h;
     camera.updateProjectionMatrix();
+    if (framePending && model) frame();
   }
   new ResizeObserver(resize).observe(container);
   resize();
@@ -251,6 +256,9 @@ export function createViewer(container) {
   }
 
   function frame() {
+    if (!container.clientWidth || !container.clientHeight) { framePending = true; return; }
+    framePending = false;
+    if (container.clientWidth / container.clientHeight !== camera.aspect) resize();
     const box = new THREE.Box3().setFromObject(model);
     const size = box.getSize(new THREE.Vector3());
     const radius = size.length() / 2;
