@@ -6,6 +6,7 @@ import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
 import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
 import { GTAOPass } from 'three/addons/postprocessing/GTAOPass.js';
 import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
+import { makeMannequin } from './parts/mannequin.js';
 
 const HDRI = './assets/hdri/studio_small_08.hdr'; // Poly Haven, CC0
 
@@ -125,17 +126,37 @@ export function createViewer(container) {
   let grid = null;
 
   // Person for scale: 1.8 m tall
-  const person = new THREE.Group();
-  {
-    const mat = new THREE.MeshStandardMaterial({ color: '#2f6fb0', roughness: 0.6 });
-    const body = new THREE.Mesh(new THREE.CapsuleGeometry(0.2, 1.05, 4, 12), mat);
-    body.position.y = 0.2 + 0.525;
-    const head = new THREE.Mesh(new THREE.SphereGeometry(0.13, 16, 12), mat);
-    head.position.y = 1.67;
-    body.castShadow = head.castShadow = true;
-    person.add(body, head);
-    person.visible = false;
-    scene.add(person);
+  const person = makeMannequin();
+  person.visible = false;
+  scene.add(person);
+
+  // X-ray view: translucent fill plus cyan edges; the selected part stays solid.
+  let xray = false;
+  const XRAY_FILL = new THREE.MeshBasicMaterial({ color: '#5ec8ff', transparent: true, opacity: 0.05, depthWrite: false, side: THREE.DoubleSide });
+  const XRAY_EDGE = new THREE.LineBasicMaterial({ color: '#7fd4ff', transparent: true, opacity: 0.45, depthWrite: false });
+  function edgesOf(mesh) {
+    if (!mesh.userData.edges) {
+      const lines = new THREE.LineSegments(new THREE.EdgesGeometry(mesh.geometry, 35), XRAY_EDGE);
+      lines.raycast = () => {};
+      lines.visible = false;
+      mesh.add(lines);
+      mesh.userData.edges = lines;
+    }
+    return mesh.userData.edges;
+  }
+  function applyXray() {
+    for (const p of parts) {
+      p.traverse(o => {
+        if (!o.isMesh) return;
+        o.userData.solid ??= o.material;
+        const solid = !xray || p === selected;
+        o.material = solid ? o.userData.solid : Array.isArray(o.userData.solid) ? o.userData.solid.map(() => XRAY_FILL) : XRAY_FILL;
+        o.castShadow = !xray;
+        if (xray) edgesOf(o).visible = p !== selected;
+        else if (o.userData.edges) o.userData.edges.visible = false;
+      });
+    }
+    renderer.shadowMap.needsUpdate = true;
   }
 
   let model = null;
@@ -207,6 +228,7 @@ export function createViewer(container) {
 
   function select(part) {
     selected = part;
+    if (xray) applyXray();
     refreshPaint();
     listeners.select.forEach(f => f(part ? part.userData : null));
   }
@@ -265,7 +287,9 @@ export function createViewer(container) {
     sc.far = radius * 8;
     sc.updateProjectionMatrix();
 
-    person.position.set(box.min.x - 2.5, 0, box.max.z * 0.4);
+    // Stand the person just ahead of the nose on the camera side, turned toward the viewer.
+    person.position.set(box.min.x + size.x * 0.06, 0, center.z + Math.max(size.z * 0.1, 1.2));
+    person.rotation.y = -2.4;
     renderer.shadowMap.needsUpdate = true;
     invalidate(true);
   }
@@ -280,6 +304,7 @@ export function createViewer(container) {
     model.traverse(o => { if (o.userData?.part) parts.push(o); });
     scene.add(model);
     selected = hovered = null;
+    if (xray) applyXray();
     computeExplode();
     applyExplode();
     frame();
@@ -330,6 +355,7 @@ export function createViewer(container) {
       refreshPaint();
     },
     selectedId: () => selected?.userData.id ?? null,
+    setXray(on) { xray = on; if (model) applyXray(); invalidate(true); },
     resetView() { if (model) frame(); },
     partSize(id) {
       const p = parts.find(q => q.userData.id === id);

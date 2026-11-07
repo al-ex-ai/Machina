@@ -43,7 +43,7 @@ const widthOf = m => m.specs.wingspan_m ?? m.specs.rotor_diameter_m ?? m.specs.w
 const widthLabel = m => (m.specs.wingspan_m ? 'span' : m.specs.rotor_diameter_m ? 'rotor' : 'width');
 const code = m => m.id.toUpperCase();
 
-const state = { categories: [], models: [], part: null, model: null, detail: true, loadToken: 0 };
+const state = { categories: [], models: [], part: null, model: null, xray: false, loadToken: 0 };
 let viewer = null;
 
 // ── Theme ──────────────────────────────────────────────
@@ -67,7 +67,7 @@ function parseRoute() {
   const [path, query = ''] = h.replace(/^#\/?/, '').split('?');
   const seg = path.split('/').filter(Boolean);
   const q = new URLSearchParams(query);
-  if (seg[0] === 'm' && seg[1]) return { name: 'model', id: seg[1], part: q.get('part') };
+  if (seg[0] === 'm' && seg[1]) return { name: 'model', id: seg[1], part: q.get('part'), xray: q.get('xray') === '1', person: q.get('person') === '1' };
   if (seg[0] === 'c' && seg[1]) return { name: 'category', id: seg[1] };
   return { name: 'home' };
 }
@@ -83,7 +83,11 @@ function navLinks(route) {
 
 function render() {
   const route = parseRoute();
-  if (route.name === 'model') renderModel(route.id, route.part);
+  if (route.name === 'model') {
+    if (route.xray) state.xray = true;
+    renderModel(route.id, route.part);
+    if (route.person) $('#person')?.getAttribute('aria-pressed') !== 'true' && $('#person')?.click();
+  }
   else {
     parkViewer();
     if (route.name === 'category') renderCategory(route.id);
@@ -245,7 +249,7 @@ function renderModel(id, partId) {
           <div class="dock" role="toolbar" aria-label="Viewer tools">
             <label class="tool" title="Pull parts apart (E)">Explode <input id="explode" type="range" min="0" max="1" step="0.01" value="0"></label>
             <span class="sep"></span>
-            ${m.asset ? `<button class="tool" id="detail" type="button" aria-pressed="${state.detail}" title="Switch between the detailed model and the generated blueprint (D)">Detailed <kbd>D</kbd></button>` : ''}
+            <button class="tool" id="xray" type="button" aria-pressed="${state.xray}" title="See through the airframe (X)">X-ray <kbd>X</kbd></button>
             <button class="tool" id="person" type="button" aria-pressed="false" title="Show a 1.8 m person (P)">Person <kbd>P</kbd></button>
             <button class="tool" id="reset" type="button" title="Reset the camera (R)">Reset <kbd>R</kbd></button>
           </div>
@@ -254,10 +258,11 @@ function renderModel(id, partId) {
       </div>`;
     $('#stage').prepend($('#stage-host'));
     const v = ensureViewer();
-    $('#detail')?.addEventListener('click', e => {
-      state.detail = e.currentTarget.getAttribute('aria-pressed') !== 'true';
-      e.currentTarget.setAttribute('aria-pressed', String(state.detail));
-      showModel(m, state.part);
+    v.setXray(state.xray);
+    $('#xray').addEventListener('click', e => {
+      state.xray = e.currentTarget.getAttribute('aria-pressed') !== 'true';
+      e.currentTarget.setAttribute('aria-pressed', String(state.xray));
+      v.setXray(state.xray);
     });
     $('#explode').addEventListener('input', e => v.setExplode(Number(e.target.value)));
     $('#person').addEventListener('click', e => {
@@ -286,7 +291,7 @@ function showModel(m, partId) {
     viewer.select(partId ?? null);
     if (!partId) renderSheet();
   };
-  if (m.asset && state.detail) {
+  if (m.asset) {
     $('#loading').hidden = false;
     loadAssetModel(m)
       .then(o => { const f = finalize(o, m); f.userData.detailed = true; done(f); })
@@ -406,7 +411,7 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape') viewer?.select(null);
   else if (e.key === 'r' || e.key === 'R') viewer?.resetView();
   else if (e.key === 'p' || e.key === 'P') $('#person')?.click();
-  else if (e.key === 'd' || e.key === 'D') $('#detail')?.click();
+  else if (e.key === 'x' || e.key === 'X') $('#xray')?.click();
   else if (e.key === 'e' || e.key === 'E') {
     const s = $('#explode');
     s.value = Number(s.value) > 0 ? 0 : 0.6;
