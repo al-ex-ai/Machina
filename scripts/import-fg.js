@@ -19,7 +19,7 @@ const copy = rel => {
   copyFileSync(from, to);
   total += statSync(from).size;
 };
-for (const lic of ['LICENSE', 'COPYING', 'copying.txt', 'LICENSE.txt']) {
+for (const lic of ['LICENSE', 'LICENSE.md', 'COPYING', 'copying.txt', 'LICENSE.txt']) {
   if (existsSync(join(src, lic))) { mkdirSync(out, { recursive: true }); copyFileSync(join(src, lic), join(out, 'LICENSE')); break; }
 }
 const textures = new Set();

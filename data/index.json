@@ -1,11 +1,11 @@
 {
   "models": [
     "models/aviation/a320neo.json",
-    "models/aviation/b737-800.json",
+    "models/aviation/b737-300.json",
     "models/aviation/b787-8.json",
     "models/aviation/a380-800.json",
     "models/aviation/cessna-172s.json",
-    "models/aviation/b747-8i.json",
+    "models/aviation/b747-400.json",
     "models/aviation/dr400.json",
     "models/aviation/j3-cub.json",
     "models/aviation/ec135.json"

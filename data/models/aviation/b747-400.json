@@ -1,0 +1,349 @@
+{
+  "id": "b747-400",
+  "name": "Boeing 747-400",
+  "category": "aviation",
+  "group": "Airliners",
+  "builder": "asset",
+  "summary": "The best-selling 747: a two-crew glass cockpit, winglets and a stretched upper deck. It carried most of the world’s long-haul traffic for two decades.",
+  "specs": {
+    "manufacturer": "Boeing",
+    "role": "Wide-body airliner",
+    "first_flight": 1988,
+    "length_m": 70.66,
+    "wingspan_m": 64.44,
+    "height_m": 19.41,
+    "mtow_kg": 396890,
+    "range_km": 13450,
+    "cruise_mach": 0.855,
+    "engine_count": 4,
+    "engine_type": "GE CF6-80C2B1F, PW4056 or RR RB211-524G/H",
+    "seats": "416 (typical three-class)"
+  },
+  "asset": {
+    "path": "assets/aircraft/747-400",
+    "license": "GPL-2.0",
+    "author": "Gijs de Rooy and the 747-400 contributors",
+    "source": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/747-400/",
+    "files": [
+      {
+        "file": "Models/747-400_fuselage.ac"
+      },
+      {
+        "file": "Models/747-400_wings.ac",
+        "fallback": {
+          "id": "wing-center",
+          "label": "Wing center section",
+          "system": "surfaces"
+        }
+      },
+      {
+        "file": "Models/747-400_gear.ac",
+        "fallback": {
+          "id": "gear-structure",
+          "label": "Gear struts and fittings",
+          "system": "gear"
+        }
+      },
+      {
+        "file": "Models/GE_CF6-80C2B1F.ac",
+        "offset": {
+          "x": 4.83,
+          "y": -21.23,
+          "z": -1.99
+        },
+        "fallback": {
+          "id": "engine-1",
+          "label": "Engine 1",
+          "system": "propulsion"
+        }
+      },
+      {
+        "file": "Models/GE_CF6-80C2B1F.ac",
+        "offset": {
+          "x": -2.67,
+          "y": -13.46,
+          "z": -2.6
+        },
+        "fallback": {
+          "id": "engine-2",
+          "label": "Engine 2",
+          "system": "propulsion"
+        }
+      },
+      {
+        "file": "Models/GE_CF6-80C2B1F.ac",
+        "offset": {
+          "x": -2.67,
+          "y": 13.46,
+          "z": -2.6
+        },
+        "fallback": {
+          "id": "engine-3",
+          "label": "Engine 3",
+          "system": "propulsion"
+        }
+      },
+      {
+        "file": "Models/GE_CF6-80C2B1F.ac",
+        "offset": {
+          "x": 4.83,
+          "y": 21.23,
+          "z": -1.99
+        },
+        "fallback": {
+          "id": "engine-4",
+          "label": "Engine 4",
+          "system": "propulsion"
+        }
+      }
+    ],
+    "fallback": {
+      "id": "fuselage",
+      "label": "Fuselage",
+      "system": "structure"
+    },
+    "hide": [
+      "/^cockpitshell/",
+      "cockpitdoor",
+      "/^lav\\d/",
+      "/^Mesh11/"
+    ],
+    "parts": [
+      {
+        "id": "left-wing",
+        "label": "Left wing",
+        "system": "surfaces",
+        "match": [
+          "/^wing_left/",
+          "/^LEinbL/"
+        ]
+      },
+      {
+        "id": "right-wing",
+        "label": "Right wing",
+        "system": "surfaces",
+        "match": [
+          "/^wing_right/",
+          "/^LEinbR/"
+        ]
+      },
+      {
+        "id": "winglets",
+        "label": "Winglets",
+        "system": "surfaces",
+        "match": [
+          "winglet_left",
+          "winglet_right"
+        ]
+      },
+      {
+        "id": "left-ailerons",
+        "label": "Left ailerons",
+        "system": "controls",
+        "match": [
+          "/^aileron_left/"
+        ]
+      },
+      {
+        "id": "right-ailerons",
+        "label": "Right ailerons",
+        "system": "controls",
+        "match": [
+          "/^aileron_right/"
+        ]
+      },
+      {
+        "id": "left-flaps",
+        "label": "Left flaps",
+        "system": "controls",
+        "match": [
+          "/^flap_left/"
+        ]
+      },
+      {
+        "id": "right-flaps",
+        "label": "Right flaps",
+        "system": "controls",
+        "match": [
+          "/^flap_right/"
+        ]
+      },
+      {
+        "id": "left-spoilers",
+        "label": "Left spoilers",
+        "system": "controls",
+        "match": [
+          "/^speedbrake_left/"
+        ]
+      },
+      {
+        "id": "right-spoilers",
+        "label": "Right spoilers",
+        "system": "controls",
+        "match": [
+          "/^speedbrake_right/"
+        ]
+      },
+      {
+        "id": "slats",
+        "label": "Leading-edge slats and Krueger flaps",
+        "system": "controls",
+        "match": [
+          "/^slat/",
+          "/^LE(out|ob)/",
+          "/^krueger/i"
+        ]
+      },
+      {
+        "id": "pylons",
+        "label": "Engine pylons",
+        "system": "structure",
+        "match": [
+          "/^eng\\.\\d/"
+        ]
+      },
+      {
+        "id": "horizontal-stabilizer",
+        "label": "Horizontal stabilizer",
+        "system": "surfaces",
+        "match": [
+          "hstab"
+        ]
+      },
+      {
+        "id": "elevators",
+        "label": "Elevators",
+        "system": "controls",
+        "match": [
+          "elevator_left",
+          "elevator_right"
+        ]
+      },
+      {
+        "id": "fin",
+        "label": "Vertical stabilizer",
+        "system": "surfaces",
+        "match": [
+          "vstab"
+        ]
+      },
+      {
+        "id": "rudder",
+        "label": "Rudder",
+        "system": "controls",
+        "match": [
+          "rudder"
+        ]
+      },
+      {
+        "id": "nose-gear",
+        "label": "Nose gear",
+        "system": "gear",
+        "match": [
+          "/^GearNose/",
+          "/^nosewheel/",
+          "/^nlg_/"
+        ]
+      },
+      {
+        "id": "left-body-gear",
+        "label": "Left body gear",
+        "system": "gear",
+        "match": [
+          "/^blg_left/",
+          "blg.lf",
+          "blg.lr"
+        ]
+      },
+      {
+        "id": "right-body-gear",
+        "label": "Right body gear",
+        "system": "gear",
+        "match": [
+          "/^blg_right/",
+          "blg.rf",
+          "blg.rr"
+        ]
+      },
+      {
+        "id": "left-wing-gear",
+        "label": "Left wing gear",
+        "system": "gear",
+        "match": [
+          "/^wlg_left_(main|lower|upper|support|poly)/",
+          "wlg.lf",
+          "wlg.lr"
+        ]
+      },
+      {
+        "id": "right-wing-gear",
+        "label": "Right wing gear",
+        "system": "gear",
+        "match": [
+          "/^wlg_right_(main|lower|upper|support|poly)/",
+          "wlg.rf",
+          "wlg.rr"
+        ]
+      },
+      {
+        "id": "gear-doors",
+        "label": "Gear doors",
+        "system": "gear",
+        "match": [
+          "/door/"
+        ]
+      },
+      {
+        "id": "windows",
+        "label": "Flight deck windows and wipers",
+        "system": "glazing",
+        "match": [
+          "cockpit.windows",
+          "/wiper/i"
+        ]
+      }
+    ],
+    "verify": {
+      "tolerance": {
+        "height": 0.04
+      },
+      "note": "The FlightGear model measures 19.98 m tall against the published 19.41 m."
+    }
+  },
+  "parts": {
+    "engine-1": {
+      "Type": "High-bypass turbofan",
+      "Model": "GE CF6-80C2B1F",
+      "Position": "Left outboard"
+    },
+    "engine-2": {
+      "Type": "High-bypass turbofan",
+      "Model": "GE CF6-80C2B1F",
+      "Position": "Left inboard"
+    },
+    "engine-3": {
+      "Type": "High-bypass turbofan",
+      "Model": "GE CF6-80C2B1F",
+      "Position": "Right inboard"
+    },
+    "engine-4": {
+      "Type": "High-bypass turbofan",
+      "Model": "GE CF6-80C2B1F",
+      "Position": "Right outboard"
+    },
+    "winglets": {
+      "Height": "about 1.8 m",
+      "Note": "New on the -400, canted outward"
+    }
+  },
+  "sources": [
+    {
+      "label": "Boeing 747-400 airport planning",
+      "url": "https://www.boeing.com/commercial/airports/plan_manuals"
+    },
+    {
+      "label": "Wikipedia: Boeing 747-400",
+      "url": "https://en.wikipedia.org/wiki/Boeing_747-400"
+    }
+  ]
+}

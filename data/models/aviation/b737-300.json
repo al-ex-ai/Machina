@@ -1,0 +1,293 @@
+{
+  "id": "b737-300",
+  "name": "Boeing 737-300",
+  "category": "aviation",
+  "group": "Airliners",
+  "builder": "asset",
+  "summary": "The first 737 Classic, re-engined with CFM56 turbofans whose flattened nacelles let the big fans fit under the low wing.",
+  "specs": {
+    "manufacturer": "Boeing",
+    "role": "Narrow-body airliner",
+    "first_flight": 1984,
+    "length_m": 33.4,
+    "wingspan_m": 28.88,
+    "height_m": 11.13,
+    "mtow_kg": 62820,
+    "range_km": 4176,
+    "cruise_mach": 0.745,
+    "engine_count": 2,
+    "engine_type": "CFM International CFM56-3",
+    "seats": "128 to 149"
+  },
+  "asset": {
+    "path": "assets/aircraft/737-300",
+    "license": "GPL-3.0",
+    "author": "FlightGear 737-300 contributors",
+    "source": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/737-300/",
+    "files": [
+      {
+        "file": "Models/737-300.ac"
+      }
+    ],
+    "fallback": {
+      "id": "fuselage",
+      "label": "Fuselage",
+      "system": "structure"
+    },
+    "hide": [
+      "/^Interior/",
+      "interior_0",
+      "Floor",
+      "/^Bulkhead/",
+      "/^halo/i",
+      "removal",
+      "/^Plane\\.0(09X|10X)/"
+    ],
+    "parts": [
+      {
+        "id": "left-wing",
+        "label": "Left wing",
+        "system": "surfaces",
+        "match": [
+          "obwing",
+          "oble",
+          "lowerpanel",
+          "lowerpanel1",
+          "panel1upper",
+          "panelupper",
+          "panelupperob",
+          "panellowerob"
+        ]
+      },
+      {
+        "id": "right-wing",
+        "label": "Right wing",
+        "system": "surfaces",
+        "match": [
+          "/^rh(ob)?wing/",
+          "/^rhoble/",
+          "/^rh(lower|upper)?panel/"
+        ]
+      },
+      {
+        "id": "left-aileron",
+        "label": "Left aileron",
+        "system": "controls",
+        "match": [
+          "lhaileron",
+          "ailerontablh"
+        ]
+      },
+      {
+        "id": "right-aileron",
+        "label": "Right aileron",
+        "system": "controls",
+        "match": [
+          "rhaileron",
+          "ailerontabrh"
+        ]
+      },
+      {
+        "id": "left-flaps",
+        "label": "Left flaps",
+        "system": "controls",
+        "match": [
+          "/^lh(aft|mid|fore)flap/",
+          "/^lhexgate/",
+          "/^flap\\d/"
+        ]
+      },
+      {
+        "id": "right-flaps",
+        "label": "Right flaps",
+        "system": "controls",
+        "match": [
+          "/^rh(aft|mid|fore)flap/",
+          "/^rhexgate/"
+        ]
+      },
+      {
+        "id": "flap-fairings",
+        "label": "Flap track fairings",
+        "system": "surfaces",
+        "match": [
+          "/flapfair/i"
+        ]
+      },
+      {
+        "id": "slats",
+        "label": "Slats and Krueger flaps",
+        "system": "controls",
+        "match": [
+          "/^slat/",
+          "ible",
+          "/^rhible/"
+        ]
+      },
+      {
+        "id": "spoilers",
+        "label": "Spoilers",
+        "system": "controls",
+        "match": [
+          "/^spoiler/"
+        ]
+      },
+      {
+        "id": "horizontal-stabilizer",
+        "label": "Horizontal stabilizer",
+        "system": "surfaces",
+        "match": [
+          "hstab",
+          "hstab.001",
+          "lehstab",
+          "lehstab.001"
+        ]
+      },
+      {
+        "id": "left-elevator",
+        "label": "Left elevator",
+        "system": "controls",
+        "match": [
+          "lhelevator",
+          "lhelevatortab"
+        ]
+      },
+      {
+        "id": "right-elevator",
+        "label": "Right elevator",
+        "system": "controls",
+        "match": [
+          "rhelevator",
+          "rhelevatortab"
+        ]
+      },
+      {
+        "id": "fin",
+        "label": "Vertical stabilizer",
+        "system": "surfaces",
+        "match": [
+          "/^vstab/",
+          "/^fin/"
+        ]
+      },
+      {
+        "id": "rudder",
+        "label": "Rudder",
+        "system": "controls",
+        "match": [
+          "/^rudder/"
+        ]
+      },
+      {
+        "id": "engine",
+        "label": "Engine",
+        "system": "propulsion",
+        "match": [
+          "/^Blades/",
+          "/^Cone/",
+          "/^eng/",
+          "/fan/",
+          "/reverser/",
+          "ductinner",
+          "/pylon/",
+          "/^caseSupports/"
+        ],
+        "split": 2
+      },
+      {
+        "id": "left-main-gear",
+        "label": "Left main gear",
+        "system": "gear",
+        "match": [
+          "/^mglh/",
+          "mgouterstrut",
+          "lhdragstrut",
+          "/^lh(gdmid|mgdouter)/"
+        ]
+      },
+      {
+        "id": "right-main-gear",
+        "label": "Right main gear",
+        "system": "gear",
+        "match": [
+          "/^mgrh/",
+          "rhdragstrut",
+          "/^rh(gdmid|mgdouter)/"
+        ]
+      },
+      {
+        "id": "nose-gear",
+        "label": "Nose gear",
+        "system": "gear",
+        "match": [
+          "/^n(link|lower|outer)/",
+          "noseaxle",
+          "collar",
+          "/steercyl/",
+          "/ngdoor/"
+        ]
+      },
+      {
+        "id": "doors",
+        "label": "Doors",
+        "system": "structure",
+        "match": [
+          "/door/i"
+        ]
+      },
+      {
+        "id": "windows",
+        "label": "Windows",
+        "system": "glazing",
+        "match": [
+          "/^glas/",
+          "eyebrowwindow",
+          "/^lllglas/"
+        ]
+      },
+      {
+        "id": "lights",
+        "label": "Lights",
+        "system": "lights",
+        "match": [
+          "/^navlight/",
+          "/^Llight/",
+          "/beacon/"
+        ]
+      },
+      {
+        "id": "antennas",
+        "label": "Antennas, probes and sensors",
+        "system": "avionics",
+        "match": [
+          "/^ant(lo|up)/",
+          "/^aoa/",
+          "/^pitot/"
+        ]
+      }
+    ],
+    "verify": {
+      "tolerance": {
+        "height": 0.04
+      },
+      "note": "The FlightGear model measures 11.44 m tall against the published 11.13 m."
+    }
+  },
+  "parts": {
+    "engine": {
+      "Type": "High-bypass turbofan",
+      "Model": "CFM56-3",
+      "Note": "Flattened lower nacelle for ground clearance"
+    }
+  },
+  "sources": [
+    {
+      "label": "Boeing 737 airport planning document",
+      "url": "https://www.boeing.com/commercial/airports/plan_manuals"
+    },
+    {
+      "label": "Wikipedia: Boeing 737 Classic",
+      "url": "https://en.wikipedia.org/wiki/Boeing_737_Classic"
+    }
+  ]
+}
