@@ -13,7 +13,7 @@ export function registerBuilder(name, label, build) {
 }
 
 export function hasBuilder(name) {
-  return builders.has(name);
+  return name === 'asset' || builders.has(name);
 }
 
 export function listBuilders() {
@@ -25,6 +25,7 @@ export function listBuilders() {
  * @param {{ builder: string }} model
  */
 export function buildModel(model) {
+  if (model.builder === 'asset') throw new Error(`${model.id} only exists as a detailed asset`);
   const entry = builders.get(model.builder);
   if (!entry) throw new Error(`No builder registered for "${model.builder}"`);
   return finalize(entry.build(model), model);

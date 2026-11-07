@@ -1,4 +1,5 @@
 // Machina app: hash router with home, category and model pages.
+import * as THREE from 'three';
 import './builders/index.js';
 import { buildModel, finalize } from './registry.js';
 import { loadAssetModel } from './assets.js';
@@ -33,7 +34,6 @@ const PLANNED = [
   { id: 'naval', label: 'Naval', description: 'Ships and submarines.' },
   { id: 'space', label: 'Space', description: 'Rockets and spacecraft.' },
   { id: 'automotive', label: 'Automotive', description: 'Cars and trucks.' },
-  { id: 'rotorcraft', label: 'Helicopters', description: 'Civil helicopters.' },
 ];
 
 const $ = sel => document.querySelector(sel);
@@ -130,12 +130,12 @@ function renderHome() {
         <div>
           <span class="label">Data-driven 3D catalog</span>
           <h1>Machines, built from <em>their numbers.</em></h1>
-          <p>Every model here is generated in your browser from published specifications. Nothing is a downloaded mesh. Click any part to see what it is and how big it really is.</p>
+          <p>Real open-source 3D models, grouped into named parts and measured against their published specifications. Click any part to see what it is and how big it really is.</p>
         </div>
         <div class="stats bracket">
           <div class="stat"><b>${state.models.length}</b><span>models</span></div>
           <div class="stat"><b>${partCount || '…'}</b><span>selectable parts</span></div>
-          <div class="stat"><b>0.5%</b><span>max size error vs specs</span></div>
+          <div class="stat"><b>100%</b><span>open licenses, credited</span></div>
         </div>
       </section>
 
@@ -295,7 +295,11 @@ function showModel(m, partId) {
     $('#loading').hidden = false;
     loadAssetModel(m)
       .then(o => { const f = finalize(o, m); f.userData.detailed = true; done(f); })
-      .catch(err => { console.error(err); done(buildModel(m)); });
+      .catch(err => {
+        console.error(err);
+        if (m.builder !== 'asset') return done(buildModel(m));
+        $('#loading').innerHTML = '<span class="label">Could not load this model</span>';
+      });
   } else done(buildModel(m));
 }
 
@@ -432,9 +436,10 @@ async function boot() {
   // Count parts once for the home stats (cheap: builders only make geometry).
   for (const m of state.models) {
     let n = 0;
-    const g = buildModel(m);
+    const g = m.builder === 'asset' ? new THREE.Group() : buildModel(m);
     g.traverse(o => { if (o.userData.part) n++; if (o.isMesh) { o.geometry.dispose(); for (const mt of [o.material].flat()) { mt.map?.dispose(); mt.dispose(); } } });
-    m._parts = n;
+    // Real models: count the parts their mapping produces (rules plus fallbacks).
+    m._parts = m.asset ? new Set([...(m.asset.parts ?? []).map(r => r.id), m.asset.fallback?.id ?? 'airframe', ...(m.asset.files ?? []).map(f => f.fallback?.id).filter(Boolean)]).size : n;
   }
   render();
 }

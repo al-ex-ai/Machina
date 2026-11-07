@@ -1,0 +1,226 @@
+{
+  "id": "dr400",
+  "name": "Robin DR400/180 Régent",
+  "category": "aviation",
+  "group": "Light aircraft",
+  "builder": "asset",
+  "summary": "French four-seat tourer with the cranked \"Jodel\" wing and a sliding bubble canopy, built in wood and fabric.",
+  "specs": {
+    "manufacturer": "Robin Aircraft",
+    "role": "Light touring aircraft",
+    "first_flight": 1972,
+    "length_m": 6.96,
+    "wingspan_m": 8.72,
+    "height_m": 2.23,
+    "mtow_kg": 1100,
+    "max_speed_kmh": 278,
+    "range_km": 1450,
+    "engine_count": 1,
+    "engine_type": "Lycoming O-360, 180 hp",
+    "seats": 4
+  },
+  "asset": {
+    "path": "assets/aircraft/dr400",
+    "license": "GPL-2.0",
+    "author": "Emmanuel Baranger",
+    "source": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/DR400/",
+    "files": [
+      {
+        "file": "Models/dr400.ac"
+      }
+    ],
+    "fallback": {
+      "id": "fuselage",
+      "label": "Fuselage",
+      "system": "structure"
+    },
+    "hide": [
+      "propblur",
+      "propdisc",
+      "/^HDR/"
+    ],
+    "parts": [
+      {
+        "id": "wings",
+        "label": "Wings",
+        "system": "surfaces",
+        "match": [
+          "ailes"
+        ]
+      },
+      {
+        "id": "left-aileron",
+        "label": "Left aileron",
+        "system": "controls",
+        "match": [
+          "aileronG",
+          "tringleaileronG"
+        ]
+      },
+      {
+        "id": "right-aileron",
+        "label": "Right aileron",
+        "system": "controls",
+        "match": [
+          "aileronD",
+          "tringleaileronD"
+        ]
+      },
+      {
+        "id": "left-flap",
+        "label": "Left flap",
+        "system": "controls",
+        "match": [
+          "voletG",
+          "axeflapsG",
+          "commandeflapsG",
+          "tringleG"
+        ]
+      },
+      {
+        "id": "right-flap",
+        "label": "Right flap",
+        "system": "controls",
+        "match": [
+          "voletD",
+          "axeflapsD",
+          "commandeflapsD",
+          "tringleD"
+        ]
+      },
+      {
+        "id": "elevator",
+        "label": "Horizontal tail and elevator",
+        "system": "controls",
+        "match": [
+          "profondeur",
+          "vis_profondeur"
+        ]
+      },
+      {
+        "id": "trim-tab",
+        "label": "Elevator trim tab",
+        "system": "controls",
+        "match": [
+          "trimprof"
+        ]
+      },
+      {
+        "id": "rudder",
+        "label": "Rudder",
+        "system": "controls",
+        "match": [
+          "direction"
+        ]
+      },
+      {
+        "id": "propeller",
+        "label": "Propeller and spinner",
+        "system": "propulsion",
+        "match": [
+          "helice",
+          "bol",
+          "vis-bol"
+        ]
+      },
+      {
+        "id": "exhaust",
+        "label": "Exhaust",
+        "system": "propulsion",
+        "match": [
+          "echappe"
+        ]
+      },
+      {
+        "id": "canopy",
+        "label": "Sliding canopy",
+        "system": "glazing",
+        "match": [
+          "verriere",
+          "verriereAR",
+          "toitverriere",
+          "tourverriere",
+          "ecrous-canopy",
+          "poignees_haut",
+          "poignees_bas"
+        ]
+      },
+      {
+        "id": "nose-gear",
+        "label": "Nose gear",
+        "system": "gear",
+        "match": [
+          "roueA",
+          "axeA",
+          "cacheA",
+          "troucacheA",
+          "/^vis_sabotA/"
+        ]
+      },
+      {
+        "id": "left-main-gear",
+        "label": "Left main gear",
+        "system": "gear",
+        "match": [
+          "roueG",
+          "axeG",
+          "cacheG",
+          "troucacheG",
+          "vis_sabotG"
+        ]
+      },
+      {
+        "id": "right-main-gear",
+        "label": "Right main gear",
+        "system": "gear",
+        "match": [
+          "roueD",
+          "axeD",
+          "cacheD",
+          "troucacheD",
+          "vis_sabotD"
+        ]
+      },
+      {
+        "id": "lights",
+        "label": "Lights",
+        "system": "lights",
+        "match": [
+          "/^lampe/",
+          "strobetrs"
+        ]
+      },
+      {
+        "id": "antennas",
+        "label": "Antennas and pitot tube",
+        "system": "avionics",
+        "match": [
+          "antennes",
+          "sonde_pitot"
+        ]
+      }
+    ]
+  },
+  "parts": {
+    "wings": {
+      "Shape": "Straight center section with dihedral outer panels (Jodel layout)",
+      "Construction": "Wood with fabric covering"
+    },
+    "canopy": {
+      "Type": "One-piece canopy that slides forward"
+    },
+    "propeller": {
+      "Type": "Fixed-pitch, two blades"
+    }
+  },
+  "sources": [
+    {
+      "label": "Robin Aircraft DR400",
+      "url": "https://www.robin-aircraft.com/"
+    },
+    {
+      "label": "Wikipedia: Robin DR400",
+      "url": "https://en.wikipedia.org/wiki/Robin_DR400"
+    }
+  ]
+}

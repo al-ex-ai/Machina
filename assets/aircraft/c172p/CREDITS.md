@@ -13,9 +13,8 @@ the `-normal` maps for fuselage, wing, tail and panel parts, and `interior-fg100
 
 ## Changes
 
-None to the files themselves. Machina reads the model at runtime, hides FlightGear
-interaction hotspots and alternate meshes, mirrors the side axis to match Machina's
-coordinate convention, and groups the named objects into selectable parts.
+Textures larger than 2048 px were downscaled to half size to save memory. Nothing else in the files was changed. Machina reads the model at runtime, hides FlightGear
+interaction hotspots and alternate meshes, and groups the named objects into selectable parts.
 
 These files are distributed under their own license (GPL-2.0), separately from
 Machina's code, which is MIT licensed.

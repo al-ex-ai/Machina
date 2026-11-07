@@ -1,0 +1,276 @@
+{
+  "id": "j3-cub",
+  "name": "Piper J-3 Cub",
+  "category": "aviation",
+  "group": "Light aircraft",
+  "builder": "asset",
+  "summary": "Tandem two-seat tailwheel trainer from 1938, the aircraft that taught a generation to fly. Fabric over a steel-tube frame.",
+  "specs": {
+    "manufacturer": "Piper Aircraft",
+    "role": "Trainer and light utility",
+    "first_flight": 1938,
+    "length_m": 6.83,
+    "wingspan_m": 10.74,
+    "height_m": 2.03,
+    "mtow_kg": 553,
+    "max_speed_kmh": 140,
+    "range_km": 354,
+    "engine_count": 1,
+    "engine_type": "Continental A-65, 65 hp",
+    "seats": 2
+  },
+  "asset": {
+    "path": "assets/aircraft/j3cub",
+    "license": "GPL-3.0",
+    "author": "FlightGear J3Cub contributors",
+    "source": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/J3Cub/",
+    "files": [
+      {
+        "file": "Models/J3Cub.ac"
+      }
+    ],
+    "fallback": {
+      "id": "fuselage",
+      "label": "Fuselage and frame",
+      "system": "structure"
+    },
+    "hide": [
+      "propeller_fast",
+      "propeller_slow",
+      "/HotS/",
+      "/^aerotow/",
+      "solo_placard",
+      "/fg1000/"
+    ],
+    "parts": [
+      {
+        "id": "left-wing",
+        "label": "Left wing",
+        "system": "surfaces",
+        "match": [
+          "wing_l",
+          "wing_l_interior"
+        ]
+      },
+      {
+        "id": "right-wing",
+        "label": "Right wing",
+        "system": "surfaces",
+        "match": [
+          "wing_r",
+          "wing_r_interior"
+        ]
+      },
+      {
+        "id": "spars",
+        "label": "Wing spars",
+        "system": "structure",
+        "match": [
+          "/^spar/"
+        ]
+      },
+      {
+        "id": "left-aileron",
+        "label": "Left aileron",
+        "system": "controls",
+        "match": [
+          "aileron_l",
+          "/^aileron_hinge_\\d_l$/"
+        ]
+      },
+      {
+        "id": "right-aileron",
+        "label": "Right aileron",
+        "system": "controls",
+        "match": [
+          "aileron_r",
+          "/^aileron_hinge_\\d_r$/"
+        ]
+      },
+      {
+        "id": "tailplane",
+        "label": "Horizontal stabilizer",
+        "system": "surfaces",
+        "match": [
+          "tailplane",
+          "tail_struts"
+        ]
+      },
+      {
+        "id": "elevator",
+        "label": "Elevator",
+        "system": "controls",
+        "match": [
+          "elevator",
+          "/^elevator_hinge/"
+        ]
+      },
+      {
+        "id": "rudder",
+        "label": "Rudder",
+        "system": "controls",
+        "match": [
+          "rudder",
+          "/^rudder_hinge/"
+        ]
+      },
+      {
+        "id": "propeller",
+        "label": "Propeller",
+        "system": "propulsion",
+        "match": [
+          "propeller_0",
+          "propeller_1"
+        ]
+      },
+      {
+        "id": "engine",
+        "label": "Engine and cowling",
+        "system": "propulsion",
+        "match": [
+          "/^engine_/",
+          "/^cowl_/",
+          "/^ex_pipe/",
+          "/^exhaust/",
+          "oil_rad",
+          "air_scoop_l",
+          "air_scoop_r",
+          "/^nose/"
+        ]
+      },
+      {
+        "id": "struts",
+        "label": "Wing struts",
+        "system": "structure",
+        "match": [
+          "/^strut_/",
+          "/^roof_strut/"
+        ]
+      },
+      {
+        "id": "tail-wheel",
+        "label": "Tail wheel",
+        "system": "gear",
+        "match": [
+          "/^tail_wheel/",
+          "tail_spring_left",
+          "tail_spring_right"
+        ]
+      },
+      {
+        "id": "windshield",
+        "label": "Windshield",
+        "system": "glazing",
+        "match": [
+          "screen",
+          "screen_interior",
+          "screen_strut_l",
+          "screen_strut_r"
+        ]
+      },
+      {
+        "id": "door",
+        "label": "Door",
+        "system": "structure",
+        "match": [
+          "door",
+          "door_handle",
+          "door_interior"
+        ]
+      },
+      {
+        "id": "seats",
+        "label": "Seats",
+        "system": "interior",
+        "match": [
+          "seat_front",
+          "seat_rear"
+        ]
+      },
+      {
+        "id": "cockpit",
+        "label": "Stick, pedals and panel",
+        "system": "interior",
+        "match": [
+          "/^stick_/",
+          "/^rudderpedal/",
+          "panel",
+          "/^throttle/",
+          "fuel_gauge",
+          "fuel_gauge_cap",
+          "primer",
+          "FuelCutoff",
+          "FuelCutoffBase",
+          "placard",
+          "/^floor_lever/"
+        ]
+      },
+      {
+        "id": "left-main-gear",
+        "label": "Left main gear",
+        "system": "gear",
+        "match": [
+          "tyre_l",
+          "wheel_strut_l",
+          "wheel_strut_link_l",
+          "axle_l",
+          "/^brake_(front|rear|cable)_l$/",
+          "/^suspension_w+_l$/",
+          "cable_wheel_l"
+        ]
+      },
+      {
+        "id": "right-main-gear",
+        "label": "Right main gear",
+        "system": "gear",
+        "match": [
+          "tyre_r",
+          "wheel_strut_r",
+          "wheel_strut_link_r",
+          "axle_r",
+          "/^brake_(front|rear|cable)_r$/",
+          "/^suspension_w+_r$/",
+          "cable_wheel_r"
+        ]
+      },
+      {
+        "id": "windows",
+        "label": "Windows",
+        "system": "glazing",
+        "match": [
+          "/^window_/"
+        ]
+      }
+    ],
+    "restOnTail": {
+      "main": "left-main-gear",
+      "tail": "tail-wheel"
+    },
+    "verify": {
+      "tolerance": {
+        "height": 0.1
+      },
+      "note": "Shown resting on its tailwheel like the real aircraft on the ground. The FlightGear model then measures 2.22 m tall against the published 2.03 m."
+    }
+  },
+  "parts": {
+    "propeller": {
+      "Type": "Fixed-pitch wooden propeller"
+    },
+    "tail-wheel": {
+      "Layout": "Steerable tailwheel on leaf springs"
+    },
+    "right-wing": {
+      "Construction": "Wood spars, aluminium ribs, fabric covering"
+    },
+    "left-wing": {
+      "Construction": "Wood spars, aluminium ribs, fabric covering"
+    }
+  },
+  "sources": [
+    {
+      "label": "Wikipedia: Piper J-3 Cub",
+      "url": "https://en.wikipedia.org/wiki/Piper_J-3_Cub"
+    }
+  ]
+}

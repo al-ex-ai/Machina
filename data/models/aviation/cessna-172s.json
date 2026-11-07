@@ -163,7 +163,6 @@
   "asset": {
     "path": "assets/aircraft/c172p",
     "format": "ac3d",
-    "flipZ": true,
     "license": "GPL-2.0",
     "author": "FlightGear c172p team",
     "source": "https://github.com/c172p-team/c172p",

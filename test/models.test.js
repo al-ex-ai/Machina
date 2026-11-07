@@ -17,7 +17,7 @@ test('model ids are unique', () => {
 
 for (const m of models) {
   test(`${m.id}: required fields`, () => {
-    for (const k of ['id', 'name', 'category', 'group', 'builder', 'summary', 'specs', 'geometry', 'sources']) {
+    for (const k of ['id', 'name', 'category', 'group', 'builder', 'summary', 'specs', 'sources', ...(m.builder === 'asset' ? ['asset'] : ['geometry'])]) {
       assert.ok(m[k] !== undefined, `missing "${k}"`);
     }
     assert.ok(categoryIds.has(m.category), `unknown category "${m.category}"`);
@@ -26,6 +26,7 @@ for (const m of models) {
     assert.ok(m._file.includes(`/${m.category}/`), 'file should live in its category folder');
   });
 
+  if (m.builder === 'asset') continue;
   test(`${m.id}: parts are named and unique`, () => {
     const ids = [];
     buildModel(m).traverse(o => { if (o.userData.part) ids.push(o.userData.id); });
@@ -60,6 +61,11 @@ for (const m of models.filter(x => x.asset)) {
     const ids = [];
     obj.traverse(o => { if (o.userData.part) ids.push(o.userData.id); });
     assert.ok(ids.length >= 10, `only ${ids.length} parts mapped`);
+    obj.traverse(o => {
+      if (!o.userData.part || !/^(left|right)-/.test(o.userData.id)) return;
+      const z = new THREE.Box3().setFromObject(o).getCenter(new THREE.Vector3()).z;
+      assert.ok(o.userData.id.startsWith('left') ? z > 0 : z < 0, `${o.userData.id} is on the wrong side (z ${z.toFixed(2)})`);
+    });
     const size = new THREE.Box3().setFromObject(obj).getSize(new THREE.Vector3());
     const exp = expectedSize(m);
     const tol = a.verify?.tolerance ?? {};

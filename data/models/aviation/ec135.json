@@ -1,0 +1,227 @@
+{
+  "id": "ec135",
+  "name": "Eurocopter EC135 T2+",
+  "category": "aviation",
+  "group": "Helicopters",
+  "builder": "asset",
+  "summary": "Light twin-engine helicopter with a bearingless main rotor and an enclosed \"Fenestron\" tail rotor, widely used for air ambulance and police work.",
+  "specs": {
+    "manufacturer": "Eurocopter, now Airbus Helicopters",
+    "role": "Light utility helicopter",
+    "first_flight": 1994,
+    "length_m": 12.16,
+    "rotor_diameter_m": 10.2,
+    "height_m": 3.51,
+    "mtow_kg": 2910,
+    "max_speed_kmh": 287,
+    "range_km": 635,
+    "engine_count": 2,
+    "engine_type": "Turbomeca Arrius 2B2 or Pratt & Whitney PW206B2",
+    "seats": "1 or 2 pilots plus up to 6"
+  },
+  "asset": {
+    "path": "assets/aircraft/ec135",
+    "license": "GPL-2.0",
+    "author": "Heiko Schulz and contributors",
+    "source": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/ec135/",
+    "files": [
+      {
+        "file": "Models/ec135.ac"
+      },
+      {
+        "file": "Models/rotors/mainrotor.ac",
+        "offset": {
+          "x": 3.023,
+          "y": 0,
+          "z": 1.801
+        },
+        "rotation": {
+          "pitch": -5
+        },
+        "fallback": {
+          "id": "main-rotor",
+          "label": "Main rotor",
+          "system": "rotor"
+        }
+      }
+    ],
+    "fallback": {
+      "id": "fuselage",
+      "label": "Fuselage",
+      "system": "structure"
+    },
+    "hide": [
+      "/^snowboard/",
+      "EmergFloats",
+      "longskid_floats",
+      "highskid",
+      "lowskid",
+      "/^wirecutter_(highskid|skid)$/",
+      "IBF",
+      "BigRadom",
+      "DoubleCargoHook",
+      "/^winch/",
+      "multifunctioncarrier",
+      "sandfilter",
+      "Loudspeaker",
+      "FLIR",
+      "Hellas",
+      "/searchlight/",
+      "/^SLLight/",
+      "/flare|glare/",
+      "rotor_disc_T",
+      "/^blurred/",
+      "/^Plane/",
+      "Cube.001",
+      "triangle",
+      "snowboard",
+      "buckle"
+    ],
+    "parts": [
+      {
+        "id": "left-front-door",
+        "label": "Left front door",
+        "system": "structure",
+        "match": [
+          "frontdoor.L",
+          "frontdoorglas.L",
+          "frontdoorhandle.L"
+        ]
+      },
+      {
+        "id": "right-front-door",
+        "label": "Right front door",
+        "system": "structure",
+        "match": [
+          "frontdoor.R",
+          "frontdoorglas.R",
+          "frontdoorhandle.R"
+        ]
+      },
+      {
+        "id": "left-cabin-door",
+        "label": "Left sliding cabin door",
+        "system": "structure",
+        "match": [
+          "backdoor.L",
+          "backdoorglas.L",
+          "backdoorhandle.L"
+        ]
+      },
+      {
+        "id": "right-cabin-door",
+        "label": "Right sliding cabin door",
+        "system": "structure",
+        "match": [
+          "backdoor.R",
+          "backdoorglas.R",
+          "backdoorhandle.R"
+        ]
+      },
+      {
+        "id": "rear-doors",
+        "label": "Rear clamshell doors",
+        "system": "structure",
+        "match": [
+          "/^reardoor/"
+        ]
+      },
+      {
+        "id": "windscreen",
+        "label": "Windscreen and windows",
+        "system": "glazing",
+        "match": [
+          "windscreen",
+          "windscreen_tri",
+          "glas",
+          "/^rearwin/",
+          "wiper1",
+          "wiperblade"
+        ]
+      },
+      {
+        "id": "engines",
+        "label": "Engines and exhaust",
+        "system": "propulsion",
+        "match": [
+          "engine",
+          "exhaust",
+          "nonIBF"
+        ]
+      },
+      {
+        "id": "tail-rotor",
+        "label": "Fenestron tail rotor",
+        "system": "rotor",
+        "match": [
+          "Tblade"
+        ]
+      },
+      {
+        "id": "skids",
+        "label": "Landing skids",
+        "system": "gear",
+        "match": [
+          "midskid",
+          "standardstep",
+          "roundstep",
+          "wirecutter_midskid"
+        ]
+      },
+      {
+        "id": "lights",
+        "label": "Lights",
+        "system": "lights",
+        "match": [
+          "navlight_left",
+          "navlight_right",
+          "strobes",
+          "frontlight",
+          "frontlight2",
+          "backlight"
+        ]
+      },
+      {
+        "id": "antennas",
+        "label": "Antennas and mirror",
+        "system": "avionics",
+        "match": [
+          "antenna",
+          "smallradom",
+          "mirror",
+          "wirecutter_up",
+          "wirecutter_down"
+        ]
+      }
+    ],
+    "verify": {
+      "tolerance": {
+        "height": 0.17,
+        "length": 0.03
+      },
+      "note": "The rotor head tops out at 3.53 m, matching the published 3.51 m, but the model’s tail fin reaches 4.08 m."
+    }
+  },
+  "parts": {
+    "main-rotor": {
+      "Type": "Bearingless, four composite blades",
+      "Diameter": "10.2 m"
+    },
+    "tail-rotor": {
+      "Type": "Fenestron, ducted fan with unevenly spaced blades to cut noise"
+    },
+    "engines": {
+      "Type": "Two turboshafts with FADEC"
+    }
+  },
+  "sources": [
+    {
+      "label": "Airbus Helicopters H135",
+      "url": "https://www.airbus.com/en/products-services/helicopters/civil-helicopters/h135"
+    },
+    {
+      "label": "Wikipedia: Eurocopter EC135",
+      "url": "https://en.wikipedia.org/wiki/Eurocopter_EC135"
+    }
+  ]
+}

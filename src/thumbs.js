@@ -71,6 +71,7 @@ export function thumbnail(model) {
   const p = (queue = queue.then(async () => {
     let obj = null;
     if (model.asset) obj = await loadAssetModel(model).then(o => finalize(o, model)).catch(() => null);
+    if (!obj && model.builder === 'asset') throw new Error(`no thumbnail for ${model.id}`);
     obj ??= buildModel(model);
     return new Promise(resolve => (window.requestIdleCallback ?? setTimeout)(() => resolve(render(model, obj))));
   }));

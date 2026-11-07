@@ -8,8 +8,8 @@ import { finalize } from './registry.js';
 export function loadAssetNode(model) {
   const a = model.asset;
   const loaded = assetFiles(model).map(f => ({
+    ...f,
     group: parseAC(readFileSync(join(a.path, f.file), 'utf8'), { hide: hideRules(model) }),
-    fallback: f.fallback,
   }));
   return finalize(assembleParts(loaded, model), model);
 }

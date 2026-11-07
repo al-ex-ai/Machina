@@ -234,3 +234,25 @@ button { font: inherit; color: inherit; }
 .specs dd a { color: var(--accent-ink); text-decoration: none; word-break: break-all; }
 .loading[hidden] { display: none; }
 .verified.warn { color: var(--accent-ink); background: var(--accent-soft); }
+
+/* Phone layout */
+@media (max-width: 760px) {
+  .topbar { gap: 10px; }
+  .nav { flex: 1; min-width: 0; overflow-x: auto; scrollbar-width: none; }
+  .nav::-webkit-scrollbar { display: none; }
+  .nav a { white-space: nowrap; padding: 7px 10px; }
+  .topbar-end { flex: none; }
+  .model-page { grid-template-columns: 1fr; grid-template-rows: auto; grid-template-areas: "stage" "sheet" "rail"; height: auto; }
+  .model-page .stage { grid-area: stage; height: 62vh; min-height: 340px; }
+  .model-page .sheet { grid-area: sheet; border-top: 1px solid var(--line); }
+  .model-page .rail { grid-area: rail; max-height: none; border-top: 1px solid var(--line); border-bottom: 0; }
+  .dock { gap: 2px; padding: 4px; bottom: 10px; }
+  .tool { padding: 6px 8px; }
+  .tool kbd { display: none; }
+  .tool input[type="range"] { width: 72px; }
+}
+@media (max-width: 420px) {
+  .brand { letter-spacing: 0.1em; }
+  .brand > :not(.brand-mark) { display: none; }
+  .stats .stat b { font-size: 22px; }
+}

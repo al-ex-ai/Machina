@@ -88,7 +88,8 @@ const pending = new Map();
 
 /** Fetch and parse an AC file in a Web Worker, so the page never freezes. */
 export function parseACInWorker(url, hide = []) {
-  if (typeof Worker === 'undefined') return fetch(url).then(r => r.text()).then(t => parseACData(t, { hide: hide.map(re => ({ source: re.source, flags: re.flags })) }));
+  // "noworker" in the URL parses on the main thread (headless screenshots, debugging).
+  if (typeof Worker === 'undefined' || /noworker/.test(globalThis.location?.href ?? '')) return fetch(url).then(r => r.text()).then(t => parseACData(t, { hide: hide.map(re => ({ source: re.source, flags: re.flags })) }));
   if (!worker) {
     worker = new Worker(new URL('./ac3d-worker.js', import.meta.url), { type: 'module' });
     worker.onmessage = e => {
