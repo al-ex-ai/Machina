@@ -1,0 +1,40 @@
+{
+  "id": "a320neo",
+  "name": "Airbus A320neo",
+  "category": "aviation",
+  "group": "Airliners",
+  "builder": "fixed-wing",
+  "summary": "Narrow-body twinjet and the best-selling member of the A320 family, re-engined with LEAP-1A or PW1100G turbofans.",
+  "specs": {
+    "manufacturer": "Airbus",
+    "role": "Narrow-body airliner",
+    "first_flight": 2014,
+    "length_m": 37.57,
+    "wingspan_m": 35.8,
+    "height_m": 11.76,
+    "mtow_kg": 79000,
+    "range_km": 6300,
+    "cruise_mach": 0.78,
+    "engine_count": 2,
+    "engine_type": "CFM LEAP-1A or Pratt & Whitney PW1100G",
+    "seats": "150 to 180 (typical two-class)"
+  },
+  "geometry": {
+    "fuselage": { "length": 37.57, "diameter": 3.95, "height": 4.14, "noseLength": 5.2, "tailLength": 11, "tailUpsweep": 0.9, "noseBluntness": 0.6 },
+    "wing": { "span": 35.8, "rootChord": 6.1, "tipChord": 1.5, "sweepDeg": 27, "dihedralDeg": 5.1, "x": 13.0, "y": -1.3, "thickness": 0.13 },
+    "winglet": { "height": 2.4, "sweepDeg": 40 },
+    "htail": { "span": 12.45, "rootChord": 3.8, "tipChord": 1.4, "sweepDeg": 32, "dihedralDeg": 6, "x": 31.0, "y": 0.9 },
+    "vtail": { "height": 5.9, "rootChord": 5.9, "tipChord": 2.0, "sweepDeg": 38, "x": 29.5, "y": 1.6 },
+    "engines": [{ "kind": "turbofan", "mirror": true, "x": 11.0, "y": -2.3, "z": 5.75, "length": 4.6, "diameter": 2.37 }],
+    "gear": { "attachY": -1.9, "height": 2.36, "wheelDiameter": 1.14, "nose": { "x": 5.07, "wheels": 2 }, "main": { "x": 17.6, "track": 7.59, "wheels": 2 } }
+  },
+  "parts": {
+    "engines": { "Type": "High-bypass turbofan", "Options": "CFM LEAP-1A or PW1100G-JM", "Fan diameter": "about 2 m" },
+    "wing": { "Winglets": "Sharklets, about 2.4 m tall" },
+    "gear": { "Layout": "Tricycle, twin wheels on each leg", "Main gear track": "7.59 m" }
+  },
+  "sources": [
+    { "label": "Airbus A320neo family", "url": "https://www.airbus.com/en/products-services/commercial-aircraft/passenger-aircraft/a320-family" },
+    { "label": "Wikipedia: Airbus A320neo family", "url": "https://en.wikipedia.org/wiki/Airbus_A320neo_family" }
+  ]
+}
