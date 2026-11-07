@@ -1,0 +1,42 @@
+{
+  "id": "cessna-172s",
+  "name": "Cessna 172S Skyhawk",
+  "category": "aviation",
+  "group": "Light aircraft",
+  "builder": "fixed-wing",
+  "summary": "Four-seat high-wing trainer and tourer, the most produced aircraft in history with more than 44,000 built.",
+  "specs": {
+    "manufacturer": "Cessna (Textron Aviation)",
+    "role": "Light utility aircraft",
+    "first_flight": 1955,
+    "length_m": 8.28,
+    "wingspan_m": 11.0,
+    "height_m": 2.72,
+    "mtow_kg": 1157,
+    "max_speed_kmh": 302,
+    "range_km": 1185,
+    "engine_count": 1,
+    "engine_type": "Lycoming IO-360-L2A, 180 hp",
+    "seats": 4
+  },
+  "paint": { "stripe": "#b3262e" },
+  "cabin": { "bigWindows": [[1.75, 0.9], [2.75, 0.8]], "doors": [1.7] },
+  "geometry": {
+    "fuselage": { "length": 7.8, "diameter": 1.2, "height": 1.45, "noseLength": 1.6, "tailLength": 4.2, "tailEndRatio": 0.15, "tailUpsweep": 0.6, "noseBluntness": 0.8 },
+    "fairing": false,
+    "wing": { "span": 11.0, "rootChord": 1.63, "tipChord": 1.13, "sweepDeg": 0, "dihedralDeg": 1.7, "x": 2.2, "y": 0.65, "thickness": 0.15 },
+    "htail": { "span": 3.4, "rootChord": 1.4, "tipChord": 0.9, "sweepDeg": 5, "dihedralDeg": 0, "x": 6.55, "y": 0.0 },
+    "vtail": { "height": 1.25, "rootChord": 1.5, "tipChord": 0.7, "sweepDeg": 35, "x": 6.25, "y": 0.2 },
+    "engines": [{ "kind": "propeller", "x": 0, "y": 0, "diameter": 1.93, "blades": 2 }],
+    "gear": { "attachY": -0.6, "height": 0.675, "wheelDiameter": 0.5, "nose": { "x": 0.6, "wheels": 1 }, "main": { "x": 2.9, "track": 2.5, "wheels": 1 } }
+  },
+  "parts": {
+    "engines": { "Type": "Fixed-pitch two-blade propeller", "Engine": "Lycoming IO-360, four-cylinder piston" },
+    "wing": { "Layout": "High wing braced by struts", "Flaps": "Single-slotted, up to 30 degrees" },
+    "gear": { "Layout": "Fixed tricycle with spring-steel main legs" }
+  },
+  "sources": [
+    { "label": "Textron Aviation Cessna Skyhawk", "url": "https://cessna.txtav.com/en/piston/cessna-skyhawk" },
+    { "label": "Wikipedia: Cessna 172", "url": "https://en.wikipedia.org/wiki/Cessna_172" }
+  ]
+}

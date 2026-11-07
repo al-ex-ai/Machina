@@ -1,0 +1,41 @@
+{
+  "id": "f-16c",
+  "name": "General Dynamics F-16C Fighting Falcon",
+  "category": "military",
+  "group": "Combat aircraft",
+  "builder": "fixed-wing",
+  "summary": "Single-engine multirole fighter with a frameless bubble canopy, a ventral intake and fly-by-wire controls. More than 4,600 built.",
+  "specs": {
+    "manufacturer": "General Dynamics, now Lockheed Martin",
+    "role": "Multirole fighter",
+    "first_flight": 1974,
+    "length_m": 15.06,
+    "wingspan_m": 9.96,
+    "height_m": 4.88,
+    "mtow_kg": 19187,
+    "max_speed_kmh": 2120,
+    "range_km": 4220,
+    "engine_count": 1,
+    "engine_type": "GE F110-GE-129 or P&W F100-PW-229 afterburning turbofan",
+    "crew": 1
+  },
+  "livery": { "structure": "#8e979f", "surfaces": "#89929a" },
+  "geometry": {
+    "fuselage": { "length": 14.0, "diameter": 1.6, "height": 1.7, "noseLength": 4.0, "tailLength": 2.5, "tailEndRatio": 0.65, "noseBluntness": 0.15 },
+    "canopy": { "x": 2.4, "length": 3.2, "height": 0.6, "width": 0.85, "y": 0.75 },
+    "wing": { "span": 9.96, "rootChord": 5.0, "tipChord": 1.0, "sweepDeg": 40, "dihedralDeg": 0, "x": 6.0, "y": 0, "thickness": 0.04 },
+    "htail": { "span": 5.58, "rootChord": 2.4, "tipChord": 0.9, "sweepDeg": 40, "dihedralDeg": -10, "x": 11.6, "y": -0.2 },
+    "vtail": { "height": 2.45, "rootChord": 3.6, "tipChord": 1.1, "sweepDeg": 47, "x": 10.0, "y": 0.75 },
+    "engines": [{ "kind": "internal", "x": 14.0, "y": 0, "length": 1.06, "diameter": 1.2, "intake": { "x": 4.2, "length": 4.5, "height": 0.75, "width": 1.0, "y": -1.0 } }],
+    "gear": { "attachY": -0.8, "height": 0.9, "wheelDiameter": 0.65, "nose": { "x": 4.6, "wheels": 1 }, "main": { "x": 8.6, "track": 2.36, "wheels": 1 } }
+  },
+  "parts": {
+    "engines": { "Type": "Afterburning turbofan", "Thrust with afterburner": "about 129 kN (F110-GE-129)", "Intake": "Fixed ventral intake under the cockpit" },
+    "canopy": { "Type": "One-piece bubble, no forward frame", "Tint": "Gold coating that reflects radar and heat" },
+    "wing": { "Shape": "Cropped delta blended into the fuselage" }
+  },
+  "sources": [
+    { "label": "Lockheed Martin F-16", "url": "https://www.lockheedmartin.com/en-us/products/f-16.html" },
+    { "label": "Wikipedia: General Dynamics F-16 Fighting Falcon", "url": "https://en.wikipedia.org/wiki/General_Dynamics_F-16_Fighting_Falcon" }
+  ]
+}

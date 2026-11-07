@@ -78,14 +78,22 @@ export function fuselageTexture(f, cabin = {}, colors = {}) {
     g.fillStyle = c.stripe;
     g.fillRect(X(nose * 0.6), sv - Vm(0.12), X(L - nose * 0.6 - tail * 0.4), Vm(0.24));
 
-    // Window rows
+    // Window rows, or a few large panes on light aircraft
     g.fillStyle = c.window;
-    const rows = decks === 2 ? [0.12, 0.62] : [0.2];
-    for (const yf of rows) {
-      const wv = vAt(yf, side);
-      const wh = Vm(0.32);
-      for (let x = from; x < to; x += 0.53) {
-        roundRect(g, X(x), wv - wh / 2, X(0.24), wh, X(0.08));
+    if (cabin.bigWindows) {
+      const top = vAt(0.78, side);
+      const bottom = vAt(0.05, side);
+      for (const [x, len] of cabin.bigWindows) {
+        roundRect(g, X(x), Math.min(top, bottom), X(len), Math.abs(bottom - top), X(0.12));
+      }
+    } else {
+      const rows = decks === 2 ? [0.12, 0.62] : [0.2];
+      for (const yf of rows) {
+        const wv = vAt(yf, side);
+        const wh = Vm(0.32);
+        for (let x = from; x < to; x += 0.53) {
+          roundRect(g, X(x), wv - wh / 2, X(0.24), wh, X(0.08));
+        }
       }
     }
 

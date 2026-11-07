@@ -62,7 +62,7 @@ export function buildTracked(model) {
 
     if (g.skirts !== false) {
       const skirt = new THREE.BoxGeometry(L * 0.94, tk.height * 0.42, 0.05);
-      skirt.translate(L * 0.5, tk.height * 0.78, sign * (W / 2 + 0.03));
+      skirt.translate(L * 0.5, tk.height * 0.78, sign * (W / 2 - 0.025));
       root.add(makePart(skirt, { id: `${side}-skirt`, label: `${label} side skirt`, system: 'structure', info: partInfo(model, 'skirts') }, lv));
     }
   }

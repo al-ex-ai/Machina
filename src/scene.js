@@ -175,7 +175,9 @@ export function createViewer(container) {
     const size = box.getSize(new THREE.Vector3());
     const radius = size.length() / 2;
     const center = box.getCenter(new THREE.Vector3());
-    const dist = radius / Math.sin((camera.fov * Math.PI) / 360) * 0.78;
+    const vFov = (camera.fov * Math.PI) / 180;
+    const hFov = 2 * Math.atan(Math.tan(vFov / 2) * camera.aspect);
+    const dist = radius / Math.sin(Math.min(vFov, hFov) / 2) * 0.78;
     camera.position.set(center.x - dist * 0.62, center.y + dist * 0.42, center.z + dist * 0.66);
     camera.near = radius / 100;
     camera.far = dist * 20;

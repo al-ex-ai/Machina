@@ -1,0 +1,43 @@
+{
+  "id": "m1a2",
+  "name": "M1A2 Abrams",
+  "category": "military",
+  "group": "Main battle tanks",
+  "builder": "tracked",
+  "summary": "American main battle tank powered by a gas turbine, with a flat-faced composite-armor turret and the 120 mm M256 gun.",
+  "specs": {
+    "manufacturer": "General Dynamics Land Systems",
+    "role": "Main battle tank",
+    "in_service": 1992,
+    "length_m": 9.77,
+    "width_m": 3.66,
+    "height_m": 2.44,
+    "weight_kg": 62100,
+    "max_speed_kmh": 67,
+    "range_km": 426,
+    "engine_count": 1,
+    "engine_type": "Honeywell AGT1500 gas turbine, 1,500 hp",
+    "main_gun": "120 mm M256 smoothbore",
+    "crew": 4
+  },
+  "livery": { "structure": "#b3a178", "armament": "#9c8c67", "sensors": "#4a4436" },
+  "geometry": {
+    "hull": { "length": 7.93, "width": 3.66, "height": 1.05, "clearance": 0.48, "glacisLength": 2.2, "rearSlope": 0.25 },
+    "tracks": { "width": 0.635, "length": 7.6, "height": 0.85, "x": 0.15, "wheels": 7, "wheelDiameter": 0.64 },
+    "turret": { "x": 1.7, "length": 5.6, "width": 3.5, "height": 0.75, "noseWidth": 0.85, "frontTaper": 0.3 },
+    "gun": { "muzzleX": -1.84, "mountX": 1.75, "diameter": 0.19 },
+    "sights": [
+      { "id": "commander-cupola", "label": "Commander's cupola", "shape": "cylinder", "x": 4.3, "z": 0.7, "width": 0.7, "height": 0.16 },
+      { "id": "citv", "label": "Commander's independent thermal viewer", "shape": "box", "x": 3.2, "z": -0.6, "length": 0.5, "width": 0.45, "height": 0.16 }
+    ]
+  },
+  "parts": {
+    "gun": { "Length": "44 calibers, 5.28 m", "Type": "Smoothbore" },
+    "engine": { "Type": "Gas turbine", "Power": "1,500 hp", "Note": "Multi-fuel, quiet but thirsty" },
+    "turret": { "Armor": "Composite with depleted uranium mesh layers" }
+  },
+  "sources": [
+    { "label": "GDLS Abrams", "url": "https://www.gdls.com/products/abrams-family/" },
+    { "label": "Wikipedia: M1 Abrams", "url": "https://en.wikipedia.org/wiki/M1_Abrams" }
+  ]
+}

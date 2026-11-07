@@ -1,0 +1,43 @@
+{
+  "id": "leopard-2a6",
+  "name": "Leopard 2A6",
+  "category": "military",
+  "group": "Main battle tanks",
+  "builder": "tracked",
+  "summary": "German main battle tank with spaced wedge armor on the turret front and the long 120 mm L/55 gun.",
+  "specs": {
+    "manufacturer": "Krauss-Maffei Wegmann",
+    "role": "Main battle tank",
+    "in_service": 2001,
+    "length_m": 10.97,
+    "width_m": 3.75,
+    "height_m": 3.0,
+    "weight_kg": 62300,
+    "max_speed_kmh": 68,
+    "range_km": 450,
+    "engine_count": 1,
+    "engine_type": "MTU MB 873 Ka-501 V12 diesel, 1,500 hp",
+    "main_gun": "120 mm Rheinmetall L/55 smoothbore",
+    "crew": 4
+  },
+  "livery": { "structure": "#4b5440", "armament": "#434a39", "sensors": "#2f3430" },
+  "geometry": {
+    "hull": { "length": 7.7, "width": 3.75, "height": 1.25, "clearance": 0.54, "glacisLength": 1.6, "rearSlope": 0.3 },
+    "tracks": { "width": 0.635, "length": 7.3, "height": 0.9, "x": 0.2, "wheels": 7, "wheelDiameter": 0.7 },
+    "turret": { "x": 1.5, "length": 5.2, "width": 3.5, "height": 0.85, "noseWidth": 0.35, "frontTaper": 1.1 },
+    "gun": { "muzzleX": -3.27, "mountX": 1.6, "diameter": 0.2 },
+    "sights": [
+      { "id": "commander-sight", "label": "Commander's periscope sight", "shape": "cylinder", "x": 4.0, "z": 0.75, "width": 0.45, "height": 0.36 },
+      { "id": "gunner-sight", "label": "Gunner's primary sight", "shape": "box", "x": 2.6, "z": -0.9, "length": 0.6, "width": 0.5, "height": 0.3 }
+    ]
+  },
+  "parts": {
+    "gun": { "Length": "55 calibers, 6.6 m", "Type": "Smoothbore" },
+    "turret": { "Armor": "Spaced wedge modules on the turret front" },
+    "engine": { "Type": "V12 twin-turbo diesel", "Power": "1,500 hp" }
+  },
+  "sources": [
+    { "label": "KNDS Leopard 2", "url": "https://www.knds.de/en/systems-products/tracked-vehicles/main-battle-tanks/leopard-2/" },
+    { "label": "Wikipedia: Leopard 2", "url": "https://en.wikipedia.org/wiki/Leopard_2" }
+  ]
+}
