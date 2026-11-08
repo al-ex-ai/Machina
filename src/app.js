@@ -82,6 +82,8 @@ const ICON = {
   brush: '<path d="M14.5 4.5l5 5-8 8-5-5z"/><path d="M6.5 12.5c-2 0-3.5 1.5-3.5 4 0 1.5-.5 2.5-1 3 3 0 6-1 6-4"/>',
   expand: '<path d="M7 9l5-5 5 5M7 15l5 5 5-5"/>',
   collapse: '<path d="M7 4l5 5 5-5M7 20l5-5 5 5"/>',
+  left: '<path d="M15 6l-6 6 6 6"/>',
+  right: '<path d="M9 6l6 6-6 6"/>',
   open: '<path d="M14 4h6v6M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/>',
   download: '<path d="M12 4v11M7 10l5 5 5-5"/><path d="M4 19h16"/>',
 };
@@ -294,6 +296,7 @@ function renderModel(id, partId) {
             <div class="rail-title"><span class="label">Parts</span><span class="rail-tools">
               <button type="button" class="icon-sm" data-tree-all="open" title="Expand all" aria-label="Expand all groups">${icon('expand', 15)}</button>
               <button type="button" class="icon-sm" data-tree-all="close" title="Collapse all" aria-label="Collapse all groups">${icon('collapse', 15)}</button>
+              <button type="button" class="icon-sm" data-drawer="rail" title="Hide parts" aria-label="Hide the parts panel">${icon('left', 15)}</button>
             </span></div>
             <label class="filter">${icon('search', 15)}<input id="part-filter" type="search" placeholder="Filter parts" aria-label="Filter parts" autocomplete="off"></label>
           </div>
@@ -310,6 +313,7 @@ function renderModel(id, partId) {
           </div>
           <div class="tip" id="tip" hidden></div>
           <div class="loading" id="loading" role="status" aria-live="polite" hidden><span class="spinner"></span><span class="label">Loading detailed model</span></div>
+          <button type="button" class="drawer-open" data-drawer="rail" title="Show parts" aria-label="Show the parts panel">${icon('right', 16)}<span>Parts</span></button>
           <div class="paint" id="paint" role="radiogroup" aria-label="Livery" hidden></div>
           <div class="dock" role="toolbar" aria-label="Viewer tools">
             <label class="tool" title="Pull parts apart (E)">Explode <input id="explode" type="range" min="0" max="1" step="0.01" value="0"></label>
@@ -326,6 +330,7 @@ function renderModel(id, partId) {
         </aside>
       </div>`;
     $('#stage').prepend($('#stage-host'));
+    applyDrawers();
     const v = ensureViewer();
     v.setXray(state.xray);
     v.setPicking(state.pick);
@@ -347,6 +352,16 @@ function renderModel(id, partId) {
   }
   viewer.select(partId ?? null);
   if (!partId) renderSheet();
+}
+
+// Side panels are drawers: the parts rail slides away, the sheet folds to its tab rail.
+const drawers = (() => { try { return JSON.parse(localStorage.getItem('machina-drawers')) ?? {}; } catch { return {}; } })();
+function applyDrawers() {
+  const page = document.querySelector('.model-page');
+  if (!page) return;
+  page.classList.toggle('rail-closed', Boolean(drawers.rail));
+  page.classList.toggle('sheet-closed', Boolean(drawers.sheet));
+  try { localStorage.setItem('machina-drawers', JSON.stringify(drawers)); } catch {}
 }
 
 /** Turn clicking parts in the view on or off. Turning it off clears the selection. */
@@ -509,8 +524,8 @@ const TABS = [
 ];
 
 function renderTabs(active) {
-  $('#tabs').innerHTML = TABS.map(t => {
-    const off = t.id === 'part' && !state.part;
+  $('#tabs').innerHTML = TABS.filter(t => t.id !== 'part' || state.part).map(t => {
+    const off = false;
     return `<button type="button" role="tab" class="vtab" id="tab-${t.id}" data-tab="${t.id}" aria-selected="${t.id === active}" aria-controls="sheet" tabindex="${t.id === active ? 0 : -1}"${off ? ' disabled title="Select a part to see its details"' : ''}>
       ${icon(t.id, 20)}<span>${t.label}</span></button>`;
   }).join('');
@@ -608,10 +623,13 @@ function partPanel(m, p) {
 
 // ── Events ─────────────────────────────────────────────
 document.addEventListener('click', e => {
-  const t = e.target.closest('[data-part],[data-toggle],[data-back],[data-livery],[data-tab],[data-tree-all]');
+  const t = e.target.closest('[data-part],[data-toggle],[data-back],[data-livery],[data-tab],[data-tree-all],[data-drawer]');
   if (!t) return;
   if (t.dataset.livery !== undefined) setLivery(t.dataset.livery);
+  else if (t.dataset.drawer !== undefined) { drawers[t.dataset.drawer] = !drawers[t.dataset.drawer]; applyDrawers(); }
   else if (t.dataset.tab !== undefined) {
+    const active = t.getAttribute('aria-selected') === 'true';
+    if (t.classList.contains('vtab') && (active || drawers.sheet)) { drawers.sheet = active && !drawers.sheet; applyDrawers(); if (active) return; }
     if (t.dataset.tab === 'part') state.showPart = true;
     else { state.tab = t.dataset.tab; state.showPart = false; }
     renderSheet();

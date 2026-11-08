@@ -384,3 +384,18 @@ button { font: inherit; color: inherit; }
   .vtab { grid-auto-flow: column; gap: 6px; padding: 8px 12px; font-size: 12px; }
   .vtab[aria-selected="true"]::before { left: 12px; right: 12px; top: auto; bottom: -6px; width: auto; height: 2px; }
 }
+
+/* Drawers: hide the parts rail, fold the sheet to its tab rail */
+.model-page { transition: grid-template-columns 0.2s ease; }
+.model-page.rail-closed { grid-template-columns: 0 1fr 392px; }
+.model-page.sheet-closed { grid-template-columns: 272px 1fr 68px; }
+.model-page.rail-closed.sheet-closed { grid-template-columns: 0 1fr 68px; }
+.model-page.rail-closed .rail { overflow: hidden; border: 0; }
+.model-page.sheet-closed .panel { display: none; }
+.model-page.sheet-closed .sheet { grid-template-columns: 68px; }
+.model-page.sheet-closed .vtab[aria-selected="true"] { background: none; color: var(--faint); }
+.model-page.sheet-closed .vtab[aria-selected="true"]::before { display: none; }
+.drawer-open { position: absolute; left: 14px; top: 58px; z-index: 2; display: none; align-items: center; gap: 4px; padding: 6px 10px 6px 6px; border: 1px solid var(--line); border-radius: 9px; background: color-mix(in srgb, var(--surface) 85%, transparent); backdrop-filter: blur(8px); color: var(--muted); font-weight: 600; font-size: 12px; cursor: pointer; }
+.drawer-open:hover { color: var(--ink); border-color: var(--accent); }
+.model-page.rail-closed .drawer-open { display: inline-flex; }
+@media (max-width: 1100px) { .model-page.rail-closed, .model-page.sheet-closed, .model-page.rail-closed.sheet-closed { grid-template-columns: 240px 1fr; } .drawer-open, [data-drawer] { display: none !important; } }

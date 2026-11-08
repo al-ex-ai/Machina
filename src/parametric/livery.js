@@ -203,7 +203,7 @@ export function paintFuselage(body, length, lv) {
   };
   const roundRect = (ctx, x, y, w, h, radius) => {
     for (const side of [left, right]) {
-      const [u0, v0] = side(x - w / 2, y + h / 2), [u1, v1] = side(x + w / 2, y - h / 2);
+      const [, v0] = side(x, y + h / 2), [, v1] = side(x, y - h / 2), u0 = U(x - w / 2), u1 = U(x + w / 2); // heights at the center x: every window the same shape
       ctx.beginPath();
       const r = Math.min(Math.abs(u1 - u0), Math.abs(v1 - v0)) * radius;
       ctx.roundRect(Math.min(u0, u1), Math.min(v0, v1), Math.abs(u1 - u0), Math.abs(v1 - v0), r);
@@ -219,7 +219,7 @@ export function paintFuselage(body, length, lv) {
     b.fillStyle = '#a0a0a0';
     roundRect(b, x, y, w + f, h + f, radius);
     for (const side of [left, right]) {
-      const [u0, v0] = side(x - w / 2, y + h / 2), [u1, v1] = side(x + w / 2, y - h / 2);
+      const [, v0] = side(x, y + h / 2), [, v1] = side(x, y - h / 2), u0 = U(x - w / 2), u1 = U(x + w / 2); // heights at the center x: every window the same shape
       const grad = g.createLinearGradient(0, v0, 0, v1);
       grad.addColorStop(0, '#5d7591');
       grad.addColorStop(0.4, color);
@@ -270,7 +270,15 @@ export function paintFuselage(body, length, lv) {
   // Titles: the Machina mark and wordmark, upright on both sides. The canvas is
   // stretched (u covers the length, v the girth), so text is drawn with matching scale.
   if (lv.titles && lv.titles.text) {
-    const t = lv.titles;
+    // Keep the title clear of the window belt: its lower edge sits above the windows.
+    const t = { ...lv.titles };
+    const wl = lv.windows?.list ?? [];
+    if (wl.length) {
+      const wy = wl.reduce((a, q) => a + q[1], 0) / wl.length, wh = lv.windows.h ?? 0.36;
+      const s1 = body.at(t.x), room = s1.top - (wy + wh / 2 + 0.12) - 0.25;
+      t.height = Math.min(t.height, Math.max(0.3, room));
+      t.y = Math.max(t.y, wy + wh / 2 + 0.12 + t.height / 2);
+    }
     const pxPerMeterU = W / length;
     const s0 = body.at(t.x);
     const a = s0.w, b = (s0.top - s0.bot) / 2;
