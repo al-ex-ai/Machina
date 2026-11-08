@@ -350,7 +350,7 @@ export function createViewer(container) {
     } else if (dirty) {
       gtao.enabled = false; // camera moving: same pipeline, just without ambient occlusion
       composer.render();
-      gtao.enabled = true;
+      gtao.enabled = !xray;
       dirty = false;
     } else if (fullPending && !moving) {
       composer.render(); // full quality with ambient occlusion
@@ -385,7 +385,12 @@ export function createViewer(container) {
       refreshPaint();
     },
     selectedId: () => selected?.userData.id ?? null,
-    setXray(on) { xray = on; if (model) applyXray(); invalidate(true); },
+    setXray(on) {
+      xray = on;
+      gtao.enabled = !on; // see-through fills still write depth, so occlusion would darken the ground under them
+      if (model) applyXray();
+      invalidate(true);
+    },
     resetView() { if (model) frame(); },
     partSize(id) {
       const p = parts.find(q => q.userData.id === id);
