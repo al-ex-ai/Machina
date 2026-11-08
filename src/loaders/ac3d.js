@@ -44,7 +44,9 @@ export function buildAC(data, opts = {}) {
       metalness: 0.05,
       transparent,
       opacity: transparent ? Math.min(1 - m.trans, 0.35) || 0.3 : 1,
-      side: twoSided || transparent ? THREE.DoubleSide : THREE.FrontSide,
+      // Two-sided always: simulator skins are single sheets, and seen from inside (through a
+      // windshield) their back faces would be culled and the walls would vanish.
+      side: THREE.DoubleSide,
       depthWrite: !transparent,
     });
     matCache.set(key, mat);

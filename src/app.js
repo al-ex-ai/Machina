@@ -434,8 +434,8 @@ function groupedParts() {
 function renderTree() {
   const groups = [...groupedParts()];
   $('#tree').innerHTML = groups.map(([sys, ps]) => `
-    <li class="tree-sys" data-open="true">
-      <button type="button" class="sys-head" data-toggle aria-expanded="true"><svg class="chev" aria-hidden="true" viewBox="0 0 10 10" fill="currentColor"><path d="M1 3l4 4 4-4z"/></svg>
+    <li class="tree-sys" data-open="false">
+      <button type="button" class="sys-head" data-toggle aria-expanded="false"><svg class="chev" aria-hidden="true" viewBox="0 0 10 10" fill="currentColor"><path d="M1 3l4 4 4-4z"/></svg>
         <span class="sys-dot" style="background:${SYSTEMS[sys]?.color ?? '#888'}"></span><span class="sys-name">${esc(SYSTEMS[sys]?.label ?? sys)}</span><span class="n">${ps.length}</span></button>
       <ul>${ps.map(p => `<li><button type="button" class="part-btn" data-part="${esc(p.id)}">${esc(p.label)}</button></li>`).join('')}</ul>
     </li>`).join('');
@@ -448,7 +448,7 @@ function renderTree() {
 }
 
 /** Show only parts whose name matches the filter; groups with no match hide, the rest open. */
-function applyFilter() {
+function applyFilter(e) {
   const q = state.filter.trim().toLowerCase();
   document.querySelectorAll('#tree .tree-sys').forEach(g => {
     let any = false;
@@ -458,7 +458,8 @@ function applyFilter() {
       any ||= hit;
     });
     g.hidden = !any;
-    if (q && any) { g.dataset.open = 'true'; g.querySelector('[data-toggle]').setAttribute('aria-expanded', 'true'); }
+    const open = q ? any : Boolean(state.part && g.querySelector(`[data-part="${CSS.escape(state.part)}"]`));
+    if (q || e === 'clear') { g.dataset.open = String(open); g.querySelector('[data-toggle]').setAttribute('aria-expanded', String(open)); }
   });
 }
 
@@ -466,7 +467,13 @@ function markTree() {
   document.querySelectorAll('#tree [data-part]').forEach(b => {
     const on = b.dataset.part === state.part;
     b.setAttribute('aria-current', String(on));
-    if (on) b.scrollIntoView({ block: 'nearest' }); // picked in the view: bring it into sight in the tree
+    if (on) {
+      // Groups start collapsed; the one holding the selected part opens.
+      const g = b.closest('.tree-sys');
+      g.dataset.open = 'true';
+      g.querySelector('[data-toggle]').setAttribute('aria-expanded', 'true');
+      b.scrollIntoView({ block: 'nearest' }); // picked in the view: bring it into sight in the tree
+    }
   });
 }
 
@@ -624,7 +631,7 @@ document.addEventListener('click', e => {
 document.addEventListener('input', e => {
   if (e.target.id !== 'part-filter') return;
   state.filter = e.target.value;
-  applyFilter();
+  applyFilter(state.filter ? null : 'clear');
 });
 
 // Arrow keys move between vertical tabs and between livery swatches (roving focus).
