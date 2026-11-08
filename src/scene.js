@@ -278,7 +278,7 @@ export function createViewer(container) {
   }
 
   // Camera presets: null is the default three-quarter view.
-  const VIEWS = { front: [-1, 0.06, 0], side: [0, 0.06, 1], top: [0.001, 1, 0], rear: [1, 0.12, 0] };
+  const VIEWS = { front: [-1, 0.06, 0], side: [0, 0.06, 1], right: [0, 0.06, -1], top: [0.001, 1, 0], rear: [1, 0.12, 0] };
   let view = null;
   function frame() {
     if (!container.clientWidth || !container.clientHeight) { framePending = true; return; }
@@ -416,7 +416,7 @@ export function createViewer(container) {
       invalidate(true);
     },
     resetView() { view = null; if (model) frame(); },
-    /** Look straight from the front, side, top or rear. */
+    /** Look straight from the front, left side, right side, top or rear. */
     setView(name) { view = VIEWS[name] ? name : null; if (model) frame(); },
     partSize(id) {
       const p = parts.find(q => q.userData.id === id);

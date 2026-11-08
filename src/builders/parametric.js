@@ -6,7 +6,7 @@ import * as THREE from 'three';
 import { makePart, makeCompositePart, partInfo } from '../parts/common.js';
 import { bodyProfile, loftBody, mergeIndexed } from '../parametric/body.js';
 import { surfacePlan, surfacePiece, mirrorZ } from '../parametric/surface.js';
-import { paintFuselage } from '../parametric/livery.js';
+import { paintFuselage, paintFin, sideUV } from '../parametric/livery.js';
 
 const SIDES = [{ key: 'left', label: 'Left', z: 1 }, { key: 'right', label: 'Right', z: -1 }];
 
@@ -44,10 +44,18 @@ export function buildParametric(model) {
         pieces.get(key).push(surfacePiece(plan, seg.from, seg.to, c0, c1));
       }
     }
+    // A painted tail: one texture shared by the fin and rudder, mapped on both faces.
+    let decal = null, bounds = null;
+    if (s.paint) {
+      const xs = s.sections.flatMap(q => [q.le, q.le + q.chord]), ys = s.sections.map(q => q.at);
+      bounds = { x0: Math.min(...xs), x1: Math.max(...xs), y0: Math.min(...ys), y1: Math.max(...ys) };
+      decal = paintFin(bounds, s.paint);
+    }
     for (const [key, geos] of pieces) {
       const meta = s.parts[key];
-      const geo = mergeIndexed(geos);
-      const material = mat[meta.finish ?? meta.system] ?? {};
+      let geo = mergeIndexed(geos);
+      let material = mat[meta.finish ?? meta.system] ?? {};
+      if (decal) { geo = sideUV(geo, bounds); material = { ...material, map: decal, color: '#ffffff' }; }
       if (!s.mirror) {
         root.add(makePart(geo, { ...meta, keepNormals: true, material, info: partInfo(model, meta.id) }));
         continue;
@@ -69,11 +77,12 @@ export function buildParametric(model) {
     const inlet = nac.at(0);
     const rFan = e.fan.radius;
     const fanX = e.fan.depth;
+    const fanY = inlet.mid + (e.fan.offsetY ?? 0); // the fan sits above a flattened inlet floor
     const plug = new THREE.LatheGeometry(e.plug.map(([x, r]) => new THREE.Vector2(r, x)), 32).rotateZ(-Math.PI / 2);
-    const spinner = new THREE.ConeGeometry(rFan * 0.32, rFan * 0.75, 32).rotateZ(Math.PI / 2).translate(fanX - rFan * 0.37, inlet.mid, 0);
+    const spinner = new THREE.ConeGeometry(rFan * 0.32, rFan * 0.75, 32).rotateZ(Math.PI / 2).translate(fanX - rFan * 0.37, fanY, 0);
     plug.translate(0, (nac.at(length).mid), 0);
-    const duct = new THREE.CylinderGeometry(rFan * 1.02, rFan * 1.02, fanX, 48, 1, true).rotateZ(Math.PI / 2).translate(fanX / 2, inlet.mid, 0);
-    const fan = new THREE.CircleGeometry(rFan, 48).rotateY(-Math.PI / 2).translate(fanX, inlet.mid, 0);
+    const duct = new THREE.CylinderGeometry(rFan * 1.02, rFan * 1.02, fanX, 48, 1, true).rotateZ(Math.PI / 2).translate(fanX / 2, fanY, 0);
+    const fan = new THREE.CircleGeometry(rFan, 48).rotateY(-Math.PI / 2).translate(fanX, fanY, 0);
     // Inlet lip: a ring from the nacelle's outer edge in to the round fan duct.
     const lip = (() => {
       const S = 72, pos = [], idx = [];
@@ -81,7 +90,7 @@ export function buildParametric(model) {
       for (let j = 0; j <= S; j++) {
         const t = (j / S) * Math.PI * 2;
         nac.point(0, t, v);
-        pos.push(v.x, v.y, v.z, 0.02, inlet.mid + rFan * 1.02 * Math.cos(t), rFan * 1.02 * Math.sin(t));
+        pos.push(v.x, v.y, v.z, 0.02, fanY + rFan * 1.02 * Math.cos(t), rFan * 1.02 * Math.sin(t));
       }
       for (let j = 0; j < S; j++) { const a = j * 2; idx.push(a, a + 1, a + 2, a + 1, a + 3, a + 2); }
       const geo = new THREE.BufferGeometry();
