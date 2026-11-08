@@ -83,7 +83,7 @@ button { font: inherit; color: inherit; }
 .nav { display: flex; gap: 4px; }
 .nav a { text-decoration: none; padding: 7px 12px; border-radius: 6px; color: var(--muted); font-weight: 600; }
 .nav a:hover { color: var(--ink); background: var(--raised); }
-.nav a[aria-current="page"] { color: var(--ink); background: var(--raised); box-shadow: inset 0 -2px 0 var(--accent); }
+.nav a[aria-current="page"] { color: var(--ink); border-radius: 0; }
 .nav .soon { font-family: var(--mono); font-size: 10px; color: var(--faint); margin-left: 4px; }
 .topbar-end { margin-left: auto; display: flex; gap: 8px; align-items: center; }
 .icon-btn { width: 34px; height: 34px; display: grid; place-items: center; border: 1px solid var(--line); background: var(--surface); border-radius: 8px; cursor: pointer; color: var(--muted); }
@@ -172,7 +172,7 @@ button { font: inherit; color: inherit; }
   width: 100%; text-align: start; border: 0; background: none; padding: 5px 8px; border-radius: 6px; cursor: pointer; color: var(--muted); font-size: 13px;
 }
 .tree-sys li button:hover { color: var(--ink); background: var(--raised); }
-.tree-sys li button[aria-current="true"] { color: var(--accent-ink); background: var(--accent-soft); }
+.tree-sys li button[aria-current="true"] { color: var(--accent-ink); border-radius: 0; --k: 5px; }
 .sys-dot { width: 8px; height: 8px; border-radius: 2px; flex: none; }
 
 .stage { position: relative; overflow: hidden; background: radial-gradient(ellipse at 50% 35%, var(--stage-top), var(--stage-bottom) 75%); }
@@ -189,7 +189,7 @@ button { font: inherit; color: inherit; }
 }
 .tool { display: flex; align-items: center; gap: 8px; border: 1px solid transparent; background: none; border-radius: 8px; padding: 6px 10px; cursor: pointer; color: var(--muted); font-weight: 600; font-size: 13px; }
 .tool:hover { color: var(--ink); background: var(--raised); }
-.tool[aria-pressed="true"] { color: var(--accent-ink); background: var(--accent-soft); border-color: color-mix(in srgb, var(--accent) 35%, transparent); }
+.tool[aria-pressed="true"] { color: var(--accent-ink); border-color: transparent; border-radius: 0; --k: 6px; }
 .tool kbd { font-family: var(--mono); font-size: 10px; color: var(--faint); border: 1px solid var(--line); border-radius: 4px; padding: 0 4px; }
 .tool input[type="range"] { width: 110px; accent-color: var(--accent); }
 .dock .sep { width: 1px; height: 22px; background: var(--line); }
@@ -266,4 +266,20 @@ button { font: inherit; color: inherit; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; }
   .card:hover, .cat:hover { transform: none; }
+}
+
+/* Selected state: four corner ticks, like a target lock on a head-up display */
+.nav a[aria-current="page"], .tree-sys li button[aria-current="true"], .tool[aria-pressed="true"] {
+  --t: var(--accent); --k: 7px; --w: 1.5px;
+  background:
+    linear-gradient(var(--t), var(--t)) top left / var(--k) var(--w),
+    linear-gradient(var(--t), var(--t)) top left / var(--w) var(--k),
+    linear-gradient(var(--t), var(--t)) top right / var(--k) var(--w),
+    linear-gradient(var(--t), var(--t)) top right / var(--w) var(--k),
+    linear-gradient(var(--t), var(--t)) bottom left / var(--k) var(--w),
+    linear-gradient(var(--t), var(--t)) bottom left / var(--w) var(--k),
+    linear-gradient(var(--t), var(--t)) bottom right / var(--k) var(--w),
+    linear-gradient(var(--t), var(--t)) bottom right / var(--w) var(--k),
+    var(--accent-soft);
+  background-repeat: no-repeat;
 }
