@@ -20,6 +20,7 @@ Machina turns simulator models into explorable, named parts.
 | **True scale** | Every model is measured against its published length, span and height, and any gap is shown on the model page |
 | **Three-view drawings** | An A3 sheet per model at a standard scale: side, front and top views projected from the geometry with hidden lines removed, fuselage sections, dimensions and a title block |
 | **Generated detail** | Parametric models get panel seams, framed windows, control surface gaps, fan blades, gear linkage, antennas and beacons from the data they already have |
+| **Liveries** | Every parametric model can wear Machina's colors, a factory demonstrator scheme, polished metal, factory primer or plain white. Presets swap colors only, so positions stay measured (`#/m/<id>?livery=metal`) |
 | **Inside and outside** | X-ray view, exploded view, cabins and cockpits where the source has them |
 | **Legal to reuse** | Every asset folder carries its original license and credits, and the tests fail without them |
 | **No build step** | Static ES modules and vendored Three.js. Clone, start, open |

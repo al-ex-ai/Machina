@@ -32,6 +32,7 @@ export function systemMaterial(system, livery = {}, opts = {}) {
     color: opts.color ?? livery[system] ?? sys.color,
     map: opts.map ?? null,
     bumpMap: opts.bumpMap ?? null,
+    metalnessMap: opts.metalnessMap ?? null,
     bumpScale: opts.bumpScale ?? 1,
     roughness: opts.roughness ?? finish.roughness,
     metalness: opts.metalness ?? finish.metalness,

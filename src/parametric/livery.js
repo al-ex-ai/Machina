@@ -32,16 +32,19 @@ function drawTitle(g, t) {
   g.save();
   g.font = `800 100px ${FONT}`;
   if ('letterSpacing' in g) g.letterSpacing = '18px';
-  const total = h * 1.35 + (g.measureText(t.text).width * h) / 100;
+  const mark = t.mark !== false;
+  const total = (mark ? h * 1.35 : 0) + (g.measureText(t.text).width * h) / 100;
   g.restore();
   g.translate(-total / 2, 0);
-  g.fillStyle = t.markColor ?? t.color;
-  g.beginPath();
-  for (const [x, y] of [[0, 0.6], [1, 0], [0.65, 1], [0.5, 0.7]]) g.lineTo(x * h, (y - 0.5) * h);
-  g.closePath();
-  g.fill();
+  if (mark) {
+    g.fillStyle = t.markColor ?? t.color;
+    g.beginPath();
+    for (const [x, y] of [[0, 0.6], [1, 0], [0.65, 1], [0.5, 0.7]]) g.lineTo(x * h, (y - 0.5) * h);
+    g.closePath();
+    g.fill();
+    g.translate(h * 1.35, 0);
+  }
   g.fillStyle = t.color;
-  g.translate(h * 1.35, 0);
   text(g, t.text, h, 0.18);
 }
 
@@ -150,8 +153,24 @@ export function paintFuselage(body, length, lv) {
     g.fill();
   };
   const cheat = x => lv.cheatline.y + (lv.cheatline.rise ?? 0) * Math.max(0, x - (lv.cheatline.riseFrom ?? length)) ;
+  if (lv.stripe2) band(x => cheat(x) + lv.cheatline.width * 2.2, lv.stripe2);
   band(x => cheat(x) + lv.cheatline.width, lv.stripe);
   band(cheat, lv.belly);
+  // Bare metal below the cheatline: a metalness mask in the same layout.
+  let metal = null;
+  if (lv.metalBelly) {
+    metal = document.createElement('canvas');
+    metal.width = W; metal.height = H;
+    const mg = metal.getContext('2d');
+    mg.fillStyle = '#000000';
+    mg.fillRect(0, 0, W, H);
+    mg.fillStyle = '#ffffff';
+    mg.beginPath();
+    for (let x = body.x0; x <= body.x1; x += 0.05) mg.lineTo(...left(x, cheat(x)));
+    for (let x = body.x1; x >= body.x0; x -= 0.05) mg.lineTo(...right(x, cheat(x)));
+    mg.closePath();
+    mg.fill();
+  }
 
   // Skin panel joints, from the window belt and the panel pitch: circumferential frame
   // joints and longitudinal lap joints above and below the windows and along the
@@ -250,7 +269,7 @@ export function paintFuselage(body, length, lv) {
 
   // Titles: the Machina mark and wordmark, upright on both sides. The canvas is
   // stretched (u covers the length, v the girth), so text is drawn with matching scale.
-  if (lv.titles) {
+  if (lv.titles && lv.titles.text) {
     const t = lv.titles;
     const pxPerMeterU = W / length;
     const s0 = body.at(t.x);
@@ -276,7 +295,9 @@ export function paintFuselage(body, length, lv) {
   const bump = new THREE.CanvasTexture(bc);
   bump.flipY = false;
   bump.anisotropy = 8;
-  return { map: tex, bump };
+  let metalMap = null;
+  if (metal) { metalMap = new THREE.CanvasTexture(metal); metalMap.flipY = false; }
+  return { map: tex, bump, metal: metalMap };
 }
 
 /** Frame joint stations: every panel pitch along the body, clear of the nose and tail cones. */

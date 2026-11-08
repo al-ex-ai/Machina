@@ -32,6 +32,7 @@ One milestone per week. Each milestone ends with everything committed, `npm test
 - Window and door outlines carried from the model data into the drawings, and dropped where they are seen edge-on
 - Generated detail on parametric models, with no per-model tuning: panel seams and window recesses as height maps, framed windows, wing spar and rib lines, hinge gaps on movable surfaces, fan blades, rounded inlet lips and exhaust sleeves, tread, torque links and braces on the gear, antennas, beacons, pitot probes and the APU exhaust
 - Smoother lofts: fuselage rings close up where the outline bends
+- Livery presets for any parametric model: Machina, factory demonstrator, polished metal, factory primer, plain white
 
 ## M3. Compare
 

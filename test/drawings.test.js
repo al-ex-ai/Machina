@@ -58,3 +58,25 @@ test('the three-view sheet of a parametric model fits A3 and keeps the outline e
   assert.match(svg, /viewBox="0 0 420 297"/);
   assert.match(svg, /Scale 1:\d+ \(A3\)/);
 });
+
+import * as THREE from 'three';
+import { liveriesFor, withLivery } from '../src/parametric/liveries.js';
+
+for (const m of parametric) {
+  test(`${m.id}: every livery builds and leaves the size alone`, () => {
+    const size = o => new THREE.Box3().setFromObject(o).getSize(new THREE.Vector3());
+    const base = size(buildModel(m));
+    const list = liveriesFor(m);
+    assert.ok(list.length >= 4, 'expected the Machina livery plus at least three presets');
+    for (const l of list) {
+      const s = size(buildModel(withLivery(m, l.id)));
+      assert.ok(s.distanceTo(base) < 1e-6, `${l.id} changed the size`);
+    }
+    assert.notEqual(withLivery(m, 'primer'), m, 'a preset returns a copy');
+    assert.equal(m.livery.base, structuredClone(m).livery.base);
+  });
+}
+
+test('detailed assets offer no livery presets', () => {
+  for (const m of models.filter(x => x.builder === 'asset')) assert.equal(liveriesFor(m).length, 0);
+});

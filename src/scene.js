@@ -346,7 +346,8 @@ export function createViewer(container) {
     invalidate(true);
   }
 
-  function setModel(group) {
+  /** @param {THREE.Object3D} group @param {{ keepView?: boolean }} [opts] keepView: same model repainted, leave the camera alone */
+  function setModel(group, opts = {}) {
     clearModel();
     model = group;
     parts = [];
@@ -356,7 +357,8 @@ export function createViewer(container) {
     if (xray) applyXray();
     computeExplode();
     applyExplode();
-    frame();
+    if (opts.keepView) { renderer.shadowMap.needsUpdate = true; invalidate(true); }
+    else frame();
   }
 
   function loop() {

@@ -318,3 +318,11 @@ button { font: inherit; color: inherit; }
 .drawing { display: block; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: #fff; margin-bottom: 18px; }
 .drawing img { display: block; width: 100%; height: auto; }
 .drawing:hover { border-color: var(--accent); }
+
+/* Livery picker: swatch strip and name per preset */
+.liveries { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 18px; }
+.livery { display: flex; align-items: center; gap: 9px; padding: 8px 10px; border: 1px solid var(--line); border-radius: var(--radius); background: transparent; text-align: left; font-size: 13px; line-height: 1.25; cursor: pointer; }
+.livery:hover { border-color: var(--accent); }
+.livery[aria-pressed="true"] { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
+.livery .swatch { display: inline-flex; flex: none; border-radius: 4px; overflow: hidden; box-shadow: 0 0 0 1px var(--line); }
+.livery .swatch i { display: block; width: 9px; height: 20px; }

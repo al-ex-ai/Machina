@@ -54,7 +54,7 @@ export function buildParametric(model) {
   const tex = paintFuselage(body, L, lv);
   const fuselage = makePart(loftBody(body, { length: L, segments: 128 }), {
     id: 'fuselage', label: 'Fuselage', system: 'structure', keepNormals: true,
-    material: tex ? { map: tex.map, bumpMap: tex.bump, bumpScale: 1.2, color: '#ffffff', roughness: 0.5, clearcoat: 0, envMapIntensity: 0.45, specularIntensity: 0.2 } : { color: lv.base }, // satin, softer reflections: dark titles stay readable under the studio light
+    material: tex ? { map: tex.map, bumpMap: tex.bump, bumpScale: 1.2, color: '#ffffff', roughness: tex.metal ? 0.36 : 0.5, clearcoat: 0, envMapIntensity: tex.metal ? 0.9 : 0.45, specularIntensity: 0.2, ...(tex.metal ? { metalnessMap: tex.metal, metalness: 1 } : {}) } : { color: lv.base }, // satin, softer reflections: dark titles stay readable under the studio light
     info: partInfo(model, 'fuselage', { Length: `${L} m` }),
   });
   fuselage.userData.drawLines = skinOutlines(body, lv); // windows and doors for the line drawings

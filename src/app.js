@@ -6,6 +6,7 @@ import { loadAssetModel } from './assets.js';
 import { createViewer } from './scene.js';
 import { SYSTEMS } from './parts/common.js';
 import { thumbnail } from './thumbs.js';
+import { liveriesFor, withLivery } from './parametric/liveries.js';
 
 const SPEC_LABELS = {
   manufacturer: 'Manufacturer',
@@ -67,7 +68,7 @@ const widthOf = m => m.specs.wingspan_m ?? m.specs.rotor_diameter_m ?? m.specs.w
 const widthLabel = m => (m.specs.wingspan_m ? 'span' : m.specs.rotor_diameter_m ? 'rotor' : 'width');
 const code = m => m.id.toUpperCase();
 
-const state = { categories: [], models: [], part: null, model: null, xray: false, pick: false, loadToken: 0 };
+const state = { categories: [], models: [], part: null, model: null, xray: false, pick: false, loadToken: 0, livery: null };
 let viewer = null;
 
 // ── Theme ──────────────────────────────────────────────
@@ -98,7 +99,7 @@ function parseRoute() {
   const [path, query = ''] = h.replace(/^#\/?/, '').split('?');
   const seg = path.split('/').filter(Boolean);
   const q = new URLSearchParams(query);
-  if (seg[0] === 'm' && seg[1]) return { name: 'model', id: seg[1], part: q.get('part'), xray: q.get('xray') === '1', person: q.get('person') === '1', view: q.get('view') };
+  if (seg[0] === 'm' && seg[1]) return { name: 'model', id: seg[1], part: q.get('part'), xray: q.get('xray') === '1', person: q.get('person') === '1', view: q.get('view'), livery: q.get('livery') };
   if (seg[0] === 'c' && seg[1]) return { name: 'category', id: seg[1] };
   return { name: 'home' };
 }
@@ -116,6 +117,7 @@ function render() {
   const route = parseRoute();
   if (route.name === 'model') {
     if (route.xray) state.xray = true;
+    if (state.model?.id !== route.id) state.livery = route.livery ?? null;
     renderModel(route.id, route.part);
     if (route.view) viewer?.setView(route.view);
     if (route.person) $('#person')?.getAttribute('aria-pressed') !== 'true' && $('#person')?.click();
@@ -352,7 +354,21 @@ function showModel(m, partId) {
         if (m.builder !== 'asset') return done(buildModel(m));
         $('#loading').innerHTML = '<span class="label">Could not load this model</span>';
       });
-  } else done(buildModel(m));
+  } else done(buildModel(withLivery(m, state.livery)));
+}
+
+/** Repaint the generated model in another livery, keeping the camera where it is. */
+function setLivery(id) {
+  const m = state.model;
+  if (!m) return;
+  state.livery = id === 'machina' ? null : id;
+  viewer.setModel(buildModel(withLivery(m, state.livery)), { keepView: true });
+  viewer.setExplode(Number($('#explode')?.value ?? 0));
+  const [path, query = ''] = location.hash.split('?');
+  const q = new URLSearchParams(query);
+  if (state.livery) q.set('livery', state.livery); else q.delete('livery');
+  history.replaceState(null, '', `${path}${q.size ? `?${q}` : ''}`);
+  renderSheet();
 }
 
 function groupedParts() {
@@ -391,6 +407,18 @@ function specRows(m) {
 }
 
 /** Compare the size on stage with the published specs and say so plainly. */
+function liveryPicker(m) {
+  const list = liveriesFor(m);
+  if (!list.length) return '';
+  const cur = state.livery ?? 'machina';
+  return `<h2 class="label" id="livery-label">Livery</h2>
+    <div class="liveries" role="group" aria-labelledby="livery-label">${list.map(l => `
+      <button type="button" class="livery" data-livery="${esc(l.id)}" aria-pressed="${l.id === cur}">
+        <span class="swatch" aria-hidden="true">${l.swatch.map(c => `<i style="background:${c}"></i>`).join('')}</span>${esc(l.label)}
+      </button>`).join('')}
+    </div>`;
+}
+
 function sizeBadge(m) {
   const size = viewer?.modelSize();
   if (!size) return '';
@@ -431,6 +459,7 @@ function renderSheet() {
     ${sizeBadge(m)}
     <h2 class="label">Specifications</h2>
     <dl class="specs">${specRows(m)}</dl>
+    ${liveryPicker(m)}
     <h2 class="label">Three-view drawing</h2>
     <a class="drawing" href="drawings/${esc(m.id)}.svg" target="_blank" rel="noopener" title="Open the drawing (SVG)">
       <img src="drawings/${esc(m.id)}.svg" alt="Side, top and front views of the ${esc(m.name)}" loading="lazy" onerror="this.parentElement.hidden = true; this.parentElement.previousElementSibling.hidden = true">
@@ -449,9 +478,10 @@ function renderSheet() {
 
 // ── Events ─────────────────────────────────────────────
 document.addEventListener('click', e => {
-  const t = e.target.closest('[data-part],[data-toggle],[data-back]');
+  const t = e.target.closest('[data-part],[data-toggle],[data-back],[data-livery]');
   if (!t) return;
-  if (t.dataset.part !== undefined) viewer?.select(t.dataset.part);
+  if (t.dataset.livery !== undefined) setLivery(t.dataset.livery);
+  else if (t.dataset.part !== undefined) viewer?.select(t.dataset.part);
   else if (t.dataset.toggle !== undefined) {
     const li = t.closest('.tree-sys');
     li.dataset.open = String(li.dataset.open !== 'true');
