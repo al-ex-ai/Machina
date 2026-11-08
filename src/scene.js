@@ -10,15 +10,24 @@ import { makeMannequin } from './parts/mannequin.js';
 
 const HDRI = './assets/hdri/studio_small_08.hdr'; // Poly Haven, CC0
 
+/** Backdrop gradient, grid and shadow strength for each UI theme. */
+const STAGE = {
+  dark: { sky: ['#33414f', '#212b36', '#141a21'], grid: ['#5a7086', '#3a4a5b'], shadow: 0.45, xray: '#7fd4ff' },
+  light: { sky: ['#ffffff', '#f1f4f7', '#e2e8ee'], grid: ['#aab5c1', '#cfd7df'], shadow: 0.2, xray: '#0b7fc0' },
+  blueprint: { sky: ['#1e5a90', '#134574', '#0a2b4c'], grid: ['#8fb6dc', '#3f72a6'], shadow: 0.4, xray: '#ffffff' },
+};
+const stageFor = name => STAGE[name] ?? STAGE.dark;
+
 /** Vertical gradient used as the scene backdrop, matched to the UI theme. */
-function backdrop(dark) {
+function backdrop(name) {
+  const { sky } = stageFor(name);
   const c = document.createElement('canvas');
   c.width = 2; c.height = 256;
   const g = c.getContext('2d');
   const grad = g.createLinearGradient(0, 0, 0, 256);
-  grad.addColorStop(0, dark ? '#33414f' : '#ffffff');
-  grad.addColorStop(0.62, dark ? '#212b36' : '#f1f4f7');
-  grad.addColorStop(1, dark ? '#141a21' : '#e2e8ee');
+  grad.addColorStop(0, sky[0]);
+  grad.addColorStop(0.62, sky[1]);
+  grad.addColorStop(1, sky[2]);
   g.fillStyle = grad;
   g.fillRect(0, 0, 2, 256);
   const t = new THREE.CanvasTexture(c);
@@ -75,7 +84,7 @@ export function createViewer(container) {
 
   const scene = new THREE.Scene();
   scene.environment = studioEnvironment(renderer);
-  scene.background = backdrop(document.documentElement.dataset.theme !== 'light');
+  scene.background = backdrop(document.documentElement.dataset.theme);
   new RGBELoader().load(HDRI, hdr => {
     const pmrem = new THREE.PMREMGenerator(renderer);
     scene.environment = pmrem.fromEquirectangular(hdr).texture;
@@ -166,7 +175,7 @@ export function createViewer(container) {
   let selected = null;
   let hovered = null;
   let explodeAmount = 0;
-  let dark = document.documentElement.dataset.theme !== 'light';
+  let themeName = document.documentElement.dataset.theme || 'dark';
   const listeners = { select: [], hover: [] };
 
   const raycaster = new THREE.Raycaster();
@@ -282,7 +291,7 @@ export function createViewer(container) {
     ground.scale.set(span, span, 1);
     if (grid) scene.remove(grid);
     const step = span > 300 ? 10 : span > 60 ? 5 : 1;
-    grid = new THREE.GridHelper(span, Math.round(span / step), dark ? '#5a7086' : '#aab5c1', dark ? '#3a4a5b' : '#cfd7df');
+    grid = new THREE.GridHelper(span, Math.round(span / step), ...stageFor(themeName).grid);
     grid.material.transparent = true;
     grid.material.opacity = 0.55;
     grid.position.y = 0.001;
@@ -363,10 +372,12 @@ export function createViewer(container) {
       invalidate();
     },
     setPerson(v) { person.visible = v; renderer.shadowMap.needsUpdate = true; invalidate(true); },
-    setTheme(isDark) {
-      dark = isDark;
-      scene.background = backdrop(isDark);
-      ground.material.opacity = isDark ? 0.45 : 0.2;
+    setTheme(name) {
+      themeName = name;
+      scene.background = backdrop(name);
+      ground.material.opacity = stageFor(name).shadow;
+      XRAY_EDGE.color.set(stageFor(name).xray);
+      XRAY_FILL.color.set(stageFor(name).xray);
       if (model) frame();
     },
     setHover(id) {

@@ -71,17 +71,24 @@ const state = { categories: [], models: [], part: null, model: null, xray: false
 let viewer = null;
 
 // ── Theme ──────────────────────────────────────────────
-const SUN = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
-const MOON = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>';
-const isDark = () => document.documentElement.dataset.theme !== 'light';
-function paintThemeButton() { $('#theme').innerHTML = isDark() ? SUN : MOON; }
-$('#theme').addEventListener('click', () => {
-  document.documentElement.dataset.theme = isDark() ? 'light' : 'dark';
-  try { localStorage.setItem('machina-theme', document.documentElement.dataset.theme); } catch { /* storage unavailable */ }
-  paintThemeButton();
-  viewer?.setTheme(isDark());
+const THEMES = [
+  { id: 'dark', label: 'Dark', swatch: '#0a0e13' },
+  { id: 'light', label: 'Light', swatch: '#eef1f4' },
+  { id: 'blueprint', label: 'Blueprint', swatch: 'linear-gradient(135deg, #0b2b4c 55%, #ffad4a 55%)' },
+];
+const theme = () => document.documentElement.dataset.theme || 'dark';
+function paintThemes() {
+  $('#theme').innerHTML = THEMES.map(t => `<button type="button" role="radio" data-theme-id="${t.id}" aria-checked="${t.id === theme()}" aria-label="${t.label} theme" title="${t.label}"><span style="background:${t.swatch}"></span></button>`).join('');
+}
+$('#theme').addEventListener('click', e => {
+  const id = e.target.closest('[data-theme-id]')?.dataset.themeId;
+  if (!id || id === theme()) return;
+  document.documentElement.dataset.theme = id;
+  try { localStorage.setItem('machina-theme', id); } catch { /* storage unavailable */ }
+  paintThemes();
+  viewer?.setTheme(id);
 });
-paintThemeButton();
+paintThemes();
 
 // ── Routing ────────────────────────────────────────────
 function parseRoute() {
@@ -220,7 +227,7 @@ function renderCategory(id) {
 function ensureViewer() {
   if (viewer) return viewer;
   viewer = createViewer($('#stage-host'));
-  viewer.setTheme(isDark());
+  viewer.setTheme(theme());
   viewer.on('select', p => {
     state.part = p?.id ?? null;
     renderSheet();

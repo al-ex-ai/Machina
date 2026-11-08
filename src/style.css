@@ -46,6 +46,31 @@
   color-scheme: light;
 }
 
+/* Blueprint: the brand theme. Prussian-blue drawing paper, white linework, amber markup. */
+:root[data-theme="blueprint"] {
+  --bg: #0b2b4c;
+  --bg-2: #0d3155;
+  --surface: #0f375f;
+  --raised: #14426f;
+  --line: #24527f;
+  --line-2: #33679a;
+  --ink: #f3f8fd;
+  --muted: #b3cbe2;
+  --faint: #93b3d2; /* 6:1 on the paper */
+  --accent: #ffad4a;
+  --accent-ink: #ffc98a;
+  --accent-soft: rgba(255, 173, 74, 0.14);
+  --data: #a6e6ff;
+  --data-soft: rgba(166, 230, 255, 0.12);
+  --grid: rgba(255, 255, 255, 0.075);
+  --stage-top: #134574;
+  --stage-bottom: #082341;
+  --shadow: 0 10px 30px rgba(2, 16, 32, 0.45);
+  color-scheme: dark;
+}
+:root[data-theme="blueprint"] .blueprint { background-size: 24px 24px; }
+:root[data-theme="blueprint"] h1 { letter-spacing: -0.01em; text-transform: uppercase; }
+
 * { box-sizing: border-box; }
 html, body { margin: 0; min-height: 100%; background: var(--bg); color: var(--ink); font: 14px/1.55 var(--font); -webkit-font-smoothing: antialiased; }
 a { color: inherit; }
@@ -88,6 +113,11 @@ button { font: inherit; color: inherit; }
 .topbar-end { margin-left: auto; display: flex; gap: 8px; align-items: center; }
 .icon-btn { width: 34px; height: 34px; display: grid; place-items: center; border: 1px solid var(--line); background: var(--surface); border-radius: 8px; cursor: pointer; color: var(--muted); }
 .icon-btn:hover { color: var(--ink); border-color: var(--line-2); }
+.themes { display: flex; gap: 2px; padding: 3px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); }
+.themes button { width: 24px; height: 24px; padding: 0; border: 0; border-radius: 50%; background: none; cursor: pointer; display: grid; place-items: center; }
+.themes button span { width: 14px; height: 14px; border-radius: 50%; box-shadow: inset 0 0 0 1px rgba(127, 140, 160, 0.6); }
+.themes button[aria-checked="true"] { box-shadow: 0 0 0 1.5px var(--accent); }
+.themes button:hover span { transform: scale(1.12); }
 
 /* Page container */
 .page { max-width: 1320px; margin: 0 auto; padding: 32px 24px 64px; }
