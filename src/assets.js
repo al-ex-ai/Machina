@@ -70,7 +70,7 @@ export function assembleParts(loaded, model) {
     const m = new THREE.Mesh(geo, Array.isArray(mesh.material) ? mesh.material.map(own) : own(mesh.material));
     m.name = mesh.name;
     m.castShadow = m.receiveShadow = true;
-    m.userData = { partChild: true, source: mesh.name };
+    m.userData = { partChild: true, source: mesh.name, texture: mesh.userData.texture };
     partFor(rule).add(m);
   }
   if (model.asset.restOnTail) restOnTail(root, groups, model.asset.restOnTail);

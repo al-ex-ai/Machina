@@ -49,15 +49,18 @@ for (const m of models) {
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { loadAssetNode } from '../src/assets-node.js';
+import { measureQuality } from '../src/quality.js';
 
 for (const m of models.filter(x => x.asset)) {
-  test(`${m.id}: detailed asset is licensed, credited and within its stated tolerance`, () => {
+  test(`${m.id}: detailed asset is licensed, credited, meets the quality standard and is within its stated tolerance`, () => {
     const a = m.asset;
     for (const k of ['path', 'license', 'author', 'source']) assert.ok(a[k], `asset missing "${k}"`);
     assert.ok(a.file || a.files?.length, 'asset needs file or files');
     assert.ok(existsSync(join(a.path, 'LICENSE')), 'asset folder needs a LICENSE file');
     assert.ok(existsSync(join(a.path, 'CREDITS.md')), 'asset folder needs a CREDITS.md file');
     const obj = loadAssetNode(m);
+    const quality = measureQuality(obj, m);
+    assert.ok(quality.pass, `below the quality standard: ${quality.fails.join('; ')}`);
     const ids = [];
     obj.traverse(o => { if (o.userData.part) ids.push(o.userData.id); });
     assert.ok(ids.length >= 10, `only ${ids.length} parts mapped`);

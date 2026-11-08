@@ -13,7 +13,8 @@
     "start": "node server.js",
     "test": "node --import ./scripts/node/register.js --test",
     "measure": "node --import ./scripts/node/register.js scripts/measure.js",
-    "inspect": "node --import ./scripts/node/register.js scripts/inspect-asset.js"
+    "inspect": "node --import ./scripts/node/register.js scripts/inspect-asset.js",
+    "quality": "node --import ./scripts/node/register.js scripts/quality.js"
   },
   "keywords": [
     "threejs",

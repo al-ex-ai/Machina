@@ -26,12 +26,29 @@ Machina turns simulator models into explorable, named parts.
 
 | Group | Models |
 |---|---|
-| Airliners | Airbus A380-800, Boeing 747-400, Boeing 787-8, Boeing 707-320B, Airbus A320neo, Boeing 737-300 |
-| Light aircraft | DHC-6 Twin Otter, Cessna 337 Skymaster, Cessna 172S (with cabin), Robin DR400, Ercoupe 415-C, Piper J-3 Cub |
-| Helicopters | Eurocopter EC135, Eurocopter EC130 B4 |
+| Light aircraft | Cessna 337 Skymaster, Cessna 172S, Robin DR400, Ercoupe 415-C, Piper J-3 Cub |
+| Helicopters | Eurocopter EC130 B4 |
 | Historic | 1903 Wright Flyer |
 
+In the workshop, waiting for their cockpits or cabins: Airbus A380-800, Boeing 747-400, Boeing 787-8, Boeing 707-320B, Airbus A320neo, Boeing 737-300, DHC-6 Twin Otter, Eurocopter EC135.
+
 Liveries are manufacturer house colors or Machina's own. No airline branding.
+
+## Quality Standard
+
+A model is listed only when it passes every check in [`src/quality.js`](src/quality.js). `npm test` enforces it for listed models, and `npm run quality` reports every model, listed or not.
+
+| Check | Rule |
+|---|---|
+| Geometry | At least 12,000 triangles |
+| Paint | At least 50% of the opaque surface textured, at most 15% plain untextured white |
+| Landing gear | At most 25% plain untextured white |
+| Interior | A modelled cabin or cockpit, at least 1,500 triangles of seats, panel and controls |
+| Parts | At least 10 named parts, left and right parts on the correct side |
+| Size | Within the stated tolerance of the published length, span and height |
+| License | `LICENSE` and `CREDITS.md` in the asset folder |
+
+A model can relax a rule only with a written reason in its file, for example the Wright Flyer, which has no cabin. Models that do not pass stay in `data/index.json` under `workshop` until they do.
 
 ## How It Works
 
@@ -84,7 +101,7 @@ URL flags: `?theme=light` or `?theme=blueprint`, `?noworker` (parse on the main 
 3. Write `CREDITS.md` in the asset folder with source, authors and any changes.
 4. Write `data/models/aviation/<id>.json` and list it in `data/index.json`.
 5. Map meshes to parts. `npm run inspect -- data/models/aviation/<id>.json` lists every mesh and what it matched.
-6. Run `npm test`. It checks the license and credits, at least 10 parts, left and right sides, and the size against the specs.
+6. Run `npm run quality`, then `npm test`. The model must meet the quality standard before it goes in the `models` list.
 
 ## Limits
 
@@ -107,6 +124,7 @@ URL flags: `?theme=light` or `?theme=blueprint`, `?noworker` (parse on the main 
 
 ```bash
 npm test                                              # every model: license, parts, sides, size
+npm run quality                                       # every model against the quality standard
 npm run measure                                       # measured size of every model against the specs
 npm run inspect -- data/models/aviation/<id>.json     # meshes and the parts they map to
 ```

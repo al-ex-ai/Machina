@@ -66,6 +66,7 @@ export function buildAC(data, opts = {}) {
       node = new THREE.Mesh(geo, mats.length === 1 ? mats[0] : mats);
       if (mats.length === 1) geo.clearGroups();
       node.castShadow = node.receiveShadow = true;
+      node.userData.texture = d.texture; // kept for the quality report
     } else node = new THREE.Group();
     node.name = n.name;
     if (n.loc) node.position.set(...n.loc);

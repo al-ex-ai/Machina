@@ -150,5 +150,11 @@
       "label": "Wikipedia: Wright Flyer",
       "url": "https://en.wikipedia.org/wiki/Wright_Flyer"
     }
-  ]
+  ],
+  "quality": {
+    "standard": {
+      "interior": false
+    },
+    "reason": "Open frame with no cabin: the pilot lies on the lower wing, and the hip cradle and controls are modelled."
+  }
 }

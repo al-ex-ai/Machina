@@ -1,19 +1,21 @@
 {
   "models": [
-    "models/aviation/a320neo.json",
-    "models/aviation/b737-300.json",
-    "models/aviation/b787-8.json",
-    "models/aviation/a380-800.json",
     "models/aviation/cessna-172s.json",
-    "models/aviation/b747-400.json",
     "models/aviation/dr400.json",
     "models/aviation/j3-cub.json",
-    "models/aviation/ec135.json",
-    "models/aviation/b707.json",
-    "models/aviation/dhc6.json",
     "models/aviation/ec130.json",
     "models/aviation/cessna337.json",
     "models/aviation/ercoupe.json",
     "models/aviation/wright-flyer.json"
+  ],
+  "workshop": [
+    "models/aviation/a320neo.json",
+    "models/aviation/b737-300.json",
+    "models/aviation/b787-8.json",
+    "models/aviation/a380-800.json",
+    "models/aviation/b747-400.json",
+    "models/aviation/ec135.json",
+    "models/aviation/b707.json",
+    "models/aviation/dhc6.json"
   ]
 }
