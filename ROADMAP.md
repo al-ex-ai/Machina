@@ -9,7 +9,7 @@ One milestone per week. Each milestone ends with everything committed, `npm test
 
 ## M1. Original app design (done)
 
-- "Hangar" design system: blueprint grid, mono data readouts, light and dark themes (`?theme=light`)
+- "Hangar" design system: blueprint grid, mono data readouts, dark, light and Blueprint themes (`?theme=light`, `?theme=blueprint`)
 - Home with live stats, category cards, gallery with 3D thumbnails, search and sort
 - Category pages, model page with part tree, heads-up readout, tool dock, spec sheet, previous and next
 - Keyboard: Esc, E explode, P person, R reset, X x-ray

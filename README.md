@@ -74,7 +74,7 @@ No `npm install` is needed. The server and tests use Node built-ins only.
 | R | Reset view |
 | Esc | Clear selection |
 
-URL flags: `?theme=light`, `?noworker` (parse on the main thread). Deep links: `#/m/<id>?part=<part>&xray=1&person=1`.
+URL flags: `?theme=light` or `?theme=blueprint`, `?noworker` (parse on the main thread). Deep links: `#/m/<id>?part=<part>&xray=1&person=1`.
 
 ## Adding an Aircraft
 
