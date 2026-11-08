@@ -58,7 +58,7 @@ if (ref.cockpit) {
   lv.windshield = [];
 } else if (!lv.cockpitWindows) lv.windshield = m.windshield; // traced panes
 lv.cheatline = { ...lv.cheatline, y: r2(winY - 0.5), riseFrom: 24, rise: 0.12 };
-if (lv.titles) { lv.titles.y = r2(winY + 0.72); lv.titles.height = 0.8; }
+if (lv.titles) { lv.titles.y = r2(winY + 0.6); lv.titles.height = 0.72; }
 
 // Wing planform from the top view; heights, thickness and twist stay from the model file.
 const wing0 = g.surfaces[0];

@@ -23,7 +23,7 @@ export function buildParametric(model) {
   const tex = paintFuselage(body, L, lv);
   root.add(makePart(loftBody(body, { length: L, segments: 128 }), {
     id: 'fuselage', label: 'Fuselage', system: 'structure', keepNormals: true,
-    material: tex ? { map: tex, color: '#ffffff', roughness: 0.32, clearcoat: 0.8 } : { color: lv.base },
+    material: tex ? { map: tex, color: '#ffffff', roughness: 0.5, clearcoat: 0, envMapIntensity: 0.45, specularIntensity: 0.2 } : { color: lv.base }, // satin, softer reflections: dark titles stay readable under the studio light
     info: partInfo(model, 'fuselage', { Length: `${L} m` }),
   }));
   if (g.fairing) {

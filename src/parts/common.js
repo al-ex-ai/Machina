@@ -5,7 +5,7 @@
 import * as THREE from 'three';
 
 /** @typedef {{ id: string, label: string, system: string, info?: Record<string, string|number>, material?: MaterialOpts }} PartMeta */
-/** @typedef {{ color?: string, map?: THREE.Texture|null, metalness?: number, roughness?: number, clearcoat?: number, doubleSide?: boolean }} MaterialOpts */
+/** @typedef {{ color?: string, map?: THREE.Texture|null, metalness?: number, roughness?: number, clearcoat?: number, doubleSide?: boolean, envMapIntensity?: number }} MaterialOpts */
 
 // Finish per system: painted panels get clearcoat, metal parts get metalness.
 const FINISH = {
@@ -36,6 +36,8 @@ export function systemMaterial(system, livery = {}, opts = {}) {
     clearcoat: opts.clearcoat ?? finish.clearcoat,
     clearcoatRoughness: 0.25,
     side: opts.doubleSide ? THREE.DoubleSide : THREE.FrontSide,
+    envMapIntensity: opts.envMapIntensity ?? 1,
+    specularIntensity: opts.specularIntensity ?? 1,
   });
 }
 
