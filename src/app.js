@@ -68,8 +68,24 @@ const widthOf = m => m.specs.wingspan_m ?? m.specs.rotor_diameter_m ?? m.specs.w
 const widthLabel = m => (m.specs.wingspan_m ? 'span' : m.specs.rotor_diameter_m ? 'rotor' : 'width');
 const code = m => m.id.toUpperCase();
 
-const state = { categories: [], models: [], part: null, model: null, xray: false, pick: false, loadToken: 0, livery: null };
+const state = { categories: [], models: [], part: null, model: null, xray: false, pick: false, loadToken: 0, livery: null, tab: 'overview', showPart: false, filter: '' };
 let viewer = null;
+
+// ── Icons ──────────────────────────────────────────────
+const ICON = {
+  overview: '<circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/>',
+  specs: '<path d="M8 6h12M8 12h12M8 18h12"/><path d="M4 6h.01M4 12h.01M4 18h.01"/>',
+  drawing: '<path d="M3 17l6-10 4 7 3-4 5 7z"/><path d="M3 21h18"/>',
+  sources: '<path d="M10 14a4 4 0 0 0 5.66 0l3-3a4 4 0 0 0-5.66-5.66l-1 1"/><path d="M14 10a4 4 0 0 0-5.66 0l-3 3a4 4 0 0 0 5.66 5.66l1-1"/>',
+  part: '<path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M12 12l8-4.5M12 12v9M12 12L4 7.5"/>',
+  search: '<circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/>',
+  brush: '<path d="M14.5 4.5l5 5-8 8-5-5z"/><path d="M6.5 12.5c-2 0-3.5 1.5-3.5 4 0 1.5-.5 2.5-1 3 3 0 6-1 6-4"/>',
+  expand: '<path d="M7 9l5-5 5 5M7 15l5 5 5-5"/>',
+  collapse: '<path d="M7 4l5 5 5-5M7 20l5-5 5 5"/>',
+  open: '<path d="M14 4h6v6M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/>',
+  download: '<path d="M12 4v11M7 10l5 5 5-5"/><path d="M4 19h16"/>',
+};
+const icon = (name, size = 18) => `<svg class="ic" width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICON[name]}</svg>`;
 
 // ── Theme ──────────────────────────────────────────────
 const THEMES = [
@@ -233,11 +249,11 @@ function ensureViewer() {
   viewer.setTheme(theme());
   viewer.on('select', p => {
     state.part = p?.id ?? null;
+    state.showPart = Boolean(p);
     if (p && !state.pick) setPicking(true); // chosen from the tree or a link: switch the tool on to match
     renderSheet();
     markTree();
-    const m = state.model;
-    if (m) history.replaceState(null, '', `#/m/${m.id}${state.part ? `?part=${state.part}` : ''}`);
+    syncURL();
   });
   viewer.on('hover', (p, ev) => {
     const tip = $('#tip');
@@ -272,10 +288,17 @@ function renderModel(id, partId) {
     parkViewer(); // keep the canvas alive while the page is rebuilt
     $('#page').innerHTML = `
       <div class="model-page">
-        <aside class="rail">
-          <div class="crumbs" style="padding:0 8px 14px"><a href="#/">Catalog</a><span class="sep">/</span><a href="#/c/${esc(cat.id)}">${esc(cat.label)}</a></div>
-          <span class="label">Part tree</span>
+        <aside class="rail" aria-label="Parts">
+          <div class="rail-head">
+            <div class="crumbs"><a href="#/">Catalog</a><span class="sep">/</span><a href="#/c/${esc(cat.id)}">${esc(cat.label)}</a></div>
+            <div class="rail-title"><span class="label">Parts</span><span class="rail-tools">
+              <button type="button" class="icon-sm" data-tree-all="open" title="Expand all" aria-label="Expand all groups">${icon('expand', 15)}</button>
+              <button type="button" class="icon-sm" data-tree-all="close" title="Collapse all" aria-label="Collapse all groups">${icon('collapse', 15)}</button>
+            </span></div>
+            <label class="filter">${icon('search', 15)}<input id="part-filter" type="search" placeholder="Filter parts" aria-label="Filter parts" autocomplete="off"></label>
+          </div>
           <ul class="tree" id="tree" aria-label="Parts, grouped by system"></ul>
+          <div class="rail-foot" id="rail-foot"></div>
         </aside>
         <section class="stage" id="stage" aria-label="3D view of ${esc(m.name)}. Select parts from the part tree, or turn on the Select tool and click them in the view.">
           <div class="hud-top">
@@ -287,6 +310,7 @@ function renderModel(id, partId) {
           </div>
           <div class="tip" id="tip" hidden></div>
           <div class="loading" id="loading" role="status" aria-live="polite" hidden><span class="spinner"></span><span class="label">Loading detailed model</span></div>
+          <div class="paint" id="paint" role="radiogroup" aria-label="Livery" hidden></div>
           <div class="dock" role="toolbar" aria-label="Viewer tools">
             <label class="tool" title="Pull parts apart (E)">Explode <input id="explode" type="range" min="0" max="1" step="0.01" value="0"></label>
             <span class="sep"></span>
@@ -296,7 +320,10 @@ function renderModel(id, partId) {
             <button class="tool" id="reset" type="button" title="Reset the camera (R)">Reset <kbd>R</kbd></button>
           </div>
         </section>
-        <aside class="sheet" id="sheet" aria-live="polite"></aside>
+        <aside class="sheet">
+          <div class="panel" id="sheet" role="tabpanel" aria-live="polite"></div>
+          <nav class="vtabs" id="tabs" role="tablist" aria-orientation="vertical" aria-label="Model information"></nav>
+        </aside>
       </div>`;
     $('#stage').prepend($('#stage-host'));
     const v = ensureViewer();
@@ -340,6 +367,7 @@ function showModel(m, partId) {
     viewer.setExplode(Number($('#explode')?.value ?? 0));
     $('#loading').hidden = true;
     renderTree();
+    renderPaint();
     viewer.select(partId ?? null);
     if (!partId) renderSheet();
   };
@@ -364,11 +392,33 @@ function setLivery(id) {
   state.livery = id === 'machina' ? null : id;
   viewer.setModel(buildModel(withLivery(m, state.livery)), { keepView: true });
   viewer.setExplode(Number($('#explode')?.value ?? 0));
-  const [path, query = ''] = location.hash.split('?');
-  const q = new URLSearchParams(query);
-  if (state.livery) q.set('livery', state.livery); else q.delete('livery');
-  history.replaceState(null, '', `${path}${q.size ? `?${q}` : ''}`);
-  renderSheet();
+  syncURL();
+  renderPaint();
+}
+
+/** Keep the address in step with the selected part and livery (no navigation). */
+function syncURL() {
+  const m = state.model;
+  if (!m) return;
+  const q = new URLSearchParams();
+  if (state.part) q.set('part', state.part);
+  if (state.livery) q.set('livery', state.livery);
+  history.replaceState(null, '', `#/m/${m.id}${q.size ? `?${q}` : ''}`);
+}
+
+/** The livery palette floating in the stage: one swatch per preset, drawn like a fuselage (crown, stripe, belly). */
+function renderPaint() {
+  const el = $('#paint');
+  if (!el || !state.model) return;
+  const list = liveriesFor(state.model);
+  el.hidden = !list.length;
+  if (!list.length) { el.innerHTML = ''; return; }
+  const cur = state.livery ?? 'machina';
+  el.innerHTML = `<span class="paint-ic" title="Livery">${icon('brush', 15)}</span>` + list.map(l => {
+    const [crown, belly, stripe] = l.swatch;
+    return `<button type="button" class="paint-btn" role="radio" data-livery="${esc(l.id)}" aria-checked="${l.id === cur}" aria-label="${esc(l.label)}" data-name="${esc(l.label)}" tabindex="${l.id === cur ? 0 : -1}"
+      style="background: linear-gradient(180deg, ${crown} 0 48%, ${stripe} 48% 60%, ${belly} 60% 100%)"></button>`;
+  }).join('');
 }
 
 function groupedParts() {
@@ -382,17 +432,42 @@ function groupedParts() {
 }
 
 function renderTree() {
-  $('#tree').innerHTML = [...groupedParts()].map(([sys, ps]) => `
+  const groups = [...groupedParts()];
+  $('#tree').innerHTML = groups.map(([sys, ps]) => `
     <li class="tree-sys" data-open="true">
-      <button type="button" data-toggle aria-expanded="true"><svg class="chev" aria-hidden="true" viewBox="0 0 10 10" fill="currentColor"><path d="M1 3l4 4 4-4z"/></svg>
-        <span class="sys-dot" style="background:${SYSTEMS[sys]?.color ?? '#888'}"></span>${esc(SYSTEMS[sys]?.label ?? sys)}<span class="n">${ps.length}</span></button>
-      <ul>${ps.map(p => `<li><button type="button" data-part="${esc(p.id)}">${esc(p.label)}</button></li>`).join('')}</ul>
+      <button type="button" class="sys-head" data-toggle aria-expanded="true"><svg class="chev" aria-hidden="true" viewBox="0 0 10 10" fill="currentColor"><path d="M1 3l4 4 4-4z"/></svg>
+        <span class="sys-dot" style="background:${SYSTEMS[sys]?.color ?? '#888'}"></span><span class="sys-name">${esc(SYSTEMS[sys]?.label ?? sys)}</span><span class="n">${ps.length}</span></button>
+      <ul>${ps.map(p => `<li><button type="button" class="part-btn" data-part="${esc(p.id)}">${esc(p.label)}</button></li>`).join('')}</ul>
     </li>`).join('');
+  const n = groups.reduce((a, [, ps]) => a + ps.length, 0);
+  $('#rail-foot').innerHTML = `<span>${n} parts</span><span>${groups.length} systems</span>`;
+  const f = $('#part-filter');
+  if (f) f.value = state.filter;
+  applyFilter();
   markTree();
 }
 
+/** Show only parts whose name matches the filter; groups with no match hide, the rest open. */
+function applyFilter() {
+  const q = state.filter.trim().toLowerCase();
+  document.querySelectorAll('#tree .tree-sys').forEach(g => {
+    let any = false;
+    g.querySelectorAll('[data-part]').forEach(b => {
+      const hit = !q || b.textContent.toLowerCase().includes(q) || g.querySelector('.sys-name').textContent.toLowerCase().includes(q);
+      b.parentElement.hidden = !hit;
+      any ||= hit;
+    });
+    g.hidden = !any;
+    if (q && any) { g.dataset.open = 'true'; g.querySelector('[data-toggle]').setAttribute('aria-expanded', 'true'); }
+  });
+}
+
 function markTree() {
-  document.querySelectorAll('#tree [data-part]').forEach(b => b.setAttribute('aria-current', String(b.dataset.part === state.part)));
+  document.querySelectorAll('#tree [data-part]').forEach(b => {
+    const on = b.dataset.part === state.part;
+    b.setAttribute('aria-current', String(on));
+    if (on) b.scrollIntoView({ block: 'nearest' }); // picked in the view: bring it into sight in the tree
+  });
 }
 
 function specRows(m) {
@@ -404,19 +479,6 @@ function specRows(m) {
     const value = unit === 'Mach' ? `Mach ${v}` : `${isYear ? v : num(v)}${unit ? ` ${unit}` : ''}`;
     return `<div><dt>${esc(label)}</dt><dd class="${numeric ? 'num' : ''}">${esc(value)}</dd></div>`;
   }).join('');
-}
-
-/** Compare the size on stage with the published specs and say so plainly. */
-function liveryPicker(m) {
-  const list = liveriesFor(m);
-  if (!list.length) return '';
-  const cur = state.livery ?? 'machina';
-  return `<h2 class="label" id="livery-label">Livery</h2>
-    <div class="liveries" role="group" aria-labelledby="livery-label">${list.map(l => `
-      <button type="button" class="livery" data-livery="${esc(l.id)}" aria-pressed="${l.id === cur}">
-        <span class="swatch" aria-hidden="true">${l.swatch.map(c => `<i style="background:${c}"></i>`).join('')}</span>${esc(l.label)}
-      </button>`).join('')}
-    </div>`;
 }
 
 function sizeBadge(m) {
@@ -431,62 +493,152 @@ function sizeBadge(m) {
   return `<span class="verified warn" title="${measured}">● Differs from published specs: ${txt}</span>`;
 }
 
+const TABS = [
+  { id: 'overview', label: 'Overview' },
+  { id: 'specs', label: 'Specs' },
+  { id: 'drawing', label: 'Drawing' },
+  { id: 'sources', label: 'Sources' },
+  { id: 'part', label: 'Part' },
+];
+
+function renderTabs(active) {
+  $('#tabs').innerHTML = TABS.map(t => {
+    const off = t.id === 'part' && !state.part;
+    return `<button type="button" role="tab" class="vtab" id="tab-${t.id}" data-tab="${t.id}" aria-selected="${t.id === active}" aria-controls="sheet" tabindex="${t.id === active ? 0 : -1}"${off ? ' disabled title="Select a part to see its details"' : ''}>
+      ${icon(t.id, 20)}<span>${t.label}</span></button>`;
+  }).join('');
+  $('#sheet').setAttribute('aria-labelledby', `tab-${active}`);
+}
+
 function renderSheet() {
   const m = state.model;
   const sheet = $('#sheet');
   if (!sheet || !m) return;
   const p = state.part ? viewer.listParts().find(x => x.id === state.part) : null;
-  if (p) {
-    const size = viewer.partSize(p.id);
-    const sys = SYSTEMS[p.system];
-    const info = Object.entries(p.info ?? {}).filter(([, v]) => v !== '').map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(num(v))}</dd></div>`).join('');
-    sheet.innerHTML = `
-      <button type="button" class="back" data-back>← ${esc(m.name)}</button>
-      <h1>${esc(p.label)}</h1>
-      <div class="part-head"><span class="sys-dot" style="background:${sys?.color ?? '#888'}"></span>${esc(sys?.label ?? p.system)}</div>
-      ${info ? `<h2 class="label">Details</h2><dl class="specs">${info}</dl>` : ''}
-      ${size ? `<h2 class="label">Measured in the model</h2><dl class="specs">
-        <div><dt>Length</dt><dd class="num">${size.x.toFixed(2)} m</dd></div>
-        <div><dt>Width</dt><dd class="num">${size.z.toFixed(2)} m</dd></div>
-        <div><dt>Height</dt><dd class="num">${size.y.toFixed(2)} m</dd></div></dl>` : ''}
-      <p class="note">Press Esc to return to the full model.</p>`;
-    return;
-  }
-  sheet.innerHTML = `
+  const active = p && state.showPart ? 'part' : state.tab;
+  renderTabs(active);
+  sheet.scrollTop = 0;
+  sheet.innerHTML = active === 'part' ? partPanel(m, p) : PANELS[active](m);
+}
+
+const statTiles = m => {
+  const w = widthOf(m), wl = widthLabel(m);
+  return `<div class="tiles">
+    <div class="tile"><span>Length</span><b>${m.specs.length_m}<i>m</i></b></div>
+    <div class="tile"><span>${wl === 'span' ? 'Span' : wl === 'rotor' ? 'Rotor' : 'Width'}</span><b>${w}<i>m</i></b></div>
+    <div class="tile"><span>Height</span><b>${m.specs.height_m}<i>m</i></b></div>
+  </div>`;
+};
+
+const builtFrom = m => m.asset && state.shownDetailed ? 'Detailed FlightGear model'
+  : m.derived ? 'Parametric, measured from a FlightGear mesh'
+  : m.reference ? 'Parametric, measured from a three-view drawing'
+  : m.builder === 'parametric' ? 'Parametric, from published dimensions' : 'Generated from published dimensions';
+
+const PANELS = {
+  overview: m => `
     <span class="label">${esc(m.group)} · ${esc(code(m))}</span>
     <h1>${esc(m.name)}</h1>
     <p class="sub">${esc(m.summary)}</p>
     ${sizeBadge(m)}
-    <h2 class="label">Specifications</h2>
-    <dl class="specs">${specRows(m)}</dl>
-    ${liveryPicker(m)}
-    <h2 class="label">Three-view drawing</h2>
-    <a class="drawing" href="drawings/${esc(m.id)}.svg" target="_blank" rel="noopener" title="Open the drawing (SVG)">
-      <img src="drawings/${esc(m.id)}.svg" alt="Side, top and front views of the ${esc(m.name)}" loading="lazy" onerror="this.parentElement.hidden = true; this.parentElement.previousElementSibling.hidden = true">
-    </a>
-    ${m.asset && state.shownDetailed ? `<h2 class="label">3D model</h2>
-    <dl class="specs">
-      <div><dt>Author</dt><dd>${esc(m.asset.author)}</dd></div>
-      <div><dt>License</dt><dd>${esc(m.asset.license)}</dd></div>
-      <div><dt>Source</dt><dd><a href="${esc(m.asset.source)}" target="_blank" rel="noopener noreferrer">${esc(m.asset.source.replace(/^https?:\/\//, ''))}</a></dd></div>
+    ${statTiles(m)}
+    <dl class="facts">
+      ${m.specs.manufacturer ? `<div><dt>Manufacturer</dt><dd>${esc(m.specs.manufacturer)}</dd></div>` : ''}
+      ${m.specs.role ? `<div><dt>Role</dt><dd>${esc(m.specs.role)}</dd></div>` : ''}
+      ${m.specs.first_flight ? `<div><dt>First flight</dt><dd>${esc(m.specs.first_flight)}</dd></div>` : ''}
+      <div><dt>Built</dt><dd>${esc(builtFrom(m))}</dd></div>
     </dl>
-    ${m.asset.verify?.note ? `<p class="note">${esc(m.asset.verify.note)}</p>` : ''}` : ''}
-    <h2 class="label">Sources</h2>
-    <div class="sources">${(m.sources ?? []).map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.label)} ↗</a>`).join('')}</div>
-    <p class="note">Overall dimensions follow the published specs. Shapes are simplified and part details are approximate.</p>`;
+    <button type="button" class="link-btn" data-tab="specs">All specifications →</button>`,
+  specs: m => `
+    <span class="label">Specifications</span>
+    <h1>${esc(m.name)}</h1>
+    <dl class="specs">${specRows(m)}</dl>
+    <p class="note">Overall dimensions follow the published specs. Shapes are simplified and part details are approximate.</p>`,
+  drawing: m => `
+    <span class="label">Three-view drawing</span>
+    <h1>${esc(m.name)}</h1>
+    <p class="sub">Side, front and top views with sections, projected from the 3D model on an A3 sheet at a standard scale.</p>
+    <a class="drawing" href="drawings/${esc(m.id)}.svg" target="_blank" rel="noopener" title="Open the drawing (SVG)">
+      <img src="drawings/${esc(m.id)}.svg" alt="Side, top and front views of the ${esc(m.name)}" loading="lazy" onerror="this.closest('.drawing').outerHTML = '<p class=&quot;note&quot;>No drawing yet for this model.</p>'">
+    </a>
+    <div class="btn-row">
+      <a class="btn" href="drawings/${esc(m.id)}.svg" target="_blank" rel="noopener">${icon('open', 16)}Open full size</a>
+      <a class="btn" href="drawings/${esc(m.id)}.svg" download="${esc(m.id)}-three-view.svg">${icon('download', 16)}Download SVG</a>
+    </div>`,
+  sources: m => {
+    const prov = m.asset && state.shownDetailed ? [['3D model', m.asset.author], ['License', m.asset.license], ['Source', m.asset.source]]
+      : m.derived ? [['Measured from', `FlightGear model by ${m.derived.author}`], ['License', m.derived.license], ['Source', m.derived.source]]
+      : m.reference ? [['Measured from', `Drawing by ${m.reference.author}`], ['License', m.reference.license], ['Source', m.reference.source]]
+      : [];
+    const row = ([k, v]) => `<div><dt>${esc(k)}</dt><dd>${/^https?:/.test(v ?? '') ? `<a href="${esc(v)}" target="_blank" rel="noopener noreferrer">${esc(v.replace(/^https?:\/\//, ''))}</a>` : esc(v ?? '')}</dd></div>`;
+    const note = (m.asset && state.shownDetailed ? m.asset.verify?.note : m.verify?.note) ?? '';
+    return `
+    <span class="label">Sources and credits</span>
+    <h1>${esc(m.name)}</h1>
+    ${prov.length ? `<h2 class="label">Geometry</h2><dl class="specs">${prov.map(row).join('')}</dl>` : ''}
+    ${note ? `<p class="note">${esc(note)}</p>` : ''}
+    <h2 class="label">Specifications</h2>
+    <div class="sources">${(m.sources ?? []).map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${icon('open', 14)}${esc(s.label)}</a>`).join('')}</div>`;
+  },
+};
+
+function partPanel(m, p) {
+  const size = viewer.partSize(p.id);
+  const sys = SYSTEMS[p.system];
+  const info = Object.entries(p.info ?? {}).filter(([, v]) => v !== '').map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(num(v))}</dd></div>`).join('');
+  return `
+    <button type="button" class="back" data-back>← ${esc(m.name)}</button>
+    <span class="chip"><span class="sys-dot" style="background:${sys?.color ?? '#888'}"></span>${esc(sys?.label ?? p.system)}</span>
+    <h1>${esc(p.label)}</h1>
+    ${size ? `<div class="tiles">
+      <div class="tile"><span>Length</span><b>${size.x.toFixed(2)}<i>m</i></b></div>
+      <div class="tile"><span>Width</span><b>${size.z.toFixed(2)}<i>m</i></b></div>
+      <div class="tile"><span>Height</span><b>${size.y.toFixed(2)}<i>m</i></b></div>
+    </div><p class="note tight">Measured in the model.</p>` : ''}
+    ${info ? `<h2 class="label">Details</h2><dl class="specs">${info}</dl>` : ''}
+    <p class="note">Press Esc to return to the full model.</p>`;
 }
 
 // ── Events ─────────────────────────────────────────────
 document.addEventListener('click', e => {
-  const t = e.target.closest('[data-part],[data-toggle],[data-back],[data-livery]');
+  const t = e.target.closest('[data-part],[data-toggle],[data-back],[data-livery],[data-tab],[data-tree-all]');
   if (!t) return;
   if (t.dataset.livery !== undefined) setLivery(t.dataset.livery);
+  else if (t.dataset.tab !== undefined) {
+    if (t.dataset.tab === 'part') state.showPart = true;
+    else { state.tab = t.dataset.tab; state.showPart = false; }
+    renderSheet();
+    $(`#tab-${t.dataset.tab}`)?.focus();
+  } else if (t.dataset.treeAll !== undefined) {
+    const open = t.dataset.treeAll === 'open';
+    document.querySelectorAll('#tree .tree-sys').forEach(g => { g.dataset.open = String(open); g.querySelector('[data-toggle]').setAttribute('aria-expanded', String(open)); });
+  }
   else if (t.dataset.part !== undefined) viewer?.select(t.dataset.part);
   else if (t.dataset.toggle !== undefined) {
     const li = t.closest('.tree-sys');
     li.dataset.open = String(li.dataset.open !== 'true');
     t.setAttribute('aria-expanded', li.dataset.open);
   } else if (t.dataset.back !== undefined) viewer?.select(null);
+});
+
+document.addEventListener('input', e => {
+  if (e.target.id !== 'part-filter') return;
+  state.filter = e.target.value;
+  applyFilter();
+});
+
+// Arrow keys move between vertical tabs and between livery swatches (roving focus).
+document.addEventListener('keydown', e => {
+  const tab = e.target.closest?.('.vtab'), sw = e.target.closest?.('.paint-btn');
+  if (!tab && !sw) return;
+  const keys = tab ? ['ArrowUp', 'ArrowDown'] : ['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'];
+  if (![...keys, 'Home', 'End'].includes(e.key)) return;
+  e.preventDefault();
+  const items = [...(tab ? document.querySelectorAll('.vtab:not([disabled])') : document.querySelectorAll('.paint-btn'))];
+  const i = items.indexOf(e.target);
+  const next = e.key === 'Home' ? 0 : e.key === 'End' ? items.length - 1 : (i + (['ArrowUp', 'ArrowLeft'].includes(e.key) ? -1 : 1) + items.length) % items.length;
+  items[next].click();
+  items[next].focus?.();
 });
 
 document.addEventListener('mouseover', e => {
@@ -498,7 +650,7 @@ document.addEventListener('mouseout', e => {
 });
 
 document.addEventListener('keydown', e => {
-  if (parseRoute().name !== 'model' || e.target.matches('input, textarea')) return;
+  if (parseRoute().name !== 'model' || e.target.matches('input, textarea') || e.target.closest('.vtab, .paint-btn')) return;
   if (e.key === 'Escape') viewer?.select(null);
   else if (e.key === 'r' || e.key === 'R') viewer?.resetView();
   else if (e.key === 'p' || e.key === 'P') $('#person')?.click();
