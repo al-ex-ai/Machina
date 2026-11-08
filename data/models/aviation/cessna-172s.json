@@ -181,7 +181,9 @@
       "PropellerCowlPlugs",
       "sun_and_view_blocker",
       "/lighton/",
-      "glass_panal-fg1000-kap140"
+      "glass_panal-fg1000-kap140",
+      "/^landinglight$/",
+      "/^taxilight$/"
     ],
     "parts": [
       {

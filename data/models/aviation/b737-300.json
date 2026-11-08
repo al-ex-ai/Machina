@@ -41,7 +41,9 @@
       "/^Bulkhead/",
       "/^halo/i",
       "removal",
-      "/^Plane\\.0(09X|10X)/"
+      "/^Plane\\.0(09X|10X)/",
+      "/^Llight[lr]$/",
+      "/^navlight_(left|right|back)$/"
     ],
     "parts": [
       {

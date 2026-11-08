@@ -84,7 +84,9 @@
       "/^luggage.*_(in|cyl|rod|rubber)/",
       "bar_head",
       "/^Plane\\.005X/",
-      "wirecutter"
+      "wirecutter",
+      "/^navlight_(left|right|back)$/",
+      "/^taxilight$/"
     ],
     "parts": [
       {

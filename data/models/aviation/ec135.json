@@ -75,7 +75,8 @@
       "Cube.001",
       "triangle",
       "snowboard",
-      "buckle"
+      "buckle",
+      "/^navlight_(left|right|back)$/"
     ],
     "parts": [
       {

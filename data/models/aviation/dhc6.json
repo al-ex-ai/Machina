@@ -51,7 +51,9 @@
       "/Rot$/",
       "/_interior$/",
       "bluntnose",
-      "/flare/"
+      "/flare/",
+      "/LNDlight$/",
+      "/^strobe\\.\\d$/"
     ],
     "parts": [
       {
