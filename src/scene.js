@@ -224,12 +224,14 @@ export function createViewer(container) {
     return hit ? partFrom(hit.object) : null;
   }
 
+  let picking = false; // clicking parts in the view is off until the Select tool is on
   renderer.domElement.addEventListener('pointerdown', ev => { down = { x: ev.clientX, y: ev.clientY }; });
   renderer.domElement.addEventListener('pointerup', ev => {
-    if (!down || Math.hypot(ev.clientX - down.x, ev.clientY - down.y) > 5) return;
+    if (!picking || !down || Math.hypot(ev.clientX - down.x, ev.clientY - down.y) > 5) return;
     select(pick(ev));
   });
   renderer.domElement.addEventListener('pointermove', ev => {
+    if (!picking) return;
     const p = pick(ev);
     if (p !== hovered) {
       hovered = p;
@@ -379,6 +381,15 @@ export function createViewer(container) {
       XRAY_EDGE.color.set(stageFor(name).xray);
       XRAY_FILL.color.set(stageFor(name).xray);
       if (model) frame();
+    },
+    setPicking(on) {
+      picking = on;
+      if (!on) {
+        hovered = null;
+        renderer.domElement.style.cursor = 'grab';
+        refreshPaint();
+        listeners.hover.forEach(f => f(null));
+      }
     },
     setHover(id) {
       hovered = parts.find(p => p.userData.id === id) ?? null;

@@ -67,8 +67,9 @@ No `npm install` is needed. The server and tests use Node built-ins only.
 
 | Keys | Action |
 |---|---|
-| Click | Select a part |
+| Click | Select a part (with the Select tool on, or from the part tree) |
 | E | Explode |
+| S | Select tool: click parts in the view (off by default) |
 | X | X-ray |
 | P | Scale figure |
 | R | Reset view |

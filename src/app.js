@@ -67,7 +67,7 @@ const widthOf = m => m.specs.wingspan_m ?? m.specs.rotor_diameter_m ?? m.specs.w
 const widthLabel = m => (m.specs.wingspan_m ? 'span' : m.specs.rotor_diameter_m ? 'rotor' : 'width');
 const code = m => m.id.toUpperCase();
 
-const state = { categories: [], models: [], part: null, model: null, xray: false, loadToken: 0 };
+const state = { categories: [], models: [], part: null, model: null, xray: false, pick: false, loadToken: 0 };
 let viewer = null;
 
 // ── Theme ──────────────────────────────────────────────
@@ -230,6 +230,7 @@ function ensureViewer() {
   viewer.setTheme(theme());
   viewer.on('select', p => {
     state.part = p?.id ?? null;
+    if (p && !state.pick) setPicking(true); // chosen from the tree or a link: switch the tool on to match
     renderSheet();
     markTree();
     const m = state.model;
@@ -273,7 +274,7 @@ function renderModel(id, partId) {
           <span class="label">Part tree</span>
           <ul class="tree" id="tree" aria-label="Parts, grouped by system"></ul>
         </aside>
-        <section class="stage" id="stage" aria-label="3D view of ${esc(m.name)}. Select parts from the part tree, or click them in the view.">
+        <section class="stage" id="stage" aria-label="3D view of ${esc(m.name)}. Select parts from the part tree, or turn on the Select tool and click them in the view.">
           <div class="hud-top">
             <div class="readout"><span>${esc(code(m))}</span><span>L <b>${m.specs.length_m}</b> m</span><span>${widthLabel(m) === 'span' ? 'S' : 'W'} <b>${widthOf(m)}</b> m</span><span>H <b>${m.specs.height_m}</b> m</span></div>
             <div class="stepper">
@@ -286,6 +287,7 @@ function renderModel(id, partId) {
           <div class="dock" role="toolbar" aria-label="Viewer tools">
             <label class="tool" title="Pull parts apart (E)">Explode <input id="explode" type="range" min="0" max="1" step="0.01" value="0"></label>
             <span class="sep"></span>
+            <button class="tool" id="pick" type="button" aria-pressed="${state.pick}" title="Click parts in the view to select them (S)">Select <kbd>S</kbd></button>
             <button class="tool" id="xray" type="button" aria-pressed="${state.xray}" title="See through the airframe (X)">X-ray <kbd>X</kbd></button>
             <button class="tool" id="person" type="button" aria-pressed="false" title="Show a 1.8 m person (P)">Person <kbd>P</kbd></button>
             <button class="tool" id="reset" type="button" title="Reset the camera (R)">Reset <kbd>R</kbd></button>
@@ -296,6 +298,8 @@ function renderModel(id, partId) {
     $('#stage').prepend($('#stage-host'));
     const v = ensureViewer();
     v.setXray(state.xray);
+    v.setPicking(state.pick);
+    $('#pick').addEventListener('click', () => setPicking(!state.pick));
     $('#xray').addEventListener('click', e => {
       state.xray = e.currentTarget.getAttribute('aria-pressed') !== 'true';
       e.currentTarget.setAttribute('aria-pressed', String(state.xray));
@@ -313,6 +317,14 @@ function renderModel(id, partId) {
   }
   viewer.select(partId ?? null);
   if (!partId) renderSheet();
+}
+
+/** Turn clicking parts in the view on or off. Turning it off clears the selection. */
+function setPicking(on) {
+  state.pick = on;
+  $('#pick')?.setAttribute('aria-pressed', String(on));
+  viewer?.setPicking(on);
+  if (!on && state.part) viewer?.select(null);
 }
 
 /** Put the detailed asset (when there is one and it is enabled) or the generated model on stage. */
@@ -456,6 +468,7 @@ document.addEventListener('keydown', e => {
   else if (e.key === 'r' || e.key === 'R') viewer?.resetView();
   else if (e.key === 'p' || e.key === 'P') $('#person')?.click();
   else if (e.key === 'x' || e.key === 'X') $('#xray')?.click();
+  else if (e.key === 's' || e.key === 'S') $('#pick')?.click();
   else if (e.key === 'e' || e.key === 'E') {
     const s = $('#explode');
     s.value = Number(s.value) > 0 ? 0 : 0.6;

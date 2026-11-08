@@ -12,7 +12,7 @@ One milestone per week. Each milestone ends with everything committed, `npm test
 - "Hangar" design system: blueprint grid, mono data readouts, dark, light and Blueprint themes (`?theme=light`, `?theme=blueprint`)
 - Home with live stats, category cards, gallery with 3D thumbnails, search and sort
 - Category pages, model page with part tree, heads-up readout, tool dock, spec sheet, previous and next
-- Keyboard: Esc, E explode, P person, R reset, X x-ray
+- Keyboard: Esc, E explode, P person, R reset, S select, X x-ray
 - Phone layout: viewer first, scrolling navigation, compact dock
 - Accessibility: readable contrast in both themes, skip link, labelled 3D region, announced part details and loading, expand state on the part tree, reduced-motion support
 
