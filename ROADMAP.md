@@ -26,6 +26,13 @@ One milestone per week. Each milestone ends with everything committed, `npm test
 - X-ray view, 1.8 m scale figure
 - Verification: size against published specs with documented tolerances, left/right side check, license and credits required for every asset
 
+## M2.5 Parametric detail and drawings (done, ahead of plan)
+
+- Three-view drawings as exact vectors: silhouettes, creases, open edges and part intersections, clipped with a depth buffer, laid out on A3 at a standard scale with sections, dimensions, centerlines and a title block
+- Window and door outlines carried from the model data into the drawings, and dropped where they are seen edge-on
+- Generated detail on parametric models, with no per-model tuning: panel seams and window recesses as height maps, framed windows, wing spar and rib lines, hinge gaps on movable surfaces, fan blades, rounded inlet lips and exhaust sleeves, tread, torque links and braces on the gear, antennas, beacons, pitot probes and the APU exhaust
+- Smoother lofts: fuselage rings close up where the outline bends
+
 ## M3. Compare
 
 - Two to four models side by side or overlaid at true scale

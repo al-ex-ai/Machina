@@ -313,3 +313,8 @@ button { font: inherit; color: inherit; }
     var(--accent-soft);
   background-repeat: no-repeat;
 }
+
+/* Three-view drawing in the spec sheet: the SVG keeps its white paper in every theme */
+.drawing { display: block; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: #fff; margin-bottom: 18px; }
+.drawing img { display: block; width: 100%; height: auto; }
+.drawing:hover { border-color: var(--accent); }

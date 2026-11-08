@@ -18,6 +18,8 @@ Machina turns simulator models into explorable, named parts.
 |---|---|
 | **Named, selectable parts** | Rules in each model file map raw meshes to parts (left aileron, slats and Krueger flaps, main gear) grouped by system |
 | **True scale** | Every model is measured against its published length, span and height, and any gap is shown on the model page |
+| **Three-view drawings** | An A3 sheet per model at a standard scale: side, front and top views projected from the geometry with hidden lines removed, fuselage sections, dimensions and a title block |
+| **Generated detail** | Parametric models get panel seams, framed windows, control surface gaps, fan blades, gear linkage, antennas and beacons from the data they already have |
 | **Inside and outside** | X-ray view, exploded view, cabins and cockpits where the source has them |
 | **Legal to reuse** | Every asset folder carries its original license and credits, and the tests fail without them |
 | **No build step** | Static ES modules and vendored Three.js. Clone, start, open |
@@ -107,6 +109,7 @@ URL flags: `?theme=light` or `?theme=blueprint`, `?noworker` (parse on the main 
 
 - Accuracy follows the source model. Gaps above 1% are listed on the model page, not hidden.
 - Part mapping is by mesh name, so some parts group several real components (for example "flap track fairings").
+- Generated detail (antennas, probes, panel seams, rib lines) is placed by rule from the body and wing data, not measured from the real aircraft.
 - Animations from the simulator data (flaps, gear, rotors) are not played yet.
 - Models are large (5 to 30 MB with textures). Textures are capped at 2048 px.
 
@@ -125,6 +128,7 @@ URL flags: `?theme=light` or `?theme=blueprint`, `?noworker` (parse on the main 
 ```bash
 npm test                                              # every model: license, parts, sides, size
 npm run quality                                       # every model against the quality standard
+npm run drawings [id ...]                             # A3 three-view drawings (SVG) into drawings/
 npm run measure                                       # measured size of every model against the specs
 npm run inspect -- data/models/aviation/<id>.json     # meshes and the parts they map to
 ```

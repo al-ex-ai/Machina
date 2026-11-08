@@ -431,6 +431,10 @@ function renderSheet() {
     ${sizeBadge(m)}
     <h2 class="label">Specifications</h2>
     <dl class="specs">${specRows(m)}</dl>
+    <h2 class="label">Three-view drawing</h2>
+    <a class="drawing" href="drawings/${esc(m.id)}.svg" target="_blank" rel="noopener" title="Open the drawing (SVG)">
+      <img src="drawings/${esc(m.id)}.svg" alt="Side, top and front views of the ${esc(m.name)}" loading="lazy" onerror="this.parentElement.hidden = true; this.parentElement.previousElementSibling.hidden = true">
+    </a>
     ${m.asset && state.shownDetailed ? `<h2 class="label">3D model</h2>
     <dl class="specs">
       <div><dt>Author</dt><dd>${esc(m.asset.author)}</dd></div>
