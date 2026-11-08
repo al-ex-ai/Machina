@@ -7,7 +7,8 @@ import { makePart, makeCompositePart, partInfo } from '../parts/common.js';
 import { bodyProfile, loftBody, mergeIndexed } from '../parametric/body.js';
 import { surfacePlan, surfacePiece, mirrorZ } from '../parametric/surface.js';
 import { paintFuselage, paintFin, sideUV, surfaceBump } from '../parametric/livery.js';
-import { skinOutlines, inletLip, fanBlades, nozzleSleeve, grooveTire, gearLinkage, airframeDetails } from '../parametric/details.js';
+import { skinOutlines, inletLip, fanBlades, nozzleSleeve, grooveTire, gearLinkage, airframeDetails, propeller, strut, rod } from '../parametric/details.js';
+import { glassTest, glazingGeometry, interior } from '../parametric/cabin.js';
 
 const SIDES = [{ key: 'left', label: 'Left', z: 1 }, { key: 'right', label: 'Right', z: -1 }];
 
@@ -52,13 +53,37 @@ export function buildParametric(model) {
   // Fuselage and wing-to-body fairing
   const body = bodyProfile(g.fuselage.stations, g.fuselage);
   const tex = paintFuselage(body, L, lv);
-  const fuselage = makePart(loftBody(body, { length: L, segments: 128 }), {
+  const isGlass = glassTest(g.glazing);
+  // Glazed bodies are lofted finer, so the window openings have small steps for the frames to cover.
+  const fuselage = makePart(loftBody(body, { length: L, segments: g.glazing ? 256 : 128, maxStep: g.glazing ? 0.025 : undefined, skip: g.glazing ? isGlass : undefined }), {
     id: 'fuselage', label: 'Fuselage', system: 'structure', keepNormals: true,
     material: tex ? { map: tex.map, bumpMap: tex.bump, bumpScale: 1.2, color: '#ffffff', roughness: tex.metal ? 0.36 : 0.5, clearcoat: 0, envMapIntensity: tex.metal ? 0.9 : 0.45, specularIntensity: 0.2, ...(tex.metal ? { metalnessMap: tex.metal, metalness: 1 } : {}) } : { color: lv.base }, // satin, softer reflections: dark titles stay readable under the studio light
     info: partInfo(model, 'fuselage', { Length: `${L} m` }),
   });
   fuselage.userData.drawLines = skinOutlines(body, lv); // windows and doors for the line drawings
   root.add(fuselage);
+
+  // See-through glazing (light aircraft): glass and frames over the openings, and the
+  // cabin behind them.
+  if (g.glazing) {
+    const gz = glazingGeometry(body, g.glazing);
+    root.add(makeCompositePart([
+      { geometry: gz.frame, material: { color: lv.frame ?? '#2b3038', roughness: 0.5, doubleSide: true } },
+      { geometry: gz.glass, material: { color: '#9fb8cc', roughness: 0.05, metalness: 0.1, clearcoat: 1, opacity: 0.22, doubleSide: true, envMapIntensity: 1.4 } },
+    ], { id: 'glazing', label: 'Windshield and windows', system: 'glazing', info: partInfo(model, 'glazing') }));
+  }
+  if (g.interior) {
+    const c = interior(body, g.interior, g.glazing, loftBody, bodyProfile);
+    const trim = g.interior.trim ?? '#b9b2a5';
+    root.add(makeCompositePart([
+      { geometry: c.lining, material: { color: trim, roughness: 0.9, backSide: true } },
+      { geometry: c.floor, material: { color: '#3b3f46', roughness: 0.95 } },
+      { geometry: c.seats, material: { color: g.interior.seatColor ?? '#4a5568', roughness: 0.8 } },
+      { geometry: c.panel, material: { color: '#262a30', roughness: 0.7 } },
+      { geometry: c.gauges, material: { color: '#0d1116', roughness: 0.2, metalness: 0.3 } },
+      ...(c.controls ? [{ geometry: c.controls, material: { color: '#1d2025', roughness: 0.6 } }] : []),
+    ], { id: 'cabin', label: `Cabin (${g.interior.seats} seats)`, system: 'interior', info: partInfo(model, 'cabin', { Seats: g.interior.seats, Layout: g.interior.abreast === 1 ? 'Tandem' : 'Side by side' }) }));
+  }
   if (g.fairing) {
     const fp = bodyProfile(g.fairing.stations, g.fairing);
     root.add(makePart(loftBody(fp, { length: L, segments: 64 }), {
@@ -266,6 +291,12 @@ export function buildParametric(model) {
     if (axles > 1) parts.push({ geometry: new THREE.BoxGeometry(pitch * (axles - 1) + 0.3, gear.strut * 0.7, gear.strut * 0.7).translate(gear.x, y0 + r, z), material: mat.metal });
     const top = gear.top;
     parts.push({ geometry: new THREE.CylinderGeometry(gear.strut * 0.5, gear.strut * 0.5, gear.spacing * (n - 1) + 0.1, 12).rotateX(Math.PI / 2).translate(gear.x, y0 + r, z), material: mat.metal });
+    if (gear.attach) {
+      // A leg out from the body to a wheel beyond it (spring steel or strut legs of light aircraft).
+      const zA = Math.sign(z || 1) * gear.attach.z;
+      parts.push({ geometry: rod([gear.x, y0 + r, z - Math.sign(z || 1) * gear.tire.w * 0.6], [gear.x + (gear.attach.dx ?? 0), gear.attach.y, zA], gear.strut * 0.45, 10), material: { color: lv.gearLeg ?? '#d9dde2', roughness: 0.35, metalness: 0.4 } });
+      return makeCompositePart(parts, { id, label, system: 'gear', info: partInfo(model, id) });
+    }
     parts.push({ geometry: new THREE.CylinderGeometry(gear.strut * 0.42, gear.strut * 0.42, (top - y0 - r) * 0.55, 16).translate(gear.x, y0 + r + (top - y0 - r) * 0.275, z), material: { color: '#d9dde2', roughness: 0.15, metalness: 1 } });
     parts.push({ geometry: new THREE.CylinderGeometry(gear.strut * 0.6, gear.strut * 0.6, (top - y0 - r) * 0.55, 16).translate(gear.x, top - (top - y0 - r) * 0.275, z), material: { color: '#8d939b', roughness: 0.45, metalness: 0.6 } });
     const { links, brace } = gearLinkage(gear, y0 + r, z);
@@ -273,10 +304,25 @@ export function buildParametric(model) {
     parts.push({ geometry: brace, material: { color: '#8d939b', roughness: 0.45, metalness: 0.6 } });
     return makeCompositePart(parts, { id, label, system: 'gear', info: partInfo(model, id) });
   };
-  root.add(leg(g.gear.nose, 0, 'nose-gear', 'Nose gear'));
+  if (g.gear.nose) root.add(leg(g.gear.nose, 0, 'nose-gear', 'Nose gear'));
+  if (g.gear.tail) root.add(leg(g.gear.tail, 0, 'tail-wheel', 'Tail wheel'));
   // Main legs: one pair, or several (body and wing gear) as a list.
   for (const main of g.gear.mains ?? [{ ...g.gear.main, id: 'main-gear', label: 'main gear' }]) {
     for (const side of SIDES) root.add(leg(main, side.z * main.z, `${side.key}-${main.id}`, `${side.label} ${main.label}`));
+  }
+
+  for (const [i, pr] of (g.propellers ?? []).entries()) {
+    const p = propeller(pr);
+    root.add(makeCompositePart([
+      { geometry: p.spinner, material: { color: lv.spinner ?? lv.belly ?? '#d9dde2', roughness: 0.3, clearcoat: 0.8 } },
+      { geometry: p.blades, material: { color: '#22252a', roughness: 0.55, doubleSide: true } },
+    ], { id: g.propellers.length > 1 ? `propeller-${i + 1}` : 'propeller', label: g.propellers.length > 1 ? `Propeller ${i + 1}` : 'Propeller', system: 'propulsion', info: partInfo(model, 'propeller', { Diameter: `${pr.diameter} m`, Blades: pr.blades }) }));
+  }
+  if (g.struts?.length) {
+    for (const side of SIDES) {
+      const geos = g.struts.map(s => strut([s.from[0], s.from[1], side.z * s.from[2]], [s.to[0], s.to[1], side.z * s.to[2]], s.chord ?? 0.12, s.thick ?? 0.04));
+      root.add(makeCompositePart([{ geometry: mergeIndexed(geos), material: mat.surfaces ?? {} }], { id: `${side.key}-wing-struts`, label: `${side.label} wing struts`, system: 'structure', info: partInfo(model, 'struts') }));
+    }
   }
 
   // Antennas, probes, beacons and the APU exhaust, placed on the body profile.

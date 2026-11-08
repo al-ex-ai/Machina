@@ -56,7 +56,7 @@ export function bodyProfile(stations, shape = {}) {
 }
 
 /** Ring positions along x: dense where the section changes fast (nose, tail), sparse along the cabin. */
-function ringStations(p, target = 0.06) {
+function ringStations(p, target = 0.06, maxStep = Infinity) {
   const xs = [p.x0];
   const len = p.x1 - p.x0;
   const size = x => { const s = p.at(x); return s.w + (s.top - s.bot) / 2; };
@@ -67,7 +67,7 @@ function ringStations(p, target = 0.06) {
     // Bend: how fast the slope changes over the next stretch. Rings close up where the
     // outline curves (tail upsweep, nose), so silhouettes stay smooth.
     const bend = Math.abs(slopeAt(Math.min(x + len / 200, p.x1)) - slopeAt(x)) / (len / 200);
-    const step = THREE.MathUtils.clamp(Math.min(target / Math.max(slope, 1e-3), 0.02 / Math.sqrt(Math.max(bend, 1e-6))), len / 600, len / 100);
+    const step = Math.min(maxStep, THREE.MathUtils.clamp(Math.min(target / Math.max(slope, 1e-3), 0.02 / Math.sqrt(Math.max(bend, 1e-6))), len / 600, len / 100));
     x = Math.min(x + step, p.x1);
     xs.push(x);
   }
@@ -77,12 +77,12 @@ function ringStations(p, target = 0.06) {
 /**
  * Loft a body. Open ends that still have width are closed with a flat cap.
  * @param {ReturnType<typeof bodyProfile>} p
- * @param {{ segments?: number, length?: number, capStart?: boolean, capEnd?: boolean }} [opts]
+ * @param {{ segments?: number, length?: number, capStart?: boolean, capEnd?: boolean, skip?: (x: number, t: number) => boolean }} [opts]
  */
 export function loftBody(p, opts = {}) {
   const S = opts.segments ?? 96;
   const L = opts.length ?? p.x1;
-  const xs = ringStations(p);
+  const xs = ringStations(p, 0.06, opts.maxStep);
   const pos = [], uv = [], idx = [];
   const v = new THREE.Vector3();
   for (const x of xs) {
@@ -94,8 +94,10 @@ export function loftBody(p, opts = {}) {
     }
   }
   const R = S + 1;
+  // opts.skip(x, t) leaves out the faces whose center it accepts (window openings).
   for (let i = 0; i < xs.length - 1; i++) {
     for (let j = 0; j < S; j++) {
+      if (opts.skip?.((xs[i] + xs[i + 1]) / 2, ((j + 0.5) / S) * Math.PI * 2)) continue;
       const a = i * R + j, b = a + 1, c = a + R, d = c + 1;
       idx.push(a, b, c, b, d, c);
     }

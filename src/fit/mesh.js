@@ -123,6 +123,14 @@ export function fuselage(tris, count = 44) {
     const widest = pts.filter(([, z]) => Math.abs(z) > w * 0.97).map(([y]) => y);
     stations.push({ x, w, top, bot, mid: median(widest), pts: pts.filter(([y]) => y <= top) });
   }
+  // Door handles, pillars and frames catch single slices: a running median over five
+  // stations removes those spikes (a steady trend, such as a nose taper, passes unchanged).
+  const sm = stations.map((s, i) => {
+    const near = stations.slice(Math.max(0, i - 2), i + 3);
+    const med = k => median(near.map(q => q[k]));
+    return { ...s, w: med('w'), top: med('top'), bot: med('bot'), mid: med('mid') };
+  });
+  stations.splice(0, stations.length, ...sm);
   // Exponents: for each section point solve |dz/w|^n + |dy/h|^n = 1 for n, take the median.
   const solve = (a, c) => {
     if (a <= 0.02 || c <= 0.02 || a >= 0.999 || c >= 0.999) return null;
@@ -211,7 +219,7 @@ export function planform(tris, spanAxis, from, to, n = 60) {
       const d = Math.max(dle, dte);
       if (d > best) { best = d; at = i; }
     }
-    if (best > 0.12 && at > 0) { keep.add(at); split(i0, at); split(at, i1); }
+    if (best > 0.06 && at > 0) { keep.add(at); split(i0, at); split(at, i1); }
   };
   split(0, raw.length - 1);
   return [...keep].sort((p, q) => p - q).map(i => raw[i]).map(s => ({ at: r2(s.at), le: r2(s.le), chord: r2(s.chord), h: r2(s.h), tc: r3(s.tc) }));
@@ -347,7 +355,7 @@ export function wheels(tris, ground, h = 0.12) {
   const out = [];
   for (const b of merged) {
     const E = b.x1 - b.x0, r = (E * E / (4 * h) + h) / 2;
-    if (r < 0.15 || r > 1.2 || b.z1 - b.z0 < 0.05) continue;
+    if (r < 0.06 || r > 1.2 || b.z1 - b.z0 < 0.03) continue;
     out.push({ x: (b.x0 + b.x1) / 2, z: (b.z0 + b.z1) / 2, d: 2 * r, w: Math.max(0.12, (b.z1 - b.z0) * 1.1) });
   }
   return out;
@@ -372,4 +380,52 @@ export function legs(ws, legGap = 1.3) {
     });
   }
   return out;
+}
+
+/**
+ * Outlines of the filled regions of a grid (grid[i][k], 0 or 1) as closed loops in
+ * cell coordinates, by marching squares, simplified to within tol cells.
+ */
+export function gridOutlines(grid, tol = 0.8) {
+  const nx = grid.length, nk = grid[0].length;
+  const at = (i, k) => (i >= 0 && k >= 0 && i < nx && k < nk ? grid[i][k] : 0);
+  const segs = [];
+  for (let i = -1; i < nx; i++) for (let k = -1; k < nk; k++) {
+    const c = (at(i, k) << 3) | (at(i + 1, k) << 2) | (at(i + 1, k + 1) << 1) | at(i, k + 1);
+    if (c === 0 || c === 15) continue;
+    // Cell corners are cell centers (i + 0.5); edge midpoints between them.
+    const T = [i + 1, k + 0.5], R = [i + 1.5, k + 1], B = [i + 1, k + 1.5], L = [i + 0.5, k + 1];
+    const e = { 1: [[L, B]], 2: [[B, R]], 3: [[L, R]], 4: [[R, T]], 5: [[L, T], [R, B]], 6: [[B, T]], 7: [[L, T]], 8: [[T, L]], 9: [[T, B]], 10: [[T, R], [B, L]], 11: [[T, R]], 12: [[R, L]], 13: [[R, B]], 14: [[B, L]] }[c];
+    for (const s of e) segs.push(s);
+  }
+  // Join segments that share end points into loops.
+  const key = p => `${p[0]},${p[1]}`;
+  const adj = new Map();
+  segs.forEach((s, j) => { for (const p of s) { const kk = key(p); if (!adj.has(kk)) adj.set(kk, []); adj.get(kk).push(j); } });
+  const used = new Uint8Array(segs.length), loops = [];
+  for (let j = 0; j < segs.length; j++) {
+    if (used[j]) continue;
+    used[j] = 1;
+    const loop = [segs[j][0], segs[j][1]];
+    for (;;) {
+      const next = (adj.get(key(loop.at(-1))) ?? []).find(q => !used[q]);
+      if (next === undefined) break;
+      used[next] = 1;
+      const s = segs[next];
+      loop.push(key(s[0]) === key(loop.at(-1)) ? s[1] : s[0]);
+    }
+    if (loop.length > 6) loops.push(loop);
+  }
+  const rdp = (pts, eps) => {
+    if (pts.length < 3) return pts;
+    let best = 0, at2 = 0;
+    const [a, b] = [pts[0], pts.at(-1)], dx = b[0] - a[0], dy = b[1] - a[1], len = Math.hypot(dx, dy) || 1;
+    for (let i = 1; i < pts.length - 1; i++) { const d = Math.abs(dy * pts[i][0] - dx * pts[i][1] + b[0] * a[1] - b[1] * a[0]) / len; if (d > best) { best = d; at2 = i; } }
+    return best <= eps ? [a, b] : [...rdp(pts.slice(0, at2 + 1), eps).slice(0, -1), ...rdp(pts.slice(at2), eps)];
+  };
+  return loops.map(l => {
+    let far = 0, best = -1;
+    l.forEach((p, i) => { const d = Math.hypot(p[0] - l[0][0], p[1] - l[0][1]); if (d > best) { best = d; far = i; } });
+    return [...rdp(l.slice(0, far + 1), tol).slice(0, -1), ...rdp(l.slice(far), tol).slice(0, -1)];
+  }).filter(l => l.length >= 3);
 }

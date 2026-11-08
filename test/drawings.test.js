@@ -19,9 +19,13 @@ for (const m of parametric) {
       if (o.userData.part) ids.add(o.userData.id);
       lines += o.userData.drawLines?.length ?? 0;
     });
-    for (const id of ['antennas', 'beacons', 'nose-gear']) assert.ok(ids.has(id), `missing part "${id}"`);
-    assert.ok([...ids].some(id => /^left-.*engine$/.test(id)), 'missing a left engine');
-    assert.ok(lines > 10, `only ${lines} window and door outlines`);
+    const g = m.geometry;
+    if (g.details !== false) for (const id of ['antennas', 'beacons']) assert.ok(ids.has(id), `missing part "${id}"`);
+    assert.ok(ids.has('nose-gear') || ids.has('tail-wheel'), 'missing a nose or tail wheel');
+    if (g.propellers?.length) assert.ok([...ids].some(id => /^propeller/.test(id)), 'missing the propeller');
+    else assert.ok([...ids].some(id => /^left-.*engine$/.test(id)), 'missing a left engine');
+    if (g.interior) assert.ok(ids.has('cabin') && ids.has('glazing'), 'a see-through cabin needs its glazing and interior');
+    if (!g.interior) assert.ok(lines > 10, `only ${lines} window and door outlines`);
   });
 }
 

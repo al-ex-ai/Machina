@@ -22,6 +22,10 @@
     "models/aviation/b747-400.json",
     "models/aviation/ec135.json",
     "models/aviation/b707.json",
-    "models/aviation/dhc6.json"
+    "models/aviation/dhc6.json",
+    "models/aviation/cessna-172s-parametric.json",
+    "models/aviation/dr400-parametric.json",
+    "models/aviation/j3-cub-parametric.json",
+    "models/aviation/ercoupe-parametric.json"
   ]
 }

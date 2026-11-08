@@ -245,3 +245,59 @@ export function airframeDetails(body) {
   const apu = end.w > 0.04 ? plain(new THREE.CircleGeometry(1, 28).scale(1, (end.top - end.bot) / 2 * 0.75, end.w * 0.75).rotateY(Math.PI / 2).translate(body.x1 + 0.003, end.mid, 0)) : null;
   return { antennas, beacons, apu };
 }
+
+// ── Propellers and struts ───────────────────────────────────────────────────
+
+/**
+ * A propeller turning about the x axis: a spinner and twisted, tapered blades, sized
+ * from the measured disc. spec: { x, y, z, diameter, blades, spinner: { length, radius } }
+ */
+export function propeller(spec) {
+  const R = spec.diameter / 2, n = spec.blades ?? 2;
+  const sr = spec.spinner?.radius ?? R * 0.13, sl = spec.spinner?.length ?? R * 0.42;
+  const spinner = new THREE.LatheGeometry(
+    Array.from({ length: 13 }, (_, i) => { const f = i / 12; return new THREE.Vector2(sr * Math.sqrt(Math.max(0, 1 - f * f)) + 1e-4, -sl * f); }), 32,
+  ).rotateZ(-Math.PI / 2).translate(spec.x + sl * 0.15, spec.y, spec.z); // nose forward (-x)
+  const blades = [];
+  const N = 10;
+  for (let b = 0; b < n; b++) {
+    const th = (b / n) * Math.PI * 2 + Math.PI / 2;
+    const Rv = new THREE.Vector3(0, Math.cos(th), Math.sin(th)), T = new THREE.Vector3(0, -Math.sin(th), Math.cos(th));
+    const pos = [], idx = [];
+    for (let i = 0; i <= N; i++) {
+      const f = i / N, r = sr * 0.8 + (R - sr * 0.8) * f;
+      const chord = R * (0.16 - 0.08 * f) * (f > 0.92 ? Math.sqrt(Math.max(0, (1 - f) / 0.08)) * 0.9 + 0.1 : 1);
+      const pitch = THREE.MathUtils.degToRad(62 - 42 * f); // flatter toward the tip
+      const along = new THREE.Vector3(Math.sin(pitch), 0, 0).addScaledVector(T, Math.cos(pitch));
+      for (const c of [-0.5, 0.5]) {
+        const p = Rv.clone().multiplyScalar(r).addScaledVector(along, c * chord);
+        pos.push(spec.x + p.x, spec.y + p.y, spec.z + p.z);
+      }
+    }
+    for (let i = 0; i < N; i++) { const a = i * 2; idx.push(a, a + 1, a + 2, a + 1, a + 3, a + 2); }
+    const g = new THREE.BufferGeometry();
+    g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+    g.setIndex(idx);
+    g.computeVertexNormals();
+    blades.push(g);
+  }
+  return { spinner: plain(spinner), blades: mergeIndexed(blades) };
+}
+
+/** A streamlined strut between two points: an elliptic tube, its long axis along the flow (x). */
+export function strut(a, b, chord = 0.12, thick = 0.04) {
+  const A = new THREE.Vector3(...a), B = new THREE.Vector3(...b);
+  const geo = new THREE.CylinderGeometry(0.5, 0.5, A.distanceTo(B), 14, 1);
+  geo.scale(chord, 1, thick); // ellipse in the x-z plane of the cylinder
+  const dir = B.clone().sub(A).normalize();
+  // Turn the cylinder axis (y) onto the strut, keeping its chord as close to x as possible.
+  const q = new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0, 1, 0), dir);
+  const chordDir = new THREE.Vector3(1, 0, 0).applyQuaternion(q);
+  const want = new THREE.Vector3(1, 0, 0).addScaledVector(dir, -dir.x).normalize();
+  const twist = Math.atan2(chordDir.clone().cross(want).dot(dir), chordDir.dot(want));
+  geo.applyQuaternion(new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0, 1, 0), 0)).applyQuaternion(q);
+  geo.applyQuaternion(new THREE.Quaternion().setFromAxisAngle(dir, twist));
+  const m = A.clone().add(B).multiplyScalar(0.5);
+  geo.translate(m.x, m.y, m.z);
+  return plain(geo);
+}

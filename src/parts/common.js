@@ -38,7 +38,10 @@ export function systemMaterial(system, livery = {}, opts = {}) {
     metalness: opts.metalness ?? finish.metalness,
     clearcoat: opts.clearcoat ?? finish.clearcoat,
     clearcoatRoughness: 0.25,
-    side: opts.doubleSide ? THREE.DoubleSide : THREE.FrontSide,
+    side: opts.backSide ? THREE.BackSide : opts.doubleSide ? THREE.DoubleSide : THREE.FrontSide,
+    transparent: (opts.opacity ?? 1) < 1,
+    opacity: opts.opacity ?? 1,
+    depthWrite: (opts.opacity ?? 1) >= 1,
     envMapIntensity: opts.envMapIntensity ?? 1,
     specularIntensity: opts.specularIntensity ?? 1,
   });
