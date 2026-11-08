@@ -1,0 +1,26 @@
+AC3Db
+MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
+MATERIAL "face" rgb 1 1 1 amb 1 1 1 emis 1 1 1 spec 0 0 0 shi 32 trans 0
+OBJECT world
+kids 1
+OBJECT poly
+name "face"
+data 9
+Plane.001
+texture "flightreportpage.png"
+texrep 1 1
+crease 30.000000
+numvert 4
+0 -0.076126 -0.099366
+0 -0.076126 -2e-06
+0 0 -2e-06
+0 0 -0.099366
+numsurf 1
+SURF 0x00
+mat 1
+refs 4
+0 0.995908856392 0.00569357676432
+3 0.995909273624 0.994305968285
+2 0.00409097038209 0.994306385517
+1 0.00409082788974 0.00569370761514
+kids 0

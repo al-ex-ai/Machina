@@ -1,0 +1,236 @@
+AC3Db
+MATERIAL "FLIneedle" rgb 1 1 1  amb 1 1 1  emis 1 1 1  spec 0 0 0  shi 32  trans 0
+MATERIAL "TQgelb" rgb 1 1 0  amb 1 1 0  emis 1 1 0  spec 1 1 1  shi 32  trans 0
+MATERIAL "TQrot" rgb 1 0 0  amb 1 0 0  emis 1 0 0  spec 0 0 0  shi 32  trans 0
+MATERIAL "TQrotoff" rgb 0 0 0  amb 0 0 0  emis 0 0 0  spec 0 0 0  shi 32  trans 0
+OBJECT world
+kids 11
+OBJECT poly
+name "FLIface"
+data 9
+Plane.013
+texture "FLIpage.png"
+crease 30.000000
+numvert 4
+0.000335 3.1e-005 -0.087351
+0.000335 3.1e-005 -0.000311
+0.000335 -0.059969 -0.000311
+0.000335 -0.059969 -0.087351
+numsurf 1
+SURF 0x0
+mat 0
+refs 4
+0 1 1
+1 9.5394e-008 1
+2 0 6.9192e-008
+3 1 0
+kids 0
+OBJECT poly
+name "FLIneedle"
+data 9
+Plane.005
+crease 30.000000
+numvert 6
+0.000593 -0.04076 -0.033048
+0.000593 -0.038039 -0.031627
+0.000593 -0.04852 -0.013015
+0.000593 -0.053927 -0.005661
+0.000593 -0.050985 -0.014464
+0.000593 -0.039399 -0.032338
+numsurf 4
+SURF 0x20
+mat 0
+refs 3
+2 0 0
+3 0 0
+4 0 0
+SURF 0x20
+mat 0
+refs 3
+5 0 0
+2 0 0
+4 0 0
+SURF 0x20
+mat 0
+refs 3
+0 0 0
+5 0 0
+4 0 0
+SURF 0x20
+mat 0
+refs 3
+5 0 0
+1 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "NGgelb"
+data 9
+Plane.007
+crease 30.000000
+numvert 4
+0.000591 -0.015783 -0.081113
+0.000591 -0.015783 -0.071679
+0.000591 -0.014455 -0.071679
+0.000591 -0.014455 -0.081113
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+3 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NGrot"
+data 9
+Plane.008
+crease 30.000000
+numvert 4
+0.000591 -0.015783 -0.081113
+0.000591 -0.015783 -0.071679
+0.000591 -0.014455 -0.071679
+0.000591 -0.014455 -0.081113
+numsurf 1
+SURF 0x20
+mat 2
+refs 4
+0 0 0
+3 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "NGrotoff"
+data 5
+Plane
+crease 30.000000
+numvert 4
+0.000591 -0.015783 -0.081113
+0.000591 -0.015783 -0.071679
+0.000591 -0.014455 -0.071679
+0.000591 -0.014455 -0.081113
+numsurf 1
+SURF 0x20
+mat 3
+refs 4
+0 0 0
+3 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "T4gelb"
+data 9
+Plane.009
+crease 30.000000
+numvert 4
+0.000591 -0.037848 -0.081113
+0.000591 -0.037848 -0.071679
+0.000591 -0.039176 -0.071679
+0.000591 -0.039176 -0.081113
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+3 0 0
+0 0 0
+1 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "T4rot"
+data 9
+Plane.010
+crease 30.000000
+numvert 4
+0.000591 -0.037848 -0.081113
+0.000591 -0.037848 -0.071679
+0.000591 -0.039176 -0.071679
+0.000591 -0.039176 -0.081113
+numsurf 1
+SURF 0x20
+mat 2
+refs 4
+3 0 0
+0 0 0
+1 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "T4rotoff"
+data 9
+Plane.001
+crease 30.000000
+numvert 4
+0.000591 -0.037848 -0.081113
+0.000591 -0.037848 -0.071679
+0.000591 -0.039176 -0.071679
+0.000591 -0.039176 -0.081113
+numsurf 1
+SURF 0x20
+mat 3
+refs 4
+3 0 0
+0 0 0
+1 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "TQgelb"
+data 9
+Plane.011
+crease 30.000000
+numvert 4
+0.000591 -0.058881 -0.081113
+0.000591 -0.058881 -0.071679
+0.000591 -0.057554 -0.071679
+0.000591 -0.057554 -0.081113
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+3 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "TQrot"
+data 9
+Plane.012
+crease 30.000000
+numvert 4
+0.000591 -0.058881 -0.081113
+0.000591 -0.058881 -0.071679
+0.000591 -0.057554 -0.071679
+0.000591 -0.057554 -0.081113
+numsurf 1
+SURF 0x20
+mat 2
+refs 4
+0 0 0
+3 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "TQrotoff"
+data 9
+Plane.002
+crease 30.000000
+numvert 4
+0.000591 -0.058881 -0.081113
+0.000591 -0.058881 -0.071679
+0.000591 -0.057554 -0.071679
+0.000591 -0.057554 -0.081113
+numsurf 1
+SURF 0x20
+mat 3
+refs 4
+0 0 0
+3 0 0
+2 0 0
+1 0 0
+kids 0

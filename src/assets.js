@@ -34,8 +34,13 @@ export function assembleParts(loaded, model) {
   const defaultFallback = model.asset.fallback ?? { id: 'airframe', label: 'Airframe details', system: 'structure' };
 
   const meshes = [];
-  for (const { group, fallback, offset, rotation, parts: fileParts } of sources) {
-    if (offset || rotation) applyFgPlacement(group, offset, rotation);
+  for (const { group, fallback, offset, rotation, chain, parts: fileParts } of sources) {
+    if (chain?.length) {
+      // Nested FlightGear placements (an instrument in a panel in the interior), outermost first.
+      const m = new THREE.Matrix4(), tmp = new THREE.Object3D();
+      for (const c of [...chain, { offset, rotation }]) { tmp.position.set(0, 0, 0); tmp.rotation.set(0, 0, 0); applyFgPlacement(tmp, c.offset, c.rotation); tmp.updateMatrix(); m.multiply(tmp.matrix); }
+      m.decompose(group.position, group.quaternion, group.scale);
+    } else if (offset || rotation) applyFgPlacement(group, offset, rotation);
     group.updateMatrixWorld(true);
     // File-scoped rules (for example a left wing file) win over the model-wide ones.
     const local = (fileParts ?? []).map(r => ({ ...r, res: r.match.map(toRegExp) }));
@@ -158,7 +163,12 @@ export async function loadAssetModel(model) {
   const a = model.asset;
   const base = `./${a.path.replace(/\/?$/, '/')}`;
   const files = assetFiles(model);
-  if (!parsed.has(model.id)) parsed.set(model.id, Promise.all(files.map(f => parseACInWorker(base + f.file, hideRules(model)))));
+  if (!parsed.has(model.id)) {
+    // A file placed several times (a screw, an instrument) is parsed once.
+    const once = new Map();
+    for (const f of files) if (!once.has(f.file)) once.set(f.file, parseACInWorker(base + f.file, hideRules(model)));
+    parsed.set(model.id, Promise.all(files.map(f => once.get(f.file))));
+  }
   const datas = await parsed.get(model.id);
   // Resolve only once every texture has loaded, so thumbnails never render blank.
   const pending = [];

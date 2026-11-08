@@ -122,7 +122,8 @@ URL flags: `?theme=light` or `?theme=blueprint`, `?noworker` (parse on the main 
 3. Write `CREDITS.md` in the asset folder with source, authors and any changes.
 4. Write `data/models/aviation/<id>.json` and list it in `data/index.json`.
 5. Map meshes to parts. `npm run inspect -- data/models/aviation/<id>.json` lists every mesh and what it matched.
-6. Run `npm run quality`, then `npm test`. The model must meet the quality standard before it goes in the `models` list.
+6. Bring in the cockpit and cabin: `node scripts/import-fg-interior.js <aircraftRoot> data/models/aviation/<id>.json`. It walks FlightGear's model XML tree and adds the interior sub-models with their nested placements.
+7. Run `npm run quality`, then `npm test`. The model must meet the quality standard before it goes in the `models` list.
 
 ## Limits
 

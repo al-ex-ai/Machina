@@ -1,0 +1,174 @@
+AC3Db
+MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
+MATERIAL "NGgelb.001" rgb 1 1 0 amb 0.666667 0.666667 0.666667 emis 0.666667 0.666667 0.666667 spec 1 1 1 shi 32 trans 0
+MATERIAL "NGrot.001" rgb 1 0 0 amb 0.333333 0.333333 0.333333 emis 0.333333 0.333333 0.333333 spec 0 0 0 shi 32 trans 0
+MATERIAL "NGrotoff.001" rgb 0 0 0 amb 0 0 0 emis 0 0 0 spec 0 0 0 shi 32 trans 0
+MATERIAL "face" rgb 1 1 1 amb 1 1 1 emis 1 1 1 spec 0 0 0 shi 32 trans 0
+MATERIAL "oilpressneedle" rgb 1 1 1 amb 1 1 1 emis 1 1 1 spec 0 0 0 shi 32 trans 0
+MATERIAL "oiltempneedle" rgb 1 1 1 amb 1 1 1 emis 1 1 1 spec 0 0 0 shi 32 trans 0
+OBJECT world
+kids 7
+OBJECT poly
+name "OPgelb"
+data 9
+Plane.016
+crease 30.000000
+numvert 4
+0.000591 -0.032948 -0.082133
+0.000591 -0.032948 -0.072699
+0.000591 -0.03162 -0.072699
+0.000591 -0.03162 -0.082133
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0.0 0.0
+3 0.0 0.0
+2 0.0 0.0
+1 0.0 0.0
+kids 0
+OBJECT poly
+name "OProt"
+data 9
+Plane.017
+crease 30.000000
+numvert 4
+0.000591 -0.032948 -0.082133
+0.000591 -0.032948 -0.072699
+0.000591 -0.03162 -0.072699
+0.000591 -0.03162 -0.082133
+numsurf 1
+SURF 0x20
+mat 2
+refs 4
+0 0.0 0.0
+3 0.0 0.0
+2 0.0 0.0
+1 0.0 0.0
+kids 0
+OBJECT poly
+name "OProtoff"
+data 9
+Plane.018
+crease 30.000000
+numvert 4
+0.000591 -0.032948 -0.082133
+0.000591 -0.032948 -0.072699
+0.000591 -0.03162 -0.072699
+0.000591 -0.03162 -0.082133
+numsurf 1
+SURF 0x20
+mat 3
+refs 4
+0 0.0 0.0
+3 0.0 0.0
+2 0.0 0.0
+1 0.0 0.0
+kids 0
+OBJECT poly
+name "Plane"
+data 5
+Plane
+crease 30.000000
+numvert 2
+0.000221 -0.021234 -0.079059
+0.000221 -0.021234 -0.079059
+numsurf 0
+kids 0
+OBJECT poly
+name "face"
+data 9
+Plane.001
+texture "vehiclepage.png"
+texrep 1 1
+crease 30.000000
+numvert 4
+0 -0.076126 -0.099366
+0 -0.076126 -2e-06
+0 0 -2e-06
+0 0 -0.099366
+numsurf 1
+SURF 0x00
+mat 4
+refs 4
+0 0.995908856392 0.00569357676432
+3 0.995909273624 0.994305968285
+2 0.00409097038209 0.994306385517
+1 0.00409082788974 0.00569370761514
+kids 0
+OBJECT poly
+name "oilpressneedle"
+data 9
+Plane.003
+crease 30.000000
+numvert 6
+0.000221 -0.022137 -0.078734
+0.000221 -0.020088 -0.07884
+0.000221 -0.019602 -0.066946
+0.000221 -0.021651 -0.06684
+0.000221 -0.020411 -0.061619
+0.000221 -0.021113 -0.078787
+numsurf 4
+SURF 0x20
+mat 5
+refs 3
+2 0.0 0.0
+4 0.0 0.0
+3 0.0 0.0
+SURF 0x20
+mat 5
+refs 3
+5 0.0 0.0
+2 0.0 0.0
+3 0.0 0.0
+SURF 0x20
+mat 5
+refs 3
+0 0.0 0.0
+5 0.0 0.0
+3 0.0 0.0
+SURF 0x20
+mat 5
+refs 3
+5 0.0 0.0
+1 0.0 0.0
+2 0.0 0.0
+kids 0
+OBJECT poly
+name "oiltempneedle"
+data 9
+Plane.002
+crease 30.000000
+numvert 6
+0.000221 -0.022112 -0.020832
+0.000221 -0.020061 -0.02089
+0.000221 -0.019853 -0.008987
+0.000221 -0.021903 -0.008929
+0.000221 -0.020785 -0.003681
+0.000221 -0.021086 -0.020861
+numsurf 4
+SURF 0x20
+mat 6
+refs 3
+2 0.0 0.0
+4 0.0 0.0
+3 0.0 0.0
+SURF 0x20
+mat 6
+refs 3
+5 0.0 0.0
+2 0.0 0.0
+3 0.0 0.0
+SURF 0x20
+mat 6
+refs 3
+0 0.0 0.0
+5 0.0 0.0
+3 0.0 0.0
+SURF 0x20
+mat 6
+refs 3
+5 0.0 0.0
+1 0.0 0.0
+2 0.0 0.0
+kids 0

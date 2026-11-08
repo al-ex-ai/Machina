@@ -1,0 +1,26 @@
+AC3Db
+MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
+MATERIAL "face" rgb 1 1 1 amb 1 1 1 emis 1 1 1 spec 0 0 0 shi 32 trans 0
+OBJECT world
+kids 1
+OBJECT poly
+name "face"
+data 9
+Plane.013
+texture "initphase.png"
+texrep 1 1
+crease 30.000000
+numvert 4
+0.000335 3.1e-05 -0.087351
+0.000335 3.1e-05 -0.000311
+0.000335 -0.059969 -0.000311
+0.000335 -0.059969 -0.087351
+numsurf 1
+SURF 0x00
+mat 1
+refs 4
+0 1.0 0.999999880791
+1 9.5393957622e-08 1.0
+2 0.0 6.9192047647e-08
+3 0.999999940395 0.0
+kids 0
