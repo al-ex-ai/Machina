@@ -11,11 +11,16 @@ const FONT = '"Segoe UI", system-ui, sans-serif';
 function text(g, str, height, spacing, align = 'left') {
   g.save();
   g.scale(height / 100, height / 100);
-  g.font = `800 100px ${FONT}`;
+  g.font = `900 100px ${FONT}`;
   g.textAlign = align;
   g.textBaseline = 'middle';
   if ('letterSpacing' in g) g.letterSpacing = `${spacing * 100}px`;
   const w = g.measureText(str).width;
+  // A stroke in the fill color thickens the letters so they hold up under glossy paint.
+  g.strokeStyle = g.fillStyle;
+  g.lineWidth = 7;
+  g.lineJoin = 'round';
+  g.strokeText(str, 0, 4);
   g.fillText(str, 0, 4);
   g.restore();
   return (w * height) / 100;

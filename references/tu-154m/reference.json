@@ -1,0 +1,172 @@
+{
+  "model": "data/models/aviation/tu-154m.json",
+  "image": "three-view.png",
+  "source": "https://commons.wikimedia.org/wiki/File:Tupolev_Tu-154.svg",
+  "author": "Kaboldy",
+  "license": "CC BY-SA 3.0",
+  "notes": "SVG rendered at 2x (3112 x 2489). Side and top views share one scale. The front view is drawn rotated and is not used. Wheels are drawn on two short ground lines 13 px apart; the main gear's line is used as the ground.",
+  "published": {
+    "length": 47.9,
+    "span": 37.55,
+    "height": 11.4,
+    "fuselageWidth": 3.8,
+    "window": [
+      0.27,
+      0.36
+    ]
+  },
+  "views": {
+    "side": {
+      "box": [
+        25,
+        40,
+        2480,
+        617
+      ],
+      "ground": 618,
+      "wheelRow": 1
+    },
+    "top": {
+      "box": [
+        25,
+        560,
+        2470,
+        2488
+      ]
+    }
+  },
+  "fuselage": {
+    "stations": [
+      0,
+      0.2,
+      0.5,
+      1.0,
+      1.6,
+      2.3,
+      3.2,
+      4.4,
+      6,
+      9,
+      28,
+      29.8,
+      32,
+      34,
+      36,
+      38,
+      40,
+      41.5,
+      42.6
+    ],
+    "topSkip": [
+      [
+        29.8,
+        48
+      ]
+    ],
+    "bottomSkip": [
+      [
+        5.5,
+        8.5
+      ],
+      [
+        14.5,
+        36
+      ]
+    ],
+    "planSkip": [
+      [
+        17.5,
+        37.6
+      ],
+      [
+        39.7,
+        48
+      ]
+    ],
+    "midRatio": 0.5,
+    "lowerExponent": 2,
+    "windowY": [
+      2.6,
+      5.0
+    ],
+    "windowsAfter": 6,
+    "windowsBefore": 40,
+    "doorMinY": 1.8,
+    "windshieldX": 2.6,
+    "windshieldMinY": 2.6,
+    "tailTip": {
+      "x": 42.6,
+      "y": 4.95,
+      "half": 0.45,
+      "note": "end of the tail cone under the center engine exhaust, read from the drawing"
+    }
+  },
+  "fin": {
+    "fromX": 36,
+    "searchFrom": 34,
+    "minY": 7.6,
+    "maxY": 10.3
+  },
+  "nacelle": false,
+  "gear": {
+    "nose": [
+      4,
+      10
+    ],
+    "main": [
+      22,
+      30
+    ]
+  },
+  "wing": {
+    "root": 1.5,
+    "inner": [
+      2.2,
+      4.6
+    ],
+    "outer": [
+      7.5,
+      17.2
+    ],
+    "x": [
+      14,
+      34
+    ]
+  },
+  "stabilizer": {
+    "root": 0.4,
+    "span": [
+      1.0,
+      6.6
+    ],
+    "fromX": 38,
+    "height": {
+      "z": 6.6,
+      "y": 10.94,
+      "dihedral": 3.1,
+      "note": "tip height from the side view (rearmost point), root set to sit on the fin top"
+    }
+  },
+  "accuracy": {
+    "side": 0.9,
+    "top": 0.88
+  },
+  "cockpit": {
+    "sill": 4.02,
+    "top": 4.5,
+    "front": [
+      1.5,
+      2.0
+    ],
+    "side": [
+      [
+        2.05,
+        2.5
+      ],
+      [
+        2.58,
+        2.98
+      ]
+    ]
+  }
+}

@@ -1,9 +1,10 @@
 // Write the measurements from references/<id>/measured.json into the model file.
-// Usage: node scripts/reference/apply.js references/b737-300
+// Usage: node --import ./scripts/node/register.js scripts/reference/apply.js references/b737-300
 // Only measured values are replaced; planform data the drawing does not cover
 // (wing and stabilizer sections, engine shape) stays as it is in the model file.
 import { readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
+import { bodyProfile } from '../../src/parametric/body.js';
 
 const dir = process.argv[2];
 const ref = JSON.parse(readFileSync(join(dir, 'reference.json'), 'utf8'));
@@ -44,9 +45,20 @@ const win = m.windows;
 const winY = win.reduce((a, w) => a + w.y, 0) / win.length;
 lv.windows = { list: win.map(w => [w.x, w.y]), w: ref.published.window[0], h: ref.published.window[1] };
 lv.doors = [...m.doors, ...m.exits].map(d => ({ x: d.x, sill: r2(d.y - d.h / 2), w: d.w, h: d.h, window: true }));
-if (!lv.cockpitWindows) lv.windshield = m.windshield; // traced panes, unless the six-pane layout is defined
+if (ref.cockpit) {
+  // Clean cockpit panes from a simple layout: sill and top heights, the front pane from
+  // the center post back to its x range, and side panes by x range.
+  const body = bodyProfile(st, g.fuselage);
+  const deg = (x, y) => Math.max(3, (body.thetaAt(x, y) * 180) / Math.PI);
+  const c = ref.cockpit;
+  const pane = ([x0, x1], post) => post
+    ? [[x0, 3], [x0 + (x1 - x0) * 0.6, deg(x0 + (x1 - x0) * 0.6, c.sill)], [x1, deg(x1, c.top)], [x0 + (x1 - x0) * 0.75, 3]]
+    : [[x0, deg(x0, c.sill)], [x1, deg(x1, c.sill)], [x1, deg(x1, c.top)], [x0, deg(x0, c.top)]];
+  lv.cockpitWindows = [pane(c.front, true), ...c.side.map(r => pane(r, false))].map(p => p.map(([x, d]) => [r2(x), r2(d)]));
+  lv.windshield = [];
+} else if (!lv.cockpitWindows) lv.windshield = m.windshield; // traced panes
 lv.cheatline = { ...lv.cheatline, y: r2(winY - 0.5), riseFrom: 24, rise: 0.12 };
-if (lv.titles) lv.titles.y = r2(winY + 0.62);
+if (lv.titles) { lv.titles.y = r2(winY + 0.72); lv.titles.height = 0.8; }
 
 // Wing planform from the top view; heights, thickness and twist stay from the model file.
 const wing0 = g.surfaces[0];
@@ -57,7 +69,7 @@ wing0.sections = m.wing.plan.map(p => ({ at: p.z, le: p.le, chord: p.chord, h: r
 const kink = m.wing.kinkZ;
 wing0.segments[0].to = kink; wing0.segments[1].from = kink;
 const teAt = z => lerp(wing0.sections.map(q => [q.at, q.le + q.chord]), z);
-if (g.canoes) g.canoes = g.canoes.map(c => ({ ...c, x0: r2(teAt(c.z) - 2.6), x1: r2(teAt(c.z) + 0.9), y: r2(hAt(c.z) - 0.08) }));
+if (g.canoes?.length) g.canoes = g.canoes.map(c => ({ ...c, x0: r2(teAt(c.z) - 2.6), x1: r2(teAt(c.z) + 0.9), y: r2(hAt(c.z) - 0.08) }));
 if (g.navLights) { const t = wing0.sections.at(-1); g.navLights.wingtip = { ...g.navLights.wingtip, x: r2(t.le + t.chord * 0.5), y: r2(t.h) }; }
 
 // Horizontal stabilizer: planform from the top view, tip height from the side view, 7 degree dihedral.
@@ -67,6 +79,7 @@ const sh = ref.stabilizer.height, dihedral = Math.tan((sh.dihedral * Math.PI) / 
 stab.sections = sp.map((p, i) => ({ ...stab.sections[i], at: p.z, le: p.le, chord: r2(Math.min(p.chord, ref.published.length - 0.02 - p.le)), h: r2(sh.y + (p.z - sh.z) * dihedral) }));
 stab.segments[0].from = sp[0].z; stab.segments[0].to = sp.at(-1).z;
 
+if (g.engine && m.nacelle) {
 // Engine: place and stretch the nacelle to the measured inlet, exit and ground clearance.
 const e = g.engine, n = m.nacelle;
 const len0 = e.nacelle.stations.at(-1)[0], k = (n.exitX - n.inletX) / len0;
@@ -77,17 +90,19 @@ const wScale = (ref.engine?.width ?? 0) / 2 / Math.max(...e.nacelle.stations.map
 if (ref.engine?.nTop) e.nacelle.nTop = ref.engine.nTop;
 if (wScale) e.nacelle.stations = e.nacelle.stations.map(([x, w, ...rest]) => [x, r2(w * wScale), ...rest]);
 e.position = { ...e.position, x: n.inletX, y: r2(n.bottom - nacBot), z: ref.engine?.z ?? m.engineZ };
-const wing = g.surfaces[0];
-const wingH = z => lerp(wing.sections.map(s => [s.at, s.h]), z);
+var wing = g.surfaces[0];
+var wingH = z => lerp(wing.sections.map(s => [s.at, s.h]), z);
 const pylonTop = r2(wingH(e.position.z));
 e.pylon = { sections: [
   { at: r2(e.position.y + nacTop - 0.08), le: r2(n.inletX + 1.3), chord: 2.7, tc: 0.12 },
   { at: pylonTop, le: r2(n.inletX + 2.4), chord: 2.9, tc: 0.12 },
 ] };
 
+}
+
 // Gear: measured positions; tire bottoms on the ground line in body axes.
 g.gear.nose = { ...g.gear.nose, x: m.gear.noseX, bottom: m.gear.noseGround, top: r2(bottomAt(m.gear.noseX) + 0.1) };
-g.gear.main = { ...g.gear.main, x: m.gear.mainX, bottom: m.gear.mainGround, top: r2(wingH(g.gear.main.z) - 0.25) };
+g.gear.main = { ...g.gear.main, x: m.gear.mainX, bottom: m.gear.mainGround, top: g.gear.main.fixedTop ?? r2(lerp(g.surfaces[0].sections.map(q => [q.at, q.h]), g.gear.main.z) - 0.25) };
 
 // Fin: sections from the measured outline. Below the lowest clean row the trailing
 // edge is hidden by the stabilizer, so it is held at that row's value.
@@ -112,10 +127,14 @@ fin.segments = [
 ];
 if (fin.paint) {
   fin.paint.stripe.edge = [[knee.le, knee.y], [tip.le, tip.y]];
-  const ty = r2((knee.y + tip.y) / 2 - 0.3);
+  // Title in the widest part of the fin, between the stripe and the trailing edge, sized to fit.
+  const ty = r2(knee.y + (tip.y - knee.y) * 0.32);
   const f = (ty - knee.y) / (tip.y - knee.y);
   const le = knee.le + (tip.le - knee.le) * f, te = knee.te + (tip.te - knee.te) * f;
-  fin.paint.title = { ...fin.paint.title, x: r2(le + (te - le) * 0.52), y: ty };
+  const from = le + fin.paint.stripe.offset + fin.paint.stripe.width + 0.25, to = te - 0.35;
+  const text = fin.paint.title.text;
+  const height = r2(Math.min(0.75, (to - from) / (text.length * 0.78)));
+  fin.paint.title = { ...fin.paint.title, x: r2((from + to) / 2), y: ty, height };
 }
 
 // Navigation light on the tail cone tip

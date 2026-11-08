@@ -53,6 +53,7 @@ for (let i = 0; i < out.data.length; i += 4) { out.data[i] = out.data[i + 1] = o
 const report = {};
 
 function compareView(name, vw, project) {
+  if (!vw) return;
   const view = viewOf(img, vw.box);
   const mask = raster(view.w, view.h, project(view));
   let both = 0, drawOnly = 0, modelOnly = 0;

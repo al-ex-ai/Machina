@@ -7,7 +7,8 @@
     "models/aviation/cessna337.json",
     "models/aviation/ercoupe.json",
     "models/aviation/wright-flyer.json",
-    "models/aviation/b737-300-parametric.json"
+    "models/aviation/b737-300-parametric.json",
+    "models/aviation/tu-154m.json"
   ],
   "workshop": [
     "models/aviation/a320neo.json",

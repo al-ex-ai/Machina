@@ -37,9 +37,12 @@ for (const m of models) {
   test(`${m.id}: built size matches published specs within ${TOLERANCE * 100}%`, () => {
     const size = new THREE.Box3().setFromObject(buildModel(m)).getSize(new THREE.Vector3());
     const exp = expectedSize(m);
+    const tol = m.verify?.tolerance ?? {};
+    if (Object.keys(tol).length) assert.ok(m.verify.note, 'a size tolerance needs a note explaining it');
     for (const [axis, got, want] of [['length', size.x, exp.length], ['width', size.z, exp.width], ['height', size.y, exp.height]]) {
       const err = Math.abs(got - want) / want;
-      assert.ok(err <= TOLERANCE, `${axis} ${got.toFixed(2)} m vs published ${want} m (${(err * 100).toFixed(1)}% off)`);
+      const limit = tol[axis] ?? TOLERANCE;
+      assert.ok(err <= limit, `${axis} ${got.toFixed(2)} m vs published ${want} m (${(err * 100).toFixed(1)}% off, limit ${limit * 100}%)`);
     }
   });
 }

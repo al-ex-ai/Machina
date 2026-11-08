@@ -31,7 +31,9 @@ const PX = x => Math.round(SB.minX + x / s - 0.5);
 const PY = y => Math.round(gy + 1 - y / s);
 
 const holes = side.holes(6).map(h => ({ ...h, x: X(h.cx), y: Y(h.cy), w: (h.maxX - h.minX + 1) * s, h: (h.maxY - h.minY + 1) * s }));
-const windows = holes.filter(h => h.area >= 40 && h.area <= 120 && h.h > h.w * 1.2 && h.y > 3.4 && h.y < 5.4 && h.x > 4 && h.x < (ref.fuselage.windowsBefore ?? Infinity));
+const FW = ref.fuselage;
+const [wy0, wy1] = FW.windowY ?? [3.4, 5.4];
+const windows = holes.filter(h => h.area * s * s >= 0.035 && h.area * s * s <= 0.11 && h.h > h.w * 1.2 && h.y > wy0 && h.y < wy1 && h.x > (FW.windowsAfter ?? 4) && h.x < (FW.windowsBefore ?? Infinity));
 // Attitude: least-squares slope of the window centers.
 const mx = windows.reduce((a, w) => a + w.x, 0) / windows.length, my = windows.reduce((a, w) => a + w.y, 0) / windows.length;
 const slope = windows.reduce((a, w) => a + (w.x - mx) * (w.y - my), 0) / windows.reduce((a, w) => a + (w.x - mx) ** 2, 0);
@@ -104,23 +106,26 @@ const halfWidth = x => (interp(plan, x) / planMax) * (P.fuselageWidth / 2);
 
 // ── Front view: upper cross-section shape, wing and stabilizer heights ──
 const fv = ref.views.front;
-const front = viewOf(img, fv.box);
-const FB = front.bounds();
-const sf = P.span / (FB.maxX - FB.minX + 1);
-const cx = Math.round((FB.minX + FB.maxX) / 2);
-const rows = F.frontRows, rTop = rows.top - fv.box[1], rMid = rows.mid - fv.box[1];
-const halfAt = row => { const r = front.runH(cx, row); return r ? (r[1] - r[0] + 1) / 2 : 0; };
-const hMid = halfAt(rMid);
-const upper = [];
-for (let row = rTop; row <= rMid; row++) {
-  if (inSkip(row + fv.box[1], rows.skip)) continue;
-  upper.push([r3((rMid - row) / (rMid - rTop)), r3(Math.min(1, halfAt(row) / hMid))]);
+let upper = null, upperHeight = null, midRatio = F.midRatio ?? 0.5, sf = null, hMid = null;
+const fuselageHeight = interp(tops, F.measureAt ?? 8) - interp(bots, F.measureAt ?? 8);
+if (fv && F.frontRows) {
+  const front = viewOf(img, fv.box);
+  const FB = front.bounds();
+  sf = P.span / (FB.maxX - FB.minX + 1);
+  const cx = Math.round((FB.minX + FB.maxX) / 2);
+  const rows = F.frontRows, rTop = rows.top - fv.box[1], rMid = rows.mid - fv.box[1];
+  const halfAt = row => { const r = front.runH(cx, row); return r ? (r[1] - r[0] + 1) / 2 : 0; };
+  hMid = halfAt(rMid);
+  upper = [];
+  for (let row = rTop; row <= rMid; row++) {
+    if (inSkip(row + fv.box[1], rows.skip)) continue;
+    upper.push([r3((rMid - row) / (rMid - rTop)), r3(Math.min(1, halfAt(row) / hMid))]);
+  }
+  upper.push([1, 0]);
+  upper.sort((a, b) => a[0] - b[0]);
+  upperHeight = (rMid - rTop) * sf; // meters from the widest point to the crown
+  midRatio = Math.min(0.9, upperHeight / fuselageHeight);
 }
-upper.push([1, 0]);
-upper.sort((a, b) => a[0] - b[0]);
-const upperHeight = (rMid - rTop) * sf; // meters from the widest point to the crown
-const fuselageHeight = interp(tops, 8) - interp(bots, 8);
-const midRatio = Math.min(0.9, upperHeight / fuselageHeight);
 
 const stations = F.stations.map(x => {
   const t = interp(tops, x), b = interp(bots, x);
@@ -132,21 +137,21 @@ stations[0][3] = stations[0][2] = stations[0][4] = r2((interp(tops, 0.02) + inte
 // ── Openings ──
 const grow = line; // holes are measured inside the ink; the opening edge is about one line width out
 const body = h => { const [x, y] = toBody(h.x, h.y); return { x: r2(x), y: r2(y), w: r2(h.w + grow), h: r2(h.h + grow) }; };
-const doors = holes.filter(h => h.h > 1.5 && h.h < 2.1 && h.w > 0.55 && h.w < 1.0 && h.y > 2.5).map(body);
-const exits = holes.filter(h => h.h > 0.7 && h.h < 1.05 && h.w > 0.3 && h.w < 0.6 && h.y > 3).map(body);
-const windshield = holes.filter(h => h.x < 3.2 && h.y > 3.4 && h.area >= 30).map(h => {
+const doors = holes.filter(h => h.h > 1.5 && h.h < 2.1 && h.w > 0.55 && h.w < 1.0 && h.y > (FW.doorMinY ?? 2.5) && h.y < wy1).map(body);
+const exits = holes.filter(h => h.h > 0.7 && h.h < 1.05 && h.w > 0.3 && h.w < 0.6 && h.y > (FW.doorMinY ?? 2.5) + 0.5 && h.y < wy1).map(body);
+const windshield = holes.filter(h => h.x < (FW.windshieldX ?? 3.2) && h.y > (FW.windshieldMinY ?? 3.4) && h.area * s * s >= 0.02).map(h => {
   const pts = h.pts.map(k => { const px = k % side.w, py = (k - px) / side.w; return [X(px), Y(py)]; });
   return simplify(hull(pts), 4).map(([x, y]) => toBody(x, y).map(r2));
 });
 
 // ── Fin outline: leading and trailing edge per height, above the fuselage crown ──
 const fin = [];
-const finTopPx = (() => { for (let py = 0; py < side.h; py++) for (let px = PX(24); px <= SB.maxX; px++) if (side.solid(px, py)) return py; return 0; })();
+const finTopPx = (() => { for (let py = 0; py < side.h; py++) for (let px = PX(ref.fin?.fromX ?? 24); px <= SB.maxX; px++) if (side.solid(px, py)) return py; return 0; })();
 const crown = interp(tops, 27);
-for (let y = Y(finTopPx) - 0.02; y > 4.9; y -= 0.25) {
+for (let y = Math.min(Y(finTopPx) - 0.02, ref.fin?.maxY ?? Infinity); y > (ref.fin?.minY ?? 4.9); y -= 0.25) {
   const py = PY(y);
   let le = -1, te = -1;
-  for (let px = PX(18); px <= SB.maxX; px++) if (side.solid(px, py)) { if (le < 0) le = px; te = px; }
+  for (let px = PX(ref.fin?.searchFrom ?? 18); px <= SB.maxX; px++) if (side.solid(px, py)) { if (le < 0) le = px; te = px; }
   if (le < 0) continue;
   const a = toBody(X(le - 0.5), y), b = toBody(X(te + 0.5), y);
   fin.push({ y: r2((a[1] + b[1]) / 2), le: r2(a[0]), te: r2(b[0]) });
@@ -158,7 +163,7 @@ const lowest = (x0, x1) => {
   for (let x = x0; x <= x1; x += s) { const px = PX(x); for (let py = gy; py >= 0; py--) if (side.solid(px, py)) { if (py > best) { best = py; at = x; } break; } }
   return { x: at, y: Y(best + 0.5) };
 };
-const nacelle = (() => {
+const nacelle = ref.nacelle === false ? null : (() => {
   let x0 = Infinity, x1 = -Infinity;
   const engineBottom = lowest(10.5, 13.5);
   const py = PY(engineBottom.y + 0.4);
@@ -170,10 +175,10 @@ const nacelle = (() => {
 })();
 const wheelX = (x0, x1) => {
   const xs = [];
-  for (let x = x0; x <= x1; x += s) { const px = PX(x); if (side.solid(px, gy) || side.solid(px, gy - 1)) xs.push(x); }
+  for (let x = x0; x <= x1; x += s) { const px = PX(x); const wr = gy - (sv.wheelRow ?? 0); if (side.solid(px, wr) || side.solid(px, wr - 1)) xs.push(x); }
   return xs.length ? (xs[0] + xs.at(-1)) / 2 : null;
 };
-const noseWheel = wheelX(2, 6), mainWheel = wheelX(14, 19);
+const noseWheel = wheelX(...(ref.gear?.nose ?? [2, 6])), mainWheel = wheelX(...(ref.gear?.main ?? [14, 19]));
 const groundAt = x => r2(toBody(x, 0)[1]);
 
 // ── Top view planforms: straight-line fits to each panel's edges ──
@@ -205,18 +210,18 @@ const fit = (pts, key, tol = 0.12) => {
   return { a: mv - b * mz, b, at: z => mv - b * mz + b * z };
 };
 const W = ref.wing;
-const inner = edgeRows(W.inner[0], W.inner[1], 8, 23), outer = edgeRows(W.outer[0], W.outer[1], 8, 23);
+const inner = edgeRows(W.inner[0], W.inner[1], ...(W.x ?? [8, 23])), outer = edgeRows(W.outer[0], W.outer[1], ...(W.x ?? [8, 23]));
 const leIn = fit(inner, 'le'), teIn = fit(inner, 'te'), leOut = fit(outer, 'le'), teOut = fit(outer, 'te');
 const kinkZ = (teOut.a - teIn.a) / (teIn.b - teOut.b);
-const tipRow = (() => { const rs = edgeRows(W.outer[1], P.span / 2 + 0.5, 8, 23); return rs.at(-1); })();
+const tipRow = (() => { const rs = edgeRows(W.outer[1], P.span / 2 + 0.5, ...(W.x ?? [8, 23])); return rs.at(-1); })();
 const wingAt = z => (z <= kinkZ ? { le: leIn.at(z), te: teIn.at(z) } : { le: leOut.at(z), te: teOut.at(z) });
 const wingPlan = [W.root, P.fuselageWidth / 2, kinkZ, P.span / 2].map(z => { const e = wingAt(Math.min(z, P.span / 2)); return { z: r2(z), le: r2(e.le), chord: r2(e.te - e.le) }; });
 const S = ref.stabilizer;
-const stabRows = edgeRows(S.span[0], S.span[1], 26, P.length);
+const stabRows = edgeRows(S.span[0], S.span[1], S.fromX ?? 26, P.length);
 const leS = fit(stabRows, 'le'), teS = fit(stabRows, 'te');
 const stabPlan = [S.root, S.span[1]].map(z => ({ z: r2(z), le: r2(leS.at(z)), chord: r2(teS.at(z) - leS.at(z)) }));
 // Engine: rows where the solid run starts well ahead of the wing leading edge.
-const engRows = edgeRows(2.5, 7.5, 8, 23).filter(r => r.le < wingAt(r.z).le - 0.6);
+const engRows = ref.nacelle === false ? [] : edgeRows(2.5, 7.5, 8, 23).filter(r => r.le < wingAt(r.z).le - 0.6);
 const engineZ = engRows.length ? r2((engRows[0].z + engRows.at(-1).z) / 2) : null;
 // Stabilizer tip height: the side view's rearmost inked column is the stabilizer tip.
 const stabTip = (() => {
@@ -230,11 +235,11 @@ const out = {
   calibration: {
     side: { metersPerPixel: r3(s * 1000) / 1000, from: 'overall length' },
     top: { metersPerPixel: r3(st * 1000) / 1000, from: 'overall length' },
-    front: { metersPerPixel: r3(sf * 1000) / 1000, from: 'wingspan' },
+    front: sf ? { metersPerPixel: r3(sf * 1000) / 1000, from: 'wingspan' } : null,
     checks: {
       height: { measured: r2((SB.maxY - SB.minY + 1) * s), published: P.height },
       spanFromTop: { measured: r2((TB.maxY - TB.minY + 1) * st), published: P.span },
-      fuselageWidthFromFront: { measured: r2(hMid * 2 * sf), published: P.fuselageWidth },
+      fuselageWidthFromFront: sf ? { measured: r2(hMid * 2 * sf), published: P.fuselageWidth } : null,
     },
     lineWidth: r3(line),
   },

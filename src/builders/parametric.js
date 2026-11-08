@@ -113,9 +113,11 @@ export function buildParametric(model) {
     }
   }
 
-  // Engines: lofted nacelle, recessed fan with spinner, exhaust plug, pylon
-  if (g.engine) {
-    const e = g.engine;
+  // Engines: lofted nacelle, recessed fan with spinner, exhaust plug, pylon.
+  // g.engine (one pair under the wing) or g.engines (a list, each optionally mirrored,
+  // with a wing pylon (vertical) or a fuselage pylon (horizontal stub)).
+  const engineSpecs = g.engines ?? (g.engine ? [{ ...g.engine, mirror: true }] : []);
+  engineSpecs.forEach((e, ei) => {
     const nac = bodyProfile(e.nacelle.stations, e.nacelle);
     const length = nac.x1;
     const inlet = nac.at(0);
@@ -123,8 +125,8 @@ export function buildParametric(model) {
     const fanX = e.fan.depth;
     const fanY = inlet.mid + (e.fan.offsetY ?? 0); // the fan sits above a flattened inlet floor
     const plug = new THREE.LatheGeometry(e.plug.map(([x, r]) => new THREE.Vector2(r, x)), 32).rotateZ(-Math.PI / 2);
+    plug.translate(0, nac.at(length).mid, 0);
     const spinner = new THREE.ConeGeometry(rFan * 0.32, rFan * 0.75, 32).rotateZ(Math.PI / 2).translate(fanX - rFan * 0.37, fanY, 0);
-    plug.translate(0, (nac.at(length).mid), 0);
     const duct = new THREE.CylinderGeometry(rFan * 1.02, rFan * 1.02, fanX, 48, 1, true).rotateZ(Math.PI / 2).translate(fanX / 2, fanY, 0);
     const fan = new THREE.CircleGeometry(rFan, 48).rotateY(-Math.PI / 2).translate(fanX, fanY, 0);
     // Inlet lip: a ring from the nacelle's outer edge in to the round fan duct.
@@ -142,11 +144,14 @@ export function buildParametric(model) {
       geo.setIndex(idx);
       return geo;
     })();
-    const pylonPlan = surfacePlan({ axis: 'y', sections: e.pylon.sections });
+    const pylonPlan = surfacePlan({ axis: e.pylon.axis ?? 'y', sections: e.pylon.sections });
     const pylon = surfacePiece(pylonPlan, e.pylon.sections[0].at, e.pylon.sections.at(-1).at, 0, 1);
-    for (const side of SIDES) {
-      const place = geo => geo.clone().translate(e.position.x, e.position.y, side.z * e.position.z);
-      const pyl = pylon.clone().translate(0, 0, side.z * e.position.z);
+    const sides = e.mirror ? SIDES : [{ key: e.id ?? `engine-${ei + 1}`, label: '', z: 1 }];
+    for (const side of sides) {
+      const zz = e.mirror ? side.z * e.position.z : e.position.z;
+      const place = geo => geo.clone().translate(e.position.x, e.position.y, zz);
+      const pyl = e.mirror && side.z < 0 ? mirrorZ(pylon) : pylon.clone();
+      if (!e.mirror && e.position.z < 0) pyl.scale(1, 1, -1);
       root.add(makeCompositePart([
         { geometry: place(loftBody(nac, { length, segments: 72, capStart: false })), material: { color: lv.nacelle ?? lv.belly, roughness: 0.32, clearcoat: 0.8 } },
         { geometry: place(lip), material: mat.metal },
@@ -155,7 +160,27 @@ export function buildParametric(model) {
         { geometry: place(spinner), material: mat.metal },
         { geometry: place(plug), material: { color: '#6c727b', roughness: 0.5, metalness: 0.8 } },
         { geometry: pyl, material: { color: lv.pylon ?? '#d7dbe0', roughness: 0.4 } },
-      ], { id: `${side.key}-engine`, label: `${side.label} engine (${e.name})`, system: 'propulsion', info: partInfo(model, 'engine') }));
+      ], { id: e.mirror ? `${side.key}-engine` : (e.id ?? `engine-${ei + 1}`), label: e.mirror ? `${side.label} engine (${e.name})` : `${e.label ?? 'Engine'} (${e.name})`, system: 'propulsion', info: partInfo(model, 'engine') }));
+    }
+  });
+
+  // Pods: lofted bodies such as landing gear fairings, an engine intake or a tail cone
+  // fairing, each with an optional dark inlet face. Stations are relative to position.x.
+  for (const pd of g.pods ?? []) {
+    const prof = bodyProfile(pd.stations, pd);
+    const geo = loftBody(prof, { length: prof.x1, segments: 48 }).translate(pd.position.x, pd.position.y ?? 0, 0);
+    const extra = [];
+    if (pd.inlet) {
+      const s0 = prof.at(0);
+      extra.push({ geometry: new THREE.CircleGeometry(1, 40).scale(1, (s0.top - s0.bot) / 2 * 0.82, s0.w * 0.82).rotateY(-Math.PI / 2).translate(pd.position.x + 0.03, (pd.position.y ?? 0) + s0.mid, 0), material: { color: '#15191e', roughness: 0.5, metalness: 0.5 } });
+    }
+    const sides = pd.mirror ? SIDES : [{ key: '', label: '', z: 1 }];
+    for (const side of sides) {
+      const z = pd.mirror ? side.z * pd.position.z : (pd.position.z ?? 0);
+      root.add(makeCompositePart([
+        { geometry: geo.clone().translate(0, 0, z), material: mat[pd.finish] ?? { color: pd.color ?? lv.base, roughness: 0.35, clearcoat: 0.7 } },
+        ...extra.map(q => ({ ...q, geometry: q.geometry.clone().translate(0, 0, z) })),
+      ], { id: pd.mirror ? `${side.key}-${pd.id}` : pd.id, label: pd.mirror ? `${side.label} ${pd.label.toLowerCase()}` : pd.label, system: pd.system ?? 'structure', info: partInfo(model, pd.id) }));
     }
   }
 
@@ -208,11 +233,17 @@ export function buildParametric(model) {
     const y0 = gear.bottom ?? 0; // tire bottom in body axes (below 0 when the aircraft sits nose down)
     const parts = [];
     const n = gear.wheels;
-    for (let i = 0; i < n; i++) {
-      const dz = (i - (n - 1) / 2) * gear.spacing;
-      parts.push({ geometry: tire(gear.tire.d, gear.tire.w).translate(gear.x, y0 + r, z + dz), material: { color: '#1b1d20', roughness: 0.85, metalness: 0 } });
-      parts.push({ geometry: new THREE.CylinderGeometry(r * 0.55, r * 0.55, gear.tire.w * 0.9, 24).rotateX(Math.PI / 2).translate(gear.x, y0 + r, z + dz), material: { color: '#9aa1aa', roughness: 0.4, metalness: 0.8 } });
+    const axles = gear.axles ?? 1, pitch = gear.axleSpacing ?? 0;
+    for (let k = 0; k < axles; k++) {
+      const ax = gear.x + (k - (axles - 1) / 2) * pitch;
+      for (let i = 0; i < n; i++) {
+        const dz = (i - (n - 1) / 2) * gear.spacing;
+        parts.push({ geometry: tire(gear.tire.d, gear.tire.w).translate(ax, y0 + r, z + dz), material: { color: '#1b1d20', roughness: 0.85, metalness: 0 } });
+        parts.push({ geometry: new THREE.CylinderGeometry(r * 0.55, r * 0.55, gear.tire.w * 0.9, 24).rotateX(Math.PI / 2).translate(ax, y0 + r, z + dz), material: { color: '#9aa1aa', roughness: 0.4, metalness: 0.8 } });
+      }
+      if (axles > 1) parts.push({ geometry: new THREE.CylinderGeometry(gear.strut * 0.4, gear.strut * 0.4, gear.spacing * (n - 1) + 0.1, 12).rotateX(Math.PI / 2).translate(ax, y0 + r, z), material: mat.metal });
     }
+    if (axles > 1) parts.push({ geometry: new THREE.BoxGeometry(pitch * (axles - 1) + 0.3, gear.strut * 0.7, gear.strut * 0.7).translate(gear.x, y0 + r, z), material: mat.metal });
     const top = gear.top;
     parts.push({ geometry: new THREE.CylinderGeometry(gear.strut * 0.5, gear.strut * 0.5, gear.spacing * (n - 1) + 0.1, 12).rotateX(Math.PI / 2).translate(gear.x, y0 + r, z), material: mat.metal });
     parts.push({ geometry: new THREE.CylinderGeometry(gear.strut * 0.42, gear.strut * 0.42, (top - y0 - r) * 0.55, 16).translate(gear.x, y0 + r + (top - y0 - r) * 0.275, z), material: { color: '#d9dde2', roughness: 0.15, metalness: 1 } });

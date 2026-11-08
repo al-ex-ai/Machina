@@ -223,8 +223,8 @@
     "titles": {
       "text": "MACHINA",
       "x": 9.8,
-      "y": 3.89,
-      "height": 0.62,
+      "y": 3.99,
+      "height": 0.8,
       "color": "#18273a",
       "markColor": "#ff8a3d"
     },
@@ -778,9 +778,9 @@
           },
           "title": {
             "text": "BOEING",
-            "x": 30.66,
-            "y": 7.7,
-            "height": 0.6,
+            "x": 30.56,
+            "y": 7.2,
+            "height": 0.51,
             "color": "#ffffff"
           }
         }
@@ -951,7 +951,7 @@
       "floorWidth": 3.4,
       "rows": {
         "from": 6.2,
-        "to": 24.0,
+        "to": 24,
         "pitch": 0.81,
         "columns": [
           0.475,
