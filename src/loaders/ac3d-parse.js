@@ -80,7 +80,8 @@ export function parseACData(text, opts = {}) {
         }
       } else if (key === 'kids') {
         const n = +line.slice(sp + 1);
-        for (let k = 0; k < n; k++) o.kids.push(readObject());
+        // Some files claim more children than they hold; stop at the end of the file, as FlightGear does.
+        for (let k = 0; k < n && i < lines.length && lines[i]?.trim(); k++) o.kids.push(readObject());
         break;
       }
     }

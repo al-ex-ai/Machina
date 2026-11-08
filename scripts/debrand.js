@@ -39,12 +39,12 @@ for (const box of JSON.parse(json)) {
     // Pixels to replace: reddish ones, or anything unlike the paint at both box edges.
     // "red": warm pixels (red, and the yellow of an emblem on it), grown by 3 px to take
     // the soft edges too.
-    const warm = x => { const p = px(x, y); return D[p] - D[p + 2] > 35 && D[p] > 120; };
+    const warm = x => { const p = px(x, y); if (mode === 'sat') { const mx = Math.max(D[p], D[p + 1], D[p + 2]), mn = Math.min(D[p], D[p + 1], D[p + 2]); return mx - mn > 30; } return D[p] - D[p + 2] > 35 && D[p] > 120; }; // 'sat': any colored pixel, grays kept
     const hit = new Uint8Array(x1 - x0 + 1);
-    if (mode === 'red') for (let x = x0; x <= x1; x++) if (warm(x)) for (let d = -3; d <= 3; d++) { const k = x - x0 + d; if (k >= 0 && k < hit.length) hit[k] = 1; }
+    if (mode === 'red' || mode === 'sat') for (let x = x0; x <= x1; x++) if (warm(x)) for (let d = -3; d <= 3; d++) { const k = x - x0 + d; if (k >= 0 && k < hit.length) hit[k] = 1; }
     const bad = x => {
       const p = px(x, y);
-      return mode === 'red' ? hit[x - x0] === 1 : dist(p, L) > 40 && dist(p, R) > 40;
+      return mode === 'red' || mode === 'sat' ? hit[x - x0] === 1 : dist(p, L) > 40 && dist(p, R) > 40;
     };
     let x = x0;
     while (x <= x1) {

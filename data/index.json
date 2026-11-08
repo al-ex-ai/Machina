@@ -14,7 +14,8 @@
     "models/aviation/b747-400-parametric.json",
     "models/aviation/b707-parametric.json",
     "models/aviation/tu134.json",
-    "models/aviation/il76.json"
+    "models/aviation/il76.json",
+    "models/aviation/concorde.json"
   ],
   "workshop": [
     "models/aviation/a320neo.json",
