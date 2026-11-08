@@ -100,6 +100,15 @@ export function createViewer(container) {
   composer.addPass(new RenderPass(scene, camera));
   const gtao = new GTAOPass(scene, camera, 1, 1);
   gtao.output = GTAOPass.OUTPUT.Default;
+  // The gradient backdrop must not be drawn into GTAO's normal and depth pre-pass:
+  // it corrupts those buffers behind the model and shows up as black blocks.
+  const renderOverride = gtao.renderOverride.bind(gtao);
+  gtao.renderOverride = (...args) => {
+    const bg = scene.background;
+    scene.background = null;
+    renderOverride(...args);
+    scene.background = bg;
+  };
   composer.addPass(gtao);
   composer.addPass(new OutputPass());
   const controls = new OrbitControls(camera, renderer.domElement);
