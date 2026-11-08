@@ -29,11 +29,29 @@ Machina turns simulator models into explorable, named parts.
 
 | Group | Models |
 |---|---|
+| Airliners | Airbus A320neo, Boeing 787-8, Boeing 747-400, Boeing 707-320B (parametric, converted from FlightGear meshes) |
+| Prototypes | Boeing 737-300 and Tupolev Tu-154M (parametric, measured from open three-view drawings) |
 | Light aircraft | Cessna 337 Skymaster, Cessna 172S, Robin DR400, Ercoupe 415-C, Piper J-3 Cub |
 | Helicopters | Eurocopter EC130 B4 |
 | Historic | 1903 Wright Flyer |
 
-In the workshop, waiting for their cockpits or cabins: Airbus A380-800, Boeing 747-400, Boeing 787-8, Boeing 707-320B, Airbus A320neo, Boeing 737-300, DHC-6 Twin Otter, Eurocopter EC135.
+In the workshop, waiting for their cockpits or cabins: the detailed FlightGear meshes of the A380-800, 747-400, 787-8, 707-320B, A320neo and 737-300, the DHC-6 Twin Otter and the EC135. The A380 cannot be converted yet: its FlightGear model has no horizontal tail.
+
+## Converting a Mesh and Measuring Accuracy
+
+`npm run convert -- data/models/aviation/<id>.json` turns a detailed mesh into a parametric model by slicing it: fuselage cross-sections, wing, tail and winglet planforms, control surface extents, engines (clustered by position) and landing gear (tires found as closed loops in a slice just above the ground). Part names are only hints, because simulator models name things inconsistently. Windows, doors and cockpit panes are placed by rule from the measured body.
+
+`npm run benchmark` scores each parametric model against an answer key: the mesh it was converted from, or an independent mesh of the same aircraft for models measured from a drawing. The score is the overlap of the two silhouettes in the side, top and front views (1.0 is identical).
+
+| Model | Built from | Side | Top | Front |
+|---|---|---|---|---|
+| A320neo | FlightGear mesh | 0.984 | 0.985 | 0.867 |
+| 787-8 | FlightGear mesh | 0.976 | 0.973 | 0.885 |
+| 747-400 | FlightGear mesh | 0.989 | 0.985 | 0.913 |
+| 707-320B | FlightGear mesh | 0.988 | 0.974 | 0.861 |
+| 737-300 | Wikimedia three-view drawing | 0.873 | 0.719 | 0.708 |
+
+The 737 row compares two independent sources, not Machina against the truth: the drawing puts the wing about 1.2 m further forward than the FlightGear model does. A third source (the manufacturer's airport planning document) is needed to say which is right.
 
 Liveries are manufacturer house colors or Machina's own. No airline branding.
 

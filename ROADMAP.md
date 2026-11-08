@@ -34,6 +34,13 @@ One milestone per week. Each milestone ends with everything committed, `npm test
 - Smoother lofts: fuselage rings close up where the outline bends
 - Livery presets for any parametric model: Machina, factory demonstrator, polished metal, factory primer, plain white
 
+## M2.6 Mesh to parametric, and an accuracy benchmark (done, ahead of plan)
+
+- `npm run convert`: a detailed mesh becomes a parametric model by slicing, with no per-model settings. Robust to the usual simulator mess: misnamed parts, a tail inside the wing part, tires mapped to the wrong gear, helper slivers, fin roots inside the fuselage mesh
+- Builder: several main gear legs per side (body and wing gear), inner and outer engines, canted winglets
+- `npm run benchmark`: silhouette overlap against an answer key, in three views
+- Converted: A320neo, 787-8, 747-400, 707-320B. The A380 source has no horizontal tail and is left out
+
 ## M3. Compare
 
 - Two to four models side by side or overlaid at true scale

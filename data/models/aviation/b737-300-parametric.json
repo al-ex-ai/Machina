@@ -974,6 +974,7 @@
     "source": "https://commons.wikimedia.org/wiki/File:Boeing_737-300_v1.0.png",
     "author": "Julien.scavini",
     "license": "CC BY-SA 3.0",
-    "measured": "references/b737-300/measured.json"
+    "measured": "references/b737-300/measured.json",
+    "answerKey": "data/models/aviation/b737-300.json"
   }
 }

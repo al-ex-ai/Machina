@@ -188,7 +188,7 @@ export function buildParametric(model) {
         { geometry: place(sleeve), material: { color: '#16191d', roughness: 0.8, metalness: 0.2, doubleSide: true } },
         { geometry: place(plug), material: { color: '#5a5f66', roughness: 0.55, metalness: 0.8 } },
         { geometry: pyl, material: { color: lv.pylon ?? '#d7dbe0', roughness: 0.4 } },
-      ], { id: e.mirror ? `${side.key}-engine` : (e.id ?? `engine-${ei + 1}`), label: e.mirror ? `${side.label} engine (${e.name})` : `${e.label ?? 'Engine'} (${e.name})`, system: 'propulsion', info: partInfo(model, 'engine') }));
+      ], { id: e.mirror ? `${side.key}-${e.id ?? 'engine'}` : (e.id ?? `engine-${ei + 1}`), label: e.mirror ? `${side.label} ${(e.label ?? 'engine').toLowerCase()} (${e.name})` : `${e.label ?? 'Engine'} (${e.name})`, system: 'propulsion', info: partInfo(model, 'engine') }));
     }
   });
 
@@ -274,7 +274,10 @@ export function buildParametric(model) {
     return makeCompositePart(parts, { id, label, system: 'gear', info: partInfo(model, id) });
   };
   root.add(leg(g.gear.nose, 0, 'nose-gear', 'Nose gear'));
-  for (const side of SIDES) root.add(leg(g.gear.main, side.z * g.gear.main.z, `${side.key}-main-gear`, `${side.label} main gear`));
+  // Main legs: one pair, or several (body and wing gear) as a list.
+  for (const main of g.gear.mains ?? [{ ...g.gear.main, id: 'main-gear', label: 'main gear' }]) {
+    for (const side of SIDES) root.add(leg(main, side.z * main.z, `${side.key}-${main.id}`, `${side.label} ${main.label}`));
+  }
 
   // Antennas, probes, beacons and the APU exhaust, placed on the body profile.
   if (g.details !== false) {

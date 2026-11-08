@@ -19,7 +19,8 @@ for (const m of parametric) {
       if (o.userData.part) ids.add(o.userData.id);
       lines += o.userData.drawLines?.length ?? 0;
     });
-    for (const id of ['antennas', 'beacons', 'left-engine', 'nose-gear']) assert.ok(ids.has(id), `missing part "${id}"`);
+    for (const id of ['antennas', 'beacons', 'nose-gear']) assert.ok(ids.has(id), `missing part "${id}"`);
+    assert.ok([...ids].some(id => /^left-.*engine$/.test(id)), 'missing a left engine');
     assert.ok(lines > 10, `only ${lines} window and door outlines`);
   });
 }

@@ -8,7 +8,11 @@
     "models/aviation/ercoupe.json",
     "models/aviation/wright-flyer.json",
     "models/aviation/b737-300-parametric.json",
-    "models/aviation/tu-154m.json"
+    "models/aviation/tu-154m.json",
+    "models/aviation/a320neo-parametric.json",
+    "models/aviation/b787-8-parametric.json",
+    "models/aviation/b747-400-parametric.json",
+    "models/aviation/b707-parametric.json"
   ],
   "workshop": [
     "models/aviation/a320neo.json",

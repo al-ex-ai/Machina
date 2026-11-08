@@ -156,7 +156,7 @@ export function sheet(model, views, sections) {
   text(tx + 3, ty + 23.6, dims.join('   '), 2.5);
   text(tx + 63, ty + 23.6, `Scale 1:${s} (A3)`, 2.5);
   text(tx + 108, ty + 23.6, 'Units: meters', 2.5);
-  const src = model.asset ? `3D model: ${model.asset.author}, ${model.asset.license}` : model.reference ? `Parametric model measured from a drawing by ${model.reference.author}, ${model.reference.license}` : 'Machina parametric model';
+  const src = model.asset ? `3D model: ${model.asset.author}, ${model.asset.license}` : model.derived ? `Parametric model measured from the FlightGear mesh by ${model.derived.author}, ${model.derived.license}` : model.reference ? `Parametric model measured from a drawing by ${model.reference.author}, ${model.reference.license}` : 'Machina parametric model';
   text(tx + 3, ty + 30.8, `${src}. Projected from the 3D model by Machina.`, 1.9);
 
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${SHEET.w} ${SHEET.h}" width="${SHEET.w}mm" height="${SHEET.h}mm" font-family="${FONT}" fill="none" stroke="${INK}" stroke-linecap="round" stroke-linejoin="round">
