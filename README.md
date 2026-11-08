@@ -31,6 +31,7 @@ Machina turns simulator models into explorable, named parts.
 |---|---|
 | Airliners | Airbus A320neo, Boeing 787-8, Boeing 747-400, Boeing 707-320B (parametric, converted from FlightGear meshes) |
 | Prototypes | Boeing 737-300 and Tupolev Tu-154M (parametric, measured from open three-view drawings) |
+| Soviet aircraft | Tupolev Tu-134A, Tu-154B-2 and Tu-144D, Ilyushin Il-76TD (detailed FlightGear models with cockpits, liveries painted neutral) |
 | Light aircraft | Cessna 337 Skymaster, Cessna 172S, Robin DR400, Ercoupe 415-C, Piper J-3 Cub |
 | Helicopters | Eurocopter EC130 B4 |
 | Historic | 1903 Wright Flyer |

@@ -1,0 +1,83 @@
+---
+title: Tu-144D for FlightGear
+subtitle: Terms of use
+css: Docs/Tu-144D-docs.css
+---
+
+
+This work as a whole is licensed under
+[Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0).
+
+Parts of this work which do not make a user-flyable model of Tu-144D
+for FlightGear can be redistributed under
+[Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0).
+For example, such models can be distributed under CC-BY:
+
+ - a working model of Tu-144 (but not Tu-144D) or another aircraft
+   based on this model;
+ - a port of the model to a simulator unrelated to FlightGear;
+ - systems, instruments, scripts;
+ - 3D model for AI, scenery model (that is, not functioning as
+   aircraft model);
+ - 3D models of indicators and panels;
+ - etc.,
+
+but any model of Tu-144D the user can fly in FlightGear that is based
+on this one must be distributed under CC-BY-SA.
+
+Permissions beyond the scope of this license may be available by
+contacting the authors.
+
+
+Inactivity fallback
+-------------------
+
+The above restrictions no longer apply, and the whole work is
+available under
+[CC0](https://creativecommons.org/publicdomain/zero/1.0)
+if all of the following conditions are met:
+
+- **365 days** have passed without development activity in any of the
+  projects in GitLab subgroup
+  [fg_shfsn/tu-144d](https://gitlab.com/fg_shfsn/tu-144d "Project gitlab group")
+  by the members having write access to those projects' repositories;
+- attempts to contact all of the said members on all known channels,
+  including outside of GitLab, have been exhausted without any
+  relevant and meaningful response to questions about the projects.
+
+
+Other licenses
+--------------
+
+Some components of this package are distributed under other terms, as
+listed below.
+
+[CMU](Docs/licenses/CMU.TXT): CMU Festival voices
+
+    Sounds/Copilot/*.wav
+    Sounds/Engineer/*.wav
+
+[GNU GPLv2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt): temporary bugfixed copies of FGDATA files
+
+    Nasal/light-manager.nas
+    fgdata-patches/*
+
+
+Affiliation and trademarks
+--------------------------
+
+1. The authors are not affiliated with any organizations that may be
+mentioned throughout this work.
+2. The listed or any other trademarks and technical detail used in
+this work belong to their respective owners and are used by
+the authors only to reflect the reality:
+    1. Design and exterior of the Tu-144 and Tu-154 aircraft families
+       are the property of Joint Stock Company Tupolev. The "Tu" and
+       "Tu-144 trademarks and their respective logos are the
+       trademarks of [Joint Stock Company Tupolev](https://tupolev.ru)
+    2. Design and performance data of RD-36 engines are the property
+       of [UEC NPO Saturn, PJSC](https://npo-saturn.ru)
+    3. Design and performance data of NK-144 and NK-32 engines are the
+       property of [UEC Kuznetsov, PJSC](http://kuznetsov-motors.ru/)
+    4. Design of the USSR Aeroflot livery and Aeroflot logo are the
+       property of [PJSC Aeroflot](https://aeroflot.ru)

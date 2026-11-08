@@ -24,6 +24,8 @@ Machina's own code is MIT licensed (see `LICENSE`). Third-party files keep their
 | Tupolev Tu-134 model and textures (titles painted out) | `assets/aircraft/tu134/` | Emmanuel Baranger | GPL-2.0 |
 | Ilyushin Il-76 model and textures (titles painted out) | `assets/aircraft/il76/` | Emmanuel Baranger | GPL-2.0 |
 | Tupolev Tu-154B-2 model and textures (titles painted out) | `assets/aircraft/tu154b/` | Roman Skoryh, Yurik V. Nikiforoff and Project Tupolev | GPL |
+| Tupolev Tu-144D model and textures (DDS decoded, titles painted out) | `assets/aircraft/tu144d/` | Tu-144D for FlightGear team | CC BY-SA 4.0 |
+| Yakovlev Yak-40 model and textures | `assets/aircraft/yak40/` | Yak40devels | GPL-3.0 |
 | Eurocopter EC135 model and textures | `assets/aircraft/ec135/` | Heiko Schulz and contributors | GPL-2.0 |
 | Parametric A320neo, 787-8, 747-400 and 707 (shapes measured from the FlightGear models above) | `data/models/aviation/*-parametric.json` | Authors of each source model, measured by Machina | Same license as the source model |
 | Boeing 737-300 reference drawing (measurements only) | `references/b737-300/` | Julien.scavini | CC BY-SA 3.0 |

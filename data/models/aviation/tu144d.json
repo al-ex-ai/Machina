@@ -1,0 +1,484 @@
+{
+  "id": "tu144d",
+  "name": "Tupolev Tu-144D",
+  "category": "aviation",
+  "group": "Historic",
+  "builder": "asset",
+  "summary": "The Soviet supersonic airliner: an ogival delta wing, four engines in paired boxes under the wing, a nose that droops for landing and retractable canards behind the cockpit.",
+  "specs": {
+    "manufacturer": "Tupolev",
+    "role": "Supersonic airliner",
+    "first_flight": 1968,
+    "length_m": 65.7,
+    "wingspan_m": 28.8,
+    "height_m": 12.5,
+    "mtow_kg": 207000,
+    "cruise_mach": 2,
+    "engine_count": 4,
+    "engine_type": "Kolesov RD-36-51A",
+    "seats": "Up to 150"
+  },
+  "sources": [
+    {
+      "label": "Wikipedia: Tupolev Tu-144",
+      "url": "https://en.wikipedia.org/wiki/Tupolev_Tu-144"
+    }
+  ],
+  "asset": {
+    "path": "assets/aircraft/tu144d",
+    "license": "CC BY-SA 4.0",
+    "author": "Tu-144D for FlightGear team (ShFsn, femboywings, konsni and contributors)",
+    "source": "https://gitlab.com/fg_shfsn/tu-144d/Tu-144D",
+    "files": [
+      {
+        "file": "Models/Tu-144D.ac",
+        "pose": [
+          {
+            "type": "rotate",
+            "objects": [
+              "NgDoorL"
+            ],
+            "value": -75,
+            "origin": [
+              -19.7295,
+              -0.8006,
+              0.58
+            ],
+            "axis": [
+              1,
+              0,
+              5e-05
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "NgDoorR"
+            ],
+            "value": -75,
+            "origin": [
+              -19.7295,
+              -0.8006,
+              -0.58
+            ],
+            "axis": [
+              -1,
+              0,
+              5e-05
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "NgStrut"
+            ],
+            "value": -93.75,
+            "origin": [
+              -15.7547,
+              -0.6419,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MlgDoor0L"
+            ],
+            "value": 80,
+            "origin": [
+              4.4152,
+              -2.0739,
+              3.3701
+            ],
+            "axis": [
+              -1,
+              -0.00066,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MlgDoor0RodL"
+            ],
+            "value": 80,
+            "origin": [
+              2.3105,
+              -2.0232,
+              3.1837
+            ],
+            "axis": [
+              -1,
+              -0.00059,
+              0.00062
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MlgDoor1L"
+            ],
+            "value": 80,
+            "origin": [
+              1.1815,
+              -2.142,
+              2.1147
+            ],
+            "axis": [
+              0.999999,
+              -0.0011,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MlgDoor1RodL"
+            ],
+            "value": -80,
+            "origin": [
+              2.2984,
+              -2.0743,
+              2.2972
+            ],
+            "axis": [
+              -0.999999,
+              0.00113,
+              0.00131
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MlgBaseL"
+            ],
+            "value": -70,
+            "origin": [
+              4.045,
+              -0.6302,
+              3.2545
+            ],
+            "axis": [
+              0.00859,
+              0.06088,
+              0.998108
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MlgStrutL"
+            ],
+            "value": -160,
+            "origin": [
+              4.9607,
+              -1.0227,
+              2.3062
+            ],
+            "axis": [
+              0.00206,
+              -0.06108,
+              -0.998131
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MlgHingeL"
+            ],
+            "value": -90,
+            "origin": [
+              2.6396,
+              -0.8392,
+              2.8853
+            ],
+            "axis": [
+              5e-05,
+              -0.99891,
+              0.04668
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MlgDoor0R"
+            ],
+            "value": 80,
+            "origin": [
+              4.4152,
+              -2.0739,
+              -3.3701
+            ],
+            "axis": [
+              1,
+              0.00066,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MlgDoor0RodR"
+            ],
+            "value": 80,
+            "origin": [
+              2.3105,
+              -2.0232,
+              -3.1837
+            ],
+            "axis": [
+              1,
+              0.00059,
+              0.00062
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MlgDoor1R"
+            ],
+            "value": 80,
+            "origin": [
+              1.1815,
+              -2.142,
+              -2.1147
+            ],
+            "axis": [
+              -0.999999,
+              0.0011,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MlgDoor1RodR"
+            ],
+            "value": -80,
+            "origin": [
+              2.2984,
+              -2.0743,
+              -2.2972
+            ],
+            "axis": [
+              0.999999,
+              -0.00113,
+              0.00131
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MlgBaseR"
+            ],
+            "value": -70,
+            "origin": [
+              4.045,
+              -0.6302,
+              -3.2545
+            ],
+            "axis": [
+              -0.00859,
+              -0.06088,
+              0.998108
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MlgStrutR"
+            ],
+            "value": -160,
+            "origin": [
+              4.9607,
+              -1.0227,
+              -2.3062
+            ],
+            "axis": [
+              -0.00206,
+              0.06108,
+              -0.998131
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MlgHingeR"
+            ],
+            "value": -90,
+            "origin": [
+              2.6396,
+              -0.8392,
+              -2.8853
+            ],
+            "axis": [
+              -5e-05,
+              0.99891,
+              0.04668
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Shield"
+            ],
+            "value": -55,
+            "origin": [
+              24.3805,
+              0.4611,
+              -0.0025
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "fallback": {
+      "id": "fuselage",
+      "label": "Fuselage",
+      "system": "structure"
+    },
+    "hide": [
+      "/Tractor|BelAZ|Groundsupply|SPT-154/",
+      "/Precip/",
+      "/Open(_|$)/",
+      "/^Collisionlight/",
+      "/light$/i",
+      "/^Navlight/",
+      "Cabin_unlit",
+      "/^(Hinge|Door)\\dU$/",
+      "/^Chute/"
+    ],
+    "parts": [
+      {
+        "id": "droop-nose",
+        "label": "Droop nose",
+        "system": "structure",
+        "match": [
+          "Cone",
+          "ConeInt",
+          "/^ConeGlass/",
+          "/^WindshieldGlassCone/"
+        ]
+      },
+      {
+        "id": "canards",
+        "label": "Retractable canards",
+        "system": "controls",
+        "match": [
+          "/^Canard/"
+        ]
+      },
+      {
+        "id": "elevons",
+        "label": "Elevons",
+        "system": "controls",
+        "match": [
+          "/^Elevon/"
+        ]
+      },
+      {
+        "id": "rudder",
+        "label": "Rudder",
+        "system": "controls",
+        "match": [
+          "/^Rudder/"
+        ]
+      },
+      {
+        "id": "engines",
+        "label": "Engines and intakes",
+        "system": "propulsion",
+        "match": [
+          "/^Turb/",
+          "/^Spill/",
+          "/^Inflap/"
+        ]
+      },
+      {
+        "id": "nose-gear",
+        "label": "Nose gear",
+        "system": "gear",
+        "match": [
+          "/^Ng/"
+        ]
+      },
+      {
+        "id": "left-main-gear",
+        "label": "Left main gear",
+        "system": "gear",
+        "match": [
+          "GearL",
+          "/^Mlg.*L$/"
+        ]
+      },
+      {
+        "id": "right-main-gear",
+        "label": "Right main gear",
+        "system": "gear",
+        "match": [
+          "GearR",
+          "/^Mlg.*R$/",
+          "MlgBarrelR"
+        ]
+      },
+      {
+        "id": "tail-bumper",
+        "label": "Tail bumper",
+        "system": "gear",
+        "match": [
+          "/^Shield/"
+        ]
+      },
+      {
+        "id": "doors",
+        "label": "Doors",
+        "system": "structure",
+        "match": [
+          "/^Door\\d/",
+          "/^Hinge\\d/",
+          "/^Cargodoor/",
+          "Doors"
+        ]
+      },
+      {
+        "id": "windows",
+        "label": "Windows",
+        "system": "glazing",
+        "match": [
+          "/^Glass/",
+          "/^Window/",
+          "CabinWindowDummy"
+        ]
+      },
+      {
+        "id": "cabin",
+        "label": "Cockpit and cabin",
+        "system": "interior",
+        "match": [
+          "Cabin",
+          "Cockpit",
+          "/^Chair/",
+          "/^Yoke/",
+          "Cargo"
+        ]
+      }
+    ],
+    "verify": {
+      "tolerance": {
+        "height": 0.2,
+        "length": 0.03
+      },
+      "note": "The FlightGear model's airframe stands 11.24 m from belly to fin tip; with the gear lowered from its own animations (struts fully extended, unloaded) it measures 14.73 m tall against the published 12.5 m."
+    }
+  }
+}
