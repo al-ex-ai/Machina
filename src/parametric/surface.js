@@ -42,11 +42,20 @@ export function surfacePlan(spec) {
   return { ...spec, section: a => ({ le: le(a), chord: chord(a), h: h(a), tc: tc(a), twist: twist(a) }) };
 }
 
-/** One closed solid: the span range [a0, a1] and chord range [c0, c1] of a surface. */
-export function surfacePiece(plan, a0, a1, c0, c1) {
+/**
+ * One closed solid: the span range [a0, a1] and chord range [c0, c1] of a surface.
+ * opts.gap (meters) pulls chord edges that border another piece back by that much, and
+ * opts.spanGap pulls the span ends in, leaving the hinge and side gaps a movable
+ * surface has. UVs: u is the chord fraction, v the span fraction of the whole surface.
+ */
+export function surfacePiece(plan, a0, a1, c0, c1, opts = {}) {
   const m = plan.camber ?? 0, p = plan.camberAt ?? 0.4;
   const vertical = plan.axis === 'y';
-  const breaks = [a0, ...plan.sections.map(s => s.at).filter(a => a > a0 && a < a1), a1];
+  const sg = opts.spanGap ?? 0;
+  if (sg && a1 - a0 > sg * 4) { a0 += sg; a1 -= sg; }
+  const ats = plan.sections.map(s => s.at);
+  const aMin = Math.min(...ats), aMax = Math.max(...ats);
+  const breaks = [a0, ...ats.filter(a => a > a0 && a < a1), a1];
   const spans = [];
   for (let i = 0; i < breaks.length - 1; i++) for (let k = 0; k < 4; k++) spans.push(breaks[i] + ((breaks[i + 1] - breaks[i]) * k) / 4);
   spans.push(a1);
@@ -54,15 +63,19 @@ export function surfacePiece(plan, a0, a1, c0, c1) {
   const ring = a => {
     const s = plan.section(a);
     const tw = THREE.MathUtils.degToRad(s.twist);
-    return outline(c0, c1, s.tc, m, p).map(([x, y]) => {
-      if (vertical) return [s.le + x * s.chord, a, s.h + y * s.chord];
+    const g = (opts.gap ?? 0) / s.chord;
+    const lo = c0 > 0 ? c0 + g : c0, hi = c1 < 1 ? c1 - g : c1;
+    return outline(lo, Math.max(hi, lo + 0.01), s.tc, m, p).map(([x, y]) => {
+      const uv = [x, (a - aMin) / (aMax - aMin || 1)];
+      if (vertical) return [s.le + x * s.chord, a, s.h + y * s.chord, ...uv];
       const dx = (x - 0.25) * s.chord, dy = y * s.chord;
-      return [s.le + 0.25 * s.chord + dx * Math.cos(tw) + dy * Math.sin(tw), s.h - dx * Math.sin(tw) + dy * Math.cos(tw), a];
+      return [s.le + 0.25 * s.chord + dx * Math.cos(tw) + dy * Math.sin(tw), s.h - dx * Math.sin(tw) + dy * Math.cos(tw), a, ...uv];
     });
   };
   const rings = spans.map(ring);
   const R = rings[0].length;
-  const pos = rings.flat(2);
+  const pos = rings.flatMap(r => r.flatMap(q => q.slice(0, 3)));
+  const uv = rings.flatMap(r => r.flatMap(q => q.slice(3)));
   const idx = [];
   for (let i = 0; i < rings.length - 1; i++) {
     for (let j = 0; j < R - 1; j++) {
@@ -72,19 +85,22 @@ export function surfacePiece(plan, a0, a1, c0, c1) {
   }
   const skin = new THREE.BufferGeometry();
   skin.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+  skin.setAttribute('uv', new THREE.Float32BufferAttribute(uv, 2));
   skin.setIndex(idx);
   skin.computeVertexNormals();
   return mergeIndexed([skin, endCap(rings[0], -1, vertical), endCap(rings[rings.length - 1], 1, vertical)]);
 }
 
 function endCap(ring, dir, vertical) {
-  const c = ring.reduce((s, q) => [s[0] + q[0], s[1] + q[1], s[2] + q[2]], [0, 0, 0]).map(v => v / ring.length);
-  const pos = [...c, ...ring.flat()];
+  const c = ring.reduce((s, q) => s.map((v, i) => v + q[i]), [0, 0, 0, 0, 0]).map(v => v / ring.length);
+  const pos = [...c.slice(0, 3), ...ring.flatMap(q => q.slice(0, 3))];
+  const uv = [...c.slice(3), ...ring.flatMap(q => q.slice(3))];
   const idx = [];
   const flip = (dir > 0) !== vertical;
   for (let j = 1; j < ring.length; j++) flip ? idx.push(0, j, j + 1) : idx.push(0, j + 1, j);
   const geo = new THREE.BufferGeometry();
   geo.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+  geo.setAttribute('uv', new THREE.Float32BufferAttribute(uv, 2));
   geo.setIndex(idx);
   geo.computeVertexNormals();
   return geo;

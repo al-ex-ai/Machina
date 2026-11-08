@@ -3,7 +3,7 @@
 // measured positions. Browser only: returns null in Node.
 import * as THREE from 'three';
 
-const W = 4096, H = 1024;
+const W = 4096, H = 2048;
 
 // Text is laid out at 100 px and scaled to its size in meters: canvas fonts below a
 // pixel are not reliable.
@@ -119,12 +119,19 @@ export function sideUV(geo0, bounds) {
  * @param {ReturnType<import('./body.js').bodyProfile>} body
  * @param {number} length
  * @param {any} lv livery spec from the model file
+ * @returns {{ map: THREE.Texture, bump: THREE.Texture } | null} paint, and a height map
+ *   for the skin detail (panel seams, door gaps, window recesses) in the same layout
  */
 export function paintFuselage(body, length, lv) {
   if (typeof document === 'undefined') return null;
   const c = document.createElement('canvas');
   c.width = W; c.height = H;
   const g = c.getContext('2d');
+  const bc = document.createElement('canvas');
+  bc.width = W; bc.height = H;
+  const b = bc.getContext('2d');
+  b.fillStyle = '#808080';
+  b.fillRect(0, 0, W, H);
   const U = x => (x / length) * W;
   const V = t => (t / (Math.PI * 2)) * H;
   const left = (x, y) => [U(x), V(body.thetaAt(x, y))];
@@ -146,11 +153,25 @@ export function paintFuselage(body, length, lv) {
   band(x => cheat(x) + lv.cheatline.width, lv.stripe);
   band(cheat, lv.belly);
 
-  // Skin panel joints: faint lines at frame stations and lap joints.
-  g.strokeStyle = 'rgba(0, 0, 0, 0.07)';
-  g.lineWidth = 1.5;
-  for (let x = lv.panels?.from ?? 2; x < length - 1; x += lv.panels?.pitch ?? 1.6) {
-    g.beginPath(); g.moveTo(U(x), 0); g.lineTo(U(x), H); g.stroke();
+  // Skin panel joints, from the window belt and the panel pitch: circumferential frame
+  // joints and longitudinal lap joints above and below the windows and along the
+  // lower side. Grooves in the height map, faint lines in the paint.
+  const strokes = [[g, 'rgba(0, 0, 0, 0.06)', 1.5], [b, '#3a3a3a', 2]];
+  for (const line of skinSeams(body, length, lv)) {
+    for (const [ctx, style, width] of strokes) {
+      ctx.strokeStyle = style; ctx.lineWidth = width;
+      for (const side of [left, right]) {
+        ctx.beginPath();
+        for (const [x, y] of line) ctx.lineTo(...side(x, y));
+        ctx.stroke();
+      }
+    }
+  }
+  for (const x of frameJoints(length, lv)) {
+    for (const [ctx, style, width] of strokes) {
+      ctx.strokeStyle = style; ctx.lineWidth = width;
+      ctx.beginPath(); ctx.moveTo(U(x), 0); ctx.lineTo(U(x), H); ctx.stroke();
+    }
   }
 
   // Shapes drawn on both sides from side-view coordinates (x, y).
@@ -161,24 +182,47 @@ export function paintFuselage(body, length, lv) {
     g.closePath();
     g.fill();
   };
-  const rect = (x, y, w, h, color, radius = 0.3) => {
+  const roundRect = (ctx, x, y, w, h, radius) => {
     for (const side of [left, right]) {
       const [u0, v0] = side(x - w / 2, y + h / 2), [u1, v1] = side(x + w / 2, y - h / 2);
-      g.fillStyle = color;
-      g.beginPath();
+      ctx.beginPath();
       const r = Math.min(Math.abs(u1 - u0), Math.abs(v1 - v0)) * radius;
-      g.roundRect(Math.min(u0, u1), Math.min(v0, v1), Math.abs(u1 - u0), Math.abs(v1 - v0), r);
+      ctx.roundRect(Math.min(u0, u1), Math.min(v0, v1), Math.abs(u1 - u0), Math.abs(v1 - v0), r);
+      ctx.fill();
+    }
+  };
+  // A window: a light frame ring, then the pane with a sky reflection at the top. In the
+  // height map the frame stands proud and the pane sits in a recess.
+  const rect = (x, y, w, h, color, radius = 0.3) => {
+    const f = 0.045;
+    g.fillStyle = lv.windowFrame ?? '#c9ced6';
+    roundRect(g, x, y, w + f, h + f, radius);
+    b.fillStyle = '#a0a0a0';
+    roundRect(b, x, y, w + f, h + f, radius);
+    for (const side of [left, right]) {
+      const [u0, v0] = side(x - w / 2, y + h / 2), [u1, v1] = side(x + w / 2, y - h / 2);
+      const grad = g.createLinearGradient(0, v0, 0, v1);
+      grad.addColorStop(0, '#5d7591');
+      grad.addColorStop(0.4, color);
+      grad.addColorStop(1, color);
+      g.fillStyle = grad;
+      g.beginPath();
+      g.roundRect(Math.min(u0, u1), Math.min(v0, v1), Math.abs(u1 - u0), Math.abs(v1 - v0), Math.min(Math.abs(u1 - u0), Math.abs(v1 - v0)) * radius);
       g.fill();
     }
+    b.fillStyle = '#505050';
+    roundRect(b, x, y, w, h, radius);
   };
   const outlineRect = (x, y, w, h) => {
     for (const side of [left, right]) {
       const [u0, v0] = side(x - w / 2, y + h), [u1, v1] = side(x + w / 2, y);
-      g.strokeStyle = 'rgba(20, 30, 45, 0.55)';
-      g.lineWidth = 3;
-      g.beginPath();
-      g.roundRect(Math.min(u0, u1), Math.min(v0, v1), Math.abs(u1 - u0), Math.abs(v1 - v0), 10);
-      g.stroke();
+      const box = [Math.min(u0, u1), Math.min(v0, v1), Math.abs(u1 - u0), Math.abs(v1 - v0)];
+      g.strokeStyle = 'rgba(20, 30, 45, 0.45)';
+      g.lineWidth = 2.5;
+      g.beginPath(); g.roundRect(...box, 10); g.stroke();
+      b.strokeStyle = '#202020';
+      b.lineWidth = 3;
+      b.beginPath(); b.roundRect(...box, 10); b.stroke();
     }
   };
 
@@ -227,6 +271,77 @@ export function paintFuselage(body, length, lv) {
 
   const tex = new THREE.CanvasTexture(c);
   tex.colorSpace = THREE.SRGBColorSpace;
+  tex.flipY = false;
+  tex.anisotropy = 8;
+  const bump = new THREE.CanvasTexture(bc);
+  bump.flipY = false;
+  bump.anisotropy = 8;
+  return { map: tex, bump };
+}
+
+/** Frame joint stations: every panel pitch along the body, clear of the nose and tail cones. */
+export function frameJoints(length, lv) {
+  const from = lv.panels?.from ?? 2, pitch = lv.panels?.pitch ?? 1.6;
+  const xs = [];
+  for (let x = from; x < length - 1; x += pitch) xs.push(x);
+  return xs;
+}
+
+/**
+ * Longitudinal lap joints as side-view polylines [x, y]: one above and one below the
+ * window belt, and one along the lower side, each kept where the body is wide enough.
+ */
+export function skinSeams(body, length, lv) {
+  const wins = lv.windows?.list ?? [];
+  const wy = wins.length ? wins.reduce((a, q) => a + q[1], 0) / wins.length : lv.windows?.y;
+  const wh = lv.windows?.h ?? 0.35;
+  if (wy === undefined) return [];
+  const lines = [];
+  for (const dy of [wh / 2 + 0.28, -wh / 2 - 0.28]) {
+    let line = [];
+    for (let x = 0.08 * length; x <= 0.86 * length; x += 0.1) {
+      const s = body.at(x), y = wy + dy;
+      if (y < s.top - 0.2 && y > s.bot + 0.2) line.push([x, y]);
+      else if (line.length) { if (line.length > 2) lines.push(line); line = []; }
+    }
+    if (line.length > 2) lines.push(line);
+  }
+  const low = [];
+  for (let x = 0.1 * length; x <= 0.8 * length; x += 0.1) {
+    const s = body.at(x);
+    low.push([x, s.mid - (s.mid - s.bot) * 0.55]);
+  }
+  lines.push(low);
+  return lines;
+}
+
+/**
+ * Height map for a lifting surface in its own UV space (u chord fraction, v span
+ * fraction): spar lines, ribs at a fixed spacing in meters, and access panels between
+ * the spars. Browser only.
+ * @param {number} span meters covered by v = 0..1
+ */
+export function surfaceBump(span) {
+  if (typeof document === 'undefined') return null;
+  const c = document.createElement('canvas');
+  c.width = 1024; c.height = 2048;
+  const g = c.getContext('2d');
+  g.fillStyle = '#808080';
+  g.fillRect(0, 0, c.width, c.height);
+  g.strokeStyle = '#202020';
+  g.lineWidth = 5;
+  for (const u of [0.15, 0.65]) { g.beginPath(); g.moveTo(u * c.width, 0); g.lineTo(u * c.width, c.height); g.stroke(); }
+  const rib = 0.55;
+  g.lineWidth = 4;
+  for (let s = rib; s < span; s += rib) {
+    const v = (s / span) * c.height;
+    g.beginPath(); g.moveTo(0.15 * c.width, v); g.lineTo(0.65 * c.width, v); g.stroke();
+  }
+  for (let s = rib * 2; s < span - rib; s += rib * 3) {
+    const v0 = (s / span) * c.height, v1 = ((s + rib * 0.7) / span) * c.height;
+    g.beginPath(); g.roundRect(0.28 * c.width, v0, 0.24 * c.width, v1 - v0, 8); g.stroke();
+  }
+  const tex = new THREE.CanvasTexture(c);
   tex.flipY = false;
   tex.anisotropy = 8;
   return tex;

@@ -300,6 +300,13 @@ export function createViewer(container) {
     gtao.updateGtaoMaterial({ radius: radius * 0.05, distanceExponent: 1.5, thickness: radius * 0.02, scale: 1 });
     controls.minDistance = radius * 0.4;
     controls.maxDistance = dist * 4;
+    // "cam=px,py,pz,tx,ty,tz" in the URL places the camera exactly (close-up screenshots).
+    const cam = /[?&#]cam=([-\d.,]+)/.exec(globalThis.location?.href ?? '')?.[1]?.split(',').map(Number);
+    if (cam?.length === 6) {
+      controls.minDistance = 0.1;
+      camera.position.set(cam[0], cam[1], cam[2]);
+      controls.target.set(cam[3], cam[4], cam[5]);
+    }
     controls.update();
 
     const span = Math.max(size.x, size.z) * 4;

@@ -31,6 +31,8 @@ export function systemMaterial(system, livery = {}, opts = {}) {
   return new THREE.MeshPhysicalMaterial({
     color: opts.color ?? livery[system] ?? sys.color,
     map: opts.map ?? null,
+    bumpMap: opts.bumpMap ?? null,
+    bumpScale: opts.bumpScale ?? 1,
     roughness: opts.roughness ?? finish.roughness,
     metalness: opts.metalness ?? finish.metalness,
     clearcoat: opts.clearcoat ?? finish.clearcoat,

@@ -6,7 +6,8 @@ import * as THREE from 'three';
 import { makePart, makeCompositePart, partInfo } from '../parts/common.js';
 import { bodyProfile, loftBody, mergeIndexed } from '../parametric/body.js';
 import { surfacePlan, surfacePiece, mirrorZ } from '../parametric/surface.js';
-import { paintFuselage, paintFin, sideUV } from '../parametric/livery.js';
+import { paintFuselage, paintFin, sideUV, surfaceBump } from '../parametric/livery.js';
+import { skinOutlines, inletLip, fanBlades, nozzleSleeve, grooveTire, gearLinkage, airframeDetails } from '../parametric/details.js';
 
 const SIDES = [{ key: 'left', label: 'Left', z: 1 }, { key: 'right', label: 'Right', z: -1 }];
 
@@ -21,11 +22,13 @@ export function buildParametric(model) {
   // Fuselage and wing-to-body fairing
   const body = bodyProfile(g.fuselage.stations, g.fuselage);
   const tex = paintFuselage(body, L, lv);
-  root.add(makePart(loftBody(body, { length: L, segments: 128 }), {
+  const fuselage = makePart(loftBody(body, { length: L, segments: 128 }), {
     id: 'fuselage', label: 'Fuselage', system: 'structure', keepNormals: true,
-    material: tex ? { map: tex, color: '#ffffff', roughness: 0.5, clearcoat: 0, envMapIntensity: 0.45, specularIntensity: 0.2 } : { color: lv.base }, // satin, softer reflections: dark titles stay readable under the studio light
+    material: tex ? { map: tex.map, bumpMap: tex.bump, bumpScale: 1.2, color: '#ffffff', roughness: 0.5, clearcoat: 0, envMapIntensity: 0.45, specularIntensity: 0.2 } : { color: lv.base }, // satin, softer reflections: dark titles stay readable under the studio light
     info: partInfo(model, 'fuselage', { Length: `${L} m` }),
-  }));
+  });
+  fuselage.userData.drawLines = skinOutlines(body, lv); // windows and doors for the line drawings
+  root.add(fuselage);
   if (g.fairing) {
     const fp = bodyProfile(g.fairing.stations, g.fairing);
     root.add(makePart(loftBody(fp, { length: L, segments: 64 }), {
@@ -79,15 +82,19 @@ export function buildParametric(model) {
   }
 
   // Lifting surfaces, split into named pieces
+  // Movable surfaces stand off their neighbors by hinge and side gaps.
   for (const s of g.surfaces) {
     const plan = surfacePlan(s);
     const pieces = new Map();
     for (const seg of s.segments) {
       for (const [c0, c1, key] of seg.split) {
         if (!pieces.has(key)) pieces.set(key, []);
-        pieces.get(key).push(surfacePiece(plan, seg.from, seg.to, c0, c1));
+        const movable = s.parts[key].system === 'controls';
+        pieces.get(key).push(surfacePiece(plan, seg.from, seg.to, c0, c1, movable ? { gap: 0.015, spanGap: 0.02 } : {}));
       }
     }
+    const ats = s.sections.map(q => q.at);
+    const bump = s.paint ? null : surfaceBump(Math.max(...ats) - Math.min(...ats));
     // A painted tail: one texture shared by the fin and rudder, mapped on both faces.
     let decal = null, bounds = null;
     if (s.paint) {
@@ -100,6 +107,7 @@ export function buildParametric(model) {
       let geo = mergeIndexed(geos);
       let material = mat[meta.finish ?? meta.system] ?? {};
       if (decal) { geo = sideUV(geo, bounds); material = { ...material, map: decal, color: '#ffffff' }; }
+      else if (bump) material = { ...material, bumpMap: bump, bumpScale: 1.6 };
       if (!s.mirror) {
         root.add(makePart(geo, { ...meta, keepNormals: true, material, info: partInfo(model, meta.id) }));
         continue;
@@ -128,22 +136,10 @@ export function buildParametric(model) {
     plug.translate(0, nac.at(length).mid, 0);
     const spinner = new THREE.ConeGeometry(rFan * 0.32, rFan * 0.75, 32).rotateZ(Math.PI / 2).translate(fanX - rFan * 0.37, fanY, 0);
     const duct = new THREE.CylinderGeometry(rFan * 1.02, rFan * 1.02, fanX, 48, 1, true).rotateZ(Math.PI / 2).translate(fanX / 2, fanY, 0);
-    const fan = new THREE.CircleGeometry(rFan, 48).rotateY(-Math.PI / 2).translate(fanX, fanY, 0);
-    // Inlet lip: a ring from the nacelle's outer edge in to the round fan duct.
-    const lip = (() => {
-      const S = 72, pos = [], idx = [];
-      const v = new THREE.Vector3();
-      for (let j = 0; j <= S; j++) {
-        const t = (j / S) * Math.PI * 2;
-        nac.point(0, t, v);
-        pos.push(v.x, v.y, v.z, 0.02, fanY + rFan * 1.02 * Math.cos(t), rFan * 1.02 * Math.sin(t));
-      }
-      for (let j = 0; j < S; j++) { const a = j * 2; idx.push(a, a + 1, a + 2, a + 1, a + 3, a + 2); }
-      const geo = new THREE.BufferGeometry();
-      geo.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
-      geo.setIndex(idx);
-      return geo;
-    })();
+    const fan = new THREE.CircleGeometry(rFan, 48).rotateY(-Math.PI / 2).translate(fanX + 0.08, fanY, 0);
+    const blades = fanBlades(rFan, fanX, fanY, e.fan.blades ?? 24);
+    const sleeve = nozzleSleeve(nac, length);
+    const lip = inletLip(nac, rFan * 1.02, fanY);
     const pylonPlan = surfacePlan({ axis: e.pylon.axis ?? 'y', sections: e.pylon.sections });
     const pylon = surfacePiece(pylonPlan, e.pylon.sections[0].at, e.pylon.sections.at(-1).at, 0, 1);
     const sides = e.mirror ? SIDES : [{ key: e.id ?? `engine-${ei + 1}`, label: '', z: 1 }];
@@ -153,12 +149,14 @@ export function buildParametric(model) {
       const pyl = e.mirror && side.z < 0 ? mirrorZ(pylon) : pylon.clone();
       if (!e.mirror && e.position.z < 0) pyl.scale(1, 1, -1);
       root.add(makeCompositePart([
-        { geometry: place(loftBody(nac, { length, segments: 72, capStart: false })), material: { color: lv.nacelle ?? lv.belly, roughness: 0.32, clearcoat: 0.8 } },
+        { geometry: place(loftBody(nac, { length, segments: 72, capStart: false, capEnd: false })), material: { color: lv.nacelle ?? lv.belly, roughness: 0.32, clearcoat: 0.8, doubleSide: true } },
         { geometry: place(lip), material: mat.metal },
-        { geometry: place(duct), material: { color: '#2b3038', roughness: 0.6, metalness: 0.4, doubleSide: true } },
-        { geometry: place(fan), material: { color: '#1c2026', roughness: 0.4, metalness: 0.7 } },
-        { geometry: place(spinner), material: mat.metal },
-        { geometry: place(plug), material: { color: '#6c727b', roughness: 0.5, metalness: 0.8 } },
+        { geometry: place(duct), material: { color: '#3a4049', roughness: 0.75, metalness: 0.3, doubleSide: true } },
+        { geometry: place(fan), material: { color: '#101318', roughness: 0.6, metalness: 0.4 } },
+        { geometry: place(blades), material: { color: '#9aa3ad', roughness: 0.3, metalness: 0.9, doubleSide: true } },
+        { geometry: place(spinner), material: { color: '#c3c8ce', roughness: 0.25, metalness: 0.9 } },
+        { geometry: place(sleeve), material: { color: '#16191d', roughness: 0.8, metalness: 0.2, doubleSide: true } },
+        { geometry: place(plug), material: { color: '#5a5f66', roughness: 0.55, metalness: 0.8 } },
         { geometry: pyl, material: { color: lv.pylon ?? '#d7dbe0', roughness: 0.4 } },
       ], { id: e.mirror ? `${side.key}-engine` : (e.id ?? `engine-${ei + 1}`), label: e.mirror ? `${side.label} engine (${e.name})` : `${e.label ?? 'Engine'} (${e.name})`, system: 'propulsion', info: partInfo(model, 'engine') }));
     }
@@ -218,16 +216,7 @@ export function buildParametric(model) {
   }
 
   // Landing gear
-  const tire = (d, w) => {
-    const r = d / 2, k = w * 0.32;
-    const pts = [];
-    for (let i = 0; i <= 16; i++) {
-      const a = -Math.PI / 2 + (Math.PI * i) / 16;
-      pts.push(new THREE.Vector2(r - k + Math.cos(a) * k, (w / 2) * Math.sin(a) * 1.05));
-    }
-    pts.unshift(new THREE.Vector2(r * 0.55, -w / 2)); pts.push(new THREE.Vector2(r * 0.55, w / 2));
-    return new THREE.LatheGeometry(pts, 40).rotateX(Math.PI / 2);
-  };
+  const tire = grooveTire;
   const leg = (gear, z, id, label) => {
     const r = gear.tire.d / 2;
     const y0 = gear.bottom ?? 0; // tire bottom in body axes (below 0 when the aircraft sits nose down)
@@ -240,6 +229,7 @@ export function buildParametric(model) {
         const dz = (i - (n - 1) / 2) * gear.spacing;
         parts.push({ geometry: tire(gear.tire.d, gear.tire.w).translate(ax, y0 + r, z + dz), material: { color: '#1b1d20', roughness: 0.85, metalness: 0 } });
         parts.push({ geometry: new THREE.CylinderGeometry(r * 0.55, r * 0.55, gear.tire.w * 0.9, 24).rotateX(Math.PI / 2).translate(ax, y0 + r, z + dz), material: { color: '#9aa1aa', roughness: 0.4, metalness: 0.8 } });
+        parts.push({ geometry: new THREE.CylinderGeometry(r * 0.2, r * 0.24, gear.tire.w * 1.02, 16).rotateX(Math.PI / 2).translate(ax, y0 + r, z + dz), material: { color: '#6f767f', roughness: 0.35, metalness: 0.9 } });
       }
       if (axles > 1) parts.push({ geometry: new THREE.CylinderGeometry(gear.strut * 0.4, gear.strut * 0.4, gear.spacing * (n - 1) + 0.1, 12).rotateX(Math.PI / 2).translate(ax, y0 + r, z), material: mat.metal });
     }
@@ -248,10 +238,28 @@ export function buildParametric(model) {
     parts.push({ geometry: new THREE.CylinderGeometry(gear.strut * 0.5, gear.strut * 0.5, gear.spacing * (n - 1) + 0.1, 12).rotateX(Math.PI / 2).translate(gear.x, y0 + r, z), material: mat.metal });
     parts.push({ geometry: new THREE.CylinderGeometry(gear.strut * 0.42, gear.strut * 0.42, (top - y0 - r) * 0.55, 16).translate(gear.x, y0 + r + (top - y0 - r) * 0.275, z), material: { color: '#d9dde2', roughness: 0.15, metalness: 1 } });
     parts.push({ geometry: new THREE.CylinderGeometry(gear.strut * 0.6, gear.strut * 0.6, (top - y0 - r) * 0.55, 16).translate(gear.x, top - (top - y0 - r) * 0.275, z), material: { color: '#8d939b', roughness: 0.45, metalness: 0.6 } });
+    const { links, brace } = gearLinkage(gear, y0 + r, z);
+    parts.push({ geometry: links, material: mat.metal });
+    parts.push({ geometry: brace, material: { color: '#8d939b', roughness: 0.45, metalness: 0.6 } });
     return makeCompositePart(parts, { id, label, system: 'gear', info: partInfo(model, id) });
   };
   root.add(leg(g.gear.nose, 0, 'nose-gear', 'Nose gear'));
   for (const side of SIDES) root.add(leg(g.gear.main, side.z * g.gear.main.z, `${side.key}-main-gear`, `${side.label} main gear`));
+
+  // Antennas, probes, beacons and the APU exhaust, placed on the body profile.
+  if (g.details !== false) {
+    const d = airframeDetails(body);
+    root.add(makeCompositePart([
+      { geometry: d.antennas, material: { color: lv.antenna ?? '#e4e7eb', roughness: 0.4 } },
+    ], { id: 'antennas', label: 'Antennas and probes', system: 'avionics', info: partInfo(model, 'antennas') }));
+    root.add(makeCompositePart([
+      { geometry: d.beacons, material: { color: '#d1242b', roughness: 0.1, clearcoat: 1, metalness: 0.1 } },
+    ], { id: 'beacons', label: 'Anti-collision beacons', system: 'lights', info: partInfo(model, 'beacons') }));
+    // No APU disc when a pod (a center engine exhaust) already ends the tail.
+    if (d.apu && !(g.pods ?? []).some(p => /exhaust/.test(p.id))) root.add(makeCompositePart([
+      { geometry: d.apu, material: { color: '#121417', roughness: 0.8 } },
+    ], { id: 'apu-exhaust', label: 'APU exhaust', system: 'propulsion', info: partInfo(model, 'apu-exhaust') }));
+  }
 
   // Interior generated from the cabin layout: floor, seat rows, flight deck.
   if (g.cabin) {

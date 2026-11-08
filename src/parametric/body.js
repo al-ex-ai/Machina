@@ -61,10 +61,13 @@ function ringStations(p, target = 0.06) {
   const len = p.x1 - p.x0;
   const size = x => { const s = p.at(x); return s.w + (s.top - s.bot) / 2; };
   let x = p.x0;
+  const slopeAt = x => { const probe = Math.min(len / 400, 0.02); return (size(Math.min(x + probe, p.x1)) - size(x)) / probe; };
   while (x < p.x1) {
-    const probe = Math.min(len / 400, 0.02);
-    const slope = Math.abs(size(Math.min(x + probe, p.x1)) - size(x)) / probe;
-    const step = THREE.MathUtils.clamp(target / Math.max(slope, 1e-3), len / 600, len / 40);
+    const slope = Math.abs(slopeAt(x));
+    // Bend: how fast the slope changes over the next stretch. Rings close up where the
+    // outline curves (tail upsweep, nose), so silhouettes stay smooth.
+    const bend = Math.abs(slopeAt(Math.min(x + len / 200, p.x1)) - slopeAt(x)) / (len / 200);
+    const step = THREE.MathUtils.clamp(Math.min(target / Math.max(slope, 1e-3), 0.02 / Math.sqrt(Math.max(bend, 1e-6))), len / 600, len / 100);
     x = Math.min(x + step, p.x1);
     xs.push(x);
   }
