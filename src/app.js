@@ -37,7 +37,7 @@ const PLANNED = [
 ];
 
 // Sorting for galleries. "type" groups by kind of aircraft, biggest first within each.
-const GROUP_ORDER = ['Airliners', 'Light aircraft', 'Helicopters', 'Historic'];
+const GROUP_ORDER = ['Airliners', 'Light aircraft', 'Helicopters', 'Historic', 'Prototype'];
 const SORTS = {
   type: { label: 'Type, then size', cmp: (a, b) => groupRank(a) - groupRank(b) || b.specs.length_m - a.specs.length_m },
   name: { label: 'Name', cmp: (a, b) => a.name.localeCompare(b.name) },
@@ -98,7 +98,7 @@ function parseRoute() {
   const [path, query = ''] = h.replace(/^#\/?/, '').split('?');
   const seg = path.split('/').filter(Boolean);
   const q = new URLSearchParams(query);
-  if (seg[0] === 'm' && seg[1]) return { name: 'model', id: seg[1], part: q.get('part'), xray: q.get('xray') === '1', person: q.get('person') === '1' };
+  if (seg[0] === 'm' && seg[1]) return { name: 'model', id: seg[1], part: q.get('part'), xray: q.get('xray') === '1', person: q.get('person') === '1', view: q.get('view') };
   if (seg[0] === 'c' && seg[1]) return { name: 'category', id: seg[1] };
   return { name: 'home' };
 }
@@ -117,6 +117,7 @@ function render() {
   if (route.name === 'model') {
     if (route.xray) state.xray = true;
     renderModel(route.id, route.part);
+    if (route.view) viewer?.setView(route.view);
     if (route.person) $('#person')?.getAttribute('aria-pressed') !== 'true' && $('#person')?.click();
   }
   else {

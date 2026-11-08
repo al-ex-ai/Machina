@@ -1,0 +1,721 @@
+{
+  "id": "b737-300-parametric",
+  "name": "Boeing 737-300 (parametric)",
+  "category": "aviation",
+  "group": "Prototype",
+  "builder": "parametric",
+  "summary": "Built by Machina from published dimensions, not from a downloaded mesh: the fuselage is lofted through measured cross-sections and the wings are NACA airfoils on the true planform. Prototype of the parametric builder.",
+  "specs": {
+    "manufacturer": "Boeing",
+    "role": "Narrow-body airliner",
+    "first_flight": 1984,
+    "length_m": 33.4,
+    "wingspan_m": 28.88,
+    "height_m": 11.13,
+    "mtow_kg": 62820,
+    "range_km": 4176,
+    "cruise_mach": 0.745,
+    "engine_count": 2,
+    "engine_type": "CFM International CFM56-3",
+    "seats": "128 to 149"
+  },
+  "sources": [
+    {
+      "label": "Boeing 737 airport planning document",
+      "url": "https://www.boeing.com/commercial/airports/plan_manuals"
+    },
+    {
+      "label": "Wikipedia: Boeing 737 Classic",
+      "url": "https://en.wikipedia.org/wiki/Boeing_737_Classic"
+    }
+  ],
+  "livery": {
+    "base": "#f5f6f8",
+    "belly": "#18273a",
+    "stripe": "#ff8a3d",
+    "nacelle": "#18273a",
+    "pylon": "#d7dbe0",
+    "window": "#1b2633",
+    "cheatline": {
+      "y": 2.75,
+      "width": 0.12,
+      "riseFrom": 25,
+      "rise": 0.22
+    },
+    "panels": {
+      "from": 2,
+      "pitch": 1.53
+    },
+    "windows": {
+      "from": 6.5,
+      "to": 26.8,
+      "pitch": 0.508,
+      "y": 3.55,
+      "w": 0.26,
+      "h": 0.36,
+      "skip": [
+        [
+          14.75,
+          15.45
+        ]
+      ]
+    },
+    "doors": [
+      {
+        "x": 5.3,
+        "sill": 2.55,
+        "w": 0.86,
+        "h": 1.83,
+        "window": true
+      },
+      {
+        "x": 28.3,
+        "sill": 2.7,
+        "w": 0.76,
+        "h": 1.83,
+        "window": true
+      },
+      {
+        "x": 15.1,
+        "sill": 2.95,
+        "w": 0.51,
+        "h": 0.97,
+        "window": true
+      }
+    ],
+    "windshield": [
+      [
+        [
+          2.45,
+          3.98
+        ],
+        [
+          3.2,
+          4.0
+        ],
+        [
+          3.35,
+          4.55
+        ],
+        [
+          2.7,
+          4.42
+        ]
+      ],
+      [
+        [
+          3.32,
+          4.0
+        ],
+        [
+          3.95,
+          4.02
+        ],
+        [
+          3.95,
+          4.72
+        ],
+        [
+          3.47,
+          4.62
+        ]
+      ],
+      [
+        [
+          4.08,
+          4.03
+        ],
+        [
+          4.5,
+          4.05
+        ],
+        [
+          4.45,
+          4.62
+        ],
+        [
+          4.08,
+          4.74
+        ]
+      ]
+    ]
+  },
+  "geometry": {
+    "length": 33.4,
+    "materials": {
+      "metal": {
+        "color": "#b9bfc7",
+        "metalness": 0.85,
+        "roughness": 0.28,
+        "clearcoat": 0
+      },
+      "surfaces": {
+        "color": "#d4d8de",
+        "roughness": 0.42
+      },
+      "controls": {
+        "color": "#c9ced5",
+        "roughness": 0.45
+      },
+      "tail": {
+        "color": "#18273a",
+        "roughness": 0.32,
+        "clearcoat": 0.8
+      }
+    },
+    "fuselage": {
+      "nTop": 2.1,
+      "nBot": 2.4,
+      "stations": [
+        [
+          0,
+          0,
+          2.85,
+          2.85,
+          2.85
+        ],
+        [
+          0.15,
+          0.38,
+          3.22,
+          2.45,
+          2.82
+        ],
+        [
+          0.6,
+          0.78,
+          3.62,
+          2.02,
+          2.88
+        ],
+        [
+          1.4,
+          1.17,
+          4.05,
+          1.68,
+          2.98
+        ],
+        [
+          2.5,
+          1.5,
+          4.52,
+          1.45,
+          3.08
+        ],
+        [
+          3.7,
+          1.73,
+          4.93,
+          1.34,
+          3.15
+        ],
+        [
+          5.0,
+          1.85,
+          5.2,
+          1.3,
+          3.2
+        ],
+        [
+          6.2,
+          1.88,
+          5.31,
+          1.3,
+          3.2
+        ],
+        [
+          24.0,
+          1.88,
+          5.31,
+          1.3,
+          3.2
+        ],
+        [
+          26.0,
+          1.82,
+          5.3,
+          1.55,
+          3.35
+        ],
+        [
+          28.0,
+          1.6,
+          5.25,
+          2.15,
+          3.75
+        ],
+        [
+          30.0,
+          1.15,
+          5.05,
+          2.95,
+          4.15
+        ],
+        [
+          32.0,
+          0.6,
+          4.8,
+          3.8,
+          4.35
+        ],
+        [
+          33.4,
+          0.18,
+          4.55,
+          4.25,
+          4.4
+        ]
+      ]
+    },
+    "fairing": {
+      "nTop": 2,
+      "nBot": 3,
+      "stations": [
+        [
+          11.0,
+          0.95,
+          2.4,
+          1.5,
+          2.0
+        ],
+        [
+          12.5,
+          2.0,
+          2.5,
+          1.2,
+          1.9
+        ],
+        [
+          17.5,
+          2.15,
+          2.5,
+          1.18,
+          1.9
+        ],
+        [
+          20.0,
+          1.7,
+          2.5,
+          1.3,
+          2.0
+        ],
+        [
+          21.5,
+          0.85,
+          2.4,
+          1.6,
+          2.1
+        ]
+      ]
+    },
+    "surfaces": [
+      {
+        "axis": "z",
+        "mirror": true,
+        "camber": 0.02,
+        "camberAt": 0.4,
+        "sections": [
+          {
+            "at": 1.2,
+            "le": 12.4,
+            "chord": 6.5,
+            "h": 1.68,
+            "tc": 0.155,
+            "twist": 2
+          },
+          {
+            "at": 1.88,
+            "le": 12.75,
+            "chord": 6.15,
+            "h": 1.75,
+            "tc": 0.15,
+            "twist": 2
+          },
+          {
+            "at": 4.9,
+            "le": 14.29,
+            "chord": 4.43,
+            "h": 2.07,
+            "tc": 0.125,
+            "twist": 1
+          },
+          {
+            "at": 14.44,
+            "le": 19.15,
+            "chord": 1.25,
+            "h": 3.07,
+            "tc": 0.105,
+            "twist": -1.5
+          }
+        ],
+        "segments": [
+          {
+            "from": 1.2,
+            "to": 4.9,
+            "split": [
+              [
+                0,
+                0.72,
+                "box"
+              ],
+              [
+                0.72,
+                1,
+                "flaps"
+              ]
+            ]
+          },
+          {
+            "from": 4.9,
+            "to": 9.6,
+            "split": [
+              [
+                0,
+                0.14,
+                "slats"
+              ],
+              [
+                0.14,
+                0.74,
+                "box"
+              ],
+              [
+                0.74,
+                1,
+                "flaps"
+              ]
+            ]
+          },
+          {
+            "from": 9.6,
+            "to": 13.8,
+            "split": [
+              [
+                0,
+                0.14,
+                "slats"
+              ],
+              [
+                0.14,
+                0.74,
+                "box"
+              ],
+              [
+                0.74,
+                1,
+                "ailerons"
+              ]
+            ]
+          },
+          {
+            "from": 13.8,
+            "to": 14.44,
+            "split": [
+              [
+                0,
+                1,
+                "box"
+              ]
+            ]
+          }
+        ],
+        "parts": {
+          "box": {
+            "id": "wing",
+            "label": "Wing",
+            "system": "surfaces"
+          },
+          "slats": {
+            "id": "slats",
+            "label": "Slats",
+            "system": "controls",
+            "finish": "metal"
+          },
+          "flaps": {
+            "id": "flaps",
+            "label": "Flaps",
+            "system": "controls"
+          },
+          "ailerons": {
+            "id": "aileron",
+            "label": "Aileron",
+            "system": "controls"
+          }
+        }
+      },
+      {
+        "axis": "z",
+        "mirror": true,
+        "sections": [
+          {
+            "at": 0.4,
+            "le": 28.3,
+            "chord": 3.6,
+            "h": 3.95,
+            "tc": 0.1
+          },
+          {
+            "at": 6.35,
+            "le": 31.6,
+            "chord": 1.2,
+            "h": 4.68,
+            "tc": 0.09
+          }
+        ],
+        "segments": [
+          {
+            "from": 0.4,
+            "to": 6.35,
+            "split": [
+              [
+                0,
+                0.7,
+                "stab"
+              ],
+              [
+                0.7,
+                1,
+                "elev"
+              ]
+            ]
+          }
+        ],
+        "parts": {
+          "stab": {
+            "id": "stabilizer",
+            "label": "Horizontal stabilizer",
+            "system": "surfaces"
+          },
+          "elev": {
+            "id": "elevator",
+            "label": "Elevator",
+            "system": "controls"
+          }
+        }
+      },
+      {
+        "axis": "y",
+        "mirror": false,
+        "sections": [
+          {
+            "at": 4.6,
+            "le": 20.6,
+            "chord": 11.6,
+            "tc": 0.05
+          },
+          {
+            "at": 5.9,
+            "le": 27.0,
+            "chord": 5.3,
+            "tc": 0.11
+          },
+          {
+            "at": 11.13,
+            "le": 31.1,
+            "chord": 1.9,
+            "tc": 0.1
+          }
+        ],
+        "segments": [
+          {
+            "from": 4.6,
+            "to": 5.9,
+            "split": [
+              [
+                0,
+                1,
+                "fin"
+              ]
+            ]
+          },
+          {
+            "from": 5.9,
+            "to": 11.13,
+            "split": [
+              [
+                0,
+                0.7,
+                "fin"
+              ],
+              [
+                0.7,
+                1,
+                "rudder"
+              ]
+            ]
+          }
+        ],
+        "parts": {
+          "fin": {
+            "id": "fin",
+            "label": "Vertical stabilizer",
+            "system": "surfaces",
+            "finish": "tail"
+          },
+          "rudder": {
+            "id": "rudder",
+            "label": "Rudder",
+            "system": "controls",
+            "finish": "tail"
+          }
+        }
+      }
+    ],
+    "engine": {
+      "name": "CFM56-3",
+      "position": {
+        "x": 10.6,
+        "y": 1.24,
+        "z": 4.9
+      },
+      "nacelle": {
+        "nTop": 2,
+        "nBot": 3.2,
+        "stations": [
+          [
+            0,
+            0.8,
+            0.8,
+            -0.62,
+            0
+          ],
+          [
+            0.4,
+            0.95,
+            0.93,
+            -0.72,
+            0
+          ],
+          [
+            1.2,
+            1.0,
+            0.98,
+            -0.78,
+            0
+          ],
+          [
+            2.4,
+            0.95,
+            0.92,
+            -0.74,
+            0
+          ],
+          [
+            3.3,
+            0.72,
+            0.7,
+            -0.58,
+            0.02
+          ],
+          [
+            3.75,
+            0.52,
+            0.5,
+            -0.44,
+            0.03
+          ]
+        ]
+      },
+      "fan": {
+        "radius": 0.7,
+        "depth": 0.45
+      },
+      "plug": [
+        [
+          3.6,
+          0.42
+        ],
+        [
+          3.9,
+          0.36
+        ],
+        [
+          4.2,
+          0.2
+        ],
+        [
+          4.45,
+          0.03
+        ]
+      ],
+      "pylon": {
+        "sections": [
+          {
+            "at": 1.9,
+            "le": 12.0,
+            "chord": 3.2,
+            "tc": 0.12
+          },
+          {
+            "at": 2.3,
+            "le": 13.2,
+            "chord": 3.0,
+            "tc": 0.12
+          }
+        ]
+      }
+    },
+    "gear": {
+      "nose": {
+        "x": 5.55,
+        "tire": {
+          "d": 0.69,
+          "w": 0.2
+        },
+        "wheels": 2,
+        "spacing": 0.32,
+        "strut": 0.16,
+        "top": 1.45
+      },
+      "main": {
+        "x": 18.15,
+        "z": 2.615,
+        "tire": {
+          "d": 1.02,
+          "w": 0.37
+        },
+        "wheels": 2,
+        "spacing": 0.86,
+        "strut": 0.24,
+        "top": 1.75
+      }
+    },
+    "canoes": [
+      {
+        "z": 6.4,
+        "x0": 16.38,
+        "x1": 19.88,
+        "y": 2.14,
+        "w": 0.2,
+        "h": 0.42
+      },
+      {
+        "z": 8.6,
+        "x0": 16.77,
+        "x1": 20.27,
+        "y": 2.38,
+        "w": 0.2,
+        "h": 0.42
+      },
+      {
+        "z": 11.0,
+        "x0": 17.19,
+        "x1": 20.69,
+        "y": 2.63,
+        "w": 0.2,
+        "h": 0.42
+      }
+    ],
+    "navLights": {
+      "wingtip": {
+        "x": 19.75,
+        "y": 3.07,
+        "z": 14.33
+      },
+      "tail": {
+        "x": 33.2,
+        "y": 4.62
+      }
+    }
+  }
+}

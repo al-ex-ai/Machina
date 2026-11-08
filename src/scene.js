@@ -268,6 +268,9 @@ export function createViewer(container) {
     for (const p of parts) p.position.copy(p.userData.base).addScaledVector(p.userData.explodeDir, explodeAmount);
   }
 
+  // Camera presets: null is the default three-quarter view.
+  const VIEWS = { front: [-1, 0.06, 0], side: [0, 0.06, 1], top: [0.001, 1, 0], rear: [1, 0.12, 0] };
+  let view = null;
   function frame() {
     if (!container.clientWidth || !container.clientHeight) { framePending = true; return; }
     framePending = false;
@@ -279,7 +282,8 @@ export function createViewer(container) {
     const vFov = (camera.fov * Math.PI) / 180;
     const hFov = 2 * Math.atan(Math.tan(vFov / 2) * camera.aspect);
     const dist = radius / Math.sin(Math.min(vFov, hFov) / 2) * 0.78;
-    camera.position.set(center.x - dist * 0.62, center.y + dist * 0.42, center.z + dist * 0.66);
+    const dir = VIEWS[view] ?? [-0.62, 0.42, 0.66];
+    camera.position.set(center.x + dist * dir[0], center.y + dist * dir[1], center.z + dist * dir[2]);
     camera.near = radius / 100;
     camera.far = dist * 20;
     camera.updateProjectionMatrix();
@@ -402,7 +406,9 @@ export function createViewer(container) {
       if (model) applyXray();
       invalidate(true);
     },
-    resetView() { if (model) frame(); },
+    resetView() { view = null; if (model) frame(); },
+    /** Look straight from the front, side, top or rear. */
+    setView(name) { view = VIEWS[name] ? name : null; if (model) frame(); },
     partSize(id) {
       const p = parts.find(q => q.userData.id === id);
       return p ? new THREE.Box3().setFromObject(p).getSize(new THREE.Vector3()) : null;
