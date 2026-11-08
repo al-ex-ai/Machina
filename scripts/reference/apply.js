@@ -111,13 +111,18 @@ const rows = m.fin;
 const tip = rows[0];
 const clean = rows.filter(r => r.y >= 5.6);
 const knee = clean.at(-1);
-const dorsal = rows.find(r => r.y < 5.6 && r.y > topAt(r.le) + 0.1) ?? knee;
-const slope = (knee.le - dorsal.le) / (knee.y - dorsal.y || 1);
-const rootY = r2(topAt(dorsal.le) - 0.3);
-const rootLe = r2(dorsal.le - (dorsal.y - rootY) * slope);
+// A dorsal fillet row (below the clean rows, above the body) sets the slope of the
+// fin root. Without one (the fin starts above something that hides its root, such as
+// a center engine intake), the swept leading edge simply continues down to the root.
+const dorsalRow = rows.find(r => r.y < 5.6 && r.y > topAt(r.le) + 0.1);
+const dorsal = dorsalRow ?? knee;
+const slope = dorsalRow ? (knee.le - dorsal.le) / (knee.y - dorsal.y || 1) : (tip.le - knee.le) / (tip.y - knee.y || 1);
+let rootY = r2(topAt(dorsal.le) - 0.3);
+let rootLe = r2(dorsal.le - (dorsal.y - rootY) * slope);
+if (!dorsalRow) { rootY = r2(topAt(rootLe) - 0.3); rootLe = r2(knee.le - (knee.y - rootY) * slope); }
 fin.sections = [
   { at: rootY, le: rootLe, chord: r2(knee.te - rootLe), tc: 0.05 },
-  { at: dorsal.y, le: dorsal.le, chord: r2(knee.te - dorsal.le), tc: 0.08 },
+  ...(dorsalRow ? [{ at: dorsal.y, le: dorsal.le, chord: r2(knee.te - dorsal.le), tc: 0.08 }] : []),
   { at: knee.y, le: knee.le, chord: r2(knee.te - knee.le), tc: 0.11 },
   { at: tip.y, le: tip.le, chord: r2(tip.te - tip.le), tc: 0.1 },
 ];

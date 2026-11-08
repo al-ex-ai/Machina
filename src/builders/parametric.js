@@ -11,6 +11,36 @@ import { skinOutlines, inletLip, fanBlades, nozzleSleeve, grooveTire, gearLinkag
 
 const SIDES = [{ key: 'left', label: 'Left', z: 1 }, { key: 'right', label: 'Right', z: -1 }];
 
+/**
+ * A drawing shows a pod's outline, not how it joins the airframe. A pod on the
+ * centerline whose floor comes within a meter of the fuselage is mounted on it: behind
+ * its front lip the floor runs down into the body, deep enough that the rounded sides
+ * meet the crown too. If it ends just ahead of the fin, it runs on into the fin root,
+ * narrowing to the fin's thickness. Returns the stations to loft.
+ */
+export function attachPod(pd, body, surfaces) {
+  const X = pd.position.x, Y = pd.position.y ?? 0;
+  if (pd.mirror || Math.abs(pd.position.z ?? 0) > 0.01) return pd.stations;
+  const gap = ([x, , , bot]) => Y + bot - body.at(X + x).top;
+  if (!pd.stations.some(s => gap(s) > 0.02 && gap(s) < 1)) return pd.stations;
+  const st = pd.stations.map((s, i) => {
+    if (i === 0) return s; // the lip keeps its own floor, like the boundary layer gap of a real intake
+    const [x, w, top, bot, mid] = s;
+    return [x, w, top, Math.min(bot, body.at(X + x).top - Y - w), mid];
+  });
+  const fin = surfaces.find(s => s.axis === 'y' && !s.mirror);
+  if (fin) {
+    const last = st.at(-1), end = X + last[0];
+    const sec = surfacePlan(fin).section(Y + last[2]);
+    if (sec.le > end && sec.le - end < 1.5) {
+      const half = Math.max(0.06, sec.tc * sec.chord * 0.4);
+      st.push([sec.le + sec.chord * 0.2 - X, last[1] * 0.75 + half * 0.25, last[2], last[3], last[4]]);
+      st.push([sec.le + sec.chord * 0.6 - X, half, last[2], last[3], last[4]]);
+    }
+  }
+  return st;
+}
+
 /** @param {any} model */
 export function buildParametric(model) {
   const g = model.geometry;
@@ -165,7 +195,7 @@ export function buildParametric(model) {
   // Pods: lofted bodies such as landing gear fairings, an engine intake or a tail cone
   // fairing, each with an optional dark inlet face. Stations are relative to position.x.
   for (const pd of g.pods ?? []) {
-    const prof = bodyProfile(pd.stations, pd);
+    const prof = bodyProfile(attachPod(pd, body, g.surfaces), pd);
     const geo = loftBody(prof, { length: prof.x1, segments: 48 }).translate(pd.position.x, pd.position.y ?? 0, 0);
     const extra = [];
     if (pd.inlet) {
