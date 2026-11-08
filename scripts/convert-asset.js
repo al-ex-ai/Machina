@@ -292,11 +292,20 @@ const dw = D > 5 ? 1.07 : 0.8, dh = D > 5 ? 1.93 : 1.82;
 const doors = doorXs.map(x => ({ x, sill: r2(winY - dh * 0.52), w: dw, h: dh, window: true }));
 const list = [];
 const rows = [winY];
-if (mid.top - winY > 3.6) rows.push(r2(winY + 2.55)); // a second deck
+if (mid.top - winY > 3.6) rows.push(r2(winY + 2.55)); // a full second deck
 for (const y of rows) for (let x = frontDoor + 1.1; x < rearDoor - 0.9; x += 0.53) {
   if (doorXs.some(d => Math.abs(d - x) < dw)) continue;
   const s = body(x);
   if (y < s.top - 0.45 && y > s.mid - 0.2) list.push([r2(x), y]);
+}
+// A partial upper deck (a hump, as on the 747): where the crown stands more than 0.6 m
+// above the aft cabin crown, a row of windows 1.25 m below the hump's crown.
+const aftTop = body(L * 0.55).top;
+if (rows.length === 1) {
+  const hump = [];
+  for (let x = frontDoor; x < L * 0.5; x += 0.53) if (body(x).top - aftTop > 0.6) hump.push(x);
+  const humpTop = Math.max(...hump.map(x => body(x).top));
+  for (const x of hump.slice(1, -2)) if (body(x).top > humpTop - 0.15) list.push([r2(x), r2(humpTop - 1.25)]);
 }
 const k = D / 3.76;
 const cockpitWindows = template.livery.cockpitWindows.map(pane => pane.map(([x, deg]) => [r2(x * k), deg]));
@@ -310,7 +319,19 @@ fin.paint = {
   stripe: { edge: [[finRoot.le, finRoot.at], [finTop.le, finTop.at]], offset: 0.45, width: 0.18, color: '#ff8a3d' },
   title: { text: maker, x: r2(fs.le + 0.45 + 0.18 + 0.25 + avail / 2), y: ty, height: r2(Math.min(0.9, avail / (0.75 * maker.length))), color: '#ffffff' },
 };
-const tx = r2(L * (light ? 0.6 : 0.29)), tb = body(tx);
+// Title: where the fuselage is most even over the title's length (no hump end, no wing
+// root fairing), so the letters are not stretched across a change in shape.
+const tx = light ? r2(L * 0.6) : (() => {
+  const half = 0.19 * D * 4;
+  let best = L * 0.3, score = Infinity;
+  for (let x = L * 0.25 + half; x <= L * 0.6 - half; x += 0.25) {
+    let lo = Infinity, hi = -Infinity, ml = Infinity, mh = -Infinity;
+    for (let d = -half; d <= half; d += 0.25) { const q = body(x + d); lo = Math.min(lo, q.top); hi = Math.max(hi, q.top); ml = Math.min(ml, q.mid); mh = Math.max(mh, q.mid); }
+    const v = (hi - lo) + (mh - ml) + Math.abs(x - L * 0.32) * 0.01;
+    if (v < score) { score = v; best = x; }
+  }
+  return r2(best);
+})(), tb = body(tx);
 const lightDoors = () => {
   const out = [];
   for (const c of clusters1(pick(meshes, /door/, { side: 1, not: /gear/ }).map(t => cxOf(t)), 0.3)) {
