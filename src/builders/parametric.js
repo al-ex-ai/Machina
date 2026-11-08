@@ -34,6 +34,50 @@ export function buildParametric(model) {
     }));
   }
 
+  // Cockpit windows: each pane is a four-cornered panel given as [x, degrees from the
+  // top centerline] corners, mapped bilinearly onto the nose so its edges stay straight,
+  // and lifted 1.5 cm off the skin. Mirrored to the right side.
+  if (lv.cockpitWindows?.length) {
+    const v = new THREE.Vector3(), dx = new THREE.Vector3(), dt = new THREE.Vector3();
+    const N = 12;
+    const panels = (grow, lift) => {
+    const pos = [], idx = [];
+    for (const pane0 of lv.cockpitWindows) {
+      const cx = pane0.reduce((q, p) => q + p[0], 0) / 4, cd = pane0.reduce((q, p) => q + p[1], 0) / 4;
+      const pane = pane0.map(([x, d]) => [cx + (x - cx) * (1 + grow), Math.max(1, cd + (d - cd) * (1 + grow))]);
+      const c = pane.map(([x, d]) => [x, THREE.MathUtils.degToRad(d)]);
+      for (const sign of [1, -1]) {
+        const base = pos.length / 3;
+        for (let i = 0; i <= N; i++) for (let j = 0; j <= N; j++) {
+          const u = i / N, w = j / N;
+          const x = (1 - u) * (1 - w) * c[0][0] + u * (1 - w) * c[1][0] + u * w * c[2][0] + (1 - u) * w * c[3][0];
+          const t0 = (1 - u) * (1 - w) * c[0][1] + u * (1 - w) * c[1][1] + u * w * c[2][1] + (1 - u) * w * c[3][1];
+          const t = sign > 0 ? t0 : Math.PI * 2 - t0;
+          body.point(x, t, v);
+          body.point(x + 0.01, t, dx).sub(v);
+          body.point(x, t + 0.01, dt).sub(v);
+          const n = dx.clone().cross(dt).normalize().negate(); // outward on both sides
+          v.addScaledVector(n, lift);
+          pos.push(v.x, v.y, v.z);
+        }
+        for (let i = 0; i < N; i++) for (let j = 0; j < N; j++) {
+          const a = base + i * (N + 1) + j, b = a + 1, cc = a + N + 1, d = cc + 1;
+          if (sign > 0) idx.push(a, cc, b, b, cc, d); else idx.push(a, b, cc, b, d, cc);
+        }
+      }
+    }
+    const geo = new THREE.BufferGeometry();
+    geo.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+    geo.setIndex(idx);
+    geo.computeVertexNormals();
+    return geo;
+    };
+    root.add(makeCompositePart([
+      { geometry: panels(0.16, 0.008), material: { color: lv.frame ?? '#2b3038', roughness: 0.5, doubleSide: true } },
+      { geometry: panels(0, 0.016), material: { color: '#0a1016', roughness: 0.03, metalness: 0.85, clearcoat: 1, doubleSide: true } },
+    ], { id: 'windshield', label: 'Cockpit windows', system: 'glazing', info: partInfo(model, 'windshield') }));
+  }
+
   // Lifting surfaces, split into named pieces
   for (const s of g.surfaces) {
     const plan = surfacePlan(s);
@@ -161,21 +205,73 @@ export function buildParametric(model) {
   };
   const leg = (gear, z, id, label) => {
     const r = gear.tire.d / 2;
+    const y0 = gear.bottom ?? 0; // tire bottom in body axes (below 0 when the aircraft sits nose down)
     const parts = [];
     const n = gear.wheels;
     for (let i = 0; i < n; i++) {
       const dz = (i - (n - 1) / 2) * gear.spacing;
-      parts.push({ geometry: tire(gear.tire.d, gear.tire.w).translate(gear.x, r, z + dz), material: { color: '#1b1d20', roughness: 0.85, metalness: 0 } });
-      parts.push({ geometry: new THREE.CylinderGeometry(r * 0.55, r * 0.55, gear.tire.w * 0.9, 24).rotateX(Math.PI / 2).translate(gear.x, r, z + dz), material: { color: '#9aa1aa', roughness: 0.4, metalness: 0.8 } });
+      parts.push({ geometry: tire(gear.tire.d, gear.tire.w).translate(gear.x, y0 + r, z + dz), material: { color: '#1b1d20', roughness: 0.85, metalness: 0 } });
+      parts.push({ geometry: new THREE.CylinderGeometry(r * 0.55, r * 0.55, gear.tire.w * 0.9, 24).rotateX(Math.PI / 2).translate(gear.x, y0 + r, z + dz), material: { color: '#9aa1aa', roughness: 0.4, metalness: 0.8 } });
     }
     const top = gear.top;
-    parts.push({ geometry: new THREE.CylinderGeometry(gear.strut * 0.5, gear.strut * 0.5, gear.spacing * (n - 1) + 0.1, 12).rotateX(Math.PI / 2).translate(gear.x, r, z), material: mat.metal });
-    parts.push({ geometry: new THREE.CylinderGeometry(gear.strut * 0.42, gear.strut * 0.42, (top - r) * 0.55, 16).translate(gear.x, r + (top - r) * 0.275, z), material: { color: '#d9dde2', roughness: 0.15, metalness: 1 } });
-    parts.push({ geometry: new THREE.CylinderGeometry(gear.strut * 0.6, gear.strut * 0.6, (top - r) * 0.55, 16).translate(gear.x, top - (top - r) * 0.275, z), material: { color: '#8d939b', roughness: 0.45, metalness: 0.6 } });
+    parts.push({ geometry: new THREE.CylinderGeometry(gear.strut * 0.5, gear.strut * 0.5, gear.spacing * (n - 1) + 0.1, 12).rotateX(Math.PI / 2).translate(gear.x, y0 + r, z), material: mat.metal });
+    parts.push({ geometry: new THREE.CylinderGeometry(gear.strut * 0.42, gear.strut * 0.42, (top - y0 - r) * 0.55, 16).translate(gear.x, y0 + r + (top - y0 - r) * 0.275, z), material: { color: '#d9dde2', roughness: 0.15, metalness: 1 } });
+    parts.push({ geometry: new THREE.CylinderGeometry(gear.strut * 0.6, gear.strut * 0.6, (top - y0 - r) * 0.55, 16).translate(gear.x, top - (top - y0 - r) * 0.275, z), material: { color: '#8d939b', roughness: 0.45, metalness: 0.6 } });
     return makeCompositePart(parts, { id, label, system: 'gear', info: partInfo(model, id) });
   };
   root.add(leg(g.gear.nose, 0, 'nose-gear', 'Nose gear'));
   for (const side of SIDES) root.add(leg(g.gear.main, side.z * g.gear.main.z, `${side.key}-main-gear`, `${side.label} main gear`));
 
+  // Interior generated from the cabin layout: floor, seat rows, flight deck.
+  if (g.cabin) {
+    const c = g.cabin, floor = c.floor;
+    const seat = () => {
+      const parts = [
+        new THREE.BoxGeometry(0.46, 0.12, 0.44).translate(0, 0.42, 0),
+        new THREE.BoxGeometry(0.1, 0.72, 0.44).translate(0.22, 0.8, 0).rotateZ(-0.12),
+        new THREE.BoxGeometry(0.1, 0.18, 0.3).translate(0.26, 1.2, 0),
+        new THREE.BoxGeometry(0.44, 0.04, 0.05).translate(0, 0.62, 0.2),
+        new THREE.BoxGeometry(0.44, 0.04, 0.05).translate(0, 0.62, -0.2),
+        new THREE.BoxGeometry(0.06, 0.4, 0.06).translate(0, 0.2, 0),
+      ];
+      return mergeIndexed(parts.map(p => p.toNonIndexed().index ? p : p));
+    };
+    const one = seat();
+    const seats = [];
+    for (let x = c.rows.from; x <= c.rows.to + 1e-6; x += c.rows.pitch) {
+      for (const zc of c.rows.columns) seats.push(one.clone().translate(x, floor, zc));
+    }
+    const floorGeo = new THREE.BoxGeometry(c.rows.to - c.rows.from + 2.5, 0.06, c.floorWidth).translate((c.rows.from + c.rows.to) / 2, floor - 0.03, 0);
+    root.add(makeCompositePart([
+      { geometry: mergeIndexed(seats.map(q => q.index ? q : q)), material: { color: c.seatColor ?? '#2f4a6b', roughness: 0.8 } },
+      { geometry: floorGeo, material: { color: '#5d6168', roughness: 0.9 } },
+    ], { id: 'cabin', label: `Cabin (${seats.length} seats)`, system: 'interior', info: partInfo(model, 'cabin', { Seats: seats.length, Layout: `${c.rows.columns.length} abreast, ${Math.round(c.rows.pitch * 39.37)} in pitch` }) }));
+
+    const fd = g.flightDeck;
+    if (fd) {
+      const dark = { color: '#23272e', roughness: 0.7 };
+      const pilot = z => [
+        new THREE.BoxGeometry(0.5, 0.12, 0.5).translate(fd.seatsX, floor + 0.45, z),
+        new THREE.BoxGeometry(0.12, 0.85, 0.5).translate(fd.seatsX + 0.25, floor + 0.9, z),
+      ];
+      root.add(makeCompositePart([
+        { geometry: mergeIndexed([...pilot(0.52), ...pilot(-0.52)]), material: { color: '#3b3f46', roughness: 0.8 } },
+        { geometry: new THREE.BoxGeometry(0.3, 0.5, 1.5).translate(fd.panelX, floor + 0.6, 0), material: dark },
+        { geometry: new THREE.BoxGeometry(0.42, 0.05, 1.5).translate(fd.panelX - 0.06, floor + 0.88, 0), material: dark },
+        { geometry: new THREE.BoxGeometry(0.8, 0.5, 0.3).translate(fd.panelX + 0.5, floor + 0.55, 0), material: dark },
+        { geometry: new THREE.CylinderGeometry(0.03, 0.03, 0.7, 8).translate(fd.panelX + 0.35, floor + 0.55, 0.52), material: dark },
+        { geometry: new THREE.CylinderGeometry(0.03, 0.03, 0.7, 8).translate(fd.panelX + 0.35, floor + 0.55, -0.52), material: dark },
+        { geometry: new THREE.BoxGeometry(0.04, 0.42, 1.3).translate(fd.panelX + 0.16, floor + 0.6, 0), material: { color: '#0d1a24', roughness: 0.2, metalness: 0.3 } },
+      ], { id: 'flight-deck', label: 'Flight deck', system: 'interior', info: partInfo(model, 'flight-deck') }));
+    }
+  }
+
+  // Sit the aircraft in its ground attitude (degrees, positive is nose down), as measured.
+  if (g.attitude) {
+    const sat = new THREE.Group();
+    sat.add(root);
+    root.rotation.z = THREE.MathUtils.degToRad(g.attitude);
+    return sat;
+  }
   return root;
 }

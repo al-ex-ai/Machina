@@ -179,7 +179,8 @@ export function paintFuselage(body, length, lv) {
 
   const win = lv.windows;
   const skip = (x, list) => list?.some(([a, b]) => x > a && x < b);
-  for (let x = win.from; x <= win.to + 1e-6; x += win.pitch) {
+  if (win.list) for (const [x, y] of win.list) rect(x, y, win.w, win.h, lv.window, 0.45);
+  else for (let x = win.from; x <= win.to + 1e-6; x += win.pitch) {
     if (skip(x, win.skip)) continue;
     rect(x, win.y, win.w, win.h, lv.window, 0.45);
   }

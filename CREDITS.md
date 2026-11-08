@@ -22,6 +22,7 @@ Machina's own code is MIT licensed (see `LICENSE`). Third-party files keep their
 | ERCO Ercoupe model and textures | `assets/aircraft/ercoupe/` | FlightGear Ercoupe contributors | GPL-2.0-or-later |
 | 1903 Wright Flyer model and textures | `assets/aircraft/wright-flyer/` | Jim Wilson, Paul Beardsley | GPL (FlightGear catalog) |
 | Eurocopter EC135 model and textures | `assets/aircraft/ec135/` | Heiko Schulz and contributors | GPL-2.0 |
+| Boeing 737-300 reference drawing (measurements only) | `references/b737-300/` | Julien.scavini | CC BY-SA 3.0 |
 
 Rules for adding assets:
 

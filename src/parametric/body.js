@@ -21,6 +21,11 @@ export function bodyProfile(stations, shape = {}) {
   const f = k => pchip(xs, stations.map(s => s[k]));
   const w = f(1), top = f(2), bot = f(3), mid = f(4);
   const nTop = shape.nTop ?? 2, nBot = shape.nBot ?? 2;
+  // Optional measured cross-section for the upper lobe: [heightFraction, widthFraction]
+  // pairs from the widest point (0) to the crown (1). Width then follows the drawing
+  // instead of a superellipse.
+  const upper = shape.section?.upper;
+  const upperWidth = upper && pchip(upper.map(p => p[0]), upper.map(p => p[1]));
   return {
     x0: xs[0], x1: xs[xs.length - 1], nTop, nBot,
     at: x => ({ w: Math.max(0, w(x)), top: top(x), bot: bot(x), mid: mid(x) }),
@@ -31,6 +36,10 @@ export function bodyProfile(stations, shape = {}) {
       const n = c >= 0 ? nTop : nBot;
       const e = 2 / n;
       const y = c >= 0 ? s.mid + (s.top - s.mid) * Math.abs(c) ** e : s.mid - (s.mid - s.bot) * Math.abs(c) ** e;
+      if (upperWidth && c >= 0) {
+        const f = Math.abs(c) ** e;
+        return out.set(x, y, s.w * Math.sign(sn) * Math.max(0, Math.min(1, upperWidth(f))));
+      }
       return out.set(x, y, s.w * Math.sign(sn) * Math.abs(sn) ** e);
     },
     /** Angle on the left side where the surface reaches height y at station x (right side: 2PI - t). */
