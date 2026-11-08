@@ -85,7 +85,9 @@ export function createViewer(container) {
     invalidate(true);
   });
   const camera = new THREE.PerspectiveCamera(40, 1, 0.1, 5000);
-  const composer = new EffectComposer(renderer);
+  // Every frame goes through the composer, so the canvas's own antialiasing never
+  // applies. Multisampled render targets smooth the edges instead.
+  const composer = new EffectComposer(renderer, new THREE.WebGLRenderTarget(1, 1, { type: THREE.HalfFloatType, samples: 4 }));
   composer.addPass(new RenderPass(scene, camera));
   const gtao = new GTAOPass(scene, camera, 1, 1);
   gtao.output = GTAOPass.OUTPUT.Default;
