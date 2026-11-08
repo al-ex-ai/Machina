@@ -125,10 +125,13 @@ export function fuselage(tris, count = 44) {
   }
   // Door handles, pillars and frames catch single slices: a running median over five
   // stations removes those spikes (a steady trend, such as a nose taper, passes unchanged).
+  // Only a value outside the range of both neighbors counts as a spike, so a nose or
+  // tail taper is never touched.
   const sm = stations.map((s, i) => {
-    const near = stations.slice(Math.max(0, i - 2), i + 3);
-    const med = k => median(near.map(q => q[k]));
-    return { ...s, w: med('w'), top: med('top'), bot: med('bot'), mid: med('mid') };
+    if (i === 0 || i === stations.length - 1) return s;
+    const a = stations[i - 1], b = stations[i + 1];
+    const fix = k => (s[k] > Math.max(a[k], b[k]) || s[k] < Math.min(a[k], b[k]) ? median([a[k], s[k], b[k]]) : s[k]);
+    return { ...s, w: fix('w'), top: fix('top'), bot: fix('bot'), mid: fix('mid') };
   });
   stations.splice(0, stations.length, ...sm);
   // Exponents: for each section point solve |dz/w|^n + |dy/h|^n = 1 for n, take the median.
