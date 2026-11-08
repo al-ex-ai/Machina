@@ -1,0 +1,212 @@
+{
+  "id": "ec130",
+  "name": "Eurocopter EC130 B4",
+  "category": "aviation",
+  "group": "Helicopters",
+  "builder": "asset",
+  "summary": "Single-engine light helicopter with a wide cabin and a Fenestron tail, a favorite for sightseeing tours thanks to its quiet tail and big windows.",
+  "specs": {
+    "manufacturer": "Eurocopter, now Airbus Helicopters",
+    "role": "Light utility helicopter",
+    "first_flight": 1999,
+    "length_m": 12.64,
+    "rotor_diameter_m": 10.69,
+    "height_m": 3.61,
+    "mtow_kg": 2427,
+    "max_speed_kmh": 287,
+    "range_km": 616,
+    "engine_count": 1,
+    "engine_type": "Turbomeca Arriel 2B1",
+    "seats": "1 pilot plus up to 7"
+  },
+  "asset": {
+    "path": "assets/aircraft/ec130",
+    "license": "GPL-2.0",
+    "author": "FlightGear EC130 contributors",
+    "source": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/ec130/",
+    "files": [
+      {
+        "file": "Models/ec130b4_t2.ac"
+      },
+      {
+        "file": "Models/Rotor/rotor.ac",
+        "offset": {
+          "x": -1.987,
+          "y": 0,
+          "z": 1.371
+        },
+        "rotation": {
+          "pitch": -2
+        },
+        "fallback": {
+          "id": "main-rotor",
+          "label": "Main rotor",
+          "system": "rotor"
+        }
+      },
+      {
+        "file": "Models/TailRotor/tailrotor.ac",
+        "offset": {
+          "x": 4.409,
+          "y": -0.06,
+          "z": 0.102
+        },
+        "rotation": {
+          "roll": 90
+        },
+        "fallback": {
+          "id": "tail-rotor",
+          "label": "Fenestron tail rotor",
+          "system": "rotor"
+        }
+      }
+    ],
+    "fallback": {
+      "id": "fuselage",
+      "label": "Fuselage",
+      "system": "structure"
+    },
+    "hide": [
+      "/_t2(\\.\\d+)?$/",
+      "/^basket/",
+      "FLIR",
+      "/^hoist/",
+      "/^hook/",
+      "floats_deflated",
+      "snowshoes",
+      "/^stretcher/",
+      "/^slight/",
+      "shadow_fuselage",
+      "shadow_rotor",
+      "/^blurred/",
+      "rotor_disc_T",
+      "/^belt/",
+      "/^luggage.*_(in|cyl|rod|rubber)/",
+      "bar_head",
+      "/^Plane\\.005X/",
+      "wirecutter"
+    ],
+    "parts": [
+      {
+        "id": "doors",
+        "label": "Cabin doors",
+        "system": "structure",
+        "match": [
+          "/door/"
+        ]
+      },
+      {
+        "id": "windows",
+        "label": "Windows",
+        "system": "glazing",
+        "match": [
+          "/^window/",
+          "windows_roof",
+          "mirror_glass"
+        ]
+      },
+      {
+        "id": "engine",
+        "label": "Engine and exhaust",
+        "system": "propulsion",
+        "match": [
+          "exhaust",
+          "exhaust_inner_box",
+          "fuselage_air_in",
+          "gearbox_part"
+        ]
+      },
+      {
+        "id": "tail-drive",
+        "label": "Tail rotor drive",
+        "system": "rotor",
+        "match": [
+          "/^tailrotor_/",
+          "/^stator_/"
+        ]
+      },
+      {
+        "id": "skids",
+        "label": "Landing skids",
+        "system": "gear",
+        "match": [
+          "/^frame_/",
+          "basis"
+        ]
+      },
+      {
+        "id": "luggage",
+        "label": "Luggage compartments",
+        "system": "structure",
+        "match": [
+          "/^luggage/"
+        ]
+      },
+      {
+        "id": "lights",
+        "label": "Lights",
+        "system": "lights",
+        "match": [
+          "/light/",
+          "/^navlight/"
+        ]
+      },
+      {
+        "id": "antennas",
+        "label": "Antennas and probes",
+        "system": "avionics",
+        "match": [
+          "/^antenna/",
+          "/^vor/",
+          "/^vuhf/",
+          "/^dme/",
+          "/^adf/",
+          "gps_antenna",
+          "pitot",
+          "mirror"
+        ]
+      },
+      {
+        "id": "cabin",
+        "label": "Cabin interior and controls",
+        "system": "interior",
+        "match": [
+          "/^interior/",
+          "floor",
+          "/^collective/",
+          "/^stick/",
+          "/^peadl/",
+          "insruments_box",
+          "grip",
+          "griphead",
+          "/^lever/"
+        ]
+      }
+    ],
+    "verify": {
+      "tolerance": {
+        "width": 0.14,
+        "height": 0.08
+      },
+      "note": "A three-blade rotor never spans its full 10.69 m diameter side to side, so the measured width is about 87% of it. The model measures 3.88 m tall against the published 3.61 m."
+    }
+  },
+  "parts": {
+    "main-rotor": {
+      "Type": "Three-blade Starflex rotor head"
+    },
+    "tail-rotor": {
+      "Type": "Fenestron with unevenly spaced blades for lower noise"
+    }
+  },
+  "sources": [
+    {
+      "label": "Airbus Helicopters H130",
+      "url": "https://www.airbus.com/en/products-services/helicopters/civil-helicopters/h130"
+    },
+    {
+      "label": "Wikipedia: Eurocopter EC130",
+      "url": "https://en.wikipedia.org/wiki/Eurocopter_EC130"
+    }
+  ]
+}

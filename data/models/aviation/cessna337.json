@@ -1,0 +1,324 @@
+{
+  "id": "cessna337",
+  "name": "Cessna 337G Skymaster",
+  "category": "aviation",
+  "group": "Light aircraft",
+  "builder": "asset",
+  "summary": "Push-pull twin with one engine in the nose and one behind the cabin, on twin tail booms. Losing an engine never swings the aircraft sideways.",
+  "specs": {
+    "manufacturer": "Cessna",
+    "role": "Light twin utility aircraft",
+    "first_flight": 1961,
+    "length_m": 9.07,
+    "wingspan_m": 11.63,
+    "height_m": 2.79,
+    "mtow_kg": 2100,
+    "max_speed_kmh": 322,
+    "range_km": 1970,
+    "engine_count": 2,
+    "engine_type": "Continental IO-360-C, 210 hp each",
+    "seats": 6
+  },
+  "asset": {
+    "path": "assets/aircraft/cessna337",
+    "license": "GPL-2.0",
+    "author": "FlightGear Cessna 337 contributors",
+    "source": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/Cessna337/",
+    "files": [
+      {
+        "file": "Models/Cessna337_Skymaster.ac"
+      },
+      {
+        "file": "Models/Cessna337_seat.ac",
+        "offset": {
+          "x": -0.29,
+          "y": -0.28,
+          "z": -0.29
+        },
+        "fallback": {
+          "id": "seats",
+          "label": "Seats",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Cessna337_seat.ac",
+        "offset": {
+          "x": -0.29,
+          "y": 0.28,
+          "z": -0.29
+        },
+        "fallback": {
+          "id": "seats",
+          "label": "Seats",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Cessna337_seat.ac",
+        "offset": {
+          "x": 0.44,
+          "y": -0.28,
+          "z": -0.27
+        },
+        "fallback": {
+          "id": "seats",
+          "label": "Seats",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Cessna337_seat.ac",
+        "offset": {
+          "x": 0.44,
+          "y": 0.28,
+          "z": -0.27
+        },
+        "fallback": {
+          "id": "seats",
+          "label": "Seats",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Cessna337_seat.ac",
+        "offset": {
+          "x": 1.17,
+          "y": -0.27,
+          "z": -0.27
+        },
+        "fallback": {
+          "id": "seats",
+          "label": "Seats",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Cessna337_seat.ac",
+        "offset": {
+          "x": 1.17,
+          "y": 0.27,
+          "z": -0.27
+        },
+        "fallback": {
+          "id": "seats",
+          "label": "Seats",
+          "system": "interior"
+        }
+      }
+    ],
+    "fallback": {
+      "id": "fuselage",
+      "label": "Fuselage",
+      "system": "structure"
+    },
+    "hide": [
+      "/^GiroHelice/",
+      "/_int$/"
+    ],
+    "parts": [
+      {
+        "id": "wings",
+        "label": "Wings",
+        "system": "surfaces",
+        "match": [
+          "Alas",
+          "SoporteAlaDER",
+          "SoporteAlaIZQ"
+        ]
+      },
+      {
+        "id": "left-aileron",
+        "label": "Left aileron",
+        "system": "controls",
+        "match": [
+          "AleronIZQ",
+          "AntiestaticAleronIZQ"
+        ]
+      },
+      {
+        "id": "right-aileron",
+        "label": "Right aileron",
+        "system": "controls",
+        "match": [
+          "AleronDER",
+          "AntiestaticAleronDER"
+        ]
+      },
+      {
+        "id": "flaps",
+        "label": "Flaps",
+        "system": "controls",
+        "match": [
+          "/^Flaps_/",
+          "AletasAlas"
+        ]
+      },
+      {
+        "id": "left-boom",
+        "label": "Left tail boom and fin",
+        "system": "structure",
+        "match": [
+          "ColaIZQ"
+        ]
+      },
+      {
+        "id": "right-boom",
+        "label": "Right tail boom and fin",
+        "system": "structure",
+        "match": [
+          "ColaDER"
+        ]
+      },
+      {
+        "id": "left-rudder",
+        "label": "Left rudder",
+        "system": "controls",
+        "match": [
+          "TimonIZQ",
+          "AntiestaticaTimonIZQ"
+        ]
+      },
+      {
+        "id": "right-rudder",
+        "label": "Right rudder",
+        "system": "controls",
+        "match": [
+          "TimonDER",
+          "AntiestaticaTimonDER"
+        ]
+      },
+      {
+        "id": "horizontal-stabilizer",
+        "label": "Horizontal stabilizer",
+        "system": "surfaces",
+        "match": [
+          "EstabH"
+        ]
+      },
+      {
+        "id": "elevator",
+        "label": "Elevator",
+        "system": "controls",
+        "match": [
+          "/^Elevador_/"
+        ]
+      },
+      {
+        "id": "front-propeller",
+        "label": "Front engine propeller",
+        "system": "propulsion",
+        "match": [
+          "/^HeliceDEL/",
+          "IntakeDEL"
+        ]
+      },
+      {
+        "id": "rear-propeller",
+        "label": "Rear engine propeller",
+        "system": "propulsion",
+        "match": [
+          "/^HeliceTRAS/",
+          "IntakeTRAS",
+          "IntakeDorsal"
+        ]
+      },
+      {
+        "id": "cowl-flaps",
+        "label": "Cowl flaps",
+        "system": "propulsion",
+        "match": [
+          "/^CowlFlaps_\\d+$/"
+        ]
+      },
+      {
+        "id": "landing-gear",
+        "label": "Retractable landing gear",
+        "system": "gear",
+        "match": [
+          "/^Rueda/",
+          "/^Tren/",
+          "/^CompTren/"
+        ]
+      },
+      {
+        "id": "doors",
+        "label": "Doors",
+        "system": "structure",
+        "match": [
+          "/^Puerta/",
+          "Manilla"
+        ]
+      },
+      {
+        "id": "windows",
+        "label": "Windows",
+        "system": "glazing",
+        "match": [
+          "Cristales",
+          "CristalPuertaSUP"
+        ]
+      },
+      {
+        "id": "lights",
+        "label": "Lights",
+        "system": "lights",
+        "match": [
+          "/^Luz/",
+          "LucesLanding"
+        ]
+      },
+      {
+        "id": "antennas",
+        "label": "Antennas and static wicks",
+        "system": "avionics",
+        "match": [
+          "Antenas",
+          "Antiestatica"
+        ]
+      },
+      {
+        "id": "cabin",
+        "label": "Cabin, panel and controls",
+        "system": "interior",
+        "match": [
+          "/^Interior/",
+          "/^Panel/",
+          "/^Palanca/",
+          "/^Pedal/",
+          "/^Switch/",
+          "/^Pedestal/",
+          "Piso",
+          "Overhead",
+          "FondoPanel",
+          "FondoInterior",
+          "FrontalInterior",
+          "/^TapaPanel/",
+          "/^Perilla/",
+          "/^Primer/",
+          "CircuitBreakersPanel"
+        ]
+      }
+    ],
+    "verify": {
+      "tolerance": {
+        "height": 0.04
+      },
+      "note": "The FlightGear model measures 2.90 m tall against the published 2.79 m."
+    }
+  },
+  "parts": {
+    "front-propeller": {
+      "Position": "Tractor, in the nose"
+    },
+    "rear-propeller": {
+      "Position": "Pusher, behind the cabin"
+    }
+  },
+  "sources": [
+    {
+      "label": "Wikipedia: Cessna Skymaster",
+      "url": "https://en.wikipedia.org/wiki/Cessna_Skymaster"
+    }
+  ]
+}

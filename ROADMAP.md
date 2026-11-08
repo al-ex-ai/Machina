@@ -21,6 +21,7 @@ One milestone per week. Each milestone ends with everything committed, `npm test
 - Open-licensed FlightGear models loaded at runtime (AC3D loader, parsing in a Web Worker)
 - Asset pipeline: `scripts/import-fg.js`, sub-model placement with FlightGear offsets, file-scoped part rules, split rules for repeated parts, rest-on-tailwheel, texture swaps for custom liveries
 - Nine aircraft: A380, 747-400, 787-8, A320neo, 737-300 (Machina livery), Cessna 172 with cabin, Robin DR400, Piper J-3 Cub, EC135
+- Second batch: Boeing 707, DHC-6 Twin Otter, Cessna 337 Skymaster, Ercoupe, EC130, 1903 Wright Flyer (new Historic group)
 - Studio HDRI lighting, ambient occlusion, on-demand rendering, textures capped at 2048 px
 - X-ray view, 1.8 m scale figure
 - Verification: size against published specs with documented tolerances, left/right side check, license and credits required for every asset
@@ -41,7 +42,7 @@ One milestone per week. Each milestone ends with everything committed, `npm test
 
 ## M5. More aircraft and categories
 
-- Next FlightGear batch, each vetted for license, quality and size: 777, ATR 72, Concorde, Cessna Caravan, DHC-6 Twin Otter, DC-3, more helicopters
+- Next FlightGear batch, each vetted for license, quality and size: 777, ATR 72, Concorde, Cessna Caravan, DC-3, more helicopters
 - Space category from NASA's public-domain models: Space Shuttle, ISS, Hubble, Curiosity
 - Military set stays parked until asked for
 

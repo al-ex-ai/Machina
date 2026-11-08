@@ -58,7 +58,9 @@ export function assembleParts(loaded, model) {
     let rule = local.find(r => r.res.some(re => re.test(mesh.name))) ?? rules.find(r => r.res.some(re => re.test(mesh.name))) ?? fallback;
     if (rule.split) {
       const k = splitOf.get(mesh) ?? 0;
-      rule = { ...rule, baseId: rule.id, id: `${rule.id}-${k + 1}`, label: `${rule.label} ${k + 1}` };
+      rule = rule.sides
+        ? { ...rule, baseId: rule.id, id: `${k === 0 ? 'left' : 'right'}-${rule.id}`, label: `${k === 0 ? 'Left' : 'Right'} ${rule.label.toLowerCase()}` }
+        : { ...rule, baseId: rule.id, id: `${rule.id}-${k + 1}`, label: `${rule.label} ${k + 1}` };
     }
     const geo = mesh.geometry.clone().applyMatrix4(new THREE.Matrix4().multiplyMatrices(base, mesh.matrixWorld));
     if (model.asset.flipZ) flipWinding(geo);

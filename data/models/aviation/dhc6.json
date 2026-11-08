@@ -1,0 +1,234 @@
+{
+  "id": "dhc6",
+  "name": "de Havilland Canada DHC-6 Twin Otter",
+  "category": "aviation",
+  "group": "Light aircraft",
+  "builder": "asset",
+  "summary": "Rugged 19-seat utility turboprop with a high strut-braced wing and fixed gear, built for short, rough strips from the Arctic to the tropics.",
+  "specs": {
+    "manufacturer": "de Havilland Canada",
+    "role": "STOL utility aircraft",
+    "first_flight": 1965,
+    "length_m": 15.77,
+    "wingspan_m": 19.81,
+    "height_m": 5.94,
+    "mtow_kg": 5670,
+    "max_speed_kmh": 338,
+    "range_km": 1435,
+    "engine_count": 2,
+    "engine_type": "Pratt & Whitney Canada PT6A-27, 620 shp",
+    "seats": 19
+  },
+  "asset": {
+    "path": "assets/aircraft/dhc6",
+    "license": "GPL-2.0",
+    "author": "Syd Adams, Christian Thiriot, Bo Lan, Jonathan Schellhase and contributors",
+    "source": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/dhc6/",
+    "files": [
+      {
+        "file": "Models/dhc-6.ac"
+      },
+      {
+        "file": "Models/wheels.ac",
+        "fallback": {
+          "id": "landing-gear",
+          "label": "Landing gear",
+          "system": "gear"
+        }
+      }
+    ],
+    "fallback": {
+      "id": "fuselage",
+      "label": "Fuselage",
+      "system": "structure"
+    },
+    "hide": [
+      "/hotspot/i",
+      "/fasteningpoint/",
+      "/ski$/i",
+      "float.fairing",
+      "/prop\\.disk$/",
+      "/Rot$/",
+      "/_interior$/",
+      "bluntnose",
+      "/flare/"
+    ],
+    "parts": [
+      {
+        "id": "wings",
+        "label": "Wings",
+        "system": "surfaces",
+        "match": [
+          "wings"
+        ]
+      },
+      {
+        "id": "left-aileron",
+        "label": "Left aileron",
+        "system": "controls",
+        "match": [
+          "L.aileron"
+        ]
+      },
+      {
+        "id": "right-aileron",
+        "label": "Right aileron",
+        "system": "controls",
+        "match": [
+          "R.aileron"
+        ]
+      },
+      {
+        "id": "left-flap",
+        "label": "Left flap",
+        "system": "controls",
+        "match": [
+          "L.flap"
+        ]
+      },
+      {
+        "id": "right-flap",
+        "label": "Right flap",
+        "system": "controls",
+        "match": [
+          "R.flap"
+        ]
+      },
+      {
+        "id": "slats",
+        "label": "Wing leading edges",
+        "system": "surfaces",
+        "match": [
+          "L.slat",
+          "R.slat"
+        ]
+      },
+      {
+        "id": "wing-struts",
+        "label": "Wing struts",
+        "system": "structure",
+        "match": [
+          "wingbrace"
+        ]
+      },
+      {
+        "id": "horizontal-stabilizer",
+        "label": "Horizontal stabilizer",
+        "system": "surfaces",
+        "match": [
+          "Hstab"
+        ]
+      },
+      {
+        "id": "elevator",
+        "label": "Elevator",
+        "system": "controls",
+        "match": [
+          "Elevator"
+        ]
+      },
+      {
+        "id": "rudder",
+        "label": "Rudder",
+        "system": "controls",
+        "match": [
+          "rudder"
+        ]
+      },
+      {
+        "id": "engine-1",
+        "label": "Left engine and propeller",
+        "system": "propulsion",
+        "match": [
+          "LHEngine",
+          "/^Lprop/",
+          "SpinnerL",
+          "SpinnerInteriorL",
+          "Exhaust"
+        ]
+      },
+      {
+        "id": "engine-2",
+        "label": "Right engine and propeller",
+        "system": "propulsion",
+        "match": [
+          "RHEngine",
+          "/^Rprop/",
+          "SpinnerR",
+          "SpinnerInteriorR",
+          "Exhaust.001"
+        ]
+      },
+      {
+        "id": "engine-cowls",
+        "label": "Engine cowlings",
+        "system": "propulsion",
+        "match": [
+          "/^Engine\\.cowl/"
+        ]
+      },
+      {
+        "id": "doors",
+        "label": "Doors",
+        "system": "structure",
+        "match": [
+          "/door/i"
+        ]
+      },
+      {
+        "id": "windows",
+        "label": "Windshield and windows",
+        "system": "glazing",
+        "match": [
+          "glass",
+          "/glass$/"
+        ]
+      },
+      {
+        "id": "lights",
+        "label": "Lights",
+        "system": "lights",
+        "match": [
+          "/LNDlight/",
+          "beacon",
+          "navlights",
+          "/^strobe/",
+          "landing_light_cover"
+        ]
+      },
+      {
+        "id": "antennas",
+        "label": "Antenna and pitot tubes",
+        "system": "avionics",
+        "match": [
+          "aerial",
+          "/pitot-tube/"
+        ]
+      }
+    ],
+    "verify": {
+      "tolerance": {
+        "height": 0.03
+      },
+      "note": "The FlightGear model measures 5.80 m tall against the published 5.94 m."
+    }
+  },
+  "parts": {
+    "engine-1": {
+      "Type": "Turboprop",
+      "Model": "PT6A-27",
+      "Propeller": "Three-blade Hartzell"
+    },
+    "engine-2": {
+      "Type": "Turboprop",
+      "Model": "PT6A-27",
+      "Propeller": "Three-blade Hartzell"
+    }
+  },
+  "sources": [
+    {
+      "label": "Wikipedia: de Havilland Canada DHC-6 Twin Otter",
+      "url": "https://en.wikipedia.org/wiki/De_Havilland_Canada_DHC-6_Twin_Otter"
+    }
+  ]
+}

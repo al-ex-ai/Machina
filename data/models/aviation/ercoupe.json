@@ -1,0 +1,251 @@
+{
+  "id": "ercoupe",
+  "name": "ERCO Ercoupe 415-C",
+  "category": "aviation",
+  "group": "Light aircraft",
+  "builder": "asset",
+  "summary": "Two-seat 1940s design meant to be spin-proof, with twin tails, tricycle gear and linked controls that let it fly without rudder pedals.",
+  "specs": {
+    "manufacturer": "Engineering and Research Corporation (ERCO)",
+    "role": "Light personal aircraft",
+    "first_flight": 1937,
+    "length_m": 6.3,
+    "wingspan_m": 9.14,
+    "height_m": 1.8,
+    "mtow_kg": 576,
+    "max_speed_kmh": 177,
+    "range_km": 483,
+    "engine_count": 1,
+    "engine_type": "Continental C-75, 75 hp",
+    "seats": 2
+  },
+  "asset": {
+    "path": "assets/aircraft/ercoupe",
+    "license": "GPL-2.0-or-later",
+    "author": "FlightGear Ercoupe contributors",
+    "source": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/ercoupe/",
+    "files": [
+      {
+        "file": "Models/ercoupe.ac",
+        "offset": {
+          "z": -0.5
+        }
+      },
+      {
+        "file": "Models/Yoke.ac",
+        "offset": {
+          "x": -0.55,
+          "y": -0.27,
+          "z": 0.06
+        },
+        "fallback": {
+          "id": "cabin",
+          "label": "Cabin and controls",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Yoke.ac",
+        "offset": {
+          "x": -0.55,
+          "y": 0.26,
+          "z": 0.06
+        },
+        "fallback": {
+          "id": "cabin",
+          "label": "Cabin and controls",
+          "system": "interior"
+        }
+      }
+    ],
+    "fallback": {
+      "id": "fuselage",
+      "label": "Fuselage",
+      "system": "structure"
+    },
+    "hide": [
+      "Propeller.Fast",
+      "Propeller.Slow",
+      "polyline"
+    ],
+    "parts": [
+      {
+        "id": "left-wing",
+        "label": "Left wing",
+        "system": "surfaces",
+        "match": [
+          "LWing"
+        ]
+      },
+      {
+        "id": "right-wing",
+        "label": "Right wing",
+        "system": "surfaces",
+        "match": [
+          "RWing"
+        ]
+      },
+      {
+        "id": "left-aileron",
+        "label": "Left aileron",
+        "system": "controls",
+        "match": [
+          "LAileron"
+        ]
+      },
+      {
+        "id": "right-aileron",
+        "label": "Right aileron",
+        "system": "controls",
+        "match": [
+          "RAileron"
+        ]
+      },
+      {
+        "id": "horizontal-stabilizer",
+        "label": "Horizontal stabilizer",
+        "system": "surfaces",
+        "match": [
+          "HTail"
+        ]
+      },
+      {
+        "id": "elevator",
+        "label": "Elevator",
+        "system": "controls",
+        "match": [
+          "Elevator"
+        ]
+      },
+      {
+        "id": "fins",
+        "label": "Twin fins",
+        "system": "surfaces",
+        "match": [
+          "VTail"
+        ]
+      },
+      {
+        "id": "rudders",
+        "label": "Twin rudders",
+        "system": "controls",
+        "match": [
+          "LRudder",
+          "RRudder"
+        ]
+      },
+      {
+        "id": "propeller",
+        "label": "Propeller",
+        "system": "propulsion",
+        "match": [
+          "Propeller",
+          "Hub"
+        ]
+      },
+      {
+        "id": "engine",
+        "label": "Engine and cowling",
+        "system": "propulsion",
+        "match": [
+          "Cowling",
+          "Cylinders",
+          "Exhaust"
+        ]
+      },
+      {
+        "id": "nose-gear",
+        "label": "Nose gear",
+        "system": "gear",
+        "match": [
+          "/^Nose/",
+          "FLdamper",
+          "FUdamper"
+        ]
+      },
+      {
+        "id": "left-main-gear",
+        "label": "Left main gear",
+        "system": "gear",
+        "match": [
+          "LeftWheel",
+          "/^LMStrut/"
+        ]
+      },
+      {
+        "id": "right-main-gear",
+        "label": "Right main gear",
+        "system": "gear",
+        "match": [
+          "RightWheel",
+          "/^RMStrut/"
+        ]
+      },
+      {
+        "id": "canopy",
+        "label": "Canopy and windows",
+        "system": "glazing",
+        "match": [
+          "/Window[IO]$/",
+          "/^Windscreen/",
+          "/^WindowFrame/"
+        ]
+      },
+      {
+        "id": "lights",
+        "label": "Lights",
+        "system": "lights",
+        "match": [
+          "/NavLight/",
+          "LandingLight",
+          "TailLightLens"
+        ]
+      },
+      {
+        "id": "antennas",
+        "label": "Antennas and pitot",
+        "system": "avionics",
+        "match": [
+          "TransponderAntenna",
+          "VHFAntenna",
+          "ELT",
+          "pitot"
+        ]
+      },
+      {
+        "id": "cabin",
+        "label": "Cabin and controls",
+        "system": "interior",
+        "match": [
+          "/^Seat/",
+          "/^cabin/",
+          "/^PanelLight/",
+          "/^MapHolder/",
+          "logbook",
+          "navigation chart"
+        ]
+      }
+    ],
+    "verify": {
+      "tolerance": {
+        "length": 0.035,
+        "height": 0.06
+      },
+      "note": "The FlightGear model measures 6.49 m long and 1.90 m tall against the published 6.30 m and 1.80 m."
+    }
+  },
+  "parts": {
+    "fins": {
+      "Note": "Twin fins sit in the propeller slipstream"
+    },
+    "propeller": {
+      "Type": "Fixed-pitch, two blades"
+    }
+  },
+  "sources": [
+    {
+      "label": "Wikipedia: ERCO Ercoupe",
+      "url": "https://en.wikipedia.org/wiki/ERCO_Ercoupe"
+    }
+  ]
+}

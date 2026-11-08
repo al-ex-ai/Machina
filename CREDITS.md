@@ -15,6 +15,12 @@ Machina's own code is MIT licensed (see `LICENSE`). Third-party files keep their
 | Boeing 737-300 model and textures | `assets/aircraft/737-300/` | FlightGear 737-300 contributors | GPL-3.0 |
 | Boeing 787-8 model and textures | `assets/aircraft/787-8/` | Omega95, Redneck, Jentron and contributors | GPL-2.0 |
 | Airbus A380 model and textures | `assets/aircraft/a380/` | Ampere K., I. Cunningham, F. Dalvi, S. Hamilton and contributors | GPL-2.0-or-later |
+| Boeing 707 model and texture | `assets/aircraft/707/` | FlightGear 707 contributors | GPL-3.0 |
+| DHC-6 Twin Otter model and textures | `assets/aircraft/dhc6/` | Syd Adams, Christian Thiriot and contributors | GPL-2.0 |
+| Eurocopter EC130 model and textures | `assets/aircraft/ec130/` | FlightGear EC130 contributors | GPL-2.0 |
+| Cessna 337 Skymaster model and textures | `assets/aircraft/cessna337/` | FlightGear Cessna 337 contributors | GPL-2.0 |
+| ERCO Ercoupe model and textures | `assets/aircraft/ercoupe/` | FlightGear Ercoupe contributors | GPL-2.0-or-later |
+| 1903 Wright Flyer model and textures | `assets/aircraft/wright-flyer/` | Jim Wilson, Paul Beardsley | GPL (FlightGear catalog) |
 | Eurocopter EC135 model and textures | `assets/aircraft/ec135/` | Heiko Schulz and contributors | GPL-2.0 |
 
 Rules for adding assets:

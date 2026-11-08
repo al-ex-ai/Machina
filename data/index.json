@@ -8,6 +8,12 @@
     "models/aviation/b747-400.json",
     "models/aviation/dr400.json",
     "models/aviation/j3-cub.json",
-    "models/aviation/ec135.json"
+    "models/aviation/ec135.json",
+    "models/aviation/b707.json",
+    "models/aviation/dhc6.json",
+    "models/aviation/ec130.json",
+    "models/aviation/cessna337.json",
+    "models/aviation/ercoupe.json",
+    "models/aviation/wright-flyer.json"
   ]
 }

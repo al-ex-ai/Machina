@@ -1,0 +1,236 @@
+{
+  "id": "b707",
+  "name": "Boeing 707-320B",
+  "category": "aviation",
+  "group": "Airliners",
+  "builder": "asset",
+  "summary": "The airliner that opened the jet age for most of the world: four engines on pylons under a 35-degree swept wing.",
+  "specs": {
+    "manufacturer": "Boeing",
+    "role": "Narrow-body airliner",
+    "first_flight": 1957,
+    "length_m": 46.61,
+    "wingspan_m": 44.42,
+    "height_m": 12.93,
+    "mtow_kg": 151320,
+    "range_km": 9265,
+    "cruise_mach": 0.8,
+    "engine_count": 4,
+    "engine_type": "Pratt & Whitney JT3D-3B turbofan",
+    "seats": "141 to 189"
+  },
+  "asset": {
+    "path": "assets/aircraft/707",
+    "license": "GPL-3.0",
+    "author": "FlightGear 707 contributors",
+    "source": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/707/",
+    "files": [
+      {
+        "file": "Models/707.ac"
+      },
+      {
+        "file": "Models/wheels.ac",
+        "offset": {
+          "x": 1.82,
+          "y": -2.76,
+          "z": -2.3
+        },
+        "fallback": {
+          "id": "left-main-gear",
+          "label": "Left main gear",
+          "system": "gear"
+        }
+      },
+      {
+        "file": "Models/wheels.ac",
+        "offset": {
+          "x": 1.82,
+          "y": 2.76,
+          "z": -2.3
+        },
+        "fallback": {
+          "id": "right-main-gear",
+          "label": "Right main gear",
+          "system": "gear"
+        }
+      }
+    ],
+    "fallback": {
+      "id": "fuselage",
+      "label": "Fuselage",
+      "system": "structure"
+    },
+    "hide": [
+      "fuselage.inner",
+      "/inner$/",
+      "nonones"
+    ],
+    "parts": [
+      {
+        "id": "wing",
+        "label": "Wing",
+        "system": "surfaces",
+        "match": [
+          "wing",
+          "elevwing"
+        ]
+      },
+      {
+        "id": "left-ailerons",
+        "label": "Left ailerons",
+        "system": "controls",
+        "match": [
+          "/^lh(ib|ob)ail/"
+        ]
+      },
+      {
+        "id": "right-ailerons",
+        "label": "Right ailerons",
+        "system": "controls",
+        "match": [
+          "/^rh(ib|ob)ail/"
+        ]
+      },
+      {
+        "id": "left-flaps",
+        "label": "Left flaps",
+        "system": "controls",
+        "match": [
+          "/^lh(ib|ob|filet)flap/"
+        ]
+      },
+      {
+        "id": "right-flaps",
+        "label": "Right flaps",
+        "system": "controls",
+        "match": [
+          "/^rh(ib|ob|filet)flap/"
+        ]
+      },
+      {
+        "id": "left-spoilers",
+        "label": "Left spoilers",
+        "system": "controls",
+        "match": [
+          "/^lhsp/"
+        ]
+      },
+      {
+        "id": "right-spoilers",
+        "label": "Right spoilers",
+        "system": "controls",
+        "match": [
+          "/^rhsp/"
+        ]
+      },
+      {
+        "id": "slats",
+        "label": "Leading-edge flaps",
+        "system": "controls",
+        "match": [
+          "slatsL",
+          "slatsR"
+        ]
+      },
+      {
+        "id": "left-elevator",
+        "label": "Left elevator",
+        "system": "controls",
+        "match": [
+          "lhelevator"
+        ]
+      },
+      {
+        "id": "right-elevator",
+        "label": "Right elevator",
+        "system": "controls",
+        "match": [
+          "rhelevator"
+        ]
+      },
+      {
+        "id": "fin",
+        "label": "Vertical stabilizer",
+        "system": "surfaces",
+        "match": [
+          "vertstab"
+        ]
+      },
+      {
+        "id": "rudder",
+        "label": "Rudder",
+        "system": "controls",
+        "match": [
+          "rudder"
+        ]
+      },
+      {
+        "id": "engines",
+        "label": "Engines and pylons",
+        "system": "propulsion",
+        "match": [
+          "engineSupport"
+        ]
+      },
+      {
+        "id": "nose-gear",
+        "label": "Nose gear",
+        "system": "gear",
+        "match": [
+          "NGear",
+          "NGearStrut",
+          "NoseWheel",
+          "/ngdoor/",
+          "nosewheelwell"
+        ]
+      },
+      {
+        "id": "gear-doors",
+        "label": "Main gear doors",
+        "system": "gear",
+        "match": [
+          "/mgdoor/"
+        ]
+      },
+      {
+        "id": "doors",
+        "label": "Doors",
+        "system": "structure",
+        "match": [
+          "/^door/",
+          "/^(lh|rh)door/"
+        ]
+      },
+      {
+        "id": "antennas",
+        "label": "Antennas and probes",
+        "system": "avionics",
+        "match": [
+          "antenaasa",
+          "probe"
+        ]
+      }
+    ],
+    "verify": {
+      "tolerance": {
+        "length": 0.03,
+        "width": 0.06,
+        "height": 0.08
+      },
+      "note": "The FlightGear model measures 45.56 m long, 42.02 m across and 12.05 m tall, smaller than the published 707-320B (46.61, 44.42 and 12.93 m) and between the -120 and -320 sizes."
+    }
+  },
+  "parts": {
+    "engines": {
+      "Type": "Low-bypass turbofan",
+      "Model": "Pratt & Whitney JT3D-3B",
+      "Count": 4
+    }
+  },
+  "sources": [
+    {
+      "label": "Wikipedia: Boeing 707",
+      "url": "https://en.wikipedia.org/wiki/Boeing_707"
+    }
+  ]
+}

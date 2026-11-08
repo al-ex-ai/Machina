@@ -37,7 +37,7 @@ const PLANNED = [
 ];
 
 // Sorting for galleries. "type" groups by kind of aircraft, biggest first within each.
-const GROUP_ORDER = ['Airliners', 'Light aircraft', 'Helicopters'];
+const GROUP_ORDER = ['Airliners', 'Light aircraft', 'Helicopters', 'Historic'];
 const SORTS = {
   type: { label: 'Type, then size', cmp: (a, b) => groupRank(a) - groupRank(b) || b.specs.length_m - a.specs.length_m },
   name: { label: 'Name', cmp: (a, b) => a.name.localeCompare(b.name) },

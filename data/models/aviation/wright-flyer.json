@@ -1,0 +1,154 @@
+{
+  "id": "wright-flyer",
+  "name": "1903 Wright Flyer",
+  "category": "aviation",
+  "group": "Historic",
+  "builder": "asset",
+  "summary": "The first powered, controlled, sustained flight: 12 seconds and 37 meters at Kitty Hawk on 17 December 1903. Spruce and muslin, two pusher propellers driven by bicycle chains.",
+  "specs": {
+    "manufacturer": "Wilbur and Orville Wright",
+    "role": "Experimental canard biplane",
+    "first_flight": 1903,
+    "length_m": 6.43,
+    "wingspan_m": 12.29,
+    "height_m": 2.82,
+    "mtow_kg": 338,
+    "max_speed_kmh": 48,
+    "engine_count": 1,
+    "engine_type": "Wright inline four-cylinder, 12 hp",
+    "crew": 1
+  },
+  "asset": {
+    "path": "assets/aircraft/wright-flyer",
+    "license": "GPL (FlightGear aircraft distribution)",
+    "author": "Jim Wilson, with help from Paul Beardsley",
+    "source": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/wrightFlyer1903/",
+    "files": [
+      {
+        "file": "Models/WrightFlyer-pb-jw.ac"
+      }
+    ],
+    "textureMap": {
+      "WrightFlyer-pb-jw-01.rgb": "WrightFlyer-pb-jw-01.png",
+      "WrightFlyer-pb-jw-02.rgb": "WrightFlyer-pb-jw-02.png",
+      "WrightFlyer-pb-jw-03.rgb": "WrightFlyer-pb-jw-03.png",
+      "WrightFlyer-pb-jw-04.rgb": "WrightFlyer-pb-jw-04.png"
+    },
+    "fallback": {
+      "id": "airframe",
+      "label": "Wings and frame",
+      "system": "structure"
+    },
+    "hide": [
+      "/Disk$/"
+    ],
+    "parts": [
+      {
+        "id": "wings",
+        "label": "Wings (warping biplane cells)",
+        "system": "surfaces",
+        "match": [
+          "/^Wing/"
+        ]
+      },
+      {
+        "id": "elevator",
+        "label": "Forward elevator (canard)",
+        "system": "controls",
+        "match": [
+          "/^Elevator/"
+        ]
+      },
+      {
+        "id": "rudder",
+        "label": "Twin rudders",
+        "system": "controls",
+        "match": [
+          "/^Rudder/"
+        ]
+      },
+      {
+        "id": "engine",
+        "label": "Engine and fuel tank",
+        "system": "propulsion",
+        "match": [
+          "Engine",
+          "FuelTank",
+          "FlyWheelCrank",
+          "/^Radiator/"
+        ]
+      },
+      {
+        "id": "propellers",
+        "label": "Twin pusher propellers",
+        "system": "propulsion",
+        "match": [
+          "/Propeller$/",
+          "/PropShaft/",
+          "/^Cog/"
+        ]
+      },
+      {
+        "id": "chain-drive",
+        "label": "Bicycle chain drive",
+        "system": "propulsion",
+        "match": [
+          "/^Chain/",
+          "/^DriveChain/",
+          "/^DriveCrank/",
+          "BikeHub"
+        ]
+      },
+      {
+        "id": "cradle",
+        "label": "Hip cradle (wing warping)",
+        "system": "controls",
+        "match": [
+          "/^Cradle/"
+        ]
+      },
+      {
+        "id": "pilot",
+        "label": "Orville Wright",
+        "system": "interior",
+        "match": [
+          "/^Orville/"
+        ]
+      },
+      {
+        "id": "skids",
+        "label": "Landing skids",
+        "system": "gear",
+        "match": [
+          "/^Skid/"
+        ]
+      }
+    ],
+    "verify": {
+      "tolerance": {
+        "length": 0.03,
+        "height": 0.05
+      },
+      "note": "The FlightGear model measures 6.56 m long and 2.96 m tall against the published 6.43 m and 2.82 m."
+    }
+  },
+  "parts": {
+    "cradle": {
+      "Function": "The pilot shifts his hips to twist the wingtips, the first practical roll control"
+    },
+    "propellers": {
+      "Type": "Two counter-rotating wooden pushers",
+      "Diameter": "about 2.6 m"
+    }
+  },
+  "sources": [
+    {
+      "label": "Smithsonian: 1903 Wright Flyer",
+      "url": "https://airandspace.si.edu/collection-objects/1903-wright-flyer/nasm_A19610048000"
+    },
+    {
+      "label": "Wikipedia: Wright Flyer",
+      "url": "https://en.wikipedia.org/wiki/Wright_Flyer"
+    }
+  ]
+}
