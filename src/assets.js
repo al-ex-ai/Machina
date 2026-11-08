@@ -187,7 +187,33 @@ async function loadBitmap(url) {
 }
 
 /** Browser: fetch and build the detailed model. */
-export async function loadAssetModel(model) {
+/**
+ * Recolor a livery: pixels whose hue falls in the asset's livery hue range (the cheatline
+ * and titles) take the accent's hue and saturation, keeping their lightness, so shading
+ * and panel lines stay. Everything else in the texture is untouched.
+ */
+function recolor(bmp, accent, [h0, h1]) {
+  const c = new OffscreenCanvas(bmp.width, bmp.height), g = c.getContext('2d');
+  g.drawImage(bmp, 0, 0);
+  const img = g.getImageData(0, 0, c.width, c.height), d = img.data;
+  const target = new THREE.Color(accent), hsl = {};
+  target.getHSL(hsl);
+  const col = new THREE.Color(), px = {};
+  for (let i = 0; i < d.length; i += 4) {
+    col.setRGB(d[i] / 255, d[i + 1] / 255, d[i + 2] / 255);
+    col.getHSL(px);
+    const deg = px.h * 360;
+    if (px.s < 0.3 || px.l < 0.06 || px.l > 0.94 || deg < h0 || deg > h1) continue;
+    // Lightness follows the original relative to its paint, centered on the accent's own.
+    col.setHSL(hsl.h, Math.min(1, hsl.s), Math.min(0.95, Math.max(0.05, hsl.l + (px.l - 0.35) * 0.8)));
+    d[i] = col.r * 255; d[i + 1] = col.g * 255; d[i + 2] = col.b * 255;
+  }
+  g.putImageData(img, 0, 0);
+  return c.transferToImageBitmap();
+}
+
+/** @param {{ accent?: string }} [opts] accent recolors the livery (asset.recolor lists the textures) */
+export async function loadAssetModel(model, opts = {}) {
   const a = model.asset;
   const base = `./${a.path.replace(/\/?$/, '/')}`;
   const files = assetFiles(model);
@@ -212,7 +238,8 @@ export async function loadAssetModel(model) {
       textures.set(url, t);
       t.flipY = false;
       const isNormal = /normal/i.test(tex);
-      pending.push(loadBitmap(url).then(bmp => { t.image = bmp; t.needsUpdate = true; }).catch(err => console.warn('texture', url, err)));
+      const paint = opts.accent && a.recolor?.textures.some(r => url.endsWith(r));
+      pending.push(loadBitmap(url).then(bmp => (paint ? recolor(bmp, opts.accent, a.recolor.hue) : bmp)).then(bmp => { t.image = bmp; t.needsUpdate = true; }).catch(err => console.warn('texture', url, err)));
       t.colorSpace = isNormal ? THREE.NoColorSpace : THREE.SRGBColorSpace;
       t.wrapS = t.wrapT = THREE.RepeatWrapping;
       t.anisotropy = 8;

@@ -479,6 +479,15 @@
         "length": 0.03
       },
       "note": "The FlightGear model's airframe stands 11.24 m from belly to fin tip; with the gear lowered from its own animations (struts fully extended, unloaded) it measures 14.73 m tall against the published 12.5 m."
+    },
+    "recolor": {
+      "textures": [
+        "Models/Tu-144D_d.png"
+      ],
+      "hue": [
+        200,
+        250
+      ]
     }
   }
 }

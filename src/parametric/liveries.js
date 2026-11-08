@@ -37,7 +37,19 @@ const PRESETS = [
 ];
 
 /** Presets a model can wear, for the picker. */
+const ACCENTS = [
+  { id: 'original', label: 'Original colors', swatch: ['#f2f3f5', '#f2f3f5', '#2a4a7a'] },
+  { id: '#ff8a3d', label: 'Machina orange', swatch: ['#f2f3f5', '#f2f3f5', '#ff8a3d'] },
+  { id: '#c8202f', label: 'Red', swatch: ['#f2f3f5', '#f2f3f5', '#c8202f'] },
+  { id: '#1f8a4c', label: 'Green', swatch: ['#f2f3f5', '#f2f3f5', '#1f8a4c'] },
+  { id: '#6b3fa0', label: 'Purple', swatch: ['#f2f3f5', '#f2f3f5', '#6b3fa0'] },
+];
+
+/** True when a color is a custom accent ("#rrggbb"). */
+export const isAccent = id => /^#[0-9a-f]{6}$/i.test(id ?? '');
+
 export function liveriesFor(model) {
+  if (model.builder === 'asset' && model.asset?.recolor) return ACCENTS;
   return model.builder === 'parametric' && model.livery ? PRESETS.map(({ id, label, swatch }) => ({ id, label, swatch })) : [];
 }
 
@@ -46,6 +58,14 @@ export function liveriesFor(model) {
  * pods recolored. Unknown ids and "machina" return the model unchanged.
  */
 export function withLivery(model, id) {
+  // A custom accent on the Machina scheme: stripe, tail stripe and mark take the color.
+  if (isAccent(id) && model.builder === 'parametric') {
+    const m = structuredClone(model);
+    m.livery.stripe = id;
+    if (m.livery.titles) m.livery.titles.markColor = id;
+    for (const s of m.geometry.surfaces) if (s.paint?.stripe) s.paint.stripe.color = id;
+    return m;
+  }
   const p = PRESETS.find(q => q.id === id);
   if (!p?.livery || model.builder !== 'parametric') return model;
   const m = structuredClone(model);

@@ -14,9 +14,7 @@
     "models/aviation/b747-400-parametric.json",
     "models/aviation/b707-parametric.json",
     "models/aviation/tu134.json",
-    "models/aviation/il76.json",
-    "models/aviation/tu154b.json",
-    "models/aviation/tu144d.json"
+    "models/aviation/il76.json"
   ],
   "workshop": [
     "models/aviation/a320neo.json",
@@ -31,6 +29,8 @@
     "models/aviation/dr400-parametric.json",
     "models/aviation/j3-cub-parametric.json",
     "models/aviation/ercoupe-parametric.json",
-    "models/aviation/yak40.json"
+    "models/aviation/yak40.json",
+    "models/aviation/tu144d.json",
+    "models/aviation/tu154b.json"
   ]
 }

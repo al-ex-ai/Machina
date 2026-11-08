@@ -6986,6 +6986,16 @@
         "height": 0.05
       },
       "note": "With the gear lowered from the model's own animations, the FlightGear model measures 11.84 m tall against the published 11.4 m: its gear struts are modeled unloaded."
+    },
+    "recolor": {
+      "textures": [
+        "Model/maina_t.png",
+        "Model/mainb_t.png"
+      ],
+      "hue": [
+        195,
+        245
+      ]
     }
   }
 }

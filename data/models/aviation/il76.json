@@ -2266,6 +2266,15 @@
           "/^crew/"
         ]
       }
-    ]
+    ],
+    "recolor": {
+      "textures": [
+        "Models/texture.png"
+      ],
+      "hue": [
+        195,
+        245
+      ]
+    }
   }
 }

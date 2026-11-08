@@ -6,7 +6,7 @@ import { loadAssetModel } from './assets.js';
 import { createViewer } from './scene.js';
 import { SYSTEMS } from './parts/common.js';
 import { thumbnail } from './thumbs.js';
-import { liveriesFor, withLivery } from './parametric/liveries.js';
+import { liveriesFor, withLivery, isAccent } from './parametric/liveries.js';
 
 const SPEC_LABELS = {
   manufacturer: 'Manufacturer',
@@ -390,7 +390,7 @@ function showModel(m, partId) {
     viewer.clear(); // never show the previous model while this one loads
     $('#tree').innerHTML = '';
     $('#loading').hidden = false;
-    loadAssetModel(m)
+    loadAssetModel(m, { accent: isAccent(state.livery) ? state.livery : undefined })
       .then(o => { const f = finalize(o, m); f.userData.detailed = true; done(f); })
       .catch(err => {
         console.error(err);
@@ -398,15 +398,26 @@ function showModel(m, partId) {
         $('#loading').innerHTML = '<span class="label">Could not load this model</span>';
       });
   } else done(buildModel(withLivery(m, state.livery)));
+  // (asset models apply a chosen accent through setLivery after loading)
 }
 
 /** Repaint the generated model in another livery, keeping the camera where it is. */
 function setLivery(id) {
   const m = state.model;
   if (!m) return;
-  state.livery = id === 'machina' ? null : id;
-  viewer.setModel(buildModel(withLivery(m, state.livery)), { keepView: true });
-  viewer.setExplode(Number($('#explode')?.value ?? 0));
+  state.livery = id === 'machina' || id === 'original' ? null : id;
+  if (m.builder === 'asset') {
+    const token = ++state.loadToken;
+    loadAssetModel(m, { accent: isAccent(state.livery) ? state.livery : undefined }).then(o => {
+      if (token !== state.loadToken) return;
+      const f = finalize(o, m); f.userData.detailed = true;
+      viewer.setModel(f, { keepView: true });
+      viewer.setExplode(Number($('#explode')?.value ?? 0));
+    });
+  } else {
+    viewer.setModel(buildModel(withLivery(m, state.livery)), { keepView: true });
+    viewer.setExplode(Number($('#explode')?.value ?? 0));
+  }
   syncURL();
   renderPaint();
 }
@@ -428,12 +439,13 @@ function renderPaint() {
   const list = liveriesFor(state.model);
   el.hidden = !list.length;
   if (!list.length) { el.innerHTML = ''; return; }
-  const cur = state.livery ?? 'machina';
+  const cur = state.livery ?? list[0].id;
+  const custom = isAccent(cur) && !list.some(l => l.id === cur) ? cur : '#3fa7d6';
   el.innerHTML = `<span class="paint-ic" title="Livery">${icon('brush', 15)}</span>` + list.map(l => {
     const [crown, belly, stripe] = l.swatch;
     return `<button type="button" class="paint-btn" role="radio" data-livery="${esc(l.id)}" aria-checked="${l.id === cur}" aria-label="${esc(l.label)}" data-name="${esc(l.label)}" tabindex="${l.id === cur ? 0 : -1}"
       style="background: linear-gradient(180deg, ${crown} 0 48%, ${stripe} 48% 60%, ${belly} 60% 100%)"></button>`;
-  }).join('');
+  }).join('') + `<label class="paint-btn paint-custom" title="Custom color" data-name="Custom color" style="background:${custom}" aria-checked="${cur === custom}"><input type="color" id="paint-color" value="${custom}" aria-label="Custom livery color"></label>`;
 }
 
 function groupedParts() {
@@ -644,6 +656,10 @@ document.addEventListener('click', e => {
     li.dataset.open = String(li.dataset.open !== 'true');
     t.setAttribute('aria-expanded', li.dataset.open);
   } else if (t.dataset.back !== undefined) viewer?.select(null);
+});
+
+document.addEventListener('change', e => {
+  if (e.target.id === 'paint-color') setLivery(e.target.value);
 });
 
 document.addEventListener('input', e => {
