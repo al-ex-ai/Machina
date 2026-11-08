@@ -21,6 +21,9 @@ Machina's own code is MIT licensed (see `LICENSE`). Third-party files keep their
 | Cessna 337 Skymaster model and textures | `assets/aircraft/cessna337/` | FlightGear Cessna 337 contributors | GPL-2.0 |
 | ERCO Ercoupe model and textures | `assets/aircraft/ercoupe/` | FlightGear Ercoupe contributors | GPL-2.0-or-later |
 | 1903 Wright Flyer model and textures | `assets/aircraft/wright-flyer/` | Jim Wilson, Paul Beardsley | GPL (FlightGear catalog) |
+| Tupolev Tu-134 model and textures (titles painted out) | `assets/aircraft/tu134/` | Emmanuel Baranger | GPL-2.0 |
+| Ilyushin Il-76 model and textures (titles painted out) | `assets/aircraft/il76/` | Emmanuel Baranger | GPL-2.0 |
+| Tupolev Tu-154B-2 model and textures (titles painted out) | `assets/aircraft/tu154b/` | Roman Skoryh, Yurik V. Nikiforoff and Project Tupolev | GPL |
 | Eurocopter EC135 model and textures | `assets/aircraft/ec135/` | Heiko Schulz and contributors | GPL-2.0 |
 | Parametric A320neo, 787-8, 747-400 and 707 (shapes measured from the FlightGear models above) | `data/models/aviation/*-parametric.json` | Authors of each source model, measured by Machina | Same license as the source model |
 | Boeing 737-300 reference drawing (measurements only) | `references/b737-300/` | Julien.scavini | CC BY-SA 3.0 |

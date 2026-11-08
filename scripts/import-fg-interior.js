@@ -13,7 +13,7 @@ if (!root || !modelFile) { console.error('Usage: node scripts/import-fg-interior
 const model = JSON.parse(readFileSync(modelFile, 'utf8'));
 const dest = model.asset.path;
 const aircraftName = basename(normalize(root));
-const INSIDE = /interior|cockpit|panel|instrument|seat|pilot|yoke|pedal|cabin|stick|throttle|glareshield/i;
+const INSIDE = /(^|\/)vc[._]|interior|cockpit|panel|instrument|seat|pilot|yoke|pedal|cabin|stick|throttle|glareshield/i;
 const SKIP = /effects?\/|lights?\/|sounds?\/|shadow|\/ai\/|immat|livery|liveries|procedural|flame|smoke|reflect/i;
 
 const num = (block, tag) => { const m = new RegExp(`<${tag}>\\s*([-\\d.eE+]+)\\s*</${tag}>`).exec(block); return m ? Number(m[1]) : undefined; };

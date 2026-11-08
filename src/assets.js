@@ -34,7 +34,8 @@ export function assembleParts(loaded, model) {
   const defaultFallback = model.asset.fallback ?? { id: 'airframe', label: 'Airframe details', system: 'structure' };
 
   const meshes = [];
-  for (const { group, fallback, offset, rotation, chain, parts: fileParts } of sources) {
+  for (const { group, fallback, offset, rotation, chain, pose, parts: fileParts } of sources) {
+    if (pose?.length) applyPose(group, pose);
     if (chain?.length) {
       // Nested FlightGear placements (an instrument in a panel in the interior), outermost first.
       const m = new THREE.Matrix4(), tmp = new THREE.Object3D();
@@ -109,6 +110,33 @@ function applyFgPlacement(group, offset = {}, rotation = {}) {
   group.position.set(offset.x ?? 0, offset.z ?? 0, -(offset.y ?? 0));
   const d = THREE.MathUtils.degToRad;
   group.rotation.set(d(rotation.roll ?? 0), d(rotation.heading ?? 0), -d(rotation.pitch ?? 0), 'YZX');
+}
+
+/**
+ * Apply baked FlightGear animation transforms (see scripts/fg-pose.js) to the meshes they
+ * name, in document order: each turns or slides the named objects, including meshes
+ * inside a named group, in the file's own coordinates.
+ */
+function applyPose(group, pose) {
+  const byName = new Map();
+  group.traverse(o => { if (o.isMesh) { const names = []; for (let p = o; p && p !== group; p = p.parent) names.push(p.name); byName.set(o, names); } });
+  group.updateMatrixWorld(true);
+  const inv = new THREE.Matrix4().copy(group.matrixWorld).invert();
+  const matrixOf = t => {
+    const o = new THREE.Vector3(...t.origin), ax = new THREE.Vector3(...t.axis);
+    return t.type === 'rotate'
+      ? new THREE.Matrix4().makeTranslation(o.x, o.y, o.z).multiply(new THREE.Matrix4().makeRotationAxis(ax, THREE.MathUtils.degToRad(t.value))).multiply(new THREE.Matrix4().makeTranslation(-o.x, -o.y, -o.z))
+      : new THREE.Matrix4().makeTranslation(ax.x * t.value, ax.y * t.value, ax.z * t.value);
+  };
+  // FlightGear nests a transform above each animated object, so an object's own
+  // animations act first, then its parent's, and so on up; at one level, file order.
+  for (const [mesh, names] of byName) {
+    const m = new THREE.Matrix4();
+    for (const name of names) for (const t of pose) if (t.objects.includes(name)) m.premultiply(matrixOf(t));
+    if (m.equals(new THREE.Matrix4())) continue;
+    const toFile = new THREE.Matrix4().multiplyMatrices(inv, mesh.matrixWorld);
+    mesh.geometry.applyMatrix4(new THREE.Matrix4().copy(toFile).invert().multiply(m).multiply(toFile));
+  }
 }
 
 function toRegExp(s) {
