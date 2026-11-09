@@ -15,7 +15,7 @@ kids 58
 OBJECT poly
 name "shadow_rotor"
 loc 0.0012899 -3.10639 0.0012892
-texture "shadow_rotor.rgb"
+texture "shadow_rotor.png"
 crease 45.000000
 numvert 4
 -5.59569 0.195406 -5.6472

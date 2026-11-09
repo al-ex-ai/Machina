@@ -1291,7 +1291,7 @@ OBJECT poly
 name "ALTface"
 data 8
 Mesh.003
-texture "altimeter.rgb"
+texture "altimeter.png"
 crease 30.000000
 numvert 16
 0.001081 0.036181 -0.014987
@@ -1366,7 +1366,7 @@ name "InhgKnob"
 loc 0 0.000461526 0.000923056
 data 8
 Mesh.004
-texture "altimeter.rgb"
+texture "altimeter.png"
 crease 30.000000
 numvert 25
 0.025291 -0.0321304 0.0320517
@@ -1556,7 +1556,7 @@ OBJECT poly
 name "inhg"
 data 8
 Mesh.006
-texture "altimeter.rgb"
+texture "altimeter.png"
 crease 30.000000
 numvert 6
 0.001348 -0.005534 -0.027159
@@ -1585,7 +1585,7 @@ OBJECT poly
 name "needle100"
 data 8
 Mesh.002
-texture "altimeter.rgb"
+texture "altimeter.png"
 crease 30.000000
 numvert 5
 0.001814 0.032202 0
@@ -1612,7 +1612,7 @@ OBJECT poly
 name "needle1000"
 data 8
 Mesh.005
-texture "altimeter.rgb"
+texture "altimeter.png"
 crease 30.000000
 numvert 5
 0.001814 0.028196 0
@@ -1639,7 +1639,7 @@ OBJECT poly
 name "needle10000"
 data 8
 Mesh.001
-texture "altimeter.rgb"
+texture "altimeter.png"
 crease 30.000000
 numvert 5
 0.001814 0.021074 0

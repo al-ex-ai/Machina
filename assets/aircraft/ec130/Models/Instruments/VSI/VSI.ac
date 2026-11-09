@@ -8,7 +8,7 @@ OBJECT poly
 name "Face"
 data 6
 Circle
-texture "VSI.rgb"
+texture "VSI.png"
 texrep 1 1
 crease 30
 numvert 33

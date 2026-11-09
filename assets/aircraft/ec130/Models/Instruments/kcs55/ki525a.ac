@@ -3304,7 +3304,7 @@ kids 0
 OBJECT poly
 name "Chassis"
 loc -0.460339 0.087314 0
-texture "kingindicator2.rgb"
+texture "kingindicator2.png"
 crease 45.000000
 numvert 180
 0.460339 -0.0530376 0
@@ -4662,7 +4662,7 @@ kids 0
 OBJECT poly
 name "CDIPlate"
 loc -0.00293607 3.50177e-007 5.58794e-008
-texture "kingindicator2.rgb"
+texture "kingindicator2.png"
 crease 45.000000
 numvert 83
 -0.00181693 0.0174421 -0.0131492
@@ -5307,7 +5307,7 @@ kids 0
 OBJECT poly
 name "ArrowBody"
 loc -0.446569 0.0852978 2.16487e-010
-texture "kingindicator2.rgb"
+texture "kingindicator2.png"
 crease 45.000000
 numvert 4
 0.44557 -0.100508 -0.000731675
@@ -5326,7 +5326,7 @@ kids 0
 OBJECT poly
 name "ArrowTail"
 loc -0.446582 0.0629849 -2.05169e-010
-texture "kingindicator2.rgb"
+texture "kingindicator2.png"
 crease 45.000000
 numvert 6
 0.445582 -0.0869161 -0.000731675
@@ -5349,7 +5349,7 @@ kids 0
 OBJECT poly
 name "CompassRose"
 loc -0.447679 0.0844118 -0.106312
-texture "kingindicator2.rgb"
+texture "kingindicator2.png"
 crease 45.000000
 numvert 108
 0.44564 -0.088199 0.0848331
@@ -5749,7 +5749,7 @@ kids 0
 OBJECT poly
 name "OBSSelector"
 loc -0.793804 0.0571937 0.0325969
-texture "kingindicator2.rgb"
+texture "kingindicator2.png"
 crease 45.000000
 numvert 73
 0.81634 -0.0846439 -0.00162985
@@ -6298,7 +6298,7 @@ kids 0
 OBJECT poly
 name "HDGSelector"
 loc -0.793804 0.0571937 -0.0325969
-texture "kingindicator2.rgb"
+texture "kingindicator2.png"
 crease 45.000000
 numvert 109
 0.81634 -0.0846439 0.00162985
@@ -6883,7 +6883,7 @@ kids 0
 OBJECT poly
 name "Marker"
 loc -0.446772 0.0803216 2.03476e-008
-texture "kingindicator2.rgb"
+texture "kingindicator2.png"
 crease 45.000000
 numvert 28
 0.445595 -0.0798196 0.0312093
@@ -6968,7 +6968,7 @@ kids 0
 OBJECT poly
 name "GSLabel"
 loc -0.446772 0.106281 3.05214e-008
-texture "kingindicator2.rgb"
+texture "kingindicator2.png"
 crease 45.000000
 numvert 8
 0.445595 -0.0855724 -0.0317625
@@ -6998,7 +6998,7 @@ kids 0
 OBJECT poly
 name "GSMarker"
 loc -0.000665575 0.0863444 0.0218891
-texture "kingindicator2.rgb"
+texture "kingindicator2.png"
 crease 45.000000
 numvert 32
 -0.000511476 -0.0697031 0.00836811
@@ -7094,7 +7094,7 @@ kids 0
 OBJECT poly
 name "DCLabel"
 loc 0.0001 0.00195077 1.34411e-010
-texture "kingindicator2.rgb"
+texture "kingindicator2.png"
 crease 45.000000
 numvert 4
 -8.01006e-005 0.0352218 -0.00179691
@@ -7490,7 +7490,7 @@ kids 0
 OBJECT poly
 name "HDGBug"
 loc -0.00194331 0.100496 -3.8855e-005
-texture "kingindicator2.rgb"
+texture "kingindicator2.png"
 crease 45.000000
 numvert 14
 0 -0.0743313 3.88473e-005
@@ -7561,7 +7561,7 @@ kids 0
 OBJECT poly
 name "NAV"
 loc -0.447267 0.112175 0.0111398
-texture "kingindicator2.rgb"
+texture "kingindicator2.png"
 crease 45.000000
 numvert 14
 0.445619 -0.0823534 0.0105741
@@ -7661,7 +7661,7 @@ kids 0
 OBJECT poly
 name "HDG"
 loc -0.447267 0.112175 -0.0112409
-texture "kingindicator2.rgb"
+texture "kingindicator2.png"
 crease 45.000000
 numvert 14
 0.445619 -0.087393 0.000562045
@@ -8423,7 +8423,7 @@ kids 0
 OBJECT poly
 name "ArrowHead"
 loc -0.000999138 0.0891611 4.76165e-011
-texture "kingindicator2.rgb"
+texture "kingindicator2.png"
 crease 45.000000
 numvert 21
 0 -0.0630615 -0.000222669
@@ -8562,7 +8562,7 @@ kids 0
 OBJECT poly
 name "GS"
 loc -0.446562 0.0860886 -3.39127e-009
-texture "kingindicator2.rgb"
+texture "kingindicator2.png"
 crease 45.000000
 numvert 8
 0.445563 -0.0852467 0.0321561

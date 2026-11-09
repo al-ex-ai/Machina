@@ -150,6 +150,7 @@ URL flags: `?theme=light` or `?theme=blueprint`, `?noworker` (parse on the main 
 npm test                                              # every model: license, parts, sides, size
 npm run quality                                       # every model against the quality standard
 npm run validate                                      # listed models: gear on the ground, cabin behind glass, parts mapped
+node scripts/fix-textures.js                          # convert SGI .rgb textures to PNG (browsers cannot load them)
 npm run drawings [id ...]                             # A3 three-view drawings (SVG) into drawings/
 npm run measure                                       # measured size of every model against the specs
 npm run inspect -- data/models/aviation/<id>.json     # meshes and the parts they map to

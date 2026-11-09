@@ -8,7 +8,7 @@ OBJECT poly
 name "Face.002"
 data 8
 Mesh.003
-texture "gsdi.rgb"
+texture "gsdi.png"
 crease 30.000000
 numvert 11
 0.004225 0.03 0.03

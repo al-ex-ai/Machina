@@ -8,7 +8,7 @@ kids 8
 OBJECT poly
 name "face"
 loc 4.65661e-10 -0.000807928 0.000294021
-texture "ka51b.rgb"
+texture "ka51b.png"
 crease 45.000000
 numvert 4
 0 0.0199791 -0.015544
@@ -27,7 +27,7 @@ kids 0
 OBJECT poly
 name "indicator"
 loc 0.0001 0.0114412 9.60746e-06
-texture "ka51b.rgb"
+texture "ka51b.png"
 crease 45.000000
 numvert 4
 0 -0.00241936 -0.000509641

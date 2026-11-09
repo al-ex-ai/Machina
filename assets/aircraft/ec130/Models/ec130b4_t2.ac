@@ -315717,7 +315717,7 @@ kids 0
 OBJECT poly
 name "shadow_fuselage"
 loc 0.0992547 -1.71541 0.0162892
-texture "shadow_fuselage.rgb"
+texture "shadow_fuselage.png"
 crease 45.000000
 numvert 4
 -5.5991 0 5.6472
