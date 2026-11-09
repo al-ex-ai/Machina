@@ -41,6 +41,12 @@ One milestone per week. Each milestone ends with everything committed, `npm test
 - `npm run benchmark`: silhouette overlap against an answer key, in three views
 - Converted: A320neo, 787-8, 747-400, 707-320B. The A380 source has no horizontal tail and is left out
 
+## Public release (done, moved up from M7)
+
+- Public repository at [github.com/al-ex-ai/Machina](https://github.com/al-ex-ai/Machina) and the live site at [machina.al-ex.ai](https://machina.al-ex.ai)
+- Deploys are a git push: the server checks out the commit and stamps it onto every module URL so caches pick up new code
+- Soviet set (Tu-134A, Il-76TD) and the Concorde with cockpits, neutral liveries and a validation gate in the tests
+
 ## M3. Compare
 
 - Two to four models side by side or overlaid at true scale
@@ -57,7 +63,7 @@ One milestone per week. Each milestone ends with everything committed, `npm test
 
 ## M5. More aircraft and categories
 
-- Next FlightGear batch, each vetted for license, quality and size: 777, ATR 72, Concorde, Cessna Caravan, DC-3, more helicopters
+- Next FlightGear batch, each vetted for license, quality and size: 777, ATR 72, Cessna Caravan, DC-3, more helicopters (the Concorde shipped early)
 - Space category from NASA's public-domain models: Space Shuttle, ISS, Hubble, Curiosity
 - Military set stays parked until asked for
 
@@ -71,7 +77,7 @@ One milestone per week. Each milestone ends with everything committed, `npm test
 
 - Export: PNG screenshot, glTF model
 - Embeddable viewer for a single model
-- Public gallery site and public repository (after approval)
+- Public gallery page with every model's drawing sheet
 
 ## M8. Polish and release
 

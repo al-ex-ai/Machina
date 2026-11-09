@@ -74,11 +74,19 @@
         "Every listed model must pass checks in the test suite: all wheels on the ground, no missing stretch along the length, nothing from the cabin outside the fuselage, and only textures a browser can load",
         "Added after models were listed with floating gear, a missing nose cone and light-beam cones under the fuselage"
       ]
+    },
+    {
+      "date": "2026-11-08",
+      "title": "Public release",
+      "items": [
+        "Open source at github.com/al-ex-ai/Machina and live at machina.al-ex.ai",
+        "A deploy is a git push: the server checks out the commit and stamps it onto every module URL, so Cloudflare serves fresh code"
+      ]
     }
   ],
   "next": [
     "Milestone 1: a clean three-view drawing goes in and a model comes out, with no hand-written settings, its accuracy proved by the benchmark",
     "Lower the Tu-154B and Tu-144D gear correctly and list them again",
-    "Public repository and machina.al-ex.ai"
+    "M3 Compare: two to four models side by side or overlaid at true scale"
   ]
 }
