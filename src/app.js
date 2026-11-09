@@ -228,19 +228,25 @@ async function renderHistory() {
   document.title = 'History · Machina';
   const h = state.history ??= await fetch('./data/history.json').then(r => r.json());
   if (parseRoute().name !== 'history') return;
+  // Compact by design: newest first, one line per entry, only the latest open, so the
+  // page stays about one screen long however many milestones are added.
+  const entries = [...h.entries].reverse();
   $('#page').innerHTML = `<div class="page history">
-    <span class="label">Project</span>
-    <h1>History</h1>
-    <p class="sub">${esc(h.intro)}</p>
-    <ol class="timeline">${h.entries.map(e => `
-      <li class="tl-item">
-        <div class="tl-head"><time datetime="${esc(e.date)}">${esc(e.date)}</time>${e.tag ? `<span class="tl-tag">${esc(e.tag)}</span>` : ''}</div>
-        <h2>${esc(e.title)}</h2>
+    <div class="hist-top">
+      <div><span class="label">Project</span><h1>History</h1><p class="sub">${esc(h.intro)}</p></div>
+      <aside class="hist-next"><span class="label">Next</span><ul>${h.next.map(i => `<li>${esc(i)}</li>`).join('')}</ul></aside>
+    </div>
+    <div class="hist-list">${entries.map((e, k) => `
+      <details class="hist-item"${k === 0 ? ' open' : ''}>
+        <summary>
+          <time datetime="${esc(e.date)}">${esc(e.date.slice(5))}</time>
+          <span class="hist-title">${esc(e.title)}</span>
+          ${e.tag ? `<span class="tl-tag">${esc(e.tag)}</span>` : ''}
+          <span class="hist-n">${e.items.length}</span>
+        </summary>
         <ul>${e.items.map(i => `<li>${esc(i)}</li>`).join('')}</ul>
-      </li>`).join('')}
-    </ol>
-    <h2 class="label tl-next-label">Next</h2>
-    <ul class="tl-next">${h.next.map(i => `<li>${esc(i)}</li>`).join('')}</ul>
+      </details>`).join('')}
+    </div>
   </div>`;
 }
 
