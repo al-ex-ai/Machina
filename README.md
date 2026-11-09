@@ -4,7 +4,9 @@
 
 Machina is a 3D explorer for aircraft. Open a model, click a wing, an engine or a landing gear leg, explode it into parts, see through it in X-ray, and stand a 1.8 m person next to it for scale. Each model is a JSON file of real specs plus open-licensed geometry from the FlightGear community, and a test fails if the model drifts from its published length, span or height.
 
-![Boeing 737-300 in the Machina livery, with the part tree on the left and the spec sheet on the right](docs/screenshot.png)
+**Live demo: [machina.al-ex.ai](https://machina.al-ex.ai)**
+
+![Airbus A320neo in the Machina livery, with the part tree on the left, the livery palette in the viewer and the spec sheet on the right](docs/screenshot.png)
 
 ## The Problem
 
@@ -25,18 +27,32 @@ Machina turns simulator models into explorable, named parts.
 | **Legal to reuse** | Every asset folder carries its original license and credits, and the tests fail without them |
 | **No build step** | Static ES modules and vendored Three.js. Clone, start, open |
 
+## Gallery
+
+| | |
+|---|---|
+| ![Concorde with its cockpit, in the Machina livery](docs/concorde.png) | ![Tupolev Tu-134A in X-ray view, showing the cabin, cockpit and gear inside](docs/xray.png) |
+| Concorde, detailed FlightGear model with its cockpit | X-ray view of the Tu-134A: cabin, cockpit and gear inside |
+| ![A3 three-view drawing of the Boeing 747-400 with sections and dimensions](drawings/b747-400-parametric.svg) | ![The catalog in the light theme](docs/catalog-light.png) |
+| A3 three-view drawing, projected from the model with hidden lines removed | The catalog in the light theme |
+
 ## Aircraft
 
 | Group | Models |
 |---|---|
 | Airliners | Airbus A320neo, Boeing 787-8, Boeing 747-400, Boeing 707-320B (parametric, converted from FlightGear meshes) |
 | Prototypes | Boeing 737-300 and Tupolev Tu-154M (parametric, measured from open three-view drawings) |
-| Soviet aircraft | Tupolev Tu-134A, Tu-154B-2 and Tu-144D, Ilyushin Il-76TD (detailed FlightGear models with cockpits, liveries painted neutral) |
+| Soviet aircraft | Tupolev Tu-134A, Ilyushin Il-76TD (detailed FlightGear models with cockpits, liveries painted neutral) |
 | Light aircraft | Cessna 337 Skymaster, Cessna 172S, Robin DR400, Ercoupe 415-C, Piper J-3 Cub |
 | Helicopters | Eurocopter EC130 B4 |
-| Historic | 1903 Wright Flyer |
+| Historic | Aérospatiale/BAC Concorde (with its cockpit, in the Machina livery), 1903 Wright Flyer |
 
-In the workshop, waiting for their cockpits or cabins: the detailed FlightGear meshes of the A380-800, 747-400, 787-8, 707-320B, A320neo and 737-300, the DHC-6 Twin Otter and the EC135. The A380 cannot be converted yet: its FlightGear model has no horizontal tail.
+In the workshop, in the repository but not listed until they pass the quality standard:
+
+- The detailed FlightGear meshes of the A380-800, 747-400, 787-8, 707-320B, A320neo and 737-300, the DHC-6 Twin Otter and the EC135, waiting for their cockpits or cabins. The A380 cannot be converted yet: its FlightGear model has no horizontal tail.
+- The Tu-154B-2 and Tu-144D: their source files store the gear retracted, and lowering it from the simulator animations does not yet give correct legs and bogies.
+- The Yak-40, whose textures fall short of the paint rule.
+- Parametric rebuilds of the Cessna 172, DR400, J-3 Cub and Ercoupe, which still score below the FlightGear originals they would replace.
 
 ## Converting a Mesh and Measuring Accuracy
 
@@ -97,7 +113,7 @@ A model file holds:
 
 ```bash
 # Prerequisites: Node 22+
-git clone <this repository> machina
+git clone https://github.com/al-ex-ai/Machina.git machina
 cd machina
 npm start          # http://127.0.0.1:15420
 ```
