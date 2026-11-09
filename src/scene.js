@@ -13,7 +13,7 @@ const HDRI = './assets/hdri/studio_small_08.hdr'; // Poly Haven, CC0
 /** Backdrop gradient, grid and shadow strength for each UI theme. */
 const STAGE = {
   dark: { sky: ['#33414f', '#212b36', '#141a21'], grid: ['#5a7086', '#3a4a5b'], shadow: 0.45, xray: '#7fd4ff' },
-  light: { sky: ['#ffffff', '#f1f4f7', '#e2e8ee'], grid: ['#aab5c1', '#cfd7df'], shadow: 0.2, xray: '#0b7fc0' },
+  light: { sky: ['#ffffff', '#f1f4f7', '#e2e8ee'], grid: ['#5f6f80', '#97a5b4'], gridOpacity: 0.85, shadow: 0.2, xray: '#0b7fc0' },
   blueprint: { sky: ['#1e5a90', '#134574', '#0a2b4c'], grid: ['#8fb6dc', '#3f72a6'], shadow: 0.4, xray: '#ffffff' },
 };
 const stageFor = name => STAGE[name] ?? STAGE.dark;
@@ -315,7 +315,7 @@ export function createViewer(container) {
     const step = span > 300 ? 10 : span > 60 ? 5 : 1;
     grid = new THREE.GridHelper(span, Math.round(span / step), ...stageFor(themeName).grid);
     grid.material.transparent = true;
-    grid.material.opacity = 0.55;
+    grid.material.opacity = stageFor(themeName).gridOpacity ?? 0.55;
     grid.position.y = 0.001;
     scene.add(grid);
 
