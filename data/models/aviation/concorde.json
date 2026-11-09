@@ -34,108 +34,6 @@
         "file": "Models/concorde.ac"
       },
       {
-        "file": "Instruments/lightsource/flood_dash.ac",
-        "chain": [
-          {
-            "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
-          {
-            "offset": {
-              "x": -23.798,
-              "y": -0.45,
-              "z": 1.31
-            },
-            "rotation": {
-              "pitch": -21,
-              "heading": 0,
-              "roll": 0
-            }
-          }
-        ],
-        "fallback": {
-          "id": "cabin",
-          "label": "Cockpit and cabin",
-          "system": "interior"
-        }
-      },
-      {
-        "file": "Instruments/lightsource/flood_center.ac",
-        "chain": [
-          {
-            "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
-          {
-            "offset": {
-              "x": -23.818,
-              "y": 0,
-              "z": 1.279
-            },
-            "rotation": {
-              "pitch": -24,
-              "heading": 0,
-              "roll": 0
-            }
-          }
-        ],
-        "fallback": {
-          "id": "cabin",
-          "label": "Cockpit and cabin",
-          "system": "interior"
-        }
-      },
-      {
-        "file": "Instruments/lightsource/flood_dash.ac",
-        "chain": [
-          {
-            "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
-          {
-            "offset": {
-              "x": -23.798,
-              "y": 0.45,
-              "z": 1.31
-            },
-            "rotation": {
-              "pitch": -21,
-              "heading": 0,
-              "roll": 0
-            }
-          }
-        ],
-        "fallback": {
-          "id": "cabin",
-          "label": "Cockpit and cabin",
-          "system": "interior"
-        }
-      },
-      {
         "file": "Instruments/pilot/altimeter-standby.ac",
         "chain": [
           {
@@ -1140,40 +1038,6 @@
         }
       },
       {
-        "file": "Instruments/lightsource/flood_engineer.ac",
-        "chain": [
-          {
-            "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
-          {
-            "offset": {
-              "x": -21.828,
-              "y": 0.276,
-              "z": 1.815
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 7
-            }
-          }
-        ],
-        "fallback": {
-          "id": "cabin",
-          "label": "Cockpit and cabin",
-          "system": "interior"
-        }
-      },
-      {
         "file": "Instruments/pressure/outlet.ac",
         "chain": [
           {
@@ -1266,142 +1130,6 @@
               "pitch": 101,
               "heading": 85,
               "roll": 0
-            }
-          }
-        ],
-        "fallback": {
-          "id": "cabin",
-          "label": "Cockpit and cabin",
-          "system": "interior"
-        }
-      },
-      {
-        "file": "Instruments/lightsource/spot_light.ac",
-        "chain": [
-          {
-            "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
-          {
-            "offset": {
-              "x": -22.4,
-              "y": 0,
-              "z": 1.796
-            },
-            "rotation": {
-              "pitch": 34,
-              "heading": 0,
-              "roll": 0
-            }
-          }
-        ],
-        "fallback": {
-          "id": "cabin",
-          "label": "Cockpit and cabin",
-          "system": "interior"
-        }
-      },
-      {
-        "file": "Instruments/lightsource/spot_light.ac",
-        "chain": [
-          {
-            "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
-          {
-            "offset": {
-              "x": -22.01,
-              "y": -0.2459,
-              "z": 1.7818
-            },
-            "rotation": {
-              "pitch": -3,
-              "heading": 0,
-              "roll": 33
-            }
-          }
-        ],
-        "fallback": {
-          "id": "cabin",
-          "label": "Cockpit and cabin",
-          "system": "interior"
-        }
-      },
-      {
-        "file": "Instruments/lightsource/roof_light.ac",
-        "chain": [
-          {
-            "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
-          {
-            "offset": {
-              "x": -21.68,
-              "y": 0,
-              "z": 1.815
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          }
-        ],
-        "fallback": {
-          "id": "cabin",
-          "label": "Cockpit and cabin",
-          "system": "interior"
-        }
-      },
-      {
-        "file": "Instruments/lightsource/spot_light.ac",
-        "chain": [
-          {
-            "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
-          {
-            "offset": {
-              "x": -21.4532,
-              "y": -0.2459,
-              "z": 1.8243
-            },
-            "rotation": {
-              "pitch": 3,
-              "heading": 0,
-              "roll": 33
             }
           }
         ],
@@ -2100,9 +1828,7 @@
     "hide": [
       "/Flame/",
       "/^Reheat/",
-      "fx",
-      "Nose_1",
-      "Screen_1"
+      "fx"
     ],
     "parts": [
       {
@@ -2211,6 +1937,9 @@
         "height": 0.06
       },
       "note": "The FlightGear model measures 63.04 m long, 24.64 m across and 11.57 m tall against the published 61.66 m, 25.6 m and 12.2 m."
-    }
+    },
+    "glassTextures": [
+      "concorde-window.png"
+    ]
   }
 }

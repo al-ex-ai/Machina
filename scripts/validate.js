@@ -53,6 +53,44 @@ for (const m of models) {
     const d = Math.abs(lowest(a) - lowest(b));
     if (d > 0.15) fails.push(`${a.userData.id} and ${b.userData.id} differ by ${d.toFixed(2)} m in height`);
   }
+  // Continuity: along the length there should be no stretch without geometry. A gap means
+  // a part is missing (a hidden nose cone, a tail that did not load).
+  {
+    const iv = [];
+    const v3 = new THREE.Vector3();
+    obj.traverse(o => {
+      if (!o.isMesh) return;
+      for (let p = o; p; p = p.parent) if (!p.visible) return;
+      const pos = o.geometry.attributes.position, idx = o.geometry.index, n = idx ? idx.count : pos.count;
+      for (let i = 0; i + 2 < n; i += 3) {
+        let a = Infinity, b = -Infinity;
+        for (let k = 0; k < 3; k++) { v3.fromBufferAttribute(pos, idx ? idx.getX(i + k) : i + k).applyMatrix4(o.matrixWorld); a = Math.min(a, v3.x); b = Math.max(b, v3.x); }
+        iv.push([a, b]);
+      }
+    });
+    iv.sort((p, q) => p[0] - q[0]);
+    let end = iv[0]?.[1] ?? 0, gap = 0, at = 0;
+    for (const [a, b] of iv) { if (a - end > gap) { gap = a - end; at = end; } end = Math.max(end, b); }
+    const L = iv.length ? end - iv[0][0] : 0;
+    if (gap > L * 0.02) fails.push(`no geometry for ${gap.toFixed(2)} m along the length (from x ${at.toFixed(1)}): a part is missing`);
+  }
+  // Interior must stay inside the airframe: a cabin mesh reaching outside the fuselage
+  // (light-beam cones, misplaced sub-models) shows up as junk under or beside the aircraft.
+  {
+    const fus = parts.find(p => p.userData.id === 'fuselage');
+    if (fus) {
+      const fb = new THREE.Box3().setFromObject(fus).expandByScalar(0.3);
+      obj.traverse(o => {
+        if (!o.isMesh) return;
+        for (let p = o; p; p = p.parent) if (!p.visible) return;
+        let part = o; while (part && !part.userData.part) part = part.parent;
+        if (part?.userData.system !== 'interior') return;
+        o.geometry.computeBoundingBox();
+        const b = o.geometry.boundingBox.clone().applyMatrix4(o.matrixWorld);
+        if (b.min.y < fb.min.y || b.max.y > fb.max.y || b.min.z < fb.min.z || b.max.z > fb.max.z) fails.push(`cabin mesh "${o.name}" reaches outside the fuselage`);
+      });
+    }
+  }
   // Cabin: glazing should have something behind it.
   const glazed = parts.some(p => p.userData.system === 'glazing') || m.geometry?.glazing;
   const inside = parts.some(p => p.userData.system === 'interior');

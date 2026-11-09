@@ -230,6 +230,7 @@ export async function loadAssetModel(model, opts = {}) {
   const textures = new Map();
   const optsFor = file => ({
     normalMaps: a.normalMaps,
+    glass: a.glassTextures,
     loadTexture: tex0 => {
       const tex = a.textureMap?.[tex0] ?? tex0; // e.g. swap a white template for a painted livery
       const url = new URL(tex, new URL(base + file, location.href)).href;

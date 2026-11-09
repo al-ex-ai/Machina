@@ -34,7 +34,7 @@ export function buildAC(data, opts = {}) {
     const m = materials[mi] ?? materials[0];
     const map = getTexture(tex);
     const normal = tex && opts.normalMaps?.[tex] ? getTexture(opts.normalMaps[tex]) : null;
-    const transparent = m.trans > 0.01 || /alpha|glass/i.test(tex ?? '');
+    const transparent = m.trans > 0.01 || /alpha|glass/i.test(tex ?? '') || Boolean(tex && opts.glass?.includes(tex)); // opts.glass: textures the model file marks as glass
     const mat = new THREE.MeshStandardMaterial({
       name: m.name,
       color: map ? new THREE.Color(1, 1, 1) : new THREE.Color().setRGB(...m.rgb, THREE.SRGBColorSpace),
