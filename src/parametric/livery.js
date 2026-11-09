@@ -27,7 +27,7 @@ function text(g, str, height, spacing, align = 'left') {
 }
 
 /** The Machina mark (the arrowhead from the app logo) and wordmark, centered on the origin, in meters. */
-function drawTitle(g, t) {
+export function drawTitle(g, t) {
   const h = t.height;
   g.save();
   g.font = `800 100px ${FONT}`;

@@ -1941,12 +1941,12 @@
     "glassTextures": [
       "concorde-window.png"
     ],
-    "recolor": {
+    "machina": {
       "parts": [
         "fuselage",
-        "droop-nose",
-        "wings",
-        "elevons",
+        "droop-nose"
+      ],
+      "tail": [
         "rudder"
       ]
     }

@@ -49,6 +49,11 @@ const ACCENTS = [
 export const isAccent = id => /^#[0-9a-f]{6}$/i.test(id ?? '');
 
 export function liveriesFor(model) {
+  if (model.builder === 'asset' && model.asset?.machina) return [
+    { id: 'machina', label: 'Machina', swatch: ['#f5f6f8', '#18273a', '#ff8a3d'] },
+    { id: 'original', label: 'Original paint', swatch: ['#f2f3f5', '#f2f3f5', '#c9ced6'] },
+    ...ACCENTS.slice(2).map(a => ({ ...a, label: `Machina with ${a.label.toLowerCase()} stripe`, swatch: ['#f5f6f8', '#18273a', a.id] })),
+  ];
   if (model.builder === 'asset' && model.asset?.recolor) return ACCENTS;
   return model.builder === 'parametric' && model.livery ? PRESETS.map(({ id, label, swatch }) => ({ id, label, swatch })) : [];
 }

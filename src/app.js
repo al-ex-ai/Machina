@@ -420,7 +420,7 @@ function showModel(m, partId) {
     viewer.clear(); // never show the previous model while this one loads
     $('#tree').innerHTML = '';
     $('#loading').hidden = false;
-    loadAssetModel(m, { accent: isAccent(state.livery) ? state.livery : undefined })
+    loadAssetModel(m, { accent: isAccent(state.livery) ? state.livery : undefined, original: state.livery === 'original' })
       .then(o => { const f = finalize(o, m); f.userData.detailed = true; done(f); })
       .catch(err => {
         console.error(err);
@@ -435,10 +435,10 @@ function showModel(m, partId) {
 function setLivery(id) {
   const m = state.model;
   if (!m) return;
-  state.livery = id === 'machina' || id === 'original' ? null : id;
+  state.livery = id === (liveriesFor(m)[0]?.id ?? 'machina') ? null : id; // the first preset is the default
   if (m.builder === 'asset') {
     const token = ++state.loadToken;
-    loadAssetModel(m, { accent: isAccent(state.livery) ? state.livery : undefined }).then(o => {
+    loadAssetModel(m, { accent: isAccent(state.livery) ? state.livery : undefined, original: state.livery === 'original' }).then(o => {
       if (token !== state.loadToken) return;
       const f = finalize(o, m); f.userData.detailed = true;
       viewer.setModel(f, { keepView: true });

@@ -83,5 +83,5 @@ for (const m of parametric) {
 }
 
 test('detailed assets offer colors only when their livery can be recolored', () => {
-  for (const m of models.filter(x => x.builder === 'asset')) assert.equal(liveriesFor(m).length > 0, Boolean(m.asset.recolor));
+  for (const m of models.filter(x => x.builder === 'asset')) assert.equal(liveriesFor(m).length > 0, Boolean(m.asset.recolor || m.asset.machina));
 });

@@ -3,6 +3,7 @@
 // hide, and how named objects group into selectable parts.
 import * as THREE from 'three';
 import { buildAC, parseACInWorker } from './loaders/ac3d.js';
+import { applyMachinaPaint } from './machina-paint.js';
 
 const parsed = new Map(); // model id -> promise of parsed AC data, shared by the viewer and thumbnails
 
@@ -250,11 +251,7 @@ export async function loadAssetModel(model, opts = {}) {
   const loaded = datas.map((d, i) => ({ ...files[i], group: buildAC(d, optsFor(files[i].file)) }));
   await Promise.all(pending);
   const root = assembleParts(loaded, model);
-  // Body recolor: an all-white livery has no stripe to recolor, so the accent tints the
-  // paint of the listed parts (materials are cloned per part). Dark details stay dark.
-  if (opts.accent && a.recolor?.parts) {
-    const want = new Set(a.recolor.parts), tint = new THREE.Color(opts.accent);
-    root.traverse(o => { if (o.userData.part && want.has(o.userData.id)) o.traverse(q => { if (q.isMesh) for (const mat of [q.material].flat()) if (!mat.transparent) mat.color.copy(tint); }); });
-  }
+  // The Machina livery is the default for models that opt in; "original" keeps the source paint.
+  if (a.machina && !opts.original) applyMachinaPaint(root, a.machina, { stripe: opts.accent });
   return root;
 }
