@@ -119,6 +119,7 @@ function parseRoute() {
   const q = new URLSearchParams(query);
   if (seg[0] === 'm' && seg[1]) return { name: 'model', id: seg[1], part: q.get('part'), xray: q.get('xray') === '1', person: q.get('person') === '1', view: q.get('view'), livery: q.get('livery') };
   if (seg[0] === 'c' && seg[1]) return { name: 'category', id: seg[1] };
+  if (seg[0] === 'history') return { name: 'history' };
   return { name: 'home' };
 }
 
@@ -128,6 +129,7 @@ function navLinks(route) {
     `<a href="#/" ${route.name === 'home' ? 'aria-current="page"' : ''}>Catalog</a>`,
     ...state.categories.map(c => `<a href="#/c/${esc(c.id)}" ${cur === c.id ? 'aria-current="page"' : ''}>${esc(c.label)}</a>`),
     '<a aria-disabled="true" title="Milestone M3">Compare<span class="soon">M3</span></a>',
+    `<a href="#/history" ${route.name === 'history' ? 'aria-current="page"' : ''}>History</a>`,
   ].join('');
 }
 
@@ -143,6 +145,7 @@ function render() {
   else {
     parkViewer();
     if (route.name === 'category') renderCategory(route.id);
+    else if (route.name === 'history') renderHistory();
     else renderHome();
     window.scrollTo(0, 0);
   }
@@ -220,6 +223,27 @@ function renderHome() {
 }
 
 // ── Category ───────────────────────────────────────────
+/** Project history: what was built, milestone by milestone, from data/history.json. */
+async function renderHistory() {
+  document.title = 'History · Machina';
+  const h = state.history ??= await fetch('./data/history.json').then(r => r.json());
+  if (parseRoute().name !== 'history') return;
+  $('#page').innerHTML = `<div class="page history">
+    <span class="label">Project</span>
+    <h1>History</h1>
+    <p class="sub">${esc(h.intro)}</p>
+    <ol class="timeline">${h.entries.map(e => `
+      <li class="tl-item">
+        <div class="tl-head"><time datetime="${esc(e.date)}">${esc(e.date)}</time>${e.tag ? `<span class="tl-tag">${esc(e.tag)}</span>` : ''}</div>
+        <h2>${esc(e.title)}</h2>
+        <ul>${e.items.map(i => `<li>${esc(i)}</li>`).join('')}</ul>
+      </li>`).join('')}
+    </ol>
+    <h2 class="label tl-next-label">Next</h2>
+    <ul class="tl-next">${h.next.map(i => `<li>${esc(i)}</li>`).join('')}</ul>
+  </div>`;
+}
+
 function renderCategory(id) {
   const cat = state.categories.find(c => c.id === id);
   if (!cat) { location.hash = '#/'; return; }

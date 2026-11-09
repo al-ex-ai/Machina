@@ -239,7 +239,7 @@ export async function loadAssetModel(model, opts = {}) {
       textures.set(url, t);
       t.flipY = false;
       const isNormal = /normal/i.test(tex);
-      const paint = opts.accent && a.recolor?.textures.some(r => url.endsWith(r));
+      const paint = opts.accent && a.recolor?.textures?.some(r => url.endsWith(r));
       pending.push(loadBitmap(url).then(bmp => (paint ? recolor(bmp, opts.accent, a.recolor.hue) : bmp)).then(bmp => { t.image = bmp; t.needsUpdate = true; }).catch(err => console.warn('texture', url, err)));
       t.colorSpace = isNormal ? THREE.NoColorSpace : THREE.SRGBColorSpace;
       t.wrapS = t.wrapT = THREE.RepeatWrapping;
@@ -249,5 +249,12 @@ export async function loadAssetModel(model, opts = {}) {
   });
   const loaded = datas.map((d, i) => ({ ...files[i], group: buildAC(d, optsFor(files[i].file)) }));
   await Promise.all(pending);
-  return assembleParts(loaded, model);
+  const root = assembleParts(loaded, model);
+  // Body recolor: an all-white livery has no stripe to recolor, so the accent tints the
+  // paint of the listed parts (materials are cloned per part). Dark details stay dark.
+  if (opts.accent && a.recolor?.parts) {
+    const want = new Set(a.recolor.parts), tint = new THREE.Color(opts.accent);
+    root.traverse(o => { if (o.userData.part && want.has(o.userData.id)) o.traverse(q => { if (q.isMesh) for (const mat of [q.material].flat()) if (!mat.transparent) mat.color.copy(tint); }); });
+  }
+  return root;
 }

@@ -1940,6 +1940,15 @@
     },
     "glassTextures": [
       "concorde-window.png"
-    ]
+    ],
+    "recolor": {
+      "parts": [
+        "fuselage",
+        "droop-nose",
+        "wings",
+        "elevons",
+        "rudder"
+      ]
+    }
   }
 }

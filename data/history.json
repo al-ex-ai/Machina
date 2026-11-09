@@ -1,0 +1,84 @@
+{
+  "intro": "How Machina was built, milestone by milestone. Each entry is what shipped and was committed that day, including what did not work.",
+  "entries": [
+    {
+      "date": "2026-11-07",
+      "title": "Foundation",
+      "tag": "M0",
+      "items": [
+        "Data-driven builders for fixed-wing aircraft, rotorcraft and tracked vehicles, with every part selectable",
+        "Explode view, deep links and generated airliners measured against their published size"
+      ]
+    },
+    {
+      "date": "2026-11-07",
+      "title": "Original app design",
+      "tag": "M1",
+      "items": [
+        "The Hangar design system with dark, light and blueprint themes",
+        "Home page, category pages and gallery with 3D thumbnails, search and sort",
+        "Keyboard shortcuts, phone layout and accessibility work"
+      ]
+    },
+    {
+      "date": "2026-11-07",
+      "title": "Real models",
+      "tag": "M2",
+      "items": [
+        "Open-licensed FlightGear aircraft loaded at runtime, with parts named from their meshes",
+        "Fifteen aircraft, X-ray view, a 1.8 m scale figure and a quality standard for listing a model",
+        "First parametric builder: a Boeing 737-300 lofted from published dimensions, then a Tu-154M measured from an open three-view drawing"
+      ]
+    },
+    {
+      "date": "2026-11-08",
+      "title": "Drawings and generated detail",
+      "tag": "M2.5",
+      "items": [
+        "A3 three-view drawings projected from the 3D model as exact vectors, with sections, dimensions and a title block",
+        "Generated detail on parametric aircraft: panel seams, framed windows, control surface gaps, fan blades, gear linkage, antennas and beacons",
+        "Livery presets, then custom colors for any model whose livery can be recolored"
+      ]
+    },
+    {
+      "date": "2026-11-08",
+      "title": "Mesh to parametric, and an accuracy benchmark",
+      "tag": "M2.6",
+      "items": [
+        "A converter that measures a detailed mesh into a parametric model with no per-model settings",
+        "A320neo, 787-8, 747-400 and 707 converted, scored 0.86 to 0.99 silhouette overlap against their source meshes",
+        "Light-aircraft rebuilds tried and kept unlisted: they came out worse than the originals"
+      ]
+    },
+    {
+      "date": "2026-11-08",
+      "title": "Model page redesign",
+      "items": [
+        "Livery palette in the viewer, a filterable parts rail with collapsed groups, and vertical tabs for overview, specs, drawing, sources and the selected part",
+        "Both side panels fold away as drawers to give the 3D view more room"
+      ]
+    },
+    {
+      "date": "2026-11-08",
+      "title": "More aircraft, with their cockpits",
+      "items": [
+        "Cockpits and cabins imported for the FlightGear aircraft, and simulator skins drawn on both sides so cabin walls show through the glass",
+        "Tupolev Tu-134A, Ilyushin Il-76TD and Concorde added, with airline titles and registrations painted out",
+        "Tu-154B-2, Tu-144D and Yak-40 kept unlisted: the Tupolevs store their landing gear folded and it could not yet be lowered correctly"
+      ]
+    },
+    {
+      "date": "2026-11-08",
+      "title": "Validation gate",
+      "items": [
+        "Every listed model must pass checks in the test suite: all wheels on the ground, no missing stretch along the length, nothing from the cabin outside the fuselage, and only textures a browser can load",
+        "Added after models were listed with floating gear, a missing nose cone and light-beam cones under the fuselage"
+      ]
+    }
+  ],
+  "next": [
+    "Milestone 1: a clean three-view drawing goes in and a model comes out, with no hand-written settings, its accuracy proved by the benchmark",
+    "Lower the Tu-154B and Tu-144D gear correctly and list them again",
+    "Public repository and machina.al-ex.ai"
+  ]
+}
