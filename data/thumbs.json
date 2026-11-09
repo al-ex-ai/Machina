@@ -1,0 +1,66 @@
+{
+  "a320neo-parametric": {
+    "hash": "f683c73097",
+    "parts": 20
+  },
+  "b707-parametric": {
+    "hash": "82658d3679",
+    "parts": 26
+  },
+  "b737-300-parametric": {
+    "hash": "46c0a699b8",
+    "parts": 29
+  },
+  "b747-400-parametric": {
+    "hash": "9c464358fc",
+    "parts": 28
+  },
+  "b787-8-parametric": {
+    "hash": "27fc8dbb51",
+    "parts": 24
+  },
+  "cessna-172s": {
+    "hash": "208d358263",
+    "parts": 26
+  },
+  "cessna337": {
+    "hash": "6b67a1d694",
+    "parts": 21
+  },
+  "concorde": {
+    "hash": "7ccd932dac",
+    "parts": 11
+  },
+  "dr400": {
+    "hash": "003394b756",
+    "parts": 18
+  },
+  "ec130": {
+    "hash": "30c837cb3b",
+    "parts": 12
+  },
+  "ercoupe": {
+    "hash": "591fbbe31c",
+    "parts": 18
+  },
+  "il76": {
+    "hash": "373737804c",
+    "parts": 23
+  },
+  "j3-cub": {
+    "hash": "e1823f8e21",
+    "parts": 20
+  },
+  "tu-154m": {
+    "hash": "8ebac4c97e",
+    "parts": 31
+  },
+  "tu134": {
+    "hash": "3fda7af40c",
+    "parts": 19
+  },
+  "wright-flyer": {
+    "hash": "50c2d618cb",
+    "parts": 10
+  }
+}

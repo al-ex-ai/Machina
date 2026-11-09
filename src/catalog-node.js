@@ -1,5 +1,6 @@
 // Catalog access for Node (tests and scripts). The browser loads the same files over fetch.
 import { readFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { join } from 'node:path';
 
@@ -10,6 +11,15 @@ export function loadCatalog() {
   const index = JSON.parse(readFileSync(join(DATA, 'index.json'), 'utf8'));
   const models = index.models.map(p => ({ ...JSON.parse(readFileSync(join(DATA, p), 'utf8')), _file: p }));
   return { categories, index, models };
+}
+
+/**
+ * Short content hash of a model file (line endings ignored). The prerendered thumbnail
+ * records it, so a test can tell when the model changed after its thumbnail was made.
+ */
+export function modelHash(file) {
+  const text = readFileSync(join(DATA, file), 'utf8').replace(/\r\n/g, '\n');
+  return createHash('sha1').update(text).digest('hex').slice(0, 10);
 }
 
 /**

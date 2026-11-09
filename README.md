@@ -141,6 +141,7 @@ URL flags: `?theme=light` or `?theme=blueprint`, `?noworker` (parse on the main 
 5. Map meshes to parts. `npm run inspect -- data/models/aviation/<id>.json` lists every mesh and what it matched.
 6. Bring in the cockpit and cabin: `node scripts/import-fg-interior.js <aircraftRoot> data/models/aviation/<id>.json`. It walks FlightGear's model XML tree and adds the interior sub-models with their nested placements.
 7. Run `npm run quality`, then `npm test`. The model must meet the quality standard before it goes in the `models` list.
+8. Render its gallery thumbnail: `npm run thumbs -- <id>`. The tests fail when a listed model has no thumbnail or changed after it was made.
 
 ## Limits
 
@@ -166,6 +167,7 @@ URL flags: `?theme=light` or `?theme=blueprint`, `?noworker` (parse on the main 
 npm test                                              # every model: license, parts, sides, size
 npm run quality                                       # every model against the quality standard
 npm run validate                                      # listed models: gear on the ground, cabin behind glass, parts mapped
+npm run thumbs [-- id ...]                            # prerender gallery thumbnails (needs Chrome, Chromium or Edge)
 node scripts/fix-textures.js                          # convert SGI .rgb textures to PNG (browsers cannot load them)
 npm run drawings [id ...]                             # A3 three-view drawings (SVG) into drawings/
 npm run measure                                       # measured size of every model against the specs

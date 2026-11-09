@@ -18,7 +18,8 @@
     "drawings": "node --import ./scripts/node/register.js scripts/drawings.js",
     "convert": "node --import ./scripts/node/register.js scripts/convert-asset.js",
     "benchmark": "node --import ./scripts/node/register.js scripts/benchmark.js",
-    "validate": "node --import ./scripts/node/register.js scripts/validate.js"
+    "validate": "node --import ./scripts/node/register.js scripts/validate.js",
+    "thumbs": "node --import ./scripts/node/register.js scripts/thumbs.js"
   },
   "keywords": [
     "threejs",

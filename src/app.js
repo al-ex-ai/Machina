@@ -1,7 +1,6 @@
 // Machina app: hash router with home, category and model pages.
-import * as THREE from 'three';
 import './builders/index.js';
-import { buildModel, finalize } from './registry.js';
+import { buildModel, finalize, partCount } from './registry.js';
 import { loadAssetModel } from './assets.js';
 import { createViewer } from './scene.js';
 import { SYSTEMS } from './parts/common.js';
@@ -68,7 +67,7 @@ const widthOf = m => m.specs.wingspan_m ?? m.specs.rotor_diameter_m ?? m.specs.w
 const widthLabel = m => (m.specs.wingspan_m ? 'span' : m.specs.rotor_diameter_m ? 'rotor' : 'width');
 const code = m => m.id.toUpperCase();
 
-const state = { categories: [], models: [], part: null, model: null, xray: false, pick: false, loadToken: 0, livery: null, tab: 'overview', showPart: false, filter: '' };
+const state = { categories: [], models: [], thumbs: {}, part: null, model: null, xray: false, pick: false, loadToken: 0, livery: null, tab: 'overview', showPart: false, filter: '' };
 let viewer = null;
 
 // ── Icons ──────────────────────────────────────────────
@@ -162,15 +161,23 @@ function cardHTML(m) {
     </div></a>`;
 }
 
+// Prerendered thumbnails (npm run thumbs) are plain images. A model without one, or whose image
+// fails to load, is rendered in the browser instead, which downloads the whole model.
 function hydrateThumbs(root = document) {
   for (const img of root.querySelectorAll('img[data-thumb]')) {
     const m = state.models.find(x => x.id === img.dataset.thumb);
     if (!m) continue;
-    thumbnail(m).then(url => {
-      img.src = url;
+    const reveal = () => {
       img.hidden = false;
       img.nextElementSibling?.classList.contains('spinner') && img.nextElementSibling.remove();
-    }).catch(() => {});
+    };
+    const live = () => thumbnail(m).then(url => { img.onload = null; img.src = url; reveal(); }).catch(() => {});
+    const pre = state.thumbs[m.id];
+    if (!pre) { live(); continue; }
+    img.decoding = 'async';
+    img.onload = reveal;
+    img.onerror = () => { img.onerror = null; live(); };
+    img.src = `./assets/thumbs/${encodeURIComponent(m.id)}.webp?v=${pre.hash}`;
   }
 }
 
@@ -738,20 +745,16 @@ window.addEventListener('hashchange', render);
 
 // ── Boot ───────────────────────────────────────────────
 async function boot() {
-  const [categories, index] = await Promise.all([
+  const [categories, index, thumbs] = await Promise.all([
     fetch('./data/categories.json').then(r => r.json()),
     fetch('./data/index.json').then(r => r.json()),
+    fetch('./data/thumbs.json').then(r => (r.ok ? r.json() : {})).catch(() => ({})),
   ]);
   state.categories = categories;
+  state.thumbs = thumbs;
   state.models = await Promise.all(index.models.map(p => fetch(`./data/${p}`).then(r => r.json())));
-  // Count parts once for the home stats (cheap: builders only make geometry).
-  for (const m of state.models) {
-    let n = 0;
-    const g = m.builder === 'asset' ? new THREE.Group() : buildModel(m);
-    g.traverse(o => { if (o.userData.part) n++; if (o.isMesh) { o.geometry.dispose(); for (const mt of [o.material].flat()) { mt.map?.dispose(); mt.dispose(); } } });
-    // Real models: count the parts their mapping produces (rules plus fallbacks).
-    m._parts = m.asset ? new Set([...(m.asset.parts ?? []).map(r => r.id), m.asset.fallback?.id ?? 'airframe', ...(m.asset.files ?? []).map(f => f.fallback?.id).filter(Boolean)]).size : n;
-  }
+  // Part counts for the home stats come with the thumbnails; only models without one are built here.
+  for (const m of state.models) m._parts = thumbs[m.id]?.parts ?? partCount(m);
   render();
 }
 
