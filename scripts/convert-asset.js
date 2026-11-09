@@ -158,10 +158,10 @@ const gearOf = (leg, wingMounted) => ({
   ...(leg.axles > 1 ? { axles: leg.axles, axleSpacing: leg.axleSpacing } : {}),
   strut: r2(Math.max(0.12, leg.tire.d * 0.26)),
   top: r2(wingMounted ? wingAt('h', leg.z) - 0.1 : body(leg.x).bot + 0.35),
-  bottom: r2(mainR.ground),
+  bottom: 0, // every wheel stands on the ground (source meshes often sit on one leg, the others unloaded)
 });
 let gear = light ? null : {
-  nose: { ...gearOf(noseLeg, false), z: undefined, bottom: r2(noseGround) },
+  nose: { ...gearOf(noseLeg, false), z: undefined, bottom: 0 },
   mains: mainLegs.map((leg, i) => ({ ...gearOf(leg, leg.z > halfW * 0.95), id: mainLegs.length > 1 ? (leg.z > halfW * 0.95 ? 'wing-gear' : 'body-gear') : 'main-gear', label: mainLegs.length > 1 ? (leg.z > halfW * 0.95 ? 'wing gear' : 'body gear') : 'main gear' })),
 };
 

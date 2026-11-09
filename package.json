@@ -17,7 +17,8 @@
     "quality": "node --import ./scripts/node/register.js scripts/quality.js",
     "drawings": "node --import ./scripts/node/register.js scripts/drawings.js",
     "convert": "node --import ./scripts/node/register.js scripts/convert-asset.js",
-    "benchmark": "node --import ./scripts/node/register.js scripts/benchmark.js"
+    "benchmark": "node --import ./scripts/node/register.js scripts/benchmark.js",
+    "validate": "node --import ./scripts/node/register.js scripts/validate.js"
   },
   "keywords": [
     "threejs",

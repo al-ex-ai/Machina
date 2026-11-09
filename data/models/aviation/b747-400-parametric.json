@@ -1995,7 +1995,7 @@
           "axleSpacing": 1.6,
           "strut": 0.32,
           "top": 3.05,
-          "bottom": 0.46,
+          "bottom": 0,
           "id": "body-gear",
           "label": "body gear"
         },
@@ -2012,7 +2012,7 @@
           "axleSpacing": 1.6,
           "strut": 0.32,
           "top": 4.13,
-          "bottom": 0.46,
+          "bottom": 0,
           "id": "wing-gear",
           "label": "wing gear"
         }

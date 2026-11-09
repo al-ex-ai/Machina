@@ -1731,7 +1731,7 @@
           "axleSpacing": 1.53,
           "strut": 0.32,
           "top": 2,
-          "bottom": 0.03,
+          "bottom": 0,
           "id": "main-gear",
           "label": "main gear"
         }
