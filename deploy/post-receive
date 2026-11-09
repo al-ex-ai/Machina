@@ -1,0 +1,25 @@
+#!/bin/sh
+# Server hook for machina.al-ex.ai. Installed at /var/repo/machina.git/hooks/post-receive.
+# The site is static, so deploying is a checkout: no install, no build.
+set -e
+TARGET=/var/www/machina
+GIT_DIR=/var/repo/machina.git
+BRANCH=main
+
+while read -r oldrev newrev ref; do
+  if [ "$ref" = "refs/heads/$BRANCH" ]; then
+    echo "==> Deploying $BRANCH to $TARGET"
+    mkdir -p "$TARGET"
+    git --work-tree="$TARGET" --git-dir="$GIT_DIR" checkout -f "$BRANCH"
+    git --work-tree="$TARGET" --git-dir="$GIT_DIR" clean -fdq -e node_modules
+
+    # Cloudflare caches JS and CSS for hours. Stamp each deploy's commit onto every relative module URL
+    # (imports, dynamic imports, the worker) and onto the entry links, so a deploy is fetched fresh.
+    # Every module gets the same stamp, so the browser never loads one module twice.
+    V=$(git --git-dir="$GIT_DIR" rev-parse --short "$BRANCH")
+    find "$TARGET/src" -name '*.js' ! -name '*-node.js' -print0 |
+      V="$V" xargs -0 perl -pi -e "s#('\.\.?/[A-Za-z0-9_/.-]+\.js)(\?v=[^']*)?'#\1?v=\$ENV{V}'#g"
+    V="$V" perl -pi -e 's#((?:src|href)="\./src/(?:app\.js|style\.css))(\?v=[^"]*)?"#$1?v=$ENV{V}"#g' "$TARGET/index.html"
+    echo "==> Deploy complete ($V)"
+  fi
+done
