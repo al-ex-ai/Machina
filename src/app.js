@@ -1,5 +1,8 @@
 // Machina app: hash router with home, category and model pages.
 import { liveriesFor, withLivery, isAccent } from './parametric/liveries.js';
+import { pickerHTML, installPickers } from './picker.js';
+
+installPickers();
 
 // The 3D engine (Three.js, builders, viewer) loads on demand: the catalog only shows prerendered
 // thumbnails, so it renders without it. Model pages wait for it; the home page fetches it when idle.
@@ -56,10 +59,10 @@ const groupRank = m => { const i = GROUP_ORDER.indexOf(m.group); return i < 0 ? 
 let sortKey = (() => { try { return localStorage.getItem('machina-sort') || 'type'; } catch { return 'type'; } })();
 if (!SORTS[sortKey]) sortKey = 'type';
 const sorted = list => [...list].sort(SORTS[sortKey].cmp);
-const sortSelect = () => `<label class="sort label">Sort <select id="sort" aria-label="Sort models">${Object.entries(SORTS).map(([k, v]) => `<option value="${k}" ${k === sortKey ? 'selected' : ''}>${v.label}</option>`).join('')}</select></label>`;
+const sortSelect = () => pickerHTML({ name: 'sort', label: 'Sort models', prefix: 'Sort', value: sortKey, align: 'end', options: Object.entries(SORTS).map(([k, v]) => ({ value: k, label: v.label })) });
 function onSort(rerender) {
-  document.getElementById('sort')?.addEventListener('change', e => {
-    sortKey = e.target.value;
+  document.querySelector('[data-pick="sort"]')?.addEventListener('pick', e => {
+    sortKey = e.detail.value;
     try { localStorage.setItem('machina-sort', sortKey); } catch { /* storage unavailable */ }
     rerender();
   });
@@ -125,7 +128,7 @@ function parseRoute() {
   if (seg[0] === 'm' && seg[1]) return { name: 'model', id: seg[1], part: q.get('part'), xray: q.get('xray') === '1', person: q.get('person') === '1', view: q.get('view'), livery: q.get('livery') };
   if (seg[0] === 'c' && seg[1]) return { name: 'category', id: seg[1] };
   if (seg[0] === 'history') return { name: 'history' };
-  if (seg[0] === 'compare') return { name: 'compare', all: seg[1] === 'all', ids: seg[1] && seg[1] !== 'all' ? seg[1].split(',') : [], mode: q.get('mode'), sort: q.get('sort') };
+  if (seg[0] === 'compare') return { name: 'compare', all: seg[1] === 'all', ids: seg[1] && seg[1] !== 'all' ? seg[1].split(',') : [], mode: q.get('mode'), view: q.get('view'), sort: q.get('sort') };
   return { name: 'home' };
 }
 

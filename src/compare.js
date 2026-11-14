@@ -3,6 +3,7 @@
 // "Line up all" puts every listed model on the apron, sorted by any spec.
 import * as THREE from 'three';
 import { silhouettes } from './silhouette.js';
+import { pickerHTML } from './picker.js';
 
 export const SLOT_COLORS = ['#ff8a3d', '#3fa7d6', '#5fc46a', '#b48cf2'];
 const MAX = 4;
@@ -142,7 +143,7 @@ export function createCompare(ctx) {
   const { $, esc } = ctx;
   const cache = new Map(); // id -> Promise<Object3D>, only for the current selection
   let token = 0;
-  let current = { key: '', sel: [], all: false, mode: 'lineup', sort: 'length', objs: null };
+  let current = { key: '', sel: [], all: false, tab: 'lineup', mode: 'lineup', sort: 'length', objs: null, arranged: false };
 
   const byId = id => ctx.models().find(m => m.id === id);
   const load = m => {
@@ -156,9 +157,9 @@ export function createCompare(ctx) {
     return cache.get(m.id);
   };
 
-  function hrefFor(ids, { all = false, mode = current.mode, sort = current.sort } = {}) {
+  function hrefFor(ids, { all = false, tab = current.tab, sort = current.sort } = {}) {
     const q = new URLSearchParams();
-    if (mode !== 'lineup') q.set('mode', mode);
+    if (tab && tab !== 'lineup') q.set('view', tab);
     if (sort !== 'length') q.set('sort', sort);
     const path = all ? 'all' : ids.join(',');
     return `#/compare${path ? `/${path}` : ''}${q.size ? `?${q}` : ''}`;
@@ -248,31 +249,38 @@ export function createCompare(ctx) {
   }
 
   // ── Silhouettes and specs ─────────────────────────────
+  let silDirty = true;
   function drawSilhouettes() {
     const host = $('#cmp-sil');
-    if (!host || current.all || !current.objs) return;
-    // Silhouettes borrow the objects for a moment: draw them at their own origin, untinted.
+    const panel = $('#cmp-panel-silhouettes');
+    if (!host || !panel || panel.hidden || current.all || !current.objs) return;
+    silDirty = false;
+    // Silhouettes borrow the objects for a moment: draw them at their own origin.
     const items = current.sel.map(m => ({ obj: current.objs.get(m.id), color: colorOf(m) }));
     const saved = items.map(it => it.obj.position.clone());
     items.forEach(it => it.obj.position.set(0, 0, 0));
-    // A three-view sheet at one scale: side and front share the ground line, the top view sits
-    // under the side view so noses and tails line up, and the key fills the last corner.
+    // A three-view sheet at one scale, sized to fit the panel without scrolling: side and front
+    // share the ground line, the top view sits under the side view so noses and tails line up,
+    // and the key fills the last corner.
     const gap = 20;
-    const width = Math.min((host.clientWidth || 900) - 34, 1240);
-    const sil = silhouettes(items, { width, gap, ink: css('--ink'), faint: css('--faint') });
+    const pad = parseFloat(getComputedStyle(panel).paddingLeft) || 20;
+    const width = Math.min(panel.clientWidth - 2 * pad, 1400);
+    const height = panel.clientHeight - 2 * pad;
+    const sil = silhouettes(items, { width, height, gap, ink: css('--ink'), faint: css('--faint') });
     items.forEach((it, i) => it.obj.position.copy(saved[i]));
     const cssW = c => parseFloat(c.style.width);
     host.innerHTML = `<div class="sil-sheet" style="grid-template-columns:${cssW(sil.side)}px ${cssW(sil.front)}px;gap:${gap}px">
         <figure class="sil" data-v="side"><figcaption class="label">Side</figcaption></figure>
         <figure class="sil" data-v="front"><figcaption class="label">Front</figcaption></figure>
         <figure class="sil" data-v="top"><figcaption class="label">Top</figcaption></figure>
-        <ul class="sil-key">${current.sel.map(m => `<li><span class="dot" style="background:${colorOf(m)}"></span>${esc(m.name)}</li>`).join('')}</ul>
+        <div class="sil-key"><span class="label">One scale, noses aligned</span><ul>${current.sel.map(m => `<li><span class="dot" style="background:${colorOf(m)}"></span>${esc(m.name)}</li>`).join('')}</ul></div>
       </div>`;
     for (const v of ['side', 'front', 'top']) host.querySelector(`[data-v="${v}"]`).append(sil[v]);
   }
 
   function specTable() {
     const sel = current.sel;
+    if (!sel.length) return '';
     const rows = [];
     for (const [key, def] of Object.entries(ctx.specLabels)) {
       const vals = sel.map(m => m.specs[key]);
@@ -305,46 +313,100 @@ export function createCompare(ctx) {
   }
 
   // ── Page ──────────────────────────────────────────────
-  function pickerHTML() {
+  const TABS = [
+    { id: 'lineup', label: 'Line-up', panel: 'stage' },
+    { id: 'overlay', label: 'Overlay', panel: 'stage' },
+    { id: 'silhouettes', label: 'Silhouettes', panel: 'cmp-panel-silhouettes' },
+    { id: 'specs', label: 'Specs', panel: 'cmp-panel-specs' },
+  ];
+  const tabOff = id => (id !== 'lineup' && (current.all || !current.sel.length)) || (id === 'overlay' && current.sel.length < 2);
+
+  function headerHTML() {
     const listed = ctx.models();
     const chosen = new Set(current.sel.map(m => m.id));
     const groups = [...new Set(listed.map(m => m.group))].sort((a, b) => (ctx.groupOrder.indexOf(a) + 1 || 99) - (ctx.groupOrder.indexOf(b) + 1 || 99));
     const presets = PRESETS.map(p => ({ ...p, ids: p.ids.filter(id => byId(id)) })).filter(p => p.ids.length > 1);
-    const chips = current.all ? `<span class="cmp-chip"><span class="dot" style="background:var(--ink)"></span>All ${listed.length} models<a class="x" href="${hrefFor([])}" aria-label="Clear the line-up">×</a></span>`
+    const chips = current.all ? `<span class="cmp-chip"><span class="dot" style="background:var(--ink)"></span>All ${listed.length} models<a class="x" href="${hrefFor([], { tab: 'lineup' })}" aria-label="Clear the line-up">×</a></span>`
       : current.sel.map(m => `<span class="cmp-chip"><span class="dot" style="background:${colorOf(m)}"></span>${esc(m.name)}<a class="x" href="${hrefFor(current.sel.filter(x => x !== m).map(x => x.id))}" aria-label="Remove ${esc(m.name)}">×</a></span>`).join('');
-    const add = !current.all && current.sel.length < MAX ? `<label class="sort cmp-add"><select id="cmp-add" aria-label="Add a model to compare">
-        <option value="">${current.sel.length ? 'Add a model' : 'Pick a model'}</option>
-        ${groups.map(g => `<optgroup label="${esc(g)}">${listed.filter(m => m.group === g && !chosen.has(m.id)).map(m => `<option value="${esc(m.id)}">${esc(m.name)}</option>`).join('')}</optgroup>`).join('')}
-      </select></label>` : '';
-    return `<div class="cmp-picks">${chips}${add}</div>
-      <div class="cmp-presets"><span class="label">Try</span>${presets.map(p => `<a class="cmp-preset" href="${hrefFor(p.ids)}">${esc(p.label)}</a>`).join('')}<a class="cmp-preset" href="${hrefFor([], { all: true })}">Line up all ${listed.length}</a></div>`;
+    const add = !current.all && current.sel.length < MAX ? pickerHTML({
+      name: 'cmp-add', action: true, label: 'Add a model to compare', placeholder: current.sel.length ? 'Add a model' : 'Pick a model',
+      options: groups.flatMap(g => listed.filter(m => m.group === g && !chosen.has(m.id)).map(m => ({ value: m.id, label: m.name, group: g }))),
+    }) : '';
+    const sets = pickerHTML({
+      name: 'cmp-sets', action: true, label: 'Suggested sets', placeholder: 'Suggested sets', align: 'end',
+      options: [
+        ...presets.map((p, i) => ({ value: String(i), label: p.label, hint: `${p.ids.length} models` })),
+        { value: 'all', label: `Line up all ${listed.length}`, hint: 'every model' },
+      ],
+    });
+    return `<header class="cmp-bar">
+        <div class="cmp-title"><h1>Compare</h1><span class="label">at true scale</span></div>
+        <div class="cmp-picks">${chips}${add}<span class="cmp-spacer"></span>${sets}</div>
+      </header>`;
   }
 
-  function controlsHTML() {
-    return `<div class="seg" role="radiogroup" aria-label="Arrangement">
-        <button type="button" role="radio" data-mode="lineup" aria-checked="${current.mode === 'lineup'}">Line-up</button>
-        <button type="button" role="radio" data-mode="overlay" aria-checked="${current.mode === 'overlay'}" ${current.all ? 'disabled title="Overlay works with two to four models"' : ''}>Overlay</button>
-      </div>
-      <label class="sort">Sort <select id="cmp-sort" aria-label="Sort the line-up" ${current.mode === 'overlay' ? 'disabled' : ''}>${Object.entries(SORTS).map(([k, v]) => `<option value="${k}" ${k === current.sort ? 'selected' : ''}>${v.label}</option>`).join('')}</select></label>`;
+  function tabsHTML() {
+    return TABS.map(t => `<button type="button" role="tab" class="cmp-tab" id="cmp-tab-${t.id}" data-cmp-tab="${t.id}" aria-controls="${t.panel}" aria-selected="${t.id === current.tab}" tabindex="${t.id === current.tab ? 0 : -1}"${tabOff(t.id) ? ' disabled' : ''}>${t.label}</button>`).join('');
+  }
+
+  function toolsHTML() {
+    if (current.tab !== 'lineup' || !current.sel.length) return '';
+    return pickerHTML({ name: 'cmp-sort', label: 'Sort the line-up', prefix: 'Sort', value: current.sort, align: 'end', options: Object.entries(SORTS).map(([k, v]) => ({ value: k, label: v.label })) });
+  }
+
+  /** Show the panel for the current tab, and draw whatever it needs. */
+  function showTab() {
+    const panelId = TABS.find(t => t.id === current.tab).panel;
+    for (const id of ['stage', 'cmp-panel-silhouettes', 'cmp-panel-specs']) {
+      const el = document.getElementById(id);
+      if (el) el.hidden = id !== panelId;
+    }
+    for (const b of document.querySelectorAll('[data-cmp-tab]')) {
+      const on = b.dataset.cmpTab === current.tab;
+      b.setAttribute('aria-selected', String(on));
+      b.tabIndex = on ? 0 : -1;
+    }
+    $('#cmp-tools').innerHTML = toolsHTML();
+    if (panelId === 'stage') {
+      const mode = current.tab === 'overlay' ? 'overlay' : 'lineup';
+      if (current.objs && (mode !== current.mode || !current.arranged)) { current.mode = mode; arrange(); current.arranged = true; }
+      current.mode = mode;
+    } else if (current.tab === 'silhouettes' && silDirty) drawSilhouettes();
+  }
+
+  function setTab(tab) {
+    if (tab === current.tab || tabOff(tab)) return;
+    current.tab = tab;
+    history.replaceState(null, '', hrefFor(current.sel.map(m => m.id), { all: current.all }));
+    showTab();
   }
 
   function wire() {
-    $('#cmp-add')?.addEventListener('change', e => {
-      if (e.target.value) location.hash = hrefFor([...current.sel.map(m => m.id), e.target.value]);
+    const page = $('.compare-page');
+    page.addEventListener('pick', e => {
+      const { name, value } = e.detail;
+      if (name === 'cmp-add') location.hash = hrefFor([...current.sel.map(m => m.id), value]);
+      else if (name === 'cmp-sets') {
+        if (value === 'all') location.hash = hrefFor([], { all: true, tab: 'lineup' });
+        else location.hash = hrefFor(PRESETS.map(p => ({ ...p, ids: p.ids.filter(id => byId(id)) })).filter(p => p.ids.length > 1)[Number(value)].ids);
+      } else if (name === 'cmp-sort') {
+        current.sort = value;
+        history.replaceState(null, '', hrefFor(current.sel.map(m => m.id), { all: current.all }));
+        if (current.objs) arrange();
+      }
     });
-    for (const b of document.querySelectorAll('[data-mode]')) {
-      b.addEventListener('click', () => { if (b.dataset.mode !== current.mode) update({ mode: b.dataset.mode }); });
-    }
-    $('#cmp-sort')?.addEventListener('change', e => update({ sort: e.target.value }));
-  }
-
-  /** Mode or sort changed: re-arrange in place, no reload. */
-  function update(patch) {
-    Object.assign(current, patch);
-    history.replaceState(null, '', hrefFor(current.sel.map(m => m.id), { all: current.all }));
-    $('#cmp-controls').innerHTML = controlsHTML();
-    wire();
-    if (current.objs) arrange();
+    const tabs = $('.cmp-tabs');
+    tabs.addEventListener('click', e => { const b = e.target.closest('[data-cmp-tab]'); if (b && !b.disabled) setTab(b.dataset.cmpTab); });
+    // Arrow keys move between tabs, as in any tab list.
+    tabs.addEventListener('keydown', e => {
+      if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(e.key)) return;
+      const list = [...tabs.querySelectorAll('[data-cmp-tab]:not([disabled])')];
+      const i = list.indexOf(document.activeElement);
+      const j = e.key === 'Home' ? 0 : e.key === 'End' ? list.length - 1 : (i + (e.key === 'ArrowRight' ? 1 : -1) + list.length) % list.length;
+      e.preventDefault();
+      list[j].focus();
+      setTab(list[j].dataset.cmpTab);
+    });
   }
 
   function render(route) {
@@ -353,30 +415,38 @@ export function createCompare(ctx) {
     const ids = all ? listed.map(m => m.id) : [...new Set(route.ids)].filter(byId).slice(0, MAX);
     const sel = ids.map(byId);
     const key = (all ? 'all' : ids.join(','));
-    current = { ...current, sel, all, mode: all ? 'lineup' : (route.mode === 'overlay' ? 'overlay' : 'lineup'), sort: SORTS[route.sort] ? route.sort : 'length' };
+    const wanted = route.view ?? (route.mode === 'overlay' ? 'overlay' : 'lineup');
+    current = { ...current, sel, all, sort: SORTS[route.sort] ? route.sort : 'length', tab: 'lineup', arranged: false, objs: null };
+    current.tab = TABS.some(t => t.id === wanted) && !tabOff(wanted) ? wanted : 'lineup';
+    current.mode = current.tab === 'overlay' ? 'overlay' : 'lineup';
+    silDirty = true;
     document.title = 'Compare · Machina';
 
+    const empty = `<div class="cmp-empty"><div>
+        <h2>Pick two to four models</h2>
+        <p>Line them up on one apron, stack them on one spot, see their outlines from three sides and read their specs side by side, all at true scale.</p>
+        <p class="label">Or start from a set</p>
+        <div class="cmp-empty-sets">${PRESETS.map(p => ({ ...p, ids: p.ids.filter(id => byId(id)) })).filter(p => p.ids.length > 1).map(p => `<a class="cmp-preset" href="${hrefFor(p.ids)}">${esc(p.label)}</a>`).join('')}<a class="cmp-preset" href="${hrefFor([], { all: true, tab: 'lineup' })}">Line up all ${listed.length}</a></div>
+      </div></div>`;
     $('#page').innerHTML = `
       <div class="compare-page">
-        <div class="page cmp-head">
-          <div class="crumbs"><a href="#/">Catalog</a><span class="sep">/</span><span>Compare</span></div>
-          <h1>Compare at true scale</h1>
-          <p class="lede">Pick two to four models to line them up on one apron or lay them over each other, see their outlines from three sides, and read their specs side by side.</p>
-          ${pickerHTML()}
+        ${headerHTML()}
+        <div class="cmp-tabbar">
+          <div class="cmp-tabs" role="tablist" aria-label="Compare views">${tabsHTML()}</div>
+          <div class="cmp-tools" id="cmp-tools"></div>
         </div>
-        <section class="stage cmp-stage" id="stage" aria-label="3D comparison">
-          <div class="hud-top"><div class="cmp-controls" id="cmp-controls">${controlsHTML()}</div></div>
-          <div class="loading" id="loading" role="status" aria-live="polite" hidden><span class="spinner"></span><span class="label" id="cmp-progress">Loading</span></div>
-          ${sel.length ? '' : '<div class="cmp-empty"><p>Pick a model above, or try one of the suggested sets.</p></div>'}
-        </section>
-        <div class="page cmp-body">
-          ${sel.length && !all ? `<div class="section-head"><h2>Silhouettes</h2><span class="label">one scale, noses aligned</span></div><div class="cmp-sil" id="cmp-sil"></div>
-          <div class="section-head"><h2>Specifications</h2><span class="label">${sel.length} model${sel.length > 1 ? 's' : ''}</span></div>${specTable()}` : ''}
-          ${all ? `<p class="note">Every listed model on one apron, sorted by ${esc((SORTS[current.sort] ?? SORTS.length).label.toLowerCase())}. Detailed models download one by one, so the full line-up takes a while on the first visit.</p>` : ''}
+        <div class="cmp-panels">
+          <section class="stage cmp-stage" id="stage" role="tabpanel" aria-label="3D comparison">
+            <div class="loading" id="loading" role="status" aria-live="polite" hidden><span class="spinner"></span><span class="label" id="cmp-progress">Loading</span></div>
+            ${sel.length ? '' : empty}
+          </section>
+          <section class="cmp-panel" id="cmp-panel-silhouettes" role="tabpanel" aria-labelledby="cmp-tab-silhouettes" hidden><div class="cmp-sil" id="cmp-sil"></div></section>
+          <section class="cmp-panel" id="cmp-panel-specs" role="tabpanel" aria-labelledby="cmp-tab-specs" hidden>${specTable()}</section>
         </div>
       </div>`;
     $('#stage').prepend($('#stage-host'));
     wire();
+    showTab();
     const viewer = ctx.ensureViewer();
 
     if (!sel.length) { viewer.clear(); current.objs = null; current.key = key; return; }
@@ -395,8 +465,9 @@ export function createCompare(ctx) {
         current.objs = new Map(sel.map((m, i) => [m.id, objs[i]]));
         current.key = key;
         arrange();
+        current.arranged = true;
         loadingEl.hidden = true;
-        drawSilhouettes();
+        if (current.tab === 'silhouettes') drawSilhouettes();
         for (const id of leaving) {
           const p = cache.get(id);
           cache.delete(id);
@@ -409,12 +480,18 @@ export function createCompare(ctx) {
       });
   }
 
-  // Theme switches recolor the labels and silhouette ink.
+  // Theme switches recolor the labels and silhouette ink; a resize refits the silhouette sheet.
   new MutationObserver(() => {
     if (!$('.compare-page') || !current.objs) return;
-    if (current.all) arrange();
-    else { if (current.mode === 'lineup') arrange(); drawSilhouettes(); }
+    if (current.mode === 'lineup') arrange();
+    silDirty = true;
+    drawSilhouettes();
   }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+  let resizeTimer = 0;
+  addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => { if ($('.compare-page')) { silDirty = true; drawSilhouettes(); } }, 150);
+  });
 
   return { render };
 }

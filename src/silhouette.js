@@ -104,8 +104,9 @@ function niceStep(span) {
 /**
  * Draw every model from the side, top and front at one shared scale.
  * @param {{ obj: THREE.Object3D, color: string }[]} items built models, each centered and on the ground
- * @param {{ width?: number, gap?: number, dpr?: number, ink?: string, faint?: string }} [opts] sizes in CSS pixels.
- *   width is the room for the side and front views next to each other (the top view goes under the side view).
+ * @param {{ width?: number, height?: number, gap?: number, caption?: number, dpr?: number, ink?: string, faint?: string }} [opts]
+ *   sizes in CSS pixels. width is the room for the side and front views next to each other; the top view
+ *   goes under the side view, and height (optional) caps the whole sheet including one caption per row.
  * @returns {{ side: HTMLCanvasElement, top: HTMLCanvasElement, front: HTMLCanvasElement, pxPerM: number }}
  */
 export function silhouettes(items, opts = {}) {
@@ -123,7 +124,12 @@ export function silhouettes(items, opts = {}) {
   };
   // One scale for all three views: side and front views side by side fill the width.
   const gap = (opts.gap ?? 16) * dpr;
-  const pxPerM = (width - gap) / (len + 2 * pad + 2 * (half + pad));
+  let pxPerM = (width - gap) / (len + 2 * pad + 2 * (half + pad));
+  // With a height, the sheet (side over top, plus captions) also has to fit that tall.
+  if (opts.height) {
+    const captions = 2 * (opts.caption ?? 24) * dpr;
+    pxPerM = Math.min(pxPerM, (opts.height * dpr - gap - captions) / (high + 2 * pad + 2 * (half + pad)));
+  }
   const out = { pxPerM: pxPerM / dpr };
   for (const view of Object.keys(VIEWS)) {
     const e = ext[view];

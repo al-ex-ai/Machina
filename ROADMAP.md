@@ -53,6 +53,7 @@ One milestone per week. Each milestone ends with everything committed, `npm test
 - Spec table with each value against the first model picked, the largest value marked and rows that agree dimmed
 - A three-view silhouette sheet at one scale: side and front on a shared ground line, top under the side view
 - "Line up all": every listed model on one apron, sorted by length, span, height, weight, speed or first flight
+- One screen with tabs (Line-up, Overlay, Silhouettes, Specs) instead of a long page; the silhouette sheet scales to fit
 - Opened from the Compare tab or the compare button on any model page; the selection lives in the URL
 
 ## M4. Deeper detail
