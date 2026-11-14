@@ -20,6 +20,7 @@ Machina turns simulator models into explorable, named parts.
 |---|---|
 | **Named, selectable parts** | Rules in each model file map raw meshes to parts (left aileron, slats and Krueger flaps, main gear) grouped by system |
 | **True scale** | Every model is measured against its published length, span and height, and any gap is shown on the model page |
+| **Compare** | Line up two to four models wingtip to wingtip or overlay them at true scale, with a three-view silhouette sheet and a spec table of differences. "Line up all" puts every model on one apron, sorted by any spec (`#/compare/b747-400-parametric,a320neo-parametric`) |
 | **Three-view drawings** | An A3 sheet per model at a standard scale: side, front and top views projected from the geometry with hidden lines removed, fuselage sections, dimensions and a title block |
 | **Generated detail** | Parametric models get panel seams, framed windows, control surface gaps, fan blades, gear linkage, antennas and beacons from the data they already have |
 | **Liveries** | Every parametric model can wear Machina's colors, a factory demonstrator scheme, polished metal, factory primer or plain white. Presets swap colors only, so positions stay measured (`#/m/<id>?livery=metal`) |
@@ -35,6 +36,8 @@ Machina turns simulator models into explorable, named parts.
 | Concorde, detailed FlightGear model with its cockpit | X-ray view of the Tu-134A: cabin, cockpit and gear inside |
 | ![A3 three-view drawing of the Boeing 747-400 with sections and dimensions](drawings/b747-400-parametric.svg) | ![The catalog in the light theme](docs/catalog-light.png) |
 | A3 three-view drawing, projected from the model with hidden lines removed | The catalog in the light theme |
+| ![Four airliners lined up on one apron at true scale, labelled with their lengths](docs/compare-lineup.png) | ![The same four airliners overlaid in see-through colors, noses aligned](docs/compare-overlay.png) |
+| Compare: a line-up at true scale, sorted by length | Compare: the same four overlaid, noses aligned |
 
 ## Aircraft
 

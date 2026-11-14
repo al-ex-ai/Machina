@@ -47,12 +47,13 @@ One milestone per week. Each milestone ends with everything committed, `npm test
 - Deploys are a git push: the server checks out the commit and stamps it onto every module URL so caches pick up new code
 - Soviet set (Tu-134A, Il-76TD) and the Concorde with cockpits, neutral liveries and a validation gate in the tests
 
-## M3. Compare
+## M3. Compare (done)
 
-- Two to four models side by side or overlaid at true scale
-- Spec table with differences highlighted
-- Top, side and front silhouettes
-- A line-up of models on one apron, sorted by any spec
+- Two to four models lined up wingtip to wingtip on one apron, or overlaid on one spot in see-through colors, at true scale
+- Spec table with each value against the first model picked, the largest value marked and rows that agree dimmed
+- A three-view silhouette sheet at one scale: side and front on a shared ground line, top under the side view
+- "Line up all": every listed model on one apron, sorted by length, span, height, weight, speed or first flight
+- Opened from the Compare tab or the compare button on any model page; the selection lives in the URL
 
 ## M4. Deeper detail
 

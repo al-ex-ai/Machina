@@ -82,6 +82,26 @@
         "Open source at github.com/al-ex-ai/Machina and live at machina.al-ex.ai",
         "A deploy is a git push: the server checks out the commit and stamps it onto every module URL, so Cloudflare serves fresh code"
       ]
+    },
+    {
+      "date": "2026-11-14",
+      "title": "Faster catalog",
+      "items": [
+        "The catalog opens without the 3D engine: Three.js loads when a model page needs it, and in the background once the thumbnails are in",
+        "One catalog file instead of seventeen requests, preloaded with the page, and a year of caching for every commit-stamped file",
+        "A first visit went from about 3 seconds after the page arrived to about 0.4 seconds"
+      ]
+    },
+    {
+      "date": "2026-11-14",
+      "title": "Compare",
+      "tag": "M3",
+      "items": [
+        "Line up two to four models on one apron or overlay them in see-through colors, all at true scale",
+        "A three-view silhouette sheet at one scale and a spec table that shows how each model differs from the first",
+        "Line up every listed model, sorted by length, span, height, weight, speed or first flight",
+        "The first line-up used the three-quarter camera, which made the farthest airliner look as small as the nearest; it now faces the row nose on"
+      ]
     }
   ],
   "next": [
