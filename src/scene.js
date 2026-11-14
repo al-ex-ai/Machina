@@ -152,6 +152,7 @@ export function createViewer(container) {
 
   // X-ray view: translucent fill plus cyan edges; the selected part stays solid.
   let xray = false;
+  let ao = true;
   const XRAY_FILL = new THREE.MeshBasicMaterial({ color: '#5ec8ff', transparent: true, opacity: 0.05, depthWrite: false, side: THREE.DoubleSide });
   const XRAY_EDGE = new THREE.LineBasicMaterial({ color: '#7fd4ff', transparent: true, opacity: 0.45, depthWrite: false });
   function edgesOf(mesh) {
@@ -277,9 +278,11 @@ export function createViewer(container) {
     for (const p of parts) p.position.copy(p.userData.base).addScaledVector(p.userData.explodeDir, explodeAmount);
   }
 
-  // Camera presets: null is the default three-quarter view.
-  const VIEWS = { front: [-1, 0.06, 0], side: [0, 0.06, 1], right: [0, 0.06, -1], top: [0.001, 1, 0], rear: [1, 0.12, 0] };
+  // Camera presets: null is the default three-quarter view. "apron" looks at a wingtip-to-wingtip
+  // line-up nose on and from above, so every model in it is about the same distance away.
+  const VIEWS = { front: [-1, 0.06, 0], side: [0, 0.06, 1], right: [0, 0.06, -1], top: [0.001, 1, 0], rear: [1, 0.12, 0], apron: [-0.82, 0.52, 0.12] };
   let view = null;
+  let fit = 0.78;
   function frame() {
     if (!container.clientWidth || !container.clientHeight) { framePending = true; return; }
     framePending = false;
@@ -290,7 +293,7 @@ export function createViewer(container) {
     const center = box.getCenter(new THREE.Vector3());
     const vFov = (camera.fov * Math.PI) / 180;
     const hFov = 2 * Math.atan(Math.tan(vFov / 2) * camera.aspect);
-    const dist = radius / Math.sin(Math.min(vFov, hFov) / 2) * 0.78;
+    const dist = radius / Math.sin(Math.min(vFov, hFov) / 2) * fit;
     const dir = VIEWS[view] ?? [-0.62, 0.42, 0.66];
     camera.position.set(center.x + dist * dir[0], center.y + dist * dir[1], center.z + dist * dir[2]);
     camera.near = radius / 100;
@@ -346,10 +349,15 @@ export function createViewer(container) {
     invalidate(true);
   }
 
-  /** @param {THREE.Object3D} group @param {{ keepView?: boolean }} [opts] keepView: same model repainted, leave the camera alone */
+  /**
+   * @param {THREE.Object3D} group
+   * @param {{ keepView?: boolean, fit?: number }} [opts] keepView: same model repainted, leave the camera alone.
+   *   fit: camera distance as a share of the whole-model fit (default 0.78, a little tight for a closer look).
+   */
   function setModel(group, opts = {}) {
     clearModel();
     model = group;
+    fit = opts.fit ?? 0.78;
     parts = [];
     model.traverse(o => { if (o.userData?.part) parts.push(o); });
     scene.add(model);
@@ -374,7 +382,7 @@ export function createViewer(container) {
     } else if (dirty) {
       gtao.enabled = false; // camera moving: same pipeline, just without ambient occlusion
       composer.render();
-      gtao.enabled = !xray;
+      gtao.enabled = !xray && ao;
       dirty = false;
     } else if (fullPending && !moving) {
       composer.render(); // full quality with ambient occlusion
@@ -420,8 +428,14 @@ export function createViewer(container) {
     selectedId: () => selected?.userData.id ?? null,
     setXray(on) {
       xray = on;
-      gtao.enabled = !on; // see-through fills still write depth, so occlusion would darken the ground under them
+      gtao.enabled = !on && ao; // see-through fills still write depth, so occlusion would darken the ground under them
       if (model) applyXray();
+      invalidate(true);
+    },
+    /** Ambient occlusion on or off. Compare turns it off for its see-through overlay. */
+    setAmbientOcclusion(on) {
+      ao = on;
+      gtao.enabled = !xray && ao;
       invalidate(true);
     },
     resetView() { view = null; if (model) frame(); },
