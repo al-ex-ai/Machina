@@ -339,7 +339,12 @@ export function createViewer(container) {
     invalidate(true);
   }
 
+  // Per-frame callbacks for animations. Each runs every frame until it returns false; the viewer
+  // otherwise renders only on demand. Replacing or clearing the model stops them.
+  const anims = new Set();
+
   function clearModel() {
+    anims.clear();
     if (!model) return;
     scene.remove(model);
     model.traverse(o => { if (o.isMesh) { o.geometry.dispose(); for (const m of [o.material].flat()) m.dispose(); } });
@@ -373,6 +378,11 @@ export function createViewer(container) {
   function loop() {
     controls.update();
     const now = performance.now();
+    if (anims.size) {
+      for (const f of anims) if (!f(now)) anims.delete(f);
+      dirty = true;
+      fullPending = true;
+    }
     const moving = dragging || now - lastMove < 180;
     if (dirty && !moving) {
       // Camera at rest (hover, selection, explode): go straight to full quality,
@@ -433,7 +443,9 @@ export function createViewer(container) {
       if (model) applyXray();
       invalidate(true);
     },
-    /** Ambient occlusion on or off. Compare turns it off for its see-through overlay. */
+    /** Run fn(now) every frame until it returns false. Returns a function that stops it. */
+    animate(fn) { anims.add(fn); invalidate(true); return () => anims.delete(fn); },
+    /** Ambient occlusion on or off. Compare turns it off for its stacked overlay. */
     setAmbientOcclusion(on) {
       ao = on;
       gtao.enabled = !xray && ao;

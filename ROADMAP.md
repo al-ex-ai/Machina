@@ -49,7 +49,7 @@ One milestone per week. Each milestone ends with everything committed, `npm test
 
 ## M3. Compare (done)
 
-- Two to four models lined up wingtip to wingtip on one apron, or stacked on one spot in solid colors (largest at the bottom), at true scale
+- Two to four models lined up wingtip to wingtip on one apron, or stacked on one spot as the real aircraft (largest at the bottom, the others taxiing in one by one), at true scale
 - Spec table with each value against the first model picked, the largest value marked and rows that agree dimmed
 - A three-view silhouette sheet at one scale: side and front on a shared ground line, top under the side view
 - "Line up all": every listed model on one apron, sorted by length, span, height, weight, speed or first flight

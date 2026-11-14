@@ -71,10 +71,12 @@ function apronLabel(name, detail, color, width, size) {
   return plate;
 }
 
-// Overlay style: a stack. Each model is one matte color, drawn whole from the largest at the
-// bottom to the smallest on top, so every model stays visible and the larger ones show only where
-// they reach past the smaller. Interiors, lights and antennas are left out.
+// Overlay style: a stack of the real aircraft. Each keeps its own paint with a light wash of its
+// color, and they are drawn whole from the largest at the bottom to the smallest on top, so every
+// model stays visible and the larger ones show where they reach past the smaller. Interiors,
+// lights and antennas are left out.
 const OVERLAY_HIDE = new Set(['interior', 'lights', 'avionics']);
+const TINT = 0.4; // share of the slot color mixed into each material's own color
 
 function systemOf(o) {
   for (let p = o; p; p = p.parent) if (p.userData?.part) return p.userData.system;
@@ -82,29 +84,67 @@ function systemOf(o) {
 }
 
 /**
- * Paint a model in one solid color at a place in the stack (layer 0 is drawn first), or put
- * its own look back (color null). The stack is drawn in the transparent pass, after the ground
+ * Put a model at a place in the stack (layer 0 is drawn first) with a wash of its color, or give
+ * it its own look back (color null). The stack is drawn in the transparent pass, after the ground
  * and grid, with the depth buffer cleared before each layer, so each layer is drawn whole on top.
+ * Materials keep opacity 1; marking them transparent only moves them into that pass.
  */
 function stackPaint(obj, color, layer = 0) {
-  const solid = color && new THREE.MeshStandardMaterial({ color, roughness: 0.6, metalness: 0.05, side: THREE.DoubleSide, transparent: true, opacity: 1, depthWrite: true });
-  const meshes = [];
-  obj.traverse(o => { if (o.isMesh && !o.userData.cmpLabel && !o.userData.cmpClear) meshes.push(o); });
-  for (const o of meshes) {
-    o.userData.cmpSolid ??= o.material;
+  const wash = color && new THREE.Color(color);
+  const seen = new Set();
+  obj.traverse(o => {
+    if (!o.isMesh || o.userData.cmpLabel || o.userData.cmpClear) return;
     o.userData.cmpVisible ??= o.visible;
-    if (!color) {
-      o.material = o.userData.cmpSolid;
-      o.visible = o.userData.cmpVisible;
-      o.castShadow = true;
-      o.renderOrder = 0;
-      continue;
+    o.visible = color && OVERLAY_HIDE.has(systemOf(o)) ? false : o.userData.cmpVisible;
+    o.renderOrder = color ? 2 + layer * 2 : 0;
+    for (const m of [o.material].flat()) {
+      if (!m || seen.has(m)) continue;
+      seen.add(m);
+      m.userData.cmpOwn ??= { transparent: m.transparent, color: m.color?.clone() };
+      const own = m.userData.cmpOwn;
+      m.transparent = color ? true : own.transparent;
+      if (m.color && own.color) {
+        m.color.copy(own.color);
+        if (wash) m.color.lerp(wash, TINT);
+      }
     }
-    if (OVERLAY_HIDE.has(systemOf(o))) { o.visible = false; continue; }
-    o.material = Array.isArray(o.userData.cmpSolid) ? o.userData.cmpSolid.map(() => solid) : solid;
-    o.castShadow = false;
-    o.renderOrder = 2 + layer * 2;
-  }
+  });
+}
+
+const easeOut = t => 1 - (1 - t) ** 3;
+const reducedMotion = () => matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+
+/**
+ * Taxi the stack in: the largest model is parked, then each smaller one rolls in nose first from
+ * behind and brakes onto the shared nose line, one after another.
+ * @param {object} viewer
+ * @param {THREE.Object3D[]} objs in stack order, largest first, already at their parked positions
+ */
+function taxiIn(viewer, objs) {
+  if (objs.length < 2 || reducedMotion()) return;
+  const parked = objs.map(o => o.position.x);
+  const run = Math.max(...objs.map(o => o.userData.cmpBox.max.x - o.userData.cmpBox.min.x)) * 1.1;
+  // The clock starts after two drawn frames: the first frame of a new scene compiles its shaders,
+  // which can take longer than the whole taxi-in on a slow machine.
+  let t0 = null;
+  let frames = 0;
+  const START = 350; // pause on the parked model first
+  const STEP = 750; // between arrivals
+  const DUR = 1500;
+  objs.slice(1).forEach(o => { o.visible = false; });
+  viewer.animate(now => {
+    if (frames++ < 2) return true;
+    t0 ??= now;
+    let busy = false;
+    objs.forEach((o, i) => {
+      if (i === 0) return;
+      const t = (now - t0 - START - (i - 1) * STEP) / DUR;
+      o.visible = t > 0;
+      o.position.x = parked[i] + run * (1 - easeOut(Math.min(1, Math.max(0, t))));
+      if (t < 1) busy = true;
+    });
+    return busy;
+  });
 }
 
 /** Clears the depth buffer just before a layer of the stack, so that layer is drawn whole. */
@@ -177,11 +217,14 @@ export function createCompare(ctx) {
   }
 
   // ── 3D arrangement ────────────────────────────────────
-  function arrange() {
+  let stack = []; // the overlay's models in stack order, for the taxi-in and Replay
+  function arrange({ animate = true } = {}) {
     const viewer = ctx.ensureViewer();
     const group = new THREE.Group();
     group.name = 'compare';
     const objs = current.objs;
+    stack = [];
+    for (const o of objs.values()) o.visible = true; // a taxi-in cut short may have left some hidden
     if (current.mode === 'overlay') {
       // Largest footprint at the bottom of the stack, smallest on top, noses on one point.
       const area = m => { const b = objs.get(m.id).userData.cmpBox; return (b.max.x - b.min.x) * (b.max.z - b.min.z); };
@@ -190,6 +233,7 @@ export function createCompare(ctx) {
         obj.position.set(-obj.userData.cmpBox.min.x, 0, 0);
         stackPaint(obj, colorOf(m), layer);
         group.add(obj, depthClear(layer));
+        stack.push(obj);
       });
       viewer.setAmbientOcclusion(false);
     } else {
@@ -227,6 +271,14 @@ export function createCompare(ctx) {
     viewer.setPicking(false);
     // An overlay fits whole; a line-up fits its width to the stage, which brings a long row much closer.
     viewer.setModel(group, { fit: current.mode === 'lineup' ? lineupFit(group) : (innerWidth < 760 ? 0.9 : 0.76) });
+    // Framed at the parked positions; now roll the smaller models in.
+    if (current.mode === 'overlay' && animate) taxiIn(viewer, stack);
+  }
+
+  function replay() {
+    if (current.mode !== 'overlay' || stack.length < 2) return;
+    stack.forEach(o => { o.position.x = -o.userData.cmpBox.min.x; });
+    taxiIn(ctx.ensureViewer(), stack);
   }
 
   /**
@@ -257,8 +309,8 @@ export function createCompare(ctx) {
     silDirty = false;
     // Silhouettes borrow the objects for a moment: draw them at their own origin.
     const items = current.sel.map(m => ({ obj: current.objs.get(m.id), color: colorOf(m) }));
-    const saved = items.map(it => it.obj.position.clone());
-    items.forEach(it => it.obj.position.set(0, 0, 0));
+    const saved = items.map(it => [it.obj.position.clone(), it.obj.visible]);
+    items.forEach(it => { it.obj.position.set(0, 0, 0); it.obj.visible = true; });
     // A three-view sheet at one scale, sized to fit the panel without scrolling: side and front
     // share the ground line, the top view sits under the side view so noses and tails line up,
     // and the key fills the last corner.
@@ -267,7 +319,7 @@ export function createCompare(ctx) {
     const width = Math.min(panel.clientWidth - 2 * pad, 1400);
     const height = panel.clientHeight - 2 * pad;
     const sil = silhouettes(items, { width, height, gap, ink: css('--ink'), faint: css('--faint') });
-    items.forEach((it, i) => it.obj.position.copy(saved[i]));
+    items.forEach((it, i) => { it.obj.position.copy(saved[i][0]); it.obj.visible = saved[i][1]; });
     const cssW = c => parseFloat(c.style.width);
     host.innerHTML = `<div class="sil-sheet" style="grid-template-columns:${cssW(sil.side)}px ${cssW(sil.front)}px;gap:${gap}px">
         <figure class="sil" data-v="side"><figcaption class="label">Side</figcaption></figure>
@@ -350,6 +402,9 @@ export function createCompare(ctx) {
   }
 
   function toolsHTML() {
+    if (current.tab === 'overlay' && current.sel.length > 1) {
+      return `<button type="button" class="pick-btn" data-cmp-replay title="Taxi the aircraft in again"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>Replay</button>`;
+    }
     if (current.tab !== 'lineup' || !current.sel.length) return '';
     return pickerHTML({ name: 'cmp-sort', label: 'Sort the line-up', prefix: 'Sort', value: current.sort, align: 'end', options: Object.entries(SORTS).map(([k, v]) => ({ value: k, label: v.label })) });
   }
@@ -397,6 +452,7 @@ export function createCompare(ctx) {
     });
     const tabs = $('.cmp-tabs');
     tabs.addEventListener('click', e => { const b = e.target.closest('[data-cmp-tab]'); if (b && !b.disabled) setTab(b.dataset.cmpTab); });
+    $('#cmp-tools').addEventListener('click', e => { if (e.target.closest('[data-cmp-replay]')) replay(); });
     // Arrow keys move between tabs, as in any tab list.
     tabs.addEventListener('keydown', e => {
       if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(e.key)) return;

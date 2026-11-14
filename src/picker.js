@@ -82,7 +82,7 @@ export function installPickers() {
   if (installed) return;
   installed = true;
   document.addEventListener('click', e => {
-    const btn = e.target.closest('.pick-btn');
+    const btn = e.target.closest('.pick .pick-btn');
     if (btn) {
       const pick = btn.closest('.pick');
       if (pick.classList.contains('open')) close(pick); else open(pick);
