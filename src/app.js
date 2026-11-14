@@ -3,11 +3,13 @@ import { liveriesFor, withLivery, isAccent } from './parametric/liveries.js';
 
 // The 3D engine (Three.js, builders, viewer) loads on demand: the catalog only shows prerendered
 // thumbnails, so it renders without it. Model pages wait for it; the home page fetches it when idle.
-let buildModel, finalize, partCount, loadAssetModel, createViewer, SYSTEMS, thumbnail;
+let buildModel, finalize, partCount, loadAssetModel, createViewer, SYSTEMS, thumbnail, createCompare;
 let engine = null;
 const loadEngine = () => (engine ??= import('./engine.js').then(e => {
-  ({ buildModel, finalize, partCount, loadAssetModel, createViewer, SYSTEMS, thumbnail } = e);
+  ({ buildModel, finalize, partCount, loadAssetModel, createViewer, SYSTEMS, thumbnail, createCompare } = e);
 }));
+const needsEngine = route => route.name === 'model' || route.name === 'compare';
+let compareView = null;
 let engineReady = false;
 
 const SPEC_LABELS = {
@@ -78,6 +80,7 @@ const ICON = {
   overview: '<circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/>',
   specs: '<path d="M8 6h12M8 12h12M8 18h12"/><path d="M4 6h.01M4 12h.01M4 18h.01"/>',
   drawing: '<path d="M3 17l6-10 4 7 3-4 5 7z"/><path d="M3 21h18"/>',
+  compare: '<path d="M5 20V11M12 20V4M19 20v-6"/><path d="M3 20h18"/>',
   sources: '<path d="M10 14a4 4 0 0 0 5.66 0l3-3a4 4 0 0 0-5.66-5.66l-1 1"/><path d="M14 10a4 4 0 0 0-5.66 0l-3 3a4 4 0 0 0 5.66 5.66l1-1"/>',
   part: '<path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M12 12l8-4.5M12 12v9M12 12L4 7.5"/>',
   search: '<circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/>',
@@ -122,6 +125,7 @@ function parseRoute() {
   if (seg[0] === 'm' && seg[1]) return { name: 'model', id: seg[1], part: q.get('part'), xray: q.get('xray') === '1', person: q.get('person') === '1', view: q.get('view'), livery: q.get('livery') };
   if (seg[0] === 'c' && seg[1]) return { name: 'category', id: seg[1] };
   if (seg[0] === 'history') return { name: 'history' };
+  if (seg[0] === 'compare') return { name: 'compare', all: seg[1] === 'all', ids: seg[1] && seg[1] !== 'all' ? seg[1].split(',') : [], mode: q.get('mode'), sort: q.get('sort') };
   return { name: 'home' };
 }
 
@@ -130,14 +134,14 @@ function navLinks(route) {
   $('#nav').innerHTML = [
     `<a href="#/" ${route.name === 'home' ? 'aria-current="page"' : ''}>Catalog</a>`,
     ...state.categories.map(c => `<a href="#/c/${esc(c.id)}" ${cur === c.id ? 'aria-current="page"' : ''}>${esc(c.label)}</a>`),
-    '<a aria-disabled="true" title="Milestone M3">Compare<span class="soon">M3</span></a>',
+    `<a href="#/compare" ${route.name === 'compare' ? 'aria-current="page"' : ''}>Compare</a>`,
     `<a href="#/history" ${route.name === 'history' ? 'aria-current="page"' : ''}>History</a>`,
   ].join('');
 }
 
 function render() {
   const route = parseRoute();
-  if (route.name === 'model' && !engineReady) {
+  if (needsEngine(route) && !engineReady) {
     navLinks(route);
     if (!$('#stage')) $('#page').innerHTML = `<div class="page"><p class="note">Loading the 3D viewer…</p></div>`;
     loadEngine().then(() => { engineReady = true; render(); }, err => {
@@ -146,7 +150,23 @@ function render() {
     });
     return;
   }
+  if (route.name === 'compare') {
+    compareView ??= createCompare({
+      $, esc,
+      models: () => state.models,
+      specLabels: SPEC_LABELS,
+      groupOrder: GROUP_ORDER,
+      ensureViewer,
+      modelObject,
+    });
+    compareView.render(route);
+    state.inCompare = true;
+    window.scrollTo(0, 0);
+    navLinks(route);
+    return;
+  }
   if (route.name === 'model') {
+    if (state.inCompare) { state.inCompare = false; viewer?.setView(null); } // Compare leaves the apron camera on
     if (route.xray) state.xray = true;
     if (state.model?.id !== route.id) state.livery = route.livery ?? null;
     renderModel(route.id, route.part);
@@ -356,7 +376,8 @@ function renderModel(id, partId) {
           <div class="hud-top">
             <div class="readout"><span>${esc(code(m))}</span><span>L <b>${m.specs.length_m}</b> m</span><span>${widthLabel(m) === 'span' ? 'S' : 'W'} <b>${widthOf(m)}</b> m</span><span>H <b>${m.specs.height_m}</b> m</span></div>
             <div class="stepper">
-              <a class="icon-btn" href="#/m/${esc(prev.id)}" title="Previous: ${esc(prev.name)}" aria-label="Previous model"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></a>
+              <a class="icon-btn" href="#/compare/${esc(m.id)}" title="Compare with other models" aria-label="Compare ${esc(m.name)} with other models">${icon('compare', 16)}</a>
+              <a class="icon-btn" href="#/m/${esc(prev.id)}" title="Previous:${esc(prev.name)}" aria-label="Previous model"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></a>
               <a class="icon-btn" href="#/m/${esc(next.id)}" title="Next: ${esc(next.name)}" aria-label="Next model"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a>
             </div>
           </div>
@@ -381,6 +402,7 @@ function renderModel(id, partId) {
     $('#stage').prepend($('#stage-host'));
     applyDrawers();
     const v = ensureViewer();
+    v.setAmbientOcclusion(true); // Compare's overlay turns it off
     v.setXray(state.xray);
     v.setPicking(state.pick);
     $('#pick').addEventListener('click', () => setPicking(!state.pick));
@@ -422,6 +444,16 @@ function setPicking(on) {
 }
 
 /** Put the detailed asset (when there is one and it is enabled) or the generated model on stage. */
+/** One model at its default livery, for Compare. A detailed model that fails to load falls back to its generated build. */
+function modelObject(m) {
+  if (!m.asset) return Promise.resolve(buildModel(withLivery(m, null)));
+  return loadAssetModel(m).then(o => finalize(o, m)).catch(err => {
+    if (m.builder === 'asset') throw err;
+    console.error(err);
+    return buildModel(withLivery(m, null));
+  });
+}
+
 function showModel(m, partId) {
   const token = ++state.loadToken;
   const done = obj => {

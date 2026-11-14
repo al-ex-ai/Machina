@@ -6,3 +6,4 @@ export { loadAssetModel } from './assets.js';
 export { createViewer } from './scene.js';
 export { SYSTEMS } from './parts/common.js';
 export { thumbnail } from './thumbs.js';
+export { createCompare } from './compare.js';
