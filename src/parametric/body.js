@@ -161,7 +161,7 @@ export function mergeIndexed(geos) {
   const idx = [];
   let base = 0;
   for (const g of geos) {
-    for (const n of names) out[n].push(...g.attributes[n].array);
+    for (const n of names) { const arr = g.attributes[n].array; for (let i = 0; i < arr.length; i++) out[n].push(arr[i]); } // no spread: a fine loft is too long for one call
     const index = g.index ? g.index.array : [...Array(g.attributes.position.count).keys()];
     for (const i of index) idx.push(i + base);
     base += g.attributes.position.count;
