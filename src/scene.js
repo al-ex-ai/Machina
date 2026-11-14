@@ -347,7 +347,9 @@ export function createViewer(container) {
     anims.clear();
     if (!model) return;
     scene.remove(model);
-    model.traverse(o => { if (o.isMesh) { o.geometry.dispose(); for (const m of [o.material].flat()) m.dispose(); } });
+    // Textures are usually shared with a loader cache, so only those a material owns outright
+    // (userData.ownsMap, like Compare's ground labels) are freed here.
+    model.traverse(o => { if (o.isMesh) { o.geometry.dispose(); for (const m of [o.material].flat()) { if (m.userData?.ownsMap) m.map?.dispose(); m.dispose(); } } });
     model = null;
     parts = [];
     selected = hovered = null;
@@ -459,6 +461,8 @@ export function createViewer(container) {
       return p ? new THREE.Box3().setFromObject(p).getSize(new THREE.Vector3()) : null;
     },
     listParts: () => parts.map(p => p.userData),
+    /** The WebGL renderer, so off-screen drawing (Compare's silhouettes) can reuse its uploaded geometry. */
+    renderer,
     modelSize: () => (model ? new THREE.Box3().setFromObject(model).getSize(new THREE.Vector3()) : null),
     on(event, fn) { listeners[event].push(fn); },
   };

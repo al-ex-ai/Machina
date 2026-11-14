@@ -63,6 +63,7 @@ function apronLabel(name, detail, color, width, size) {
     new THREE.PlaneGeometry(width, width * LABEL_ASPECT),
     new THREE.MeshBasicMaterial({ map: tex, transparent: true, depthWrite: false }),
   );
+  plate.material.userData.ownsMap = true; // the viewer frees the texture with the material
   // Flat on the ground, reading from the default camera (which looks along +x from the -x side).
   plate.rotation.set(-Math.PI / 2, -Math.PI / 2, 0, 'YXZ');
   plate.renderOrder = 2;
@@ -318,7 +319,7 @@ export function createCompare(ctx) {
     const pad = parseFloat(getComputedStyle(panel).paddingLeft) || 20;
     const width = Math.min(panel.clientWidth - 2 * pad, 1400);
     const height = panel.clientHeight - 2 * pad;
-    const sil = silhouettes(items, { width, height, gap, ink: css('--ink'), faint: css('--faint') });
+    const sil = silhouettes(items, { width, height, gap, ink: css('--ink'), faint: css('--faint'), renderer: ctx.ensureViewer().renderer });
     items.forEach((it, i) => { it.obj.position.copy(saved[i][0]); it.obj.visible = saved[i][1]; });
     const cssW = c => parseFloat(c.style.width);
     host.innerHTML = `<div class="sil-sheet" style="grid-template-columns:${cssW(sil.side)}px ${cssW(sil.front)}px;gap:${gap}px">
