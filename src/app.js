@@ -159,6 +159,8 @@ function render() {
       ensureViewer,
       modelObject,
     });
+    parkViewer(); // keep the canvas alive while the page is rebuilt (it may sit in the model page)
+    state.loadToken++; // a model page load still in flight must not land on this page
     compareView.render(route);
     state.inCompare = true;
     window.scrollTo(0, 0);
@@ -175,6 +177,7 @@ function render() {
   }
   else {
     parkViewer();
+    state.loadToken++;
     if (route.name === 'category') renderCategory(route.id);
     else if (route.name === 'history') renderHistory();
     else renderHome();
