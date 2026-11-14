@@ -1,11 +1,14 @@
 // Machina app: hash router with home, category and model pages.
-import './builders/index.js';
-import { buildModel, finalize, partCount } from './registry.js';
-import { loadAssetModel } from './assets.js';
-import { createViewer } from './scene.js';
-import { SYSTEMS } from './parts/common.js';
-import { thumbnail } from './thumbs.js';
 import { liveriesFor, withLivery, isAccent } from './parametric/liveries.js';
+
+// The 3D engine (Three.js, builders, viewer) loads on demand: the catalog only shows prerendered
+// thumbnails, so it renders without it. Model pages wait for it; the home page fetches it when idle.
+let buildModel, finalize, partCount, loadAssetModel, createViewer, SYSTEMS, thumbnail;
+let engine = null;
+const loadEngine = () => (engine ??= import('./engine.js').then(e => {
+  ({ buildModel, finalize, partCount, loadAssetModel, createViewer, SYSTEMS, thumbnail } = e);
+}));
+let engineReady = false;
 
 const SPEC_LABELS = {
   manufacturer: 'Manufacturer',
@@ -134,6 +137,15 @@ function navLinks(route) {
 
 function render() {
   const route = parseRoute();
+  if (route.name === 'model' && !engineReady) {
+    navLinks(route);
+    if (!$('#stage')) $('#page').innerHTML = `<div class="page"><p class="note">Loading the 3D viewer…</p></div>`;
+    loadEngine().then(() => { engineReady = true; render(); }, err => {
+      engine = null;
+      $('#page').innerHTML = `<div class="page"><h1>Could not load the 3D viewer</h1><p class="note">${esc(err.message)}</p></div>`;
+    });
+    return;
+  }
   if (route.name === 'model') {
     if (route.xray) state.xray = true;
     if (state.model?.id !== route.id) state.livery = route.livery ?? null;
@@ -171,7 +183,7 @@ function hydrateThumbs(root = document) {
       img.hidden = false;
       img.nextElementSibling?.classList.contains('spinner') && img.nextElementSibling.remove();
     };
-    const live = () => thumbnail(m).then(url => { img.onload = null; img.src = url; reveal(); }).catch(() => {});
+    const live = () => loadEngine().then(() => thumbnail(m)).then(url => { img.onload = null; img.src = url; reveal(); }).catch(() => {});
     const pre = state.thumbs[m.id];
     if (!pre) { live(); continue; }
     img.decoding = 'async';
@@ -744,18 +756,36 @@ document.addEventListener('keydown', e => {
 window.addEventListener('hashchange', render);
 
 // ── Boot ───────────────────────────────────────────────
-async function boot() {
+// data/catalog.json bundles categories, listed models and thumbnails into one request. The dev
+// server builds it on the fly and the deploy hook writes it; any other static server falls back
+// to the separate files.
+async function loadCatalog() {
+  const bundle = await fetch('./data/catalog.json').then(r => (r.ok ? r.json() : null)).catch(() => null);
+  if (bundle) return bundle;
   const [categories, index, thumbs] = await Promise.all([
     fetch('./data/categories.json').then(r => r.json()),
     fetch('./data/index.json').then(r => r.json()),
     fetch('./data/thumbs.json').then(r => (r.ok ? r.json() : {})).catch(() => ({})),
   ]);
+  const models = await Promise.all(index.models.map(p => fetch(`./data/${p}`).then(r => r.json())));
+  return { categories, models, thumbs };
+}
+
+async function boot() {
+  const { categories, models, thumbs } = await loadCatalog();
   state.categories = categories;
   state.thumbs = thumbs;
-  state.models = await Promise.all(index.models.map(p => fetch(`./data/${p}`).then(r => r.json())));
+  state.models = models;
   // Part counts for the home stats come with the thumbnails; only models without one are built here.
+  if (models.some(m => !thumbs[m.id])) await loadEngine();
   for (const m of state.models) m._parts = thumbs[m.id]?.parts ?? partCount(m);
   render();
+  // Warm the 3D engine once the thumbnails are in, so opening a model does not wait for it
+  // and the download never competes with the catalog.
+  const idle = window.requestIdleCallback ?? (f => setTimeout(f, 200));
+  const thumbsIn = [...document.querySelectorAll('img[data-thumb]')].filter(i => !i.complete)
+    .map(i => new Promise(r => { i.addEventListener('load', r, { once: true }); i.addEventListener('error', r, { once: true }); }));
+  Promise.all(thumbsIn).then(() => idle(() => loadEngine().catch(() => {}), { timeout: 3000 }));
 }
 
 boot().catch(err => {

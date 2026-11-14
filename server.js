@@ -3,6 +3,7 @@ import { createServer } from 'node:http';
 import { readFile, stat } from 'node:fs/promises';
 import { extname, join, normalize, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { catalogBundle } from './src/catalog-node.js';
 
 const ROOT = fileURLToPath(new URL('.', import.meta.url));
 const HOST = '127.0.0.1';
@@ -15,11 +16,17 @@ const TYPES = {
   '.json': 'application/json; charset=utf-8',
   '.svg': 'image/svg+xml',
   '.png': 'image/png',
+  '.webp': 'image/webp',
 };
 
 createServer(async (req, res) => {
   try {
     const url = new URL(req.url ?? '/', `http://${HOST}`);
+    if (url.pathname === '/data/catalog.json') {
+      res.writeHead(200, { 'Content-Type': TYPES['.json'], 'Cache-Control': 'no-cache' });
+      res.end(catalogBundle());
+      return;
+    }
     let path = normalize(join(ROOT, decodeURIComponent(url.pathname)));
     if (!path.startsWith(ROOT.endsWith(sep) ? ROOT : ROOT + sep) && path !== ROOT) {
       res.writeHead(403).end();

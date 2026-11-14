@@ -19,7 +19,11 @@ while read -r oldrev newrev ref; do
     V=$(git --git-dir="$GIT_DIR" rev-parse --short "$BRANCH")
     find "$TARGET/src" -name '*.js' ! -name '*-node.js' -print0 |
       V="$V" xargs -0 perl -pi -e "s#('\.\.?/[A-Za-z0-9_/.-]+\.js)(\?v=[^']*)?'#\1?v=\$ENV{V}'#g"
-    V="$V" perl -pi -e 's#((?:src|href)="\./src/(?:app\.js|style\.css))(\?v=[^"]*)?"#$1?v=$ENV{V}"#g' "$TARGET/index.html"
+    V="$V" perl -pi -e 's#((?:src|href)="\./src/[A-Za-z0-9_/.-]+\.(?:js|css))(\?v=[^"]*)?"#$1?v=$ENV{V}"#g' "$TARGET/index.html"
+
+    # One file with categories, listed models and thumbnails, so the catalog boots with one request.
+    node --input-type=module -e "const m = await import('$TARGET/src/catalog-node.js'); m.writeCatalogBundle();" ||
+      echo "==> catalog bundle failed; the app falls back to the separate data files"
     echo "==> Deploy complete ($V)"
   fi
 done
