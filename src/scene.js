@@ -279,8 +279,9 @@ export function createViewer(container) {
   }
 
   // Camera presets: null is the default three-quarter view. "apron" looks at a wingtip-to-wingtip
-  // line-up nose on and from above, so every model in it is about the same distance away.
-  const VIEWS = { front: [-1, 0.06, 0], side: [0, 0.06, 1], right: [0, 0.06, -1], top: [0.001, 1, 0], rear: [1, 0.12, 0], apron: [-0.62, 0.78, 0.1] };
+  // line-up nose on and from above, so every model in it is about the same distance away; "stack" is
+  // a higher three-quarter view for Compare's overlay, where the wing outlines matter most.
+  const VIEWS = { front: [-1, 0.06, 0], side: [0, 0.06, 1], right: [0, 0.06, -1], top: [0.001, 1, 0], rear: [1, 0.12, 0], apron: [-0.62, 0.78, 0.1], stack: [-0.55, 0.72, 0.5] };
   let view = null;
   let fit = 0.78;
   function frame() {

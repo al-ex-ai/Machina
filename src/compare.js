@@ -70,18 +70,51 @@ function apronLabel(name, detail, color, width, size) {
   return plate;
 }
 
-function tintFor(color) {
-  return new THREE.MeshStandardMaterial({ color, transparent: true, opacity: 0.32, depthWrite: false, side: THREE.DoubleSide, roughness: 0.7, metalness: 0 });
+// Overlay style: a stack. Each model is one matte color, drawn whole from the largest at the
+// bottom to the smallest on top, so every model stays visible and the larger ones show only where
+// they reach past the smaller. Interiors, lights and antennas are left out.
+const OVERLAY_HIDE = new Set(['interior', 'lights', 'avionics']);
+
+function systemOf(o) {
+  for (let p = o; p; p = p.parent) if (p.userData?.part) return p.userData.system;
+  return null;
 }
 
-/** Swap a model's materials for one see-through color, or put its own back. */
-function tint(obj, material) {
-  obj.traverse(o => {
-    if (!o.isMesh || o.userData.cmpLabel) return;
+/**
+ * Paint a model in one solid color at a place in the stack (layer 0 is drawn first), or put
+ * its own look back (color null). The stack is drawn in the transparent pass, after the ground
+ * and grid, with the depth buffer cleared before each layer, so each layer is drawn whole on top.
+ */
+function stackPaint(obj, color, layer = 0) {
+  const solid = color && new THREE.MeshStandardMaterial({ color, roughness: 0.6, metalness: 0.05, side: THREE.DoubleSide, transparent: true, opacity: 1, depthWrite: true });
+  const meshes = [];
+  obj.traverse(o => { if (o.isMesh && !o.userData.cmpLabel && !o.userData.cmpClear) meshes.push(o); });
+  for (const o of meshes) {
     o.userData.cmpSolid ??= o.material;
-    o.material = material ? (Array.isArray(o.userData.cmpSolid) ? o.userData.cmpSolid.map(() => material) : material) : o.userData.cmpSolid;
-    o.castShadow = !material;
-  });
+    o.userData.cmpVisible ??= o.visible;
+    if (!color) {
+      o.material = o.userData.cmpSolid;
+      o.visible = o.userData.cmpVisible;
+      o.castShadow = true;
+      o.renderOrder = 0;
+      continue;
+    }
+    if (OVERLAY_HIDE.has(systemOf(o))) { o.visible = false; continue; }
+    o.material = Array.isArray(o.userData.cmpSolid) ? o.userData.cmpSolid.map(() => solid) : solid;
+    o.castShadow = false;
+    o.renderOrder = 2 + layer * 2;
+  }
+}
+
+/** Clears the depth buffer just before a layer of the stack, so that layer is drawn whole. */
+function depthClear(layer) {
+  const m = new THREE.Mesh(new THREE.PlaneGeometry(0.001, 0.001), new THREE.MeshBasicMaterial({ colorWrite: false, depthWrite: false, transparent: true }));
+  m.frustumCulled = false;
+  m.renderOrder = 1 + layer * 2;
+  m.userData.cmpClear = true;
+  m.onBeforeRender = renderer => renderer.clearDepth();
+  m.raycast = () => {};
+  return m;
 }
 
 function disposeDeep(obj) {
@@ -149,12 +182,14 @@ export function createCompare(ctx) {
     group.name = 'compare';
     const objs = current.objs;
     if (current.mode === 'overlay') {
-      for (const m of current.sel) {
+      // Largest footprint at the bottom of the stack, smallest on top, noses on one point.
+      const area = m => { const b = objs.get(m.id).userData.cmpBox; return (b.max.x - b.min.x) * (b.max.z - b.min.z); };
+      [...current.sel].sort((a, b) => area(b) - area(a)).forEach((m, layer) => {
         const obj = objs.get(m.id);
         obj.position.set(-obj.userData.cmpBox.min.x, 0, 0);
-        tint(obj, tintFor(colorOf(m)));
-        group.add(obj);
-      }
+        stackPaint(obj, colorOf(m), layer);
+        group.add(obj, depthClear(layer));
+      });
       viewer.setAmbientOcclusion(false);
     } else {
       const list = sortedSel();
@@ -174,7 +209,7 @@ export function createCompare(ctx) {
         const slot = Math.max(spans[i], minSlot);
         const cz = z + slot / 2;
         obj.position.set(-box.min.x, 0, cz - (box.min.z + box.max.z) / 2);
-        tint(obj, null);
+        stackPaint(obj, null);
         group.add(obj);
         const v = s.get(m);
         const detail = v == null ? 'no data' : `${s.label} ${fmt(v, current.sort)}${s.unit ? ` ${s.unit}` : ''}`;
@@ -185,12 +220,12 @@ export function createCompare(ctx) {
       });
       viewer.setAmbientOcclusion(true);
     }
-    viewer.setView(current.mode === 'lineup' ? 'apron' : null);
+    viewer.setView(current.mode === 'lineup' ? 'apron' : 'stack');
     viewer.setExplode(0);
     viewer.setXray(false);
     viewer.setPicking(false);
     // An overlay fits whole; a line-up fits its width to the stage, which brings a long row much closer.
-    viewer.setModel(group, { fit: current.mode === 'lineup' ? lineupFit(group) : (innerWidth < 760 ? 1 : 0.9) });
+    viewer.setModel(group, { fit: current.mode === 'lineup' ? lineupFit(group) : (innerWidth < 760 ? 0.9 : 0.76) });
   }
 
   /**
