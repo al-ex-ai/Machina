@@ -31,8 +31,18 @@ const YEARS = new Set(['first_flight', 'in_service']);
 const fmt = (v, key) => (typeof v === 'number' && !YEARS.has(key) ? v.toLocaleString('en-US') : v);
 
 /** Ground marking in front of a nose: the model's name and the value it is sorted by. */
+// Every label in a line-up has the same size and the same name font, set by the longest name,
+// so a small aircraft's label reads as large as a big one's.
 const LABEL_ASPECT = 0.4; // label depth over width
-function apronLabel(name, detail, color, width) {
+const nameFont = size => `700 ${size}px "Segoe UI", system-ui, sans-serif`;
+function labelFontSize(names) {
+  const g = document.createElement('canvas').getContext('2d');
+  let size = 150;
+  const widest = () => { g.font = nameFont(size); return Math.max(...names.map(n => g.measureText(n).width)); };
+  while (size > 56 && widest() > 1000) size -= 4;
+  return size;
+}
+function apronLabel(name, detail, color, width, size) {
   const c = document.createElement('canvas');
   c.width = 1024;
   c.height = 1024 * LABEL_ASPECT;
@@ -40,11 +50,9 @@ function apronLabel(name, detail, color, width) {
   g.fillStyle = color;
   g.textAlign = 'center';
   g.textBaseline = 'middle';
-  let size = 150;
-  g.font = `700 ${size}px "Segoe UI", system-ui, sans-serif`;
-  while (g.measureText(name).width > 1000 && size > 56) g.font = `700 ${(size -= 4)}px "Segoe UI", system-ui, sans-serif`;
+  g.font = nameFont(size);
   g.fillText(name, 512, c.height * 0.36);
-  g.font = '600 92px ui-monospace, Consolas, monospace';
+  g.font = `600 ${Math.round(Math.min(96, size * 0.82))}px ui-monospace, Consolas, monospace`;
   g.globalAlpha = 0.85;
   g.fillText(detail, 512, c.height * 0.8);
   const tex = new THREE.CanvasTexture(c);
@@ -154,7 +162,10 @@ export function createCompare(ctx) {
       const spans = list.map(m => { const b = objs.get(m.id).userData.cmpBox; return b.max.z - b.min.z; });
       const maxSpan = Math.max(...spans);
       const gap = maxSpan * 0.12;
-      const minSlot = maxSpan * 0.3; // small models get room for a readable label
+      // One label size for the whole line-up; every slot is at least that wide, so labels never overlap.
+      const labelW = maxSpan * (list.length > MAX ? 0.5 : 0.85);
+      const minSlot = labelW / 0.95;
+      const fontSize = labelFontSize(list.map(m => m.name));
       // Wingtip to wingtip along +z, which is left to right from the apron camera, noses on one line.
       let z = 0;
       list.forEach((m, i) => {
@@ -167,9 +178,8 @@ export function createCompare(ctx) {
         group.add(obj);
         const v = s.get(m);
         const detail = v == null ? 'no data' : `${s.label} ${fmt(v, current.sort)}${s.unit ? ` ${s.unit}` : ''}`;
-        const w = slot * 0.95;
-        const plate = apronLabel(m.name, detail, colorOf(m), w);
-        plate.position.set(-w * LABEL_ASPECT / 2 - maxSpan * 0.03, 0.02, cz);
+        const plate = apronLabel(m.name, detail, colorOf(m), labelW, fontSize);
+        plate.position.set(-labelW * LABEL_ASPECT / 2 - maxSpan * 0.03, 0.02, cz);
         group.add(plate);
         z += slot + gap;
       });
@@ -179,8 +189,27 @@ export function createCompare(ctx) {
     viewer.setExplode(0);
     viewer.setXray(false);
     viewer.setPicking(false);
-    // A row or a stack of models should fit whole, also on a narrow phone screen.
-    viewer.setModel(group, { fit: innerWidth < 760 ? 1 : 0.9 });
+    // An overlay fits whole; a line-up fits its width to the stage, which brings a long row much closer.
+    viewer.setModel(group, { fit: current.mode === 'lineup' ? lineupFit(group) : (innerWidth < 760 ? 1 : 0.9) });
+  }
+
+  /**
+   * The viewer frames a model by its bounding sphere, which leaves a long, flat row tiny.
+   * Work out the camera distance that fits the row's width (and its depth) instead, as a share
+   * of that sphere distance. Uses the viewer's 40 degree field of view and the apron camera.
+   */
+  function lineupFit(group) {
+    const stage = $('#stage');
+    const aspect = (stage?.clientWidth || 1200) / Math.max(1, stage?.clientHeight || 600);
+    group.updateMatrixWorld(true);
+    const size = new THREE.Box3().setFromObject(group).getSize(new THREE.Vector3());
+    const vFov = (40 * Math.PI) / 180;
+    const hFov = 2 * Math.atan(Math.tan(vFov / 2) * aspect);
+    const sphere = size.length() / 2 / Math.sin(Math.min(vFov, hFov) / 2);
+    const el = Math.asin(0.78 / Math.hypot(0.62, 0.78, 0.1)); // apron camera elevation
+    const needW = size.z / 2 / Math.tan(hFov / 2) + size.x / 2; // the near edge of the row is closer
+    const needD = (size.x * Math.sin(el) + size.y * Math.cos(el)) / 2 / Math.tan(vFov / 2);
+    return Math.min(1, Math.max(0.2, (Math.max(needW, needD) * 1.12) / sphere));
   }
 
   // ── Silhouettes and specs ─────────────────────────────

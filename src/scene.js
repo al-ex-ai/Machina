@@ -280,7 +280,7 @@ export function createViewer(container) {
 
   // Camera presets: null is the default three-quarter view. "apron" looks at a wingtip-to-wingtip
   // line-up nose on and from above, so every model in it is about the same distance away.
-  const VIEWS = { front: [-1, 0.06, 0], side: [0, 0.06, 1], right: [0, 0.06, -1], top: [0.001, 1, 0], rear: [1, 0.12, 0], apron: [-0.82, 0.52, 0.12] };
+  const VIEWS = { front: [-1, 0.06, 0], side: [0, 0.06, 1], right: [0, 0.06, -1], top: [0.001, 1, 0], rear: [1, 0.12, 0], apron: [-0.62, 0.78, 0.1] };
   let view = null;
   let fit = 0.78;
   function frame() {
