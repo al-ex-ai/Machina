@@ -10,7 +10,7 @@ import { measure, geometryFrom, correct } from './from-views.js';
 import { targetOf, score } from './views.js';
 import { readDetails, applyDetails } from './details.js';
 
-const MATERIALS = {
+export const MATERIALS = {
   metal: { color: '#b9bfc7', metalness: 0.85, roughness: 0.28, clearcoat: 0 },
   surfaces: { color: '#d4d8de', roughness: 0.42 },
   controls: { color: '#c9ced5', roughness: 0.45 },

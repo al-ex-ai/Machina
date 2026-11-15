@@ -21,7 +21,8 @@
     "roundtrip": "node --import ./scripts/node/register.js scripts/roundtrip.js",
     "fit": "node --import ./scripts/node/register.js scripts/from-drawing.js",
     "validate": "node --import ./scripts/node/register.js scripts/validate.js",
-    "thumbs": "node --import ./scripts/node/register.js scripts/thumbs.js"
+    "thumbs": "node --import ./scripts/node/register.js scripts/thumbs.js",
+    "known": "node --import ./scripts/node/register.js scripts/known-aircraft.js"
   },
   "keywords": [
     "threejs",
