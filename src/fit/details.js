@@ -90,16 +90,33 @@ export function readDetails(shapes, L) {
 export function applyDetails(model, d) {
   const lv = model.livery, g = model.geometry;
   const found = [];
+  const L = g.length, D = 2 * Math.max(...g.fuselage.stations.map(q => q[1]));
+  const ruleDoors = lv.doors ?? [], ruleRow = lv.windows?.list ?? [];
   if (d.windows) {
-    lv.windows = d.windows;
     const y = median(d.windows.list.map(p => p[1]));
-    const D = 2 * Math.max(...g.fuselage.stations.map(q => q[1]));
+    // Doors: a cabin has at least as many as its length calls for. A drawing that shows
+    // fewer was too coarse to read them, and the rule's doors stand, on the drawing's window line.
+    const doors = d.doors.filter(q => q.h > 1.3).length >= ruleDoors.length ? d.doors : [...ruleDoors.map(q => ({ ...q, sill: r2(y - q.h * 0.52) })), ...d.doors.filter(q => q.h <= 1.3)];
+    lv.doors = doors.sort((p, q) => p.x - q.x);
+    // Windows: the drawing gives the line and the pitch. The row then runs the whole cabin
+    // at that pitch, between the first and last door, leaving the doors out. Small windows
+    // on a coarse sheet are missed one by one; the cabin they belong to is not.
+    const xs = d.windows.list.map(p => p[0]);
+    const gaps = xs.slice(1).map((x, i) => x - xs[i]).filter(v => v > 0.4 && v < 0.7);
+    const pitch = gaps.length > 3 ? median(gaps) : 0.53;
+    const from = Math.min(xs[0], ruleRow[0]?.[0] ?? xs[0]), to = Math.max(xs.at(-1), ruleRow.at(-1)?.[0] ?? xs.at(-1));
+    const list = [];
+    for (let x = xs[0] - Math.floor((xs[0] - from) / pitch) * pitch; x <= to + 0.01; x += pitch) {
+      if (lv.doors.some(q => Math.abs(q.x - x) < q.w / 2 + d.windows.w)) continue;
+      list.push([r2(x), r2(y)]);
+    }
+    lv.windows = { list, w: d.windows.w, h: d.windows.h };
     // The cheatline runs under the window belt, the title above it.
     lv.cheatline = { ...lv.cheatline, y: r2(y - d.windows.h / 2 - 0.045 * D - lv.cheatline.width / 2) };
     if (lv.titles) lv.titles.y = r2(y + d.windows.h / 2 + 0.12 + lv.titles.height / 2);
-    found.push(`${d.windows.list.length} windows`);
+    found.push(`${list.length} windows (${d.windows.list.length} read, pitch ${r2(pitch)} m)`, `${lv.doors.length} doors and exits (${d.doors.length} read)`);
   }
-  if (d.doors.length) { lv.doors = d.doors; found.push(`${d.doors.length} doors`); }
+  void L;
   if (d.panes.length >= 2) {
     // Each pane corner goes onto the body as [x, degrees round from the top centerline].
     const body = bodyProfile(g.fuselage.stations, g.fuselage);
