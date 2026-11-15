@@ -309,7 +309,11 @@ export function targetFromSheet(img, { length, span, height, scale, ppm = 40 }) 
   // A sheet that draws the wheels apart, on a ground line of their own, leaves both views short:
   // the published height, when given, then says how far the aircraft stands off the ground.
   const lift = Hf > Hs + 0.5 ? Hf - Hs : height && height > Hs + 0.5 ? height - Hs : 0;
-  const H = Hs + lift;
+  const Hd = Hs + lift;
+  // A drawing drawn too tall or too squat for its length (off by more than 5% from the published
+  // height) is put right: its heights are scaled to the published height, its lengths kept.
+  const ky = height && Math.abs(Hd / height - 1) > 0.05 ? height / Hd : 1;
+  const H = Hd * ky;
   const frame = { L: length, H, S };
   // Pixel 0 of each view is the outer edge of its line, half a line beyond the aircraft.
   const hx = (lw / 2) * kx, hTop = (lw / 2) * kTopX, hF = (lw / 2) * kFront;
@@ -325,13 +329,13 @@ export function targetFromSheet(img, { length, span, height, scale, ppm = 40 }) 
   const target = {
     ...frame, ppm,
     line: lw * kx,
-    side: sample('side', s, (x, y) => [(x + hx) / kx, s.h - (y - lift + hx) / kx]),
+    side: sample('side', s, (x, y) => [(x + hx) / kx, s.h - (y / ky - lift + hx) / kx]),
     top: sample('top', t, (x, z) => [(x + hTop) / kTopX, t.h / 2 + z / kTopZ]),
     // The front view hangs from its highest point, which both views share (the fin tip): a
     // front view drawn without its legs would otherwise sit on its belly.
-    front: f ? sample('front', f, (z, y) => [f.w / 2 + z / kFront, (H + hF - y) / kFront]) : null,
+    front: f ? sample('front', f, (z, y) => [f.w / 2 + z / kFront, (Hd + hF - y / ky) / kFront]) : null,
     // What is drawn inside the side view: windows, doors, cockpit panes.
-    inner: innerShapes(ink, label, w, side, sideFlipped, s.w, kx).map(q => (lift ? { ...q, y: q.y + lift, ...(q.points ? { points: q.points.map(([x, y]) => [x, y + lift]) } : {}) } : q)),
+    inner: innerShapes(ink, label, w, side, sideFlipped, s.w, kx).map(q => (lift || ky !== 1 ? { ...q, y: (q.y + lift) * ky, h: q.h * ky, ...(q.points ? { points: q.points.map(([x, y]) => [x, (y + lift) * ky]) } : {}) } : q)),
     found: {
       side: { box: [side.x0, side.y0, side.x1, side.y1], mirrored: sideFlipped, wheelBlobs: under.length },
       top: { box: [top.x0, top.y0, top.x1, top.y1], turned: topTurned, mirrored: topFlipped, symmetry: Math.round(top.sym * 100) / 100 },

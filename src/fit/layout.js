@@ -171,6 +171,23 @@ export function canardFrom(target, m) {
 }
 
 /**
+ * A chined body (SR-71): ahead of the wing the body is as wide as the top view shows it,
+ * chines and all, not as wide as its round core. Each station takes the half-width of the
+ * top view's run through the centerline there; its section flattens to match.
+ */
+function chined(g, target, m) {
+  const t = target.top, wingLe = m.wing.rows.length ? Math.min(...m.wing.rows.map(r => r.le)) : m.L * 0.5;
+  g.fuselage.stations = g.fuselage.stations.map(q => {
+    const [x] = q;
+    if (x <= 0.2 || x >= wingLe) return q;
+    const r = t.runsV(x).find(v => v[0] <= 0 && v[1] >= 0);
+    if (!r) return q;
+    const w = Math.min(-r[0], r[1]);
+    return w > q[1] ? [q[0], r2(w), ...q.slice(2)] : q;
+  });
+}
+
+/**
  * Twin fins standing on the nacelles, canted as the front view shows them: above the body,
  * the middle of each fin's run in the top rows gives where it stands at each height; a
  * line through those is the fin's lean. The side view gave its outline.
@@ -374,6 +391,7 @@ export function fitLayout(target, layout, about, { steps = Number(process.env.FI
   const make = reading => {
     const geometry = staysFrom(gearAsLaid({ ...geometryFrom(reading, { engineName: about.specs?.engine_type }), materials: MATERIALS }, reading, layout, target.line ?? 0), target.front, fairing);
     if (canard) geometry.surfaces.push(canard);
+    if (layout.body === 'chined') chined(geometry, target, reading);
     if (layout.engines.nacelle === 'in-wing') inWingNacelles(geometry, target);
     if (/twin/.test(layout.fins ?? '')) twinFins(geometry, target.front, target.H);
     if (reading.boxes?.length) { const wing = geometry.surfaces[0]; geometry.pods = [...(geometry.pods ?? []), ...reading.boxes.map((b, i) => boxPod(b, wing, i))]; }
