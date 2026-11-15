@@ -52,12 +52,95 @@ export function constrain(m, layout, views) {
   // Engines beside the rear fuselage: the outer half of each nacelle is never hidden in the
   // front view. The outermost column gives its edge, the run heights inside it a circle.
   if (layout.engines.mount === 'rear' && views?.front) out.rear = out.rear.map(e => nacelleFromFront(views.front, e) ?? e);
+  // A high wing: the hump over the root in the side view is the wing, not the body. The
+  // body's top runs straight under it, from just ahead of the root chord to just behind it.
+  if (layout.wing?.position === 'high' && out.wing.rows.length) {
+    const root = out.wing.rows[0], a = root.le - 0.5, b = root.te + 0.5;
+    const ya = lerpPts(out.top, a), yb = lerpPts(out.top, b);
+    out.top = out.top.map(([x, y]) => (x > a && x < b ? [x, Math.min(y, ya + (yb - ya) * (x - a) / (b - a))] : [x, y]));
+  }
   return out;
+}
+
+const lerpPts = (pts, x) => {
+  if (x <= pts[0][0]) return pts[0][1];
+  for (let i = 1; i < pts.length; i++) if (x <= pts[i][0]) { const [a, b] = [pts[i - 1], pts[i]]; return a[1] + (b[1] - a[1]) * (x - a[0]) / (b[0] - a[0] || 1); }
+  return pts.at(-1)[1];
+};
+
+/**
+ * The bullet on a T-tail where the fin meets the tailplane: in the side view, what reaches
+ * ahead of the fin's top section at the tailplane's height. Its width is the fin tip's in
+ * the front view at that height, or a third of its height.
+ */
+export function tailBullet(target, m, layout) {
+  if (layout.tail !== 'T' || !m.fin || !m.stab) return null;
+  const s = target.side, y = m.stab.h[0][1];
+  const rows = [...m.fin.rows].sort((p, q) => p.at - q.at), finTop = rows.at(-1);
+  const finLe = v => lerpPts(rows.map(r => [r.at, r.le]), v), stabLe = m.stab.rows[0].le;
+  const ys = [], x0s = [];
+  for (let v = y - 1.2; v <= target.H; v += 1 / s.ppm) {
+    const r = s.runsU(v).filter(q => q[1] > finTop.le).sort((p, q) => (q[1] - q[0]) - (p[1] - p[0]))[0];
+    if (r && r[0] < Math.min(finLe(Math.min(v, finTop.at)), stabLe) - 0.3) { ys.push(v); x0s.push(r[0]); }
+  }
+  if (ys.length < 4) return null;
+  // Behind its nose the bullet runs into the fin and tailplane: it is taken as long again behind the fin's leading edge.
+  const lo = Math.min(...ys), hi = Math.max(...ys), mid = (lo + hi) / 2, x0 = Math.min(...x0s), x1 = finTop.le + (finTop.le - x0);
+  let half = (hi - lo) / 3;
+  const f = target.front;
+  if (f) { const r = f.runsU(mid).find(q => q[0] <= 0 && q[1] >= 0); if (r && r[1] - r[0] < (hi - lo) * 1.5) half = Math.min(-r[0], r[1]); }
+  const len = x1 - x0, hh = (hi - lo) / 2;
+  const prof = [[0, 0.05], [0.08, 0.6], [0.25, 0.92], [0.5, 1], [0.75, 0.9], [0.92, 0.55], [1, 0.08]];
+  return { id: 'tail-bullet', label: 'Tail bullet fairing', system: 'structure', mirror: false, position: { x: r2(x0), y: 0, z: 0 }, nTop: 2, nBot: 2,
+    stations: prof.map(([t, k]) => [r2(t * len), r2(half * k), r2(mid + hh * k), r2(mid - hh * k), r2(mid)]) };
+}
+
+/**
+ * The fairing under the body at the wing (a wing-body fairing, gear sponsons): where the
+ * side view's belly drops below the straight belly of the constant section, as wide as the
+ * front view shows the body at that height. The fuselage section alone is round there.
+ */
+export function bellyFairing(target, m) {
+  const L = target.L, pts = m.bot.filter(p => p[0] > L * 0.12 && p[0] < L * 0.65);
+  if (pts.length < 20) return null;
+  // The straight belly: the upper hull of the bottom line (a fairing only ever lowers it).
+  const hull = [];
+  for (const p of pts) {
+    while (hull.length >= 2) { const [o, a] = hull.slice(-2); if ((a[0] - o[0]) * (p[1] - o[1]) - (a[1] - o[1]) * (p[0] - o[0]) >= 0) hull.pop(); else break; }
+    hull.push(p);
+  }
+  const lineAt = x => { for (let i = 1; i < hull.length; i++) if (x <= hull[i][0]) { const [a, b] = [hull[i - 1], hull[i]]; return a[1] + (b[1] - a[1]) * (x - a[0]) / (b[0] - a[0]); } return hull.at(-1)[1]; };
+  // The deepest stretch below it.
+  const depth = m.bot.map(([x, y]) => [x, x > L * 0.12 && x < L * 0.75 ? lineAt(Math.min(x, L * 0.65)) - y : 0]);
+  let best = null, cur = null;
+  for (const [x, d] of depth) {
+    if (d > 0.06) { cur ??= { x0: x, x1: x, max: 0 }; cur.x1 = x; cur.max = Math.max(cur.max, d); }
+    else if (cur) { if (!best || cur.max * (cur.x1 - cur.x0) > best.max * (best.x1 - best.x0)) best = cur; cur = null; }
+  }
+  if (cur && (!best || cur.max * (cur.x1 - cur.x0) > best.max * (best.x1 - best.x0))) best = cur;
+  if (!best || best.max < 0.15 || best.x1 - best.x0 < L * 0.08) return null;
+  const xm = (best.x0 + best.x1) / 2, floor = lineAt(Math.min(xm, L * 0.65)) - best.max;
+  // Width: the body's half-width in the front view just above the fairing's floor.
+  const f = target.front;
+  if (!f) return null;
+  const hw = [];
+  for (let y = floor + 0.15; y < floor + best.max * 0.8 + 0.15; y += 1 / f.ppm) { const r = f.runsU(y).find(q => q[0] <= 0 && q[1] >= 0); if (r) hw.push(Math.min(-r[0], r[1])); }
+  if (hw.length < 3) return null;
+  const w = median(hw), top = lineAt(Math.min(xm, L * 0.65)) + m.R * 0.6;
+  const n = 14, len = best.x1 - best.x0, botAt = x => { const q = m.bot.reduce((a, p) => (Math.abs(p[0] - x) < Math.abs(a[0] - x) ? p : a)); return q[1]; };
+  const stations = Array.from({ length: n + 1 }, (_, i) => {
+    const x = best.x0 + (len * i) / n, d = Math.max(0, lineAt(Math.min(x, L * 0.65)) - botAt(x));
+    const k = Math.max(0.15, Math.sqrt(Math.min(1, d / best.max)));
+    const bot = botAt(x);
+    return [r2(x - best.x0), r2(w * k), r2(top), r2(bot), r2(bot + Math.min(best.max * 0.6, (top - bot) * 0.4))];
+  });
+  return { id: 'belly-fairing', label: 'Belly fairing', system: 'structure', mirror: false, position: { x: r2(best.x0), y: 0, z: 0 }, nTop: 2, nBot: 3, stations };
 }
 
 /** A nacelle's center height, center and diameter from the outer half of its circle in the front view. */
 function nacelleFromFront(f, e) {
-  const r0 = e.dia / 2, win = q => q[1] > e.y - 2 * r0 && q[0] < e.y + 2 * r0;
+  // A run of the nacelle spans its center height (a wing root beside it does not).
+  const r0 = e.dia / 2, win = q => q[0] < e.y + 0.4 * r0 && q[1] > e.y - 0.4 * r0;
   const run = z => f.runsV(z).filter(win).sort((a, b) => (b[1] - b[0]) - (a[1] - a[0]))[0];
   let zOut = null;
   for (let z = e.z + 2 * r0; z > e.z; z -= 1 / f.ppm) if (run(z)) { zOut = z; break; }
@@ -118,8 +201,13 @@ function gearAsLaid(g, m, layout) {
 export function fitLayout(target, layout, about, { steps = 3, log } = {}) {
   const want = constrain(measure(target), layout, target);
   const frame = { L: target.L, H: target.H, S: target.S };
+  const fairing = bellyFairing(target, want), bullet = tailBullet(target, want, layout);
+  if (bullet) log?.(`tail bullet ${bullet.position.x} m on, ${bullet.stations.at(-1)[0]} m long`);
+  log?.(fairing ? `belly fairing ${fairing.position.x} m on, ${fairing.stations.at(-1)[0]} m long` : "no belly fairing");
   const make = reading => {
     const geometry = gearAsLaid({ ...geometryFrom(reading, { engineName: about.specs?.engine_type }), materials: MATERIALS }, reading, layout);
+    const extra = [fairing, bullet].filter(Boolean);
+    if (extra.length) geometry.pods = [...(geometry.pods ?? []), ...extra];
     return { id: about.id, name: about.name, category: 'aviation', builder: 'parametric', specs: about.specs ?? {}, note: 'Built from a three-view drawing: outside only, no cockpit or cabin interior.', livery: liveryFor(geometry), geometry };
   };
   const views = obj => inked(targetOf(obj, { ppm: target.ppm, frame }), target.line ?? 0);

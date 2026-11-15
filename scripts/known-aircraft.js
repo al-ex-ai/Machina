@@ -34,9 +34,11 @@ function enginesOf(obj) {
   const eng = meshes.filter(m => m.system === 'propulsion').flatMap(m => pick([m], /./)).map(t => t.map((v, k) => v - (k % 3 === 0 ? box.min[0] : k % 3 === 1 ? box.min[1] : 0)));
   const cz = t => (t[2] + t[5] + t[8]) / 3;
   const out = [];
-  for (const zc of clusters1(eng.map(cz), 0.6)) {
-    const tris = eng.filter(t => cz(t) >= zc.min && cz(t) <= zc.max);
-    if (tris.length < 20) continue;
+  // A part tagged as propulsion that is far smaller than the engines (a tail cone in one source) is not one.
+  const groups = clusters1(eng.map(cz), 0.6).map(zc => eng.filter(t => cz(t) >= zc.min && cz(t) <= zc.max));
+  const most = Math.max(0, ...groups.map(g => g.length));
+  for (const tris of groups) {
+    if (tris.length < 20 || tris.length < most * 0.3) continue;
     let n;
     try { n = nacelle(tris); } catch { continue; }
     const dia = 2 * Math.max(...n.nacelle.stations.map(q => q[1]));
