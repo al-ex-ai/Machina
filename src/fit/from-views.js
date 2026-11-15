@@ -7,7 +7,7 @@
 // Works in the ground frame: x from the nose aft, y up from the ground, z to the left.
 // Covers jet transports: one fuselage, one wing, a single fin, a tailplane on the body
 // or on the fin, engines under the wing or on the rear fuselage.
-import { Mask } from './views.js';
+import { Mask, blank } from './views.js';
 
 const r2 = v => Math.round(v * 100) / 100, r3 = v => Math.round(v * 1000) / 1000;
 const median = a => { const s = [...a].sort((p, q) => p - q); return s.length ? s[Math.floor(s.length / 2)] : NaN; };
@@ -36,6 +36,16 @@ function closed(mask, px = 2) {
     return out;
   };
   return new Mask(w, h, mask.ppm, mask.u0, mask.v0, pass(pass(mask.data, true), false));
+}
+
+/** Keep only what a mask shows on both sides of its centerline. */
+function mirrored(mask, across) {
+  const { w, h, data } = mask, out = new Uint8Array(w * h);
+  for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
+    const k = y * w + x, q = across === 'rows' ? (h - 1 - y) * w + x : y * w + (w - 1 - x);
+    out[k] = data[k] & data[q];
+  }
+  return new Mask(w, h, mask.ppm, mask.u0, mask.v0, out);
 }
 
 /** Line through most of the points (y within tol), ignoring the rest: what a cabin roof is among antennas and a fin. */
@@ -180,7 +190,6 @@ function readSide(t) {
   // are found from each stretch's own lowest point, since a leg may hang unloaded.
   // A thin strut can stand clear of the body in this view, so this reads the lowest
   // point of each column, attached or not.
-  const h = 0.12;
   const legs = [];
   const low = i => runs[i][0][0];
   for (const [a, b] of spans(cols.map(i => X(i) < xEnd && low(i) < belly.at(X(i)) - 0.15), Math.round(0.2 / d))) {
@@ -188,8 +197,14 @@ function readSide(t) {
     let lb = Infinity;
     for (let q = a; q <= b; q++) lb = Math.min(lb, low(cols[q]));
     if (lb > Math.max(0.6, belly.at(x0) * 0.35)) continue;
-    // Tires: where the row 12 cm above the lowest point cuts each wheel, the chord gives the diameter.
-    const tires = m.runsU(lb + h).filter(r => r[0] >= x0 - d && r[1] <= x1 + d).map(r => { const E = r[1] - r[0]; return { x: (r[0] + r[1]) / 2, d: (E * E) / (4 * h) + h }; }).filter(q => q.d > 0.25 && q.d < 1.9);
+    // Tires: a row a little above the lowest point cuts each wheel, and the chord gives
+    // the diameter. The height that shows the most wheels is used: too low and a tire
+    // standing on a drawn ground line is cut open, too high and wheels side by side merge.
+    let tires = [];
+    for (const h of [0.12, 0.06, 0.18, 0.25]) {
+      const found = m.runsU(lb + h).filter(r => r[0] >= x0 - d && r[1] <= x1 + d).map(r => { const E = r[1] - r[0]; return { x: (r[0] + r[1]) / 2, d: (E * E) / (4 * h) + h }; }).filter(q => q.d > 0.3 && q.d < 1.9);
+      if (found.length > tires.length) tires = found;
+    }
     if (!tires.length) continue;
     // Wheels of one leg are the same size: strays (a door edge, a strut end) are off the median.
     const dia = median(tires.map(q => q.d)), same = tires.filter(q => Math.abs(q.d - dia) < dia * 0.3);
@@ -363,7 +378,20 @@ function planformOf(rowsIn, d, opts = {}) {
   return { clean, engines, pods };
 }
 
-const sectionsOf = clean => bends(clean, ['le', 'te'], 0.06).map(r => ({ at: r2(r.at), le: r2(r.le), chord: r2(r.te - r.le) }));
+/**
+ * Sections of a surface from its edge rows. Rows are a pixel apart and carry pixel noise;
+ * real edges are straight between a few kinks. A running median takes out strays, an
+ * average the stairs, and only bends of more than 10 cm are kept.
+ */
+function sectionsOf(rows) {
+  const n = rows.length, k = Math.max(1, Math.round(n / 60));
+  const pass = (key, f) => rows.map((r, i) => { const w = Math.min(k * 2, i, n - 1 - i); return f(rows.slice(i - w, i + w + 1).map(q => q[key])); });
+  const mean = a => a.reduce((s, v) => s + v, 0) / a.length;
+  const med = { le: pass('le', median), te: pass('te', median) };
+  const mid = rows.map((r, i) => ({ at: r.at, le: med.le[i], te: med.te[i] }));
+  const sm = mid.map((r, i) => { const w = Math.min(k, i, n - 1 - i); const part = mid.slice(i - w, i + w + 1); return { at: r.at, le: mean(part.map(q => q.le)), te: mean(part.map(q => q.te)) }; });
+  return bends(sm, ['le', 'te'], 0.1).map(r => ({ at: r2(r.at), le: r2(r.le), chord: r2(r.te - r.le) }));
+}
 
 // ── Front view ─────────────────────────────────────────────────────────────
 
@@ -386,6 +414,8 @@ function readFront(t, R) {
       pick.used = true;
       out.push({ z: cols[i].z, lo: pick[0], hi: pick[1] });
       if (pick[1] - pick[0] < 0.9) prev = pick;
+      // An upright winglet is a tall run right at the tip: the wing carries on from its foot.
+      else if (cols[startIdx].z - cols[i].z < S * 0.08) prev = [pick[0], pick[0] + 0.3];
     }
     return out;
   };
@@ -451,7 +481,10 @@ function sectionOf(hw, R, crownY, botY) {
  * @param {{ L: number, H: number, S: number, side: Mask, top: Mask, front: Mask }} target
  */
 export function measure(target) {
-  const t = { ...target, side: closed(target.side), top: closed(target.top), front: closed(target.front) };
+  // A sheet without a front view still fits: heights across the span then fall back to rules.
+  // An aircraft is the same on both sides: the top and front views are folded about the
+  // centerline, and only what both halves show is kept (a caption, a one-sided mark, noise go).
+  const t = { ...target, side: closed(target.side), top: mirrored(closed(target.top), 'rows'), front: target.front ? mirrored(closed(target.front), 'cols') : blank('front', target, target.ppm) };
   const L = t.L;
   const s = readSide(t);
   const top = readTop(t, s.xEnd);
@@ -554,11 +587,27 @@ const NACELLE = [[0, 0.86], [0.04, 0.95], [0.18, 1], [0.5, 1], [0.78, 0.86], [1,
  */
 export function geometryFrom(m, { engineName = 'Engine' } = {}) {
   const { L, R } = m;
-  const xEnd = m.xEnd, lines = { top: m.top, bot: m.bot };
+  const xEnd = m.xEnd;
+  // A fuselage is a nose, a constant section and a tail: along the constant section the
+  // crown and the belly are straight lines, so readings within 8 cm of them are put on them.
+  const straight = pts => {
+    const mid = pts.filter(p => p[0] > L * 0.15 && p[0] < L * 0.7);
+    if (mid.length < 20) return pts;
+    const line = robustLine(mid, 0.05);
+    return pts.map(([x, y]) => [x, Math.abs(y - line.at(x)) < 0.08 ? line.at(x) : y]);
+  };
+  const lines = { top: straight(m.top), bot: straight(m.bot) };
   const held = (pts, z) => lerp(pts, Math.max(z, pts[0][0]));
   const hWing = z => held(m.wing.h, z);
   // Thickness: what the front view shows of the wing edge-on, less a few percent of chord for incidence.
-  const tcWing = (z, chord) => (m.wing.thick ? Math.min(0.15, Math.max(0.07, lerp(m.wing.thick, Math.max(z, R * 1.3)) / chord - 0.03)) : 0.11);
+  // Read over a tenth of the span at a time, so one odd column cannot put a ridge in the wing.
+  const tcWing = z => {
+    if (!m.wing.thick || m.wing.rows.length < 6) return 0.11;
+    const chordAt = q => { const r = m.wing.rows.reduce((a, c) => (Math.abs(c.at - q) < Math.abs(a.at - q) ? c : a)); return r.te - r.le; };
+    const z0 = R * 1.3, z1 = m.wing.rows.at(-1).at, w = (z1 - z0) * 0.05;
+    const around = Array.from({ length: 9 }, (_, i) => Math.min(z1, Math.max(z0, z - w + (i / 8) * 2 * w)));
+    return Math.min(0.15, Math.max(0.07, median(around.map(q => lerp(m.wing.thick, q) / chordAt(q) - 0.03))));
+  };
   // Stations: dense at the nose and tail, as the mesh converter spaces them.
   const stations = [];
   const N = 44;
@@ -587,7 +636,7 @@ export function geometryFrom(m, { engineName = 'Engine' } = {}) {
     });
   }
   if (m.fin) {
-    const secs = bends(m.fin.rows, ['le', 'te'], 0.06).map(r => ({ at: r2(r.at), le: r2(r.le), chord: r2(r.te - r.le), h: 0, tc: 0.1 }));
+    const secs = sectionsOf(m.fin.rows).map(q => ({ ...q, h: 0, tc: 0.1 }));
     const root = secs[0];
     const base = Math.min(bodyAt(root.le).top, bodyAt(Math.min(root.le + root.chord, xEnd)).top) - 0.4;
     const all = stub(secs, base);
@@ -607,8 +656,12 @@ export function geometryFrom(m, { engineName = 'Engine' } = {}) {
   }
 
   const wingAt = (k, z) => lerp(wingSecs.map(q => [q.at, q[k]]), z);
+  // Engines under one wing are the same engine: one diameter and one length for all,
+  // taken across the readings. Only where each hangs differs.
+  const engDia = median(m.engines.map(e => e.dia)), engLen = Math.min(engDia * 2.4, Math.max(engDia * 1.4, median(m.engines.map(e => e.exit - e.inlet)))); // a turbofan nacelle is about twice as long as it is wide
   const engines = m.engines.map((e, i, list) => {
-    const r = e.dia / 2, len = e.exit - e.inlet, y = e.bottom + r;
+    const r = engDia / 2, len = engLen, y = e.bottom + r, zc = e.z;
+    void zc;
     const st = NACELLE.map(([f, k]) => [r2(f * len), r2(r * k), r2(r * k), r2(-r * k), 0]);
     const top = y + r, wingLow = wingAt('h', e.z) - 0.1;
     const le = r2(Math.max(e.inlet + len * 0.15, e.wingLe - len * 0.5));
@@ -636,9 +689,9 @@ export function geometryFrom(m, { engineName = 'Engine' } = {}) {
     });
   }
   // Pods on the wing behind the trailing edge (gear fairings): as far under the wing as they reach behind it.
-  const pods = m.wing.pods.map(q => {
+  const pods = m.wing.pods.map((q, i, list) => {
     const r = q.width / 2, x0 = q.wingTe - (q.tail - q.wingTe) * 1.2, len = q.tail - x0, y = wingAt('h', q.z) - r * 0.25;
-    return { id: 'gear-pod', label: 'Main gear pod', system: 'gear', mirror: true, position: { x: r2(x0), y: 0, z: r2(q.z) }, nTop: 2, nBot: 2.2,
+    return { id: list.length > 1 ? `wing-pod-${i + 1}` : 'gear-pod', label: list.length > 1 ? `Wing pod ${i + 1}` : 'Main gear pod', system: list.length > 1 ? 'structure' : 'gear', mirror: true, position: { x: r2(x0), y: 0, z: r2(q.z) }, nTop: 2, nBot: 2.2,
       stations: [[0, 0.05, 0.05], [0.18, 0.9, 0.9], [0.6, 1, 1], [0.9, 0.55, 0.55], [1, 0.05, 0.05]].map(([f, kw, kh]) => [r2(f * len), r2(r * kw), r2(y + r * kh), r2(y - r * kh), r2(y)]) };
   });
 
@@ -658,7 +711,8 @@ export function geometryFrom(m, { engineName = 'Engine' } = {}) {
   for (let i = 0; i < count; i++) {
     const g = along[Math.min(i, along.length - 1)] ?? { x: r2(L * 0.5), d: 1, axles: 1, axleSpacing: 0 };
     const grp = across[Math.min(i, across.length - 1)] ?? [];
-    const z = grp.length ? grp.reduce((q, w) => q + w.z, 0) / grp.length : R * 1.2;
+    // Without a front view of the legs: in the pods behind the wing if it has them, else just outside the body.
+    const z = grp.length ? grp.reduce((q, w) => q + w.z, 0) / grp.length : (m.wing.pods[0]?.z ?? R * 1.2);
     const onWing = z > R * 0.95;
     gear.mains.push({ ...leg(g, grp, onWing ? wingAt('h', z) - 0.1 : bodyAt(g.x).bot + 0.35), z: r2(z), id: count > 1 ? (onWing ? 'wing-gear' : 'body-gear') : 'main-gear', label: count > 1 ? (onWing ? 'wing gear' : 'body gear') : 'main gear' });
   }

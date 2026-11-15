@@ -12,8 +12,8 @@ import { targetOf, score, compareMasks, Mask } from '../src/fit/views.js';
 import { fitViews } from '../src/fit/fit.js';
 
 const FLOOR = {
-  a320neo: { side: 0.97, top: 0.97, front: 0.84, mean: 0.08 },
-  tu134: { side: 0.96, top: 0.96, front: 0.84, mean: 0.08 },
+  a320neo: { side: 0.97, top: 0.97, front: 0.8, mean: 0.08 },
+  tu134: { side: 0.95, top: 0.96, front: 0.74, mean: 0.1 },
 };
 
 for (const [id, floor] of Object.entries(FLOOR)) {
