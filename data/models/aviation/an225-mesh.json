@@ -1,0 +1,51 @@
+{
+  "id": "an225-mesh",
+  "name": "Antonov An-225 (FlightGear mesh)",
+  "category": "aviation",
+  "group": "Workshop",
+  "builder": "asset",
+  "summary": "Answer key for the drawing test: the FlightGear mesh, not listed.",
+  "specs": {
+    "length_m": 84,
+    "wingspan_m": 88.4,
+    "height_m": 18.1
+  },
+  "asset": {
+    "path": "assets/aircraft/an225",
+    "license": "GPL-2.0",
+    "author": "FlightGear AN-225 contributors",
+    "source": "https://mirrors.ibiblio.org/flightgear/ftp/Aircraft-2020/AN-225.zip",
+    "files": [
+      {
+        "file": "Models/AN225-003-002d14.ac"
+      }
+    ],
+    "fallback": {
+      "id": "fuselage",
+      "label": "Fuselage",
+      "system": "structure"
+    },
+    "hide": [
+      "/^Trajectory/"
+    ],
+    "parts": [
+      {
+        "id": "engines",
+        "label": "Engines",
+        "system": "propulsion",
+        "match": [
+          "/^Engine/"
+        ]
+      },
+      {
+        "id": "gear",
+        "label": "Landing gear",
+        "system": "gear",
+        "match": [
+          "/-(MG|NG)-/",
+          "/^UC-/"
+        ]
+      }
+    ]
+  }
+}

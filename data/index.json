@@ -35,6 +35,8 @@
     "models/aviation/tu154b.json",
     "models/aviation/tu144-drawn.json",
     "models/aviation/sr71-drawn.json",
-    "models/aviation/an225-drawn.json"
+    "models/aviation/an225-drawn.json",
+    "models/aviation/an225-mesh.json",
+    "models/aviation/sr71-mesh.json"
   ]
 }
