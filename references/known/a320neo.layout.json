@@ -1,0 +1,44 @@
+{
+  "drawing": "a320neo.svg",
+  "size": {
+    "length": 37.57,
+    "span": 35.8,
+    "height": 11.76
+  },
+  "wing": {
+    "position": "low",
+    "tips": "blended winglet"
+  },
+  "engines": {
+    "count": 2,
+    "mount": "wing"
+  },
+  "tail": "conventional",
+  "gear": {
+    "nose": {
+      "axles": 1,
+      "wheels": 2
+    },
+    "mains": [
+      {
+        "place": "wing",
+        "axles": 1,
+        "wheels": 2
+      }
+    ]
+  },
+  "doors": {
+    "drawn": true,
+    "list": [
+      "door",
+      "exit",
+      "exit",
+      "door"
+    ]
+  },
+  "windows": {
+    "drawn": true,
+    "rows": 1
+  },
+  "extras": []
+}

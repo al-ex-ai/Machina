@@ -1,0 +1,42 @@
+{
+  "drawing": "b737-300.svg",
+  "size": {
+    "length": 33.4,
+    "span": 28.88,
+    "height": 11.13
+  },
+  "wing": {
+    "position": "low",
+    "tips": "plain"
+  },
+  "engines": {
+    "count": 2,
+    "mount": "wing"
+  },
+  "tail": "conventional",
+  "gear": {
+    "nose": {
+      "axles": 1,
+      "wheels": 2
+    },
+    "mains": [
+      {
+        "place": "wing",
+        "axles": 1,
+        "wheels": 2
+      }
+    ]
+  },
+  "doors": {
+    "drawn": true,
+    "list": [
+      "door",
+      "door"
+    ]
+  },
+  "windows": {
+    "drawn": true,
+    "rows": 1
+  },
+  "extras": []
+}

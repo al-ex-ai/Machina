@@ -1,0 +1,37 @@
+{
+  "drawing": "b787-8.svg",
+  "size": {
+    "length": 56.72,
+    "span": 60.12,
+    "height": 16.92
+  },
+  "wing": {
+    "position": "low",
+    "tips": "raked"
+  },
+  "engines": {
+    "count": 2,
+    "mount": "wing"
+  },
+  "tail": "conventional",
+  "gear": {
+    "nose": {
+      "axles": 1,
+      "wheels": 2
+    },
+    "mains": [
+      {
+        "place": "wing",
+        "axles": 2,
+        "wheels": 2
+      }
+    ]
+  },
+  "doors": {
+    "drawn": false
+  },
+  "windows": {
+    "drawn": false
+  },
+  "extras": []
+}

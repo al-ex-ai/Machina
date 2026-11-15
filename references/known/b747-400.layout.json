@@ -1,0 +1,44 @@
+{
+  "drawing": "b747-400.svg",
+  "size": {
+    "length": 70.66,
+    "span": 64.44,
+    "height": 19.41
+  },
+  "wing": {
+    "position": "low",
+    "tips": "winglet"
+  },
+  "engines": {
+    "count": 4,
+    "mount": "wing"
+  },
+  "tail": "conventional",
+  "gear": {
+    "nose": {
+      "axles": 1,
+      "wheels": 2
+    },
+    "mains": [
+      {
+        "place": "wing",
+        "axles": 2,
+        "wheels": 2
+      },
+      {
+        "place": "body",
+        "axles": 2,
+        "wheels": 2
+      }
+    ]
+  },
+  "doors": {
+    "drawn": false
+  },
+  "windows": {
+    "drawn": false
+  },
+  "extras": [
+    "upper deck"
+  ]
+}

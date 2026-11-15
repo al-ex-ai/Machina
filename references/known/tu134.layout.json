@@ -1,0 +1,43 @@
+{
+  "drawing": "tu134.svg",
+  "size": {
+    "length": 37.1,
+    "span": 29.01,
+    "height": 9.14
+  },
+  "wing": {
+    "position": "low",
+    "tips": "plain"
+  },
+  "engines": {
+    "count": 2,
+    "mount": "rear"
+  },
+  "tail": "T",
+  "gear": {
+    "nose": {
+      "axles": 1,
+      "wheels": 2
+    },
+    "mains": [
+      {
+        "place": "wing",
+        "axles": 2,
+        "wheels": 2
+      }
+    ]
+  },
+  "doors": {
+    "drawn": true,
+    "list": [
+      "door"
+    ]
+  },
+  "windows": {
+    "drawn": true,
+    "rows": 1
+  },
+  "extras": [
+    "main gear fairings behind the wing"
+  ]
+}

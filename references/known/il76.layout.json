@@ -1,0 +1,48 @@
+{
+  "drawing": "il76.svg",
+  "size": {
+    "length": 46.59,
+    "span": 50.5,
+    "height": 14.76
+  },
+  "wing": {
+    "position": "high",
+    "tips": "plain"
+  },
+  "engines": {
+    "count": 4,
+    "mount": "wing"
+  },
+  "tail": "T",
+  "gear": {
+    "nose": {
+      "axles": 1,
+      "wheels": 4
+    },
+    "mains": [
+      {
+        "place": "body",
+        "axles": 1,
+        "wheels": 4
+      },
+      {
+        "place": "body",
+        "axles": 1,
+        "wheels": 4
+      }
+    ]
+  },
+  "doors": {
+    "drawn": true,
+    "list": [
+      "door"
+    ]
+  },
+  "windows": {
+    "drawn": true,
+    "rows": 0
+  },
+  "extras": [
+    "main gear sponsons on the lower fuselage"
+  ]
+}
