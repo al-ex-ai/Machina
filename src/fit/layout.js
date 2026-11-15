@@ -171,6 +171,49 @@ export function canardFrom(target, m) {
 }
 
 /**
+ * Twin fins standing on the nacelles, canted as the front view shows them: above the body,
+ * the middle of each fin's run in the top rows gives where it stands at each height; a
+ * line through those is the fin's lean. The side view gave its outline.
+ */
+function twinFins(g, front, H) {
+  const fin = g.surfaces.find(s => s.axis === 'y' && !s.mirror);
+  if (!fin || !front || !g.engines.length) return;
+  const zOn = g.engines[0].position.z, pts = [];
+  for (let y = H * 0.55; y < H - 0.1; y += 0.1) {
+    const r = front.runsU(y).filter(q => q[0] > 0.3 && q[1] - q[0] < 1.2).sort((a, b) => Math.abs((a[0] + a[1]) / 2 - zOn) - Math.abs((b[0] + b[1]) / 2 - zOn))[0];
+    if (r) pts.push([y, (r[0] + r[1]) / 2]);
+  }
+  let zAt = () => zOn;
+  if (pts.length >= 4) {
+    const n = pts.length, my = pts.reduce((a, p) => a + p[0], 0) / n, mz = pts.reduce((a, p) => a + p[1], 0) / n;
+    const k = pts.reduce((a, p) => a + (p[0] - my) * (p[1] - mz), 0) / (pts.reduce((a, p) => a + (p[0] - my) ** 2, 0) || 1);
+    zAt = y => mz + k * (y - my);
+  }
+  fin.mirror = true;
+  fin.sections = fin.sections.map(q => ({ ...q, h: r2(zAt(q.at)) }));
+}
+
+/**
+ * Nacelles built into the wing: each runs the whole of its row in the top view (inlet spike
+ * to exhaust), round as the front view shows it, on the wing with no pylon.
+ */
+function inWingNacelles(g, target) {
+  for (const e of g.engines) {
+    const z = e.position.z, row = target.top.runsU(z).sort((a, b) => (b[1] - b[0]) - (a[1] - a[0]))[0];
+    if (!row) continue;
+    const r0 = Math.max(...e.nacelle.stations.map(q => q[1]));
+    const fit = target.front ? nacelleFromFront(target.front, { z, dia: 2 * r0, y: e.position.y }) : null;
+    const r = fit ? fit.dia / 2 : r0, y = fit ? fit.y : e.position.y, len = row[1] - row[0];
+    const prof = [[0, 0.05], [0.08, 0.45], [0.16, 0.85], [0.25, 1], [0.8, 1], [1, 0.82]];
+    e.position = { x: r2(row[0]), y: r2(y), z: r2(fit ? fit.z : z) };
+    e.nacelle = { nTop: 2, nBot: 2, stations: prof.map(([f, k]) => [r2(f * len), r2(r * k), r2(r * k), r2(-r * k), 0]) };
+    e.fan = { radius: r2(r * 0.7), depth: r2(len * 0.2) };
+    e.plug = [[r2(len - 0.2), r2(r * 0.5)], [r2(len + 0.1), r2(r * 0.4)], [r2(len + 0.4), 0.03]];
+    e.pylon = { axis: 'y', sections: [{ at: r2(y), le: r2(row[0] + len * 0.4), chord: 0.2, h: r2(z), tc: 0.1 }, { at: r2(y + 0.05), le: r2(row[0] + len * 0.4), chord: 0.2, h: r2(z), tc: 0.1 }] };
+  }
+}
+
+/**
  * Box nacelles under the wing: in the side view, the stretch whose bottom hangs well below
  * the belly and well clear of the ground (wheels reach the ground); in the front view, at
  * the box's mid height, the run beside the body gives its inner and outer side.
@@ -328,6 +371,8 @@ export function fitLayout(target, layout, about, { steps = Number(process.env.FI
   const make = reading => {
     const geometry = staysFrom(gearAsLaid({ ...geometryFrom(reading, { engineName: about.specs?.engine_type }), materials: MATERIALS }, reading, layout, target.line ?? 0), target.front, fairing);
     if (canard) geometry.surfaces.push(canard);
+    if (layout.engines.nacelle === 'in-wing') inWingNacelles(geometry, target);
+    if (/twin/.test(layout.fins ?? '')) twinFins(geometry, target.front, target.H);
     if (reading.boxes?.length) { const wing = geometry.surfaces[0]; geometry.pods = [...(geometry.pods ?? []), ...reading.boxes.map((b, i) => boxPod(b, wing, i))]; }
     const extra = [fairing, bullet].filter(Boolean);
     if (extra.length) geometry.pods = [...(geometry.pods ?? []), ...extra];
@@ -354,9 +399,23 @@ export function fitLayout(target, layout, about, { steps = Number(process.env.FI
     cur = pick.next; model = pick.nextModel; obj = pick.nextObj; best = pick.d;
   }
   dress(model);
+  // A tail decal is drawn for one fin on the centerline: twin fins take the tail color instead.
+  for (const s of model.geometry.surfaces) if (s.axis === "y" && s.mirror) delete s.paint;
   if (target.inner && layout.windows?.drawn !== false) {
     const got = applyDetails(model, readDetails(target.inner, target.L));
     log?.(`from the drawing: ${got.join(', ') || 'no inner detail found'}`);
+  }
+  // What the layout says is not there is not painted on: no cabin windows (a freighter, a
+  // reconnaissance aircraft), no cabin doors.
+  const lv = model.livery;
+  if (layout.windows?.rows === 0) lv.windows = { ...lv.windows, list: [] };
+  if (Array.isArray(layout.doors?.list) && !layout.doors.list.length) lv.doors = [];
+  // A paint the layout gives (an aircraft known by its color) covers the body, nacelles and fin.
+  if (layout.paint) {
+    Object.assign(lv, { base: layout.paint, belly: layout.paint, nacelle: layout.paint, stripe: layout.paint });
+    delete lv.titles;
+    for (const s of model.geometry.surfaces) if (s.paint) s.paint = { ...s.paint, base: layout.paint };
+    model.geometry.materials = { ...model.geometry.materials, tail: { ...model.geometry.materials.tail, color: layout.paint }, surfaces: { ...model.geometry.materials.surfaces, color: layout.paint }, controls: { ...model.geometry.materials.controls, color: layout.paint } };
   }
   return model;
 }

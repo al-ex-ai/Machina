@@ -33,6 +33,7 @@
     "models/aviation/yak40.json",
     "models/aviation/tu144d.json",
     "models/aviation/tu154b.json",
-    "models/aviation/tu144-drawn.json"
+    "models/aviation/tu144-drawn.json",
+    "models/aviation/sr71-drawn.json"
   ]
 }

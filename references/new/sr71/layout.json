@@ -1,0 +1,47 @@
+{
+  "drawing": "three-view.png",
+  "name": "Lockheed SR-71 Blackbird",
+  "source": "https://commons.wikimedia.org/wiki/File:Lockheed_SR-71A_3view.png",
+  "author": "United States Air Force",
+  "license": "Public domain",
+  "size": {
+    "length": 32.74,
+    "span": 16.94,
+    "height": 5.64
+  },
+  "wing": {
+    "position": "mid",
+    "tips": "plain",
+    "plan": "delta with chines"
+  },
+  "engines": {
+    "count": 2,
+    "mount": "wing",
+    "nacelle": "in-wing"
+  },
+  "tail": "none",
+  "fins": "twin canted, on the nacelles",
+  "gear": {
+    "nose": {
+      "axles": 1,
+      "wheels": 2
+    },
+    "mains": [
+      {
+        "place": "wing",
+        "axles": 1,
+        "wheels": 3
+      }
+    ]
+  },
+  "doors": {
+    "drawn": true,
+    "list": []
+  },
+  "windows": {
+    "drawn": true,
+    "rows": 0
+  },
+  "extras": [],
+  "paint": "#1c1e22"
+}

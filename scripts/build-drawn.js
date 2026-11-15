@@ -23,7 +23,7 @@ const id = `${basename(dir)}-drawn`;
 const layout = JSON.parse(readFileSync(join(dir, 'layout.json'), 'utf8'));
 const file = join(dir, layout.drawing);
 const img = readPNG(file.endsWith('.svg') ? svgToPng(readFileSync(file, 'utf8'), 3000) : readFileSync(file));
-const target = targetFromSheet(img, { length: layout.size.length });
+const target = targetFromSheet(img, { length: layout.size.length, height: layout.size.height });
 const f = target.found;
 console.log(`views: side ${JSON.stringify(f.side.box)}, top ${JSON.stringify(f.top.box)}, front ${f.front ? JSON.stringify(f.front.box) : 'none'}`);
 console.log(`at the length's scale: height ${f.heightMeasured} m (published ${layout.size.height}), span ${(2 * target.S).toFixed(2)} m (published ${layout.size.span})`);

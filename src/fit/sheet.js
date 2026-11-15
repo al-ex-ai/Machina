@@ -198,7 +198,7 @@ const colExtent = (m, x) => { let a = -1, b = -1; for (let y = 0; y < m.h; y++) 
  *   drawing's own scale in meters per pixel (scale), which then sets every view
  * @returns {object} a target for src/fit/fit.js, with `found` describing what was detected
  */
-export function targetFromSheet(img, { length, span, scale, ppm = 40 }) {
+export function targetFromSheet(img, { length, span, height, scale, ppm = 40 }) {
   const { width: w, height: h } = img;
   const { solid, ruled, ink } = solidOf(img);
   const { label, list } = blobs(solid, w, h);
@@ -292,7 +292,9 @@ export function targetFromSheet(img, { length, span, scale, ppm = 40 }) {
   // A side view drawn without its gear (in flight) stands lower than the front view, which
   // shows the gear: both hang from the fin tip, and the side view is raised onto the wheels.
   const Hs = (s.h - lw) * kx, Hf = f ? (f.h - lw) * kFront : 0;
-  const lift = Hf > Hs + 0.5 ? Hf - Hs : 0;
+  // A sheet that draws the wheels apart, on a ground line of their own, leaves both views short:
+  // the published height, when given, then says how far the aircraft stands off the ground.
+  const lift = Hf > Hs + 0.5 ? Hf - Hs : height && height > Hs + 0.5 ? height - Hs : 0;
   const H = Hs + lift;
   const frame = { L: length, H, S };
   // Pixel 0 of each view is the outer edge of its line, half a line beyond the aircraft.
