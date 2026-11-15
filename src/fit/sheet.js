@@ -322,6 +322,7 @@ export function targetFromSheet(img, { length, span, height, scale, ppm = 40 }) 
       side: { box: [side.x0, side.y0, side.x1, side.y1], mirrored: sideFlipped, wheelBlobs: under.length },
       top: { box: [top.x0, top.y0, top.x1, top.y1], turned: topTurned, mirrored: topFlipped, symmetry: Math.round(top.sym * 100) / 100 },
       front: front ? { box: [front.x0, front.y0, front.x1, front.y1], turned: frontTurned, symmetry: Math.round(front.sym * 100) / 100 } : null,
+      views: big.length,
       heightMeasured: Math.round(H * 100) / 100,
       spanMeasured: Math.round(t.h * kTopX * 100) / 100,
     },
