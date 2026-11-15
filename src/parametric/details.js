@@ -194,8 +194,10 @@ export function gearLinkage(gear, axleY, z) {
     bar([ax, lo, z], [apex, mid, z], gear.strut * 0.22, gear.strut * 0.12),
     bar([apex, mid, z], [ax, hi, z], gear.strut * 0.22, gear.strut * 0.12),
   ].map(plain));
-  const from = [gear.x, axleY + h * 0.78, z];
-  const to = z === 0 ? [gear.x + h * 0.55, gear.top + 0.05, z] : [gear.x + 0.05, gear.top + 0.05, z * 0.55];
+  // A side stay, when given, runs from that height on the leg in to the body (gear.stay: { y, zTo, yTo }).
+  const st = z !== 0 && gear.stay;
+  const from = st ? [gear.x, st.y, z] : [gear.x, axleY + h * 0.78, z];
+  const to = st ? [gear.x + 0.05, st.yTo, Math.sign(z) * st.zTo] : z === 0 ? [gear.x + h * 0.55, gear.top + 0.05, z] : [gear.x + 0.05, gear.top + 0.05, z * 0.55];
   return { links, brace: rod(from, to, gear.strut * 0.2) };
 }
 

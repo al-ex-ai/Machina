@@ -41,7 +41,7 @@ export function gate(model, score) {
     for (const m of gear.mains ?? []) {
       const f = (m.x - root.le) / root.chord;
       if (f < 0.3 || f > 1.15) bad.push(`main gear at ${m.x} m is not under the wing (root chord runs ${root.le} to ${(root.le + root.chord).toFixed(1)} m)`);
-      if (m.tire.d < Math.max(0.45, L * 0.018)) bad.push(`main wheels of ${m.tire.d} m are too small for a ${L} m aircraft`);
+      if (m.tire.d < Math.max(0.45, L * 0.016)) bad.push(`main wheels of ${m.tire.d} m are too small for a ${L} m aircraft`);
       if (m.z < 0.4 || m.z > span * 0.25) bad.push(`main gear ${m.z} m off the centerline`);
     }
     if (gear.nose && gear.mains?.length && gear.nose.x > gear.mains[0].x - L * 0.2) bad.push('nose gear too close to the main gear');

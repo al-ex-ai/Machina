@@ -749,10 +749,11 @@ export function geometryFrom(m, { engineName = 'Engine' } = {}) {
  * One step of the closed loop. `want` is what was read from the target, `got` what the
  * same reader finds in the model built from `cur`. Whatever the reader or the builder
  * gets systematically wrong shows up as the difference, and is taken off `cur`.
- * Steps are capped so a part that one reading has and the other lacks cannot run away.
+ * Steps are capped so a part that one reading has and the other lacks cannot run away,
+ * and may be taken as a fraction (alpha) of the difference.
  */
-export function correct(cur, want, got, cap = 0.4) {
-  const lim = v => Math.max(-cap, Math.min(cap, Number.isFinite(v) ? v : 0));
+export function correct(cur, want, got, cap = 0.4, alpha = 1) {
+  const lim = v => Math.max(-cap, Math.min(cap, Number.isFinite(v) ? v * alpha : 0));
   const line = (c, a, b) => (a && b ? c.map(([x, y]) => [x, y + lim(lerp(a, x) - lerp(b, x))]) : c);
   const col = (rows, k) => rows.map(r => [r.at, r[k]]);
   const edges = (c, a, b) => (a?.length > 1 && b?.length > 1 ? c.map(r => ({ ...r, le: r.le + lim(lerp(col(a, 'le'), r.at) - lerp(col(b, 'le'), r.at)), te: r.te + lim(lerp(col(a, 'te'), r.at) - lerp(col(b, 'te'), r.at)) })) : c);

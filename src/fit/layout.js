@@ -11,17 +11,19 @@ import { MATERIALS, liveryFor, dress, distance } from './fit.js';
 import { readDetails, applyDetails } from './details.js';
 
 const r2 = v => Math.round(v * 100) / 100;
+/** Grow (on = 1) or shrink (on = 0) a mask by r pixels, as a square. */
+function grown(m, r, on = 1) {
+  const { w, h } = m, a = m.data, tmp = new Uint8Array(w * h), out = new Uint8Array(w * h);
+  for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) { let v = 1 - on; for (let k = Math.max(0, x - r); k <= Math.min(w - 1, x + r); k++) if (a[y * w + k] === on) { v = on; break; } tmp[y * w + x] = v; }
+  for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) { let v = 1 - on; for (let k = Math.max(0, y - r); k <= Math.min(h - 1, y + r); k++) if (tmp[k * w + x] === on) { v = on; break; } out[y * w + x] = v; }
+  const c = m.clone(); c.data = out; return c;
+}
+
 /** A model's views drawn with the drawing's line: grown by half its width, as the drawing's outline reaches past the edge. */
 function inked(t, line) {
   const r = Math.round((line / 2) * t.ppm);
   if (r < 1) return t;
-  const grow = m => {
-    const { w, h } = m, a = m.data, tmp = new Uint8Array(w * h), out = new Uint8Array(w * h);
-    for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) { let v = 0; for (let k = Math.max(0, x - r); k <= Math.min(w - 1, x + r) && !v; k++) v = a[y * w + k]; tmp[y * w + x] = v; }
-    for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) { let v = 0; for (let k = Math.max(0, y - r); k <= Math.min(h - 1, y + r) && !v; k++) v = tmp[k * w + x]; out[y * w + x] = v; }
-    const c = m.clone(); c.data = out; return c;
-  };
-  return { ...t, side: grow(t.side), top: grow(t.top), front: t.front && grow(t.front) };
+  return { ...t, side: grown(t.side, r), top: grown(t.top, r), front: t.front && grown(t.front, r) };
 }
 
 const median = a => { const s = [...a].sort((p, q) => p - q); return s.length ? s[Math.floor(s.length / 2)] : NaN; };
@@ -155,11 +157,12 @@ function nacelleFromFront(f, e) {
 }
 
 /** Gear legs and wheels as the layout has them; where each stands and how big its wheels are from the drawing. */
-function gearAsLaid(g, m, layout) {
+function gearAsLaid(g, m, layout, line = 0) {
   const gear = g.gear;
   const st = g.fuselage.stations, belly = x => st.reduce((a, q) => (Math.abs(q[0] - x) < Math.abs(a[0] - x) ? q : a))[3];
-  // A tire is never wider than about half its diameter: a wider reading is two tires seen as one.
-  const tireOf = q => ({ ...q.tire, w: r2(Math.min(q.tire.w, q.tire.d * 0.42)) });
+  // A tire is read with the drawing's line around it: that much less across and high. It is
+  // never wider than about half its diameter: a wider reading is two tires seen as one.
+  const tireOf = q => { const d = r2(q.tire.d - line); return { ...q.tire, d, w: r2(Math.min(q.tire.w - line, d * 0.42)) }; };
   if (gear.nose) {
     const n = layout.gear.nose;
     gear.nose.tire = tireOf(gear.nose);
@@ -193,19 +196,50 @@ function gearAsLaid(g, m, layout) {
 }
 
 /**
+ * Side stays of wing gear, from the front view: just inboard of each leg, the run that
+ * holds the wing reaches down to the stay; just outboard of the body, it reaches down to
+ * where the stay meets it. A leg whose run there ends at the wing has no stay drawn.
+ */
+function staysFrom(g, front, fairing) {
+  const wing = g.surfaces.find(s => Object.values(s.parts).some(p => p.id === 'wing'));
+  if (!wing || !front) return g;
+  const secs = wing.sections, at = (k, z) => lerpPts(secs.map(q => [q.at, q[k]]), z);
+  const under = z => at('h', z) - at('tc', z) * at('chord', z) * 0.5;
+  const R = Math.max(...g.fuselage.stations.map(q => q[1]));
+  const zBody = Math.max(R * 0.9, fairing ? Math.max(...fairing.stations.map(q => q[1])) : 0) + 0.08;
+  const reach = z => { const w = under(z); const r = front.runsV(z).filter(q => q[1] >= w - 0.15 && q[0] <= w + 0.3)[0]; return r ? r[0] : null; };
+  for (const q of g.gear.mains) {
+    if (q.z < R * 1.05) continue;
+    const z1 = q.z - q.strut - 0.1;
+    if (z1 <= zBody + 0.2) continue;
+    const y1 = reach(z1);
+    if (y1 === null || under(z1) - y1 < 0.3) continue;
+    // Walk inboard until the run's bottom is back at the wing (or the body is reached): there the stay ends.
+    let zEnd = zBody, yEnd = reach(zBody) ?? under(zBody);
+    for (let z = z1; z > zBody; z -= 1 / front.ppm) {
+      const y = reach(z);
+      if (y === null || under(z) - y < 0.08) { zEnd = z; yEnd = under(z); break; }
+    }
+    if (yEnd <= y1) continue;
+    q.stay = { y: r2(y1 + q.strut * 0.2), zTo: r2(zEnd), yTo: r2(yEnd) };
+  }
+  return g;
+}
+
+/**
  * @param {object} target silhouettes from a sheet (src/fit/sheet.js targetFromSheet)
  * @param {object} layout what the aircraft is made of, read from the drawing
  * @param {{ id: string, name: string, specs?: object }} about
  * @param {{ steps?: number, log?: (line: string) => void }} [opts]
  */
-export function fitLayout(target, layout, about, { steps = 3, log } = {}) {
+export function fitLayout(target, layout, about, { steps = Number(process.env.FIT_STEPS ?? 3), log } = {}) {
   const want = constrain(measure(target), layout, target);
   const frame = { L: target.L, H: target.H, S: target.S };
   const fairing = bellyFairing(target, want), bullet = tailBullet(target, want, layout);
   if (bullet) log?.(`tail bullet ${bullet.position.x} m on, ${bullet.stations.at(-1)[0]} m long`);
   log?.(fairing ? `belly fairing ${fairing.position.x} m on, ${fairing.stations.at(-1)[0]} m long` : "no belly fairing");
   const make = reading => {
-    const geometry = gearAsLaid({ ...geometryFrom(reading, { engineName: about.specs?.engine_type }), materials: MATERIALS }, reading, layout);
+    const geometry = staysFrom(gearAsLaid({ ...geometryFrom(reading, { engineName: about.specs?.engine_type }), materials: MATERIALS }, reading, layout, target.line ?? 0), target.front, fairing);
     const extra = [fairing, bullet].filter(Boolean);
     if (extra.length) geometry.pods = [...(geometry.pods ?? []), ...extra];
     return { id: about.id, name: about.name, category: 'aviation', builder: 'parametric', specs: about.specs ?? {}, note: 'Built from a three-view drawing: outside only, no cockpit or cabin interior.', livery: liveryFor(geometry), geometry };
@@ -214,21 +248,21 @@ export function fitLayout(target, layout, about, { steps = 3, log } = {}) {
   const away = v => distance(Object.fromEntries(['side', 'top', 'front'].filter(k => target[k] && v[k]).map(k => [k, compareMasks(target[k], v[k])])));
   let cur = want, model = make(cur), obj = buildModel(model), best = away(views(obj));
   log?.(`start ${(best * 100).toFixed(1)} cm`);
+  // Each step tries the whole correction, then half and a quarter of it, and keeps the best;
+  // the loop ends when none of them brings the outline closer.
   for (let k = 0; k < steps; k++) {
-    let next, nextModel, nextObj, d;
-    try {
-      const seen = views(obj);
-      next = correct(cur, want, constrain(measure(seen), layout, seen));
-      nextModel = make(next);
-      nextObj = buildModel(nextModel);
-      d = away(views(nextObj));
-    } catch (e) {
-      log?.(`step ${k + 1} failed: ${e.message}`);
-      break;
+    let got;
+    try { const seen = views(obj); got = constrain(measure(seen), layout, seen); } catch (e) { log?.(`step ${k + 1} failed: ${e.message}`); break; }
+    let pick = null;
+    for (const alpha of [1, 0.5, 0.25]) {
+      try {
+        const next = correct(cur, want, got, 0.4, alpha), nextModel = make(next), nextObj = buildModel(nextModel), d = away(views(nextObj));
+        if (!pick || d < pick.d) pick = { next, nextModel, nextObj, d, alpha };
+      } catch { /* a step the builder cannot make is skipped */ }
     }
-    log?.(`step ${k + 1} ${(d * 100).toFixed(1)} cm`);
-    if (d >= best - 0.001) break;
-    cur = next; model = nextModel; obj = nextObj; best = d;
+    if (!pick || pick.d >= best - 0.0005) { log?.(`step ${k + 1}: no closer`); break; }
+    log?.(`step ${k + 1} ${(pick.d * 100).toFixed(1)} cm (step ${pick.alpha})`);
+    cur = pick.next; model = pick.nextModel; obj = pick.nextObj; best = pick.d;
   }
   dress(model);
   if (target.inner && layout.windows?.drawn !== false) {

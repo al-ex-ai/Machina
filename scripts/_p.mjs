@@ -1,0 +1,10 @@
+import { readFileSync } from 'node:fs';
+import { targetFromSheet } from '../src/fit/sheet.js';
+import { readPNG } from './reference/png.js';
+const id = 'b787-8';
+const svg = readFileSync('references/known/' + id + '.svg', 'utf8');
+const t = targetFromSheet(readPNG(readFileSync('references/known/' + id + '.png')), { scale: Number(svg.match(/data-scale="(\d+)"/)[1]) / 10000 });
+const m = JSON.parse(readFileSync('C:/Users/ABOLFA~1.HOS/AppData/Local/Temp/claude/0e8f653cab8b2f53/3a72547f-489c-40e0-8256-63b9f2b8043b/scratchpad/k13/' + id + '-drawn.json', 'utf8')).geometry;
+const wing = m.surfaces[0], q = m.gear.mains[0];
+const lerp = (k, z) => { const s = wing.sections; for (let i = 1; i < s.length; i++) if (z <= s[i].at) { const f = (z - s[i - 1].at) / (s[i].at - s[i - 1].at); return s[i - 1][k] + (s[i][k] - s[i - 1][k]) * f; } return s.at(-1)[k]; };
+for (let z = q.z - 0.5; z > 2; z -= 0.25) console.log(z.toFixed(2), 'under', (lerp('h', z) - lerp('tc', z) * lerp('chord', z) / 2).toFixed(2), JSON.stringify(t.front.runsV(z).map(r => r.map(v => +v.toFixed(2)))));
