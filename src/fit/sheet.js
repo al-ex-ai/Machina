@@ -13,7 +13,7 @@ function solidOf(img) {
   const ink = new Uint8Array(w * h);
   // Ink is dark and opaque. A page may be white or transparent.
   for (let k = 0; k < w * h; k++) ink[k] = data[k * 4 + 3] > 100 && data[k * 4] + data[k * 4 + 1] + data[k * 4 + 2] < 450 ? 1 : 0;
-  const clean = unrule(ink, w, h);
+  const clean = unframe(unrule(ink, w, h), w, h);
   let ruled = false;
   for (let k = 0; k < w * h && !ruled; k++) ruled = ink[k] !== clean[k];
   return { solid: enclosed(clean, w, h), ruled, ink: clean };
@@ -37,12 +37,27 @@ function grow(src, w, h, r, on = 1) {
 
 /**
  * What the outlines enclose. Outlines leak: a pen lifts, and a wheel standing on a ground
- * line loses its lowest pixels with the line. The ink is thickened by two pixels for the
- * fill and the result thinned by the same, which closes gaps up to four pixels wide and
- * leaves every edge where it was.
+ * line loses its lowest pixels with the line. The ink is thickened for the fill and the
+ * result thinned by the same, which closes gaps and leaves every edge where it was.
+ * Two passes: a fine one (2 px) keeps wheels and legs apart, a coarse one (scaled to the
+ * image) closes the wider gaps a large sheet leaves in a long outline. Only large regions
+ * the coarse pass adds are kept: a hollow fuselage, never the gap between two wheels.
  */
 function enclosed(ink, w, h) {
-  const r = 2, thick = grow(ink, w, h, r);
+  const fine = fillAt(ink, w, h, 2);
+  const R = Math.max(2, Math.round(Math.max(w, h) / 500));
+  if (R <= 2) return fine;
+  const coarse = fillAt(ink, w, h, R);
+  const extra = new Uint8Array(w * h);
+  for (let k = 0; k < w * h; k++) extra[k] = coarse[k] && !fine[k] ? 1 : 0;
+  const { label, list } = blobs(extra, w, h);
+  const keep = new Set(list.filter(q => q.area > w * h * 0.0005).map(q => q.id));
+  for (let k = 0; k < w * h; k++) if (keep.has(label[k])) fine[k] = 1;
+  return fine;
+}
+
+function fillAt(ink, w, h, r) {
+  const thick = grow(ink, w, h, r);
   const solid = new Uint8Array(w * h).fill(1), stack = [];
   const seed = k => { if (!thick[k] && solid[k]) { solid[k] = 0; stack.push(k); } };
   for (let x = 0; x < w; x++) { seed(x); seed((h - 1) * w + x); }
@@ -97,6 +112,16 @@ function unrule(solid, w, h) {
 }
 
 /** Connected blobs (touching sides or corners) with their bounding boxes. */
+/** Drop a drawn page frame (and the title block joined to it): ink spanning most of the page both ways is never a view. */
+function unframe(ink, w, h) {
+  const { label, list } = blobs(ink, w, h);
+  const frame = new Set(list.filter(b => b.x1 - b.x0 > w * 0.8 && b.y1 - b.y0 > h * 0.8).map(b => b.id));
+  if (!frame.size) return ink;
+  const out = ink.slice();
+  for (let k = 0; k < w * h; k++) if (frame.has(label[k])) out[k] = 0;
+  return out;
+}
+
 function blobs(solid, w, h) {
   const label = new Int32Array(w * h), out = [];
   for (let k0 = 0; k0 < w * h; k0++) {

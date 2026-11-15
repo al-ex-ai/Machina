@@ -33,7 +33,7 @@ function fit(L, S, H) {
  * @param {Record<'side'|'top'|'front', ReturnType<import('./hlr.js').projectView>>} views
  * @param {{ x: number, label: string, lines: number[][][] }[]} sections cuts in (z, y), meters
  */
-export function sheet(model, views, sections) {
+export function sheet(model, views, sections, { plain = false } = {}) {
   const sv = views.side.box, tv = views.top.box, fv = views.front.box;
   const L = sv.x1 - sv.x0, H = sv.y1 - sv.y0, S = tv.y1 - tv.y0;
   const { s, k, X0, Y0, GX, GY } = fit(L, Math.max(S, fv.x1 - fv.x0), H);
@@ -60,6 +60,16 @@ export function sheet(model, views, sections) {
     const long = l => l.reduce((a, p, i) => i ? a + Math.hypot(p[0] - l[i - 1][0], p[1] - l[i - 1][1]) : 0, 0) * k > 0.3;
     outline += path(name, views[name].outline.filter(long));
     detail += path(name, views[name].detail.filter(long));
+  }
+
+  // A plain sheet: the three views alone, no frame, labels, dimensions or ground lines.
+  if (plain) {
+    return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${SHEET.w} ${SHEET.h}" width="${SHEET.w}mm" height="${SHEET.h}mm" fill="none" stroke="${INK}" stroke-linecap="round" stroke-linejoin="round">
+<rect width="${SHEET.w}" height="${SHEET.h}" fill="#ffffff" stroke="none"/>
+<path d="${detail}" stroke-width="0.18"/>
+<path d="${outline}" stroke-width="0.45"/>
+</svg>
+`;
   }
 
   const out = [];

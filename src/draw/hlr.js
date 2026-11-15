@@ -454,3 +454,61 @@ export function section(meshes, parts, X) {
   }
   return chain(segs);
 }
+
+/**
+ * The closed outline of a view: the edge of everything the view covers, traced from the
+ * filled projection on a grid of `cell` meters. A mesh with cutouts (doors, windows,
+ * panels modeled as holes) leaves gaps in its silhouette edges where a draftsman's
+ * outline is unbroken; this is that outline. Lines are in the view's own coordinates.
+ */
+export function contour(meshes, name, cell = 0.025) {
+  const pr = VIEWS[name].project;
+  const pts = [];
+  for (const m of meshes) {
+    const P = m.verts, T = m.tris;
+    for (let f = 0; f < T.length / 3; f++) {
+      if (!m.keep[f]) continue;
+      for (let k = 0; k < 3; k++) { const a = T[f * 3 + k] * 3; const q = pr(P[a], P[a + 1], P[a + 2]); pts.push(q[0], q[1]); }
+    }
+  }
+  let u0 = Infinity, v0 = Infinity, u1 = -Infinity, v1 = -Infinity;
+  for (let i = 0; i < pts.length; i += 2) { u0 = Math.min(u0, pts[i]); u1 = Math.max(u1, pts[i]); v0 = Math.min(v0, pts[i + 1]); v1 = Math.max(v1, pts[i + 1]); }
+  const nu = Math.ceil((u1 - u0) / cell) + 1, nv = Math.ceil((v1 - v0) / cell) + 1;
+  const grid = Array.from({ length: nu }, () => new Uint8Array(nv));
+  // Cell (i, k) is covered when its center lies in a triangle.
+  for (let t = 0; t < pts.length; t += 6) {
+    const ax = (pts[t] - u0) / cell - 0.5, ay = (pts[t + 1] - v0) / cell - 0.5, bx = (pts[t + 2] - u0) / cell - 0.5, by = (pts[t + 3] - v0) / cell - 0.5, cx = (pts[t + 4] - u0) / cell - 0.5, cy = (pts[t + 5] - v0) / cell - 0.5;
+    const d = (bx - ax) * (cy - ay) - (cx - ax) * (by - ay);
+    if (Math.abs(d) < 1e-9) continue;
+    for (let i = Math.max(0, Math.ceil(Math.min(ax, bx, cx))); i <= Math.min(nu - 1, Math.floor(Math.max(ax, bx, cx))); i++) {
+      for (let k = Math.max(0, Math.ceil(Math.min(ay, by, cy))); k <= Math.min(nv - 1, Math.floor(Math.max(ay, by, cy))); k++) {
+        const w1 = ((bx - i) * (cy - k) - (cx - i) * (by - k)) / d, w2 = ((cx - i) * (ay - k) - (ax - i) * (cy - k)) / d;
+        if (w1 >= -1e-6 && w2 >= -1e-6 && w1 + w2 <= 1 + 1e-6) grid[i][k] = 1;
+      }
+    }
+  }
+  return gridLoops(grid).map(l => l.map(([i, k]) => [u0 + i * cell, v0 + k * cell]));
+}
+
+/** Boundary loops of the covered cells of a grid (marching squares), in cell units with cell centers at i + 0.5. */
+function gridLoops(grid) {
+  const nx = grid.length, nk = grid[0].length;
+  const at = (i, k) => (i >= 0 && k >= 0 && i < nx && k < nk ? grid[i][k] : 0);
+  const next = new Map(), key = p => `${p[0]},${p[1]}`;
+  for (let i = -1; i < nx; i++) for (let k = -1; k < nk; k++) {
+    const c = (at(i, k) << 3) | (at(i + 1, k) << 2) | (at(i + 1, k + 1) << 1) | at(i, k + 1);
+    if (c === 0 || c === 15) continue;
+    const T = [i + 1, k + 0.5], R = [i + 1.5, k + 1], B = [i + 1, k + 1.5], L = [i + 0.5, k + 1];
+    const e = { 1: [[L, B]], 2: [[B, R]], 3: [[L, R]], 4: [[R, T]], 5: [[L, T], [R, B]], 6: [[B, T]], 7: [[L, T]], 8: [[T, L]], 9: [[T, B]], 10: [[T, R], [B, L]], 11: [[T, R]], 12: [[R, L]], 13: [[R, B]], 14: [[B, L]] }[c];
+    for (const [a, b] of e) next.set(key(a), b);
+  }
+  const loops = [], seen = new Set();
+  for (const [k0] of next) {
+    if (seen.has(k0)) continue;
+    const loop = [];
+    let k = k0;
+    while (k && !seen.has(k)) { seen.add(k); const p = k.split(',').map(Number); loop.push(p); const n = next.get(k); k = n ? key(n) : null; }
+    if (loop.length > 3) loops.push([...loop, loop[0]]);
+  }
+  return loops;
+}

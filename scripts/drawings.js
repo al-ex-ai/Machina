@@ -2,21 +2,23 @@
 // Lines are exact projections of the 3D geometry with hidden lines removed
 // (src/draw/hlr.js), laid out at a standard scale with sections and a title block
 // (src/draw/sheet.js). Nothing is traced from pixels and nothing is set per model.
-// Usage: npm run drawings [model-id ...] [--png] [--out dir]
+// Usage: npm run drawings [model-id ...] [--png] [--plain] [--out dir]
 //   Named ids may be workshop models too. --png also writes each sheet as a 4200 px PNG.
+//   --plain draws the three views alone, each with its closed outline: no frame, title,
+//   dimensions, sections or ground lines. This is the sheet the fitter reads.
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import '../src/builders/index.js';
 import { buildModel } from '../src/registry.js';
 import { loadCatalog } from '../src/catalog-node.js';
 import { loadAssetNode } from '../src/assets-node.js';
-import { collect, intersections, projectView, section, bounds } from '../src/draw/hlr.js';
+import { collect, intersections, projectView, section, bounds, contour } from '../src/draw/hlr.js';
 import { sheet } from '../src/draw/sheet.js';
 import { svgToPng } from './node/browser.js';
 
 const args = process.argv.slice(2);
 const oi = args.indexOf('--out');
 const outDir = oi >= 0 ? args[oi + 1] : 'drawings';
-const png = args.includes('--png');
+const png = args.includes('--png'), plain = args.includes('--plain');
 const only = new Set(args.filter((a, i) => !a.startsWith('--') && (oi < 0 || i !== oi + 1)));
 const { index, models: listed } = loadCatalog();
 const models = only.size ? [...index.models, ...index.workshop].map(p => JSON.parse(readFileSync(`data/${p}`, 'utf8'))).filter(m => only.has(m.id)) : listed;
@@ -28,6 +30,8 @@ function drawing(model) {
   const cuts = intersections(meshes);
   const views = {};
   for (const name of ['side', 'top', 'front']) views[name] = projectView(meshes, name, { extra: cuts });
+  // A plain sheet is read by the fitter: every view gets its closed outline, gaps and all bridged.
+  if (plain) for (const name of ['side', 'top', 'front']) views[name].outline.push(...contour(meshes, name));
 
   // Fuselage sections at fixed fractions of the fuselage length. Only closed outlines
   // at least a fifth of the fuselage width are kept: open skins with door and window
@@ -46,7 +50,7 @@ function drawing(model) {
       if (lines.length) sections.push({ x, label: 'ABCD'[n++], lines });
     }
   }
-  const svg = sheet(model, views, sections);
+  const svg = sheet(model, views, sections, { plain });
   writeFileSync(`${outDir}/${model.id}.svg`, svg);
   if (png) writeFileSync(`${outDir}/${model.id}.png`, svgToPng(svg, 4200));
   const count = v => v.outline.length + v.detail.length;
