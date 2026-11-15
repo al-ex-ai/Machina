@@ -10,7 +10,6 @@ name "wavefront obj"
 kids 305
 OBJECT poly
 name "Fuselage"
-texture "AN225-tx-001.rgb"
 numvert 1554
 -21.3611 5.39963 -3.92384e-15
 -21.3611 5.34553 0.427128
@@ -17606,7 +17605,6 @@ refs 3
 kids 0
 OBJECT poly
 name "L-MG-WheelWell"
-texture "AN225-tx-001.rgb"
 numvert 46
 2.98402 -0.820263 3.75396
 2.98402 -1.06296 2.83422
@@ -17926,7 +17924,6 @@ refs 3
 kids 0
 OBJECT poly
 name "R-MG-WheelWell"
-texture "AN225-tx-001.rgb"
 numvert 46
 4.4 -1.30869 -1.8604
 2.98402 -1.30869 -1.8604
@@ -18246,7 +18243,6 @@ refs 3
 kids 0
 OBJECT poly
 name "NG-WheelWell"
-texture "AN225-tx-001.rgb"
 numvert 27
 -21.2187 -0.564718 1.8477
 -21.2187 -0.767656 1.04662
@@ -18419,7 +18415,6 @@ refs 4
 kids 0
 OBJECT poly
 name "CP-Liner"
-texture "AN225-tx-001.rgb"
 numvert 94
 -21.357 5.35984 -3.92294e-15
 -21.3584 5.30794 0.41371
@@ -19132,7 +19127,6 @@ refs 4
 kids 0
 OBJECT poly
 name "CP-Bulkheads"
-texture "AN225-tx-001.rgb"
 numvert 24
 -23.4808 4.05763 -0.358784
 -23.4808 4.05763 0.358784
@@ -19244,7 +19238,6 @@ refs 3
 kids 0
 OBJECT poly
 name "CP-Liner-C"
-texture "AN225-tx-001.rgb"
 numvert 112
 -21.4073 4.68592 1.15976
 -21.4073 4.42192 1.32131
@@ -19754,7 +19747,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-Wing-T"
-texture "AN225-tx-001.rgb"
 numvert 189
 6.51496 4.53031 8.5
 2.29059 4.98859 8.5
@@ -20674,7 +20666,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-Wing-B"
-texture "AN225-tx-001.rgb"
 numvert 73
 1.96008 3.22153 8.5
 6.30961 3.17084 8.5
@@ -21128,7 +21119,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-Wing-C"
-texture "AN225-tx-001.rgb"
 numvert 180
 20.4884 1.91085 41.7977
 21.1435 1.77459 41.7653
@@ -22348,7 +22338,6 @@ refs 3
 kids 0
 OBJECT poly
 name "L-Wing-Slat"
-texture "AN225-tx-001.rgb"
 numvert 42
 12.4311 2.49918 34
 12.3864 2.43578 34
@@ -25151,7 +25140,6 @@ refs 5
 kids 0
 OBJECT poly
 name "R-Wing-T"
-texture "AN225-tx-001.rgb"
 numvert 189
 6.84356 4.43196 -10.7599
 2.99582 4.78284 -10.7599
@@ -26071,7 +26059,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-Wing-B"
-texture "AN225-tx-001.rgb"
 numvert 73
 2.91912 3.29426 -10.7599
 6.84356 3.25173 -10.7599
@@ -26525,7 +26512,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-Wing-C"
-texture "AN225-tx-001.rgb"
 numvert 180
 20.5044 1.7628 -41.7977
 21.1435 1.77459 -41.7653
@@ -27745,7 +27731,6 @@ refs 3
 kids 0
 OBJECT poly
 name "R-Wing-Slat"
-texture "AN225-tx-001.rgb"
 numvert 42
 17.1797 1.85757 -41.7977
 17.1524 1.82085 -41.7977
@@ -30548,7 +30533,6 @@ refs 5
 kids 0
 OBJECT poly
 name "L-TailPlane-T"
-texture "AN225-tx-001.rgb"
 numvert 36
 33.9804 5.03066 2.05656
 36.445 5.3465 5.21
@@ -30751,7 +30735,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-TailPlane-B"
-texture "AN225-tx-001.rgb"
 numvert 36
 43.8585 5.44881 1.24426
 43.9913 5.4668 1.52087
@@ -30954,7 +30937,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-TailPlane-C"
-texture "AN225-tx-001.rgb"
 numvert 13
 42.6186 5.2448 1.70371
 43.9913 5.4668 1.52087
@@ -31014,7 +30996,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-TailPlane-T"
-texture "AN225-tx-001.rgb"
 numvert 36
 34.0012 5.11898 -1.93118
 36.5114 5.42741 -5.16619
@@ -31217,7 +31198,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-TailPlane-B"
-texture "AN225-tx-001.rgb"
 numvert 36
 42.4656 5.22264 -1.42583
 42.6186 5.2448 -1.70371
@@ -31420,7 +31400,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-TailPlane-C"
-texture "AN225-tx-001.rgb"
 numvert 13
 42.4571 5.62842 -1.72203
 43.9913 5.4668 -1.52087
@@ -31480,7 +31459,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-TailFin-IS"
-texture "AN225-tx-001.rgb"
 numvert 117
 44.3144 6.69144 14.8407
 46.9796 7 14.8519
@@ -32273,7 +32251,6 @@ refs 3
 kids 0
 OBJECT poly
 name "L-TailFin-OS"
-texture "AN225-tx-001.rgb"
 numvert 102
 48.8474 6.74931 15.2294
 48.7425 7 15.2065
@@ -32957,7 +32934,6 @@ refs 3
 kids 0
 OBJECT poly
 name "L-TailFin-C"
-texture "AN225-tx-001.rgb"
 numvert 20
 50.1055 13.0665 14.252
 50.1124 13.0846 14.4551
@@ -33049,7 +33025,6 @@ refs 3
 kids 0
 OBJECT poly
 name "R-TailFin-IS"
-texture "AN225-tx-001.rgb"
 numvert 117
 46.8393 6.70241 -14.8824
 46.9796 7 -14.8519
@@ -33842,7 +33817,6 @@ refs 3
 kids 0
 OBJECT poly
 name "R-TailFin-OS"
-texture "AN225-tx-001.rgb"
 numvert 102
 46.882 6.75582 -15.3333
 46.9966 7 -15.3003
@@ -34526,7 +34500,6 @@ refs 3
 kids 0
 OBJECT poly
 name "R-TailFin-C"
-texture "AN225-tx-001.rgb"
 numvert 20
 47.861 7.47304 -14.8464
 47.861 7.47306 -15.2012
@@ -34618,7 +34591,6 @@ refs 3
 kids 0
 OBJECT poly
 name "L-Elevator-T"
-texture "AN225-tx-001.rgb"
 numvert 16
 50.0584 6.3915 15.0015
 46.68 6.05587 9.2
@@ -34703,7 +34675,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-Elevator-B"
-texture "AN225-tx-001.rgb"
 numvert 16
 48.8204 6.23451 14.9792
 45.6453 5.74197 9.2047
@@ -34872,7 +34843,6 @@ refs 3
 kids 0
 OBJECT poly
 name "R-Elevator-T"
-texture "AN225-tx-001.rgb"
 numvert 16
 48.8527 6.46894 -14.9422
 45.6747 6.11438 -9.19718
@@ -34957,7 +34927,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-Elevator-B"
-texture "AN225-tx-001.rgb"
 numvert 16
 50.0472 6.31399 -15.0115
 46.747 5.84252 -9.2
@@ -35518,7 +35487,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-NG-IS-Tyre"
-texture "AN225-tx-001.rgb"
 numvert 96
 -19.6172 -4.7 0.669292
 -19.3663 -4.65009 0.669292
@@ -36180,7 +36148,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-NG-OS-Tyre"
-texture "AN225-tx-001.rgb"
 numvert 96
 -19.6172 -4.7 1.56823
 -19.3663 -4.65009 1.56823
@@ -36842,7 +36809,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-NG-IS-Hub"
-texture "AN225-tx-001.rgb"
 numvert 32
 -19.8236 -4.25066 0.666058
 -19.7289 -4.31392 0.666058
@@ -36992,7 +36958,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-NG-OS-Hub"
-texture "AN225-tx-001.rgb"
 numvert 34
 -19.6172 -4.04433 1.60807
 -19.8236 -4.25066 1.56499
@@ -37224,7 +37189,6 @@ refs 3
 kids 0
 OBJECT poly
 name "L-NG-Strut"
-texture "AN225-tx-001.rgb"
 numvert 16
 -19.9144 -1.32685 0.839339
 -19.873 -1.32685 0.939339
@@ -37416,7 +37380,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-NG-IS-Tyre"
-texture "AN225-tx-001.rgb"
 numvert 96
 -19.6172 -4.57014 -0.745355
 -19.416 -4.53011 -0.745355
@@ -38078,7 +38041,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-NG-OS-Tyre"
-texture "AN225-tx-001.rgb"
 numvert 96
 -19.6172 -4.57014 -1.64429
 -19.416 -4.53011 -1.64429
@@ -38740,7 +38702,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-NG-IS-Hub"
-texture "AN225-tx-001.rgb"
 numvert 32
 -19.8236 -4.25066 -1.18116
 -19.7289 -4.31392 -1.18116
@@ -38890,7 +38851,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-NG-OS-Hub"
-texture "AN225-tx-001.rgb"
 numvert 34
 -19.7289 -4.31392 -1.56499
 -19.8236 -4.25066 -1.56499
@@ -39122,7 +39082,6 @@ refs 3
 kids 0
 OBJECT poly
 name "R-NG-Strut"
-texture "AN225-tx-001.rgb"
 numvert 16
 -19.9144 -4.12685 -0.839339
 -19.873 -4.12685 -0.939339
@@ -39314,7 +39273,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-MG-1-IS-Tyre"
-texture "AN225-tx-001.rgb"
 numvert 96
 4.1 -4.7 2.82995
 4.35092 -4.65009 2.82995
@@ -39976,7 +39934,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-MG-1-OS-Tyre"
-texture "AN225-tx-001.rgb"
 numvert 96
 4.1 -4.7 3.72889
 4.35092 -4.65009 3.72889
@@ -40638,7 +40595,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-MG-1-IS-Hub"
-texture "AN225-tx-001.rgb"
 numvert 32
 3.89366 -4.25066 2.82672
 3.98833 -4.31392 2.82672
@@ -40788,7 +40744,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-MG-1-OS-Hub"
-texture "AN225-tx-001.rgb"
 numvert 34
 4.1 -4.04433 3.76873
 3.89366 -4.25066 3.72565
@@ -41020,7 +40975,6 @@ refs 3
 kids 0
 OBJECT poly
 name "L-MG-1-Strut"
-texture "AN225-tx-001.rgb"
 numvert 16
 3.80285 -1.32685 3
 3.84427 -1.32685 3.1
@@ -41213,7 +41167,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-MG-2-IS-Tyre"
-texture "AN225-tx-001.rgb"
 numvert 96
 5.75265 -4.7 2.82995
 6.00356 -4.65009 2.82995
@@ -41875,7 +41828,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-MG-2-OS-Tyre"
-texture "AN225-tx-001.rgb"
 numvert 96
 5.75265 -4.7 3.72889
 6.00356 -4.65009 3.72889
@@ -42537,7 +42489,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-MG-2-IS-Hub"
-texture "AN225-tx-001.rgb"
 numvert 32
 5.54631 -4.25066 2.82672
 5.64098 -4.31392 2.82672
@@ -42687,7 +42638,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-MG-2-OS-Hub"
-texture "AN225-tx-001.rgb"
 numvert 34
 5.75265 -4.04433 3.76873
 5.54631 -4.25066 3.72565
@@ -42919,7 +42869,6 @@ refs 3
 kids 0
 OBJECT poly
 name "L-MG-2-Strut"
-texture "AN225-tx-001.rgb"
 numvert 16
 5.4555 -1.32685 3
 5.49692 -1.32685 3.1
@@ -43112,7 +43061,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-MG-3-IS-Tyre"
-texture "AN225-tx-001.rgb"
 numvert 96
 7.40816 -4.7 2.82995
 7.65907 -4.65009 2.82995
@@ -43774,7 +43722,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-MG-3-OS-Tyre"
-texture "AN225-tx-001.rgb"
 numvert 96
 7.40816 -4.7 3.72889
 7.65907 -4.65009 3.72889
@@ -44436,7 +44383,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-MG-3-IS-Hub"
-texture "AN225-tx-001.rgb"
 numvert 32
 7.20182 -4.25066 2.82672
 7.29649 -4.31392 2.82672
@@ -44586,7 +44532,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-MG-3-OS-Hub"
-texture "AN225-tx-001.rgb"
 numvert 34
 7.40816 -4.04433 3.76873
 7.20182 -4.25066 3.72565
@@ -44818,7 +44763,6 @@ refs 3
 kids 0
 OBJECT poly
 name "L-MG-3-Strut"
-texture "AN225-tx-001.rgb"
 numvert 16
 7.11101 -1.32685 3
 7.15243 -1.32685 3.1
@@ -45011,7 +44955,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-MG-4-IS-Tyre"
-texture "AN225-tx-001.rgb"
 numvert 96
 9.02019 -4.7 2.82995
 9.27111 -4.65009 2.82995
@@ -45673,7 +45616,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-MG-4-OS-Tyre"
-texture "AN225-tx-001.rgb"
 numvert 96
 9.02019 -4.7 3.72889
 9.27111 -4.65009 3.72889
@@ -46335,7 +46277,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-MG-4-IS-Hub"
-texture "AN225-tx-001.rgb"
 numvert 32
 8.81385 -4.25066 2.82672
 8.90852 -4.31392 2.82672
@@ -46485,7 +46426,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-MG-4-OS-Hub"
-texture "AN225-tx-001.rgb"
 numvert 34
 9.02019 -4.04433 3.76873
 8.81385 -4.25066 3.72565
@@ -46717,7 +46657,6 @@ refs 3
 kids 0
 OBJECT poly
 name "L-MG-4-Strut"
-texture "AN225-tx-001.rgb"
 numvert 16
 8.72304 -1.32685 3
 8.76446 -1.32685 3.1
@@ -46910,7 +46849,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-MG-5-IS-Tyre"
-texture "AN225-tx-001.rgb"
 numvert 96
 10.7209 -4.7 2.82995
 10.9718 -4.65009 2.82995
@@ -47572,7 +47510,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-MG-5-OS-Tyre"
-texture "AN225-tx-001.rgb"
 numvert 96
 10.7209 -4.7 3.72889
 10.9718 -4.65009 3.72889
@@ -48234,7 +48171,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-MG-5-IS-Hub"
-texture "AN225-tx-001.rgb"
 numvert 32
 10.5145 -4.25066 2.82672
 10.6092 -4.31392 2.82672
@@ -48384,7 +48320,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-MG-5-OS-Hub"
-texture "AN225-tx-001.rgb"
 numvert 34
 10.7209 -4.04433 3.76873
 10.5145 -4.25066 3.72565
@@ -48616,7 +48551,6 @@ refs 3
 kids 0
 OBJECT poly
 name "L-MG-5-Strut"
-texture "AN225-tx-001.rgb"
 numvert 16
 10.4237 -1.32685 3
 10.4651 -1.32685 3.1
@@ -48809,7 +48743,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-MG-6-IS-Tyre"
-texture "AN225-tx-001.rgb"
 numvert 96
 12.4115 -4.7 2.82995
 12.6624 -4.65009 2.82995
@@ -49471,7 +49404,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-MG-6-OS-Tyre"
-texture "AN225-tx-001.rgb"
 numvert 96
 12.4115 -4.7 3.72889
 12.6624 -4.65009 3.72889
@@ -50133,7 +50065,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-MG-6-IS-Hub"
-texture "AN225-tx-001.rgb"
 numvert 32
 12.2051 -4.25066 2.82672
 12.2998 -4.31392 2.82672
@@ -50283,7 +50214,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-MG-6-OS-Hub"
-texture "AN225-tx-001.rgb"
 numvert 34
 12.4115 -4.04433 3.76873
 12.2051 -4.25066 3.72565
@@ -50515,7 +50445,6 @@ refs 3
 kids 0
 OBJECT poly
 name "L-MG-6-Strut"
-texture "AN225-tx-001.rgb"
 numvert 16
 12.1143 -1.32685 3
 12.1557 -1.32685 3.1
@@ -50708,7 +50637,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-MG-7-IS-Tyre"
-texture "AN225-tx-001.rgb"
 numvert 96
 14.1105 -4.7 2.82995
 14.3614 -4.65009 2.82995
@@ -51370,7 +51298,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-MG-7-OS-Tyre"
-texture "AN225-tx-001.rgb"
 numvert 96
 14.1105 -4.7 3.72889
 14.3614 -4.65009 3.72889
@@ -52032,7 +51959,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-MG-7-IS-Hub"
-texture "AN225-tx-001.rgb"
 numvert 32
 13.9041 -4.25066 2.82672
 13.9988 -4.31392 2.82672
@@ -52182,7 +52108,6 @@ refs 4
 kids 0
 OBJECT poly
 name "L-MG-7-OS-Hub"
-texture "AN225-tx-001.rgb"
 numvert 34
 14.1105 -4.04433 3.76873
 13.9041 -4.25066 3.72565
@@ -52414,7 +52339,6 @@ refs 3
 kids 0
 OBJECT poly
 name "L-MG-7-Strut"
-texture "AN225-tx-001.rgb"
 numvert 16
 13.8133 -1.32685 3
 13.8547 -1.32685 3.1
@@ -52607,7 +52531,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-MG-1-IS-Tyre"
-texture "AN225-tx-001.rgb"
 numvert 96
 4.1 -4.57014 -2.90602
 4.30122 -4.53011 -2.90602
@@ -53269,7 +53192,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-MG-1-OS-Tyre"
-texture "AN225-tx-001.rgb"
 numvert 96
 4.1 -4.57014 -3.80495
 4.30122 -4.53011 -3.80495
@@ -53931,7 +53853,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-MG-1-IS-Hub"
-texture "AN225-tx-001.rgb"
 numvert 32
 3.89366 -4.25066 -3.34182
 3.98833 -4.31392 -3.34182
@@ -54081,7 +54002,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-MG-1-OS-Hub"
-texture "AN225-tx-001.rgb"
 numvert 34
 3.98833 -4.31392 -3.72565
 3.89366 -4.25066 -3.72565
@@ -54313,7 +54233,6 @@ refs 3
 kids 0
 OBJECT poly
 name "R-MG-1-Strut"
-texture "AN225-tx-001.rgb"
 numvert 16
 3.80285 -4.12685 -3
 3.84427 -4.12685 -3.1
@@ -54506,7 +54425,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-MG-2-IS-Tyre"
-texture "AN225-tx-001.rgb"
 numvert 96
 5.75265 -4.57014 -2.90602
 5.95387 -4.53011 -2.90602
@@ -55168,7 +55086,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-MG-2-OS-Tyre"
-texture "AN225-tx-001.rgb"
 numvert 96
 5.75265 -4.57014 -3.80495
 5.95387 -4.53011 -3.80495
@@ -55830,7 +55747,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-MG-2-IS-Hub"
-texture "AN225-tx-001.rgb"
 numvert 32
 5.54631 -4.25066 -3.34182
 5.64098 -4.31392 -3.34182
@@ -55980,7 +55896,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-MG-2-OS-Hub"
-texture "AN225-tx-001.rgb"
 numvert 34
 5.64098 -4.31392 -3.72565
 5.54631 -4.25066 -3.72565
@@ -56212,7 +56127,6 @@ refs 3
 kids 0
 OBJECT poly
 name "R-MG-2-Strut"
-texture "AN225-tx-001.rgb"
 numvert 16
 5.4555 -4.12685 -3
 5.49692 -4.12685 -3.1
@@ -56405,7 +56319,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-MG-3-IS-Tyre"
-texture "AN225-tx-001.rgb"
 numvert 96
 7.40816 -4.57014 -2.90602
 7.60938 -4.53011 -2.90602
@@ -57067,7 +56980,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-MG-3-OS-Tyre"
-texture "AN225-tx-001.rgb"
 numvert 96
 7.40816 -4.57014 -3.80495
 7.60938 -4.53011 -3.80495
@@ -57729,7 +57641,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-MG-3-IS-Hub"
-texture "AN225-tx-001.rgb"
 numvert 32
 7.20182 -4.25066 -3.34182
 7.29649 -4.31392 -3.34182
@@ -57879,7 +57790,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-MG-3-OS-Hub"
-texture "AN225-tx-001.rgb"
 numvert 34
 7.29649 -4.31392 -3.72565
 7.20182 -4.25066 -3.72565
@@ -58111,7 +58021,6 @@ refs 3
 kids 0
 OBJECT poly
 name "R-MG-3-Strut"
-texture "AN225-tx-001.rgb"
 numvert 16
 7.11101 -4.12685 -3
 7.15243 -4.12685 -3.1
@@ -58304,7 +58213,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-MG-4-IS-Tyre"
-texture "AN225-tx-001.rgb"
 numvert 96
 9.02019 -4.57014 -2.90602
 9.22141 -4.53011 -2.90602
@@ -58966,7 +58874,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-MG-4-OS-Tyre"
-texture "AN225-tx-001.rgb"
 numvert 96
 9.02019 -4.57014 -3.80495
 9.22141 -4.53011 -3.80495
@@ -59628,7 +59535,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-MG-4-IS-Hub"
-texture "AN225-tx-001.rgb"
 numvert 32
 8.81385 -4.25066 -3.34182
 8.90852 -4.31392 -3.34182
@@ -59778,7 +59684,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-MG-4-OS-Hub"
-texture "AN225-tx-001.rgb"
 numvert 34
 8.90852 -4.31392 -3.72565
 8.81385 -4.25066 -3.72565
@@ -60010,7 +59915,6 @@ refs 3
 kids 0
 OBJECT poly
 name "R-MG-4-Strut"
-texture "AN225-tx-001.rgb"
 numvert 16
 8.72304 -4.12685 -3
 8.76446 -4.12685 -3.1
@@ -60203,7 +60107,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-MG-5-IS-Tyre"
-texture "AN225-tx-001.rgb"
 numvert 96
 10.7209 -4.57014 -2.90602
 10.9221 -4.53011 -2.90602
@@ -60865,7 +60768,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-MG-5-OS-Tyre"
-texture "AN225-tx-001.rgb"
 numvert 96
 10.7209 -4.57014 -3.80495
 10.9221 -4.53011 -3.80495
@@ -61527,7 +61429,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-MG-5-IS-Hub"
-texture "AN225-tx-001.rgb"
 numvert 32
 10.5145 -4.25066 -3.34182
 10.6092 -4.31392 -3.34182
@@ -61677,7 +61578,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-MG-5-OS-Hub"
-texture "AN225-tx-001.rgb"
 numvert 34
 10.6092 -4.31392 -3.72565
 10.5145 -4.25066 -3.72565
@@ -61909,7 +61809,6 @@ refs 3
 kids 0
 OBJECT poly
 name "R-MG-5-Strut"
-texture "AN225-tx-001.rgb"
 numvert 16
 10.4237 -4.12685 -3
 10.4651 -4.12685 -3.1
@@ -62102,7 +62001,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-MG-6-IS-Tyre"
-texture "AN225-tx-001.rgb"
 numvert 96
 12.4115 -4.57014 -2.90602
 12.6127 -4.53011 -2.90602
@@ -62764,7 +62662,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-MG-6-OS-Tyre"
-texture "AN225-tx-001.rgb"
 numvert 96
 12.4115 -4.57014 -3.80495
 12.6127 -4.53011 -3.80495
@@ -63426,7 +63323,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-MG-6-IS-Hub"
-texture "AN225-tx-001.rgb"
 numvert 32
 12.2051 -4.25066 -3.34182
 12.2998 -4.31392 -3.34182
@@ -63576,7 +63472,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-MG-6-OS-Hub"
-texture "AN225-tx-001.rgb"
 numvert 34
 12.2998 -4.31392 -3.72565
 12.2051 -4.25066 -3.72565
@@ -63808,7 +63703,6 @@ refs 3
 kids 0
 OBJECT poly
 name "R-MG-6-Strut"
-texture "AN225-tx-001.rgb"
 numvert 16
 12.1143 -4.12685 -3
 12.1557 -4.12685 -3.1
@@ -64001,7 +63895,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-MG-7-IS-Tyre"
-texture "AN225-tx-001.rgb"
 numvert 96
 14.1105 -4.57014 -2.90602
 14.3117 -4.53011 -2.90602
@@ -64663,7 +64556,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-MG-7-OS-Tyre"
-texture "AN225-tx-001.rgb"
 numvert 96
 14.1105 -4.57014 -3.80495
 14.3117 -4.53011 -3.80495
@@ -65325,7 +65217,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-MG-7-IS-Hub"
-texture "AN225-tx-001.rgb"
 numvert 32
 13.9041 -4.25066 -3.34182
 13.9988 -4.31392 -3.34182
@@ -65475,7 +65366,6 @@ refs 4
 kids 0
 OBJECT poly
 name "R-MG-7-OS-Hub"
-texture "AN225-tx-001.rgb"
 numvert 34
 13.9988 -4.31392 -3.72565
 13.9041 -4.25066 -3.72565
@@ -65707,7 +65597,6 @@ refs 3
 kids 0
 OBJECT poly
 name "R-MG-7-Strut"
-texture "AN225-tx-001.rgb"
 numvert 16
 13.8133 -4.12685 -3
 13.8547 -4.12685 -3.1
@@ -65900,7 +65789,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-RO-Fan"
-texture "AN225-tx-001.rgb"
 numvert 49
 3.60595 -0.65016 -24.8824
 3.60622 -0.568174 -24.471
@@ -66275,7 +66163,6 @@ refs 3
 kids 0
 OBJECT poly
 name "Engine-RO-Intake-Liner"
-texture "AN225-tx-001.rgb"
 numvert 32
 2.99334 -0.648446 -24.8824
 2.99022 -0.56659 -24.471
@@ -66425,7 +66312,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-RO-Casing"
-texture "AN225-tx-001.rgb"
 numvert 134
 6.09648 -1.0632 -24.8824
 6.09648 -0.949737 -24.312
@@ -67349,7 +67235,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-RO-Bypass-Liner"
-texture "AN225-tx-001.rgb"
 numvert 34
 7.93885 -0.657934 -25.3318
 7.93885 -0.403396 -25.7127
@@ -67501,7 +67386,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-RO-Bypass-C"
-texture "AN225-tx-001.rgb"
 numvert 34
 6.36507 -0.657934 -25.3318
 6.36507 -0.403396 -25.7127
@@ -67653,7 +67537,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-RO-Jetpipe"
-texture "AN225-tx-001.rgb"
 numvert 51
 7.93885 -0.319466 -25.1916
 7.93885 -0.144343 -25.4536
@@ -67934,7 +67817,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-RO-Jetpipe-Liner"
-texture "AN225-tx-001.rgb"
 numvert 35
 9.09276 -0.0377369 -25.0749
 9.09276 0.0712823 -25.238
@@ -68100,7 +67982,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-RO-Jetpipe-C"
-texture "AN225-tx-001.rgb"
 numvert 17
 7.19236 -0.0377369 -25.0749
 7.19236 0.0712823 -25.238
@@ -68219,7 +68100,6 @@ refs 3
 kids 0
 OBJECT poly
 name "Engine-RO-Mount-F"
-texture "AN225-tx-001.rgb"
 numvert 28
 3.15707 1.75131 -24.881
 3.15803 1.7261 -25.0091
@@ -68387,7 +68267,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-RO-Mount-OS"
-texture "AN225-tx-001.rgb"
 numvert 17
 10.5861 1.90622 -25.0569
 12.5705 2.54438 -25.0569
@@ -68482,7 +68361,6 @@ refs 3
 kids 0
 OBJECT poly
 name "Engine-RO-Mount-IS"
-texture "AN225-tx-001.rgb"
 numvert 17
 10.5689 1.90913 -24.7033
 12.587 2.56609 -24.7033
@@ -68577,7 +68455,6 @@ refs 3
 kids 0
 OBJECT poly
 name "Engine-RO-Mount-C"
-texture "AN225-tx-001.rgb"
 numvert 3
 9.94495 0.797005 -24.8801
 9.02981 0.808924 -24.9595
@@ -68592,7 +68469,6 @@ refs 3
 kids 0
 OBJECT poly
 name "Engine-RM-Fan"
-texture "AN225-tx-001.rgb"
 numvert 49
 -0.848819 -0.37106 -17.2836
 -0.848554 -0.289073 -16.8723
@@ -68967,7 +68843,6 @@ refs 3
 kids 0
 OBJECT poly
 name "Engine-RM-Intake-Liner"
-texture "AN225-tx-001.rgb"
 numvert 32
 -1.46143 -0.369345 -17.2836
 -1.46455 -0.287489 -16.8723
@@ -69117,7 +68992,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-RM-Casing"
-texture "AN225-tx-001.rgb"
 numvert 134
 1.64171 -0.784095 -17.2836
 1.64171 -0.670637 -16.7133
@@ -70041,7 +69915,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-RM-Bypass-Liner"
-texture "AN225-tx-001.rgb"
 numvert 34
 3.48408 -0.378833 -17.733
 3.48408 -0.124295 -18.1139
@@ -70193,7 +70066,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-RM-Bypass-C"
-texture "AN225-tx-001.rgb"
 numvert 34
 1.9103 -0.378833 -17.733
 1.9103 -0.124295 -18.1139
@@ -70345,7 +70217,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-RM-Jetpipe"
-texture "AN225-tx-001.rgb"
 numvert 51
 3.48408 -0.0403652 -17.5928
 3.48408 0.134757 -17.8549
@@ -70626,7 +70497,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-RM-Jetpipe-Liner"
-texture "AN225-tx-001.rgb"
 numvert 35
 4.63799 0.241363 -17.4761
 4.63799 0.350383 -17.6393
@@ -70792,7 +70662,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-RM-Jetpipe-C"
-texture "AN225-tx-001.rgb"
 numvert 17
 2.73759 0.241363 -17.4761
 2.73759 0.350383 -17.6393
@@ -70911,7 +70780,6 @@ refs 3
 kids 0
 OBJECT poly
 name "Engine-RM-Mount-F"
-texture "AN225-tx-001.rgb"
 numvert 28
 3.19116 2.84482 -17.1046
 3.96042 3.22224 -17.1046
@@ -71079,7 +70947,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-RM-Mount-OS"
-texture "AN225-tx-001.rgb"
 numvert 17
 6.13136 2.18532 -17.4581
 8.46016 2.92722 -17.4581
@@ -71174,7 +71041,6 @@ refs 3
 kids 0
 OBJECT poly
 name "Engine-RM-Mount-IS"
-texture "AN225-tx-001.rgb"
 numvert 17
 6.11411 2.18823 -17.1046
 8.47462 2.94549 -17.1046
@@ -71269,7 +71135,6 @@ refs 3
 kids 0
 OBJECT poly
 name "Engine-RM-Mount-C"
-texture "AN225-tx-001.rgb"
 numvert 3
 5.49017 1.07611 -17.2813
 4.57504 1.08802 -17.3607
@@ -71284,7 +71149,6 @@ refs 3
 kids 0
 OBJECT poly
 name "Engine-RI-Fan"
-texture "AN225-tx-001.rgb"
 numvert 49
 -5.60289 -0.00302106 -9.46104
 -5.60262 0.0789652 -9.04966
@@ -71659,7 +71523,6 @@ refs 3
 kids 0
 OBJECT poly
 name "Engine-RI-Intake-Liner"
-texture "AN225-tx-001.rgb"
 numvert 32
 -6.2155 -0.00130666 -9.46104
 -6.21862 0.0805491 -9.04966
@@ -71809,7 +71672,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-RI-Casing"
-texture "AN225-tx-001.rgb"
 numvert 134
 -3.11236 -0.416057 -9.46104
 -3.11236 -0.302598 -8.89065
@@ -72733,7 +72595,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-RI-Bypass-Liner"
-texture "AN225-tx-001.rgb"
 numvert 34
 -1.26999 -0.0107946 -9.9104
 -1.26999 0.243743 -10.2913
@@ -72885,7 +72746,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-RI-Bypass-C"
-texture "AN225-tx-001.rgb"
 numvert 34
 -2.84377 -0.0107946 -9.9104
 -2.84377 0.243743 -10.2913
@@ -73037,7 +72897,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-RI-Jetpipe"
-texture "AN225-tx-001.rgb"
 numvert 51
 -1.26999 0.327673 -9.7702
 -1.26999 0.502795 -10.0323
@@ -73318,7 +73177,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-RI-Jetpipe-Liner"
-texture "AN225-tx-001.rgb"
 numvert 35
 -0.116076 0.609402 -9.6535
 -0.116076 0.718421 -9.81666
@@ -73484,7 +73342,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-RI-Jetpipe-C"
-texture "AN225-tx-001.rgb"
 numvert 17
 -2.01648 0.609402 -9.6535
 -2.01648 0.718421 -9.81666
@@ -73603,7 +73460,6 @@ refs 3
 kids 0
 OBJECT poly
 name "Engine-RI-Mount-F"
-texture "AN225-tx-001.rgb"
 numvert 28
 -6.05177 2.39845 -9.4596
 -6.05081 2.37324 -9.58771
@@ -73771,7 +73627,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-RI-Mount-OS"
-texture "AN225-tx-001.rgb"
 numvert 17
 1.37729 2.55336 -9.6355
 4.01591 3.25107 -9.6355
@@ -73866,7 +73721,6 @@ refs 3
 kids 0
 OBJECT poly
 name "Engine-RI-Mount-IS"
-texture "AN225-tx-001.rgb"
 numvert 17
 1.36004 2.55627 -9.28195
 4.02039 3.23666 -9.28195
@@ -73961,7 +73815,6 @@ refs 3
 kids 0
 OBJECT poly
 name "Engine-RI-Mount-C"
-texture "AN225-tx-001.rgb"
 numvert 3
 0.736105 1.44414 -9.45873
 -0.179027 1.45606 -9.5381
@@ -73976,7 +73829,6 @@ refs 3
 kids 0
 OBJECT poly
 name "Engine-LO-Fan"
-texture "AN225-tx-001.rgb"
 numvert 49
 3.60854 0.151173 24.8824
 3.60861 0.172161 24.7771
@@ -74351,7 +74203,6 @@ refs 3
 kids 0
 OBJECT poly
 name "Engine-LO-Intake-Liner"
-texture "AN225-tx-001.rgb"
 numvert 32
 3.60595 -0.65016 24.8824
 3.60622 -0.568174 24.471
@@ -74501,7 +74352,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-LO-Casing"
-texture "AN225-tx-001.rgb"
 numvert 134
 4.51229 -1.0632 24.8824
 4.51229 -0.949737 24.312
@@ -75425,7 +75275,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-LO-Bypass-Liner"
-texture "AN225-tx-001.rgb"
 numvert 34
 6.36507 -0.657934 25.3318
 6.36507 -0.403396 25.7127
@@ -75577,7 +75426,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-LO-Bypass-C"
-texture "AN225-tx-001.rgb"
 numvert 34
 6.36507 -0.319466 25.1916
 6.36507 -0.144343 25.4536
@@ -75729,7 +75577,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-LO-Jetpipe"
-texture "AN225-tx-001.rgb"
 numvert 51
 9.09276 -0.0377369 25.0749
 9.09276 0.0712823 25.238
@@ -76010,7 +75857,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-LO-Jetpipe-Liner"
-texture "AN225-tx-001.rgb"
 numvert 35
 7.19236 -0.0377369 25.0749
 7.19236 0.0712823 25.238
@@ -76176,7 +76022,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-LO-Jetpipe-C"
-texture "AN225-tx-001.rgb"
 numvert 17
 7.19236 0.4269 24.8824
 7.19236 0.0712823 25.238
@@ -76295,7 +76140,6 @@ refs 3
 kids 0
 OBJECT poly
 name "Engine-LO-Mount-F"
-texture "AN225-tx-001.rgb"
 numvert 28
 2.90852 1.57823 24.8812
 3.15803 1.7261 25.0091
@@ -76463,7 +76307,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-LO-Mount-OS"
-texture "AN225-tx-001.rgb"
 numvert 17
 12.0564 1.65863 24.8801
 14.431 2.62762 24.8801
@@ -76558,7 +76401,6 @@ refs 3
 kids 0
 OBJECT poly
 name "Engine-LO-Mount-IS"
-texture "AN225-tx-001.rgb"
 numvert 17
 8.63445 2.26822 24.6301
 10.4655 2.56588 24.6301
@@ -76653,7 +76495,6 @@ refs 3
 kids 0
 OBJECT poly
 name "Engine-LO-Mount-C"
-texture "AN225-tx-001.rgb"
 numvert 3
 9.02974 0.808407 24.8007
 9.02981 0.808924 24.9595
@@ -76668,7 +76509,6 @@ refs 3
 kids 0
 OBJECT poly
 name "Engine-LM-Fan"
-texture "AN225-tx-001.rgb"
 numvert 49
 -0.846232 0.430273 17.2836
 -0.846164 0.451261 17.1783
@@ -77043,7 +76883,6 @@ refs 3
 kids 0
 OBJECT poly
 name "Engine-LM-Intake-Liner"
-texture "AN225-tx-001.rgb"
 numvert 32
 -0.848819 -0.37106 17.2836
 -0.848554 -0.289073 16.8723
@@ -77193,7 +77032,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-LM-Casing"
-texture "AN225-tx-001.rgb"
 numvert 134
 0.0575155 -0.784095 17.2836
 0.0575155 -0.670637 16.7133
@@ -78117,7 +77955,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-LM-Bypass-Liner"
-texture "AN225-tx-001.rgb"
 numvert 34
 1.9103 -0.378833 17.733
 1.9103 -0.124295 18.1139
@@ -78269,7 +78106,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-LM-Bypass-C"
-texture "AN225-tx-001.rgb"
 numvert 34
 1.9103 -0.0403652 17.5928
 1.9103 0.134757 17.8549
@@ -78421,7 +78257,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-LM-Jetpipe"
-texture "AN225-tx-001.rgb"
 numvert 51
 4.63799 0.241363 17.4761
 4.63799 0.350383 17.6393
@@ -78702,7 +78537,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-LM-Jetpipe-Liner"
-texture "AN225-tx-001.rgb"
 numvert 35
 2.73759 0.241363 17.4761
 2.73759 0.350383 17.6393
@@ -78868,7 +78702,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-LM-Jetpipe-C"
-texture "AN225-tx-001.rgb"
 numvert 17
 2.73759 0.706 17.2836
 2.73759 0.350383 17.6393
@@ -78987,7 +78820,6 @@ refs 3
 kids 0
 OBJECT poly
 name "Engine-LM-Mount-F"
-texture "AN225-tx-001.rgb"
 numvert 28
 2.94857 2.92807 17.2813
 3.61012 3.29612 17.2813
@@ -79155,7 +78987,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-LM-Mount-OS"
-texture "AN225-tx-001.rgb"
 numvert 17
 7.60164 1.93773 17.2813
 10.2924 2.96303 17.2813
@@ -79250,7 +79081,6 @@ refs 3
 kids 0
 OBJECT poly
 name "Engine-LM-Mount-IS"
-texture "AN225-tx-001.rgb"
 numvert 17
 4.17968 2.54732 17.0313
 6.37752 2.98617 17.0313
@@ -79345,7 +79175,6 @@ refs 3
 kids 0
 OBJECT poly
 name "Engine-LM-Mount-C"
-texture "AN225-tx-001.rgb"
 numvert 3
 4.57497 1.08751 17.2019
 4.57504 1.08802 17.3607
@@ -79360,7 +79189,6 @@ refs 3
 kids 0
 OBJECT poly
 name "Engine-LI-Fan"
-texture "AN225-tx-001.rgb"
 numvert 49
 -5.6003 0.798311 9.46104
 -5.60023 0.8193 9.35573
@@ -79735,7 +79563,6 @@ refs 3
 kids 0
 OBJECT poly
 name "Engine-LI-Intake-Liner"
-texture "AN225-tx-001.rgb"
 numvert 32
 -5.60289 -0.00302106 9.46104
 -5.60262 0.0789652 9.04966
@@ -79885,7 +79712,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-LI-Casing"
-texture "AN225-tx-001.rgb"
 numvert 134
 -4.69655 -0.416057 9.46104
 -4.69655 -0.302598 8.89065
@@ -80809,7 +80635,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-LI-Bypass-Liner"
-texture "AN225-tx-001.rgb"
 numvert 34
 -2.84377 -0.0107946 9.9104
 -2.84377 0.243743 10.2913
@@ -80961,7 +80786,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-LI-Bypass-C"
-texture "AN225-tx-001.rgb"
 numvert 34
 -2.84377 0.327673 9.7702
 -2.84377 0.502795 10.0323
@@ -81113,7 +80937,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-LI-Jetpipe"
-texture "AN225-tx-001.rgb"
 numvert 51
 -0.116076 0.609402 9.6535
 -0.116076 0.718421 9.81666
@@ -81394,7 +81217,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-LI-Jetpipe-Liner"
-texture "AN225-tx-001.rgb"
 numvert 35
 -2.01648 0.609402 9.6535
 -2.01648 0.718421 9.81666
@@ -81560,7 +81382,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-LI-Jetpipe-C"
-texture "AN225-tx-001.rgb"
 numvert 17
 -2.01648 1.07404 9.46104
 -2.01648 0.718421 9.81666
@@ -81679,7 +81500,6 @@ refs 3
 kids 0
 OBJECT poly
 name "Engine-LI-Mount-F"
-texture "AN225-tx-001.rgb"
 numvert 28
 -6.30032 2.22537 9.45988
 -6.05081 2.37324 9.58771
@@ -81847,7 +81667,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Engine-LI-Mount-OS"
-texture "AN225-tx-001.rgb"
 numvert 17
 2.84757 2.30577 9.45873
 5.84119 3.22857 9.45873
@@ -81942,7 +81761,6 @@ refs 3
 kids 0
 OBJECT poly
 name "Engine-LI-Mount-IS"
-texture "AN225-tx-001.rgb"
 numvert 17
 -0.574391 2.91536 9.20873
 1.92792 3.32349 9.20873
@@ -82037,7 +81855,6 @@ refs 3
 kids 0
 OBJECT poly
 name "Engine-LI-Mount-C"
-texture "AN225-tx-001.rgb"
 numvert 3
 -0.179099 1.45555 9.37934
 -0.179027 1.45606 9.5381
@@ -82052,7 +81869,6 @@ refs 3
 kids 0
 OBJECT poly
 name "Fuselage-Windows"
-texture "AN225-tx-001.rgb"
 numvert 72
 -23.0054 4.68251 0.0527557
 -22.9229 4.67886 0.403731
@@ -82419,7 +82235,6 @@ name "wavefront obj"
 kids 2
 OBJECT poly
 name "Fuselage_LLogos"
-texture "AN225-tx-001.rgb"
 numvert 95
 -21.3611 1.73468 3.14234
 -19.5019 2.35221 2.82434
@@ -83258,7 +83073,6 @@ refs 3
 kids 0
 OBJECT poly
 name "Fuselage_RLogos"
-texture "AN225-tx-001.rgb"
 numvert 95
 -19.5019 1.12618 -3.60352
 -21.3611 0.533096 -3.59618
@@ -84046,7 +83860,6 @@ name "wavefront obj"
 kids 3
 OBJECT poly
 name "Engine_Stripes"
-texture "AN225-tx-001.rgb"
 numvert 216
 6.09648 -0.143079 -23.4817
 6.09648 0.427314 -23.3683
@@ -85108,7 +84921,6 @@ refs 4
 kids 0
 OBJECT poly
 name "Wing_ID"
-texture "AN225-tx-001.rgb"
 numvert 20
 14.6849 2.72334 33.9953
 16.3139 2.62442 33.9953
@@ -85206,7 +85018,6 @@ refs 3
 kids 0
 OBJECT poly
 name "TailFin_Flag"
-texture "AN225-tx-001.rgb"
 numvert 12
 48.0902 12 14.7141
 47.0113 10.5 14.922
