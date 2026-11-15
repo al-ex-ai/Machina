@@ -2,18 +2,25 @@
 // Lines are exact projections of the 3D geometry with hidden lines removed
 // (src/draw/hlr.js), laid out at a standard scale with sections and a title block
 // (src/draw/sheet.js). Nothing is traced from pixels and nothing is set per model.
-// Usage: npm run drawings [model-id ...]
-import { mkdirSync, writeFileSync } from 'node:fs';
+// Usage: npm run drawings [model-id ...] [--png] [--out dir]
+//   Named ids may be workshop models too. --png also writes each sheet as a 4200 px PNG.
+import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import '../src/builders/index.js';
 import { buildModel } from '../src/registry.js';
 import { loadCatalog } from '../src/catalog-node.js';
 import { loadAssetNode } from '../src/assets-node.js';
 import { collect, intersections, projectView, section, bounds } from '../src/draw/hlr.js';
 import { sheet } from '../src/draw/sheet.js';
+import { svgToPng } from './node/browser.js';
 
-const only = new Set(process.argv.slice(2));
-const { models } = loadCatalog();
-mkdirSync('drawings', { recursive: true });
+const args = process.argv.slice(2);
+const oi = args.indexOf('--out');
+const outDir = oi >= 0 ? args[oi + 1] : 'drawings';
+const png = args.includes('--png');
+const only = new Set(args.filter((a, i) => !a.startsWith('--') && (oi < 0 || i !== oi + 1)));
+const { index, models: listed } = loadCatalog();
+const models = only.size ? [...index.models, ...index.workshop].map(p => JSON.parse(readFileSync(`data/${p}`, 'utf8'))).filter(m => only.has(m.id)) : listed;
+mkdirSync(outDir, { recursive: true });
 
 function drawing(model) {
   const obj = model.asset ? loadAssetNode(model) : buildModel(model);
@@ -40,7 +47,8 @@ function drawing(model) {
     }
   }
   const svg = sheet(model, views, sections);
-  writeFileSync(`drawings/${model.id}.svg`, svg);
+  writeFileSync(`${outDir}/${model.id}.svg`, svg);
+  if (png) writeFileSync(`${outDir}/${model.id}.png`, svgToPng(svg, 4200));
   const count = v => v.outline.length + v.detail.length;
   return { id: model.id, bytes: svg.length, lines: count(views.side) + count(views.top) + count(views.front), cuts: cuts.length };
 }

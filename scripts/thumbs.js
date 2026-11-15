@@ -8,13 +8,14 @@
 // Needs a Chromium-based browser: Chrome, Chromium, Edge or Playwright's build. Set MACHINA_BROWSER
 // to its executable if it is not found. Node built-ins only.
 import { spawn } from 'node:child_process';
-import { existsSync, mkdirSync, mkdtempSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
-import { homedir, tmpdir } from 'node:os';
+import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import '../src/builders/index.js';
 import { partCount } from '../src/registry.js';
 import { loadCatalog, modelHash } from '../src/catalog-node.js';
+import { findBrowser } from './node/browser.js';
 
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const OUT = join(ROOT, 'assets', 'thumbs');
@@ -22,27 +23,6 @@ const MANIFEST = join(ROOT, 'data', 'thumbs.json');
 const SERVER_PORT = 15422;
 const DEBUG_PORT = 15423;
 const sleep = ms => new Promise(r => setTimeout(r, ms));
-
-function findBrowser() {
-  if (process.env.MACHINA_BROWSER) return process.env.MACHINA_BROWSER;
-  const env = process.env;
-  const fixed = [
-    join(env.PROGRAMFILES ?? '', 'Google/Chrome/Application/chrome.exe'),
-    join(env['PROGRAMFILES(X86)'] ?? '', 'Google/Chrome/Application/chrome.exe'),
-    join(env.LOCALAPPDATA ?? '', 'Google/Chrome/Application/chrome.exe'),
-    join(env['PROGRAMFILES(X86)'] ?? '', 'Microsoft/Edge/Application/msedge.exe'),
-    '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
-    '/Applications/Chromium.app/Contents/MacOS/Chromium',
-    '/usr/bin/google-chrome', '/usr/bin/chromium', '/usr/bin/chromium-browser',
-  ];
-  const playwright = [join(env.LOCALAPPDATA ?? '', 'ms-playwright'), join(homedir(), '.cache/ms-playwright'), join(homedir(), 'Library/Caches/ms-playwright')]
-    .filter(existsSync)
-    .flatMap(d => readdirSync(d).filter(n => n.startsWith('chromium')).map(n => join(d, n)))
-    .flatMap(d => readdirSync(d).map(n => [join(d, n, 'chrome-headless-shell.exe'), join(d, n, 'chrome-headless-shell'), join(d, n, 'chrome.exe'), join(d, n, 'chrome')]).flat());
-  const found = [...fixed, ...playwright].find(p => p && existsSync(p));
-  if (!found) throw new Error('No Chromium-based browser found. Set MACHINA_BROWSER to its executable.');
-  return found;
-}
 
 async function waitFor(fn, ms, what) {
   const t0 = Date.now();
