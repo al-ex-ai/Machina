@@ -36,8 +36,20 @@ export function constrain(m, layout, views) {
     if (list.length < n) throw new Error(`layout has ${n} ${what} engine(s) a side, the drawing shows ${list.length}`);
     return [...list].sort((a, b) => b.dia - a.dia).slice(0, n).sort((a, b) => a.z - b.z);
   };
-  if (layout.engines.mount === 'wing') { out.engines = biggest(m.engines, per, 'wing'); out.rear = []; }
+  // Engines in pairs, one box nacelle to each pair (Concorde, Tu-144): a box a side per two engines.
+  // Such boxes sit under the wing and do not show in the top view: they are read from the side and front views.
+  if (layout.engines.nacelle === 'box-pair') {
+    out.boxes = views ? boxesFrom(views, m) : []; out.engines = []; out.rear = [];
+    // The body's bottom runs straight over the boxes: the side view's low line there is theirs.
+    for (const b of out.boxes) {
+      const a = b.x0 - 0.5, c = b.x1 + 1, ya = lerpPts(out.bot, a), yc = lerpPts(out.bot, c);
+      out.bot = out.bot.map(([x, y]) => (x > a && x < c ? [x, Math.max(y, ya + (yc - ya) * (x - a) / (c - a))] : [x, y]));
+    }
+  }
+  else if (layout.engines.mount === 'wing') { out.engines = biggest(m.engines, per, 'wing'); out.rear = []; }
   else if (layout.engines.mount === 'rear') { out.rear = biggest(m.rear, per, 'rear'); out.engines = []; }
+  // No tailplane (a tailless delta): whatever the top view shows ahead of the wing (canards) is not one.
+  if (layout.tail === 'none') out.stab = null;
   // A T-tail: the tailplane is the long thin run across the top of the front view; its
   // chord plane is the middle of the rows where one run spans most of it.
   if (layout.tail === 'T' && out.stab) {
@@ -139,6 +151,73 @@ export function bellyFairing(target, m) {
   return { id: 'belly-fairing', label: 'Belly fairing', system: 'structure', mirror: false, position: { x: r2(best.x0), y: 0, z: 0 }, nTop: 2, nBot: 3, stations };
 }
 
+/**
+ * Canards, from the top view: rows outboard of the body whose ink lies wholly ahead of the
+ * wing root's leading edge. Root and tip rows give a trapezoid; it sits near the crown.
+ */
+export function canardFrom(target, m) {
+  const t = target.top, wingLe = m.wing.rows.length ? Math.min(...m.wing.rows.map(r => r.le)) : m.L * 0.4;
+  const rows = [];
+  for (let z = m.R * 1.05; z < m.S; z += 1 / t.ppm) {
+    const r = t.runsU(z).filter(q => q[1] < wingLe - 0.5 && q[0] > m.L * 0.08 && q[1] - q[0] > 0.3)[0];
+    if (r) rows.push({ z, le: r[0], te: r[1] }); else if (rows.length) break;
+  }
+  if (rows.length < 5 || rows.at(-1).z - rows[0].z < 1) return null;
+  const root = rows[0], tip = rows.at(-1);
+  const h = lerpPts(m.top, (root.le + root.te) / 2) - 0.25 * m.R;
+  const sec = (q, at) => ({ at: r2(at), le: r2(q.le), chord: r2(q.te - q.le), h: r2(h), tc: 0.06 });
+  const sections = [sec(root, 0.3), sec(root, root.z), sec(tip, tip.z)];
+  return { axis: 'z', mirror: true, sections, segments: [{ from: sections[0].at, to: sections.at(-1).at, split: [[0, 1, 'canard']] }], parts: { canard: { id: 'canard', label: 'Canard', system: 'surfaces' } } };
+}
+
+/**
+ * Box nacelles under the wing: in the side view, the stretch whose bottom hangs well below
+ * the belly and well clear of the ground (wheels reach the ground); in the front view, at
+ * the box's mid height, the run beside the body gives its inner and outer side.
+ */
+function boxesFrom(views, m) {
+  const s = views.side, f = views.front;
+  if (!f) throw new Error('box nacelles are read from the front view, and the drawing has none');
+  // The box is the lowest long stretch of the side view once the gear is set aside: the
+  // bottom of each column (from the body down), and the stretch within 25 cm of the lowest.
+  const bottoms = [];
+  for (let i = 0; i < s.w; i++) {
+    const x = s.U(i);
+    if (x < m.L * 0.2 || x > m.L * 0.97) continue;
+    if (m.mainLegs.some(g => x > g.x0 - 0.3 && x < g.x1 + 0.3) || (m.noseLeg && Math.abs(x - m.noseLeg.x) < 1)) continue;
+    const top = lerpPts(m.top, x), r = s.runsV(x).filter(q => q[1] > top - 0.3)[0];
+    if (r) bottoms.push([x, r[0]]);
+  }
+  const lowest = Math.min(...bottoms.map(p => p[1]));
+  const low = bottoms.filter(p => p[1] < lowest + 0.25);
+  // The longest stretch of such columns is the box; gear legs are short.
+  let best = null, cur = null;
+  for (const p of low) { if (cur && p[0] - cur.at(-1)[0] < 0.3) cur.push(p); else { cur = [p]; } if (!best || cur.length > best.length) best = cur; }
+  if (!best || best.at(-1)[0] - best[0][0] < m.L * 0.1) throw new Error('no box nacelle under the wing in the side view');
+  const x0 = best[0][0], x1 = best.at(-1)[0];
+  // In the front view the box's floor is the lowest wide run beside the body (struts and
+  // wheels in front of the box break up the rows above it, and are narrow below it).
+  for (let j = 0; j < f.h; j++) {
+    const y = f.V(j);
+    if (y < 0.3) continue;
+    if (y > m.H * 0.5) break;
+    const r = f.runsU(y).filter(q => q[0] > m.R * 0.7 && q[1] - q[0] > 1.2).sort((a, b) => (b[1] - b[0]) - (a[1] - a[0]))[0];
+    if (r) return [{ x0, x1, bottom: y, z0: r[0], z1: r[1] }];
+  }
+  throw new Error('no box nacelle beside the body in the front view');
+}
+
+/** A box nacelle from its reading: square in section with an intake face, up to the wing's underside. */
+function boxPod(b, wing, i) {
+  const at = (k, z) => lerpPts(wing.sections.map(q => [q.at, q[k]]), z);
+  const z = (b.z0 + b.z1) / 2, half = (b.z1 - b.z0) / 2, under = at('h', z) - at('tc', z) * at('chord', z) * 0.3;
+  const top = Math.max(under, b.bottom + 0.6) - b.bottom, len = b.x1 - b.x0;
+  const prof = [[0, 0.95, 0.9], [0.05, 1, 1], [0.8, 1, 1], [1, 0.9, 0.75]];
+  return { id: i ? `engine-box-${i + 1}` : 'engine-box', label: 'Engine nacelle (two engines)', system: 'propulsion', mirror: true, inlet: true,
+    position: { x: r2(b.x0), y: r2(b.bottom), z: r2(z) }, nTop: 6, nBot: 6,
+    stations: prof.map(([t, kw, kh]) => [r2(t * len), r2(half * kw), r2(top), r2(top * (1 - kh)), r2(top / 2)]) };
+}
+
 /** A nacelle's center height, center and diameter from the outer half of its circle in the front view. */
 function nacelleFromFront(f, e) {
   // A run of the nacelle spans its center height (a wing root beside it does not).
@@ -163,6 +242,12 @@ function gearAsLaid(g, m, layout, line = 0) {
   // A tire is read with the drawing's line around it: that much less across and high. It is
   // never wider than about half its diameter: a wider reading is two tires seen as one.
   const tireOf = q => { const d = r2(q.tire.d - line); return { ...q.tire, d, w: r2(Math.min(q.tire.w - line, d * 0.42)) }; };
+  // A nose leg the layout has but the drawing does not place (a side view drawn in flight):
+  // where nose gear goes, a sixth of the way back, on wheels half the size of the mains'.
+  if (layout.gear.nose && !gear.nose && gear.mains?.length) {
+    const x = r2(g.length * 0.16), d = r2(gear.mains[0].tire.d * 0.6);
+    gear.nose = { x, tire: { d: r2(d + line), w: r2(d * 0.4 + line) }, wheels: 2, spacing: r2(d * 0.5), strut: r2(Math.max(0.12, d * 0.26)), top: r2(belly(x) + 0.35), bottom: 0, byRule: true };
+  }
   if (gear.nose) {
     const n = layout.gear.nose;
     gear.nose.tire = tireOf(gear.nose);
@@ -236,10 +321,14 @@ export function fitLayout(target, layout, about, { steps = Number(process.env.FI
   const want = constrain(measure(target), layout, target);
   const frame = { L: target.L, H: target.H, S: target.S };
   const fairing = bellyFairing(target, want), bullet = tailBullet(target, want, layout);
+  const canard = layout.extras?.some(e => /canard/i.test(e)) ? canardFrom(target, want) : null;
+  log?.(canard ? `canards ${canard.sections.at(-1).at} m out` : "no canards read");
   if (bullet) log?.(`tail bullet ${bullet.position.x} m on, ${bullet.stations.at(-1)[0]} m long`);
   log?.(fairing ? `belly fairing ${fairing.position.x} m on, ${fairing.stations.at(-1)[0]} m long` : "no belly fairing");
   const make = reading => {
     const geometry = staysFrom(gearAsLaid({ ...geometryFrom(reading, { engineName: about.specs?.engine_type }), materials: MATERIALS }, reading, layout, target.line ?? 0), target.front, fairing);
+    if (canard) geometry.surfaces.push(canard);
+    if (reading.boxes?.length) { const wing = geometry.surfaces[0]; geometry.pods = [...(geometry.pods ?? []), ...reading.boxes.map((b, i) => boxPod(b, wing, i))]; }
     const extra = [fairing, bullet].filter(Boolean);
     if (extra.length) geometry.pods = [...(geometry.pods ?? []), ...extra];
     return { id: about.id, name: about.name, category: 'aviation', builder: 'parametric', specs: about.specs ?? {}, note: 'Built from a three-view drawing: outside only, no cockpit or cabin interior.', livery: liveryFor(geometry), geometry };

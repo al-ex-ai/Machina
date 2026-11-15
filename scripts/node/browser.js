@@ -29,12 +29,18 @@ export function findBrowser({ shellFirst = false } = {}) {
 
 /** Rasterize an SVG (with a headless shell when there is one: a full Chrome may not write --screenshot) to a PNG at the given pixel width, keeping its aspect ratio. Returns the PNG bytes. */
 export function svgToPng(svg, width) {
-  const vb = svg.match(/viewBox="([\d.\s-]+)"/)[1].split(/\s+/).map(Number);
+  // A drawing from an editor may give only a width and height: those are its view box then.
+  if (!/<svg[^>]*viewBox=/.test(svg)) {
+    const w = parseFloat(svg.match(/<svg[^>]*?\swidth="([\d.]+)/)[1]), h = parseFloat(svg.match(/<svg[^>]*?\sheight="([\d.]+)/)[1]);
+    svg = svg.replace(/<svg/, `<svg viewBox="0 0 ${w} ${h}"`);
+  }
+  const vb = svg.match(/viewBox="([\d.\s,-]+)"/)[1].trim().split(/[\s,]+/).map(Number);
   const height = Math.round(width * vb[3] / vb[2]);
   const dir = mkdtempSync(join(tmpdir(), 'machina-svg-'));
   try {
     const src = join(dir, 'sheet.svg'), out = join(dir, 'sheet.png');
-    writeFileSync(src, svg.replace(/<svg([^>]*?) width="[^"]*" height="[^"]*"/, `<svg$1 width="${width}" height="${height}"`));
+    const sized = svg.replace(/<svg([^>]*?)\swidth="[^"]*"/, '<svg$1').replace(/<svg([^>]*?)\sheight="[^"]*"/, '<svg$1').replace(/<svg/, `<svg width="${width}" height="${height}"`);
+    writeFileSync(src, sized);
     execFileSync(findBrowser({ shellFirst: true }), ['--headless', '--no-proxy-server', '--disable-gpu', '--hide-scrollbars',
       `--window-size=${width},${height}`, `--screenshot=${out}`, pathToFileURL(src).href], { stdio: 'ignore', timeout: 120000 });
     return readFileSync(out);

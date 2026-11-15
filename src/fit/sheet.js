@@ -11,8 +11,12 @@ import { Mask, blank } from './views.js';
 function solidOf(img) {
   const { width: w, height: h, data } = img;
   const ink = new Uint8Array(w * h);
-  // Ink is dark and opaque. A page may be white or transparent.
-  for (let k = 0; k < w * h; k++) ink[k] = data[k * 4 + 3] > 100 && data[k * 4] + data[k * 4 + 1] + data[k * 4 + 2] < 450 ? 1 : 0;
+  // Ink is dark, opaque and near gray. A page may be white or transparent; strongly colored
+  // marks (an alternative nose position dashed in orange, a cheatline, an overlay) are not outline.
+  for (let k = 0; k < w * h; k++) {
+    const r = data[k * 4], g = data[k * 4 + 1], b = data[k * 4 + 2];
+    ink[k] = data[k * 4 + 3] > 100 && r + g + b < 450 && Math.max(r, g, b) - Math.min(r, g, b) < 90 ? 1 : 0;
+  }
   const clean = unframe(unrule(ink, w, h), w, h);
   let ruled = false;
   for (let k = 0; k < w * h && !ruled; k++) ruled = ink[k] !== clean[k];
@@ -285,7 +289,11 @@ export function targetFromSheet(img, { length, span, scale, ppm = 40 }) {
   const S = (span ?? (t.h - lw) * (length / (t.w - lw))) / 2;
   const kTopX = length / (t.w - lw), kTopZ = (2 * S) / (t.h - lw);
   const kFront = f ? (2 * S) / (f.w - lw) : 0;
-  const H = (s.h - lw) * kx;
+  // A side view drawn without its gear (in flight) stands lower than the front view, which
+  // shows the gear: both hang from the fin tip, and the side view is raised onto the wheels.
+  const Hs = (s.h - lw) * kx, Hf = f ? (f.h - lw) * kFront : 0;
+  const lift = Hf > Hs + 0.5 ? Hf - Hs : 0;
+  const H = Hs + lift;
   const frame = { L: length, H, S };
   // Pixel 0 of each view is the outer edge of its line, half a line beyond the aircraft.
   const hx = (lw / 2) * kx, hTop = (lw / 2) * kTopX, hF = (lw / 2) * kFront;
@@ -301,13 +309,13 @@ export function targetFromSheet(img, { length, span, scale, ppm = 40 }) {
   const target = {
     ...frame, ppm,
     line: lw * kx,
-    side: sample('side', s, (x, y) => [(x + hx) / kx, s.h - (y + hx) / kx]),
+    side: sample('side', s, (x, y) => [(x + hx) / kx, s.h - (y - lift + hx) / kx]),
     top: sample('top', t, (x, z) => [(x + hTop) / kTopX, t.h / 2 + z / kTopZ]),
     // The front view hangs from its highest point, which both views share (the fin tip): a
     // front view drawn without its legs would otherwise sit on its belly.
     front: f ? sample('front', f, (z, y) => [f.w / 2 + z / kFront, (H + hF - y) / kFront]) : null,
     // What is drawn inside the side view: windows, doors, cockpit panes.
-    inner: innerShapes(ink, label, w, side, sideFlipped, s.w, kx),
+    inner: innerShapes(ink, label, w, side, sideFlipped, s.w, kx).map(q => (lift ? { ...q, y: q.y + lift, ...(q.points ? { points: q.points.map(([x, y]) => [x, y + lift]) } : {}) } : q)),
     found: {
       side: { box: [side.x0, side.y0, side.x1, side.y1], mirrored: sideFlipped, wheelBlobs: under.length },
       top: { box: [top.x0, top.y0, top.x1, top.y1], turned: topTurned, mirrored: topFlipped, symmetry: Math.round(top.sym * 100) / 100 },

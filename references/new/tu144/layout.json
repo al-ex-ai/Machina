@@ -1,0 +1,15 @@
+{
+  "drawing": "three-view.svg",
+  "name": "Tupolev Tu-144",
+  "source": "https://commons.wikimedia.org/wiki/File:Tupolev_Tu-144LL_3-view_line_drawing.svg",
+  "author": "molumen",
+  "license": "CC0",
+  "size": { "length": 65.7, "span": 28.8, "height": 12.5 },
+  "wing": { "position": "low", "tips": "plain", "plan": "ogee delta" },
+  "engines": { "count": 4, "mount": "wing", "nacelle": "box-pair" },
+  "tail": "none",
+  "gear": { "nose": { "axles": 1, "wheels": 2 }, "mains": [{ "place": "wing", "axles": 3, "wheels": 4 }] },
+  "doors": { "drawn": true, "list": ["door", "door", "door", "door"] },
+  "windows": { "drawn": true, "rows": 1 },
+  "extras": ["canards behind the flight deck", "drooping nose"]
+}

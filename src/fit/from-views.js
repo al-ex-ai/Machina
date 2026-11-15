@@ -170,8 +170,10 @@ function readSide(t) {
     if (bot[i + 1] - bot[i] < 0.4) continue;
     const level = median(Array.from({ length: w }, (_, q) => bot[i - q]).filter(v => !Number.isNaN(v)));
     if (bot[i + 1] - level < 0.4) continue;
-    let stays = true;
-    for (let j = i + 1; j <= cols.at(-1); j++) if (bot[j] < level + 0.3) { stays = false; break; }
+    // An overhang past the tail cone is short: a step with much of the aircraft still behind it is the
+    // end of something under the body (a box nacelle), not of the body.
+    let stays = X(cols.at(-1)) - X(i) < Math.max(2.5, L * 0.08);
+    for (let j = i + 1; j <= cols.at(-1) && stays; j++) if (bot[j] < level + 0.3) { stays = false; break; }
     if (stays) { endI = i; break; }
   }
   const xEnd = X(endI) + d / 2;
@@ -206,6 +208,12 @@ function readSide(t) {
       if (found.length > tires.length) tires = found;
     }
     if (!tires.length) continue;
+    // The diameter from higher cuts too: just above its lowest point a drawn tire is a polygon's
+    // corner, narrower than its circle. A cut counts while it still holds that tire alone.
+    tires = tires.map(q => {
+      const est = [0.18, 0.25, 0.32, 0.4].map(h => m.runsU(lb + h).find(r => Math.abs((r[0] + r[1]) / 2 - q.x) < 0.2 && r[1] - r[0] < Math.max(q.d, 0.5) * 1.15)).map((r, i) => { if (!r) return null; const h = [0.18, 0.25, 0.32, 0.4][i], E = r[1] - r[0]; return h < q.d * 0.9 ? (E * E) / (4 * h) + h : null; }).filter(v => v && v > 0.3 && v < 1.9);
+      return est.length >= 2 ? { ...q, d: median(est) } : q;
+    });
     // Wheels of one leg are the same size: strays (a door edge, a strut end) are off the median.
     const dia = median(tires.map(q => q.d)), same = tires.filter(q => Math.abs(q.d - dia) < dia * 0.3);
     legs.push({ x: r2(same.reduce((q, t2) => q + t2.x, 0) / same.length), d: r2(dia), bottom: lb, axles: same.length, axleSpacing: same.length > 1 ? r2((same.at(-1).x - same[0].x) / (same.length - 1)) : 0, x0: Math.min(...same.map(q => q.x - q.d / 2)), x1: Math.max(...same.map(q => q.x + q.d / 2)) });
