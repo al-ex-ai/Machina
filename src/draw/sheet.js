@@ -64,7 +64,7 @@ export function sheet(model, views, sections, { plain = false } = {}) {
 
   // A plain sheet: the three views alone, no frame, labels, dimensions or ground lines.
   if (plain) {
-    return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${SHEET.w} ${SHEET.h}" width="${SHEET.w}mm" height="${SHEET.h}mm" fill="none" stroke="${INK}" stroke-linecap="round" stroke-linejoin="round">
+    return `<svg xmlns="http://www.w3.org/2000/svg" data-scale="${s}" viewBox="0 0 ${SHEET.w} ${SHEET.h}" width="${SHEET.w}mm" height="${SHEET.h}mm" fill="none" stroke="${INK}" stroke-linecap="round" stroke-linejoin="round">
 <rect width="${SHEET.w}" height="${SHEET.h}" fill="#ffffff" stroke="none"/>
 <path d="${detail}" stroke-width="0.18"/>
 <path d="${outline}" stroke-width="0.45"/>

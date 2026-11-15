@@ -6,6 +6,7 @@
 // as a share of the length, every part measured the same way on the mesh and on the model.
 // Usage: npm run known [-- id ...] [--out dir]   (--out writes overlays and fitted models)
 import { readFileSync, writeFileSync, mkdirSync, readdirSync } from 'node:fs';
+import * as THREE from 'three';
 import '../src/builders/index.js';
 import { buildModel } from '../src/registry.js';
 import { loadAssetNode } from '../src/assets-node.js';
@@ -44,10 +45,10 @@ function enginesOf(obj) {
   return out.sort((p, q) => p.z - q.z);
 }
 
-/** Where the gear meets the ground: runs of a silhouette's lowest 60 cm, joined across small gaps, as centers. */
+/** Where the gear meets the ground: runs of a silhouette's lowest 20 cm, joined across small gaps, as centers. */
 function contacts(m, gap) {
   const on = new Uint8Array(m.w);
-  for (let j = 0; j < m.h && m.V(j) < 0.6; j++) for (let i = 0; i < m.w; i++) if (m.data[j * m.w + i]) on[i] = 1;
+  for (let j = 0; j < m.h && m.V(j) < 0.2; j++) for (let i = 0; i < m.w; i++) if (m.data[j * m.w + i]) on[i] = 1;
   const out = [];
   let a = -1, last = -1;
   for (let i = 0; i <= m.w; i++) {
@@ -75,12 +76,45 @@ function bodyHalfWidth(top, L) {
   return best;
 }
 
+/**
+ * Stand a source mesh on its wheels. Simulator meshes come in whatever attitude their
+ * author left them (a main gear hanging clear, the nose wheel up), while a built model
+ * stands on every wheel. The aircraft rests on the edge of its lower outline, seen from
+ * the side, that runs under the center of gravity (a third of the way back); it is
+ * pitched until that edge is level. Used for the gear contacts only: the drawing shows
+ * the source as its author left it, and the model is fitted and scored in that attitude.
+ */
+function onWheels(obj) {
+  obj.updateMatrixWorld(true);
+  const pts = [];
+  const tr = trianglesOf(obj);
+  for (let k = 0; k < tr.length; k += 3) pts.push([tr[k], tr[k + 1]]);
+  pts.sort((p, q) => p[0] - q[0] || p[1] - q[1]);
+  const lower = [];
+  for (const p of pts) {
+    while (lower.length >= 2) { const [o, a] = lower.slice(-2); if ((a[0] - o[0]) * (p[1] - o[1]) - (a[1] - o[1]) * (p[0] - o[0]) <= 0) lower.pop(); else break; }
+    lower.push(p);
+  }
+  const xc = pts.at(-1)[0] * 0.35;
+  const i = lower.findIndex((p, k) => k > 0 && lower[k - 1][0] <= xc && p[0] >= xc);
+  if (i < 1) return obj;
+  const [a, b] = [lower[i - 1], lower[i]];
+  // trianglesOf works in the frame x aft, y up: a rise toward the tail means the nose sits low.
+  const g = new THREE.Group();
+  g.add(obj);
+  g.rotation.z = -Math.atan2(b[1] - a[1], b[0] - a[0]);
+  g.updateMatrixWorld(true);
+  return g;
+}
+
 const pct = (v, L) => `${(100 * v / L).toFixed(1)}%`;
 const rows = [];
 for (const id of ids.length ? ids : all) {
   const layout = JSON.parse(readFileSync(`${DIR}/${id}.layout.json`, 'utf8'));
   const svg = readFileSync(`${DIR}/${layout.drawing}`, 'utf8');
-  const sheet = targetFromSheet(readPNG(svgToPng(svg, 4200)), { length: layout.size.length, span: layout.size.span });
+  // A drawing is to one scale, stated on the sheet (1:n on A3, rendered at 10 px per mm). No published size is used.
+  const n = Number(svg.match(/data-scale="(\d+)"/)[1]);
+  const sheet = targetFromSheet(readPNG(svgToPng(svg, 4200)), { scale: n / 1000 / 10 });
   let model;
   try {
     model = fitLayout(sheet, layout, { id: `${id}-drawn`, name: id, specs: { length_m: layout.size.length, wingspan_m: layout.size.span, height_m: layout.size.height } }, { log: process.env.DEBUG ? l => console.log(`  ${l}`) : undefined });
@@ -104,8 +138,10 @@ for (const id of ids.length ? ids : all) {
   };
   pair(enginesOf(real), enginesOf(built), ['x', 'y', 'z', 'dia'], 'engine');
   const along = m => contacts(m, 0.6).map(x => ({ x })), across = m => contacts(m, 0.7).map(z => ({ z }));
-  pair(along(key.side), along(mine.side), ['x'], 'gear along');
-  pair(across(key.front), across(mine.front), ['z'], 'gear across');
+  // Gear contacts on the source stood on its wheels (a leg its author left hanging still counts); pitch hardly moves them.
+  const stood = targetOf(onWheels(loadAssetNode(src)), { ppm: key.ppm });
+  pair(along(stood.side), along(mine.side), ['x'], 'gear along');
+  pair(across(stood.front), across(mine.front), ['z'], 'gear across');
   // Wheels per leg are structure: what the layout read from the drawing.
   const gg = model.geometry.gear, lg = layout.gear;
   const ax = q => `${q.axles ?? 1}x${q.wheels}`;

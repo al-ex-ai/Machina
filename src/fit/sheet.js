@@ -112,6 +112,34 @@ function unrule(solid, w, h) {
 }
 
 /** Connected blobs (touching sides or corners) with their bounding boxes. */
+/**
+ * Width of the outer outline in pixels: from outside each view, the first run of ink a
+ * row or column meets, its median over every row and column of every view.
+ */
+function outlineWidth(ink, w, boxes) {
+  const runs = [];
+  for (const b of boxes) {
+    for (let y = b.y0; y <= b.y1; y++) {
+      for (const dir of [1, -1]) {
+        let x = dir > 0 ? b.x0 : b.x1, n = 0;
+        while (x >= b.x0 && x <= b.x1 && !ink[y * w + x]) x += dir;
+        while (x >= b.x0 && x <= b.x1 && ink[y * w + x]) { n++; x += dir; }
+        if (n) runs.push(n);
+      }
+    }
+    for (let x = b.x0; x <= b.x1; x++) {
+      for (const dir of [1, -1]) {
+        let y = dir > 0 ? b.y0 : b.y1, n = 0;
+        while (y >= b.y0 && y <= b.y1 && !ink[y * w + x]) y += dir;
+        while (y >= b.y0 && y <= b.y1 && ink[y * w + x]) { n++; y += dir; }
+        if (n) runs.push(n);
+      }
+    }
+  }
+  runs.sort((p, q) => p - q);
+  return runs.length ? runs[Math.floor(runs.length / 2)] : 0;
+}
+
 /** Drop a drawn page frame (and the title block joined to it): ink spanning most of the page both ways is never a view. */
 function unframe(ink, w, h) {
   const { label, list } = blobs(ink, w, h);
@@ -162,10 +190,11 @@ const colExtent = (m, x) => { let a = -1, b = -1; for (let y = 0; y < m.h; y++) 
 
 /**
  * @param {{ width: number, height: number, data: Uint8Array }} img RGBA pixels
- * @param {{ length: number, span?: number, ppm?: number }} dims published size in meters
+ * @param {{ length?: number, span?: number, scale?: number, ppm?: number }} dims published size in meters, or the
+ *   drawing's own scale in meters per pixel (scale), which then sets every view
  * @returns {object} a target for src/fit/fit.js, with `found` describing what was detected
  */
-export function targetFromSheet(img, { length, span, ppm = 40 }) {
+export function targetFromSheet(img, { length, span, scale, ppm = 40 }) {
   const { width: w, height: h } = img;
   const { solid, ruled, ink } = solidOf(img);
   const { label, list } = blobs(solid, w, h);
@@ -242,15 +271,24 @@ export function targetFromSheet(img, { length, span, ppm = 40 }) {
     if (finRows(Math.floor(f.h * 0.6), f.h) > finRows(0, Math.ceil(f.h * 0.4))) f = flipY(f);
   }
 
+  // The outline is drawn centered on the edge: the outer half of the line is ink, not
+  // aircraft. Thinning the views would erase thin parts seen edge-on, so the width is
+  // passed on instead (target.line, meters) for a model's own views to be drawn as thick.
+  const lw = outlineWidth(ink, w, [side, top, front].filter(Boolean));
+
   // Scale: the side and top views by the published length, the span by the published
   // span when given (drawings are often a few percent off between views), the front
   // view by the span.
-  const kx = length / s.w;
-  const S = (span ?? t.h * (length / t.w)) / 2;
-  const kTopX = length / t.w, kTopZ = (2 * S) / t.h;
-  const kFront = f ? (2 * S) / f.w : 0;
-  const H = s.h * kx;
+  // Lengths run between the true edges, the middle of the outline: a line width less than the ink.
+  if (scale) { length = (s.w - lw) * scale; span = (t.h - lw) * scale; }
+  const kx = length / (s.w - lw);
+  const S = (span ?? (t.h - lw) * (length / (t.w - lw))) / 2;
+  const kTopX = length / (t.w - lw), kTopZ = (2 * S) / (t.h - lw);
+  const kFront = f ? (2 * S) / (f.w - lw) : 0;
+  const H = (s.h - lw) * kx;
   const frame = { L: length, H, S };
+  // Pixel 0 of each view is the outer edge of its line, half a line beyond the aircraft.
+  const hx = (lw / 2) * kx, hTop = (lw / 2) * kTopX, hF = (lw / 2) * kFront;
   const sample = (view, bits, toPx) => {
     const m = blank(view, frame, ppm);
     for (let j = 0; j < m.h; j++) for (let i = 0; i < m.w; i++) {
@@ -262,18 +300,19 @@ export function targetFromSheet(img, { length, span, ppm = 40 }) {
   };
   const target = {
     ...frame, ppm,
-    side: sample('side', s, (x, y) => [x / kx, s.h - y / kx]),
-    top: sample('top', t, (x, z) => [x / kTopX, t.h / 2 + z / kTopZ]),
+    line: lw * kx,
+    side: sample('side', s, (x, y) => [(x + hx) / kx, s.h - (y + hx) / kx]),
+    top: sample('top', t, (x, z) => [(x + hTop) / kTopX, t.h / 2 + z / kTopZ]),
     // The front view hangs from its highest point, which both views share (the fin tip): a
     // front view drawn without its legs would otherwise sit on its belly.
-    front: f ? sample('front', f, (z, y) => [f.w / 2 + z / kFront, (H - y) / kFront]) : null,
+    front: f ? sample('front', f, (z, y) => [f.w / 2 + z / kFront, (H + hF - y) / kFront]) : null,
     // What is drawn inside the side view: windows, doors, cockpit panes.
     inner: innerShapes(ink, label, w, side, sideFlipped, s.w, kx),
     found: {
       side: { box: [side.x0, side.y0, side.x1, side.y1], mirrored: sideFlipped, wheelBlobs: under.length },
       top: { box: [top.x0, top.y0, top.x1, top.y1], turned: topTurned, mirrored: topFlipped, symmetry: Math.round(top.sym * 100) / 100 },
       front: front ? { box: [front.x0, front.y0, front.x1, front.y1], turned: frontTurned, symmetry: Math.round(front.sym * 100) / 100 } : null,
-      heightMeasured: Math.round(s.h * kx * 100) / 100,
+      heightMeasured: Math.round(H * 100) / 100,
       spanMeasured: Math.round(t.h * kTopX * 100) / 100,
     },
   };

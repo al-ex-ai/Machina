@@ -534,7 +534,9 @@ export function measure(target) {
     const long = Math.max(...p.map(r => r.te - r.le));
     const body = p.filter(r => r.te - r.le > long * 0.8); // the pylon rows are shorter
     const z0 = body.at(-1).at, z1 = body[0].at, z = (z0 + z1) / 2, dia = z1 - z0;
-    const blobs = front.cols.filter(c => Math.abs(c.z - z) < dia * 0.2).map(c => c.runs.filter(r => r[1] - r[0] > dia * 0.6 && r[1] - r[0] < dia * 1.6 && r[0] > 0.3)[0]).filter(Boolean);
+    // Of the runs about the right size in each column, the tallest: a wing root edge-on can pass for a small one, and the
+    // width seen from above is short of the nacelle (the body hides its inner side).
+    const blobs = front.cols.filter(c => Math.abs(c.z - z) < dia * 0.2).map(c => c.runs.filter(r => r[1] - r[0] > dia * 0.6 && r[1] - r[0] < dia * 1.6 && r[0] > 0.3).sort((a, b) => (b[1] - b[0]) - (a[1] - a[0]))[0]).filter(Boolean);
     if (!blobs.length) return null;
     // The inner side of the nacelle is hidden by the body from above: the front view gives its full height.
     const full = Math.max(dia, median(blobs.map(r => r[1] - r[0])));

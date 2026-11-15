@@ -28,7 +28,7 @@ export function gate(model, score) {
   for (const e of eng) {
     const [len, r] = size(e), [len0, r0] = size(eng[0]);
     if (Math.abs(len - len0) > 0.02 || Math.abs(r - r0) > 0.02) bad.push('engines differ in size');
-    if (len / (2 * r) < 1.3 || len / (2 * r) > 2.7) bad.push(`nacelle ${len.toFixed(1)} m long and ${(2 * r).toFixed(1)} m across is not engine shaped`);
+    if (len / (2 * r) < 1.3 || len / (2 * r) > (e.pylon?.axis === "z" ? 5 : 2.7)) bad.push(`nacelle ${len.toFixed(1)} m long and ${(2 * r).toFixed(1)} m across is not engine shaped`);
     if (e.position.y - r < 0.25) bad.push('a nacelle touches the ground');
   }
 
