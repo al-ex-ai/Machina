@@ -177,6 +177,8 @@ export function canardFrom(target, m) {
  */
 function chined(g, target, m) {
   const t = target.top, wingLe = m.wing.rows.length ? Math.min(...m.wing.rows.map(r => r.le)) : m.L * 0.5;
+  // Its section comes to an edge at the chine: a lens, not an oval.
+  g.fuselage.nTop = 1.6; g.fuselage.nBot = 1.6;
   g.fuselage.stations = g.fuselage.stations.map(q => {
     const [x] = q;
     if (x <= 0.2 || x >= wingLe) return q;
@@ -217,17 +219,28 @@ function twinFins(g, front, H) {
  * Nacelles built into the wing: each runs the whole of its row in the top view (inlet spike
  * to exhaust), round as the front view shows it, on the wing with no pylon.
  */
-function inWingNacelles(g, target) {
+function inWingNacelles(g, target, spike = false) {
   for (const e of g.engines) {
     const z = e.position.z, row = target.top.runsU(z).sort((a, b) => (b[1] - b[0]) - (a[1] - a[0]))[0];
     if (!row) continue;
     const r0 = Math.max(...e.nacelle.stations.map(q => q[1]));
     const fit = target.front ? nacelleFromFront(target.front, { z, dia: 2 * r0, y: e.position.y }) : null;
-    const r = fit ? fit.dia / 2 : r0, y = fit ? fit.y : e.position.y, len = row[1] - row[0];
-    const prof = [[0, 0.05], [0.08, 0.45], [0.16, 0.85], [0.25, 1], [0.8, 1], [1, 0.82]];
-    e.position = { x: r2(row[0]), y: r2(y), z: r2(fit ? fit.z : z) };
+    const r = fit ? fit.dia / 2 : r0, y = fit ? fit.y : e.position.y;
+    // A spike inlet: from the tip of the row the top view is the cone alone, until it opens to the
+    // nacelle's width at the lip. The nacelle starts there; the cone stands out ahead of it.
+    let x0 = row[0];
+    if (spike) {
+      for (let x = row[0]; x < row[0] + (row[1] - row[0]) * 0.4; x += 1 / target.top.ppm) {
+        const q = target.top.runsV(x).find(v => v[0] <= z && v[1] >= z);
+        if (q && q[1] - q[0] > 1.6 * r) { x0 = x; break; }
+      }
+    }
+    const len = row[1] - x0, cone = x0 - row[0];
+    const prof = spike ? [[0, 0.9], [0.04, 1], [0.8, 1], [1, 0.82]] : [[0, 0.05], [0.08, 0.45], [0.16, 0.85], [0.25, 1], [0.8, 1], [1, 0.82]];
+    e.position = { x: r2(x0), y: r2(y), z: r2(fit ? fit.z : z) };
     e.nacelle = { nTop: 2, nBot: 2, stations: prof.map(([f, k]) => [r2(f * len), r2(r * k), r2(r * k), r2(-r * k), 0]) };
-    e.fan = { radius: r2(r * 0.7), depth: r2(len * 0.2) };
+    e.fan = { radius: r2(r * 0.7), depth: r2(spike ? 0.4 : len * 0.2) };
+    if (spike && cone > 0.3) e.spike = { length: r2(cone + 0.4), radius: r2(r * 0.6) };
     e.plug = [[r2(len - 0.2), r2(r * 0.5)], [r2(len + 0.1), r2(r * 0.4)], [r2(len + 0.4), 0.03]];
     e.pylon = { axis: 'y', sections: [{ at: r2(y), le: r2(row[0] + len * 0.4), chord: 0.2, h: r2(z), tc: 0.1 }, { at: r2(y + 0.05), le: r2(row[0] + len * 0.4), chord: 0.2, h: r2(z), tc: 0.1 }] };
   }
@@ -274,11 +287,18 @@ function boxesFrom(views, m) {
 function boxPod(b, wing, i) {
   const at = (k, z) => lerpPts(wing.sections.map(q => [q.at, q[k]]), z);
   const z = (b.z0 + b.z1) / 2, half = (b.z1 - b.z0) / 2, under = at('h', z) - at('tc', z) * at('chord', z) * 0.3;
-  const top = Math.max(under, b.bottom + 0.6) - b.bottom, len = b.x1 - b.x0;
-  const prof = [[0, 0.95, 0.9], [0.05, 1, 1], [0.8, 1, 1], [1, 0.9, 0.75]];
-  return { id: i ? `engine-box-${i + 1}` : 'engine-box', label: 'Engine nacelle (two engines)', system: 'propulsion', mirror: true, inlet: true,
-    position: { x: r2(b.x0), y: r2(b.bottom), z: r2(z) }, nTop: 6, nBot: 6,
+  // Up into the wing, so the box meets it with no gap; flat sides and a square intake from the front on.
+  const top = Math.max(under + 0.3, b.bottom + 0.6) - b.bottom, len = b.x1 - b.x0;
+  const prof = [[0, 1, 1], [0.92, 1, 1], [1, 0.96, 0.9]];
+  const box = { id: i ? `engine-box-${i + 1}` : 'engine-box', label: 'Engine nacelle (two engines)', system: 'propulsion', mirror: true, inlet: true,
+    position: { x: r2(b.x0), y: r2(b.bottom), z: r2(z) }, nTop: 12, nBot: 12,
     stations: prof.map(([t, kw, kh]) => [r2(t * len), r2(half * kw), r2(top), r2(top * (1 - kh)), r2(top / 2)]) };
+  // Two round nozzles side by side at the back, one to each engine.
+  const rn = r2(Math.min(half / 2, (top - 0.3) / 2) * 0.88), yn = r2((top - 0.3) / 2), ln = Math.max(1, len * 0.07);
+  const nozzle = (k, dz) => ({ id: `engine-nozzle-${i * 2 + k + 1}`, label: 'Exhaust nozzle', system: 'propulsion', mirror: true, finish: 'metal',
+    position: { x: r2(b.x1 - 0.3), y: r2(b.bottom), z: r2(z + dz) }, nTop: 2, nBot: 2,
+    stations: [[0, rn, r2(yn + rn), r2(yn - rn), yn], [r2(ln * 0.7), r2(rn * 0.95), r2(yn + rn * 0.95), r2(yn - rn * 0.95), yn], [r2(ln), r2(rn * 0.88), r2(yn + rn * 0.88), r2(yn - rn * 0.88), yn]] });
+  return [box, nozzle(0, -half / 2), nozzle(1, half / 2)];
 }
 
 /** A nacelle's center height, center and diameter from the outer half of its circle in the front view. */
@@ -392,9 +412,9 @@ export function fitLayout(target, layout, about, { steps = Number(process.env.FI
     const geometry = staysFrom(gearAsLaid({ ...geometryFrom(reading, { engineName: about.specs?.engine_type }), materials: MATERIALS }, reading, layout, target.line ?? 0), target.front, fairing);
     if (canard) geometry.surfaces.push(canard);
     if (layout.body === 'chined') chined(geometry, target, reading);
-    if (layout.engines.nacelle === 'in-wing') inWingNacelles(geometry, target);
+    if (layout.engines.nacelle === 'in-wing') inWingNacelles(geometry, target, layout.engines.inlet === 'spike');
     if (/twin/.test(layout.fins ?? '')) twinFins(geometry, target.front, target.H);
-    if (reading.boxes?.length) { const wing = geometry.surfaces[0]; geometry.pods = [...(geometry.pods ?? []), ...reading.boxes.map((b, i) => boxPod(b, wing, i))]; }
+    if (reading.boxes?.length) { const wing = geometry.surfaces[0]; geometry.pods = [...(geometry.pods ?? []), ...reading.boxes.flatMap((b, i) => boxPod(b, wing, i))]; }
     const extra = [fairing, bullet].filter(Boolean);
     if (extra.length) geometry.pods = [...(geometry.pods ?? []), ...extra];
     return { id: about.id, name: about.name, category: 'aviation', builder: 'parametric', specs: about.specs ?? {}, note: 'Built from a three-view drawing: outside only, no cockpit or cabin interior.', livery: liveryFor(geometry), geometry };
@@ -435,7 +455,7 @@ export function fitLayout(target, layout, about, { steps = Number(process.env.FI
   if (layout.paint) {
     Object.assign(lv, { base: layout.paint, belly: layout.paint, nacelle: layout.paint, stripe: layout.paint });
     delete lv.titles;
-    for (const s of model.geometry.surfaces) if (s.paint) s.paint = { ...s.paint, base: layout.paint };
+    for (const s of model.geometry.surfaces) { if (s.paint) s.paint = { ...s.paint, base: layout.paint }; for (const p of Object.values(s.parts)) if (p.finish === "metal") delete p.finish; }
     model.geometry.materials = { ...model.geometry.materials, tail: { ...model.geometry.materials.tail, color: layout.paint }, surfaces: { ...model.geometry.materials.surfaces, color: layout.paint }, controls: { ...model.geometry.materials.controls, color: layout.paint } };
   }
   return model;

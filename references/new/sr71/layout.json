@@ -17,7 +17,8 @@
   "engines": {
     "count": 2,
     "mount": "wing",
-    "nacelle": "in-wing"
+    "nacelle": "in-wing",
+    "inlet": "spike"
   },
   "tail": "none",
   "fins": "twin canted, on the nacelles",

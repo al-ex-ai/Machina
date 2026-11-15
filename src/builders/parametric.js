@@ -189,10 +189,14 @@ export function buildParametric(model) {
     const fanY = inlet.mid + (e.fan.offsetY ?? 0); // the fan sits above a flattened inlet floor
     const plug = new THREE.LatheGeometry(e.plug.map(([x, r]) => new THREE.Vector2(r, x)), 32).rotateZ(-Math.PI / 2);
     plug.translate(0, nac.at(length).mid, 0);
-    const spinner = new THREE.ConeGeometry(rFan * 0.32, rFan * 0.75, 32).rotateZ(Math.PI / 2).translate(fanX - rFan * 0.37, fanY, 0);
+    // A supersonic inlet (e.spike: { length, radius }) has a cone standing out ahead of the lip
+    // in place of a spinner, and no fan to be seen behind it.
+    const spinner = e.spike
+      ? new THREE.ConeGeometry(e.spike.radius, e.spike.length, 40).rotateZ(Math.PI / 2).translate(fanX - e.spike.length / 2, fanY, 0)
+      : new THREE.ConeGeometry(rFan * 0.32, rFan * 0.75, 32).rotateZ(Math.PI / 2).translate(fanX - rFan * 0.37, fanY, 0);
     const duct = new THREE.CylinderGeometry(rFan * 1.02, rFan * 1.02, fanX, 48, 1, true).rotateZ(Math.PI / 2).translate(fanX / 2, fanY, 0);
     const fan = new THREE.CircleGeometry(rFan, 48).rotateY(-Math.PI / 2).translate(fanX + 0.08, fanY, 0);
-    const blades = fanBlades(rFan, fanX, fanY, e.fan.blades ?? 24);
+    const blades = e.spike ? null : fanBlades(rFan, fanX, fanY, e.fan.blades ?? 24);
     const sleeve = nozzleSleeve(nac, length);
     const lip = inletLip(nac, rFan * 1.02, fanY);
     const pylonPlan = surfacePlan({ axis: e.pylon.axis ?? 'y', sections: e.pylon.sections });
@@ -208,7 +212,7 @@ export function buildParametric(model) {
         { geometry: place(lip), material: mat.metal },
         { geometry: place(duct), material: { color: '#3a4049', roughness: 0.75, metalness: 0.3, doubleSide: true } },
         { geometry: place(fan), material: { color: '#101318', roughness: 0.6, metalness: 0.4 } },
-        { geometry: place(blades), material: { color: '#9aa3ad', roughness: 0.3, metalness: 0.9, doubleSide: true } },
+        ...(blades ? [{ geometry: place(blades), material: { color: '#9aa3ad', roughness: 0.3, metalness: 0.9, doubleSide: true } }] : []),
         { geometry: place(spinner), material: { color: '#c3c8ce', roughness: 0.25, metalness: 0.9 } },
         { geometry: place(sleeve), material: { color: '#16191d', roughness: 0.8, metalness: 0.2, doubleSide: true } },
         { geometry: place(plug), material: { color: '#5a5f66', roughness: 0.55, metalness: 0.8 } },
