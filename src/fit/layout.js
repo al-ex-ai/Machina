@@ -177,10 +177,13 @@ export function canardFrom(target, m) {
  */
 function twinFins(g, front, H) {
   const fin = g.surfaces.find(s => s.axis === 'y' && !s.mirror);
-  if (!fin || !front || !g.engines.length) return;
-  const zOn = g.engines[0].position.z, pts = [];
+  // Twin fins stand at the tailplane's tips (end plates) when there is a tailplane, else on the nacelles.
+  const stab = g.surfaces.find(s => Object.values(s.parts).some(p => p.id === 'stabilizer'));
+  const anchor = stab ? stab.sections.at(-1).at : g.engines[0]?.position.z;
+  if (!fin || !front || !anchor) return;
+  const zOn = anchor, pts = [];
   for (let y = H * 0.55; y < H - 0.1; y += 0.1) {
-    const r = front.runsU(y).filter(q => q[0] > 0.3 && q[1] - q[0] < 1.2).sort((a, b) => Math.abs((a[0] + a[1]) / 2 - zOn) - Math.abs((b[0] + b[1]) / 2 - zOn))[0];
+    const r = front.runsU(y).filter(q => q[0] > 0.3 && q[1] - q[0] < 1.2 && Math.abs((q[0] + q[1]) / 2 - zOn) < 4).sort((a, b) => Math.abs((a[0] + a[1]) / 2 - zOn) - Math.abs((b[0] + b[1]) / 2 - zOn))[0];
     if (r) pts.push([y, (r[0] + r[1]) / 2]);
   }
   let zAt = () => zOn;

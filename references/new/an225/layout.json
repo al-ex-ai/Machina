@@ -1,0 +1,46 @@
+{
+  "drawing": "three-view.svg",
+  "name": "Antonov An-225 Mriya",
+  "source": "https://commons.wikimedia.org/wiki/File:Antonov_An-225_3-view.svg",
+  "author": "Cuculcan",
+  "license": "Public domain",
+  "size": {
+    "length": 84,
+    "span": 88.4,
+    "height": 18.1
+  },
+  "wing": {
+    "position": "high",
+    "tips": "plain"
+  },
+  "engines": {
+    "count": 6,
+    "mount": "wing"
+  },
+  "tail": "conventional",
+  "gear": {
+    "nose": {
+      "axles": 1,
+      "wheels": 4
+    },
+    "mains": [
+      {
+        "place": "body",
+        "axles": 7,
+        "wheels": 2
+      }
+    ]
+  },
+  "doors": {
+    "drawn": true,
+    "list": []
+  },
+  "windows": {
+    "drawn": true,
+    "rows": 0
+  },
+  "extras": [
+    "main gear sponsons on the lower fuselage"
+  ],
+  "fins": "twin, end plates on the tailplane"
+}

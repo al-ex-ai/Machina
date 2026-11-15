@@ -13,14 +13,21 @@ function solidOf(img) {
   const ink = new Uint8Array(w * h);
   // Ink is dark, opaque and near gray. A page may be white or transparent; strongly colored
   // marks (an alternative nose position dashed in orange, a cheatline, an overlay) are not outline.
+  const shade = new Uint8Array(w * h);
+  let nInk = 0, nShade = 0;
   for (let k = 0; k < w * h; k++) {
-    const r = data[k * 4], g = data[k * 4 + 1], b = data[k * 4 + 2];
-    ink[k] = data[k * 4 + 3] > 100 && r + g + b < 450 && Math.max(r, g, b) - Math.min(r, g, b) < 90 ? 1 : 0;
+    const r = data[k * 4], g = data[k * 4 + 1], b = data[k * 4 + 2], a = data[k * 4 + 3] > 100, spread = Math.max(r, g, b) - Math.min(r, g, b);
+    ink[k] = a && r + g + b < 450 && spread < 50 ? 1 : 0;
+    // Light gray shading (an illustration rather than a line drawing); a tinted overlay is not gray.
+    shade[k] = a && !ink[k] && r + g + b < 750 && spread < 18 ? 1 : 0;
+    nInk += ink[k]; nShade += shade[k];
   }
+  // A shaded drawing paints the aircraft instead of outlining it: every gray pixel is aircraft.
+  if (nShade > nInk * 3) for (let k = 0; k < w * h; k++) ink[k] |= shade[k];
   const clean = unframe(unrule(ink, w, h), w, h);
   let ruled = false;
   for (let k = 0; k < w * h && !ruled; k++) ruled = ink[k] !== clean[k];
-  return { solid: enclosed(clean, w, h), ruled, ink: clean };
+  return { solid: enclosed(clean, w, h), ruled, ink: clean, shaded: nShade > nInk * 3 };
 }
 
 /** Grow (or shrink) a bitmap by r pixels, as a square. */
@@ -200,7 +207,7 @@ const colExtent = (m, x) => { let a = -1, b = -1; for (let y = 0; y < m.h; y++) 
  */
 export function targetFromSheet(img, { length, span, height, scale, ppm = 40 }) {
   const { width: w, height: h } = img;
-  const { solid, ruled, ink } = solidOf(img);
+  const { solid, ruled, ink, shaded } = solidOf(img);
   const { label, list } = blobs(solid, w, h);
   const size = b => Math.max(b.x1 - b.x0, b.y1 - b.y0) + 1;
   const biggest = Math.max(...list.map(size));
@@ -218,9 +225,15 @@ export function targetFromSheet(img, { length, span, height, scale, ppm = 40 }) 
   }
   // The side view is the one that mirrors least. Of the rest, the top view runs as long
   // along its centerline as the side view is long; the front view only as tall as it.
-  const side = big.reduce((a, b) => (b.sym < a.sym ? b : a));
-  const sideW = side.x1 - side.x0 + 1, sideH = side.y1 - side.y0 + 1;
+  // A sheet may draw more than one side view (a cargo nose raised, doors open): of those, the
+  // one as long as the top view is the aircraft as it stands.
   const along = b => (b.symH >= b.symV ? b.x1 - b.x0 + 1 : b.y1 - b.y0 + 1);
+  const mirrorsWell = big.filter(b => b.sym > 0.8);
+  const fitTop = c => Math.min(Infinity, ...mirrorsWell.map(b => Math.abs(along(b) / (c.x1 - c.x0 + 1) - 1)));
+  const sides = big.filter(b => b.sym <= 0.8 && b.x1 - b.x0 > (b.y1 - b.y0) * 2);
+  const side = sides.length > 1 ? sides.reduce((a, b) => (fitTop(b) < fitTop(a) ? b : a)) : big.reduce((a, b) => (b.sym < a.sym ? b : a));
+  if (process.env.DEBUG_SHEET) for (const b of big) console.log('view', b.x0, b.y0, b.x1, b.y1, 'sym', b.sym.toFixed(2), 'fit', fitTop(b).toFixed(3), b === side ? 'SIDE' : '');
+  const sideW = side.x1 - side.x0 + 1, sideH = side.y1 - side.y0 + 1;
   const rest = big.filter(b => b !== side && b.sym > 0.8);
   const top = rest.reduce((a, b) => (!a || Math.abs(along(b) / sideW - 1) < Math.abs(along(a) / sideW - 1) ? b : a), null);
   if (!top || Math.abs(along(top) / sideW - 1) > 0.2) throw new Error('no top view found next to the side view');
@@ -278,7 +291,8 @@ export function targetFromSheet(img, { length, span, height, scale, ppm = 40 }) 
   // The outline is drawn centered on the edge: the outer half of the line is ink, not
   // aircraft. Thinning the views would erase thin parts seen edge-on, so the width is
   // passed on instead (target.line, meters) for a model's own views to be drawn as thick.
-  const lw = outlineWidth(ink, w, [side, top, front].filter(Boolean));
+  // A shaded drawing has no outline: its edge is where the paint ends.
+  const lw = shaded ? 0 : outlineWidth(ink, w, [side, top, front].filter(Boolean));
 
   // Scale: the side and top views by the published length, the span by the published
   // span when given (drawings are often a few percent off between views), the front
