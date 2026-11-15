@@ -717,6 +717,23 @@ export function geometryFrom(m, { engineName = 'Engine' } = {}) {
     gear.mains.push({ ...leg(g, grp, onWing ? wingAt('h', z) - 0.1 : bodyAt(g.x).bot + 0.35), z: r2(z), id: count > 1 ? (onWing ? 'wing-gear' : 'body-gear') : 'main-gear', label: count > 1 ? (onWing ? 'wing gear' : 'body gear') : 'main gear' });
   }
 
+  // Main gear the picture cannot be trusted on (a leg hidden behind an engine reads as a
+  // stray wheel) is placed where main gear goes: under the wing root at 60% chord, a tenth
+  // of the span out unless the front view shows it, on wheels sized to the aircraft.
+  const rootSec = wingSecs.find(q => q.at >= R) ?? wingSecs[0];
+  const span = 2 * wingSecs.at(-1).at, wheel = Math.min(1.4, Math.max(0.6, L * 0.022));
+  gear.mains = gear.mains.map(q => {
+    const f = (q.x - rootSec.le) / rootSec.chord;
+    const xOk = f >= 0.3 && f <= 1.15, dOk = q.tire.d >= Math.max(0.45, L * 0.018), zOk = q.z >= 0.4 && q.z <= span * 0.25;
+    if (xOk && dOk && zOk) return q;
+    const d = dOk ? q.tire.d : r2(wheel), z = zOk ? q.z : r2(Math.max(R * 1.3, span * 0.1)), x = xOk ? q.x : r2(rootSec.le + rootSec.chord * 0.6);
+    const bogie = L > 45;
+    return { ...q, x, z, byRule: true, tire: { d, w: r2(d * 0.36) }, wheels: 2, spacing: r2(d * 0.85), ...(bogie ? { axles: 2, axleSpacing: r2(d * 1.25) } : {}), strut: r2(Math.max(0.12, d * 0.26)), top: r2(z > R * 0.95 ? wingAt('h', z) - 0.1 : bodyAt(x).bot + 0.35), bottom: 0 };
+  });
+  // Legs across pair up one to one; two readings that land on the same spot are one leg.
+  gear.mains = gear.mains.filter((q, i, a) => a.findIndex(p => Math.abs(p.x - q.x) < 1 && Math.abs(p.z - q.z) < 0.6) === i);
+  if (gear.mains.length === 1) { gear.mains[0].id = 'main-gear'; gear.mains[0].label = 'main gear'; }
+
   const tip = wingSecs.at(-1);
   return {
     length: r2(xEnd),

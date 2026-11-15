@@ -9,6 +9,7 @@ import '../src/builders/index.js';
 import { buildModel } from '../src/registry.js';
 import { targetFromSheet } from '../src/fit/sheet.js';
 import { fitViews } from '../src/fit/fit.js';
+import { gate } from '../src/fit/gate.js';
 import { score, trianglesOf, raster, fill, overlay, Mask } from '../src/fit/views.js';
 import { readPNG, writePNG } from './reference/png.js';
 
@@ -39,6 +40,8 @@ for (const v of Object.keys(sc)) console.log(`${v.padEnd(6)} overlap ${sc[v].iou
 const g = model.geometry;
 console.log(`model: ${g.fuselage.stations.length} body stations, ${g.surfaces.map(s => Object.values(s.parts)[0].id).join(', ')}, ${g.engines.length} engine pair(s), gear ${g.gear.nose ? 'nose + ' : ''}${g.gear.mains.length} main leg pair(s)`);
 
+const failures = gate(model, sc);
+console.log(failures.length ? ['GATE: not fit to show', ...failures.map(f => `  - ${f}`)].join('\n') : 'GATE: passed');
 const out = opt('out');
 if (out) {
   mkdirSync(out, { recursive: true });
