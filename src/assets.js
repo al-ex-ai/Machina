@@ -170,7 +170,10 @@ function flipWinding(geo) {
   pos.needsUpdate = true;
 }
 
-export const hideRules = model => (model.asset.hide ?? []).map(toRegExp);
+// Simulator rendering aids inside cockpit files (a sky backdrop for the windows, light volumes)
+// are never part of the aircraft.
+const ALWAYS_HIDE = [/^internal.sky$/i, /^LightVolume/i];
+export const hideRules = model => [...ALWAYS_HIDE, ...(model.asset.hide ?? []).map(toRegExp)];
 
 /** The asset files of a model: [{ file, fallback? }]. */
 export const assetFiles = model => model.asset.files ?? [{ file: model.asset.file }];

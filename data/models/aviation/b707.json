@@ -129,62 +129,6 @@
         }
       },
       {
-        "file": "Models/Cockpit/marker.ac",
-        "chain": [
-          {
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          }
-        ],
-        "fallback": {
-          "id": "cabin",
-          "label": "Cockpit and cabin",
-          "system": "interior"
-        }
-      },
-      {
-        "file": "Models/Cockpit/windowIce.ac",
-        "chain": [
-          {
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
-          {
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          }
-        ],
-        "fallback": {
-          "id": "cabin",
-          "label": "Cockpit and cabin",
-          "system": "interior"
-        }
-      },
-      {
         "file": "Models/Cockpit/Instruments/mag_compass/mag_compass.ac",
         "chain": [
           {
@@ -8057,7 +8001,8 @@
     "hide": [
       "fuselage.inner",
       "/inner$/",
-      "nonones"
+      "nonones",
+      "immat.text"
     ],
     "parts": [
       {
