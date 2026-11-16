@@ -21,10 +21,11 @@ const SORTS = {
 
 // Suggested sets, kept only when at least two of their models are listed.
 const PRESETS = [
-  { label: 'Airliners', ids: ['b747-400-parametric', 'b787-8-parametric', 'b707-parametric', 'a320neo-parametric'] },
+  { label: 'Airliners', ids: ['b747-400', 'b787-8', 'b707-parametric', 'a320neo', 'b737-300'] },
   { label: 'Light aircraft', ids: ['cessna-172s', 'dr400', 'j3-cub', 'ercoupe'] },
-  { label: 'Soviet and supersonic', ids: ['concorde', 'tu-154m', 'il76', 'tu134'] },
-  { label: 'First and biggest', ids: ['wright-flyer', 'b747-400-parametric'] },
+  { label: 'Tupolev, Ilyushin and Concorde', ids: ['concorde', 'tu-154m', 'il76', 'tu134'] },
+  { label: 'First and biggest', ids: ['wright-flyer', 'b747-400'] },
+  { label: 'Supersonic', ids: ['concorde', 'sr71'] },
 ];
 
 const css = name => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
