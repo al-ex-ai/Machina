@@ -16,7 +16,8 @@
     "models/aviation/tu134.json",
     "models/aviation/il76.json",
     "models/aviation/concorde.json",
-    "models/aviation/sr71.json"
+    "models/aviation/sr71.json",
+    "models/aviation/an225.json"
   ],
   "workshop": [
     "models/aviation/a380-800.json",
@@ -34,7 +35,6 @@
     "models/aviation/an225-drawn.json",
     "models/aviation/tu144-drawn.json",
     "models/aviation/sr71-drawn.json",
-    "models/aviation/an225.json",
     "models/aviation/tu154b.json",
     "models/aviation/tu144d.json",
     "models/aviation/b707-parametric.json"
