@@ -75,6 +75,12 @@ if (missing.length) throw new Error(`not listed: ${missing.join(', ')}`);
 const manifest = existsSync(MANIFEST) && only.length ? JSON.parse(readFileSync(MANIFEST, 'utf8')) : {};
 mkdirSync(OUT, { recursive: true });
 
+// A browser left over from an earlier run would answer on the debugging port with its old
+// page, and its cached renders: refuse to start rather than write stale thumbnails.
+for (const port of [SERVER_PORT, DEBUG_PORT]) {
+  const busy = await fetch(`http://127.0.0.1:${port}/json/version`).then(() => true, () => false);
+  if (busy) throw new Error(`port ${port} is in use (a leftover dev server or browser?); stop it and run again`);
+}
 const server = spawn(process.execPath, ['server.js'], { cwd: ROOT, env: { ...process.env, PORT: String(SERVER_PORT) }, stdio: 'ignore' });
 const profile = mkdtempSync(join(tmpdir(), 'machina-thumbs-'));
 const browser = spawn(findBrowser(), ['--headless', '--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--hide-scrollbars',
