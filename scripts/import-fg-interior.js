@@ -87,9 +87,11 @@ const assetFiles = model.asset.files ?? [{ file: model.asset.file }];
 const sumOf = chain => chain.reduce((s, c) => ({ x: s.x + c.offset.x, y: s.y + c.offset.y, z: s.z + c.offset.z }), { x: 0, y: 0, z: 0 });
 const deltas = [];
 for (const f of found.filter(q => !q.inside)) {
-  const a = assetFiles.find(q => q.file === f.file);
-  if (!a) continue;
-  const tree = sumOf(f.chain), own = a.chain ? sumOf(a.chain) : { x: a.offset?.x ?? 0, y: a.offset?.y ?? 0, z: a.offset?.z ?? 0 };
+  // A file placed more than once (four engines from one model) pairs with its nearest placement.
+  const tree = sumOf(f.chain), at = a => (a.chain ? sumOf(a.chain) : { x: a.offset?.x ?? 0, y: a.offset?.y ?? 0, z: a.offset?.z ?? 0 });
+  const dist = o => Math.hypot(o.x - tree.x, o.y - tree.y, o.z - tree.z);
+  const own = assetFiles.filter(q => q.file === f.file).map(at).sort((p, q) => dist(p) - dist(q))[0];
+  if (!own) continue;
   deltas.push({ x: own.x - tree.x, y: own.y - tree.y, z: own.z - tree.z });
 }
 if (deltas.length) {

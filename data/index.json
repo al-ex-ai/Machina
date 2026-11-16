@@ -12,7 +12,7 @@
     "models/aviation/a320neo.json",
     "models/aviation/b787-8.json",
     "models/aviation/b747-400.json",
-    "models/aviation/b707-parametric.json",
+    "models/aviation/b707.json",
     "models/aviation/tu134.json",
     "models/aviation/il76.json",
     "models/aviation/concorde.json",
@@ -34,9 +34,9 @@
     "models/aviation/an225-drawn.json",
     "models/aviation/tu144-drawn.json",
     "models/aviation/sr71-drawn.json",
-    "models/aviation/b707.json",
     "models/aviation/an225.json",
     "models/aviation/tu154b.json",
-    "models/aviation/tu144d.json"
+    "models/aviation/tu144d.json",
+    "models/aviation/b707-parametric.json"
   ]
 }
