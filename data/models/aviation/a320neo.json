@@ -331,18 +331,6 @@
               "heading": 0,
               "roll": 0
             }
-          },
-          {
-            "offset": {
-              "x": -0.01247,
-              "y": 0.213195,
-              "z": -0.135
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 90,
-              "roll": 9.4
-            }
           }
         ],
         "fallback": {
@@ -392,18 +380,6 @@
           },
           {
             "offset": {
-              "x": -0.01247,
-              "y": 0.213195,
-              "z": -0.135
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 90,
-              "roll": 9.4
-            }
-          },
-          {
-            "offset": {
               "x": 0.128,
               "y": 0,
               "z": 0.997
@@ -412,18 +388,6 @@
               "pitch": 69.547,
               "heading": 0,
               "roll": 0
-            }
-          },
-          {
-            "offset": {
-              "x": -0.008,
-              "y": -0.058,
-              "z": 0.0155
-            },
-            "rotation": {
-              "pitch": 62,
-              "heading": 32,
-              "roll": 88
             }
           }
         ],
@@ -470,18 +434,6 @@
               "pitch": 0,
               "heading": 0,
               "roll": 0
-            }
-          },
-          {
-            "offset": {
-              "x": -0.01247,
-              "y": 0.213195,
-              "z": -0.135
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 90,
-              "roll": 9.4
             }
           },
           {
@@ -544,18 +496,6 @@
           },
           {
             "offset": {
-              "x": -0.01247,
-              "y": 0.213195,
-              "z": -0.135
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 90,
-              "roll": 9.4
-            }
-          },
-          {
-            "offset": {
               "x": 0.128,
               "y": 0,
               "z": 0.997
@@ -611,18 +551,6 @@
               "heading": 0,
               "roll": 0
             }
-          },
-          {
-            "offset": {
-              "x": -0.01247,
-              "y": 0.213195,
-              "z": -0.135
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 90,
-              "roll": 9.4
-            }
           }
         ],
         "fallback": {
@@ -668,18 +596,6 @@
               "pitch": 0,
               "heading": 0,
               "roll": 0
-            }
-          },
-          {
-            "offset": {
-              "x": -0.01247,
-              "y": 0.213195,
-              "z": -0.135
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 90,
-              "roll": 9.4
             }
           }
         ],
@@ -727,30 +643,6 @@
               "heading": 0,
               "roll": 0
             }
-          },
-          {
-            "offset": {
-              "x": -0.01247,
-              "y": 0.213195,
-              "z": -0.135
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 90,
-              "roll": 9.4
-            }
-          },
-          {
-            "offset": {
-              "x": -0.22756,
-              "y": -0.216245,
-              "z": -0.091845
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 90,
-              "roll": 9.4
-            }
           }
         ],
         "fallback": {
@@ -796,30 +688,6 @@
               "pitch": 0,
               "heading": 0,
               "roll": 0
-            }
-          },
-          {
-            "offset": {
-              "x": -0.01247,
-              "y": 0.213195,
-              "z": -0.135
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 90,
-              "roll": 9.4
-            }
-          },
-          {
-            "offset": {
-              "x": -0.22756,
-              "y": 0.148855,
-              "z": -0.091845
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 90,
-              "roll": 9.4
             }
           }
         ],
@@ -867,18 +735,6 @@
               "heading": 0,
               "roll": 0
             }
-          },
-          {
-            "offset": {
-              "x": -0.01247,
-              "y": 0.213195,
-              "z": -0.135
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 90,
-              "roll": 9.4
-            }
           }
         ],
         "fallback": {
@@ -924,18 +780,6 @@
               "pitch": 0,
               "heading": 0,
               "roll": 0
-            }
-          },
-          {
-            "offset": {
-              "x": -0.01247,
-              "y": 0.213195,
-              "z": -0.135
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 90,
-              "roll": 9.4
             }
           }
         ],
@@ -983,18 +827,6 @@
               "heading": 0,
               "roll": 0
             }
-          },
-          {
-            "offset": {
-              "x": -0.01247,
-              "y": 0.213195,
-              "z": -0.135
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 90,
-              "roll": 9.4
-            }
           }
         ],
         "fallback": {
@@ -1040,18 +872,6 @@
               "pitch": 0,
               "heading": 0,
               "roll": 0
-            }
-          },
-          {
-            "offset": {
-              "x": -0.01247,
-              "y": 0.213195,
-              "z": -0.135
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 90,
-              "roll": 9.4
             }
           }
         ],
@@ -1099,18 +919,6 @@
               "heading": 0,
               "roll": 0
             }
-          },
-          {
-            "offset": {
-              "x": -0.01247,
-              "y": 0.213195,
-              "z": -0.135
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 90,
-              "roll": 9.4
-            }
           }
         ],
         "fallback": {
@@ -1156,18 +964,6 @@
               "pitch": 0,
               "heading": 0,
               "roll": 0
-            }
-          },
-          {
-            "offset": {
-              "x": -0.01247,
-              "y": 0.213195,
-              "z": -0.135
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 90,
-              "roll": 9.4
             }
           }
         ],
@@ -1215,18 +1011,6 @@
               "heading": 0,
               "roll": 0
             }
-          },
-          {
-            "offset": {
-              "x": -0.01247,
-              "y": 0.213195,
-              "z": -0.135
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 90,
-              "roll": 9.4
-            }
           }
         ],
         "fallback": {
@@ -1273,18 +1057,6 @@
               "heading": 0,
               "roll": 0
             }
-          },
-          {
-            "offset": {
-              "x": -0.01247,
-              "y": 0.213195,
-              "z": -0.135
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 90,
-              "roll": 9.4
-            }
           }
         ],
         "fallback": {
@@ -1330,18 +1102,6 @@
               "pitch": 0,
               "heading": 0,
               "roll": 0
-            }
-          },
-          {
-            "offset": {
-              "x": -0.01247,
-              "y": 0.213195,
-              "z": -0.135
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 90,
-              "roll": 9.4
             }
           }
         ],

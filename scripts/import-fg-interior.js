@@ -41,7 +41,9 @@ function walk(xmlPath, chain, inside) {
   const text = readFileSync(xmlPath, 'latin1').replace(/<!--[\s\S]*?-->/g, '');
   const dir = dirname(xmlPath);
   const blocks = [...text.matchAll(/<model>([\s\S]*?)<\/model>/g)].map(m => m[1]);
-  const own = text.replace(/<model>[\s\S]*?<\/model>/g, '').replace(/<animation>[\s\S]*?<\/animation>/g, '');
+  // The file's own placement: its top-level offsets, not those of animations, text labels,
+  // lights or effects, which carry offsets of their own.
+  const own = text.replace(/<(model|animation|text|light|effect|particlesystem|params)>[\s\S]*?<\/\1>/g, '');
   const ownPath = /<path>\s*([^<]+?)\s*<\/path>/.exec(own)?.[1];
   const ownPlace = placement(own);
   const here = ownPlace ? [...chain, ownPlace] : chain;
@@ -80,13 +82,21 @@ if (!unique.length) { console.log(`${model.id}: no interior files found below ${
 // The exterior may have been placed in Machina with other offsets than the XML tree gives it
 // (or none): the interior is moved by the same difference, so it lands inside the exterior.
 const assetFiles = model.asset.files ?? [{ file: model.asset.file }];
-const ext = found.find(f => !f.inside && assetFiles.some(a => a.file === f.file && !a.chain));
-if (ext) {
-  const sum = ext.chain.reduce((s, c) => ({ x: s.x + c.offset.x, y: s.y + c.offset.y, z: s.z + c.offset.z }), { x: 0, y: 0, z: 0 });
-  const own = assetFiles.find(a => a.file === ext.file).offset ?? { x: 0, y: 0, z: 0 };
-  const delta = { x: (own.x ?? 0) - sum.x, y: (own.y ?? 0) - sum.y, z: (own.z ?? 0) - sum.z };
+// Every exterior file the tree places is compared with where Machina has it; the median
+// difference is the shift (one odd file cannot set it).
+const sumOf = chain => chain.reduce((s, c) => ({ x: s.x + c.offset.x, y: s.y + c.offset.y, z: s.z + c.offset.z }), { x: 0, y: 0, z: 0 });
+const deltas = [];
+for (const f of found.filter(q => !q.inside)) {
+  const a = assetFiles.find(q => q.file === f.file);
+  if (!a) continue;
+  const tree = sumOf(f.chain), own = a.chain ? sumOf(a.chain) : { x: a.offset?.x ?? 0, y: a.offset?.y ?? 0, z: a.offset?.z ?? 0 };
+  deltas.push({ x: own.x - tree.x, y: own.y - tree.y, z: own.z - tree.z });
+}
+if (deltas.length) {
+  const med = k => deltas.map(d => d[k]).sort((p, q) => p - q)[Math.floor(deltas.length / 2)];
+  const delta = { x: med('x'), y: med('y'), z: med('z') };
   if (Math.abs(delta.x) + Math.abs(delta.y) + Math.abs(delta.z) > 0.01) {
-    console.log(`${model.id}: exterior ${ext.file} sits ${JSON.stringify(delta)} from its XML placement; the interior follows it`);
+    console.log(`${model.id}: the exterior sits ${JSON.stringify(delta)} from its XML placement (median of ${deltas.length} files); the interior follows it`);
     for (const f of unique) f.chain = [{ offset: delta, rotation: { pitch: 0, heading: 0, roll: 0 } }, ...f.chain];
   }
 }
