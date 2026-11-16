@@ -1127,7 +1127,8 @@
     "source": "https://commons.wikimedia.org/wiki/File:Tupolev_Tu-154.svg",
     "author": "Kaboldy",
     "license": "CC BY-SA 3.0",
-    "measured": "references/tu-154m/measured.json"
+    "measured": "references/tu-154m/measured.json",
+    "note": "Shapes measured from a CC BY-SA 3.0 drawing; this file carries the same license and credit."
   },
   "verify": {
     "tolerance": {
