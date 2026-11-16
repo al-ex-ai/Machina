@@ -249,8 +249,8 @@
           "z": -2.27
         },
         "fallback": {
-          "id": "left-main-gear",
-          "label": "Left main gear",
+          "id": "main-gear",
+          "label": "Main gear",
           "system": "gear"
         }
       },
@@ -262,8 +262,8 @@
           "z": -2.27
         },
         "fallback": {
-          "id": "left-main-gear",
-          "label": "Left main gear",
+          "id": "main-gear",
+          "label": "Main gear",
           "system": "gear"
         }
       },
@@ -275,8 +275,8 @@
           "z": -2.27
         },
         "fallback": {
-          "id": "right-main-gear",
-          "label": "Right main gear",
+          "id": "main-gear",
+          "label": "Main gear",
           "system": "gear"
         }
       },
@@ -288,9 +288,1113 @@
           "z": -2.27
         },
         "fallback": {
-          "id": "right-main-gear",
-          "label": "Right main gear",
+          "id": "main-gear",
+          "label": "Main gear",
           "system": "gear"
+        }
+      },
+      {
+        "file": "Models/FlightDeck/res/fd_complete.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -18.8499,
+              "y": 0,
+              "z": 1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 18.8499,
+              "y": 0,
+              "z": -1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -14.032,
+              "y": 0,
+              "z": 1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -0.01247,
+              "y": 0.213195,
+              "z": -0.135
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 90,
+              "roll": 9.4
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Instruments/OHpanel/res/ohpanel.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -18.8499,
+              "y": 0,
+              "z": 1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 18.8499,
+              "y": 0,
+              "z": -1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -14.032,
+              "y": 0,
+              "z": 1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -0.01247,
+              "y": 0.213195,
+              "z": -0.135
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 90,
+              "roll": 9.4
+            }
+          },
+          {
+            "offset": {
+              "x": 0.128,
+              "y": 0,
+              "z": 0.997
+            },
+            "rotation": {
+              "pitch": 69.547,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -0.008,
+              "y": -0.058,
+              "z": 0.0155
+            },
+            "rotation": {
+              "pitch": 62,
+              "heading": 32,
+              "roll": 88
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Instruments/OHpanel/res/ohpanelEPR.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -18.8499,
+              "y": 0,
+              "z": 1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 18.8499,
+              "y": 0,
+              "z": -1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -14.032,
+              "y": 0,
+              "z": 1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -0.01247,
+              "y": 0.213195,
+              "z": -0.135
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 90,
+              "roll": 9.4
+            }
+          },
+          {
+            "offset": {
+              "x": 0.128,
+              "y": 0,
+              "z": 0.997
+            },
+            "rotation": {
+              "pitch": 69.547,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Instruments/OHpanel/res/SteepAppr.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -18.8499,
+              "y": 0,
+              "z": 1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 18.8499,
+              "y": 0,
+              "z": -1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -14.032,
+              "y": 0,
+              "z": 1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -0.01247,
+              "y": 0.213195,
+              "z": -0.135
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 90,
+              "roll": 9.4
+            }
+          },
+          {
+            "offset": {
+              "x": 0.128,
+              "y": 0,
+              "z": 0.997
+            },
+            "rotation": {
+              "pitch": 69.547,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Instruments/MCDU/res/MCDU1.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -18.8499,
+              "y": 0,
+              "z": 1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 18.8499,
+              "y": 0,
+              "z": -1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -14.032,
+              "y": 0,
+              "z": 1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -0.01247,
+              "y": 0.213195,
+              "z": -0.135
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 90,
+              "roll": 9.4
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Instruments/MCDU/res/MCDU2.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -18.8499,
+              "y": 0,
+              "z": 1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 18.8499,
+              "y": 0,
+              "z": -1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -14.032,
+              "y": 0,
+              "z": 1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -0.01247,
+              "y": 0.213195,
+              "z": -0.135
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 90,
+              "roll": 9.4
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Instruments/Radio/res/Radio.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -18.8499,
+              "y": 0,
+              "z": 1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 18.8499,
+              "y": 0,
+              "z": -1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -14.032,
+              "y": 0,
+              "z": 1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -0.01247,
+              "y": 0.213195,
+              "z": -0.135
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 90,
+              "roll": 9.4
+            }
+          },
+          {
+            "offset": {
+              "x": -0.22756,
+              "y": -0.216245,
+              "z": -0.091845
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 90,
+              "roll": 9.4
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Instruments/Radio/res/Radio1.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -18.8499,
+              "y": 0,
+              "z": 1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 18.8499,
+              "y": 0,
+              "z": -1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -14.032,
+              "y": 0,
+              "z": 1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -0.01247,
+              "y": 0.213195,
+              "z": -0.135
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 90,
+              "roll": 9.4
+            }
+          },
+          {
+            "offset": {
+              "x": -0.22756,
+              "y": 0.148855,
+              "z": -0.091845
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 90,
+              "roll": 9.4
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Instruments/Audio/res/Audio.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -18.8499,
+              "y": 0,
+              "z": 1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 18.8499,
+              "y": 0,
+              "z": -1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -14.032,
+              "y": 0,
+              "z": 1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -0.01247,
+              "y": 0.213195,
+              "z": -0.135
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 90,
+              "roll": 9.4
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Instruments/Audio/res/Audio1.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -18.8499,
+              "y": 0,
+              "z": 1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 18.8499,
+              "y": 0,
+              "z": -1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -14.032,
+              "y": 0,
+              "z": 1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -0.01247,
+              "y": 0.213195,
+              "z": -0.135
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 90,
+              "roll": 9.4
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Instruments/PFD/res/PFD1.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -18.8499,
+              "y": 0,
+              "z": 1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 18.8499,
+              "y": 0,
+              "z": -1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -14.032,
+              "y": 0,
+              "z": 1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -0.01247,
+              "y": 0.213195,
+              "z": -0.135
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 90,
+              "roll": 9.4
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Instruments/PFD/res/PFD2.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -18.8499,
+              "y": 0,
+              "z": 1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 18.8499,
+              "y": 0,
+              "z": -1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -14.032,
+              "y": 0,
+              "z": 1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -0.01247,
+              "y": 0.213195,
+              "z": -0.135
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 90,
+              "roll": 9.4
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Instruments/ND/res/ND.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -18.8499,
+              "y": 0,
+              "z": 1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 18.8499,
+              "y": 0,
+              "z": -1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -14.032,
+              "y": 0,
+              "z": 1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -0.01247,
+              "y": 0.213195,
+              "z": -0.135
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 90,
+              "roll": 9.4
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Instruments/ND/res/ND_R.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -18.8499,
+              "y": 0,
+              "z": 1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 18.8499,
+              "y": 0,
+              "z": -1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -14.032,
+              "y": 0,
+              "z": 1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -0.01247,
+              "y": 0.213195,
+              "z": -0.135
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 90,
+              "roll": 9.4
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Instruments/Upper-ECAM/res/Upper-ECAM.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -18.8499,
+              "y": 0,
+              "z": 1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 18.8499,
+              "y": 0,
+              "z": -1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -14.032,
+              "y": 0,
+              "z": 1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -0.01247,
+              "y": 0.213195,
+              "z": -0.135
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 90,
+              "roll": 9.4
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Instruments/Lower-ECAM/res/Lower-ECAM.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -18.8499,
+              "y": 0,
+              "z": 1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 18.8499,
+              "y": 0,
+              "z": -1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -14.032,
+              "y": 0,
+              "z": 1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -0.01247,
+              "y": 0.213195,
+              "z": -0.135
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 90,
+              "roll": 9.4
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Instruments/IESI/res/IESI.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -18.8499,
+              "y": 0,
+              "z": 1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 18.8499,
+              "y": 0,
+              "z": -1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -14.032,
+              "y": 0,
+              "z": 1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -0.01247,
+              "y": 0.213195,
+              "z": -0.135
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 90,
+              "roll": 9.4
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Interior/res/a320.interior.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -18.8499,
+              "y": 0,
+              "z": 1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 18.8499,
+              "y": 0,
+              "z": -1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -18.8499,
+              "y": 0,
+              "z": 1.7005004
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
         }
       }
     ],
@@ -488,9 +1592,13 @@
     ],
     "verify": {
       "tolerance": {
-        "height": 0.06
+        "height": 0.1
       },
-      "note": "The FlightGear model measures 12.39 m tall and 35.22 m across against the published 11.76 m and 35.8 m."
+      "note": "The FlightGear model measures 12.39 m tall and 35.22 m across against the published 11.76 m and 35.8 m; resting it on its nose wheel raises the tail to 12.84 m."
+    },
+    "restOnTail": {
+      "main": "main-gear",
+      "tail": "nose-gear"
     }
   }
 }

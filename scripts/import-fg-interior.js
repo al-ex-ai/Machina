@@ -77,6 +77,20 @@ const unique = [];
 for (const f of add) if (!unique.some(u => u.file === f.file && JSON.stringify(u.chain) === JSON.stringify(f.chain))) unique.push(f);
 if (!unique.length) { console.log(`${model.id}: no interior files found below ${top}`); process.exit(0); }
 
+// The exterior may have been placed in Machina with other offsets than the XML tree gives it
+// (or none): the interior is moved by the same difference, so it lands inside the exterior.
+const assetFiles = model.asset.files ?? [{ file: model.asset.file }];
+const ext = found.find(f => !f.inside && assetFiles.some(a => a.file === f.file && !a.chain));
+if (ext) {
+  const sum = ext.chain.reduce((s, c) => ({ x: s.x + c.offset.x, y: s.y + c.offset.y, z: s.z + c.offset.z }), { x: 0, y: 0, z: 0 });
+  const own = assetFiles.find(a => a.file === ext.file).offset ?? { x: 0, y: 0, z: 0 };
+  const delta = { x: (own.x ?? 0) - sum.x, y: (own.y ?? 0) - sum.y, z: (own.z ?? 0) - sum.z };
+  if (Math.abs(delta.x) + Math.abs(delta.y) + Math.abs(delta.z) > 0.01) {
+    console.log(`${model.id}: exterior ${ext.file} sits ${JSON.stringify(delta)} from its XML placement; the interior follows it`);
+    for (const f of unique) f.chain = [{ offset: delta, rotation: { pitch: 0, heading: 0, roll: 0 } }, ...f.chain];
+  }
+}
+
 // Copy the files and their textures.
 const textures = new Set();
 for (const f of unique) {

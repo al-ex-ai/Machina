@@ -95,6 +95,372 @@
           "label": "Engine 4",
           "system": "propulsion"
         }
+      },
+      {
+        "file": "Models/Cockpit/cockpit.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -25.6,
+              "y": 0,
+              "z": 2.65
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Cockpit/overhead.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -25.6,
+              "y": 0,
+              "z": 2.65
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 1.46,
+              "y": 0,
+              "z": 1.374
+            },
+            "rotation": {
+              "pitch": 162.5,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Cockpit/forward.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -25.6,
+              "y": 0,
+              "z": 2.65
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 0.751,
+              "y": 0,
+              "z": 0.475
+            },
+            "rotation": {
+              "pitch": -22,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Cockpit/Instruments/brake-pressure.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -25.6,
+              "y": 0,
+              "z": 2.65
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 0.751,
+              "y": 0,
+              "z": 0.475
+            },
+            "rotation": {
+              "pitch": -22,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 0.008,
+              "y": -0.345,
+              "z": 0.043
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Cockpit/Instruments/stby-ai.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -25.6,
+              "y": 0,
+              "z": 2.65
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 0.751,
+              "y": 0,
+              "z": 0.475
+            },
+            "rotation": {
+              "pitch": -22,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 0.008,
+              "y": -0.165,
+              "z": 0.277
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Cockpit/Instruments/stby-asi.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -25.6,
+              "y": 0,
+              "z": 2.65
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 0.751,
+              "y": 0,
+              "z": 0.475
+            },
+            "rotation": {
+              "pitch": -22,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 0.008,
+              "y": -0.165,
+              "z": 0.188
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Cockpit/Instruments/stby-alt.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -25.6,
+              "y": 0,
+              "z": 2.65
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 0.751,
+              "y": 0,
+              "z": 0.475
+            },
+            "rotation": {
+              "pitch": -22,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 0.008,
+              "y": -0.165,
+              "z": 0.097
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Cockpit/Instruments/chronometer.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -25.6,
+              "y": 0,
+              "z": 2.65
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 0.751,
+              "y": 0,
+              "z": 0.475
+            },
+            "rotation": {
+              "pitch": -22,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 0.008,
+              "y": -0.7,
+              "z": 0.236
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Cockpit/Instruments/chronometer.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -25.6,
+              "y": 0,
+              "z": 2.65
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 0.751,
+              "y": 0,
+              "z": 0.475
+            },
+            "rotation": {
+              "pitch": -22,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 0.008,
+              "y": 0.7,
+              "z": 0.236
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
       }
     ],
     "fallback": {

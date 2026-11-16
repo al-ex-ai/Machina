@@ -86,7 +86,8 @@ export function assembleParts(loaded, model) {
 
 /**
  * Taildraggers are modeled level, but published heights are measured sitting on the
- * ground. Pitch the model about the main wheels until the tail wheel touches down.
+ * ground. Pitch the model about the main wheels until the tail wheel (or a nose wheel left
+ * hanging by the source) touches down.
  */
 function restOnTail(root, groups, { main, tail }) {
   const m = groups.get(main);
@@ -96,7 +97,8 @@ function restOnTail(root, groups, { main, tail }) {
   const tb = new THREE.Box3().setFromObject(t);
   const pivot = new THREE.Vector3((mb.min.x + mb.max.x) / 2, mb.min.y, 0);
   const tailPoint = new THREE.Vector3((tb.min.x + tb.max.x) / 2, tb.min.y, 0);
-  const angle = -Math.atan2(tailPoint.y - pivot.y, tailPoint.x - pivot.x);
+  // The slope, not atan2: a nose wheel ahead of the mains must not turn the aircraft over.
+  const angle = -Math.atan((tailPoint.y - pivot.y) / (tailPoint.x - pivot.x));
   const rot = new THREE.Matrix4().makeTranslation(pivot.x, pivot.y, 0)
     .multiply(new THREE.Matrix4().makeRotationZ(angle))
     .multiply(new THREE.Matrix4().makeTranslation(-pivot.x, -pivot.y, 0));

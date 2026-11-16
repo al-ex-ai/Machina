@@ -1,3 +1,4 @@
+import { readFileSync } from 'node:fs';
 // Drawings are exact projections of the geometry, and parametric models carry the
 // generated detail the drawings and the viewer rely on.
 import { test } from 'node:test';
@@ -48,7 +49,8 @@ for (const m of parametric) {
 }
 
 test('the three-view sheet of a parametric model fits A3 and keeps the outline exact', () => {
-  const m = parametric[0];
+  // The 737-300 parametric model, built to its published size (kept in the workshop as a fixture).
+  const m = JSON.parse(readFileSync(new URL('../data/models/aviation/b737-300-parametric.json', import.meta.url), 'utf8'));
   const meshes = collect(buildModel(m));
   const cuts = intersections(meshes);
   assert.ok(cuts.length > 100, 'wing and tail roots should give intersection lines');
