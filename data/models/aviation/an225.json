@@ -9676,6 +9676,15 @@
         "length": 0.03
       },
       "note": "The FlightGear model measures 82.18 m long against the published 84 m."
+    },
+    "recolor": {
+      "textures": [
+        "Models/AN225-tx-001.png"
+      ],
+      "hue": [
+        174,
+        218
+      ]
     }
   },
   "sources": [

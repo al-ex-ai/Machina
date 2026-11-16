@@ -678,6 +678,15 @@
     "restOnTail": {
       "main": "nose-gear",
       "tail": "left-wing-gear"
+    },
+    "recolor": {
+      "textures": [
+        "Models/BOE.png"
+      ],
+      "hue": [
+        190,
+        234
+      ]
     }
   },
   "parts": {

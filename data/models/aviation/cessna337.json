@@ -1359,6 +1359,15 @@
         "height": 0.04
       },
       "note": "The FlightGear model measures 2.90 m tall against the published 2.79 m."
+    },
+    "recolor": {
+      "textures": [
+        "Models/Textures/livery_EC-ISD.png"
+      ],
+      "hue": [
+        332,
+        360
+      ]
     }
   },
   "parts": {

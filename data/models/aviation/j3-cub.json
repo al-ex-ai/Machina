@@ -251,6 +251,15 @@
         "height": 0.1
       },
       "note": "Shown resting on its tailwheel like the real aircraft on the ground. The FlightGear model then measures 2.22 m tall against the published 2.03 m."
+    },
+    "recolor": {
+      "textures": [
+        "Models/texture.png"
+      ],
+      "hue": [
+        18,
+        62
+      ]
     }
   },
   "parts": {

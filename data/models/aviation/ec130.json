@@ -2451,6 +2451,15 @@
         "height": 0.08
       },
       "note": "A three-blade rotor never spans its full 10.69 m diameter side to side, so the measured width is about 87% of it. The model measures 3.88 m tall against the published 3.61 m."
+    },
+    "recolor": {
+      "textures": [
+        "Models/FLIGHTGEAR.png"
+      ],
+      "hue": [
+        200,
+        244
+      ]
     }
   },
   "parts": {

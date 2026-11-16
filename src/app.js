@@ -493,7 +493,7 @@ function setLivery(id) {
   const m = state.model;
   if (!m) return;
   state.livery = id === (liveriesFor(m)[0]?.id ?? 'machina') ? null : id; // the first preset is the default
-  if (m.builder === 'asset') {
+  if (m.asset) {
     const token = ++state.loadToken;
     loadAssetModel(m, { accent: isAccent(state.livery) ? state.livery : undefined, original: state.livery === 'original' }).then(o => {
       if (token !== state.loadToken) return;

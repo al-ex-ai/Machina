@@ -852,6 +852,15 @@
         "height": 0.06
       },
       "note": "The FlightGear model measures 6.49 m long and 1.90 m tall against the published 6.30 m and 1.80 m."
+    },
+    "recolor": {
+      "textures": [
+        "Models/Liveries/ercoupe-ext2-white.png"
+      ],
+      "hue": [
+        0,
+        24
+      ]
     }
   },
   "parts": {

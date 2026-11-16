@@ -8157,6 +8157,15 @@
         "height": 0.08
       },
       "note": "The FlightGear model measures 45.56 m long, 42.02 m across and 12.05 m tall, smaller than the published 707-320B (46.61, 44.42 and 12.93 m) and between the -120 and -320 sizes."
+    },
+    "recolor": {
+      "textures": [
+        "Models/707.png"
+      ],
+      "hue": [
+        168,
+        212
+      ]
     }
   },
   "parts": {

@@ -472,6 +472,15 @@
           "system": "interior"
         }
       }
-    ]
+    ],
+    "recolor": {
+      "textures": [
+        "fuselage.png"
+      ],
+      "hue": [
+        192,
+        236
+      ]
+    }
   }
 }

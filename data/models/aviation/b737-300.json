@@ -8914,6 +8914,15 @@
     "restOnTail": {
       "main": "left-main-gear",
       "tail": "nose-gear"
+    },
+    "recolor": {
+      "textures": [
+        "Models/733_white.png"
+      ],
+      "hue": [
+        0,
+        39
+      ]
     }
   },
   "parts": {

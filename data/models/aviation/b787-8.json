@@ -1742,6 +1742,15 @@
     "restOnTail": {
       "main": "left-main-gear",
       "tail": "nose-gear"
+    },
+    "recolor": {
+      "textures": [
+        "Models/BOE.png"
+      ],
+      "hue": [
+        184,
+        228
+      ]
     }
   },
   "parts": {

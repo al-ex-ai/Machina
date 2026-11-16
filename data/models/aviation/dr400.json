@@ -4601,7 +4601,16 @@
           "sonde_pitot"
         ]
       }
-    ]
+    ],
+    "recolor": {
+      "textures": [
+        "Models/texture.png"
+      ],
+      "hue": [
+        333,
+        360
+      ]
+    }
   },
   "parts": {
     "wings": {
