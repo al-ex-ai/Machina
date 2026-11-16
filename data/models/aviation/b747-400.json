@@ -674,6 +674,10 @@
         "height": 0.04
       },
       "note": "The FlightGear model measures 19.98 m tall against the published 19.41 m."
+    },
+    "restOnTail": {
+      "main": "nose-gear",
+      "tail": "left-wing-gear"
     }
   },
   "parts": {
@@ -711,5 +715,11 @@
       "label": "Wikipedia: Boeing 747-400",
       "url": "https://en.wikipedia.org/wiki/Boeing_747-400"
     }
-  ]
+  ],
+  "quality": {
+    "standard": {
+      "maxPlainGear": 0.5
+    },
+    "reason": "The FlightGear 747-400 models its gear legs and doors untextured white; the legs of the real aircraft are painted light grey."
+  }
 }

@@ -1,0 +1,79 @@
+{
+  "id": "an225",
+  "name": "Antonov An-225 Mriya",
+  "category": "aviation",
+  "group": "Historic",
+  "builder": "asset",
+  "summary": "The largest aircraft ever flown: six engines under a high wing, a twin tail and 32 wheels. The only one built was destroyed in 2022.",
+  "specs": {
+    "manufacturer": "Antonov",
+    "role": "Strategic airlifter",
+    "first_flight": 1988,
+    "length_m": 84,
+    "wingspan_m": 88.4,
+    "height_m": 18.1,
+    "mtow_kg": 640000,
+    "engine_count": 6,
+    "engine_type": "Progress D-18T"
+  },
+  "asset": {
+    "path": "assets/aircraft/an225",
+    "license": "GPL-2.0",
+    "author": "FlightGear AN-225 contributors",
+    "source": "https://mirrors.ibiblio.org/flightgear/ftp/Aircraft-2020/AN-225.zip",
+    "files": [
+      {
+        "file": "Models/AN225-003-002d14.ac"
+      }
+    ],
+    "fallback": {
+      "id": "fuselage",
+      "label": "Fuselage",
+      "system": "structure"
+    },
+    "hide": [
+      "/^Trajectory/"
+    ],
+    "parts": [
+      {
+        "id": "engines",
+        "label": "Engines",
+        "system": "propulsion",
+        "match": [
+          "/^Engine/"
+        ]
+      },
+      {
+        "id": "nose-gear",
+        "label": "Nose gear",
+        "system": "gear",
+        "match": [
+          "/-NG-/"
+        ]
+      },
+      {
+        "id": "left-main-gear",
+        "label": "Left main gear",
+        "system": "gear",
+        "match": [
+          "/^L-MG-/"
+        ]
+      },
+      {
+        "id": "right-main-gear",
+        "label": "Right main gear",
+        "system": "gear",
+        "match": [
+          "/^R-MG-/",
+          "/^UC-/"
+        ]
+      }
+    ]
+  },
+  "sources": [
+    {
+      "label": "Wikipedia: Antonov An-225 Mriya",
+      "url": "https://en.wikipedia.org/wiki/Antonov_An-225_Mriya"
+    }
+  ]
+}

@@ -1,23 +1,23 @@
 {
-  "a320neo-parametric": {
-    "hash": "f683c73097",
-    "parts": 20
+  "a320neo": {
+    "hash": "6b644d16b2",
+    "parts": 29
   },
   "b707-parametric": {
     "hash": "82658d3679",
     "parts": 26
   },
-  "b737-300-parametric": {
-    "hash": "46c0a699b8",
-    "parts": 29
-  },
-  "b747-400-parametric": {
-    "hash": "9c464358fc",
-    "parts": 28
-  },
-  "b787-8-parametric": {
-    "hash": "27fc8dbb51",
+  "b737-300": {
+    "hash": "39867f314b",
     "parts": 24
+  },
+  "b747-400": {
+    "hash": "412bd246ef",
+    "parts": 30
+  },
+  "b787-8": {
+    "hash": "7d9c7d0bcc",
+    "parts": 26
   },
   "cessna-172s": {
     "hash": "208d358263",
@@ -50,6 +50,10 @@
   "j3-cub": {
     "hash": "e1823f8e21",
     "parts": 20
+  },
+  "sr71": {
+    "hash": "678219a7ed",
+    "parts": 15
   },
   "tu-154m": {
     "hash": "8ebac4c97e",

@@ -8904,9 +8904,9 @@
     ],
     "verify": {
       "tolerance": {
-        "height": 0.1
+        "height": 0.12
       },
-      "note": "The FlightGear model measures 11.44 m tall against the published 11.13 m. Resting it on its nose wheel (the source sits nose up) raises the tail to 12.19 m."
+      "note": "The FlightGear model measures 11.44 m tall against the published 11.13 m. Resting it on its nose wheel (the source sits nose up) raises the tail to 12.24 m."
     },
     "textureMap": {
       "733_white.png": "733_machina.png"

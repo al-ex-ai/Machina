@@ -1738,6 +1738,10 @@
         "height": 0.04
       },
       "note": "The FlightGear model measures 16.33 m tall against the published 16.92 m."
+    },
+    "restOnTail": {
+      "main": "left-main-gear",
+      "tail": "nose-gear"
     }
   },
   "parts": {

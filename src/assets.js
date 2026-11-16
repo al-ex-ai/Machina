@@ -93,10 +93,15 @@ function restOnTail(root, groups, { main, tail }) {
   const m = groups.get(main);
   const t = groups.get(tail);
   if (!m || !t) return;
-  const mb = new THREE.Box3().setFromObject(m);
-  const tb = new THREE.Box3().setFromObject(t);
-  const pivot = new THREE.Vector3((mb.min.x + mb.max.x) / 2, mb.min.y, 0);
-  const tailPoint = new THREE.Vector3((tb.min.x + tb.max.x) / 2, tb.min.y, 0);
+  // Each group's lowest point, where its wheels meet the ground (a group's box can span doors
+  // and struts well away from the wheels, which would put the pivot in the wrong place).
+  const lowest = g => {
+    const p = new THREE.Vector3(0, Infinity, 0), v = new THREE.Vector3();
+    g.updateMatrixWorld(true);
+    g.traverse(o => { if (!o.isMesh) return; const a = o.geometry.attributes.position; for (let i = 0; i < a.count; i++) { v.fromBufferAttribute(a, i).applyMatrix4(o.matrixWorld); if (v.y < p.y) p.set(v.x, v.y, 0); } });
+    return p;
+  };
+  const pivot = lowest(m), tailPoint = lowest(t);
   // The slope, not atan2: a nose wheel ahead of the mains must not turn the aircraft over.
   const angle = -Math.atan((tailPoint.y - pivot.y) / (tailPoint.x - pivot.x));
   const rot = new THREE.Matrix4().makeTranslation(pivot.x, pivot.y, 0)
