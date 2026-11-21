@@ -25,7 +25,9 @@
     "known": "node --import ./scripts/node/register.js scripts/known-aircraft.js",
     "build-drawn": "node --import ./scripts/node/register.js scripts/build-drawn.js",
     "check-drawing": "node --import ./scripts/node/register.js scripts/check-drawing.js",
-    "compare-mesh": "node --import ./scripts/node/register.js scripts/compare-mesh.js"
+    "compare-mesh": "node --import ./scripts/node/register.js scripts/compare-mesh.js",
+    "size": "node scripts/size-report.js",
+    "compact": "node scripts/compact-textures.js"
   },
   "keywords": [
     "threejs",
