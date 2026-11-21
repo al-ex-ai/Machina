@@ -256,6 +256,13 @@ function recolor(bmp, accent, [h0, h1]) {
   return c.transferToImageBitmap();
 }
 
+// glTF binary files load as they are (materials and textures included), alongside .ac files.
+const isGlb = file => /\.glb$/i.test(file);
+async function loadGlb(url) {
+  const { GLTFLoader } = await import('three/addons/loaders/GLTFLoader.js');
+  return (await new GLTFLoader().loadAsync(url)).scene;
+}
+
 /** @param {{ accent?: string }} [opts] accent recolors the livery (asset.recolor lists the textures) */
 export async function loadAssetModel(model, opts = {}) {
   const a = model.asset;
@@ -264,7 +271,7 @@ export async function loadAssetModel(model, opts = {}) {
   if (!parsed.has(model.id)) {
     // A file placed several times (a screw, an instrument) is parsed once.
     const once = new Map();
-    for (const f of files) if (!once.has(f.file)) once.set(f.file, parseACInWorker(base + f.file, hideRules(model)));
+    for (const f of files) if (!once.has(f.file)) once.set(f.file, isGlb(f.file) ? loadGlb(base + f.file) : parseACInWorker(base + f.file, hideRules(model)));
     parsed.set(model.id, Promise.all(files.map(f => once.get(f.file))));
   }
   const datas = await parsed.get(model.id);
@@ -291,7 +298,7 @@ export async function loadAssetModel(model, opts = {}) {
       return t;
     },
   });
-  const loaded = datas.map((d, i) => ({ ...files[i], group: buildAC(d, optsFor(files[i].file)) }));
+  const loaded = datas.map((d, i) => ({ ...files[i], group: isGlb(files[i].file) ? d.clone(true) : buildAC(d, optsFor(files[i].file)) }));
   await Promise.all(pending);
   const root = assembleParts(loaded, model);
   // The Machina livery is the default for models that opt in; "original" keeps the source paint.
