@@ -80,8 +80,41 @@ export function assembleParts(loaded, model) {
     m.userData = { partChild: true, source: mesh.name, texture: mesh.userData.texture };
     partFor(rule).add(m);
   }
+  if (model.asset.compress) compressGear(groups, model.asset.compress);
   if (model.asset.restOnTail) restOnTail(root, groups, model.asset.restOnTail);
   return root;
+}
+
+/**
+ * Sources often store the oleos fully extended, as in flight, and compress them through an
+ * animation. Slide the named objects (wheels, axles, lower struts) of each listed gear part
+ * straight up until that part's lowest point is level with the reference part's.
+ * compress: { parts: [part ids], objects: "/regex/" (default: every mesh), to: part id }
+ */
+function compressGear(groups, { parts, objects, to }) {
+  const ref = groups.get(to);
+  if (!ref) return;
+  const re = objects ? new RegExp(objects.replace(/^\/|\/[a-z]*$/g, ''), (/\/([a-z]*)$/.exec(objects) ?? [])[1] ?? '') : null;
+  const meshes = g => { const out = []; g.traverse(o => { if (o.isMesh) out.push(o); }); return out; };
+  const low = list => {
+    let y = Infinity; const v = new THREE.Vector3();
+    for (const o of list) { o.updateMatrixWorld(true); const a = o.geometry.attributes.position; for (let i = 0; i < a.count; i++) y = Math.min(y, v.fromBufferAttribute(a, i).applyMatrix4(o.matrixWorld).y); }
+    return y;
+  };
+  const target = low(meshes(ref));
+  for (const id of parts) {
+    const g = groups.get(id);
+    if (!g) continue;
+    const all = meshes(g), moving = re ? all.filter(o => re.test(o.userData.source ?? o.name)) : all;
+    const dy = target - low(all);
+    if (!(dy > 0) || !moving.length) continue;
+    for (const o of moving) {
+      // Shift in world space, applied to the geometry in the mesh's own frame.
+      const inv = new THREE.Matrix4().copy(o.matrixWorld).invert();
+      const shift = new THREE.Matrix4().makeTranslation(0, dy, 0);
+      o.geometry.applyMatrix4(new THREE.Matrix4().multiplyMatrices(inv, shift).multiply(o.matrixWorld));
+    }
+  }
 }
 
 /**
