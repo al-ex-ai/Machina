@@ -1,7 +1,7 @@
 {
   "id": "ec135",
   "name": "Eurocopter EC135 T2+",
-  "category": "aviation",
+  "category": "helicopters",
   "group": "Helicopters",
   "builder": "asset",
   "summary": "Light twin-engine helicopter with a bearingless main rotor and an enclosed \"Fenestron\" tail rotor, widely used for air ambulance and police work.",

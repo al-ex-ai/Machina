@@ -2,6 +2,11 @@
   {
     "id": "aviation",
     "label": "Aviation",
-    "description": "Airliners, light aircraft, helicopters and historic aircraft."
+    "description": "Airliners, light aircraft and historic aircraft."
+  },
+  {
+    "id": "helicopters",
+    "label": "Helicopters",
+    "description": "Rotorcraft from light utility helicopters to twin-engine workhorses."
   }
 ]
