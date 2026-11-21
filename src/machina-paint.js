@@ -138,7 +138,7 @@ export function applyMachinaPaint(root, cfg, opts = {}) {
   const p = measure(body, toRoot);
   const L = p.x1 - p.x0;
   // Title: a third of the way back, above the window line.
-  const k = Math.floor(N * 0.33), th = 0.2 * p.h0, tw = th * 7.2;
+  const k = Math.floor(N * 0.33), th = 0.2 * p.h0 * (cfg.titleSize ?? 1), tw = th * 7.2;
   const tx = p.x0 + L * (cfg.titleAt ?? 0.33) - tw / 2, ty = p.bot[k] + (cfg.titleY ?? 0.82) * p.h[k] - th / 2;
   const common = {
     uBot: { value: p.bot }, uH: { value: p.h }, uX: { value: new THREE.Vector2(p.x0, p.x1) }, uH0: { value: p.h0 },
