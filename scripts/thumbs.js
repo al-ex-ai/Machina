@@ -33,6 +33,17 @@ async function waitFor(fn, ms, what) {
   throw new Error(`timed out waiting for ${what}`);
 }
 
+/** Close the whole browser through its browser-level DevTools endpoint; quiet if it is gone. */
+async function closeBrowser(port) {
+  try {
+    const { webSocketDebuggerUrl } = await (await fetch(`http://127.0.0.1:${port}/json/version`)).json();
+    const ws = new WebSocket(webSocketDebuggerUrl);
+    await new Promise((resolve, reject) => { ws.addEventListener('open', resolve); ws.addEventListener('error', reject); });
+    ws.send(JSON.stringify({ id: 1, method: 'Browser.close' }));
+    await Promise.race([new Promise(r => ws.addEventListener('close', r)), sleep(3000)]);
+  } catch {}
+}
+
 /** Minimal DevTools protocol client over Node's built-in WebSocket. */
 async function connect(port) {
   const target = await waitFor(async () => (await (await fetch(`http://127.0.0.1:${port}/json`)).json()).find(t => t.type === 'page'), 15000, 'the browser');
@@ -105,6 +116,9 @@ try {
   page.close();
 } finally {
   const exited = new Promise(r => browser.once('exit', r));
+  // Ask the browser itself to quit: on Windows Chrome relaunches under another process, so
+  // killing the one we spawned leaves it running with the debugging port open.
+  await closeBrowser(DEBUG_PORT);
   browser.kill();
   server.kill();
   await Promise.race([exited, sleep(5000)]);
