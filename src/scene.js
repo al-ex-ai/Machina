@@ -299,8 +299,21 @@ export function createViewer(container) {
     const center = box.getCenter(new THREE.Vector3());
     const vFov = (camera.fov * Math.PI) / 180;
     const hFov = 2 * Math.atan(Math.tan(vFov / 2) * camera.aspect);
-    const dist = radius / Math.sin(Math.min(vFov, hFov) / 2) * fit;
     const dir = VIEWS[view] ?? [-0.62, 0.42, 0.66];
+    // Distance at which every corner of the box is inside the view (with a margin), so long thin
+    // machines are not cropped; fit then tightens it, capped so nothing leaves the frame.
+    const back = new THREE.Vector3(...dir).normalize();
+    const right = new THREE.Vector3().crossVectors(new THREE.Vector3(0, 1, 0), back);
+    if (right.lengthSq() < 1e-6) right.set(1, 0, 0); else right.normalize();
+    const up = new THREE.Vector3().crossVectors(back, right);
+    const tx = Math.tan(hFov / 2) * 0.94, ty = Math.tan(vFov / 2) * 0.94;
+    let need = 0;
+    for (const sx of [box.min.x, box.max.x]) for (const sy of [box.min.y, box.max.y]) for (const sz of [box.min.z, box.max.z]) {
+      const p = new THREE.Vector3(sx, sy, sz).sub(center);
+      const z = p.dot(back);
+      need = Math.max(need, z + Math.abs(p.dot(right)) / tx, z + Math.abs(p.dot(up)) / ty);
+    }
+    const dist = Math.max(need, (radius / Math.sin(Math.min(vFov, hFov) / 2)) * fit);
     camera.position.set(center.x + dist * dir[0], center.y + dist * dir[1], center.z + dist * dir[2]);
     camera.near = radius / 100;
     camera.far = dist * 20;
