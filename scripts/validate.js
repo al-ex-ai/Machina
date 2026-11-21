@@ -3,6 +3,7 @@
 //   cabin    a model with glazing has something inside (an interior part)
 //   mapping  most of the model is in named parts, not the catch-all fuselage/airframe part
 // Usage: npm run validate [model-id ...]   (exits 1 if any listed model fails)
+import { readFileSync } from 'node:fs';
 import * as THREE from 'three';
 import '../src/builders/index.js';
 import { buildModel } from '../src/registry.js';
@@ -10,7 +11,9 @@ import { loadCatalog } from '../src/catalog-node.js';
 import { loadAssetNode } from '../src/assets-node.js';
 
 const only = new Set(process.argv.slice(2));
-const { models } = loadCatalog();
+const { models: listed, index } = loadCatalog();
+// Named ids may come from the workshop too, to check a model before it is listed.
+const models = only.size ? [...listed, ...index.workshop.map(p => JSON.parse(readFileSync(new URL('../data/' + p, import.meta.url), 'utf8')))].filter(m => only.has(m.id)) : listed;
 let failed = 0;
 
 function lowest(obj) {

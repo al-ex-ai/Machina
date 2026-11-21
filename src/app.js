@@ -811,6 +811,11 @@ async function loadCatalog() {
 
 async function boot() {
   const { categories, models, thumbs } = await loadCatalog();
+  // ?workshop opens unlisted models too, to check them before they are listed.
+  if (/[?&]workshop/.test(location.search)) {
+    const index = await fetch('./data/index.json').then(r => r.json());
+    models.push(...await Promise.all(index.workshop.map(p => fetch(`./data/${p}`).then(r => r.json()))));
+  }
   state.categories = categories;
   state.thumbs = thumbs;
   state.models = models;
