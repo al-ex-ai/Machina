@@ -11,6 +11,7 @@
     "models/aviation/a320neo.json",
     "models/aviation/b787-8.json",
     "models/aviation/b747-400.json",
+    "models/aviation/a380-800.json",
     "models/aviation/b707.json",
     "models/aviation/tu134.json",
     "models/aviation/il76.json",
@@ -19,7 +20,6 @@
     "models/aviation/an225.json"
   ],
   "workshop": [
-    "models/aviation/a380-800.json",
     "models/helicopters/ec135.json",
     "models/aviation/dhc6.json",
     "models/aviation/cessna-172s-parametric.json",
