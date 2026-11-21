@@ -4,7 +4,7 @@
 import { simplify } from './hlr.js';
 
 const SHEET = { w: 420, h: 297, frame: 10 };
-const TITLE = { w: 150, h: 34 };
+const TITLE = { w: 150, h: 42 };
 const SCALES = [5, 10, 15, 20, 25, 30, 40, 50, 60, 75, 100, 125, 150, 200, 250, 300, 400, 500, 750, 1000];
 const INK = '#1b2633';
 const FONT = 'Segoe UI, Helvetica, Arial, sans-serif';
@@ -33,7 +33,7 @@ function fit(L, S, H) {
  * @param {Record<'side'|'top'|'front', ReturnType<import('./hlr.js').projectView>>} views
  * @param {{ x: number, label: string, lines: number[][][] }[]} sections cuts in (z, y), meters
  */
-export function sheet(model, views, sections, { plain = false } = {}) {
+export function sheet(model, views, sections, { plain = false, dims = null } = {}) {
   const sv = views.side.box, tv = views.top.box, fv = views.front.box;
   const L = sv.x1 - sv.x0, H = sv.y1 - sv.y0, S = tv.y1 - tv.y0;
   const { s, k, X0, Y0, GX, GY } = fit(L, Math.max(S, fv.x1 - fv.x0), H);
@@ -113,8 +113,24 @@ export function sheet(model, views, sections, { plain = false } = {}) {
 
   // Overall dimensions.
   dimH(top.ox, top.ox + sideW, top.oy + topH + 9, fmt(sp.length_m, L), top.oy + topH);
-  dimV(top.oy, top.oy + topH, top.ox + sideW + 9, fmt(sp.wingspan_m ?? sp.rotor_diameter_m, S), top.ox + sideW);
+  dimV(top.oy, top.oy + topH, top.ox + sideW + (dims?.tailSpan ? 15 : 9), fmt(sp.wingspan_m ?? sp.rotor_diameter_m, S), top.ox + sideW);
   dimV(front.oy, ground, front.ox + frontW + 8, fmt(sp.height_m, H), front.ox + frontW);
+
+  // The rest of the standard set, measured from the model: wheelbase under the side view,
+  // track under the front view, tail span beside the tailplane in the top view.
+  if (dims?.wheelbase) {
+    const [x1] = toSheet('side', [dims.wheelbase.x1, 0]), [x2] = toSheet('side', [dims.wheelbase.x2, 0]);
+    dimH(x1, x2, ground + 8, `Wheelbase ${fmt(dims.wheelbase.x2 - dims.wheelbase.x1)}`, ground);
+  }
+  if (dims?.track) {
+    const [a] = toSheet('front', [dims.track.z1, 0]), [b] = toSheet('front', [dims.track.z2, 0]);
+    dimH(Math.min(a, b), Math.max(a, b), ground + 8, `Track ${fmt(dims.track.z2 - dims.track.z1)}`, ground);
+  }
+  if (dims?.tailSpan) {
+    const t = dims.tailSpan;
+    const [xt, ya] = toSheet('top', [t.x, t.z1]), [, yb] = toSheet('top', [t.x, t.z2]);
+    dimV(Math.min(ya, yb), Math.max(ya, yb), xt + 5, `Tail span ${fmt(t.z2 - t.z1)}`, xt);
+  }
 
   // Sections: marked on the side view, drawn in a row below the front view.
   let sectionSvg = '';
@@ -129,7 +145,7 @@ export function sheet(model, views, sections, { plain = false } = {}) {
     const total = boxes.reduce((a, b) => a + (b.z1 - b.z0) * k + 10, -10);
     const yTop = Math.max(...boxes.map(b => b.y1)), yBot = Math.min(...boxes.map(b => b.y0));
     const room = { w: SHEET.w - SHEET.frame - 8 - ax, h: bottom - ay };
-    if (total <= room.w && (yTop - yBot) * k + 8 <= room.h && Number.isFinite(total)) {
+    if (total <= room.w && (yTop - yBot) * k + (dims?.fuselage ? 18 : 8) <= room.h && Number.isFinite(total)) {
       text(ax, ay - 6, 'SECTIONS', 3, 'start', ' letter-spacing="0.6"');
       let x = ax;
       sections.forEach((c, i) => {
@@ -139,6 +155,10 @@ export function sheet(model, views, sections, { plain = false } = {}) {
         sectionSvg += `<path d="${d}" stroke-width="0.35"/>`;
         line(ox, oy - (b.y1 + 0.15) * k - 1.5, ox, oy - (b.y0 - 0.15) * k + 1.5, 0.12, dashdot);
         text(x + ((b.z1 - b.z0) * k) / 2, ay + (yTop - yBot) * k + 6, `${c.label}-${c.label}`, 2.8, 'middle');
+        if (dims?.fuselage?.section === i) {
+          const yd = ay + (yTop - yBot) * k + 14;
+          dimH(ox + b.z0 * k, ox + b.z1 * k, yd, fmt(dims.fuselage.width), oy - b.y0 * k + 7);
+        }
         x += (b.z1 - b.z0) * k + 10;
         // Cutting plane marks on the side view.
         const [sx] = toSheet('side', [c.x, 0]);
@@ -162,19 +182,37 @@ export function sheet(model, views, sections, { plain = false } = {}) {
   text(tx + 3, ty + 8.6, model.name.toUpperCase(), 5.4, 'start', ' font-weight="700" letter-spacing="0.3"');
   const sub = [sp.manufacturer, sp.role, sp.first_flight ? `first flight ${sp.first_flight}` : null].filter(Boolean).join(', ');
   text(tx + 3, ty + 16.6, sub, 2.5);
-  const dims = [`Length ${fmt(sp.length_m, L)}`, sp.wingspan_m ? `Span ${fmt(sp.wingspan_m)}` : sp.rotor_diameter_m ? `Rotor ${fmt(sp.rotor_diameter_m)}` : null, `Height ${fmt(sp.height_m, H)}`].filter(Boolean);
-  text(tx + 3, ty + 23.6, dims.join('   '), 2.5);
+  const sizes = [`Length ${fmt(sp.length_m, L)}`, sp.wingspan_m ? `Span ${fmt(sp.wingspan_m)}` : sp.rotor_diameter_m ? `Rotor ${fmt(sp.rotor_diameter_m)}` : null, `Height ${fmt(sp.height_m, H)}`].filter(Boolean);
+  text(tx + 3, ty + 23.6, sizes.join('   '), 2.5);
   text(tx + 63, ty + 23.6, `Scale 1:${s} (A3)`, 2.5);
   text(tx + 108, ty + 23.6, 'Units: meters', 2.5);
+
+  // Scale bar: true at any print size. Five segments, the longest round length under 60 mm.
+  line(tx, ty + 34, R, ty + 34, 0.15);
+  line(tx + 105, ty + 26, tx + 105, ty + 34, 0.15);
+  const step = [0.5, 1, 2, 2.5, 5, 10, 20, 25, 50, 100].filter(m => m * 5 * k <= 60).at(-1) ?? 0.5;
+  const bx = tx + 3, by = ty + 28, bh = 1.3, seg = step * k;
+  for (let i = 0; i < 5; i++) out.push(`<rect x="${(bx + i * seg).toFixed(2)}" y="${by}" width="${seg.toFixed(2)}" height="${bh}" stroke-width="0.15"${i % 2 ? '' : ` fill="${INK}"`}/>`);
+  for (const i of [0, 5]) text(bx + i * seg, by + bh + 3.2, i ? `${n2(step * 5)} m` : '0', 2.1, 'middle');
+  text(bx + 5 * seg + 4, by + bh + 0.4, 'Scale bar', 2.1);
+
+  // First-angle projection symbol (ISO 128): a truncated cone and its end view to the right.
+  const px = tx + 109, pc = ty + 30;
+  out.push(`<path d="M${px} ${pc - 1}L${px + 7} ${pc - 2.2}L${px + 7} ${pc + 2.2}L${px} ${pc + 1}Z" stroke-width="0.25"/>`);
+  out.push(`<circle cx="${px + 12.5}" cy="${pc}" r="2.2" stroke-width="0.25"/>`);
+  out.push(`<circle cx="${px + 12.5}" cy="${pc}" r="1" stroke-width="0.25"/>`);
+  line(px - 1.5, pc, px + 15.5, pc, 0.1, dashdot);
+  text(px + 18, pc + 0.9, 'First angle projection', 2.1);
+
   const src = model.asset ? `3D model: ${model.asset.author}, ${model.asset.license}` : model.derived ? `Parametric model measured from the FlightGear mesh by ${model.derived.author}, ${model.derived.license}` : model.reference ? `Parametric model measured from a drawing by ${model.reference.author}, ${model.reference.license}` : 'Machina parametric model';
-  text(tx + 3, ty + 30.8, `${src}. Projected from the 3D model by Machina.`, 1.9);
+  text(tx + 3, ty + 38.8, `${src}. Projected from the 3D model by Machina.`, 1.9);
 
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${SHEET.w} ${SHEET.h}" width="${SHEET.w}mm" height="${SHEET.h}mm" font-family="${FONT}" fill="none" stroke="${INK}" stroke-linecap="round" stroke-linejoin="round">
 <rect width="${SHEET.w}" height="${SHEET.h}" fill="#ffffff" stroke="none"/>
 <g fill="${INK}">${out.filter(q => q.startsWith('<text') || q.includes('fill="')).join('\n')}</g>
 ${out.filter(q => !(q.startsWith('<text') || q.includes('fill="'))).join('\n')}
 <path d="${detail}" stroke-width="0.18"/>
-<path d="${outline}" stroke-width="0.45"/>
+<path d="${outline}" stroke-width="0.6"/>
 ${sectionSvg}
 </svg>
 `;

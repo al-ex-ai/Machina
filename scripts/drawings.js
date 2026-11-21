@@ -50,11 +50,71 @@ function drawing(model) {
       if (lines.length) sections.push({ x, label: 'ABCD'[n++], lines });
     }
   }
-  const svg = sheet(model, views, sections, { plain });
+  const svg = sheet(model, views, sections, { plain, dims: plain ? null : measure(meshes, sections) });
   writeFileSync(`${outDir}/${model.id}.svg`, svg);
   if (png) writeFileSync(`${outDir}/${model.id}.png`, svgToPng(svg, 4200));
   const count = v => v.outline.length + v.detail.length;
   return { id: model.id, bytes: svg.length, lines: count(views.side) + count(views.top) + count(views.front), cuts: cuts.length };
+}
+
+/**
+ * The standard dimension set beyond length, span and height, measured from the geometry:
+ * wheelbase and track from the tire contact points, tail span from the horizontal tail,
+ * fuselage width from the widest section. Anything not present is left out.
+ */
+function measure(meshes, sections) {
+  const dims = {};
+  const LEG = /nose|main|wing-gear|body-gear|tail-wheel|landing-gear/, NOT = /door|bay|fairing|cover/;
+  const parts = new Map();
+  for (const m of meshes) {
+    if (m.system !== 'gear' || !LEG.test(m.part) || NOT.test(m.part)) continue;
+    if (!parts.has(m.part)) parts.set(m.part, []);
+    parts.get(m.part).push(m);
+  }
+  // Each part's contact points: its vertices within 3 cm of its own lowest point. A part that
+  // holds both sides, or every leg, is split into legs: left, right and (for all legs) center.
+  const mean = (list, k) => list.reduce((a, p) => a + p[k], 0) / list.length;
+  const leg = list => ({ x: mean(list, 'x'), z: mean(list, 'z') });
+  const lead = [], mains = [];
+  // Ground contact of a set of vertices: those within 3 cm of its lowest one.
+  const contact = vs => {
+    const lo = Math.min(...vs.map(v => v.y));
+    return vs.filter(v => v.y < lo + 0.03);
+  };
+  for (const [id, list] of parts) {
+    const vs = [];
+    for (const m of list) for (let i = 0; i < m.verts.length; i += 3) vs.push({ x: m.verts[i], y: m.verts[i + 1], z: m.verts[i + 2] });
+    if (!vs.length) continue;
+    if (/nose|tail-wheel/.test(id)) { lead.push(leg(contact(vs))); continue; }
+    // Regions by side, each with its own ground contact, so legs at slightly different heights all count.
+    const maxZ = Math.max(...vs.map(v => Math.abs(v.z)));
+    if (maxZ < 0.3) { mains.push(leg(contact(vs))); continue; } // one narrow leg on the centerline
+    const left = vs.filter(v => v.z > 0.25 * maxZ), right = vs.filter(v => v.z < -0.25 * maxZ);
+    const center = /landing-gear/.test(id) ? vs.filter(v => Math.abs(v.z) <= 0.25 * maxZ) : [];
+    if (center.length) lead.push(leg(contact(center)));
+    if (left.length) mains.push(leg(contact(left)));
+    if (right.length) mains.push(leg(contact(right)));
+  }
+  if (lead.length && mains.length) {
+    const a = lead[0].x, b = mean(mains, 'x');
+    dims.wheelbase = { x1: Math.min(a, b), x2: Math.max(a, b) };
+  }
+  // Track: between the outermost main legs, as manufacturers state it.
+  const zs = mains.map(p => p.z);
+  if (zs.length >= 2 && Math.max(...zs) > 0.15 && Math.min(...zs) < -0.15) dims.track = { z1: Math.min(...zs), z2: Math.max(...zs) };
+  const tail = meshes.filter(m => /stabilizer|elevator|tailplane|htail/.test(m.part));
+  if (tail.length) {
+    const b = bounds(tail);
+    dims.tailSpan = { z1: b.min.z, z2: b.max.z, x: b.max.x };
+  }
+  let widest = -1, w = 0;
+  sections.forEach((c, i) => {
+    let z0 = Infinity, z1 = -Infinity;
+    for (const l of c.lines) for (const [z] of l) { z0 = Math.min(z0, z); z1 = Math.max(z1, z); }
+    if (z1 - z0 > w) { w = z1 - z0; widest = i; }
+  });
+  if (widest >= 0) dims.fuselage = { section: widest, width: w };
+  return dims;
 }
 
 for (const m of models) {
