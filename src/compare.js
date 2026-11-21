@@ -21,9 +21,9 @@ const SORTS = {
 
 // Suggested sets, kept only when at least two of their models are listed.
 const PRESETS = [
-  { label: 'Airliners', ids: ['b747-400', 'b787-8', 'b707', 'a320neo', 'b737-300'] },
+  { label: 'Airliners', ids: ['b747-400', 'b777', 'b787-8', 'b707', 'a320neo', 'b737-300'] },
   { label: 'Light aircraft', ids: ['cessna-172s', 'dr400', 'j3-cub', 'ercoupe'] },
-  { label: 'Tupolev, Ilyushin and Concorde', ids: ['concorde', 'tu-154m', 'il76', 'tu134'] },
+  { label: 'Tupolev, Ilyushin and Concorde', ids: ['concorde', 'il76', 'tu134'] },
   { label: 'First and biggest', ids: ['wright-flyer', 'b747-400', 'an225'] },
   { label: 'Supersonic', ids: ['concorde', 'sr71'] },
 ];
