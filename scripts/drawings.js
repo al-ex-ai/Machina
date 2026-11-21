@@ -76,24 +76,28 @@ function measure(meshes, sections) {
   const mean = (list, k) => list.reduce((a, p) => a + p[k], 0) / list.length;
   const leg = list => ({ x: mean(list, 'x'), z: mean(list, 'z') });
   const lead = [], mains = [];
-  // Ground contact of a set of vertices: those within 3 cm of its lowest one.
+  // Ground contact of a set of vertices: those within 3 cm of its lowest one. A region whose lowest
+  // point is well above the ground (a brace, a door, a mis-mapped hinge) has no wheel and is skipped.
+  let ground = Infinity;
+  for (const list of parts.values()) for (const m of list) for (let i = 1; i < m.verts.length; i += 3) ground = Math.min(ground, m.verts[i]);
   const contact = vs => {
     const lo = Math.min(...vs.map(v => v.y));
-    return vs.filter(v => v.y < lo + 0.03);
+    return lo > ground + 0.3 ? null : vs.filter(v => v.y < lo + 0.03);
   };
+  const add = (list, pts) => { if (pts?.length) list.push(leg(pts)); };
   for (const [id, list] of parts) {
     const vs = [];
     for (const m of list) for (let i = 0; i < m.verts.length; i += 3) vs.push({ x: m.verts[i], y: m.verts[i + 1], z: m.verts[i + 2] });
     if (!vs.length) continue;
-    if (/nose|tail-wheel/.test(id)) { lead.push(leg(contact(vs))); continue; }
+    if (/nose|tail-wheel/.test(id)) { add(lead, contact(vs)); continue; }
     // Regions by side, each with its own ground contact, so legs at slightly different heights all count.
     const maxZ = Math.max(...vs.map(v => Math.abs(v.z)));
-    if (maxZ < 0.3) { mains.push(leg(contact(vs))); continue; } // one narrow leg on the centerline
+    if (maxZ < 0.3) { add(mains, contact(vs)); continue; } // one narrow leg on the centerline
     const left = vs.filter(v => v.z > 0.25 * maxZ), right = vs.filter(v => v.z < -0.25 * maxZ);
     const center = /landing-gear/.test(id) ? vs.filter(v => Math.abs(v.z) <= 0.25 * maxZ) : [];
-    if (center.length) lead.push(leg(contact(center)));
-    if (left.length) mains.push(leg(contact(left)));
-    if (right.length) mains.push(leg(contact(right)));
+    if (center.length) add(lead, contact(center));
+    if (left.length) add(mains, contact(left));
+    if (right.length) add(mains, contact(right));
   }
   if (lead.length && mains.length) {
     const a = lead[0].x, b = mean(mains, 'x');
