@@ -7,7 +7,7 @@ OBJECT poly
 name "Base"
 data 6
 Circle
-texture "Amp-base.png"
+texture "Amp-base.webp"
 crease 30.000000
 numvert 332
 0.002 -0.00822 -0.00822
@@ -2493,7 +2493,7 @@ OBJECT poly
 name "Meter"
 data 10
 Circle.001
-texture "Amp-tex.png"
+texture "Amp-tex.webp"
 crease 30.000000
 numvert 49
 0 -0.008839 -0.008839
@@ -2839,7 +2839,7 @@ OBJECT poly
 name "Needle"
 data 10
 Circle.003
-texture "Amp-base.png"
+texture "Amp-base.webp"
 crease 30.000000
 numvert 4
 0.001 0.009 0.0004

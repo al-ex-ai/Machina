@@ -8,7 +8,7 @@ OBJECT poly
 name "Ball"
 data 6
 Sphere
-texture "5550-base.png"
+texture "5550-base.webp"
 crease 30.000000
 numvert 134
 -0.001 -0.00504 0
@@ -1135,7 +1135,7 @@ OBJECT poly
 name "Base_01"
 data 8
 Tube.001
-texture "5550-base.png"
+texture "5550-base.webp"
 crease 30.000000
 numvert 176
 0.003 -0.0184554 0.0184554
@@ -2152,7 +2152,7 @@ OBJECT poly
 name "Base_02"
 data 9
 Torus.001
-texture "5550-base.png"
+texture "5550-base.webp"
 crease 30.000000
 numvert 446
 -0.003 -0.0127782 -0.0147294
@@ -5520,7 +5520,7 @@ OBJECT poly
 name "Markers"
 data 9
 Torus.002
-texture "5550-base.png"
+texture "5550-base.webp"
 crease 30.000000
 numvert 240
 -4.1e-005 -0.0041571 0.0036
@@ -7281,7 +7281,7 @@ OBJECT poly
 name "Meter"
 data 6
 Circle
-texture "5550-tex.png"
+texture "5550-tex.webp"
 crease 30.000000
 numvert 90
 2.00002e-006 -0.0132705 0.0132039
@@ -7710,7 +7710,7 @@ OBJECT poly
 name "Needle"
 data 8
 Tube.003
-texture "5550-base.png"
+texture "5550-base.webp"
 crease 30.000000
 numvert 4
 0.0005 0.0171 0.00153

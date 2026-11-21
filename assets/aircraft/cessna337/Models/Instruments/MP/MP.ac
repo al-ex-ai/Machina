@@ -7,7 +7,7 @@ OBJECT poly
 name "Base"
 data 6
 Sphere
-texture "MP-base.png"
+texture "MP-base.webp"
 crease 30.000000
 numvert 219
 0.003 0 0
@@ -1795,7 +1795,7 @@ OBJECT poly
 name "Needle_FRONT"
 data 5
 Plane
-texture "MP-base.png"
+texture "MP-base.webp"
 crease 30.000000
 numvert 4
 0.001 -0.00580836 0.00572688
@@ -1820,7 +1820,7 @@ OBJECT poly
 name "Needle_REAR"
 data 9
 Plane.001
-texture "MP-base.png"
+texture "MP-base.webp"
 crease 30.000000
 numvert 4
 0.001 -0.00813054 0.00065378
@@ -1845,7 +1845,7 @@ OBJECT poly
 name "Meter"
 data 6
 Circle
-texture "MP-tex.png"
+texture "MP-tex.webp"
 crease 30.000000
 numvert 49
 1.00001e-006 0.0260639 0.0260639

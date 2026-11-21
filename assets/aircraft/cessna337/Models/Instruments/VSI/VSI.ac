@@ -7,7 +7,7 @@ OBJECT poly
 name "Base"
 data 6
 Sphere
-texture "VSI-base.png"
+texture "VSI-base.webp"
 crease 30.000000
 numvert 192
 0.003 -0.03686 0
@@ -1656,7 +1656,7 @@ OBJECT poly
 name "Meter"
 data 6
 Circle
-texture "VSI-tex.png"
+texture "VSI-tex.webp"
 crease 30.000000
 numvert 96
 1e-006 0.026064 0.026064
@@ -2097,7 +2097,7 @@ OBJECT poly
 name "Needle"
 data 10
 Sphere.012
-texture "VSI-base.png"
+texture "VSI-base.webp"
 crease 30.000000
 numvert 39
 0 0.001485 -0.001485

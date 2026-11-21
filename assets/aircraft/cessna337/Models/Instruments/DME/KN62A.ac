@@ -6,7 +6,7 @@ name "Blender_export__KN62A.ac"
 kids 21
 OBJECT poly
 name "Base"
-texture "KN62A.png"
+texture "KN62A.webp"
 texrep 1 1
 numvert 74
 0.0000000 0.0162570 0.0787420
@@ -510,7 +510,7 @@ refs 4
 kids 0
 OBJECT poly
 name "BaseSwitch"
-texture "KN62A.png"
+texture "KN62A.webp"
 texrep 1 1
 numvert 20
 0.0000000 0.0028270 -0.0381810
@@ -629,7 +629,7 @@ kids 0
 OBJECT poly
 name "Btn_Mode"
 loc 0.0000000 0.0000000 0.0043650
-texture "KN62A.png"
+texture "KN62A.webp"
 texrep 1 1
 numvert 20
 0.0009900 0.0031670 -0.0329340
@@ -771,7 +771,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Btn_Power"
-texture "KN62A.png"
+texture "KN62A.webp"
 texrep 1 1
 numvert 20
 0.0009900 -0.0098880 -0.0286780
@@ -913,7 +913,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Digit_01"
-texture "KN62A.png"
+texture "KN62A.webp"
 texrep 1 1
 numvert 4
 0.0005000 0.0105220 0.0610620
@@ -931,7 +931,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Digit_02"
-texture "KN62A.png"
+texture "KN62A.webp"
 texrep 1 1
 numvert 4
 0.0005000 0.0021900 0.0544810
@@ -949,7 +949,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Digit_03"
-texture "KN62A.png"
+texture "KN62A.webp"
 texrep 1 1
 numvert 4
 0.0005000 0.0105220 0.0476430
@@ -967,7 +967,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Digit_04"
-texture "KN62A.png"
+texture "KN62A.webp"
 texrep 1 1
 numvert 4
 0.0005000 0.0105220 0.0344390
@@ -985,7 +985,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Digit_05"
-texture "KN62A.png"
+texture "KN62A.webp"
 texrep 1 1
 numvert 4
 0.0005000 0.0021900 0.0285560
@@ -1003,7 +1003,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Digit_06"
-texture "KN62A.png"
+texture "KN62A.webp"
 texrep 1 1
 numvert 4
 0.0005000 0.0105220 0.0226730
@@ -1021,7 +1021,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Digit_07"
-texture "KN62A.png"
+texture "KN62A.webp"
 texrep 1 1
 numvert 4
 0.0005000 0.0105220 0.0102770
@@ -1039,7 +1039,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Digit_08"
-texture "KN62A.png"
+texture "KN62A.webp"
 texrep 1 1
 numvert 4
 0.0005000 0.0105220 0.0102770
@@ -1057,7 +1057,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Digit_KT"
-texture "KN62A.png"
+texture "KN62A.webp"
 texrep 1 1
 numvert 4
 0.0005000 -0.0023250 0.0315270
@@ -1075,7 +1075,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Digit_MHZ"
-texture "KN62A.png"
+texture "KN62A.webp"
 texrep 1 1
 numvert 4
 0.0005000 -0.0023250 0.0199280
@@ -1093,7 +1093,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Digit_MIN"
-texture "KN62A.png"
+texture "KN62A.webp"
 texrep 1 1
 numvert 4
 0.0005000 -0.0023250 0.0079810
@@ -1111,7 +1111,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Digit_NM"
-texture "KN62A.png"
+texture "KN62A.webp"
 texrep 1 1
 numvert 4
 0.0005000 0.0017350 0.0692010
@@ -1129,7 +1129,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Digit_P1"
-texture "KN62A.png"
+texture "KN62A.webp"
 texrep 1 1
 numvert 4
 0.0006350 0.0021900 0.0544750
@@ -1147,7 +1147,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Digit_P2"
-texture "KN62A.png"
+texture "KN62A.webp"
 texrep 1 1
 numvert 4
 0.0006350 0.0021900 0.0217900
@@ -1165,7 +1165,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Digit_RMT"
-texture "KN62A.png"
+texture "KN62A.webp"
 texrep 1 1
 numvert 4
 0.0005000 -0.0023250 0.0431810
@@ -1183,7 +1183,7 @@ refs 4
 kids 0
 OBJECT poly
 name "KnobFREQ_01"
-texture "KN62A.png"
+texture "KN62A.webp"
 texrep 1 1
 numvert 73
 0.0150650 0.0016540 -0.0665970
@@ -1743,7 +1743,7 @@ refs 3
 kids 0
 OBJECT poly
 name "KnobFREQ_02"
-texture "KN62A.png"
+texture "KN62A.webp"
 texrep 1 1
 numvert 73
 0.0085510 0.0043350 -0.0673350

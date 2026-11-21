@@ -7,7 +7,7 @@ OBJECT poly
 name "Base"
 data 6
 Sphere
-texture "EA-401A-base.png"
+texture "EA-401A-base.webp"
 crease 30.000000
 numvert 206
 0.003 -0.03686 0
@@ -1300,7 +1300,7 @@ OBJECT poly
 name "Counter_100"
 data 10
 Sphere.010
-texture "EA-401A-base.png"
+texture "EA-401A-base.webp"
 crease 30.000000
 numvert 40
 -0.008069 0.017792 -0.002931
@@ -1489,7 +1489,7 @@ OBJECT poly
 name "Counter_1000"
 data 10
 Sphere.002
-texture "EA-401A-base.png"
+texture "EA-401A-base.webp"
 crease 30.000000
 numvert 40
 -0.004708 0.014431 0.002735
@@ -1678,7 +1678,7 @@ OBJECT poly
 name "Counter_10000"
 data 10
 Sphere.001
-texture "EA-401A-base.png"
+texture "EA-401A-base.webp"
 crease 30.000000
 numvert 40
 -0.008069 0.017792 0.016655
@@ -2307,7 +2307,7 @@ OBJECT poly
 name "Flag_01"
 data 10
 Sphere.011
-texture "EA-401A-base.png"
+texture "EA-401A-base.webp"
 crease 30.000000
 numvert 4
 -0.001 0.006344 0.001751
@@ -2327,7 +2327,7 @@ OBJECT poly
 name "Flag_02"
 data 10
 Sphere.013
-texture "EA-401A-base.png"
+texture "EA-401A-base.webp"
 crease 30.000000
 numvert 4
 -0.001 0.006344 -0.002152
@@ -2347,7 +2347,7 @@ OBJECT poly
 name "Knob"
 data 10
 Sphere.009
-texture "EA-401A-base.png"
+texture "EA-401A-base.webp"
 crease 30.000000
 numvert 97
 0.01 -0.026095 0.0309
@@ -2933,7 +2933,7 @@ OBJECT poly
 name "Meter"
 data 6
 Circle
-texture "EA-401A-tex.png"
+texture "EA-401A-tex.webp"
 crease 30.000000
 numvert 61
 1e-006 0.026064 0.026064
@@ -3344,7 +3344,7 @@ OBJECT poly
 name "Needle"
 data 10
 Sphere.012
-texture "EA-401A-base.png"
+texture "EA-401A-base.webp"
 crease 30.000000
 numvert 45
 0 -0.002121 -0.002121
@@ -3648,7 +3648,7 @@ OBJECT poly
 name "inHg_00-01"
 data 10
 Sphere.006
-texture "EA-401A-base.png"
+texture "EA-401A-base.webp"
 crease 30.000000
 numvert 40
 -0.003535 -0.011854 -0.003055
@@ -3837,7 +3837,7 @@ OBJECT poly
 name "inHg_00-10"
 data 10
 Sphere.005
-texture "EA-401A-base.png"
+texture "EA-401A-base.webp"
 crease 30.000000
 numvert 40
 -0.003535 -0.011854 -5.5e-005
@@ -4026,7 +4026,7 @@ OBJECT poly
 name "inHg_01-00"
 data 10
 Sphere.004
-texture "EA-401A-base.png"
+texture "EA-401A-base.webp"
 crease 30.000000
 numvert 40
 -0.003535 -0.011854 0.002945
@@ -4215,7 +4215,7 @@ OBJECT poly
 name "inHg_10-00"
 data 10
 Sphere.003
-texture "EA-401A-base.png"
+texture "EA-401A-base.webp"
 crease 30.000000
 numvert 40
 -0.003535 -0.011854 0.005945

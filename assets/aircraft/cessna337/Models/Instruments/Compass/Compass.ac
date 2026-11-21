@@ -8,7 +8,7 @@ OBJECT poly
 name "Base"
 data 4
 Tube
-texture "Compass-base.png"
+texture "Compass-base.webp"
 crease 30.000000
 numvert 390
 -0.000979 0.043285 -0.00288
@@ -4228,7 +4228,7 @@ OBJECT poly
 name "Compass"
 data 8
 Cylinder
-texture "Compass-tex.png"
+texture "Compass-tex.webp"
 crease 30.000000
 numvert 180
 0.015276 -0.005052 -0.018205
@@ -5444,7 +5444,7 @@ OBJECT poly
 name "Interior"
 data 8
 Tube.001
-texture "Compass-base.png"
+texture "Compass-base.webp"
 crease 30.000000
 numvert 12
 -0.025612 -0.006649 -0.025063
@@ -5521,7 +5521,7 @@ OBJECT poly
 name "Needle"
 data 8
 Tube.003
-texture "Compass-base.png"
+texture "Compass-base.webp"
 crease 30.000000
 numvert 16
 0.024482 0.008785 0

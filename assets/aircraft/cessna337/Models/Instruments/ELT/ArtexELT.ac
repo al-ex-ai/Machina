@@ -8,7 +8,7 @@ OBJECT poly
 name "Base"
 data 8
 Cube.001
-texture "ArtexELT.png"
+texture "ArtexELT.webp"
 crease 30.000000
 numvert 120
 -0.001 -0.0254 0.013281
@@ -1650,7 +1650,7 @@ OBJECT poly
 name "Tornillos"
 data 8
 Cylinder
-texture "ArtexELT.png"
+texture "ArtexELT.webp"
 crease 30.000000
 numvert 200
 0.003754 0.023588 -0.014634

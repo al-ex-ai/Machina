@@ -5201,7 +5201,7 @@ OBJECT poly
 name "Lever_02"
 data 8
 Cube.001
-texture "Textures/Seat.png"
+texture "Textures/Seat.webp"
 crease 30.000000
 numvert 50
 -0.342095 -0.174 -0.109899
@@ -5716,7 +5716,7 @@ OBJECT poly
 name "Seat"
 data 4
 Cube
-texture "Textures/Seat.png"
+texture "Textures/Seat.webp"
 crease 30.000000
 numvert 292
 0.019282 -0.0512 -0.107694

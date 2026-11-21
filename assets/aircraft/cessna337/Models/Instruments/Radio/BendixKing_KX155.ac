@@ -6,7 +6,7 @@ OBJECT poly
 name "Base"
 data 4
 Cube
-texture "BendixKing_KX155.png"
+texture "BendixKing_KX155.webp"
 crease 30.000000
 numvert 20
 0 0.025274 0.078742
@@ -150,7 +150,7 @@ OBJECT poly
 name "Btn_COMM"
 data 8
 Cube.002
-texture "BendixKing_KX155.png"
+texture "BendixKing_KX155.webp"
 crease 30.000000
 numvert 56
 0.001629 -0.005043 0.048247
@@ -574,7 +574,7 @@ OBJECT poly
 name "Btn_NAV"
 data 8
 Cube.003
-texture "BendixKing_KX155.png"
+texture "BendixKing_KX155.webp"
 crease 30.000000
 numvert 56
 0.001629 -0.005043 -0.031753
@@ -998,7 +998,7 @@ OBJECT poly
 name "Digit_COMM01"
 data 9
 Plane.001
-texture "BendixKing_KX155.png"
+texture "BendixKing_KX155.webp"
 crease 30.000000
 numvert 4
 0.0005 0.016908 0.064078
@@ -1018,7 +1018,7 @@ OBJECT poly
 name "Digit_COMM02"
 data 9
 Plane.032
-texture "BendixKing_KX155.png"
+texture "BendixKing_KX155.webp"
 crease 30.000000
 numvert 4
 0.0005 0.008576 0.058195
@@ -1038,7 +1038,7 @@ OBJECT poly
 name "Digit_COMM03"
 data 9
 Plane.033
-texture "BendixKing_KX155.png"
+texture "BendixKing_KX155.webp"
 crease 30.000000
 numvert 4
 0.0005 0.016908 0.052312
@@ -1058,7 +1058,7 @@ OBJECT poly
 name "Digit_COMM04"
 data 9
 Plane.034
-texture "BendixKing_KX155.png"
+texture "BendixKing_KX155.webp"
 crease 30.000000
 numvert 4
 0.0005 0.016908 0.045474
@@ -1078,7 +1078,7 @@ OBJECT poly
 name "Digit_COMM05"
 data 9
 Plane.035
-texture "BendixKing_KX155.png"
+texture "BendixKing_KX155.webp"
 crease 30.000000
 numvert 4
 0.0005 0.008576 0.039591
@@ -1098,7 +1098,7 @@ OBJECT poly
 name "Digit_COMM06"
 data 9
 Plane.036
-texture "BendixKing_KX155.png"
+texture "BendixKing_KX155.webp"
 crease 30.000000
 numvert 4
 0.0005 0.016908 0.02903
@@ -1118,7 +1118,7 @@ OBJECT poly
 name "Digit_COMM07"
 data 9
 Plane.037
-texture "BendixKing_KX155.png"
+texture "BendixKing_KX155.webp"
 crease 30.000000
 numvert 4
 0.0005 0.008576 0.023147
@@ -1138,7 +1138,7 @@ OBJECT poly
 name "Digit_COMM08"
 data 9
 Plane.038
-texture "BendixKing_KX155.png"
+texture "BendixKing_KX155.webp"
 crease 30.000000
 numvert 4
 0.0005 0.016908 0.017264
@@ -1158,7 +1158,7 @@ OBJECT poly
 name "Digit_COMM09"
 data 9
 Plane.039
-texture "BendixKing_KX155.png"
+texture "BendixKing_KX155.webp"
 crease 30.000000
 numvert 4
 0.0005 0.016908 0.010426
@@ -1178,7 +1178,7 @@ OBJECT poly
 name "Digit_COMM10"
 data 9
 Plane.040
-texture "BendixKing_KX155.png"
+texture "BendixKing_KX155.webp"
 crease 30.000000
 numvert 4
 0.0005 0.008576 0.004543
@@ -1198,7 +1198,7 @@ OBJECT poly
 name "Digit_NAV01"
 data 9
 Plane.041
-texture "BendixKing_KX155.png"
+texture "BendixKing_KX155.webp"
 crease 30.000000
 numvert 4
 0.0005 0.008576 -0.006841
@@ -1218,7 +1218,7 @@ OBJECT poly
 name "Digit_NAV02"
 data 9
 Plane.042
-texture "BendixKing_KX155.png"
+texture "BendixKing_KX155.webp"
 crease 30.000000
 numvert 4
 0.0005 0.016908 -0.018607
@@ -1238,7 +1238,7 @@ OBJECT poly
 name "Digit_NAV03"
 data 9
 Plane.043
-texture "BendixKing_KX155.png"
+texture "BendixKing_KX155.webp"
 crease 30.000000
 numvert 4
 0.0005 0.008576 -0.02449
@@ -1258,7 +1258,7 @@ OBJECT poly
 name "Digit_NAV04"
 data 9
 Plane.044
-texture "BendixKing_KX155.png"
+texture "BendixKing_KX155.webp"
 crease 30.000000
 numvert 4
 0.0005 0.008576 -0.031328
@@ -1278,7 +1278,7 @@ OBJECT poly
 name "Digit_NAV05"
 data 9
 Plane.045
-texture "BendixKing_KX155.png"
+texture "BendixKing_KX155.webp"
 crease 30.000000
 numvert 4
 0.0005 0.016908 -0.031328
@@ -1298,7 +1298,7 @@ OBJECT poly
 name "Digit_NAV06"
 data 9
 Plane.046
-texture "BendixKing_KX155.png"
+texture "BendixKing_KX155.webp"
 crease 30.000000
 numvert 4
 0.0005 0.008576 -0.041174
@@ -1318,7 +1318,7 @@ OBJECT poly
 name "Digit_NAV07"
 data 9
 Plane.047
-texture "BendixKing_KX155.png"
+texture "BendixKing_KX155.webp"
 crease 30.000000
 numvert 4
 0.0005 0.016908 -0.05294
@@ -1338,7 +1338,7 @@ OBJECT poly
 name "Digit_NAV08"
 data 9
 Plane.048
-texture "BendixKing_KX155.png"
+texture "BendixKing_KX155.webp"
 crease 30.000000
 numvert 4
 0.0005 0.008576 -0.058823
@@ -1358,7 +1358,7 @@ OBJECT poly
 name "Digit_NAV09"
 data 9
 Plane.049
-texture "BendixKing_KX155.png"
+texture "BendixKing_KX155.webp"
 crease 30.000000
 numvert 4
 0.0005 0.008576 -0.065661
@@ -1378,7 +1378,7 @@ OBJECT poly
 name "Digit_NAV10"
 data 9
 Plane.050
-texture "BendixKing_KX155.png"
+texture "BendixKing_KX155.webp"
 crease 30.000000
 numvert 4
 0.0005 0.016908 -0.065661
@@ -1398,7 +1398,7 @@ OBJECT poly
 name "Digit_P"
 data 9
 Plane.029
-texture "BendixKing_KX155.png"
+texture "BendixKing_KX155.webp"
 crease 30.000000
 numvert 16
 0.001 0.008576 -0.057855
@@ -1451,7 +1451,7 @@ OBJECT poly
 name "Digit_R"
 data 9
 Plane.031
-texture "BendixKing_KX155.png"
+texture "BendixKing_KX155.webp"
 crease 30.000000
 numvert 4
 0.0005 0.008735 0.038378
@@ -1471,7 +1471,7 @@ OBJECT poly
 name "Digit_T"
 data 9
 Plane.030
-texture "BendixKing_KX155.png"
+texture "BendixKing_KX155.webp"
 crease 30.000000
 numvert 4
 0.0005 0.013509 0.038378
@@ -1491,7 +1491,7 @@ OBJECT poly
 name "Knob_COMM01"
 data 12
 Cylinder.002
-texture "BendixKing_KX155.png"
+texture "BendixKing_KX155.webp"
 crease 30.000000
 numvert 73
 0.0062 -0.014504 0.06554
@@ -2053,7 +2053,7 @@ OBJECT poly
 name "Knob_COMM02"
 data 12
 Cylinder.001
-texture "BendixKing_KX155.png"
+texture "BendixKing_KX155.webp"
 crease 30.000000
 numvert 73
 0.015065 -0.007865 0.017403
@@ -2615,7 +2615,7 @@ OBJECT poly
 name "Knob_COMM03"
 data 8
 Cylinder
-texture "BendixKing_KX155.png"
+texture "BendixKing_KX155.webp"
 crease 30.000000
 numvert 73
 0.008551 -0.005184 0.016665
@@ -3177,7 +3177,7 @@ OBJECT poly
 name "Knob_NAV01"
 data 12
 Cylinder.005
-texture "BendixKing_KX155.png"
+texture "BendixKing_KX155.webp"
 crease 30.000000
 numvert 73
 0.0062 -0.014504 -0.01446
@@ -3739,7 +3739,7 @@ OBJECT poly
 name "Knob_NAV02"
 data 12
 Cylinder.003
-texture "BendixKing_KX155.png"
+texture "BendixKing_KX155.webp"
 crease 30.000000
 numvert 73
 0.015065 -0.007865 -0.062597
@@ -4301,7 +4301,7 @@ OBJECT poly
 name "Knob_NAV03"
 data 12
 Cylinder.004
-texture "BendixKing_KX155.png"
+texture "BendixKing_KX155.webp"
 crease 30.000000
 numvert 73
 0.008551 -0.005184 -0.063335

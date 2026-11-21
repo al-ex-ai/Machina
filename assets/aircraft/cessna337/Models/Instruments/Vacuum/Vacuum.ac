@@ -2042,7 +2042,7 @@ OBJECT poly
 name "Base"
 data 8
 Tube.001
-texture "Vacuum-base.png"
+texture "Vacuum-base.webp"
 crease 30.000000
 numvert 371
 0.003 -0.0179017 0.0179017
@@ -4847,7 +4847,7 @@ OBJECT poly
 name "Meter"
 data 6
 Circle
-texture "Vacuum-tex.png"
+texture "Vacuum-tex.webp"
 crease 30.000000
 numvert 49
 1.00001e-006 -0.0173649 -0.0173649
@@ -5193,7 +5193,7 @@ OBJECT poly
 name "Needle"
 data 8
 Tube.003
-texture "Vacuum-base.png"
+texture "Vacuum-base.webp"
 crease 30.000000
 numvert 6
 0.001 0.0056649 0.0174355

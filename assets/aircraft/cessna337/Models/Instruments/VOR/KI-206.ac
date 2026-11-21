@@ -9,7 +9,7 @@ OBJECT poly
 name "Base_01"
 data 6
 Sphere
-texture "KI-206-base.png"
+texture "KI-206-base.webp"
 texrep 1 1
 crease 30.000000
 numvert 308
@@ -2122,7 +2122,7 @@ OBJECT poly
 name "Base_02"
 data 10
 Sphere.003
-texture "KI-206-base.png"
+texture "KI-206-base.webp"
 texrep 1 1
 crease 30.000000
 numvert 49
@@ -2814,7 +2814,7 @@ OBJECT poly
 name "Cross"
 data 10
 Circle.002
-texture "KI-206-tex.png"
+texture "KI-206-tex.webp"
 texrep 1 1
 crease 30.000000
 numvert 72
@@ -3937,7 +3937,7 @@ OBJECT poly
 name "Flag_FROM"
 data 8
 Cube.001
-texture "KI-206-base.png"
+texture "KI-206-base.webp"
 texrep 1 1
 crease 30.000000
 numvert 18
@@ -4091,7 +4091,7 @@ OBJECT poly
 name "Flag_GS"
 data 8
 Cube.003
-texture "KI-206-base.png"
+texture "KI-206-base.webp"
 texrep 1 1
 crease 30.000000
 numvert 20
@@ -4236,7 +4236,7 @@ OBJECT poly
 name "Flag_NAV"
 data 8
 Cube.004
-texture "KI-206-base.png"
+texture "KI-206-base.webp"
 texrep 1 1
 crease 30.000000
 numvert 20
@@ -4381,7 +4381,7 @@ OBJECT poly
 name "Flag_TO"
 data 8
 Cube.005
-texture "KI-206-base.png"
+texture "KI-206-base.webp"
 texrep 1 1
 crease 30.000000
 numvert 18
@@ -4535,7 +4535,7 @@ OBJECT poly
 name "Knob"
 data 10
 Sphere.009
-texture "KI-206-base.png"
+texture "KI-206-base.webp"
 texrep 1 1
 crease 30.000000
 numvert 97
@@ -5122,7 +5122,7 @@ OBJECT poly
 name "Needle_GS"
 data 8
 Tube.003
-texture "KI-206-base.png"
+texture "KI-206-base.webp"
 texrep 1 1
 crease 30.000000
 numvert 40
@@ -5375,7 +5375,7 @@ OBJECT poly
 name "Needle_LOC"
 data 8
 Tube.002
-texture "KI-206-base.png"
+texture "KI-206-base.webp"
 texrep 1 1
 crease 30.000000
 numvert 40
@@ -5628,7 +5628,7 @@ OBJECT poly
 name "Ring"
 data 6
 Circle
-texture "KI-206-tex.png"
+texture "KI-206-tex.webp"
 texrep 1 1
 crease 30.000000
 numvert 144

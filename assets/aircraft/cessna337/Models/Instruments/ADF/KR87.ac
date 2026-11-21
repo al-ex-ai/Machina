@@ -6,7 +6,7 @@ OBJECT poly
 name "Base"
 data 4
 Cube
-texture "KR87.png"
+texture "KR87.webp"
 crease 30.000000
 numvert 20
 0 0.016257 0.078742
@@ -150,7 +150,7 @@ OBJECT poly
 name "Btn_ADF"
 data 8
 Cube.004
-texture "KR87.png"
+texture "KR87.webp"
 crease 30.000000
 numvert 44
 0.003425 -0.012363 0.042637
@@ -478,7 +478,7 @@ OBJECT poly
 name "Btn_BFO"
 data 8
 Cube.005
-texture "KR87.png"
+texture "KR87.webp"
 crease 30.000000
 numvert 44
 0.003425 -0.012363 0.027637
@@ -806,7 +806,7 @@ OBJECT poly
 name "Btn_FRQ"
 data 8
 Cube.006
-texture "KR87.png"
+texture "KR87.webp"
 crease 30.000000
 numvert 44
 0.003425 -0.012363 0.012637
@@ -1134,7 +1134,7 @@ OBJECT poly
 name "Btn_FLT"
 data 8
 Cube.007
-texture "KR87.png"
+texture "KR87.webp"
 crease 30.000000
 numvert 44
 0.003425 -0.012363 -0.002363
@@ -1462,7 +1462,7 @@ OBJECT poly
 name "Btn_SET"
 data 8
 Cube.008
-texture "KR87.png"
+texture "KR87.webp"
 crease 30.000000
 numvert 44
 0.003425 -0.012363 -0.017363
@@ -1790,7 +1790,7 @@ OBJECT poly
 name "Digit_L1000"
 data 5
 Plane
-texture "KR87.png"
+texture "KR87.webp"
 crease 30.000000
 numvert 4
 0.0005 0.00219 0.050585
@@ -1810,7 +1810,7 @@ OBJECT poly
 name "Digit_L100"
 data 9
 Plane.004
-texture "KR87.png"
+texture "KR87.webp"
 crease 30.000000
 numvert 4
 0.0005 0.00219 0.044703
@@ -1830,7 +1830,7 @@ OBJECT poly
 name "Digit_L10"
 data 9
 Plane.005
-texture "KR87.png"
+texture "KR87.webp"
 crease 30.000000
 numvert 4
 0.0005 0.010522 0.032937
@@ -1850,7 +1850,7 @@ OBJECT poly
 name "Digit_L1"
 data 9
 Plane.006
-texture "KR87.png"
+texture "KR87.webp"
 crease 30.000000
 numvert 4
 0.0005 0.00219 0.027054
@@ -1870,7 +1870,7 @@ OBJECT poly
 name "Digit_R1000"
 data 9
 Plane.025
-texture "KR87.png"
+texture "KR87.webp"
 crease 30.000000
 numvert 4
 0.0005 0.00219 0.006041
@@ -1890,7 +1890,7 @@ OBJECT poly
 name "Digit_R100"
 data 9
 Plane.026
-texture "KR87.png"
+texture "KR87.webp"
 crease 30.000000
 numvert 4
 0.0005 0.010522 0.000158
@@ -1910,7 +1910,7 @@ OBJECT poly
 name "Digit_R10"
 data 9
 Plane.027
-texture "KR87.png"
+texture "KR87.webp"
 crease 30.000000
 numvert 4
 0.0005 0.010522 -0.007162
@@ -1930,7 +1930,7 @@ OBJECT poly
 name "Digit_R1"
 data 9
 Plane.028
-texture "KR87.png"
+texture "KR87.webp"
 crease 30.000000
 numvert 4
 0.0005 0.00219 -0.013045
@@ -1950,7 +1950,7 @@ OBJECT poly
 name "Digit_ADF"
 data 9
 Plane.003
-texture "KR87.png"
+texture "KR87.webp"
 crease 30.000000
 numvert 4
 0.0005 0.004908 0.064718
@@ -1970,7 +1970,7 @@ OBJECT poly
 name "Digit_ANT"
 data 9
 Plane.002
-texture "KR87.png"
+texture "KR87.webp"
 crease 30.000000
 numvert 4
 0.0005 0.006705 0.055491
@@ -1990,7 +1990,7 @@ OBJECT poly
 name "Digit_BFO"
 data 9
 Plane.007
-texture "KR87.png"
+texture "KR87.webp"
 crease 30.000000
 numvert 4
 0.0005 0.010766 0.025243
@@ -2010,7 +2010,7 @@ OBJECT poly
 name "Digit_ET"
 data 9
 Plane.010
-texture "KR87.png"
+texture "KR87.webp"
 crease 30.000000
 numvert 4
 0.0005 0.000847 -0.025203
@@ -2030,7 +2030,7 @@ OBJECT poly
 name "Digit_FLT"
 data 9
 Plane.009
-texture "KR87.png"
+texture "KR87.webp"
 crease 30.000000
 numvert 4
 0.0005 0.010766 -0.015976
@@ -2050,7 +2050,7 @@ OBJECT poly
 name "Digit_FRQ"
 data 9
 Plane.008
-texture "KR87.png"
+texture "KR87.webp"
 crease 30.000000
 numvert 4
 0.0005 0.000847 0.012726
@@ -2070,7 +2070,7 @@ OBJECT poly
 name "Digit_P"
 data 9
 Plane.024
-texture "KR87.png"
+texture "KR87.webp"
 crease 30.000000
 numvert 8
 0.0005 0.004984 -0.001031
@@ -2101,7 +2101,7 @@ OBJECT poly
 name "Knob_Volume"
 data 12
 Cylinder.003
-texture "KR87.png"
+texture "KR87.webp"
 crease 30.000000
 numvert 73
 0.010654 -0.005658 -0.033092
@@ -2663,7 +2663,7 @@ OBJECT poly
 name "Knob_FREQ01"
 data 12
 Cylinder.002
-texture "KR87.png"
+texture "KR87.webp"
 crease 30.000000
 numvert 73
 0.015654 0.002468 -0.065468
@@ -3225,7 +3225,7 @@ OBJECT poly
 name "Knob_FREQ02"
 data 8
 Cylinder
-texture "KR87.png"
+texture "KR87.webp"
 crease 30.000000
 numvert 73
 0.008551 0.004335 -0.067335

@@ -6238,7 +6238,7 @@ OBJECT poly
 name "Alas"
 data 12
 Cylinder.033
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 1458
 0.311879 0.776377 5.75304
@@ -15933,7 +15933,7 @@ OBJECT poly
 name "AleronDER"
 data 12
 Cylinder.073
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 76
 1.00922 0.808475 -5.74035
@@ -16322,7 +16322,7 @@ OBJECT poly
 name "AleronIZQ"
 data 12
 Cylinder.043
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 76
 1.00922 0.808475 5.73784
@@ -16711,7 +16711,7 @@ OBJECT poly
 name "AletasAlas"
 data 12
 Cylinder.028
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 84
 0.567792 0.831524 3.96576
@@ -17438,7 +17438,7 @@ OBJECT poly
 name "Antenas"
 data 6
 Sphere
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 322
 0.282547 0.688182 -0.276008
@@ -51405,7 +51405,7 @@ OBJECT poly
 name "Apoyabrazos"
 data 12
 Cylinder.131
-texture "Textures/Interior.png"
+texture "Textures/Interior.webp"
 crease 30.000000
 numvert 576
 -0.262048 -0.220431 0.544157
@@ -56160,7 +56160,7 @@ OBJECT poly
 name "Apoyabrazos_PuertaSUP"
 data 12
 Cylinder.132
-texture "Textures/Interior.png"
+texture "Textures/Interior.webp"
 crease 30.000000
 numvert 192
 -0.53959 -0.171493 -0.546132
@@ -76646,7 +76646,7 @@ OBJECT poly
 name "CircuitBreakersPanel"
 data 8
 Cube.018
-texture "Textures/Interior.png"
+texture "Textures/Interior.webp"
 crease 30.000000
 numvert 388
 -0.893462 -0.34241 0.551046
@@ -79546,7 +79546,7 @@ OBJECT poly
 name "ColaDER"
 data 8
 Tube.005
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 989
 5.49734 1.47366 -1.49598
@@ -87270,7 +87270,7 @@ OBJECT poly
 name "ColaIZQ"
 data 8
 Tube.010
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 867
 5.60964 0.095416 1.52569
@@ -93912,7 +93912,7 @@ OBJECT poly
 name "CompTrenDEL_01"
 data 12
 Cylinder.084
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 62
 -2.24784 -0.5139 -0.001131
@@ -94412,7 +94412,7 @@ OBJECT poly
 name "CompTrenDEL_02"
 data 12
 Cylinder.017
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 62
 -1.85209 -0.700015 -0.202749
@@ -94912,7 +94912,7 @@ OBJECT poly
 name "CompTrenDEL_03"
 data 12
 Cylinder.029
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 30
 -1.29063 -1.05967 0.138305
@@ -95095,7 +95095,7 @@ OBJECT poly
 name "CompTrenDER_01"
 data 12
 Cylinder.021
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 12
 0.733159 -0.684745 -0.511678
@@ -95170,7 +95170,7 @@ OBJECT poly
 name "CompTrenDER_02"
 data 12
 Cylinder.078
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 63
 0.90002 -0.684745 -0.50822
@@ -95651,7 +95651,7 @@ OBJECT poly
 name "CompTrenDER_03"
 data 12
 Cylinder.079
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 104
 1.83978 -0.575701 -0.067164
@@ -96568,7 +96568,7 @@ OBJECT poly
 name "CompTrenIZQ_01"
 data 12
 Cylinder.016
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 12
 0.733159 -0.611426 0.543514
@@ -96643,7 +96643,7 @@ OBJECT poly
 name "CompTrenIZQ_02"
 data 12
 Cylinder.018
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 63
 0.835774 -0.684745 0.509415
@@ -97124,7 +97124,7 @@ OBJECT poly
 name "CompTrenIZQ_03"
 data 12
 Cylinder.080
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 104
 1.5926 -0.388437 0.512678
@@ -98041,7 +98041,7 @@ OBJECT poly
 name "CowlFlaps_01"
 data 8
 Mesh.011
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 63
 -1.56809 -0.72659 0.224581
@@ -98472,7 +98472,7 @@ OBJECT poly
 name "CowlFlaps_02"
 data 8
 Mesh.002
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 63
 -1.64818 -0.689179 -0.335654
@@ -98903,7 +98903,7 @@ OBJECT poly
 name "CowlFlaps_03"
 data 12
 Cylinder.088
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 55
 2.20978 0.310082 0.438581
@@ -99316,7 +99316,7 @@ OBJECT poly
 name "CowlFlaps_04"
 data 12
 Cylinder.020
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 55
 2.12399 0.104641 -0.443363
@@ -104041,7 +104041,7 @@ OBJECT poly
 name "Dispositivo"
 data 10
 Sphere.009
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 301
 0.618771 0.673696 -0.001008
@@ -108463,7 +108463,7 @@ OBJECT poly
 name "Elevador_01"
 data 12
 Cylinder.051
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 94
 5.59365 0.535335 1.39591
@@ -109032,7 +109032,7 @@ OBJECT poly
 name "Elevador_02"
 data 12
 Cylinder.002
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 50
 5.59407 0.529094 -0.206297
@@ -109299,7 +109299,7 @@ OBJECT poly
 name "Escalerilla"
 data 12
 Cylinder.135
-texture "Textures/Interior.png"
+texture "Textures/Interior.webp"
 crease 30.000000
 numvert 163
 -0.222248 -0.663709 -0.475453
@@ -110522,7 +110522,7 @@ OBJECT poly
 name "EstabH"
 data 12
 Cylinder.031
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 44
 4.70119 0.447616 -1.51329
@@ -110715,7 +110715,7 @@ OBJECT poly
 name "Flaps_01"
 data 12
 Cylinder.076
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 56
 1.44722 0.578486 1.63707
@@ -111000,7 +111000,7 @@ OBJECT poly
 name "Flaps_02"
 data 12
 Cylinder.041
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 56
 1.4475 0.56715 1.40152
@@ -111285,7 +111285,7 @@ OBJECT poly
 name "Flaps_03"
 data 12
 Cylinder.075
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 56
 1.4475 0.56715 -1.40333
@@ -111570,7 +111570,7 @@ OBJECT poly
 name "Flaps_04"
 data 12
 Cylinder.074
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 56
 1.23641 0.70622 -4.06167
@@ -111855,7 +111855,7 @@ OBJECT poly
 name "FondoInterior"
 data 9
 Plane.001
-texture "Textures/Interior.png"
+texture "Textures/Interior.webp"
 crease 30.000000
 numvert 16
 1.54413 -0.503532 0.477517
@@ -111929,7 +111929,7 @@ OBJECT poly
 name "FondoPanel"
 data 8
 Tube.009
-texture "Textures/Panel.png"
+texture "Textures/Panel.webp"
 crease 30.000000
 numvert 10
 -1.0007 -0.02113 0.529322
@@ -111976,7 +111976,7 @@ OBJECT poly
 name "FrontalInterior"
 data 8
 Mesh.005
-texture "Textures/Interior.png"
+texture "Textures/Interior.webp"
 crease 30.000000
 numvert 10
 -1.2616 -0.611425 0.408139
@@ -112023,7 +112023,7 @@ OBJECT poly
 name "Fuel_Base"
 data 8
 Cube.029
-texture "Textures/Interior.png"
+texture "Textures/Interior.webp"
 crease 30.000000
 numvert 47
 -0.329542 0.576385 0.030403
@@ -112355,7 +112355,7 @@ OBJECT poly
 name "Fuselaje"
 data 4
 Mesh
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 2693
 1.7609 -0.651635 0.05129
@@ -130677,7 +130677,7 @@ OBJECT poly
 name "GiroHeliceDEL_01"
 data 10
 Circle.002
-texture "Textures/prop_spin.png"
+texture "Textures/prop_spin.webp"
 crease 30.000000
 numvert 31
 -2.46181 -1.06281 0.093829
@@ -130885,7 +130885,7 @@ OBJECT poly
 name "GiroHeliceDEL_02"
 data 12
 Cylinder.091
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 181
 -2.91463 -0.131741 0.012441
@@ -132299,7 +132299,7 @@ OBJECT poly
 name "GiroHeliceTRAS_01"
 data 10
 Circle.001
-texture "Textures/prop_spin.png"
+texture "Textures/prop_spin.webp"
 crease 30.000000
 numvert 31
 2.84504 0.200504 0.961898
@@ -132507,7 +132507,7 @@ OBJECT poly
 name "GiroHeliceTRAS_02"
 data 12
 Cylinder.030
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 181
 3.24088 0.285925 -0.014458
@@ -136047,7 +136047,7 @@ OBJECT poly
 name "HeliceDEL_02"
 data 12
 Cylinder.014
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 379
 -2.53276 0.026065 -0.073084
@@ -138793,7 +138793,7 @@ OBJECT poly
 name "HeliceDEL_03"
 data 12
 Cylinder.098
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 119
 -2.55218 0.601844 -0.667158
@@ -139701,7 +139701,7 @@ OBJECT poly
 name "HeliceDEL_04"
 data 12
 Cylinder.022
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 119
 -2.48677 -0.8007 0.660359
@@ -142543,7 +142543,7 @@ OBJECT poly
 name "HeliceTRAS_02"
 data 12
 Cylinder.062
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 379
 3.24088 0.285925 -0.014458
@@ -145289,7 +145289,7 @@ OBJECT poly
 name "HeliceTRAS_03"
 data 12
 Cylinder.015
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 119
 2.84861 0.960395 -0.70086
@@ -146197,7 +146197,7 @@ OBJECT poly
 name "HeliceTRAS_04"
 data 12
 Cylinder.013
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 119
 2.84054 -0.367123 0.703185
@@ -147390,7 +147390,7 @@ OBJECT poly
 name "IntakeDorsal"
 data 12
 Cylinder.007
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 234
 1.19596 0.700084 -0.183839
@@ -149298,7 +149298,7 @@ OBJECT poly
 name "Interior"
 data 8
 Mesh.004
-texture "Textures/Interior.png"
+texture "Textures/Interior.webp"
 crease 30.000000
 numvert 1808
 -0.79043 0.054371 0.576848
@@ -164241,7 +164241,7 @@ OBJECT poly
 name "LuzAlrm_02"
 data 10
 Circle.039
-texture "Textures/Panel.png"
+texture "Textures/Panel.webp"
 crease 30.000000
 numvert 20
 -0.97218 -0.040444 0.380371
@@ -164385,7 +164385,7 @@ OBJECT poly
 name "LuzAlrm_03"
 data 10
 Circle.055
-texture "Textures/Panel.png"
+texture "Textures/Panel.webp"
 crease 30.000000
 numvert 20
 -0.970357 -0.041199 0.359971
@@ -164529,7 +164529,7 @@ OBJECT poly
 name "LuzAlrm_04"
 data 10
 Circle.056
-texture "Textures/Panel.png"
+texture "Textures/Panel.webp"
 crease 30.000000
 numvert 20
 -0.970357 -0.053199 0.380371
@@ -164673,7 +164673,7 @@ OBJECT poly
 name "LuzAlrm_05"
 data 10
 Circle.054
-texture "Textures/Panel.png"
+texture "Textures/Panel.webp"
 crease 30.000000
 numvert 20
 -0.97218 -0.052444 0.359971
@@ -172287,7 +172287,7 @@ OBJECT poly
 name "Overhead"
 data 8
 Cube.027
-texture "Textures/Interior.png"
+texture "Textures/Interior.webp"
 crease 30.000000
 numvert 1040
 -0.141009 0.590405 0.074737
@@ -189925,7 +189925,7 @@ OBJECT poly
 name "PanelParkBrake"
 data 8
 Cube.030
-texture "Textures/Interior.png"
+texture "Textures/Interior.webp"
 crease 30.000000
 numvert 78
 -0.92523 -0.334299 0.533321
@@ -190511,7 +190511,7 @@ OBJECT poly
 name "Panel_01"
 data 10
 Circle.011
-texture "Textures/Panel.png"
+texture "Textures/Panel.webp"
 crease 30.000000
 numvert 11296
 -0.976009 -0.021732 -0.229209
@@ -266534,7 +266534,7 @@ OBJECT poly
 name "Panel_02"
 data 9
 Plane.003
-texture "Textures/Panel.png"
+texture "Textures/Panel.webp"
 crease 30.000000
 numvert 12
 -0.976009 0.280927 0.098288
@@ -266590,7 +266590,7 @@ OBJECT poly
 name "Panel_03"
 data 8
 Tube.008
-texture "Textures/Panel.png"
+texture "Textures/Panel.webp"
 crease 30.000000
 numvert 36
 -0.961863 -0.165566 -0.532398
@@ -266747,7 +266747,7 @@ OBJECT poly
 name "Parasol"
 data 10
 Circle.013
-texture "Textures/Interior.png"
+texture "Textures/Interior.webp"
 crease 30.000000
 numvert 178
 -0.955355 0.178303 0.57598
@@ -271489,7 +271489,7 @@ OBJECT poly
 name "PedalDER1_02"
 data 8
 Cube.024
-texture "Textures/Panel.png"
+texture "Textures/Panel.webp"
 crease 30.000000
 numvert 40
 -1.08639 -0.490865 0.138787
@@ -275337,7 +275337,7 @@ OBJECT poly
 name "PedalDER2_02"
 data 8
 Cube.025
-texture "Textures/Panel.png"
+texture "Textures/Panel.webp"
 crease 30.000000
 numvert 40
 -1.08639 -0.490865 -0.441213
@@ -279185,7 +279185,7 @@ OBJECT poly
 name "PedalIZQ1_02"
 data 8
 Cube.013
-texture "Textures/Panel.png"
+texture "Textures/Panel.webp"
 crease 30.000000
 numvert 40
 -1.08639 -0.490865 0.304787
@@ -283033,7 +283033,7 @@ OBJECT poly
 name "PedalIZQ2_02"
 data 8
 Cube.026
-texture "Textures/Panel.png"
+texture "Textures/Panel.webp"
 crease 30.000000
 numvert 40
 -1.08639 -0.490865 -0.275213
@@ -286960,7 +286960,7 @@ OBJECT poly
 name "Pedestal_02"
 data 12
 Cylinder.124
-texture "Textures/Panel.png"
+texture "Textures/Panel.webp"
 crease 30.000000
 numvert 111
 -0.877242 -0.250675 0.015954
@@ -289796,7 +289796,7 @@ OBJECT poly
 name "Piso"
 data 5
 Plane
-texture "Textures/Interior.png"
+texture "Textures/Interior.webp"
 crease 30.000000
 numvert 22
 0.621281 -0.493381 0.535678
@@ -295643,7 +295643,7 @@ OBJECT poly
 name "PuertaINF"
 data 12
 Cylinder.071
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 39
 -0.617646 -0.391257 -0.580926
@@ -295895,7 +295895,7 @@ OBJECT poly
 name "PuertaINFinterior"
 data 12
 Cylinder.065
-texture "Textures/Interior.png"
+texture "Textures/Interior.webp"
 crease 30.000000
 numvert 93
 0.273676 -0.315513 -0.54241
@@ -296390,7 +296390,7 @@ OBJECT poly
 name "PuertaSUP"
 data 12
 Cylinder.070
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 79
 0.230626 -0.315513 -0.58241
@@ -296817,7 +296817,7 @@ OBJECT poly
 name "PuertaSUPinterior"
 data 12
 Cylinder.005
-texture "Textures/Interior.png"
+texture "Textures/Interior.webp"
 crease 30.000000
 numvert 289
 0.230626 -0.315513 -0.54241
@@ -298178,7 +298178,7 @@ OBJECT poly
 name "RuedaDEL"
 data 12
 Cylinder.090
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 962
 -1.48628 -0.994261 0.038252
@@ -304765,7 +304765,7 @@ OBJECT poly
 name "RuedaDER"
 data 12
 Cylinder.089
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 962
 0.939531 -0.880259 -1.30156
@@ -311352,7 +311352,7 @@ OBJECT poly
 name "RuedaIZQ"
 data 12
 Cylinder.008
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 962
 0.939531 -0.880259 1.39443
@@ -317939,7 +317939,7 @@ OBJECT poly
 name "SoporteAlaDER"
 data 4
 Tube
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 445
 0.442563 -0.513686 -0.660825
@@ -321009,7 +321009,7 @@ OBJECT poly
 name "SoporteAlaIZQ"
 data 8
 Tube.004
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 445
 0.442563 -0.513686 0.658807
@@ -324079,7 +324079,7 @@ OBJECT poly
 name "SoporteViseras"
 data 10
 Sphere.008
-texture "Textures/Interior.png"
+texture "Textures/Interior.webp"
 crease 30.000000
 numvert 402
 -0.476395 0.567059 0.401528
@@ -327146,7 +327146,7 @@ OBJECT poly
 name "Speaker"
 data 8
 Cube.028
-texture "Textures/Interior.png"
+texture "Textures/Interior.webp"
 crease 30.000000
 numvert 17
 -0.080257 0.579079 -0.033008
@@ -339163,7 +339163,7 @@ OBJECT poly
 name "Switch_FRONTFuel"
 data 8
 Tube.012
-texture "Textures/Interior.png"
+texture "Textures/Interior.webp"
 crease 30.000000
 numvert 284
 -0.364693 0.575823 -0.015957
@@ -341335,7 +341335,7 @@ OBJECT poly
 name "Switch_REARFuel"
 data 8
 Tube.013
-texture "Textures/Interior.png"
+texture "Textures/Interior.webp"
 crease 30.000000
 numvert 284
 -0.269324 0.575823 0.01394
@@ -344392,7 +344392,7 @@ OBJECT poly
 name "TapaPanel_03"
 data 10
 Circle.063
-texture "Textures/Panel.png"
+texture "Textures/Panel.webp"
 crease 30.000000
 numvert 290
 -0.976648 0.077887 -0.516496
@@ -346611,7 +346611,7 @@ OBJECT poly
 name "TimonDER"
 data 8
 Tube.006
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 92
 5.55352 1.4143 -1.56488
@@ -347144,7 +347144,7 @@ OBJECT poly
 name "TimonIZQ"
 data 8
 Tube.011
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 92
 5.47534 0.222328 1.51405
@@ -356221,7 +356221,7 @@ OBJECT poly
 name "TrenDER_01"
 data 8
 Tube.002
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 241
 0.885391 -0.595844 -0.248027
@@ -360449,7 +360449,7 @@ OBJECT poly
 name "TrenIZQ_01"
 data 8
 Tube.001
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 241
 0.83373 -1.08655 1.22349
@@ -383225,7 +383225,7 @@ OBJECT poly
 name "VideoCam_03"
 data 8
 Cube.005
-texture "Textures/livery_EC-ISD.png"
+texture "Textures/livery_EC-ISD.webp"
 crease 30.000000
 numvert 60
 -0.471526 -0.401527 0.569219
@@ -383674,7 +383674,7 @@ OBJECT poly
 name "ViseraDER_01"
 data 8
 Cube.020
-texture "Textures/Interior.png"
+texture "Textures/Interior.webp"
 crease 30.000000
 numvert 208
 -0.393184 0.556466 -0.349123
@@ -385575,7 +385575,7 @@ OBJECT poly
 name "ViseraIZQ_01"
 data 8
 Cube.019
-texture "Textures/Interior.png"
+texture "Textures/Interior.webp"
 crease 30.000000
 numvert 208
 -0.393184 0.556466 0.34695
@@ -390790,7 +390790,7 @@ OBJECT poly
 name "YokeDER_02"
 data 8
 Cube.022
-texture "Textures/Panel.png"
+texture "Textures/Panel.webp"
 crease 30.000000
 numvert 2021
 -0.837791 -0.027057 -0.298952
@@ -407115,7 +407115,7 @@ OBJECT poly
 name "YokeIZQ_02"
 data 8
 Cube.021
-texture "Textures/Panel.png"
+texture "Textures/Panel.webp"
 crease 30.000000
 numvert 2021
 -0.837791 -0.027057 0.321049
@@ -423235,7 +423235,7 @@ OBJECT poly
 name "TapaPanel_01a"
 data 10
 Circle.009
-texture "Textures/Panel.png"
+texture "Textures/Panel.webp"
 crease 30.000000
 numvert 40
 -0.97601 -0.137572 -0.512079

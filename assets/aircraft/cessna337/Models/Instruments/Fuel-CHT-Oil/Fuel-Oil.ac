@@ -7,7 +7,7 @@ OBJECT poly
 name "Base"
 data 4
 Cube
-texture "Fuel-Oil-base.png"
+texture "Fuel-Oil-base.webp"
 crease 30.000000
 numvert 76
 0.003 0.018 -0.094
@@ -418,7 +418,7 @@ OBJECT poly
 name "Meter"
 data 8
 Cube.002
-texture "Fuel-Oil-tex.png"
+texture "Fuel-Oil-tex.webp"
 crease 30.000000
 numvert 10
 0 -0.008 -0.09
@@ -465,7 +465,7 @@ OBJECT poly
 name "NeedleFuel_FRONT"
 data 8
 Cube.003
-texture "Fuel-Oil-base.png"
+texture "Fuel-Oil-base.webp"
 crease 30.000000
 numvert 6
 0.001 -0.011669 0.068151
@@ -494,7 +494,7 @@ OBJECT poly
 name "NeedleFuel_REAR"
 data 8
 Cube.004
-texture "Fuel-Oil-base.png"
+texture "Fuel-Oil-base.webp"
 crease 30.000000
 numvert 6
 0.001 -0.011669 0.023151
@@ -523,7 +523,7 @@ OBJECT poly
 name "NeedleOil_FRONT"
 data 8
 Cube.005
-texture "Fuel-Oil-base.png"
+texture "Fuel-Oil-base.webp"
 crease 30.000000
 numvert 6
 0.001 -0.011669 -0.021849
@@ -552,7 +552,7 @@ OBJECT poly
 name "NeedleOil_REAR"
 data 8
 Cube.006
-texture "Fuel-Oil-base.png"
+texture "Fuel-Oil-base.webp"
 crease 30.000000
 numvert 6
 0.001 -0.011669 -0.066849

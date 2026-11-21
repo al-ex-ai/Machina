@@ -8,7 +8,7 @@ name "Base"
 loc 0.000129224 0 0
 data 4
 Tube
-texture "ASI_Base.png"
+texture "ASI_Base.webp"
 crease 30.000000
 numvert 192
 0.00475 0.0285209 -0.0285219
@@ -3532,7 +3532,7 @@ name "Fondo"
 loc 0.000129224 0 0
 data 10
 Circle.001
-texture "ASI_Fondo.png"
+texture "ASI_Fondo.webp"
 crease 30.000000
 numvert 49
 0 -0.0207518 -0.0207518
@@ -3879,7 +3879,7 @@ name "Gauge"
 loc 0.000129224 0 0
 data 8
 Tube.001
-texture "ASI_Base.png"
+texture "ASI_Base.webp"
 crease 30.000000
 numvert 103
 0.0019 -0.00104595 0.00526015
@@ -4604,7 +4604,7 @@ name "Ring"
 loc 0.000129224 0 0
 data 8
 Tube.002
-texture "ASI_Base.png"
+texture "ASI_Base.webp"
 crease 30.000000
 numvert 96
 0.004275 0.0205352 -0.0205352

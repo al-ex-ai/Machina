@@ -7,7 +7,7 @@ name "Blender_export__HobbsMeter.ac"
 kids 8
 OBJECT poly
 name "Base_01"
-texture "HobbsMeter.png"
+texture "HobbsMeter.webp"
 texrep 1 1
 numvert 108
 0.0000000 0.0088970 -0.0194550
@@ -898,7 +898,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Base_02"
-texture "HobbsMeter.png"
+texture "HobbsMeter.webp"
 texrep 1 1
 numvert 30
 -0.0050000 -0.0035720 0.0127840
@@ -1089,7 +1089,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Base_02.001"
-texture "HobbsMeter.png"
+texture "HobbsMeter.webp"
 texrep 1 1
 numvert 20
 -0.0010000 0.0007590 -0.0124120
@@ -1232,7 +1232,7 @@ kids 0
 OBJECT poly
 name "Counter_0"
 loc -0.0069998 -0.0012500 -0.0048750
-texture "HobbsMeter.png"
+texture "HobbsMeter.webp"
 texrep 1 1
 numvert 40
 0.0041148 0.0056630 -0.0018580
@@ -1420,7 +1420,7 @@ kids 0
 OBJECT poly
 name "Counter_1"
 loc -0.0069998 -0.0012500 -0.0009640
-texture "HobbsMeter.png"
+texture "HobbsMeter.webp"
 texrep 1 1
 numvert 40
 0.0021628 0.0066570 0.0018580
@@ -1608,7 +1608,7 @@ kids 0
 OBJECT poly
 name "Counter_10"
 loc -0.0069998 -0.0012500 0.0029480
-texture "HobbsMeter.png"
+texture "HobbsMeter.webp"
 texrep 1 1
 numvert 40
 0.0056628 0.0041140 -0.0018580
@@ -1796,7 +1796,7 @@ kids 0
 OBJECT poly
 name "Counter_100"
 loc -0.0069997 -0.0012500 0.0068590
-texture "HobbsMeter.png"
+texture "HobbsMeter.webp"
 texrep 1 1
 numvert 40
 0.0021627 0.0066570 0.0018580
@@ -1984,7 +1984,7 @@ kids 0
 OBJECT poly
 name "Counter_1000"
 loc -0.0069998 -0.0012500 0.0107705
-texture "HobbsMeter.png"
+texture "HobbsMeter.webp"
 texrep 1 1
 numvert 40
 0.0056628 0.0041140 -0.0018575

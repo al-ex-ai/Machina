@@ -10,7 +10,7 @@ name "Blender_export__BendixKing_KT76A.ac"
 kids 15
 OBJECT poly
 name "Base"
-texture "BendixKing_KT76A.png"
+texture "BendixKing_KT76A.webp"
 texrep 1 1
 numvert 20
 0.0000000 0.0204570 0.0787420
@@ -1039,7 +1039,7 @@ kids 0
 OBJECT poly
 name "Digit_01"
 loc 0.0001821 0.0097605 0.0095832
-texture "BendixKing_KT76A.png"
+texture "BendixKing_KT76A.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0033252 -0.0033250
@@ -1058,7 +1058,7 @@ kids 0
 OBJECT poly
 name "Digit_02"
 loc 0.0001821 0.0097605 -0.0127833
-texture "BendixKing_KT76A.png"
+texture "BendixKing_KT76A.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0033252 -0.0033250
@@ -1077,7 +1077,7 @@ kids 0
 OBJECT poly
 name "Digit_03"
 loc 0.0001821 0.0097605 -0.0353137
-texture "BendixKing_KT76A.png"
+texture "BendixKing_KT76A.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0033252 -0.0033250
@@ -1096,7 +1096,7 @@ kids 0
 OBJECT poly
 name "Digit_04"
 loc 0.0001821 0.0097605 -0.0577066
-texture "BendixKing_KT76A.png"
+texture "BendixKing_KT76A.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0033252 -0.0033250
@@ -1114,7 +1114,7 @@ refs 4
 kids 0
 OBJECT poly
 name "IdentLightOff"
-texture "BendixKing_KT76A.png"
+texture "BendixKing_KT76A.webp"
 texrep 1 1
 numvert 20
 0.0006310 0.0041190 0.0304390
@@ -1256,7 +1256,7 @@ refs 3
 kids 0
 OBJECT poly
 name "IdentLightOn"
-texture "BendixKing_KT76A.png"
+texture "BendixKing_KT76A.webp"
 texrep 1 1
 numvert 20
 0.0006310 0.0041190 0.0304390
@@ -1398,7 +1398,7 @@ refs 3
 kids 0
 OBJECT poly
 name "PerillaCod_01"
-texture "BendixKing_KT76A.png"
+texture "BendixKing_KT76A.webp"
 texrep 1 1
 numvert 73
 0.0066770 0.0034320 0.0061920
@@ -1958,7 +1958,7 @@ refs 3
 kids 0
 OBJECT poly
 name "PerillaCod_02"
-texture "BendixKing_KT76A.png"
+texture "BendixKing_KT76A.webp"
 texrep 1 1
 numvert 73
 0.0066770 0.0034320 -0.0164080
@@ -2518,7 +2518,7 @@ refs 3
 kids 0
 OBJECT poly
 name "PerillaCod_03"
-texture "BendixKing_KT76A.png"
+texture "BendixKing_KT76A.webp"
 texrep 1 1
 numvert 73
 0.0066770 0.0034320 -0.0390080
@@ -3078,7 +3078,7 @@ refs 3
 kids 0
 OBJECT poly
 name "PerillaCod_04"
-texture "BendixKing_KT76A.png"
+texture "BendixKing_KT76A.webp"
 texrep 1 1
 numvert 73
 0.0066770 0.0034320 -0.0618080
@@ -3638,7 +3638,7 @@ refs 3
 kids 0
 OBJECT poly
 name "PerillaON"
-texture "BendixKing_KT76A.png"
+texture "BendixKing_KT76A.webp"
 texrep 1 1
 numvert 73
 0.0066930 0.0057100 0.0552200
@@ -4199,7 +4199,7 @@ kids 0
 OBJECT poly
 name "PowerLightOff"
 loc 0.0000000 0.0005386 0.0016157
-texture "BendixKing_KT76A.png"
+texture "BendixKing_KT76A.webp"
 texrep 1 1
 numvert 97
 0.0008970 -0.0143570 0.0200000
@@ -4960,7 +4960,7 @@ kids 0
 OBJECT poly
 name "PowerLightOn"
 loc 0.0000000 0.0005386 0.0016157
-texture "BendixKing_KT76A.png"
+texture "BendixKing_KT76A.webp"
 texrep 1 1
 numvert 97
 0.0008970 -0.0143570 0.0200000

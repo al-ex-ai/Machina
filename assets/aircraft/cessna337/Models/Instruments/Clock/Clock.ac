@@ -7,7 +7,7 @@ OBJECT poly
 name "Base"
 data 8
 Tube.001
-texture "Clock-base.png"
+texture "Clock-base.webp"
 crease 30.000000
 numvert 305
 0.003 -0.019692 0.019692
@@ -2562,7 +2562,7 @@ OBJECT poly
 name "Knob"
 data 8
 Cylinder
-texture "Clock-base.png"
+texture "Clock-base.webp"
 crease 30.000000
 numvert 121
 0.006 -0.015464 0.018464
@@ -3340,7 +3340,7 @@ OBJECT poly
 name "Meter"
 data 6
 Circle
-texture "Clock-tex.png"
+texture "Clock-tex.webp"
 crease 30.000000
 numvert 49
 1e-006 -0.018141 -0.01814
@@ -3686,7 +3686,7 @@ OBJECT poly
 name "Needle_Hours"
 data 8
 Tube.004
-texture "Clock-base.png"
+texture "Clock-base.webp"
 crease 30.000000
 numvert 6
 0.0015 0.012659 0
@@ -3715,7 +3715,7 @@ OBJECT poly
 name "Needle_Minutes"
 data 8
 Tube.003
-texture "Clock-base.png"
+texture "Clock-base.webp"
 crease 30.000000
 numvert 6
 0.001 0.018 0
@@ -3744,7 +3744,7 @@ OBJECT poly
 name "Needle_Seconds"
 data 4
 Tube
-texture "Clock-base.png"
+texture "Clock-base.webp"
 crease 30.000000
 numvert 6
 0.002 0.017793 -0.0006

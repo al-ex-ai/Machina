@@ -7,7 +7,7 @@ OBJECT poly
 name "Base"
 data 10
 Sphere.002
-texture "AlcorDualEGT-base.png"
+texture "AlcorDualEGT-base.webp"
 crease 30.000000
 numvert 162
 0.003 0.009192 0.01537
@@ -1423,7 +1423,7 @@ OBJECT poly
 name "Meter"
 data 6
 Circle
-texture "AlcorDualEGT-tex.png"
+texture "AlcorDualEGT-tex.webp"
 crease 30.000000
 numvert 49
 1e-006 0.026064 0.026064
@@ -1769,7 +1769,7 @@ OBJECT poly
 name "Needle_FRONT"
 data 5
 Plane
-texture "AlcorDualEGT-base.png"
+texture "AlcorDualEGT-base.webp"
 crease 30.000000
 numvert 5
 0.0007 -0.014794 0.012993
@@ -1796,7 +1796,7 @@ OBJECT poly
 name "Needle_REAR"
 data 9
 Plane.002
-texture "AlcorDualEGT-base.png"
+texture "AlcorDualEGT-base.webp"
 crease 30.000000
 numvert 5
 0.0007 -0.013739 -0.011742
@@ -1823,7 +1823,7 @@ OBJECT poly
 name "Sphere"
 data 10
 Sphere.004
-texture "AlcorDualEGT-base.png"
+texture "AlcorDualEGT-base.webp"
 crease 30.000000
 numvert 130
 0.004596 0 0.026

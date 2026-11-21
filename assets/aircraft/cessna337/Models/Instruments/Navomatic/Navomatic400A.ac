@@ -7,7 +7,7 @@ OBJECT poly
 name "Base"
 data 4
 Cube
-texture "Navomatic400A.png"
+texture "Navomatic400A.webp"
 crease 30.000000
 numvert 240
 0.00116 -0.025991 0.059395
@@ -4220,7 +4220,7 @@ OBJECT poly
 name "Knob_Trim"
 data 8
 Cube.007
-texture "Navomatic400A.png"
+texture "Navomatic400A.webp"
 crease 30.000000
 numvert 245
 0.011301 0 0.00116

@@ -7,7 +7,7 @@ OBJECT poly
 name "Aircraft"
 data 10
 Circle.001
-texture "RCA15AK-base.png"
+texture "RCA15AK-base.webp"
 crease 30.000000
 numvert 54
 0.001259 -0.000349 -0.008232
@@ -349,7 +349,7 @@ OBJECT poly
 name "Base"
 data 6
 Sphere
-texture "RCA15AK-base.png"
+texture "RCA15AK-base.webp"
 crease 30.000000
 numvert 240
 0.002917 -0.03933 0
@@ -1942,7 +1942,7 @@ OBJECT poly
 name "Card"
 data 10
 Sphere.002
-texture "RCA15AK-tex.png"
+texture "RCA15AK-tex.webp"
 crease 30.000000
 numvert 49
 0 0 0
@@ -2633,7 +2633,7 @@ OBJECT poly
 name "Flag"
 data 10
 Sphere.005
-texture "RCA15AK-base.png"
+texture "RCA15AK-base.webp"
 crease 30.000000
 numvert 20
 0.000544 0.034457 0.005863
@@ -2777,7 +2777,7 @@ OBJECT poly
 name "HDGmarker"
 data 10
 Sphere.004
-texture "RCA15AK-base.png"
+texture "RCA15AK-base.webp"
 crease 30.000000
 numvert 56
 0.0015 0.029193 0.00227
@@ -3132,7 +3132,7 @@ OBJECT poly
 name "Knob_01"
 data 10
 Sphere.006
-texture "RCA15AK-base.png"
+texture "RCA15AK-base.webp"
 crease 30.000000
 numvert 97
 0.021 -0.027 0.031
@@ -3718,7 +3718,7 @@ OBJECT poly
 name "Knob_02"
 data 10
 Sphere.001
-texture "RCA15AK-base.png"
+texture "RCA15AK-base.webp"
 crease 30.000000
 numvert 97
 0.021 -0.027 -0.031
@@ -4304,7 +4304,7 @@ OBJECT poly
 name "Marks"
 data 8
 Cube.006
-texture "RCA15AK-base.png"
+texture "RCA15AK-base.webp"
 crease 30.000000
 numvert 74
 0.0007 0 0.03144

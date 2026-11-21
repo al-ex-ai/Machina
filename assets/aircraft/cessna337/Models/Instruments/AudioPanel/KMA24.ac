@@ -8,7 +8,7 @@ OBJECT poly
 name "Base"
 data 4
 Cube
-texture "KMA24.png"
+texture "KMA24.webp"
 crease 30.000000
 numvert 64
 0 0.016257 0.078742
@@ -441,7 +441,7 @@ OBJECT poly
 name "Knob"
 data 12
 Cylinder.001
-texture "KMA24.png"
+texture "KMA24.webp"
 crease 30.000000
 numvert 121
 0.009065 0.004227 -0.059578
@@ -1387,7 +1387,7 @@ OBJECT poly
 name "Mkr_A"
 data 8
 Cube.005
-texture "KMA24.png"
+texture "KMA24.webp"
 crease 30.000000
 numvert 4
 0 0.003251 0.072241
@@ -1407,7 +1407,7 @@ OBJECT poly
 name "Mkr_O"
 data 8
 Cube.008
-texture "KMA24.png"
+texture "KMA24.webp"
 crease 30.000000
 numvert 4
 0 0.003251 0.066384
@@ -1427,7 +1427,7 @@ OBJECT poly
 name "Mkr_M"
 data 8
 Cube.009
-texture "KMA24.png"
+texture "KMA24.webp"
 crease 30.000000
 numvert 4
 0 -0.009754 0.072241

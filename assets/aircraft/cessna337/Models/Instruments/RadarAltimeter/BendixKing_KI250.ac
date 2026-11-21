@@ -8,7 +8,7 @@ OBJECT poly
 name "Base_01"
 data 6
 Sphere
-texture "KI250-base.png"
+texture "KI250-base.webp"
 crease 30.000000
 numvert 359
 0 -0.005031 0.011845
@@ -2451,7 +2451,7 @@ OBJECT poly
 name "Base_02"
 data 10
 Sphere.003
-texture "KI250-tex.png"
+texture "KI250-tex.webp"
 crease 30.000000
 numvert 49
 -0.002 0 0
@@ -3237,7 +3237,7 @@ OBJECT poly
 name "DH_Alrm"
 data 10
 Sphere.004
-texture "KI250-base.png"
+texture "KI250-base.webp"
 crease 30.000000
 numvert 145
 -0.0015 0.023 0.008
@@ -4351,7 +4351,7 @@ OBJECT poly
 name "DH_Marker"
 data 9
 Plane.001
-texture "KI250-base.png"
+texture "KI250-base.webp"
 crease 30.000000
 numvert 54
 -0.001 0.031866 0.002775
@@ -4735,7 +4735,7 @@ OBJECT poly
 name "Knob"
 data 10
 Sphere.009
-texture "KI250-base.png"
+texture "KI250-base.webp"
 crease 30.000000
 numvert 97
 0.01 -0.026095 0.0331
@@ -5321,7 +5321,7 @@ OBJECT poly
 name "Needle"
 data 5
 Plane
-texture "KI250-base.png"
+texture "KI250-base.webp"
 crease 30.000000
 numvert 30
 -0.001 0.025471 0
