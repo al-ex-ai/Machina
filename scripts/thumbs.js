@@ -1,4 +1,5 @@
-// Prerenders gallery thumbnails so visitors never download full models just to see the catalog.
+// Prerenders gallery thumbnails so visitors never download full models just to see the catalog,
+// and a side profile per model at one shared scale for the true-scale line-up.
 // Renders each listed model with the app's own thumbnail renderer in a headless browser and writes
 // assets/thumbs/<id>.webp plus data/thumbs.json ({ id: { hash, parts } }).
 //
@@ -77,6 +78,19 @@ const renderInPage = file => `(async () => {
   return c.toDataURL('image/webp', 0.88);
 })()`;
 
+// Side profile at the shared scale, for the true-scale line-up (assets/thumbs/<id>-side.webp).
+const profileInPage = file => `(async () => {
+  const { profile } = await import('/src/thumbs.js');
+  const model = await fetch('/data/${file}').then(r => r.json());
+  const img = new Image();
+  img.src = await profile(model);
+  await img.decode();
+  const c = document.createElement('canvas');
+  c.width = img.naturalWidth; c.height = img.naturalHeight;
+  c.getContext('2d').drawImage(img, 0, 0);
+  return c.toDataURL('image/webp', 0.9);
+})()`;
+
 const { models } = loadCatalog();
 const only = process.argv.slice(2);
 const todo = only.length ? models.filter(m => only.includes(m.id)) : models;
@@ -110,6 +124,9 @@ try {
     if (!url?.startsWith('data:image/webp')) throw new Error(`${m.id}: the browser did not return a WebP image`);
     const bytes = Buffer.from(url.split(',')[1], 'base64');
     writeFileSync(join(OUT, `${m.id}.webp`), bytes);
+    const side = await page.evaluate(profileInPage(m._file));
+    if (!side?.startsWith('data:image/webp')) throw new Error(`${m.id}: no profile image`);
+    writeFileSync(join(OUT, `${m.id}-side.webp`), Buffer.from(side.split(',')[1], 'base64'));
     manifest[m.id] = { hash: modelHash(m._file), parts: partCount(m) };
     console.log(`${m.id.padEnd(24)} ${(bytes.length / 1024).toFixed(0).padStart(4)} KB  ${((Date.now() - t0) / 1000).toFixed(1)} s`);
   }

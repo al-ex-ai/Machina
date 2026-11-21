@@ -65,6 +65,45 @@ function render(model, obj) {
   return url;
 }
 
+/** Pixels per meter of every profile image, so profiles placed side by side are to scale. */
+export const PROFILE_PX_PER_M = 12;
+
+/**
+ * Side profile for the true-scale line-up: orthographic, nose to the left, transparent, at
+ * PROFILE_PX_PER_M. The image size follows the machine, so its width is its length to scale.
+ */
+function renderProfile(obj) {
+  ctx ??= setup();
+  const { renderer, scene, sun, ground } = ctx;
+  ground.visible = false;
+  scene.add(obj);
+  const box = new THREE.Box3().setFromObject(obj);
+  const size = box.getSize(new THREE.Vector3()), center = box.getCenter(new THREE.Vector3());
+  const k = PROFILE_PX_PER_M, w = Math.max(8, Math.ceil(size.x * k)), h = Math.max(8, Math.ceil(size.y * k));
+  const cam = new THREE.OrthographicCamera(-w / k / 2, w / k / 2, h / k / 2, -h / k / 2, 0.1, size.z * 4 + 10);
+  cam.position.set(center.x, center.y, box.max.z + size.z + 5);
+  cam.lookAt(center);
+  sun.position.set(center.x - size.x, center.y + size.x, box.max.z + size.x);
+  sun.target.position.copy(center);
+  sun.castShadow = false;
+  renderer.setSize(w, h, false);
+  renderer.render(scene, cam);
+  const url = renderer.domElement.toDataURL('image/png');
+  renderer.setSize(W, H, false);
+  sun.castShadow = true;
+  ground.visible = true;
+  scene.remove(obj);
+  return url;
+}
+
+/** Profile data URL for a model (not cached: used once per model by the thumbnail script). */
+export async function profile(model) {
+  let obj = null;
+  if (model.asset) obj = await loadAssetModel(model).then(o => finalize(o, model)).catch(() => null);
+  obj ??= buildModel(model);
+  return renderProfile(obj);
+}
+
 /** Thumbnail data URL for a model, rendered once and cached. Renders run one at a time. */
 export function thumbnail(model) {
   if (cache.has(model.id)) return cache.get(model.id);
