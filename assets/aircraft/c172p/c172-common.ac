@@ -37,7 +37,7 @@ name "Antenna_ADF"
 data 10
 Mesh.47008
 crease 180.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 225
 0.6394 -0.89001 0.01573
@@ -1808,7 +1808,7 @@ name "Antenna_VOR"
 data 10
 Circle.004
 crease 180.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 48
 5.49929 0.9879 0.03387
@@ -2136,7 +2136,7 @@ name "ELTAntenna"
 data 12
 Cylinder.022
 crease 110.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 282
 2.39168 -0.00338 0.00353
@@ -4154,7 +4154,7 @@ name "MarkerAntenna"
 data 8
 Mesh.006
 crease 180.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 30
 2.38274 -0.86043 0.00972
@@ -4335,7 +4335,7 @@ name "TransponderAntenna"
 data 10
 Mesh.10248
 crease 180.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 30
 0.48655 -0.94308 0.00821
@@ -4516,7 +4516,7 @@ name "VHFAntenna"
 data 12
 Cylinder.012
 crease 85.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 1536
 0.73885 0.46647 -0.36873
@@ -16436,7 +16436,7 @@ name "BeaconOff"
 data 12
 Cylinder.021
 crease 30.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 224
 5.49894 1.07936 0.0296
@@ -18049,7 +18049,7 @@ name "BeaconOffX"
 data 18
 BeaconOffXmesh.001
 crease 40.0
-texture "lights.png"
+texture "lights.webp"
 texrep 1 1
 numvert 8
 1.02 0.95778 0.14212
@@ -18084,7 +18084,7 @@ name "baggagedoorexterior"
 data 15
 baggagedoor.001
 crease 65.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 45
 1.45499 -0.16667 0.47855
@@ -18305,7 +18305,7 @@ name "baggagedoorhandle"
 data 8
 Cube.022
 crease 180.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 18
 1.78598 -0.46099 0.45153
@@ -18420,7 +18420,7 @@ name "leftdoor"
 data 8
 Mesh.074
 crease 65.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 133
 -0.10498 -0.63518 0.50491
@@ -19225,7 +19225,7 @@ name "leftdoorhandle"
 data 8
 Cube.013
 crease 180.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 18
 0.70714 -0.1974 0.51932
@@ -19340,7 +19340,7 @@ name "oildoor"
 data 10
 Mesh.42820
 crease 61.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 42
 -0.95653 0.15451 -0.3233
@@ -19597,7 +19597,7 @@ name "rightdoor"
 data 8
 Mesh.075
 crease 65.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 133
 -0.10531 -0.6353 -0.50584
@@ -20402,7 +20402,7 @@ name "rightdoorhandle"
 data 8
 Cube.021
 crease 180.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 18
 0.70754 -0.197 -0.51506
@@ -20517,7 +20517,7 @@ name "windowframeleftext"
 data 9
 Plane.016
 crease 85.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 37
 -0.00102 -0.01809 0.52729
@@ -20683,7 +20683,7 @@ name "windowframerightext"
 data 9
 Plane.023
 crease 85.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 37
 0.78708 -0.09122 -0.51692
@@ -20852,7 +20852,7 @@ name "airvent"
 data 10
 Mesh.37554
 crease 61.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 111
 -0.50378 -0.21808 -0.52132
@@ -21494,7 +21494,7 @@ name "airventhole"
 data 10
 Mesh.37555
 crease 0.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 19
 -0.57571 -0.29446 -0.52229
@@ -21572,7 +21572,7 @@ name "Axle"
 data 8
 Mesh.001
 crease 180.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 18
 -1.0973 -1.16381 -0.08011
@@ -21752,7 +21752,7 @@ name "BottomLink"
 data 6
 frt.d1
 crease 180.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 64
 -1.02328 -0.9372 0.03079
@@ -22327,7 +22327,7 @@ name "charniere3"
 data 8
 Mesh.191
 crease 85.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 28
 -0.16409 -0.48443 0.52726
@@ -22523,7 +22523,7 @@ name "charniere4"
 data 8
 Mesh.141
 crease 85.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 28
 -0.1669 -0.48731 -0.52699
@@ -22719,7 +22719,7 @@ name "Exhaust"
 data 7
 Exhaust
 crease 85.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 32
 -1.32399 -0.71728 -0.27201
@@ -22985,7 +22985,7 @@ name "fairing1"
 data 9
 Plane.019
 crease 85.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 331
 -1.17802 -1.01695 0.03294
@@ -25584,7 +25584,7 @@ name "fairing2"
 data 9
 Plane.021
 crease 85.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 491
 0.65934 -1.14617 1.01315
@@ -29342,7 +29342,7 @@ name "fairing3"
 data 9
 Plane.020
 crease 85.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 491
 0.65922 -1.13698 -1.01765
@@ -33100,7 +33100,7 @@ name "FuelCapPort"
 data 9
 Mesh.7959
 crease 180.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 27
 0.20588 0.5094 0.7965
@@ -33305,7 +33305,7 @@ name "fuselage"
 data 15
 baggagedoor.002
 crease 65.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 1736
 1.73839 0.16717 -0
@@ -45755,7 +45755,7 @@ name "fuselage_cowling"
 data 8
 Mesh.011
 crease 61.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 541
 -0.96787 -0.79216 -0.10043
@@ -49416,7 +49416,7 @@ name "fuselage_cowling_top"
 data 8
 Mesh.012
 crease 61.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 135
 -1.06944 -0.01173 0.51391
@@ -50255,7 +50255,7 @@ name "fuselageexhausthole"
 data 10
 Mesh.42819
 crease 61.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 97
 -1.31423 -0.64631 -0.25901
@@ -50750,7 +50750,7 @@ name "handle"
 data 12
 Cylinder.013
 crease 180.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 640
 -0.68872 0.11514 -0.50748
@@ -55572,7 +55572,7 @@ name "LeftWheel"
 data 9
 Mesh.4697
 crease 180.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 482
 0.52961 -1.06261 1.04382
@@ -59430,7 +59430,7 @@ name "LeftWheelBrake"
 data 10
 Mesh.26772
 crease 180.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 72
 0.43206 -1.16916 1.05207
@@ -59848,7 +59848,7 @@ name "LeftWheelStrut"
 data 14
 LeftWheelStrut
 crease 85.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 283
 0.69157 -0.79878 0.48465
@@ -61569,7 +61569,7 @@ name "NoseWheel"
 data 9
 Mesh.5070
 crease 180.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 514
 -1.11492 -1.36792 0.00739
@@ -65613,7 +65613,7 @@ name "NoseWheelStrut"
 data 9
 Plane.009
 crease 85.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 168
 -1.02861 -1.09882 -0.09352
@@ -66911,7 +66911,7 @@ name "OilCap"
 data 10
 Mesh.28511
 crease 128.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 146
 -0.88005 0.12219 -0.32643
@@ -67726,7 +67726,7 @@ name "oilcompartment"
 data 10
 Mesh.42821
 crease 61.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 138
 -0.8791 0.08353 -0.31617
@@ -68493,7 +68493,7 @@ name "oilcompartmenthole"
 data 10
 Mesh.35953
 crease 85.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 96
 -0.88007 0.12393 -0.31802
@@ -68858,7 +68858,7 @@ name "PropellerCowlPlugs"
 data 8
 Mesh.027
 crease 80.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 122
 -1.83692 0.79523 0.41034
@@ -69800,7 +69800,7 @@ name "radi_box"
 data 8
 Mesh.013
 crease 35.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 114
 -1.59582 -0.55555 0
@@ -70610,7 +70610,7 @@ name "radiator"
 data 9
 Mesh.7452
 crease 180.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 4
 -1.59466 -0.5579 0.04711
@@ -70631,7 +70631,7 @@ name "RightWheel"
 data 8
 Mesh.020
 crease 180.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 482
 0.52961 -1.06261 -1.04599
@@ -74489,7 +74489,7 @@ name "RightWheelBrake"
 data 10
 Mesh.26773
 crease 180.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 72
 0.43206 -1.16916 -1.05258
@@ -74907,7 +74907,7 @@ name "RightWheelStrut"
 data 18
 LeftWheelStrut.002
 crease 86.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 283
 0.68623 -0.78726 -0.49544
@@ -76628,7 +76628,7 @@ name "TopLink"
 data 6
 frt.d2
 crease 180.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 64
 -0.98945 -0.75389 0.04309
@@ -77203,7 +77203,7 @@ name "vent"
 data 10
 Mesh.29122
 crease 180.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 98
 -0.67687 -0.07741 -0.54593
@@ -77857,7 +77857,7 @@ name "venthole"
 data 10
 Mesh.33747
 crease 180.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 21
 -0.67706 -0.07733 -0.54463
@@ -78807,7 +78807,7 @@ name "carpethole"
 data 10
 Mesh.42668
 crease 180.0
-texture "interior.png"
+texture "interior.webp"
 texrep 1 1
 numvert 146
 -0.52723 -0.67246 -0.1643
@@ -79559,7 +79559,7 @@ name "gloveboxdoor"
 data 9
 Plane.046
 crease 85.0
-texture "panel.png"
+texture "panel.webp"
 texrep 1 1
 numvert 16
 -0.37213 -0.18444 -0.33279
@@ -79663,7 +79663,7 @@ name "gloveboxlock"
 data 18
 AircondControl.003
 crease 180.0
-texture "panel_parts.png"
+texture "panel_parts.webp"
 texrep 1 1
 numvert 209
 -0.36325 -0.19729 -0.37871
@@ -81715,7 +81715,7 @@ name "Panel_0"
 data 8
 Mesh.025
 crease 180.0
-texture "panel_parts.png"
+texture "panel_parts.webp"
 texrep 1 1
 numvert 258
 -0.33059 0.17177 -0.37667
@@ -83538,7 +83538,7 @@ name "Panel_1"
 data 8
 Mesh.026
 crease 180.0
-texture "panel_parts.png"
+texture "panel_parts.webp"
 texrep 1 1
 numvert 27
 -0.59602 0.05901 0.49595
@@ -83691,7 +83691,7 @@ name "SeatMounts.0"
 data 10
 Mesh.48897
 crease 180.0
-texture "interior.png"
+texture "interior.webp"
 texrep 1 1
 numvert 2904
 0.04139 -0.57569 -0.35142
@@ -100778,7 +100778,7 @@ name "SeatMounts.1"
 data 8
 Mesh.022
 crease 180.0
-texture "interior.png"
+texture "interior.webp"
 texrep 1 1
 numvert 2904
 0.04139 -0.57569 0.11072
@@ -117865,7 +117865,7 @@ name "SeatMounts.2"
 data 8
 Mesh.010
 crease 180.0
-texture "interior.png"
+texture "interior.webp"
 texrep 1 1
 numvert 1408
 0.72978 -0.70657 -0.28976
@@ -125769,7 +125769,7 @@ name "Propeller"
 data 8
 Mesh.120
 crease 80.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 122
 -1.83692 0.79523 0.41034
@@ -126711,7 +126711,7 @@ name "Propeller.Fast"
 data 9
 Plane.036
 crease 1.0
-texture "prop.png"
+texture "prop.webp"
 texrep 1 1
 numvert 288
 -1.79087 0.87771 0.18016
@@ -128801,7 +128801,7 @@ name "Spinner"
 data 8
 Cone.004
 crease 125.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 225
 -2.14067 -0.0519 -0.00127
@@ -130575,7 +130575,7 @@ name "RearNavLight"
 data 8
 Mesh.076
 crease 85.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 33
 6.0833 0.98825 -0.0127
@@ -130834,7 +130834,7 @@ name "rudder_1"
 data 8
 Mesh.008
 crease 65.0
-texture "tail.png"
+texture "tail.webp"
 texrep 1 1
 numvert 117
 6.07291 0.98459 0.00021
@@ -131638,7 +131638,7 @@ name "ruddercableleft"
 data 10
 Circle.009
 crease 180.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 8
 4.9424 -0.5416 0.05629
@@ -131698,7 +131698,7 @@ name "ruddercablelefthinge"
 data 10
 Circle.003
 crease 40.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 554
 4.93264 -0.55055 0.06136
@@ -136118,7 +136118,7 @@ name "ruddercableports"
 data 10
 Mesh.20476
 crease 65.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 60
 4.81721 -0.56197 0.06444
@@ -136458,7 +136458,7 @@ name "ruddercableportshole"
 data 10
 Mesh.33748
 crease 65.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 20
 4.81742 -0.56076 0.06444
@@ -136574,7 +136574,7 @@ name "ruddercableright"
 data 10
 Circle.011
 crease 180.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 8
 4.94173 -0.54094 -0.05621
@@ -136634,7 +136634,7 @@ name "ruddercablerighthinge"
 data 10
 Circle.007
 crease 180.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 554
 4.93447 -0.55171 -0.06159
@@ -141057,7 +141057,7 @@ name "TieDownLeft"
 data 12
 Cylinder.009
 crease 180.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 512
 0.11229 0.3482 2.24762
@@ -145009,7 +145009,7 @@ name "TieDownRight"
 data 12
 Cylinder.014
 crease 180.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 512
 0.10408 0.34824 -2.24679
@@ -148961,7 +148961,7 @@ name "TieDownTail"
 data 12
 Cylinder.015
 crease 180.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 512
 4.69916 -0.68324 -0.00112
@@ -157028,7 +157028,7 @@ name "Beacon"
 data 10
 Circle.013
 crease 180.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 128
 5.47843 1.05636 -0
@@ -157530,7 +157530,7 @@ name "BeaconMount"
 data 12
 Cylinder.020
 crease 180.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 96
 5.49805 1.0389 0.03043
@@ -158084,7 +158084,7 @@ name "elevatorleft"
 data 9
 Plane.008
 crease 65.0
-texture "tail.png"
+texture "tail.webp"
 texrep 1 1
 numvert 37
 4.78308 -0.4597 1.66563
@@ -158393,7 +158393,7 @@ name "elevatorright"
 data 9
 Plane.033
 crease 65.0
-texture "tail.png"
+texture "tail.webp"
 texrep 1 1
 numvert 48
 4.88079 -0.45871 -1.66563
@@ -158773,7 +158773,7 @@ name "elevatortrim"
 data 9
 Plane.034
 crease 65.0
-texture "tail.png"
+texture "tail.webp"
 texrep 1 1
 numvert 12
 5.47922 -0.44055 -0.40373
@@ -158848,7 +158848,7 @@ name "hstab"
 data 9
 Plane.022
 crease 65.0
-texture "tail.png"
+texture "tail.webp"
 texrep 1 1
 numvert 115
 4.21388 -0.38765 0
@@ -159807,7 +159807,7 @@ name "vstab.001"
 data 8
 Mesh.014
 crease 65.0
-texture "tail.png"
+texture "tail.webp"
 texrep 1 1
 numvert 110
 5.66451 0.80082 0.04205
@@ -160654,7 +160654,7 @@ name "courtesyoff"
 data 5
 Torus
 crease 180.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 400
 0.73941 0.34726 1.7382
@@ -163274,7 +163274,7 @@ name "courtesyon-l"
 data 9
 Torus.005
 crease 180.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 4
 0.76556 0.32387 1.61693
@@ -163295,7 +163295,7 @@ name "courtesyon-r"
 data 9
 Torus.004
 crease 180.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 4
 0.76738 0.32615 -1.68192
@@ -163316,7 +163316,7 @@ name "FuelCapStarboard"
 data 9
 Mesh.9694
 crease 180.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 27
 0.20613 0.50907 -0.79958
@@ -163521,7 +163521,7 @@ name "fuelportport"
 data 10
 Mesh.36130
 crease 61.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 128
 0.21895 0.45854 0.82101
@@ -164107,7 +164107,7 @@ name "fuelportstarboard"
 data 10
 Mesh.36129
 crease 61.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 128
 0.2198 0.45854 -0.77575
@@ -164693,7 +164693,7 @@ name "fuelportstarboardhole"
 data 10
 Mesh.36131
 crease 61.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 64
 0.21939 0.49989 -0.7769
@@ -165026,7 +165026,7 @@ name "fuelportstarporthole"
 data 10
 Mesh.36132
 crease 61.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 64
 0.21853 0.49989 0.81986
@@ -165359,7 +165359,7 @@ name "fuelvent"
 data 12
 Cylinder.016
 crease 180.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 256
 0.19289 0.3672 2.13275
@@ -167263,7 +167263,7 @@ name "landinglight"
 data 9
 Plane.010
 crease 180.0
-texture "lights.png"
+texture "lights.webp"
 texrep 1 1
 numvert 17
 -0.34325 0.76851 2.68474
@@ -167386,7 +167386,7 @@ name "LeftNavLight"
 data 8
 Mesh.064
 crease 85.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 123
 0.14861 0.52012 5.65901
@@ -168211,7 +168211,7 @@ name "lightlanding"
 data 9
 Torus.001
 crease 85.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 336
 -0.04346 0.46515 2.91832
@@ -170624,7 +170624,7 @@ name "lighttaxi"
 data 9
 Torus.002
 crease 85.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 336
 -0.04499 0.46336 2.80513
@@ -173037,7 +173037,7 @@ name "PitotTube"
 data 10
 Circle.006
 crease 180.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 384
 -0.08 0.42551 1.5389
@@ -175895,7 +175895,7 @@ name "RightNavLight"
 data 10
 Mesh.42144
 crease 85.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 123
 0.15001 0.5248 -5.66047
@@ -176720,7 +176720,7 @@ name "taxilight"
 data 9
 Plane.048
 crease 180.0
-texture "lights.png"
+texture "lights.webp"
 texrep 1 1
 numvert 17
 -0.30555 0.69284 2.56928
@@ -176843,7 +176843,7 @@ name "wing_0"
 data 9
 Plane.012
 crease 85.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 21
 -0.01108 0.43734 2.68221
@@ -176936,7 +176936,7 @@ name "flaps"
 data 9
 Plane.017
 crease 61.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 360
 0.76015 0.34116 -0.51767
@@ -179368,7 +179368,7 @@ name "fuelcompartment"
 data 9
 Plane.025
 crease 61.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 128
 0.20548 0.52348 -0.85542
@@ -180024,7 +180024,7 @@ name "leftaileron"
 data 9
 Plane.004
 crease 61.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 8
 1.15285 0.37815 2.61617
@@ -180068,7 +180068,7 @@ name "rightaileron"
 data 9
 Plane.018
 crease 61.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 6
 1.15285 0.37816 -2.61617
@@ -180110,7 +180110,7 @@ name "wing_1C"
 data 9
 Plane.037
 crease 85.0
-texture "interior.png"
+texture "interior.webp"
 texrep 1 1
 numvert 6
 0.1148 0.5347 0
@@ -180140,7 +180140,7 @@ name "wing_1Ledge"
 data 9
 Plane.027
 crease 61.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 24
 0.08739 0.53042 0.51756
@@ -180258,7 +180258,7 @@ name "wing_1Redge"
 data 9
 Plane.035
 crease 61.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 24
 0.08739 0.53042 -0.51756
@@ -180376,7 +180376,7 @@ name "wing_center"
 data 9
 Plane.003
 crease 61.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 196
 0.32808 0.51086 0.51756
@@ -181093,7 +181093,7 @@ name "wing_leading_edge_center"
 data 9
 Plane.038
 crease 61.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 176
 0.08739 0.53042 0.51756
@@ -181753,7 +181753,7 @@ name "wing_leading_edge_left"
 data 9
 Plane.042
 crease 61.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 43
 0.08872 0.53511 2.61617
@@ -181948,7 +181948,7 @@ name "wing_leading_edge_right"
 data 9
 Plane.045
 crease 61.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 22
 0.08872 0.54679 -2.61617
@@ -182050,7 +182050,7 @@ name "wing_left"
 data 9
 Plane.014
 crease 61.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 206
 0.12867 0.62091 5.46446
@@ -183432,7 +183432,7 @@ name "wing_right"
 data 9
 Plane.015
 crease 61.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 193
 0.12867 0.62092 -5.46446
@@ -184726,7 +184726,7 @@ name "wingventhole"
 data 9
 Plane.039
 crease 65.0
-texture "fuselage.png"
+texture "fuselage.webp"
 texrep 1 1
 numvert 202
 -0.15166 0.46024 -0.54287

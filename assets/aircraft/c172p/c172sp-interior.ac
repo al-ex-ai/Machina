@@ -19,7 +19,7 @@ name "AirVent_left-fg1000"
 data 8
 Mesh.183
 crease 180.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 90
 -0.01234 0.48182 0.51739
@@ -721,7 +721,7 @@ name "AirVent_right-fg1000"
 data 8
 Mesh.138
 crease 180.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 57
 -0.02104 0.49071 -0.4545
@@ -1101,7 +1101,7 @@ name "AltStaticAir-fg1000"
 data 13
 LightKnob.002
 crease 0.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 224
 -0.37946 -0.18921 0.0516
@@ -2493,7 +2493,7 @@ name "AltInner"
 data 17
 AltInner.mesh.001
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 65
 -0.36101 -0.00188 0.02022
@@ -2984,7 +2984,7 @@ name "AltOuter"
 data 17
 AltOuter.mesh.001
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 128
 -0.36302 0.0003 0.02022
@@ -3794,7 +3794,7 @@ name "AP.L0"
 data 14
 AP.L0.mesh.002
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 241
 -0.36315 0.13081 0.0325
@@ -5585,7 +5585,7 @@ name "AP.L0.0"
 data 14
 AP.L0.mesh.000
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 6
 -0.36288 0.14023 0.03001
@@ -5634,7 +5634,7 @@ name "AP.L1"
 data 14
 AP.L1.mesh.002
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 241
 -0.36315 0.11928 0.03229
@@ -7425,7 +7425,7 @@ name "AP.L1.1"
 data 14
 AP.L0.mesh.005
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 6
 -0.36288 0.12908 0.03001
@@ -7474,7 +7474,7 @@ name "AP.L10"
 data 14
 AP.L4.mesh.001
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 241
 -0.36315 0.01628 0.03232
@@ -9265,7 +9265,7 @@ name "AP.L10.10"
 data 14
 AP.L0.mesh.023
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 6
 -0.36288 0.02536 0.03001
@@ -9314,7 +9314,7 @@ name "AP.L2"
 data 14
 AP.L2.mesh.002
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 241
 -0.36315 0.10833 0.03232
@@ -11105,7 +11105,7 @@ name "AP.L2.2"
 data 14
 AP.L0.mesh.006
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 6
 -0.36288 0.11741 0.03001
@@ -11154,7 +11154,7 @@ name "AP.L3"
 data 14
 AP.L3.mesh.002
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 241
 -0.36315 0.0963 0.03235
@@ -12945,7 +12945,7 @@ name "AP.L3.3"
 data 14
 AP.L0.mesh.009
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 6
 -0.36288 0.10553 0.03001
@@ -12994,7 +12994,7 @@ name "AP.L4"
 data 14
 AP.L4.mesh.002
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 241
 -0.36315 0.08482 0.03228
@@ -14785,7 +14785,7 @@ name "AP.L4.4"
 data 14
 AP.L0.mesh.010
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 6
 -0.36288 0.09357 0.03001
@@ -14834,7 +14834,7 @@ name "AP.L5"
 data 14
 AP.L5.mesh.002
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 241
 -0.36315 0.07382 0.03238
@@ -16625,7 +16625,7 @@ name "AP.L5.5"
 data 14
 AP.L0.mesh.013
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 6
 -0.36288 0.08275 0.03001
@@ -16674,7 +16674,7 @@ name "AP.L6"
 data 14
 AP.L0.mesh.001
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 241
 -0.36315 0.06227 0.03238
@@ -18465,7 +18465,7 @@ name "AP.L6.6"
 data 14
 AP.L0.mesh.014
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 6
 -0.36288 0.07162 0.03001
@@ -18514,7 +18514,7 @@ name "AP.L7"
 data 14
 AP.L1.mesh.001
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 241
 -0.36315 0.05079 0.03237
@@ -20305,7 +20305,7 @@ name "AP.L7.7"
 data 14
 AP.L0.mesh.017
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 6
 -0.36288 0.06008 0.03001
@@ -20354,7 +20354,7 @@ name "AP.L8"
 data 14
 AP.L2.mesh.001
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 241
 -0.36315 0.03979 0.03237
@@ -22145,7 +22145,7 @@ name "AP.L8.8"
 data 14
 AP.L0.mesh.018
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 6
 -0.36288 0.04885 0.03001
@@ -22194,7 +22194,7 @@ name "AP.L9"
 data 14
 AP.L3.mesh.001
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 241
 -0.36315 0.02776 0.03234
@@ -23985,7 +23985,7 @@ name "AP.L9.9"
 data 14
 AP.L0.mesh.020
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 6
 -0.36288 0.03717 0.03001
@@ -24034,7 +24034,7 @@ name "AP.R0"
 data 14
 AP.R0.mesh.002
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 241
 -0.36315 0.13081 0.01785
@@ -25825,7 +25825,7 @@ name "AP.R0.0"
 data 14
 AP.L0.mesh.003
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 6
 -0.36288 0.14023 0.01528
@@ -25874,7 +25874,7 @@ name "AP.R1"
 data 14
 AP.R1.mesh.002
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 241
 -0.36315 0.11933 0.01785
@@ -27665,7 +27665,7 @@ name "AP.R1.1"
 data 14
 AP.L0.mesh.004
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 6
 -0.36288 0.12908 0.01528
@@ -27714,7 +27714,7 @@ name "AP.R2"
 data 14
 AP.R2.mesh.002
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 241
 -0.36315 0.10833 0.01785
@@ -29505,7 +29505,7 @@ name "AP.R2.2"
 data 14
 AP.L0.mesh.007
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 6
 -0.36288 0.11741 0.01528
@@ -29554,7 +29554,7 @@ name "AP.R3"
 data 14
 AP.R3.mesh.002
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 241
 -0.36315 0.0963 0.01785
@@ -31345,7 +31345,7 @@ name "AP.R3.3"
 data 14
 AP.L0.mesh.008
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 6
 -0.36288 0.10553 0.01528
@@ -31394,7 +31394,7 @@ name "AP.R4"
 data 14
 AP.R4.mesh.002
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 241
 -0.36315 0.08482 0.01785
@@ -33185,7 +33185,7 @@ name "AP.R4.4"
 data 14
 AP.L0.mesh.011
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 6
 -0.36288 0.09357 0.01528
@@ -33234,7 +33234,7 @@ name "AP.R5"
 data 14
 AP.R5.mesh.002
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 241
 -0.36315 0.07382 0.01785
@@ -35025,7 +35025,7 @@ name "AP.R5.5"
 data 14
 AP.L0.mesh.012
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 6
 -0.36288 0.08275 0.01528
@@ -35074,7 +35074,7 @@ name "AP.R6"
 data 14
 AP.R0.mesh.001
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 241
 -0.36315 0.06227 0.01785
@@ -36865,7 +36865,7 @@ name "AP.R6.6"
 data 14
 AP.L0.mesh.015
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 6
 -0.36288 0.07162 0.01528
@@ -36914,7 +36914,7 @@ name "AP.R7"
 data 14
 AP.R1.mesh.001
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 241
 -0.36315 0.05079 0.01785
@@ -38705,7 +38705,7 @@ name "AP.R7.7"
 data 14
 AP.L0.mesh.016
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 6
 -0.36288 0.06008 0.01528
@@ -38754,7 +38754,7 @@ name "AP.R8"
 data 14
 AP.R2.mesh.001
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 241
 -0.36315 0.02769 0.01785
@@ -40545,7 +40545,7 @@ name "AP.R8.8"
 data 14
 AP.L0.mesh.021
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 6
 -0.36288 0.03712 0.01528
@@ -40594,7 +40594,7 @@ name "AP.R9"
 data 14
 AP.R4.mesh.001
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 241
 -0.36315 0.01628 0.01785
@@ -42385,7 +42385,7 @@ name "AP.R9.9"
 data 14
 AP.L0.mesh.022
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 6
 -0.36288 0.02531 0.01528
@@ -42434,7 +42434,7 @@ name "panel"
 data 14
 Panel.mesh.000
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 76
 -0.3655 -0.04417 0.0385
@@ -42917,7 +42917,7 @@ name "VolNAV"
 data 15
 VolNAV.mesh.001
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 65
 -0.36287 -0.02748 0.02038
@@ -43408,7 +43408,7 @@ name "AvionicsSwitch-fg1000"
 data 16
 RockerSwitch.000
 crease 0.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 10
 -0.34884 -0.0208 0.35465
@@ -43499,7 +43499,7 @@ name "AvionicsSwitch2-fg1000"
 data 16
 RockerSwitch.001
 crease 0.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 10
 -0.34883 -0.02066 0.34245
@@ -43590,7 +43590,7 @@ name "baggagedoorinterior-fg1000"
 data 8
 Mesh.508
 crease 180.0
-texture "interior-fg1000.png"
+texture "interior-fg1000.webp"
 texrep 1 1
 numvert 84
 1.82522 -0.72847 0.34753
@@ -44175,7 +44175,7 @@ name "bolts-fg1000"
 data 6
 Circle
 crease 3.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 2052
 -0.36422 0.15355 0.35013
@@ -60064,7 +60064,7 @@ name "adc-ahrs-avn_breaker-fg1000"
 data 12
 Breakers.027
 crease 40.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 33
 -0.3718 -0.23224 0.16815
@@ -60339,7 +60339,7 @@ name "adc-ahrs-ess_breaker-fg1000"
 data 12
 Breakers.028
 crease 40.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 33
 -0.3718 -0.19566 0.16806
@@ -60614,7 +60614,7 @@ name "alt-field_breaker-fg1000"
 data 12
 Breakers.003
 crease 40.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 33
 -0.37138 -0.19604 0.35243
@@ -60889,7 +60889,7 @@ name "audio_breaker-fg1000"
 data 12
 Breakers.031
 crease 40.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 33
 -0.3718 -0.26843 0.10489
@@ -61164,7 +61164,7 @@ name "autopilot_breaker-fg1000"
 data 12
 Breakers.024
 crease 40.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 33
 -0.3718 -0.26844 0.0835
@@ -61439,7 +61439,7 @@ name "avn1_breaker-fg1000"
 data 12
 Breakers.010
 crease 40.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 33
 -0.37138 -0.23165 0.24611
@@ -61714,7 +61714,7 @@ name "avn2_breaker-fg1000"
 data 12
 Breakers.000
 crease 40.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 33
 -0.37138 -0.26975 0.24583
@@ -61989,7 +61989,7 @@ name "bcnlt_breaker-fg1000"
 data 12
 Breakers.017
 crease 40.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 33
 -0.37138 -0.23168 0.33106
@@ -62264,7 +62264,7 @@ name "BreakersBase-fg1000"
 data 12
 Breakers.007
 crease 40.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 1953
 -0.36883 -0.26903 0.28514
@@ -78177,7 +78177,7 @@ name "comm1_breaker-fg1000"
 data 12
 Breakers.022
 crease 40.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 33
 -0.3718 -0.19564 0.1256
@@ -78452,7 +78452,7 @@ name "comm2_breaker-fg1000"
 data 12
 Breakers.023
 crease 40.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 33
 -0.3718 -0.26845 0.12605
@@ -78727,7 +78727,7 @@ name "dme-adf_breaker-fg1000"
 data 12
 Breakers.030
 crease 40.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 33
 -0.3718 -0.23224 0.10455
@@ -79002,7 +79002,7 @@ name "fis_breaker-fg1000"
 data 12
 Breakers.005
 crease 40.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 33
 -0.3718 -0.23221 0.12566
@@ -79277,7 +79277,7 @@ name "flaps_breaker-fg1000"
 data 12
 Breakers.011
 crease 40.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 33
 -0.37138 -0.2316 0.26707
@@ -79552,7 +79552,7 @@ name "fuel-pump_breaker-fg1000"
 data 12
 Breakers.008
 crease 40.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 33
 -0.37138 -0.23165 0.35221
@@ -79827,7 +79827,7 @@ name "instr_breaker-fg1000"
 data 12
 Breakers.013
 crease 40.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 33
 -0.37138 -0.2698 0.26719
@@ -80102,7 +80102,7 @@ name "intlt_breaker-fg1000"
 data 12
 Breakers.014
 crease 40.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 33
 -0.37138 -0.23167 0.28824
@@ -80377,7 +80377,7 @@ name "landing_breaker-fg1000"
 data 12
 Breakers.016
 crease 40.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 33
 -0.37138 -0.23163 0.30973
@@ -80652,7 +80652,7 @@ name "mfd_breaker-fg1000"
 data 12
 Breakers.025
 crease 40.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 33
 -0.3718 -0.26837 0.18958
@@ -80927,7 +80927,7 @@ name "nav1-eng-avn_breaker-fg1000"
 data 12
 Breakers.020
 crease 40.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 33
 -0.3718 -0.23229 0.14671
@@ -81202,7 +81202,7 @@ name "nav1-eng-ess_breaker-fg1000"
 data 12
 Breakers.019
 crease 40.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 33
 -0.3718 -0.19571 0.14662
@@ -81477,7 +81477,7 @@ name "nav2_breaker-fg1000"
 data 12
 Breakers.021
 crease 40.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 33
 -0.3718 -0.26848 0.14705
@@ -81752,7 +81752,7 @@ name "navlt_breaker-fg1000"
 data 12
 Breakers.015
 crease 40.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 33
 -0.37138 -0.26962 0.3309
@@ -82027,7 +82027,7 @@ name "pfd-avn_breaker-fg1000"
 data 12
 Breakers.009
 crease 40.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 33
 -0.3718 -0.23219 0.18924
@@ -82302,7 +82302,7 @@ name "pfd-ess_breaker-fg1000"
 data 12
 Breakers.006
 crease 40.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 33
 -0.3718 -0.1956 0.18915
@@ -82577,7 +82577,7 @@ name "pitot-heat_breaker-fg1000"
 data 12
 Breakers.012
 crease 40.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 33
 -0.37138 -0.26953 0.35263
@@ -82852,7 +82852,7 @@ name "stdby-batt_breaker-fg1000"
 data 12
 Breakers.004
 crease 40.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 33
 -0.3718 -0.19561 0.083
@@ -83127,7 +83127,7 @@ name "stdby-ndlts_breaker-fg1000"
 data 12
 Breakers.029
 crease 40.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 33
 -0.3718 -0.19566 0.10447
@@ -83402,7 +83402,7 @@ name "strobe_breaker-fg1000"
 data 12
 Breakers.018
 crease 40.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 33
 -0.37138 -0.26981 0.2875
@@ -83677,7 +83677,7 @@ name "taxi_breaker-fg1000"
 data 12
 Breakers.001
 crease 40.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 33
 -0.37138 -0.26957 0.30994
@@ -83952,7 +83952,7 @@ name "warn_breaker-fg1000"
 data 12
 Breakers.002
 crease 40.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 33
 -0.37138 -0.19593 0.3314
@@ -84227,7 +84227,7 @@ name "xpndr_breaker-fg1000"
 data 12
 Breakers.026
 crease 40.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 33
 -0.3718 -0.26843 0.16849
@@ -84502,7 +84502,7 @@ name "CabinAir-fg1000"
 data 18
 AircondControl.008
 crease 3.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 258
 -0.45672 -0.24455 -0.26549
@@ -86722,7 +86722,7 @@ name "CabinAirMounts-fg1000"
 data 18
 AircondControl.005
 crease 3.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 132
 -0.39281 -0.18894 -0.2713
@@ -88080,7 +88080,7 @@ name "CabinHeat-fg1000"
 data 18
 AircondControl.004
 crease 3.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 258
 -0.45672 -0.19475 -0.26549
@@ -90300,7 +90300,7 @@ name "CeilingSpeakerFG1000"
 data 8
 Cube.018
 crease 75.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 576
 0.1718 0.45925 0.06836
@@ -94022,7 +94022,7 @@ name "dome_light_copilot"
 data 12
 Cylinder.021
 crease 40.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 640
 0.23699 0.43633 -0.02409
@@ -98739,7 +98739,7 @@ name "dome_light_pilot"
 data 12
 Cylinder.020
 crease 40.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 640
 0.23521 0.43792 0.02412
@@ -103456,7 +103456,7 @@ name "dome_lighton_copilot"
 data 12
 Cylinder.017
 crease 40.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 192
 0.23791 0.43565 -0.02971
@@ -104813,7 +104813,7 @@ name "dome_lighton_pilot"
 data 12
 Cylinder.016
 crease 40.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 192
 0.23593 0.43688 0.03035
@@ -106173,7 +106173,7 @@ name "doorhandleint_left-fg1000"
 data 8
 Mesh.503
 crease 180.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 17
 -0.00961 -0.2446 0.47607
@@ -106315,7 +106315,7 @@ name "doorhandleint_right-fg1000"
 data 9
 Mesh.2484
 crease 180.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 17
 -0.00868 -0.2446 -0.4767
@@ -106457,7 +106457,7 @@ name "windlocket_left-fg1000"
 data 8
 Mesh.345
 crease 180.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 29
 0.3358 -0.04665 0.47543
@@ -106651,7 +106651,7 @@ name "windlocket_right-fg1000"
 data 8
 Mesh.004
 crease 180.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 29
 0.3358 -0.04195 -0.47778
@@ -106845,7 +106845,7 @@ name "windlocketbak_left-fg1000"
 data 10
 Circle.002
 crease 180.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 64
 0.33565 -0.03371 0.51771
@@ -107213,7 +107213,7 @@ name "windlocketbak_right-fg1000"
 data 10
 Circle.001
 crease 180.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 64
 0.3357 -0.05534 -0.5199
@@ -107581,7 +107581,7 @@ name "windowframeleftint-fg1000"
 data 5
 Plane
 crease 85.0
-texture "interior-fg1000.png"
+texture "interior-fg1000.webp"
 texrep 1 1
 numvert 38
 -0.00111 -0.01813 0.52185
@@ -107755,7 +107755,7 @@ name "windowframerightint-fg1000"
 data 9
 Plane.024
 crease 85.0
-texture "interior-fg1000.png"
+texture "interior-fg1000.webp"
 texrep 1 1
 numvert 38
 0.44687 -0.06665 -0.5172
@@ -107929,7 +107929,7 @@ name "ElevatorTrimPos-fg1000"
 data 8
 Cube.001
 crease 180.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 8
 -0.33491 -0.43546 0.06272
@@ -107989,7 +107989,7 @@ name "FuelSelectorBoth-fg1000"
 data 8
 Cube.003
 crease 180.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 20
 -0.24758 -0.62816 0.00395
@@ -108145,7 +108145,7 @@ name "FuelSelectorFace-fg1000"
 data 12
 Cylinder.000
 crease 180.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 69
 -0.2425 -0.63205 -0.00114
@@ -108464,7 +108464,7 @@ name "FuelSelectorLeft-fg1000"
 data 8
 Cube.002
 crease 180.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 20
 -0.23739 -0.62816 0.00395
@@ -108620,7 +108620,7 @@ name "FuelSelectorOff-fg1000"
 data 8
 Cube.004
 crease 180.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 20
 -0.23739 -0.62816 -0.00623
@@ -108776,7 +108776,7 @@ name "FuelSelectorPanel-fg1000"
 data 12
 Cylinder.008
 crease 180.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 141
 -0.18812 -0.65221 -0.05553
@@ -109478,7 +109478,7 @@ name "FuelSelectorRight-fg1000"
 data 8
 Cube.006
 crease 180.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 20
 -0.24758 -0.62816 -0.00623
@@ -109634,7 +109634,7 @@ name "GenSwitch-fg1000"
 data 13
 GenSwitch.001
 crease 0.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 10
 -0.34915 -0.02125 0.40265
@@ -110175,7 +110175,7 @@ name "backseat_left-fg1000"
 data 13
 backseat_left
 crease 180.0
-texture "interior-fg1000.png"
+texture "interior-fg1000.webp"
 texrep 1 1
 numvert 124
 0.68868 -0.61404 0.29934
@@ -111154,7 +111154,7 @@ name "carpet-fg1000"
 data 10
 Mesh.42478
 crease 180.0
-texture "interior-fg1000.png"
+texture "interior-fg1000.webp"
 texrep 1 1
 numvert 146
 0.44329 -0.69792 0.42756
@@ -111497,7 +111497,7 @@ name "chassis-fg1000"
 data 8
 Mesh.002
 crease 180.0
-texture "interior-fg1000.png"
+texture "interior-fg1000.webp"
 texrep 1 1
 numvert 1441
 -0.66336 -0.0139 0.4756
@@ -122109,7 +122109,7 @@ name "doorint_left-fg1000"
 data 8
 Mesh.015
 crease 180.0
-texture "interior-fg1000.png"
+texture "interior-fg1000.webp"
 texrep 1 1
 numvert 307
 0.31911 -0.27569 0.46999
@@ -124297,7 +124297,7 @@ name "doorint_right-fg1000"
 data 9
 Mesh.2483
 crease 180.0
-texture "interior-fg1000.png"
+texture "interior-fg1000.webp"
 texrep 1 1
 numvert 300
 0.31921 -0.27499 -0.47044
@@ -126478,7 +126478,7 @@ name "doorintstrapleft-fg1000"
 data 8
 Mesh.005
 crease 180.0
-texture "interior-fg1000.png"
+texture "interior-fg1000.webp"
 texrep 1 1
 numvert 80
 0.24301 -0.10221 0.47786
@@ -127134,7 +127134,7 @@ name "doorintstrapright-fg1000"
 data 8
 Mesh.009
 crease 180.0
-texture "interior-fg1000.png"
+texture "interior-fg1000.webp"
 texrep 1 1
 numvert 78
 0.24047 -0.10409 -0.47954
@@ -127774,7 +127774,7 @@ name "Firewall-fg1000"
 data 8
 Mesh.017
 crease 180.0
-texture "interior-fg1000.png"
+texture "interior-fg1000.webp"
 texrep 1 1
 numvert 39
 -0.77055 -0.19853 0.46886
@@ -127996,7 +127996,7 @@ name "pilotseat_left-fg1000"
 data 8
 Cube.012
 crease 180.0
-texture "interior-fg1000.png"
+texture "interior-fg1000.webp"
 texrep 1 1
 numvert 154
 0.33272 -0.46388 0.38499
@@ -129175,7 +129175,7 @@ name "pilotseat_right-fg1000"
 data 8
 Cube.026
 crease 180.0
-texture "interior-fg1000.png"
+texture "interior-fg1000.webp"
 texrep 1 1
 numvert 154
 0.33271 -0.46423 -0.36302
@@ -130354,7 +130354,7 @@ name "visorbaseleft-fg1000"
 data 12
 Cylinder.019
 crease 40.0
-texture "interior-fg1000.png"
+texture "interior-fg1000.webp"
 texrep 1 1
 numvert 80
 0.10508 0.4757 0.40395
@@ -130816,7 +130816,7 @@ name "visorbaseright-fg1000"
 data 12
 Cylinder.018
 crease 40.0
-texture "interior-fg1000.png"
+texture "interior-fg1000.webp"
 texrep 1 1
 numvert 80
 0.10508 0.4757 -0.41358
@@ -131278,7 +131278,7 @@ name "visorleft-fg1000"
 data 8
 Cube.028
 crease 180.0
-texture "interior-fg1000.png"
+texture "interior-fg1000.webp"
 texrep 1 1
 numvert 100
 0.19475 0.44051 0.38059
@@ -132004,7 +132004,7 @@ name "visorright-fg1000"
 data 8
 Cube.029
 crease 180.0
-texture "interior-fg1000.png"
+texture "interior-fg1000.webp"
 texrep 1 1
 numvert 100
 0.19445 0.44447 -0.01951
@@ -132730,7 +132730,7 @@ name "visorrodleft-fg1000"
 data 12
 Cylinder.003
 crease 180.0
-texture "interior-fg1000.png"
+texture "interior-fg1000.webp"
 texrep 1 1
 numvert 256
 0.09916 0.45918 0.39838
@@ -134634,7 +134634,7 @@ name "visorrodright-fg1000"
 data 12
 Cylinder.007
 crease 180.0
-texture "interior-fg1000.png"
+texture "interior-fg1000.webp"
 texrep 1 1
 numvert 256
 0.10539 0.4578 -0.39883
@@ -136541,7 +136541,7 @@ name "knob-avionics"
 data 13
 knob-foam.004
 crease 30.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 97
 -0.35971 -0.1329 0.3613
@@ -137236,7 +137236,7 @@ name "knob-pedestal"
 data 13
 knob-foam.003
 crease 30.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 97
 -0.35971 -0.1329 0.3981
@@ -137931,7 +137931,7 @@ name "knob-stbyind"
 data 13
 knob-foam.005
 crease 30.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 97
 -0.35971 -0.09027 0.3613
@@ -138626,7 +138626,7 @@ name "knob-swcb"
 data 13
 knob-foam.001
 crease 30.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 97
 -0.35971 -0.09027 0.3981
@@ -139321,7 +139321,7 @@ name "knobL"
 data 8
 Cube.017
 crease 75.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 64
 0.29003 0.43206 0.03064
@@ -139689,7 +139689,7 @@ name "knobR"
 data 8
 Cube.016
 crease 75.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 64
 0.29001 0.4322 -0.04285
@@ -140057,7 +140057,7 @@ name "LeftBag-fg1000"
 data 9
 Plane.059
 crease 180.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 208
 -0.37428 -0.35598 0.46568
@@ -141746,7 +141746,7 @@ name "toggle-beacon"
 data 15
 toggle-foam.001
 crease 30.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 66
 -0.3652 -0.08754 0.3395
@@ -142254,7 +142254,7 @@ name "toggle-cabin-pwr"
 data 15
 toggle-foam.005
 crease 30.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 66
 -0.36466 -0.12834 0.29314
@@ -142762,7 +142762,7 @@ name "toggle-fuel"
 data 15
 toggle-foam.011
 crease 30.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 66
 -0.3572 -0.13321 0.33989
@@ -143270,7 +143270,7 @@ name "toggle-land"
 data 15
 toggle-foam.000
 crease 30.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 66
 -0.36514 -0.08732 0.31675
@@ -143778,7 +143778,7 @@ name "toggle-nav"
 data 15
 toggle-foam.002
 crease 30.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 66
 -0.36478 -0.0874 0.29314
@@ -144286,7 +144286,7 @@ name "toggle-pitot"
 data 15
 toggle-foam.006
 crease 30.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 66
 -0.36501 -0.12823 0.31675
@@ -144794,7 +144794,7 @@ name "toggle-stbybatt"
 data 15
 toggle-foam.007
 crease 30.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 66
 -0.36538 0.01907 0.38706
@@ -145302,7 +145302,7 @@ name "toggle-strobe"
 data 15
 toggle-foam.003
 crease 30.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 66
 -0.36493 -0.08738 0.27005
@@ -145810,7 +145810,7 @@ name "toggle-taxi"
 data 15
 toggle-foam.004
 crease 30.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 66
 -0.36481 -0.12832 0.27004
@@ -146318,7 +146318,7 @@ name "magsw"
 data 5
 magsw
 crease 45.0
-texture "interior-fg1000.png"
+texture "interior-fg1000.webp"
 texrep 1 1
 numvert 249
 -0.3582 -0.22631 0.43829
@@ -149025,7 +149025,7 @@ name "MasterSwitch-fg1000"
 data 16
 MasterSwitch.001
 crease 0.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 10
 -0.3487 -0.02107 0.39062
@@ -149116,7 +149116,7 @@ name "mike-fg1000"
 data 4
 mike
 crease 180.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 35
 -0.36665 -0.35275 -0.05284
@@ -149334,7 +149334,7 @@ name "mike_chord-fg1000"
 data 10
 mike_chord
 crease 180.0
-texture "interior-fg1000.png"
+texture "interior-fg1000.webp"
 texrep 1 1
 numvert 274
 -0.34422 -0.45735 -0.05284
@@ -151480,7 +151480,7 @@ name "mike_mount-fg1000"
 data 12
 Cylinder.010
 crease 180.0
-texture "interior-fg1000.png"
+texture "interior-fg1000.webp"
 texrep 1 1
 numvert 56
 -0.35122 -0.40073 -0.06119
@@ -151927,7 +151927,7 @@ name "Mixture-fg1000"
 data 12
 Cylinder.026
 crease 3.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 378
 -0.36886 -0.23782 -0.0961
@@ -155047,7 +155047,7 @@ name "MixtureMount-fg1000"
 data 12
 Cylinder.025
 crease 3.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 130
 -0.37075 -0.23201 -0.10249
@@ -156243,7 +156243,7 @@ name "Panel"
 data 14
 Panel.mesh.002
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 168
 -0.36575 -0.15289 0.43642
@@ -156959,7 +156959,7 @@ name "panel-dome"
 data 8
 Cube.015
 crease 75.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 64
 0.29785 0.43709 0.02868
@@ -157103,7 +157103,7 @@ name "panel_1_1-fg1000"
 data 9
 Plane.096
 crease 1.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 228
 -0.35834 -0.31159 0.46923
@@ -158675,7 +158675,7 @@ name "panel_1_glass"
 data 9
 Plane.011
 crease 3.0
-texture "panelglass.png"
+texture "panelglass.webp"
 texrep 1 1
 numvert 494
 -0.36563 0.16576 0.11913
@@ -161510,7 +161510,7 @@ name "ParkingBrake-fg1000"
 data 12
 Cylinder.004
 crease 3.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 129
 -0.56245 -0.31539 0.20055
@@ -162513,7 +162513,7 @@ name "Pedestal-fg1000"
 data 8
 Mesh.007
 crease 180.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 232
 -0.33823 -0.51811 -0.00114
@@ -164577,7 +164577,7 @@ name "RudderTrimBase-fg1000"
 data 8
 Mesh.019
 crease 180.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 73
 -0.33832 -0.4947 -0.00116
@@ -165051,7 +165051,7 @@ name "RudderTrimKnob-fg1000"
 data 8
 Mesh.021
 crease 180.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 490
 -0.33821 -0.56126 0.00453
@@ -169113,7 +169113,7 @@ name "switchbase"
 data 14
 Panel.mesh.004
 crease 61.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 20
 -0.36306 -0.05399 0.41626
@@ -169245,7 +169245,7 @@ name "testlamp"
 data 11
 toggle1.003
 crease 30.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 240
 -0.36329 0.01895 0.35615
@@ -170941,7 +170941,7 @@ name "Throttle-fg1000"
 data 12
 Cylinder.024
 crease 3.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 354
 -0.37102 -0.23803 -0.03828
@@ -173929,7 +173929,7 @@ name "ThrottleMount-fg1000"
 data 12
 Cylinder.023
 crease 3.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 175
 -0.36906 -0.24046 -0.0485
@@ -175472,7 +175472,7 @@ name "togglebase"
 data 11
 toggle1.000
 crease 30.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 2400
 -0.36275 -0.09167 0.33668
@@ -191781,7 +191781,7 @@ name "TrimWheel-fg1000"
 data 10
 Circle.016
 crease 180.0
-texture "panel-fg1000.png"
+texture "panel-fg1000.webp"
 texrep 1 1
 numvert 11632
 -0.49288 -0.44443 0.04265
@@ -288197,7 +288197,7 @@ name "wing_1L-fg1000"
 data 9
 Plane.028
 crease 85.0
-texture "interior-fg1000.png"
+texture "interior-fg1000.webp"
 texrep 1 1
 numvert 14
 0.08739 0.53042 0.51124
@@ -288253,7 +288253,7 @@ name "wing_1R-fg1000"
 data 9
 Plane.031
 crease 85.0
-texture "interior-fg1000.png"
+texture "interior-fg1000.webp"
 texrep 1 1
 numvert 14
 0.08739 0.53042 -0.51218
