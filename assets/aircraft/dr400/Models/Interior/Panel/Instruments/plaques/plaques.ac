@@ -7,7 +7,7 @@ name "plaques"
 loc 0.116 -0.071 -0.033
 data 7
 plaques
-texture "plaques.png"
+texture "plaques.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 32

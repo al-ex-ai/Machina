@@ -7,7 +7,7 @@ name "manche"
 loc 1.497 0.244689 -0
 data 6
 manche
-texture "handle.png"
+texture "handle.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 1264

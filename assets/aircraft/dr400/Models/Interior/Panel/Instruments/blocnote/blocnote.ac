@@ -8,7 +8,7 @@ name "cahier"
 loc 0 0 -0
 data 6
 cahier
-texture "blocknote.png"
+texture "blocknote.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 13
@@ -88,7 +88,7 @@ name "check1"
 loc 0 0 -0
 data 6
 check1
-texture "blocknote.png"
+texture "blocknote.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -110,7 +110,7 @@ name "check2"
 loc 0 0 -0
 data 6
 check2
-texture "blocknote.png"
+texture "blocknote.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -132,7 +132,7 @@ name "minestylo2"
 loc 0 0 -0
 data 10
 minestylo2
-texture "blocknote.png"
+texture "blocknote.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 99
@@ -914,7 +914,7 @@ name "trs2stylo2"
 loc 0 0 -0
 data 10
 trs2stylo2
-texture "blocknote.png"
+texture "blocknote.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 210
@@ -2507,7 +2507,7 @@ name "trsstylo2"
 loc 0 0 -0
 data 9
 trsstylo2
-texture "blocknote.png"
+texture "blocknote.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 146

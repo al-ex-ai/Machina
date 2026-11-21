@@ -7,7 +7,7 @@ name "avantbrasD"
 loc 0.053407 -0.019348 0.048621
 data 10
 avantbrasD
-texture "general_pilot.png"
+texture "general_pilot.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 34
@@ -258,7 +258,7 @@ name "avantbrasG"
 loc 0.151491 -0.080242 -0.056649
 data 10
 avantbrasG
-texture "general_pilot.png"
+texture "general_pilot.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 181
@@ -1763,7 +1763,7 @@ name "brasD"
 loc -0.046755 0.07265 -0
 data 5
 brasD
-texture "general_pilot.png"
+texture "general_pilot.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 22
@@ -1946,7 +1946,7 @@ name "brasG"
 loc -0.024066 0.03664 -0
 data 5
 brasG
-texture "general_pilot.png"
+texture "general_pilot.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 32
@@ -2189,7 +2189,7 @@ name "corps"
 loc 0 0 -0
 data 5
 corps
-texture "general_pilot.png"
+texture "general_pilot.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 144
@@ -3287,7 +3287,7 @@ name "cuisseD"
 loc 0 0 -0
 data 7
 cuisseD
-texture "general_pilot.png"
+texture "general_pilot.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 30
@@ -3616,7 +3616,7 @@ name "cuisseG"
 loc 0 0 -0
 data 7
 cuisseG
-texture "general_pilot.png"
+texture "general_pilot.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 30
@@ -3933,7 +3933,7 @@ name "jambeD"
 loc 0 0 -0
 data 6
 jambeD
-texture "general_pilot.png"
+texture "general_pilot.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 112
@@ -4767,7 +4767,7 @@ name "jambeG"
 loc 0 0 -0
 data 6
 jambeG
-texture "general_pilot.png"
+texture "general_pilot.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 112
@@ -5601,7 +5601,7 @@ name "manche"
 loc 0.053407 -0.019348 0.048621
 data 6
 manche
-texture "general_pilot.png"
+texture "general_pilot.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 140
@@ -6747,7 +6747,7 @@ name "piedD"
 loc 0 0 -0
 data 5
 piedD
-texture "general_pilot.png"
+texture "general_pilot.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 51
@@ -7095,7 +7095,7 @@ name "piedG"
 loc 0 0 -0
 data 5
 piedG
-texture "general_pilot.png"
+texture "general_pilot.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 51
@@ -7443,7 +7443,7 @@ name "tete"
 loc 0 0 -0
 data 4
 tete
-texture "general_pilot.png"
+texture "general_pilot.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 782
@@ -13669,7 +13669,7 @@ name "visiere"
 loc 0 0 -0
 data 7
 visiere
-texture "general_pilot.png"
+texture "general_pilot.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 40

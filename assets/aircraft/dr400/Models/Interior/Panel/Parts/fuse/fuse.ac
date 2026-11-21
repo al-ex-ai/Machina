@@ -7,7 +7,7 @@ name "Fusible00"
 loc 0 0 -0
 data 9
 Fusible00
-texture "color_fusibles_tableau.png"
+texture "color_fusibles_tableau.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 65
@@ -403,7 +403,7 @@ name "Fusible01"
 loc 0 0 -0
 data 9
 Fusible01
-texture "color_fusibles_tableau.png"
+texture "color_fusibles_tableau.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 65
@@ -799,7 +799,7 @@ name "Fusible02"
 loc 0 0 -0
 data 9
 Fusible02
-texture "color_fusibles_tableau.png"
+texture "color_fusibles_tableau.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 65
@@ -1195,7 +1195,7 @@ name "Fusible03"
 loc 0 0 -0
 data 9
 Fusible03
-texture "color_fusibles_tableau.png"
+texture "color_fusibles_tableau.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 65
@@ -1591,7 +1591,7 @@ name "Fusible04"
 loc 0 0 -0
 data 9
 Fusible04
-texture "color_fusibles_tableau.png"
+texture "color_fusibles_tableau.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 65
@@ -1987,7 +1987,7 @@ name "Fusible05"
 loc 0 0 -0
 data 9
 Fusible05
-texture "color_fusibles_tableau.png"
+texture "color_fusibles_tableau.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 65
@@ -2383,7 +2383,7 @@ name "Fusible06"
 loc 0 0 -0
 data 9
 Fusible06
-texture "color_fusibles_tableau.png"
+texture "color_fusibles_tableau.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 65
@@ -2779,7 +2779,7 @@ name "Fusible07"
 loc 0 0 -0
 data 9
 Fusible07
-texture "color_fusibles_tableau.png"
+texture "color_fusibles_tableau.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 65
@@ -3175,7 +3175,7 @@ name "Fusible08"
 loc 0 0 -0
 data 9
 Fusible08
-texture "color_fusibles_tableau.png"
+texture "color_fusibles_tableau.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 65
@@ -3571,7 +3571,7 @@ name "Fusible09"
 loc 0 0 -0
 data 9
 Fusible09
-texture "color_fusibles_tableau.png"
+texture "color_fusibles_tableau.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 65
@@ -3967,7 +3967,7 @@ name "Fusible10"
 loc 0 0 -0
 data 9
 Fusible10
-texture "color_fusibles_tableau.png"
+texture "color_fusibles_tableau.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 65
@@ -4363,7 +4363,7 @@ name "Fusible11"
 loc 0 0 -0
 data 9
 Fusible11
-texture "color_fusibles_tableau.png"
+texture "color_fusibles_tableau.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 65
@@ -4759,7 +4759,7 @@ name "Fusible12"
 loc 0 0 -0
 data 9
 Fusible12
-texture "color_fusibles_tableau.png"
+texture "color_fusibles_tableau.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 65
@@ -5155,7 +5155,7 @@ name "Fusible13"
 loc 0 0 -0
 data 9
 Fusible13
-texture "color_fusibles_tableau.png"
+texture "color_fusibles_tableau.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 65
@@ -5551,7 +5551,7 @@ name "Fusible14"
 loc 0 0 -0
 data 9
 Fusible14
-texture "color_fusibles_tableau.png"
+texture "color_fusibles_tableau.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 65
@@ -5947,7 +5947,7 @@ name "Fusible15"
 loc 0 0 -0
 data 9
 Fusible15
-texture "color_fusibles_tableau.png"
+texture "color_fusibles_tableau.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 65
@@ -6343,7 +6343,7 @@ name "plaque"
 loc 0 0 -0
 data 6
 plaque
-texture "color_fusibles_tableau.png"
+texture "color_fusibles_tableau.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 8
@@ -6397,7 +6397,7 @@ name "support"
 loc 0 0 -0
 data 7
 support
-texture "color_fusibles_tableau.png"
+texture "color_fusibles_tableau.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 1232

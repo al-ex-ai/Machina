@@ -7,7 +7,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "warning.png"
+texture "warning.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 160
@@ -1123,7 +1123,7 @@ name "warning01.on"
 loc 0.000217 0 -0
 data 12
 warning01.on
-texture "warning.png"
+texture "warning.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 4
@@ -1145,7 +1145,7 @@ name "warning02.on"
 loc 0.000217 0 -0
 data 12
 warning02.on
-texture "warning.png"
+texture "warning.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 4
@@ -1167,7 +1167,7 @@ name "warning03.on"
 loc 0.000217 0 -0
 data 12
 warning03.on
-texture "warning.png"
+texture "warning.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 4
@@ -1189,7 +1189,7 @@ name "warning04.on"
 loc 0.000217 0 -0
 data 12
 warning04.on
-texture "warning.png"
+texture "warning.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 4
@@ -1211,7 +1211,7 @@ name "warning05.001"
 loc 0 0 -0
 data 13
 warning05.001
-texture "warning.png"
+texture "warning.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -1233,7 +1233,7 @@ name "warning05.on"
 loc 0.000217 0 -0
 data 12
 warning05.on
-texture "warning.png"
+texture "warning.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 4
@@ -1255,7 +1255,7 @@ name "warning06.on"
 loc 0.000217 0 -0
 data 12
 warning06.on
-texture "warning.png"
+texture "warning.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 4
@@ -1277,7 +1277,7 @@ name "warning07.on"
 loc 0.000217 0 -0
 data 12
 warning07.on
-texture "warning.png"
+texture "warning.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 4
@@ -1299,7 +1299,7 @@ name "warning08.on"
 loc 0.000217 0 -0
 data 12
 warning08.on
-texture "warning.png"
+texture "warning.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 4

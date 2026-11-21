@@ -7,7 +7,7 @@ name "Pedal-L"
 loc 0 0 -0
 data 7
 Pedal-L
-texture "pedals.png"
+texture "pedals.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 8
@@ -61,7 +61,7 @@ name "Pedal-R"
 loc 0 0 -0
 data 7
 Pedal-R
-texture "pedals.png"
+texture "pedals.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 8

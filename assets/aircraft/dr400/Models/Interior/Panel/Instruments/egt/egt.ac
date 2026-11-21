@@ -8,7 +8,7 @@ name "face"
 loc 0 0 -0
 data 4
 face
-texture "egt-01.png"
+texture "egt-01.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 12
@@ -91,7 +91,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "egt-01.png"
+texture "egt-01.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 81
@@ -609,7 +609,7 @@ name "needle"
 loc -0.001315 0 -0
 data 6
 needle
-texture "egt-01.png"
+texture "egt-01.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 10

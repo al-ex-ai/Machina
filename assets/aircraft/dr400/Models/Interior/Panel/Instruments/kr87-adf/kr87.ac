@@ -8,7 +8,7 @@ name "KR87.adf"
 loc 0 0 -0
 data 8
 KR87.adf
-texture "KR87.png"
+texture "KR87.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 8
@@ -62,7 +62,7 @@ name "KR87.bfo"
 loc 0 0 -0
 data 8
 KR87.bfo
-texture "KR87.png"
+texture "KR87.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 8
@@ -116,7 +116,7 @@ name "KR87.display"
 loc 0 0 -0
 data 12
 KR87.display
-texture "KR87.png"
+texture "KR87.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 6
@@ -147,7 +147,7 @@ name "KR87.flt"
 loc 0 0 -0
 data 8
 KR87.flt
-texture "KR87.png"
+texture "KR87.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 8
@@ -201,7 +201,7 @@ name "KR87.frq"
 loc 0 0 -0
 data 8
 KR87.frq
-texture "KR87.png"
+texture "KR87.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 8
@@ -255,7 +255,7 @@ name "KR87.knob"
 loc 0 0 -0
 data 9
 KR87.knob
-texture "KR87.png"
+texture "KR87.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 36
@@ -470,7 +470,7 @@ name "KR87.knob1"
 loc 0 0 -0
 data 10
 KR87.knob1
-texture "KR87.png"
+texture "KR87.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 24
@@ -624,7 +624,7 @@ name "KR87.set"
 loc 0 0 -0
 data 8
 KR87.set
-texture "KR87.png"
+texture "KR87.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 8
@@ -678,7 +678,7 @@ name "KR87.volume"
 loc 0 0 -0
 data 11
 KR87.volume
-texture "KR87.png"
+texture "KR87.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 24
@@ -832,7 +832,7 @@ name "adf.annun"
 loc 0 0 -0
 data 9
 adf.annun
-texture "KR87.png"
+texture "KR87.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 4
@@ -854,7 +854,7 @@ name "ant.annun"
 loc 0 0 -0
 data 9
 ant.annun
-texture "KR87.png"
+texture "KR87.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 4
@@ -876,7 +876,7 @@ name "bfo.annun"
 loc 0 0 -0
 data 9
 bfo.annun
-texture "KR87.png"
+texture "KR87.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 4
@@ -898,7 +898,7 @@ name "et.annun"
 loc 0 0 -0
 data 8
 et.annun
-texture "KR87.png"
+texture "KR87.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 4
@@ -920,7 +920,7 @@ name "flt.annun"
 loc 0 0 -0
 data 9
 flt.annun
-texture "KR87.png"
+texture "KR87.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 4
@@ -942,7 +942,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "KR87.png"
+texture "KR87.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 43
@@ -1290,7 +1290,7 @@ name "freq.001"
 loc 0 0 -0
 data 8
 freq.001
-texture "KR87.png"
+texture "KR87.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 4
@@ -1312,7 +1312,7 @@ name "freq.002"
 loc 0 0 -0
 data 8
 freq.002
-texture "KR87.png"
+texture "KR87.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 4
@@ -1334,7 +1334,7 @@ name "freq.003"
 loc 0 0 -0
 data 8
 freq.003
-texture "KR87.png"
+texture "KR87.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 4
@@ -1356,7 +1356,7 @@ name "freq.004"
 loc 0 0 -0
 data 8
 freq.004
-texture "KR87.png"
+texture "KR87.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 4
@@ -1378,7 +1378,7 @@ name "frq.annun"
 loc 0 0 -0
 data 9
 frq.annun
-texture "KR87.png"
+texture "KR87.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 4
@@ -1400,7 +1400,7 @@ name "stby"
 loc 0 0 -0
 data 4
 stby
-texture "KR87.png"
+texture "KR87.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 8
@@ -1433,7 +1433,7 @@ name "stby.001"
 loc 0 0 -0
 data 8
 stby.001
-texture "KR87.png"
+texture "KR87.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 4
@@ -1455,7 +1455,7 @@ name "stby.002"
 loc 0 0 -0
 data 8
 stby.002
-texture "KR87.png"
+texture "KR87.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 4
@@ -1477,7 +1477,7 @@ name "stby.003"
 loc 0 0 -0
 data 8
 stby.003
-texture "KR87.png"
+texture "KR87.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 4
@@ -1499,7 +1499,7 @@ name "stby.004"
 loc 0 0 -0
 data 8
 stby.004
-texture "KR87.png"
+texture "KR87.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 4

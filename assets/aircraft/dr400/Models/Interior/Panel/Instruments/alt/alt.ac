@@ -8,7 +8,7 @@ name "face"
 loc 0 0 -0
 data 4
 face
-texture "alt.png"
+texture "alt.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 16
@@ -84,7 +84,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "alt.png"
+texture "alt.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 171
@@ -1230,7 +1230,7 @@ name "inhg"
 loc 0 0 -0
 data 4
 inhg
-texture "alt.png"
+texture "alt.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -1261,7 +1261,7 @@ name "inhgknob"
 loc 0 0 -0
 data 8
 inhgknob
-texture "alt.png"
+texture "alt.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 25
@@ -1453,7 +1453,7 @@ name "needle100"
 loc 0 0 -0
 data 9
 needle100
-texture "alt.png"
+texture "alt.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 116
@@ -2197,7 +2197,7 @@ name "needle1000"
 loc 0 0 -0
 data 10
 needle1000
-texture "alt.png"
+texture "alt.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 116
@@ -2941,7 +2941,7 @@ name "needle10000"
 loc 0 0 -0
 data 11
 needle10000
-texture "alt.png"
+texture "alt.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 116

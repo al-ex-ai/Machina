@@ -7,7 +7,7 @@ name "rearseat"
 loc 0 0 -0
 data 8
 rearseat
-texture "seat.png"
+texture "seat.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 372

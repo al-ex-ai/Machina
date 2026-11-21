@@ -7,7 +7,7 @@ name "labels"
 loc 0 0 -0
 data 6
 labels
-texture "mixture-trimindocator.png"
+texture "mixture-trimindocator.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 16
@@ -104,7 +104,7 @@ name "mixture"
 loc 0 0 -0
 data 7
 mixture
-texture "mixture-trimindocator.png"
+texture "mixture-trimindocator.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 106
@@ -1121,7 +1121,7 @@ name "mixturetrims"
 loc 0 0 -0
 data 12
 mixturetrims
-texture "mixture-trimindocator.png"
+texture "mixture-trimindocator.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 87
@@ -1838,7 +1838,7 @@ name "trimindicator"
 loc 0 0 -0
 data 13
 trimindicator
-texture "mixture-trimindocator.png"
+texture "mixture-trimindocator.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 8

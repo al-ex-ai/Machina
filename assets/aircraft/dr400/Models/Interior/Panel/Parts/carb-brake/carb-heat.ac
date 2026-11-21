@@ -7,7 +7,7 @@ name "coulissant"
 loc 0 0 -0
 data 10
 coulissant
-texture "carb-heat.png"
+texture "carb-heat.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 65
@@ -499,7 +499,7 @@ name "manette"
 loc 0 0 -0
 data 7
 manette
-texture "carb-heat.png"
+texture "carb-heat.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 321

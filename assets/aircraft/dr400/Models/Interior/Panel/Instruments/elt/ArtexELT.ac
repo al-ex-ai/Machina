@@ -7,7 +7,7 @@ name "Base"
 loc 0 0 -0
 data 4
 Base
-texture "ArtexELT.png"
+texture "ArtexELT.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 48
@@ -339,7 +339,7 @@ name "BaseSwitch"
 loc 0 0 -0
 data 10
 BaseSwitch
-texture "ArtexELT.png"
+texture "ArtexELT.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 48
@@ -674,7 +674,7 @@ name "Light-OFF"
 loc 0 0 -0
 data 9
 Light-OFF
-texture "ArtexELT.png"
+texture "ArtexELT.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 49
@@ -1058,7 +1058,7 @@ name "Light-ON"
 loc 0 0 -0
 data 8
 Light-ON
-texture "ArtexELT.png"
+texture "ArtexELT.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 49
@@ -1442,7 +1442,7 @@ name "SwitchDown"
 loc 0 0 -0
 data 10
 SwitchDown
-texture "ArtexELT.png"
+texture "ArtexELT.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 22
@@ -1585,7 +1585,7 @@ name "SwitchUp"
 loc 0 0 -0
 data 8
 SwitchUp
-texture "ArtexELT.png"
+texture "ArtexELT.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 28
@@ -1769,7 +1769,7 @@ name "vis"
 loc 0 0 -0
 data 3
 vis
-texture "ArtexELT.png"
+texture "ArtexELT.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 147

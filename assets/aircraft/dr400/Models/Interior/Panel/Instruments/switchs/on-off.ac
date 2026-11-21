@@ -7,7 +7,7 @@ name "on-off"
 loc 0 0 -0
 data 6
 on-off
-texture "switch.png"
+texture "switch.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 50

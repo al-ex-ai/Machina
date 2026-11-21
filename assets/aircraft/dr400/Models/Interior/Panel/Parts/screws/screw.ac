@@ -7,7 +7,7 @@ name "screw"
 loc 0 0 -0
 data 5
 screw
-texture "screw.png"
+texture "screw.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 129

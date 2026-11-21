@@ -8,7 +8,7 @@ name "HDRintverriere"
 loc 0 0 -0
 data 14
 HDRintverriere
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 285
@@ -2344,7 +2344,7 @@ name "HDRintverriere2"
 loc 0 0 -0
 data 15
 HDRintverriere2
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 102
@@ -3065,7 +3065,7 @@ name "bout1"
 loc -0.751015 0.656431 0.065
 data 5
 bout1
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 129
@@ -4069,7 +4069,7 @@ name "bout2"
 loc -0.751069 0.656702 -0.065
 data 5
 bout2
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 129
@@ -5073,7 +5073,7 @@ name "ceintures"
 loc 0 0 -0
 data 9
 ceintures
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 616
@@ -9278,7 +9278,7 @@ name "interieur"
 loc 0 0 -0
 data 9
 interieur
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 370
@@ -12045,7 +12045,7 @@ name "inttour"
 loc 0 0 -0
 data 7
 inttour
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 196
@@ -12938,7 +12938,7 @@ name "intverriere"
 loc 0 0 -0
 data 11
 intverriere
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 285
@@ -15274,7 +15274,7 @@ name "intverriere2"
 loc 0 0 -0
 data 12
 intverriere2
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 102
@@ -15995,7 +15995,7 @@ name "longeronint"
 loc 0 0 -0
 data 11
 longeronint
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 88
@@ -16696,7 +16696,7 @@ name "planchet"
 loc 0 0 -0
 data 8
 planchet
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 48
@@ -16965,7 +16965,7 @@ name "poignee-canopy"
 loc 0 0 -0
 data 14
 poignee-canopy
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 267
@@ -19498,7 +19498,7 @@ name "poingee-longeron"
 loc 0 0 -0
 data 16
 poingee-longeron
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 130
@@ -20534,7 +20534,7 @@ name "portefusibles"
 loc 0 0 -0
 data 13
 portefusibles
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 1045
@@ -29045,7 +29045,7 @@ name "sono"
 loc 0 0 -0
 data 4
 sono
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 275
@@ -31619,7 +31619,7 @@ name "toitverriereint"
 loc 0 0 -0
 data 15
 toitverriereint
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 119
@@ -32411,7 +32411,7 @@ name "toitverriereint2"
 loc 0 0 -0
 data 16
 toitverriereint2
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 112

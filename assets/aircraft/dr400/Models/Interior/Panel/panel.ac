@@ -7,7 +7,7 @@ name "flaps"
 loc 0 0 -0
 data 5
 flaps
-texture "panel.png"
+texture "panel.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 225
@@ -1779,7 +1779,7 @@ name "labels"
 loc 0 0 -0
 data 6
 labels
-texture "panel.png"
+texture "panel.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8
@@ -1812,7 +1812,7 @@ name "panel0"
 loc 0 0 -0
 data 6
 panel0
-texture "panel.png"
+texture "panel.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 130
@@ -2785,7 +2785,7 @@ name "panel1"
 loc 0 0 -0
 data 6
 panel1
-texture "panel.png"
+texture "panel.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 1161
@@ -10913,7 +10913,7 @@ name "panel3"
 loc 0 0 -0
 data 6
 panel3
-texture "panel.png"
+texture "panel.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 1374
@@ -21302,7 +21302,7 @@ name "paneltop"
 loc 0 0 -0
 data 8
 paneltop
-texture "panel.png"
+texture "panel.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 276
@@ -23854,7 +23854,7 @@ name "rouetrim"
 loc 0 0 -0
 data 8
 rouetrim
-texture "panel.png"
+texture "panel.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 66

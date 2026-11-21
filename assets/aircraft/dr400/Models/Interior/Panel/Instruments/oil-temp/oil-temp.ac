@@ -8,7 +8,7 @@ name "face"
 loc 0 0 -0
 data 4
 face
-texture "oil-temp.png"
+texture "oil-temp.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 24
@@ -159,7 +159,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "oil-temp.png"
+texture "oil-temp.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 75
@@ -603,7 +603,7 @@ name "fond2"
 loc 0 0 -0
 data 5
 fond2
-texture "oil-temp.png"
+texture "oil-temp.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 92
@@ -1282,7 +1282,7 @@ name "needle"
 loc 0 0 -0
 data 6
 needle
-texture "oil-temp.png"
+texture "oil-temp.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 8

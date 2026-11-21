@@ -7,7 +7,7 @@ name "Switch"
 loc 0 0 -0
 data 6
 Switch
-texture "switch.png"
+texture "switch.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 642
@@ -4916,7 +4916,7 @@ name "SwitchNut"
 loc 0 0 -0
 data 9
 SwitchNut
-texture "switch.png"
+texture "switch.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 285

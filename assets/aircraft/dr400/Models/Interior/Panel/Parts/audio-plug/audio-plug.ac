@@ -7,7 +7,7 @@ name "audio"
 loc 0 0 -0
 data 5
 audio
-texture "color_prise_casque.png"
+texture "color_prise_casque.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 782

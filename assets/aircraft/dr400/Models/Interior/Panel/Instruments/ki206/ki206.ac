@@ -8,7 +8,7 @@ name "card"
 loc 0.002824 0 -0
 data 4
 card
-texture "KI206.png"
+texture "KI206.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 32
@@ -163,7 +163,7 @@ name "face"
 loc 0.002824 0 -0
 data 4
 face
-texture "KI206.png"
+texture "KI206.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 18
@@ -241,7 +241,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "KI206.png"
+texture "KI206.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 82
@@ -726,7 +726,7 @@ name "fromflag"
 loc 0.0026 -0.000022 -0
 data 8
 fromflag
-texture "KI206.png"
+texture "KI206.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -770,7 +770,7 @@ name "gsflag"
 loc 0.002824 0 -0
 data 6
 gsflag
-texture "KI206.png"
+texture "KI206.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -792,7 +792,7 @@ name "gsneedle"
 loc 0.002824 0 -0
 data 8
 gsneedle
-texture "KI206.png"
+texture "KI206.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8
@@ -846,7 +846,7 @@ name "knob"
 loc 0.000118 0 -0
 data 4
 knob
-texture "KI206.png"
+texture "KI206.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 24
@@ -1000,7 +1000,7 @@ name "locneedle"
 loc 0.002824 0 -0
 data 9
 locneedle
-texture "KI206.png"
+texture "KI206.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8
@@ -1054,7 +1054,7 @@ name "navflag"
 loc 0.002824 0 -0
 data 7
 navflag
-texture "KI206.png"
+texture "KI206.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -1076,7 +1076,7 @@ name "toflag"
 loc 0.0026 -0.000022 -0
 data 6
 toflag
-texture "KI206.png"
+texture "KI206.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6

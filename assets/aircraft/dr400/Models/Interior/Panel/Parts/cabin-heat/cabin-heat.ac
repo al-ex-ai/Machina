@@ -7,7 +7,7 @@ name "manette001"
 loc 0 0 -0
 data 10
 manette001
-texture "chauffage.png"
+texture "chauffage.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 321
@@ -2547,7 +2547,7 @@ name "manette002"
 loc 0 0 -0
 data 10
 manette002
-texture "chauffage.png"
+texture "chauffage.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 321
@@ -5087,7 +5087,7 @@ name "manette003"
 loc 0 0 -0
 data 10
 manette003
-texture "chauffage.png"
+texture "chauffage.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 321
@@ -7627,7 +7627,7 @@ name "support"
 loc -0.002 0 -0
 data 7
 support
-texture "chauffage.png"
+texture "chauffage.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 1351

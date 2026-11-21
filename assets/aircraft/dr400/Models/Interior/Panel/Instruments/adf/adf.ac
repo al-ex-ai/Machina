@@ -8,7 +8,7 @@ name "face"
 loc 0 0 -0
 data 4
 face
-texture "adf01.png"
+texture "adf01.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 18
@@ -86,7 +86,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "adf01.png"
+texture "adf01.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 160
@@ -1153,7 +1153,7 @@ name "needle"
 loc 0 0 -0
 data 6
 needle
-texture "adf01.png"
+texture "adf01.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 18
@@ -1272,7 +1272,7 @@ name "plane"
 loc 0 0 -0
 data 5
 plane
-texture "adf01.png"
+texture "adf01.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 88

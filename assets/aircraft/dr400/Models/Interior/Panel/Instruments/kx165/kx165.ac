@@ -7,7 +7,7 @@ name "Chassis"
 loc 0.007 0 -0
 data 7
 Chassis
-texture "kx165.png"
+texture "kx165.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8
@@ -61,7 +61,7 @@ name "CommKHz"
 loc 0.02951 -0.012 0.022
 data 7
 CommKHz
-texture "kx165.png"
+texture "kx165.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 65
@@ -553,7 +553,7 @@ name "CommMHz"
 loc 0.020527 -0.012 0.022
 data 7
 CommMHz
-texture "kx165.png"
+texture "kx165.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 65
@@ -1045,7 +1045,7 @@ name "CommStby100K"
 loc 0.014056 0.015294 0.014815
 data 12
 CommStby100K
-texture "kx165.png"
+texture "kx165.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -1067,7 +1067,7 @@ name "CommStby100M"
 loc 0.014056 0.015294 0.035959
 data 12
 CommStby100M
-texture "kx165.png"
+texture "kx165.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -1089,7 +1089,7 @@ name "CommStby10K"
 loc 0.014056 0.015294 0.007741
 data 11
 CommStby10K
-texture "kx165.png"
+texture "kx165.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -1111,7 +1111,7 @@ name "CommStby10M"
 loc 0.014056 0.015294 0.028906
 data 11
 CommStby10M
-texture "kx165.png"
+texture "kx165.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -1133,7 +1133,7 @@ name "CommStby1M"
 loc 0.014056 0.015294 0.021843
 data 10
 CommStby1M
-texture "kx165.png"
+texture "kx165.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -1155,7 +1155,7 @@ name "CommStbyDot"
 loc 0.014218 0.01081 0.019089
 data 11
 CommStbyDot
-texture "kx165.png"
+texture "kx165.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -1177,7 +1177,7 @@ name "CommToggle"
 loc 0.016502 -0.003 0.045
 data 10
 CommToggle
-texture "kx165.png"
+texture "kx165.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8
@@ -1231,7 +1231,7 @@ name "CommUse100K"
 loc 0.014056 0.015294 0.051841
 data 11
 CommUse100K
-texture "kx165.png"
+texture "kx165.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -1253,7 +1253,7 @@ name "CommUse100M"
 loc 0.014056 0.015294 0.072985
 data 11
 CommUse100M
-texture "kx165.png"
+texture "kx165.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -1275,7 +1275,7 @@ name "CommUse10K"
 loc 0.014056 0.015294 0.044767
 data 10
 CommUse10K
-texture "kx165.png"
+texture "kx165.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -1297,7 +1297,7 @@ name "CommUse10M"
 loc 0.014056 0.015294 0.065932
 data 10
 CommUse10M
-texture "kx165.png"
+texture "kx165.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -1319,7 +1319,7 @@ name "CommUse1M"
 loc 0.014056 0.015294 0.058869
 data 9
 CommUse1M
-texture "kx165.png"
+texture "kx165.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -1341,7 +1341,7 @@ name "CommUseDot"
 loc 0.014218 0.01081 0.056115
 data 10
 CommUseDot
-texture "kx165.png"
+texture "kx165.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -1363,7 +1363,7 @@ name "CommVolume"
 loc 0.020601 -0.014 0.062
 data 10
 CommVolume
-texture "kx165.png"
+texture "kx165.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 97
@@ -2111,7 +2111,7 @@ name "NavKHz"
 loc 0.02951 -0.012 -0.05799
 data 6
 NavKHz
-texture "kx165.png"
+texture "kx165.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 65
@@ -2603,7 +2603,7 @@ name "NavMHz"
 loc 0.020527 -0.012 -0.05799
 data 6
 NavMHz
-texture "kx165.png"
+texture "kx165.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 65
@@ -3095,7 +3095,7 @@ name "NavStby100K"
 loc 0.014056 0.015294 -0.065878
 data 11
 NavStby100K
-texture "kx165.png"
+texture "kx165.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -3117,7 +3117,7 @@ name "NavStby100M"
 loc 0.014056 0.015294 -0.044734
 data 11
 NavStby100M
-texture "kx165.png"
+texture "kx165.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -3139,7 +3139,7 @@ name "NavStby10K"
 loc 0.014056 0.015294 -0.072952
 data 10
 NavStby10K
-texture "kx165.png"
+texture "kx165.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -3161,7 +3161,7 @@ name "NavStby10M"
 loc 0.014056 0.015294 -0.051787
 data 10
 NavStby10M
-texture "kx165.png"
+texture "kx165.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -3183,7 +3183,7 @@ name "NavStby1M"
 loc 0.014056 0.015294 -0.05885
 data 9
 NavStby1M
-texture "kx165.png"
+texture "kx165.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -3205,7 +3205,7 @@ name "NavStbyDot"
 loc 0.014218 0.01081 -0.061604
 data 10
 NavStbyDot
-texture "kx165.png"
+texture "kx165.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -3227,7 +3227,7 @@ name "NavToggle"
 loc 0.016502 -0.003 -0.03499
 data 9
 NavToggle
-texture "kx165.png"
+texture "kx165.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8
@@ -3281,7 +3281,7 @@ name "NavUse100K"
 loc 0.014056 0.015294 -0.0288
 data 10
 NavUse100K
-texture "kx165.png"
+texture "kx165.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -3303,7 +3303,7 @@ name "NavUse100M"
 loc 0.014056 0.015294 -0.007655
 data 10
 NavUse100M
-texture "kx165.png"
+texture "kx165.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -3325,7 +3325,7 @@ name "NavUse10K"
 loc 0.014056 0.015294 -0.035873
 data 9
 NavUse10K
-texture "kx165.png"
+texture "kx165.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -3347,7 +3347,7 @@ name "NavUse10M"
 loc 0.014056 0.015294 -0.014708
 data 9
 NavUse10M
-texture "kx165.png"
+texture "kx165.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -3369,7 +3369,7 @@ name "NavUse1M"
 loc 0.014056 0.015294 -0.021771
 data 8
 NavUse1M
-texture "kx165.png"
+texture "kx165.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -3391,7 +3391,7 @@ name "NavUseDot"
 loc 0.014218 0.01081 -0.024525
 data 9
 NavUseDot
-texture "kx165.png"
+texture "kx165.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -3413,7 +3413,7 @@ name "NavVolume"
 loc 0.020601 -0.014 -0.01799
 data 9
 NavVolume
-texture "kx165.png"
+texture "kx165.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 97

@@ -47,7 +47,7 @@ name "key"
 loc 0 0 -0
 data 3
 key
-texture "mag_switch.png"
+texture "mag_switch.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 24
@@ -229,7 +229,7 @@ name "magsw"
 loc 0 0 -0
 data 5
 magsw
-texture "mag_switch.png"
+texture "mag_switch.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 170

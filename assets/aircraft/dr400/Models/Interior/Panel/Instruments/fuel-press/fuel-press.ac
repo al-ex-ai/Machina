@@ -8,7 +8,7 @@ name "cache"
 loc 0 0 -0
 data 5
 cache
-texture "fuel-press.png"
+texture "fuel-press.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 92
@@ -687,7 +687,7 @@ name "face"
 loc 0 0 -0
 data 4
 face
-texture "fuel-press.png"
+texture "fuel-press.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 24
@@ -838,7 +838,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "fuel-press.png"
+texture "fuel-press.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 122
@@ -1687,7 +1687,7 @@ name "needle"
 loc 0 0 -0
 data 6
 needle
-texture "fuel-press.png"
+texture "fuel-press.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 8
