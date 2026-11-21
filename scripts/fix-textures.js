@@ -7,7 +7,7 @@ import { join, dirname, extname } from 'node:path';
 import { writePNG } from './reference/png.js';
 
 const check = process.argv.includes('--check');
-const OK = new Set(['.png', '.jpg', '.jpeg']);
+const OK = new Set(['.png', '.jpg', '.jpeg', '.webp']);
 
 /** Decode an SGI image (verbatim or RLE, 8 bits per channel) to RGBA, bottom row first in the file. */
 export function readSGI(b) {
@@ -45,8 +45,9 @@ export function readSGI(b) {
 }
 
 let bad = 0, converted = 0, missing = 0;
-for (const f of readdirSync('data/models/aviation')) {
-  const m = JSON.parse(readFileSync(join('data/models/aviation', f), 'utf8'));
+const modelFiles = readdirSync('data/models').flatMap(d => readdirSync(join('data/models', d)).filter(f => f.endsWith('.json')).map(f => join('data/models', d, f)));
+for (const file0 of modelFiles) {
+  const m = JSON.parse(readFileSync(file0, 'utf8'));
   if (!m.asset) continue;
   for (const file of new Set((m.asset.files ?? [{ file: m.asset.file }]).map(q => q.file))) {
     const ac = join(m.asset.path, file);

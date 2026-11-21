@@ -5,8 +5,8 @@ import { join } from 'node:path';
 import { loadAssetNode } from '../src/assets-node.js';
 import { measureQuality } from '../src/quality.js';
 
-const dir = 'data/models/aviation';
-const files = process.argv.slice(2).length ? process.argv.slice(2) : readdirSync(dir).filter(f => f.endsWith('.json')).map(f => join(dir, f));
+const all = readdirSync('data/models').flatMap(d => readdirSync(join('data/models', d)).filter(f => f.endsWith('.json')).map(f => join('data/models', d, f)));
+const files = process.argv.slice(2).length ? process.argv.slice(2) : all;
 const listed = new Set(JSON.parse(readFileSync('data/index.json', 'utf8')).models.map(p => p.split('/').pop()));
 const pct = v => `${Math.round(v * 100)}%`.padStart(5);
 
