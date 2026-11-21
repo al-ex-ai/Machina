@@ -155,9 +155,13 @@ export function createViewer(container) {
   let ao = true;
   const XRAY_FILL = new THREE.MeshBasicMaterial({ color: '#5ec8ff', transparent: true, opacity: 0.05, depthWrite: false, side: THREE.DoubleSide });
   const XRAY_EDGE = new THREE.LineBasicMaterial({ color: '#7fd4ff', transparent: true, opacity: 0.45, depthWrite: false });
-  function edgesOf(mesh) {
+  // The interior (seats, consoles, cabin) is what x-ray is for: a stronger fill and finer edges,
+  // so rounded seats that have few sharp creases still read through the skin.
+  const XRAY_FILL_INSIDE = new THREE.MeshBasicMaterial({ color: '#5ec8ff', transparent: true, opacity: 0.16, depthWrite: false, side: THREE.DoubleSide });
+  const XRAY_EDGE_INSIDE = new THREE.LineBasicMaterial({ color: '#7fd4ff', transparent: true, opacity: 0.7, depthWrite: false });
+  function edgesOf(mesh, inside = false) {
     if (!mesh.userData.edges) {
-      const lines = new THREE.LineSegments(new THREE.EdgesGeometry(mesh.geometry, 35), XRAY_EDGE);
+      const lines = new THREE.LineSegments(new THREE.EdgesGeometry(mesh.geometry, inside ? 20 : 35), inside ? XRAY_EDGE_INSIDE : XRAY_EDGE);
       lines.raycast = () => {};
       lines.visible = false;
       mesh.add(lines);
@@ -171,9 +175,10 @@ export function createViewer(container) {
         if (!o.isMesh) return;
         o.userData.solid ??= o.material;
         const solid = !xray || p === selected;
-        o.material = solid ? o.userData.solid : Array.isArray(o.userData.solid) ? o.userData.solid.map(() => XRAY_FILL) : XRAY_FILL;
+        const inside = p.userData.system === 'interior', fill = inside ? XRAY_FILL_INSIDE : XRAY_FILL;
+        o.material = solid ? o.userData.solid : Array.isArray(o.userData.solid) ? o.userData.solid.map(() => fill) : fill;
         o.castShadow = !xray;
-        if (xray) edgesOf(o).visible = p !== selected;
+        if (xray) edgesOf(o, inside).visible = p !== selected;
         else if (o.userData.edges) o.userData.edges.visible = false;
       });
     }
@@ -421,8 +426,7 @@ export function createViewer(container) {
       themeName = name;
       scene.background = backdrop(name);
       ground.material.opacity = stageFor(name).shadow;
-      XRAY_EDGE.color.set(stageFor(name).xray);
-      XRAY_FILL.color.set(stageFor(name).xray);
+      for (const mat of [XRAY_EDGE, XRAY_FILL, XRAY_EDGE_INSIDE, XRAY_FILL_INSIDE]) mat.color.set(stageFor(name).xray);
       if (model) frame();
     },
     setPicking(on) {
