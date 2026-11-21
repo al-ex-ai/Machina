@@ -8,13 +8,15 @@
 import { readFileSync, writeFileSync, copyFileSync, mkdirSync, existsSync, readdirSync } from 'node:fs';
 import { dirname, join, normalize, relative, basename } from 'node:path';
 
-const [root, modelFile, topArg] = process.argv.slice(2);
+// --all imports the whole aircraft from the XML tree (exterior with its placements too), for a new model.
+const all = process.argv.includes('--all');
+const [root, modelFile, topArg] = process.argv.slice(2).filter(a => a !== '--all');
 if (!root || !modelFile) { console.error('Usage: node scripts/import-fg-interior.js <aircraftRoot> <model.json> [Models/<top>.xml]'); process.exit(1); }
 const model = JSON.parse(readFileSync(modelFile, 'utf8'));
 const dest = model.asset.path;
 const aircraftName = basename(normalize(root));
 const INSIDE = /(^|\/)vc[._]|interior|cockpit|panel|instrument|seat|pilot|yoke|pedal|cabin|stick|throttle|glareshield/i;
-const SKIP = /light(source|cone|_cone)|spot_light|roof_light|lightmap|halo|flare|effects?\/|lights?\/|sounds?\/|shadow|\/ai\/|immat|livery|liveries|procedural|flame|smoke|reflect/i;
+const SKIP = /light(source|cone|_cone)|spot_light|roof_light|lightmap|halo|flare|effects?\/|lights?\/|sounds?\/|shadow|\/ai\/|immat|livery|liveries|procedural|flame|smoke|reflect|ground\/|services?\/|stairs?\b|pushback|catering|chocks?\b|traffic.?cone|floats?\b|amphib|\bskis?\b/i;
 
 const num = (block, tag) => { const m = new RegExp(`<${tag}>\\s*([-\\d.eE+]+)\\s*</${tag}>`).exec(block); return m ? Number(m[1]) : undefined; };
 function placement(block) {
@@ -74,7 +76,7 @@ walk(normalize(join(root, top)), [], false);
 
 // Keep only what is inside, and not already in the asset.
 const have = new Set((model.asset.files ?? [{ file: model.asset.file }]).map(f => f.file));
-const add = found.filter(f => f.inside && !have.has(f.file));
+const add = found.filter(f => (all || f.inside) && !have.has(f.file));
 const unique = [];
 for (const f of add) if (!unique.some(u => u.file === f.file && JSON.stringify(u.chain) === JSON.stringify(f.chain))) unique.push(f);
 if (!unique.length) { console.log(`${model.id}: no interior files found below ${top}`); process.exit(0); }
@@ -121,7 +123,7 @@ for (const t of textures) {
 
 const files = model.asset.files ?? [{ file: model.asset.file }];
 delete model.asset.file;
-model.asset.files = [...files, ...unique.map(f => ({ file: f.file, ...(f.chain.length ? { chain: f.chain } : {}), fallback: { id: 'cabin', label: 'Cockpit and cabin', system: 'interior' } }))];
+model.asset.files = [...files, ...unique.map(f => ({ file: f.file, ...(f.chain.length ? { chain: f.chain } : {}), ...(f.inside ? { fallback: { id: 'cabin', label: 'Cockpit and cabin', system: 'interior' } } : {}) }))];
 writeFileSync(modelFile, JSON.stringify(model, null, 2) + '\n');
 console.log(`${model.id}: added ${unique.length} interior files and ${textures.size - missing} textures${missing ? ` (${missing} textures not in the package)` : ''}`);
 for (const f of unique) console.log(`  ${f.file}${f.chain.length ? `  (${f.chain.length} placements)` : ''}`);
