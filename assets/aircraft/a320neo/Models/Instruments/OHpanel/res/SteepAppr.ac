@@ -54,7 +54,7 @@ name "SteepApprBtn1"
 loc 0.0152448 0.00304149 -0.286474
 data 8
 Cube.031
-texture "buttons.png"
+texture "buttons.webp"
 crease 30.000000
 numvert 8
 -0.00561947 -0.2182 -0.0116719
@@ -100,7 +100,7 @@ name "SteepApprBtn2"
 loc 0.0152448 0.00304149 -0.286474
 data 8
 Cube.032
-texture "buttons.png"
+texture "buttons.webp"
 crease 30.000000
 numvert 8
 -0.0085971 -0.2182 -0.0120375
@@ -146,7 +146,7 @@ name "MarkingLts"
 loc 0.00126776 -5.00064e-005 -5.00083e-005
 data 9
 Plane.007
-texture "markingsSteepAppr.png"
+texture "markingsSteepAppr.webp"
 crease 30.000000
 numvert 4
 0.00329813 -0.232617 -0.270463

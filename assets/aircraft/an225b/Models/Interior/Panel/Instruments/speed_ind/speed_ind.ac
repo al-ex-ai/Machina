@@ -7,7 +7,7 @@ kids 5
 OBJECT group
 name "kus"
 loc 0.0075 0 0
-texture "speed_ind.png"
+texture "speed_ind.webp"
 numvert 180
 -0.005 0.004047 0.039795
 -0.005 0.011975 0.038166
@@ -2156,7 +2156,7 @@ kids 0
 OBJECT group
 name "group"
 loc 0.0075 0 0
-texture "speed_ind.png"
+texture "speed_ind.webp"
 numvert 180
 -0.005 0.004047 0.039795
 -0.005 0.011975 0.038166
@@ -4324,7 +4324,7 @@ kids 0
 OBJECT poly
 name "kus_rect1"
 loc 0 0.0111418 3.66708e-009
-texture "S2.png"
+texture "S2.webp"
 crease 45.000000
 numvert 4
 0 -0.0189549 -0.00543526

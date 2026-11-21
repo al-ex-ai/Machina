@@ -219,7 +219,7 @@ data 20
 Engineer_corner.mesh
 loc -21.7316151 3.3250885 -0.8592180
 crease 61.0
-texture "panel-neu.png"
+texture "panel-neu.webp"
 texrep 1 1
 numvert 155
 0.40384 0.14768 1.74416
@@ -6674,7 +6674,7 @@ data 13
 planchet.mesh
 loc -22.6830883 3.1319542 -0.7140558
 crease 61.0
-texture "panel-neu.png"
+texture "panel-neu.webp"
 texrep 1 1
 numvert 153
 -0.43501 -0.09254 2.01850
@@ -7945,7 +7945,7 @@ data 10
 Plane.mesh
 loc -23.4065056 -0.5882568 -1.3961391
 crease 61.0
-texture "loadroom.png"
+texture "loadroom.webp"
 texrep 1 1
 numvert 46
 48.64565 3.19126 3.61614

@@ -10,7 +10,7 @@ kids 13
 OBJECT poly
 name "cylinder"
 loc -0.000634011 -0.000733126 -0.0119575
-texture "rpm.png"
+texture "rpm.webp"
 crease 45.000000
 numvert 41
 0.000996896 0.000325671 0.00183576
@@ -315,7 +315,7 @@ kids 0
 OBJECT poly
 name "Fmeter6"
 loc -0.0100032 -0.0137734 -0.0101969
-texture "hobbs.png"
+texture "hobbs.webp"
 crease 45.000000
 numvert 12
 0.00974982 0.00316791 -0.00185477
@@ -411,7 +411,7 @@ kids 0
 OBJECT poly
 name "Fmeter4"
 loc -0.0100032 -0.0137734 -0.00189274
-texture "hobbs.png"
+texture "hobbs.webp"
 crease 45.000000
 numvert 12
 6.51926e-09 1.86265e-09 0.00185477
@@ -507,7 +507,7 @@ kids 0
 OBJECT poly
 name "Fmeter3"
 loc -0.0100032 -0.0137734 0.00215365
-texture "hobbs.png"
+texture "hobbs.webp"
 crease 45.000000
 numvert 12
 0.00974982 0.00316791 -0.00185477
@@ -603,7 +603,7 @@ kids 0
 OBJECT poly
 name "Fmeter1"
 loc -0.0100032 -0.0137734 0.0102669
-texture "hobbs.png"
+texture "hobbs.webp"
 crease 45.000000
 numvert 12
 6.51926e-09 1.86265e-09 0.00185477
@@ -699,7 +699,7 @@ kids 0
 OBJECT poly
 name "Fmeter2"
 loc -0.0100032 -0.0137734 0.00620106
-texture "hobbs.png"
+texture "hobbs.webp"
 crease 45.000000
 numvert 12
 0.00974982 0.00316791 -0.00185477
@@ -795,7 +795,7 @@ kids 0
 OBJECT poly
 name "Fmeter5"
 loc -0.0100032 -0.0137734 -0.0060655
-texture "hobbs.png"
+texture "hobbs.webp"
 crease 45.000000
 numvert 12
 6.51926e-09 1.86265e-09 0.00185477
@@ -891,7 +891,7 @@ kids 0
 OBJECT poly
 name "BezelModel"
 loc 0.00184515 -0.000146493 0.00013775
-texture "rpm.png"
+texture "rpm.webp"
 crease 45.000000
 numvert 138
 0.00761339 -0.0300674 0.030156
@@ -1598,7 +1598,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Face"
-texture "rpm.png"
+texture "rpm.webp"
 crease 45.000000
 numvert 12
 0 0 0.0428831
@@ -1650,7 +1650,7 @@ kids 0
 OBJECT poly
 name "PointerCentre"
 loc 0.000859025 0 0
-texture "rpm.png"
+texture "rpm.webp"
 crease 45.000000
 numvert 25
 0.00316406 0.00158203 0.00274016
@@ -1839,7 +1839,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -0.000634011 -0.000742101 0.00836249
-texture "rpm.png"
+texture "rpm.webp"
 crease 45.000000
 numvert 41
 0.0015594 0.00158862 0.000620211

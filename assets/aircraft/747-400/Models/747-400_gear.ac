@@ -190,7 +190,7 @@ OBJECT poly
 name "GearNoseMainStrutColl"
 data 21
 Mesh23 GearNoseMain_2
-texture "747-400_gear.png"
+texture "747-400_gear.webp"
 texrep 1 1
 crease 30.000000
 numvert 16
@@ -308,7 +308,7 @@ OBJECT poly
 name "GearNoseMainStrutCyli"
 data 17
 Mesh23 GearNoseMa
-texture "747-400_gear.png"
+texture "747-400_gear.webp"
 texrep 1 1
 crease 30.000000
 numvert 16
@@ -396,7 +396,7 @@ OBJECT poly
 name "GearNoseTorqueLinkUp"
 data 8
 Mesh.002
-texture "747-400_gear.png"
+texture "747-400_gear.webp"
 texrep 1 1
 crease 30.000000
 numvert 73
@@ -1804,7 +1804,7 @@ OBJECT poly
 name "GearNoseTorqueLinkLow_1"
 data 8
 Mesh.001
-texture "747-400_gear.png"
+texture "747-400_gear.webp"
 texrep 1 1
 crease 30.000000
 numvert 73
@@ -2299,7 +2299,7 @@ OBJECT poly
 name "GearNoseWheels_0"
 data 12
 Cylinder.001
-texture "747-400_tire3.png"
+texture "747-400_tire3.webp"
 texrep 1 1
 crease 30.000000
 numvert 320
@@ -4421,7 +4421,7 @@ OBJECT poly
 name "GearNoseWheels_1"
 data 12
 Cylinder.001
-texture "747-400_tire1.png"
+texture "747-400_tire1.webp"
 texrep 1 1
 crease 30.000000
 numvert 260
@@ -6785,7 +6785,7 @@ OBJECT poly
 name "GearNoseMainStrutPist"
 data 21
 Mesh15 GearNose_000_2
-texture "747-400_gear.png"
+texture "747-400_gear.webp"
 texrep 1 1
 crease 30.000000
 numvert 16
@@ -7019,7 +7019,7 @@ OBJECT poly
 name "wlg_left_main_1"
 data 17
 Mesh30 GearWing_0
-texture "747-400_gear.png"
+texture "747-400_gear.webp"
 texrep 1 1
 crease 30.000000
 numvert 16
@@ -8065,7 +8065,7 @@ OBJECT poly
 name "Plane"
 data 5
 Plane
-texture "747-400_gear.png"
+texture "747-400_gear.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -8125,7 +8125,7 @@ OBJECT poly
 name "blg.lf"
 data 12
 Cylinder.007
-texture "747-400_tire1.png"
+texture "747-400_tire1.webp"
 texrep 1 1
 crease 30.000000
 numvert 452
@@ -12043,7 +12043,7 @@ OBJECT poly
 name "blg.lr"
 data 12
 Cylinder.006
-texture "747-400_tire1.png"
+texture "747-400_tire1.webp"
 texrep 1 1
 crease 30.000000
 numvert 452
@@ -15961,7 +15961,7 @@ OBJECT poly
 name "blg.rf"
 data 12
 Cylinder.008
-texture "747-400_tire1.png"
+texture "747-400_tire1.webp"
 texrep 1 1
 crease 30.000000
 numvert 452
@@ -19879,7 +19879,7 @@ OBJECT poly
 name "blg.rr"
 data 12
 Cylinder.009
-texture "747-400_tire1.png"
+texture "747-400_tire1.webp"
 texrep 1 1
 crease 30.000000
 numvert 452
@@ -24881,7 +24881,7 @@ OBJECT poly
 name "wlg.lf"
 data 12
 Cylinder.002
-texture "747-400_tire1.png"
+texture "747-400_tire1.webp"
 texrep 1 1
 crease 30.000000
 numvert 452
@@ -28799,7 +28799,7 @@ OBJECT poly
 name "wlg.lr"
 data 12
 Cylinder.003
-texture "747-400_tire1.png"
+texture "747-400_tire1.webp"
 texrep 1 1
 crease 30.000000
 numvert 452
@@ -32717,7 +32717,7 @@ OBJECT poly
 name "wlg.rf"
 data 12
 Cylinder.005
-texture "747-400_tire1.png"
+texture "747-400_tire1.webp"
 texrep 1 1
 crease 30.000000
 numvert 452
@@ -36635,7 +36635,7 @@ OBJECT poly
 name "wlg.rr"
 data 12
 Cylinder.004
-texture "747-400_tire1.png"
+texture "747-400_tire1.webp"
 texrep 1 1
 crease 30.000000
 numvert 452

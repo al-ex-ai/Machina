@@ -8,7 +8,7 @@ name "alt10"
 loc -0.022529 0.00511 -0.024029
 data 5
 alt10
-texture "uvid-15m.png"
+texture "uvid-15m.webp"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 34
@@ -357,7 +357,7 @@ name "alt100"
 loc -0.02253 0.005109 -0.01109
 data 6
 alt100
-texture "uvid-15m.png"
+texture "uvid-15m.webp"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 34
@@ -706,7 +706,7 @@ name "alt1000"
 loc -0.02253 0.005109 0.01059
 data 7
 alt1000
-texture "uvid-15m.png"
+texture "uvid-15m.webp"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 34
@@ -1055,7 +1055,7 @@ name "alt10000"
 loc -0.02263 0.0056 0.02212
 data 8
 alt10000
-texture "uvid-15m.png"
+texture "uvid-15m.webp"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 34
@@ -1404,7 +1404,7 @@ name "face"
 loc 0.001035 -0.005068 0.000317
 data 4
 face
-texture "uvid-15m.png"
+texture "uvid-15m.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 47
@@ -1713,7 +1713,7 @@ name "fond"
 loc 0.005372 0 0.000068
 data 4
 fond
-texture "uvid-15m.png"
+texture "uvid-15m.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 96
@@ -2324,7 +2324,7 @@ name "hs"
 loc 0.015186 -0.068316 0.000068
 data 2
 hs
-texture "uvid-15m.png"
+texture "uvid-15m.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 65
@@ -2832,7 +2832,7 @@ name "knob"
 loc 0.006986 -0.03648 -0.05246
 data 4
 knob
-texture "uvid-15m.png"
+texture "uvid-15m.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 33
@@ -3084,7 +3084,7 @@ name "kr"
 loc 0.016319 -0.066757 -0.000622
 data 2
 kr
-texture "uvid-15m.png"
+texture "uvid-15m.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 121
@@ -4021,7 +4021,7 @@ name "lamp"
 loc 0.010835 -0.03648 -0.05246
 data 4
 lamp
-texture "uvid-15m.png"
+texture "uvid-15m.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 17
@@ -4145,7 +4145,7 @@ name "millibar1"
 loc -0.01328 -0.0313 -0.0135
 data 9
 millibar1
-texture "uvid-15m.png"
+texture "uvid-15m.webp"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 34
@@ -4494,7 +4494,7 @@ name "millibar10"
 loc -0.01328 -0.031296 -0.004458
 data 10
 millibar10
-texture "uvid-15m.png"
+texture "uvid-15m.webp"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 34
@@ -4843,7 +4843,7 @@ name "millibar100"
 loc -0.01328 -0.031296 0.004471
 data 11
 millibar100
-texture "uvid-15m.png"
+texture "uvid-15m.webp"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 34
@@ -5192,7 +5192,7 @@ name "millibar1000"
 loc -0.01328 -0.031296 0.01282
 data 12
 millibar1000
-texture "uvid-15m.png"
+texture "uvid-15m.webp"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 34
@@ -5541,7 +5541,7 @@ name "needle"
 loc 0.00366 0.009882 0.000155
 data 6
 needle
-texture "uvid-15m.png"
+texture "uvid-15m.webp"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 40

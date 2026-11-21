@@ -11,7 +11,7 @@ kids 5
 OBJECT poly
 name "DoorLeft.001"
 loc -17.4071026 -0.3948135 3.6218448
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 128
 0.3868142 0.9025995 0.1151522
@@ -1096,7 +1096,7 @@ kids 321
 OBJECT poly
 name "DoorLeft"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 17
 -17.8013439 0.5078287 3.7369730
@@ -1181,7 +1181,7 @@ kids 0
 OBJECT poly
 name "Engine-LI-Bypass-C"
 loc -0.6000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 34
 -2.8437700 0.3276730 9.7701998
@@ -1335,7 +1335,7 @@ kids 0
 OBJECT poly
 name "Engine-LI-Bypass-Liner"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 34
 -3.4437699 -0.0107946 9.9104004
@@ -1489,7 +1489,7 @@ kids 0
 OBJECT poly
 name "Engine-LI-Casing"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 68
 -4.6965499 -0.4160570 9.4610395
@@ -1901,7 +1901,7 @@ kids 0
 OBJECT poly
 name "Engine-LI-Casing.001"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 49
 -5.9508700 -0.2503670 9.4610395
@@ -2182,7 +2182,7 @@ kids 0
 OBJECT poly
 name "Engine-LI-Casing.002"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 51
 -3.1123600 -0.3025980 8.8906498
@@ -2465,7 +2465,7 @@ kids 0
 OBJECT poly
 name "Engine-LI-Fan"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 49
 -5.6002998 0.7983110 9.4610395
@@ -2842,7 +2842,7 @@ kids 0
 OBJECT poly
 name "Engine-LI-Intake-Liner"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 32
 -5.6028900 -0.0030211 9.4610395
@@ -2994,7 +2994,7 @@ kids 0
 OBJECT poly
 name "Engine-LI-Intake-Liner.001"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 32
 -6.2186198 0.0805491 9.0496597
@@ -3146,7 +3146,7 @@ kids 0
 OBJECT poly
 name "Engine-LI-Jetpipe"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 51
 -0.1160760 0.6094020 9.6534996
@@ -3429,7 +3429,7 @@ kids 0
 OBJECT poly
 name "Engine-LI-Jetpipe-C"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 17
 -2.0164800 1.0740401 9.4610395
@@ -3550,7 +3550,7 @@ kids 0
 OBJECT poly
 name "Engine-LI-Jetpipe-Liner"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 35
 -2.0164800 0.6094020 9.6534996
@@ -3718,7 +3718,7 @@ kids 0
 OBJECT poly
 name "Engine-LI-Mount-C"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 3
 -0.1790990 1.4555500 9.3793402
@@ -3735,7 +3735,7 @@ kids 0
 OBJECT poly
 name "Engine-LI-Mount-F"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 28
 -6.3003201 2.2253699 9.4598799
@@ -3905,7 +3905,7 @@ kids 0
 OBJECT poly
 name "Engine-LI-Mount-IS"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 17
 -0.5743910 2.9153600 9.2087297
@@ -4002,7 +4002,7 @@ kids 0
 OBJECT poly
 name "Engine-LI-Mount-OS"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 17
 2.8475699 2.3057699 9.4587297
@@ -4099,7 +4099,7 @@ kids 0
 OBJECT poly
 name "Engine-LM-Bypass-C"
 loc -0.6000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 34
 1.9103000 -0.0403652 17.5928001
@@ -4253,7 +4253,7 @@ kids 0
 OBJECT poly
 name "Engine-LM-Bypass-Liner"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 34
 1.3103000 -0.3788330 17.7329998
@@ -4407,7 +4407,7 @@ kids 0
 OBJECT poly
 name "Engine-LM-Casing"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 68
 0.0575155 -0.7840950 17.2835999
@@ -4819,7 +4819,7 @@ kids 0
 OBJECT poly
 name "Engine-LM-Casing.001"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 49
 -1.1968000 -0.6184050 17.2835999
@@ -5100,7 +5100,7 @@ kids 0
 OBJECT poly
 name "Engine-LM-Casing.002"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 51
 1.6417100 -0.6706370 16.7133007
@@ -5383,7 +5383,7 @@ kids 0
 OBJECT poly
 name "Engine-LM-Fan"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 49
 -0.8462320 0.4302730 17.2835999
@@ -5760,7 +5760,7 @@ kids 0
 OBJECT poly
 name "Engine-LM-Intake-Liner"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 32
 -0.8488190 -0.3710600 17.2835999
@@ -5912,7 +5912,7 @@ kids 0
 OBJECT poly
 name "Engine-LM-Intake-Liner.001"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 32
 -1.4645500 -0.2874890 16.8722992
@@ -6064,7 +6064,7 @@ kids 0
 OBJECT poly
 name "Engine-LM-Jetpipe"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 51
 4.6379900 0.2413630 17.4761009
@@ -6347,7 +6347,7 @@ kids 0
 OBJECT poly
 name "Engine-LM-Jetpipe-C"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 17
 2.7375901 0.7060000 17.2835999
@@ -6468,7 +6468,7 @@ kids 0
 OBJECT poly
 name "Engine-LM-Jetpipe-Liner"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 35
 2.7375901 0.2413630 17.4761009
@@ -6636,7 +6636,7 @@ kids 0
 OBJECT poly
 name "Engine-LM-Mount-C"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 3
 4.5749698 1.0875100 17.2019005
@@ -6653,7 +6653,7 @@ kids 0
 OBJECT poly
 name "Engine-LM-Mount-F"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 28
 2.9485700 2.9280701 17.2812996
@@ -6823,7 +6823,7 @@ kids 0
 OBJECT poly
 name "Engine-LM-Mount-IS"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 17
 4.1796799 2.5473199 17.0312996
@@ -6920,7 +6920,7 @@ kids 0
 OBJECT poly
 name "Engine-LM-Mount-OS"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 17
 7.6016402 1.9377300 17.2812996
@@ -7017,7 +7017,7 @@ kids 0
 OBJECT poly
 name "Engine-LO-Bypass-C"
 loc -0.6000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 34
 6.3650699 -0.3194660 25.1916008
@@ -7171,7 +7171,7 @@ kids 0
 OBJECT poly
 name "Engine-LO-Bypass-Liner"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 34
 5.7650700 -0.6579340 25.3318005
@@ -7325,7 +7325,7 @@ kids 0
 OBJECT poly
 name "Engine-LO-Casing"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 68
 4.5122900 -1.0632000 24.8824005
@@ -7737,7 +7737,7 @@ kids 0
 OBJECT poly
 name "Engine-LO-Casing.001"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 49
 3.2579701 -0.8975060 24.8824005
@@ -8018,7 +8018,7 @@ kids 0
 OBJECT poly
 name "Engine-LO-Casing.002"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 51
 6.0964799 -0.9497370 24.3120003
@@ -8301,7 +8301,7 @@ kids 0
 OBJECT poly
 name "Engine-LO-Fan"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 49
 3.6085401 0.1511730 24.8824005
@@ -8678,7 +8678,7 @@ kids 0
 OBJECT poly
 name "Engine-LO-Intake-Liner"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 32
 3.6059501 -0.6501600 24.8824005
@@ -8830,7 +8830,7 @@ kids 0
 OBJECT poly
 name "Engine-LO-Intake-Liner.001"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 32
 2.9902201 -0.5665900 24.4710007
@@ -8982,7 +8982,7 @@ kids 0
 OBJECT poly
 name "Engine-LO-Jetpipe"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 51
 9.0927601 -0.0377369 25.0748997
@@ -9265,7 +9265,7 @@ kids 0
 OBJECT poly
 name "Engine-LO-Jetpipe-C"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 17
 7.1923599 0.4269000 24.8824005
@@ -9386,7 +9386,7 @@ kids 0
 OBJECT poly
 name "Engine-LO-Jetpipe-Liner"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 35
 7.1923599 -0.0377369 25.0748997
@@ -9554,7 +9554,7 @@ kids 0
 OBJECT poly
 name "Engine-LO-Mount-C"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 3
 9.0297403 0.8084070 24.8006992
@@ -9571,7 +9571,7 @@ kids 0
 OBJECT poly
 name "Engine-LO-Mount-F"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 28
 2.9085200 1.5782300 24.8812008
@@ -9741,7 +9741,7 @@ kids 0
 OBJECT poly
 name "Engine-LO-Mount-IS"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 17
 8.6344500 2.2682199 24.6301003
@@ -9838,7 +9838,7 @@ kids 0
 OBJECT poly
 name "Engine-LO-Mount-OS"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 17
 12.0564003 1.6586300 24.8801003
@@ -9935,7 +9935,7 @@ kids 0
 OBJECT poly
 name "Engine-RI-Bypass-C"
 loc -0.6000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 34
 -2.8437700 -0.0107946 -9.9104004
@@ -10089,7 +10089,7 @@ kids 0
 OBJECT poly
 name "Engine-RI-Bypass-Liner"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 34
 -1.2699900 -0.0107946 -9.9104004
@@ -10243,7 +10243,7 @@ kids 0
 OBJECT poly
 name "Engine-RI-Casing"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 68
 -3.1123600 -0.4160570 -9.4610395
@@ -10655,7 +10655,7 @@ kids 0
 OBJECT poly
 name "Engine-RI-Casing.001"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 49
 -5.9547100 -0.1495520 -8.9543695
@@ -10936,7 +10936,7 @@ kids 0
 OBJECT poly
 name "Engine-RI-Casing.002"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 51
 -3.1123600 -0.4160570 -9.4610395
@@ -11219,7 +11219,7 @@ kids 0
 OBJECT poly
 name "Engine-RI-Fan"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 49
 -5.6028900 -0.0030211 -9.4610395
@@ -11596,7 +11596,7 @@ kids 0
 OBJECT poly
 name "Engine-RI-Intake-Liner"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 32
 -5.6026201 0.0789652 -9.0496597
@@ -11748,7 +11748,7 @@ kids 0
 OBJECT poly
 name "Engine-RI-Intake-Liner.001"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 32
 -6.2154999 -0.0013067 -9.4610395
@@ -11900,7 +11900,7 @@ kids 0
 OBJECT poly
 name "Engine-RI-Jetpipe"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 51
 -1.2699900 0.3276730 -9.7701998
@@ -12183,7 +12183,7 @@ kids 0
 OBJECT poly
 name "Engine-RI-Jetpipe-C"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 17
 -2.0164800 0.6094020 -9.6534996
@@ -12304,7 +12304,7 @@ kids 0
 OBJECT poly
 name "Engine-RI-Jetpipe-Liner"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 35
 -0.1160760 0.6094020 -9.6534996
@@ -12472,7 +12472,7 @@ kids 0
 OBJECT poly
 name "Engine-RI-Mount-C"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 3
 0.7361050 1.4441400 -9.4587297
@@ -12489,7 +12489,7 @@ kids 0
 OBJECT poly
 name "Engine-RI-Mount-F"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 28
 -6.0517702 2.3984499 -9.4596004
@@ -12659,7 +12659,7 @@ kids 0
 OBJECT poly
 name "Engine-RI-Mount-IS"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 17
 1.3600399 2.5562699 -9.2819500
@@ -12756,7 +12756,7 @@ kids 0
 OBJECT poly
 name "Engine-RI-Mount-OS"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 17
 1.3772900 2.5533600 -9.6355000
@@ -12853,7 +12853,7 @@ kids 0
 OBJECT poly
 name "Engine-RM-Bypass-C"
 loc -0.6000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 34
 1.9103000 -0.3788330 -17.7329998
@@ -13007,7 +13007,7 @@ kids 0
 OBJECT poly
 name "Engine-RM-Bypass-Liner"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 34
 3.4840801 -0.3788330 -17.7329998
@@ -13161,7 +13161,7 @@ kids 0
 OBJECT poly
 name "Engine-RM-Casing"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 68
 1.6417100 -0.7840950 -17.2835999
@@ -13573,7 +13573,7 @@ kids 0
 OBJECT poly
 name "Engine-RM-Casing.001"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 49
 -1.2006400 -0.5175910 -16.7770004
@@ -13854,7 +13854,7 @@ kids 0
 OBJECT poly
 name "Engine-RM-Casing.002"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 51
 1.6417100 -0.7840950 -17.2835999
@@ -14137,7 +14137,7 @@ kids 0
 OBJECT poly
 name "Engine-RM-Fan"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 49
 -0.8488190 -0.3710600 -17.2835999
@@ -14514,7 +14514,7 @@ kids 0
 OBJECT poly
 name "Engine-RM-Intake-Liner"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 32
 -0.8485540 -0.2890730 -16.8722992
@@ -14666,7 +14666,7 @@ kids 0
 OBJECT poly
 name "Engine-RM-Intake-Liner.001"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 32
 -1.4614300 -0.3693450 -17.2835999
@@ -14818,7 +14818,7 @@ kids 0
 OBJECT poly
 name "Engine-RM-Jetpipe"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 51
 3.4840801 -0.0403652 -17.5928001
@@ -15101,7 +15101,7 @@ kids 0
 OBJECT poly
 name "Engine-RM-Jetpipe-C"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 17
 2.7375901 0.2413630 -17.4761009
@@ -15222,7 +15222,7 @@ kids 0
 OBJECT poly
 name "Engine-RM-Jetpipe-Liner"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 35
 4.6379900 0.2413630 -17.4761009
@@ -15390,7 +15390,7 @@ kids 0
 OBJECT poly
 name "Engine-RM-Mount-C"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 3
 5.4901700 1.0761100 -17.2812996
@@ -15407,7 +15407,7 @@ kids 0
 OBJECT poly
 name "Engine-RM-Mount-F"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 28
 3.1911600 2.8448200 -17.1046009
@@ -15577,7 +15577,7 @@ kids 0
 OBJECT poly
 name "Engine-RM-Mount-IS"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 17
 6.1141100 2.1882300 -17.1046009
@@ -15674,7 +15674,7 @@ kids 0
 OBJECT poly
 name "Engine-RM-Mount-OS"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 17
 6.1313601 2.1853199 -17.4580994
@@ -15771,7 +15771,7 @@ kids 0
 OBJECT poly
 name "Engine-RO-Bypass-C"
 loc -0.6000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 34
 6.3650699 -0.6579340 -25.3318005
@@ -15925,7 +15925,7 @@ kids 0
 OBJECT poly
 name "Engine-RO-Bypass-Liner"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 34
 7.9388499 -0.6579340 -25.3318005
@@ -16079,7 +16079,7 @@ kids 0
 OBJECT poly
 name "Engine-RO-Casing"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 68
 6.0964799 -1.0632000 -24.8824005
@@ -16491,7 +16491,7 @@ kids 0
 OBJECT poly
 name "Engine-RO-Casing.001"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 49
 3.2541299 -0.7966910 -24.3757000
@@ -16772,7 +16772,7 @@ kids 0
 OBJECT poly
 name "Engine-RO-Casing.002"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 51
 6.0964799 -1.0632000 -24.8824005
@@ -17055,7 +17055,7 @@ kids 0
 OBJECT poly
 name "Engine-RO-Fan"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 49
 3.6059501 -0.6501600 -24.8824005
@@ -17432,7 +17432,7 @@ kids 0
 OBJECT poly
 name "Engine-RO-Intake-Liner"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 32
 3.6062200 -0.5681740 -24.4710007
@@ -17584,7 +17584,7 @@ kids 0
 OBJECT poly
 name "Engine-RO-Intake-Liner.001"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 32
 2.9933400 -0.6484460 -24.8824005
@@ -17736,7 +17736,7 @@ kids 0
 OBJECT poly
 name "Engine-RO-Jetpipe"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 51
 7.9388499 -0.3194660 -25.1916008
@@ -18019,7 +18019,7 @@ kids 0
 OBJECT poly
 name "Engine-RO-Jetpipe-C"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 17
 7.1923599 -0.0377369 -25.0748997
@@ -18140,7 +18140,7 @@ kids 0
 OBJECT poly
 name "Engine-RO-Jetpipe-Liner"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 35
 9.0927601 -0.0377369 -25.0748997
@@ -18308,7 +18308,7 @@ kids 0
 OBJECT poly
 name "Engine-RO-Mount-C"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 3
 9.9449501 0.7970050 -24.8801003
@@ -18325,7 +18325,7 @@ kids 0
 OBJECT poly
 name "Engine-RO-Mount-F"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 28
 3.1570699 1.7513100 -24.8810005
@@ -18495,7 +18495,7 @@ kids 0
 OBJECT poly
 name "Engine-RO-Mount-IS"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 17
 10.5689001 1.9091300 -24.7033005
@@ -18592,7 +18592,7 @@ kids 0
 OBJECT poly
 name "Engine-RO-Mount-OS"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 17
 10.5860996 1.9062200 -25.0569000
@@ -18689,7 +18689,7 @@ kids 0
 OBJECT poly
 name "FrontCargoDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 257
 -22.1191006 -2.2095599 -1.0163600
@@ -21822,7 +21822,7 @@ kids 0
 OBJECT poly
 name "Fuselage"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 1347
 -21.3610992 2.6700101 2.3383801
@@ -35265,7 +35265,7 @@ kids 0
 OBJECT poly
 name "L-Aileron-B"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 7
 18.8043003 2.2084501 34.0000000
@@ -35287,7 +35287,7 @@ kids 0
 OBJECT poly
 name "L-Aileron-C"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 12
 17.8008995 2.4241400 34.0000000
@@ -35347,7 +35347,7 @@ kids 0
 OBJECT poly
 name "L-Aileron-T"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 7
 17.6105003 2.4480500 34.0000000
@@ -35369,7 +35369,7 @@ kids 0
 OBJECT poly
 name "L-Elevator-B"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 16
 48.8204002 6.2345099 14.9792004
@@ -35456,7 +35456,7 @@ kids 0
 OBJECT poly
 name "L-Elevator-C"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 18
 50.0471992 6.3139901 15.0115004
@@ -35543,7 +35543,7 @@ kids 0
 OBJECT poly
 name "L-Elevator-T"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 16
 50.0583992 6.3915000 15.0015001
@@ -35630,7 +35630,7 @@ kids 0
 OBJECT poly
 name "L-Flap-1"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 18
 11.8071003 3.4748499 8.5000000
@@ -35768,7 +35768,7 @@ kids 0
 OBJECT poly
 name "L-Flap-2"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 12
 12.8550997 3.3542900 18.0000000
@@ -35858,7 +35858,7 @@ kids 0
 OBJECT poly
 name "L-Flap-3"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 12
 15.5398998 2.8483801 26.5000000
@@ -35948,7 +35948,7 @@ kids 0
 OBJECT poly
 name "L-Flap-4"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 12
 16.5450001 2.6274900 26.5000000
@@ -36038,7 +36038,7 @@ kids 0
 OBJECT poly
 name "L-Flap-Cover-1"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 10.5714998 3.4192700 10.7599001
@@ -36066,7 +36066,7 @@ kids 0
 OBJECT poly
 name "L-Flap-Cover-2"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 4
 13.9844999 3.1023901 18.0000000
@@ -36090,7 +36090,7 @@ kids 0
 OBJECT poly
 name "L-Flap-Cover-3"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 4
 15.5398998 2.5709901 26.5000000
@@ -36114,7 +36114,7 @@ kids 0
 OBJECT poly
 name "L-Flap-Cover-4"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 4
 15.5398998 2.5709901 26.5000000
@@ -36138,7 +36138,7 @@ kids 0
 OBJECT poly
 name "L-MG-1-CDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 10
 4.4000001 -2.4649100 3.5558801
@@ -36184,7 +36184,7 @@ kids 0
 OBJECT poly
 name "L-MG-1-IS-Hub"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 32
 3.8936601 -4.2506599 2.8267200
@@ -36336,7 +36336,7 @@ kids 0
 OBJECT poly
 name "L-MG-1-IS-Tyre"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 96
 4.0999999 -4.6999998 2.8299501
@@ -37000,7 +37000,7 @@ kids 0
 OBJECT poly
 name "L-MG-1-LDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 4.4000001 -2.8412199 3.0711100
@@ -37028,7 +37028,7 @@ kids 0
 OBJECT poly
 name "L-MG-1-OS-Hub"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 34
 4.0999999 -4.0443301 3.7687299
@@ -37262,7 +37262,7 @@ kids 0
 OBJECT poly
 name "L-MG-1-OS-Tyre"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 96
 4.0999999 -4.6999998 3.7288899
@@ -37926,7 +37926,7 @@ kids 0
 OBJECT poly
 name "L-MG-1-Strut"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 16
 3.8028500 -1.3268501 3.0000000
@@ -38006,7 +38006,7 @@ kids 0
 OBJECT poly
 name "L-MG-1-UDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 4.4000001 -2.4649100 3.5558801
@@ -38034,7 +38034,7 @@ kids 0
 OBJECT poly
 name "L-MG-2-CDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 10
 4.4000001 -2.8412199 3.0711100
@@ -38080,7 +38080,7 @@ kids 0
 OBJECT poly
 name "L-MG-2-IS-Hub"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 32
 5.5463099 -4.2506599 2.8267200
@@ -38232,7 +38232,7 @@ kids 0
 OBJECT poly
 name "L-MG-2-IS-Tyre"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 96
 5.7526498 -4.6999998 2.8299501
@@ -38896,7 +38896,7 @@ kids 0
 OBJECT poly
 name "L-MG-2-LDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 6.0000000 -2.8412199 3.0711100
@@ -38924,7 +38924,7 @@ kids 0
 OBJECT poly
 name "L-MG-2-OS-Hub"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 34
 5.7526498 -4.0443301 3.7687299
@@ -39158,7 +39158,7 @@ kids 0
 OBJECT poly
 name "L-MG-2-OS-Tyre"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 96
 5.7526498 -4.6999998 3.7288899
@@ -39822,7 +39822,7 @@ kids 0
 OBJECT poly
 name "L-MG-2-Strut"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 16
 5.4555001 -1.3268501 3.0000000
@@ -39902,7 +39902,7 @@ kids 0
 OBJECT poly
 name "L-MG-2-UDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 4.4000001 -2.8412199 3.0711100
@@ -39930,7 +39930,7 @@ kids 0
 OBJECT poly
 name "L-MG-3-CDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 10
 6.0000000 -2.8412199 3.0711100
@@ -39976,7 +39976,7 @@ kids 0
 OBJECT poly
 name "L-MG-3-IS-Hub"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 32
 7.2018199 -4.2506599 2.8267200
@@ -40128,7 +40128,7 @@ kids 0
 OBJECT poly
 name "L-MG-3-IS-Tyre"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 96
 7.4081602 -4.6999998 2.8299501
@@ -40792,7 +40792,7 @@ kids 0
 OBJECT poly
 name "L-MG-3-LDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 7.6999998 -2.8412199 3.0711100
@@ -40820,7 +40820,7 @@ kids 0
 OBJECT poly
 name "L-MG-3-OS-Hub"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 34
 7.4081602 -4.0443301 3.7687299
@@ -41054,7 +41054,7 @@ kids 0
 OBJECT poly
 name "L-MG-3-OS-Tyre"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 96
 7.4081602 -4.6999998 3.7288899
@@ -41718,7 +41718,7 @@ kids 0
 OBJECT poly
 name "L-MG-3-Strut"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 16
 7.1110101 -1.3268501 3.0000000
@@ -41798,7 +41798,7 @@ kids 0
 OBJECT poly
 name "L-MG-3-UDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 6.0000000 -2.8412199 3.0711100
@@ -41826,7 +41826,7 @@ kids 0
 OBJECT poly
 name "L-MG-4-CDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 10
 7.6999998 -2.8412199 3.0711100
@@ -41872,7 +41872,7 @@ kids 0
 OBJECT poly
 name "L-MG-4-IS-Hub"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 32
 8.8138504 -4.2506599 2.8267200
@@ -42024,7 +42024,7 @@ kids 0
 OBJECT poly
 name "L-MG-4-IS-Tyre"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 96
 9.0201902 -4.6999998 2.8299501
@@ -42688,7 +42688,7 @@ kids 0
 OBJECT poly
 name "L-MG-4-LDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 9.3999996 -2.8412199 3.0711100
@@ -42716,7 +42716,7 @@ kids 0
 OBJECT poly
 name "L-MG-4-OS-Hub"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 34
 9.0201902 -4.0443301 3.7687299
@@ -42950,7 +42950,7 @@ kids 0
 OBJECT poly
 name "L-MG-4-OS-Tyre"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 96
 9.0201902 -4.6999998 3.7288899
@@ -43614,7 +43614,7 @@ kids 0
 OBJECT poly
 name "L-MG-4-Strut"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 16
 8.7230396 -1.3268501 3.0000000
@@ -43694,7 +43694,7 @@ kids 0
 OBJECT poly
 name "L-MG-4-UDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 7.6999998 -2.8412199 3.0711100
@@ -43722,7 +43722,7 @@ kids 0
 OBJECT poly
 name "L-MG-5-CDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 10
 9.3999996 -2.8412199 3.0711100
@@ -43768,7 +43768,7 @@ kids 0
 OBJECT poly
 name "L-MG-5-IS-Hub"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 32
 10.5144997 -4.2506599 2.8267200
@@ -43920,7 +43920,7 @@ kids 0
 OBJECT poly
 name "L-MG-5-IS-Tyre"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 96
 10.7208996 -4.6999998 2.8299501
@@ -44584,7 +44584,7 @@ kids 0
 OBJECT poly
 name "L-MG-5-LDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 11.1000004 -2.8412199 3.0711100
@@ -44612,7 +44612,7 @@ kids 0
 OBJECT poly
 name "L-MG-5-OS-Hub"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 34
 10.7208996 -4.0443301 3.7687299
@@ -44846,7 +44846,7 @@ kids 0
 OBJECT poly
 name "L-MG-5-OS-Tyre"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 96
 10.7208996 -4.6999998 3.7288899
@@ -45510,7 +45510,7 @@ kids 0
 OBJECT poly
 name "L-MG-5-Strut"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 16
 10.4237003 -1.3268501 3.0000000
@@ -45590,7 +45590,7 @@ kids 0
 OBJECT poly
 name "L-MG-5-UDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 9.3999996 -2.8412199 3.0711100
@@ -45618,7 +45618,7 @@ kids 0
 OBJECT poly
 name "L-MG-6-CDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 10
 11.1000004 -2.8412199 3.0711100
@@ -45664,7 +45664,7 @@ kids 0
 OBJECT poly
 name "L-MG-6-IS-Hub"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 32
 12.2051001 -4.2506599 2.8267200
@@ -45816,7 +45816,7 @@ kids 0
 OBJECT poly
 name "L-MG-6-IS-Tyre"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 96
 12.4115000 -4.6999998 2.8299501
@@ -46480,7 +46480,7 @@ kids 0
 OBJECT poly
 name "L-MG-6-LDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 12.8000002 -2.8412199 3.0711100
@@ -46508,7 +46508,7 @@ kids 0
 OBJECT poly
 name "L-MG-6-OS-Hub"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 34
 12.4115000 -4.0443301 3.7687299
@@ -46742,7 +46742,7 @@ kids 0
 OBJECT poly
 name "L-MG-6-OS-Tyre"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 96
 12.4115000 -4.6999998 3.7288899
@@ -47406,7 +47406,7 @@ kids 0
 OBJECT poly
 name "L-MG-6-Strut"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 16
 12.1142998 -1.3268501 3.0000000
@@ -47486,7 +47486,7 @@ kids 0
 OBJECT poly
 name "L-MG-6-UDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 11.1000004 -2.8412199 3.0711100
@@ -47514,7 +47514,7 @@ kids 0
 OBJECT poly
 name "L-MG-7-CDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 10
 12.8000002 -2.8412199 3.0711100
@@ -47560,7 +47560,7 @@ kids 0
 OBJECT poly
 name "L-MG-7-IS-Hub"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 32
 13.9041004 -4.2506599 2.8267200
@@ -47712,7 +47712,7 @@ kids 0
 OBJECT poly
 name "L-MG-7-IS-Tyre"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 96
 14.1105003 -4.6999998 2.8299501
@@ -48376,7 +48376,7 @@ kids 0
 OBJECT poly
 name "L-MG-7-LDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 14.5000000 -2.8412199 3.0711100
@@ -48404,7 +48404,7 @@ kids 0
 OBJECT poly
 name "L-MG-7-OS-Hub"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 34
 14.1105003 -4.0443301 3.7687299
@@ -48638,7 +48638,7 @@ kids 0
 OBJECT poly
 name "L-MG-7-OS-Tyre"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 96
 14.1105003 -4.6999998 3.7288899
@@ -49302,7 +49302,7 @@ kids 0
 OBJECT poly
 name "L-MG-7-Strut"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 16
 13.8133001 -1.3268501 3.0000000
@@ -49382,7 +49382,7 @@ kids 0
 OBJECT poly
 name "L-MG-7-UDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 12.8000002 -2.8412199 3.0711100
@@ -49410,7 +49410,7 @@ kids 0
 OBJECT poly
 name "L-MG-WheelWell"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 46
 2.9840200 -0.8202630 3.7539599
@@ -49732,7 +49732,7 @@ kids 0
 OBJECT poly
 name "L-NG-CDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 9
 -21.3610992 -2.0880799 1.8477000
@@ -49777,7 +49777,7 @@ kids 0
 OBJECT poly
 name "L-NG-IS-Door"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 -21.3610992 -2.2910199 1.0466200
@@ -49805,7 +49805,7 @@ kids 0
 OBJECT poly
 name "L-NG-IS-Hub"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 32
 -19.8236008 -4.2506599 0.6660580
@@ -49957,7 +49957,7 @@ kids 0
 OBJECT poly
 name "L-NG-IS-Tyre"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 96
 -19.6172009 -4.6999998 0.6692920
@@ -50621,7 +50621,7 @@ kids 0
 OBJECT poly
 name "L-NG-OS-Door"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 -21.3610992 -2.0880799 1.8477000
@@ -50649,7 +50649,7 @@ kids 0
 OBJECT poly
 name "L-NG-OS-Hub"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 34
 -19.6172009 -4.0443301 1.6080700
@@ -50883,7 +50883,7 @@ kids 0
 OBJECT poly
 name "L-NG-OS-Tyre"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 96
 -19.6172009 -4.6999998 1.5682300
@@ -51547,7 +51547,7 @@ kids 0
 OBJECT poly
 name "L-NG-Strut"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 16
 -19.9144001 -1.5768501 0.8393390
@@ -51627,7 +51627,7 @@ kids 0
 OBJECT poly
 name "L-TailFin-C"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 20
 50.1054993 13.0664997 14.2519999
@@ -51721,7 +51721,7 @@ kids 0
 OBJECT poly
 name "L-TailFin-IS"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 117
 44.3143997 6.6914401 14.8407001
@@ -52516,7 +52516,7 @@ kids 0
 OBJECT poly
 name "L-TailFin-OS"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 102
 48.8474007 6.7493100 15.2293997
@@ -53202,7 +53202,7 @@ kids 0
 OBJECT poly
 name "L-TailPlane-B"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 36
 43.8585014 5.4488101 1.2442600
@@ -53407,7 +53407,7 @@ kids 0
 OBJECT poly
 name "L-TailPlane-C"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 13
 42.6185989 5.2448001 1.7037100
@@ -53469,7 +53469,7 @@ kids 0
 OBJECT poly
 name "L-TailPlane-T"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 36
 33.9804001 5.0306602 2.0565600
@@ -53674,7 +53674,7 @@ kids 0
 OBJECT poly
 name "L-Wing-B"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 73
 1.9600800 3.2215300 8.5000000
@@ -54130,7 +54130,7 @@ kids 0
 OBJECT poly
 name "L-Wing-C"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 180
 20.4883995 1.9108500 41.7976990
@@ -55036,7 +55036,7 @@ kids 0
 OBJECT poly
 name "L-Wing-Slat"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 42
 12.4310999 2.4991801 34.0000000
@@ -55296,7 +55296,7 @@ kids 0
 OBJECT poly
 name "L-Wing-T"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 189
 2.2905900 4.9885898 8.5000000
@@ -56210,7 +56210,7 @@ kids 0
 OBJECT poly
 name "LL-Rudder-C"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 10
 49.5209999 3.1215100 15.5749998
@@ -56261,7 +56261,7 @@ kids 0
 OBJECT poly
 name "LL-Rudder-IS"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 48.7192993 5.7484899 15.1313000
@@ -56289,7 +56289,7 @@ kids 0
 OBJECT poly
 name "LL-Rudder-OS"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 48.7555008 5.7482400 15.3530998
@@ -56317,7 +56317,7 @@ kids 0
 OBJECT poly
 name "LU-Rudder-C"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 10
 50.6046982 13.0809002 14.4131002
@@ -56368,7 +56368,7 @@ kids 0
 OBJECT poly
 name "LU-Rudder-IS"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 50.1054993 13.0664997 14.2519999
@@ -56396,7 +56396,7 @@ kids 0
 OBJECT poly
 name "LU-Rudder-OS"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 50.6046982 13.0809002 14.4131002
@@ -56424,7 +56424,7 @@ kids 0
 OBJECT poly
 name "LW-Flap-Br1F"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 24
 10.5347996 2.6620300 5.1735201
@@ -56594,7 +56594,7 @@ kids 0
 OBJECT poly
 name "LW-Flap-Br1R"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 18
 10.5347996 2.6620300 5.1735201
@@ -56726,7 +56726,7 @@ kids 0
 OBJECT poly
 name "LW-Flap-Br2F"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 24
 10.5347996 2.7210500 9.3794804
@@ -56896,7 +56896,7 @@ kids 0
 OBJECT poly
 name "LW-Flap-Br2R"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 18
 10.5347996 2.7210500 9.3794804
@@ -57028,7 +57028,7 @@ kids 0
 OBJECT poly
 name "LW-Flap-Br3F"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 24
 11.2760000 2.6482401 12.3954000
@@ -57198,7 +57198,7 @@ kids 0
 OBJECT poly
 name "LW-Flap-Br3R"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 18
 11.2760000 2.6482401 12.3954000
@@ -57330,7 +57330,7 @@ kids 0
 OBJECT poly
 name "LW-Flap-Br4F"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 24
 12.6337004 2.3693700 17.2320995
@@ -57500,7 +57500,7 @@ kids 0
 OBJECT poly
 name "LW-Flap-Br4R"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 18
 12.6337004 2.3693700 17.2320995
@@ -57632,7 +57632,7 @@ kids 0
 OBJECT poly
 name "LW-Flap-Br5F"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 24
 13.5434999 2.3908100 19.4633007
@@ -57802,7 +57802,7 @@ kids 0
 OBJECT poly
 name "LW-Flap-Br5R"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 18
 13.5434999 2.3908100 19.4633007
@@ -57934,7 +57934,7 @@ kids 0
 OBJECT poly
 name "LW-Flap-Br6F"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 24
 15.0284996 2.1089399 24.4193993
@@ -58104,7 +58104,7 @@ kids 0
 OBJECT poly
 name "LW-Flap-Br6R"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 18
 15.0284996 2.1089399 24.4193993
@@ -58236,7 +58236,7 @@ kids 0
 OBJECT poly
 name "LW-Flap-Br7F"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 24
 16.1529999 2.0897300 27.7954006
@@ -58406,7 +58406,7 @@ kids 0
 OBJECT poly
 name "LW-Flap-Br7R"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 18
 16.1529999 2.0897300 27.7954006
@@ -58538,7 +58538,7 @@ kids 0
 OBJECT poly
 name "LW-Flap-Br8F"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 24
 17.2098007 1.9000000 31.2409000
@@ -58708,7 +58708,7 @@ kids 0
 OBJECT poly
 name "LW-Flap-Br8R"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 18
 17.2098007 1.9000000 31.2409000
@@ -58840,7 +58840,7 @@ kids 0
 OBJECT poly
 name "LW-Spoilers-Inner"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 24
 10.5129004 3.7709799 5.5999999
@@ -58998,7 +58998,7 @@ kids 0
 OBJECT poly
 name "LW-Spoilers-Outer"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 106
 9.9459000 3.9147699 12.5000000
@@ -59616,7 +59616,7 @@ kids 0
 OBJECT poly
 name "NG-WheelWell"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 27
 -21.2187004 -0.5647180 1.8477000
@@ -59791,7 +59791,7 @@ kids 0
 OBJECT poly
 name "R-Aileron-B"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 7
 17.8192005 2.1663401 -34.0000000
@@ -59813,7 +59813,7 @@ kids 0
 OBJECT poly
 name "R-Aileron-C"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 12
 17.8192005 2.1663401 -34.0000000
@@ -59873,7 +59873,7 @@ kids 0
 OBJECT poly
 name "R-Aileron-T"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 7
 17.8008995 2.4241400 -34.0000000
@@ -59895,7 +59895,7 @@ kids 0
 OBJECT poly
 name "R-Elevator-B"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 16
 50.0471992 6.3139901 -15.0115004
@@ -59982,7 +59982,7 @@ kids 0
 OBJECT poly
 name "R-Elevator-C"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 18
 50.0583992 6.3915000 -15.0015001
@@ -60069,7 +60069,7 @@ kids 0
 OBJECT poly
 name "R-Elevator-T"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 16
 48.8526993 6.4689398 -14.9421997
@@ -60156,7 +60156,7 @@ kids 0
 OBJECT poly
 name "R-Flap-1"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 18
 11.8034000 3.5069101 -10.7599001
@@ -60294,7 +60294,7 @@ kids 0
 OBJECT poly
 name "R-Flap-2"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 12
 10.5714998 3.7863801 -10.7599001
@@ -60384,7 +60384,7 @@ kids 0
 OBJECT poly
 name "R-Flap-3"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 12
 12.8550997 3.3542900 -18.0000000
@@ -60474,7 +60474,7 @@ kids 0
 OBJECT poly
 name "R-Flap-4"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 12
 18.8043003 2.2084501 -34.0000000
@@ -60564,7 +60564,7 @@ kids 0
 OBJECT poly
 name "R-Flap-Cover-1"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 11.8034000 3.5069101 -10.7599001
@@ -60592,7 +60592,7 @@ kids 0
 OBJECT poly
 name "R-Flap-Cover-2"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 4
 11.8034000 3.5069101 -10.7599001
@@ -60616,7 +60616,7 @@ kids 0
 OBJECT poly
 name "R-Flap-Cover-3"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 4
 16.5450001 2.6274900 -26.5000000
@@ -60640,7 +60640,7 @@ kids 0
 OBJECT poly
 name "R-Flap-Cover-4"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 4
 17.8192005 2.1663401 -34.0000000
@@ -60664,7 +60664,7 @@ kids 0
 OBJECT poly
 name "R-MG-1-CDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 10
 4.4000001 -1.9443901 -3.8416800
@@ -60710,7 +60710,7 @@ kids 0
 OBJECT poly
 name "R-MG-1-IS-Hub"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 32
 3.8936601 -4.2506599 -3.3418200
@@ -60862,7 +60862,7 @@ kids 0
 OBJECT poly
 name "R-MG-1-IS-Tyre"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 96
 4.0999999 -4.5701399 -2.9060199
@@ -61526,7 +61526,7 @@ kids 0
 OBJECT poly
 name "R-MG-1-LDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 4.4000001 -3.0563500 -2.6692600
@@ -61554,7 +61554,7 @@ kids 0
 OBJECT poly
 name "R-MG-1-OS-Hub"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 34
 3.9883299 -4.3139200 -3.7256501
@@ -61788,7 +61788,7 @@ kids 0
 OBJECT poly
 name "R-MG-1-OS-Tyre"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 96
 4.0999999 -4.5701399 -3.8049500
@@ -62452,7 +62452,7 @@ kids 0
 OBJECT poly
 name "R-MG-1-Strut"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 16
 3.8028500 -4.1268501 -3.0000000
@@ -62532,7 +62532,7 @@ kids 0
 OBJECT poly
 name "R-MG-1-UDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 4.4000001 -1.9443901 -3.8416800
@@ -62560,7 +62560,7 @@ kids 0
 OBJECT poly
 name "R-MG-2-CDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 10
 4.4000001 -2.4649100 -3.5558801
@@ -62606,7 +62606,7 @@ kids 0
 OBJECT poly
 name "R-MG-2-IS-Hub"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 32
 5.5463099 -4.2506599 -3.3418200
@@ -62758,7 +62758,7 @@ kids 0
 OBJECT poly
 name "R-MG-2-IS-Tyre"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 96
 5.7526498 -4.5701399 -2.9060199
@@ -63422,7 +63422,7 @@ kids 0
 OBJECT poly
 name "R-MG-2-LDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 6.0000000 -3.0563500 -2.6692600
@@ -63450,7 +63450,7 @@ kids 0
 OBJECT poly
 name "R-MG-2-OS-Hub"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 34
 5.6409798 -4.3139200 -3.7256501
@@ -63684,7 +63684,7 @@ kids 0
 OBJECT poly
 name "R-MG-2-OS-Tyre"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 96
 5.7526498 -4.5701399 -3.8049500
@@ -64348,7 +64348,7 @@ kids 0
 OBJECT poly
 name "R-MG-2-Strut"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 16
 5.4555001 -4.1268501 -3.0000000
@@ -64428,7 +64428,7 @@ kids 0
 OBJECT poly
 name "R-MG-2-UDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 4.4000001 -2.4649100 -3.5558801
@@ -64456,7 +64456,7 @@ kids 0
 OBJECT poly
 name "R-MG-3-CDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 10
 6.0000000 -2.4649100 -3.5558801
@@ -64502,7 +64502,7 @@ kids 0
 OBJECT poly
 name "R-MG-3-IS-Hub"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 32
 7.2018199 -4.2506599 -3.3418200
@@ -64654,7 +64654,7 @@ kids 0
 OBJECT poly
 name "R-MG-3-IS-Tyre"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 96
 7.4081602 -4.5701399 -2.9060199
@@ -65318,7 +65318,7 @@ kids 0
 OBJECT poly
 name "R-MG-3-LDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 7.6999998 -3.0563500 -2.6692600
@@ -65346,7 +65346,7 @@ kids 0
 OBJECT poly
 name "R-MG-3-OS-Hub"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 34
 7.2964902 -4.3139200 -3.7256501
@@ -65580,7 +65580,7 @@ kids 0
 OBJECT poly
 name "R-MG-3-OS-Tyre"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 96
 7.4081602 -4.5701399 -3.8049500
@@ -66244,7 +66244,7 @@ kids 0
 OBJECT poly
 name "R-MG-3-Strut"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 16
 7.1110101 -4.1268501 -3.0000000
@@ -66324,7 +66324,7 @@ kids 0
 OBJECT poly
 name "R-MG-3-UDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 6.0000000 -2.4649100 -3.5558801
@@ -66352,7 +66352,7 @@ kids 0
 OBJECT poly
 name "R-MG-4-CDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 10
 7.6999998 -2.4649100 -3.5558801
@@ -66398,7 +66398,7 @@ kids 0
 OBJECT poly
 name "R-MG-4-IS-Hub"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 32
 8.8138504 -4.2506599 -3.3418200
@@ -66550,7 +66550,7 @@ kids 0
 OBJECT poly
 name "R-MG-4-IS-Tyre"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 96
 9.0201902 -4.5701399 -2.9060199
@@ -67214,7 +67214,7 @@ kids 0
 OBJECT poly
 name "R-MG-4-LDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 7.6999998 -2.8412199 -3.0711100
@@ -67242,7 +67242,7 @@ kids 0
 OBJECT poly
 name "R-MG-4-OS-Hub"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 34
 8.9085197 -4.3139200 -3.7256501
@@ -67476,7 +67476,7 @@ kids 0
 OBJECT poly
 name "R-MG-4-OS-Tyre"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 96
 9.0201902 -4.5701399 -3.8049500
@@ -68140,7 +68140,7 @@ kids 0
 OBJECT poly
 name "R-MG-4-Strut"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 16
 8.7230396 -4.1268501 -3.0000000
@@ -68220,7 +68220,7 @@ kids 0
 OBJECT poly
 name "R-MG-4-UDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 7.6999998 -2.4649100 -3.5558801
@@ -68248,7 +68248,7 @@ kids 0
 OBJECT poly
 name "R-MG-5-CDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 10
 9.3999996 -2.4649100 -3.5558801
@@ -68294,7 +68294,7 @@ kids 0
 OBJECT poly
 name "R-MG-5-IS-Hub"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 32
 10.5144997 -4.2506599 -3.3418200
@@ -68446,7 +68446,7 @@ kids 0
 OBJECT poly
 name "R-MG-5-IS-Tyre"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 96
 10.7208996 -4.5701399 -2.9060199
@@ -69110,7 +69110,7 @@ kids 0
 OBJECT poly
 name "R-MG-5-LDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 11.1000004 -3.0563500 -2.6692600
@@ -69138,7 +69138,7 @@ kids 0
 OBJECT poly
 name "R-MG-5-OS-Hub"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 34
 10.6091995 -4.3139200 -3.7256501
@@ -69372,7 +69372,7 @@ kids 0
 OBJECT poly
 name "R-MG-5-OS-Tyre"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 96
 10.7208996 -4.5701399 -3.8049500
@@ -70036,7 +70036,7 @@ kids 0
 OBJECT poly
 name "R-MG-5-Strut"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 16
 10.4237003 -4.1268501 -3.0000000
@@ -70116,7 +70116,7 @@ kids 0
 OBJECT poly
 name "R-MG-5-UDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 9.3999996 -2.4649100 -3.5558801
@@ -70144,7 +70144,7 @@ kids 0
 OBJECT poly
 name "R-MG-6-CDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 10
 11.1000004 -2.4649100 -3.5558801
@@ -70190,7 +70190,7 @@ kids 0
 OBJECT poly
 name "R-MG-6-IS-Hub"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 32
 12.2051001 -4.2506599 -3.3418200
@@ -70342,7 +70342,7 @@ kids 0
 OBJECT poly
 name "R-MG-6-IS-Tyre"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 96
 12.4115000 -4.5701399 -2.9060199
@@ -71006,7 +71006,7 @@ kids 0
 OBJECT poly
 name "R-MG-6-LDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 12.8000002 -3.0563500 -2.6692600
@@ -71034,7 +71034,7 @@ kids 0
 OBJECT poly
 name "R-MG-6-OS-Hub"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 34
 12.2997999 -4.3139200 -3.7256501
@@ -71268,7 +71268,7 @@ kids 0
 OBJECT poly
 name "R-MG-6-OS-Tyre"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 96
 12.4115000 -4.5701399 -3.8049500
@@ -71932,7 +71932,7 @@ kids 0
 OBJECT poly
 name "R-MG-6-Strut"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 16
 12.1142998 -4.1268501 -3.0000000
@@ -72012,7 +72012,7 @@ kids 0
 OBJECT poly
 name "R-MG-6-UDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 11.1000004 -2.4649100 -3.5558801
@@ -72040,7 +72040,7 @@ kids 0
 OBJECT poly
 name "R-MG-7-CDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 10
 12.8000002 -2.4649100 -3.5558801
@@ -72086,7 +72086,7 @@ kids 0
 OBJECT poly
 name "R-MG-7-IS-Hub"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 32
 13.9041004 -4.2506599 -3.3418200
@@ -72238,7 +72238,7 @@ kids 0
 OBJECT poly
 name "R-MG-7-IS-Tyre"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 96
 14.1105003 -4.5701399 -2.9060199
@@ -72902,7 +72902,7 @@ kids 0
 OBJECT poly
 name "R-MG-7-LDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 14.5000000 -3.0563500 -2.6692600
@@ -72930,7 +72930,7 @@ kids 0
 OBJECT poly
 name "R-MG-7-OS-Hub"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 34
 13.9988003 -4.3139200 -3.7256501
@@ -73164,7 +73164,7 @@ kids 0
 OBJECT poly
 name "R-MG-7-OS-Tyre"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 96
 14.1105003 -4.5701399 -3.8049500
@@ -73828,7 +73828,7 @@ kids 0
 OBJECT poly
 name "R-MG-7-Strut"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 16
 13.8133001 -4.1268501 -3.0000000
@@ -73908,7 +73908,7 @@ kids 0
 OBJECT poly
 name "R-MG-7-UDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 12.8000002 -2.4649100 -3.5558801
@@ -73936,7 +73936,7 @@ kids 0
 OBJECT poly
 name "R-MG-WheelWell"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 46
 4.4000001 -1.3086900 -1.8604000
@@ -74258,7 +74258,7 @@ kids 0
 OBJECT poly
 name "R-NG-CDoor"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 9
 -19.5018005 -2.2101300 -1.9361700
@@ -74303,7 +74303,7 @@ kids 0
 OBJECT poly
 name "R-NG-IS-Door"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 -19.5018005 -2.4163599 -1.0973099
@@ -74331,7 +74331,7 @@ kids 0
 OBJECT poly
 name "R-NG-IS-Hub"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 32
 -19.8236008 -4.2506599 -1.1811600
@@ -74483,7 +74483,7 @@ kids 0
 OBJECT poly
 name "R-NG-IS-Tyre"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 96
 -19.6172009 -4.5701399 -0.7453550
@@ -75147,7 +75147,7 @@ kids 0
 OBJECT poly
 name "R-NG-OS-Door"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 -19.5018005 -2.2101300 -1.9361700
@@ -75175,7 +75175,7 @@ kids 0
 OBJECT poly
 name "R-NG-OS-Hub"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 34
 -19.7289009 -4.3139200 -1.5649900
@@ -75409,7 +75409,7 @@ kids 0
 OBJECT poly
 name "R-NG-OS-Tyre"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 96
 -19.6172009 -4.5701399 -1.6442900
@@ -76073,7 +76073,7 @@ kids 0
 OBJECT poly
 name "R-NG-Strut"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 16
 -19.9144001 -4.1268501 -0.8393390
@@ -76153,7 +76153,7 @@ kids 0
 OBJECT poly
 name "R-TailFin-C"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 20
 47.8610001 7.4730401 -14.8464003
@@ -76247,7 +76247,7 @@ kids 0
 OBJECT poly
 name "R-TailFin-IS"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 117
 46.8392982 6.7024102 -14.8823996
@@ -77042,7 +77042,7 @@ kids 0
 OBJECT poly
 name "R-TailFin-OS"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 102
 46.8820000 6.7558198 -15.3332996
@@ -77728,7 +77728,7 @@ kids 0
 OBJECT poly
 name "R-TailPlane-B"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 36
 42.4655991 5.2226400 -1.4258300
@@ -77933,7 +77933,7 @@ kids 0
 OBJECT poly
 name "R-TailPlane-C"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 13
 42.4570999 5.6284199 -1.7220300
@@ -77995,7 +77995,7 @@ kids 0
 OBJECT poly
 name "R-TailPlane-T"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 36
 34.0012016 5.1189799 -1.9311800
@@ -78200,7 +78200,7 @@ kids 0
 OBJECT poly
 name "R-Wing-B"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 73
 2.9191201 3.2942600 -10.7599001
@@ -78656,7 +78656,7 @@ kids 0
 OBJECT poly
 name "R-Wing-C"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 180
 20.5044003 1.7628000 -41.7976990
@@ -79562,7 +79562,7 @@ kids 0
 OBJECT poly
 name "R-Wing-Slat"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 42
 17.1797009 1.8575701 -41.7976990
@@ -79822,7 +79822,7 @@ kids 0
 OBJECT poly
 name "R-Wing-T"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 188
 6.8435602 4.4319601 -10.7599001
@@ -80723,7 +80723,7 @@ kids 0
 OBJECT poly
 name "RL-Rudder-C"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 10
 48.7401009 3.1046300 -15.4710999
@@ -80774,7 +80774,7 @@ kids 0
 OBJECT poly
 name "RL-Rudder-IS"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 47.4612999 5.7351999 -15.0496998
@@ -80802,7 +80802,7 @@ kids 0
 OBJECT poly
 name "RL-Rudder-OS"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 49.9712982 5.7397199 -15.2508001
@@ -80830,7 +80830,7 @@ kids 0
 OBJECT poly
 name "RU-Rudder-C"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 10
 50.5908012 13.0699997 -14.2911997
@@ -80881,7 +80881,7 @@ kids 0
 OBJECT poly
 name "RU-Rudder-IS"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 47.8610001 7.4730401 -14.8464003
@@ -80909,7 +80909,7 @@ kids 0
 OBJECT poly
 name "RU-Rudder-OS"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 6
 48.7425003 7.0000000 -15.2065001
@@ -80937,7 +80937,7 @@ kids 0
 OBJECT poly
 name "RW-Flap-Br1F"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 24
 10.5347996 2.6620300 -5.0000000
@@ -81107,7 +81107,7 @@ kids 0
 OBJECT poly
 name "RW-Flap-Br1R"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 18
 11.8116999 2.9064801 -5.1000600
@@ -81239,7 +81239,7 @@ kids 0
 OBJECT poly
 name "RW-Flap-Br2F"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 24
 10.5347996 2.7210500 -9.2059603
@@ -81409,7 +81409,7 @@ kids 0
 OBJECT poly
 name "RW-Flap-Br2R"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 18
 11.8027000 2.9637799 -9.3065395
@@ -81541,7 +81541,7 @@ kids 0
 OBJECT poly
 name "RW-Flap-Br3F"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 24
 11.2760000 2.6482401 -12.2423000
@@ -81711,7 +81711,7 @@ kids 0
 OBJECT poly
 name "RW-Flap-Br3R"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 18
 12.2793999 2.8403599 -12.3375998
@@ -81843,7 +81843,7 @@ kids 0
 OBJECT poly
 name "RW-Flap-Br4F"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 24
 12.6337004 2.3693700 -17.0792999
@@ -82013,7 +82013,7 @@ kids 0
 OBJECT poly
 name "RW-Flap-Br4R"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 18
 13.7337999 2.5799799 -17.1688004
@@ -82145,7 +82145,7 @@ kids 0
 OBJECT poly
 name "RW-Flap-Br5F"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 24
 13.5434999 2.3908100 -19.3381996
@@ -82315,7 +82315,7 @@ kids 0
 OBJECT poly
 name "RW-Flap-Br5R"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 18
 14.4095001 2.5566101 -19.4134007
@@ -82447,7 +82447,7 @@ kids 0
 OBJECT poly
 name "RW-Flap-Br6F"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 24
 15.0284996 2.1089399 -24.2943001
@@ -82617,7 +82617,7 @@ kids 0
 OBJECT poly
 name "RW-Flap-Br6R"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 18
 15.9028997 2.2763500 -24.3691006
@@ -82749,7 +82749,7 @@ kids 0
 OBJECT poly
 name "RW-Flap-Br7F"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 24
 16.1529999 2.0897300 -27.7003002
@@ -82919,7 +82919,7 @@ kids 0
 OBJECT poly
 name "RW-Flap-Br7R"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 18
 16.9237995 2.2073700 -27.7569008
@@ -83051,7 +83051,7 @@ kids 0
 OBJECT poly
 name "RW-Flap-Br8F"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 24
 17.2098007 1.9000000 -31.1457996
@@ -83221,7 +83221,7 @@ kids 0
 OBJECT poly
 name "RW-Flap-Br8R"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 18
 17.9617004 2.0140200 -31.2033997
@@ -83353,7 +83353,7 @@ kids 0
 OBJECT poly
 name "RW-Spoilers-Inner"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 24
 9.3478098 4.0511599 -5.5999999
@@ -83511,7 +83511,7 @@ kids 0
 OBJECT poly
 name "RW-Spoilers-Outer"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 106
 9.3814402 4.0260100 -10.7599001
@@ -84129,7 +84129,7 @@ kids 0
 OBJECT poly
 name "UC-Blister"
 loc 0.0000000 0.0000000 0.0000000
-texture "AN225-tx-001.png"
+texture "AN225-tx-001.webp"
 texrep 1 1
 numvert 172
 15.2240000 -2.9959099 0.0000000

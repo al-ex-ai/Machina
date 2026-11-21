@@ -1,6 +1,6 @@
 {
   "a320neo": {
-    "hash": "fd5a0a23e8",
+    "hash": "7cef46ddac",
     "parts": 29
   },
   "a380-800": {
@@ -8,11 +8,11 @@
     "parts": 21
   },
   "an225": {
-    "hash": "3c28792b44",
+    "hash": "93cffbb212",
     "parts": 17
   },
   "b707": {
-    "hash": "c665ef01d6",
+    "hash": "4805aacfd7",
     "parts": 21
   },
   "b737-300": {
@@ -24,7 +24,7 @@
     "parts": 30
   },
   "b787-8": {
-    "hash": "1e8fcef598",
+    "hash": "212fc2c9ed",
     "parts": 26
   },
   "cessna-172s": {
@@ -48,7 +48,7 @@
     "parts": 12
   },
   "ercoupe": {
-    "hash": "6ae41f0b48",
+    "hash": "bf49b558d3",
     "parts": 18
   },
   "il76": {
@@ -56,7 +56,7 @@
     "parts": 23
   },
   "j3-cub": {
-    "hash": "13184817ef",
+    "hash": "2f93d36b02",
     "parts": 20
   },
   "sr71": {
@@ -64,11 +64,11 @@
     "parts": 15
   },
   "tu134": {
-    "hash": "39814f655b",
+    "hash": "a3c1316834",
     "parts": 19
   },
   "wright-flyer": {
-    "hash": "2285e3edb7",
+    "hash": "ddfa81b82a",
     "parts": 10
   }
 }

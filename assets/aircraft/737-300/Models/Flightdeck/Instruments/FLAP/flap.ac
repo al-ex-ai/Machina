@@ -9,7 +9,7 @@ name "main"
 data 12
 Cylinder.001
 crease 40.0
-texture "flap.png"
+texture "flap.webp"
 texrep 1 1
 numvert 320
 -0.00118 0.02316 0.00013
@@ -2425,7 +2425,7 @@ name "needle"
 data 5
 Plane
 crease 40.0
-texture "flap.png"
+texture "flap.webp"
 texrep 1 1
 numvert 6
 0.00023 0.00049 -0.00202

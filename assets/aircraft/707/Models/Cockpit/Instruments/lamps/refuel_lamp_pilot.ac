@@ -10,7 +10,7 @@ name "LampAmber"
 loc 0.048124 0.020892 -0.043646
 data 9
 LampAmber
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 numvert 81
 -0.049921 0.007452 0.02518
@@ -645,7 +645,7 @@ name "LampAmberON"
 loc 0.048323 0.020892 -0.043646
 data 11
 LampAmberON
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 numvert 81
 -0.049921 0.007452 0.02518
@@ -1280,7 +1280,7 @@ name "LampGreen"
 loc 0.05335 -0.030497 0.012727
 data 9
 LampGreen
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 numvert 81
 -0.055054 0.027326 -0.006433
@@ -1915,7 +1915,7 @@ name "LampGreen.001"
 loc 0.05335 -0.006013 0.013204
 data 13
 LampGreen.001
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 numvert 81
 -0.055054 0.027326 -0.006433
@@ -2550,7 +2550,7 @@ name "LampGreenON"
 loc 0.053568 -0.030497 0.012727
 data 11
 LampGreenON
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 numvert 81
 -0.055108 0.027331 -0.006779
@@ -3185,7 +3185,7 @@ name "LampGreenON.001"
 loc 0.053568 -0.006013 0.013204
 data 15
 LampGreenON.001
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 numvert 81
 -0.055108 0.027331 -0.006779
@@ -3820,7 +3820,7 @@ name "shadow"
 loc -0.000578 0.022285 -0
 data 6
 shadow
-texture "refuel.png"
+texture "refuel.webp"
 texrep 1 1
 numvert 44
 -0.002159 -0.031199 -0.038224
@@ -4028,7 +4028,7 @@ name "sockle"
 loc -0.587509 0.382491 0.203273
 data 6
 sockle
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 numvert 38
 0.585914 -0.379673 -0.216294
@@ -4190,7 +4190,7 @@ name "sup"
 loc -0.002293 0.022179 -0.017938
 data 3
 sup
-texture "shadow-machtrim.png"
+texture "shadow-machtrim.webp"
 texrep 1 1
 numvert 4
 0 -0.008389 -0.011265
@@ -4211,7 +4211,7 @@ name "support"
 loc -0.000578 0.022285 -0
 data 7
 support
-texture "refuel.png"
+texture "refuel.webp"
 texrep 1 1
 numvert 64
 0 -0.033 -0.036414
@@ -4649,7 +4649,7 @@ name "switch"
 loc -0.560259 0.362378 0.149959
 data 6
 switch
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 numvert 274
 0.55945 -0.36149 -0.170988

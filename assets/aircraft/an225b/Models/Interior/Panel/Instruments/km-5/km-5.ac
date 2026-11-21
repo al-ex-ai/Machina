@@ -10,7 +10,7 @@ kids 10
 OBJECT poly
 name "base"
 loc 0.0003300 0.0000000 -0.0000283
-texture "base.png"
+texture "base.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0638694 0.0639635
@@ -635,7 +635,7 @@ kids 0
 OBJECT poly
 name "center"
 loc 0.0383236 -0.0000000 -0.0000283
-texture "base.png"
+texture "base.webp"
 texrep 1 1
 numvert 17
 0.0000000 0.0000000 -0.0126902
@@ -756,7 +756,7 @@ kids 0
 OBJECT poly
 name "cover"
 loc 0.0194302 -0.0000000 -0.0000283
-texture "base.png"
+texture "base.webp"
 texrep 1 1
 numvert 64
 -0.0188830 0.0098571 -0.0495781
@@ -1052,7 +1052,7 @@ kids 0
 OBJECT poly
 name "front"
 loc 0.0380993 0.0000000 -0.0000283
-texture "base.png"
+texture "base.webp"
 texrep 1 1
 numvert 96
 0.0000000 0.0000000 -0.0000000
@@ -1352,7 +1352,7 @@ kids 2
 OBJECT poly
 name "handle_1"
 loc 0.0003701 0.0131626 -0.0141294
-texture "base.png"
+texture "base.webp"
 texrep 1 1
 numvert 32
 -0.0092042 0.0039397 -0.0095007
@@ -1504,7 +1504,7 @@ kids 0
 OBJECT poly
 name "handle_2"
 loc -0.0003701 -0.0131626 0.0141294
-texture "base.png"
+texture "base.webp"
 texrep 1 1
 numvert 17
 0.0092042 0.0260364 -0.0280610
@@ -1657,7 +1657,7 @@ kids 0
 OBJECT poly
 name "needle"
 loc 0.0393790 0.0148462 -0.0002678
-texture "needle.png"
+texture "needle.webp"
 texrep 1 1
 numvert 4
 0.0000000 0.0204846 -0.0056478
@@ -1676,7 +1676,7 @@ kids 0
 OBJECT poly
 name "text"
 loc 0.0381400 -0.0000000 -0.0000283
-texture "text.png"
+texture "text.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0411879 0.0413684

@@ -7,7 +7,7 @@ name "ohpanel"
 loc -0.303203 -0.026509 -0
 data 7
 ohpanel
-texture "ohpanel.png"
+texture "ohpanel.webp"
 texrep 1 1
 crease 79.999998
 numvert 32

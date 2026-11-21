@@ -8,7 +8,7 @@ kids 5
 OBJECT poly
 name "base"
 loc 0.0000000 0.0000000 0.0000000
-texture "base-volume.png"
+texture "base-volume.webp"
 texrep 1 1
 numvert 4
 -0.0013120 0.0289460 -0.0842440

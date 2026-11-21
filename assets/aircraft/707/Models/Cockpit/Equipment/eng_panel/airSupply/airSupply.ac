@@ -7,7 +7,7 @@ name "bezel"
 loc 0.000058 0.001771 0.001453
 data 5
 bezel
-texture "airSupplyPress.png"
+texture "airSupplyPress.webp"
 texrep 1 1
 crease 30.000001
 numvert 144
@@ -666,7 +666,7 @@ name "face"
 loc 0.000116 0.000048 0.000367
 data 4
 face
-texture "airSupplyPress.png"
+texture "airSupplyPress.webp"
 texrep 1 1
 crease 30.000001
 numvert 16
@@ -777,7 +777,7 @@ name "needle"
 loc 0.000005 0.000048 -0
 data 6
 needle
-texture "airSupplyPress.png"
+texture "airSupplyPress.webp"
 texrep 1 1
 crease 30.000001
 numvert 7
@@ -821,7 +821,7 @@ name "sup"
 loc 0.000005 0.000048 0.000351
 data 3
 sup
-texture "airSupplyPress.png"
+texture "airSupplyPress.webp"
 texrep 1 1
 crease 30.000001
 numvert 18

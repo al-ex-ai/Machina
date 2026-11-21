@@ -365,7 +365,7 @@ OBJECT poly
 name "AltFace.002"
 data 8
 Mesh.017
-texture "alt.png"
+texture "alt.webp"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -432,7 +432,7 @@ OBJECT poly
 name "Altimeter.003"
 data 8
 Mesh.018
-texture "alt2.png"
+texture "alt2.webp"
 texrep 1 1
 crease 50.000000
 numvert 84
@@ -1074,7 +1074,7 @@ OBJECT poly
 name "altdig1"
 data 8
 Mesh.019
-texture "altdigits.png"
+texture "altdigits.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -1100,7 +1100,7 @@ OBJECT poly
 name "altdig2"
 data 8
 Mesh.020
-texture "altdigits.png"
+texture "altdigits.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -1126,7 +1126,7 @@ OBJECT poly
 name "altdig20s"
 data 8
 Mesh.021
-texture "altdigits.png"
+texture "altdigits.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -1152,7 +1152,7 @@ OBJECT poly
 name "altdig3"
 data 8
 Mesh.022
-texture "altdigits.png"
+texture "altdigits.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -1178,7 +1178,7 @@ OBJECT poly
 name "baroknob"
 data 12
 Cylinder.006
-texture "altbaroknob.png"
+texture "altbaroknob.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -1526,7 +1526,7 @@ OBJECT poly
 name "inhg1"
 data 8
 Mesh.025
-texture "altdigits.png"
+texture "altdigits.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -1552,7 +1552,7 @@ OBJECT poly
 name "inhg2"
 data 8
 Mesh.024
-texture "altdigits.png"
+texture "altdigits.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -1578,7 +1578,7 @@ OBJECT poly
 name "inhg3"
 data 8
 Mesh.023
-texture "altdigits.png"
+texture "altdigits.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -1604,7 +1604,7 @@ OBJECT poly
 name "inhg4"
 data 8
 Mesh.026
-texture "altdigits.png"
+texture "altdigits.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -1630,7 +1630,7 @@ OBJECT poly
 name "mb1"
 data 8
 Mesh.027
-texture "altdigits.png"
+texture "altdigits.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -1656,7 +1656,7 @@ OBJECT poly
 name "mb2"
 data 8
 Mesh.028
-texture "altdigits.png"
+texture "altdigits.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -1682,7 +1682,7 @@ OBJECT poly
 name "mb3"
 data 8
 Mesh.029
-texture "altdigits.png"
+texture "altdigits.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -1708,7 +1708,7 @@ OBJECT poly
 name "mb4"
 data 8
 Mesh.030
-texture "altdigits.png"
+texture "altdigits.webp"
 texrep 1 1
 crease 30.000000
 numvert 4

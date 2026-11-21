@@ -7,7 +7,7 @@ name "brake"
 loc -16.888737 1.073674 0.546443
 data 5
 brake
-texture "pneubrake.png"
+texture "pneubrake.webp"
 texrep 1 1
 numvert 92
 -2.006983 -0.121372 -0.325302
@@ -627,7 +627,7 @@ name "shadow"
 loc -18.238588 1.032939 0.42603
 data 6
 shadow
-texture "pneubrake.png"
+texture "pneubrake.webp"
 texrep 1 1
 numvert 9
 -0.681194 -0.018014 -0.245463
@@ -674,7 +674,7 @@ name "sup"
 loc -18.907125 0.994462 0.239225
 data 3
 sup
-texture "pneubrake.png"
+texture "pneubrake.webp"
 texrep 1 1
 numvert 8
 -0.012335 -0.004891 0.000498

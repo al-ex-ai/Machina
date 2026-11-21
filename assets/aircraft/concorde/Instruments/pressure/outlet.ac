@@ -7,7 +7,7 @@ OBJECT poly
 name "ColdAirOutlet"
 data 8
 Cube.009
-texture "concorde-panel.png"
+texture "concorde-panel.webp"
 texrep 1 1
 crease 30.000000
 numvert 73

@@ -7,7 +7,7 @@ name "FlightDeckDoor"
 loc 19.689541 -0.274869 -0
 data 14
 FlightDeckDoor
-texture "concorde-flight-deck.png"
+texture "concorde-flight-deck.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8

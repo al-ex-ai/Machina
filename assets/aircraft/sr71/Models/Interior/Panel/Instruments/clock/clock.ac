@@ -8,7 +8,7 @@ name "Hours"
 loc 0 0 -0
 data 5
 Hours
-texture "clock.png"
+texture "clock.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 60
@@ -397,7 +397,7 @@ name "Minutes"
 loc 0 0 -0
 data 7
 Minutes
-texture "clock.png"
+texture "clock.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 60
@@ -781,7 +781,7 @@ name "Seconds"
 loc 0 0 -0
 data 7
 Seconds
-texture "clock.png"
+texture "clock.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 12
@@ -858,7 +858,7 @@ name "face"
 loc 0 0 -0
 data 4
 face
-texture "clock.png"
+texture "clock.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 65
@@ -1350,7 +1350,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "clock.png"
+texture "clock.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 192

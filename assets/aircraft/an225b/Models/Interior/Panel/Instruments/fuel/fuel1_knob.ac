@@ -5,7 +5,7 @@ kids 2
 OBJECT group
 name "k1"
 loc -0.00206735 0.000146068 0.000107941
-texture "knob.png"
+texture "knob.webp"
 numvert 100
 -9.31323e-010 0.0101768 -0.00417534
 -9.31323e-010 0.0108802 -0.00161912
@@ -1096,7 +1096,7 @@ kids 0
 OBJECT group
 name "group"
 loc 0.00264575 0 2.79397e-009
-texture "fon4_knob.png"
+texture "fon4_knob.webp"
 numvert 56
 9.31323e-010 0.005563 -0.024373
 -0.005 0.010847 -0.022524

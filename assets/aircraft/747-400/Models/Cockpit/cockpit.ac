@@ -250,7 +250,7 @@ name "Circle.003_1"
 data 8
 Mesh.008
 crease 30.0
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 1061
 1.58047 0.4179 0.06904
@@ -7796,7 +7796,7 @@ name "Btn.K"
 data 8
 Mesh.009
 crease 30.0
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 390
 1.71421 0.41842 0.04785
@@ -10356,7 +10356,7 @@ name "captainseat"
 data 17
 Mesh9 Group3 seat
 crease 30.0
-texture "seats.png"
+texture "seats.webp"
 texrep 1 1
 numvert 118
 1.60123 0.37834 0.77455
@@ -11204,7 +11204,7 @@ name "Cylinder.005_1"
 data 12
 Cylinder.038
 crease 30.0
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 1728
 1.41243 0.41784 0.11714
@@ -18990,7 +18990,7 @@ name "Cylinder.005_1.001"
 data 12
 Cylinder.039
 crease 30.0
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 49
 1.60034 0.428 -0.15308
@@ -19361,7 +19361,7 @@ name "Cylinder.005_1.002"
 data 12
 Cylinder.040
 crease 30.0
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 1764
 1.40834 0.438 0.12076
@@ -32367,7 +32367,7 @@ name "sw.nd.mode.001"
 data 12
 Cylinder.041
 crease 30.0
-texture "overhead_switches.png"
+texture "overhead_switches.webp"
 texrep 1 1
 numvert 97
 1.31393 0.43574 0
@@ -33122,7 +33122,7 @@ name "sw.radio_freq.out"
 data 12
 Cylinder.042
 crease 30.0
-texture "overhead_switches.png"
+texture "overhead_switches.webp"
 texrep 1 1
 numvert 194
 1.28215 0.41741 0.03671
@@ -34622,7 +34622,7 @@ name "sw.radio_freq0.inn"
 data 12
 Cylinder.043
 crease 30.0
-texture "overhead_switches.png"
+texture "overhead_switches.webp"
 texrep 1 1
 numvert 49
 1.31708 0.42956 0.09598
@@ -34993,7 +34993,7 @@ name "sw.radio_freq0.out"
 data 12
 Cylinder.044
 crease 30.0
-texture "overhead_switches.png"
+texture "overhead_switches.webp"
 texrep 1 1
 numvert 72
 1.30365 0.41741 0.09499
@@ -35411,7 +35411,7 @@ name "sw.radio_freq1.inn"
 data 12
 Cylinder.045
 crease 30.0
-texture "overhead_switches.png"
+texture "overhead_switches.webp"
 texrep 1 1
 numvert 49
 1.31708 0.42956 -0.19902
@@ -35782,7 +35782,7 @@ name "sw.radio_freq1.out"
 data 12
 Cylinder.046
 crease 30.0
-texture "overhead_switches.png"
+texture "overhead_switches.webp"
 texrep 1 1
 numvert 72
 1.30365 0.41741 -0.20001
@@ -36200,7 +36200,7 @@ name "sw.radio_freq2.inn"
 data 12
 Cylinder.047
 crease 30.0
-texture "overhead_switches.png"
+texture "overhead_switches.webp"
 texrep 1 1
 numvert 49
 1.49707 0.42956 0.09598
@@ -36571,7 +36571,7 @@ name "sw.radio_freq2.out"
 data 12
 Cylinder.048
 crease 30.0
-texture "overhead_switches.png"
+texture "overhead_switches.webp"
 texrep 1 1
 numvert 72
 1.48365 0.41741 0.09499
@@ -36989,7 +36989,7 @@ name "Cylinder.010"
 data 12
 Cylinder.050
 crease 30.0
-texture "overhead_switches.png"
+texture "overhead_switches.webp"
 texrep 1 1
 numvert 576
 1.42516 0.42212 0.18849
@@ -40581,7 +40581,7 @@ name "EVAC"
 data 17
 Mesh286 Model.035
 crease 30.0
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 12
 1.73173 0.42525 0.13645
@@ -40647,7 +40647,7 @@ name "pedestal"
 data 17
 Mesh286 Model.024
 crease 30.0
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 361
 1.62013 0.41275 0.07408
@@ -43482,7 +43482,7 @@ name "pedestal.002"
 data 17
 Mesh286 Model.025
 crease 30.0
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 28
 1.04235 0.43665 -0.21104
@@ -43607,7 +43607,7 @@ name "stab.trim.ind"
 data 17
 Mesh286 Model.027
 crease 30.0
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 8
 1.03253 0.4393 -0.21608
@@ -43645,7 +43645,7 @@ name "Mesh286.011"
 data 17
 Mesh286 Model.030
 crease 30.0
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 288
 1.35093 0.42775 0.18664
@@ -45203,7 +45203,7 @@ name "radio_swap_freq0"
 data 17
 Mesh286 Model.031
 crease 30.0
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 8
 1.29454 0.41775 0.14049
@@ -45256,7 +45256,7 @@ name "radio_swap_freq1"
 data 17
 Mesh286 Model.032
 crease 30.0
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 8
 1.29454 0.41775 -0.1555
@@ -45309,7 +45309,7 @@ name "radio_swap_freq2"
 data 17
 Mesh286 Model.033
 crease 30.0
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 8
 1.47365 0.41775 0.14049
@@ -45362,7 +45362,7 @@ name "rudder_trim_ctrl"
 data 17
 Mesh286 Model.034
 crease 30.0
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 49
 1.6337 0.43642 -0.02858
@@ -45673,7 +45673,7 @@ name "firstofficerseat"
 data 21
 Mesh9 Group3 seat.001
 crease 30.0
-texture "seats.png"
+texture "seats.webp"
 texrep 1 1
 numvert 118
 1.60123 0.37834 -0.29382
@@ -46518,7 +46518,7 @@ name "firstofficerseat.001"
 data 21
 Mesh9 Group3 seat.002
 crease 30.0
-texture "seats.png"
+texture "seats.webp"
 texrep 1 1
 numvert 118
 2.656 0.37834 -0.1939
@@ -47363,7 +47363,7 @@ name "firstofficerseat.002"
 data 21
 Mesh9 Group3 seat.003
 crease 30.0
-texture "seats.png"
+texture "seats.webp"
 texrep 1 1
 numvert 118
 2.656 0.37834 0.77419
@@ -48247,7 +48247,7 @@ name "reverser_eng.1"
 data 21
 Mesh8 LHthrottle_.016
 crease 30.0
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 88
 1.22093 0.53214 0.07501
@@ -48983,7 +48983,7 @@ name "reverser_eng.2"
 data 21
 Mesh8 LHthrottle_.017
 crease 30.0
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 80
 1.2181 0.52255 0.04001
@@ -49655,7 +49655,7 @@ name "reverser_eng.3"
 data 21
 Mesh8 LHthrottle_.018
 crease 30.0
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 80
 1.2181 0.52255 -0.00948
@@ -50327,7 +50327,7 @@ name "reverser_eng.4"
 data 21
 Mesh8 LHthrottle_.019
 crease 30.0
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 88
 1.22093 0.53214 -0.04507
@@ -51063,7 +51063,7 @@ name "throttle_eng.1"
 data 21
 Mesh8 LHthrottle_.020
 crease 30.0
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 114
 1.18189 0.50706 0.06045
@@ -52004,7 +52004,7 @@ name "throttle_eng.2"
 data 21
 Mesh8 LHthrottle_.021
 crease 30.0
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 120
 1.24787 0.51647 0.01572
@@ -53018,7 +53018,7 @@ name "throttle_eng.3"
 data 21
 Mesh8 LHthrottle_.022
 crease 30.0
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 120
 1.24787 0.51647 -0.01078
@@ -54032,7 +54032,7 @@ name "throttle_eng.4"
 data 21
 Mesh8 LHthrottle_.023
 crease 30.0
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 114
 1.23615 0.5728 -0.03811
@@ -54973,7 +54973,7 @@ name "fuel_ctrl.1"
 data 21
 Mesh205 Cylinder_.007
 crease 30.0
-texture "overhead_switches.png"
+texture "overhead_switches.webp"
 texrep 1 1
 numvert 116
 1.2324 0.45587 0.07923
@@ -56043,7 +56043,7 @@ name "fuel_ctrl.2"
 data 21
 Mesh205 Cylinder_.008
 crease 30.0
-texture "overhead_switches.png"
+texture "overhead_switches.webp"
 texrep 1 1
 numvert 116
 1.2324 0.45587 0.03607
@@ -57113,7 +57113,7 @@ name "fuel_ctrl.3"
 data 21
 Mesh205 Cylinder_.009
 crease 30.0
-texture "overhead_switches.png"
+texture "overhead_switches.webp"
 texrep 1 1
 numvert 116
 1.2324 0.45587 -0.00732
@@ -58183,7 +58183,7 @@ name "fuel_ctrl.4"
 data 21
 Mesh205 Cylinder_.010
 crease 30.0
-texture "overhead_switches.png"
+texture "overhead_switches.webp"
 texrep 1 1
 numvert 116
 1.2324 0.45587 -0.05
@@ -59565,7 +59565,7 @@ name "left_column"
 data 17
 Mesh10 Component_
 crease 30.0
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 362
 1.13664 -0.04488 0.52354
@@ -62575,7 +62575,7 @@ name "left_yoke"
 data 12
 Cylinder.001
 crease 30.0
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 1650
 1.04413 0.74806 0.5024
@@ -76206,7 +76206,7 @@ name "Mesh6"
 data 17
 Mesh6 Group2 Grou
 crease 30.0
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 96
 1.07024 -0 0.42159
@@ -76951,7 +76951,7 @@ name "flap_handle"
 data 21
 Mesh214 Group_4_1.005
 crease 30.0
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 37
 1.01646 0.51986 -0.16257
@@ -77280,7 +77280,7 @@ name "pedals_l"
 data 9
 Plane.002
 crease 30.0
-texture "pedals.png"
+texture "pedals.webp"
 texrep 1 1
 numvert 8
 0.75652 0.05735 -0.28449
@@ -77312,7 +77312,7 @@ name "pedals_r"
 data 9
 Plane.001
 crease 30.0
-texture "pedals.png"
+texture "pedals.webp"
 texrep 1 1
 numvert 8
 0.75652 0.05735 0.28449
@@ -77656,7 +77656,7 @@ name "right_column"
 data 21
 Mesh10 Component_.001
 crease 30.0
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 362
 1.13664 -0.04488 -0.52354
@@ -80666,7 +80666,7 @@ name "right_yoke"
 data 8
 Cylinder
 crease 30.0
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 1650
 1.04413 0.74806 -0.5024
@@ -94264,7 +94264,7 @@ name "speedbrake"
 data 21
 Mesh211 SpdBrkLev.001
 crease 30.0
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 24
 1.0324 0.56566 0.15861
@@ -94522,7 +94522,7 @@ name "sw.autobrake"
 data 8
 knob.007
 crease 30.0
-texture "overhead_switches.png"
+texture "overhead_switches.webp"
 texrep 1 1
 numvert 187
 1.54585 0.42116 -0.10786
@@ -95895,7 +95895,7 @@ name "sw.fltdkdoor"
 data 8
 knob.008
 crease 30.0
-texture "overhead_switches.png"
+texture "overhead_switches.webp"
 texrep 1 1
 numvert 187
 1.6711 0.42116 0.15528
@@ -97268,7 +97268,7 @@ name "sw.seatbelt"
 data 8
 knob.010
 crease 30.0
-texture "overhead_switches.png"
+texture "overhead_switches.webp"
 texrep 1 1
 numvert 187
 1.6711 0.42116 0.10719
@@ -98641,7 +98641,7 @@ name "sw.smoking"
 data 8
 knob.011
 crease 30.0
-texture "overhead_switches.png"
+texture "overhead_switches.webp"
 texrep 1 1
 numvert 187
 1.67188 0.4225 0.19276
@@ -100014,7 +100014,7 @@ name "sw.trsp.code"
 data 12
 Cylinder.052
 crease 30.0
-texture "overhead_switches.png"
+texture "overhead_switches.webp"
 texrep 1 1
 numvert 386
 1.48345 0.41712 -0.12463
@@ -103034,7 +103034,7 @@ name "sw.trsp.mode"
 data 12
 Cylinder.053
 crease 30.0
-texture "overhead_switches.png"
+texture "overhead_switches.webp"
 texrep 1 1
 numvert 61
 1.45281 0.4173 -0.19726

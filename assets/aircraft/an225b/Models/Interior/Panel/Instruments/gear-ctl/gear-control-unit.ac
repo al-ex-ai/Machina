@@ -14,7 +14,7 @@ name "abs_low"
 data 16
 abs_low.mesh.002
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 12
 -0.00266 -0.05414 0.03829
@@ -99,7 +99,7 @@ name "abs_low_on"
 data 16
 abs_low.mesh.003
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 6
 0.00148 -0.05259 0.03687
@@ -124,7 +124,7 @@ name "abs_max"
 data 16
 abs_max.mesh.002
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 12
 -0.00254 -0.05422 0.00241
@@ -209,7 +209,7 @@ name "abs_max_on"
 data 16
 abs_max.mesh.003
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 6
 0.0016 -0.05267 0.00098
@@ -234,7 +234,7 @@ name "abs_med"
 data 16
 abs_med.mesh.002
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 12
 0.0013 -0.05264 0.00394
@@ -319,7 +319,7 @@ name "abs_med_on"
 data 16
 abs_med.mesh.003
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 6
 0.00148 -0.05259 0.00394
@@ -344,7 +344,7 @@ name "abs_rto_on"
 data 16
 abs_max.mesh.000
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 6
 0.0016 -0.05267 -0.02035
@@ -369,7 +369,7 @@ name "abs_rto"
 data 16
 abs_rto.mesh.001
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 12
 0.00121 -0.05273 -0.0352
@@ -454,7 +454,7 @@ name "Cube"
 data 4
 Cube
 crease 40.0
-texture "800.png"
+texture "800.webp"
 texrep 1 1
 numvert 16
 -0.02201 -0.0234 0.05508
@@ -550,7 +550,7 @@ name "dec_low_on"
 data 16
 dec_low.mesh.001
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 6
 0.00136 -0.0459 0.02941
@@ -575,7 +575,7 @@ name "dec_max_on"
 data 16
 dec_max.mesh.001
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 6
 0.00148 -0.04599 -0.00648
@@ -600,7 +600,7 @@ name "dec_med_on"
 data 16
 dec_med.mesh.001
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 6
 0.00136 -0.0459 0.0114
@@ -625,7 +625,7 @@ name "dec_rto_on"
 data 16
 dec_max.mesh.000
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 6
 0.00148 -0.04599 -0.02781
@@ -650,7 +650,7 @@ name "emer2_lit"
 data 28
 ecam_panel_emer_lit.mesh.000
 crease 40.0
-texture "ecam_panel.png"
+texture "ecam_panel.webp"
 texrep 1 1
 numvert 410
 0.00035 -0.06459 0.03804
@@ -4063,7 +4063,7 @@ name "emer2_red"
 data 23
 ecam_emer_canc.mesh.000
 crease 45.0
-texture "ecam_panel.png"
+texture "ecam_panel.webp"
 texrep 1 1
 numvert 12
 -0.00725 -0.07986 0.02357
@@ -4155,7 +4155,7 @@ name "emer2_spring"
 data 26
 ecam_panel_spring.mesh.000
 crease 40.0
-texture "ecam_panel.png"
+texture "ecam_panel.webp"
 texrep 1 1
 numvert 96
 0.00383 -0.06419 0.02615
@@ -4939,7 +4939,7 @@ name "emer_lit"
 data 28
 ecam_panel_emer_lit.mesh.001
 crease 40.0
-texture "ecam_panel.png"
+texture "ecam_panel.webp"
 texrep 1 1
 numvert 410
 0.00035 0.02034 -0.01638
@@ -8352,7 +8352,7 @@ name "emer_red"
 data 23
 ecam_emer_canc.mesh.001
 crease 45.0
-texture "ecam_panel.png"
+texture "ecam_panel.webp"
 texrep 1 1
 numvert 12
 -0.00725 0.00508 -0.03084
@@ -8444,7 +8444,7 @@ name "emer_spring"
 data 26
 ecam_panel_spring.mesh.001
 crease 40.0
-texture "ecam_panel.png"
+texture "ecam_panel.webp"
 texrep 1 1
 numvert 96
 0.00383 0.02074 -0.02827
@@ -9228,7 +9228,7 @@ name "gear"
 data 19
 rgear_unlk.mesh.002
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 24
 -0.003 0.0601 -0.01214
@@ -9367,7 +9367,7 @@ name "gear_down"
 data 19
 rgear_down.mesh.001
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 18
 0.00106 0.06815 -0.02089
@@ -9422,7 +9422,7 @@ name "gear_unlk"
 data 19
 rgear_unlk.mesh.003
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 18
 0.001 0.07476 -0.0135
@@ -9477,7 +9477,7 @@ name "GearLever"
 data 8
 Mesh.215
 crease 45.0
-texture "flightdeck.png"
+texture "flightdeck.webp"
 texrep 1 1
 numvert 70
 0.03344 0.04609 0.03421
@@ -10066,7 +10066,7 @@ name "switch"
 data 16
 land_sw.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 33
 -0.00021 -0.06955 -0.01905
@@ -10325,7 +10325,7 @@ name "switch_bas"
 data 19
 switch_bas.mesh.001
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 17
 0.00136 -0.06419 -0.02201

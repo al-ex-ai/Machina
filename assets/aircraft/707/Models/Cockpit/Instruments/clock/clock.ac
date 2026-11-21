@@ -8,7 +8,7 @@ name "FThour"
 loc -0.001301 0.016641 -0
 data 6
 FThour
-texture "clock.png"
+texture "clock.webp"
 texrep 1 1
 crease 30.000001
 numvert 5
@@ -42,7 +42,7 @@ name "FTmin"
 loc -0.001336 0.016641 -0
 data 5
 FTmin
-texture "clock.png"
+texture "clock.webp"
 texrep 1 1
 crease 30.000001
 numvert 5
@@ -76,7 +76,7 @@ name "Hourhand"
 loc -0.002243 0 -0
 data 8
 Hourhand
-texture "clock.png"
+texture "clock.webp"
 texrep 1 1
 crease 30.000001
 numvert 5
@@ -110,7 +110,7 @@ name "Minutehand"
 loc -0.002243 0 -0
 data 10
 Minutehand
-texture "clock.png"
+texture "clock.webp"
 texrep 1 1
 crease 30.000001
 numvert 5
@@ -144,7 +144,7 @@ name "Sec.Hand"
 loc -0.002243 0 -0
 data 8
 Sec.Hand
-texture "clock.png"
+texture "clock.webp"
 texrep 1 1
 crease 30.000001
 numvert 5
@@ -178,7 +178,7 @@ name "face"
 loc 0.000033 0.00002 -0.00002
 data 4
 face
-texture "clock.png"
+texture "clock.webp"
 texrep 1 1
 crease 30.000001
 numvert 17
@@ -302,7 +302,7 @@ name "min"
 loc -0.001301 -0.017957 -0
 data 3
 min
-texture "clock.png"
+texture "clock.webp"
 texrep 1 1
 crease 30.000001
 numvert 5
@@ -336,7 +336,7 @@ name "sec"
 loc -0.001336 -0.017957 -0
 data 3
 sec
-texture "clock.png"
+texture "clock.webp"
 texrep 1 1
 crease 30.000001
 numvert 5
@@ -370,7 +370,7 @@ name "shadow"
 loc 0.001301 0.000767 -0.000767
 data 6
 shadow
-texture "shadow.png"
+texture "shadow.webp"
 texrep 1 1
 numvert 4
 0 -0.0475 -0.0475
@@ -391,7 +391,7 @@ name "time.set"
 loc 0.00548 -0.03 0.03
 data 8
 time.set
-texture "clock.png"
+texture "clock.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -803,7 +803,7 @@ name "time.stop"
 loc 0.00548 -0.03 -0.03
 data 9
 time.stop
-texture "clock.png"
+texture "clock.webp"
 texrep 1 1
 crease 45.000001
 numvert 145

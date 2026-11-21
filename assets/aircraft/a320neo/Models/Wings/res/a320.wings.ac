@@ -651,7 +651,7 @@ kids 0
 OBJECT poly
 name "FairingR1"
 loc -3.48948 0.0547203 2.4599
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 73
 6.9269 -0.198228 -4.93844
@@ -2035,7 +2035,7 @@ kids 0
 OBJECT poly
 name "FairingR2"
 loc -3.7808 -0.161297 4.16126
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 81
 7.5229 0.174985 -8.32383
@@ -3493,7 +3493,7 @@ kids 0
 OBJECT poly
 name "FairingR3"
 loc -4.3288 -0.337047 5.96233
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 77
 8.5959 0.56968 -11.952
@@ -4935,7 +4935,7 @@ kids 0
 OBJECT poly
 name "FairingL3"
 loc -4.33448 -0.337047 -5.95973
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 77
 8.5959 0.56968 11.9482
@@ -6377,7 +6377,7 @@ kids 0
 OBJECT poly
 name "FairingL2"
 loc -3.78648 -0.161297 -4.15866
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 81
 7.5229 0.174985 8.32003
@@ -11029,7 +11029,7 @@ kids 0
 OBJECT poly
 name "navL"
 loc 7.80841 7.47121 4.16148
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 164
 -0.0555925 -6.15103 -20.6489
@@ -12988,7 +12988,7 @@ refs 3
 kids 0
 OBJECT poly
 name "AileronL"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 6
 7.66492 0.966661 13.4039
@@ -13037,7 +13037,7 @@ refs 3
 kids 0
 OBJECT poly
 name "AileronR"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 6
 7.66492 0.966661 -13.4077
@@ -13086,7 +13086,7 @@ refs 3
 kids 0
 OBJECT poly
 name "FairingPylon"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 268
 4.37429 -0.287433 -4.80709
@@ -16649,7 +16649,7 @@ refs 3
 kids 0
 OBJECT poly
 name "FlapL1"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 36
 5.09474 0.0660696 3.83258
@@ -16998,7 +16998,7 @@ refs 3
 kids 0
 OBJECT poly
 name "FlapL2"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 25
 7.54698 0.947226 13.2714
@@ -17288,7 +17288,7 @@ refs 3
 kids 0
 OBJECT poly
 name "FlapR1"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 36
 5.09474 0.0660696 -3.83638
@@ -17637,7 +17637,7 @@ refs 3
 kids 0
 OBJECT poly
 name "FlapR2"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 25
 7.54698 0.947226 -13.2752
@@ -17927,7 +17927,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Flaps1"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 12
 5.58328 -0.209971 1.8661
@@ -18030,7 +18030,7 @@ refs 3
 kids 0
 OBJECT poly
 name "SlatL1"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 30
 1.83239 0.295802 5.33706
@@ -18403,7 +18403,7 @@ refs 3
 kids 0
 OBJECT poly
 name "SlatL2"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 59
 3.39418 0.676815 7.6566
@@ -19147,7 +19147,7 @@ refs 3
 kids 0
 OBJECT poly
 name "SlatL3"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 42
 4.16903 0.747946 9.71608
@@ -19676,7 +19676,7 @@ refs 3
 kids 0
 OBJECT poly
 name "SlatL4"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 43
 5.96447 1.04683 13.2382
@@ -20218,7 +20218,7 @@ refs 3
 kids 0
 OBJECT poly
 name "SlatL5"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 39
 7.00638 1.21664 15.3084
@@ -20708,7 +20708,7 @@ refs 3
 kids 0
 OBJECT poly
 name "SlatR1"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 30
 1.83239 0.295802 -5.34086
@@ -21081,7 +21081,7 @@ refs 3
 kids 0
 OBJECT poly
 name "SlatR2"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 59
 3.39418 0.676815 -7.6604
@@ -21825,7 +21825,7 @@ refs 3
 kids 0
 OBJECT poly
 name "SlatR3"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 42
 4.16903 0.747946 -9.71988
@@ -22354,7 +22354,7 @@ refs 3
 kids 0
 OBJECT poly
 name "SlatR4"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 43
 5.96447 1.04683 -13.242
@@ -22896,7 +22896,7 @@ refs 3
 kids 0
 OBJECT poly
 name "SlatR5"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 39
 7.00638 1.21664 -15.3122
@@ -23386,7 +23386,7 @@ refs 3
 kids 0
 OBJECT poly
 name "SpoilerL1"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 7
 5.53165 0.325824 5.34528
@@ -23460,7 +23460,7 @@ refs 3
 kids 0
 OBJECT poly
 name "SpoilerL2"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 6
 6.29581 0.626973 8.34624
@@ -23521,7 +23521,7 @@ refs 3
 kids 0
 OBJECT poly
 name "SpoilerL3"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 6
 6.86366 0.752658 9.92875
@@ -23582,7 +23582,7 @@ refs 3
 kids 0
 OBJECT poly
 name "SpoilerL4"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 6
 6.25856 0.874889 10.1575
@@ -23643,7 +23643,7 @@ refs 3
 kids 0
 OBJECT poly
 name "SpoilerL5"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 7
 7.29888 1.11518 13.0529
@@ -23717,7 +23717,7 @@ refs 3
 kids 0
 OBJECT poly
 name "SpoilerR1"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 14
 4.88097 0.509357 -6.19886
@@ -23840,7 +23840,7 @@ refs 3
 kids 0
 OBJECT poly
 name "SpoilerR2"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 6
 6.29581 0.626973 -8.35004
@@ -23901,7 +23901,7 @@ refs 3
 kids 0
 OBJECT poly
 name "SpoilerR3"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 6
 6.86366 0.752658 -9.93255
@@ -23962,7 +23962,7 @@ refs 3
 kids 0
 OBJECT poly
 name "SpoilerR4"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 6
 6.25856 0.874889 -10.1613
@@ -24023,7 +24023,7 @@ refs 3
 kids 0
 OBJECT poly
 name "SpoilerR5"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 7
 7.29888 1.11518 -13.0567
@@ -24097,7 +24097,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Wingbox"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 26
 0.622472 -0.294352 1.8661
@@ -24418,7 +24418,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Wings"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 540
 0.849082 -0.239997 -2.31611
@@ -31394,7 +31394,7 @@ name "Wingtips"
 kids 1
 OBJECT poly
 name "DefaultWhite"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 11
 7.50638 1.29943 16.3573
@@ -31460,7 +31460,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Wings"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 15
 8.55181 1.37867 16.3352
@@ -31585,7 +31585,7 @@ kids 0
 OBJECT poly
 name "navL"
 loc 7.80841 7.47121 4.16148
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 18
 0.0643225 -6.16416 -20.696
@@ -31697,7 +31697,7 @@ name "Wingtips"
 kids 1
 OBJECT poly
 name "DefaultWhite.000"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 38
 7.8876 1.39381 -16.5762
@@ -31841,7 +31841,7 @@ name "Wingtips"
 kids 1
 OBJECT poly
 name "DefaultWhite.000"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 18
 8.50718 1.38084 -16.3251
@@ -31953,7 +31953,7 @@ name "Wingtips"
 kids 1
 OBJECT poly
 name "DefaultWhite.000"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 154
 8.50718 1.38084 -16.3251
@@ -33062,7 +33062,7 @@ refs 3
 kids 0
 OBJECT poly
 name "DefaultWhite.000"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 154
 8.30601 1.39514 -16.3251
@@ -34171,7 +34171,7 @@ refs 3
 kids 0
 OBJECT poly
 name "DefaultWhite.000"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 18
 9.126 1.27312 -16.3251
@@ -34280,7 +34280,7 @@ refs 3
 kids 0
 OBJECT poly
 name "DefaultWhite.000"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 38
 7.8863 1.38917 -16.5963
@@ -34999,7 +34999,7 @@ name "Wingtips"
 kids 1
 OBJECT poly
 name "DefaultWhite.000"
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 58
 8.50718 1.44103 -16.8697
@@ -35597,7 +35597,7 @@ kids 2
 OBJECT poly
 name "FairingL1"
 loc -3.48926 0.03801 -2.45729
-texture "wings_texture.png"
+texture "wings_texture.webp"
 crease 45.000000
 numvert 73
 6.9269 -0.198228 4.93464

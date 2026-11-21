@@ -14,7 +14,7 @@ kids 0
 OBJECT poly
 name "Plane.180"
 loc 0.0000000 0.0000000 0.0000000
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 numvert 406
 -0.1864370 0.0640150 0.4087440

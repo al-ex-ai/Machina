@@ -7,7 +7,7 @@ name "AvionicsLRack"
 loc 19.641882 -0.269594 -0
 data 13
 AvionicsLRack
-texture "concorde-flight-deck.png"
+texture "concorde-flight-deck.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10
@@ -82,7 +82,7 @@ name "AvionicsRRack"
 loc 19.641882 -0.269594 -0
 data 13
 AvionicsRRack
-texture "concorde-flight-deck.png"
+texture "concorde-flight-deck.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10

@@ -7,7 +7,7 @@ kids 12
 OBJECT poly
 name "back"
 loc 0.0323420 -0.0326940 0.0011170
-texture "book.png"
+texture "book.webp"
 texrep 1 1
 numvert 8
 0.1265820 0.0331370 -0.1149450
@@ -65,7 +65,7 @@ kids 0
 OBJECT poly
 name "board"
 loc 0.0304500 0.0051760 0.0011170
-texture "book.png"
+texture "book.webp"
 texrep 1 1
 numvert 8
 0.1305460 0.0088770 -0.1149450
@@ -123,7 +123,7 @@ kids 0
 OBJECT poly
 name "bracket"
 loc -0.2845090 -0.6471090 0.4819830
-texture "book.png"
+texture "book.webp"
 texrep 1 1
 numvert 768
 0.2896520 0.6484740 -0.4546320
@@ -4483,7 +4483,7 @@ kids 0
 OBJECT poly
 name "flagCZ"
 loc 0.1737358 -0.0455399 0.0382444
-texture "flags.png"
+texture "flags.webp"
 texrep 1 1
 numvert 4
 -0.0089580 0.0528670 -0.1036060
@@ -4502,7 +4502,7 @@ kids 0
 OBJECT poly
 name "flagES"
 loc 0.1735550 -0.0432970 0.0149000
-texture "flags.png"
+texture "flags.webp"
 texrep 1 1
 numvert 4
 -0.0089990 0.0524820 -0.1036060
@@ -4521,7 +4521,7 @@ kids 0
 OBJECT poly
 name "flagGB"
 loc 0.1741550 -0.0421390 0.0036140
-texture "flags.png"
+texture "flags.webp"
 texrep 1 1
 numvert 4
 -0.0089500 0.0529800 -0.1036060
@@ -4540,7 +4540,7 @@ kids 0
 OBJECT poly
 name "flagGER"
 loc 0.1729870 -0.0448620 0.0265630
-texture "flags.png"
+texture "flags.webp"
 texrep 1 1
 numvert 4
 -0.0089580 0.0528670 -0.1036060
@@ -4559,7 +4559,7 @@ kids 0
 OBJECT poly
 name "flagITA"
 loc 0.1745763 -0.0460378 0.0626935
-texture "flags.png"
+texture "flags.webp"
 texrep 1 1
 numvert 4
 -0.0093051 0.0528670 -0.1036060
@@ -4578,7 +4578,7 @@ kids 0
 OBJECT poly
 name "flagPOR"
 loc 0.1745763 -0.0460378 0.0504119
-texture "flags.png"
+texture "flags.webp"
 texrep 1 1
 numvert 4
 -0.0089580 0.0528670 -0.1036060
@@ -4597,7 +4597,7 @@ kids 0
 OBJECT poly
 name "pages"
 loc 0.0016640 0.0026670 1.2216960
-texture "book.png"
+texture "book.webp"
 texrep 1 1
 numvert 16
 0.1552460 0.0005630 -1.3319761
@@ -4719,7 +4719,7 @@ kids 0
 OBJECT poly
 name "pages.001"
 loc 0.0016640 0.0026670 1.2216960
-texture "book.png"
+texture "book.webp"
 texrep 1 1
 numvert 24
 -0.1305980 0.0167340 -1.3319761
@@ -4905,7 +4905,7 @@ kids 0
 OBJECT poly
 name "saddle"
 loc 0.0344660 0.0109670 0.0011170
-texture "book.png"
+texture "book.webp"
 texrep 1 1
 numvert 8
 -0.0280490 0.0338680 -0.1149450

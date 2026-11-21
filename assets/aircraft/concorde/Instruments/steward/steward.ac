@@ -7,7 +7,7 @@ name "GroundService"
 loc -0.008118 -0.000076 -0.283826
 data 13
 GroundService
-texture "steward.png"
+texture "steward.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 66
@@ -692,7 +692,7 @@ name "GroundServicePlate"
 loc 0.001841 0.000079 -0.283938
 data 18
 GroundServicePlate
-texture "steward.png"
+texture "steward.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 66
@@ -1377,7 +1377,7 @@ name "PassStereo"
 loc -0.008118 0.039166 -0.283826
 data 10
 PassStereo
-texture "steward.png"
+texture "steward.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 66
@@ -2062,7 +2062,7 @@ name "PassStereoPlate"
 loc 0.001841 0.039056 -0.283938
 data 15
 PassStereoPlate
-texture "steward.png"
+texture "steward.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 66
@@ -2747,7 +2747,7 @@ name "ReadingLeft"
 loc -0.002656 0.038814 -0.258751
 data 11
 ReadingLeft
-texture "steward.png"
+texture "steward.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 66
@@ -3432,7 +3432,7 @@ name "ReadingLeft2"
 loc -0.002656 0.038814 -0.231496
 data 12
 ReadingLeft2
-texture "steward.png"
+texture "steward.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 66
@@ -4117,7 +4117,7 @@ name "ReadingRight"
 loc -0.002656 0.000079 -0.258751
 data 12
 ReadingRight
-texture "steward.png"
+texture "steward.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 66
@@ -4802,7 +4802,7 @@ name "ReadingRight2"
 loc -0.002656 0.000079 -0.231496
 data 13
 ReadingRight2
-texture "steward.png"
+texture "steward.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 66
@@ -5487,7 +5487,7 @@ name "StewardPanel"
 loc -18.160057 -4.479375 0.717544
 data 12
 StewardPanel
-texture "steward.png"
+texture "steward.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8

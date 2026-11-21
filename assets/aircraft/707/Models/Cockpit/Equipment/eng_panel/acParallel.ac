@@ -10,7 +10,7 @@ name "LampWhite"
 loc -0.043525 -0.007331 0.034828
 data 9
 LampWhite
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -646,7 +646,7 @@ name "LampWhite.001"
 loc 0.03668 -0.007194 0.034828
 data 13
 LampWhite.001
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -1282,7 +1282,7 @@ name "LampWhiteON"
 loc -0.043543 -0.007282 0.034828
 data 11
 LampWhiteON
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -1918,7 +1918,7 @@ name "LampWhiteON.001"
 loc 0.036662 -0.007146 0.034828
 data 15
 LampWhiteON.001
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -2554,7 +2554,7 @@ name "bezel"
 loc -0.027768 0.072645 0.002152
 data 5
 bezel
-texture "bezel2.png"
+texture "bezel2.webp"
 texrep 1 1
 crease 30.000001
 numvert 296
@@ -3869,7 +3869,7 @@ name "face"
 loc -0.036061 0.078484 0.001937
 data 4
 face
-texture "ac_load.png"
+texture "ac_load.webp"
 texrep 1 1
 numvert 18
 -0.0135 -0.006286 -0
@@ -3981,7 +3981,7 @@ name "knob"
 loc -0.001115 -0.045633 0.003988
 data 4
 knob
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 numvert 49
 0.003845 0 -0.00388
@@ -4360,7 +4360,7 @@ name "knob.001"
 loc -0.001115 0.04872 0.003988
 data 8
 knob.001
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 numvert 49
 0.003845 0 -0.00388
@@ -4739,7 +4739,7 @@ name "knobsup"
 loc -0.001115 -0.045633 -0.000338
 data 7
 knobsup
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 numvert 33
 0.006253 0 -0.006253
@@ -4990,7 +4990,7 @@ name "knobsup.001"
 loc -0.001115 0.04872 -0.000338
 data 11
 knobsup.001
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 numvert 33
 0.006253 0 -0.006253
@@ -5241,7 +5241,7 @@ name "needle"
 loc -0.027768 0.082828 0.001863
 data 6
 needle
-texture "dc_load.png"
+texture "dc_load.webp"
 texrep 1 1
 crease 30.000001
 numvert 7
@@ -5283,7 +5283,7 @@ name "needle.001"
 loc 0.025225 0.082828 0.001863
 data 10
 needle.001
-texture "dc_load.png"
+texture "dc_load.webp"
 texrep 1 1
 crease 30.000001
 numvert 7
@@ -5325,7 +5325,7 @@ name "turn"
 loc 0.235857 -0.76204 15.45564
 data 4
 turn
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 45.000001
 numvert 49

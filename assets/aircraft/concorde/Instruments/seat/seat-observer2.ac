@@ -7,7 +7,7 @@ name "Seat"
 loc 21.023966 -0.553322 -0.399378
 data 4
 Seat
-texture "concorde-seat2.png"
+texture "concorde-seat2.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 16

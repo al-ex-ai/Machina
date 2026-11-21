@@ -237,7 +237,7 @@ kids 0
 OBJECT poly
 name "intro"
 loc 0.000189391 -0.219671 -0.224465
-texture "intro.png"
+texture "intro.webp"
 crease 45.000000
 numvert 4
 0 0.126431 0.379446

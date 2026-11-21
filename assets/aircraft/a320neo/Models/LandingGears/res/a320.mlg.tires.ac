@@ -6,7 +6,7 @@ OBJECT poly
 name "Bearing"
 data 17
 Object01_1 - Defa
-texture "mainwheel.png"
+texture "mainwheel.webp"
 texrep 1 1
 crease 30.000000
 numvert 242
@@ -3114,7 +3114,7 @@ OBJECT poly
 name "Tires"
 data 21
 Object01_1 - Defa.002
-texture "mainwheel.png"
+texture "mainwheel.webp"
 texrep 1 1
 crease 30.000000
 numvert 396

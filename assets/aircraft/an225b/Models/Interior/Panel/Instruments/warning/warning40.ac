@@ -8,7 +8,7 @@ kids 6
 OBJECT poly
 name "cover"
 loc 0.0000583 0.0000000 0.0000000
-texture "ind_2.png"
+texture "ind_2.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0115504 0.0229959
@@ -27,7 +27,7 @@ kids 0
 OBJECT poly
 name "text"
 loc -0.0000584 0.0000349 -0.0003546
-texture "40.png"
+texture "40.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0091692 0.0167051
@@ -46,7 +46,7 @@ kids 0
 OBJECT poly
 name "text.001"
 loc -0.0000584 0.0000349 -0.0003546
-texture "401.png"
+texture "401.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0091692 0.0167051
@@ -65,7 +65,7 @@ kids 0
 OBJECT poly
 name "text.002"
 loc -0.0000584 0.0000349 -0.0003546
-texture "402.png"
+texture "402.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0091692 0.0167051
@@ -84,7 +84,7 @@ kids 0
 OBJECT poly
 name "text.003"
 loc -0.0000584 0.0000349 -0.0003546
-texture "403.png"
+texture "403.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0091692 0.0167051
@@ -103,7 +103,7 @@ kids 0
 OBJECT poly
 name "text.004"
 loc -0.0000584 0.0000349 -0.0003546
-texture "404.png"
+texture "404.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0091692 0.0167051

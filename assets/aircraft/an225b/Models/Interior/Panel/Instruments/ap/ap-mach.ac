@@ -7,7 +7,7 @@ kids 22
 OBJECT poly
 name "altOff"
 loc 0.0025330 -0.0066115 0.0350000
-texture "ap-neu.png"
+texture "ap-neu.webp"
 texrep 1 1
 numvert 8
 0.0044070 -0.0036935 -0.0076795
@@ -58,7 +58,7 @@ kids 0
 OBJECT poly
 name "altOn"
 loc 0.0021600 -0.0066110 0.0350000
-texture "ap-neu.png"
+texture "ap-neu.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0034990 -0.0074675
@@ -77,7 +77,7 @@ kids 0
 OBJECT poly
 name "apOff"
 loc 0.0025330 0.0066110 0.0350000
-texture "ap-neu.png"
+texture "ap-neu.webp"
 texrep 1 1
 numvert 8
 0.0044070 -0.0036935 -0.0076795
@@ -128,7 +128,7 @@ kids 0
 OBJECT poly
 name "apOn"
 loc 0.0021600 0.0066110 0.0350000
-texture "ap-neu.png"
+texture "ap-neu.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0034985 -0.0074670
@@ -147,7 +147,7 @@ kids 0
 OBJECT poly
 name "apprOff"
 loc 0.0025330 -0.0066110 -0.0350000
-texture "ap-neu.png"
+texture "ap-neu.webp"
 texrep 1 1
 numvert 8
 0.0044070 -0.0036935 -0.0076795
@@ -198,7 +198,7 @@ kids 0
 OBJECT poly
 name "apprOn"
 loc 0.0021600 -0.0066110 -0.0350000
-texture "ap-neu.png"
+texture "ap-neu.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0034990 -0.0074675
@@ -217,7 +217,7 @@ kids 0
 OBJECT poly
 name "bg"
 loc 0.0010000 -0.0001585 0.0000000
-texture "ap-neu.png"
+texture "ap-neu.webp"
 texrep 1 1
 numvert 24
 0.0000000 0.0003535 -0.0465003
@@ -291,7 +291,7 @@ kids 0
 OBJECT poly
 name "freeOff"
 loc 0.0025330 -0.0066110 -0.0580000
-texture "ap-neu.png"
+texture "ap-neu.webp"
 texrep 1 1
 numvert 8
 0.0044070 -0.0036935 -0.0076795
@@ -342,7 +342,7 @@ kids 0
 OBJECT poly
 name "freeOn"
 loc 0.0021600 -0.0066110 -0.0580000
-texture "ap-neu.png"
+texture "ap-neu.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0034990 -0.0074675
@@ -361,7 +361,7 @@ kids 0
 OBJECT poly
 name "gpsOff"
 loc 0.0025330 0.0066110 -0.0120000
-texture "ap-neu.png"
+texture "ap-neu.webp"
 texrep 1 1
 numvert 8
 0.0044070 -0.0036935 -0.0076795
@@ -412,7 +412,7 @@ kids 0
 OBJECT poly
 name "gpsOn"
 loc 0.0021600 0.0066110 -0.0120000
-texture "ap-neu.png"
+texture "ap-neu.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0034990 -0.0074675
@@ -431,7 +431,7 @@ kids 0
 OBJECT poly
 name "hdgOff"
 loc 0.0025330 0.0066110 0.0120025
-texture "ap-neu.png"
+texture "ap-neu.webp"
 texrep 1 1
 numvert 8
 0.0044070 -0.0036935 -0.0076795
@@ -482,7 +482,7 @@ kids 0
 OBJECT poly
 name "hdgOn"
 loc 0.0021600 0.0066110 0.0120000
-texture "ap-neu.png"
+texture "ap-neu.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0034980 -0.0074675
@@ -501,7 +501,7 @@ kids 0
 OBJECT poly
 name "iasOff"
 loc 0.0025330 -0.0066115 0.0120000
-texture "ap-neu.png"
+texture "ap-neu.webp"
 texrep 1 1
 numvert 8
 0.0044070 -0.0036935 -0.0076795
@@ -552,7 +552,7 @@ kids 0
 OBJECT poly
 name "iasOn"
 loc 0.0021600 -0.0066110 0.0120000
-texture "ap-neu.png"
+texture "ap-neu.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0034985 -0.0074680
@@ -571,7 +571,7 @@ kids 0
 OBJECT poly
 name "machOff"
 loc 0.0025330 0.0066110 -0.0580000
-texture "ap-neu.png"
+texture "ap-neu.webp"
 texrep 1 1
 numvert 8
 0.0044070 -0.0036935 -0.0076795
@@ -622,7 +622,7 @@ kids 0
 OBJECT poly
 name "machOn"
 loc 0.0021600 0.0066110 -0.0580000
-texture "ap-neu.png"
+texture "ap-neu.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0034985 -0.0074680
@@ -641,7 +641,7 @@ kids 0
 OBJECT poly
 name "navOff"
 loc 0.0025330 -0.0067225 -0.0120000
-texture "ap-neu.png"
+texture "ap-neu.webp"
 texrep 1 1
 numvert 8
 0.0044070 -0.0036935 -0.0076795
@@ -692,7 +692,7 @@ kids 0
 OBJECT poly
 name "navOn"
 loc 0.0021600 -0.0066110 -0.0120000
-texture "ap-neu.png"
+texture "ap-neu.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0034985 -0.0074680
@@ -711,7 +711,7 @@ kids 0
 OBJECT poly
 name "pitchOff"
 loc 0.0025330 0.0066110 -0.0350000
-texture "ap-neu.png"
+texture "ap-neu.webp"
 texrep 1 1
 numvert 8
 0.0044070 -0.0036935 -0.0076795
@@ -762,7 +762,7 @@ kids 0
 OBJECT poly
 name "pitchOn"
 loc 0.0021600 0.0066110 -0.0350000
-texture "ap-neu.png"
+texture "ap-neu.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0034985 -0.0074680
@@ -781,7 +781,7 @@ kids 0
 OBJECT poly
 name "shadow"
 loc -0.0015000 -0.1000000 0.0000000
-texture "shadow-helper-neu.png"
+texture "shadow-helper-neu.webp"
 texrep 1 1
 numvert 4
 0.0000000 0.0758320 -0.0714000

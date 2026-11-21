@@ -8,7 +8,7 @@ name "Below"
 data 8
 Cube.001
 crease 40.0
-texture "altimeter-standby.png"
+texture "altimeter-standby.webp"
 numvert 8
 0.00147 0.00276 0.01447
 0.00147 0.00799 0.01447
@@ -67,7 +67,7 @@ name "Knob"
 data 4
 Knob
 crease 179.0
-texture "altimeter-standby.png"
+texture "altimeter-standby.webp"
 numvert 64
 0.00312 -0.02377 0.02952
 0.01143 -0.02378 0.02952
@@ -434,7 +434,7 @@ name "Needle"
 data 6
 Needle
 crease 179.0
-texture "altimeter-standby.png"
+texture "altimeter-standby.webp"
 numvert 74
 0.00154 -0.00022 0.0014
 0.00219 -0.00022 0.0014
@@ -872,7 +872,7 @@ name "Negativ"
 data 4
 Cube
 crease 40.0
-texture "altimeter-standby.png"
+texture "altimeter-standby.webp"
 numvert 8
 0.00147 0.00276 0.01447
 0.00147 0.00799 0.01447
@@ -931,7 +931,7 @@ name "Plate"
 data 5
 Plate
 crease 179.0
-texture "altimeter-standby.png"
+texture "altimeter-standby.webp"
 numvert 76
 0.00005 -0.03246 -0.03245
 0.00005 -0.03246 0.03248

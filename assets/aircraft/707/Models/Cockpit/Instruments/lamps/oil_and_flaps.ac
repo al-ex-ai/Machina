@@ -8,7 +8,7 @@ name "LampAmber"
 loc 0.049383 -0.035926 0.009833
 data 9
 LampAmber
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -644,7 +644,7 @@ name "LampAmber.001"
 loc 0.049383 -0.035926 0.009833
 data 13
 LampAmber.001
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -1280,7 +1280,7 @@ name "LampAmberON"
 loc 0.049383 -0.035926 0.009833
 data 11
 LampAmberON
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -1916,7 +1916,7 @@ name "LampAmberON.001"
 loc 0.049383 -0.035926 0.009833
 data 15
 LampAmberON.001
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -2552,7 +2552,7 @@ name "LampGreen"
 loc 0.049383 -0.035926 0.009833
 data 9
 LampGreen
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 45.000001
 numvert 162
@@ -3813,7 +3813,7 @@ name "LampGreenON"
 loc 0.049383 -0.035926 0.009833
 data 11
 LampGreenON
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 45.000001
 numvert 162
@@ -5074,7 +5074,7 @@ name "Sockle"
 loc -0.049299 0.172509 0.094311
 data 6
 Sockle
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 numvert 52
 0.048076 -0.161848 -0.09508
@@ -5448,7 +5448,7 @@ name "shadow"
 loc -0.000452 -0.010021 -0.000033
 data 6
 shadow
-texture "shadow_oil_and_flaps.png"
+texture "shadow_oil_and_flaps.webp"
 texrep 1 1
 numvert 4
 0.000825 -0.058593 -0.05
@@ -5469,7 +5469,7 @@ name "sup"
 loc 0.002232 -0.032826 -0.001296
 data 3
 sup
-texture "shadow_oil_and_flaps.png"
+texture "shadow_oil_and_flaps.webp"
 texrep 1 1
 numvert 12
 -0 -0.008692 -0.016953

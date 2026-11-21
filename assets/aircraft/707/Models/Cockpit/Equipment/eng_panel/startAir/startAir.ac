@@ -7,7 +7,7 @@ name "bezel"
 loc 0.000059 0.001915 0.001453
 data 5
 bezel
-texture "startAirface.png"
+texture "startAirface.webp"
 texrep 1 1
 crease 30.000001
 numvert 144
@@ -666,7 +666,7 @@ name "face"
 loc 0.000124 0 0.000367
 data 4
 face
-texture "startAirface.png"
+texture "startAirface.webp"
 texrep 1 1
 crease 30.000001
 numvert 16
@@ -777,7 +777,7 @@ name "needle"
 loc 0 -0 0.001014
 data 6
 needle
-texture "startAirface.png"
+texture "startAirface.webp"
 texrep 1 1
 crease 30.000001
 numvert 7
@@ -821,7 +821,7 @@ name "needle.001"
 loc 0 -0 0.000517
 data 10
 needle.001
-texture "startAirface.png"
+texture "startAirface.webp"
 texrep 1 1
 crease 30.000001
 numvert 7
@@ -865,7 +865,7 @@ name "sup"
 loc -0.004798 0.001715 0.05574
 data 3
 sup
-texture "startAirface.png"
+texture "startAirface.webp"
 texrep 1 1
 numvert 12
 0.014193 -0.007207 -0.053628
@@ -929,7 +929,7 @@ name "sup.001"
 loc -0.004798 0.001715 0.055243
 data 7
 sup.001
-texture "startAirface.png"
+texture "startAirface.webp"
 texrep 1 1
 numvert 12
 0.014193 -0.007207 -0.053628
@@ -993,7 +993,7 @@ name "sup.002"
 loc -0.004798 0.001715 0.05574
 data 7
 sup.002
-texture "startAirface.png"
+texture "startAirface.webp"
 texrep 1 1
 numvert 36
 0.011603 -0.001985 -0.053612

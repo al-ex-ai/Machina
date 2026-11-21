@@ -8,7 +8,7 @@ name "face"
 loc 0.000769 0 -0
 data 4
 face
-texture "rpm.png"
+texture "rpm.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 25
@@ -188,7 +188,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "rpm.png"
+texture "rpm.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 144
@@ -1183,7 +1183,7 @@ name "needle1"
 loc 0.000769 0 -0
 data 7
 needle1
-texture "rpm.png"
+texture "rpm.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10
@@ -1252,7 +1252,7 @@ name "needle2"
 loc 0.000769 -0.000346 0.000965
 data 7
 needle2
-texture "rpm.png"
+texture "rpm.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10

@@ -8,7 +8,7 @@ kids 8
 OBJECT poly
 name "mapcase"
 loc 0.0000000 0.0000000 0.0000000
-texture "back.png"
+texture "back.webp"
 texrep 1 1
 numvert 4
 0.5555000 0.5706800 -0.0970280
@@ -129,7 +129,7 @@ kids 0
 OBJECT poly
 name "MESH23.001"
 loc 0.0000000 0.0000000 0.0000000
-texture "vc03_t.png"
+texture "vc03_t.webp"
 texrep 1 1
 numvert 20
 0.5550990 0.7759220 -0.0868620

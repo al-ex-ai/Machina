@@ -8,7 +8,7 @@ name "LampGreen"
 loc 0.045728 -0.024054 0.005205
 data 9
 LampGreen
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -644,7 +644,7 @@ name "LampGreenON"
 loc 0.045728 -0.024054 0.005205
 data 11
 LampGreenON
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -1280,7 +1280,7 @@ name "shadow"
 loc 0.000234 -0.009091 -0.00003
 data 6
 shadow
-texture "gs-shadow.png"
+texture "gs-shadow.webp"
 texrep 1 1
 numvert 4
 -0 -0.027213 0.015628
@@ -1301,7 +1301,7 @@ name "sup"
 loc 0.000373 -0.016712 -0.000755
 data 3
 sup
-texture "gs-shadow.png"
+texture "gs-shadow.webp"
 texrep 1 1
 numvert 4
 0 -0.008389 -0.011265
@@ -1322,7 +1322,7 @@ name "sup.001"
 loc 0.000373 0.016499 -0.000755
 data 7
 sup.001
-texture "gs-shadow.png"
+texture "gs-shadow.webp"
 texrep 1 1
 numvert 4
 0 -0.003518 -0.014335

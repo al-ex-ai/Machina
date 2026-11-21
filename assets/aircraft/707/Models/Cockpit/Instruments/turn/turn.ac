@@ -8,7 +8,7 @@ name "Bezel"
 loc 0.001161 0.000002 0.000001
 data 5
 Bezel
-texture "turn.png"
+texture "turn.webp"
 texrep 1 1
 crease 30.000001
 numvert 144
@@ -667,7 +667,7 @@ name "TB.Ball"
 loc 0 0 -0
 data 7
 TB.Ball
-texture "turn.png"
+texture "turn.webp"
 texrep 1 1
 crease 30.000001
 numvert 9
@@ -729,7 +729,7 @@ name "TB.Face"
 loc 0 0 -0
 data 7
 TB.Face
-texture "turn.png"
+texture "turn.webp"
 texrep 1 1
 crease 30.000001
 numvert 9
@@ -797,7 +797,7 @@ name "TB.Needle"
 loc 0 0 -0
 data 9
 TB.Needle
-texture "turn.png"
+texture "turn.webp"
 texrep 1 1
 crease 30.000001
 numvert 14
@@ -864,7 +864,7 @@ name "TB.Ref"
 loc 0.001305 -0.005138 -0
 data 6
 TB.Ref
-texture "turn.png"
+texture "turn.webp"
 texrep 1 1
 crease 30.000001
 numvert 8
@@ -897,7 +897,7 @@ name "shadow"
 loc 0.000747 0.000341 0.000171
 data 6
 shadow
-texture "shadow.png"
+texture "shadow.webp"
 texrep 1 1
 crease 30.000001
 numvert 4

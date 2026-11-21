@@ -6,7 +6,7 @@ kids 3
 OBJECT poly
 name "n2"
 loc 0 0.00702697 -0.0221563
-texture "ned1.png"
+texture "ned1.webp"
 crease 45.000000
 numvert 4
 0 -0.0124569 0.000315171
@@ -25,7 +25,7 @@ kids 0
 OBJECT group
 name "group"
 loc 0.0025 0 -1.39698e-009
-texture "fon1.png"
+texture "fon1.webp"
 numvert 160
 1.39698e-009 0.006828 -0.034327
 -0.005 0.013394 -0.032336
@@ -1908,7 +1908,7 @@ kids 0
 OBJECT poly
 name "n1"
 loc 0 -0.0202223 0.00839175
-texture "ned1.png"
+texture "ned1.webp"
 crease 45.000000
 numvert 4
 0 0.00185273 0.0123224

@@ -7,7 +7,7 @@ name "pilots"
 loc 2.207947 -0.40642 -0.00509
 data 6
 pilots
-texture "pilots.png"
+texture "pilots.webp"
 texrep 1 1
 crease 30.000001
 numvert 2228

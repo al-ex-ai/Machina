@@ -252,7 +252,7 @@ kids 0
 OBJECT group
 name "flaps_ind"
 loc 1.04774e-009 0.055 0.000888352
-texture "flaps_ind.png"
+texture "flaps_ind.webp"
 numvert 60
 -0.05 -0.092 0
 -0.05 -0.092 0.00999999
@@ -934,7 +934,7 @@ loc 1.04774e-009 0.055 0.000888352
 kids 4
 OBJECT group
 name "group"
-texture "flaps_ind.png"
+texture "flaps_ind.webp"
 numvert 22
 -0.0165 -0.0835 -0.009896
 -0.0165 -0.078433 -0.005582
@@ -1136,7 +1136,7 @@ refs 3
 kids 0
 OBJECT group
 name "group"
-texture "flaps_ind.png"
+texture "flaps_ind.webp"
 numvert 22
 0.0165 -0.0835 -0.009896
 0.0165 -0.078433 -0.005582
@@ -1338,7 +1338,7 @@ refs 3
 kids 0
 OBJECT group
 name "group"
-texture "flaps_ind.png"
+texture "flaps_ind.webp"
 numvert 22
 0.0235 -0.0835 -0.009896
 0.0235 -0.078433 -0.005582
@@ -1540,7 +1540,7 @@ refs 3
 kids 0
 OBJECT group
 name "group"
-texture "flaps_ind.png"
+texture "flaps_ind.webp"
 numvert 22
 -0.0235 -0.0835 -0.009896
 -0.0235 -0.078433 -0.005582

@@ -7,7 +7,7 @@ name "Back"
 loc 0 0 -0
 data 4
 Back
-texture "psp.png"
+texture "psp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 57
@@ -439,7 +439,7 @@ name "g1"
 loc 0 0 -0
 data 2
 g1
-texture "psp.png"
+texture "psp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 65
@@ -947,7 +947,7 @@ name "g1_lamp"
 loc 0 0 -0
 data 7
 g1_lamp
-texture "psp.png"
+texture "psp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 17
@@ -1071,7 +1071,7 @@ name "g2"
 loc 0 0 -0
 data 2
 g2
-texture "psp.png"
+texture "psp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 65
@@ -1579,7 +1579,7 @@ name "g2_lamp"
 loc 0 0 -0
 data 7
 g2_lamp
-texture "psp.png"
+texture "psp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 17
@@ -1703,7 +1703,7 @@ name "k1"
 loc 0 0 -0
 data 2
 k1
-texture "psp.png"
+texture "psp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 65
@@ -2211,7 +2211,7 @@ name "k1_lamp"
 loc 0 0 -0
 data 7
 k1_lamp
-texture "psp.png"
+texture "psp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 17
@@ -2335,7 +2335,7 @@ name "k2"
 loc 0 0 -0
 data 2
 k2
-texture "psp.png"
+texture "psp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 65
@@ -2843,7 +2843,7 @@ name "k2_lamp"
 loc 0 0 -0
 data 7
 k2_lamp
-texture "psp.png"
+texture "psp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 17
@@ -2967,7 +2967,7 @@ name "sw_1"
 loc 0 0 -0
 data 4
 sw_1
-texture "psp.png"
+texture "psp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 81
@@ -3618,7 +3618,7 @@ name "sw_2"
 loc 0 0 -0
 data 4
 sw_2
-texture "psp.png"
+texture "psp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 81
@@ -4269,7 +4269,7 @@ name "sw_3"
 loc 0 0 -0
 data 4
 sw_3
-texture "psp.png"
+texture "psp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 81

@@ -8,7 +8,7 @@ OBJECT poly
 name "Casing"
 data 8
 Mesh.002
-texture "mag-compass.png"
+texture "mag-compass.webp"
 crease 30.000000
 numvert 14
 -0.05076 0.028615 -0.022405
@@ -118,7 +118,7 @@ OBJECT poly
 name "Interior"
 data 8
 Mesh.001
-texture "mag-compass.png"
+texture "mag-compass.webp"
 crease 30.000000
 numvert 14
 -0.05076 0.028615 -0.022405
@@ -209,7 +209,7 @@ OBJECT poly
 name "Ring"
 data 4
 Mesh
-texture "mag-compass.png"
+texture "mag-compass.webp"
 crease 30.000000
 numvert 48
 -0.012335 0.019626 -0.012335
@@ -489,7 +489,7 @@ kids 0
 OBJECT poly
 name "rect"
 loc -0.0120157 -0.00786158 -0.00125054
-texture "mag-compass.png"
+texture "mag-compass.webp"
 crease 45.000000
 numvert 4
 -0.0388355 -3.82122e-05 -0.0240551

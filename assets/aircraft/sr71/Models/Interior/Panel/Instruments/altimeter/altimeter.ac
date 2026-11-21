@@ -8,7 +8,7 @@ name "face"
 loc 0.001924 0 -0
 data 4
 face
-texture "altimeter.png"
+texture "altimeter.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 17
@@ -132,7 +132,7 @@ name "feet1"
 loc 0.001924 0 -0
 data 5
 feet1
-texture "altimeter.png"
+texture "altimeter.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -154,7 +154,7 @@ name "feet2"
 loc 0.001924 0 -0
 data 5
 feet2
-texture "altimeter.png"
+texture "altimeter.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -176,7 +176,7 @@ name "feet3"
 loc 0.001924 0 -0
 data 5
 feet3
-texture "altimeter.png"
+texture "altimeter.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -198,7 +198,7 @@ name "feet4"
 loc 0.001924 0 -0
 data 5
 feet4
-texture "altimeter.png"
+texture "altimeter.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -220,7 +220,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "altimeter.png"
+texture "altimeter.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 139
@@ -1042,7 +1042,7 @@ name "inHG1"
 loc 0.001924 0 -0
 data 5
 inHG1
-texture "altimeter.png"
+texture "altimeter.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -1064,7 +1064,7 @@ name "inHG2"
 loc 0.001924 0 -0
 data 5
 inHG2
-texture "altimeter.png"
+texture "altimeter.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -1086,7 +1086,7 @@ name "inHG3"
 loc 0.001924 0 -0
 data 5
 inHG3
-texture "altimeter.png"
+texture "altimeter.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -1108,7 +1108,7 @@ name "inHG4"
 loc 0.001924 0 -0
 data 5
 inHG4
-texture "altimeter.png"
+texture "altimeter.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -1130,7 +1130,7 @@ name "knob"
 loc 0.006628 -0.034002 0.03474
 data 4
 knob
-texture "altimeter.png"
+texture "altimeter.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 161
@@ -2390,7 +2390,7 @@ name "needle"
 loc 0.001924 0 -0
 data 6
 needle
-texture "altimeter.png"
+texture "altimeter.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 68
@@ -2809,7 +2809,7 @@ name "vide"
 loc 0.001924 0 -0
 data 4
 vide
-texture "altimeter.png"
+texture "altimeter.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 12

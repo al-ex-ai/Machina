@@ -7,7 +7,7 @@ name "CeilingEdge"
 loc 23.547626 -1.636437 -0
 data 11
 CeilingEdge
-texture "concorde-flight-deck.png"
+texture "concorde-flight-deck.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 32
@@ -218,7 +218,7 @@ name "CeilingPanel"
 loc 23.547626 -1.636437 -0
 data 12
 CeilingPanel
-texture "concorde-flight-deck.png"
+texture "concorde-flight-deck.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 42

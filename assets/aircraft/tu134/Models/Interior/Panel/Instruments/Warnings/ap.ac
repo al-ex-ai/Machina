@@ -7,7 +7,7 @@ name "Anu"
 loc 0 0 -0
 data 3
 Anu
-texture "warnings.png"
+texture "warnings.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -29,7 +29,7 @@ name "Ap_bok"
 loc 0 0 -0
 data 6
 Ap_bok
-texture "warnings.png"
+texture "warnings.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -51,7 +51,7 @@ name "Ap_prod"
 loc 0 0 -0
 data 7
 Ap_prod
-texture "warnings.png"
+texture "warnings.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -73,7 +73,7 @@ name "At"
 loc 0 0 -0
 data 2
 At
-texture "warnings.png"
+texture "warnings.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -95,7 +95,7 @@ name "Gliss"
 loc 0 0 -0
 data 5
 Gliss
-texture "warnings.png"
+texture "warnings.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -117,7 +117,7 @@ name "Kurs"
 loc 0 0 -0
 data 4
 Kurs
-texture "warnings.png"
+texture "warnings.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -139,7 +139,7 @@ name "Kv"
 loc 0 0 -0
 data 2
 Kv
-texture "warnings.png"
+texture "warnings.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -161,7 +161,7 @@ name "Vor"
 loc 0 0 -0
 data 3
 Vor
-texture "warnings.png"
+texture "warnings.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -183,7 +183,7 @@ name "Zk"
 loc 0 0 -0
 data 2
 Zk
-texture "warnings.png"
+texture "warnings.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -205,7 +205,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "warnings.png"
+texture "warnings.webp"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 40

@@ -32,10 +32,10 @@
       }
     ],
     "textureMap": {
-      "WrightFlyer-pb-jw-01.rgb": "WrightFlyer-pb-jw-01.png",
-      "WrightFlyer-pb-jw-02.rgb": "WrightFlyer-pb-jw-02.png",
-      "WrightFlyer-pb-jw-03.rgb": "WrightFlyer-pb-jw-03.png",
-      "WrightFlyer-pb-jw-04.rgb": "WrightFlyer-pb-jw-04.png"
+      "WrightFlyer-pb-jw-01.rgb": "WrightFlyer-pb-jw-01.webp",
+      "WrightFlyer-pb-jw-02.rgb": "WrightFlyer-pb-jw-02.webp",
+      "WrightFlyer-pb-jw-03.rgb": "WrightFlyer-pb-jw-03.webp",
+      "WrightFlyer-pb-jw-04.rgb": "WrightFlyer-pb-jw-04.webp"
     },
     "fallback": {
       "id": "airframe",

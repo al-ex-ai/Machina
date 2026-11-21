@@ -8,7 +8,7 @@ kids 14
 OBJECT poly
 name "bug-auto"
 loc -0.000967 0.0001175 -0.0007821
-texture "colors.png"
+texture "colors.webp"
 crease 45.000000
 numvert 3
 0.0029826 0.0358525 0.0005102
@@ -61,7 +61,7 @@ kids 0
 OBJECT poly
 name "bug-man"
 loc -0.000967 0.0001175 -0.0007821
-texture "colors.png"
+texture "colors.webp"
 crease 45.000000
 numvert 3
 0.0029826 0.0358525 0.0005102
@@ -78,7 +78,7 @@ kids 0
 OBJECT poly
 name "Cylinder"
 loc 0.0031547 0 0
-texture "colors.png"
+texture "colors.webp"
 crease 45.000000
 numvert 34
 0.002421 -0.038428 0.035233
@@ -423,7 +423,7 @@ refs 4
 kids 0
 OBJECT poly
 name "face"
-texture "colors.png"
+texture "colors.webp"
 crease 45.000000
 numvert 49
 0.001467 -0.008634 -0.014464
@@ -772,7 +772,7 @@ refs 4
 kids 0
 OBJECT poly
 name "fond"
-texture "colors.png"
+texture "colors.webp"
 crease 45.000000
 numvert 68
 -0.009122 0.037468 0.050961
@@ -1328,7 +1328,7 @@ refs 4
 kids 0
 OBJECT poly
 name "rouek1"
-texture "colors.png"
+texture "colors.webp"
 crease 45.000000
 numvert 92
 0.001581 -0.015333 -0.014642
@@ -2207,7 +2207,7 @@ refs 4
 kids 0
 OBJECT poly
 name "rouek10"
-texture "colors.png"
+texture "colors.webp"
 crease 45.000000
 numvert 62
 0.001581 -0.015333 -0.004776
@@ -2846,7 +2846,7 @@ refs 4
 kids 0
 OBJECT poly
 name "rouek100"
-texture "colors.png"
+texture "colors.webp"
 crease 45.000000
 numvert 62
 0.001581 -0.015333 0.004667
@@ -3485,7 +3485,7 @@ refs 4
 kids 0
 OBJECT poly
 name "rouem01"
-texture "colors.png"
+texture "colors.webp"
 crease 45.000000
 numvert 92
 0.001581 0.018667 -0.00987
@@ -4364,7 +4364,7 @@ refs 4
 kids 0
 OBJECT poly
 name "rouem1"
-texture "colors.png"
+texture "colors.webp"
 crease 45.000000
 numvert 62
 0.001581 0.018667 -5e-05
@@ -5004,7 +5004,7 @@ kids 0
 OBJECT poly
 name "vmo-mark"
 loc 0.0006945 0.000563446 -0.000454834
-texture "colors.png"
+texture "colors.webp"
 crease 45.000000
 numvert 16
 0.003805 0.0380151 0.000433748

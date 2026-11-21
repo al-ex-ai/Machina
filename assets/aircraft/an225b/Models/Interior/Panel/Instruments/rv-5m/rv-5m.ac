@@ -7,7 +7,7 @@ kids 9
 OBJECT poly
 name "needle"
 loc 0.00110256 0.0157837 -3.93401e-05
-texture "needle.png"
+texture "needle.webp"
 crease 100.000000
 numvert 4
 0 0.0168296 -0.00150367
@@ -146,7 +146,7 @@ kids 0
 OBJECT poly
 name "base"
 loc 0.000333491 -0.00241497 -0.000537592
-texture "face.png"
+texture "face.webp"
 crease 100.000000
 numvert 4
 2.21189e-09 -0.047986 0.0480567
@@ -165,7 +165,7 @@ kids 0
 OBJECT poly
 name "text"
 loc 0.000481757 -0.00012075 -3.93383e-05
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 4
 1.77533e-09 -0.0406206 0.0407987
@@ -184,7 +184,7 @@ kids 0
 OBJECT poly
 name "lamp"
 loc 0.000407059 -0.0401771 -0.0383675
-texture "lamp.png"
+texture "lamp.webp"
 crease 100.000000
 numvert 4
 3.20142e-10 -0.00528636 0.00584135
@@ -203,7 +203,7 @@ kids 0
 OBJECT poly
 name "flag"
 loc -3.4359e-05 0.0183334 -0.00153744
-texture "lamp.png"
+texture "lamp.webp"
 crease 100.000000
 numvert 4
 3.49246e-10 0.00438185 0.00724837
@@ -222,7 +222,7 @@ kids 0
 OBJECT poly
 name "index"
 loc 0.000752166 0.0350364 8.6653e-05
-texture "marker.png"
+texture "marker.webp"
 crease 100.000000
 numvert 4
 0 -0.00479247 -0.00493995

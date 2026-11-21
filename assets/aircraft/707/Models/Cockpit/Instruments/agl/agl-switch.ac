@@ -7,7 +7,7 @@ name "sockle"
 loc -0.539905 0.455465 0.220641
 data 6
 sockle
-texture "agl-face.png"
+texture "agl-face.webp"
 texrep 1 1
 crease 30.000001
 numvert 38
@@ -170,7 +170,7 @@ name "switch"
 loc -0.512655 0.435352 0.167327
 data 6
 switch
-texture "agl-face.png"
+texture "agl-face.webp"
 texrep 1 1
 crease 79.999998
 numvert 274
@@ -2327,7 +2327,7 @@ name "switchshadow"
 loc 0.047272 0.068341 0.000031
 data 12
 switchshadow
-texture "agl-face.png"
+texture "agl-face.webp"
 texrep 1 1
 numvert 4
 0 -0.013654 -0.013654
@@ -2348,7 +2348,7 @@ name "switchsup"
 loc 0.047623 0.068341 0.000031
 data 9
 switchsup
-texture "agl-face.png"
+texture "agl-face.webp"
 texrep 1 1
 numvert 16
 0 -0.01121 -0.008019

@@ -22,7 +22,7 @@ kids 88
 OBJECT poly
 name "fuselage"
 loc -9.55515 4.8673 -1.15623
-texture "BOE.png"
+texture "BOE.webp"
 crease 45.000000
 numvert 24
 -14.1427 -4.55494 -0.420713
@@ -238,7 +238,7 @@ kids 0
 OBJECT poly
 name "cargo_inside"
 loc 12.7918 0.332834 -2.09859
-texture "cargo-door-stuff.png"
+texture "cargo-door-stuff.webp"
 crease 45.000000
 numvert 20
 -2.25457 0.200098 -0.667811
@@ -4900,7 +4900,7 @@ refs 4
 kids 0
 OBJECT poly
 name "lhelevator"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 29
 25.7281 1.74812 1.1698
@@ -5260,7 +5260,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lhfdoor"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 3
 0.090905 -0.46622 3.18534
@@ -5276,7 +5276,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lhibdoor"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 27
 0.413511 -0.197833 4.79129
@@ -5532,7 +5532,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lhibflap1_"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 3
 3.40397 -0.033114 3.17416
@@ -5548,7 +5548,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lhkflap"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 10
 -2.73697 0.910795 9.03888
@@ -5881,7 +5881,7 @@ refs 3
 kids 0
 OBJECT poly
 name "llandlt"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 8
 -6.69454 0.267063 3.44262
@@ -5932,7 +5932,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lltcover"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 12
 -7.14703 0.423973 3.15721
@@ -6023,7 +6023,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lltcover.0"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 12
 -7.14703 0.423972 -3.15721
@@ -6114,7 +6114,7 @@ refs 3
 kids 0
 OBJECT poly
 name "logolts"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 16
 25.9985 2.62102 4.5697
@@ -6209,7 +6209,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lstab"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 67
 23.8016 2.44324 1.48823
@@ -6853,7 +6853,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rhelevator"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 29
 25.7281 1.74812 -1.1698
@@ -7213,7 +7213,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rhfdoor"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 3
 0.090905 -0.46622 -3.18534
@@ -7229,7 +7229,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rhibdoor"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 27
 0.521191 -0.156714 -4.96512
@@ -7485,7 +7485,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rhkflap"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 10
 -2.72789 0.911774 -9.04989
@@ -7550,7 +7550,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rhlight"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 10
 13.9312 3.89104 -29.7118
@@ -7633,7 +7633,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rhobdoor"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 4
 1.29181 -0.096755 -4.99038
@@ -7706,7 +7706,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rlandlt"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 8
 -6.69454 0.291461 -3.30017
@@ -7757,7 +7757,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rstab"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 67
 23.8016 2.44324 -1.48823
@@ -8401,7 +8401,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rstab.lead2"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 16
 28.91 3.00782 -9.49415
@@ -12125,7 +12125,7 @@ OBJECT poly
 name "nwlightedfuse"
 data 10
 Mesh.15598
-texture "BOE.png"
+texture "BOE.webp"
 crease 30.000000
 numvert 29
 -22.6572 -0.316114 -0.569025
@@ -12289,7 +12289,7 @@ OBJECT poly
 name "fuselage"
 data 10
 Mesh.15568
-texture "BOE.png"
+texture "BOE.webp"
 crease 30.000000
 numvert 748
 -25.8807 0.198546 0.085167
@@ -17992,7 +17992,7 @@ OBJECT poly
 name "rhfnosedoor"
 data 10
 Mesh.15543
-texture "BOE.png"
+texture "BOE.webp"
 crease 30.000000
 numvert 30
 -23.0267 -0.971125 -0.831164
@@ -18148,7 +18148,7 @@ name "NoseWheel"
 loc -0.304638 16.4846 -3.87896e-06
 data 8
 Mesh.128
-texture "landing-gears.png"
+texture "landing-gears.webp"
 crease 30.000000
 numvert 506
 -0.0355778 -26.0365 0.543741
@@ -24520,7 +24520,7 @@ name "NGearStrut"
 loc 0.152319 -8.32736 1.93436e-06
 data 8
 Mesh.131
-texture "landing-gears.png"
+texture "landing-gears.webp"
 crease 30.000000
 numvert 248
 0.184015 -1.14801 0.16916
@@ -27382,7 +27382,7 @@ name "NGear"
 loc 0.152317 -8.15723 1.94181e-06
 data 8
 Mesh.131
-texture "landing-gears.png"
+texture "landing-gears.webp"
 crease 30.000000
 numvert 1275
 -0.262621 0.823343 0.0362487
@@ -40840,7 +40840,7 @@ OBJECT poly
 name "APU_Inlet"
 data 10
 Mesh.15587
-texture "BOE.png"
+texture "BOE.webp"
 crease 30.000000
 numvert 20
 26.2555 2.79819 -0.172588
@@ -40911,7 +40911,7 @@ OBJECT poly
 name "bodyfairing"
 data 10
 Mesh.15522
-texture "BOE.png"
+texture "BOE.webp"
 crease 30.000000
 numvert 305
 2.51522 -0.329574 3.14429
@@ -42929,7 +42929,7 @@ OBJECT poly
 name "fuselage.002"
 data 10
 Mesh.15520
-texture "BOE.png"
+texture "BOE.webp"
 crease 30.000000
 numvert 13
 30.0016 1.92913 -0.114495
@@ -43149,7 +43149,7 @@ OBJECT poly
 name "lhfnosedoor"
 data 10
 Mesh.15500
-texture "BOE.png"
+texture "BOE.webp"
 crease 30.000000
 numvert 30
 -23.0267 -0.971125 0.831164
@@ -43300,7 +43300,7 @@ OBJECT poly
 name "lhgearibdoor"
 data 10
 Mesh.15600
-texture "BOE.png"
+texture "BOE.webp"
 crease 30.000000
 numvert 20
 3.37759 -1.68432 2.27801
@@ -43402,7 +43402,7 @@ OBJECT poly
 name "lhkflap"
 data 10
 Mesh.15623
-texture "BOE.png"
+texture "BOE.webp"
 crease 30.000000
 numvert 10
 -3.1282 0.846405 8.51039
@@ -44526,7 +44526,7 @@ OBJECT poly
 name "rhgearibdoor"
 data 10
 Mesh.15611
-texture "BOE.png"
+texture "BOE.webp"
 crease 30.000000
 numvert 20
 3.37759 -1.68432 -2.27801
@@ -44611,7 +44611,7 @@ OBJECT poly
 name "rhkflap"
 data 10
 Mesh.15641
-texture "BOE.png"
+texture "BOE.webp"
 crease 30.000000
 numvert 10
 -3.1282 0.845986 -8.50925
@@ -46039,7 +46039,7 @@ OBJECT poly
 name "wiper.l"
 data 10
 Mesh.15650
-texture "BOE.png"
+texture "BOE.webp"
 crease 45.000000
 numvert 51
 -24.2408 2.03186 0.057947
@@ -46393,7 +46393,7 @@ OBJECT poly
 name "wiper.r"
 data 10
 Mesh.15471
-texture "BOE.png"
+texture "BOE.webp"
 crease 45.000000
 numvert 50
 -24.2408 2.03186 -0.068699
@@ -46746,7 +46746,7 @@ OBJECT poly
 name "lhnosedoor"
 data 10
 Mesh.15622
-texture "BOE.png"
+texture "BOE.webp"
 crease 30.000000
 numvert 12
 -21.6854 -1.30452 0.568846
@@ -46795,7 +46795,7 @@ OBJECT poly
 name "rhnosedoor"
 data 10
 Mesh.15622
-texture "BOE.png"
+texture "BOE.webp"
 crease 30.000000
 numvert 12
 -21.6854 -1.30452 -0.568846
@@ -47047,7 +47047,7 @@ name "Mesh.395"
 loc 0.608607 -1.56185 -2.17966
 data 8
 Mesh.395
-texture "BOE.png"
+texture "BOE.webp"
 crease 30.000000
 numvert 55
 -2.56422 3.45191 1.5057
@@ -47590,7 +47590,7 @@ kids 0
 OBJECT poly
 name "rightgear.hyd2"
 loc -2.31746 1.54942 6.88747
-texture "landing-gears.png"
+texture "landing-gears.webp"
 crease 45.000000
 numvert 24
 -0.0269139 -0.387705 -6.41977
@@ -47816,7 +47816,7 @@ kids 0
 OBJECT poly
 name "rightgear.hyd1"
 loc -2.26009 0.407188 8.86041
-texture "landing-gears.png"
+texture "landing-gears.webp"
 crease 45.000000
 numvert 24
 -0.0271733 0.762223 -8.35604
@@ -48044,7 +48044,7 @@ name "RightGearCompressor2"
 loc -2.5753 -0.478472 -0.540547
 data 8
 Mesh.134
-texture "landing-gears.png"
+texture "landing-gears.webp"
 crease 30.000000
 numvert 117
 -0.250837 -0.294515 -0.0516758
@@ -49347,7 +49347,7 @@ name "RightGearCompressor1"
 loc 1.17961 1.19232 -1.62218
 data 8
 Mesh.134
-texture "landing-gears.png"
+texture "landing-gears.webp"
 crease 30.000000
 numvert 162
 -3.59917 -2.33549 0.876922
@@ -51223,7 +51223,7 @@ name "RightGearBaseRod"
 loc 1.17961 1.19232 -1.62218
 data 8
 Mesh.134
-texture "landing-gears.png"
+texture "landing-gears.webp"
 crease 30.000000
 numvert 687
 -4.24344 -2.87629 1.13174
@@ -57488,7 +57488,7 @@ name "RightGearCompressor"
 loc 1.17961 1.19232 -1.62218
 data 8
 Mesh.134
-texture "landing-gears.png"
+texture "landing-gears.webp"
 crease 30.000000
 numvert 102
 -4.04988 -2.44218 0.801023
@@ -58524,7 +58524,7 @@ name "RGear"
 loc 1.17961 1.19232 -1.62218
 data 8
 Mesh.134
-texture "landing-gears.png"
+texture "landing-gears.webp"
 crease 30.000000
 numvert 630
 -3.23312 0.614877 1.15539
@@ -65440,7 +65440,7 @@ name "RightWheelBack"
 loc 0.608607 -1.56185 -2.17966
 data 8
 Mesh.137
-texture "landing-gears.png"
+texture "landing-gears.webp"
 crease 30.000000
 numvert 592
 -1.8118 0.631856 1.21694
@@ -72882,7 +72882,7 @@ name "RightWheelFront"
 loc 0.608607 -1.56185 -2.17966
 data 8
 Mesh.138
-texture "landing-gears.png"
+texture "landing-gears.webp"
 crease 30.000000
 numvert 592
 -3.36236 0.585497 1.30736
@@ -80324,7 +80324,7 @@ name "Mesh.328"
 loc 0.608607 -1.56185 -2.17966
 data 8
 Mesh.328
-texture "BOE.png"
+texture "BOE.webp"
 crease 30.000000
 numvert 41
 -3.60299 1.50829 1.39855
@@ -80763,7 +80763,7 @@ name "Mesh.328"
 loc 0.608606 -1.56185 -3.05309
 data 8
 Mesh.328
-texture "BOE.png"
+texture "BOE.webp"
 crease 30.000000
 numvert 41
 -3.79612 3.46195 11.4156
@@ -81196,7 +81196,7 @@ kids 0
 OBJECT poly
 name "leftgear.hyd2"
 loc -2.31747 1.54942 6.01404
-texture "landing-gears.png"
+texture "landing-gears.webp"
 crease 45.000000
 numvert 24
 -0.0269139 -0.368636 1.11383
@@ -81422,7 +81422,7 @@ kids 0
 OBJECT poly
 name "leftgear.hyd1"
 loc -2.2601 0.407188 7.98698
-texture "landing-gears.png"
+texture "landing-gears.webp"
 crease 45.000000
 numvert 24
 -0.0271733 0.801647 -0.88153
@@ -81650,7 +81650,7 @@ name "LeftGearCompressor2"
 loc -2.57531 -0.478472 8.19373
 data 8
 Mesh.134
-texture "landing-gears.png"
+texture "landing-gears.webp"
 crease 30.000000
 numvert 117
 -0.250837 -0.294515 0.0516744
@@ -82953,7 +82953,7 @@ name "LeftGearCompressor1"
 loc 1.17962 1.19232 -2.4956
 data 8
 Mesh.134
-texture "landing-gears.png"
+texture "landing-gears.webp"
 crease 30.000000
 numvert 162
 -3.59917 -2.33549 10.894
@@ -84739,7 +84739,7 @@ name "RGear"
 loc 1.17962 1.19232 -2.4956
 data 8
 Mesh.134
-texture "landing-gears.png"
+texture "landing-gears.webp"
 crease 30.000000
 numvert 634
 -3.23312 0.614877 10.6156
@@ -91647,7 +91647,7 @@ name "Mesh.395"
 loc 0.608606 -1.56185 -3.05309
 data 8
 Mesh.395
-texture "landing-gears.png"
+texture "landing-gears.webp"
 crease 30.000000
 numvert 55
 -2.56422 3.45191 11.3802
@@ -92180,7 +92180,7 @@ name "LeftGearBaseRod"
 loc 1.17962 1.19232 -2.4956
 data 8
 Mesh.134
-texture "landing-gears.png"
+texture "landing-gears.webp"
 crease 30.000000
 numvert 687
 -4.24344 -2.87629 10.6392
@@ -98445,7 +98445,7 @@ name "LeftGearCompressor"
 loc 1.17962 1.19232 -2.4956
 data 8
 Mesh.134
-texture "landing-gears.png"
+texture "landing-gears.webp"
 crease 30.000000
 numvert 126
 -4.04988 -2.44218 10.9699
@@ -99595,7 +99595,7 @@ name "LeftWheelBack"
 loc 0.608606 -1.56185 -3.05309
 data 8
 Mesh.137
-texture "landing-gears.png"
+texture "landing-gears.webp"
 crease 30.000000
 numvert 592
 -1.81179 0.631856 11.669
@@ -107037,7 +107037,7 @@ name "LeftWheelFront"
 loc 0.608606 -1.56185 -3.05309
 data 8
 Mesh.138
-texture "landing-gears.png"
+texture "landing-gears.webp"
 crease 30.000000
 numvert 592
 -3.36236 0.585497 11.5786
@@ -114477,7 +114477,7 @@ kids 0
 OBJECT poly
 name "l.surge"
 loc -7.17711 -0.839466 9.72692
-texture "Lights/surge.png"
+texture "Lights/surge.webp"
 crease 45.000000
 numvert 25
 0.314653 0 1.51088
@@ -114654,7 +114654,7 @@ kids 0
 OBJECT poly
 name "r.surge"
 loc -7.17708 -0.839466 -9.72682
-texture "Lights/surge.png"
+texture "Lights/surge.webp"
 crease 45.000000
 numvert 25
 0.314653 0 -1.51088
@@ -114833,7 +114833,7 @@ name "wings_lightmap"
 kids 62
 OBJECT poly
 name "rhibspoilera"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 8
 2.9049 1.32879 -10.2883
@@ -114872,7 +114872,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lhibspoilera"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 8
 3.6138 0.936395 8.44833
@@ -114911,7 +114911,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lhspoilera"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 12
 3.38667 1.5323 11.5641
@@ -114978,7 +114978,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lhibaileron"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 54
 3.52126 1.0831 10.2409
@@ -115507,7 +115507,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lhibfairing"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 22
 4.12543 0.878981 8.93259
@@ -115758,7 +115758,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lhibflapa"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 40
 3.6886 1.08594 10.202
@@ -116177,7 +116177,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rhibaileron"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 54
 3.52126 1.08308 -10.2409
@@ -116706,7 +116706,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rhibfairing"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 22
 4.10225 0.791366 -8.4506
@@ -116957,7 +116957,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rhibflapa"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 39
 3.6886 1.08591 -10.202
@@ -117375,7 +117375,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rhibspoilera"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 12
 2.80882 1.05959 -8.58811
@@ -117442,7 +117442,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rhobspoilerb"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 8
 7.95029 2.64396 -20.9704
@@ -117481,7 +117481,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rhobspoilera"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 8
 4.93097 1.9677 -14.8683
@@ -117520,7 +117520,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rhspoilera"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 12
 3.69599 1.66239 -12.3763
@@ -117587,7 +117587,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lhibspoilera"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 12
 2.51518 0.054815 3.18644
@@ -117654,7 +117654,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lhobspoilerb"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 8
 5.45389 1.83919 14.5798
@@ -117693,7 +117693,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lhobspoilera"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 8
 4.28169 1.55059 12.0422
@@ -118061,7 +118061,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lhibflap"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 30
 3.43571 -0.301503 3.17702
@@ -118326,7 +118326,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lhibslat"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 53
 -2.93081 1.26456 8.40057
@@ -118949,7 +118949,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lhlight"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 10
 13.9312 3.89084 29.7306
@@ -119032,7 +119032,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lhmfairing"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 27
 6.92811 1.56317 14.6537
@@ -119348,7 +119348,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lhnavlite"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 12
 9.61038 3.40495 27.1747
@@ -119439,7 +119439,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lhobaileron"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 12
 9.06723 2.4727 21.0799
@@ -119578,7 +119578,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lhobdoor"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 4
 1.29181 -0.096755 4.99038
@@ -119601,7 +119601,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lhobfairing"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 29
 8.71727 2.02301 18.9065
@@ -119919,7 +119919,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lhobflapa"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 33
 3.99498 1.38261 12.2126
@@ -120265,7 +120265,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lhobflapb"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 22
 8.3901 2.58424 20.9439
@@ -120924,7 +120924,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lhobslata"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 37
 -2.20453 1.28104 10.079
@@ -121280,7 +121280,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lhobslatb"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 32
 4.62325 2.55223 19.1746
@@ -121571,7 +121571,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lhobslatc"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 20
 9.27649 3.26169 26.6735
@@ -121742,7 +121742,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lights.001"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 8
 9.8423 3.4715 27.4466
@@ -121805,7 +121805,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lights.003"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 8
 9.84858 3.4579 -27.4226
@@ -121868,7 +121868,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lwing"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 157
 2.14202 1.18612 8.80406
@@ -123208,7 +123208,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lwinga"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 116
 4.01411 1.3932 12.1999
@@ -124213,7 +124213,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lwingb"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 94
 8.4259 2.54792 21.0087
@@ -125004,7 +125004,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lwingc"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 147
 13.8525 3.92927 29.7543
@@ -126963,7 +126963,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rhibflap"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 28
 4.43223 -0.30849 -3.15061
@@ -127166,7 +127166,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rhibslat"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 53
 -3.06976 1.22548 -8.47747
@@ -127789,7 +127789,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rhmfairing"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 27
 6.92811 1.56316 -14.6537
@@ -128105,7 +128105,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rhnavlite"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 12
 9.61038 3.40492 -27.1747
@@ -128196,7 +128196,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rhobaileron"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 12
 9.06723 2.47266 -21.0799
@@ -128335,7 +128335,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rhobfairing"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 29
 8.71727 2.02299 -18.9065
@@ -128653,7 +128653,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rhobflapa"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 33
 4.0044 1.45681 -12.0951
@@ -128999,7 +128999,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rhobflapb"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 22
 8.3901 2.58419 -20.9439
@@ -129658,7 +129658,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rhobslata"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 37
 -2.18323 1.18958 -10.0703
@@ -130014,7 +130014,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rhobslatb"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 32
 4.6231 2.55223 -19.1743
@@ -130305,7 +130305,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rhobslatc"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 20
 9.27649 3.26168 -26.6735
@@ -130476,7 +130476,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rwing"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 157
 2.14202 1.18611 -8.80406
@@ -131816,7 +131816,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rwinga"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 116
 4.01411 1.39318 -12.1999
@@ -132821,7 +132821,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rwingb"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 94
 8.4259 2.54791 -21.0087
@@ -133612,7 +133612,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rwingc"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 146
 13.8525 3.92926 -29.7543
@@ -135243,7 +135243,7 @@ OBJECT poly
 name "no1pylon"
 data 10
 Mesh.15635
-texture "wings.png"
+texture "wings.webp"
 crease 30.000000
 numvert 150
 -2.62521 0.255386 10.0267
@@ -136319,7 +136319,7 @@ OBJECT poly
 name "no2pylon"
 data 10
 Mesh.15588
-texture "wings.png"
+texture "wings.webp"
 crease 30.000000
 numvert 150
 -2.62521 0.255349 -10.0267
@@ -137393,7 +137393,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lstab.lead2"
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 16
 29.3721 3.09084 9.77671
@@ -137532,7 +137532,7 @@ OBJECT poly
 name "fin"
 data 10
 Mesh.15575
-texture "BOE.png"
+texture "BOE.webp"
 crease 30.000000
 numvert 79
 27.5732 11.9776 0.0896
@@ -137925,7 +137925,7 @@ OBJECT poly
 name "rudder"
 data 10
 Mesh.15591
-texture "BOE.png"
+texture "BOE.webp"
 crease 30.000000
 numvert 70
 29.5251 12.1767 -6e-06
@@ -138315,7 +138315,7 @@ OBJECT poly
 name "eng1fan"
 data 10
 Mesh.15576
-texture "BOE.png"
+texture "BOE.webp"
 crease 30.000000
 numvert 1321
 -6.8022 0.8495 9.86083
@@ -146101,7 +146101,7 @@ OBJECT poly
 name "eng1fanb"
 data 10
 Mesh.15540
-texture "BOE.png"
+texture "BOE.webp"
 crease 30.000000
 numvert 87
 -6.53391 -1.70437 11.2373
@@ -146749,7 +146749,7 @@ OBJECT poly
 name "eng2fan"
 data 10
 Mesh.15482
-texture "BOE.png"
+texture "BOE.webp"
 crease 30.000000
 numvert 1321
 -6.8022 0.849464 -9.57917
@@ -154535,7 +154535,7 @@ OBJECT poly
 name "eng2fanb"
 data 10
 Mesh.15546
-texture "BOE.png"
+texture "BOE.webp"
 crease 30.000000
 numvert 87
 -6.53391 -1.7044 -8.20275
@@ -155183,7 +155183,7 @@ OBJECT poly
 name "lhreverser"
 data 10
 Mesh.15556
-texture "BOE.png"
+texture "BOE.webp"
 crease 30.000000
 numvert 301
 -5.20787 -2.6178 9.10618
@@ -157000,7 +157000,7 @@ OBJECT poly
 name "lhvortexdev"
 data 10
 Mesh.15481
-texture "BOE.png"
+texture "BOE.webp"
 crease 30.000000
 numvert 8
 -6.19264 0.127738 8.14219
@@ -157071,7 +157071,7 @@ OBJECT poly
 name "lreverse"
 data 10
 Mesh.15613
-texture "BOE.png"
+texture "BOE.webp"
 crease 30.000000
 numvert 13
 -4.55668 -0.829982 9.72
@@ -157165,7 +157165,7 @@ OBJECT poly
 name "no1enge"
 data 10
 Mesh.15458
-texture "BOE.png"
+texture "BOE.webp"
 crease 30.000000
 numvert 461
 -5.22139 -2.7309 9.70476
@@ -159941,7 +159941,7 @@ OBJECT poly
 name "no1engl"
 data 10
 Mesh.15531
-texture "BOE.png"
+texture "BOE.webp"
 crease 30.000000
 numvert 85
 -4.02719 0.744811 8.82773
@@ -160371,7 +160371,7 @@ OBJECT poly
 name "no2enge"
 data 10
 Mesh.15474
-texture "BOE.png"
+texture "BOE.webp"
 crease 30.000000
 numvert 461
 -5.22139 -2.73094 -9.70476
@@ -163147,7 +163147,7 @@ OBJECT poly
 name "no2engl"
 data 10
 Mesh.15478
-texture "BOE.png"
+texture "BOE.webp"
 crease 30.000000
 numvert 85
 -4.02722 0.668561 -10.5813
@@ -163577,7 +163577,7 @@ OBJECT poly
 name "rhreverser"
 data 10
 Mesh.15572
-texture "BOE.png"
+texture "BOE.webp"
 crease 30.000000
 numvert 301
 -5.20787 -2.61784 -9.10618
@@ -165394,7 +165394,7 @@ OBJECT poly
 name "rhvortexdev"
 data 10
 Mesh.15460
-texture "BOE.png"
+texture "BOE.webp"
 crease 30.000000
 numvert 8
 -6.19264 0.127699 -8.12763
@@ -165465,7 +165465,7 @@ OBJECT poly
 name "rreverse"
 data 10
 Mesh.15510
-texture "BOE.png"
+texture "BOE.webp"
 crease 30.000000
 numvert 13
 -4.55668 -0.830018 -9.72001
@@ -165558,7 +165558,7 @@ kids 0
 OBJECT poly
 name "cargo_door"
 loc 11.6607 0.579722 -3.78484
-texture "BOE.png"
+texture "BOE.webp"
 crease 45.000000
 numvert 63
 -1.31095 -0.0647746 0.885535
@@ -165975,7 +165975,7 @@ kids 0
 OBJECT poly
 name "antennae"
 loc -14.8955 9.93136 -0.00947247
-texture "BOE.png"
+texture "BOE.webp"
 crease 45.000000
 numvert 109
 2.37145 -5.19098 0.0173462
@@ -166928,7 +166928,7 @@ kids 0
 OBJECT poly
 name "fuselage"
 loc -11.3127 3.88045 -1.08368
-texture "BOE.png"
+texture "BOE.webp"
 crease 45.000000
 numvert 24
 -12.1525 -2.96837 -0.481427
@@ -167144,7 +167144,7 @@ kids 0
 OBJECT poly
 name "pilot_tubes"
 loc -23.7238 0.591507 1.54502
-texture "BOE.png"
+texture "BOE.webp"
 crease 45.000000
 numvert 48
 0.241077 0.3059 0.00494468

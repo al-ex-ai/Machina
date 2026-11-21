@@ -9,7 +9,7 @@ name "ALT.Face"
 loc 0.000469 -0.000483 -0.00053
 data 8
 ALT.Face
-texture "altm.png"
+texture "altm.webp"
 texrep 1 1
 crease 30.000001
 numvert 9
@@ -77,7 +77,7 @@ name "ALT.FacePressure"
 loc 0.000169 -0.000483 -0.00053
 data 16
 ALT.FacePressure
-texture "altpres.png"
+texture "altpres.webp"
 texrep 1 1
 crease 30.000001
 numvert 9
@@ -145,7 +145,7 @@ name "ALT.Knob"
 loc 0.007489 -0.029859 -0.030202
 data 8
 ALT.Knob
-texture "altm.png"
+texture "altm.webp"
 texrep 1 1
 crease 45.000001
 numvert 65
@@ -541,7 +541,7 @@ name "ALT.Needle1"
 loc 0.000169 -0.000483 -0.00053
 data 11
 ALT.Needle1
-texture "altm.png"
+texture "altm.webp"
 texrep 1 1
 crease 30.000001
 numvert 7
@@ -579,7 +579,7 @@ name "ALT.Needle2"
 loc 0.000169 -0.000483 -0.00053
 data 11
 ALT.Needle2
-texture "altm.png"
+texture "altm.webp"
 texrep 1 1
 crease 30.000001
 numvert 7
@@ -617,7 +617,7 @@ name "shadow"
 loc 0.001666 -0.000483 -0.00053
 data 6
 shadow
-texture "shadow.png"
+texture "shadow.webp"
 texrep 1 1
 crease 30.000001
 numvert 72
@@ -1000,7 +1000,7 @@ name "support"
 loc 0.001666 -0.000483 -0.00053
 data 7
 support
-texture "shadow.png"
+texture "shadow.webp"
 texrep 1 1
 crease 30.000001
 numvert 144

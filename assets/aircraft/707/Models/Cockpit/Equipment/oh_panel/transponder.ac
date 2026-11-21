@@ -8,7 +8,7 @@ name "digit1"
 loc -0.001159 0.09197 0.134869
 data 6
 digit1
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -30,7 +30,7 @@ name "digit2"
 loc -0.001159 0.09197 0.150711
 data 6
 digit2
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -52,7 +52,7 @@ name "digit3"
 loc -0.001159 0.091881 0.166729
 data 6
 digit3
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -74,7 +74,7 @@ name "digit4"
 loc -0.001159 0.092147 0.183415
 data 6
 digit4
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -96,7 +96,7 @@ name "knob1"
 loc -0.013427 0.097292 0.142823
 data 5
 knob1
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 crease 30.000001
 numvert 81
@@ -508,7 +508,7 @@ name "knob2"
 loc -0.013427 0.097292 0.158621
 data 5
 knob2
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 crease 30.000001
 numvert 81
@@ -920,7 +920,7 @@ name "knob3"
 loc -0.013427 0.097292 0.17527
 data 5
 knob3
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 crease 30.000001
 numvert 81
@@ -1332,7 +1332,7 @@ name "knob4"
 loc -0.013427 0.097292 0.191962
 data 5
 knob4
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 crease 30.000001
 numvert 81
@@ -1744,7 +1744,7 @@ name "turn"
 loc 0.232402 -0.824773 15.469498
 data 4
 turn
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 45.000001
 numvert 49

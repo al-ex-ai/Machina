@@ -7,7 +7,7 @@ OBJECT poly
 name "ball"
 data 8
 Mesh.002
-texture "stby-ai.png"
+texture "stby-ai.webp"
 texrep 1 1
 crease 30.000000
 numvert 242
@@ -2019,7 +2019,7 @@ OBJECT poly
 name "rollarrow"
 data 8
 Mesh.006
-texture "stby-ai.png"
+texture "stby-ai.webp"
 texrep 1 1
 crease 30.000000
 numvert 7
@@ -2062,7 +2062,7 @@ OBJECT poly
 name "rollindex"
 data 8
 Mesh.001
-texture "stby-ai.png"
+texture "stby-ai.webp"
 texrep 1 1
 crease 30.000000
 numvert 26
@@ -2182,7 +2182,7 @@ OBJECT poly
 name "wings"
 data 8
 Mesh.007
-texture "stby-ai.png"
+texture "stby-ai.webp"
 texrep 1 1
 crease 30.000000
 numvert 9

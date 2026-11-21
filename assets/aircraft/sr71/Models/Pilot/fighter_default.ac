@@ -9,7 +9,7 @@ name "Avanbraccio-dx"
 loc -0.144813 0.009183 -0.253934
 data 14
 Avanbraccio-dx
-texture "Pilota-U-2S.png"
+texture "Pilota-U-2S.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 112
@@ -804,7 +804,7 @@ name "Avanbraccio-sx"
 loc -0.121816 0.01925 0.249515
 data 14
 Avanbraccio-sx
-texture "Pilota-U-2S.png"
+texture "Pilota-U-2S.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 112
@@ -1599,7 +1599,7 @@ name "Body"
 loc -0.170682 -0.009718 0.010237
 data 4
 Body
-texture "Pilota-U-2S.png"
+texture "Pilota-U-2S.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 3359
@@ -28020,7 +28020,7 @@ name "Braccio-dx"
 loc 0.017868 0.118786 -0.250415
 data 10
 Braccio-dx
-texture "Pilota-U-2S.png"
+texture "Pilota-U-2S.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 80
@@ -28559,7 +28559,7 @@ name "Braccio-sx"
 loc 0.027086 0.122459 0.235123
 data 10
 Braccio-sx
-texture "Pilota-U-2S.png"
+texture "Pilota-U-2S.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 80
@@ -29098,7 +29098,7 @@ name "Clutchs"
 loc -0.090664 0.191599 0.002499
 data 7
 Clutchs
-texture "Pilota-U-2S.png"
+texture "Pilota-U-2S.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 948
@@ -36670,7 +36670,7 @@ name "Eyes"
 loc -0.02431 0.460186 -0.000224
 data 4
 Eyes
-texture "Pilota-U-2S.png"
+texture "Pilota-U-2S.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 1064
@@ -44885,7 +44885,7 @@ name "Face"
 loc 0.002403 0.414975 -0.000034
 data 4
 Face
-texture "Pilota-U-2S.png"
+texture "Pilota-U-2S.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 3470
@@ -72194,7 +72194,7 @@ name "Glass-Cover"
 loc -0.021324 0.448493 0.000949
 data 11
 Glass-Cover
-texture "Pilota-U-2S.png"
+texture "Pilota-U-2S.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 335
@@ -74612,7 +74612,7 @@ name "Glass-Visor"
 loc -0.002492 0.460829 0.000894
 data 11
 Glass-Visor
-texture "Pilota-U-2S.png"
+texture "Pilota-U-2S.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 519
@@ -78544,7 +78544,7 @@ name "Hand-L"
 loc -0.308992 0.033337 0.251061
 data 6
 Hand-L
-texture "Pilota-U-2S.png"
+texture "Pilota-U-2S.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 741
@@ -84420,7 +84420,7 @@ name "Hand-R"
 loc -0.305147 0.012431 -0.209955
 data 6
 Hand-R
-texture "Pilota-U-2S.png"
+texture "Pilota-U-2S.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 741
@@ -90296,7 +90296,7 @@ name "Head"
 loc 0.056666 0.432741 0.00306
 data 4
 Head
-texture "Pilota-U-2S.png"
+texture "Pilota-U-2S.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 550
@@ -94427,7 +94427,7 @@ name "Helmet"
 loc 0.079509 0.405923 0.000818
 data 6
 Helmet
-texture "Pilota-U-2S.png"
+texture "Pilota-U-2S.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 1983
@@ -109931,7 +109931,7 @@ name "Piede-dx"
 loc -0.652152 -0.365831 -0.146233
 data 8
 Piede-dx
-texture "Pilota-U-2S.png"
+texture "Pilota-U-2S.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 265
@@ -111999,7 +111999,7 @@ name "Piede-sx"
 loc -0.661048 -0.360605 0.173469
 data 8
 Piede-sx
-texture "Pilota-U-2S.png"
+texture "Pilota-U-2S.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 265
@@ -114067,7 +114067,7 @@ name "Valves"
 loc -0.099407 0.104188 0.009072
 data 6
 Valves
-texture "Pilota-U-2S.png"
+texture "Pilota-U-2S.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 1678

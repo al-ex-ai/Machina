@@ -9,7 +9,7 @@ OBJECT poly
 name "Bezel"
 data 10
 Circle.001
-texture "asi.png"
+texture "asi.webp"
 crease 30.000000
 numvert 64
 0 0.028285 -0.028285
@@ -306,7 +306,7 @@ OBJECT poly
 name "Case"
 data 10
 Circle.002
-texture "asi.png"
+texture "asi.webp"
 crease 30.000000
 numvert 64
 -0.002 0.02687 -0.02687
@@ -603,7 +603,7 @@ OBJECT poly
 name "Face"
 data 6
 Circle
-texture "asi.png"
+texture "asi.webp"
 crease 30.000000
 numvert 33
 -0.01 0 0

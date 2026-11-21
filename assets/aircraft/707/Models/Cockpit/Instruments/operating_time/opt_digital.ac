@@ -9,7 +9,7 @@ name "face"
 loc 0 0 -0
 data 4
 face
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 crease 30.000001
 numvert 216
@@ -1090,7 +1090,7 @@ name "hour1"
 loc 0.005084 -0.00859 -0.005466
 data 5
 hour1
-texture "digits.png"
+texture "digits.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -1117,7 +1117,7 @@ name "hour10"
 loc 0.005084 -0.008586 -0.005466
 data 6
 hour10
-texture "digits.png"
+texture "digits.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -1144,7 +1144,7 @@ name "hour100"
 loc 0.005084 -0.00859 0.00258
 data 7
 hour100
-texture "digits.png"
+texture "digits.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -1171,7 +1171,7 @@ name "hour1000"
 loc 0.005084 -0.008586 0.00258
 data 8
 hour1000
-texture "digits.png"
+texture "digits.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -1198,7 +1198,7 @@ name "min1"
 loc 0.005084 -0.008513 -0.013719
 data 4
 min1
-texture "digits.png"
+texture "digits.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -1225,7 +1225,7 @@ name "min10"
 loc 0.005084 -0.008508 -0.013719
 data 5
 min10
-texture "digits.png"
+texture "digits.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -1252,7 +1252,7 @@ name "shadow"
 loc 0 0.000128 0.001155
 data 6
 shadow
-texture "instr-shadow.png"
+texture "instr-shadow.webp"
 texrep 1 1
 crease 30.000001
 numvert 4

@@ -10,7 +10,7 @@ kids 3
 OBJECT poly
 name "switch"
 loc -0.00124471 0.0053744 0.000112705
-texture "fuelswitch.png"
+texture "fuelswitch.webp"
 crease 45.000000
 numvert 39
 0.0011979 0.00191899 -0.00702343
@@ -281,7 +281,7 @@ name "face"
 loc -0.00131752 0.0053744 -5.63523e-05
 data 8
 Mesh.014
-texture "fuelswitch.png"
+texture "fuelswitch.webp"
 crease 30.000000
 numvert 9
 0.00123054 0.0128097 -0.0128097
@@ -348,7 +348,7 @@ name "bezel"
 loc -0.00131752 0.0053744 -5.63523e-05
 data 12
 Cylinder.001
-texture "fuelswitch.png"
+texture "fuelswitch.webp"
 crease 30.000000
 numvert 96
 0.000292321 0.0132584 -0.0132584

@@ -8,7 +8,7 @@ name "HDRvitreporte"
 loc -13.118772 -0.886499 1.434496
 data 13
 HDRvitreporte
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 32
@@ -161,7 +161,7 @@ name "HDRvitres"
 loc -4.900706 -0.898257 -0.039987
 data 9
 HDRvitres
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 1148
@@ -5222,7 +5222,7 @@ name "HDRvitresnoze0"
 loc -18.132639 -1.750119 0
 data 14
 HDRvitresnoze0
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 120
@@ -5939,7 +5939,7 @@ name "aileronD"
 loc 6.035859 -2.490289 -11.715349
 data 8
 aileronD
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 34
@@ -6288,7 +6288,7 @@ name "aileronG"
 loc 6.035859 -2.490333 11.715349
 data 8
 aileronG
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 34
@@ -6637,7 +6637,7 @@ name "ailes"
 loc 3.537557 -2.448871 -0.021334
 data 5
 ailes
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 667
@@ -11673,7 +11673,7 @@ name "ailes2"
 loc 17.22772 4.466413 0.005246
 data 6
 ailes2
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 545
@@ -15819,7 +15819,7 @@ name "air"
 loc 6.98285 -0.044704 -0
 data 3
 air
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 372
@@ -18538,7 +18538,7 @@ name "antennes"
 loc -7.70535 -0.391105 -0
 data 8
 antennes
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 166
@@ -19667,7 +19667,7 @@ name "axeA0"
 loc -14.600522 -3.519819 -0
 data 5
 axeA0
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 436
@@ -23048,7 +23048,7 @@ name "axeA1"
 loc -14.560839 -2.950663 -0.002264
 data 5
 axeA1
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 442
@@ -26121,7 +26121,7 @@ name "axeA2"
 loc -14.39219 -4.069779 -0
 data 5
 axeA2
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 810
@@ -32254,7 +32254,7 @@ name "axeA3"
 loc -14.354785 -3.794669 -0
 data 5
 axeA3
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 77
@@ -32922,7 +32922,7 @@ name "axeA4"
 loc -14.441927 -3.536199 -0
 data 5
 axeA4
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 35
@@ -33188,7 +33188,7 @@ name "axeA5"
 loc -14.140963 -3.049287 -0
 data 5
 axeA5
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 100
@@ -34077,7 +34077,7 @@ name "axeA6"
 loc -13.997282 -2.902197 -0
 data 5
 axeA6
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 24
@@ -34252,7 +34252,7 @@ name "axeA7"
 loc -13.96689 -2.788217 -0
 data 5
 axeA7
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 104
@@ -35059,7 +35059,7 @@ name "axeD0"
 loc 0.963301 -3.865671 -4.776
 data 5
 axeD0
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 194
@@ -36320,7 +36320,7 @@ name "axeD1"
 loc 0.963301 -4.048017 -4.776
 data 5
 axeD1
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 458
@@ -40397,7 +40397,7 @@ name "axeD2"
 loc 0.798987 -3.511914 -4.776
 data 5
 axeD2
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 128
@@ -41624,7 +41624,7 @@ name "axeD3"
 loc 0.665451 -2.991744 -4.776
 data 5
 axeD3
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 96
@@ -42179,7 +42179,7 @@ name "axeD4"
 loc 0.351138 -3.45635 -4.776
 data 5
 axeD4
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 288
@@ -44324,7 +44324,7 @@ name "axeG0"
 loc 0.963301 -3.86567 4.775969
 data 5
 axeG0
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 194
@@ -45585,7 +45585,7 @@ name "axeG1"
 loc 0.963301 -4.048017 4.77597
 data 5
 axeG1
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 458
@@ -49662,7 +49662,7 @@ name "axeG2"
 loc 0.798987 -3.511914 4.776
 data 5
 axeG2
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 128
@@ -50889,7 +50889,7 @@ name "axeG3"
 loc 0.665451 -2.991744 4.776
 data 5
 axeG3
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 96
@@ -51444,7 +51444,7 @@ name "axeG4"
 loc 0.351138 -3.45635 4.775968
 data 5
 axeG4
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 288
@@ -53589,7 +53589,7 @@ name "caches"
 loc 1.687081 -2.592152 0
 data 6
 caches
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 764
@@ -59552,7 +59552,7 @@ name "direction"
 loc 13.313471 2.141207 0.00005
 data 9
 direction
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 35
@@ -59902,7 +59902,7 @@ name "entreemoteurs"
 loc 5.863938 -0.826163 0
 data 13
 entreemoteurs
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 522
@@ -63731,7 +63731,7 @@ name "filets"
 loc 2.021968 -2.269617 -0
 data 6
 filets
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 172
@@ -64834,7 +64834,7 @@ name "fuselage"
 loc 2.480502 0.36993 -0.005515
 data 8
 fuselage
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 2339
@@ -80700,7 +80700,7 @@ name "glasslightL"
 loc -16.045324 -2.223007 0.865599
 data 11
 glasslightL
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 33
@@ -80936,7 +80936,7 @@ name "glasslightR"
 loc -16.045324 -2.223007 -0.865599
 data 11
 glasslightR
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 33
@@ -81172,7 +81172,7 @@ name "heliceD"
 loc 6.075571 -0.838368 -2.34142
 data 7
 heliceD
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 127
@@ -81870,7 +81870,7 @@ name "heliceG"
 loc 6.075571 -0.838368 2.34142
 data 7
 heliceG
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 127
@@ -82568,7 +82568,7 @@ name "lightL"
 loc -16.0455 -2.222521 0.850469
 data 6
 lightL
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 226
@@ -84533,7 +84533,7 @@ name "lightR"
 loc -16.0455 -2.222521 -0.850469
 data 6
 lightR
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 226
@@ -86498,7 +86498,7 @@ name "moteurs"
 loc 7.577672 -0.80115 0.000001
 data 7
 moteurs
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 1086
@@ -94507,7 +94507,7 @@ name "noze0"
 loc -16.458704 -1.809197 -0.002139
 data 5
 noze0
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 601
@@ -99071,7 +99071,7 @@ name "noze1"
 loc -16.893242 -1.502545 0
 data 5
 noze1
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 558
@@ -103410,7 +103410,7 @@ name "noze2"
 loc -17.836596 -1.547915 0
 data 5
 noze2
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 526
@@ -107493,7 +107493,7 @@ name "porte"
 loc -13.1197 -1.008521 1.409056
 data 5
 porte
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 56
@@ -107846,7 +107846,7 @@ name "porteAD1"
 loc -14.188477 -2.625055 -0.243025
 data 8
 porteAD1
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 12
@@ -107939,7 +107939,7 @@ name "porteAD2"
 loc -12.891914 -2.630099 -0.245886
 data 8
 porteAD2
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 18
@@ -108080,7 +108080,7 @@ name "porteAG1"
 loc -14.188477 -2.625055 0.243025
 data 8
 porteAG1
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 12
@@ -108173,7 +108173,7 @@ name "porteAG2"
 loc -12.891914 -2.630099 0.245886
 data 8
 porteAG2
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 18
@@ -108314,7 +108314,7 @@ name "porteD"
 loc -0.472599 -2.977606 -4.77605
 data 6
 porteD
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 44
@@ -108673,7 +108673,7 @@ name "porteDE1"
 loc 1.827616 -3.121184 -4.998043
 data 8
 porteDE1
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 34
@@ -108952,7 +108952,7 @@ name "porteDE2"
 loc 0.656051 -3.126195 -4.877828
 data 8
 porteDE2
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 14
@@ -109066,7 +109066,7 @@ name "porteDI1"
 loc 1.827616 -3.121184 -4.554058
 data 8
 porteDI1
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 34
@@ -109345,7 +109345,7 @@ name "porteDI2"
 loc 0.656051 -3.126195 -4.674273
 data 8
 porteDI2
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 14
@@ -109459,7 +109459,7 @@ name "porteG"
 loc -0.472599 -2.977606 4.77605
 data 6
 porteG
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 44
@@ -109818,7 +109818,7 @@ name "porteGE1"
 loc 1.827616 -3.121184 4.998042
 data 8
 porteGE1
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 34
@@ -110097,7 +110097,7 @@ name "porteGE2"
 loc 0.656051 -3.126194 4.877827
 data 8
 porteGE2
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 14
@@ -110211,7 +110211,7 @@ name "porteGI1"
 loc 1.827616 -3.121184 4.554058
 data 8
 porteGI1
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 34
@@ -110490,7 +110490,7 @@ name "porteGI2"
 loc 0.656051 -3.126194 4.674273
 data 8
 porteGI2
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 14
@@ -110604,7 +110604,7 @@ name "profondeurD"
 loc 16.497593 4.472459 -2.942039
 data 11
 profondeurD
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 204
@@ -112653,7 +112653,7 @@ name "profondeurG"
 loc 16.497593 4.472459 2.94204
 data 11
 profondeurG
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 204
@@ -114702,7 +114702,7 @@ name "roueA"
 loc -14.42564 -4.061522 0.000219
 data 5
 roueA
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 1604
@@ -127837,7 +127837,7 @@ name "roueD1"
 loc 0.358469 -3.894785 -4.776031
 data 6
 roueD1
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 1604
@@ -140972,7 +140972,7 @@ name "roueD2"
 loc 1.56813 -3.894785 -4.776031
 data 6
 roueD2
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 1604
@@ -154107,7 +154107,7 @@ name "roueG1"
 loc 0.358469 -3.894785 4.775969
 data 6
 roueG1
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 1604
@@ -167242,7 +167242,7 @@ name "roueG2"
 loc 1.56813 -3.894785 4.775969
 data 6
 roueG2
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 1604
@@ -180377,7 +180377,7 @@ name "sorties"
 loc 9.91045 -0.804033 -0
 data 7
 sorties
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 1280
@@ -187380,7 +187380,7 @@ name "spoilerD"
 loc 3.324066 -2.3141 -7.633505
 data 8
 spoilerD
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 11
@@ -187485,7 +187485,7 @@ name "spoilerG"
 loc 3.324066 -2.3141 7.633505
 data 8
 spoilerG
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 11
@@ -187590,7 +187590,7 @@ name "supportsmoteurs"
 loc 6.985025 -0.8444 0
 data 15
 supportsmoteurs
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 68
@@ -187907,7 +187907,7 @@ name "trous"
 loc 4.955624 -0.645508 -0.000077
 data 5
 trous
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 1415
@@ -197990,7 +197990,7 @@ name "vitreporte"
 loc -13.118772 -0.886499 1.434496
 data 10
 vitreporte
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 32
@@ -198143,7 +198143,7 @@ name "vitres"
 loc -4.900706 -0.898257 -0.039987
 data 6
 vitres
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 1148
@@ -203204,7 +203204,7 @@ name "vitresnoze0"
 loc -18.132639 -1.750119 0
 data 11
 vitresnoze0
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 120
@@ -203921,7 +203921,7 @@ name "voletD1"
 loc 1.17153 -2.413188 -2.925162
 data 7
 voletD1
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 101
@@ -204841,7 +204841,7 @@ name "voletD2"
 loc 3.125438 -2.498316 -7.194934
 data 7
 voletD2
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 181
@@ -206570,7 +206570,7 @@ name "voletG1"
 loc 1.155129 -2.413392 2.912559
 data 7
 voletG1
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 100
@@ -207489,7 +207489,7 @@ name "voletG2"
 loc 3.125438 -2.498321 7.194934
 data 7
 voletG2
-texture "texture.png"
+texture "texture.webp"
 texrep 1.000000 1.000000
 crease 30.000004
 numvert 181

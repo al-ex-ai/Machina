@@ -7,7 +7,7 @@ OBJECT poly
 name "Plane.170"
 data 9
 Plane.020
-texture "warnpanel.png"
+texture "warnpanel.webp"
 texrep 1 1
 crease 30.000000
 numvert 30

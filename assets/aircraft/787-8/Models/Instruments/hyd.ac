@@ -506,7 +506,7 @@ kids 0
 OBJECT poly
 name "box"
 loc -0.000174514 -0.139694 -0.221782
-texture "hyd.png"
+texture "hyd.webp"
 crease 45.000000
 numvert 4
 0 -0.0512167 0.343813

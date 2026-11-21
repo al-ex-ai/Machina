@@ -7,7 +7,7 @@ kids 1
 OBJECT poly
 name "overhead"
 loc 0.0000000 0.0000000 0.0000000
-texture "ceiling.png"
+texture "ceiling.webp"
 texrep 1 1
 numvert 132
 -2.9516499 1.6729000 -1.3989400

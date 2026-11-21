@@ -11,7 +11,7 @@ name "extbottlesup"
 loc 0.030744 -0.252912 0.25001
 data 12
 extbottlesup
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 numvert 128
 -0.036 0 -0.007081
@@ -933,7 +933,7 @@ name "extbottlesup.001"
 loc 0.030744 -0.261203 -0.221339
 data 16
 extbottlesup.001
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 numvert 128
 -0.036 0 -0.007081
@@ -1855,7 +1855,7 @@ name "grdCover"
 loc -0.470701 0.197993 -0.043309
 data 8
 grdCover
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 79.999998
 numvert 50
@@ -2166,7 +2166,7 @@ name "grdSockle"
 loc -0.58846 0.459895 0.222083
 data 9
 grdSockle
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 30.000001
 numvert 31
@@ -2286,7 +2286,7 @@ name "grdSwitch"
 loc -0.166064 0.734301 0.168825
 data 9
 grdSwitch
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 79.999998
 numvert 65
@@ -2794,7 +2794,7 @@ name "knob"
 loc 0.007331 -0.252912 0.250058
 data 4
 knob
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 numvert 49
 -0.00388 0 -0.003845
@@ -3173,7 +3173,7 @@ name "knob.001"
 loc 0.007331 -0.261203 -0.221291
 data 8
 knob.001
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 numvert 49
 -0.00388 0 -0.003845
@@ -3552,7 +3552,7 @@ name "knobsup"
 loc 0.001841 -0.252912 0.250058
 data 7
 knobsup
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 numvert 33
 -0.006253 0 -0.006253
@@ -3803,7 +3803,7 @@ name "knobsup.001"
 loc 0.001841 -0.261203 -0.221291
 data 11
 knobsup.001
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 numvert 33
 -0.006253 0 -0.006253

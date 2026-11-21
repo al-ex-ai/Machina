@@ -10,7 +10,7 @@ name "Circle"
 loc 0.00431184 5.02275e-05 0
 data 6
 Circle
-texture "ammeter.png"
+texture "ammeter.webp"
 crease 80.000000
 numvert 25
 -0.00293822 -0.0114153 0.00363688
@@ -149,7 +149,7 @@ kids 0
 OBJECT poly
 name "hand"
 loc -0.00209249 -0.00855168 6.13733e-05
-texture "ammeter.png"
+texture "ammeter.webp"
 crease 45.000000
 numvert 38
 0.00385834 -0.0100675 3.63798e-10
@@ -365,7 +365,7 @@ kids 0
 OBJECT poly
 name "BezelModel"
 loc 0.00235951 -3.713e-05 -0.000118118
-texture "ammeter.png"
+texture "ammeter.webp"
 crease 45.000000
 numvert 128
 0.00530351 0.0199689 0.0198219
@@ -949,7 +949,7 @@ kids 0
 OBJECT poly
 name "block"
 loc -0.0087584 -0.0187759 0
-texture "ammeter.png"
+texture "ammeter.webp"
 crease 45.000000
 numvert 56
 -0.00951814 -0.00887906 -0.00991957

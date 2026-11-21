@@ -7,7 +7,7 @@ kids 2
 OBJECT poly
 name "time.set"
 loc 0.0001808 -0.0167789 0.0326333
-texture "clock.png"
+texture "clock.webp"
 texrep 1 1
 numvert 81
 0.0031500 0.0049740 -0.0020500
@@ -416,7 +416,7 @@ kids 0
 OBJECT poly
 name "time.stop"
 loc 0.0003076 -0.0164422 -0.0315398
-texture "clock.png"
+texture "clock.webp"
 texrep 1 1
 numvert 145
 0.0031500 0.0053110 0.0008600

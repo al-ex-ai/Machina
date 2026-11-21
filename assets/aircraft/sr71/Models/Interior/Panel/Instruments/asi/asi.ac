@@ -8,7 +8,7 @@ name "Index"
 loc -0.003281 0 -0
 data 5
 Index
-texture "asi.png"
+texture "asi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -52,7 +52,7 @@ name "Knot-Ext"
 loc -0.003281 0 -0
 data 8
 Knot-Ext
-texture "asi.png"
+texture "asi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 60
@@ -431,7 +431,7 @@ name "Knot-Int"
 loc -0.003281 0 -0
 data 8
 Knot-Int
-texture "asi.png"
+texture "asi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 42
@@ -676,7 +676,7 @@ name "Knot-Masque"
 loc -0.003281 0 -0
 data 11
 Knot-Masque
-texture "asi.png"
+texture "asi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 56
@@ -1095,7 +1095,7 @@ name "Mach"
 loc -0.003281 0 -0
 data 4
 Mach
-texture "asi.png"
+texture "asi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 48
@@ -1322,7 +1322,7 @@ name "Mach-Masque"
 loc -0.003281 0 -0
 data 11
 Mach-Masque
-texture "asi.png"
+texture "asi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 33
@@ -1506,7 +1506,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "asi.png"
+texture "asi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 128
@@ -2317,7 +2317,7 @@ name "needle"
 loc -0.004114 0 -0
 data 6
 needle
-texture "asi.png"
+texture "asi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 30

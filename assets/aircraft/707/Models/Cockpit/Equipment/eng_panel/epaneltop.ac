@@ -8,7 +8,7 @@ name "panelAuxtop"
 loc 0.843199 -1.02701 -0.002282
 data 11
 panelAuxtop
-texture "apanel.png"
+texture "apanel.webp"
 texrep 1 1
 numvert 4
 -0.378363 0.809222 0.002672
@@ -29,7 +29,7 @@ name "panelEtop"
 loc 0.184253 -1.02701 -0.002282
 data 9
 panelEtop
-texture "epanelt.png"
+texture "epanelt.webp"
 texrep 1 1
 numvert 32
 0.145512 0.809222 0.002672

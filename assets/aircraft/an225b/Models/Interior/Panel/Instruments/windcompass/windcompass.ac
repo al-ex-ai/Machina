@@ -27,7 +27,7 @@ kids 0
 OBJECT poly
 name "gs1"
 loc 0.0000000 0.0300191 0.0198047
-texture "dme40.png"
+texture "dme40.webp"
 texrep 1 1
 numvert 4
 0.0030217 -0.0022276 -0.0087930
@@ -46,7 +46,7 @@ kids 0
 OBJECT poly
 name "gs10"
 loc 0.0000000 0.0300191 0.0198047
-texture "dme40.png"
+texture "dme40.webp"
 texrep 1 1
 numvert 4
 0.0030217 -0.0022276 -0.0027405
@@ -65,7 +65,7 @@ kids 0
 OBJECT poly
 name "gs100"
 loc 0.0000000 0.0300191 0.0198047
-texture "dme40.png"
+texture "dme40.webp"
 texrep 1 1
 numvert 4
 0.0030127 -0.0022276 0.0033469
@@ -84,7 +84,7 @@ kids 0
 OBJECT poly
 name "gsinvalid"
 loc 0.0000000 0.0300191 0.0198047
-texture "dme40.png"
+texture "dme40.webp"
 texrep 1 1
 numvert 4
 0.0028958 -0.0018880 0.0093054
@@ -103,7 +103,7 @@ kids 0
 OBJECT poly
 name "ias1"
 loc 0.0000000 0.0300191 -0.0201715
-texture "dme40.png"
+texture "dme40.webp"
 texrep 1 1
 numvert 4
 0.0030217 -0.0022276 -0.0087930
@@ -122,7 +122,7 @@ kids 0
 OBJECT poly
 name "ias10"
 loc 0.0000000 0.0300191 -0.0201715
-texture "dme40.png"
+texture "dme40.webp"
 texrep 1 1
 numvert 4
 0.0030217 -0.0022276 -0.0027405
@@ -141,7 +141,7 @@ kids 0
 OBJECT poly
 name "ias100"
 loc 0.0000000 0.0300191 -0.0201715
-texture "dme40.png"
+texture "dme40.webp"
 texrep 1 1
 numvert 4
 0.0030127 -0.0022276 0.0033469
@@ -160,7 +160,7 @@ kids 0
 OBJECT poly
 name "iasinvalid"
 loc 0.0000000 0.0300191 -0.0201715
-texture "dme40.png"
+texture "dme40.webp"
 texrep 1 1
 numvert 4
 0.0028958 -0.0018880 0.0093054
@@ -198,7 +198,7 @@ kids 0
 OBJECT poly
 name "w1"
 loc 0.0000000 -0.0205898 -0.0178871
-texture "dme40.png"
+texture "dme40.webp"
 texrep 1 1
 numvert 4
 0.0030217 -0.0022276 -0.0087930
@@ -217,7 +217,7 @@ kids 0
 OBJECT poly
 name "w10"
 loc 0.0000000 -0.0205898 -0.0178871
-texture "dme40.png"
+texture "dme40.webp"
 texrep 1 1
 numvert 4
 0.0030217 -0.0022276 -0.0027405
@@ -236,7 +236,7 @@ kids 0
 OBJECT poly
 name "w100"
 loc 0.0000000 -0.0205553 -0.0183187
-texture "dme40.png"
+texture "dme40.webp"
 texrep 1 1
 numvert 4
 0.0030127 -0.0022276 0.0033469
@@ -255,7 +255,7 @@ kids 0
 OBJECT poly
 name "windcompass"
 loc 0.0024855 0.0000000 0.0000000
-texture "compass.png"
+texture "compass.webp"
 texrep 1 1
 numvert 4
 -0.0000001 0.0300000 -0.0300000
@@ -274,7 +274,7 @@ kids 0
 OBJECT poly
 name "winvalid"
 loc 0.0000000 -0.0205898 -0.0178871
-texture "dme40.png"
+texture "dme40.webp"
 texrep 1 1
 numvert 4
 0.0028958 -0.0018880 0.0028669

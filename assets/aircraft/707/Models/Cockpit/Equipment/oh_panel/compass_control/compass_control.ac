@@ -39,7 +39,7 @@ name "sockle"
 loc -0.587618 0.305585 0.362432
 data 6
 sockle
-texture "compass_control.png"
+texture "compass_control.webp"
 texrep 1 1
 crease 30.000001
 numvert 31
@@ -159,7 +159,7 @@ name "sockle.001"
 loc -0.587618 0.305585 0.167627
 data 10
 sockle.001
-texture "compass_control.png"
+texture "compass_control.webp"
 texrep 1 1
 crease 30.000001
 numvert 31
@@ -279,7 +279,7 @@ name "switch"
 loc -0.319192 0.640112 -0.066454
 data 6
 switch
-texture "compass_control.png"
+texture "compass_control.webp"
 texrep 1 1
 crease 79.999998
 numvert 65
@@ -787,7 +787,7 @@ name "switch.001"
 loc -0.319192 0.670318 -0.064527
 data 10
 switch.001
-texture "compass_control.png"
+texture "compass_control.webp"
 texrep 1 1
 crease 79.999998
 numvert 65
@@ -1295,7 +1295,7 @@ name "switch.002"
 loc -0.319192 0.670318 -0.26041
 data 10
 switch.002
-texture "compass_control.png"
+texture "compass_control.webp"
 texrep 1 1
 crease 79.999998
 numvert 65
@@ -1803,7 +1803,7 @@ name "switch.003"
 loc -0.319192 0.640112 -0.261259
 data 10
 switch.003
-texture "compass_control.png"
+texture "compass_control.webp"
 texrep 1 1
 crease 79.999998
 numvert 65
@@ -2311,7 +2311,7 @@ name "turn"
 loc 0.01497 -0.065905 0.096132
 data 4
 turn
-texture "compass_control.png"
+texture "compass_control.webp"
 texrep 1 1
 numvert 76
 -0.011467 -0.000692 -0.01584
@@ -2796,7 +2796,7 @@ name "turn.001"
 loc 0.01497 -0.065905 -0.099965
 data 8
 turn.001
-texture "compass_control.png"
+texture "compass_control.webp"
 texrep 1 1
 numvert 76
 -0.011467 -0.000692 -0.01584

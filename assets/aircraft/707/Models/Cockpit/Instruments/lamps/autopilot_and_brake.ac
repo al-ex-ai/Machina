@@ -7,7 +7,7 @@ name "LampAmber"
 loc -18.519974 0.729184 0.05751
 data 9
 LampAmber
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -643,7 +643,7 @@ name "LampAmber.001"
 loc -18.519974 0.729184 -0.037445
 data 13
 LampAmber.001
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -1279,7 +1279,7 @@ name "LampAmberON"
 loc -18.519974 0.729184 0.05751
 data 11
 LampAmberON
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -1915,7 +1915,7 @@ name "LampAmberON.001"
 loc -18.519974 0.729184 -0.037445
 data 15
 LampAmberON.001
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -2551,7 +2551,7 @@ name "Sockle"
 loc -18.728409 0.628226 0.094311
 data 6
 Sockle
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 numvert 26
 0.182943 0.048101 -0.028902

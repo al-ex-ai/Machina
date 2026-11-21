@@ -24,7 +24,7 @@ name "ELT"
 loc -0.143461 -0.487329 0.119666
 data 8
 Mesh.152
-texture "ercoupe-cab.png"
+texture "ercoupe-cab.webp"
 crease 55.000000
 numvert 125
 0.619402 0.472367 0.338469
@@ -908,7 +908,7 @@ kids 9
 OBJECT poly
 name "navigation chart"
 loc -0.502104 -0.0925694 -0.01385
-texture "ercoupe-cab.png"
+texture "ercoupe-cab.webp"
 crease 45.000000
 numvert 14
 0.237573 0.0369793 0.424293
@@ -1044,7 +1044,7 @@ kids 0
 OBJECT poly
 name "logbook"
 loc -0.204447 -0.253765 -0.0640613
-texture "ercoupe-cab.png"
+texture "ercoupe-cab.webp"
 crease 45.000000
 numvert 14
 -0.147182 0.109261 0.446375
@@ -1180,7 +1180,7 @@ kids 0
 OBJECT poly
 name "MapHolderLeft"
 loc -0.156406 -0.148232 0.371922
-texture "ercoupe-cab.png"
+texture "ercoupe-cab.webp"
 crease 90.000000
 numvert 49
 0.286044 -0.0490859 -0.00541747
@@ -1554,7 +1554,7 @@ kids 0
 OBJECT poly
 name "MapHolderRight"
 loc -0.175705 -0.11963 -0.394624
-texture "ercoupe-cab.png"
+texture "ercoupe-cab.webp"
 crease 90.000000
 numvert 61
 -0.295231 -0.0719096 0.0491107
@@ -1942,7 +1942,7 @@ name "cabin_1_0_0"
 loc 0.0595475 0.423075 -0.000160359
 data 8
 Mesh.169
-texture "ercoupe-cab.png"
+texture "ercoupe-cab.webp"
 crease 55.000000
 numvert 300
 0.491667 -0.235621 0.459978
@@ -3630,7 +3630,7 @@ name "Pole"
 loc -0.059548 -0.418742 0.000249006
 data 12
 Cylinder.004
-texture "ercoupe-cab.png"
+texture "ercoupe-cab.webp"
 crease 30.000000
 numvert 14
 -0.950962 0.725265 -0.002892
@@ -3768,7 +3768,7 @@ name "cabin_1_0_1"
 loc -0.0595475 -0.418742 0.000249002
 data 4
 Mesh
-texture "ercoupe-cab.png"
+texture "ercoupe-cab.webp"
 crease 55.000000
 numvert 126
 0.637448 0.260578 0.353188
@@ -4778,7 +4778,7 @@ kids 5
 OBJECT poly
 name "mesh"
 loc 3.14782 -0.336639 -0.425036
-texture "Seat.png"
+texture "Seat.webp"
 crease 180.000000
 numvert 84
 -2.9332 0.351238 0.576059
@@ -5150,7 +5150,7 @@ kids 0
 OBJECT poly
 name "polyline"
 loc 0.0666805 -0.10716 -0.184132
-texture "Seat.png"
+texture "Seat.webp"
 crease 45.000000
 numvert 40
 0.00379024 -0.00208884 0
@@ -5390,7 +5390,7 @@ kids 0
 OBJECT poly
 name "polyline"
 loc 0.0666805 -0.105173 0.180876
-texture "Seat.png"
+texture "Seat.webp"
 crease 45.000000
 numvert 40
 0.00379024 -0.00208881 0.00536123
@@ -5632,7 +5632,7 @@ name "Seat"
 loc -0.0666805 0.106166 0.0016275
 data 4
 Cube
-texture "Seat.png"
+texture "Seat.webp"
 crease 30.000000
 numvert 336
 0.0780005 -0.187123 -0.0873815
@@ -8342,7 +8342,7 @@ name "Seat2"
 loc -0.0666805 0.106166 0.0016275
 data 4
 Cube
-texture "Seat.png"
+texture "Seat.webp"
 crease 30.000000
 numvert 416
 0.191553 -0.205513 -0.145109
@@ -11694,7 +11694,7 @@ kids 3
 OBJECT poly
 name "PanelLightFrame"
 loc -0.43297 0.583577 0.119606
-texture "Liveries/ercoupe-ext2-white.png"
+texture "Liveries/ercoupe-ext2-white.webp"
 crease 45.000000
 numvert 42
 0.0112658 -0.00788271 -0.00107355
@@ -12104,7 +12104,7 @@ kids 0
 OBJECT poly
 name "PanelLightLens"
 loc -0.43297 0.583577 0.119606
-texture "Liveries/ercoupe-ext2-white.png"
+texture "Liveries/ercoupe-ext2-white.webp"
 crease 45.000000
 numvert 25
 -0.00626424 -0.00777578 2.98023e-08
@@ -12377,7 +12377,7 @@ kids 0
 OBJECT poly
 name "PanelLightSwitch"
 loc 0.632303 0.282941 0.112971
-texture "Liveries/ercoupe-ext2-white.png"
+texture "Liveries/ercoupe-ext2-white.webp"
 crease 90.000000
 numvert 8
 -1.0537 0.295804 -9.31323e-10
@@ -12432,7 +12432,7 @@ kids 7
 OBJECT poly
 name "metal"
 loc 0.059778 -1.35664 0.203996
-texture "panel02.png"
+texture "panel02.webp"
 crease 180.000000
 numvert 88
 0.00109947 0.0586494 -0.0245258
@@ -12983,7 +12983,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -0.077686 2.02011 -1.06652
-texture "panel02.png"
+texture "panel02.webp"
 crease 45.000000
 numvert 24
 0.0514719 -3.37779 1.27571
@@ -13099,7 +13099,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc 0.064602 0.41592 -0.256911
-texture "panel02.png"
+texture "panel02.webp"
 crease 45.000000
 numvert 49
 -0.0249104 -1.72214 0.471898
@@ -13495,7 +13495,7 @@ kids 0
 OBJECT poly
 name "metal"
 loc 0.037954 -1.301 0.190233
-texture "panel02.png"
+texture "panel02.webp"
 crease 45.000000
 numvert 21
 0.0114286 -0.024823 0.0099954
@@ -13654,7 +13654,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc 0.0301 -1.32366 0.196819
-texture "panel02.png"
+texture "panel02.webp"
 crease 56.000000
 numvert 62
 -0.255494 -0.00156659 0.014282
@@ -14204,7 +14204,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc 0.071509 -1.31307 0.202169
-texture "panel02.png"
+texture "panel02.webp"
 crease 61.000000
 numvert 108
 -0.0070821 0.00250068 0.0127291
@@ -15034,7 +15034,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -0.186257 2.01974 -1.06053
-texture "panel02.png"
+texture "panel02.webp"
 crease 45.000000
 numvert 24
 0.0737894 -3.36883 1.28992
@@ -15156,7 +15156,7 @@ name "Cowling"
 loc -1.45214 0.167999 -0.233383
 data 8
 Mesh.022
-texture "Liveries/ercoupe-ext2-white.png"
+texture "Liveries/ercoupe-ext2-white.webp"
 crease 55.000000
 numvert 238
 -0.13329 -0.245459 0.337522
@@ -17300,7 +17300,7 @@ name "FGasCap"
 loc -0.136177 -0.134299 -0.233485
 data 8
 Mesh.174
-texture "Liveries/ercoupe-ext2-white.png"
+texture "Liveries/ercoupe-ext2-white.webp"
 crease 55.000000
 numvert 27
 -1.02375 0.745623 0
@@ -17505,7 +17505,7 @@ name "LGasCap"
 loc -0.136177 -0.134299 -0.233485
 data 8
 Mesh.175
-texture "Liveries/ercoupe-ext2-white.png"
+texture "Liveries/ercoupe-ext2-white.webp"
 crease 55.000000
 numvert 27
 -0.288547 0.121389 0.996062
@@ -17710,7 +17710,7 @@ name "RGasCap"
 loc -0.136177 -0.134299 -0.233485
 data 8
 Mesh.176
-texture "Liveries/ercoupe-ext2-white.png"
+texture "Liveries/ercoupe-ext2-white.webp"
 crease 55.000000
 numvert 27
 -0.288547 0.130478 -0.99966
@@ -17915,7 +17915,7 @@ name "Hub"
 loc -0.136177 -0.134299 -0.233485
 data 8
 Mesh.025
-texture "Liveries/ercoupe-ext2-white.png"
+texture "Liveries/ercoupe-ext2-white.webp"
 crease 80.000000
 numvert 97
 -2.15239 0.447352 -9e-06
@@ -18758,7 +18758,7 @@ name "TransponderAntenna"
 loc -0.136177 -0.134299 -0.233485
 data 8
 Mesh.028
-texture "Liveries/ercoupe-ext2-white.png"
+texture "Liveries/ercoupe-ext2-white.webp"
 crease 45.000000
 numvert 7
 0.254306 -0.142817 -0.003174
@@ -18811,7 +18811,7 @@ name "VHFAntenna"
 loc -0.136177 -0.134299 -0.233485
 data 8
 Mesh.031
-texture "Liveries/ercoupe-ext2-white.png"
+texture "Liveries/ercoupe-ext2-white.webp"
 crease 80.000000
 numvert 18
 1.66797 0.619342 0.007812
@@ -19007,7 +19007,7 @@ name "Hull"
 loc 1.08921 0.322472 -0.234462
 data 8
 Mesh.022
-texture "Liveries/ercoupe-ext2-white.png"
+texture "Liveries/ercoupe-ext2-white.webp"
 crease 55.000000
 numvert 430
 -0.753396 0.609829 -0.061649
@@ -22454,7 +22454,7 @@ name "Exhaust"
 loc -0.28649 -0.108464 -0.261015
 data 8
 Mesh.054
-texture "Liveries/ercoupe-ext2-white.png"
+texture "Liveries/ercoupe-ext2-white.webp"
 crease 55.000000
 numvert 64
 -1.09446 -0.079454 -0.320798
@@ -23150,7 +23150,7 @@ kids 0
 OBJECT poly
 name "RightNavLight"
 loc -0.235448 0.292667 -4.79555
-texture "Liveries/ercoupe-ext2-white.png"
+texture "Liveries/ercoupe-ext2-white.webp"
 crease 45.000000
 numvert 47
 -0.0452079 0.00797069 0.0197573
@@ -23573,7 +23573,7 @@ kids 0
 OBJECT poly
 name "LeftNavLight"
 loc -0.240348 0.292658 4.33141
-texture "Liveries/ercoupe-ext2-white.png"
+texture "Liveries/ercoupe-ext2-white.webp"
 crease 45.000000
 numvert 45
 -0.0270085 -4.20213e-06 -0.0135288
@@ -23972,7 +23972,7 @@ name "LandingLight"
 loc 0.220018 -0.101905 2.09951
 data 8
 Mesh.172
-texture "Liveries/ercoupe-ext2-white.png"
+texture "Liveries/ercoupe-ext2-white.webp"
 crease 55.000000
 numvert 73
 -0.649985 -0.133269 -1.32719
@@ -24851,7 +24851,7 @@ name "pitot"
 loc -1.8921 -0.266962 -0.444129
 data 8
 Mesh.154
-texture "Liveries/c150-02.png"
+texture "Liveries/c150-02.webp"
 crease 70.000000
 numvert 28
 -0.251052 -0.040054 1.43719
@@ -25033,7 +25033,7 @@ name "LWing"
 loc -1.5359 -0.271397 1.88741
 data 8
 Mesh.172
-texture "Liveries/c150-02.png"
+texture "Liveries/c150-02.webp"
 crease 55.000000
 numvert 257
 -1.11711 -0.111655 -2.21798
@@ -27622,7 +27622,7 @@ name "RWing"
 loc -1.8921 -0.303791 -0.442813
 data 8
 Mesh.168
-texture "Liveries/c150-02.png"
+texture "Liveries/c150-02.webp"
 crease 55.000000
 numvert 188
 0.443287 -0.033218 -1.0702
@@ -29380,7 +29380,7 @@ name "RAileron"
 loc -1.8921 -0.303791 -0.442813
 data 8
 Mesh.015
-texture "Liveries/c150-02.png"
+texture "Liveries/c150-02.webp"
 crease 55.000000
 numvert 23
 0.657829 0.320694 -3.97339
@@ -29594,7 +29594,7 @@ name "LAileron"
 loc -1.25969 -0.141438 2.08595
 data 8
 Mesh.014
-texture "Liveries/c150-02.png"
+texture "Liveries/c150-02.webp"
 crease 55.000000
 numvert 22
 0.04399 -0.162225 -1.44815
@@ -29785,7 +29785,7 @@ kids 0
 OBJECT poly
 name "VTail"
 loc 2.11838 0.324578 -1.61134
-texture "Liveries/c150-02.png"
+texture "Liveries/c150-02.webp"
 crease 90.000000
 numvert 41
 -0.05301 -0.474263 0.0179127
@@ -30266,7 +30266,7 @@ kids 0
 OBJECT poly
 name "VTail"
 loc 2.11837 0.324538 0.730947
-texture "Liveries/c150-02.png"
+texture "Liveries/c150-02.webp"
 crease 90.000000
 numvert 41
 -0.053009 -0.511082 0
@@ -30747,7 +30747,7 @@ kids 0
 OBJECT poly
 name "LRudder"
 loc 2.22353 0.324489 0.730947
-texture "Liveries/c150-02.png"
+texture "Liveries/c150-02.webp"
 crease 90.000000
 numvert 42
 -0.165831 0.00266671 0.01793
@@ -31277,7 +31277,7 @@ kids 0
 OBJECT poly
 name "RRudder"
 loc 2.22353 0.32453 -1.61134
-texture "Liveries/c150-02.png"
+texture "Liveries/c150-02.webp"
 crease 90.000000
 numvert 42
 -0.0157952 0.00261295 0.01793
@@ -31809,7 +31809,7 @@ name "HTail"
 loc 1.68017 0.293039 -0.440008
 data 8
 Mesh.013
-texture "Liveries/c150-02.png"
+texture "Liveries/c150-02.webp"
 crease 55.000000
 numvert 49
 0.315945 0.013293 -1.11337
@@ -32422,7 +32422,7 @@ name "Elevator"
 loc -1.8921 -0.303791 -0.442813
 data 8
 Mesh.100
-texture "Liveries/c150-02.png"
+texture "Liveries/c150-02.webp"
 crease 55.000000
 numvert 10
 3.88873 0.585978 -1.16561
@@ -32535,7 +32535,7 @@ name "LMStrut03"
 loc -0.0906586 0.67267 -1.83741
 data 8
 Cube.003
-texture "Liveries/ercoupe-ext2-white.png"
+texture "Liveries/ercoupe-ext2-white.webp"
 crease 30.000000
 numvert 145
 -0.158726 -0.201071 1.01072
@@ -33674,7 +33674,7 @@ name "LMStrut04"
 loc -0.0906586 0.67267 -1.83741
 data 12
 Cylinder.001
-texture "Liveries/ercoupe-ext2-white.png"
+texture "Liveries/ercoupe-ext2-white.webp"
 crease 30.000000
 numvert 50
 -0.140426 -0.263625 0.998585
@@ -34190,7 +34190,7 @@ name "LMStrut02"
 loc -0.0906586 0.67267 -1.83741
 data 8
 Cube.002
-texture "Liveries/ercoupe-ext2-white.png"
+texture "Liveries/ercoupe-ext2-white.webp"
 crease 30.000000
 numvert 26
 -0.184797 -0.139842 0.986012
@@ -34426,7 +34426,7 @@ name "LMStrut01"
 loc -0.0906586 0.67267 -1.83741
 data 8
 Cube.001
-texture "Liveries/ercoupe-ext2-white.png"
+texture "Liveries/ercoupe-ext2-white.webp"
 crease 30.000000
 numvert 64
 -0.03224 -0.529854 1.00044
@@ -34993,7 +34993,7 @@ name "RMStrut04"
 loc -0.0136361 1.19626 1.24266
 data 12
 Cylinder.002
-texture "Liveries/ercoupe-ext2-white.png"
+texture "Liveries/ercoupe-ext2-white.webp"
 crease 30.000000
 numvert 50
 -0.140523 -0.263152 -1.00641
@@ -35509,7 +35509,7 @@ name "RMStrut03"
 loc -0.0136361 1.19626 1.24266
 data 8
 Cube.006
-texture "Liveries/ercoupe-ext2-white.png"
+texture "Liveries/ercoupe-ext2-white.webp"
 crease 30.000000
 numvert 145
 -0.158823 -0.200598 -0.994277
@@ -36648,7 +36648,7 @@ name "RMStrut02"
 loc -0.0136361 1.19626 1.24266
 data 8
 Cube.005
-texture "Liveries/ercoupe-ext2-white.png"
+texture "Liveries/ercoupe-ext2-white.webp"
 crease 30.000000
 numvert 26
 -0.184332 -0.133806 -1.01842
@@ -36884,7 +36884,7 @@ name "RMStrut01"
 loc -0.0136361 1.19626 1.24266
 data 8
 Cube.004
-texture "Liveries/ercoupe-ext2-white.png"
+texture "Liveries/ercoupe-ext2-white.webp"
 crease 30.000000
 numvert 64
 -0.032145 -0.52975 -0.995108
@@ -37451,7 +37451,7 @@ name "FUdamper"
 loc 1.51233 0.880708 -0.0920083
 data 8
 Mesh.126
-texture "Liveries/ercoupe-ext2-white.png"
+texture "Liveries/ercoupe-ext2-white.webp"
 crease 80.000000
 numvert 24
 -1.23813 -0.304123 -0.007882
@@ -37643,7 +37643,7 @@ name "object.003"
 loc 1.51233 0.880708 -0.0920083
 data 8
 Mesh.130
-texture "Liveries/ercoupe-ext2-white.png"
+texture "Liveries/ercoupe-ext2-white.webp"
 crease 55.000000
 numvert 34
 -1.33202 -0.143861 2.6e-05
@@ -37895,7 +37895,7 @@ name "FLdamper"
 loc 1.51233 0.880708 -0.0920083
 data 8
 Mesh.125
-texture "Liveries/ercoupe-ext2-white.png"
+texture "Liveries/ercoupe-ext2-white.webp"
 crease 80.000000
 numvert 32
 -1.34777 -0.403028 -0.009207
@@ -38183,7 +38183,7 @@ name "NoseWheelPart"
 loc 1.51233 0.880708 -0.0920083
 data 8
 Mesh.127
-texture "Liveries/ercoupe-ext2-white.png"
+texture "Liveries/ercoupe-ext2-white.webp"
 crease 80.000000
 numvert 128
 -1.38593 -0.429175 -0.000171
@@ -39467,7 +39467,7 @@ name "NoseStrutPart"
 loc 1.51233 0.880708 -0.0920083
 data 8
 Mesh.128
-texture "Liveries/ercoupe-ext2-white.png"
+texture "Liveries/ercoupe-ext2-white.webp"
 crease 55.000000
 numvert 42
 -1.28608 -0.199312 0.024603
@@ -39851,7 +39851,7 @@ name "NoseWheel"
 loc 0.565668 0.992141 -0.0853633
 data 8
 Mesh.129
-texture "Liveries/c150-02.png"
+texture "Liveries/c150-02.webp"
 crease 80.000000
 numvert 130
 -1.46442 -0.612418 0.039219
@@ -41447,7 +41447,7 @@ name "LeftWheel"
 loc 0.565668 0.992141 -0.0853633
 data 8
 Mesh.120
-texture "Liveries/c150-02.png"
+texture "Liveries/c150-02.webp"
 crease 80.000000
 numvert 130
 -0.046786 -0.567522 1.12182
@@ -43043,7 +43043,7 @@ name "RightWheel"
 loc 0.565668 0.992141 -0.0853633
 data 8
 Mesh.124
-texture "Liveries/c150-02.png"
+texture "Liveries/c150-02.webp"
 crease 80.000000
 numvert 130
 -0.047603 -0.56888 -1.12366
@@ -44641,7 +44641,7 @@ kids 9
 OBJECT poly
 name "RightNavLightLens"
 loc -0.343587 0.028789 -4.56178
-texture "Liveries/ercoupe-ext2-white.png"
+texture "Liveries/ercoupe-ext2-white.webp"
 crease 45.000000
 numvert 36
 -0.077803 0 -0.0372868
@@ -44997,7 +44997,7 @@ kids 0
 OBJECT poly
 name "LeftNavLightLens"
 loc -0.348487 0.02878 4.56518
-texture "Liveries/ercoupe-ext2-white.png"
+texture "Liveries/ercoupe-ext2-white.webp"
 crease 45.000000
 numvert 36
 -0.0729178 0 0.0435147
@@ -45355,7 +45355,7 @@ name "TailLightLens"
 loc 0.981074 0.058594 -0.00069281
 data 8
 Mesh.022
-texture "Liveries/ercoupe-ext2-white.png"
+texture "Liveries/ercoupe-ext2-white.webp"
 crease 55.000000
 numvert 36
 3.07337 -0.0502891 0.0301024
@@ -45727,7 +45727,7 @@ kids 3
 OBJECT poly
 name "WindowFrameRight"
 loc -0.0255389 0.708589 0.0649614
-texture "Liveries/ercoupe-ext2-white.png"
+texture "Liveries/ercoupe-ext2-white.webp"
 crease 90.000000
 numvert 120
 0.14224 0.0157446 -0.0816232
@@ -47070,7 +47070,7 @@ kids 3
 OBJECT poly
 name "WindowFrameLeft"
 loc -0.0255389 0.713966 0.00646489
-texture "Liveries/ercoupe-ext2-white.png"
+texture "Liveries/ercoupe-ext2-white.webp"
 crease 90.000000
 numvert 96
 0.176306 0.0153465 0.00486706
@@ -49325,7 +49325,7 @@ kids 4
 OBJECT poly
 name "Cylinders"
 loc -1.74774 0.45623 0.00139798
-texture "cylinder.png"
+texture "cylinder.webp"
 texrep 1 3
 crease 90.000000
 numvert 184
@@ -50845,7 +50845,7 @@ OBJECT poly
 name "Propeller"
 data 8
 Mesh.027
-texture "Liveries/c150-02.png"
+texture "Liveries/c150-02.webp"
 crease 55.000000
 numvert 121
 -1.99808 0.835992 0.425781

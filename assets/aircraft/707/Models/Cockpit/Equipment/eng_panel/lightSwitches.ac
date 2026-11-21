@@ -10,7 +10,7 @@ name "LampAmber"
 loc 0.355307 0.19426 0.004136
 data 9
 LampAmber
-texture "lampDoor.png"
+texture "lampDoor.webp"
 texrep 1 1
 numvert 4
 0.025654 0.007051 -0.000059
@@ -31,7 +31,7 @@ name "LampAmber.001"
 loc 0.39136 0.19426 0.004136
 data 13
 LampAmber.001
-texture "lampDoor.png"
+texture "lampDoor.webp"
 texrep 1 1
 numvert 4
 0.025654 0.007051 -0.000059
@@ -52,7 +52,7 @@ name "LampAmber.002"
 loc 0.355307 0.177158 0.004136
 data 13
 LampAmber.002
-texture "lampDoor.png"
+texture "lampDoor.webp"
 texrep 1 1
 numvert 4
 0.025654 0.007051 -0.000059
@@ -73,7 +73,7 @@ name "LampAmber.003"
 loc 0.39136 0.17716 0.004136
 data 13
 LampAmber.003
-texture "lampDoor.png"
+texture "lampDoor.webp"
 texrep 1 1
 numvert 4
 0.025654 0.007051 -0.000059
@@ -94,7 +94,7 @@ name "LampAmber.004"
 loc 0.355307 0.159477 0.004136
 data 13
 LampAmber.004
-texture "lampDoor.png"
+texture "lampDoor.webp"
 texrep 1 1
 numvert 4
 0.025654 0.007051 -0.000059
@@ -115,7 +115,7 @@ name "LampAmber.005"
 loc 0.39136 0.15946 0.004136
 data 13
 LampAmber.005
-texture "lampDoor.png"
+texture "lampDoor.webp"
 texrep 1 1
 numvert 4
 0.025654 0.007051 -0.000059
@@ -136,7 +136,7 @@ name "LampAmber.006"
 loc 0.355307 0.142328 0.004136
 data 13
 LampAmber.006
-texture "lampDoor.png"
+texture "lampDoor.webp"
 texrep 1 1
 numvert 4
 0.025654 0.007051 -0.000059
@@ -157,7 +157,7 @@ name "LampAmber.007"
 loc 0.39136 0.14236 0.004136
 data 13
 LampAmber.007
-texture "lampDoor.png"
+texture "lampDoor.webp"
 texrep 1 1
 numvert 4
 0.025654 0.007051 -0.000059
@@ -178,7 +178,7 @@ name "LampAmber.008"
 loc 0.355307 0.125321 0.004136
 data 13
 LampAmber.008
-texture "lampDoor.png"
+texture "lampDoor.webp"
 texrep 1 1
 numvert 4
 0.025654 0.007051 -0.000059
@@ -199,7 +199,7 @@ name "LampAmber.009"
 loc 0.39136 0.12536 0.004136
 data 13
 LampAmber.009
-texture "lampDoor.png"
+texture "lampDoor.webp"
 texrep 1 1
 numvert 4
 0.025654 0.007051 -0.000059
@@ -220,7 +220,7 @@ name "LampAmber.010"
 loc 0.355307 0.125321 0.004304
 data 13
 LampAmber.010
-texture "lampDoor.png"
+texture "lampDoor.webp"
 texrep 1 1
 numvert 4
 0.025654 0.007051 -0.000059
@@ -241,7 +241,7 @@ name "LampAmber.011"
 loc 0.39136 0.12536 0.004304
 data 13
 LampAmber.011
-texture "lampDoor.png"
+texture "lampDoor.webp"
 texrep 1 1
 numvert 4
 0.025654 0.007051 -0.000059
@@ -262,7 +262,7 @@ name "LampAmber.012"
 loc 0.355307 0.142328 0.004368
 data 13
 LampAmber.012
-texture "lampDoor.png"
+texture "lampDoor.webp"
 texrep 1 1
 numvert 4
 0.025654 0.007051 -0.000059
@@ -283,7 +283,7 @@ name "LampAmber.013"
 loc 0.39136 0.14236 0.004368
 data 13
 LampAmber.013
-texture "lampDoor.png"
+texture "lampDoor.webp"
 texrep 1 1
 numvert 4
 0.025654 0.007051 -0.000059
@@ -304,7 +304,7 @@ name "LampAmber.014"
 loc 0.39136 0.14236 0.004368
 data 13
 LampAmber.014
-texture "lampDoor.png"
+texture "lampDoor.webp"
 texrep 1 1
 numvert 4
 0.025654 0.024278 -0.000059
@@ -325,7 +325,7 @@ name "LampAmberON"
 loc 0.355307 0.19426 0.004225
 data 11
 LampAmberON
-texture "lampDoor.png"
+texture "lampDoor.webp"
 texrep 1 1
 numvert 4
 0.025654 0.007051 -0.000059
@@ -346,7 +346,7 @@ name "LampAmberON.001"
 loc 0.391407 0.19426 0.004225
 data 15
 LampAmberON.001
-texture "lampDoor.png"
+texture "lampDoor.webp"
 texrep 1 1
 numvert 4
 0.025654 0.007051 -0.000059
@@ -367,7 +367,7 @@ name "LampAmberON.002"
 loc 0.355307 0.17716 0.004225
 data 15
 LampAmberON.002
-texture "lampDoor.png"
+texture "lampDoor.webp"
 texrep 1 1
 numvert 4
 0.025654 0.007051 -0.000059
@@ -388,7 +388,7 @@ name "LampAmberON.003"
 loc 0.391407 0.17716 0.004225
 data 15
 LampAmberON.003
-texture "lampDoor.png"
+texture "lampDoor.webp"
 texrep 1 1
 numvert 4
 0.025654 0.007051 -0.000059
@@ -409,7 +409,7 @@ name "LampAmberON.004"
 loc 0.355307 0.15946 0.004225
 data 15
 LampAmberON.004
-texture "lampDoor.png"
+texture "lampDoor.webp"
 texrep 1 1
 numvert 4
 0.025654 0.007051 -0.000059
@@ -430,7 +430,7 @@ name "LampAmberON.005"
 loc 0.391407 0.15946 0.004225
 data 15
 LampAmberON.005
-texture "lampDoor.png"
+texture "lampDoor.webp"
 texrep 1 1
 numvert 4
 0.025654 0.007051 -0.000059
@@ -451,7 +451,7 @@ name "LampAmberON.006"
 loc 0.355307 0.14236 0.004225
 data 15
 LampAmberON.006
-texture "lampDoor.png"
+texture "lampDoor.webp"
 texrep 1 1
 numvert 4
 0.025654 0.007051 -0.000059
@@ -472,7 +472,7 @@ name "LampAmberON.007"
 loc 0.391407 0.14236 0.004225
 data 15
 LampAmberON.007
-texture "lampDoor.png"
+texture "lampDoor.webp"
 texrep 1 1
 numvert 4
 0.025654 0.007051 -0.000059
@@ -493,7 +493,7 @@ name "LampAmberON.008"
 loc 0.355307 0.12536 0.004225
 data 15
 LampAmberON.008
-texture "lampDoor.png"
+texture "lampDoor.webp"
 texrep 1 1
 numvert 4
 0.025654 0.007051 -0.000059
@@ -514,7 +514,7 @@ name "LampAmberON.009"
 loc 0.391407 0.12536 0.004225
 data 15
 LampAmberON.009
-texture "lampDoor.png"
+texture "lampDoor.webp"
 texrep 1 1
 numvert 4
 0.025654 0.007051 -0.000059
@@ -535,7 +535,7 @@ name "LampAmberON.010"
 loc 0.355307 0.12536 0.004393
 data 15
 LampAmberON.010
-texture "lampDoor.png"
+texture "lampDoor.webp"
 texrep 1 1
 numvert 4
 0.025654 0.007051 -0.000059
@@ -556,7 +556,7 @@ name "LampAmberON.011"
 loc 0.391407 0.12536 0.004393
 data 15
 LampAmberON.011
-texture "lampDoor.png"
+texture "lampDoor.webp"
 texrep 1 1
 numvert 4
 0.025654 0.007051 -0.000059
@@ -577,7 +577,7 @@ name "LampAmberON.012"
 loc 0.355307 0.14236 0.004457
 data 15
 LampAmberON.012
-texture "lampDoor.png"
+texture "lampDoor.webp"
 texrep 1 1
 numvert 4
 0.025654 0.007051 -0.000059
@@ -598,7 +598,7 @@ name "LampAmberON.013"
 loc 0.391407 0.14236 0.004457
 data 15
 LampAmberON.013
-texture "lampDoor.png"
+texture "lampDoor.webp"
 texrep 1 1
 numvert 4
 0.025654 0.007051 -0.000059
@@ -619,7 +619,7 @@ name "LampAmberON.014"
 loc 0.391407 0.14236 0.004457
 data 15
 LampAmberON.014
-texture "lampDoor.png"
+texture "lampDoor.webp"
 texrep 1 1
 numvert 4
 0.025654 0.024154 -0.000059
@@ -640,7 +640,7 @@ name "sockle"
 loc 0.440638 0.156892 0.001736
 data 6
 sockle
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 numvert 33
 0.006253 0 -0.006253
@@ -891,7 +891,7 @@ name "sockle.001"
 loc 0.368484 0.193321 0.004793
 data 10
 sockle.001
-texture "lamp1.png"
+texture "lamp1.webp"
 texrep 1 1
 numvert 160
 0.011586 0.007208 -0.002092
@@ -1901,7 +1901,7 @@ name "switch"
 loc 0.440638 0.156721 0.006534
 data 6
 switch
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 numvert 49
 -0.003772 0.000747 -0.00388
@@ -2280,7 +2280,7 @@ name "turn"
 loc 0.567541 -0.779115 15.45564
 data 4
 turn
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 45.000001
 numvert 49
@@ -2508,7 +2508,7 @@ name "turn.001"
 loc 0.614248 -0.779115 15.45564
 data 8
 turn.001
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 45.000001
 numvert 49
@@ -2736,7 +2736,7 @@ name "turn.002"
 loc 0.567541 -0.8461 15.45564
 data 8
 turn.002
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 45.000001
 numvert 49
@@ -2964,7 +2964,7 @@ name "turn.003"
 loc 0.614248 -0.8461 15.45564
 data 8
 turn.003
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 45.000001
 numvert 49

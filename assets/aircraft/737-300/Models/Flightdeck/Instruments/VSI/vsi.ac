@@ -69,7 +69,7 @@ OBJECT poly
 name "vsibezel"
 data 10
 Mesh.13044
-texture "vsi2.png"
+texture "vsi2.webp"
 texrep 1 1
 crease 15.000000
 numvert 205

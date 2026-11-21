@@ -8,7 +8,7 @@ name "bank-index"
 loc 0.000195 -0.010936 0.011483
 data 10
 bank-index
-texture "adi.png"
+texture "adi.webp"
 texrep 1 1
 crease 45.000001
 numvert 5
@@ -37,7 +37,7 @@ name "bkg"
 loc 0.04982 -0.000185 0.008278
 data 3
 bkg
-texture "adi.png"
+texture "adi.webp"
 texrep 1 1
 crease 45.000001
 numvert 20
@@ -131,7 +131,7 @@ name "drum"
 loc -0.021918 -0.000222 0.000316
 data 4
 drum
-texture "adi.png"
+texture "adi.webp"
 texrep 1 1
 crease 45.000001
 numvert 24
@@ -250,7 +250,7 @@ name "gaugeKnob"
 loc 0.008444 -0.029859 -0.030202
 data 9
 gaugeKnob
-texture "adi.png"
+texture "adi.webp"
 texrep 1 1
 crease 45.000001
 numvert 257
@@ -1510,7 +1510,7 @@ name "gaugeScale"
 loc 0.007489 -0.029859 -0.030202
 data 10
 gaugeScale
-texture "adi.png"
+texture "adi.webp"
 texrep 1 1
 crease 45.000001
 numvert 40
@@ -1708,7 +1708,7 @@ name "marker"
 loc 0.002754 -0.001978 0.000292
 data 6
 marker
-texture "adi.png"
+texture "adi.webp"
 texrep 1 1
 crease 45.000001
 numvert 8
@@ -1741,7 +1741,7 @@ name "ring"
 loc 0.00279 -0.00017 0.000375
 data 4
 ring
-texture "adi.png"
+texture "adi.webp"
 texrep 1 1
 crease 45.000001
 numvert 71
@@ -2103,7 +2103,7 @@ name "ringfront"
 loc 0.00279 -0.00017 0.000481
 data 9
 ringfront
-texture "adi.png"
+texture "adi.webp"
 texrep 1 1
 crease 45.000001
 numvert 56
@@ -2366,7 +2366,7 @@ name "shadow"
 loc 0.001888 -0.000016 -0.000059
 data 6
 shadow
-texture "shadow.png"
+texture "shadow.webp"
 texrep 1 1
 crease 30.000001
 numvert 72
@@ -2749,7 +2749,7 @@ name "support"
 loc 0.002047 -0.0002 0.000254
 data 7
 support
-texture "shadow.png"
+texture "shadow.webp"
 texrep 1 1
 crease 30.000001
 numvert 144

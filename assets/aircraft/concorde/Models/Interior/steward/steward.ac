@@ -7,7 +7,7 @@ name "ForwardToilet"
 loc 18.551699 -0.266501 -0
 data 13
 ForwardToilet
-texture "concorde-steward.png"
+texture "concorde-steward.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10
@@ -68,7 +68,7 @@ name "GalleryLUnit"
 loc 18.551699 -0.266501 -0
 data 12
 GalleryLUnit
-texture "concorde-steward.png"
+texture "concorde-steward.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10
@@ -129,7 +129,7 @@ name "GelleryRUnit"
 loc 18.551699 -0.266501 -0
 data 12
 GelleryRUnit
-texture "concorde-steward.png"
+texture "concorde-steward.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10
@@ -190,7 +190,7 @@ name "StorageLocker"
 loc 18.551699 -0.266501 -0
 data 13
 StorageLocker
-texture "concorde-steward.png"
+texture "concorde-steward.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10
@@ -251,7 +251,7 @@ name "WardrobeL"
 loc 18.551699 -0.266501 -0
 data 9
 WardrobeL
-texture "concorde-steward.png"
+texture "concorde-steward.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10
@@ -312,7 +312,7 @@ name "WardrobeR"
 loc 18.551699 -0.266501 -0
 data 9
 WardrobeR
-texture "concorde-steward.png"
+texture "concorde-steward.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10

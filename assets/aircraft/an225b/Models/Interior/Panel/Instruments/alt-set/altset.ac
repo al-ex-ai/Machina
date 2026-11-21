@@ -9,7 +9,7 @@ name "APalt1"
 loc -0.000356 0.000022 0.006768
 data 6
 APalt1
-texture "altSet.png"
+texture "altSet.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -36,7 +36,7 @@ name "APalt2"
 loc -0.000356 0.000022 0.000817
 data 6
 APalt2
-texture "altSet.png"
+texture "altSet.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -63,7 +63,7 @@ name "APalt3"
 loc -0.000356 0.000022 -0.005025
 data 6
 APalt3
-texture "altSet.png"
+texture "altSet.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -90,7 +90,7 @@ name "APalt4"
 loc -0.000356 0.000022 -0.010867
 data 6
 APalt4
-texture "altSet.png"
+texture "altSet.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -117,7 +117,7 @@ name "APalt5"
 loc -0.000356 0.000022 -0.016818
 data 6
 APalt5
-texture "altSet.png"
+texture "altSet.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -144,7 +144,7 @@ name "AltSet.bezel"
 loc 0.056024 -0.00134 -0.000428
 data 12
 AltSet.bezel
-texture "altSet.png"
+texture "altSet.webp"
 texrep 1 1
 numvert 192
 -0.053084 0.007163 -0.031011
@@ -1518,7 +1518,7 @@ name "AltSet.cancel"
 loc 0.005066 -0.00002 0.026773
 data 13
 AltSet.cancel
-texture "altSet.png"
+texture "altSet.webp"
 texrep 1 1
 crease 45.000001
 numvert 129
@@ -2202,7 +2202,7 @@ name "AltSet.knob"
 loc 0.00855 -0.00002 -0.027954
 data 11
 AltSet.knob
-texture "altSet.png"
+texture "altSet.webp"
 texrep 1 1
 crease 45.000001
 numvert 65
@@ -2664,7 +2664,7 @@ name "shadow"
 loc 0.000299 0.034753 -0.000112
 data 6
 shadow
-texture "shadow.png"
+texture "shadow.webp"
 texrep 1 1
 numvert 4
 0 -0.049996 0.0349

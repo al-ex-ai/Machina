@@ -801,7 +801,7 @@ name "DataSelector"
 loc 0.027312 0.002952 0.133929
 data 12
 DataSelector
-texture "INS-button.png"
+texture "INS-button.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 266
@@ -2784,7 +2784,7 @@ name "DimControl"
 loc 0.027312 0.002952 0.133929
 data 10
 DimControl
-texture "INS-button.png"
+texture "INS-button.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 129
@@ -4000,7 +4000,7 @@ name "Plate"
 loc 0 0 -0
 data 5
 Plate
-texture "INS-plate2.png"
+texture "INS-plate2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 26
@@ -4507,7 +4507,7 @@ name "Switch"
 loc 0.047161 0.000243 0.100961
 data 6
 Switch
-texture "INS-button.png"
+texture "INS-button.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 145
@@ -5579,7 +5579,7 @@ name "WarningButton"
 loc 0.021346 -0.001466 -0.106831
 data 13
 WarningButton
-texture "INS-red.png"
+texture "INS-red.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8

@@ -10,7 +10,7 @@ kids 5
 OBJECT poly
 name "wiper"
 loc -0.0024810 -0.1454110 -0.0567970
-texture "wiper.png"
+texture "wiper.webp"
 texrep 1 1
 numvert 36
 0.0083140 0.1904260 -0.1310138
@@ -180,7 +180,7 @@ kids 0
 OBJECT poly
 name "wiper.001"
 loc -0.0024810 -0.1851170 -0.0567970
-texture "wiper.png"
+texture "wiper.webp"
 texrep 1 1
 numvert 32
 0.0093440 0.2298120 -0.1308297
@@ -311,7 +311,7 @@ kids 0
 OBJECT poly
 name "wiperSup"
 loc 0.2460780 7.0331278 1.1918210
-texture "wiper.png"
+texture "wiper.webp"
 texrep 1 1
 numvert 46
 -0.2757880 -7.0273609 -0.8940460
@@ -699,7 +699,7 @@ kids 0
 OBJECT poly
 name "wiperSup.001"
 loc 0.2502370 7.0418949 1.1259090
-texture "wiper.png"
+texture "wiper.webp"
 texrep 1 1
 numvert 12
 -0.2610470 -6.9941058 -1.1273190

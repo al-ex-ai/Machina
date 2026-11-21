@@ -7,7 +7,7 @@ name "c1"
 loc 0 0 -0
 data 2
 c1
-texture "com.png"
+texture "com.webp"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 34
@@ -356,7 +356,7 @@ name "c2"
 loc 0 0 -0
 data 2
 c2
-texture "com.png"
+texture "com.webp"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 34
@@ -705,7 +705,7 @@ name "c3"
 loc 0 0 -0
 data 2
 c3
-texture "com.png"
+texture "com.webp"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 34
@@ -1054,7 +1054,7 @@ name "d1"
 loc 0 0 -0
 data 2
 d1
-texture "com.png"
+texture "com.webp"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 17
@@ -1178,7 +1178,7 @@ name "d2"
 loc 0 0 -0
 data 2
 d2
-texture "com.png"
+texture "com.webp"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 17
@@ -1302,7 +1302,7 @@ name "dig_f_hi"
 loc -0.04722 0.01328 0.006806
 data 8
 dig_f_hi
-texture "com.png"
+texture "com.webp"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 32
@@ -1457,7 +1457,7 @@ name "dig_f_low"
 loc -0.03002 0.01353 -0.01423
 data 9
 dig_f_low
-texture "com.png"
+texture "com.webp"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 32
@@ -1612,7 +1612,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "com.png"
+texture "com.webp"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 16

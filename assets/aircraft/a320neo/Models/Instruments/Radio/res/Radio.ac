@@ -8,7 +8,7 @@ OBJECT poly
 name "radio_adf"
 data 14
 radio_adf.mesh
-texture "Radio.jpg"
+texture "Radio.webp"
 crease 40.000000
 numvert 12
 -0.17601 -0.10197 0.1589
@@ -92,7 +92,7 @@ OBJECT poly
 name "radio_adf_led"
 data 18
 radio_adf_led.mesh
-texture "Radio.jpg"
+texture "Radio.webp"
 crease 40.000000
 numvert 18
 -0.17953 -0.09874 0.16645
@@ -215,7 +215,7 @@ OBJECT poly
 name "radio_am"
 data 13
 radio_am.mesh
-texture "Radio.jpg"
+texture "Radio.webp"
 crease 40.000000
 numvert 12
 -0.19673 -0.09854 0.1757
@@ -299,7 +299,7 @@ OBJECT poly
 name "radio_am_led"
 data 17
 radio_am_led.mesh
-texture "Radio.jpg"
+texture "Radio.webp"
 crease 40.000000
 numvert 18
 -0.20025 -0.09531 0.18324
@@ -422,7 +422,7 @@ OBJECT poly
 name "radio_bfo"
 data 14
 radio_bfo.mesh
-texture "Radio.jpg"
+texture "Radio.webp"
 crease 40.000000
 numvert 12
 -0.17601 -0.10197 0.1421
@@ -506,7 +506,7 @@ OBJECT poly
 name "radio_bfo_led"
 data 18
 radio_bfo_led.mesh
-texture "Radio.jpg"
+texture "Radio.webp"
 crease 40.000000
 numvert 18
 -0.17953 -0.09874 0.14965
@@ -629,7 +629,7 @@ OBJECT poly
 name "radio_body"
 data 15
 radio_body.mesh
-texture "Radio.jpg"
+texture "Radio.webp"
 crease 40.000000
 numvert 1920
 -0.23317 -0.09762 0.24528
@@ -13747,7 +13747,7 @@ OBJECT poly
 name "radio_exchange"
 data 19
 radio_exchange.mesh
-texture "Radio.jpg"
+texture "Radio.webp"
 crease 40.000000
 numvert 12
 -0.23226 -0.09266 0.1891
@@ -13831,7 +13831,7 @@ OBJECT poly
 name "radio_glare"
 data 16
 radio_glare.mesh
-texture "Radio_glare.png"
+texture "Radio_glare.webp"
 crease 40.000000
 numvert 4
 -0.24424 -0.08784 0.24162
@@ -13851,7 +13851,7 @@ OBJECT poly
 name "radio_hf1"
 data 14
 radio_hf1.mesh
-texture "Radio.jpg"
+texture "Radio.webp"
 crease 40.000000
 numvert 12
 -0.18785 -0.10001 0.2261
@@ -13935,7 +13935,7 @@ OBJECT poly
 name "radio_hf1_led"
 data 18
 radio_hf1_led.mesh
-texture "Radio.jpg"
+texture "Radio.webp"
 crease 40.000000
 numvert 18
 -0.20025 -0.09531 0.23364
@@ -14058,7 +14058,7 @@ OBJECT poly
 name "radio_hf2"
 data 14
 radio_hf2.mesh
-texture "Radio.jpg"
+texture "Radio.webp"
 crease 40.000000
 numvert 12
 -0.19673 -0.09854 0.2055
@@ -14142,7 +14142,7 @@ OBJECT poly
 name "radio_hf2_led"
 data 18
 radio_hf2_led.mesh
-texture "Radio.jpg"
+texture "Radio.webp"
 crease 40.000000
 numvert 18
 -0.20025 -0.09531 0.20004
@@ -14265,7 +14265,7 @@ OBJECT poly
 name "radio_ls"
 data 13
 radio_ls.mesh
-texture "Radio.jpg"
+texture "Radio.webp"
 crease 40.000000
 numvert 12
 -0.17601 -0.10197 0.1925
@@ -14349,7 +14349,7 @@ OBJECT poly
 name "radio_ls_led"
 data 17
 radio_ls_led.mesh
-texture "Radio.jpg"
+texture "Radio.webp"
 crease 40.000000
 numvert 18
 -0.17953 -0.09874 0.20004
@@ -14472,7 +14472,7 @@ OBJECT poly
 name "radio_nav"
 data 14
 radio_nav.mesh
-texture "Radio.jpg"
+texture "Radio.webp"
 crease 40.000000
 numvert 12
 -0.17601 -0.10197 0.2391
@@ -14556,7 +14556,7 @@ OBJECT poly
 name "radio_nav_led"
 data 18
 radio_nav_led.mesh
-texture "Radio.jpg"
+texture "Radio.webp"
 crease 40.000000
 numvert 18
 -0.17953 -0.09874 0.23364
@@ -14679,7 +14679,7 @@ OBJECT poly
 name "radio_nav_lit"
 data 18
 radio_nav_lit.mesh
-texture "Radio_glare.png"
+texture "Radio_glare.webp"
 crease 40.000000
 numvert 12
 -0.18161 -0.09587 0.22538
@@ -14760,7 +14760,7 @@ OBJECT poly
 name "radio_nav_lit.axis"
 data 23
 radio_nav_lit.axis.mesh
-texture "Radio.jpg"
+texture "Radio.webp"
 crease 40.000000
 numvert 2
 -0.18272 -0.09583 0.2252
@@ -14776,7 +14776,7 @@ OBJECT poly
 name "radio_on"
 data 13
 radio_on.mesh
-texture "Radio.jpg"
+texture "Radio.webp"
 crease 40.000000
 numvert 56
 -0.17502 -0.10287 0.13173
@@ -15152,7 +15152,7 @@ OBJECT poly
 name "radio_on.axis"
 data 18
 radio_on.axis.mesh
-texture "Radio.jpg"
+texture "Radio.webp"
 crease 40.000000
 numvert 2
 -0.17502 -0.10287 0.13173
@@ -15168,7 +15168,7 @@ OBJECT poly
 name "radio_opt"
 data 14
 radio_opt.mesh
-texture "Radio.jpg"
+texture "Radio.webp"
 crease 40.000000
 numvert 12
 -0.17601 -0.10197 0.1757
@@ -15252,7 +15252,7 @@ OBJECT poly
 name "radio_opt_led"
 data 18
 radio_opt_led.mesh
-texture "Radio.jpg"
+texture "Radio.webp"
 crease 40.000000
 numvert 18
 -0.17953 -0.09874 0.18325
@@ -15390,7 +15390,7 @@ OBJECT poly
 name "radio_rot0"
 data 15
 radio_rot0.mesh
-texture "Radio.jpg"
+texture "Radio.webp"
 crease 40.000000
 numvert 144
 -0.19671 -0.09173 0.14428
@@ -16383,7 +16383,7 @@ OBJECT poly
 name "radio_rot1"
 data 15
 radio_rot1.mesh
-texture "Radio.jpg"
+texture "Radio.webp"
 crease 40.000000
 numvert 122
 -0.19507 -0.08182 0.14628
@@ -17474,7 +17474,7 @@ OBJECT poly
 name "radio_sel_led"
 data 14
 radio.mesh.005
-texture "Radio.jpg"
+texture "Radio.webp"
 crease 40.000000
 numvert 24
 -0.19327 -0.09707 0.21098
@@ -17534,7 +17534,7 @@ OBJECT poly
 name "radio_vhf1"
 data 15
 radio_vhf1.mesh
-texture "Radio.jpg"
+texture "Radio.webp"
 crease 40.000000
 numvert 12
 -0.20314 -0.09748 0.2261
@@ -17618,7 +17618,7 @@ OBJECT poly
 name "radio_vhf1_led"
 data 19
 radio_vhf1_led.mesh
-texture "Radio.jpg"
+texture "Radio.webp"
 crease 40.000000
 numvert 18
 -0.21554 -0.09278 0.23364
@@ -17741,7 +17741,7 @@ OBJECT poly
 name "radio_vhf2"
 data 15
 radio_vhf2.mesh
-texture "Radio.jpg"
+texture "Radio.webp"
 crease 40.000000
 numvert 12
 -0.21202 -0.09601 0.2093
@@ -17825,7 +17825,7 @@ OBJECT poly
 name "radio_vhf2_led"
 data 19
 radio_vhf2_led.mesh
-texture "Radio.jpg"
+texture "Radio.webp"
 crease 40.000000
 numvert 18
 -0.21554 -0.09278 0.21684
@@ -17948,7 +17948,7 @@ OBJECT poly
 name "radio_vhf3"
 data 15
 radio_vhf3.mesh
-texture "Radio.jpg"
+texture "Radio.webp"
 crease 40.000000
 numvert 12
 -0.20314 -0.09748 0.1925
@@ -18032,7 +18032,7 @@ OBJECT poly
 name "radio_vhf3_led"
 data 19
 radio_vhf3_led.mesh
-texture "Radio.jpg"
+texture "Radio.webp"
 crease 40.000000
 numvert 18
 -0.21554 -0.09278 0.20004
@@ -18155,7 +18155,7 @@ OBJECT poly
 name "radio_vor"
 data 14
 radio_vor.mesh
-texture "Radio.jpg"
+texture "Radio.webp"
 crease 40.000000
 numvert 12
 -0.17601 -0.10197 0.2093
@@ -18239,7 +18239,7 @@ OBJECT poly
 name "radio_vor_led"
 data 18
 radio_vor_led.mesh
-texture "Radio.jpg"
+texture "Radio.webp"
 crease 40.000000
 numvert 18
 -0.17953 -0.09874 0.21684

@@ -8,7 +8,7 @@ kids 24
 OBJECT poly
 name "cover"
 loc -18.4265480 -0.0778520 0.0009350
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 487
 -0.4626520 1.0843000 0.6219010
@@ -3625,7 +3625,7 @@ kids 0
 OBJECT poly
 name "door"
 loc 0.0000000 0.0000000 -0.0001010
-texture "cockpitMore.png"
+texture "cockpitMore.webp"
 texrep 1 1
 numvert 44
 -16.9782391 1.4942590 1.0633340
@@ -3817,7 +3817,7 @@ kids 0
 OBJECT poly
 name "exit"
 loc -16.9169712 1.4282820 0.0014390
-texture "cockpitMore.png"
+texture "cockpitMore.webp"
 texrep 1 1
 numvert 8
 0.0146410 0.3617960 -0.1335420
@@ -3868,7 +3868,7 @@ kids 0
 OBJECT poly
 name "exitON"
 loc -16.9169712 1.4282820 0.0014390
-texture "cockpitMore.png"
+texture "cockpitMore.webp"
 texrep 1 1
 numvert 8
 0.0138950 0.3605200 -0.1348250
@@ -3919,7 +3919,7 @@ kids 0
 OBJECT poly
 name "floor"
 loc 0.0000000 0.0000000 -0.0001010
-texture "cockpitMore.png"
+texture "cockpitMore.webp"
 texrep 1 1
 numvert 38
 -18.8685379 0.2338870 0.8496030
@@ -4089,7 +4089,7 @@ kids 0
 OBJECT poly
 name "handle"
 loc 0.0229478 -0.0016751 -0.0001010
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 578
 -18.7061749 1.2674686 0.5661990
@@ -7587,7 +7587,7 @@ kids 0
 OBJECT poly
 name "immat.text"
 loc -18.9194393 0.9512466 0.4242743
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 4
 0.0001518 -0.0096105 0.0239645
@@ -7606,7 +7606,7 @@ kids 0
 OBJECT poly
 name "interieur"
 loc 0.0000000 0.0000000 -0.0001010
-texture "cockpitDetail.png"
+texture "cockpitDetail.webp"
 texrep 1 1
 numvert 108
 -16.9544640 1.4942590 1.0633340
@@ -8058,7 +8058,7 @@ kids 0
 OBJECT poly
 name "internal.sky"
 loc 0.0000000 0.0000000 -0.0001010
-texture "cockpitDetail.png"
+texture "cockpitDetail.webp"
 texrep 1 1
 numvert 560
 -18.2941875 1.4609840 0.6734710
@@ -16016,7 +16016,7 @@ kids 0
 OBJECT poly
 name "panel"
 loc -18.2385883 1.0329390 0.4260300
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 209
 -0.6819340 -0.3690400 -0.6111400
@@ -17263,7 +17263,7 @@ kids 0
 OBJECT poly
 name "panelE"
 loc -17.3608971 0.5230790 -1.1960260
-texture "cockpitDetail.png"
+texture "cockpitDetail.webp"
 texrep 1 1
 numvert 104
 0.2857380 0.2318000 0.4501440
@@ -17962,7 +17962,7 @@ kids 0
 OBJECT poly
 name "PedalL"
 loc -17.1070271 0.0240790 -0.0804750
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 344
 -1.9804530 0.4784150 0.7342830
@@ -19510,7 +19510,7 @@ kids 0
 OBJECT poly
 name "PedalR"
 loc -17.1070271 0.0240790 -0.3815290
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 344
 -1.9804530 0.4784150 0.7531940
@@ -21058,7 +21058,7 @@ kids 0
 OBJECT poly
 name "pedestal"
 loc -18.2385883 1.0329390 0.4260300
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 104
 -0.6795500 -0.2784490 -0.6049130
@@ -21723,7 +21723,7 @@ kids 0
 OBJECT poly
 name "window.coop"
 loc -18.3554821 0.7622700 0.0007470
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 144
 -0.4960780 0.2141640 -0.7080410
@@ -22837,7 +22837,7 @@ kids 0
 OBJECT poly
 name "window.copilot"
 loc -18.3554821 0.7622700 0.0007470
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 314
 -0.0175703 0.4954760 -0.7945136
@@ -25020,7 +25020,7 @@ kids 0
 OBJECT poly
 name "window.front"
 loc 0.6101660 -0.1009440 0.0006110
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 403
 -19.8437099 1.1291949 0.0621953
@@ -28382,7 +28382,7 @@ kids 0
 OBJECT poly
 name "window.pilot"
 loc -18.3554821 0.7622700 0.0007470
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 314
 -0.0175703 0.4954760 0.7943941
@@ -30565,7 +30565,7 @@ kids 0
 OBJECT poly
 name "window.piop"
 loc -18.3554821 0.7622700 0.0007470
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 144
 -0.4960780 0.2141640 0.7080410
@@ -31678,7 +31678,7 @@ refs 4
 kids 0
 OBJECT poly
 name "window.side"
-texture "cockpitDetail.png"
+texture "cockpitDetail.webp"
 texrep 1 1
 numvert 796
 -18.2805214 1.2624871 0.8500073
@@ -37486,7 +37486,7 @@ kids 0
 OBJECT poly
 name "window.top"
 loc 0.0000000 0.0000000 -0.0001010
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 480
 -18.3053341 1.4662130 0.6849830
@@ -39654,7 +39654,7 @@ kids 0
 OBJECT poly
 name "winslide"
 loc -18.3147736 1.5688910 -0.0003820
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 numvert 40
 -0.0668950 -0.7541110 0.9228380

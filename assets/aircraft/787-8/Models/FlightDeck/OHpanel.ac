@@ -157,7 +157,7 @@ name "jettison.knob"
 loc -0.00272331 0.453418 0.532484
 data 12
 Cylinder.013
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 40.000000
 numvert 24
 0.0306517 -0.476148 -0.654789
@@ -310,7 +310,7 @@ name "switch_base"
 loc 0.00710828 -0.476419 0.0937414
 data 9
 Plane.086
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 34
 -0.00672512 0.000239521 -0.00785273
@@ -562,7 +562,7 @@ name "switch_base"
 loc 0.00710828 -0.465241 0.0504282
 data 9
 Plane.086
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 34
 0.00672725 -0.000116825 -5.96046e-07
@@ -814,7 +814,7 @@ name "switch_base"
 loc 0.00710828 -0.463844 0.13752
 data 9
 Plane.086
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 34
 -0.00672512 0.000239521 -0.00785273
@@ -1064,7 +1064,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc 0.0193775 0.463338 -0.145591
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 45.000000
 numvert 39
 0.0163265 -0.0164506 0.00890547
@@ -1318,7 +1318,7 @@ kids 0
 OBJECT poly
 name "ohlight"
 loc 0.0193775 0.463338 -0.145591
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 45.000000
 numvert 8
 0.0163265 -0.0164506 0.00890547
@@ -1345,7 +1345,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc 0.0193775 0.464045 0.157862
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 45.000000
 numvert 39
 0.00127488 0.0216876 0
@@ -1599,7 +1599,7 @@ kids 0
 OBJECT poly
 name "ohlight"
 loc 0.0193775 0.464045 0.157862
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 45.000000
 numvert 8
 0.00127488 -0.0207588 -9.13441e-06
@@ -1628,7 +1628,7 @@ name "xfeed"
 loc 0.0131987 -0.104391 -0.0883416
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00470345 -0.0140848 -0.000798702
@@ -1681,7 +1681,7 @@ name "tank.2"
 loc 0.0117986 -0.184606 -0.10648
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00429905 0.0142419 -0.0280768
@@ -1734,7 +1734,7 @@ name "tank.2"
 loc 0.0117986 -0.184606 -0.0695059
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00470345 -0.0140847 -0.000798702
@@ -1787,7 +1787,7 @@ name "tank.1"
 loc 0.0126874 -0.133687 -0.160894
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00429905 0.0142419 -0.0280768
@@ -1840,7 +1840,7 @@ name "tank.1"
 loc 0.0132231 -0.102996 -0.160894
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00470345 -0.0140847 -0.000798702
@@ -1893,7 +1893,7 @@ name "tank.0"
 loc 0.0127117 -0.132292 -0.017882
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00470345 -0.0140848 -0.000798702
@@ -1946,7 +1946,7 @@ name "tank.0"
 loc 0.0132474 -0.101601 -0.017882
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00429905 0.0142419 -0.0280768
@@ -1999,7 +1999,7 @@ name "wing-lights"
 loc 0.00814883 -0.393701 -0.111325
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00474595 -0.0165196 -0.000860095
@@ -2052,7 +2052,7 @@ name "logo-lights"
 loc 0.00814883 -0.393701 -0.082287
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00425655 0.0166766 -0.0302373
@@ -2105,7 +2105,7 @@ name "nav-lights"
 loc 0.00814883 -0.393701 -0.0532495
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00474595 -0.0165196 -0.000860155
@@ -2158,7 +2158,7 @@ name "beacon"
 loc 0.00814883 -0.393701 -0.0246959
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00425655 0.0166766 -0.0302373
@@ -2211,7 +2211,7 @@ name "cockpit-lights"
 loc 0.0081238 -0.395134 0.106737
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00474595 -0.0165196 -0.000849545
@@ -2264,7 +2264,7 @@ name "unanimate_off"
 loc 0.0109183 -0.235036 -0.0877995
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00425655 0.0166766 -0.0298635
@@ -2317,7 +2317,7 @@ name "rnozzle"
 loc 0.0144845 -0.0307325 -0.0535237
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00477515 -0.0181922 -0.00101739
@@ -2370,7 +2370,7 @@ name "lnozzle"
 loc 0.0144845 -0.0307325 -0.0192809
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00422736 0.0183492 -0.0357671
@@ -2423,7 +2423,7 @@ name "jettison"
 loc 0.0144826 -0.0308382 -0.154069
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00472903 -0.0155504 -0.000875115
@@ -2476,7 +2476,7 @@ name "C2.fault"
 loc 0.0117568 -0.187001 0.105514
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00459671 -0.00796971 -0.000928879
@@ -2529,7 +2529,7 @@ name "C1.fault"
 loc 0.0117568 -0.187001 0.152384
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00440579 0.00812685 -0.0326526
@@ -2582,7 +2582,7 @@ name "fault.leng"
 loc 0.0129691 -0.117548 0.199063
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 4
 0.00228539 -0.0139537 -0.00244361
@@ -2603,7 +2603,7 @@ name "fault.reng"
 loc 0.0129796 -0.116947 0.0554497
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 4
 0.00269305 0.0139272 -0.0293857
@@ -2624,7 +2624,7 @@ name "hyd.reng"
 loc 0.0129796 -0.116947 0.0554497
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.0047278 -0.0154797 -0.00088042
@@ -2677,7 +2677,7 @@ name "hyd.leng"
 loc 0.0129691 -0.117548 0.199063
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.0042747 0.0156369 -0.030949
@@ -2730,7 +2730,7 @@ name "RAT.btn"
 loc 0.0144908 -0.0303699 0.129056
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00427045 0.0158802 -0.0342191
@@ -2783,7 +2783,7 @@ name "RBUGen"
 loc 0.0113635 -0.209531 0.261694
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.0047278 -0.0154798 -0.000876069
@@ -2836,7 +2836,7 @@ name "LBUGen"
 loc 0.0113557 -0.209982 0.366158
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.0042747 0.0156369 -0.0307972
@@ -2889,7 +2889,7 @@ name "RGEN.btn"
 loc 0.0113674 -0.209307 0.3034
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.0047278 -0.0154798 -0.000876069
@@ -2942,7 +2942,7 @@ name "LGEN.btn"
 loc 0.0113439 -0.210656 0.408672
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.0042747 0.0156369 -0.0307972
@@ -2995,7 +2995,7 @@ name "unanimate_off"
 loc 0.0107273 -0.245978 0.26819
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00424567 0.0172999 -0.0368788
@@ -3048,7 +3048,7 @@ name "unanimate_off"
 loc 0.0107273 -0.245978 0.305389
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00475683 -0.0171429 -0.00104907
@@ -3101,7 +3101,7 @@ name "unanimate_off"
 loc 0.0107273 -0.245978 0.372831
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00475683 -0.0171429 -0.00104907
@@ -3154,7 +3154,7 @@ name "unanimate_off"
 loc 0.0107273 -0.245978 0.41003
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00424567 0.0172999 -0.0368788
@@ -3207,7 +3207,7 @@ name "EXT.btn"
 loc 0.0126143 -0.137876 0.378954
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.0042747 0.0156369 -0.029408
@@ -3260,7 +3260,7 @@ name "EXT.btn"
 loc 0.0126143 -0.137876 0.4077
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.0047278 -0.0154798 -0.000836551
@@ -3313,7 +3313,7 @@ name "APU.fault"
 loc 0.0138445 -0.0673976 0.276843
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00442887 0.00680494 -0.0334146
@@ -3366,7 +3366,7 @@ name "APU.btn"
 loc 0.0134499 -0.0900014 0.319549
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.0047278 -0.0154798 -0.000836551
@@ -3419,7 +3419,7 @@ name "APU.btn"
 loc 0.0134499 -0.0900014 0.348294
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.0042747 0.0156369 -0.029408
@@ -3472,7 +3472,7 @@ name "BATT.btn"
 loc 0.0145317 -0.0280279 0.334265
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.0047278 -0.0154797 -0.00088039
@@ -3525,7 +3525,7 @@ name "unanimate_off"
 loc 0.0159042 0.0506031 0.391485
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00459246 -0.00772626 -0.000956655
@@ -3576,7 +3576,7 @@ kids 0
 OBJECT poly
 name "batteries"
 loc 0.0208513 0.192851 0.293448
-texture "OHpanel_base.png"
+texture "OHpanel_base.webp"
 crease 45.000000
 numvert 8
 -0.00930993 -0.12311 0.0357414
@@ -3636,7 +3636,7 @@ name "pack.2"
 loc 0.0140066 -0.058107 -0.391854
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.0042949 0.0144795 0.00040102
@@ -3689,7 +3689,7 @@ name "pack.1"
 loc 0.0140483 -0.0557213 -0.264426
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00470588 -0.0142238 0.0283765
@@ -3742,7 +3742,7 @@ name "trim.2"
 loc 0.0137859 -0.070752 -0.312629
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00429662 0.0143808 -0.0283765
@@ -3795,7 +3795,7 @@ name "unanimate_on"
 loc 0.0127623 -0.129393 -0.293931
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00427409 0.0156719 -0.0352252
@@ -3848,7 +3848,7 @@ name "unanimate_on"
 loc 0.0111687 -0.220693 -0.297624
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00470018 -0.0138976 -0.000838459
@@ -3901,7 +3901,7 @@ name "unanimate_on"
 loc 0.0111687 -0.220693 -0.2441
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00430232 0.0140546 -0.029474
@@ -3954,7 +3954,7 @@ name "gasper"
 loc 0.0163446 0.0758332 -0.362176
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 16
 -0.00429662 0.0143809 -0.0281379
@@ -4050,7 +4050,7 @@ name "unanimate_off"
 loc 0.0183902 0.19303 -0.365624
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00429577 0.0144302 -0.0289152
@@ -4103,7 +4103,7 @@ name "unanimate_off"
 loc 0.019755 0.271216 -0.364908
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.0047123 -0.0145919 -0.000800252
@@ -4156,7 +4156,7 @@ name "unanimate_off"
 loc 0.0185539 0.202404 -0.12818
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00427347 0.0157074 -0.0307631
@@ -4209,7 +4209,7 @@ name "unanimate_off"
 loc 0.0195744 0.260869 -0.149343
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00471231 -0.014592 -0.000800252
@@ -4262,7 +4262,7 @@ name "unanimate_off"
 loc 0.0195744 0.260869 -0.111
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.0042902 0.014749 -0.0281322
@@ -4313,7 +4313,7 @@ kids 0
 OBJECT poly
 name "batteries"
 loc 0.0246867 0.412579 -0.334263
-texture "OHpanel_base.png"
+texture "OHpanel_base.webp"
 crease 45.000000
 numvert 8
 -0.00930993 -0.12311 0.030964
@@ -4373,7 +4373,7 @@ name "eec.2"
 loc 0.0172489 0.127642 -0.130168
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.0047278 -0.0154798 -0.000926912
@@ -4426,7 +4426,7 @@ name "eec.1"
 loc 0.0172446 0.127395 -0.0432941
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00427471 0.0156369 -0.0327982
@@ -4479,7 +4479,7 @@ name "unanimate_off"
 loc 0.0173616 0.134102 0.106509
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00431446 0.0133585 -0.0284503
@@ -4532,7 +4532,7 @@ name "unanimate_off"
 loc 0.0173616 0.134102 0.145145
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00468802 -0.0132013 -0.000809312
@@ -4585,7 +4585,7 @@ name "unanimate_off"
 loc 0.0173955 0.136043 0.396669
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.0042902 0.014749 -0.0281322
@@ -4638,7 +4638,7 @@ name "unanimate_on"
 loc 0.0188458 0.219127 0.0799355
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00425772 0.0166095 -0.0333033
@@ -4691,7 +4691,7 @@ name "unanimate_off"
 loc 0.0199759 0.283871 0.0660188
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00471231 -0.014592 -0.000800312
@@ -4744,7 +4744,7 @@ name "unanimate_off"
 loc 0.0199759 0.283871 0.103606
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.0042902 0.0147491 -0.0281322
@@ -4797,7 +4797,7 @@ name "unanimate_off"
 loc 0.0200181 0.28629 0.173012
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.0047123 -0.014592 -0.000800282
@@ -4848,7 +4848,7 @@ kids 0
 OBJECT poly
 name "batteries"
 loc 0.0237275 0.357629 0.138
-texture "OHpanel_base.png"
+texture "OHpanel_base.webp"
 crease 45.000000
 numvert 8
 -0.00930993 -0.12311 0.0111837
@@ -4908,7 +4908,7 @@ name "unanimate_off"
 loc 0.0213447 0.362291 0.0771671
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00426097 0.0164235 -0.0292813
@@ -4959,7 +4959,7 @@ kids 0
 OBJECT poly
 name "unanimate"
 loc 0.0162165 0.190711 -0.111309
-texture "OHpanel_base.png"
+texture "OHpanel_base.webp"
 crease 45.000000
 numvert 26
 0.00262529 0.00353667 0.00643402
@@ -5223,7 +5223,7 @@ name "switch_base"
 loc 0.0189908 0.218767 0.110939
 data 9
 Plane.086
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 34
 -0.00672511 0.000239462 -0.00785273
@@ -5475,7 +5475,7 @@ name "switch_base"
 loc 0.0104678 -0.269513 -0.311986
 data 9
 Plane.086
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 34
 0.00672726 -0.000116855 -5.96046e-07
@@ -5727,7 +5727,7 @@ name "switch_base"
 loc 0.0104678 -0.269513 -0.257935
 data 9
 Plane.086
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 34
 -0.00672511 0.000239521 -0.00785273
@@ -5979,7 +5979,7 @@ name "switch_base"
 loc 0.00834122 -0.391346 -0.169273
 data 9
 Plane.086
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 34
 0.00672726 -0.000116825 -5.96046e-07
@@ -6231,7 +6231,7 @@ name "switch_base"
 loc 0.00710001 -0.462455 -0.158842
 data 9
 Plane.086
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 34
 -0.00672511 0.000239551 -0.00785279
@@ -6483,7 +6483,7 @@ name "switch_base"
 loc 0.00710828 -0.461981 -0.123756
 data 9
 Plane.086
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 34
 0.00672725 -0.000116825 -5.96046e-07
@@ -6735,7 +6735,7 @@ name "switch_base"
 loc 0.00712484 -0.461032 -0.0796618
 data 9
 Plane.086
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 34
 -0.00672511 0.000239521 -0.00785279
@@ -6985,7 +6985,7 @@ kids 0
 OBJECT poly
 name "comm"
 loc 0.00735155 -0.31716 0.170247
-texture "OHpanel_base.png"
+texture "OHpanel_base.webp"
 crease 45.000000
 numvert 26
 0.00262528 0.00353679 0.00643396
@@ -7247,7 +7247,7 @@ kids 0
 OBJECT poly
 name "reset"
 loc 0.0127677 -0.00686907 -0.31286
-texture "OHpanel_base.png"
+texture "OHpanel_base.webp"
 crease 45.000000
 numvert 26
 -0.00256277 4.47324e-05 0
@@ -7509,7 +7509,7 @@ kids 0
 OBJECT poly
 name "unanimate"
 loc 0.0194447 0.375658 -0.161504
-texture "OHpanel_base.png"
+texture "OHpanel_base.webp"
 crease 45.000000
 numvert 26
 -0.00256278 4.47631e-05 0
@@ -7771,7 +7771,7 @@ kids 0
 OBJECT poly
 name "unanimate"
 loc 0.0194447 0.375658 -0.132577
-texture "OHpanel_base.png"
+texture "OHpanel_base.webp"
 crease 45.000000
 numvert 26
 0.00262529 0.00353676 0.00643402
@@ -8035,7 +8035,7 @@ name "unanimate_on"
 loc 0.0212866 0.35896 0.2761
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.0047438 -0.0163969 -0.000993431
@@ -8086,7 +8086,7 @@ kids 0
 OBJECT poly
 name "rect"
 loc 0.0145136 -0.00295511 0.00497985
-texture "OHpanel_lettering.png"
+texture "OHpanel_lettering.webp"
 crease 45.000000
 numvert 4
 -0.00964934 -0.552812 -0.429505
@@ -8107,7 +8107,7 @@ name "unanimate_on"
 loc 0.0212985 0.359644 0.368588
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.0042587 0.016554 -0.0346719
@@ -8158,7 +8158,7 @@ kids 0
 OBJECT poly
 name "unanimate"
 loc 0.0191317 0.357727 0.170572
-texture "OHpanel_base.png"
+texture "OHpanel_base.webp"
 crease 45.000000
 numvert 26
 -0.00256276 4.47035e-05 0
@@ -8420,7 +8420,7 @@ kids 0
 OBJECT poly
 name "batteries"
 loc 0.0237275 0.357629 0.138
-texture "OHpanel_base.png"
+texture "OHpanel_base.webp"
 crease 45.000000
 numvert 24
 -0.00728326 -0.00700241 -0.0165945
@@ -8580,7 +8580,7 @@ name "switch_base"
 loc 0.00711655 -0.461507 -0.0459985
 data 9
 Plane.086
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 34
 0.00672726 -0.000116795 -5.36442e-07
@@ -8832,7 +8832,7 @@ name "windowheat"
 loc 0.0160508 0.059005 0.112125
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 32
 -0.00429829 0.0142856 0.0342424
@@ -9014,7 +9014,7 @@ name "equip.cooling"
 loc 0.0163414 0.0756544 -0.264543
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 16
 -0.0042949 0.0144794 0.000397742
@@ -9110,7 +9110,7 @@ name "trim.1"
 loc 0.0137859 -0.070752 -0.312629
 data 8
 Mesh.336
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 30.000000
 numvert 8
 -0.00429491 0.0144795 0.00040102
@@ -9167,7 +9167,7 @@ name "r.wiper"
 loc -0.00347366 -0.214541 -0.412413
 data 12
 Cylinder.022
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 40.000000
 numvert 37
 0.0291188 -0.348188 0.087424
@@ -9444,7 +9444,7 @@ name "eng2.anti-ice"
 loc -0.00347366 -0.1975 -0.322179
 data 12
 Cylinder.022
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 40.000000
 numvert 37
 0.00708508 -0.347804 0.07921
@@ -9721,7 +9721,7 @@ name "eng1.anti-ice"
 loc -0.00347366 -0.196941 -0.263792
 data 12
 Cylinder.022
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 40.000000
 numvert 37
 0.0291188 -0.348188 0.087424
@@ -9998,7 +9998,7 @@ name "wing.anti-ice"
 loc -0.00347366 -0.1975 -0.20289
 data 12
 Cylinder.022
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 40.000000
 numvert 37
 0.00708508 -0.347804 0.07921
@@ -10275,7 +10275,7 @@ name "SeatbeltSwtch"
 loc -0.00347366 -0.19722 -0.0461668
 data 12
 Cylinder.022
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 40.000000
 numvert 37
 0.0291188 -0.348188 0.087424
@@ -10552,7 +10552,7 @@ name "l.wiper"
 loc -0.00347366 -0.20616 0.109997
 data 12
 Cylinder.022
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 40.000000
 numvert 37
 0.00708508 -0.347804 0.07921
@@ -10829,7 +10829,7 @@ name "knob"
 loc 0.00781836 0.476533 -0.218205
 data 12
 Cylinder.022
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 40.000000
 numvert 37
 0.0291188 -0.348188 0.087424
@@ -11106,7 +11106,7 @@ name "starter.2"
 loc 0.00441973 0.177197 -0.308515
 data 12
 Cylinder.022
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 40.000000
 numvert 37
 0.00708508 -0.347804 0.07921
@@ -11383,7 +11383,7 @@ name "starter.1"
 loc 0.00441973 0.176669 -0.221374
 data 12
 Cylinder.022
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 40.000000
 numvert 37
 0.0291188 -0.348188 0.087424
@@ -11660,7 +11660,7 @@ name "hyd.c2.knob"
 loc 0.00441973 -0.0359742 -0.0707377
 data 12
 Cylinder.022
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 40.000000
 numvert 37
 0.00708508 -0.347804 0.07921
@@ -11937,7 +11937,7 @@ name "hyd.c1.knob"
 loc 0.00441973 -0.0354562 -0.0246606
 data 12
 Cylinder.022
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 40.000000
 numvert 37
 0.0291188 -0.348188 0.087424
@@ -12214,7 +12214,7 @@ name "APU.knob"
 loc 0.00441973 0.0872428 0.100627
 data 12
 Cylinder.022
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 40.000000
 numvert 37
 0.00708508 -0.347804 0.07921
@@ -12491,7 +12491,7 @@ name "knob"
 loc 0.00441973 0.259533 0.0858973
 data 12
 Cylinder.022
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 40.000000
 numvert 37
 0.0291188 -0.348188 0.087424
@@ -12768,7 +12768,7 @@ name "knob"
 loc 0.00441973 0.259202 0.165963
 data 12
 Cylinder.022
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 40.000000
 numvert 37
 0.00708508 -0.347804 0.07921
@@ -13045,7 +13045,7 @@ name "knob"
 loc -0.0204773 0.626602 0.730994
 data 12
 Cylinder.013
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 40.000000
 numvert 24
 0.0543233 -0.843865 -1.16047
@@ -13198,7 +13198,7 @@ name "knob"
 loc -0.0204773 0.624888 0.831283
 data 12
 Cylinder.013
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 40.000000
 numvert 24
 0.0105791 -0.842435 -1.14896
@@ -13351,7 +13351,7 @@ name "knob"
 loc -0.0204773 0.814106 0.780975
 data 12
 Cylinder.013
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 40.000000
 numvert 24
 0.0543233 -0.843865 -1.16047
@@ -13504,7 +13504,7 @@ name "knob"
 loc -0.00647585 0.0100248 0.224762
 data 12
 Cylinder.013
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 40.000000
 numvert 24
 0.00596921 -0.475341 -0.648298
@@ -13657,7 +13657,7 @@ name "master-bright.knob"
 loc -0.00166579 -0.0604502 -0.231027
 data 12
 Cylinder.013
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 40.000000
 numvert 24
 0.00438554 -0.561945 0.196744
@@ -13810,7 +13810,7 @@ name "dome.knob"
 loc -0.00166579 -0.0617052 -0.143144
 data 12
 Cylinder.013
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 40.000000
 numvert 24
 0.0225196 -0.562899 0.204589
@@ -13963,7 +13963,7 @@ name "ovhd.knob"
 loc -0.00166579 -0.0623332 -0.094808
 data 12
 Cylinder.013
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 40.000000
 numvert 24
 0.00438554 -0.561945 0.196744
@@ -14116,7 +14116,7 @@ name "knob"
 loc -0.00166579 -0.255414 0.0730863
 data 12
 Cylinder.013
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 40.000000
 numvert 24
 0.0225196 -0.349823 0.124383
@@ -14269,7 +14269,7 @@ name "landn"
 loc 0.00484585 -0.0923312 0.149011
 data 8
 Mesh.512
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 45.000000
 numvert 25
 0.00285609 -0.620249 -0.12628
@@ -14464,7 +14464,7 @@ name "land2"
 loc 0.00484585 -0.0811532 0.105698
 data 8
 Mesh.512
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 45.000000
 numvert 25
 0.0287431 -0.612233 -0.126376
@@ -14659,7 +14659,7 @@ name "land1"
 loc 0.00484585 -0.0797562 0.19279
 data 8
 Mesh.512
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 45.000000
 numvert 25
 0.00285609 -0.620249 -0.12628
@@ -14854,7 +14854,7 @@ name "knob"
 loc -0.00479027 -0.120295 0.150643
 data 12
 Cylinder.013
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 40.000000
 numvert 24
 0.00541425 -0.431148 0.147671
@@ -15007,7 +15007,7 @@ name "unanimate_switch"
 loc 0.0167284 0.602856 0.166209
 data 8
 Mesh.512
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 45.000000
 numvert 25
 0.00285609 -0.620249 -0.12628
@@ -15202,7 +15202,7 @@ name "unanimate_switch"
 loc 0.00820536 0.114575 -0.256716
 data 8
 Mesh.512
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 45.000000
 numvert 25
 0.0287431 -0.612233 -0.126376
@@ -15397,7 +15397,7 @@ name "unanimate_switch"
 loc 0.00820536 0.114575 -0.202665
 data 8
 Mesh.512
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 45.000000
 numvert 25
 0.00285609 -0.620249 -0.12628
@@ -15592,7 +15592,7 @@ name "unanimate_switch"
 loc 0.00607877 -0.00725822 -0.114002
 data 8
 Mesh.512
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 45.000000
 numvert 25
 0.0287431 -0.612233 -0.126376
@@ -15787,7 +15787,7 @@ name "strobe"
 loc 0.00483757 -0.0783662 -0.103571
 data 8
 Mesh.512
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 45.000000
 numvert 25
 0.00285609 -0.620249 -0.12628
@@ -15982,7 +15982,7 @@ name "taxi"
 loc 0.00484585 -0.0778932 -0.0684858
 data 8
 Mesh.512
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 45.000000
 numvert 25
 0.0287431 -0.612233 -0.126376
@@ -16175,7 +16175,7 @@ kids 0
 OBJECT poly
 name "panels"
 loc 0.00829556 -0.286604 -0.0668149
-texture "OHpanel_panels.png"
+texture "OHpanel_panels.webp"
 crease 45.000000
 numvert 172
 -0.00401855 -0.218764 0.00695568
@@ -17085,7 +17085,7 @@ kids 0
 OBJECT poly
 name "ohbase"
 loc -0.00286107 -0.211946 -0.0670651
-texture "OHpanel_base.png"
+texture "OHpanel_base.webp"
 crease 45.000000
 numvert 135
 0.00899976 0.387441 -0.408604
@@ -17979,7 +17979,7 @@ kids 0
 OBJECT poly
 name "box"
 loc -0.00286107 -0.211946 -0.0670651
-texture "OHpanel_base.png"
+texture "OHpanel_base.webp"
 crease 45.000000
 numvert 169
 0.00899976 0.387441 -0.17222
@@ -18669,7 +18669,7 @@ kids 0
 OBJECT poly
 name "box"
 loc 0.000946 -0.286475 -0.066815
-texture "OHpanel_panels.png"
+texture "OHpanel_panels.webp"
 crease 45.000000
 numvert 172
 -0.00757384 -0.110127 -0.416976
@@ -19661,7 +19661,7 @@ name "unanimate"
 loc 0.0216728 -0.694936 -0.132199
 data 8
 Mesh.512
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 45.000000
 numvert 50
 -0.0139625 -0.00273177 0.0151907
@@ -20041,7 +20041,7 @@ name "knob"
 loc -0.00647585 -0.0928442 0.21425
 data 12
 Cylinder.013
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 40.000000
 numvert 24
 0.0306517 -0.476148 -0.654789
@@ -20194,7 +20194,7 @@ name "knob"
 loc -0.00166579 -0.263205 0.0883743
 data 12
 Cylinder.013
-texture "OHpanel_extra.png"
+texture "OHpanel_extra.webp"
 crease 40.000000
 numvert 24
 0.00438554 -0.34923 -0.404854

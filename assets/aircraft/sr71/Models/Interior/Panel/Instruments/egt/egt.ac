@@ -8,7 +8,7 @@ name "face"
 loc 0 0 -0
 data 4
 face
-texture "egt.png"
+texture "egt.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 33
@@ -244,7 +244,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "egt.png"
+texture "egt.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 196
@@ -1607,7 +1607,7 @@ name "number1"
 loc -0.005125 0.013912 -0.014235
 data 7
 number1
-texture "egt.png"
+texture "egt.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10
@@ -1656,7 +1656,7 @@ name "number10"
 loc -0.005125 0.013912 -0.004364
 data 8
 number10
-texture "egt.png"
+texture "egt.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10
@@ -1705,7 +1705,7 @@ name "number100"
 loc -0.005125 0.013912 0.005513
 data 9
 number100
-texture "egt.png"
+texture "egt.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10
@@ -1754,7 +1754,7 @@ name "number1000"
 loc -0.005125 0.013912 0.015387
 data 10
 number1000
-texture "egt.png"
+texture "egt.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10

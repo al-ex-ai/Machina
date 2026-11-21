@@ -9,7 +9,7 @@ OBJECT poly
 name "DME"
 data 8
 Mesh.269
-texture "dme40.png"
+texture "dme40.webp"
 texrep 1 1
 crease 30.000000
 numvert 84
@@ -681,7 +681,7 @@ OBJECT poly
 name "DME.invalid"
 data 8
 Mesh.013
-texture "dme40.png"
+texture "dme40.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -713,7 +713,7 @@ OBJECT poly
 name "DME40.dim"
 data 12
 Cylinder.008
-texture "dme40.png"
+texture "dme40.webp"
 texrep 1 1
 crease 60.000000
 numvert 33
@@ -964,7 +964,7 @@ OBJECT poly
 name "DME40.knob1"
 data 12
 Cylinder.006
-texture "dme40.png"
+texture "dme40.webp"
 texrep 1 1
 crease 60.000000
 numvert 51
@@ -1357,7 +1357,7 @@ OBJECT poly
 name "DME40.knob2"
 data 12
 Cylinder.011
-texture "dme40.png"
+texture "dme40.webp"
 texrep 1 1
 crease 60.000000
 numvert 51
@@ -1750,7 +1750,7 @@ OBJECT poly
 name "DME40.test"
 data 12
 Cylinder.009
-texture "dme40.png"
+texture "dme40.webp"
 texrep 1 1
 crease 60.000000
 numvert 81
@@ -2385,7 +2385,7 @@ OBJECT poly
 name "NM.1"
 data 9
 Plane.173
-texture "dme40.png"
+texture "dme40.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -2406,7 +2406,7 @@ OBJECT poly
 name "NM1"
 data 9
 Plane.174
-texture "dme40.png"
+texture "dme40.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -2427,7 +2427,7 @@ OBJECT poly
 name "NM10"
 data 9
 Plane.175
-texture "dme40.png"
+texture "dme40.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -2448,7 +2448,7 @@ OBJECT poly
 name "NM100"
 data 9
 Plane.176
-texture "dme40.png"
+texture "dme40.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -2469,7 +2469,7 @@ OBJECT poly
 name "kt1"
 data 9
 Plane.179
-texture "dme40.png"
+texture "dme40.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -2490,7 +2490,7 @@ OBJECT poly
 name "kt10"
 data 9
 Plane.178
-texture "dme40.png"
+texture "dme40.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -2511,7 +2511,7 @@ OBJECT poly
 name "kt100"
 data 9
 Plane.177
-texture "dme40.png"
+texture "dme40.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -2532,7 +2532,7 @@ OBJECT poly
 name "min1"
 data 9
 Plane.172
-texture "dme40.png"
+texture "dme40.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -2553,7 +2553,7 @@ OBJECT poly
 name "min10"
 data 9
 Plane.170
-texture "dme40.png"
+texture "dme40.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -2574,7 +2574,7 @@ OBJECT poly
 name "min100"
 data 9
 Plane.171
-texture "dme40.png"
+texture "dme40.webp"
 texrep 1 1
 crease 30.000000
 numvert 4

@@ -7,7 +7,7 @@ name "panel"
 loc -0.197 0.291 0.396
 data 5
 panel
-texture "panel.png"
+texture "panel.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 2802

@@ -8,7 +8,7 @@ name "face"
 loc -0.049596 0 -0.000475
 data 4
 face
-texture "alt.png"
+texture "alt.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 33
@@ -244,7 +244,7 @@ name "fond"
 loc 0.001996 0 -0.000475
 data 4
 fond
-texture "alt.png"
+texture "alt.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 96
@@ -855,7 +855,7 @@ name "needle100"
 loc -0.000258 0 -0
 data 9
 needle100
-texture "alt.png"
+texture "alt.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 84
@@ -1478,7 +1478,7 @@ name "needle1000"
 loc 0.000142 0 -0
 data 10
 needle1000
-texture "alt.png"
+texture "alt.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 84
@@ -2101,7 +2101,7 @@ name "needle10000"
 loc 0.000519 0 -0
 data 11
 needle10000
-texture "alt.png"
+texture "alt.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 84

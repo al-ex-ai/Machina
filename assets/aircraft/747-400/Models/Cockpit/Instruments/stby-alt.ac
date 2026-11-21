@@ -7,7 +7,7 @@ OBJECT poly
 name "Face"
 data 4
 Mesh
-texture "stby-alt.png"
+texture "stby-alt.webp"
 texrep 1 1
 crease 30.000000
 numvert 17
@@ -130,7 +130,7 @@ OBJECT poly
 name "Needle1"
 data 8
 Mesh.001
-texture "stby-alt.png"
+texture "stby-alt.webp"
 texrep 1 1
 crease 30.000000
 numvert 8

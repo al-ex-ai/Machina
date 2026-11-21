@@ -8,7 +8,7 @@ name "ADF1Rx"
 loc 0.006347 -0.016156 0.134557
 data 6
 ADF1Rx
-texture "audio.png"
+texture "audio.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 201
@@ -1542,7 +1542,7 @@ name "ADF2Rx"
 loc 0.006347 -0.016156 0.114449
 data 6
 ADF2Rx
-texture "audio.png"
+texture "audio.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 201
@@ -3076,7 +3076,7 @@ name "NAV1Rx"
 loc 0.006347 -0.016156 0.093627
 data 6
 NAV1Rx
-texture "audio.png"
+texture "audio.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 201
@@ -4610,7 +4610,7 @@ name "NAV2Rx"
 loc 0.006347 -0.016156 0.073048
 data 6
 NAV2Rx
-texture "audio.png"
+texture "audio.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 201
@@ -6144,7 +6144,7 @@ name "Plate"
 loc 0.019343 0.003954 -0
 data 5
 Plate
-texture "audio.png"
+texture "audio.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8
@@ -6234,7 +6234,7 @@ name "SwitchPlate"
 loc 0.007983 0.022307 0.308737
 data 11
 SwitchPlate
-texture "audio.png"
+texture "audio.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 64
@@ -6603,7 +6603,7 @@ name "Undefined1"
 loc -0.022996 -0.009456 -0.024657
 data 10
 Undefined1
-texture "audio.png"
+texture "audio.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8
@@ -6657,7 +6657,7 @@ name "Undefined11"
 loc -0.022996 -0.009456 -0.004933
 data 11
 Undefined11
-texture "audio.png"
+texture "audio.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8
@@ -6711,7 +6711,7 @@ name "Undefined12"
 loc -0.022803 -0.009456 -0.104166
 data 11
 Undefined12
-texture "audio.png"
+texture "audio.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8
@@ -6765,7 +6765,7 @@ name "Undefined13"
 loc -0.022803 -0.009456 -0.083867
 data 11
 Undefined13
-texture "audio.png"
+texture "audio.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8
@@ -6819,7 +6819,7 @@ name "Undefined14"
 loc -0.022802 -0.009456 -0.064086
 data 11
 Undefined14
-texture "audio.png"
+texture "audio.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8
@@ -6873,7 +6873,7 @@ name "Undefined20"
 loc -0.021699 -0.016156 0.093704
 data 11
 Undefined20
-texture "audio.png"
+texture "audio.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 201
@@ -8407,7 +8407,7 @@ name "Undefined21"
 loc -0.021699 -0.016156 0.073125
 data 11
 Undefined21
-texture "audio.png"
+texture "audio.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 201
@@ -9941,7 +9941,7 @@ name "Undefined30"
 loc 0.031119 -0.016156 0.134557
 data 11
 Undefined30
-texture "audio.png"
+texture "audio.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 201
@@ -11475,7 +11475,7 @@ name "Undefined31"
 loc 0.031119 -0.016156 0.114449
 data 11
 Undefined31
-texture "audio.png"
+texture "audio.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 201
@@ -13009,7 +13009,7 @@ name "Undefined32"
 loc 0.05883 -0.009456 -0.075443
 data 11
 Undefined32
-texture "audio.png"
+texture "audio.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8
@@ -13063,7 +13063,7 @@ name "UndefinedSwitch"
 loc 0.007983 0.019891 0.309029
 data 15
 UndefinedSwitch
-texture "audio.png"
+texture "audio.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 65
@@ -13625,7 +13625,7 @@ name "VHF1Rx"
 loc -0.021699 -0.016156 0.153993
 data 6
 VHF1Rx
-texture "audio.png"
+texture "audio.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 201
@@ -15159,7 +15159,7 @@ name "VHF2Rx"
 loc -0.021699 -0.016156 0.134634
 data 6
 VHF2Rx
-texture "audio.png"
+texture "audio.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 201

@@ -7,7 +7,7 @@ kids 1
 OBJECT poly
 name "base_4"
 loc 0.0001046 -0.0038583 0.0006396
-texture "ikone.png"
+texture "ikone.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0436977 0.0853744

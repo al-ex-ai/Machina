@@ -9,7 +9,7 @@ name "LampAmber.004"
 loc 0.048333 -0.028551 0.193453
 data 13
 LampAmber.004
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -645,7 +645,7 @@ name "LampAmberON.004"
 loc 0.048333 -0.028551 0.193453
 data 15
 LampAmberON.004
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -1281,7 +1281,7 @@ name "LampGreen"
 loc 0.045201 -0.056506 0.245906
 data 9
 LampGreen
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -1917,7 +1917,7 @@ name "LampGreen.001"
 loc 0.045201 -0.056506 0.225435
 data 13
 LampGreen.001
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -2553,7 +2553,7 @@ name "LampGreen.002"
 loc 0.045201 -0.056506 0.205114
 data 13
 LampGreen.002
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -3189,7 +3189,7 @@ name "LampGreen.003"
 loc 0.045201 -0.056506 0.184229
 data 13
 LampGreen.003
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -3825,7 +3825,7 @@ name "LampGreenON"
 loc 0.045201 -0.056482 0.245872
 data 11
 LampGreenON
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -4461,7 +4461,7 @@ name "LampGreenON.001"
 loc 0.045201 -0.056482 0.225401
 data 15
 LampGreenON.001
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -5097,7 +5097,7 @@ name "LampGreenON.002"
 loc 0.045201 -0.056482 0.20508
 data 15
 LampGreenON.002
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -5733,7 +5733,7 @@ name "LampGreenON.003"
 loc 0.045201 -0.056482 0.184195
 data 15
 LampGreenON.003
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -6369,7 +6369,7 @@ name "bezel"
 loc 0.000248 0.047192 0.256578
 data 5
 bezel
-texture "wingAntiIce.png"
+texture "wingAntiIce.webp"
 texrep 1 1
 crease 30.000001
 numvert 144
@@ -7028,7 +7028,7 @@ name "bezel.001"
 loc 0.000248 0.047192 0.220641
 data 9
 bezel.001
-texture "wingAntiIce.png"
+texture "wingAntiIce.webp"
 texrep 1 1
 crease 30.000001
 numvert 144
@@ -7687,7 +7687,7 @@ name "face"
 loc -0.000838 0.045967 0.256536
 data 4
 face
-texture "wingAntiIce.png"
+texture "wingAntiIce.webp"
 texrep 1 1
 crease 30.000001
 numvert 16
@@ -7798,7 +7798,7 @@ name "face.001"
 loc -0.000838 0.045967 0.2206
 data 8
 face.001
-texture "wingAntiIce.png"
+texture "wingAntiIce.webp"
 texrep 1 1
 crease 30.000001
 numvert 16
@@ -7909,7 +7909,7 @@ name "needle"
 loc -0.001205 0.045967 0.256616
 data 6
 needle
-texture "wingAntiIce.png"
+texture "wingAntiIce.webp"
 texrep 1 1
 crease 30.000001
 numvert 7
@@ -7953,7 +7953,7 @@ name "needle.001"
 loc -0.001205 0.045887 0.220338
 data 10
 needle.001
-texture "wingAntiIce.png"
+texture "wingAntiIce.webp"
 texrep 1 1
 crease 30.000001
 numvert 7
@@ -7997,7 +7997,7 @@ name "needleB"
 loc -0.001205 0.045967 0.256616
 data 7
 needleB
-texture "wingAntiIce.png"
+texture "wingAntiIce.webp"
 texrep 1 1
 crease 30.000001
 numvert 7
@@ -8041,7 +8041,7 @@ name "needleB.001"
 loc -0.001205 0.045887 0.220338
 data 11
 needleB.001
-texture "wingAntiIce.png"
+texture "wingAntiIce.webp"
 texrep 1 1
 crease 30.000001
 numvert 7
@@ -8125,7 +8125,7 @@ name "sockle"
 loc -0.587678 0.413477 0.411315
 data 6
 sockle
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 30.000001
 numvert 31
@@ -8245,7 +8245,7 @@ name "sockle.001"
 loc -0.587678 0.314259 0.479794
 data 10
 sockle.001
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 30.000001
 numvert 31
@@ -8365,7 +8365,7 @@ name "sockle.002"
 loc -0.587678 0.314259 0.45539
 data 10
 sockle.002
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 30.000001
 numvert 31
@@ -8485,7 +8485,7 @@ name "sockle.003"
 loc -0.587678 0.314259 0.430236
 data 10
 sockle.003
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 30.000001
 numvert 31
@@ -8605,7 +8605,7 @@ name "sockle.004"
 loc -0.587678 0.314259 0.407206
 data 10
 sockle.004
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 30.000001
 numvert 31
@@ -8725,7 +8725,7 @@ name "sockle.006"
 loc -0.588859 0.379892 0.379647
 data 10
 sockle.006
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 30.000001
 numvert 31
@@ -8845,7 +8845,7 @@ name "sup"
 loc -0.000854 0.045967 0.256616
 data 3
 sup
-texture "wingAntiIce.png"
+texture "wingAntiIce.webp"
 texrep 1 1
 crease 30.000001
 numvert 18
@@ -8944,7 +8944,7 @@ name "sup.001"
 loc -0.000854 0.045967 0.220679
 data 7
 sup.001
-texture "wingAntiIce.png"
+texture "wingAntiIce.webp"
 texrep 1 1
 crease 30.000001
 numvert 18
@@ -9043,7 +9043,7 @@ name "switch"
 loc -0.313439 1.008627 0.054291
 data 6
 switch
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 79.999998
 numvert 65
@@ -9551,7 +9551,7 @@ name "switch.001"
 loc -0.313439 0.909409 0.122817
 data 10
 switch.001
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 79.999998
 numvert 65
@@ -10059,7 +10059,7 @@ name "switch.002"
 loc -0.313439 0.909409 0.098462
 data 10
 switch.002
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 79.999998
 numvert 65
@@ -10567,7 +10567,7 @@ name "switch.003"
 loc -0.313439 0.909409 0.073407
 data 10
 switch.003
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 79.999998
 numvert 65
@@ -11075,7 +11075,7 @@ name "switch.004"
 loc -0.313439 0.909409 0.050182
 data 10
 switch.004
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 79.999998
 numvert 65
@@ -11583,7 +11583,7 @@ name "turn"
 loc 0.235857 -1.032799 15.421919
 data 4
 turn
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 45.000001
 numvert 49
@@ -11811,7 +11811,7 @@ name "turn.001"
 loc 0.235857 -0.91601 15.456479
 data 8
 turn.001
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 45.000001
 numvert 49

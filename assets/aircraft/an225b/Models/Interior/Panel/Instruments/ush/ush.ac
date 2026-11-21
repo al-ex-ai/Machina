@@ -8,7 +8,7 @@ kids 8
 OBJECT poly
 name "ak"
 loc 0.0002695 -0.0683774 -0.0175399
-texture "txt.png"
+texture "txt.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0037103 0.0044210
@@ -27,7 +27,7 @@ kids 0
 OBJECT poly
 name "base"
 loc 0.0000644 -0.0057834 0.0003286
-texture "base.png"
+texture "base.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0702001 0.0665231
@@ -46,7 +46,7 @@ kids 0
 OBJECT poly
 name "compass"
 loc 0.0006518 0.0000000 -0.0003399
-texture "compass.png"
+texture "compass.webp"
 texrep 1 1
 numvert 4
 0.0000000 0.0576417 0.0576417
@@ -65,7 +65,7 @@ kids 0
 OBJECT poly
 name "gpk"
 loc 0.0002695 -0.0691427 0.0013862
-texture "txt.png"
+texture "txt.webp"
 texrep 1 1
 numvert 4
 0.0000000 0.0042793 0.0043460
@@ -99,7 +99,7 @@ kids 0
 OBJECT poly
 name "mk"
 loc 0.0002695 -0.0688442 0.0178738
-texture "txt.png"
+texture "txt.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0029912 0.0039716
@@ -118,7 +118,7 @@ kids 0
 OBJECT poly
 name "needle_1"
 loc 0.0009210 0.0129773 0.0002510
-texture "needle_1.png"
+texture "needle_1.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0358090 -0.0183646
@@ -137,7 +137,7 @@ kids 0
 OBJECT poly
 name "needle_2"
 loc 0.0007560 0.0214368 0.0004374
-texture "needle_2.png"
+texture "needle_2.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0270632 0.0051706

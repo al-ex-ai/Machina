@@ -10,7 +10,7 @@ OBJECT poly
 name "digit1"
 data 8
 Mesh.007
-texture "greydigits.png"
+texture "greydigits.webp"
 texrep 1 1
 crease 45.000000
 numvert 4
@@ -31,7 +31,7 @@ OBJECT poly
 name "digit2"
 data 8
 Mesh.008
-texture "greydigits.png"
+texture "greydigits.webp"
 texrep 1 1
 crease 45.000000
 numvert 4
@@ -52,7 +52,7 @@ OBJECT poly
 name "digit3"
 data 8
 Mesh.009
-texture "greydigits.png"
+texture "greydigits.webp"
 texrep 1 1
 crease 45.000000
 numvert 4
@@ -73,7 +73,7 @@ OBJECT poly
 name "digit4"
 data 8
 Mesh.010
-texture "greydigits.png"
+texture "greydigits.webp"
 texrep 1 1
 crease 45.000000
 numvert 4
@@ -97,7 +97,7 @@ OBJECT poly
 name "face_0"
 data 8
 Mesh.003
-texture "fuelgauges.png"
+texture "fuelgauges.webp"
 texrep 1 1
 crease 45.000000
 numvert 33
@@ -344,7 +344,7 @@ OBJECT poly
 name "face_1"
 data 8
 Mesh.004
-texture "greydigits.png"
+texture "greydigits.webp"
 texrep 1 1
 crease 45.000000
 numvert 16
@@ -445,7 +445,7 @@ OBJECT poly
 name "disk"
 data 8
 Mesh.002
-texture "fuelgauges.png"
+texture "fuelgauges.webp"
 texrep 1 1
 crease 45.000000
 numvert 36
@@ -766,7 +766,7 @@ OBJECT poly
 name "body"
 data 4
 Mesh
-texture "fuelgauges.png"
+texture "fuelgauges.webp"
 texrep 1 1
 crease 45.000000
 numvert 147

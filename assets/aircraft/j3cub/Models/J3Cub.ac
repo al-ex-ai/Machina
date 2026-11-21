@@ -21,7 +21,7 @@ name "aerotowhitch"
 data 8
 Cube.002
 crease 40.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 180
 4.86718 -0.51497 0.00968
@@ -1080,7 +1080,7 @@ name "aerotowhitchrelease"
 data 8
 Cube.019
 crease 40.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 44
 5.09514 -0.50978 -0.00339
@@ -1428,7 +1428,7 @@ name "aileron_cable_centre"
 data 20
 aileron_cable_centre
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 16
 0.25455 0.03445 -0.32167
@@ -1510,7 +1510,7 @@ name "aileron_cable_l"
 data 15
 aileron_cable_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 1.2216 -0.01833 3.43679
@@ -1556,7 +1556,7 @@ name "aileron_cable_r"
 data 15
 aileron_cable_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 1.2216 -0.02556 -3.31803
@@ -1602,7 +1602,7 @@ name "aileron_cable_top_l"
 data 19
 aileron_cable_top_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 1.2755 0.10424 3.42115
@@ -1648,7 +1648,7 @@ name "aileron_cable_top_r"
 data 19
 aileron_cable_top_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 1.2755 0.11313 -3.34718
@@ -1694,7 +1694,7 @@ name "aileron_hinge_1_l"
 data 17
 aileron_hinge_1_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 1.25984 0.0423 4.45778
@@ -1754,7 +1754,7 @@ name "aileron_hinge_1_r"
 data 17
 aileron_hinge_1_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 1.25984 0.04794 -4.45298
@@ -1814,7 +1814,7 @@ name "aileron_hinge_2_l"
 data 17
 aileron_hinge_2_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 1.25984 0.02492 3.40976
@@ -1874,7 +1874,7 @@ name "aileron_hinge_2_r"
 data 17
 aileron_hinge_2_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 1.25984 0.03066 -3.35558
@@ -1934,7 +1934,7 @@ name "aileron_hinge_3_l"
 data 17
 aileron_hinge_3_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 1.25984 0.01196 2.3353
@@ -1994,7 +1994,7 @@ name "aileron_hinge_3_r"
 data 17
 aileron_hinge_3_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 1.25984 0.01298 -2.33891
@@ -2054,7 +2054,7 @@ name "aileron_l"
 data 9
 aileron_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 51
 1.18869 0.04518 4.49602
@@ -2587,7 +2587,7 @@ name "aileron_r"
 data 9
 aileron_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 51
 1.192 0.05095 -4.48826
@@ -3120,7 +3120,7 @@ name "air_scoop_l"
 data 11
 air_scoop_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 52
 -1.20673 -0.47245 0.36544
@@ -3638,7 +3638,7 @@ name "air_scoop_r"
 data 11
 air_scoop_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 52
 -0.94139 -0.44115 -0.37107
@@ -4156,7 +4156,7 @@ name "antenna_elt"
 data 12
 Cylinder.022
 crease 110.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 282
 0.37782 0.20187 0.38463
@@ -6174,7 +6174,7 @@ name "axle_l"
 data 6
 axle_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.04736 -1.6259 0.72804
@@ -6234,7 +6234,7 @@ name "axle_r"
 data 6
 axle_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.04736 -1.62566 -0.84399
@@ -6294,7 +6294,7 @@ name "brake_cable_l"
 data 17
 brake_cable_l.001
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 72
 0.0443 -1.33265 0.49517
@@ -6838,7 +6838,7 @@ name "brake_cable_r"
 data 13
 brake_cable_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 66
 0.044 -1.31919 -0.49215
@@ -7334,7 +7334,7 @@ name "brake_front_r"
 data 16
 pedal_rest_l.001
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 16
 -0.52912 -1.01545 -0.20583
@@ -7423,7 +7423,7 @@ name "brake_front_l"
 data 12
 pedal_rest_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 16
 -0.52921 -1.01545 0.21763
@@ -7512,7 +7512,7 @@ name "brake_rear_l"
 data 16
 pedal_rest_l.003
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 16
 0.29591 -1.09567 0.27036
@@ -7601,7 +7601,7 @@ name "brake_rear_r"
 data 16
 pedal_rest_l.002
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 16
 0.296 -1.09567 -0.26577
@@ -7690,7 +7690,7 @@ name "bulkhead_strut_l"
 data 16
 bulkhead_strut_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 24
 -0.64876 -0.54305 0.28662
@@ -7808,7 +7808,7 @@ name "bulkhead_strut_r"
 data 16
 bulkhead_strut_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 24
 -0.64816 -0.546 -0.27909
@@ -7926,7 +7926,7 @@ name "bulkhead_top"
 data 12
 bulkhead_top
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 12
 -0.65253 -0.50173 -0.00033
@@ -8008,7 +8008,7 @@ name "cabin_cable_l"
 data 13
 cabin_cable_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.29614 -1.09826 0.33278
@@ -8068,7 +8068,7 @@ name "cabin_cable_r"
 data 13
 cabin_cable_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.29649 -1.09685 -0.32406
@@ -8128,7 +8128,7 @@ name "cabin_heat"
 data 10
 cabin_heat
 crease 30.0
-texture "placards.png"
+texture "placards.webp"
 texrep 1 1
 numvert 138
 -0.27535 -0.43081 0.25544
@@ -9172,7 +9172,7 @@ name "cabin_heat_base"
 data 14
 cabin_heat.002
 crease 30.0
-texture "placards.png"
+texture "placards.webp"
 texrep 1 1
 numvert 72
 -0.1698 -0.43577 0.25339
@@ -9590,7 +9590,7 @@ name "cabin_rudder_cable_l"
 data 20
 cabin_rudder_cable_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 20
 -0.56551 -0.92673 0.29626
@@ -9704,7 +9704,7 @@ name "cabin_rudder_cable_r"
 data 20
 cabin_rudder_cable_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 20
 -0.56686 -0.92673 -0.2889
@@ -9818,7 +9818,7 @@ name "cable_guide_1_l"
 data 15
 cable_guide_1_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.59108 -0.9081 0.99366
@@ -9871,7 +9871,7 @@ name "cable_guide_1_r"
 data 15
 cable_guide_1_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.57074 -0.88727 -1.05084
@@ -9924,7 +9924,7 @@ name "cable_guide_2_l"
 data 15
 cable_guide_2_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.49779 -0.59156 1.80247
@@ -9977,7 +9977,7 @@ name "cable_guide_2_r"
 data 15
 cable_guide_2_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.49907 -0.59515 -1.77995
@@ -10030,7 +10030,7 @@ name "cable_guide_3_l"
 data 15
 cable_guide_3_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.4128 -0.28254 2.58323
@@ -10083,7 +10083,7 @@ name "cable_guide_3_r"
 data 15
 cable_guide_3_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.41391 -0.28607 -2.56364
@@ -10136,7 +10136,7 @@ name "cable_guide_4_r"
 data 15
 cable_guide_4_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.29676 0.03528 -3.22262
@@ -10196,7 +10196,7 @@ name "cable_l"
 data 7
 cable_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.65019 -1.15158 0.35025
@@ -10242,7 +10242,7 @@ name "cable_r"
 data 7
 cable_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.62998 -1.15598 -0.36716
@@ -10288,7 +10288,7 @@ name "cable_wheel_l"
 data 13
 cable_wheel_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.28842 0.02754 3.31283
@@ -10348,7 +10348,7 @@ name "cowl_top"
 data 8
 cowl_top
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 38
 -0.65634 -0.3253 -0.00274
@@ -10522,7 +10522,7 @@ name "cowl_under"
 data 10
 cowl_under
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 30
 -1.12754 -0.9722 -0.05385
@@ -10660,7 +10660,7 @@ name "door"
 data 4
 door
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 12
 0.30849 -0.82266 -0.35782
@@ -10743,7 +10743,7 @@ name "door_handle"
 data 11
 door_handle
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 132
 0.42304 -0.52071 -0.32689
@@ -11725,7 +11725,7 @@ name "door_interior"
 data 8
 door.001
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 6
 0.18074 -0.49023 -0.34524
@@ -11760,7 +11760,7 @@ name "elevator"
 data 8
 elevator
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 38
 4.84253 -0.19837 -1.46169
@@ -12186,7 +12186,7 @@ name "elevator_hinge_1_l"
 data 18
 elevator_hinge_1_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 4.8471 -0.20452 0.29524
@@ -12232,7 +12232,7 @@ name "elevator_hinge_1_r"
 data 18
 elevator_hinge_1_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 4.8471 -0.20452 -0.31716
@@ -12278,7 +12278,7 @@ name "elevator_hinge_2_l"
 data 18
 elevator_hinge_2_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 4.8471 -0.20452 0.73451
@@ -12324,7 +12324,7 @@ name "elevator_hinge_2_r"
 data 18
 elevator_hinge_2_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 4.8471 -0.20452 -0.76522
@@ -12370,7 +12370,7 @@ name "elevator_hinge_3_l"
 data 18
 elevator_hinge_3_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 4.8471 -0.20452 1.19449
@@ -12416,7 +12416,7 @@ name "elevator_hinge_3_r"
 data 18
 elevator_hinge_3_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 4.84709 -0.20452 -1.19258
@@ -12462,7 +12462,7 @@ name "engine_front_l"
 data 14
 engine_front_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 35
 -1.14233 -0.64247 0.18356
@@ -12715,7 +12715,7 @@ name "engine_front_r"
 data 14
 engine_front_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 35
 -1.10363 -0.63223 -0.18073
@@ -12968,7 +12968,7 @@ name "engine_head_1_l"
 data 15
 engine_head_1_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 20
 -1.10605 -0.59328 0.36603
@@ -13113,7 +13113,7 @@ name "engine_head_1_r"
 data 15
 engine_head_1_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 20
 -1.06736 -0.58304 -0.3632
@@ -13258,7 +13258,7 @@ name "engine_head_2_l"
 data 15
 engine_head_2_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 20
 -0.97264 -0.59328 0.36603
@@ -13403,7 +13403,7 @@ name "engine_head_2_r"
 data 15
 engine_head_2_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 20
 -0.93395 -0.58304 -0.3632
@@ -13548,7 +13548,7 @@ name "engine_l"
 data 8
 engine_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 18
 -1.14536 -0.64197 0.20502
@@ -13937,7 +13937,7 @@ name "engine_r"
 data 8
 engine_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 18
 -0.90068 -0.63174 -0.18219
@@ -14052,7 +14052,7 @@ name "engine_supp_1_r"
 data 15
 engine_supp_1_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 -1.14932 -0.70471 -0.24812
@@ -14112,7 +14112,7 @@ name "engine_supp_2_r"
 data 15
 engine_supp_2_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 -1.08544 -0.69579 -0.25994
@@ -14172,7 +14172,7 @@ name "engine_supp_fr_l"
 data 16
 engine_supp_fr_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 -1.18802 -0.71495 0.25094
@@ -14232,7 +14232,7 @@ name "engine_supp_rear_l"
 data 18
 engine_supp_rear_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 -1.12413 -0.70603 0.26276
@@ -14292,7 +14292,7 @@ name "ex_pipe_1_l"
 data 11
 ex_pipe_1_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 171
 -1.15465 -0.62954 0.36194
@@ -15523,7 +15523,7 @@ name "ex_pipe_1_r"
 data 11
 ex_pipe_1_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 171
 -1.11596 -0.61931 -0.35912
@@ -16754,7 +16754,7 @@ name "ex_pipe_2_l"
 data 11
 ex_pipe_2_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 90
 -0.9818 -0.63604 0.36179
@@ -17337,7 +17337,7 @@ name "ex_pipe_2_r"
 data 11
 ex_pipe_2_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 90
 -0.9431 -0.6258 -0.35896
@@ -17920,7 +17920,7 @@ name "ex_pipe_3_l"
 data 11
 ex_pipe_3_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 169
 -0.78115 -0.71831 0.26061
@@ -19153,7 +19153,7 @@ name "ex_pipe_3_r"
 data 11
 ex_pipe_3_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 170
 -0.74246 -0.70807 -0.25777
@@ -20401,7 +20401,7 @@ name "exhaust_inner"
 data 13
 exhaust_inner
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 24
 -0.74951 -1.16722 -0.24347
@@ -20519,7 +20519,7 @@ name "exhaust_outer"
 data 13
 exhaust_outer
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 24
 -0.75006 -1.11513 -0.2383
@@ -20637,7 +20637,7 @@ name "floor_lever_l"
 data 13
 floor_lever_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 -0.52436 -1.01545 0.2984
@@ -20690,7 +20690,7 @@ name "floor_lever_r"
 data 13
 floor_lever_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 -0.52436 -1.01545 -0.29667
@@ -20743,7 +20743,7 @@ name "floor_lever_rear_l"
 data 17
 floor_lever_l.003
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.29784 -1.09486 0.33127
@@ -20796,7 +20796,7 @@ name "floor_lever_rear_r"
 data 17
 floor_lever_r.003
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.29784 -1.09486 -0.32564
@@ -20849,7 +20849,7 @@ name "fuel_gauge"
 data 10
 fuel_gauge
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 16
 -0.58343 -0.29044 -0.00206
@@ -20959,7 +20959,7 @@ name "fuel_gauge_cap"
 data 14
 fuel_gauge_cap
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 33
 -0.56872 -0.32336 -0.02897
@@ -21210,7 +21210,7 @@ name "fuel_pipe"
 data 9
 fuel_pipe
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 80
 -0.64324 -0.88137 0.1555
@@ -21804,7 +21804,7 @@ name "fuel_tank"
 data 9
 fuel_tank
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 35
 -0.64196 -0.67311 -0.19961
@@ -22057,7 +22057,7 @@ name "FuelCutoff"
 data 10
 FuelCutoff
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 194
 0.27533 -0.60738 0.34547
@@ -23765,7 +23765,7 @@ name "FuelCutoffBase"
 data 10
 Cylinder_0
 crease 30.0
-texture "placards.png"
+texture "placards.webp"
 texrep 1 1
 numvert 35
 0.40034 -0.643 0.35048
@@ -24036,7 +24036,7 @@ name "fuselage"
 data 8
 fuselage
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 141
 4.86984 0.5529 -0.02032
@@ -25176,7 +25176,7 @@ name "fuselage_interior"
 data 10
 Cylinder_1
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 100
 1.41913 -0.47729 -0.33595
@@ -25763,7 +25763,7 @@ name "GPSMountBack"
 data 10
 Circle.000
 crease 40.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 704
 0.4962 -0.51862 0.33263
@@ -30789,7 +30789,7 @@ name "GPSMountFront"
 data 10
 Circle.001
 crease 40.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 704
 -0.06818 -0.31416 -0.34763
@@ -35815,7 +35815,7 @@ name "handle_l"
 data 8
 handle_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 24
 3.62455 -0.70354 0.22008
@@ -35975,7 +35975,7 @@ name "handle_r"
 data 8
 handle_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 24
 3.82445 -0.67154 -0.19421
@@ -36135,7 +36135,7 @@ name "nose"
 data 4
 nose
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 163
 -1.12689 -0.34774 0.04649
@@ -38084,7 +38084,7 @@ name "nose_strut_l"
 data 12
 nose_strut_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 24
 -0.63283 -1.04101 -0.00055
@@ -38202,7 +38202,7 @@ name "nose_strut_r"
 data 12
 nose_strut_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 24
 -0.63416 -1.04471 -0.00756
@@ -38323,7 +38323,7 @@ name "nose_top_1"
 data 10
 nose_top_1
 crease 70.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 119
 -0.44405 -0.3193 0.16892
@@ -39209,7 +39209,7 @@ name "nose_under"
 data 10
 nose_under
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 24
 -0.65456 -0.49968 -0.31987
@@ -39376,7 +39376,7 @@ name "oil_overflow"
 data 12
 oil_overflow
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 16
 -1.13011 -0.94533 0.0168
@@ -39458,7 +39458,7 @@ name "oil_rad"
 data 7
 oil_rad
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 -1.16387 -0.9763 -0.06699
@@ -39511,7 +39511,7 @@ name "overflowpipe"
 data 12
 overflowpipe
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 -0.6083 -1.15461 0.0013
@@ -39571,7 +39571,7 @@ name "panel"
 data 5
 panel
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 76
 -0.56801 -0.56579 0.31323
@@ -40096,7 +40096,7 @@ name "panel_j3cub_fg1000"
 data 9
 panel.000
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 234
 -0.56801 -0.56579 0.31323
@@ -40669,7 +40669,7 @@ name "pitot"
 data 5
 pitot
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.35933 -0.25225 2.07025
@@ -40722,7 +40722,7 @@ name "placard"
 data 7
 placard
 crease 30.0
-texture "placards.png"
+texture "placards.webp"
 texrep 1 1
 numvert 86
 -0.18917 -0.37059 0.0185
@@ -41616,7 +41616,7 @@ name "primer"
 data 6
 primer
 crease 30.0
-texture "placards.png"
+texture "placards.webp"
 texrep 1 1
 numvert 186
 -0.27998 -0.51729 -0.29419
@@ -43044,7 +43044,7 @@ name "propeller_0"
 data 11
 propeller_0
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 144
 -1.43893 -0.5444 -0.04473
@@ -44082,7 +44082,7 @@ name "propeller_1"
 data 11
 propeller_1
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 68
 -1.42516 -0.55624 -0.06899
@@ -44602,7 +44602,7 @@ name "propeller_fast"
 data 14
 propeller_fast
 crease 30.0
-texture "propeller.png"
+texture "propeller.webp"
 texrep 1 1
 numvert 33
 -1.36749 0.15447 0.66468
@@ -44837,7 +44837,7 @@ name "propeller_slow"
 data 14
 propeller_slow
 crease 30.0
-texture "propeller_slow.png"
+texture "propeller_slow.webp"
 texrep 1 1
 numvert 15
 -1.39774 -1.28913 0.52224
@@ -44934,7 +44934,7 @@ name "roof_strut_cross"
 data 16
 roof_strut_cross
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 32
 0.42364 0.13401 -0.10112
@@ -45088,7 +45088,7 @@ name "roof_strut_l"
 data 12
 roof_strut_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 24
 0.17274 0.0941 -0.00049
@@ -45206,7 +45206,7 @@ name "roof_strut_long_l"
 data 17
 roof_strut_long_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 1.051 0.09274 0.09627
@@ -45266,7 +45266,7 @@ name "roof_strut_long_r"
 data 17
 roof_strut_long_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 1.05366 0.09274 -0.1044
@@ -45326,7 +45326,7 @@ name "roof_strut_r"
 data 12
 roof_strut_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 24
 0.15691 0.09357 0.01282
@@ -45444,7 +45444,7 @@ name "rudder"
 data 6
 rudder
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 56
 4.88683 -0.49899 0.02763
@@ -45946,7 +45946,7 @@ name "rudder_cable_l"
 data 14
 rudder_cable_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 4.93305 -0.41058 0.05991
@@ -45992,7 +45992,7 @@ name "rudder_cable_r"
 data 14
 rudder_cable_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 4.93225 -0.41068 -0.08088
@@ -46038,7 +46038,7 @@ name "rudder_hinge_1"
 data 14
 rudder_hinge_1
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 4.89528 -0.20589 -0.01053
@@ -46084,7 +46084,7 @@ name "rudder_hinge_2"
 data 14
 rudder_hinge_2
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 4.89528 0.10416 -0.01053
@@ -46130,7 +46130,7 @@ name "rudder_hinge_3"
 data 14
 rudder_hinge_3
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 4.89528 0.4585 -0.01053
@@ -46176,7 +46176,7 @@ name "rudderpedal_l"
 data 13
 rudderpedal_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 16
 -0.60606 -0.92467 0.29823
@@ -46272,7 +46272,7 @@ name "rudderpedal_r"
 data 13
 rudderpedal_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 16
 -0.60606 -0.92467 -0.20267
@@ -46368,7 +46368,7 @@ name "rudderpedal_rear_l"
 data 18
 rudderpedal_rear_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 16
 0.22452 -1.01652 0.30284
@@ -46464,7 +46464,7 @@ name "rudderpedal_rear_r"
 data 18
 rudderpedal_rear_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 16
 0.22452 -1.01652 -0.2194
@@ -46834,7 +46834,7 @@ name "screen_strut_l"
 data 14
 screen_strut_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 48
 -0.19776 -0.49426 0.3393
@@ -47060,7 +47060,7 @@ name "screen_strut_r"
 data 14
 screen_strut_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 48
 0.13489 0.02904 -0.03018
@@ -47286,7 +47286,7 @@ name "seat_front"
 data 10
 seat_front
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 162
 0.51951 -0.51491 -0.12876
@@ -48598,7 +48598,7 @@ name "seat_rear"
 data 9
 seat_rear
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 40
 1.12018 -0.54859 -0.18449
@@ -48934,7 +48934,7 @@ name "solo_placard"
 data 12
 solo_placard
 crease 30.0
-texture "placards.png"
+texture "placards.webp"
 texrep 1 1
 numvert 8
 -0.17034 -0.54775 0.24071
@@ -48994,7 +48994,7 @@ name "spar"
 data 8
 spar.001
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 6
 0.12506 -0.00081 0.28761
@@ -49024,7 +49024,7 @@ name "spar_shadowed"
 data 4
 spar
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.24442 -0.00381 -0.26325
@@ -49070,7 +49070,7 @@ name "step"
 data 4
 step
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 32
 0.61417 -1.20248 -0.35683
@@ -49238,7 +49238,7 @@ name "stick_back"
 data 10
 stick_back
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 160
 0.59173 -0.834 -0.00866
@@ -50185,7 +50185,7 @@ name "stick_front"
 data 11
 stick_front
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 160
 -0.11254 -0.834 -0.00866
@@ -51132,7 +51132,7 @@ name "strut_fix_l"
 data 11
 strut_fix_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.65425 -1.15219 0.35142
@@ -51192,7 +51192,7 @@ name "strut_fix_r"
 data 11
 strut_fix_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.62781 -1.14146 -0.3715
@@ -51252,7 +51252,7 @@ name "strut_fix_rear_1_"
 data 17
 strut_fix_rear_1_
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.96613 0.01264 -3.32961
@@ -51305,7 +51305,7 @@ name "strut_fix_rear_1_l"
 data 18
 strut_fix_rear_1_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.97603 0.01264 3.36657
@@ -51358,7 +51358,7 @@ name "strut_fix_rear_2_"
 data 17
 strut_fix_rear_2_
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.98976 0.01392 -3.32947
@@ -51411,7 +51411,7 @@ name "strut_fix_rear_2_l"
 data 18
 strut_fix_rear_2_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.99966 0.01392 3.36671
@@ -51464,7 +51464,7 @@ name "strut_front_l"
 data 13
 strut_front_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 24
 0.55168 -1.05197 0.68144
@@ -51658,7 +51658,7 @@ name "strut_front_r"
 data 13
 strut_front_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 24
 0.32553 -0.08293 -3.0822
@@ -51852,7 +51852,7 @@ name "strut_rear_l"
 data 12
 strut_rear_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 24
 0.67491 -1.04715 0.68078
@@ -52046,7 +52046,7 @@ name "strut_rear_r"
 data 12
 strut_rear_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 24
 0.96611 -0.08281 -3.06028
@@ -52240,7 +52240,7 @@ name "strut_tie_l"
 data 11
 strut_tie_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 24
 0.79935 -0.46057 2.07804
@@ -52448,7 +52448,7 @@ name "strut_tie_r"
 data 11
 strut_tie_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 24
 0.79615 -0.44353 -2.09183
@@ -52656,7 +52656,7 @@ name "strut_vert_fr_l"
 data 15
 strut_vert_fr_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 24
 0.42842 -0.45435 2.08068
@@ -52864,7 +52864,7 @@ name "strut_vert_fr_r"
 data 15
 strut_vert_fr_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 24
 0.42957 -0.4441 -2.1058
@@ -53072,7 +53072,7 @@ name "strut_vert_rear_l"
 data 17
 strut_vert_rear_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 24
 0.85862 -0.47379 2.08068
@@ -53280,7 +53280,7 @@ name "strut_vert_rear_r"
 data 17
 strut_vert_rear_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 24
 0.85059 -0.45058 -2.10579
@@ -53488,7 +53488,7 @@ name "suspension_coil_l"
 data 17
 suspension_coil_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 82
 0.0446 -1.43612 0.28977
@@ -54140,7 +54140,7 @@ name "suspension_coil_r"
 data 17
 suspension_coil_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 82
 0.0446 -1.41503 -0.28816
@@ -54792,7 +54792,7 @@ name "suspension_link_l"
 data 17
 suspension_link_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.04132 -1.18762 0.29714
@@ -54852,7 +54852,7 @@ name "suspension_link_r"
 data 17
 suspension_link_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.01669 -1.18847 -0.29631
@@ -54912,7 +54912,7 @@ name "suspension_low_2_l"
 data 18
 suspension_low_2_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.03302 -1.3337 0.04624
@@ -54958,7 +54958,7 @@ name "suspension_low_2_r"
 data 18
 suspension_low_2_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.03302 -1.31376 -0.0443
@@ -55004,7 +55004,7 @@ name "suspension_lower_l"
 data 18
 suspension_lower_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.03302 -1.42014 0.25155
@@ -55050,7 +55050,7 @@ name "suspension_lower_r"
 data 18
 suspension_lower_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.03302 -1.39989 -0.24964
@@ -55096,7 +55096,7 @@ name "suspension_tie"
 data 14
 suspension_tie
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.03673 -1.35576 -0.04911
@@ -55156,7 +55156,7 @@ name "suspension_upper_l"
 data 18
 suspension_upper_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.0329 -1.31585 0.05146
@@ -55202,7 +55202,7 @@ name "suspension_upper_r"
 data 18
 suspension_upper_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.03347 -1.29702 -0.03296
@@ -55248,7 +55248,7 @@ name "tail_spring_left"
 data 8
 Cube.042
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 4794
 4.95439 -0.5639 0.07546
@@ -96103,7 +96103,7 @@ name "tail_spring_right"
 data 8
 Cube.014
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 4794
 4.89757 -0.54922 -0.07704
@@ -136958,7 +136958,7 @@ name "tail_struts"
 data 11
 tail_struts
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 88
 4.8573 0.33964 0.06818
@@ -137462,7 +137462,7 @@ name "tail_wheel"
 data 10
 tail_wheel
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 290
 5.25699 -0.70038 -0.0219
@@ -139858,7 +139858,7 @@ name "tail_wheel_axle"
 data 20
 tail_wheel_axle_bush
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 64
 5.2318 -0.73864 0.05916
@@ -140516,7 +140516,7 @@ name "tail_wheel_strut"
 data 8
 Cube.061
 crease 40.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 95
 4.83357 -0.53546 0.01481
@@ -141155,7 +141155,7 @@ name "tail_wheel_strut_end"
 data 4
 Cube
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 390
 5.23707 -0.74076 0.0366
@@ -143934,7 +143934,7 @@ name "tail_wheel_strut_top"
 data 8
 Cube.054
 crease 40.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 70
 4.85239 -0.5333 -0.00519
@@ -144461,7 +144461,7 @@ name "tailplane"
 data 9
 tailplane
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 57
 4.2065 -0.24981 0.00005
@@ -145003,7 +145003,7 @@ name "throttle_back"
 data 13
 throttle_back
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 234
 0.76748 -0.45093 0.30215
@@ -146963,7 +146963,7 @@ name "throttle_base_fr"
 data 16
 throttle_base_fr
 crease 30.0
-texture "placards.png"
+texture "placards.webp"
 texrep 1 1
 numvert 14
 0.11321 -0.48818 0.32547
@@ -147101,7 +147101,7 @@ name "throttle_base_rear"
 data 18
 throttle_base_rear
 crease 30.0
-texture "placards.png"
+texture "placards.webp"
 texrep 1 1
 numvert 14
 0.77214 -0.48818 0.32547
@@ -147239,7 +147239,7 @@ name "throttle_front"
 data 14
 throttle_front
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 234
 0.10854 -0.45093 0.30215
@@ -149199,7 +149199,7 @@ name "tie_down_l"
 data 10
 tie_down_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 24
 0.22965 -0.00879 3.43978
@@ -149331,7 +149331,7 @@ name "tie_down_r"
 data 10
 tie_down_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 24
 0.23859 0.00131 -3.36252
@@ -149637,7 +149637,7 @@ name "trim_base"
 data 8
 Cube.001
 crease 30.0
-texture "placards.png"
+texture "placards.webp"
 texrep 1 1
 numvert 8
 0.45109 -0.84109 0.34339
@@ -149697,7 +149697,7 @@ name "trim_handle"
 data 11
 trim_handle
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 33
 0.39386 -0.84071 0.33584
@@ -149931,7 +149931,7 @@ name "tyre_l"
 data 6
 tyre_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 708
 0.08897 -1.5499 0.84765
@@ -155897,7 +155897,7 @@ name "tyre_r"
 data 6
 tyre_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 708
 -0.02883 -1.5499 -0.84765
@@ -161863,7 +161863,7 @@ name "wheel_strut_l"
 data 13
 wheel_strut_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.01021 -1.18595 0.37383
@@ -161923,7 +161923,7 @@ name "wheel_strut_link_l"
 data 18
 wheel_strut_link_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.54566 -1.20761 0.36406
@@ -161969,7 +161969,7 @@ name "wheel_strut_link_r"
 data 18
 wheel_strut_link_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.58406 -1.13978 -0.3332
@@ -162015,7 +162015,7 @@ name "wheel_strut_r"
 data 13
 wheel_strut_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.01055 -1.20809 -0.34452
@@ -162075,7 +162075,7 @@ name "window_handle"
 data 13
 window_handle
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 132
 0.41913 -0.48436 -0.32554
@@ -163144,7 +163144,7 @@ name "window_l_1"
 data 10
 window_l_1
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 40
 0.25786 -0.48472 0.33596
@@ -163327,7 +163327,7 @@ name "window_l_1_interior"
 data 14
 window_l_1.001
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 20
 0.25786 -0.48472 0.33601
@@ -163479,7 +163479,7 @@ name "window_r_1"
 data 12
 Cylinder.017
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 48
 0.126 -0.03424 -0.36196
@@ -163691,7 +163691,7 @@ name "window_r_1_interior"
 data 12
 Cylinder.005
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 24
 0.126 -0.03424 -0.35026
@@ -163874,7 +163874,7 @@ name "window_rear_l_1_interior"
 data 19
 window_rear_l_1.005
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 kids 0
 OBJECT poly
@@ -163882,7 +163882,7 @@ name "window_rear_l_1"
 data 19
 window_rear_l_1.004
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 53
 1.3849 -0.00644 0.31633
@@ -164451,7 +164451,7 @@ name "window_rear_r_1_interior"
 data 19
 window_rear_r_1.005
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 70
 1.38221 -0.01333 -0.2894
@@ -164762,7 +164762,7 @@ name "window_rear_r_1"
 data 19
 window_rear_r_1.004
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 51
 1.38331 -0.01624 -0.28794
@@ -165061,7 +165061,7 @@ name "window_strut_l"
 data 14
 window_strut_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.16109 0.07227 0.34984
@@ -165100,7 +165100,7 @@ name "window_strut_l_interior"
 data 18
 window_strut_l.001
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 4
 0.16109 0.07259 0.33812
@@ -165121,7 +165121,7 @@ name "window_strut_r"
 data 14
 window_strut_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 4
 0.16304 0.07476 -0.35885
@@ -165142,7 +165142,7 @@ name "window_strut_r_interior"
 data 18
 window_strut_r.001
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 8
 0.16321 0.07457 -0.34512
@@ -165419,7 +165419,7 @@ name "wing_l"
 data 6
 wing_l
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 1251
 1.20107 0.04192 4.78593
@@ -174940,7 +174940,7 @@ name "wing_l_interior"
 data 10
 wing_l.002
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 27
 0.07636 -0.00289 0.28579
@@ -175070,7 +175070,7 @@ name "wing_r"
 data 6
 wing_r
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 1248
 1.69033 -0.02122 -0.26205
@@ -184595,7 +184595,7 @@ name "wing_r_interior"
 data 10
 wing_r.002
 crease 30.0
-texture "texture.png"
+texture "texture.webp"
 texrep 1 1
 numvert 24
 1.69033 -0.02122 -0.26205

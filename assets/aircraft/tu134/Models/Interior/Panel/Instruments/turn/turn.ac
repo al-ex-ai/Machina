@@ -8,7 +8,7 @@ name "ball"
 loc -0.001944 -0.011558 0.000042
 data 4
 ball
-texture "turn.png"
+texture "turn.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 137
@@ -1036,7 +1036,7 @@ name "face"
 loc 0.003319 -0.000978 0.000042
 data 4
 face
-texture "turn.png"
+texture "turn.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 109
@@ -1974,7 +1974,7 @@ name "fond"
 loc 0.002527 0 0.000461
 data 4
 fond
-texture "turn.png"
+texture "turn.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 96
@@ -2585,7 +2585,7 @@ name "needle"
 loc 0.004485 0.017401 0.000042
 data 6
 needle
-texture "turn.png"
+texture "turn.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 12

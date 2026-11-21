@@ -11,7 +11,7 @@ name "+/-"
 data 12
 +/-.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 72
 -0.25985 -0.08491 -0.16363
@@ -456,7 +456,7 @@ name "."
 data 6
 ..mesh
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 72
 -0.25985 -0.08491 -0.13523
@@ -901,7 +901,7 @@ name "/"
 data 10
 /.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.26406 -0.08484 -0.18434
@@ -1202,7 +1202,7 @@ name "0"
 data 10
 0.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 72
 -0.25985 -0.08491 -0.14943
@@ -1647,7 +1647,7 @@ name "1"
 data 10
 1.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 72
 -0.29369 -0.07993 -0.13539
@@ -2092,7 +2092,7 @@ name "2"
 data 10
 2.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 72
 -0.29369 -0.07993 -0.14959
@@ -2537,7 +2537,7 @@ name "3"
 data 10
 3.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 72
 -0.29369 -0.07993 -0.16379
@@ -2982,7 +2982,7 @@ name "4"
 data 10
 4.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 72
 -0.28313 -0.08105 -0.13523
@@ -3427,7 +3427,7 @@ name "5"
 data 10
 5.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 72
 -0.28205 -0.08186 -0.14959
@@ -3872,7 +3872,7 @@ name "6"
 data 10
 6.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 72
 -0.28313 -0.08105 -0.16363
@@ -4317,7 +4317,7 @@ name "7"
 data 10
 7.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 72
 -0.27041 -0.08379 -0.13539
@@ -4762,7 +4762,7 @@ name "8"
 data 10
 8.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 72
 -0.27149 -0.08298 -0.14943
@@ -5207,7 +5207,7 @@ name "9"
 data 10
 9.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 72
 -0.27149 -0.08298 -0.16363
@@ -5652,7 +5652,7 @@ name "a"
 data 10
 a.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.33114 -0.07373 -0.16954
@@ -5953,7 +5953,7 @@ name "airport"
 data 12
 airport.mesh
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.33345 -0.07174 -0.12704
@@ -6273,7 +6273,7 @@ name "atc_comm"
 data 13
 atc_comm.mesh
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.34519 -0.0698 -0.19744
@@ -6593,7 +6593,7 @@ name "b"
 data 10
 b.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.33114 -0.07373 -0.18434
@@ -6894,7 +6894,7 @@ name "BRT"
 data 8
 BRT.mesh
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 36
 -0.35772 -0.06933 -0.23305
@@ -7092,7 +7092,7 @@ name "c"
 data 10
 c.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.33114 -0.07373 -0.19914
@@ -7393,7 +7393,7 @@ name "clr"
 data 12
 clr.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.26406 -0.08484 -0.22874
@@ -7694,7 +7694,7 @@ name "d"
 data 10
 d.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.33114 -0.07373 -0.21394
@@ -7995,7 +7995,7 @@ name "data"
 data 13
 data.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.35693 -0.06785 -0.19744
@@ -8315,7 +8315,7 @@ name "DIM"
 data 8
 DIM.mesh
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 36
 -0.34559 -0.07134 -0.23305
@@ -8513,7 +8513,7 @@ name "dir"
 data 12
 dir.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.35693 -0.06785 -0.12704
@@ -8833,7 +8833,7 @@ name "down"
 data 9
 down.mesh
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.30997 -0.07563 -0.14464
@@ -9134,7 +9134,7 @@ name "e"
 data 10
 e.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.33114 -0.07373 -0.22874
@@ -9435,7 +9435,7 @@ name "f"
 data 10
 f.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.31773 -0.07595 -0.16954
@@ -9736,7 +9736,7 @@ name "f-pln"
 data 14
 f-pln.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.34519 -0.0698 -0.12704
@@ -10056,7 +10056,7 @@ name "f-pln2"
 data 15
 f-pln2.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.34519 -0.0698 -0.17984
@@ -10376,7 +10376,7 @@ name "fuel-pred"
 data 18
 fuel-pred.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.34519 -0.0698 -0.16224
@@ -10696,7 +10696,7 @@ name "g"
 data 10
 g.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.31773 -0.07595 -0.18434
@@ -10997,7 +10997,7 @@ name "h"
 data 10
 h.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.31773 -0.07595 -0.19914
@@ -11298,7 +11298,7 @@ name "i"
 data 10
 i.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.31773 -0.07595 -0.21394
@@ -11599,7 +11599,7 @@ name "init"
 data 13
 init.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.35693 -0.06785 -0.17984
@@ -11919,7 +11919,7 @@ name "j"
 data 10
 j.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.31773 -0.07595 -0.22874
@@ -12220,7 +12220,7 @@ name "k"
 data 10
 k.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.30431 -0.07818 -0.16954
@@ -12542,7 +12542,7 @@ name "l"
 data 10
 l.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.30431 -0.07818 -0.18434
@@ -12843,7 +12843,7 @@ name "L1"
 data 7
 L1.mesh
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.44058 -0.05562 -0.12288
@@ -13144,7 +13144,7 @@ name "L2"
 data 7
 L2.mesh
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.42805 -0.05769 -0.12288
@@ -13445,7 +13445,7 @@ name "L3"
 data 7
 L3.mesh
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.41552 -0.05976 -0.12288
@@ -13746,7 +13746,7 @@ name "L4"
 data 7
 L4.mesh
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.403 -0.06184 -0.12288
@@ -14047,7 +14047,7 @@ name "L5"
 data 7
 L5.mesh
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.39047 -0.06391 -0.12288
@@ -14348,7 +14348,7 @@ name "L6"
 data 7
 L6.mesh
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.37794 -0.06599 -0.12288
@@ -14649,7 +14649,7 @@ name "left"
 data 9
 left.mesh
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.32171 -0.07368 -0.12704
@@ -14969,7 +14969,7 @@ name "m"
 data 10
 m.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.30431 -0.07818 -0.19914
@@ -15270,7 +15270,7 @@ name "mcdu"
 data 13
 mcdu.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.34519 -0.0698 -0.21504
@@ -15611,7 +15611,7 @@ name "mcdu_body"
 data 14
 mcdu_body.mesh
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 2621
 -0.45367 -0.06537 -0.11742
@@ -34336,7 +34336,7 @@ name "mcdu_glare"
 data 15
 mcdu_glare.mesh
 crease 40.0
-texture "MCDU-glare.png"
+texture "MCDU-glare.webp"
 texrep 1 1
 numvert 46
 -0.47077 -0.04893 -0.11
@@ -34537,7 +34537,7 @@ name "n"
 data 10
 n.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.30431 -0.07818 -0.21394
@@ -34838,7 +34838,7 @@ name "o"
 data 10
 o.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.30431 -0.07818 -0.22874
@@ -35139,7 +35139,7 @@ name "opt1"
 data 9
 opt1.mesh
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.35693 -0.06785 -0.21504
@@ -35459,7 +35459,7 @@ name "opt2"
 data 9
 opt2.mesh
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.33345 -0.07174 -0.14464
@@ -35779,7 +35779,7 @@ name "overfly"
 data 16
 overfly.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.26406 -0.08484 -0.21394
@@ -36080,7 +36080,7 @@ name "p"
 data 6
 p.mesh
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.29089 -0.0804 -0.16954
@@ -36381,7 +36381,7 @@ name "perf"
 data 13
 perf.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.35693 -0.06785 -0.16224
@@ -36701,7 +36701,7 @@ name "prog"
 data 13
 prog.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.35693 -0.06785 -0.14464
@@ -37021,7 +37021,7 @@ name "q"
 data 10
 q.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.29089 -0.0804 -0.18434
@@ -37322,7 +37322,7 @@ name "r"
 data 10
 r.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.29089 -0.0804 -0.19914
@@ -37623,7 +37623,7 @@ name "R1"
 data 7
 R1.mesh
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.44058 -0.05562 -0.25111
@@ -37924,7 +37924,7 @@ name "R2"
 data 7
 R2.mesh
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.42805 -0.05769 -0.25111
@@ -38225,7 +38225,7 @@ name "R3"
 data 7
 R3.mesh
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.41552 -0.05976 -0.25111
@@ -38526,7 +38526,7 @@ name "R4"
 data 7
 R4.mesh
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.403 -0.06184 -0.25111
@@ -38827,7 +38827,7 @@ name "R5"
 data 7
 R5.mesh
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.39047 -0.06391 -0.25111
@@ -39128,7 +39128,7 @@ name "R6"
 data 7
 R6.mesh
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.37794 -0.06599 -0.25111
@@ -39429,7 +39429,7 @@ name "radnav"
 data 11
 radnav.mesh
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.34519 -0.0698 -0.14464
@@ -39749,7 +39749,7 @@ name "right"
 data 10
 right.mesh
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.30997 -0.07563 -0.12704
@@ -40069,7 +40069,7 @@ name "s"
 data 10
 s.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.29089 -0.0804 -0.21394
@@ -40370,7 +40370,7 @@ name "sp"
 data 11
 sp.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.26406 -0.08484 -0.19914
@@ -40671,7 +40671,7 @@ name "t"
 data 10
 t.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.29089 -0.0804 -0.22874
@@ -40972,7 +40972,7 @@ name "u"
 data 10
 u.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.27747 -0.08262 -0.16954
@@ -41273,7 +41273,7 @@ name "up"
 data 7
 up.mesh
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.3217 -0.07369 -0.14464
@@ -41574,7 +41574,7 @@ name "v"
 data 10
 v.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.27747 -0.08262 -0.18434
@@ -41875,7 +41875,7 @@ name "w"
 data 10
 w.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.27747 -0.08262 -0.19914
@@ -42176,7 +42176,7 @@ name "x"
 data 10
 x.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.27747 -0.08262 -0.21394
@@ -42477,7 +42477,7 @@ name "y"
 data 10
 y.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.27747 -0.08262 -0.22874
@@ -42778,7 +42778,7 @@ name "z"
 data 10
 z.mesh.001
 crease 40.0
-texture "MCDU.png"
+texture "MCDU.webp"
 texrep 1 1
 numvert 48
 -0.26406 -0.08484 -0.16954

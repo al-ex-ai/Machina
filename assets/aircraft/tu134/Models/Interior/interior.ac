@@ -8,7 +8,7 @@ name "HDRintvitreporte"
 loc -13.118771 -0.886499 1.428243
 data 16
 HDRintvitreporte
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 32
@@ -161,7 +161,7 @@ name "HDRintvitres"
 loc -6.066996 -0.588076 -0.000001
 data 12
 HDRintvitres
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 1148
@@ -5222,7 +5222,7 @@ name "HDRintvitresnoze0"
 loc -18.030935 -1.734566 -0
 data 17
 HDRintvitresnoze0
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 121
@@ -5940,7 +5940,7 @@ name "cloison"
 loc -15.373435 -1.04244 -0.025927
 data 7
 cloison
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 141
@@ -6879,7 +6879,7 @@ name "interieur"
 loc -6.75431 -1.035641 -0
 data 9
 interieur
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 1362
@@ -14464,7 +14464,7 @@ name "intporte"
 loc -13.120936 -1.194893 1.319731
 data 8
 intporte
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 56
@@ -14817,7 +14817,7 @@ name "inttour"
 loc -6.066998 -0.948093 0.00065
 data 7
 inttour
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 2344
@@ -25376,7 +25376,7 @@ name "inttournoze0"
 loc -18.030937 -1.734566 -0
 data 12
 inttournoze0
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 176
@@ -26179,7 +26179,7 @@ name "inttourporte"
 loc -13.120936 -1.195087 1.356462
 data 12
 inttourporte
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 112
@@ -26694,7 +26694,7 @@ name "intvitreporte"
 loc -13.118771 -0.886499 1.428243
 data 13
 intvitreporte
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 32
@@ -26847,7 +26847,7 @@ name "intvitres"
 loc -6.066996 -0.588076 -0.000001
 data 9
 intvitres
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 1148
@@ -31908,7 +31908,7 @@ name "intvitresnoze0"
 loc -18.030935 -1.734566 -0
 data 14
 intvitresnoze0
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 121
@@ -32626,7 +32626,7 @@ name "nezinterieur"
 loc -6.75431 -1.035641 -0
 data 12
 nezinterieur
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 154
@@ -33597,7 +33597,7 @@ name "planchet"
 loc -4.823513 -1.988099 0.000003
 data 8
 planchet
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 27

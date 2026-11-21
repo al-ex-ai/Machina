@@ -7,7 +7,7 @@ name "AvionicsRack"
 loc 21.324635 -0.27426 -0.946946
 data 12
 AvionicsRack
-texture "concorde-flight-deck.png"
+texture "concorde-flight-deck.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 16

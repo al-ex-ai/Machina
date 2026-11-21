@@ -5,7 +5,7 @@ kids 1
 OBJECT poly
 name "cdu2.screen"
 loc -23.2606 1.34282 -0.176392
-texture "mainpanel.png"
+texture "mainpanel.webp"
 crease 45.000000
 numvert 23
 0.339556 0 0.221017

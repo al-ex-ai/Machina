@@ -8,7 +8,7 @@ name "PitchTrimIndex"
 loc -0.528513 0.014032 -0.541041
 data 14
 PitchTrimIndex
-texture "concorde-trim.png"
+texture "concorde-trim.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 82
@@ -823,7 +823,7 @@ name "PitchTrimWheel"
 loc -0.42327 0.000068 0.065933
 data 14
 PitchTrimWheel
-texture "concorde-trim.png"
+texture "concorde-trim.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 538
@@ -5040,7 +5040,7 @@ name "RollTrimWheel"
 loc 0.514083 0.139811 0.60835
 data 13
 RollTrimWheel
-texture "concorde-trim.png"
+texture "concorde-trim.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 203
@@ -6614,7 +6614,7 @@ name "TrimCylinder"
 loc 23.224253 -0.825502 -0.14838
 data 12
 TrimCylinder
-texture "concorde-trim2.png"
+texture "concorde-trim2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 74
@@ -7349,7 +7349,7 @@ name "PitchCylinder"
 loc -0.110211 -0.023404 0.075291
 data 13
 PitchCylinder
-texture "concorde-trim.png"
+texture "concorde-trim.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 66
@@ -8034,7 +8034,7 @@ name "YawTrimWheel"
 loc 0.386819 0.139811 0.60835
 data 12
 YawTrimWheel
-texture "concorde-trim.png"
+texture "concorde-trim.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 203

@@ -615,7 +615,7 @@ kids 0
 OBJECT poly
 name "base"
 loc -8.33464e-06 -0.00826926 -0.000365902
-texture "base.png"
+texture "base.webp"
 crease 100.000000
 numvert 4
 1.86265e-09 -0.0501308 0.0425268
@@ -634,7 +634,7 @@ kids 0
 OBJECT poly
 name "needle"
 loc 0.00167061 0.0129106 0.000111248
-texture "needle.png"
+texture "needle.webp"
 crease 100.000000
 numvert 4
 0 -0.0153191 0.0021551
@@ -653,7 +653,7 @@ kids 0
 OBJECT poly
 name "text"
 loc 0.000284355 7.18217e-05 -0.000485193
-texture "txt.png"
+texture "txt.webp"
 crease 100.000000
 numvert 4
 1.62981e-09 0.0370431 0.0375809
@@ -676,7 +676,7 @@ kids 4
 OBJECT poly
 name "top"
 loc 0.00207284 -0.0167286 -0.00436624
-texture "handle.png"
+texture "handle.webp"
 crease 100.000000
 numvert 17
 0.00366716 0 0
@@ -948,7 +948,7 @@ kids 0
 OBJECT poly
 name "put"
 loc -0.00204602 0.0146819 0.0133644
-texture "handle.png"
+texture "handle.webp"
 crease 100.000000
 numvert 4
 4.65661e-10 -0.0020995 0.00933558
@@ -967,7 +967,7 @@ kids 0
 OBJECT poly
 name "vozd"
 loc -0.00204602 0.0187754 -0.00463194
-texture "handle.png"
+texture "handle.webp"
 crease 100.000000
 numvert 4
 4.65661e-10 -0.00306677 0.00829655

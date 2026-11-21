@@ -24,7 +24,7 @@ name "Cabin"
 data 17
 CABIN_1 - Default
 crease 30.0
-texture "wall.png"
+texture "wall.webp"
 texrep 1 1
 numvert 5898
 8.45216 -0.49202 1.8095
@@ -50168,7 +50168,7 @@ name "Cabin.001"
 data 21
 CABIN_1 - Default.005
 crease 30.0
-texture "wall.png"
+texture "wall.webp"
 texrep 1 1
 numvert 21
 33.6569 1.64091 -0.53936
@@ -50770,7 +50770,7 @@ name "CabinDiv3"
 data 14
 CabinDiv3.mesh
 crease 30.0
-texture "lavatory.png"
+texture "lavatory.webp"
 texrep 1 1
 numvert 48
 31.52613 0.82375 1.56589
@@ -51082,7 +51082,7 @@ name "Floor"
 data 17
 FLOOR_2 - Default
 crease 30.0
-texture "carpet.png"
+texture "carpet.webp"
 texrep 1 1
 numvert 36
 9.5029 -0.49304 -1.77225
@@ -51561,7 +51561,7 @@ name "OverheadBins_1"
 data 8
 Cube.003
 crease 30.0
-texture "bins.png"
+texture "bins.webp"
 texrep 1 1
 numvert 72
 30.62659 1.08407 -1.40148
@@ -51979,7 +51979,7 @@ name "SaetDisplay"
 data 17
 cylinder.mesh.138
 crease 45.0
-texture "neo-cabin-economy.png"
+texture "neo-cabin-economy.webp"
 texrep 1 1
 numvert 3120
 12.45359 0.47284 0.57275
@@ -82469,7 +82469,7 @@ name "SeatDisplayBu"
 data 13
 ifes.mesh.001
 crease 45.0
-texture "neo-cabin-premium.png"
+texture "neo-cabin-premium.webp"
 texrep 1 1
 numvert 336
 8.60593 0.36519 1.0711
@@ -84834,7 +84834,7 @@ name "Logo"
 data 13
 logo.mesh.128
 crease 180.0
-texture "neo-cabin-economy.png"
+texture "neo-cabin-economy.webp"
 texrep 1 1
 numvert 1512
 12.35542 0.52744 0.48196
@@ -90766,7 +90766,7 @@ name "LogoBu"
 data 13
 logo.mesh.002
 crease 180.0
-texture "neo-cabin-premium.png"
+texture "neo-cabin-premium.webp"
 texrep 1 1
 numvert 144
 9.24753 0.53428 0.57582
@@ -91340,7 +91340,7 @@ name "SaetBag"
 data 12
 box.mesh.251
 crease 45.0
-texture "neo-cabin-economy.png"
+texture "neo-cabin-economy.webp"
 texrep 1 1
 numvert 960
 12.37919 0.01712 0.39699
@@ -103358,7 +103358,7 @@ name "Seat1"
 data 13
 seat.mesh.128
 crease 45.0
-texture "neo-cabin-economy.png"
+texture "neo-cabin-economy.webp"
 texrep 1 1
 numvert 9198
 12.26757 -0.14672 0.374
@@ -165486,7 +165486,7 @@ name "Seat1Bu"
 data 13
 seat.mesh.002
 crease 45.0
-texture "neo-cabin-premium.png"
+texture "neo-cabin-premium.webp"
 texrep 1 1
 numvert 876
 9.23332 -0.13734 0.42444
@@ -171412,7 +171412,7 @@ name "Seat2"
 data 13
 poly.mesh.406
 crease 45.0
-texture "neo-cabin-economy.png"
+texture "neo-cabin-economy.webp"
 texrep 1 1
 numvert 12852
 12.35841 0.25582 0.38853
@@ -249290,7 +249290,7 @@ name "Seat2Bu"
 data 18
 seat-back.mesh.002
 crease 45.0
-texture "neo-cabin-premium.png"
+texture "neo-cabin-premium.webp"
 texrep 1 1
 numvert 8604
 9.32516 -0.04197 0.88245
@@ -482010,7 +482010,7 @@ name "SeatHeahRest"
 data 13
 poly.mesh.407
 crease 45.0
-texture "neo-cabin-economy.png"
+texture "neo-cabin-economy.webp"
 texrep 1 1
 numvert 7560
 12.39395 0.69482 0.74562

@@ -16,7 +16,7 @@ name "alt_cylinder"
 data 17
 alt_cylinder.mesh
 crease 40.0
-texture "autopilot-pnl.png"
+texture "autopilot-pnl.webp"
 texrep 1 1
 numvert 34
 -0.00031 0.03123 -0.03288
@@ -383,7 +383,7 @@ name "ALTHLD"
 data 11
 ALTHLD.mesh
 crease 40.0
-texture "autopilot-sw.png"
+texture "autopilot-sw.webp"
 texrep 1 1
 numvert 8
 0.00219 0.00843 -0.0345
@@ -455,7 +455,7 @@ name "apalt1"
 data 11
 apalt1.mesh
 crease 40.0
-texture "numbers.png"
+texture "numbers.webp"
 texrep 1 1
 numvert 4
 -0.00103 0.05515 -0.05139
@@ -476,7 +476,7 @@ name "apalt2"
 data 11
 apalt2.mesh
 crease 40.0
-texture "numbers.png"
+texture "numbers.webp"
 texrep 1 1
 numvert 4
 -0.00103 0.05515 -0.04333
@@ -497,7 +497,7 @@ name "apalt3"
 data 11
 apalt3.mesh
 crease 40.0
-texture "numbers.png"
+texture "numbers.webp"
 texrep 1 1
 numvert 4
 -0.00103 0.05515 -0.03504
@@ -518,7 +518,7 @@ name "apalt4"
 data 11
 apalt4.mesh
 crease 40.0
-texture "numbers.png"
+texture "numbers.webp"
 texrep 1 1
 numvert 4
 -0.00103 0.05515 -0.02653
@@ -539,7 +539,7 @@ name "apalt5"
 data 11
 apalt5.mesh
 crease 40.0
-texture "numbers.png"
+texture "numbers.webp"
 texrep 1 1
 numvert 4
 -0.00103 0.05515 -0.01824
@@ -560,7 +560,7 @@ name "apcrz1"
 data 11
 apcrz1.mesh
 crease 40.0
-texture "numbers.png"
+texture "numbers.webp"
 texrep 1 1
 numvert 4
 -0.00103 0.05514 0.19539
@@ -581,7 +581,7 @@ name "apcrz1b"
 data 12
 apcrz1b.mesh
 crease 40.0
-texture "numbers.png"
+texture "numbers.webp"
 texrep 1 1
 numvert 4
 -0.00103 0.05515 -0.20559
@@ -602,7 +602,7 @@ name "apcrz2"
 data 11
 apcrz2.mesh
 crease 40.0
-texture "numbers.png"
+texture "numbers.webp"
 texrep 1 1
 numvert 4
 -0.00103 0.05514 0.20352
@@ -623,7 +623,7 @@ name "apcrz2b"
 data 12
 apcrz2b.mesh
 crease 40.0
-texture "numbers.png"
+texture "numbers.webp"
 texrep 1 1
 numvert 4
 -0.00103 0.05515 -0.19747
@@ -644,7 +644,7 @@ name "apcrz3"
 data 11
 apcrz3.mesh
 crease 40.0
-texture "numbers.png"
+texture "numbers.webp"
 texrep 1 1
 numvert 4
 -0.00103 0.05514 0.21176
@@ -665,7 +665,7 @@ name "apcrz3b"
 data 12
 apcrz3b.mesh
 crease 40.0
-texture "numbers.png"
+texture "numbers.webp"
 texrep 1 1
 numvert 4
 -0.00103 0.05515 -0.18923
@@ -686,7 +686,7 @@ name "APDisengage"
 data 16
 APDisengage.mesh
 crease 40.0
-texture "autopilot-pnl.png"
+texture "autopilot-pnl.webp"
 texrep 1 1
 numvert 30
 0.01123 0.00746 -0.16293
@@ -887,7 +887,7 @@ name "aphdg1"
 data 11
 aphdg1.mesh
 crease 40.0
-texture "numbers.png"
+texture "numbers.webp"
 texrep 1 1
 numvert 4
 -0.00103 0.05514 0.03078
@@ -908,7 +908,7 @@ name "aphdg2"
 data 11
 aphdg2.mesh
 crease 40.0
-texture "numbers.png"
+texture "numbers.webp"
 texrep 1 1
 numvert 4
 -0.00103 0.05514 0.03918
@@ -929,7 +929,7 @@ name "aphdg3"
 data 11
 aphdg3.mesh
 crease 40.0
-texture "numbers.png"
+texture "numbers.webp"
 texrep 1 1
 numvert 4
 -0.00103 0.05514 0.04758
@@ -950,7 +950,7 @@ name "APP"
 data 8
 APP.mesh
 crease 40.0
-texture "autopilot-sw.png"
+texture "autopilot-sw.webp"
 texrep 1 1
 numvert 8
 0.00219 0.00855 0.00117
@@ -1003,7 +1003,7 @@ name "apspd1"
 data 11
 apspd1.mesh
 crease 40.0
-texture "numbers.png"
+texture "numbers.webp"
 texrep 1 1
 numvert 4
 -0.00103 0.05597 0.09905
@@ -1024,7 +1024,7 @@ name "apspd2"
 data 11
 apspd2.mesh
 crease 40.0
-texture "numbers.png"
+texture "numbers.webp"
 texrep 1 1
 numvert 4
 -0.00103 0.05597 0.10745
@@ -1045,7 +1045,7 @@ name "apspd3"
 data 11
 apspd3.mesh
 crease 40.0
-texture "numbers.png"
+texture "numbers.webp"
 texrep 1 1
 numvert 4
 -0.00103 0.05597 0.11586
@@ -1066,7 +1066,7 @@ name "apvs1"
 data 10
 apvs1.mesh
 crease 40.0
-texture "numbers.png"
+texture "numbers.webp"
 texrep 1 1
 numvert 4
 -0.00103 0.0563 -0.09834
@@ -1087,7 +1087,7 @@ name "apvs1b"
 data 11
 apvs1b.mesh
 crease 40.0
-texture "numbers.png"
+texture "numbers.webp"
 texrep 1 1
 numvert 4
 -0.00103 0.0563 -0.09834
@@ -1108,7 +1108,7 @@ name "apvs2"
 data 10
 apvs2.mesh
 crease 40.0
-texture "numbers.png"
+texture "numbers.webp"
 texrep 1 1
 numvert 4
 -0.00103 0.0563 -0.09006
@@ -1129,7 +1129,7 @@ name "apvs2b"
 data 11
 apvs2b.mesh
 crease 40.0
-texture "numbers.png"
+texture "numbers.webp"
 texrep 1 1
 numvert 4
 -0.00103 0.05616 -0.09005
@@ -1150,7 +1150,7 @@ name "apvs3"
 data 10
 apvs3.mesh
 crease 40.0
-texture "numbers.png"
+texture "numbers.webp"
 texrep 1 1
 numvert 4
 -0.00103 0.05615 -0.08177
@@ -1171,7 +1171,7 @@ name "apvs3b"
 data 11
 apvs3b.mesh
 crease 40.0
-texture "numbers.png"
+texture "numbers.webp"
 texrep 1 1
 numvert 4
 -0.00103 0.0563 -0.0817
@@ -1192,7 +1192,7 @@ name "apvs4"
 data 10
 apvs4.mesh
 crease 40.0
-texture "numbers.png"
+texture "numbers.webp"
 texrep 1 1
 numvert 4
 -0.00103 0.05615 -0.07352
@@ -1213,7 +1213,7 @@ name "apvs4b"
 data 11
 apvs4b.mesh
 crease 40.0
-texture "numbers.png"
+texture "numbers.webp"
 texrep 1 1
 numvert 4
 -0.00103 0.0563 -0.07351
@@ -3098,7 +3098,7 @@ name "Circle.001"
 data 15
 Circle.001.mesh
 crease 40.0
-texture "autopilot-pnl.png"
+texture "autopilot-pnl.webp"
 texrep 1 1
 numvert 40
 0 0.05261 0.10848
@@ -3384,7 +3384,7 @@ name "CMDA"
 data 9
 CMDA.mesh
 crease 40.0
-texture "autopilot-sw.png"
+texture "autopilot-sw.webp"
 texrep 1 1
 numvert 8
 0.00219 0.05526 -0.1307
@@ -3437,7 +3437,7 @@ name "CMDB"
 data 9
 CMDB.mesh
 crease 40.0
-texture "autopilot-sw.png"
+texture "autopilot-sw.webp"
 texrep 1 1
 numvert 8
 0.00219 0.05584 -0.16613
@@ -3662,7 +3662,7 @@ name "crz_cylinder"
 data 17
 crz_cylinder.mesh
 crease 40.0
-texture "autopilot-pnl.png"
+texture "autopilot-pnl.webp"
 texrep 1 1
 numvert 34
 -0.00031 0.03143 0.20865
@@ -4010,7 +4010,7 @@ name "crz_cylinder1"
 data 18
 crz_cylinder1.mesh
 crease 40.0
-texture "autopilot-pnl.png"
+texture "autopilot-pnl.webp"
 texrep 1 1
 numvert 34
 -0.00031 0.03189 -0.21027
@@ -4358,7 +4358,7 @@ name "CWSA"
 data 9
 CWSA.mesh
 crease 40.0
-texture "autopilot-sw.png"
+texture "autopilot-sw.webp"
 texrep 1 1
 numvert 8
 0.00219 0.03481 -0.13081
@@ -4411,7 +4411,7 @@ name "CWSB"
 data 9
 CWSB.mesh
 crease 40.0
-texture "autopilot-sw.png"
+texture "autopilot-sw.webp"
 texrep 1 1
 numvert 8
 0.00219 0.03457 -0.16532
@@ -4464,7 +4464,7 @@ name "cylinder"
 data 13
 cylinder.mesh
 crease 40.0
-texture "autopilot-pnl.png"
+texture "autopilot-pnl.webp"
 texrep 1 1
 numvert 34
 -0.00031 0.02202 0.10789
@@ -4812,7 +4812,7 @@ name "hdg_cylinder"
 data 17
 hdg_cylinder.mesh
 crease 40.0
-texture "autopilot-pnl.png"
+texture "autopilot-pnl.webp"
 texrep 1 1
 numvert 34
 -0.00031 0.03169 0.03883
@@ -5198,7 +5198,7 @@ name "HDGSEL"
 data 11
 HDGSEL.mesh
 crease 40.0
-texture "autopilot-sw.png"
+texture "autopilot-sw.webp"
 texrep 1 1
 numvert 8
 0.00219 0.00843 0.0337
@@ -5527,7 +5527,7 @@ name "LNAV"
 data 9
 LNAV.mesh
 crease 40.0
-texture "autopilot-sw.png"
+texture "autopilot-sw.webp"
 texrep 1 1
 numvert 8
 0.00219 0.05874 0.00117
@@ -5580,7 +5580,7 @@ name "LVLCHG"
 data 11
 LVLCHG.mesh
 crease 40.0
-texture "autopilot-sw.png"
+texture "autopilot-sw.webp"
 texrep 1 1
 numvert 8
 0.00219 0.00843 0.06774
@@ -5633,7 +5633,7 @@ name "mach1"
 data 10
 mach1.mesh
 crease 40.0
-texture "numbers.png"
+texture "numbers.webp"
 texrep 1 1
 numvert 4
 -0.00103 0.05594 0.0994
@@ -5654,7 +5654,7 @@ name "mach2"
 data 10
 mach2.mesh
 crease 40.0
-texture "numbers.png"
+texture "numbers.webp"
 texrep 1 1
 numvert 4
 -0.00103 0.05594 0.10754
@@ -5713,7 +5713,7 @@ name "machp"
 data 10
 machp.mesh
 crease 40.0
-texture "numbers.png"
+texture "numbers.webp"
 texrep 1 1
 numvert 4
 -0.00103 0.05594 0.11586
@@ -5734,7 +5734,7 @@ name "mcppanel"
 data 13
 mcppanel.mesh
 crease 40.0
-texture "autopilot-pnl.png"
+texture "autopilot-pnl.webp"
 texrep 1 1
 numvert 128
 0 0.00649 -0.25039
@@ -6786,7 +6786,7 @@ name "N1"
 data 7
 N1.mesh
 crease 40.0
-texture "autopilot-sw.png"
+texture "autopilot-sw.webp"
 texrep 1 1
 numvert 8
 0.00219 0.00857 0.16506
@@ -6963,7 +6963,7 @@ name "SPEED"
 data 10
 SPEED.mesh
 crease 40.0
-texture "autopilot-sw.png"
+texture "autopilot-sw.webp"
 texrep 1 1
 numvert 8
 0.00219 0.00843 0.1376
@@ -7054,7 +7054,7 @@ name "VNAV"
 data 9
 VNAV.mesh
 crease 40.0
-texture "autopilot-sw.png"
+texture "autopilot-sw.webp"
 texrep 1 1
 numvert 8
 0.00219 0.05839 0.06774
@@ -7107,7 +7107,7 @@ name "VORLOC"
 data 11
 VORLOC.mesh
 crease 40.0
-texture "autopilot-sw.png"
+texture "autopilot-sw.webp"
 texrep 1 1
 numvert 8
 0.00219 0.03376 0.00105
@@ -7160,7 +7160,7 @@ name "VS"
 data 7
 VS.mesh
 crease 40.0
-texture "autopilot-sw.png"
+texture "autopilot-sw.webp"
 texrep 1 1
 numvert 8
 0.00219 0.00832 -0.06389

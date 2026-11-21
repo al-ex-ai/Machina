@@ -7,7 +7,7 @@ kids 2
 OBJECT poly
 name "pedals_l"
 loc 0.0254542 0.1325771 0.1315171
-texture "pedals.png"
+texture "pedals.webp"
 texrep 1 1
 numvert 4
 0.0000185 0.0891761 -0.0590000
@@ -26,7 +26,7 @@ kids 0
 OBJECT poly
 name "pedals_r"
 loc 0.0254542 0.1325771 -0.1204485
-texture "pedals.png"
+texture "pedals.webp"
 texrep 1 1
 numvert 4
 -0.0000185 -0.0894249 -0.0585090

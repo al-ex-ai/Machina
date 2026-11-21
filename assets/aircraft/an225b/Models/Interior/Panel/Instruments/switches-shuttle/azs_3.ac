@@ -1214,7 +1214,7 @@ kids 1
 OBJECT poly
 name "rect"
 loc 6.67897e-05 0.000151808 -1.95764e-06
-texture "sw_base.png"
+texture "sw_base.webp"
 crease 100.000000
 numvert 4
 0 0.00993137 0.0100317

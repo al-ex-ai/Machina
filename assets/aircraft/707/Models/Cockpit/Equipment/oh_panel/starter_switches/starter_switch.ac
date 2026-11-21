@@ -7,7 +7,7 @@ name "LampGreen"
 loc 0.047922 -0.026566 0.030649
 data 9
 LampGreen
-texture "starter.png"
+texture "starter.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -643,7 +643,7 @@ name "LampGreenON"
 loc 0.047922 -0.026566 0.030649
 data 11
 LampGreenON
-texture "starter.png"
+texture "starter.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -1279,7 +1279,7 @@ name "cover"
 loc -0.469303 0.119975 -0.044176
 data 5
 cover
-texture "starter.png"
+texture "starter.webp"
 texrep 1 1
 crease 79.999998
 numvert 50
@@ -1550,7 +1550,7 @@ name "sockle"
 loc -0.587691 0.381781 0.22141
 data 6
 sockle
-texture "starter.png"
+texture "starter.webp"
 texrep 1 1
 crease 30.000001
 numvert 31
@@ -1670,7 +1670,7 @@ name "switch"
 loc -0.261929 0.623651 0.168344
 data 6
 switch
-texture "starter.png"
+texture "starter.webp"
 texrep 1 1
 crease 79.999998
 numvert 65

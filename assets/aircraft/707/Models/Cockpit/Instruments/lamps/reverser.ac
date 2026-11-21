@@ -8,7 +8,7 @@ name "LampAmber"
 loc 0.047735 -0.003718 0.077724
 data 9
 LampAmber
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -644,7 +644,7 @@ name "LampAmber.001"
 loc 0.047859 0.001831 0.063271
 data 13
 LampAmber.001
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -1280,7 +1280,7 @@ name "LampAmber.002"
 loc 0.047859 0.043276 0.022754
 data 13
 LampAmber.002
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -1916,7 +1916,7 @@ name "LampAmber.003"
 loc 0.047859 -0.004068 -0.026441
 data 13
 LampAmber.003
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -2552,7 +2552,7 @@ name "LampAmber.004"
 loc 0.155573 0.070271 -0.039371
 data 13
 LampAmber.004
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -3188,7 +3188,7 @@ name "LampAmber.005"
 loc 0.155573 0.015317 -0.017362
 data 13
 LampAmber.005
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -3824,7 +3824,7 @@ name "LampAmber.006"
 loc 0.155573 0.048934 0.067472
 data 13
 LampAmber.006
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -4460,7 +4460,7 @@ name "LampAmber.007"
 loc 0.155449 0.014805 0.053164
 data 13
 LampAmber.007
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -5096,7 +5096,7 @@ name "LampAmberON"
 loc 0.047735 -0.003718 0.077724
 data 11
 LampAmberON
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -5732,7 +5732,7 @@ name "LampAmberON.001"
 loc 0.047859 0.001963 0.063315
 data 15
 LampAmberON.001
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -6368,7 +6368,7 @@ name "LampAmberON.002"
 loc 0.047859 0.043276 0.022754
 data 15
 LampAmberON.002
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -7004,7 +7004,7 @@ name "LampAmberON.003"
 loc 0.047859 -0.004068 -0.026441
 data 15
 LampAmberON.003
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -7640,7 +7640,7 @@ name "LampAmberON.004"
 loc 0.155573 0.070271 -0.039371
 data 15
 LampAmberON.004
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -8276,7 +8276,7 @@ name "LampAmberON.005"
 loc 0.155573 0.015317 -0.017362
 data 15
 LampAmberON.005
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -8912,7 +8912,7 @@ name "LampAmberON.006"
 loc 0.155573 0.048934 0.067472
 data 15
 LampAmberON.006
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -9548,7 +9548,7 @@ name "LampAmberON.007"
 loc 0.155449 0.014805 0.053164
 data 15
 LampAmberON.007
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -10184,7 +10184,7 @@ name "shadow"
 loc -0.000452 -0.010021 -0.000033
 data 6
 shadow
-texture "shadow_reverser.png"
+texture "shadow_reverser.webp"
 texrep 1 1
 numvert 8
 0.001049 0.014592 -0.063863

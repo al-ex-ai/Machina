@@ -8,7 +8,7 @@ name "ActDigit1"
 loc 0.002603 0.002547 0.00016
 data 9
 ActDigit1
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -30,7 +30,7 @@ name "ActDigit2"
 loc 0.002603 0.002547 -0.006368
 data 9
 ActDigit2
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -52,7 +52,7 @@ name "ActDigit3"
 loc 0.002603 0.002547 -0.012897
 data 9
 ActDigit3
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -74,7 +74,7 @@ name "ActDigit4"
 loc 0.002603 0.002547 -0.019426
 data 9
 ActDigit4
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -96,7 +96,7 @@ name "ActDigit5"
 loc 0.002603 0.002547 -0.025761
 data 9
 ActDigit5
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -118,7 +118,7 @@ name "ActKnob1"
 loc -0.002897 0.003489 -0.011938
 data 8
 ActKnob1
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 crease 30.000001
 numvert 81
@@ -530,7 +530,7 @@ name "ActKnob2"
 loc -0.002897 0.003489 -0.011938
 data 8
 ActKnob2
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 crease 30.000001
 numvert 81
@@ -942,7 +942,7 @@ name "DecimalActive"
 loc 0.002603 0.001966 0.000354
 data 13
 DecimalActive
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -964,7 +964,7 @@ name "DecimalStdby"
 loc 0.002603 0.001966 -0.044683
 data 12
 DecimalStdby
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -986,7 +986,7 @@ name "Panel"
 loc 0.002776 -0.001963 0.144131
 data 5
 Panel
-texture "adf.png"
+texture "adf.webp"
 texrep 1 1
 crease 30.000001
 numvert 212
@@ -2028,7 +2028,7 @@ name "StdbyDigit1"
 loc 0.002603 0.002547 -0.044877
 data 11
 StdbyDigit1
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -2050,7 +2050,7 @@ name "StdbyDigit2"
 loc 0.002603 0.002547 -0.051406
 data 11
 StdbyDigit2
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -2072,7 +2072,7 @@ name "StdbyDigit3"
 loc 0.002603 0.002547 -0.057934
 data 11
 StdbyDigit3
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -2094,7 +2094,7 @@ name "StdbyDigit4"
 loc 0.002603 0.002547 -0.064463
 data 11
 StdbyDigit4
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -2116,7 +2116,7 @@ name "StdbyDigit5"
 loc 0.002603 0.002547 -0.070798
 data 11
 StdbyDigit5
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -2138,7 +2138,7 @@ name "StdbyKnob1"
 loc -0.002897 0.003489 -0.059527
 data 10
 StdbyKnob1
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 crease 30.000001
 numvert 81
@@ -2550,7 +2550,7 @@ name "StdbyKnob2"
 loc -0.002897 0.003489 -0.059527
 data 10
 StdbyKnob2
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 crease 30.000001
 numvert 81
@@ -2962,7 +2962,7 @@ name "TFRbutton"
 loc 0.00214 0.004187 0.00016
 data 9
 TFRbutton
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 crease 30.000001
 numvert 20

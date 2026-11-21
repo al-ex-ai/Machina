@@ -11,7 +11,7 @@ OBJECT poly
 name "anti.ice.1"
 data 21
 Mesh69 switch_023.015
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 97
@@ -774,7 +774,7 @@ OBJECT poly
 name "anti.ice.2"
 data 21
 Mesh69 switch_023.015
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 97
@@ -1537,7 +1537,7 @@ OBJECT poly
 name "anti.ice.3"
 data 21
 Mesh69 switch_023.015
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 97
@@ -2300,7 +2300,7 @@ OBJECT poly
 name "anti.ice.4"
 data 21
 Mesh69 switch_023.015
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 97
@@ -3063,7 +3063,7 @@ OBJECT poly
 name "anti.ice.wing"
 data 21
 Mesh69 switch_023.015
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 97
@@ -3826,7 +3826,7 @@ OBJECT poly
 name "light.beacon"
 data 21
 Mesh69 switch_023.020
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 65
@@ -4333,7 +4333,7 @@ OBJECT poly
 name "light.inbd.l"
 data 21
 Mesh69 switch_023.018
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 243
@@ -6053,7 +6053,7 @@ OBJECT poly
 name "light.inbd.r"
 data 21
 Mesh69 switch_023.018
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 243
@@ -7773,7 +7773,7 @@ OBJECT poly
 name "light.logo"
 data 21
 Mesh69 switch_023.020
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 65
@@ -8280,7 +8280,7 @@ OBJECT poly
 name "light.nav"
 data 21
 Mesh69 switch_023.020
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 65
@@ -8787,7 +8787,7 @@ OBJECT poly
 name "light.outbd.l"
 data 21
 Mesh69 switch_023.018
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 243
@@ -10507,7 +10507,7 @@ OBJECT poly
 name "light.outbd.r"
 data 21
 Mesh69 switch_023.018
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 243
@@ -12227,7 +12227,7 @@ OBJECT poly
 name "light.rwy.l"
 data 21
 Mesh69 switch_023.016
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 65
@@ -12734,7 +12734,7 @@ OBJECT poly
 name "light.rwy.r"
 data 21
 Mesh69 switch_023.016
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 65
@@ -13241,7 +13241,7 @@ OBJECT poly
 name "light.storm"
 data 17
 Mesh69 switch_023
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 97
@@ -13892,7 +13892,7 @@ OBJECT poly
 name "light.strobe"
 data 21
 Mesh69 switch_023.020
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 65
@@ -14399,7 +14399,7 @@ OBJECT poly
 name "light.wing"
 data 21
 Mesh69 switch_023.021
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 97
@@ -15050,7 +15050,7 @@ OBJECT poly
 name "sw.light.nav.005"
 data 21
 Mesh69 switch_023.021
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 97
@@ -15707,7 +15707,7 @@ OBJECT poly
 name "battery.l"
 data 21
 Mesh136 Component.157
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -15934,7 +15934,7 @@ OBJECT poly
 name "battery.cover"
 data 21
 Mesh136 Component.001
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -15994,7 +15994,7 @@ OBJECT poly
 name "battery.cover.007"
 data 21
 Mesh136 Component.001
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -16054,7 +16054,7 @@ OBJECT poly
 name "battery.u"
 data 21
 Mesh136 Component.158
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -16075,7 +16075,7 @@ OBJECT poly
 name "eec.1.cover"
 data 21
 Mesh136 Component.001
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -16135,7 +16135,7 @@ OBJECT poly
 name "eec.2.cover"
 data 21
 Mesh136 Component.001
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -16195,7 +16195,7 @@ OBJECT poly
 name "eec.3.cover"
 data 21
 Mesh136 Component.001
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -16255,7 +16255,7 @@ OBJECT poly
 name "eec.4.cover"
 data 21
 Mesh136 Component.001
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -16315,7 +16315,7 @@ OBJECT poly
 name "elec.drive.1.cover"
 data 21
 Mesh136 Component.001
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -16375,7 +16375,7 @@ OBJECT poly
 name "elec.drive.2.cover"
 data 21
 Mesh136 Component.001
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -16435,7 +16435,7 @@ OBJECT poly
 name "elec.drive.3.cover"
 data 21
 Mesh136 Component.001
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -16495,7 +16495,7 @@ OBJECT poly
 name "elec.drive.4.cover"
 data 21
 Mesh136 Component.001
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -16555,7 +16555,7 @@ OBJECT poly
 name "xfeed.2.cover"
 data 21
 Mesh136 Component.001
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -16615,7 +16615,7 @@ OBJECT poly
 name "xfeed.3.cover"
 data 21
 Mesh136 Component.001
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -16675,7 +16675,7 @@ OBJECT poly
 name "bleed.1.l"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -16902,7 +16902,7 @@ OBJECT poly
 name "bleed.1.u"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -16923,7 +16923,7 @@ OBJECT poly
 name "bleed.2.l"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -17150,7 +17150,7 @@ OBJECT poly
 name "bleed.2.u"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -17171,7 +17171,7 @@ OBJECT poly
 name "bleed.3.l"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -17398,7 +17398,7 @@ OBJECT poly
 name "bleed.3.u"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -17419,7 +17419,7 @@ OBJECT poly
 name "bleed.4.l"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -17646,7 +17646,7 @@ OBJECT poly
 name "bleed.4.u"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -17667,7 +17667,7 @@ OBJECT poly
 name "bleed.apu.l"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -17894,7 +17894,7 @@ OBJECT poly
 name "bleed.apu.u"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -17915,7 +17915,7 @@ OBJECT poly
 name "con.ign.l"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -18142,7 +18142,7 @@ OBJECT poly
 name "con.ign.u"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -18163,7 +18163,7 @@ OBJECT poly
 name "dem.1.press"
 data 21
 Mesh136 Component.002
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -18366,7 +18366,7 @@ OBJECT poly
 name "dem.2.press"
 data 21
 Mesh136 Component.002
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -18569,7 +18569,7 @@ OBJECT poly
 name "dem.3.press"
 data 21
 Mesh136 Component.002
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -18772,7 +18772,7 @@ OBJECT poly
 name "dem.4.press"
 data 21
 Mesh136 Component.002
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -18978,7 +18978,7 @@ OBJECT poly
 name "elec.apugen.1.l"
 data 21
 Mesh136 Component.157
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -19205,7 +19205,7 @@ OBJECT poly
 name "elec.apugen.1.r"
 data 21
 Mesh136 Component.158
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -19229,7 +19229,7 @@ OBJECT poly
 name "elec.apugen.2.l"
 data 21
 Mesh136 Component.157
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -19456,7 +19456,7 @@ OBJECT poly
 name "elec.apugen.2.r"
 data 21
 Mesh136 Component.158
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -19480,7 +19480,7 @@ OBJECT poly
 name "elec.bus.1.l"
 data 21
 Mesh136 Component.157
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -19707,7 +19707,7 @@ OBJECT poly
 name "elec.bus.1.u"
 data 21
 Mesh136 Component.158
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -19731,7 +19731,7 @@ OBJECT poly
 name "elec.bus.2.l"
 data 21
 Mesh136 Component.157
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -19958,7 +19958,7 @@ OBJECT poly
 name "elec.bus.2.u"
 data 21
 Mesh136 Component.158
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -19982,7 +19982,7 @@ OBJECT poly
 name "elec.bus.3.l"
 data 21
 Mesh136 Component.157
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -20209,7 +20209,7 @@ OBJECT poly
 name "elec.bus.3.u"
 data 21
 Mesh136 Component.158
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -20233,7 +20233,7 @@ OBJECT poly
 name "elec.bus.4.l"
 data 21
 Mesh136 Component.157
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -20460,7 +20460,7 @@ OBJECT poly
 name "elec.bus.4.u"
 data 21
 Mesh136 Component.158
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -20484,7 +20484,7 @@ OBJECT poly
 name "elec.drive.1.l"
 data 21
 Mesh136 Component.157
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -20711,7 +20711,7 @@ OBJECT poly
 name "elec.drive.1.u"
 data 21
 Mesh136 Component.158
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -20735,7 +20735,7 @@ OBJECT poly
 name "elec.drive.2.l"
 data 21
 Mesh136 Component.157
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -20962,7 +20962,7 @@ OBJECT poly
 name "elec.drive.2.u"
 data 21
 Mesh136 Component.158
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -20986,7 +20986,7 @@ OBJECT poly
 name "elec.drive.3.l"
 data 21
 Mesh136 Component.157
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -21213,7 +21213,7 @@ OBJECT poly
 name "elec.drive.3.u"
 data 21
 Mesh136 Component.158
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -21237,7 +21237,7 @@ OBJECT poly
 name "elec.drive.4.l"
 data 21
 Mesh136 Component.157
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -21464,7 +21464,7 @@ OBJECT poly
 name "elec.drive.4.u"
 data 21
 Mesh136 Component.158
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -21488,7 +21488,7 @@ OBJECT poly
 name "elec.gen.1.l"
 data 21
 Mesh136 Component.157
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -21715,7 +21715,7 @@ OBJECT poly
 name "elec.gen.1.u"
 data 21
 Mesh136 Component.158
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -21739,7 +21739,7 @@ OBJECT poly
 name "elec.gen.2.l"
 data 21
 Mesh136 Component.157
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -21966,7 +21966,7 @@ OBJECT poly
 name "elec.gen.2.u"
 data 21
 Mesh136 Component.158
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -21990,7 +21990,7 @@ OBJECT poly
 name "elec.gen.3.l"
 data 21
 Mesh136 Component.157
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -22217,7 +22217,7 @@ OBJECT poly
 name "elec.gen.3.u"
 data 21
 Mesh136 Component.158
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -22241,7 +22241,7 @@ OBJECT poly
 name "elec.gen.4.l"
 data 21
 Mesh136 Component.157
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -22468,7 +22468,7 @@ OBJECT poly
 name "elec.gen.4.u"
 data 21
 Mesh136 Component.158
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -22492,7 +22492,7 @@ OBJECT poly
 name "ext.pwr.1.l"
 data 21
 Mesh136 Component.157
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -22719,7 +22719,7 @@ OBJECT poly
 name "ext.pwr.1.r"
 data 21
 Mesh136 Component.158
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -22743,7 +22743,7 @@ OBJECT poly
 name "ext.pwr.2.l"
 data 21
 Mesh136 Component.157
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -22970,7 +22970,7 @@ OBJECT poly
 name "ext.pwr.2.r"
 data 21
 Mesh136 Component.158
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -22991,7 +22991,7 @@ OBJECT poly
 name "fuel_stab.l.l"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -23218,7 +23218,7 @@ OBJECT poly
 name "fuel_stab.l.l.001"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -23445,7 +23445,7 @@ OBJECT poly
 name "fuel_stab.l.u"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -23466,7 +23466,7 @@ OBJECT poly
 name "fuel_stab.l.u.001"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -23487,7 +23487,7 @@ OBJECT poly
 name "fuel_stab.r.l"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -23714,7 +23714,7 @@ OBJECT poly
 name "fuel_stab.r.l.001"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -23941,7 +23941,7 @@ OBJECT poly
 name "fuel_stab.r.u"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -23962,7 +23962,7 @@ OBJECT poly
 name "fuel_stab.r.u.001"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -23983,7 +23983,7 @@ OBJECT poly
 name "gasper.l"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -24210,7 +24210,7 @@ OBJECT poly
 name "gasper.u"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -24231,7 +24231,7 @@ OBJECT poly
 name "humid.l"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -24458,7 +24458,7 @@ OBJECT poly
 name "humid.u"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -24479,7 +24479,7 @@ OBJECT poly
 name "hyd.1.fault"
 data 21
 Mesh136 Component.002
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -24682,7 +24682,7 @@ OBJECT poly
 name "hyd.2.fault"
 data 21
 Mesh136 Component.002
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -24885,7 +24885,7 @@ OBJECT poly
 name "hyd.3.fault"
 data 21
 Mesh136 Component.002
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -25088,7 +25088,7 @@ OBJECT poly
 name "hyd.4.fault"
 data 21
 Mesh136 Component.002
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -25294,7 +25294,7 @@ OBJECT poly
 name "hyd.eng.1.l"
 data 21
 Mesh136 Component.157
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -25521,7 +25521,7 @@ OBJECT poly
 name "hyd.eng.1.u"
 data 21
 Mesh136 Component.158
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -25545,7 +25545,7 @@ OBJECT poly
 name "hyd.eng.2.l"
 data 21
 Mesh136 Component.157
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -25772,7 +25772,7 @@ OBJECT poly
 name "hyd.eng.2.u"
 data 21
 Mesh136 Component.158
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -25796,7 +25796,7 @@ OBJECT poly
 name "hyd.eng.3.l"
 data 21
 Mesh136 Component.157
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -26023,7 +26023,7 @@ OBJECT poly
 name "hyd.eng.3.u"
 data 21
 Mesh136 Component.158
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -26047,7 +26047,7 @@ OBJECT poly
 name "hyd.eng.4.l"
 data 21
 Mesh136 Component.157
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -26274,7 +26274,7 @@ OBJECT poly
 name "hyd.eng.4.u"
 data 21
 Mesh136 Component.158
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -26295,7 +26295,7 @@ OBJECT poly
 name "isln.l.l"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -26522,7 +26522,7 @@ OBJECT poly
 name "isln.l.u"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -26543,7 +26543,7 @@ OBJECT poly
 name "isln.r.l"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -26770,7 +26770,7 @@ OBJECT poly
 name "isln.r.u"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -26791,7 +26791,7 @@ OBJECT poly
 name "jettison.l.l"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -27018,7 +27018,7 @@ OBJECT poly
 name "jettison.l.u"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -27039,7 +27039,7 @@ OBJECT poly
 name "jettison.r.l"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -27266,7 +27266,7 @@ OBJECT poly
 name "jettison.r.u"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -27287,7 +27287,7 @@ OBJECT poly
 name "pack.1.sysfault"
 data 21
 Mesh136 Component.002
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -27490,7 +27490,7 @@ OBJECT poly
 name "pack.2.sysfault"
 data 21
 Mesh136 Component.002
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -27693,7 +27693,7 @@ OBJECT poly
 name "pack.3.sysfault"
 data 21
 Mesh136 Component.002
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -27896,7 +27896,7 @@ OBJECT poly
 name "pack.4.sysfault"
 data 21
 Mesh136 Component.002
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -28099,7 +28099,7 @@ OBJECT poly
 name "pack.hi.flow.l"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -28326,7 +28326,7 @@ OBJECT poly
 name "pack.hi.flow.u"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -28347,7 +28347,7 @@ OBJECT poly
 name "pack.rst.l"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -28574,7 +28574,7 @@ OBJECT poly
 name "pack.rst.u"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -28595,7 +28595,7 @@ OBJECT poly
 name "pump.1.aft.l"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -28822,7 +28822,7 @@ OBJECT poly
 name "pump.1.aft.u"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -28843,7 +28843,7 @@ OBJECT poly
 name "pump.1.fwd.l"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -29070,7 +29070,7 @@ OBJECT poly
 name "pump.1.fwd.u"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -29091,7 +29091,7 @@ OBJECT poly
 name "pump.2.aft.l"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -29318,7 +29318,7 @@ OBJECT poly
 name "pump.2.aft.u"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -29339,7 +29339,7 @@ OBJECT poly
 name "pump.2.fwd.l"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -29566,7 +29566,7 @@ OBJECT poly
 name "pump.2.fwd.u"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -29587,7 +29587,7 @@ OBJECT poly
 name "pump.3.aft.l"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -29814,7 +29814,7 @@ OBJECT poly
 name "pump.3.aft.u"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -29835,7 +29835,7 @@ OBJECT poly
 name "pump.3.fwd.l"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -30062,7 +30062,7 @@ OBJECT poly
 name "pump.3.fwd.u"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -30083,7 +30083,7 @@ OBJECT poly
 name "pump.4.aft.l"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -30310,7 +30310,7 @@ OBJECT poly
 name "pump.4.aft.u"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -30331,7 +30331,7 @@ OBJECT poly
 name "pump.4.fwd.l"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -30558,7 +30558,7 @@ OBJECT poly
 name "pump.4.fwd.u"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -30579,7 +30579,7 @@ OBJECT poly
 name "trim.air.l"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -30806,7 +30806,7 @@ OBJECT poly
 name "trim.air.u"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -30830,7 +30830,7 @@ OBJECT poly
 name "utility.l.l"
 data 21
 Mesh136 Component.157
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -31057,7 +31057,7 @@ OBJECT poly
 name "utility.l.u"
 data 21
 Mesh136 Component.158
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -31081,7 +31081,7 @@ OBJECT poly
 name "utility.r.l"
 data 21
 Mesh136 Component.157
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -31308,7 +31308,7 @@ OBJECT poly
 name "utility.r.u"
 data 21
 Mesh136 Component.158
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -31329,7 +31329,7 @@ OBJECT poly
 name "xfeed.1.l"
 data 21
 Mesh136 Component.163
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -31556,7 +31556,7 @@ OBJECT poly
 name "xfeed.1.u"
 data 21
 Mesh136 Component.164
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -31577,7 +31577,7 @@ OBJECT poly
 name "xfeed.2.l"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -31804,7 +31804,7 @@ OBJECT poly
 name "xfeed.2.l.001"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -32031,7 +32031,7 @@ OBJECT poly
 name "xfeed.2.l.007"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -32258,7 +32258,7 @@ OBJECT poly
 name "xfeed.2.l.008"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -32485,7 +32485,7 @@ OBJECT poly
 name "xfeed.2.l.009"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -32712,7 +32712,7 @@ OBJECT poly
 name "xfeed.2.l.010"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -32939,7 +32939,7 @@ OBJECT poly
 name "xfeed.2.l.011"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -33166,7 +33166,7 @@ OBJECT poly
 name "xfeed.2.l.012"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -33393,7 +33393,7 @@ OBJECT poly
 name "xfeed.2.l.013"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -33620,7 +33620,7 @@ OBJECT poly
 name "xfeed.2.l.014"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -33847,7 +33847,7 @@ OBJECT poly
 name "xfeed.2.l.015"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -34074,7 +34074,7 @@ OBJECT poly
 name "xfeed.2.l.016"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -34301,7 +34301,7 @@ OBJECT poly
 name "xfeed.2.l.017"
 data 17
 Mesh136 Component
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -34528,7 +34528,7 @@ OBJECT poly
 name "xfeed.2.l.018"
 data 17
 Mesh136 Component
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -34755,7 +34755,7 @@ OBJECT poly
 name "xfeed.2.l.019"
 data 17
 Mesh136 Component
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -34982,7 +34982,7 @@ OBJECT poly
 name "xfeed.2.l.020"
 data 17
 Mesh136 Component
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -35209,7 +35209,7 @@ OBJECT poly
 name "xfeed.2.l.022"
 data 21
 Mesh136 Component.004
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -35436,7 +35436,7 @@ OBJECT poly
 name "xfeed.2.l.023"
 data 21
 Mesh136 Component.008
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -35663,7 +35663,7 @@ OBJECT poly
 name "xfeed.2.u"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -35684,7 +35684,7 @@ OBJECT poly
 name "xfeed.2.u.001"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -35705,7 +35705,7 @@ OBJECT poly
 name "xfeed.2.u.007"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -35726,7 +35726,7 @@ OBJECT poly
 name "xfeed.2.u.008"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -35747,7 +35747,7 @@ OBJECT poly
 name "xfeed.2.u.009"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -35768,7 +35768,7 @@ OBJECT poly
 name "xfeed.2.u.010"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -35789,7 +35789,7 @@ OBJECT poly
 name "xfeed.2.u.011"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -35810,7 +35810,7 @@ OBJECT poly
 name "xfeed.2.u.012"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -35831,7 +35831,7 @@ OBJECT poly
 name "xfeed.2.u.013"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -35852,7 +35852,7 @@ OBJECT poly
 name "xfeed.2.u.014"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -35873,7 +35873,7 @@ OBJECT poly
 name "xfeed.2.u.015"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -35894,7 +35894,7 @@ OBJECT poly
 name "xfeed.2.u.016"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -35915,7 +35915,7 @@ OBJECT poly
 name "xfeed.2.u.017"
 data 21
 Mesh136 Component.003
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -35936,7 +35936,7 @@ OBJECT poly
 name "xfeed.2.u.018"
 data 21
 Mesh136 Component.003
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -35957,7 +35957,7 @@ OBJECT poly
 name "xfeed.2.u.019"
 data 21
 Mesh136 Component.003
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -35978,7 +35978,7 @@ OBJECT poly
 name "xfeed.2.u.020"
 data 21
 Mesh136 Component.003
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -35999,7 +35999,7 @@ OBJECT poly
 name "xfeed.2.u.022"
 data 21
 Mesh136 Component.005
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -36020,7 +36020,7 @@ OBJECT poly
 name "xfeed.2.u.023"
 data 21
 Mesh136 Component.006
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -36041,7 +36041,7 @@ OBJECT poly
 name "xfeed.3.l"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -36268,7 +36268,7 @@ OBJECT poly
 name "xfeed.3.l.001"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -36495,7 +36495,7 @@ OBJECT poly
 name "xfeed.3.l.002"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -36722,7 +36722,7 @@ OBJECT poly
 name "xfeed.3.l.003"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -36949,7 +36949,7 @@ OBJECT poly
 name "xfeed.3.l.004"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -37176,7 +37176,7 @@ OBJECT poly
 name "xfeed.3.u"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -37197,7 +37197,7 @@ OBJECT poly
 name "xfeed.3.u.001"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -37218,7 +37218,7 @@ OBJECT poly
 name "xfeed.3.u.002"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -37239,7 +37239,7 @@ OBJECT poly
 name "xfeed.3.u.003"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -37260,7 +37260,7 @@ OBJECT poly
 name "xfeed.3.u.004"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -37281,7 +37281,7 @@ OBJECT poly
 name "xfeed.4.l"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -37508,7 +37508,7 @@ OBJECT poly
 name "xfeed.4.u"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -37529,7 +37529,7 @@ OBJECT poly
 name "xfer.l"
 data 17
 Mesh136 Component
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -37756,7 +37756,7 @@ OBJECT poly
 name "xfer.u"
 data 21
 Mesh136 Component.003
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -37777,7 +37777,7 @@ OBJECT poly
 name "zone.rst.l"
 data 21
 Mesh136 Component.161
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -38004,7 +38004,7 @@ OBJECT poly
 name "zone.rst.u"
 data 21
 Mesh136 Component.162
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -38028,7 +38028,7 @@ OBJECT poly
 name "fire.1"
 data 21
 Mesh23 Group22 Mo.005
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 24
@@ -38216,7 +38216,7 @@ OBJECT poly
 name "fire.2"
 data 21
 Mesh23 Group22 Mo.001
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 24
@@ -38404,7 +38404,7 @@ OBJECT poly
 name "fire.3"
 data 21
 Mesh23 Group22 Mo.002
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 24
@@ -38592,7 +38592,7 @@ OBJECT poly
 name "fire.4"
 data 21
 Mesh23 Group22 Mo.003
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 24
@@ -38780,7 +38780,7 @@ OBJECT poly
 name "fire.apu"
 data 17
 Mesh23 Group22 Mo
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 24
@@ -38968,7 +38968,7 @@ OBJECT poly
 name "apu"
 data 6
 Circle
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 68
@@ -39486,7 +39486,7 @@ OBJECT poly
 name "apu.001"
 data 10
 Circle.002
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 68
@@ -40004,7 +40004,7 @@ OBJECT poly
 name "apu.002"
 data 10
 Circle.002
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 68
@@ -40522,7 +40522,7 @@ OBJECT poly
 name "apu.003"
 data 10
 Circle.002
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 68
@@ -41040,7 +41040,7 @@ OBJECT poly
 name "auto-ignition"
 data 10
 Circle.001
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 68
@@ -41558,7 +41558,7 @@ OBJECT poly
 name "auto-ignition.002"
 data 10
 Circle.001
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 68
@@ -42084,7 +42084,7 @@ OBJECT poly
 name "cargo.temp"
 data 6
 Circle
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 68
@@ -42602,7 +42602,7 @@ OBJECT poly
 name "dem_pump_sw.1"
 data 10
 Circle.003
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 68
@@ -43120,7 +43120,7 @@ OBJECT poly
 name "dem_pump_sw.2"
 data 10
 Circle.003
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 68
@@ -43638,7 +43638,7 @@ OBJECT poly
 name "dem_pump_sw.3"
 data 10
 Circle.003
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 68
@@ -44156,7 +44156,7 @@ OBJECT poly
 name "dem_pump_sw.4"
 data 10
 Circle.003
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 68
@@ -44674,7 +44674,7 @@ OBJECT poly
 name "equip.cooling"
 data 10
 Circle.001
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 68
@@ -45192,7 +45192,7 @@ OBJECT poly
 name "flt.deck.temp"
 data 6
 Circle
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 68
@@ -45710,7 +45710,7 @@ OBJECT poly
 name "fuel-to-remain"
 data 10
 Circle.008
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 49
@@ -46089,7 +46089,7 @@ OBJECT poly
 name "fuel-to-remain.003"
 data 10
 Circle.008
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 49
@@ -46468,7 +46468,7 @@ OBJECT poly
 name "light.dome"
 data 10
 Circle.004
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 49
@@ -46847,7 +46847,7 @@ OBJECT poly
 name "light.glare.flood"
 data 10
 Circle.006
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -47098,7 +47098,7 @@ OBJECT poly
 name "light.glare.panel"
 data 10
 Circle.005
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 48
@@ -47380,7 +47380,7 @@ OBJECT poly
 name "light.ovhd"
 data 10
 Circle.004
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 49
@@ -47759,7 +47759,7 @@ OBJECT poly
 name "ohpanel"
 data 17
 Mesh160 Model.023
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 2145
@@ -68364,7 +68364,7 @@ OBJECT poly
 name "pack.004"
 data 10
 Circle.001
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 68
@@ -68882,7 +68882,7 @@ OBJECT poly
 name "pack.007"
 data 10
 Circle.001
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 68
@@ -69400,7 +69400,7 @@ OBJECT poly
 name "pack.1"
 data 10
 Circle.001
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 68
@@ -69918,7 +69918,7 @@ OBJECT poly
 name "pack.2"
 data 10
 Circle.001
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 68
@@ -70436,7 +70436,7 @@ OBJECT poly
 name "pack.3"
 data 10
 Circle.001
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 68
@@ -70954,7 +70954,7 @@ OBJECT poly
 name "pass.temp"
 data 6
 Circle
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 68
@@ -71472,7 +71472,7 @@ OBJECT poly
 name "starter.1"
 data 21
 Mesh85 switch_023_9 M
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 81
@@ -72295,7 +72295,7 @@ OBJECT poly
 name "starter.2"
 data 21
 Mesh85 switch_023.007
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 81
@@ -73118,7 +73118,7 @@ OBJECT poly
 name "starter.3"
 data 21
 Mesh85 switch_023.008
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 81
@@ -73941,7 +73941,7 @@ OBJECT poly
 name "starter.4"
 data 21
 Mesh85 switch_023.011
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 81
@@ -74764,7 +74764,7 @@ OBJECT poly
 name "starter.sel.1"
 data 21
 Mesh85 switch_023.003
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 17
@@ -74887,7 +74887,7 @@ OBJECT poly
 name "starter.sel.2"
 data 21
 Mesh85 switch_023.006
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 17
@@ -75010,7 +75010,7 @@ OBJECT poly
 name "starter.sel.3"
 data 21
 Mesh85 switch_023.009
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 17
@@ -75133,7 +75133,7 @@ OBJECT poly
 name "starter.sel.4"
 data 21
 Mesh85 switch_023.010
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 17
@@ -75256,7 +75256,7 @@ OBJECT poly
 name "stbypwr"
 data 10
 Circle.007
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 68
@@ -75774,7 +75774,7 @@ OBJECT poly
 name "wiper.l"
 data 10
 Circle.001
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 68
@@ -76292,7 +76292,7 @@ OBJECT poly
 name "wiper.r"
 data 10
 Circle.001
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1 1
 crease 30.000000
 numvert 68

@@ -5,7 +5,7 @@ kids 5
 OBJECT poly
 name "gear"
 loc -0.00039853 -0.0658326 -0.277626
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 0.175591 0.353715
@@ -24,7 +24,7 @@ kids 0
 OBJECT poly
 name "gear_0_down"
 loc 0.000440031 0.0561017 -0.0661958
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 -0.00178792 0.0844517
@@ -43,7 +43,7 @@ kids 0
 OBJECT poly
 name "gear_2_down"
 loc 0.000440031 0.0332827 -0.113908
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 0.00795276 0.0844517
@@ -62,7 +62,7 @@ kids 0
 OBJECT poly
 name "gear_1_down"
 loc 0.000440031 0.0338013 -0.0169275
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 -0.00178792 0.0844517
@@ -85,7 +85,7 @@ kids 12
 OBJECT poly
 name "gear_2_break"
 loc 6.45047e-05 -0.031053 -0.0343254
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 0.0176131 0.0964766
@@ -104,7 +104,7 @@ kids 0
 OBJECT poly
 name "gear_1_break"
 loc 6.45047e-05 -0.0274704 0.0634632
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 -0.00395973 0.0964766
@@ -123,7 +123,7 @@ kids 0
 OBJECT poly
 name "gear_0_break"
 loc 6.45047e-05 0.0710778 0.0140353
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 0.0164775 0.0953546
@@ -142,7 +142,7 @@ kids 0
 OBJECT poly
 name "gear_2_burst"
 loc 6.45047e-05 -0.0368644 -0.0320661
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 0.00795276 0.0953546
@@ -161,7 +161,7 @@ kids 0
 OBJECT poly
 name "gear_1_burst"
 loc 6.45047e-05 -0.0352468 0.0645852
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 -0.00178792 0.0953546
@@ -180,7 +180,7 @@ kids 0
 OBJECT poly
 name "gear_0_burst"
 loc 6.45047e-05 0.0634266 0.0152485
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 0.00795276 0.0953546
@@ -199,7 +199,7 @@ kids 0
 OBJECT poly
 name "gear_2_stuck"
 loc 6.45047e-05 -0.014218 -0.0320661
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 0.00795276 0.0953546
@@ -218,7 +218,7 @@ kids 0
 OBJECT poly
 name "gear_1_stuck"
 loc 6.45047e-05 -0.0126004 0.0645852
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 -0.00178792 0.0953546
@@ -237,7 +237,7 @@ kids 0
 OBJECT poly
 name "gear_0_stuck"
 loc 6.45047e-05 0.0743454 0.0156529
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 0.00795276 0.0953546
@@ -256,7 +256,7 @@ kids 0
 OBJECT poly
 name "gear_2_retract"
 loc 6.45047e-05 -0.0255412 -0.0320661
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 -0.00178792 0.0953546
@@ -275,7 +275,7 @@ kids 0
 OBJECT poly
 name "gear_1_retract"
 loc 6.45047e-05 -0.0239236 0.0645852
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 0.00795276 0.0953546
@@ -294,7 +294,7 @@ kids 0
 OBJECT poly
 name "gear_0_retract"
 loc 6.45047e-05 0.0743454 0.0156529
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 -0.00178792 0.0953546

@@ -9,7 +9,7 @@ kids 73
 OBJECT poly
 name "scroll_up"
 loc 4.81951e-05 -0.00548721 0.108295
-texture "sysinfo.png"
+texture "sysinfo.webp"
 crease 45.000000
 numvert 4
 0 0.00288178 0.00898856
@@ -28,7 +28,7 @@ kids 0
 OBJECT poly
 name "scroll_down"
 loc 4.81951e-05 -0.10666 0.122424
-texture "sysinfo.png"
+texture "sysinfo.webp"
 crease 45.000000
 numvert 4
 0 0.000668004 -0.00898856
@@ -47,7 +47,7 @@ kids 0
 OBJECT poly
 name "print"
 loc 4.81951e-05 0.00214699 0.0932043
-texture "sysinfo.png"
+texture "sysinfo.webp"
 crease 45.000000
 numvert 4
 0 -0.00133607 0.0414084
@@ -66,7 +66,7 @@ kids 0
 OBJECT poly
 name "new.18"
 loc -0.000448139 -0.0987651 -0.0546886
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 -0.000804856 0.303361
@@ -85,7 +85,7 @@ kids 0
 OBJECT poly
 name "new.19"
 loc -0.000448139 -0.103766 -0.0546886
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 0.00388949 0.303361
@@ -104,7 +104,7 @@ kids 0
 OBJECT poly
 name "new.17"
 loc -0.000448139 -0.0937651 -0.0546886
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 -0.000804856 0.303361
@@ -123,7 +123,7 @@ kids 0
 OBJECT poly
 name "new.16"
 loc -0.000448139 -0.0887655 -0.0546886
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 0.00388952 0.303361
@@ -142,7 +142,7 @@ kids 0
 OBJECT poly
 name "new.12"
 loc -0.000448139 -0.0687655 -0.0546886
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 -0.000804856 0.303361
@@ -161,7 +161,7 @@ kids 0
 OBJECT poly
 name "new.13"
 loc -0.000448139 -0.0737655 -0.0546886
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 0.00388951 0.303361
@@ -180,7 +180,7 @@ kids 0
 OBJECT poly
 name "new.15"
 loc -0.000448139 -0.0837655 -0.0546886
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 -0.000804856 0.303361
@@ -199,7 +199,7 @@ kids 0
 OBJECT poly
 name "new.14"
 loc -0.000448139 -0.0787655 -0.0546886
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 0.0038895 0.303361
@@ -218,7 +218,7 @@ kids 0
 OBJECT poly
 name "new.10"
 loc -0.000448139 -0.0587655 -0.0546886
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 -0.000804856 0.303361
@@ -237,7 +237,7 @@ kids 0
 OBJECT poly
 name "new.11"
 loc -0.000448139 -0.0637655 -0.0546886
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 0.0038895 0.303361
@@ -256,7 +256,7 @@ kids 0
 OBJECT poly
 name "new.9"
 loc -0.000448139 -0.0537655 -0.0546886
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 -0.000804856 0.303361
@@ -275,7 +275,7 @@ kids 0
 OBJECT poly
 name "new.8"
 loc -0.000448139 -0.0487655 -0.0546886
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 0.0038895 0.303361
@@ -294,7 +294,7 @@ kids 0
 OBJECT poly
 name "new.4"
 loc -0.000448139 -0.0287655 -0.0546886
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 -0.000804856 0.303361
@@ -313,7 +313,7 @@ kids 0
 OBJECT poly
 name "new.5"
 loc -0.000448139 -0.0337655 -0.0546886
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 0.0038895 0.303361
@@ -332,7 +332,7 @@ kids 0
 OBJECT poly
 name "new.7"
 loc -0.000448139 -0.0437655 -0.0546886
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 -0.000804856 0.303361
@@ -351,7 +351,7 @@ kids 0
 OBJECT poly
 name "new.6"
 loc -0.000448139 -0.0387655 -0.0546886
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 0.0038895 0.303361
@@ -370,7 +370,7 @@ kids 0
 OBJECT poly
 name "new.2"
 loc -0.000448139 -0.0187655 -0.0546886
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 -0.000804856 0.303361
@@ -389,7 +389,7 @@ kids 0
 OBJECT poly
 name "new.3"
 loc -0.000448139 -0.0237655 -0.0546886
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 0.0038895 0.303361
@@ -408,7 +408,7 @@ kids 0
 OBJECT poly
 name "new.1"
 loc -0.000448139 -0.0137655 -0.0546886
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 -0.000804856 0.303361
@@ -427,7 +427,7 @@ kids 0
 OBJECT poly
 name "new.0"
 loc -0.000448139 -0.00876551 -0.0546886
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 0.0038895 0.303361
@@ -446,7 +446,7 @@ kids 0
 OBJECT poly
 name "unattended"
 loc -0.000448139 -0.109628 0.104686
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 4
 0 -0.000657886 0.0971274
@@ -465,7 +465,7 @@ kids 0
 OBJECT poly
 name "box"
 loc -0.000544976 -0.0874926 -0.0786877
-texture "sysinfo.png"
+texture "sysinfo.webp"
 crease 45.000000
 numvert 4
 0 0.111356 0.330661
@@ -528,7 +528,7 @@ name "xxx"
 loc -0.000320302 0.369922 0.116827
 data 9
 Plane.008
-texture "eicas.png"
+texture "eicas.webp"
 crease 30.000000
 numvert 4
 0 -0.22309 0.01267
@@ -547,7 +547,7 @@ kids 0
 OBJECT poly
 name "box"
 loc -0.000463957 -0.129001 0.0277562
-texture "eicas.png"
+texture "eicas.webp"
 crease 45.000000
 numvert 4
 0 -0.00300658 0.131709
@@ -566,7 +566,7 @@ kids 0
 OBJECT poly
 name "TAT.1"
 loc 0.000443901 -0.155902 -0.170788
-texture "eicas.png"
+texture "eicas.webp"
 crease 30.000000
 numvert 4
 0 0.030433 0.286451
@@ -590,7 +590,7 @@ kids 0
 OBJECT poly
 name "TAT.10"
 loc 0.000443901 -0.155902 -0.170788
-texture "eicas.png"
+texture "eicas.webp"
 crease 30.000000
 numvert 4
 0 0.030433 0.291176
@@ -614,7 +614,7 @@ kids 0
 OBJECT poly
 name "TAT.-"
 loc 0.000443901 -0.131812 -0.0705137
-texture "eicas.png"
+texture "eicas.webp"
 crease 30.000000
 numvert 4
 0 0.00365961 0.196295
@@ -638,7 +638,7 @@ kids 0
 OBJECT poly
 name "TAT.-1"
 loc 0.000443901 -0.155902 -0.170788
-texture "eicas.png"
+texture "eicas.webp"
 crease 30.000000
 numvert 4
 0 0.030433 0.291266
@@ -662,7 +662,7 @@ kids 0
 OBJECT poly
 name "TAT.-10"
 loc 0.000443901 -0.155902 -0.170788
-texture "eicas.png"
+texture "eicas.webp"
 crease 30.000000
 numvert 4
 0 0.030433 0.295991
@@ -686,7 +686,7 @@ kids 0
 OBJECT poly
 name "Tfuel.004"
 loc 0.000144768 -0.158764 -0.0860437
-texture "eicas.png"
+texture "eicas.webp"
 crease 30.000000
 numvert 4
 0 0.041431 0.221795
@@ -710,7 +710,7 @@ kids 0
 OBJECT poly
 name "Tfuel.005"
 loc 0.000144768 -0.158764 -0.0860437
-texture "eicas.png"
+texture "eicas.webp"
 crease 30.000000
 numvert 4
 0 0.041431 0.226471
@@ -734,7 +734,7 @@ kids 0
 OBJECT poly
 name "Tfuel.001"
 loc 0.000144768 -0.158764 -0.0860437
-texture "eicas.png"
+texture "eicas.webp"
 crease 30.000000
 numvert 4
 0 0.041431 0.20771
@@ -758,7 +758,7 @@ kids 0
 OBJECT poly
 name "Tfuel.002"
 loc 0.000144768 -0.158764 -0.0860437
-texture "eicas.png"
+texture "eicas.webp"
 crease 30.000000
 numvert 4
 0 0.041431 0.21245
@@ -782,7 +782,7 @@ kids 0
 OBJECT poly
 name "Tfuel.003"
 loc 0.000144768 -0.158764 -0.0860437
-texture "eicas.png"
+texture "eicas.webp"
 crease 30.000000
 numvert 4
 0 0.041431 0.217126
@@ -806,7 +806,7 @@ kids 0
 OBJECT poly
 name "box"
 loc -0.000544976 0.0520106 0.0361343
-texture "eicas.png"
+texture "eicas.webp"
 crease 45.000000
 numvert 4
 0 0.102229 0.219454
@@ -825,7 +825,7 @@ kids 0
 OBJECT poly
 name "box"
 loc -0.000770448 -0.0794866 -0.104266
-texture "eicas.png"
+texture "eicas.webp"
 crease 45.000000
 numvert 4
 0 0.233106 0.362442
@@ -994,7 +994,7 @@ kids 0
 OBJECT poly
 name "egt.l.004"
 loc 0.000362882 0.022476 -0.0418857
-texture "eicas.png"
+texture "eicas.webp"
 crease 30.000000
 numvert 4
 0 0.0374417 0.267242
@@ -1018,7 +1018,7 @@ kids 0
 OBJECT poly
 name "egt.l.002"
 loc 0.000362882 0.022476 -0.0418857
-texture "eicas.png"
+texture "eicas.webp"
 crease 30.000000
 numvert 4
 0 0.0374417 0.259448
@@ -1042,7 +1042,7 @@ kids 0
 OBJECT poly
 name "egt.l.003"
 loc 0.000362882 0.022476 -0.0418857
-texture "eicas.png"
+texture "eicas.webp"
 crease 30.000000
 numvert 4
 0 0.0374417 0.263345
@@ -1066,7 +1066,7 @@ kids 0
 OBJECT poly
 name "egt.l.001"
 loc 0.000362882 0.022476 -0.0262967
-texture "eicas.png"
+texture "eicas.webp"
 crease 30.000000
 numvert 4
 0 0.0374417 0.255551
@@ -1090,7 +1090,7 @@ kids 0
 OBJECT poly
 name "egt.r.004"
 loc 0.000362882 0.0224497 -0.0648157
-texture "eicas.png"
+texture "eicas.webp"
 crease 30.000000
 numvert 4
 0 0.0374417 0.248076
@@ -1114,7 +1114,7 @@ kids 0
 OBJECT poly
 name "egt.r.001"
 loc 0.000362882 0.0224497 -0.0492257
-texture "eicas.png"
+texture "eicas.webp"
 crease 30.000000
 numvert 4
 0 0.0374417 0.236385
@@ -1138,7 +1138,7 @@ kids 0
 OBJECT poly
 name "egt.r.002"
 loc 0.000362882 0.0224497 -0.0648157
-texture "eicas.png"
+texture "eicas.webp"
 crease 30.000000
 numvert 4
 0 0.0374417 0.24028
@@ -1162,7 +1162,7 @@ kids 0
 OBJECT poly
 name "egt.r.003"
 loc 0.000362882 0.0224497 -0.0648157
-texture "eicas.png"
+texture "eicas.webp"
 crease 30.000000
 numvert 4
 0 0.0374417 0.244179
@@ -1186,7 +1186,7 @@ kids 0
 OBJECT poly
 name "LHn2.004"
 loc 0.000362882 0.0608237 -0.0377877
-texture "eicas.png"
+texture "eicas.webp"
 crease 30.000000
 numvert 4
 0 0.0374417 0.263267
@@ -1210,7 +1210,7 @@ kids 0
 OBJECT poly
 name "LHn2.002"
 loc 0.000362882 0.0608237 -0.0377877
-texture "eicas.png"
+texture "eicas.webp"
 crease 30.000000
 numvert 4
 0 0.0374417 0.255475
@@ -1234,7 +1234,7 @@ kids 0
 OBJECT poly
 name "LHn2.003"
 loc 0.000362882 0.0608237 -0.0377877
-texture "eicas.png"
+texture "eicas.webp"
 crease 30.000000
 numvert 4
 0 0.0374417 0.259372
@@ -1258,7 +1258,7 @@ kids 0
 OBJECT poly
 name "LHn2.001"
 loc 0.000362882 0.0608237 -0.0377877
-texture "eicas.png"
+texture "eicas.webp"
 crease 30.000000
 numvert 4
 0 0.0374417 0.251577
@@ -1282,7 +1282,7 @@ kids 0
 OBJECT poly
 name "RHn2.004"
 loc 0.000362882 0.0610019 -0.0607177
-texture "eicas.png"
+texture "eicas.webp"
 crease 30.000000
 numvert 4
 0 0.0374417 0.244102
@@ -1306,7 +1306,7 @@ kids 0
 OBJECT poly
 name "RHn2.001"
 loc 0.000362882 0.0610019 -0.0607177
-texture "eicas.png"
+texture "eicas.webp"
 crease 30.000000
 numvert 4
 0 0.0374417 0.232413
@@ -1330,7 +1330,7 @@ kids 0
 OBJECT poly
 name "RHn2.002"
 loc 0.000362882 0.0610019 -0.0607177
-texture "eicas.png"
+texture "eicas.webp"
 crease 30.000000
 numvert 4
 0 0.0374417 0.236309
@@ -1354,7 +1354,7 @@ kids 0
 OBJECT poly
 name "RHn2.003"
 loc 0.000362882 0.0610019 -0.0607177
-texture "eicas.png"
+texture "eicas.webp"
 crease 30.000000
 numvert 4
 0 0.0374417 0.240206
@@ -1417,7 +1417,7 @@ kids 0
 OBJECT poly
 name "LHn1.004"
 loc 0.000362882 0.0973056 -0.0379877
-texture "eicas.png"
+texture "eicas.webp"
 crease 30.000000
 numvert 4
 0 0.0403788 0.267026
@@ -1441,7 +1441,7 @@ kids 0
 OBJECT poly
 name "LHn1.002"
 loc 0.000362882 0.0973056 -0.0379877
-texture "eicas.png"
+texture "eicas.webp"
 crease 30.000000
 numvert 4
 0 0.0403788 0.259239
@@ -1465,7 +1465,7 @@ kids 0
 OBJECT poly
 name "LHn1.003"
 loc 0.000362882 0.0973056 -0.0379877
-texture "eicas.png"
+texture "eicas.webp"
 crease 30.000000
 numvert 4
 0 0.0403788 0.263133
@@ -1489,7 +1489,7 @@ kids 0
 OBJECT poly
 name "LHn1.001"
 loc 0.000362882 0.0973056 -0.0379877
-texture "eicas.png"
+texture "eicas.webp"
 crease 30.000000
 numvert 4
 0 0.0403788 0.255345
@@ -1552,7 +1552,7 @@ kids 0
 OBJECT poly
 name "RHn1.004"
 loc 0.000362882 0.0974981 -0.0608977
-texture "eicas.png"
+texture "eicas.webp"
 crease 30.000000
 numvert 4
 0 0.0403788 0.247875
@@ -1576,7 +1576,7 @@ kids 0
 OBJECT poly
 name "RHn1.001"
 loc 0.000362882 0.0974981 -0.0608977
-texture "eicas.png"
+texture "eicas.webp"
 crease 30.000000
 numvert 4
 0 0.0403788 0.236194
@@ -1600,7 +1600,7 @@ kids 0
 OBJECT poly
 name "RHn1.002"
 loc 0.000362882 0.0974981 -0.0608977
-texture "eicas.png"
+texture "eicas.webp"
 crease 30.000000
 numvert 4
 0 0.0403788 0.240087
@@ -1624,7 +1624,7 @@ kids 0
 OBJECT poly
 name "RHn1.003"
 loc 0.000362882 0.0974981 -0.0608977
-texture "eicas.png"
+texture "eicas.webp"
 crease 30.000000
 numvert 4
 0 0.0403788 0.243981

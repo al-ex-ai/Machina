@@ -8,7 +8,7 @@ name "buttons"
 loc 0 0 -0
 data 7
 buttons
-texture "aoa.png"
+texture "aoa.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 102
@@ -1033,7 +1033,7 @@ name "face"
 loc 0.001274 0 -0
 data 4
 face
-texture "aoa.png"
+texture "aoa.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 17
@@ -1157,7 +1157,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "aoa.png"
+texture "aoa.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 56
@@ -1583,7 +1583,7 @@ name "needle"
 loc 0.005083 0 -0
 data 6
 needle
-texture "aoa.png"
+texture "aoa.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 12
@@ -1662,7 +1662,7 @@ name "needle2"
 loc 0.004605 0 -0
 data 7
 needle2
-texture "aoa.png"
+texture "aoa.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 12

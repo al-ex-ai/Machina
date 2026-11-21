@@ -7,7 +7,7 @@ name "At_btn"
 loc 0 0 -0
 data 6
 At_btn
-texture "at.png"
+texture "at.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 36
@@ -297,7 +297,7 @@ name "Drv_sw"
 loc 0 0 -0
 data 6
 Drv_sw
-texture "at.png"
+texture "at.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 209
@@ -1957,7 +1957,7 @@ name "Pwr_sw"
 loc 0 0 -0
 data 6
 Pwr_sw
-texture "at.png"
+texture "at.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 209
@@ -3617,7 +3617,7 @@ name "Sg1_btn"
 loc 0 0 -0
 data 7
 Sg1_btn
-texture "at.png"
+texture "at.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 36
@@ -3907,7 +3907,7 @@ name "Sg2_btn"
 loc 0 0 -0
 data 7
 Sg2_btn
-texture "at.png"
+texture "at.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 36
@@ -4197,7 +4197,7 @@ name "atlight"
 loc 0 0 -0
 data 7
 atlight
-texture "at.png"
+texture "at.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 24
@@ -4391,7 +4391,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "at.png"
+texture "at.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 250

@@ -9,7 +9,7 @@ name "APUSwitch"
 data 12
 Cylinder.010
 crease 40.0
-texture "lightning.png"
+texture "lightning.webp"
 texrep 1 1
 numvert 136
 -0.03722 -0.00576 0.01706
@@ -779,7 +779,7 @@ name "BeaconLight"
 data 12
 Cylinder.007
 crease 40.0
-texture "lightning.png"
+texture "lightning.webp"
 texrep 1 1
 numvert 205
 0.21594 -0.00246 -0.01476
@@ -2296,7 +2296,7 @@ name "EngineStartSelector"
 data 12
 Cylinder.004
 crease 40.0
-texture "lightning.png"
+texture "lightning.webp"
 texrep 1 1
 numvert 205
 0.04516 -0.00246 -0.00926
@@ -3813,7 +3813,7 @@ name "InboardLLandingLight"
 data 12
 Cylinder.012
 crease 40.0
-texture "lightning.png"
+texture "lightning.webp"
 texrep 1 1
 numvert 136
 -0.208 -0.00576 -0.01259
@@ -4583,7 +4583,7 @@ name "InboardRLandingLight"
 data 12
 Cylinder.011
 crease 40.0
-texture "lightning.png"
+texture "lightning.webp"
 texrep 1 1
 numvert 136
 -0.17725 -0.00576 -0.01259
@@ -5353,7 +5353,7 @@ name "LEngineStart"
 data 12
 Cylinder.001
 crease 40.0
-texture "lightning.png"
+texture "lightning.webp"
 texrep 1 1
 numvert 308
 0.00563 -0.00441 -0.02007
@@ -7167,7 +7167,7 @@ name "LogoLight"
 data 12
 Cylinder.005
 crease 40.0
-texture "lightning.png"
+texture "lightning.webp"
 texrep 1 1
 numvert 205
 0.14785 -0.00246 -0.01476
@@ -8684,7 +8684,7 @@ name "LRunwayTurnoff"
 data 8
 Cylinder
 crease 40.0
-texture "lightning.png"
+texture "lightning.webp"
 texrep 1 1
 numvert 205
 -0.14101 -0.00246 -0.01201
@@ -10201,7 +10201,7 @@ name "OutbordLLandingLight"
 data 12
 Cylinder.014
 crease 40.0
-texture "lightning.png"
+texture "lightning.webp"
 texrep 1 1
 numvert 136
 -0.26786 -0.00576 -0.01259
@@ -10971,7 +10971,7 @@ name "OutbordRLandingLight"
 data 12
 Cylinder.013
 crease 40.0
-texture "lightning.png"
+texture "lightning.webp"
 texrep 1 1
 numvert 136
 -0.23711 -0.00576 -0.01259
@@ -11741,7 +11741,7 @@ name "Panel"
 data 4
 Cube
 crease 40.0
-texture "forward_lower_panel.png"
+texture "forward_lower_panel.webp"
 texrep 1 1
 numvert 16
 0.16 -0.02941 0.04826
@@ -11815,7 +11815,7 @@ name "REngineStart"
 data 12
 Cylinder.000
 crease 40.0
-texture "lightning.png"
+texture "lightning.webp"
 texrep 1 1
 numvert 308
 0.09404 -0.00441 -0.02007
@@ -13629,7 +13629,7 @@ name "RRunwayTurnoff"
 data 12
 Cylinder.002
 crease 40.0
-texture "lightning.png"
+texture "lightning.webp"
 texrep 1 1
 numvert 205
 -0.1108 -0.00246 -0.01201
@@ -15146,7 +15146,7 @@ name "StrobeNavLight"
 data 12
 Cylinder.006
 crease 40.0
-texture "lightning.png"
+texture "lightning.webp"
 texrep 1 1
 numvert 205
 0.1819 -0.00246 -0.01476
@@ -16663,7 +16663,7 @@ name "TaxiLight"
 data 12
 Cylinder.003
 crease 40.0
-texture "lightning.png"
+texture "lightning.webp"
 texrep 1 1
 numvert 205
 -0.0784 -0.00246 -0.01201
@@ -18180,7 +18180,7 @@ name "WheelWell"
 data 12
 Cylinder.009
 crease 40.0
-texture "lightning.png"
+texture "lightning.webp"
 texrep 1 1
 numvert 205
 0.28294 -0.00246 -0.01476
@@ -19697,7 +19697,7 @@ name "WingLight"
 data 12
 Cylinder.008
 crease 40.0
-texture "lightning.png"
+texture "lightning.webp"
 texrep 1 1
 numvert 205
 0.24834 -0.00246 -0.01476

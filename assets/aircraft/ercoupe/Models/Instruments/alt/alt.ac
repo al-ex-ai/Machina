@@ -5,7 +5,7 @@ OBJECT world
 kids 8
 OBJECT poly
 name "Face"
-texture "altimeter.png"
+texture "altimeter.webp"
 crease 45.000000
 numvert 4
 0 0.04 0.04
@@ -26,7 +26,7 @@ name "inhg"
 loc -0.000238663 0.000547649 0.00323039
 data 12
 Cylinder.015
-texture "altimeter.png"
+texture "altimeter.webp"
 crease 30.000000
 numvert 6
 0.001137 0.00405222 -0.0204292
@@ -271,7 +271,7 @@ kids 0
 OBJECT poly
 name "AltKnob"
 loc 0.0161763 -0.0306075 0.0299878
-texture "knob.png"
+texture "knob.webp"
 crease 45.000000
 numvert 33
 0.00544133 0 0
@@ -520,7 +520,7 @@ kids 0
 OBJECT poly
 name "BezelModel"
 loc 0.00184515 -0.000146493 0.00013775
-texture "knob.png"
+texture "knob.webp"
 crease 45.000000
 numvert 138
 0.00761339 -0.0300674 0.030156

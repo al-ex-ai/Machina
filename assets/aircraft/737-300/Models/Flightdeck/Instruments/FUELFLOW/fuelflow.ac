@@ -8,7 +8,7 @@ OBJECT poly
 name "Circle"
 data 10
 Circle.006
-texture "kph.png"
+texture "kph.webp"
 texrep 1 1
 crease 30.000000
 numvert 64

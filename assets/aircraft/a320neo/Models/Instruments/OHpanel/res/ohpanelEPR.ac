@@ -7,7 +7,7 @@ kids 7
 OBJECT poly
 name "Eng1N1Prot"
 loc 7.06103 -5.75766 0.581747
-texture "protectblack.jpg"
+texture "protectblack.webp"
 crease 45.000000
 numvert 113
 -7.05614 5.5308 -0.858562
@@ -1074,7 +1074,7 @@ kids 0
 OBJECT poly
 name "Eng2N1Prot"
 loc 7.06518 -5.75766 0.550287
-texture "protectblack.jpg"
+texture "protectblack.webp"
 crease 45.000000
 numvert 113
 -7.05208 5.55191 -0.84648
@@ -2143,7 +2143,7 @@ name "Eng1N1Btn"
 loc 0.000113685 -5.00064e-005 -4.99785e-005
 data 8
 Cube.092
-texture "buttons.png"
+texture "buttons.webp"
 crease 30.000000
 numvert 12
 0.003771 -0.2157 -0.275044
@@ -2221,7 +2221,7 @@ name "Eng2N1Btn"
 loc 0.000113685 -5.00064e-005 -4.99785e-005
 data 8
 Cube.093
-texture "buttons.png"
+texture "buttons.webp"
 crease 30.000000
 numvert 12
 0.007727 -0.2157 -0.306697
@@ -2299,7 +2299,7 @@ name "MarkingLts"
 loc 0.00126776 -5.00064e-005 -5.00083e-005
 data 9
 Plane.007
-texture "markingsEPR.png"
+texture "markingsEPR.webp"
 crease 30.000000
 numvert 4
 0.000105106 -0.233886 -0.244919

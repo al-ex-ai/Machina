@@ -7,7 +7,7 @@ OBJECT world
 kids 6
 OBJECT poly
 name "Airplane"
-texture "tc03.png"
+texture "tc03.webp"
 crease 45.000000
 numvert 6
 0 0.0085461 -0.0270716
@@ -52,7 +52,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Ball"
-texture "tc02.png"
+texture "tc02.webp"
 crease 45.000000
 numvert 6
 -0.0030687 -0.008782 -0.0047272
@@ -79,7 +79,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Face"
-texture "tc01.png"
+texture "tc01.webp"
 crease 45.000000
 numvert 6
 -0.0015151 0.0415666 -0.0415666

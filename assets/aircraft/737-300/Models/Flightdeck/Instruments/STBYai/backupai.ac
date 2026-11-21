@@ -7,7 +7,7 @@ OBJECT poly
 name "ball"
 data 10
 Mesh.13007
-texture "backup-ai.png"
+texture "backup-ai.webp"
 texrep 1 1
 crease 30.000000
 numvert 242
@@ -2019,7 +2019,7 @@ OBJECT poly
 name "bezel"
 data 10
 Mesh.13008
-texture "backup-ai.png"
+texture "backup-ai.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -2673,7 +2673,7 @@ OBJECT poly
 name "riminside"
 data 10
 Mesh.13011
-texture "backup-ai.png"
+texture "backup-ai.webp"
 texrep 1 1
 crease 30.000000
 numvert 96
@@ -3204,7 +3204,7 @@ OBJECT poly
 name "rollindex"
 data 10
 Mesh.13013
-texture "backup-ai.png"
+texture "backup-ai.webp"
 texrep 1 1
 crease 30.000000
 numvert 26
@@ -3324,7 +3324,7 @@ OBJECT poly
 name "wings"
 data 10
 Mesh.13014
-texture "backup-ai.png"
+texture "backup-ai.webp"
 texrep 1 1
 crease 30.000000
 numvert 9

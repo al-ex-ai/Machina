@@ -7,7 +7,7 @@ kids 1
 OBJECT poly
 name "knob1.006"
 loc 0.0113798 0.0008476 0.0008645
-texture "knobtex.png"
+texture "knobtex.webp"
 texrep 1 1
 numvert 54
 -0.0097685 0.0157320 0.0028941

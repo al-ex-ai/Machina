@@ -8,7 +8,7 @@ kids 7
 OBJECT poly
 name "Center_panel"
 loc -0.1081238 -0.6213303 0.0250876
-texture "panel.png"
+texture "panel.webp"
 texrep 1 1
 numvert 203
 0.1826097 0.1074659 0.2797314
@@ -1716,7 +1716,7 @@ kids 0
 OBJECT poly
 name "Engineer"
 loc 2.4086857 -1.1836190 -0.5708160
-texture "Seat.png"
+texture "Seat.webp"
 texrep 1 1
 numvert 8088
 -0.1687233 0.3426757 1.4873462
@@ -66884,7 +66884,7 @@ kids 0
 OBJECT poly
 name "overhead"
 loc 0.2000008 0.3199999 0.0000000
-texture "panel.png"
+texture "panel.webp"
 texrep 1 1
 numvert 125
 0.8498250 0.6915630 0.4104080
@@ -67857,7 +67857,7 @@ kids 0
 OBJECT poly
 name "panel"
 loc 0.0000000 -0.2349169 0.0000000
-texture "panel.png"
+texture "panel.webp"
 texrep 1 1
 numvert 654
 0.0000000 0.0000000 0.9941880
@@ -74245,7 +74245,7 @@ kids 0
 OBJECT poly
 name "seat"
 loc 0.7091827 -0.6623623 0.0000000
-texture "Seat.png"
+texture "Seat.webp"
 texrep 1 1
 numvert 2214
 0.4425862 0.0028959 -0.3818538
@@ -92699,7 +92699,7 @@ kids 0
 OBJECT poly
 name "seatblock"
 loc 0.3669109 -0.8580465 -0.7140558
-texture "panel.png"
+texture "panel.webp"
 texrep 1 1
 numvert 54
 -0.4686113 -0.4546020 1.8299869
@@ -93184,7 +93184,7 @@ kids 0
 OBJECT poly
 name "sides"
 loc 0.0000000 0.0000000 0.0000000
-texture "panel.png"
+texture "panel.webp"
 texrep 1 1
 numvert 121
 0.0083230 -0.2272980 -1.1898400

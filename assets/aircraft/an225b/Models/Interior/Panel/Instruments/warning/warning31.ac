@@ -6,7 +6,7 @@ kids 2
 OBJECT poly
 name "text"
 loc -5.83524e-05 3.48985e-05 -0.000354614
-texture "31.png"
+texture "31.webp"
 crease 100.000000
 numvert 4
 4.83851e-09 -0.00916915 0.0167051
@@ -25,7 +25,7 @@ kids 0
 OBJECT poly
 name "cover"
 loc 5.83463e-05 0 7.25044e-10
-texture "ind_2.png"
+texture "ind_2.webp"
 crease 100.000000
 numvert 4
 1.08994e-08 -0.0115504 0.0229959

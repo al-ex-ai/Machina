@@ -10,7 +10,7 @@ name "KnobOnOff"
 loc -0.006375 -0.040103 -0.090841
 data 9
 KnobOnOff
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 crease 30.000001
 numvert 81
@@ -422,7 +422,7 @@ name "KnobRange"
 loc -0.006375 -0.040103 0.012126
 data 9
 KnobRange
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 crease 30.000001
 numvert 81
@@ -834,7 +834,7 @@ name "bg"
 loc 0.001833 -0.003466 -0
 data 2
 bg
-texture "radar.png"
+texture "radar.webp"
 texrep 1 1
 numvert 32
 -0 0.003656 -0.055487
@@ -1056,7 +1056,7 @@ name "bg.001"
 loc 0.001833 -0.003466 -0
 data 6
 bg.001
-texture "radar.png"
+texture "radar.webp"
 texrep 1 1
 numvert 32
 -0 0.003656 -0.055487
@@ -1278,7 +1278,7 @@ name "cover"
 loc 0.003993 -0.003691 -0
 data 5
 cover
-texture "radarcover.png"
+texture "radarcover.webp"
 texrep 1 1
 numvert 32
 -0 0.003546 -0.058559
@@ -1500,7 +1500,7 @@ name "radarblade"
 loc 0.002861 -0.003466 -0
 data 10
 radarblade
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 32
 -0 0.003449 -0.055487
@@ -1722,7 +1722,7 @@ name "sup"
 loc 0.005345 0 -0
 data 3
 sup
-texture "radar.png"
+texture "radar.webp"
 texrep 1 1
 numvert 128
 -0.003993 -0.054124 0

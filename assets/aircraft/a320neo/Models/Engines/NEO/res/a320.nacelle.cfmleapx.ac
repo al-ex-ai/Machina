@@ -351,7 +351,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc 4.51374 0.067233 3.25942e-05
-texture "neo.png"
+texture "neo.webp"
 crease 45.000000
 numvert 48
 -2.24726 -0.0391321 0.379765
@@ -631,7 +631,7 @@ kids 0
 OBJECT poly
 name "Nacelle"
 loc 1.85419 0.0103584 -9.3678e-18
-texture "A320neo.png"
+texture "A320neo.webp"
 crease 45.000000
 numvert 632
 1.29561 -1.09207 -2.62357e-07
@@ -5303,7 +5303,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc 4.05621 0.0592103 -3.94285e-06
-texture "neo.png"
+texture "neo.webp"
 crease 45.000000
 numvert 48
 0.280647 0.173205 0.406267
@@ -5583,7 +5583,7 @@ kids 0
 OBJECT poly
 name "Reverser"
 loc 1.85419 0.0103584 -9.3678e-18
-texture "A320neo.png"
+texture "A320neo.webp"
 crease 45.000000
 numvert 216
 1.70408 -1.07063 -8.54611e-10

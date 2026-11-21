@@ -26,7 +26,7 @@ OBJECT poly
 name "knob"
 data 12
 Cylinder.001
-texture "StarterSwitch.png"
+texture "StarterSwitch.webp"
 texrep 1 1
 crease 80.000000
 numvert 184

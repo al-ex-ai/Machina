@@ -7,7 +7,7 @@ kids 10
 OBJECT poly
 name "base"
 loc 0.0654430 -0.3341003 0.1748883
-texture "throttlebox.png"
+texture "throttlebox.webp"
 texrep 1 1
 numvert 93
 0.0388676 -0.0563219 0.0687167
@@ -594,7 +594,7 @@ kids 0
 OBJECT poly
 name "flaps"
 loc 0.1602945 -0.3560187 0.0518883
-texture "throttles.png"
+texture "throttles.webp"
 texrep 1 1
 numvert 75
 -0.0055509 0.0106012 0.0072079
@@ -1185,7 +1185,7 @@ kids 0
 OBJECT poly
 name "slats"
 loc 0.1602945 -0.3560187 0.0968883
-texture "throttles.png"
+texture "throttles.webp"
 texrep 1 1
 numvert 73
 -0.0157533 -0.0044337 -0.0013686
@@ -2014,7 +2014,7 @@ kids 0
 OBJECT poly
 name "spoiler"
 loc 0.1602979 -0.3560213 0.3728883
-texture "throttles.png"
+texture "throttles.webp"
 texrep 1 1
 numvert 74
 -0.0055509 0.0106012 -0.0132082
@@ -2540,7 +2540,7 @@ kids 0
 OBJECT poly
 name "T1"
 loc 0.1602979 -0.3560213 0.3228883
-texture "throttles.png"
+texture "throttles.webp"
 texrep 1 1
 numvert 90
 -0.0055509 0.0106012 0.0132081
@@ -3306,7 +3306,7 @@ kids 0
 OBJECT poly
 name "T2"
 loc 0.1602979 -0.3560213 0.2858883
-texture "throttles.png"
+texture "throttles.webp"
 texrep 1 1
 numvert 90
 -0.0055509 0.0106012 0.0132081
@@ -4072,7 +4072,7 @@ kids 0
 OBJECT poly
 name "T3"
 loc 0.1602979 -0.3560213 0.2488883
-texture "throttles.png"
+texture "throttles.webp"
 texrep 1 1
 numvert 90
 -0.0055509 0.0106012 0.0132081
@@ -4838,7 +4838,7 @@ kids 0
 OBJECT poly
 name "T4"
 loc 0.1602979 -0.3560213 0.2118883
-texture "throttles.png"
+texture "throttles.webp"
 texrep 1 1
 numvert 90
 -0.0055509 0.0106012 0.0132081
@@ -5604,7 +5604,7 @@ kids 0
 OBJECT poly
 name "T5"
 loc 0.1602979 -0.3560213 0.1748883
-texture "throttles.png"
+texture "throttles.webp"
 texrep 1 1
 numvert 90
 -0.0055509 0.0106012 0.0132081
@@ -6370,7 +6370,7 @@ kids 0
 OBJECT poly
 name "T6"
 loc 0.1602979 -0.3560213 0.1378883
-texture "throttles.png"
+texture "throttles.webp"
 texrep 1 1
 numvert 90
 -0.0055509 0.0106012 0.0132081

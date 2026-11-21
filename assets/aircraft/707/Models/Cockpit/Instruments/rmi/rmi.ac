@@ -9,7 +9,7 @@ name "face"
 loc 0.000135 0 -0
 data 4
 face
-texture "rmi.png"
+texture "rmi.webp"
 texrep 1 1
 crease 30.000001
 numvert 16
@@ -85,7 +85,7 @@ name "hdg-knob"
 loc 0.007995 0.030355 -0.030275
 data 8
 hdg-knob
-texture "rmi-more.png"
+texture "rmi-more.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -497,7 +497,7 @@ name "heading"
 loc 0.000135 0 -0
 data 7
 heading
-texture "rmi.png"
+texture "rmi.webp"
 texrep 1 1
 crease 30.000001
 numvert 64
@@ -796,7 +796,7 @@ name "holder"
 loc 0.000135 0 -0
 data 6
 holder
-texture "rmi.png"
+texture "rmi.webp"
 texrep 1 1
 crease 30.000001
 numvert 41
@@ -952,7 +952,7 @@ name "needle1"
 loc 0.001668 0 0.000035
 data 7
 needle1
-texture "rmi-more.png"
+texture "rmi-more.webp"
 texrep 1 1
 numvert 9
 0 -0.024134 -0.000542
@@ -999,7 +999,7 @@ name "needle1-knob"
 loc 0.007995 -0.031045 0.0301
 data 12
 needle1-knob
-texture "rmi-more.png"
+texture "rmi-more.webp"
 texrep 1 1
 crease 45.000001
 numvert 115
@@ -1529,7 +1529,7 @@ name "needle2"
 loc 0.001464 0 -0
 data 7
 needle2
-texture "rmi-more.png"
+texture "rmi-more.webp"
 texrep 1 1
 numvert 12
 0 -0.018229 -0.002114
@@ -1586,7 +1586,7 @@ name "needle2-knob"
 loc 0.007995 -0.031045 -0.030275
 data 12
 needle2-knob
-texture "rmi-more.png"
+texture "rmi-more.webp"
 texrep 1 1
 crease 45.000001
 numvert 115
@@ -2116,7 +2116,7 @@ name "reset-knob"
 loc 0.007995 0.030355 0.029894
 data 10
 reset-knob
-texture "rmi-more.png"
+texture "rmi-more.webp"
 texrep 1 1
 crease 45.000001
 numvert 67
@@ -2514,7 +2514,7 @@ name "ring"
 loc -0.000337 0 -0
 data 4
 ring
-texture "rmi.png"
+texture "rmi.webp"
 texrep 1 1
 crease 30.000001
 numvert 232
@@ -3485,7 +3485,7 @@ name "shadow"
 loc 0.001681 0 -0
 data 6
 shadow
-texture "shadow.png"
+texture "shadow.webp"
 texrep 1 1
 crease 30.000001
 numvert 4

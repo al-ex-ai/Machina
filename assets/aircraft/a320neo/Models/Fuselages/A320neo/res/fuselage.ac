@@ -1165,7 +1165,7 @@ name "CargoHold1"
 data 15
 CargoHold1.mesh
 crease 30.0
-texture "A320.png"
+texture "A320.webp"
 texrep 1 1
 numvert 112
 11.62418 -1.7342 -1.21493
@@ -1824,7 +1824,7 @@ name "CargoHold2"
 data 15
 CargoHold2.mesh
 crease 30.0
-texture "A320.png"
+texture "A320.webp"
 texrep 1 1
 numvert 155
 29.1928 -1.80673 -0.73556
@@ -10594,7 +10594,7 @@ name "Cargo2"
 data 11
 Cargo2.mesh
 crease 30.0
-texture "A320.png"
+texture "A320.webp"
 texrep 1 1
 numvert 44
 24.47021 -1.71771 -1.2348
@@ -10818,7 +10818,7 @@ name "Cargo3"
 data 11
 Cargo3.mesh
 crease 30.0
-texture "A320.png"
+texture "A320.webp"
 texrep 1 1
 numvert 30
 29.193 -1.80735 -0.73481
@@ -11014,7 +11014,7 @@ name "cylinder.011"
 data 17
 cylinder.mesh.011
 crease 45.0
-texture "A320.png"
+texture "A320.webp"
 texrep 1 1
 numvert 100
 5.02858 -1.58538 -1.13912
@@ -12036,7 +12036,7 @@ name "cylinder.012"
 data 17
 cylinder.mesh.012
 crease 45.0
-texture "A320.png"
+texture "A320.webp"
 texrep 1 1
 numvert 100
 4.90958 -1.13589 -1.42694
@@ -13058,7 +13058,7 @@ name "cylinder.013"
 data 17
 cylinder.mesh.013
 crease 45.0
-texture "A320.png"
+texture "A320.webp"
 texrep 1 1
 numvert 100
 4.823 -1.13963 1.43397
@@ -14080,7 +14080,7 @@ name "cylinder.014"
 data 17
 cylinder.mesh.014
 crease 45.0
-texture "A320.png"
+texture "A320.webp"
 texrep 1 1
 numvert 100
 5.11516 -1.5855 1.15767
@@ -15102,7 +15102,7 @@ name "cylinder.015"
 data 17
 cylinder.mesh.015
 crease 45.0
-texture "A320.png"
+texture "A320.webp"
 texrep 1 1
 numvert 200
 4.7491 -1.86963 -0.59687
@@ -17136,7 +17136,7 @@ name "DoorL1"
 data 11
 DoorL1.mesh
 crease 30.0
-texture "A320.png"
+texture "A320.webp"
 texrep 1 1
 numvert 28
 8.08206 -0.4356 1.92897
@@ -17300,7 +17300,7 @@ name "DoorL2"
 data 11
 DoorL2.mesh
 crease 30.0
-texture "A320.png"
+texture "A320.webp"
 texrep 1 1
 numvert 44
 17.1069 0.40361 1.93513
@@ -17598,7 +17598,7 @@ name "DoorL4"
 data 11
 DoorL4.mesh
 crease 30.0
-texture "A320.png"
+texture "A320.webp"
 texrep 1 1
 numvert 40
 32.44971 -0.53268 1.48914
@@ -17870,7 +17870,7 @@ name "DoorR1"
 data 11
 DoorR1.mesh
 crease 30.0
-texture "A320.png"
+texture "A320.webp"
 texrep 1 1
 numvert 28
 8.12461 1.45853 -1.30406
@@ -18064,7 +18064,7 @@ name "DoorR4"
 data 11
 DoorR4.mesh
 crease 30.0
-texture "A320.png"
+texture "A320.webp"
 texrep 1 1
 numvert 40
 32.44971 -0.53268 -1.48914
@@ -18296,7 +18296,7 @@ name "Fuselage.001"
 data 13
 Fuselage.mesh
 crease 45.0
-texture "A320.png"
+texture "A320.webp"
 texrep 1 1
 numvert 47
 27.12654 1.98842 -0.01247
@@ -18647,7 +18647,7 @@ name "Fuselage.002"
 data 17
 Fuselage.mesh.001
 crease 45.0
-texture "A320.png"
+texture "A320.webp"
 texrep 1 1
 numvert 27
 24.30047 2.17686 -0.01137
@@ -18852,7 +18852,7 @@ name "Fuselage.003"
 data 17
 Fuselage.mesh.002
 crease 45.0
-texture "A320.png"
+texture "A320.webp"
 texrep 1 1
 numvert 27
 11.08609 -2.43792 0.00487
@@ -19057,7 +19057,7 @@ name "Fuselage.004"
 data 17
 Fuselage.mesh.003
 crease 45.0
-texture "A320.png"
+texture "A320.webp"
 texrep 1 1
 numvert 27
 26.02017 -2.26852 0.00487
@@ -19262,7 +19262,7 @@ name "Fuselage.005"
 data 17
 Fuselage.mesh.004
 crease 45.0
-texture "A320.png"
+texture "A320.webp"
 texrep 1 1
 numvert 36
 8.54372 2.43788 0.00488
@@ -19524,7 +19524,7 @@ name "Fuselage.006"
 data 8
 Fuselage
 crease 30.0
-texture "A320.png"
+texture "A320.webp"
 texrep 1 1
 numvert 3865
 40.0923 0.85936 -0
@@ -51166,7 +51166,7 @@ name "Cargo1"
 data 15
 Cargo1.mesh.002
 crease 30.0
-texture "A320.png"
+texture "A320.webp"
 texrep 1 1
 numvert 26
 11.56426 -0.51471 -1.90815
@@ -51306,7 +51306,7 @@ name "DoorL3"
 data 11
 DoorL3.mesh
 crease 30.0
-texture "A320.png"
+texture "A320.webp"
 texrep 1 1
 numvert 44
 17.586 0.86332 1.77724
@@ -51604,7 +51604,7 @@ name "DoorR3"
 data 11
 DoorR3.mesh
 crease 30.0
-texture "A320.png"
+texture "A320.webp"
 texrep 1 1
 numvert 44
 17.586 0.86332 -1.77724
@@ -51902,7 +51902,7 @@ name "DoorR2"
 data 11
 DoorR2.mesh
 crease 30.0
-texture "A320.png"
+texture "A320.webp"
 texrep 1 1
 numvert 44
 17.1069 0.40361 -1.93513
@@ -52200,7 +52200,7 @@ name "GearLDoor"
 data 14
 GearLDoor.mesh
 crease 30.0
-texture "A320.png"
+texture "A320.webp"
 texrep 1 1
 numvert 19
 19.22741 -2.52107 1.02902
@@ -52605,7 +52605,7 @@ name "GearNAftDoorL"
 data 18
 GearNAftDoorL.mesh
 crease 30.0
-texture "A320.png"
+texture "A320.webp"
 texrep 1 1
 numvert 8
 8.09999 -2.0785 -0.00187
@@ -52680,7 +52680,7 @@ name "GearNAftDoorR"
 data 18
 GearNAftDoorR.mesh
 crease 30.0
-texture "A320.png"
+texture "A320.webp"
 texrep 1 1
 numvert 8
 8.0965 -2.15803 -0
@@ -52755,7 +52755,7 @@ name "GearNDoorC"
 data 15
 GearNDoorC.mesh
 crease 30.0
-texture "A320.png"
+texture "A320.webp"
 texrep 1 1
 numvert 12
 7.57495 -2.10581 -0.1256
@@ -52847,7 +52847,7 @@ name "GearNFwdDoorL"
 data 18
 GearNFwdDoorL.mesh
 crease 30.0
-texture "A320.png"
+texture "A320.webp"
 texrep 1 1
 numvert 80
 6.33531 -2.04933 0.35244
@@ -53498,7 +53498,7 @@ name "GearNFwdDoorR"
 data 18
 GearNFwdDoorR.mesh
 crease 30.0
-texture "A320.png"
+texture "A320.webp"
 texrep 1 1
 numvert 80
 6.33531 -2.04933 -0.35244
@@ -54149,7 +54149,7 @@ name "GearNWell"
 data 18
 NG BAY_2 - Default
 crease 30.0
-texture "A320.png"
+texture "A320.webp"
 texrep 1 1
 numvert 52
 7.8499 -2.0753 0.5
@@ -54422,7 +54422,7 @@ name "GearRDoor"
 data 14
 GearRDoor.mesh
 crease 30.0
-texture "A320.png"
+texture "A320.webp"
 texrep 1 1
 numvert 20
 20.29601 -1.47137 -1.96245
@@ -85580,7 +85580,7 @@ name "GearLWell"
 data 14
 GearLWell.mesh
 crease 30.0
-texture "A320.png"
+texture "A320.webp"
 texrep 1 1
 numvert 44
 20.2953 -1.45196 1.83397
@@ -85859,7 +85859,7 @@ name "GearRWell"
 data 14
 GearRWell.mesh
 crease 30.0
-texture "A320.png"
+texture "A320.webp"
 texrep 1 1
 numvert 46
 20.2953 -1.45196 -1.83397

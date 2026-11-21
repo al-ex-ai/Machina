@@ -9,7 +9,7 @@ name "agl-knob"
 loc 0.054518 -0.034699 -0.009484
 data 8
 agl-knob
-texture "agl-face.png"
+texture "agl-face.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -421,7 +421,7 @@ name "altnum.off"
 loc 0.046662 -0.042867 -0.003273
 data 10
 altnum.off
-texture "agl-face.png"
+texture "agl-face.webp"
 texrep 1 1
 crease 30.000001
 numvert 12
@@ -480,7 +480,7 @@ name "altnum100"
 loc 0.046257 -0.042867 -0.003273
 data 9
 altnum100
-texture "agl-face.png"
+texture "agl-face.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -507,7 +507,7 @@ name "altnum1000"
 loc 0.046257 -0.042867 0.001536
 data 10
 altnum1000
-texture "agl-face.png"
+texture "agl-face.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -534,7 +534,7 @@ name "altnum10000"
 loc 0.046257 -0.042863 0.001536
 data 11
 altnum10000
-texture "agl-face.png"
+texture "agl-face.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -561,7 +561,7 @@ name "arrow"
 loc 0.103306 -0.027421 -0.074017
 data 5
 arrow
-texture "agl-face.png"
+texture "agl-face.webp"
 texrep 1 1
 numvert 12
 -0.055162 0.027581 0.080534
@@ -611,7 +611,7 @@ name "face3000"
 loc 0.046277 -0.041904 -0.001447
 data 8
 face3000
-texture "aglface.png"
+texture "aglface.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -638,7 +638,7 @@ name "faceOut"
 loc 0.046399 -0.041904 -0.001447
 data 7
 faceOut
-texture "aglface.png"
+texture "aglface.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -665,7 +665,7 @@ name "frame"
 loc 0.101113 -0.00134 -0.000428
 data 5
 frame
-texture "agl-face.png"
+texture "agl-face.webp"
 texrep 1 1
 numvert 224
 -0.050726 0.047165 0.019011
@@ -2169,7 +2169,7 @@ name "lampOff"
 loc 0.054373 0.048312 -0.000909
 data 7
 lampOff
-texture "agl-face.png"
+texture "agl-face.webp"
 texrep 1 1
 numvert 8
 -0.001081 -0.005244 -0.007026
@@ -2222,7 +2222,7 @@ name "lampOn"
 loc 0.054275 0.048312 -0.000909
 data 6
 lampOn
-texture "agl-face.png"
+texture "agl-face.webp"
 texrep 1 1
 numvert 8
 -0.000872 -0.005335 -0.007266
@@ -2275,7 +2275,7 @@ name "newFace"
 loc 0.046277 -0.041904 -0.001447
 data 7
 newFace
-texture "aglface.png"
+texture "aglface.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -2302,7 +2302,7 @@ name "off-flag"
 loc 0.048315 0.000629 -0.009668
 data 8
 off-flag
-texture "agl-face.png"
+texture "agl-face.webp"
 texrep 1 1
 numvert 4
 0 -0.002853 -0.008384
@@ -2323,7 +2323,7 @@ name "shadow"
 loc 0.04843 -0.000444 -0
 data 6
 shadow
-texture "shadow.png"
+texture "shadow.webp"
 texrep 1 1
 numvert 4
 -0 0.060658 -0.027467
@@ -2344,7 +2344,7 @@ name "shadowArrow"
 loc 0.103306 -0.027421 -0.074017
 data 11
 shadowArrow
-texture "shadow.png"
+texture "shadow.webp"
 texrep 1 1
 numvert 12
 -0.055433 0.026253 0.078835

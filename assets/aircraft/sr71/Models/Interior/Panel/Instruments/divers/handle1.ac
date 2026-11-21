@@ -7,7 +7,7 @@ name "handle"
 loc 0 0 -0
 data 6
 handle
-texture "divers.png"
+texture "divers.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 158

@@ -8,7 +8,7 @@ name "Light"
 loc -0.026684 0.022551 0.255541
 data 5
 Light
-texture "VHF.png"
+texture "VHF.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 257
@@ -2036,7 +2036,7 @@ name "LightStandby"
 loc -0.026684 0.022551 0.177639
 data 12
 LightStandby
-texture "VHF.png"
+texture "VHF.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 257
@@ -4064,7 +4064,7 @@ name "Plate"
 loc 0.019343 0 -0
 data 5
 Plate
-texture "VHF.png"
+texture "VHF.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 28
@@ -4283,7 +4283,7 @@ name "Selector"
 loc 0.022364 0.000638 0.124619
 data 8
 Selector
-texture "VHF.png"
+texture "VHF.webp"
 texrep 1.000000 1.000000
 crease 16.999999
 numvert 129
@@ -5264,7 +5264,7 @@ name "SelectorDecimal"
 loc 0.022364 0.000638 0.124619
 data 15
 SelectorDecimal
-texture "VHF.png"
+texture "VHF.webp"
 texrep 1.000000 1.000000
 crease 16.999999
 numvert 129
@@ -6236,7 +6236,7 @@ name "SelectorDecimalStandby"
 loc 0.022364 0.000638 0.047672
 data 22
 SelectorDecimalStandby
-texture "VHF.png"
+texture "VHF.webp"
 texrep 1.000000 1.000000
 crease 16.999999
 numvert 129
@@ -7217,7 +7217,7 @@ name "SelectorStandby.001"
 loc 0.022364 0.000638 0.047633
 data 19
 SelectorStandby.001
-texture "VHF.png"
+texture "VHF.webp"
 texrep 1.000000 1.000000
 crease 16.999999
 numvert 129
@@ -8189,7 +8189,7 @@ name "SwitchPlate"
 loc -0.026684 0.022307 0.256019
 data 11
 SwitchPlate
-texture "VHF.png"
+texture "VHF.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 64
@@ -8558,7 +8558,7 @@ name "TransferSwitch"
 loc -0.026684 0.019891 0.256311
 data 14
 TransferSwitch
-texture "VHF.png"
+texture "VHF.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 65

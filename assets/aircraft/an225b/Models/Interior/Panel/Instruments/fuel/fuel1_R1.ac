@@ -5,7 +5,7 @@ kids 8
 OBJECT poly
 name "cylinder"
 loc -0.00165075 -0.0386957 0.0213657
-texture "lamp_podsvet.png"
+texture "lamp_podsvet.webp"
 crease 45.000000
 numvert 22
 0.00415433 0.0025938 0.00351369
@@ -225,7 +225,7 @@ kids 0
 OBJECT group
 name "fuel_r"
 loc 0.0075 0 0
-texture "fuel_r1.png"
+texture "fuel_r1.webp"
 numvert 180
 -0.005 0.004047 0.039795
 -0.005 0.011975 0.038166
@@ -2374,7 +2374,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -0.00165075 -0.0284001 0.0337982
-texture "lamp_podsvet.png"
+texture "lamp_podsvet.webp"
 crease 45.000000
 numvert 22
 -0.00415433 0 0
@@ -2594,7 +2594,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -0.00165075 0.0295985 -0.0322511
-texture "lamp_podsvet.png"
+texture "lamp_podsvet.webp"
 crease 45.000000
 numvert 22
 0.00415433 0.0025938 0.00351369
@@ -2871,7 +2871,7 @@ kids 0
 OBJECT poly
 name "k1"
 loc -0.0047184 0.0316551 0.0320629
-texture "fon2_knob.png"
+texture "fon2_knob.webp"
 crease 45.000000
 numvert 18
 -0.00693703 0 0

@@ -8,7 +8,7 @@ name "face"
 loc 0.000301 0 -0
 data 4
 face
-texture "fuelflow.png"
+texture "fuelflow.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 33
@@ -244,7 +244,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "fuelflow.png"
+texture "fuelflow.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 192
@@ -1567,7 +1567,7 @@ name "needle"
 loc 0.00001 0 -0
 data 6
 needle
-texture "fuelflow.png"
+texture "fuelflow.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 32
@@ -1806,7 +1806,7 @@ name "number1"
 loc -0.001483 0.006112 -0.00567
 data 7
 number1
-texture "fuelflow.png"
+texture "fuelflow.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10
@@ -1855,7 +1855,7 @@ name "number10"
 loc -0.001483 0.006112 -0.002993
 data 8
 number10
-texture "fuelflow.png"
+texture "fuelflow.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10
@@ -1904,7 +1904,7 @@ name "number100"
 loc -0.001483 0.006112 -0.000314
 data 9
 number100
-texture "fuelflow.png"
+texture "fuelflow.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10
@@ -1953,7 +1953,7 @@ name "number1000"
 loc -0.001483 0.006112 0.002364
 data 10
 number1000
-texture "fuelflow.png"
+texture "fuelflow.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10
@@ -2002,7 +2002,7 @@ name "number10000"
 loc -0.001483 0.006112 0.005043
 data 11
 number10000
-texture "fuelflow.png"
+texture "fuelflow.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10

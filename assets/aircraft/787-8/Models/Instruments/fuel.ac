@@ -5,7 +5,7 @@ kids 2
 OBJECT poly
 name "fuel"
 loc 0.000127099 0.0285795 0.0266983
-texture "fuel.png"
+texture "fuel.webp"
 crease 45.000000
 numvert 4
 0 -0.00163398 0.0271642
@@ -32,7 +32,7 @@ kids 1
 OBJECT poly
 name "lnozzle"
 loc 0 -0.0306729 0.00901461
-texture "fuel.png"
+texture "fuel.webp"
 crease 45.000000
 numvert 4
 0 -0.0181201 0.00645214
@@ -55,7 +55,7 @@ kids 1
 OBJECT poly
 name "rnozzle"
 loc 0 -0.0306729 0.00901461
-texture "fuel.png"
+texture "fuel.webp"
 crease 45.000000
 numvert 4
 0 -0.0181201 -0.00149564
@@ -78,7 +78,7 @@ kids 1
 OBJECT poly
 name "xfeed"
 loc 0 0.0090146 0.0306729
-texture "fuel.png"
+texture "fuel.webp"
 crease 45.000000
 numvert 4
 0 0.00645214 0.0181201
@@ -101,7 +101,7 @@ kids 1
 OBJECT poly
 name "xfeed"
 loc 0 0.0090146 0.0306729
-texture "fuel.png"
+texture "fuel.webp"
 crease 45.000000
 numvert 4
 0 -0.00149563 0.0181201
@@ -124,7 +124,7 @@ kids 1
 OBJECT poly
 name "extpwr"
 loc 0 0.0114049 0.0473391
-texture "fuel.png"
+texture "fuel.webp"
 crease 45.000000
 numvert 4
 0 0.00816299 0.0279656
@@ -147,7 +147,7 @@ kids 1
 OBJECT poly
 name "extpwr"
 loc 0 0.0114049 0.0473391
-texture "fuel.png"
+texture "fuel.webp"
 crease 45.000000
 numvert 4
 0 -0.00189222 0.0279656
@@ -170,7 +170,7 @@ kids 1
 OBJECT poly
 name "rtank"
 loc 0 0.0114049 0.0473391
-texture "fuel.png"
+texture "fuel.webp"
 crease 45.000000
 numvert 4
 0 0.00816299 0.0279656
@@ -193,7 +193,7 @@ kids 1
 OBJECT poly
 name "rtank"
 loc 0 0.0114049 0.0473391
-texture "fuel.png"
+texture "fuel.webp"
 crease 45.000000
 numvert 4
 0 -0.00189222 0.0279656
@@ -216,7 +216,7 @@ kids 1
 OBJECT poly
 name "ltank"
 loc 0 0.0114049 0.0473391
-texture "fuel.png"
+texture "fuel.webp"
 crease 45.000000
 numvert 4
 0 -0.00189222 0.0279656
@@ -239,7 +239,7 @@ kids 1
 OBJECT poly
 name "ltank"
 loc 0 0.0114049 0.0473391
-texture "fuel.png"
+texture "fuel.webp"
 crease 45.000000
 numvert 4
 0 0.00816299 0.0279656
@@ -258,7 +258,7 @@ kids 0
 OBJECT poly
 name "fuel"
 loc -0.000393055 -0.0397959 -0.233054
-texture "fuel.png"
+texture "fuel.webp"
 crease 45.000000
 numvert 4
 0 0.13202 0.392651

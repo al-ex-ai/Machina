@@ -122,7 +122,7 @@ kids 0
 OBJECT poly
 name "cabin"
 loc 0.0000000 0.0000150 -3.5728116
-texture "cabin.png"
+texture "cabin.webp"
 texrep 1 1
 numvert 224
 1.0400497 2.1143425 3.1613998

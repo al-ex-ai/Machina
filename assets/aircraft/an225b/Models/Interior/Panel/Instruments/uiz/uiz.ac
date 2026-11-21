@@ -8,7 +8,7 @@ name "face"
 loc 0 0 -0
 data 4
 face
-texture "uiz.png"
+texture "uiz.webp"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 17
@@ -132,7 +132,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "uiz.png"
+texture "uiz.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 96
@@ -743,7 +743,7 @@ name "infos"
 loc 0.002204 -0.010143 0.017008
 data 5
 infos
-texture "uiz.png"
+texture "uiz.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 99
@@ -1477,7 +1477,7 @@ name "needle_1"
 loc 0.001574 0.00731 -0.000052
 data 8
 needle_1
-texture "uiz.png"
+texture "uiz.webp"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 10
@@ -1546,7 +1546,7 @@ name "needle_2"
 loc 0.001498 -0.010128 0.016974
 data 8
 needle_2
-texture "uiz.png"
+texture "uiz.webp"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 10
@@ -1615,7 +1615,7 @@ name "needle_3"
 loc 0.001638 -0.010153 -0.016356
 data 8
 needle_3
-texture "uiz.png"
+texture "uiz.webp"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 10

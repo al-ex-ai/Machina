@@ -7,7 +7,7 @@ name "pilotseat"
 loc 0 0 -0
 data 9
 pilotseat
-texture "seat.png"
+texture "seat.webp"
 texrep 1.000000 1.000000
 crease 78.999997
 numvert 352

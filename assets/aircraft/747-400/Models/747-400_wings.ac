@@ -56,7 +56,7 @@ OBJECT poly
 name "aileron_left_inner_1"
 data 21
 Mesh56 Group_58_1.001
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 5
@@ -89,7 +89,7 @@ OBJECT poly
 name "aileron_left_inner_2"
 data 21
 Mesh56 Group_58_1.002
-texture "747-400_wingbottom.png"
+texture "747-400_wingbottom.webp"
 texrep 1 1
 crease 30.000000
 numvert 5
@@ -185,7 +185,7 @@ OBJECT poly
 name "aileron_left_outer_1"
 data 21
 Mesh61 Group_68_1.001
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -252,7 +252,7 @@ OBJECT poly
 name "aileron_left_outer_2"
 data 21
 Mesh61 Group_68_1.002
-texture "747-400_wingbottom.png"
+texture "747-400_wingbottom.webp"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -364,7 +364,7 @@ OBJECT poly
 name "aileron_right_inner_1"
 data 21
 Mesh56 Group_58_1.003
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 5
@@ -397,7 +397,7 @@ OBJECT poly
 name "aileron_right_inner_2"
 data 21
 Mesh56 Group_58_1.004
-texture "747-400_wingbottom.png"
+texture "747-400_wingbottom.webp"
 texrep 1 1
 crease 30.000000
 numvert 5
@@ -493,7 +493,7 @@ OBJECT poly
 name "aileron_right_outer_1"
 data 21
 Mesh61 Group_68_1.003
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -560,7 +560,7 @@ OBJECT poly
 name "aileron_right_outer_2"
 data 21
 Mesh61 Group_68_1.004
-texture "747-400_wingbottom.png"
+texture "747-400_wingbottom.webp"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -630,7 +630,7 @@ OBJECT poly
 name "eng.1_2"
 data 21
 Mesh2 Group2 Mode.002
-texture "747-400_misc.png"
+texture "747-400_misc.webp"
 texrep 1 1
 crease 30.000000
 numvert 66
@@ -1393,7 +1393,7 @@ OBJECT poly
 name "eng.2_2"
 data 21
 Mesh68 Group_3_1 .001
-texture "747-400_misc.png"
+texture "747-400_misc.webp"
 texrep 1 1
 crease 30.000000
 numvert 55
@@ -2025,7 +2025,7 @@ OBJECT poly
 name "eng.3_2"
 data 21
 Mesh68 Group_3_1 .004
-texture "747-400_misc.png"
+texture "747-400_misc.webp"
 texrep 1 1
 crease 30.000000
 numvert 55
@@ -2657,7 +2657,7 @@ OBJECT poly
 name "eng.4_2"
 data 21
 Mesh2 Group2 Mode.005
-texture "747-400_misc.png"
+texture "747-400_misc.webp"
 texrep 1 1
 crease 30.000000
 numvert 66
@@ -3506,7 +3506,7 @@ OBJECT poly
 name "flap_left_inner.1_1"
 data 17
 Mesh59 Group_60_1
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 6
@@ -3541,7 +3541,7 @@ OBJECT poly
 name "flap_left_inner.1_2"
 data 21
 Mesh59 Group_60_1.001
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 6
@@ -3571,7 +3571,7 @@ OBJECT poly
 name "flap_left_inner.1_3"
 data 21
 Mesh59 Group_60_1.002
-texture "747-400_wingbottom.png"
+texture "747-400_wingbottom.webp"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -3760,7 +3760,7 @@ OBJECT poly
 name "flap_left_inner.2_1"
 data 21
 Mesh59 Group_60_1.004
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 15
@@ -3841,7 +3841,7 @@ OBJECT poly
 name "flap_left_inner.2_2"
 data 21
 Mesh59 Group_60_1.005
-texture "747-400_wingbottom.png"
+texture "747-400_wingbottom.webp"
 texrep 1 1
 crease 30.000000
 numvert 23
@@ -4078,7 +4078,7 @@ OBJECT poly
 name "flap_left_inner.3_1"
 data 21
 Mesh59 Group_60_1.006
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -4099,7 +4099,7 @@ OBJECT poly
 name "flap_left_inner.3_2"
 data 21
 Mesh59 Group_60_1.009
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -4197,7 +4197,7 @@ OBJECT poly
 name "flap_left_outer.1_1"
 data 17
 Mesh67 Group_70_1
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -4251,7 +4251,7 @@ OBJECT poly
 name "flap_left_outer.1_2"
 data 21
 Mesh67 Group_70_1.001
-texture "747-400_wingbottom.png"
+texture "747-400_wingbottom.webp"
 texrep 1 1
 crease 30.000000
 numvert 6
@@ -4350,7 +4350,7 @@ OBJECT poly
 name "flap_left_outer.2_1"
 data 21
 Mesh67 Group_70_1.002
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -4404,7 +4404,7 @@ OBJECT poly
 name "flap_left_outer.2_2"
 data 21
 Mesh67 Group_70_1.005
-texture "747-400_wingbottom.png"
+texture "747-400_wingbottom.webp"
 texrep 1 1
 crease 30.000000
 numvert 6
@@ -4503,7 +4503,7 @@ OBJECT poly
 name "flap_left_outer.3_1"
 data 21
 Mesh67 Group_70_1.007
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -4557,7 +4557,7 @@ OBJECT poly
 name "flap_left_outer.3_2"
 data 21
 Mesh67 Group_70_1.008
-texture "747-400_wingbottom.png"
+texture "747-400_wingbottom.webp"
 texrep 1 1
 crease 30.000000
 numvert 6
@@ -4686,7 +4686,7 @@ OBJECT poly
 name "flap_right_inner.1_1"
 data 21
 Mesh59 Group_60_1.011
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 6
@@ -4721,7 +4721,7 @@ OBJECT poly
 name "flap_right_inner.1_2"
 data 21
 Mesh59 Group_60_1.012
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 6
@@ -4751,7 +4751,7 @@ OBJECT poly
 name "flap_right_inner.1_3"
 data 21
 Mesh59 Group_60_1.013
-texture "747-400_wingbottom.png"
+texture "747-400_wingbottom.webp"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -4940,7 +4940,7 @@ OBJECT poly
 name "flap_right_inner.2_1"
 data 21
 Mesh59 Group_60_1.015
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 15
@@ -5021,7 +5021,7 @@ OBJECT poly
 name "flap_right_inner.2_2"
 data 21
 Mesh59 Group_60_1.016
-texture "747-400_wingbottom.png"
+texture "747-400_wingbottom.webp"
 texrep 1 1
 crease 30.000000
 numvert 23
@@ -5258,7 +5258,7 @@ OBJECT poly
 name "flap_right_inner.3_1"
 data 21
 Mesh59 Group_60_1.018
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -5279,7 +5279,7 @@ OBJECT poly
 name "flap_right_inner.3_2"
 data 21
 Mesh59 Group_60_1.019
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -5377,7 +5377,7 @@ OBJECT poly
 name "flap_right_outer.1_1"
 data 21
 Mesh67 Group_70_1.010
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -5431,7 +5431,7 @@ OBJECT poly
 name "flap_right_outer.1_2"
 data 21
 Mesh67 Group_70_1.011
-texture "747-400_wingbottom.png"
+texture "747-400_wingbottom.webp"
 texrep 1 1
 crease 30.000000
 numvert 6
@@ -5530,7 +5530,7 @@ OBJECT poly
 name "flap_right_outer.2_1"
 data 21
 Mesh67 Group_70_1.013
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -5584,7 +5584,7 @@ OBJECT poly
 name "flap_right_outer.2_2"
 data 21
 Mesh67 Group_70_1.014
-texture "747-400_wingbottom.png"
+texture "747-400_wingbottom.webp"
 texrep 1 1
 crease 30.000000
 numvert 6
@@ -5683,7 +5683,7 @@ OBJECT poly
 name "flap_right_outer.3_1"
 data 21
 Mesh67 Group_70_1.016
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -5737,7 +5737,7 @@ OBJECT poly
 name "flap_right_outer.3_2"
 data 21
 Mesh67 Group_70_1.017
-texture "747-400_wingbottom.png"
+texture "747-400_wingbottom.webp"
 texrep 1 1
 crease 30.000000
 numvert 6
@@ -5780,7 +5780,7 @@ OBJECT poly
 name "LEinbL.1"
 data 21
 Mesh60 Group_67_1.006
-texture "747-400_wingbottom.png"
+texture "747-400_wingbottom.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -5806,7 +5806,7 @@ OBJECT poly
 name "LEinbL.2"
 data 21
 Mesh60 Group_67_1.007
-texture "747-400_wingbottom.png"
+texture "747-400_wingbottom.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -5832,7 +5832,7 @@ OBJECT poly
 name "LEinbL.3"
 data 21
 Mesh60 Group_67_1.005
-texture "747-400_wingbottom.png"
+texture "747-400_wingbottom.webp"
 texrep 1 1
 crease 30.000000
 numvert 5
@@ -5886,7 +5886,7 @@ OBJECT poly
 name "wing_left.1_1"
 data 21
 Mesh60 Group_67_1.001
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 43
@@ -6251,7 +6251,7 @@ OBJECT poly
 name "wing_left.1_2"
 data 21
 Mesh60 Group_67_1.002
-texture "747-400_wingbottom.png"
+texture "747-400_wingbottom.webp"
 texrep 1 1
 crease 30.000000
 numvert 31
@@ -6509,7 +6509,7 @@ OBJECT poly
 name "wing_left.2_1"
 data 21
 Mesh67 Group_70_1.019
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 48
@@ -6933,7 +6933,7 @@ OBJECT poly
 name "wing_left.2_2"
 data 21
 Mesh67 Group_70_1.020
-texture "747-400_wingbottom.png"
+texture "747-400_wingbottom.webp"
 texrep 1 1
 crease 30.000000
 numvert 29
@@ -7257,7 +7257,7 @@ OBJECT poly
 name "wing_left.3_1"
 data 17
 Mesh76 Group_69_2
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 45
@@ -7662,7 +7662,7 @@ OBJECT poly
 name "wing_left.3_2"
 data 21
 Mesh76 Group_69_2.001
-texture "747-400_wingbottom.png"
+texture "747-400_wingbottom.webp"
 texrep 1 1
 crease 30.000000
 numvert 38
@@ -7995,7 +7995,7 @@ OBJECT poly
 name "LEinbR.1"
 data 21
 Mesh60 Group_67_1.009
-texture "747-400_wingbottom.png"
+texture "747-400_wingbottom.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -8021,7 +8021,7 @@ OBJECT poly
 name "LEinbR.2"
 data 21
 Mesh60 Group_67_1.008
-texture "747-400_wingbottom.png"
+texture "747-400_wingbottom.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -8047,7 +8047,7 @@ OBJECT poly
 name "LEinbR.3"
 data 21
 Mesh60 Group_67_1.010
-texture "747-400_wingbottom.png"
+texture "747-400_wingbottom.webp"
 texrep 1 1
 crease 30.000000
 numvert 5
@@ -8101,7 +8101,7 @@ OBJECT poly
 name "wing_right.1_1"
 data 21
 Mesh60 Group_67_1.003
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 43
@@ -8466,7 +8466,7 @@ OBJECT poly
 name "wing_right.1_2"
 data 21
 Mesh60 Group_67_1.004
-texture "747-400_wingbottom.png"
+texture "747-400_wingbottom.webp"
 texrep 1 1
 crease 30.000000
 numvert 28
@@ -8706,7 +8706,7 @@ OBJECT poly
 name "wing_right.2_1"
 data 21
 Mesh67 Group_70_1.021
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 48
@@ -9130,7 +9130,7 @@ OBJECT poly
 name "wing_right.2_2"
 data 21
 Mesh67 Group_70_1.022
-texture "747-400_wingbottom.png"
+texture "747-400_wingbottom.webp"
 texrep 1 1
 crease 30.000000
 numvert 29
@@ -9454,7 +9454,7 @@ OBJECT poly
 name "wing_right.3_1"
 data 21
 Mesh76 Group_69_2.003
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 45
@@ -9859,7 +9859,7 @@ OBJECT poly
 name "wing_right.3_2"
 data 21
 Mesh76 Group_69_2.005
-texture "747-400_wingbottom.png"
+texture "747-400_wingbottom.webp"
 texrep 1 1
 crease 30.000000
 numvert 38
@@ -10475,7 +10475,7 @@ OBJECT poly
 name "flap_left_h.1"
 data 21
 Mesh51 FHHousin_0.002
-texture "747-400_misc.png"
+texture "747-400_misc.webp"
 texrep 1 1
 crease 30.000000
 numvert 40
@@ -11239,7 +11239,7 @@ OBJECT poly
 name "flap_left_h.2"
 data 21
 Mesh50 FHHousin_0.002
-texture "747-400_misc.png"
+texture "747-400_misc.webp"
 texrep 1 1
 crease 30.000000
 numvert 40
@@ -12003,7 +12003,7 @@ OBJECT poly
 name "flap_left_h.3"
 data 21
 Mesh51 FHHousin_0.001
-texture "747-400_misc.png"
+texture "747-400_misc.webp"
 texrep 1 1
 crease 30.000000
 numvert 40
@@ -12767,7 +12767,7 @@ OBJECT poly
 name "flap_left_h.4"
 data 21
 Mesh50 FHHousin_0.001
-texture "747-400_misc.png"
+texture "747-400_misc.webp"
 texrep 1 1
 crease 30.000000
 numvert 40
@@ -13531,7 +13531,7 @@ OBJECT poly
 name "flap_right_h.1"
 data 21
 Mesh51 FHHousin_012_2
-texture "747-400_misc.png"
+texture "747-400_misc.webp"
 texrep 1 1
 crease 30.000000
 numvert 40
@@ -14295,7 +14295,7 @@ OBJECT poly
 name "flap_right_h.2"
 data 21
 Mesh50 FHHousin_011_2
-texture "747-400_misc.png"
+texture "747-400_misc.webp"
 texrep 1 1
 crease 30.000000
 numvert 40
@@ -15059,7 +15059,7 @@ OBJECT poly
 name "flap_right_h.3"
 data 17
 Mesh51 FHHousin_0
-texture "747-400_misc.png"
+texture "747-400_misc.webp"
 texrep 1 1
 crease 30.000000
 numvert 40
@@ -15823,7 +15823,7 @@ OBJECT poly
 name "flap_right_h.4"
 data 17
 Mesh50 FHHousin_0
-texture "747-400_misc.png"
+texture "747-400_misc.webp"
 texrep 1 1
 crease 30.000000
 numvert 40
@@ -16587,7 +16587,7 @@ OBJECT poly
 name "speedbrake_left.1"
 data 17
 Mesh58 Group_61_1
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 6
@@ -16627,7 +16627,7 @@ OBJECT poly
 name "speedbrake_left.2"
 data 17
 Mesh57 Group_62_1
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -16653,7 +16653,7 @@ OBJECT poly
 name "speedbrake_left.3"
 data 17
 Mesh63 Component_
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 6
@@ -16693,7 +16693,7 @@ OBJECT poly
 name "speedbrake_left.4"
 data 17
 Mesh64 Group_65_1
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -16719,7 +16719,7 @@ OBJECT poly
 name "speedbrake_left.5"
 data 17
 Mesh65 Component_
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 5
@@ -16752,7 +16752,7 @@ OBJECT poly
 name "speedbrake_left.6"
 data 17
 Mesh66 Group_64_1
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 6
@@ -16792,7 +16792,7 @@ OBJECT poly
 name "speedbrake_right.1"
 data 21
 Mesh58 Group_61_1 Gro
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 6
@@ -16832,7 +16832,7 @@ OBJECT poly
 name "speedbrake_right.2"
 data 21
 Mesh57 Group_62_1 Gro
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -16858,7 +16858,7 @@ OBJECT poly
 name "speedbrake_right.3"
 data 20
 Mesh63 Component_5_1
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 6
@@ -16898,7 +16898,7 @@ OBJECT poly
 name "speedbrake_right.4"
 data 21
 Mesh64 Group_65_1 Gro
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -16924,7 +16924,7 @@ OBJECT poly
 name "speedbrake_right.5"
 data 20
 Mesh65 Component_6_1
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 5
@@ -16957,7 +16957,7 @@ OBJECT poly
 name "speedbrake_right.6"
 data 21
 Mesh66 Group_64_1 Gro
-texture "747-400_wingtop.png"
+texture "747-400_wingtop.webp"
 texrep 1 1
 crease 30.000000
 numvert 6

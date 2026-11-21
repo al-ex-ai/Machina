@@ -10,7 +10,7 @@ kids 32
 OBJECT poly
 name "cover"
 loc 0.00130192 -0.00175761 2.47339e-05
-texture "base.png"
+texture "base.webp"
 crease 100.000000
 numvert 4
 4.65661e-09 0.0663637 0.064913
@@ -29,7 +29,7 @@ kids 0
 OBJECT poly
 name "compass"
 loc 0.000845565 -0.000302043 2.47265e-05
-texture "compass.png"
+texture "compass.webp"
 crease 100.000000
 numvert 4
 1.86265e-09 -0.047641 0.0476377
@@ -48,7 +48,7 @@ kids 0
 OBJECT poly
 name "needle"
 loc 0.0013932 0.00614379 2.47284e-05
-texture "sym.png"
+texture "sym.webp"
 crease 100.000000
 numvert 4
 0 -0.0404541 -0.00499735
@@ -67,7 +67,7 @@ kids 0
 OBJECT poly
 name "kurs_plan"
 loc 0.00131282 -0.00832514 2.06538e-05
-texture "sym.png"
+texture "sym.webp"
 crease 100.000000
 numvert 4
 9.31323e-10 -0.00258386 0.0211086
@@ -86,7 +86,7 @@ kids 0
 OBJECT poly
 name "center"
 loc 0.00143753 0.0201953 2.47285e-05
-texture "sym.png"
+texture "sym.webp"
 crease 100.000000
 numvert 4
 0 -0.0428307 0.00907924
@@ -105,7 +105,7 @@ kids 0
 OBJECT poly
 name "kurs_planka"
 loc 0.00152621 -0.000670379 2.47284e-05
-texture "sym.png"
+texture "sym.webp"
 crease 100.000000
 numvert 4
 0 -0.0177002 0.00218336
@@ -142,7 +142,7 @@ kids 0
 OBJECT poly
 name "limb"
 loc 0.00133535 0.0541388 0.000320613
-texture "sym.png"
+texture "sym.webp"
 crease 100.000000
 numvert 4
 2.79397e-09 -0.00531765 0.0279883
@@ -161,7 +161,7 @@ kids 0
 OBJECT poly
 name "dkm"
 loc 0.0013932 0.0390531 0.0493151
-texture "sym.png"
+texture "sym.webp"
 crease 100.000000
 numvert 4
 2.79397e-09 -0.00537214 0.00724617
@@ -180,7 +180,7 @@ kids 0
 OBJECT poly
 name "plane_sym"
 loc 0.0013932 0.0379513 -0.0489743
-texture "sym.png"
+texture "sym.webp"
 crease 100.000000
 numvert 4
 0 -0.00659918 0.00450287
@@ -215,7 +215,7 @@ kids 0
 OBJECT poly
 name "dig_heading_hund"
 loc -0.0139318 0.0534043 0.0569642
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0.0124984 0.00439519 -0.0028678
@@ -561,7 +561,7 @@ kids 0
 OBJECT poly
 name "dig_heading_dec"
 loc -0.0139318 0.0534043 0.0496573
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0 0 0.00286768
@@ -907,7 +907,7 @@ kids 0
 OBJECT poly
 name "dig_heading_ones"
 loc -0.0139318 0.0534043 0.0422985
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0.0124984 0.00439519 -0.0028678
@@ -1253,7 +1253,7 @@ kids 0
 OBJECT poly
 name "dig_plane_ones"
 loc -0.0139318 0.0534043 -0.0558607
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 1.49012e-08 0 0.00286773
@@ -1599,7 +1599,7 @@ kids 0
 OBJECT poly
 name "dig_plane_dec"
 loc -0.0139318 0.0534043 -0.0483375
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0.0124984 0.00439519 -0.00286781
@@ -1945,7 +1945,7 @@ kids 0
 OBJECT poly
 name "dig_plane_hund"
 loc -0.0139318 0.0534043 -0.0410306
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0 0 0.00286771
@@ -2291,7 +2291,7 @@ kids 0
 OBJECT poly
 name "sp_on"
 loc 0.00159172 -0.0593629 0.0221255
-texture "sym.png"
+texture "sym.webp"
 crease 100.000000
 numvert 4
 0 -0.00347788 0.00497457
@@ -2310,7 +2310,7 @@ kids 0
 OBJECT poly
 name "vor_on"
 loc 0.00134051 -0.0593629 0.009181
-texture "sym.png"
+texture "sym.webp"
 crease 100.000000
 numvert 4
 9.31323e-10 0.00347789 0.00657718
@@ -2329,7 +2329,7 @@ kids 0
 OBJECT poly
 name "nv_on"
 loc 0.00131859 -0.0593629 -0.0040099
-texture "sym.png"
+texture "sym.webp"
 crease 100.000000
 numvert 4
 0 -0.00347788 0.00497457
@@ -2348,7 +2348,7 @@ kids 0
 OBJECT poly
 name "rsbn_on"
 loc 0.00131858 -0.0593629 -0.0180638
-texture "sym.png"
+texture "sym.webp"
 crease 100.000000
 numvert 4
 -9.31323e-10 0.00347789 0.0084264
@@ -2403,7 +2403,7 @@ kids 0
 OBJECT poly
 name "blanker_k"
 loc 0.0013932 -0.0240843 5.85697e-06
-texture "sym.png"
+texture "sym.webp"
 crease 100.000000
 numvert 4
 0 -0.00343641 0.00559304
@@ -2422,7 +2422,7 @@ kids 0
 OBJECT poly
 name "blanker_g"
 loc 0.0013932 0.0222751 -0.00855281
-texture "sym.png"
+texture "sym.webp"
 crease 100.000000
 numvert 4
 0 0.00343641 0.00559304
@@ -2441,7 +2441,7 @@ kids 0
 OBJECT poly
 name "blanker_ks"
 loc 0.0013932 -0.0396562 -0.0328845
-texture "sym.png"
+texture "sym.webp"
 crease 100.000000
 numvert 4
 2.79397e-09 -0.00640817 0.00773271
@@ -2876,7 +2876,7 @@ kids 0
 OBJECT poly
 name "heading_sym_handle_top"
 loc 0.00422033 -0.000200387 -2.69711e-05
-texture "sym.png"
+texture "sym.webp"
 crease 100.000000
 numvert 4
 0 -0.00637135 0.00637133
@@ -3245,7 +3245,7 @@ kids 0
 OBJECT poly
 name "plane_sym_handle_top"
 loc 0.00422034 0.000182025 -0.000153393
-texture "sym.png"
+texture "sym.webp"
 crease 100.000000
 numvert 4
 0 -0.00796648 -0.000599995
@@ -3264,7 +3264,7 @@ kids 0
 OBJECT poly
 name "drift"
 loc 0.0014911 0.0597141 0.000290677
-texture "sym.png"
+texture "sym.webp"
 crease 100.000000
 numvert 3
 1.86265e-09 0 0.00296273

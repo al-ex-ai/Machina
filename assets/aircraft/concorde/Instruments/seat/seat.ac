@@ -8,7 +8,7 @@ name "ArmrestLeft"
 loc 0 0 -0
 data 11
 ArmrestLeft
-texture "concorde-seat2.png"
+texture "concorde-seat2.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 8
@@ -69,7 +69,7 @@ name "ArmrestRight"
 loc 0 0 -0
 data 12
 ArmrestRight
-texture "concorde-seat2.png"
+texture "concorde-seat2.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 8
@@ -130,7 +130,7 @@ name "Boggie"
 loc 0 0 -0
 data 6
 Boggie
-texture "concorde-seat2.png"
+texture "concorde-seat2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 24
@@ -277,7 +277,7 @@ name "RailCaptain"
 loc 0 0 -0
 data 11
 RailCaptain
-texture "concorde-seat.png"
+texture "concorde-seat.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 24
@@ -438,7 +438,7 @@ name "RailCopilot"
 loc 0 0 -0
 data 11
 RailCopilot
-texture "concorde-seat.png"
+texture "concorde-seat.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 64
@@ -933,7 +933,7 @@ name "Seat_0"
 loc 0 0 -0
 data 6
 Seat_0
-texture "concorde-seat2.png"
+texture "concorde-seat2.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 104
@@ -1412,7 +1412,7 @@ name "Seat_1"
 loc 0 0 -0
 data 6
 Seat_1
-texture "concorde-seat2.png"
+texture "concorde-seat2.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 420

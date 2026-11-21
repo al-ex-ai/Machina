@@ -8,7 +8,7 @@ name "Bezel"
 loc -0.00022 0.000002 0.000001
 data 5
 Bezel
-texture "mach.png"
+texture "mach.webp"
 texrep 1 1
 crease 30.000001
 numvert 144
@@ -667,7 +667,7 @@ name "Mach.face"
 loc -0.00022 0.000002 0.000001
 data 9
 Mach.face
-texture "mach.png"
+texture "mach.webp"
 texrep 1 1
 crease 30.000001
 numvert 9
@@ -735,7 +735,7 @@ name "Mach.needle"
 loc -0.00022 0.000002 0.000001
 data 11
 Mach.needle
-texture "mach.png"
+texture "mach.webp"
 texrep 1 1
 crease 30.000001
 numvert 17
@@ -818,7 +818,7 @@ name "shadow"
 loc 0.000747 0.000341 0.000171
 data 6
 shadow
-texture "shadow.png"
+texture "shadow.webp"
 texrep 1 1
 crease 30.000001
 numvert 4

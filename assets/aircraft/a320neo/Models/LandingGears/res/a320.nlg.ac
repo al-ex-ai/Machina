@@ -7,7 +7,7 @@ OBJECT poly
 name "ACUTATOR"
 data 17
 FITTING_1 - Defau
-texture "NWA.png"
+texture "NWA.webp"
 texrep 1 1
 crease 30.000000
 numvert 96
@@ -641,7 +641,7 @@ OBJECT poly
 name "AXLE"
 data 21
 FITTING_1 - Defau.001
-texture "NWA.png"
+texture "NWA.webp"
 texrep 1 1
 crease 30.000000
 numvert 224
@@ -2123,7 +2123,7 @@ OBJECT poly
 name "D_STRUCT.L"
 data 21
 FITTING_1 - Defau.006
-texture "NWA.png"
+texture "NWA.webp"
 texrep 1 1
 crease 30.000000
 numvert 124
@@ -2833,7 +2833,7 @@ OBJECT poly
 name "D_STRUCT.U"
 data 21
 FITTING_1 - Defau.007
-texture "NWA.png"
+texture "NWA.webp"
 texrep 1 1
 crease 30.000000
 numvert 108
@@ -3455,7 +3455,7 @@ OBJECT poly
 name "FITTING"
 data 19
 FITTING_1 - Default
-texture "NWA.png"
+texture "NWA.webp"
 texrep 1 1
 crease 30.000000
 numvert 893
@@ -9656,7 +9656,7 @@ OBJECT poly
 name "LINK.01"
 data 21
 FITTING_1 - Defau.002
-texture "NWA.png"
+texture "NWA.webp"
 texrep 1 1
 crease 30.000000
 numvert 143
@@ -10499,7 +10499,7 @@ OBJECT poly
 name "LINK.02"
 data 21
 FITTING_1 - Defau.003
-texture "NWA.png"
+texture "NWA.webp"
 texrep 1 1
 crease 30.000000
 numvert 125
@@ -11240,7 +11240,7 @@ OBJECT poly
 name "LINK.FIT"
 data 21
 FITTING_1 - Defau.004
-texture "NWA.png"
+texture "NWA.webp"
 texrep 1 1
 crease 30.000000
 numvert 44
@@ -11486,7 +11486,7 @@ OBJECT poly
 name "OLEO"
 data 21
 FITTING_1 - Defau.005
-texture "NWA.png"
+texture "NWA.webp"
 texrep 1 1
 crease 30.000000
 numvert 24

@@ -78,7 +78,7 @@ OBJECT poly
 name "cockpitshell_0_1_1"
 data 9
 Plane.002
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1 1
 crease 30.000000
 numvert 212
@@ -12192,7 +12192,7 @@ OBJECT poly
 name "fuselage.noseplane"
 data 4
 Mesh
-texture "747-400_engine.png"
+texture "747-400_engine.webp"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -13625,7 +13625,7 @@ OBJECT poly
 name "elevator_left"
 data 17
 Mesh23 Elevator_0
-texture "747-400_misc.png"
+texture "747-400_misc.webp"
 texrep 1 1
 crease 30.000000
 numvert 25
@@ -13889,7 +13889,7 @@ OBJECT poly
 name "elevator_right"
 data 17
 Mesh1 Elevator_00
-texture "747-400_misc.png"
+texture "747-400_misc.webp"
 texrep 1 1
 crease 30.000000
 numvert 25
@@ -14153,7 +14153,7 @@ OBJECT poly
 name "hstab"
 data 17
 Mesh5 HorizSta_00
-texture "747-400_misc.png"
+texture "747-400_misc.webp"
 texrep 1 1
 crease 30.000000
 numvert 42

@@ -9,7 +9,7 @@ kids 1
 OBJECT poly
 name "doors"
 loc -0.000538556 -0.0222217 -0.262576
-texture "doors.png"
+texture "doors.webp"
 crease 45.000000
 numvert 4
 0 0.145964 0.392651

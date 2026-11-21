@@ -7,7 +7,7 @@ name "bezel"
 loc 0.000059 0.001915 0.001453
 data 5
 bezel
-texture "amplitudeface.png"
+texture "amplitudeface.webp"
 texrep 1 1
 crease 30.000001
 numvert 144
@@ -666,7 +666,7 @@ name "face"
 loc 0.000124 0 0.000367
 data 4
 face
-texture "amplitudeface.png"
+texture "amplitudeface.webp"
 texrep 1 1
 crease 30.000001
 numvert 16
@@ -777,7 +777,7 @@ name "needle"
 loc 0 0 -0
 data 6
 needle
-texture "amplitudeface.png"
+texture "amplitudeface.webp"
 texrep 1 1
 crease 30.000001
 numvert 7
@@ -821,7 +821,7 @@ name "sup"
 loc 0 -0.008297 0.05574
 data 3
 sup
-texture "amplitudeface.png"
+texture "amplitudeface.webp"
 texrep 1 1
 numvert 40
 -0.00181 -0.006391 -0.055221

@@ -163,7 +163,7 @@ name "fix"
 loc -0.073986 -0.034341 0.001161
 data 3
 fix
-texture "bezel.png"
+texture "bezel.webp"
 texrep 1 1
 numvert 220
 0.06828 0.001178 -0.032583
@@ -1905,7 +1905,7 @@ name "needle"
 loc 0.000395 0 0.000611
 data 6
 needle
-texture "bezel.png"
+texture "bezel.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -1927,7 +1927,7 @@ name "support"
 loc -0.00296 0.002432 0.000143
 data 7
 support
-texture "bezel.png"
+texture "bezel.webp"
 texrep 1 1
 crease 30.000001
 numvert 344

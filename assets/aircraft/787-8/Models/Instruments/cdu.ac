@@ -10,7 +10,7 @@ kids 63
 OBJECT poly
 name "cdu_down"
 loc 0.100167 0.000575253 0.112867
-texture "sysinfo.png"
+texture "sysinfo.webp"
 crease 45.000000
 numvert 4
 0.00510472 -8.82149e-06 -0.0140031
@@ -29,7 +29,7 @@ kids 0
 OBJECT poly
 name "cdu_up"
 loc 0.0598012 0.000575253 0.0909805
-texture "sysinfo.png"
+texture "sysinfo.webp"
 crease 45.000000
 numvert 4
 0.00118408 3.45707e-06 0.0140031
@@ -48,7 +48,7 @@ kids 0
 OBJECT poly
 name "cdu"
 loc 0.0958785 0.000473994 0.0901494
-texture "sysinfo.png"
+texture "sysinfo.webp"
 crease 45.000000
 numvert 4
 -0.0415108 -8.82149e-06 0.0150288
@@ -67,7 +67,7 @@ kids 0
 OBJECT poly
 name "search.click"
 loc 0.0475792 0.000823843 -0.05829
-texture "fmc_help.png"
+texture "fmc_help.webp"
 crease 45.000000
 numvert 4
 -0.00583551 -8.82149e-06 0.274265
@@ -86,7 +86,7 @@ kids 0
 OBJECT poly
 name "select.7.click"
 loc 0.104142 0.000823843 -0.0396531
-texture "fmc_help.png"
+texture "fmc_help.webp"
 crease 45.000000
 numvert 4
 -0.00512159 -8.82149e-06 0.254482
@@ -105,7 +105,7 @@ kids 0
 OBJECT poly
 name "select.6.click"
 loc 0.0978021 0.000823843 -0.0396531
-texture "fmc_help.png"
+texture "fmc_help.webp"
 crease 45.000000
 numvert 4
 0.00118802 3.45707e-06 0.254482
@@ -124,7 +124,7 @@ kids 0
 OBJECT poly
 name "select.5.click"
 loc 0.0914622 0.000823843 -0.0396531
-texture "fmc_help.png"
+texture "fmc_help.webp"
 crease 45.000000
 numvert 4
 0.00118801 3.45707e-06 0.254482
@@ -143,7 +143,7 @@ kids 0
 OBJECT poly
 name "select.4.click"
 loc 0.0851232 0.000823843 -0.0396531
-texture "fmc_help.png"
+texture "fmc_help.webp"
 crease 45.000000
 numvert 4
 -0.0051216 -8.82149e-06 0.254482
@@ -162,7 +162,7 @@ kids 0
 OBJECT poly
 name "select.3.click"
 loc 0.0787835 0.000823843 -0.0396531
-texture "fmc_help.png"
+texture "fmc_help.webp"
 crease 45.000000
 numvert 4
 0.00118801 3.45707e-06 0.254482
@@ -181,7 +181,7 @@ kids 0
 OBJECT poly
 name "select.2.click"
 loc 0.072444 0.000823843 -0.0396531
-texture "fmc_help.png"
+texture "fmc_help.webp"
 crease 45.000000
 numvert 4
 -0.0051216 -8.82149e-06 0.254482
@@ -200,7 +200,7 @@ kids 0
 OBJECT poly
 name "select.1.click"
 loc 0.0661044 0.000823843 -0.0396531
-texture "fmc_help.png"
+texture "fmc_help.webp"
 crease 45.000000
 numvert 4
 -0.0051216 -8.82149e-06 0.254482
@@ -219,7 +219,7 @@ kids 0
 OBJECT poly
 name "select.0.click"
 loc 0.0597648 0.000823843 -0.0396531
-texture "fmc_help.png"
+texture "fmc_help.webp"
 crease 45.000000
 numvert 4
 0.00118801 3.45707e-06 0.254482
@@ -238,7 +238,7 @@ kids 0
 OBJECT poly
 name "select"
 loc 0.0707394 0.000473994 0.0194796
-texture "fmc_help.png"
+texture "fmc_help.webp"
 crease 45.000000
 numvert 4
 0.00401828 3.45707e-06 0.0760236
@@ -257,7 +257,7 @@ kids 0
 OBJECT poly
 name "search"
 loc 0.0476009 0.000473994 0.0188837
-texture "fmc_help.png"
+texture "fmc_help.webp"
 crease 45.000000
 numvert 4
 -0.00611991 -8.82149e-06 0.0767314
@@ -276,7 +276,7 @@ kids 0
 OBJECT poly
 name "search.active"
 loc 0.0475792 0.000473994 -0.05829
-texture "fmc_help.png"
+texture "fmc_help.webp"
 crease 45.000000
 numvert 4
 0.00135361 3.45707e-06 0.274265
@@ -295,7 +295,7 @@ kids 0
 OBJECT poly
 name "help_box"
 loc 0.0972871 0.000301186 -0.158731
-texture "fmc_help.png"
+texture "fmc_help.webp"
 crease 45.000000
 numvert 4
 0.0137603 3.45707e-06 0.378985
@@ -314,7 +314,7 @@ kids 0
 OBJECT poly
 name "select.7"
 loc 0.104142 0.000473994 -0.0396531
-texture "fmc_help.png"
+texture "fmc_help.webp"
 crease 45.000000
 numvert 4
 0.00118802 3.45707e-06 0.254482
@@ -333,7 +333,7 @@ kids 0
 OBJECT poly
 name "select.6"
 loc 0.0978021 0.000473994 -0.0396531
-texture "fmc_help.png"
+texture "fmc_help.webp"
 crease 45.000000
 numvert 4
 -0.0051216 -8.82149e-06 0.254482
@@ -352,7 +352,7 @@ kids 0
 OBJECT poly
 name "select.5"
 loc 0.0914622 0.000473994 -0.0396531
-texture "fmc_help.png"
+texture "fmc_help.webp"
 crease 45.000000
 numvert 4
 -0.0051216 -8.82149e-06 0.254482
@@ -371,7 +371,7 @@ kids 0
 OBJECT poly
 name "select.4"
 loc 0.0851232 0.000473994 -0.0396531
-texture "fmc_help.png"
+texture "fmc_help.webp"
 crease 45.000000
 numvert 4
 0.00118801 3.45707e-06 0.254482
@@ -390,7 +390,7 @@ kids 0
 OBJECT poly
 name "select.3"
 loc 0.0787835 0.000473994 -0.0396531
-texture "fmc_help.png"
+texture "fmc_help.webp"
 crease 45.000000
 numvert 4
 -0.0051216 -8.82149e-06 0.254482
@@ -409,7 +409,7 @@ kids 0
 OBJECT poly
 name "select.2"
 loc 0.072444 0.000473994 -0.0396531
-texture "fmc_help.png"
+texture "fmc_help.webp"
 crease 45.000000
 numvert 4
 0.00118801 3.45707e-06 0.254482
@@ -428,7 +428,7 @@ kids 0
 OBJECT poly
 name "select.1"
 loc 0.0661044 0.000473994 -0.0396531
-texture "fmc_help.png"
+texture "fmc_help.webp"
 crease 45.000000
 numvert 4
 0.00118801 3.45707e-06 0.254482
@@ -447,7 +447,7 @@ kids 0
 OBJECT poly
 name "help"
 loc 0.0119517 -0.00364873 0.153331
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 8
 -0.0046873 0.00346446 -0.00850278
@@ -498,7 +498,7 @@ kids 0
 OBJECT poly
 name "ident"
 loc 0.0119517 -0.00364873 0.178329
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 8
 0.00468137 0.00400507 -0.00793809
@@ -549,7 +549,7 @@ kids 0
 OBJECT poly
 name "rte"
 loc 0.0246801 -0.00364873 0.198448
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 8
 -0.0046873 0.00346446 -0.00850277
@@ -600,7 +600,7 @@ kids 0
 OBJECT poly
 name "index"
 loc 0.0121966 -0.00364873 0.198204
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 8
 0.00468137 0.00400507 -0.00793809
@@ -651,7 +651,7 @@ kids 0
 OBJECT poly
 name "next"
 loc 0.0118937 -0.00364873 0.0790658
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 8
 -0.00434879 0.00346446 -0.00786102
@@ -702,7 +702,7 @@ kids 0
 OBJECT poly
 name "back"
 loc 0.0118937 -0.00364873 0.096834
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 8
 0.00434329 0.00400507 -0.00733896
@@ -753,7 +753,7 @@ kids 0
 OBJECT poly
 name "base"
 loc -0.14611 -7.33664e-05 -0.170613
-texture "cdu-base.png"
+texture "cdu-base.webp"
 crease 45.000000
 numvert 4
 0.00313669 3.45707e-06 0.391513
@@ -772,7 +772,7 @@ kids 0
 OBJECT poly
 name "input"
 loc -0.00747405 -2.36544e-06 -0.116288
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 4
 -0.0067987 -9.77516e-06 0.323281
@@ -791,7 +791,7 @@ kids 0
 OBJECT poly
 name "input"
 loc -0.116028 -2.36544e-06 -0.115956
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 4
 -0.0030922 -9.77516e-06 0.323281
@@ -810,7 +810,7 @@ kids 0
 OBJECT poly
 name "input"
 loc -0.00998435 -2.36544e-06 -0.116288
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 4
 0.00239257 2.26498e-06 0.323281
@@ -829,7 +829,7 @@ kids 0
 OBJECT poly
 name "cdu"
 loc 0.0624789 -7.33664e-05 -0.170613
-texture "cdu-base.png"
+texture "cdu-base.webp"
 crease 45.000000
 numvert 4
 -0.210581 -8.82149e-06 0.391513
@@ -848,7 +848,7 @@ kids 0
 OBJECT poly
 name "r7"
 loc -0.0218775 -2.36544e-06 -0.024095
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 4
 0.00194496 2.26498e-06 0.156783
@@ -867,7 +867,7 @@ kids 0
 OBJECT poly
 name "r6"
 loc -0.034984 -1.71454e-05 -0.024095
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 4
 -0.00839029 -9.65595e-06 0.156783
@@ -886,7 +886,7 @@ kids 0
 OBJECT poly
 name "r5"
 loc -0.0484454 -1.69054e-05 -0.024095
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 4
 0.00194368 2.6226e-06 0.156783
@@ -905,7 +905,7 @@ kids 0
 OBJECT poly
 name "r4"
 loc -0.0623243 -4.20554e-05 -0.024095
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 4
 0.00194496 1.78814e-06 0.156783
@@ -924,7 +924,7 @@ kids 0
 OBJECT poly
 name "r3"
 loc -0.0758487 -8.30664e-05 -0.024095
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 4
 -0.00839154 -1.0252e-05 0.156783
@@ -943,7 +943,7 @@ kids 0
 OBJECT poly
 name "r2"
 loc -0.0896637 -7.77054e-05 -0.024095
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 4
 -0.00839154 -1.04904e-05 0.156783
@@ -962,7 +962,7 @@ kids 0
 OBJECT poly
 name "r1"
 loc -0.10319 -0.000109175 -0.024095
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 4
 0.00194623 3.45707e-06 0.156783
@@ -981,7 +981,7 @@ kids 0
 OBJECT poly
 name "l7"
 loc -0.0218775 -2.36544e-06 0.0500198
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 4
 -0.00839028 -9.77516e-06 0.159374
@@ -1000,7 +1000,7 @@ kids 0
 OBJECT poly
 name "l6"
 loc -0.034984 -1.71454e-05 0.0500198
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 4
 0.00194623 3.45707e-06 0.159374
@@ -1019,7 +1019,7 @@ kids 0
 OBJECT poly
 name "l5"
 loc -0.0484454 -1.69054e-05 0.0500198
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 4
 -0.00839156 -9.65595e-06 0.159374
@@ -1038,7 +1038,7 @@ kids 0
 OBJECT poly
 name "l4"
 loc -0.0623243 -4.20554e-05 0.0500198
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 4
 -0.0083903 -1.03712e-05 0.159374
@@ -1057,7 +1057,7 @@ kids 0
 OBJECT poly
 name "l3"
 loc -0.0758487 -8.30664e-05 0.0500198
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 4
 0.00194497 2.38419e-06 0.159374
@@ -1076,7 +1076,7 @@ kids 0
 OBJECT poly
 name "l2"
 loc -0.0896637 -7.77054e-05 0.0500198
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 4
 0.00194495 2.02656e-06 0.159374
@@ -1095,7 +1095,7 @@ kids 0
 OBJECT poly
 name "l1"
 loc -0.10319 -0.000109175 0.0500198
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 4
 -0.00839029 -8.82149e-06 0.159374
@@ -1114,7 +1114,7 @@ kids 0
 OBJECT poly
 name "l1p"
 loc -0.10319 0.000525516 0.0500193
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 4
 -0.00839029 -8.82149e-06 0.159374
@@ -1133,7 +1133,7 @@ kids 0
 OBJECT poly
 name "l2p"
 loc -0.0896637 0.000556985 0.0500193
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 4
 0.00194495 2.02656e-06 0.159374
@@ -1152,7 +1152,7 @@ kids 0
 OBJECT poly
 name "l3p"
 loc -0.0758487 0.000551625 0.0500193
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 4
 0.00194497 2.38419e-06 0.159374
@@ -1171,7 +1171,7 @@ kids 0
 OBJECT poly
 name "l4p"
 loc -0.0623243 0.000592636 0.0500193
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 4
 -0.0083903 -1.03712e-05 0.159374
@@ -1190,7 +1190,7 @@ kids 0
 OBJECT poly
 name "l5p"
 loc -0.0484454 0.000617786 0.0500193
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 4
 -0.00839156 -9.65595e-06 0.159374
@@ -1209,7 +1209,7 @@ kids 0
 OBJECT poly
 name "l6p"
 loc -0.034984 0.000617546 0.0500193
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 4
 0.00194623 3.45707e-06 0.159374
@@ -1228,7 +1228,7 @@ kids 0
 OBJECT poly
 name "l7p"
 loc -0.0218775 0.000632326 0.0500193
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 4
 -0.00839028 -9.77516e-06 0.159374
@@ -1247,7 +1247,7 @@ kids 0
 OBJECT poly
 name "r1p"
 loc -0.10319 0.000525516 -0.024095
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 4
 0.00194623 3.45707e-06 0.156783
@@ -1266,7 +1266,7 @@ kids 0
 OBJECT poly
 name "r2p"
 loc -0.0896637 0.000556985 -0.024095
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 4
 -0.00839154 -1.04904e-05 0.156783
@@ -1285,7 +1285,7 @@ kids 0
 OBJECT poly
 name "r3p"
 loc -0.0758487 0.000551625 -0.024095
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 4
 -0.00839154 -1.0252e-05 0.156783
@@ -1304,7 +1304,7 @@ kids 0
 OBJECT poly
 name "r4p"
 loc -0.0623243 0.000592636 -0.024095
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 4
 0.00194496 1.78814e-06 0.156783
@@ -1323,7 +1323,7 @@ kids 0
 OBJECT poly
 name "r5p"
 loc -0.0484454 0.000617786 -0.024095
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 4
 0.00194368 2.6226e-06 0.156783
@@ -1342,7 +1342,7 @@ kids 0
 OBJECT poly
 name "r6p"
 loc -0.034984 0.000617546 -0.024095
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 4
 -0.00839029 -9.65595e-06 0.156783
@@ -1361,7 +1361,7 @@ kids 0
 OBJECT poly
 name "r7p"
 loc -0.0218775 0.000632326 -0.024095
-texture "cdu.png"
+texture "cdu.webp"
 crease 45.000000
 numvert 4
 0.00194496 2.26498e-06 0.156783
@@ -1380,7 +1380,7 @@ kids 0
 OBJECT poly
 name "select.0"
 loc 0.0597648 0.000473994 -0.0396531
-texture "fmc_help.png"
+texture "fmc_help.webp"
 crease 45.000000
 numvert 4
 -0.0051216 -8.82149e-06 0.254482

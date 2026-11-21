@@ -17,7 +17,7 @@ name "LampAmber"
 loc 0.084539 0.117726 0.002233
 data 9
 LampAmber
-texture "lamp1.png"
+texture "lamp1.webp"
 texrep 1 1
 numvert 8
 0.004508 -0.009198 0.001306
@@ -70,7 +70,7 @@ name "LampAmber.001"
 loc 0.140928 0.117726 0.002233
 data 13
 LampAmber.001
-texture "lamp1.png"
+texture "lamp1.webp"
 texrep 1 1
 numvert 8
 0.004508 -0.009198 0.001306
@@ -123,7 +123,7 @@ name "LampAmber.002"
 loc 0.196763 0.117726 0.002233
 data 13
 LampAmber.002
-texture "lamp1.png"
+texture "lamp1.webp"
 texrep 1 1
 numvert 8
 0.004508 -0.009198 0.001306
@@ -176,7 +176,7 @@ name "LampAmber.003"
 loc 0.084838 0.097488 0.002233
 data 13
 LampAmber.003
-texture "lamp1.png"
+texture "lamp1.webp"
 texrep 1 1
 numvert 8
 0.004508 -0.009198 0.001306
@@ -229,7 +229,7 @@ name "LampAmber.004"
 loc 0.14067 0.097488 0.002233
 data 13
 LampAmber.004
-texture "lamp1.png"
+texture "lamp1.webp"
 texrep 1 1
 numvert 8
 0.004508 -0.009198 0.001306
@@ -282,7 +282,7 @@ name "LampAmber.005"
 loc 0.19693 0.097488 0.002233
 data 13
 LampAmber.005
-texture "lamp1.png"
+texture "lamp1.webp"
 texrep 1 1
 numvert 8
 0.004508 -0.009198 0.001306
@@ -335,7 +335,7 @@ name "LampAmber.006"
 loc 0.211562 0.035239 0.002393
 data 13
 LampAmber.006
-texture "lamp2.png"
+texture "lamp2.webp"
 texrep 1 1
 numvert 8
 0.004508 -0.009198 0.000953
@@ -388,7 +388,7 @@ name "LampAmber.007"
 loc 0.211562 0.015187 0.002393
 data 13
 LampAmber.007
-texture "lamp2.png"
+texture "lamp2.webp"
 texrep 1 1
 numvert 8
 0.004508 -0.009198 0.000953
@@ -441,7 +441,7 @@ name "LampAmber.008"
 loc 0.069652 0.019568 0.002393
 data 13
 LampAmber.008
-texture "lamp2.png"
+texture "lamp2.webp"
 texrep 1 1
 numvert 8
 0.004508 -0.009198 0.000953
@@ -494,7 +494,7 @@ name "LampAmber.009"
 loc 0.175781 0.019568 0.002393
 data 13
 LampAmber.009
-texture "lamp2.png"
+texture "lamp2.webp"
 texrep 1 1
 numvert 8
 0.004508 -0.009198 0.000953
@@ -547,7 +547,7 @@ name "LampAmber.010"
 loc 0.069504 -0.000544 0.002393
 data 13
 LampAmber.010
-texture "lamp2.png"
+texture "lamp2.webp"
 texrep 1 1
 numvert 8
 0.004508 -0.009198 0.000953
@@ -600,7 +600,7 @@ name "LampAmber.011"
 loc 0.175617 -0.000544 0.002393
 data 13
 LampAmber.011
-texture "lamp2.png"
+texture "lamp2.webp"
 texrep 1 1
 numvert 8
 0.004508 -0.009198 0.000953
@@ -653,7 +653,7 @@ name "LampAmberON"
 loc 0.084539 0.117726 0.002393
 data 11
 LampAmberON
-texture "lamp1.png"
+texture "lamp1.webp"
 texrep 1 1
 numvert 8
 0.004508 -0.009198 0.001306
@@ -706,7 +706,7 @@ name "LampAmberON.001"
 loc 0.140928 0.117726 0.002393
 data 15
 LampAmberON.001
-texture "lamp1.png"
+texture "lamp1.webp"
 texrep 1 1
 numvert 8
 0.004508 -0.009198 0.001306
@@ -759,7 +759,7 @@ name "LampAmberON.002"
 loc 0.196763 0.117726 0.002393
 data 15
 LampAmberON.002
-texture "lamp1.png"
+texture "lamp1.webp"
 texrep 1 1
 numvert 8
 0.004508 -0.009198 0.001306
@@ -812,7 +812,7 @@ name "LampAmberON.003"
 loc 0.084838 0.097488 0.002393
 data 15
 LampAmberON.003
-texture "lamp1.png"
+texture "lamp1.webp"
 texrep 1 1
 numvert 8
 0.004508 -0.009198 0.001306
@@ -865,7 +865,7 @@ name "LampAmberON.004"
 loc 0.14067 0.097488 0.002393
 data 15
 LampAmberON.004
-texture "lamp1.png"
+texture "lamp1.webp"
 texrep 1 1
 numvert 8
 0.004508 -0.009198 0.001306
@@ -918,7 +918,7 @@ name "LampAmberON.005"
 loc 0.19693 0.097488 0.002393
 data 15
 LampAmberON.005
-texture "lamp1.png"
+texture "lamp1.webp"
 texrep 1 1
 numvert 8
 0.004508 -0.009198 0.001306
@@ -971,7 +971,7 @@ name "LampAmberON.006"
 loc 0.211562 0.035239 0.002393
 data 15
 LampAmberON.006
-texture "lamp2.png"
+texture "lamp2.webp"
 texrep 1 1
 numvert 8
 0.004508 -0.009198 0.001306
@@ -1024,7 +1024,7 @@ name "LampAmberON.007"
 loc 0.211562 0.015187 0.002393
 data 15
 LampAmberON.007
-texture "lamp2.png"
+texture "lamp2.webp"
 texrep 1 1
 numvert 8
 0.004508 -0.009198 0.001306
@@ -1077,7 +1077,7 @@ name "LampAmberON.008"
 loc 0.069652 0.019568 0.002393
 data 15
 LampAmberON.008
-texture "lamp2.png"
+texture "lamp2.webp"
 texrep 1 1
 numvert 8
 0.004508 -0.009198 0.001306
@@ -1130,7 +1130,7 @@ name "LampAmberON.009"
 loc 0.175781 0.019568 0.002393
 data 15
 LampAmberON.009
-texture "lamp2.png"
+texture "lamp2.webp"
 texrep 1 1
 numvert 8
 0.004508 -0.009198 0.001306
@@ -1183,7 +1183,7 @@ name "LampAmberON.010"
 loc 0.069504 -0.000544 0.002393
 data 15
 LampAmberON.010
-texture "lamp2.png"
+texture "lamp2.webp"
 texrep 1 1
 numvert 8
 0.004508 -0.009198 0.001306
@@ -1236,7 +1236,7 @@ name "LampAmberON.011"
 loc 0.175617 -0.000544 0.002393
 data 15
 LampAmberON.011
-texture "lamp2.png"
+texture "lamp2.webp"
 texrep 1 1
 numvert 8
 0.004508 -0.009198 0.001306
@@ -1289,7 +1289,7 @@ name "LampWhite"
 loc 0.286292 0.023492 0.029839
 data 9
 LampWhite
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -1925,7 +1925,7 @@ name "LampWhite.001"
 loc 0.286292 -0.057237 0.029839
 data 13
 LampWhite.001
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -2561,7 +2561,7 @@ name "LampWhiteON"
 loc 0.286277 0.023533 0.029839
 data 11
 LampWhiteON
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -3197,7 +3197,7 @@ name "LampWhiteON.001"
 loc 0.286277 -0.057196 0.029839
 data 15
 LampWhiteON.001
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -3833,7 +3833,7 @@ name "cover"
 loc 0.283832 0.271284 -0.46808
 data 5
 cover
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 79.999998
 numvert 50
@@ -4104,7 +4104,7 @@ name "cover.001"
 loc 0.326991 0.271284 -0.46808
 data 9
 cover.001
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 79.999998
 numvert 50
@@ -4375,7 +4375,7 @@ name "cover.002"
 loc 0.120562 0.006596 0.015871
 data 9
 cover.002
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 numvert 64
 0.003701 0.000162 -0.017989
@@ -4771,7 +4771,7 @@ name "sockle"
 loc 0.01844 0.533186 -0.585821
 data 6
 sockle
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 30.000001
 numvert 31
@@ -4891,7 +4891,7 @@ name "sockle.001"
 loc 0.061599 0.533186 -0.585821
 data 10
 sockle.001
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 30.000001
 numvert 31
@@ -5011,7 +5011,7 @@ name "sockle.002"
 loc -0.168994 0.445069 -0.585821
 data 10
 sockle.002
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 30.000001
 numvert 31
@@ -5131,7 +5131,7 @@ name "sockle.003"
 loc -0.149531 0.445069 -0.585821
 data 10
 sockle.003
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 30.000001
 numvert 31
@@ -5251,7 +5251,7 @@ name "sockle.004"
 loc -0.118646 0.445069 -0.585821
 data 10
 sockle.004
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 30.000001
 numvert 31
@@ -5371,7 +5371,7 @@ name "sockle.005"
 loc -0.089452 0.445069 -0.585821
 data 10
 sockle.005
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 30.000001
 numvert 31
@@ -5491,7 +5491,7 @@ name "sockle.006"
 loc -0.056874 0.445069 -0.585821
 data 10
 sockle.006
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 30.000001
 numvert 31
@@ -5611,7 +5611,7 @@ name "sockle.007"
 loc -0.036989 0.445069 -0.585821
 data 10
 sockle.007
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 30.000001
 numvert 31
@@ -5731,7 +5731,7 @@ name "sockle.008"
 loc -0.079536 0.38805 -0.585821
 data 10
 sockle.008
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 30.000001
 numvert 31
@@ -5851,7 +5851,7 @@ name "sockle.009"
 loc -0.123908 0.38805 -0.585821
 data 10
 sockle.009
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 30.000001
 numvert 31
@@ -5971,7 +5971,7 @@ name "sockle.010"
 loc -0.327528 -0.116635 -0.585734
 data 10
 sockle.010
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 30.000001
 numvert 31
@@ -6091,7 +6091,7 @@ name "sockle.011"
 loc -0.271135 -0.116635 -0.585734
 data 10
 sockle.011
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 30.000001
 numvert 31
@@ -6211,7 +6211,7 @@ name "sockle.012"
 loc -0.215095 -0.116635 -0.585734
 data 10
 sockle.012
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 30.000001
 numvert 31
@@ -6331,7 +6331,7 @@ name "sockle.013"
 loc 0.078217 0.100803 0.002481
 data 10
 sockle.013
-texture "lamp1.png"
+texture "lamp1.webp"
 texrep 1 1
 numvert 192
 0.011772 0.007024 -0.001499
@@ -7541,7 +7541,7 @@ name "sockle.014"
 loc 0.207254 -0.012737 0.000173
 data 10
 sockle.014
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 numvert 33
 0.006253 0 -0.006253
@@ -7792,7 +7792,7 @@ name "switch"
 loc 0.071643 0.807832 -0.1633
 data 6
 switch
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 79.999998
 numvert 65
@@ -8300,7 +8300,7 @@ name "switch.001"
 loc 0.114802 0.807832 -0.1633
 data 10
 switch.001
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 79.999998
 numvert 65
@@ -8808,7 +8808,7 @@ name "switch.002"
 loc -0.115791 0.719715 -0.1633
 data 10
 switch.002
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 79.999998
 numvert 65
@@ -9316,7 +9316,7 @@ name "switch.003"
 loc -0.096328 0.719715 -0.1633
 data 10
 switch.003
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 79.999998
 numvert 65
@@ -9824,7 +9824,7 @@ name "switch.004"
 loc -0.065443 0.719715 -0.1633
 data 10
 switch.004
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 79.999998
 numvert 65
@@ -10332,7 +10332,7 @@ name "switch.005"
 loc -0.036249 0.719715 -0.1633
 data 10
 switch.005
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 79.999998
 numvert 65
@@ -10840,7 +10840,7 @@ name "switch.006"
 loc -0.003671 0.719715 -0.1633
 data 10
 switch.006
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 79.999998
 numvert 65
@@ -11348,7 +11348,7 @@ name "switch.007"
 loc 0.016214 0.719715 -0.1633
 data 10
 switch.007
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 79.999998
 numvert 65
@@ -11856,7 +11856,7 @@ name "switch.008"
 loc -0.026333 0.662696 -0.1633
 data 10
 switch.008
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 79.999998
 numvert 65
@@ -12364,7 +12364,7 @@ name "switch.009"
 loc -0.070705 0.662696 -0.1633
 data 10
 switch.009
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 79.999998
 numvert 65
@@ -12872,7 +12872,7 @@ name "switch.010"
 loc -0.114486 0.733803 0.259153
 data 10
 switch.010
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 79.999998
 numvert 65
@@ -13380,7 +13380,7 @@ name "switch.011"
 loc -0.058093 0.733803 0.259153
 data 10
 switch.011
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 79.999998
 numvert 65
@@ -13888,7 +13888,7 @@ name "switch.012"
 loc -0.002053 0.733803 0.259153
 data 10
 switch.012
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 79.999998
 numvert 65
@@ -14396,7 +14396,7 @@ name "switch.013"
 loc 0.207254 -0.012737 0.004499
 data 10
 switch.013
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 numvert 49
 -0.00383 -0.000343 -0.00388
@@ -14775,7 +14775,7 @@ name "turn"
 loc 0.500713 -0.78986 15.45564
 data 4
 turn
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 45.000001
 numvert 49
@@ -15003,7 +15003,7 @@ name "turn.001"
 loc 0.500713 -0.708669 15.45564
 data 8
 turn.001
-texture "lamp_knob.png"
+texture "lamp_knob.webp"
 texrep 1 1
 crease 45.000001
 numvert 49

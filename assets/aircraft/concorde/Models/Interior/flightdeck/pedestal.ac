@@ -7,7 +7,7 @@ name "ConsoleAft"
 loc 23.766333 -0.274868 -0
 data 10
 ConsoleAft
-texture "concorde-flight-deck.png"
+texture "concorde-flight-deck.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8
@@ -68,7 +68,7 @@ name "ConsoleForward"
 loc 23.764513 -0.274868 -0
 data 14
 ConsoleForward
-texture "concorde-flight-deck.png"
+texture "concorde-flight-deck.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 28

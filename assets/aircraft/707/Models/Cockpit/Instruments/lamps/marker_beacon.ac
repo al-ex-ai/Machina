@@ -8,7 +8,7 @@ name "LampAmber"
 loc 0.053104 -0.025643 -0
 data 9
 LampAmber
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -644,7 +644,7 @@ name "LampAmberON"
 loc 0.053303 -0.025643 -0
 data 11
 LampAmberON
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -1280,7 +1280,7 @@ name "LampBlue"
 loc 0.053104 -0.050573 -0
 data 8
 LampBlue
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -1916,7 +1916,7 @@ name "LampBlueON"
 loc 0.053303 -0.050573 -0
 data 10
 LampBlueON
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -2552,7 +2552,7 @@ name "LampWhite"
 loc 0.053104 0 -0
 data 9
 LampWhite
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -3188,7 +3188,7 @@ name "LampWhiteON"
 loc 0.053303 0 -0
 data 11
 LampWhiteON
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -3824,7 +3824,7 @@ name "Sockle"
 loc -0.043084 0.079137 0.000149
 data 6
 Sockle
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 numvert 39
 0.046789 -0.079736 -0.000437
@@ -4107,7 +4107,7 @@ name "shadow"
 loc -0.000452 0.000281 -0.000345
 data 6
 shadow
-texture "shadow_marker_beacon.png"
+texture "shadow_marker_beacon.webp"
 texrep 1 1
 numvert 4
 0.000985 -0.055224 -0.02361

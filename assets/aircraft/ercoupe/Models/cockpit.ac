@@ -8,7 +8,7 @@ kids 3
 OBJECT poly
 name "switchcountour"
 loc -0.49328 0.306839 0.307716
-texture "panel02.png"
+texture "panel02.webp"
 crease 180.000000
 numvert 32
 0.00111371 0.250751 -0.663383
@@ -158,7 +158,7 @@ name "NavLightSwitch"
 loc -0.495966 0.332715 0.255052
 data 6
 on-off
-texture "panel02.png"
+texture "panel02.webp"
 crease 30.000000
 numvert 48
 0.00478861 0.207682 -0.612924
@@ -536,7 +536,7 @@ kids 4
 OBJECT poly
 name "metal"
 loc 1.66893e-06 3.8147e-06 0.0456402
-texture "panel02.png"
+texture "panel02.webp"
 crease 90.000000
 numvert 8
 -0.00448436 -0.148795 -0.00237326
@@ -587,7 +587,7 @@ kids 0
 OBJECT poly
 name "metal"
 loc 1.66893e-06 -9.05991e-06 0.0554897
-texture "panel02.png"
+texture "panel02.webp"
 crease 90.000000
 numvert 8
 -0.00300592 0.149811 -0.00301459
@@ -638,7 +638,7 @@ kids 0
 OBJECT poly
 name "metal"
 loc -1.66893e-06 -3.93391e-06 -0.0456402
-texture "panel02.png"
+texture "panel02.webp"
 crease 90.000000
 numvert 8
 -0.00448436 -0.148795 -0.00237326
@@ -689,7 +689,7 @@ kids 0
 OBJECT poly
 name "metal"
 loc -1.66893e-06 9.05991e-06 -0.0554897
-texture "panel02.png"
+texture "panel02.webp"
 crease 90.000000
 numvert 8
 -0.00300592 0.152056 -0.00237326
@@ -748,7 +748,7 @@ kids 3
 OBJECT poly
 name "metal"
 loc -0.514117 -0.288507 -0.0135233
-texture "panel02.png"
+texture "panel02.webp"
 crease 90.000000
 numvert 80
 -0.0675856 0.0674449 -0.0450178
@@ -1256,7 +1256,7 @@ kids 0
 OBJECT poly
 name "GloveCompartmnetRB"
 loc -2.49594e-07 0.0322465 0.0105757
-texture "panel02.png"
+texture "panel02.webp"
 crease 90.000000
 numvert 44
 -0.452366 -0.370427 -0.104174
@@ -1644,7 +1644,7 @@ kids 0
 OBJECT poly
 name "GloveCompsrtmentRF"
 loc -0.445841 -0.28734 -0.0137413
-texture "panel02.png"
+texture "panel02.webp"
 crease 90.000000
 numvert 263
 -0.00525323 -0.0413901 -0.000942692
@@ -3779,7 +3779,7 @@ kids 3
 OBJECT poly
 name "metal"
 loc -0.514006 -0.28767 -0.0275548
-texture "panel02.png"
+texture "panel02.webp"
 crease 90.000000
 numvert 80
 -0.0676913 -0.0597377 -0.0518288
@@ -4287,7 +4287,7 @@ kids 0
 OBJECT poly
 name "GloveCompartmentLF"
 loc -0.445859 -0.287751 -0.0289695
-texture "panel02.png"
+texture "panel02.webp"
 crease 90.000000
 numvert 263
 0.00799334 -0.0426552 0.000677466
@@ -6418,7 +6418,7 @@ kids 0
 OBJECT poly
 name "GloveCompartmnetLB"
 loc -8.85129e-05 0.0332451 -0.00496876
-texture "panel02.png"
+texture "panel02.webp"
 crease 90.000000
 numvert 44
 -0.452366 -0.259143 -0.0952993
@@ -6806,7 +6806,7 @@ kids 0
 OBJECT poly
 name "panel"
 loc -0.284896 -0.103605 -0.110823
-texture "panel02.png"
+texture "panel02.webp"
 crease 90.000000
 numvert 430
 0.00337267 0.138013 0.000636688
@@ -9341,7 +9341,7 @@ name "LandingLightSwitch"
 loc -0.370066 -0.415613 0.255682
 data 6
 on-off
-texture "panel02.png"
+texture "panel02.webp"
 crease 30.000000
 numvert 48
 0.00208735 0.208874 -0.624973
@@ -9707,7 +9707,7 @@ kids 0
 OBJECT poly
 name "switchcountour"
 loc -0.36738 -0.441489 0.308346
-texture "panel02.png"
+texture "panel02.webp"
 crease 180.000000
 numvert 32
 -0.00227946 0.250879 -0.663383
@@ -9859,7 +9859,7 @@ kids 17
 OBJECT poly
 name "CarbHeat"
 loc -0.165107 0.591296 0.152023
-texture "panel02.png"
+texture "panel02.webp"
 crease 45.000000
 numvert 265
 -0.345037 -0.230831 0.062135
@@ -11934,7 +11934,7 @@ kids 0
 OBJECT poly
 name "Throttle"
 loc -0.158127 0.590236 0.382698
-texture "panel02.png"
+texture "panel02.webp"
 crease 45.000000
 numvert 257
 -0.244017 -0.230765 -0.090926
@@ -13959,7 +13959,7 @@ kids 0
 OBJECT poly
 name "PrimerLever"
 loc -0.161498 0.579261 0.254705
-texture "panel02.png"
+texture "panel02.webp"
 crease 45.000000
 numvert 257
 -0.350126 -0.280561 0.445824
@@ -15984,7 +15984,7 @@ kids 0
 OBJECT poly
 name "CabinHeat"
 loc -0.16184 0.426642 0.196456
-texture "panel02.png"
+texture "panel02.webp"
 crease 45.000000
 numvert 257
 -0.34978 -0.127994 -0.40254
@@ -18009,7 +18009,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -0.366015 -0.217402 -0.244174
-texture "panel02.png"
+texture "panel02.webp"
 crease 90.000000
 numvert 26
 -0.147532 0.519824 0.0446468
@@ -18199,7 +18199,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -0.372403 -0.217335 0.662461
-texture "panel02.png"
+texture "panel02.webp"
 crease 90.000000
 numvert 26
 -0.151974 0.516044 0.0380992
@@ -18389,7 +18389,7 @@ kids 0
 OBJECT poly
 name "ThrottleMount"
 loc -0.299085 0.590243 0.24846
-texture "panel02.png"
+texture "panel02.webp"
 crease 45.000000
 numvert 129
 -0.221731 -0.250932 0.297684
@@ -19390,7 +19390,7 @@ kids 0
 OBJECT poly
 name "ThrottleMount"
 loc -0.296577 0.590243 0.725273
-texture "panel02.png"
+texture "panel02.webp"
 crease 45.000000
 numvert 129
 -0.244242 -0.246621 -0.756569
@@ -20391,7 +20391,7 @@ kids 0
 OBJECT poly
 name "MixtureMount"
 loc -0.153507 0.517655 0.234948
-texture "panel02.png"
+texture "panel02.webp"
 crease 45.000000
 numvert 161
 -0.394823 -0.222567 -0.00888601
@@ -21648,7 +21648,7 @@ kids 0
 OBJECT poly
 name "ThrottleMount"
 loc -0.154507 0.590244 0.383305
-texture "panel02.png"
+texture "panel02.webp"
 crease 45.000000
 numvert 129
 -0.393899 -0.222567 -0.099697
@@ -22649,7 +22649,7 @@ kids 0
 OBJECT poly
 name "CarbHeatMount"
 loc -0.165107 0.591296 0.152023
-texture "panel02.png"
+texture "panel02.webp"
 crease 45.000000
 numvert 65
 -0.383271 -0.222567 0.074968
@@ -23138,7 +23138,7 @@ kids 0
 OBJECT poly
 name "ThrottleMount"
 loc -0.154507 0.590243 0.383305
-texture "panel02.png"
+texture "panel02.webp"
 crease 45.000000
 numvert 129
 -0.38617 -0.247471 0.130601
@@ -24139,7 +24139,7 @@ kids 0
 OBJECT poly
 name "ThrottleMount"
 loc -0.154507 0.590243 0.383305
-texture "panel02.png"
+texture "panel02.webp"
 crease 45.000000
 numvert 129
 -0.354424 -0.250082 -0.380072
@@ -25140,7 +25140,7 @@ kids 0
 OBJECT poly
 name "ParkingBrakeMount"
 loc -0.372333 -0.230899 0.253717
-texture "panel02.png"
+texture "panel02.webp"
 crease 90.000000
 numvert 26
 -0.151974 0.516044 0.0380992
@@ -25330,7 +25330,7 @@ kids 0
 OBJECT poly
 name "Mixture"
 loc -0.153507 0.517655 0.234947
-texture "panel02.png"
+texture "panel02.webp"
 crease 45.000000
 numvert 258
 -0.255417 -0.230765 -0.000687003
@@ -27552,7 +27552,7 @@ kids 3
 OBJECT poly
 name "Base"
 loc -0.804047 0.311063 0.0436227
-texture "panel02.png"
+texture "panel02.webp"
 crease 45.000000
 numvert 60
 0.02207 0.196861 0.131622
@@ -27900,7 +27900,7 @@ kids 0
 OBJECT poly
 name "Key"
 loc -0.768141 0.495813 0.166904
-texture "panel02.png"
+texture "panel02.webp"
 crease 55.000000
 numvert 103
 -0.0080629 0.001616 -0.00914425
@@ -28698,7 +28698,7 @@ kids 0
 OBJECT poly
 name "Keypart"
 loc -0.759534 0.472484 0.167015
-texture "panel02.png"
+texture "panel02.webp"
 crease 67.000000
 numvert 88
 0.00174928 0.00434887 0.00408173
@@ -29414,7 +29414,7 @@ OBJECT poly
 name "parkBrake_0"
 data 8
 Mesh.048
-texture "panel02.png"
+texture "panel02.webp"
 crease 80.000000
 numvert 9
 -0.602617 0.511689 0.035523
@@ -29487,7 +29487,7 @@ name "parkBrake_1"
 loc 0.0806437 0 0
 data 8
 Mesh.006
-texture "panel02.png"
+texture "panel02.webp"
 crease 64.000000
 numvert 95
 -0.552625 0.532376 0.033672
@@ -30294,7 +30294,7 @@ kids 0
 OBJECT poly
 name "PushToStart"
 loc -0.63892 0.284828 0.0219045
-texture "panel02.png"
+texture "panel02.webp"
 crease 45.000000
 numvert 4
 0 -0.00472462 -0.023812
@@ -30315,7 +30315,7 @@ name "PanelTop"
 loc -0.899751 0.111464 0.119399
 data 8
 Mesh.158
-texture "panel02.png"
+texture "panel02.webp"
 crease 55.000000
 numvert 101
 0.251748 -0.00823402 0.48108

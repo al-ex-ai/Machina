@@ -12,7 +12,7 @@ name "Display_Panel_Left"
 data 25
 VHFActive.01Left.mesh.002
 crease 40.0
-texture "digits2.png"
+texture "digits2.webp"
 texrep 1 1
 numvert 4
 -0.01507 0.00005 -0.02577
@@ -33,7 +33,7 @@ name "Display_Panel_Right"
 data 25
 VHFActive.01Left.mesh.005
 crease 40.0
-texture "digits2.png"
+texture "digits2.webp"
 texrep 1 1
 numvert 4
 0.06218 0.00005 -0.02577
@@ -57,7 +57,7 @@ name "panel"
 data 9
 Plane.001
 crease 40.0
-texture "nav_panel.png"
+texture "nav_panel.webp"
 texrep 1 1
 numvert 8
 -0.0758 0 0.03486
@@ -910,7 +910,7 @@ name "VHFLeft1"
 data 21
 VHFActive100Left.mesh
 crease 40.0
-texture "digits2.png"
+texture "digits2.webp"
 texrep 1 1
 numvert 4
 -0.05269 0.0001 -0.01401
@@ -931,7 +931,7 @@ name "VHFLeft2"
 data 20
 VHFActive10Left.mesh
 crease 40.0
-texture "digits2.png"
+texture "digits2.webp"
 texrep 1 1
 numvert 4
 -0.0455 0.0001 -0.01401
@@ -952,7 +952,7 @@ name "VHFLeft3"
 data 19
 VHFActive1Left.mesh
 crease 40.0
-texture "digits2.png"
+texture "digits2.webp"
 texrep 1 1
 numvert 4
 -0.03852 0.0001 -0.02555
@@ -973,7 +973,7 @@ name "VHFLeft4"
 data 24
 VHFActive.1Left.mesh.001
 crease 40.0
-texture "digits2.png"
+texture "digits2.webp"
 texrep 1 1
 numvert 4
 -0.02977 0.0001 -0.01402
@@ -994,7 +994,7 @@ name "VHFLeft5"
 data 21
 VHFActive.01Left.mesh
 crease 40.0
-texture "digits2.png"
+texture "digits2.webp"
 texrep 1 1
 numvert 4
 -0.02254 0.0001 -0.02554
@@ -1015,7 +1015,7 @@ name "VHFLeft6"
 data 25
 VHFActive.01Left.mesh.001
 crease 40.0
-texture "digits2.png"
+texture "digits2.webp"
 texrep 1 1
 numvert 4
 -0.01545 0.0001 -0.02554
@@ -1036,7 +1036,7 @@ name "VHFRight1"
 data 25
 VHFActive100Left.mesh.001
 crease 40.0
-texture "digits2.png"
+texture "digits2.webp"
 texrep 1 1
 numvert 4
 0.02456 0.0001 -0.01401
@@ -1057,7 +1057,7 @@ name "VHFRight2"
 data 24
 VHFActive10Left.mesh.001
 crease 40.0
-texture "digits2.png"
+texture "digits2.webp"
 texrep 1 1
 numvert 4
 0.03174 0.0001 -0.01401
@@ -1078,7 +1078,7 @@ name "VHFRight3"
 data 23
 VHFActive1Left.mesh.001
 crease 40.0
-texture "digits2.png"
+texture "digits2.webp"
 texrep 1 1
 numvert 4
 0.03872 0.0001 -0.02555
@@ -1099,7 +1099,7 @@ name "VHFRight4"
 data 24
 VHFActive.1Left.mesh.000
 crease 40.0
-texture "digits2.png"
+texture "digits2.webp"
 texrep 1 1
 numvert 4
 0.04747 0.0001 -0.01402
@@ -1120,7 +1120,7 @@ name "VHFRight5"
 data 25
 VHFActive.01Left.mesh.004
 crease 40.0
-texture "digits2.png"
+texture "digits2.webp"
 texrep 1 1
 numvert 4
 0.0547 0.0001 -0.02554
@@ -1141,7 +1141,7 @@ name "VHFRight6"
 data 25
 VHFActive.01Left.mesh.003
 crease 40.0
-texture "digits2.png"
+texture "digits2.webp"
 texrep 1 1
 numvert 4
 0.06179 0.0001 -0.02554

@@ -7,7 +7,7 @@ name "bezel"
 loc 0.000053 0.001723 0.001453
 data 5
 bezel
-texture "cabinClimb.png"
+texture "cabinClimb.webp"
 texrep 1 1
 crease 30.000001
 numvert 168
@@ -732,7 +732,7 @@ name "face"
 loc 0.000112 0 0.000367
 data 4
 face
-texture "cabinClimb.png"
+texture "cabinClimb.webp"
 texrep 1 1
 crease 30.000001
 numvert 16
@@ -843,7 +843,7 @@ name "manualAngle"
 loc -0.001945 0.034638 -0.000004
 data 11
 manualAngle
-texture "cabinClimb.png"
+texture "cabinClimb.webp"
 texrep 1 1
 crease 45.000001
 numvert 5
@@ -872,7 +872,7 @@ name "needle"
 loc 0.000072 -0.000086 0.000029
 data 6
 needle
-texture "cabinClimb.png"
+texture "cabinClimb.webp"
 texrep 1 1
 crease 30.000001
 numvert 5
@@ -901,7 +901,7 @@ name "rateAngle"
 loc -0.001945 0.034638 -0.000113
 data 9
 rateAngle
-texture "cabinClimb.png"
+texture "cabinClimb.webp"
 texrep 1 1
 crease 45.000001
 numvert 5

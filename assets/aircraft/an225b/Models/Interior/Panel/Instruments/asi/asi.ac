@@ -8,7 +8,7 @@ OBJECT poly
 name "ASI320"
 data 10
 Circle.009
-texture "asi.png"
+texture "asi.webp"
 texrep 1 1
 crease 60.000000
 numvert 153
@@ -981,7 +981,7 @@ OBJECT poly
 name "ASI320.face"
 data 10
 Circle.001
-texture "asi.png"
+texture "asi.webp"
 texrep 1 1
 crease 30.000000
 numvert 75
@@ -1472,7 +1472,7 @@ OBJECT poly
 name "ASI320.knob"
 data 12
 Cylinder.022
-texture "asi.png"
+texture "asi.webp"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -1723,7 +1723,7 @@ OBJECT poly
 name "ASI320.needle"
 data 8
 Mesh.007
-texture "asi.png"
+texture "asi.webp"
 texrep 1 1
 crease 45.000000
 numvert 5
@@ -1751,7 +1751,7 @@ OBJECT poly
 name "ASI320.ovrspeed"
 data 9
 Plane.021
-texture "asi.png"
+texture "asi.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -1772,7 +1772,7 @@ OBJECT poly
 name "index.marker"
 data 9
 Plane.020
-texture "asi.png"
+texture "asi.webp"
 texrep 1 1
 crease 30.000000
 numvert 5
@@ -1800,7 +1800,7 @@ OBJECT poly
 name "mach.subdial"
 data 10
 Circle.007
-texture "asi.png"
+texture "asi.webp"
 texrep 1 1
 crease 30.000000
 numvert 48

@@ -9,7 +9,7 @@ name "activeMode"
 loc 0 -0.190857 -0
 data 10
 activeMode
-texture "frw.png"
+texture "frw.webp"
 texrep 1 1
 crease 45.000001
 numvert 10
@@ -58,7 +58,7 @@ name "btnMode"
 loc 0 -0.133894 0.000952
 data 7
 btnMode
-texture "frw.png"
+texture "frw.webp"
 texrep 1 1
 crease 45.000001
 numvert 50
@@ -307,7 +307,7 @@ name "btnReset"
 loc 0 -0.133894 0.000952
 data 8
 btnReset
-texture "frw.png"
+texture "frw.webp"
 texrep 1 1
 crease 45.000001
 numvert 50
@@ -556,7 +556,7 @@ name "btnResetOut"
 loc 0.000001 -0.135084 0.000354
 data 11
 btnResetOut
-texture "frw.png"
+texture "frw.webp"
 texrep 1 1
 crease 45.000001
 numvert 50
@@ -805,7 +805,7 @@ name "btnStartStop"
 loc 0 -0.133894 -0.029016
 data 12
 btnStartStop
-texture "frw.png"
+texture "frw.webp"
 texrep 1 1
 crease 45.000001
 numvert 51
@@ -1055,7 +1055,7 @@ name "btnStartStopOut"
 loc -0.000002 -0.135326 -0.028303
 data 15
 btnStartStopOut
-texture "frw.png"
+texture "frw.webp"
 texrep 1 1
 crease 45.000001
 numvert 51
@@ -1305,7 +1305,7 @@ name "face"
 loc 0 -0.190857 -0
 data 4
 face
-texture "frw.png"
+texture "frw.webp"
 texrep 1 1
 crease 45.000001
 numvert 89
@@ -1831,7 +1831,7 @@ name "fond"
 loc 0 -0.190857 -0
 data 4
 fond
-texture "frw.png"
+texture "frw.webp"
 texrep 1 1
 crease 30.000001
 numvert 1611
@@ -9845,7 +9845,7 @@ name "needle1"
 loc 0 -0.190919 0.000125
 data 7
 needle1
-texture "frw.png"
+texture "frw.webp"
 texrep 1 1
 crease 45.000001
 numvert 27
@@ -9952,7 +9952,7 @@ name "needle2"
 loc 0 -0.190919 0.000125
 data 7
 needle2
-texture "frw.png"
+texture "frw.webp"
 texrep 1 1
 crease 45.000001
 numvert 27
@@ -10059,7 +10059,7 @@ name "needle3"
 loc 0 -0.190919 0.000125
 data 7
 needle3
-texture "frw.png"
+texture "frw.webp"
 texrep 1 1
 crease 45.000001
 numvert 37

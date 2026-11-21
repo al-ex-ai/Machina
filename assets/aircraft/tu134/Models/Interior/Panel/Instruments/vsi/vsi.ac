@@ -8,7 +8,7 @@ name "face"
 loc -0.042774 0 -0.000003
 data 4
 face
-texture "vsi.png"
+texture "vsi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 33
@@ -244,7 +244,7 @@ name "fond"
 loc -0.000058 0 -0.000003
 data 4
 fond
-texture "vsi.png"
+texture "vsi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 96
@@ -855,7 +855,7 @@ name "needle"
 loc -0.000321 0.000003 -0
 data 6
 needle
-texture "vsi.png"
+texture "vsi.webp"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 40

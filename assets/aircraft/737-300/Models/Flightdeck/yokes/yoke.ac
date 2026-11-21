@@ -9,7 +9,7 @@ kids 7
 OBJECT poly
 name "apdisengage"
 loc 0.0108442 0.0699094 -0.1542049
-texture "yokemap.png"
+texture "yokemap.webp"
 texrep 1 1
 numvert 64
 -0.0053571 -0.0429935 0.2553392
@@ -305,7 +305,7 @@ kids 0
 OBJECT poly
 name "checklist"
 loc 0.0010065 0.0000000 -0.0009073
-texture "cl2.png"
+texture "cl2.webp"
 texrep 1 1
 numvert 27
 0.0312819 0.0645665 -0.0296964
@@ -524,7 +524,7 @@ kids 0
 OBJECT poly
 name "sup.001"
 loc 0.0186080 0.0698580 0.1528751
-texture "yoke.png"
+texture "yoke.webp"
 texrep 1 1
 numvert 101
 0.0013704 0.0042772 -0.0139890
@@ -1287,7 +1287,7 @@ kids 0
 OBJECT poly
 name "switch.001"
 loc 0.0201917 0.0726152 0.1527124
-texture "yoke.png"
+texture "yoke.webp"
 texrep 1 1
 numvert 122
 0.0044480 -0.0133888 -0.0051543
@@ -2061,7 +2061,7 @@ kids 0
 OBJECT poly
 name "yoke"
 loc -0.0013700 -0.0005900 0.0004605
-texture "yokemap.png"
+texture "yokemap.webp"
 texrep 1 1
 numvert 653
 0.0068571 0.0275060 0.1006738

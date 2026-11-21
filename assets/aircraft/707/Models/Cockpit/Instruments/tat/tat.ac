@@ -9,7 +9,7 @@ name "dec-10"
 loc 0.005084 -0.008508 -0.015461
 data 6
 dec-10
-texture "digits.png"
+texture "digits.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -36,7 +36,7 @@ name "dec10"
 loc 0.005084 -0.008508 -0.015461
 data 5
 dec10
-texture "digits.png"
+texture "digits.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -63,7 +63,7 @@ name "face"
 loc 0 0 -0
 data 4
 face
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 crease 30.000001
 numvert 216
@@ -1144,7 +1144,7 @@ name "minus"
 loc 0.005084 -0.008586 0.000908
 data 5
 minus
-texture "digits.png"
+texture "digits.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -1171,7 +1171,7 @@ name "off"
 loc 0.005433 -0.008586 0.000908
 data 3
 off
-texture "digits.png"
+texture "digits.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -1198,7 +1198,7 @@ name "shadow"
 loc 0 0.000128 0.001155
 data 6
 shadow
-texture "instr-shadow.png"
+texture "instr-shadow.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -1220,7 +1220,7 @@ name "t1"
 loc 0.005084 -0.00859 -0.007208
 data 2
 t1
-texture "digits.png"
+texture "digits.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -1247,7 +1247,7 @@ name "t10"
 loc 0.005084 -0.008586 -0.007208
 data 3
 t10
-texture "digits.png"
+texture "digits.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -1274,7 +1274,7 @@ name "t100"
 loc 0.005084 -0.00859 0.000838
 data 4
 t100
-texture "digits.png"
+texture "digits.webp"
 texrep 1 1
 crease 30.000001
 numvert 4

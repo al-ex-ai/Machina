@@ -8,7 +8,7 @@ name "Bezel"
 loc -0.00022 0 -0
 data 5
 Bezel
-texture "vsi.png"
+texture "vsi.webp"
 texrep 1 1
 crease 30.000001
 numvert 144
@@ -667,7 +667,7 @@ name "VSI.Face"
 loc -0.00022 0 -0
 data 8
 VSI.Face
-texture "vsi.png"
+texture "vsi.webp"
 texrep 1 1
 crease 30.000001
 numvert 9
@@ -735,7 +735,7 @@ name "VSI.Needle"
 loc -0.00022 0 -0
 data 10
 VSI.Needle
-texture "vsi.png"
+texture "vsi.webp"
 texrep 1 1
 crease 30.000001
 numvert 17
@@ -818,7 +818,7 @@ name "VSset.Needle"
 loc -0.00022 0 -0
 data 12
 VSset.Needle
-texture "vsi.png"
+texture "vsi.webp"
 texrep 1 1
 crease 30.000001
 numvert 17
@@ -901,7 +901,7 @@ name "shadow"
 loc 0.000747 0.000347 0.000173
 data 6
 shadow
-texture "shadow.png"
+texture "shadow.webp"
 texrep 1 1
 crease 30.000001
 numvert 4

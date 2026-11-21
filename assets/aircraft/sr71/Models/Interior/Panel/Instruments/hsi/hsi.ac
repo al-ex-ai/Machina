@@ -8,7 +8,7 @@ name "GSpointer"
 loc 0 0 -0
 data 9
 GSpointer
-texture "hsi.png"
+texture "hsi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -30,7 +30,7 @@ name "HDGneedle"
 loc 0 0 -0
 data 9
 HDGneedle
-texture "hsi.png"
+texture "hsi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 12
@@ -74,7 +74,7 @@ name "HDGneedle2"
 loc 0 0 -0
 data 10
 HDGneedle2
-texture "hsi.png"
+texture "hsi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -96,7 +96,7 @@ name "back"
 loc 0 0 -0
 data 4
 back
-texture "hsi.png"
+texture "hsi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -118,7 +118,7 @@ name "bearing-bug"
 loc 0 0 -0
 data 11
 bearing-bug
-texture "hsi.png"
+texture "hsi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 11
@@ -172,7 +172,7 @@ name "buttonCRS"
 loc 0 0 -0.007
 data 9
 buttonCRS
-texture "hsi.png"
+texture "hsi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 65
@@ -664,7 +664,7 @@ name "buttonHDG"
 loc 0 0 0.007
 data 9
 buttonHDG
-texture "hsi.png"
+texture "hsi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 65
@@ -1156,7 +1156,7 @@ name "cache"
 loc 0 0 0.003
 data 5
 cache
-texture "hsi.png"
+texture "hsi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -1178,7 +1178,7 @@ name "cmpscard"
 loc 0 0 -0
 data 8
 cmpscard
-texture "hsi.png"
+texture "hsi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 48
@@ -1405,7 +1405,7 @@ name "crs01"
 loc 0 0 -0.005
 data 5
 crs01
-texture "hsi.png"
+texture "hsi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -1427,7 +1427,7 @@ name "crs02"
 loc 0 0 -0.005
 data 5
 crs02
-texture "hsi.png"
+texture "hsi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -1449,7 +1449,7 @@ name "crs03"
 loc 0 0 -0.005
 data 5
 crs03
-texture "hsi.png"
+texture "hsi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -1471,7 +1471,7 @@ name "dist01"
 loc 0 0 -0
 data 6
 dist01
-texture "hsi.png"
+texture "hsi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -1493,7 +1493,7 @@ name "dist02"
 loc 0 0 0.003
 data 6
 dist02
-texture "hsi.png"
+texture "hsi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -1515,7 +1515,7 @@ name "dist03"
 loc 0 0 0.003
 data 6
 dist03
-texture "hsi.png"
+texture "hsi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -1537,7 +1537,7 @@ name "dist04"
 loc 0 0 0.003
 data 6
 dist04
-texture "hsi.png"
+texture "hsi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -1559,7 +1559,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "hsi.png"
+texture "hsi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 32
@@ -1770,7 +1770,7 @@ name "heading-bug"
 loc 0 0 -0
 data 11
 heading-bug
-texture "hsi.png"
+texture "hsi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 12
@@ -1814,7 +1814,7 @@ name "off-flag"
 loc 0 0 -0.007
 data 8
 off-flag
-texture "hsi.png"
+texture "hsi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4

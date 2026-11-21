@@ -8,7 +8,7 @@ name "boite"
 loc 0 0 -0
 data 5
 boite
-texture "mag-compass.png"
+texture "mag-compass.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 18
@@ -152,7 +152,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "mag-compass.png"
+texture "mag-compass.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 30
@@ -395,7 +395,7 @@ name "ring"
 loc 0 0 -0
 data 4
 ring
-texture "mag-compass.png"
+texture "mag-compass.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 48

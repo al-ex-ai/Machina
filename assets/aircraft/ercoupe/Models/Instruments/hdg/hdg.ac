@@ -7,7 +7,7 @@ OBJECT poly
 name "HDG.knob"
 data 8
 HDG.knob
-texture "hdg.png"
+texture "hdg.webp"
 crease 30.000000
 numvert 25
 -0.001389 -0.035204 0.034498
@@ -197,7 +197,7 @@ OBJECT poly
 name "HDGgauge"
 data 8
 HDGgauge
-texture "hdg.png"
+texture "hdg.webp"
 crease 30.000000
 numvert 73
 0 -0.023726 0.041095
@@ -615,7 +615,7 @@ OBJECT poly
 name "HDGneedle"
 data 9
 HDGneedle
-texture "hdg.png"
+texture "hdg.webp"
 crease 30.000000
 numvert 16
 -0.004789 0.032046 -0.032046
@@ -689,7 +689,7 @@ OBJECT poly
 name "HDGpointer"
 data 10
 HDGpointer
-texture "hdg.png"
+texture "hdg.webp"
 crease 30.000000
 numvert 82
 -0.003496 0.019146 0.000721

@@ -8,7 +8,7 @@ name "bezel"
 loc 0 0 -0
 data 5
 bezel
-texture "n1.png"
+texture "n1.webp"
 texrep 1 1
 crease 30.000001
 numvert 144
@@ -667,7 +667,7 @@ name "face"
 loc -0.000005 0 -0
 data 4
 face
-texture "n1.png"
+texture "n1.webp"
 texrep 1 1
 crease 30.000001
 numvert 16
@@ -778,7 +778,7 @@ name "needle"
 loc -0.000267 -0 0
 data 6
 needle
-texture "n1.png"
+texture "n1.webp"
 texrep 1 1
 crease 30.000001
 numvert 9
@@ -825,7 +825,7 @@ name "needle.001"
 loc -0.000088 0.010808 0.002812
 data 10
 needle.001
-texture "n1.png"
+texture "n1.webp"
 texrep 1 1
 crease 30.000001
 numvert 9
@@ -872,7 +872,7 @@ name "shadow"
 loc 0.000654 0 -0
 data 6
 shadow
-texture "shadow_bezel.png"
+texture "shadow_bezel.webp"
 texrep 1 1
 numvert 4
 0 -0.024562 -0.024562

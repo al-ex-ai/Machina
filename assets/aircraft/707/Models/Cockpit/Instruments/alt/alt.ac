@@ -12,7 +12,7 @@ name "ALTface"
 loc 0.000015 0.000002 0.00001
 data 7
 ALTface
-texture "alt.png"
+texture "alt.webp"
 texrep 1 1
 crease 30.000001
 numvert 16
@@ -88,7 +88,7 @@ name "BaroKnob"
 loc 0.007425 -0.03655 0.023123
 data 8
 BaroKnob
-texture "alt.png"
+texture "alt.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -500,7 +500,7 @@ name "altnum100"
 loc -0.000862 -0.000233 0.00001
 data 9
 altnum100
-texture "digits.png"
+texture "digits.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -527,7 +527,7 @@ name "altnum1000"
 loc -0.000852 -0.000389 0.00001
 data 10
 altnum1000
-texture "digits.png"
+texture "digits.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -554,7 +554,7 @@ name "altnum10000"
 loc -0.000852 -0.000383 0.00001
 data 11
 altnum10000
-texture "digits.png"
+texture "digits.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -581,7 +581,7 @@ name "inhg01"
 loc -0.000869 0.000002 0.00001
 data 6
 inhg01
-texture "digits.png"
+texture "digits.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -608,7 +608,7 @@ name "inhg02"
 loc -0.000869 0.000002 0.00001
 data 6
 inhg02
-texture "digits.png"
+texture "digits.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -635,7 +635,7 @@ name "inhg03"
 loc -0.000869 0.000002 0.00001
 data 6
 inhg03
-texture "digits.png"
+texture "digits.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -662,7 +662,7 @@ name "inhg04"
 loc -0.000869 0.000002 0.00001
 data 6
 inhg04
-texture "digits.png"
+texture "digits.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -689,7 +689,7 @@ name "mb01"
 loc -0.000885 0.000002 -0.001164
 data 4
 mb01
-texture "digits.png"
+texture "digits.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -716,7 +716,7 @@ name "mb02"
 loc -0.000885 0.000002 -0.001164
 data 4
 mb02
-texture "digits.png"
+texture "digits.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -743,7 +743,7 @@ name "mb03"
 loc -0.000885 0.000002 -0.001164
 data 4
 mb03
-texture "digits.png"
+texture "digits.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -770,7 +770,7 @@ name "mb04"
 loc -0.000885 0.000002 -0.001164
 data 4
 mb04
-texture "digits.png"
+texture "digits.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -899,7 +899,7 @@ name "needle.001"
 loc 0.000751 0.000002 0.00001
 data 10
 needle.001
-texture "alt.png"
+texture "alt.webp"
 texrep 1 1
 crease 30.000001
 numvert 34
@@ -1084,7 +1084,7 @@ name "shadow"
 loc 0.001552 0.00073 -0
 data 6
 shadow
-texture "instr-shadow.png"
+texture "instr-shadow.webp"
 texrep 1 1
 crease 30.000001
 numvert 4

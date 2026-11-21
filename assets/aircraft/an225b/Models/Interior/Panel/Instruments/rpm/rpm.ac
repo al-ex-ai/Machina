@@ -5,7 +5,7 @@ kids 3
 OBJECT group
 name "group"
 loc 0.0075 0 0
-texture "rpm_ind.png"
+texture "rpm_ind.webp"
 numvert 115
 -0.005 0.004325 0.039766
 -0.005 0.012772 0.037906
@@ -1321,7 +1321,7 @@ kids 0
 OBJECT poly
 name "rect2"
 loc 0.00159552 0.0054611 0.00591451
-texture "S2.png"
+texture "S2.webp"
 crease 45.000000
 numvert 4
 0 0.0167936 0.0153958
@@ -1340,7 +1340,7 @@ kids 0
 OBJECT poly
 name "rect1"
 loc 0.000621023 0.00526955 0.00591451
-texture "S1.png"
+texture "S1.webp"
 crease 45.000000
 numvert 4
 0 -0.0122458 -0.0192119

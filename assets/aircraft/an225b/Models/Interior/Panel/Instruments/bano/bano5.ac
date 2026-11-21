@@ -13,7 +13,7 @@ kids 2
 OBJECT poly
 name "rect"
 loc 0.0002332 0.0002033 -0.0000039
-texture "sw_base.png"
+texture "sw_base.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0099314 0.0100317
@@ -1053,7 +1053,7 @@ kids 6
 OBJECT poly
 name "rect.001"
 loc 0.0002332 0.0002033 -0.0000039
-texture "sw_base.png"
+texture "sw_base.webp"
 texrep 1 1
 numvert 4
 0.0000000 0.0099314 0.0100317
@@ -1072,7 +1072,7 @@ kids 0
 OBJECT poly
 name "rect.003"
 loc 0.0002332 0.0002033 0.0269961
-texture "sw_base.png"
+texture "sw_base.webp"
 texrep 1 1
 numvert 4
 0.0000000 0.0099314 0.0100317
@@ -1091,7 +1091,7 @@ kids 0
 OBJECT poly
 name "rect.004"
 loc 0.0002332 0.0002033 -0.0270039
-texture "sw_base.png"
+texture "sw_base.webp"
 texrep 1 1
 numvert 4
 0.0000000 0.0099314 0.0100317
@@ -4165,7 +4165,7 @@ kids 2
 OBJECT poly
 name "rect.002"
 loc 0.0002332 0.0002033 -0.0000039
-texture "sw_base.png"
+texture "sw_base.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0099314 0.0100317
@@ -5201,7 +5201,7 @@ kids 0
 OBJECT poly
 name "base_4"
 loc 0.0001046 -0.0038583 0.0006396
-texture "bano5.png"
+texture "bano5.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0436977 0.0853744

@@ -8,7 +8,7 @@ name "BrakeCylinder"
 loc 23.186695 -0.806682 0.114592
 data 13
 BrakeCylinder
-texture "concorde-trim2.png"
+texture "concorde-trim2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 16
@@ -149,7 +149,7 @@ name "BrakeLever"
 loc 23.184696 -0.806682 0.114592
 data 10
 BrakeLever
-texture "concorde-trim2.png"
+texture "concorde-trim2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 105

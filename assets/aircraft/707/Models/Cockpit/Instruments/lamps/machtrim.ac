@@ -8,7 +8,7 @@ name "LampBlue"
 loc 0.045728 -0.024054 0.026865
 data 8
 LampBlue
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -644,7 +644,7 @@ name "LampBlueON"
 loc 0.045728 -0.024054 0.026865
 data 10
 LampBlueON
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -1280,7 +1280,7 @@ name "shadow"
 loc 0.000234 0.000006 -0.002918
 data 6
 shadow
-texture "shadow-machtrim.png"
+texture "shadow-machtrim.webp"
 texrep 1 1
 numvert 4
 -0 -0.015628 -0.027213
@@ -1301,7 +1301,7 @@ name "sockle"
 loc -0.587339 0.382064 0.2213
 data 6
 sockle
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 30.000001
 numvert 38
@@ -1464,7 +1464,7 @@ name "sup"
 loc 0.000373 -0.000106 -0.017938
 data 3
 sup
-texture "shadow-machtrim.png"
+texture "shadow-machtrim.webp"
 texrep 1 1
 numvert 4
 0 -0.008389 -0.011265
@@ -1485,7 +1485,7 @@ name "switch"
 loc -0.560089 0.361951 0.167986
 data 6
 switch
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 crease 79.999998
 numvert 274

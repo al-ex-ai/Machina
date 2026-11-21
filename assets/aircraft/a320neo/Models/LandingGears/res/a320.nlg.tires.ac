@@ -6,7 +6,7 @@ OBJECT poly
 name "Bearing"
 data 17
 Object01_1 - Defa
-texture "NWA.png"
+texture "NWA.webp"
 texrep 1 1
 crease 30.000000
 numvert 196
@@ -2516,7 +2516,7 @@ OBJECT poly
 name "Tires"
 data 20
 Object01_1 - Default
-texture "NWA.png"
+texture "NWA.webp"
 texrep 1 1
 crease 30.000000
 numvert 416

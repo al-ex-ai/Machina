@@ -9,7 +9,7 @@ kids 5
 OBJECT poly
 name "m_ind"
 loc 0.0075000 0.0000000 0.0000000
-texture "m_ind-1.png"
+texture "m_ind-1.webp"
 texrep 1 1
 numvert 180
 -0.0050000 0.0040470 0.0397950
@@ -2159,7 +2159,7 @@ kids 0
 OBJECT poly
 name "machset"
 loc 0.0054711 -0.0041916 -0.0038224
-texture "setmach.png"
+texture "setmach.webp"
 texrep 1 1
 numvert 33
 -0.0018930 -0.0240150 -0.0240150
@@ -2425,7 +2425,7 @@ kids 0
 OBJECT poly
 name "rect1"
 loc 0.0009518 0.0132992 0.0000000
-texture "S2.png"
+texture "S2.webp"
 texrep 1 1
 numvert 4
 0.0000000 0.0224749 -0.0055410

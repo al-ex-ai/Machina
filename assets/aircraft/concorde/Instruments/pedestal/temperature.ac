@@ -8,7 +8,7 @@ name "Frame"
 loc 0.05883 -0.009456 -0.075443
 data 5
 Frame
-texture "temperature.png"
+texture "temperature.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8
@@ -62,7 +62,7 @@ name "ISA"
 loc 0.079572 0.003235 -0
 data 3
 ISA
-texture "temperature.png"
+texture "temperature.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 24
@@ -231,7 +231,7 @@ name "Instrument"
 loc -0.019278 0.02321 0.256025
 data 10
 Instrument
-texture "temperature.png"
+texture "temperature.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 192
@@ -1464,7 +1464,7 @@ name "Plate"
 loc 0.019343 0.003954 -0
 data 5
 Plate
-texture "temperature.png"
+texture "temperature.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8
@@ -1518,7 +1518,7 @@ name "Static"
 loc 0.050716 0.003235 -0
 data 6
 Static
-texture "temperature.png"
+texture "temperature.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 24
@@ -1687,7 +1687,7 @@ name "Total"
 loc 0.021292 0.003235 -0
 data 5
 Total
-texture "temperature.png"
+texture "temperature.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 24

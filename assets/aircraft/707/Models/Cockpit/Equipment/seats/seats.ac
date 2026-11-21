@@ -7,7 +7,7 @@ kids 2
 OBJECT poly
 name "fe-seat"
 loc -9.3278198 -0.1276630 -0.1472940
-texture "seats.png"
+texture "seats.webp"
 texrep 1 1
 numvert 194
 -7.9609313 0.7900369 -0.0010667
@@ -1233,7 +1233,7 @@ kids 0
 OBJECT poly
 name "seats"
 loc -9.3278198 -0.1276630 -0.1472940
-texture "seats.png"
+texture "seats.webp"
 texrep 1 1
 numvert 642
 -8.8850031 0.7520528 -0.6011640

@@ -7,7 +7,7 @@ name "bezel"
 loc 0.000059 0.001915 0.001453
 data 5
 bezel
-texture "hydsystemface.png"
+texture "hydsystemface.webp"
 texrep 1 1
 crease 30.000001
 numvert 144
@@ -666,7 +666,7 @@ name "face"
 loc 0.000124 0 0.000367
 data 4
 face
-texture "hydsystemface.png"
+texture "hydsystemface.webp"
 texrep 1 1
 crease 30.000001
 numvert 16
@@ -777,7 +777,7 @@ name "needle"
 loc 0.000118 0.000037 0.000029
 data 6
 needle
-texture "hydsystemface.png"
+texture "hydsystemface.webp"
 texrep 1 1
 crease 30.000001
 numvert 11

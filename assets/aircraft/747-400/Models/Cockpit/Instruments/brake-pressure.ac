@@ -96,7 +96,7 @@ OBJECT poly
 name "scale"
 data 9
 Plane.003
-texture "brake-pressure.png"
+texture "brake-pressure.webp"
 texrep 1 1
 crease 30.000000
 numvert 25

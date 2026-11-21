@@ -7,7 +7,7 @@ kids 39
 OBJECT poly
 name "knob"
 loc 0.0000000 -0.0093593 0.1024413
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 numvert 49
 -0.0025029 0.0120330 0.0014124
@@ -384,7 +384,7 @@ kids 0
 OBJECT poly
 name "knob.001"
 loc 0.0000000 -0.0093593 0.0824413
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 numvert 49
 -0.0025029 0.0120330 0.0014124
@@ -761,7 +761,7 @@ kids 0
 OBJECT poly
 name "knob.002"
 loc 0.0000000 -0.0093593 0.0524413
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 numvert 49
 -0.0025029 0.0120330 0.0014124
@@ -1138,7 +1138,7 @@ kids 0
 OBJECT poly
 name "knob.003"
 loc 0.0000000 -0.0093593 0.0324413
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 numvert 49
 -0.0025029 0.0120330 0.0014124
@@ -1515,7 +1515,7 @@ kids 0
 OBJECT poly
 name "knob.004"
 loc 0.0000000 -0.0093593 0.0024413
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 numvert 49
 -0.0025029 0.0120330 0.0014124
@@ -1892,7 +1892,7 @@ kids 0
 OBJECT poly
 name "knob.005"
 loc 0.0000000 -0.0093593 -0.0175587
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 numvert 49
 -0.0025029 0.0120330 0.0014124
@@ -2269,7 +2269,7 @@ kids 0
 OBJECT poly
 name "knob.006"
 loc 0.0000000 -0.0093593 -0.0475587
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 numvert 49
 -0.0025029 0.0120330 0.0014124
@@ -2646,7 +2646,7 @@ kids 0
 OBJECT poly
 name "knob.007"
 loc 0.0000000 -0.0093593 -0.0675587
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 numvert 49
 -0.0025029 0.0120330 0.0014124
@@ -3023,7 +3023,7 @@ kids 0
 OBJECT poly
 name "knob.008"
 loc 0.0000000 -0.0093593 -0.0975587
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 numvert 49
 -0.0025029 0.0120330 0.0014124
@@ -3400,7 +3400,7 @@ kids 0
 OBJECT poly
 name "LampWhite"
 loc -0.0103146 0.0373939 0.0999993
-texture "radio-volume.png"
+texture "radio-volume.webp"
 texrep 1 1
 numvert 65
 -0.0140567 -0.0320068 -0.0036689
@@ -3905,7 +3905,7 @@ kids 0
 OBJECT poly
 name "LampWhite.001"
 loc -0.0103146 0.0373939 0.0799993
-texture "radio-volume.png"
+texture "radio-volume.webp"
 texrep 1 1
 numvert 65
 -0.0140567 -0.0320068 -0.0036689
@@ -4410,7 +4410,7 @@ kids 0
 OBJECT poly
 name "LampWhite.002"
 loc -0.0103146 0.0373939 0.0499993
-texture "radio-volume.png"
+texture "radio-volume.webp"
 texrep 1 1
 numvert 65
 -0.0140567 -0.0320068 -0.0036689
@@ -4915,7 +4915,7 @@ kids 0
 OBJECT poly
 name "LampWhite.003"
 loc -0.0103146 0.0373939 0.0299993
-texture "radio-volume.png"
+texture "radio-volume.webp"
 texrep 1 1
 numvert 65
 -0.0140567 -0.0320068 -0.0036689
@@ -5420,7 +5420,7 @@ kids 0
 OBJECT poly
 name "LampWhite.004"
 loc -0.0103146 0.0373939 -0.0000007
-texture "radio-volume.png"
+texture "radio-volume.webp"
 texrep 1 1
 numvert 65
 -0.0140567 -0.0320068 -0.0036689
@@ -5925,7 +5925,7 @@ kids 0
 OBJECT poly
 name "LampWhite.005"
 loc -0.0103146 0.0373939 -0.0200007
-texture "radio-volume.png"
+texture "radio-volume.webp"
 texrep 1 1
 numvert 65
 -0.0140567 -0.0320068 -0.0036689
@@ -6430,7 +6430,7 @@ kids 0
 OBJECT poly
 name "LampWhite.006"
 loc -0.0103146 0.0373939 -0.0500007
-texture "radio-volume.png"
+texture "radio-volume.webp"
 texrep 1 1
 numvert 65
 -0.0140567 -0.0320068 -0.0036689
@@ -6935,7 +6935,7 @@ kids 0
 OBJECT poly
 name "LampWhite.007"
 loc -0.0103146 0.0373939 -0.0700007
-texture "radio-volume.png"
+texture "radio-volume.webp"
 texrep 1 1
 numvert 65
 -0.0140567 -0.0320068 -0.0036689
@@ -7440,7 +7440,7 @@ kids 0
 OBJECT poly
 name "LampWhite.008"
 loc -0.0103146 0.0373939 -0.1000007
-texture "radio-volume.png"
+texture "radio-volume.webp"
 texrep 1 1
 numvert 65
 -0.0140567 -0.0320068 -0.0036689
@@ -7945,7 +7945,7 @@ kids 0
 OBJECT poly
 name "LampWhiteON"
 loc -0.0106392 0.0370152 0.0999993
-texture "radio-volume.png"
+texture "radio-volume.webp"
 texrep 1 1
 numvert 65
 -0.0137376 -0.0320577 -0.0039927
@@ -8450,7 +8450,7 @@ kids 0
 OBJECT poly
 name "LampWhiteON.001"
 loc -0.0106392 0.0370152 0.0799993
-texture "radio-volume.png"
+texture "radio-volume.webp"
 texrep 1 1
 numvert 65
 -0.0137376 -0.0317046 -0.0037870
@@ -8955,7 +8955,7 @@ kids 0
 OBJECT poly
 name "LampWhiteON.002"
 loc -0.0106392 0.0370152 0.0499993
-texture "radio-volume.png"
+texture "radio-volume.webp"
 texrep 1 1
 numvert 65
 -0.0137376 -0.0317046 -0.0037870
@@ -9460,7 +9460,7 @@ kids 0
 OBJECT poly
 name "LampWhiteON.003"
 loc -0.0106392 0.0370152 0.0299993
-texture "radio-volume.png"
+texture "radio-volume.webp"
 texrep 1 1
 numvert 65
 -0.0137376 -0.0317046 -0.0037870
@@ -9965,7 +9965,7 @@ kids 0
 OBJECT poly
 name "LampWhiteON.004"
 loc -0.0106392 0.0370152 -0.0000007
-texture "radio-volume.png"
+texture "radio-volume.webp"
 texrep 1 1
 numvert 65
 -0.0137376 -0.0317046 -0.0037870
@@ -10470,7 +10470,7 @@ kids 0
 OBJECT poly
 name "LampWhiteON.005"
 loc -0.0106392 0.0370152 -0.0200007
-texture "radio-volume.png"
+texture "radio-volume.webp"
 texrep 1 1
 numvert 65
 -0.0137376 -0.0317046 -0.0037870
@@ -10975,7 +10975,7 @@ kids 0
 OBJECT poly
 name "LampWhiteON.006"
 loc -0.0106392 0.0370152 -0.0500007
-texture "radio-volume.png"
+texture "radio-volume.webp"
 texrep 1 1
 numvert 65
 -0.0137376 -0.0317046 -0.0037870
@@ -11480,7 +11480,7 @@ kids 0
 OBJECT poly
 name "LampWhiteON.007"
 loc -0.0106392 0.0370152 -0.0700007
-texture "radio-volume.png"
+texture "radio-volume.webp"
 texrep 1 1
 numvert 65
 -0.0137376 -0.0317046 -0.0037870
@@ -11985,7 +11985,7 @@ kids 0
 OBJECT poly
 name "LampWhiteON.008"
 loc -0.0106392 0.0370152 -0.1000007
-texture "radio-volume.png"
+texture "radio-volume.webp"
 texrep 1 1
 numvert 65
 -0.0137376 -0.0317046 -0.0037870
@@ -12490,7 +12490,7 @@ kids 0
 OBJECT poly
 name "shadow"
 loc 0.0026840 0.0007860 0.0017590
-texture "shadow.png"
+texture "shadow.webp"
 texrep 1 1
 numvert 4
 0.0453800 0.0005730 -0.1248850
@@ -12509,7 +12509,7 @@ kids 0
 OBJECT poly
 name "Sockle"
 loc -0.0753443 0.0032845 0.0001490
-texture "radio-volume.png"
+texture "radio-volume.webp"
 texrep 1 1
 numvert 216
 0.0484718 -0.0003561 0.1040467
@@ -13921,7 +13921,7 @@ kids 0
 OBJECT poly
 name "sup"
 loc 0.0027760 0.0034820 0.1441310
-texture "radio-volume.png"
+texture "radio-volume.webp"
 texrep 1 1
 numvert 136
 0.0380800 -0.0002150 -0.2615390
@@ -14884,7 +14884,7 @@ kids 0
 OBJECT poly
 name "switch"
 loc -0.6274030 -0.1560668 0.2726689
-texture "radio-volume.png"
+texture "radio-volume.webp"
 texrep 1 1
 numvert 65
 0.6536797 0.1617893 -0.1741105
@@ -15389,7 +15389,7 @@ kids 0
 OBJECT poly
 name "switch.001"
 loc -0.6274030 -0.1560668 0.2526689
-texture "radio-volume.png"
+texture "radio-volume.webp"
 texrep 1 1
 numvert 65
 0.6536797 0.1617893 -0.1741105
@@ -15894,7 +15894,7 @@ kids 0
 OBJECT poly
 name "switch.002"
 loc -0.6274030 -0.1560668 0.2226689
-texture "radio-volume.png"
+texture "radio-volume.webp"
 texrep 1 1
 numvert 65
 0.6536797 0.1617893 -0.1741105
@@ -16399,7 +16399,7 @@ kids 0
 OBJECT poly
 name "switch.003"
 loc -0.6274030 -0.1560668 0.2026689
-texture "radio-volume.png"
+texture "radio-volume.webp"
 texrep 1 1
 numvert 65
 0.6536797 0.1617893 -0.1741105
@@ -16904,7 +16904,7 @@ kids 0
 OBJECT poly
 name "switch.004"
 loc -0.6274030 -0.1560668 0.1726689
-texture "radio-volume.png"
+texture "radio-volume.webp"
 texrep 1 1
 numvert 65
 0.6536797 0.1617893 -0.1741105
@@ -17409,7 +17409,7 @@ kids 0
 OBJECT poly
 name "switch.005"
 loc -0.6274030 -0.1560668 0.1526689
-texture "radio-volume.png"
+texture "radio-volume.webp"
 texrep 1 1
 numvert 65
 0.6536797 0.1617893 -0.1741105
@@ -17914,7 +17914,7 @@ kids 0
 OBJECT poly
 name "switch.006"
 loc -0.6274030 -0.1560668 0.1226689
-texture "radio-volume.png"
+texture "radio-volume.webp"
 texrep 1 1
 numvert 65
 0.6536797 0.1617893 -0.1741105
@@ -18419,7 +18419,7 @@ kids 0
 OBJECT poly
 name "switch.007"
 loc -0.6274030 -0.1560668 0.1026689
-texture "radio-volume.png"
+texture "radio-volume.webp"
 texrep 1 1
 numvert 65
 0.6536797 0.1617893 -0.1741105
@@ -18924,7 +18924,7 @@ kids 0
 OBJECT poly
 name "switch.008"
 loc -0.6274030 -0.1560668 0.0726689
-texture "radio-volume.png"
+texture "radio-volume.webp"
 texrep 1 1
 numvert 65
 0.6536797 0.1617893 -0.1741105

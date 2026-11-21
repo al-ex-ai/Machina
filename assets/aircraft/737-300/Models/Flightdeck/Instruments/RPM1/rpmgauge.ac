@@ -30,7 +30,7 @@ OBJECT poly
 name "Cylinder.005"
 data 12
 Cylinder.005
-texture "rpmn1.png"
+texture "rpmn1.webp"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -418,7 +418,7 @@ OBJECT poly
 name "Plane.171"
 data 9
 Plane.023
-texture "rpmn1.png"
+texture "rpmn1.webp"
 texrep 1 1
 crease 30.000000
 numvert 80

@@ -8,7 +8,7 @@ kids 8
 OBJECT poly
 name "Dot"
 loc -0.0066800 -0.0128510 -0.0595070
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 numvert 4
 0.0141380 0.0120360 0.0551870
@@ -27,7 +27,7 @@ kids 0
 OBJECT poly
 name "face"
 loc 0.0000000 0.0000000 0.0000000
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 numvert 192
 0.0070190 0.0131240 -0.0131240
@@ -1109,7 +1109,7 @@ kids 0
 OBJECT poly
 name "norange"
 loc 0.0075143 0.0017050 -0.0001004
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 numvert 4
 -0.0000000 -0.0056705 -0.0102608
@@ -1128,7 +1128,7 @@ kids 0
 OBJECT poly
 name "screws"
 loc 0.0022720 0.0000000 0.0000000
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 numvert 171
 0.0036750 -0.0143040 -0.0184480
@@ -2555,7 +2555,7 @@ kids 0
 OBJECT poly
 name "shadow"
 loc 0.0000000 0.0000000 0.0000000
-texture "instr-shadow.png"
+texture "instr-shadow.webp"
 texrep 1 1
 numvert 4
 0.0006000 0.0437490 -0.0446990
@@ -2574,7 +2574,7 @@ kids 0
 OBJECT poly
 name "Tacan.1"
 loc 0.0074010 -0.0099720 -0.0110070
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 numvert 4
 0.0000000 0.0074630 0.0004910
@@ -2593,7 +2593,7 @@ kids 0
 OBJECT poly
 name "Tacan.10"
 loc 0.0074010 -0.0099720 -0.0040070
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 numvert 4
 0.0000000 0.0164210 0.0006560
@@ -2612,7 +2612,7 @@ kids 0
 OBJECT poly
 name "Tacan.100"
 loc 0.0074010 -0.0099720 0.0029940
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 numvert 4
 0.0000000 0.0071950 0.0006390

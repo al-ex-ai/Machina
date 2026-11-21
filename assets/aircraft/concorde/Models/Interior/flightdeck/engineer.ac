@@ -7,7 +7,7 @@ name "Engineer"
 loc 21.801878 -0.277632 0.522677
 data 8
 Engineer
-texture "concorde-flight-deck.png"
+texture "concorde-flight-deck.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 24
@@ -196,7 +196,7 @@ name "EngineerAft"
 loc 21.801878 -0.277632 0.522677
 data 11
 EngineerAft
-texture "concorde-flight-deck.png"
+texture "concorde-flight-deck.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 12
@@ -282,7 +282,7 @@ name "EngineerLeft"
 loc 21.801878 -0.277632 0.522677
 data 12
 EngineerLeft
-texture "concorde-flight-deck.png"
+texture "concorde-flight-deck.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8
@@ -336,7 +336,7 @@ name "EngineerRight"
 loc 21.801878 -0.277632 0.522677
 data 13
 EngineerRight
-texture "concorde-flight-deck.png"
+texture "concorde-flight-deck.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8

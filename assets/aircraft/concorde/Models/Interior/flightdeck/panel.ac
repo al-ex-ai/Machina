@@ -7,7 +7,7 @@ name "ConsoleLeft"
 loc 24.041811 -0.325641 -0
 data 11
 ConsoleLeft
-texture "concorde-flight-deck.png"
+texture "concorde-flight-deck.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 71
@@ -626,7 +626,7 @@ name "ConsoleRight"
 loc 24.041811 -0.325641 -0
 data 12
 ConsoleRight
-texture "concorde-flight-deck.png"
+texture "concorde-flight-deck.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 71
@@ -1245,7 +1245,7 @@ name "Dashboard"
 loc 24.041811 -0.325641 -0
 data 9
 Dashboard
-texture "concorde-flight-deck.png"
+texture "concorde-flight-deck.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 59
@@ -1686,7 +1686,7 @@ name "MainPanel_0"
 loc 24.041811 -0.325641 -0
 data 11
 MainPanel_0
-texture "concorde-flight-deck.png"
+texture "concorde-flight-deck.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10
@@ -1768,7 +1768,7 @@ name "MainPanel_1"
 loc 24.041811 -0.325641 -0
 data 11
 MainPanel_1
-texture "concorde-flight-deck.png"
+texture "concorde-flight-deck.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 34
@@ -2023,7 +2023,7 @@ name "UpperPanel"
 loc 24.041811 -0.325641 -0
 data 10
 UpperPanel
-texture "concorde-flight-deck.png"
+texture "concorde-flight-deck.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 28

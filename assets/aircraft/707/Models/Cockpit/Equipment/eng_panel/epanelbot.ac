@@ -8,7 +8,7 @@ name "panelAuxbot"
 loc 0.846611 -0.456827 -0.433317
 data 11
 panelAuxbot
-texture "apanel.png"
+texture "apanel.webp"
 texrep 1 1
 numvert 4
 -0.38349 0.682132 0.435366
@@ -29,7 +29,7 @@ name "panelEbot"
 loc 0.184864 -0.456827 -0.433317
 data 9
 panelEbot
-texture "epanelb.png"
+texture "epanelb.webp"
 texrep 1 1
 numvert 4
 0.145512 0.682132 0.433518

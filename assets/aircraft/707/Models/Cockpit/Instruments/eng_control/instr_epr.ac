@@ -8,7 +8,7 @@ name "face"
 loc -0.000005 0 -0
 data 4
 face
-texture "epr.png"
+texture "epr.webp"
 texrep 1 1
 crease 30.000001
 numvert 16
@@ -119,7 +119,7 @@ name "needle"
 loc -0.000267 -0 0
 data 6
 needle
-texture "epr.png"
+texture "epr.webp"
 texrep 1 1
 crease 30.000001
 numvert 9
@@ -166,7 +166,7 @@ name "shadow"
 loc 0.000644 0 -0
 data 6
 shadow
-texture "shadow.png"
+texture "shadow.webp"
 texrep 1 1
 numvert 4
 0 -0.024187 -0.024187

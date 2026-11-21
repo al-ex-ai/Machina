@@ -74,7 +74,7 @@ kids 0
 OBJECT poly
 name "horizon"
 loc 0.111423 -0.0919138 -0.361363
-texture "horizon.png"
+texture "horizon.webp"
 crease 45.000000
 numvert 4
 -0.118875 -0.0470903 0.619056
@@ -151,7 +151,7 @@ kids 0
 OBJECT poly
 name "pfd"
 loc -0.00342359 -0.014413 0.123978
-texture "mainpanel.png"
+texture "mainpanel.webp"
 crease 45.000000
 numvert 20
 0.000610449 -0.1233 -0.133214
@@ -204,7 +204,7 @@ name "ASI"
 loc -0.0067927 -0.0257789 0.100036
 data 9
 Plane.004
-texture "spd-tape.png"
+texture "spd-tape.webp"
 crease 30.000000
 numvert 4
 0.002139 0.096763 0.0946391
@@ -225,7 +225,7 @@ name "Alt1"
 loc -0.0044697 -0.0278987 0.120514
 data 9
 Plane.003
-texture "alt-tape.png"
+texture "alt-tape.webp"
 crease 30.000000
 numvert 4
 0 0.098354 -0.102157
@@ -246,7 +246,7 @@ name "Alt2"
 loc -0.0044697 -0.026705 0.120514
 data 9
 Plane.005
-texture "alt-tape.png"
+texture "alt-tape.webp"
 crease 30.000000
 numvert 4
 0 0.0971604 -0.102157
@@ -267,7 +267,7 @@ name "Alt3"
 loc -0.0044697 -0.026705 0.120514
 data 9
 Plane.011
-texture "alt-tape.png"
+texture "alt-tape.webp"
 crease 30.000000
 numvert 4
 0 0.0971604 -0.102157
@@ -288,7 +288,7 @@ name "Alt4"
 loc -0.0044697 -0.026705 0.120514
 data 9
 Plane.012
-texture "alt-tape.png"
+texture "alt-tape.webp"
 crease 30.000000
 numvert 4
 0 0.0971604 -0.102157
@@ -309,7 +309,7 @@ name "Alt5"
 loc -0.0044697 -0.026705 0.120514
 data 9
 Plane.013
-texture "alt-tape.png"
+texture "alt-tape.webp"
 crease 30.000000
 numvert 4
 0 0.0971604 -0.102157
@@ -330,7 +330,7 @@ name "Alt6"
 loc -0.0044697 -0.0262186 0.120514
 data 9
 Plane.014
-texture "alt-tape.png"
+texture "alt-tape.webp"
 crease 30.000000
 numvert 4
 0 0.0973051 -0.102157
@@ -729,7 +729,7 @@ name "Chrono.needle"
 loc -0.00602564 0.0753416 -0.0378924
 data 9
 Plane.008
-texture "clock.png"
+texture "clock.webp"
 crease 30.000000
 numvert 6
 0.00162647 0.0193451 -0.000419915
@@ -759,7 +759,7 @@ name "ET.01"
 loc -0.00602564 0.0753416 -0.0378924
 data 8
 Mesh.010
-texture "clock.png"
+texture "clock.webp"
 crease 30.000000
 numvert 4
 0.00147885 -0.00701305 -0.00780234
@@ -780,7 +780,7 @@ name "ET.10"
 loc -0.00602564 0.0753416 -0.0378924
 data 8
 Mesh.011
-texture "clock.png"
+texture "clock.webp"
 crease 30.000000
 numvert 4
 0.00147885 -0.00701305 -0.00394318
@@ -801,7 +801,7 @@ name "ET01"
 loc -0.00602564 0.0753416 -0.0378924
 data 8
 Mesh.013
-texture "clock.png"
+texture "clock.webp"
 crease 30.000000
 numvert 4
 0.00147885 -0.00701305 0.00131482
@@ -822,7 +822,7 @@ name "ET10"
 loc -0.00602564 0.0753416 -0.0378924
 data 8
 Mesh.014
-texture "clock.png"
+texture "clock.webp"
 crease 30.000000
 numvert 4
 0.00147885 -0.00701305 0.00517398
@@ -843,7 +843,7 @@ name "Hr.01"
 loc -0.00602564 0.0753416 -0.0378924
 data 8
 Mesh.015
-texture "clock.png"
+texture "clock.webp"
 crease 30.000000
 numvert 4
 0.00147885 0.014055 0.000221074
@@ -864,7 +864,7 @@ name "Hr.10"
 loc -0.00602564 0.0753416 -0.0378924
 data 8
 Mesh.016
-texture "clock.png"
+texture "clock.webp"
 crease 30.000000
 numvert 4
 0.00147885 0.014055 0.00431317
@@ -885,7 +885,7 @@ name "Mn.01"
 loc -0.00602564 0.0753416 -0.0378924
 data 8
 Mesh.017
-texture "clock.png"
+texture "clock.webp"
 crease 30.000000
 numvert 4
 0.00147885 0.014055 -0.00902402
@@ -906,7 +906,7 @@ name "Mn.10"
 loc -0.00602564 0.0753416 -0.0378924
 data 8
 Mesh.018
-texture "clock.png"
+texture "clock.webp"
 crease 30.000000
 numvert 4
 0.00147885 0.014055 -0.00516486
@@ -927,7 +927,7 @@ name "colon"
 loc -0.00602564 0.0753416 -0.0378924
 data 8
 Mesh.022
-texture "clock.png"
+texture "clock.webp"
 crease 30.000000
 numvert 8
 0.00142899 0.0111268 -0.000482917
@@ -959,7 +959,7 @@ name "colon.001"
 loc -0.00602564 0.0753416 -0.0378924
 data 8
 Mesh.023
-texture "clock.png"
+texture "clock.webp"
 crease 30.000000
 numvert 4
 0.00130039 -0.0123465 0.00120783
@@ -980,7 +980,7 @@ name "Plane.001"
 loc -0.00602564 0.0753416 -0.0378924
 data 9
 Plane.004
-texture "clock.png"
+texture "clock.webp"
 crease 30.000000
 numvert 26
 0.00147819 0.0270044 -0.00793488
@@ -1154,7 +1154,7 @@ name "gsscale"
 loc -0.0067927 -0.0234747 0.10878
 data 9
 Plane.010
-texture "ati.png"
+texture "ati.webp"
 crease 30.000000
 numvert 4
 0.0035 0.0428891 -0.0371424
@@ -1195,7 +1195,7 @@ name "loc.scale"
 loc -0.0067927 -0.0405292 0.112466
 data 9
 Plane.008
-texture "ati.png"
+texture "ati.webp"
 crease 30.000000
 numvert 4
 0.0035 -0.0395857 -0.0205642
@@ -1214,7 +1214,7 @@ kids 0
 OBJECT poly
 name "box"
 loc 0.110126 -0.134724 -0.55498
-texture "clock.png"
+texture "clock.webp"
 crease 45.000000
 numvert 4
 -0.116919 0.245957 0.812059
@@ -1235,7 +1235,7 @@ name "Hsi"
 loc -0.00597313 -0.0920008 0.114013
 data 10
 Circle.001
-texture "ati.png"
+texture "ati.webp"
 crease 30.000000
 numvert 16
 0.00147885 -0.0701994 -0.0312801

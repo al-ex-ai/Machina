@@ -8,7 +8,7 @@ name "HDRintvitre0"
 loc 0 0 -0
 data 12
 HDRintvitre0
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 14
@@ -83,7 +83,7 @@ name "HDRintvitres"
 loc 0 0 -0
 data 12
 HDRintvitres
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -112,7 +112,7 @@ name "intcockpit"
 loc 0 0 -0
 data 10
 intcockpit
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 102
@@ -857,7 +857,7 @@ name "intcockpit2"
 loc 0 0 -0
 data 11
 intcockpit2
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 52
@@ -1206,7 +1206,7 @@ name "interieur"
 loc 0 0 -0
 data 9
 interieur
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 84
@@ -1835,7 +1835,7 @@ name "inttour"
 loc 0 0 -0
 data 7
 inttour
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 56
@@ -2096,7 +2096,7 @@ name "intvitre0"
 loc 0 0 -0
 data 9
 intvitre0
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 14
@@ -2171,7 +2171,7 @@ name "intvitres"
 loc 0 0 -0
 data 9
 intvitres
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -2200,7 +2200,7 @@ name "planchet"
 loc 0 0 -0
 data 8
 planchet
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 15

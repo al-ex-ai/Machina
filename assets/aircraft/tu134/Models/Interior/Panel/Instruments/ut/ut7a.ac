@@ -8,7 +8,7 @@ name "cache"
 loc 0.000305 0 -0
 data 5
 cache
-texture "ut7a.png"
+texture "ut7a.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 17
@@ -132,7 +132,7 @@ name "face"
 loc -0.000012 0 -0
 data 4
 face
-texture "ut7a.png"
+texture "ut7a.webp"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 17
@@ -256,7 +256,7 @@ name "fond"
 loc -0.000012 0 -0
 data 4
 fond
-texture "ut7a.png"
+texture "ut7a.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 96
@@ -867,7 +867,7 @@ name "needle_1"
 loc -0.000012 0 -0
 data 8
 needle_1
-texture "ut7a.png"
+texture "ut7a.webp"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 7
@@ -911,7 +911,7 @@ name "needle_2"
 loc -0 -0.021348 -0.000436
 data 8
 needle_2
-texture "ut7a.png"
+texture "ut7a.webp"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 7

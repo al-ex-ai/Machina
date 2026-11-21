@@ -8,7 +8,7 @@ name "blanker"
 loc 0.002045 -0 0.000421
 data 7
 blanker
-texture "idr.png"
+texture "idr.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -30,7 +30,7 @@ name "dig_dec"
 loc -0.022648 0.000014 0.007365
 data 7
 dig_dec
-texture "idr.png"
+texture "idr.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 32
@@ -185,7 +185,7 @@ name "dig_hm"
 loc -0.022648 0.000014 -0.020203
 data 6
 dig_hm
-texture "idr.png"
+texture "idr.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 32
@@ -340,7 +340,7 @@ name "dig_hund"
 loc -0.022648 0.000014 0.021053
 data 8
 dig_hund
-texture "idr.png"
+texture "idr.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 32
@@ -495,7 +495,7 @@ name "dig_ones"
 loc -0.022648 0.000014 -0.005683
 data 8
 dig_ones
-texture "idr.png"
+texture "idr.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 32
@@ -650,7 +650,7 @@ name "face"
 loc 0.001726 -0.001535 0.000084
 data 4
 face
-texture "idr.png"
+texture "idr.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 25
@@ -830,7 +830,7 @@ name "fond"
 loc 0.001726 -0.001535 0.000084
 data 4
 fond
-texture "idr.png"
+texture "idr.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 96

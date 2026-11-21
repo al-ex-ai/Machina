@@ -8,7 +8,7 @@ name "YokeCol"
 loc -16.965231 -0.128531 -0.127775
 data 7
 YokeCol
-texture "yoke.png"
+texture "yoke.webp"
 texrep 1 1
 crease 30.000001
 numvert 328
@@ -2139,7 +2139,7 @@ name "ap-dis-knob-L"
 loc -18.694578 0.878219 0.475173
 data 13
 ap-dis-knob-L
-texture "yoke.png"
+texture "yoke.webp"
 texrep 1 1
 numvert 42
 0.042898 0.000168 0.099764
@@ -2459,7 +2459,7 @@ name "ap-dis-knob-R"
 loc -18.69529 0.878832 -0.46975
 data 13
 ap-dis-knob-R
-texture "yoke.png"
+texture "yoke.webp"
 texrep 1 1
 numvert 42
 0.039219 0.000168 -0.088794
@@ -2779,7 +2779,7 @@ name "logoL"
 loc -18.630835 0.812464 0.465541
 data 5
 logoL
-texture "logo-yoke.png"
+texture "logo-yoke.webp"
 texrep 1 1
 numvert 64
 -0.00214 0.062542 -0.028778
@@ -3437,7 +3437,7 @@ name "logoR"
 loc -18.630835 0.812464 -0.443888
 data 5
 logoR
-texture "logo-yoke.png"
+texture "logo-yoke.webp"
 texrep 1 1
 numvert 64
 -0.00214 0.062542 -0.028778
@@ -4215,7 +4215,7 @@ name "sup.001"
 loc -18.660238 0.91469 0.60732
 data 7
 sup.001
-texture "yoke.png"
+texture "yoke.webp"
 texrep 1 1
 numvert 101
 0.016256 0.00677 -0.010749
@@ -4980,7 +4980,7 @@ name "sup.002"
 loc -18.661098 0.914897 -0.591251
 data 7
 sup.002
-texture "yoke.png"
+texture "yoke.webp"
 texrep 1 1
 numvert 101
 0.010725 0.008424 -0.01548
@@ -5745,7 +5745,7 @@ name "switch.001"
 loc -18.646402 0.92002 0.615034
 data 10
 switch.001
-texture "yoke.png"
+texture "yoke.webp"
 texrep 1 1
 numvert 122
 0.008724 -0.012852 -0.009791
@@ -6521,7 +6521,7 @@ name "switch.002"
 loc -18.645069 0.919215 -0.589301
 data 10
 switch.002
-texture "yoke.png"
+texture "yoke.webp"
 texrep 1 1
 numvert 122
 0.00329 -0.011214 -0.014163
@@ -7297,7 +7297,7 @@ name "yokeL"
 loc -18.680532 0.8783 0.462128
 data 5
 yokeL
-texture "yoke.png"
+texture "yoke.webp"
 texrep 1 1
 numvert 1008
 0.034918 -0.080954 -0
@@ -15311,7 +15311,7 @@ name "yokeR"
 loc -18.680532 0.8783 -0.446826
 data 5
 yokeR
-texture "yoke.png"
+texture "yoke.webp"
 texrep 1 1
 numvert 1008
 0.034918 -0.080954 -0

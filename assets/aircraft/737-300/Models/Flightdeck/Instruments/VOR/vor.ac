@@ -9,7 +9,7 @@ kids 17
 OBJECT poly
 name "bezel"
 loc 0.0000000 0.0000000 0.0000000
-texture "vor.png"
+texture "vor.webp"
 texrep 1 1
 numvert 44
 0.0000000 0.0506360 -0.0283610
@@ -479,7 +479,7 @@ kids 0
 OBJECT poly
 name "dme1-1"
 loc 0.0010340 0.0310251 0.0132725
-texture "pfd-digits.png"
+texture "pfd-digits.webp"
 texrep 1 1
 numvert 9
 0.0000000 0.0041906 0.0028556
@@ -524,7 +524,7 @@ kids 0
 OBJECT poly
 name "dme1-2"
 loc 0.0010340 0.0310333 0.0200301
-texture "pfd-digits.png"
+texture "pfd-digits.webp"
 texrep 1 1
 numvert 9
 0.0000000 0.0041906 0.0028556
@@ -569,7 +569,7 @@ kids 0
 OBJECT poly
 name "dme1-3"
 loc 0.0010340 0.0310333 0.0267448
-texture "pfd-digits.png"
+texture "pfd-digits.webp"
 texrep 1 1
 numvert 9
 0.0000000 0.0041906 0.0028556
@@ -614,7 +614,7 @@ kids 0
 OBJECT poly
 name "dme2-1"
 loc 0.0002692 0.0314379 -0.0305654
-texture "pfd-digits.png"
+texture "pfd-digits.webp"
 texrep 1 1
 numvert 9
 0.0000000 0.0041906 0.0028556
@@ -659,7 +659,7 @@ kids 0
 OBJECT poly
 name "dme2-2"
 loc 0.0002692 0.0314461 -0.0238079
-texture "pfd-digits.png"
+texture "pfd-digits.webp"
 texrep 1 1
 numvert 9
 0.0000000 0.0041906 0.0028556
@@ -704,7 +704,7 @@ kids 0
 OBJECT poly
 name "dme2-3"
 loc 0.0002692 0.0314461 -0.0170932
-texture "pfd-digits.png"
+texture "pfd-digits.webp"
 texrep 1 1
 numvert 9
 0.0000000 0.0041906 0.0028556
@@ -749,7 +749,7 @@ kids 0
 OBJECT poly
 name "dme2-4"
 loc 0.0002692 0.0315418 -0.0102945
-texture "pfd-digits.png"
+texture "pfd-digits.webp"
 texrep 1 1
 numvert 9
 0.0000000 0.0041906 0.0028556
@@ -794,7 +794,7 @@ kids 0
 OBJECT poly
 name "face"
 loc 0.0000000 0.0000000 0.0000000
-texture "vor.png"
+texture "vor.webp"
 texrep 1 1
 numvert 8
 0.0000000 0.0353980 -0.0370300
@@ -846,7 +846,7 @@ kids 0
 OBJECT poly
 name "Face"
 loc 0.0033870 -0.0115406 -0.0009982
-texture "nav.png"
+texture "nav.webp"
 texrep 1 1
 numvert 21
 0.0001150 0.0210880 -0.0210880
@@ -995,7 +995,7 @@ kids 0
 OBJECT poly
 name "InsideFrame"
 loc 0.0000000 -0.0119536 -0.0013642
-texture "nav.png"
+texture "nav.webp"
 texrep 1 1
 numvert 28
 0.0046760 0.0303860 0.0232930
@@ -1159,7 +1159,7 @@ kids 0
 OBJECT poly
 name "NAV1"
 loc 0.0148120 -0.0413476 0.0286548
-texture "nav.png"
+texture "nav.webp"
 texrep 1 1
 numvert 48
 -0.0101530 -0.0067320 -0.0010900
@@ -1595,7 +1595,7 @@ kids 0
 OBJECT poly
 name "NAV2"
 loc 0.0047530 -0.0413266 -0.0309682
-texture "nav.png"
+texture "nav.webp"
 texrep 1 1
 numvert 42
 -0.0000070 -0.0048280 -0.0048550
@@ -2025,7 +2025,7 @@ kids 0
 OBJECT poly
 name "Needle1ADF"
 loc 0.0038115 -0.0120124 -0.0013535
-texture "nav.png"
+texture "nav.webp"
 texrep 1 1
 numvert 4
 0.0001275 -0.0251602 -0.0067327
@@ -2044,7 +2044,7 @@ kids 0
 OBJECT poly
 name "Needle1VOR"
 loc 0.0038115 -0.0120124 -0.0013535
-texture "nav.png"
+texture "nav.webp"
 texrep 1 1
 numvert 4
 0.0001275 -0.0251602 -0.0067327
@@ -2063,7 +2063,7 @@ kids 0
 OBJECT poly
 name "Needle2ADF"
 loc 0.0036300 -0.0120254 -0.0013534
-texture "nav.png"
+texture "nav.webp"
 texrep 1 1
 numvert 4
 0.0001280 -0.0251682 -0.0067058
@@ -2082,7 +2082,7 @@ kids 0
 OBJECT poly
 name "Needle2VOR"
 loc 0.0036300 -0.0120254 -0.0013534
-texture "nav.png"
+texture "nav.webp"
 texrep 1 1
 numvert 4
 0.0001280 -0.0251682 -0.0067058

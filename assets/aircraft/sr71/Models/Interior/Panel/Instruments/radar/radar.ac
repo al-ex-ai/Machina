@@ -8,7 +8,7 @@ name "AI1a"
 loc 0.00344 0 -0
 data 4
 AI1a
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -46,7 +46,7 @@ name "AI1b"
 loc 0.00344 0 -0
 data 4
 AI1b
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -84,7 +84,7 @@ name "AI1c"
 loc 0.00344 0 -0
 data 4
 AI1c
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -122,7 +122,7 @@ name "AI1d"
 loc 0.00344 0 -0
 data 4
 AI1d
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -160,7 +160,7 @@ name "AI1e"
 loc 0.00344 0 -0
 data 4
 AI1e
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -198,7 +198,7 @@ name "AI1f"
 loc 0.00344 0 -0
 data 4
 AI1f
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -236,7 +236,7 @@ name "AI1g"
 loc 0.00344 0 -0
 data 4
 AI1g
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -274,7 +274,7 @@ name "AI2a"
 loc 0.00344 0 -0
 data 4
 AI2a
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -312,7 +312,7 @@ name "AI2b"
 loc 0.00344 0 -0
 data 4
 AI2b
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -350,7 +350,7 @@ name "AI2c"
 loc 0.00344 0 -0
 data 4
 AI2c
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -388,7 +388,7 @@ name "AI2d"
 loc 0.00344 0 -0
 data 4
 AI2d
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -426,7 +426,7 @@ name "AI2e"
 loc 0.00344 0 -0
 data 4
 AI2e
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -464,7 +464,7 @@ name "AI2f"
 loc 0.00344 0 -0
 data 4
 AI2f
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -502,7 +502,7 @@ name "AI2g"
 loc 0.00344 0 -0
 data 4
 AI2g
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -540,7 +540,7 @@ name "AI3a"
 loc 0.00344 0 -0
 data 4
 AI3a
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -578,7 +578,7 @@ name "AI3b"
 loc 0.00344 0 -0
 data 4
 AI3b
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -616,7 +616,7 @@ name "AI3c"
 loc 0.00344 0 -0
 data 4
 AI3c
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -654,7 +654,7 @@ name "AI3d"
 loc 0.00344 0 -0
 data 4
 AI3d
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -692,7 +692,7 @@ name "AI3e"
 loc 0.00344 0 -0
 data 4
 AI3e
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -730,7 +730,7 @@ name "AI3f"
 loc 0.00344 0 -0
 data 4
 AI3f
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -768,7 +768,7 @@ name "AI3g"
 loc 0.00344 0 -0
 data 4
 AI3g
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -806,7 +806,7 @@ name "AI4a"
 loc 0.00344 0 -0
 data 4
 AI4a
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -844,7 +844,7 @@ name "AI4b"
 loc 0.00344 0 -0
 data 4
 AI4b
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -882,7 +882,7 @@ name "AI4c"
 loc 0.00344 0 -0
 data 4
 AI4c
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -920,7 +920,7 @@ name "AI4d"
 loc 0.00344 0 -0
 data 4
 AI4d
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -958,7 +958,7 @@ name "AI4e"
 loc 0.00344 0 -0
 data 4
 AI4e
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -996,7 +996,7 @@ name "AI4f"
 loc 0.00344 0 -0
 data 4
 AI4f
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -1034,7 +1034,7 @@ name "AI4g"
 loc 0.00344 0 -0
 data 4
 AI4g
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -1072,7 +1072,7 @@ name "AI5a"
 loc 0.00344 0 -0
 data 4
 AI5a
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -1110,7 +1110,7 @@ name "AI5b"
 loc 0.00344 0 -0
 data 4
 AI5b
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -1148,7 +1148,7 @@ name "AI5c"
 loc 0.00344 0 -0
 data 4
 AI5c
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -1186,7 +1186,7 @@ name "AI5d"
 loc 0.00344 0 -0
 data 4
 AI5d
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -1224,7 +1224,7 @@ name "AI5e"
 loc 0.00344 0 -0
 data 4
 AI5e
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -1262,7 +1262,7 @@ name "AI5f"
 loc 0.00344 0 -0
 data 4
 AI5f
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -1300,7 +1300,7 @@ name "AI5g"
 loc 0.00344 0 -0
 data 4
 AI5g
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -1338,7 +1338,7 @@ name "AI6a"
 loc 0.00344 0 -0
 data 4
 AI6a
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -1376,7 +1376,7 @@ name "AI6b"
 loc 0.00344 0 -0
 data 4
 AI6b
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -1414,7 +1414,7 @@ name "AI6c"
 loc 0.00344 0 -0
 data 4
 AI6c
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -1452,7 +1452,7 @@ name "AI6d"
 loc 0.00344 0 -0
 data 4
 AI6d
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -1490,7 +1490,7 @@ name "AI6e"
 loc 0.00344 0 -0
 data 4
 AI6e
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -1528,7 +1528,7 @@ name "AI6f"
 loc 0.00344 0 -0
 data 4
 AI6f
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -1566,7 +1566,7 @@ name "AI6g"
 loc 0.00344 0 -0
 data 4
 AI6g
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -1604,7 +1604,7 @@ name "MP1a"
 loc 0.00344 0 -0
 data 4
 MP1a
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -1642,7 +1642,7 @@ name "MP1b"
 loc 0.00344 0 -0
 data 4
 MP1b
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -1680,7 +1680,7 @@ name "MP1c"
 loc 0.00344 0 -0
 data 4
 MP1c
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -1718,7 +1718,7 @@ name "MP1d"
 loc 0.00344 0 -0
 data 4
 MP1d
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -1756,7 +1756,7 @@ name "MP1e"
 loc 0.00344 0 -0
 data 4
 MP1e
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -1794,7 +1794,7 @@ name "MP1f"
 loc 0.00344 0 -0
 data 4
 MP1f
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -1832,7 +1832,7 @@ name "MP1g"
 loc 0.00344 0 -0
 data 4
 MP1g
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -1870,7 +1870,7 @@ name "MP2a"
 loc 0.00344 0 -0
 data 4
 MP2a
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -1908,7 +1908,7 @@ name "MP2b"
 loc 0.00344 0 -0
 data 4
 MP2b
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -1946,7 +1946,7 @@ name "MP2c"
 loc 0.00344 0 -0
 data 4
 MP2c
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -1984,7 +1984,7 @@ name "MP2d"
 loc 0.00344 0 -0
 data 4
 MP2d
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -2022,7 +2022,7 @@ name "MP2e"
 loc 0.00344 0 -0
 data 4
 MP2e
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -2060,7 +2060,7 @@ name "MP2f"
 loc 0.00344 0 -0
 data 4
 MP2f
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -2098,7 +2098,7 @@ name "MP2g"
 loc 0.00344 0 -0
 data 4
 MP2g
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -2136,7 +2136,7 @@ name "MP3a"
 loc 0.00344 0 -0
 data 4
 MP3a
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -2174,7 +2174,7 @@ name "MP3b"
 loc 0.00344 0 -0
 data 4
 MP3b
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -2212,7 +2212,7 @@ name "MP3c"
 loc 0.00344 0 -0
 data 4
 MP3c
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -2250,7 +2250,7 @@ name "MP3d"
 loc 0.00344 0 -0
 data 4
 MP3d
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -2288,7 +2288,7 @@ name "MP3e"
 loc 0.00344 0 -0
 data 4
 MP3e
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -2326,7 +2326,7 @@ name "MP3f"
 loc 0.00344 0 -0
 data 4
 MP3f
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -2364,7 +2364,7 @@ name "MP3g"
 loc 0.00344 0 -0
 data 4
 MP3g
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -2402,7 +2402,7 @@ name "MP4a"
 loc 0.00344 0 -0
 data 4
 MP4a
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -2440,7 +2440,7 @@ name "MP4b"
 loc 0.00344 0 -0
 data 4
 MP4b
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -2478,7 +2478,7 @@ name "MP4c"
 loc 0.00344 0 -0
 data 4
 MP4c
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -2516,7 +2516,7 @@ name "MP4d"
 loc 0.00344 0 -0
 data 4
 MP4d
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -2554,7 +2554,7 @@ name "MP4e"
 loc 0.00344 0 -0
 data 4
 MP4e
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -2592,7 +2592,7 @@ name "MP4f"
 loc 0.00344 0 -0
 data 4
 MP4f
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -2630,7 +2630,7 @@ name "MP4g"
 loc 0.00344 0 -0
 data 4
 MP4g
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -2668,7 +2668,7 @@ name "MP5a"
 loc 0.00344 0 -0
 data 4
 MP5a
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -2706,7 +2706,7 @@ name "MP5b"
 loc 0.00344 0 -0
 data 4
 MP5b
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -2744,7 +2744,7 @@ name "MP5c"
 loc 0.00344 0 -0
 data 4
 MP5c
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -2782,7 +2782,7 @@ name "MP5d"
 loc 0.00344 0 -0
 data 4
 MP5d
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -2820,7 +2820,7 @@ name "MP5e"
 loc 0.00344 0 -0
 data 4
 MP5e
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -2858,7 +2858,7 @@ name "MP5f"
 loc 0.00344 0 -0
 data 4
 MP5f
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -2896,7 +2896,7 @@ name "MP5g"
 loc 0.00344 0 -0
 data 4
 MP5g
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -2934,7 +2934,7 @@ name "MP6a"
 loc 0.00344 0 -0
 data 4
 MP6a
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -2972,7 +2972,7 @@ name "MP6b"
 loc 0.00344 0 -0
 data 4
 MP6b
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -3010,7 +3010,7 @@ name "MP6c"
 loc 0.00344 0 -0
 data 4
 MP6c
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -3048,7 +3048,7 @@ name "MP6d"
 loc 0.00344 0 -0
 data 4
 MP6d
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -3086,7 +3086,7 @@ name "MP6e"
 loc 0.00344 0 -0
 data 4
 MP6e
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -3124,7 +3124,7 @@ name "MP6f"
 loc 0.00344 0 -0
 data 4
 MP6f
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -3162,7 +3162,7 @@ name "MP6g"
 loc 0.00344 0 -0
 data 4
 MP6g
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -3348,7 +3348,7 @@ name "cibleA"
 loc 0 0 -0
 data 6
 cibleA
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 153
@@ -4124,7 +4124,7 @@ name "cibleB"
 loc 0 0 -0
 data 6
 cibleB
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 91
@@ -4562,7 +4562,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4100
@@ -35123,7 +35123,7 @@ name "knob"
 loc 0 0 -0
 data 4
 knob
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 129
@@ -36127,7 +36127,7 @@ name "knob1"
 loc 0 0 -0
 data 5
 knob1
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 161
@@ -37387,7 +37387,7 @@ name "knob2"
 loc 0 0 -0
 data 5
 knob2
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 161
@@ -38647,7 +38647,7 @@ name "knob3"
 loc 0 0 -0
 data 5
 knob3
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 161
@@ -39907,7 +39907,7 @@ name "knob4"
 loc 0 0 -0
 data 5
 knob4
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 161
@@ -41167,7 +41167,7 @@ name "knob5"
 loc 0 0 -0
 data 5
 knob5
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 161
@@ -42427,7 +42427,7 @@ name "knobA"
 loc 0 0 -0
 data 5
 knobA
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 161
@@ -43687,7 +43687,7 @@ name "knobB"
 loc 0 0 -0
 data 5
 knobB
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 193
@@ -45203,7 +45203,7 @@ name "knobC"
 loc 0 0 -0
 data 5
 knobC
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 161
@@ -46463,7 +46463,7 @@ name "needle"
 loc 0 0 -0
 data 6
 needle
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 16
@@ -46539,7 +46539,7 @@ name "plots_s0"
 loc 0.002613 0.000273 0.045082
 data 8
 plots_s0
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -46561,7 +46561,7 @@ name "plots_s1"
 loc 0.002613 0.000273 0.045082
 data 8
 plots_s1
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -46583,7 +46583,7 @@ name "plots_s10"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s10
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -46605,7 +46605,7 @@ name "plots_s11"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s11
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -46627,7 +46627,7 @@ name "plots_s12"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s12
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -46649,7 +46649,7 @@ name "plots_s13"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s13
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -46671,7 +46671,7 @@ name "plots_s14"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s14
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -46693,7 +46693,7 @@ name "plots_s15"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s15
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -46715,7 +46715,7 @@ name "plots_s16"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s16
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -46737,7 +46737,7 @@ name "plots_s17"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s17
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -46759,7 +46759,7 @@ name "plots_s18"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s18
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -46781,7 +46781,7 @@ name "plots_s19"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s19
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -46803,7 +46803,7 @@ name "plots_s2"
 loc 0.002613 0.000273 0.045082
 data 8
 plots_s2
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -46825,7 +46825,7 @@ name "plots_s20"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s20
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -46847,7 +46847,7 @@ name "plots_s21"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s21
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -46869,7 +46869,7 @@ name "plots_s22"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s22
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -46891,7 +46891,7 @@ name "plots_s23"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s23
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -46913,7 +46913,7 @@ name "plots_s24"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s24
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -46935,7 +46935,7 @@ name "plots_s25"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s25
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -46957,7 +46957,7 @@ name "plots_s26"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s26
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -46979,7 +46979,7 @@ name "plots_s27"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s27
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47001,7 +47001,7 @@ name "plots_s28"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s28
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47023,7 +47023,7 @@ name "plots_s29"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s29
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47045,7 +47045,7 @@ name "plots_s3"
 loc 0.002613 0.000273 0.045082
 data 8
 plots_s3
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47067,7 +47067,7 @@ name "plots_s30"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s30
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47089,7 +47089,7 @@ name "plots_s31"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s31
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47111,7 +47111,7 @@ name "plots_s32"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s32
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47133,7 +47133,7 @@ name "plots_s33"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s33
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47155,7 +47155,7 @@ name "plots_s34"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s34
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47177,7 +47177,7 @@ name "plots_s35"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s35
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47199,7 +47199,7 @@ name "plots_s36"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s36
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47221,7 +47221,7 @@ name "plots_s37"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s37
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47243,7 +47243,7 @@ name "plots_s38"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s38
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47265,7 +47265,7 @@ name "plots_s39"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s39
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47287,7 +47287,7 @@ name "plots_s4"
 loc 0.002613 0.000273 0.045082
 data 8
 plots_s4
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47309,7 +47309,7 @@ name "plots_s40"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s40
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47331,7 +47331,7 @@ name "plots_s41"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s41
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47353,7 +47353,7 @@ name "plots_s42"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s42
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47375,7 +47375,7 @@ name "plots_s43"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s43
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47397,7 +47397,7 @@ name "plots_s44"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s44
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47419,7 +47419,7 @@ name "plots_s45"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s45
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47441,7 +47441,7 @@ name "plots_s46"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s46
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47463,7 +47463,7 @@ name "plots_s47"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s47
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47485,7 +47485,7 @@ name "plots_s48"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s48
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47507,7 +47507,7 @@ name "plots_s49"
 loc 0.002613 0.000273 0.045082
 data 9
 plots_s49
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47529,7 +47529,7 @@ name "plots_s5"
 loc 0.002613 0.000273 0.045082
 data 8
 plots_s5
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47551,7 +47551,7 @@ name "plots_s50"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s50
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47573,7 +47573,7 @@ name "plots_s51"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s51
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47595,7 +47595,7 @@ name "plots_s52"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s52
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47617,7 +47617,7 @@ name "plots_s53"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s53
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47639,7 +47639,7 @@ name "plots_s54"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s54
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47661,7 +47661,7 @@ name "plots_s55"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s55
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47683,7 +47683,7 @@ name "plots_s56"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s56
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47705,7 +47705,7 @@ name "plots_s57"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s57
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47727,7 +47727,7 @@ name "plots_s58"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s58
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47749,7 +47749,7 @@ name "plots_s59"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s59
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47771,7 +47771,7 @@ name "plots_s6"
 loc 0.002613 0.000273 0.045082
 data 8
 plots_s6
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47793,7 +47793,7 @@ name "plots_s60"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s60
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47815,7 +47815,7 @@ name "plots_s61"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s61
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47837,7 +47837,7 @@ name "plots_s62"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s62
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47859,7 +47859,7 @@ name "plots_s63"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s63
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47881,7 +47881,7 @@ name "plots_s64"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s64
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47903,7 +47903,7 @@ name "plots_s65"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s65
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47925,7 +47925,7 @@ name "plots_s66"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s66
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47947,7 +47947,7 @@ name "plots_s67"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s67
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47969,7 +47969,7 @@ name "plots_s68"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s68
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -47991,7 +47991,7 @@ name "plots_s69"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s69
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -48013,7 +48013,7 @@ name "plots_s7"
 loc 0.002613 0.000273 0.045082
 data 8
 plots_s7
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -48035,7 +48035,7 @@ name "plots_s70"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s70
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -48057,7 +48057,7 @@ name "plots_s71"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s71
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -48079,7 +48079,7 @@ name "plots_s72"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s72
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -48101,7 +48101,7 @@ name "plots_s73"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s73
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -48123,7 +48123,7 @@ name "plots_s74"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s74
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -48145,7 +48145,7 @@ name "plots_s75"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s75
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -48167,7 +48167,7 @@ name "plots_s76"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s76
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -48189,7 +48189,7 @@ name "plots_s77"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s77
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -48211,7 +48211,7 @@ name "plots_s78"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s78
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -48233,7 +48233,7 @@ name "plots_s79"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s79
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -48255,7 +48255,7 @@ name "plots_s8"
 loc 0.002613 0.000273 0.045082
 data 8
 plots_s8
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -48277,7 +48277,7 @@ name "plots_s80"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s80
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -48299,7 +48299,7 @@ name "plots_s81"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s81
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -48321,7 +48321,7 @@ name "plots_s82"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s82
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -48343,7 +48343,7 @@ name "plots_s83"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s83
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -48365,7 +48365,7 @@ name "plots_s84"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s84
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -48387,7 +48387,7 @@ name "plots_s85"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s85
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -48409,7 +48409,7 @@ name "plots_s86"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s86
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -48431,7 +48431,7 @@ name "plots_s87"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s87
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -48453,7 +48453,7 @@ name "plots_s88"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s88
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -48475,7 +48475,7 @@ name "plots_s89"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s89
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -48497,7 +48497,7 @@ name "plots_s9"
 loc 0.002613 0.000273 0.045082
 data 8
 plots_s9
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -48519,7 +48519,7 @@ name "plots_s90"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s90
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -48541,7 +48541,7 @@ name "plots_s91"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s91
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -48563,7 +48563,7 @@ name "plots_s92"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s92
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -48585,7 +48585,7 @@ name "plots_s93"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s93
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -48607,7 +48607,7 @@ name "plots_s94"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s94
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -48629,7 +48629,7 @@ name "plots_s95"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s95
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -48651,7 +48651,7 @@ name "plots_s96"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s96
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -48673,7 +48673,7 @@ name "plots_s97"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s97
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -48695,7 +48695,7 @@ name "plots_s98"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s98
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -48717,7 +48717,7 @@ name "plots_s99"
 loc 0.002613 0.000273 -0.000447
 data 9
 plots_s99
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -48739,7 +48739,7 @@ name "texte"
 loc 0.005567 -0.09074 -0.058473
 data 5
 texte
-texture "radar.png"
+texture "radar.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 225

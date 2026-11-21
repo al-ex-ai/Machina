@@ -8,7 +8,7 @@ name "Bezel"
 loc -0.00022 0 -0
 data 5
 Bezel
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 crease 30.000001
 numvert 144
@@ -667,7 +667,7 @@ name "DME.Face"
 loc -0.00022 0 -0
 data 8
 DME.Face
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 crease 30.000001
 numvert 9
@@ -735,7 +735,7 @@ name "Dme.1"
 loc 0.000062 -0.010748 -0.016953
 data 5
 Dme.1
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 crease 45.000001
 numvert 4
@@ -757,7 +757,7 @@ name "Dme.1.1"
 loc 0.000022 -0.010748 -0.016953
 data 7
 Dme.1.1
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 crease 45.000001
 numvert 4
@@ -779,7 +779,7 @@ name "Dme.1.2"
 loc 0.000143 -0.010748 -0.016953
 data 7
 Dme.1.2
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 crease 45.000001
 numvert 4
@@ -801,7 +801,7 @@ name "Dme.1.3"
 loc 0.000183 -0.010748 -0.016953
 data 7
 Dme.1.3
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 crease 45.000001
 numvert 4
@@ -823,7 +823,7 @@ name "Dme.10"
 loc 0.000062 -0.010748 -0.005621
 data 6
 Dme.10
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 crease 45.000001
 numvert 4
@@ -845,7 +845,7 @@ name "Dme.10.1"
 loc 0.000022 -0.010748 -0.005621
 data 8
 Dme.10.1
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 crease 45.000001
 numvert 4
@@ -867,7 +867,7 @@ name "Dme.10.2"
 loc 0.000143 -0.010748 -0.005621
 data 8
 Dme.10.2
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 crease 45.000001
 numvert 4
@@ -889,7 +889,7 @@ name "Dme.10.3"
 loc 0.000183 -0.010748 -0.005621
 data 8
 Dme.10.3
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 crease 45.000001
 numvert 4
@@ -911,7 +911,7 @@ name "Dme.100"
 loc 0.000062 -0.010748 0.001908
 data 7
 Dme.100
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 crease 45.000001
 numvert 4
@@ -933,7 +933,7 @@ name "Dme.100.1"
 loc 0.000022 -0.010748 0.001908
 data 9
 Dme.100.1
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 crease 45.000001
 numvert 4
@@ -955,7 +955,7 @@ name "Dme.100.2"
 loc 0.000143 -0.010748 0.001908
 data 9
 Dme.100.2
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 crease 45.000001
 numvert 4
@@ -977,7 +977,7 @@ name "Dme.100.3"
 loc 0.000183 -0.010748 0.001908
 data 9
 Dme.100.3
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 crease 45.000001
 numvert 4
@@ -999,7 +999,7 @@ name "Dme.1000"
 loc 0.000062 -0.010748 0.009526
 data 8
 Dme.1000
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 crease 45.000001
 numvert 4
@@ -1021,7 +1021,7 @@ name "Dme.1000.1"
 loc 0.000023 -0.010748 0.009526
 data 10
 Dme.1000.1
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 crease 45.000001
 numvert 4
@@ -1043,7 +1043,7 @@ name "Dme.1000.2"
 loc 0.000144 -0.010748 0.009526
 data 10
 Dme.1000.2
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 crease 45.000001
 numvert 4
@@ -1065,7 +1065,7 @@ name "Dme.1000.3"
 loc 0.000183 -0.010748 0.009526
 data 10
 Dme.1000.3
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 crease 45.000001
 numvert 4
@@ -1087,7 +1087,7 @@ name "Dot"
 loc -0.014075 -0.01363 -0.063841
 data 3
 Dot
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 crease 45.000001
 numvert 4
@@ -1109,7 +1109,7 @@ name "NoDME"
 loc 0.016138 0.000757 0.004206
 data 5
 NoDME
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 numvert 16
 -0.015721 -0.000729 -0.0204
@@ -1163,7 +1163,7 @@ name "Tacan.1"
 loc -0.000018 -0.010748 -0.016853
 data 7
 Tacan.1
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 crease 45.000001
 numvert 4
@@ -1185,7 +1185,7 @@ name "Tacan.10"
 loc -0.000018 -0.010748 -0.005621
 data 8
 Tacan.10
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 crease 45.000001
 numvert 4
@@ -1207,7 +1207,7 @@ name "Tacan.100"
 loc -0.000018 -0.010748 0.001908
 data 9
 Tacan.100
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 crease 45.000001
 numvert 4
@@ -1229,7 +1229,7 @@ name "Tacan.1000"
 loc -0.000022 -0.010748 0.009526
 data 10
 Tacan.1000
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 crease 45.000001
 numvert 4
@@ -1251,7 +1251,7 @@ name "shadow"
 loc 0.000747 0.000347 -0
 data 6
 shadow
-texture "shadow.png"
+texture "shadow.webp"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -1273,7 +1273,7 @@ name "sockle"
 loc -0.586825 0.373263 0.277357
 data 6
 sockle
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 crease 30.000001
 numvert 38
@@ -1436,7 +1436,7 @@ name "sockle.001"
 loc -0.586825 0.373263 0.300751
 data 10
 sockle.001
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 crease 30.000001
 numvert 38
@@ -1599,7 +1599,7 @@ name "switch"
 loc -0.559575 0.35315 0.224043
 data 6
 switch
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 crease 79.999998
 numvert 274
@@ -3756,7 +3756,7 @@ name "switch.001"
 loc -0.559575 0.35315 0.247437
 data 10
 switch.001
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 crease 79.999998
 numvert 274
@@ -5913,7 +5913,7 @@ name "switchshadow"
 loc 0.000421 -0.013861 0.056747
 data 12
 switchshadow
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 numvert 16
 0 -0.009852 -0.008725
@@ -6002,7 +6002,7 @@ name "switchshadow.001"
 loc 0.000421 -0.013861 0.080141
 data 16
 switchshadow.001
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 numvert 16
 0 -0.009852 -0.008725
@@ -6091,7 +6091,7 @@ name "switchsup"
 loc 0.0007 -0.013931 0.056817
 data 9
 switchsup
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 numvert 16
 0 -0.007529 -0.007183
@@ -6180,7 +6180,7 @@ name "switchsup.001"
 loc 0.0007 -0.013931 0.080211
 data 13
 switchsup.001
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 numvert 16
 0 -0.007529 -0.007183

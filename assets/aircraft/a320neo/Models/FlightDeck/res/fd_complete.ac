@@ -84,7 +84,7 @@ name "atc_0"
 data 15
 CU1_curve_.1132
 crease 40.0
-texture "ATC.png"
+texture "ATC.webp"
 texrep 1 1
 numvert 32
 0.00917 -0.13949 -0.16002
@@ -257,7 +257,7 @@ name "atc_1"
 data 15
 CU1_curve_.1125
 crease 40.0
-texture "ATC.png"
+texture "ATC.webp"
 texrep 1 1
 numvert 32
 -0.02326 -0.13412 -0.15202
@@ -430,7 +430,7 @@ name "atc_2"
 data 15
 CU1_curve_.1126
 crease 40.0
-texture "ATC.png"
+texture "ATC.webp"
 texrep 1 1
 numvert 32
 -0.01576 -0.13536 -0.16929
@@ -603,7 +603,7 @@ name "atc_3"
 data 15
 CU1_curve_.1127
 crease 40.0
-texture "ATC.png"
+texture "ATC.webp"
 texrep 1 1
 numvert 32
 -0.01434 -0.1356 -0.17645
@@ -776,7 +776,7 @@ name "atc_4"
 data 15
 CU1_curve_.1128
 crease 40.0
-texture "ATC.png"
+texture "ATC.webp"
 texrep 1 1
 numvert 32
 -0.00037 -0.13791 -0.15369
@@ -949,7 +949,7 @@ name "atc_5"
 data 15
 CU1_curve_.1129
 crease 40.0
-texture "ATC.png"
+texture "ATC.webp"
 texrep 1 1
 numvert 32
 0.00105 -0.13814 -0.16846
@@ -1122,7 +1122,7 @@ name "atc_6"
 data 15
 CU1_curve_.1130
 crease 40.0
-texture "ATC.png"
+texture "ATC.webp"
 texrep 1 1
 numvert 32
 -0.00622 -0.13694 -0.18489
@@ -1295,7 +1295,7 @@ name "atc_7"
 data 15
 CU1_curve_.1133
 crease 40.0
-texture "ATC.png"
+texture "ATC.webp"
 texrep 1 1
 numvert 32
 0.00834 -0.13935 -0.14465
@@ -1468,7 +1468,7 @@ name "atc_abv"
 data 14
 CU1_curve_.555
 crease 40.0
-texture "ATC.png"
+texture "ATC.webp"
 texrep 1 1
 numvert 84
 0.01653 -0.1388 -0.1321
@@ -2074,7 +2074,7 @@ name "atc_abv.mark"
 data 15
 CU1_curve_.1135
 crease 40.0
-texture "ATC.png"
+texture "ATC.webp"
 texrep 1 1
 numvert 4
 0.01427 -0.12469 -0.13028
@@ -2095,7 +2095,7 @@ name "atc_body"
 data 15
 CU1_curve_.1391
 crease 40.0
-texture "ATC.png"
+texture "ATC.webp"
 texrep 1 1
 numvert 1425
 -0.01711 -0.13338 -0.25317
@@ -13681,7 +13681,7 @@ name "atc_clr"
 data 15
 CU1_curve_.1131
 crease 40.0
-texture "ATC.png"
+texture "ATC.webp"
 texrep 1 1
 numvert 32
 0.00834 -0.13935 -0.17585
@@ -13854,7 +13854,7 @@ name "atc_fail"
 data 15
 CU1_curve_.1138
 crease 40.0
-texture "ATC.png"
+texture "ATC.webp"
 texrep 1 1
 numvert 48
 0.0115 -0.13876 -0.19745
@@ -14107,7 +14107,7 @@ name "atc_glare"
 data 15
 CU1_curve_.1205
 crease 40.0
-texture "ATC.png"
+texture "ATC.webp"
 texrep 1 1
 numvert 16
 0.02359 -0.1401 -0.25296
@@ -14161,7 +14161,7 @@ name "atc_ident"
 data 15
 CU1_curve_.1137
 crease 40.0
-texture "ATC.png"
+texture "ATC.webp"
 texrep 1 1
 numvert 72
 -0.00601 -0.13831 -0.24315
@@ -14606,7 +14606,7 @@ name "atc_screen"
 data 15
 CU1_curve_.1139
 crease 40.0
-texture "ATC.png"
+texture "ATC.webp"
 texrep 1 1
 numvert 4
 -0.00146 -0.1369 -0.19503
@@ -14627,7 +14627,7 @@ name "atc_stby"
 data 14
 CU1_curve_.556
 crease 40.0
-texture "ATC.png"
+texture "ATC.webp"
 texrep 1 1
 numvert 144
 0.00714 -0.13725 -0.22085
@@ -15450,7 +15450,7 @@ name "atc_sys"
 data 14
 CU1_curve_.553
 crease 40.0
-texture "ATC.png"
+texture "ATC.webp"
 texrep 1 1
 numvert 84
 -0.00238 -0.13567 -0.13641
@@ -16056,7 +16056,7 @@ name "atc_sys.mark"
 data 15
 CU1_curve_.1134
 crease 40.0
-texture "ATC.png"
+texture "ATC.webp"
 texrep 1 1
 numvert 4
 0.00047 -0.12241 -0.13159
@@ -16077,7 +16077,7 @@ name "atc_thrt"
 data 14
 CU1_curve_.554
 crease 40.0
-texture "ATC.png"
+texture "ATC.webp"
 texrep 1 1
 numvert 84
 -0.017 -0.13325 -0.13641
@@ -16683,7 +16683,7 @@ name "atc_thrt.mark"
 data 15
 CU1_curve_.1136
 crease 40.0
-texture "ATC.png"
+texture "ATC.webp"
 texrep 1 1
 numvert 4
 -0.0142 -0.11998 -0.13159
@@ -16707,7 +16707,7 @@ name "audio_swtg"
 data 18
 ecam_air_data.mesh
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 230
 0.5068 1.1275 -0.12244
@@ -18474,7 +18474,7 @@ name "beam"
 data 13
 beam.mesh.001
 crease 40.0
-texture "leather.png"
+texture "leather.webp"
 texrep 1 1
 numvert 178
 0.43626 1.14065 0.32899
@@ -19634,7 +19634,7 @@ name "beam_a"
 data 15
 beam_a.mesh.001
 crease 45.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 41
 -0.51677 0.80438 0.05837
@@ -19956,7 +19956,7 @@ name "beam_f"
 data 15
 beam_f.mesh.001
 crease 45.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 36
 -0.09658 0.83642 0.73322
@@ -20257,7 +20257,7 @@ name "box"
 data 12
 box.mesh.001
 crease 45.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 16
 -0.62265 0.6583 -0.03469
@@ -20370,7 +20370,7 @@ name "brakes_accum_psi"
 data 16
 brakes_accum_psi
 crease 40.0
-texture "Brakes.png"
+texture "Brakes.webp"
 texrep 1 1
 numvert 63
 -0.51826 0.09627 -0.21985
@@ -20829,7 +20829,7 @@ name "brakes_accum_psi.mark"
 data 21
 brakes_accum_psi.mark
 crease 40.0
-texture "Brakes.png"
+texture "Brakes.webp"
 texrep 1 1
 numvert 11
 -0.51575 0.08943 -0.20795
@@ -20864,7 +20864,7 @@ name "brakes_body"
 data 11
 brakes_body
 crease 40.0
-texture "Brakes.png"
+texture "Brakes.webp"
 texrep 1 1
 numvert 393
 -0.51198 0.08333 -0.23935
@@ -24288,7 +24288,7 @@ name "brakes_glare"
 data 12
 brakes_glare
 crease 40.0
-texture "Brakes.png"
+texture "Brakes.webp"
 texrep 1 1
 numvert 4
 -0.51903 0.09996 -0.19578
@@ -24309,7 +24309,7 @@ name "brakes_lb_psi"
 data 13
 brakes_lb_psi
 crease 40.0
-texture "Brakes.png"
+texture "Brakes.webp"
 texrep 1 1
 numvert 61
 -0.51092 0.07154 -0.20552
@@ -24763,7 +24763,7 @@ name "brakes_lb_psi.mark"
 data 18
 brakes_lb_psi.mark
 crease 40.0
-texture "Brakes.png"
+texture "Brakes.webp"
 texrep 1 1
 numvert 11
 -0.51062 0.07216 -0.21143
@@ -24798,7 +24798,7 @@ name "brakes_rb_psi"
 data 13
 brakes_rb_psi
 crease 40.0
-texture "Brakes.png"
+texture "Brakes.webp"
 texrep 1 1
 numvert 61
 -0.51092 0.07154 -0.2341
@@ -25247,7 +25247,7 @@ name "brakes_rb_psi.mark"
 data 18
 brakes_rb_psi.mark
 crease 40.0
-texture "Brakes.png"
+texture "Brakes.webp"
 texrep 1 1
 numvert 11
 -0.51067 0.07232 -0.21922
@@ -25282,7 +25282,7 @@ name "brightness_panel_left_glare"
 data 36
 brightness_panel_left_glare.mesh.001
 crease 40.0
-texture "brightness.png"
+texture "brightness.webp"
 texrep 1 1
 numvert 10
 -0.5701 0.27597 0.76831
@@ -25315,7 +25315,7 @@ name "brightness_panel_right_glare"
 data 37
 brightness_panel_right_glare.mesh.001
 crease 40.0
-texture "brightness.png"
+texture "brightness.webp"
 texrep 1 1
 numvert 10
 -0.5701 0.27597 -0.76831
@@ -25348,7 +25348,7 @@ name "cabinet"
 data 16
 cabinet.mesh.001
 crease 40.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 64
 0.98118 -0.48811 1.57497
@@ -25676,7 +25676,7 @@ name "carpet"
 data 15
 carpet.mesh.001
 crease 40.0
-texture "carpet2.png"
+texture "carpet2.webp"
 texrep 1 1
 numvert 16
 1.26668 -0.48811 -1.55567
@@ -25746,7 +25746,7 @@ name "ceiling"
 data 16
 ceiling.mesh.001
 crease 45.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 332
 0.46678 1.05882 0.85429
@@ -28279,7 +28279,7 @@ name "chrono_btn"
 data 10
 chrono_btn
 crease 40.0
-texture "Clock.jpg"
+texture "Clock.webp"
 texrep 1 1
 numvert 64
 -0.55231 0.21812 -0.18716
@@ -28757,7 +28757,7 @@ name "chrono_reset"
 data 12
 chrono_reset
 crease 40.0
-texture "Clock.jpg"
+texture "Clock.webp"
 texrep 1 1
 numvert 64
 -0.55231 0.2181 -0.12667
@@ -29235,7 +29235,7 @@ name "clock_body"
 data 10
 clock_body
 crease 40.0
-texture "Clock.jpg"
+texture "Clock.webp"
 texrep 1 1
 numvert 107
 -0.55261 0.20846 -0.17642
@@ -30516,7 +30516,7 @@ name "clock_display"
 data 13
 clock_display
 crease 40.0
-texture "Clock.jpg"
+texture "Clock.webp"
 texrep 1 1
 numvert 4
 -0.55738 0.22434 -0.13595
@@ -30537,7 +30537,7 @@ name "clock_display_illuminated"
 data 25
 clock_display_illuminated
 crease 40.0
-texture "Clock.jpg"
+texture "Clock.webp"
 texrep 1 1
 numvert 4
 -0.55738 0.22434 -0.13595
@@ -30558,7 +30558,7 @@ name "clock_glare"
 data 11
 clock_glare
 crease 40.0
-texture "Clock-glare.png"
+texture "Clock-glare.webp"
 texrep 1 1
 numvert 12
 -0.53485 0.16716 -0.20013
@@ -30601,7 +30601,7 @@ name "clock_knob"
 data 10
 clock_knob
 crease 40.0
-texture "Clock.jpg"
+texture "Clock.webp"
 texrep 1 1
 numvert 36
 -0.54475 0.19694 -0.18771
@@ -30895,7 +30895,7 @@ name "clock_knob.axis"
 data 15
 clock_knob.axis
 crease 40.0
-texture "Clock.jpg"
+texture "Clock.webp"
 texrep 1 1
 numvert 2
 -0.5434 0.19245 -0.18983
@@ -30912,7 +30912,7 @@ name "clock_set"
 data 9
 clock_set
 crease 40.0
-texture "Clock.jpg"
+texture "Clock.webp"
 texrep 1 1
 numvert 64
 -0.54651 0.19723 -0.12569
@@ -31390,7 +31390,7 @@ name "et_knob"
 data 7
 et_knob
 crease 40.0
-texture "Clock.jpg"
+texture "Clock.webp"
 texrep 1 1
 numvert 36
 -0.53942 0.17918 -0.18772
@@ -31684,7 +31684,7 @@ name "et_knob.axis"
 data 12
 et_knob.axis
 crease 40.0
-texture "Clock.jpg"
+texture "Clock.webp"
 texrep 1 1
 numvert 2
 -0.53432 0.17606 -0.18984
@@ -31701,7 +31701,7 @@ name "compass_box"
 data 8
 Cube.286
 crease 40.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 12
 -0.37671 0.87324 0.06357
@@ -32082,7 +32082,7 @@ name "ddrmi_body"
 data 10
 ddrmi_body
 crease 40.0
-texture "DDRMI.png"
+texture "DDRMI.webp"
 texrep 1 1
 numvert 194
 -0.54249 0.14033 0.10229
@@ -33198,7 +33198,7 @@ name "ddrmi_dme1_screen"
 data 17
 ddrmi_dme1_screen
 crease 40.0
-texture "DDRMI.png"
+texture "DDRMI.webp"
 texrep 1 1
 numvert 4
 -0.52845 0.12579 0.14649
@@ -33219,7 +33219,7 @@ name "ddrmi_dme2_screen"
 data 17
 ddrmi_dme2_screen
 crease 40.0
-texture "DDRMI.png"
+texture "DDRMI.webp"
 texrep 1 1
 numvert 4
 -0.53101 0.13442 0.13849
@@ -33240,7 +33240,7 @@ name "ddrmi_hdg"
 data 9
 ddrmi_hdg
 crease 40.0
-texture "DDRMI.png"
+texture "DDRMI.webp"
 texrep 1 1
 numvert 193
 -0.51835 0.09228 0.14249
@@ -34754,7 +34754,7 @@ name "ddrmi_inside"
 data 12
 ddrmi_inside
 crease 40.0
-texture "DDRMI.png"
+texture "DDRMI.webp"
 texrep 1 1
 numvert 309
 -0.51661 0.0928 0.14249
@@ -36756,7 +36756,7 @@ name "ddrmi_pointer_1"
 data 19
 ddrmi_pointer_1_vor
 crease 40.0
-texture "DDRMI.png"
+texture "DDRMI.webp"
 texrep 1 1
 numvert 32
 -0.52146 0.10565 0.14399
@@ -36851,7 +36851,7 @@ name "ddrmi_pointer_2"
 data 19
 ddrmi_pointer_2_vor
 crease 40.0
-texture "DDRMI.png"
+texture "DDRMI.webp"
 texrep 1 1
 numvert 24
 -0.51302 0.07561 0.14489
@@ -36912,7 +36912,7 @@ name "ddrmi_vor_adf_flag_1"
 data 20
 ddrmi_vor_adf_flag_1
 crease 40.0
-texture "DDRMI.png"
+texture "DDRMI.webp"
 texrep 1 1
 numvert 30
 -0.52068 0.10208 0.17281
@@ -37090,7 +37090,7 @@ name "ddrmi_vor_adf_flag_2"
 data 20
 ddrmi_vor_adf_flag_2
 crease 40.0
-texture "DDRMI.png"
+texture "DDRMI.webp"
 texrep 1 1
 numvert 30
 -0.52127 0.10408 0.10968
@@ -37268,7 +37268,7 @@ name "ddrmi_vor_adf_select_1"
 data 22
 ddrmi_vor_adf_select_1
 crease 40.0
-texture "DDRMI.png"
+texture "DDRMI.webp"
 texrep 1 1
 numvert 51
 -0.49806 0.06418 0.1737
@@ -37602,7 +37602,7 @@ name "ddrmi_vor_adf_select_2"
 data 22
 ddrmi_vor_adf_select_2
 crease 40.0
-texture "DDRMI.png"
+texture "DDRMI.webp"
 texrep 1 1
 numvert 51
 -0.50002 0.07079 0.11576
@@ -37936,7 +37936,7 @@ name "DoorC"
 data 9
 DoorC.001
 crease 40.0
-texture "doors.png"
+texture "doors.webp"
 texrep 1 1
 numvert 8
 1.5459 1.57709 0.48612
@@ -37992,7 +37992,7 @@ name "dummy_1"
 data 14
 CU1_curve_.552
 crease 40.0
-texture "Pedestal_up.png"
+texture "Pedestal_up.webp"
 texrep 1 1
 numvert 296
 0.02988 -0.14116 -0.25317
@@ -39878,7 +39878,7 @@ name "dummy_2"
 data 15
 CU1_curve_.1243
 crease 40.0
-texture "Pedestal_up.png"
+texture "Pedestal_up.webp"
 texrep 1 1
 numvert 268
 -0.31279 -0.08869 0.10323
@@ -41588,7 +41588,7 @@ name "ecam_air_data"
 data 22
 ecam_air_data.mesh.001
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 230
 -0.43066 -0.06399 0.00942
@@ -43370,7 +43370,7 @@ name "ecam_air_data.mark"
 data 23
 ecam_air_data.mark.mesh
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 10
 -0.44455 -0.05965 0.02305
@@ -43418,7 +43418,7 @@ name "ecam_all"
 data 14
 CU1_curve_.571
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 84
 -0.36716 -0.07023 -0.04946
@@ -43935,7 +43935,7 @@ name "ecam_apu"
 data 15
 CU1_curve_.1244
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 84
 -0.36716 -0.07023 0.05804
@@ -44452,7 +44452,7 @@ name "ecam_apu_led"
 data 14
 CU1_curve_.579
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 12
 -0.36392 -0.06766 0.05505
@@ -44495,7 +44495,7 @@ name "ecam_att_hdg"
 data 17
 ecam_att_hdg.mesh
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 230
 -0.43066 -0.06399 0.05442
@@ -46277,7 +46277,7 @@ name "ecam_att_hdg.mark"
 data 22
 ecam_att_hdg.mark.mesh
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 10
 -0.44453 -0.05957 0.06805
@@ -46325,7 +46325,7 @@ name "ecam_bleed"
 data 15
 CU1_curve_.1245
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 84
 -0.38097 -0.06795 0.03654
@@ -46842,7 +46842,7 @@ name "ecam_bleed_led"
 data 14
 CU1_curve_.581
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 12
 -0.37675 -0.06554 0.02555
@@ -46885,7 +46885,7 @@ name "ecam_body"
 data 15
 CU1_curve_.1246
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 1784
 -0.38307 -0.06514 -0.09695
@@ -60306,7 +60306,7 @@ name "ecam_brt_lower"
 data 19
 ecam_brt_lower.mesh
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 241
 -0.35845 -0.06876 0.08062
@@ -62288,7 +62288,7 @@ name "ecam_brt_lower.mark"
 data 24
 ecam_brt_lower.mark.mesh
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 13
 -0.35799 -0.06695 0.082
@@ -62352,7 +62352,7 @@ name "ecam_brt_upper"
 data 19
 ecam_brt_upper.mesh
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 241
 -0.39286 -0.06279 0.08049
@@ -64334,7 +64334,7 @@ name "ecam_brt_upper.mark"
 data 24
 ecam_brt_upper.mark.mesh
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 13
 -0.39237 -0.06098 0.08195
@@ -64398,7 +64398,7 @@ name "ecam_clr_l"
 data 15
 CU1_curve_.1247
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 84
 -0.3489 -0.07326 0.05804
@@ -64915,7 +64915,7 @@ name "ecam_clr_l_led"
 data 14
 CU1_curve_.573
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 12
 -0.34666 -0.07052 0.04705
@@ -64958,7 +64958,7 @@ name "ecam_clr_r"
 data 14
 CU1_curve_.572
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 84
 -0.34891 -0.07325 -0.04946
@@ -65475,7 +65475,7 @@ name "ecam_clr_r_led"
 data 14
 CU1_curve_.590
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 12
 -0.34468 -0.07084 -0.05245
@@ -65518,7 +65518,7 @@ name "ecam_cond"
 data 15
 CU1_curve_.1248
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 84
 -0.36716 -0.07023 0.03654
@@ -66035,7 +66035,7 @@ name "ecam_cond_led"
 data 14
 CU1_curve_.580
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 12
 -0.3657 -0.06736 0.02555
@@ -66078,7 +66078,7 @@ name "ecam_door"
 data 14
 CU1_curve_.563
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 84
 -0.36716 -0.07023 0.01504
@@ -66595,7 +66595,7 @@ name "ecam_door_led"
 data 14
 CU1_curve_.583
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 12
 -0.36471 -0.06753 0.01205
@@ -66638,7 +66638,7 @@ name "ecam_eis_dmc"
 data 17
 ecam_eis_dmc.mesh
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 230
 -0.43066 -0.06399 -0.03557
@@ -68420,7 +68420,7 @@ name "ecam_eis_dmc.mark"
 data 22
 ecam_eis_dmc.mark.mesh
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 10
 -0.44453 -0.05953 -0.02194
@@ -68468,7 +68468,7 @@ name "ecam_elec"
 data 14
 CU1_curve_.567
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 84
 -0.38097 -0.06795 -0.00646
@@ -68985,7 +68985,7 @@ name "ecam_elec_led"
 data 14
 CU1_curve_.586
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 12
 -0.37951 -0.06508 -0.01745
@@ -69028,7 +69028,7 @@ name "ecam_emer_canc"
 data 15
 CU1_curve_.1249
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 84
 -0.39873 -0.06501 -0.02769
@@ -69545,7 +69545,7 @@ name "ecam_emer_canc_lit"
 data 14
 CU1_curve_.135
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 158
 -0.4012 -0.06164 -0.02018
@@ -71064,7 +71064,7 @@ name "ecam_emer_canc_lit.axis"
 data 15
 CU1_curve_.1250
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 2
 -0.39061 -0.06199 -0.02136
@@ -71081,7 +71081,7 @@ name "ecam_eng"
 data 15
 CU1_curve_.1251
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 84
 -0.38097 -0.06795 0.05804
@@ -71598,7 +71598,7 @@ name "ecam_eng_led"
 data 14
 CU1_curve_.578
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 12
 -0.37754 -0.0654 0.04705
@@ -71641,7 +71641,7 @@ name "ecam_fctl"
 data 14
 CU1_curve_.568
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 84
 -0.36716 -0.07023 -0.02796
@@ -72158,7 +72158,7 @@ name "ecam_fctl_led"
 data 14
 CU1_curve_.587
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 12
 -0.36471 -0.06753 -0.03095
@@ -72201,7 +72201,7 @@ name "ecam_fuel"
 data 14
 CU1_curve_.570
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 84
 -0.38097 -0.06795 -0.04946
@@ -72718,7 +72718,7 @@ name "ecam_fuel_led"
 data 14
 CU1_curve_.589
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 12
 -0.37675 -0.06554 -0.06045
@@ -72761,7 +72761,7 @@ name "ecam_glare_down"
 data 15
 CU1_curve_.1252
 crease 40.0
-texture "ecam_glare_tex.png"
+texture "ecam_glare_tex.webp"
 texrep 1 1
 numvert 8
 -0.40392 -0.06108 -0.10745
@@ -72793,7 +72793,7 @@ name "ecam_glare_up"
 data 15
 CU1_curve_.1253
 crease 40.0
-texture "ecam_glare_tex.png"
+texture "ecam_glare_tex.webp"
 texrep 1 1
 numvert 4
 -0.40892 -0.06801 0.10755
@@ -72814,7 +72814,7 @@ name "ecam_hyd"
 data 14
 CU1_curve_.569
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 84
 -0.38097 -0.06795 -0.02796
@@ -73331,7 +73331,7 @@ name "ecam_hyd_led"
 data 14
 CU1_curve_.588
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 12
 -0.37675 -0.06554 -0.03895
@@ -73374,7 +73374,7 @@ name "ecam_nd_xfr"
 data 16
 ecam_nd_xfr.mesh
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 230
 -0.43066 -0.06399 -0.08058
@@ -75156,7 +75156,7 @@ name "ecam_nd_xfr.mark"
 data 21
 ecam_nd_xfr.mark.mesh
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 10
 -0.44444 -0.05957 -0.06695
@@ -75204,7 +75204,7 @@ name "ecam_press"
 data 14
 CU1_curve_.562
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 84
 -0.38097 -0.06795 0.01504
@@ -75721,7 +75721,7 @@ name "ecam_press_led"
 data 14
 CU1_curve_.582
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 12
 -0.37675 -0.06554 0.01205
@@ -75764,7 +75764,7 @@ name "ecam_rcl"
 data 14
 CU1_curve_.565
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 84
 -0.34891 -0.07325 -0.00646
@@ -76281,7 +76281,7 @@ name "ecam_sts"
 data 14
 CU1_curve_.564
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 84
 -0.3489 -0.07326 0.01504
@@ -76798,7 +76798,7 @@ name "ecam_sts_led"
 data 14
 CU1_curve_.584
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 12
 -0.34567 -0.07068 0.00405
@@ -76841,7 +76841,7 @@ name "ecam_switch_body"
 data 14
 CU1_curve_.133
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 884
 -0.41595 -0.07161 0.10483
@@ -83286,7 +83286,7 @@ name "ecam_to_config"
 data 15
 CU1_curve_.1254
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 84
 -0.39873 -0.06501 0.03654
@@ -83803,7 +83803,7 @@ name "ecam_wheel"
 data 14
 CU1_curve_.566
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 84
 -0.36716 -0.07023 -0.00646
@@ -84320,7 +84320,7 @@ name "ecam_wheel_led"
 data 14
 CU1_curve_.585
 crease 40.0
-texture "ECAM.png"
+texture "ECAM.webp"
 texrep 1 1
 numvert 12
 -0.36293 -0.06782 -0.00945
@@ -84363,7 +84363,7 @@ name "eng_mode"
 data 15
 CU1_curve_.1255
 crease 40.0
-texture "Engine.png"
+texture "Engine.webp"
 texrep 1 1
 numvert 230
 0.01436 -0.13766 -0.01312
@@ -86145,7 +86145,7 @@ name "eng_mode.mark"
 data 18
 eng_mode.mark.mesh
 crease 40.0
-texture "Engine.png"
+texture "Engine.webp"
 texrep 1 1
 numvert 10
 0.00064 -0.13314 0.00049
@@ -86193,7 +86193,7 @@ name "efis_box_1"
 data 19
 block00000.mesh.001
 crease 45.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 32
 -0.59948 0.33138 0.21013
@@ -86401,7 +86401,7 @@ name "efis_box_2"
 data 19
 block00020.mesh.002
 crease 45.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 98
 -0.58826 0.30234 0.76738
@@ -87041,7 +87041,7 @@ name "efis_box_2.001"
 data 19
 block00020.mesh.003
 crease 45.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 32
 -0.36448 0.42538 0.60861
@@ -87279,7 +87279,7 @@ name "efis_box_3"
 data 19
 box0000019.mesh.002
 crease 45.0
-texture "leather.png"
+texture "leather.webp"
 texrep 1 1
 numvert 32
 -0.84547 0.38056 0.22041
@@ -87557,7 +87557,7 @@ name "efis_box_4"
 data 19
 box0000019.mesh.003
 crease 45.0
-texture "leather.png"
+texture "leather.webp"
 texrep 1 1
 numvert 64
 -0.84522 0.37936 0.22066
@@ -88088,7 +88088,7 @@ name "engine_body"
 data 15
 CU1_curve_.1257
 crease 40.0
-texture "Engine.png"
+texture "Engine.webp"
 texrep 1 1
 numvert 1830
 0.00335 -0.139 0.04105
@@ -101258,7 +101258,7 @@ name "engine_fault_1"
 data 15
 CU1_curve_.1258
 crease 40.0
-texture "Engine.png"
+texture "Engine.webp"
 texrep 1 1
 numvert 4
 0.02054 -0.14045 0.03825
@@ -101279,7 +101279,7 @@ name "engine_fault_2"
 data 15
 CU1_curve_.1259
 crease 40.0
-texture "Engine.png"
+texture "Engine.webp"
 texrep 1 1
 numvert 4
 0.02054 -0.14045 -0.02475
@@ -101300,7 +101300,7 @@ name "engine_fire_1"
 data 15
 CU1_curve_.1260
 crease 40.0
-texture "Engine.png"
+texture "Engine.webp"
 texrep 1 1
 numvert 4
 0.00732 -0.13826 0.03825
@@ -101321,7 +101321,7 @@ name "engine_fire_2"
 data 15
 CU1_curve_.1261
 crease 40.0
-texture "Engine.png"
+texture "Engine.webp"
 texrep 1 1
 numvert 4
 0.00732 -0.13826 -0.02475
@@ -101342,7 +101342,7 @@ name "engine_glare"
 data 15
 CU1_curve_.1262
 crease 40.0
-texture "Engine.png"
+texture "Engine.webp"
 texrep 1 1
 numvert 4
 0.03303 -0.14126 -0.04895
@@ -101363,7 +101363,7 @@ name "Lcutoff"
 data 16
 Lcutoff.mesh.001
 crease 45.0
-texture "Engine.png"
+texture "Engine.webp"
 texrep 1 1
 numvert 249
 -0.01459 -0.13088 0.02464
@@ -103267,7 +103267,7 @@ name "Rcutoff"
 data 16
 Lcutoff.mesh.000
 crease 45.0
-texture "Engine.png"
+texture "Engine.webp"
 texrep 1 1
 numvert 249
 -0.01459 -0.13088 -0.02549
@@ -105171,7 +105171,7 @@ name "extinguisher"
 data 21
 extinguisher.mesh.001
 crease 45.0
-texture "cpit_6.png"
+texture "cpit_6.webp"
 texrep 1 1
 numvert 682
 0.73428 -0.30915 -1.09295
@@ -110825,7 +110825,7 @@ name "a-thr"
 data 14
 a-thr.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 12
 -0.36764 0.43843 -0.00733
@@ -110917,7 +110917,7 @@ name "a-thr_led"
 data 13
 cstr.mesh.003
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 4
 -0.35934 0.45012 0.00533
@@ -110938,7 +110938,7 @@ name "alt-sel"
 data 16
 alt-sel.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 130
 -0.34726 0.47965 -0.03898
@@ -112054,7 +112054,7 @@ name "alt-sel.axis"
 data 21
 alt-sel.axis.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 2
 -0.3381 0.48009 -0.04453
@@ -112071,7 +112071,7 @@ name "alt-sel-mode"
 data 21
 alt-sel-mode.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 86
 -0.36345 0.47887 -0.03625
@@ -112885,7 +112885,7 @@ name "ap1"
 data 12
 ap1.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 12
 -0.367 0.47439 0.00384
@@ -112977,7 +112977,7 @@ name "ap1_led"
 data 13
 cstr.mesh.012
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 4
 -0.36559 0.47062 0.01559
@@ -112998,7 +112998,7 @@ name "ap2"
 data 12
 ap2.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 12
 -0.37405 0.45895 -0.01769
@@ -113090,7 +113090,7 @@ name "ap2_led"
 data 13
 cstr.mesh.013
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 4
 -0.36559 0.47062 -0.00515
@@ -113111,7 +113111,7 @@ name "appr"
 data 13
 appr.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 12
 -0.36641 0.43723 -0.10341
@@ -113203,7 +113203,7 @@ name "appr_led"
 data 17
 appr_led.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 4
 -0.35824 0.44651 -0.09101
@@ -113224,7 +113224,7 @@ name "arpt"
 data 13
 arpt.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 12
 -0.38359 0.49332 0.135
@@ -113316,7 +113316,7 @@ name "arpt_led"
 data 13
 cstr.mesh.014
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 4
 -0.37532 0.50206 0.14741
@@ -113337,7 +113337,7 @@ name "arpt.001"
 data 17
 arpt.001.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 12
 -0.37386 0.49714 -0.14863
@@ -113429,7 +113429,7 @@ name "arpt_led.001"
 data 13
 cstr.mesh.015
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 4
 -0.37532 0.50206 -0.137
@@ -113450,7 +113450,7 @@ name "autoland_light"
 data 23
 autoland_light.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 32
 -0.36346 0.44958 -0.55775
@@ -113674,7 +113674,7 @@ name "autoland_light_on"
 data 26
 autoland_light_on.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 8
 -0.35934 0.45186 -0.55679
@@ -113706,7 +113706,7 @@ name "chrono_cpt"
 data 19
 chrono_cpt.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 61
 -0.36883 0.48291 0.31079
@@ -114185,7 +114185,7 @@ name "chrono_fo"
 data 18
 chrono_fo.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 61
 -0.37026 0.48473 -0.31215
@@ -114664,7 +114664,7 @@ name "cstr"
 data 13
 cstr.mesh.016
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 12
 -0.3836 0.49332 0.211
@@ -114756,7 +114756,7 @@ name "cstr_led"
 data 13
 cstr.mesh.022
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 4
 -0.37532 0.50206 0.22336
@@ -114777,7 +114777,7 @@ name "cstr.001"
 data 17
 cstr.001.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 12
 -0.37385 0.49718 -0.22463
@@ -114869,7 +114869,7 @@ name "cstr_led.001"
 data 13
 cstr.mesh.023
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 4
 -0.37532 0.50206 -0.21306
@@ -114890,7 +114890,7 @@ name "cylinder30"
 data 19
 cylinder30.mesh.003
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 64
 -0.36004 0.45335 0.20677
@@ -115378,7 +115378,7 @@ name "cylinder30.002"
 data 19
 cylinder30.mesh.005
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 64
 -0.36004 0.45335 0.15753
@@ -115866,7 +115866,7 @@ name "cylinder30.003"
 data 19
 cylinder30.mesh.006
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 64
 -0.36004 0.45335 -0.15141
@@ -116354,7 +116354,7 @@ name "cylinder30.004"
 data 19
 cylinder30.mesh.007
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 64
 -0.36004 0.45335 -0.20032
@@ -116842,7 +116842,7 @@ name "efis_display_foil"
 data 19
 block00021.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 12
 -0.37283 0.48419 -0.23358
@@ -116885,7 +116885,7 @@ name "exped"
 data 14
 exped.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 45
 -0.35941 0.45014 -0.03823
@@ -117186,7 +117186,7 @@ name "exped_led"
 data 13
 cstr.mesh.024
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 4
 -0.35824 0.44651 -0.03936
@@ -117207,7 +117207,7 @@ name "fcu_integ_knb"
 data 22
 fcu_integ_knb.mesh.001
 crease 30.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 65
 -0.44782 0.37616 0.06013
@@ -117698,7 +117698,7 @@ name "fcu_integ_knb.axis"
 data 27
 fcu_integ_knb.axis.mesh.001
 crease 30.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 2
 -0.45047 0.37513 0.06868
@@ -117715,7 +117715,7 @@ name "fcu_labels"
 data 19
 fcu_labels.mesh.001
 crease 40.0
-texture "fcu_labels.png"
+texture "fcu_labels.webp"
 texrep 1 1
 numvert 20
 -0.35412 0.43381 0.283
@@ -117780,7 +117780,7 @@ name "fcu_labels_hud"
 data 23
 fcu_labels_hud.mesh.001
 crease 40.0
-texture "fcu_labels.png"
+texture "fcu_labels.webp"
 texrep 1 1
 numvert 4
 -0.35412 0.43381 0.611
@@ -117801,7 +117801,7 @@ name "fcu_panel"
 data 18
 fcu_panel.mesh.001
 crease 45.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 1726
 -0.36475 0.45824 0.44508
@@ -130856,7 +130856,7 @@ name "fcu_panel_emit"
 data 23
 fcu_panel.emit.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 480
 -0.36702 0.46387 0.24004
@@ -133296,7 +133296,7 @@ name "fd1"
 data 12
 fd1.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 12
 -0.36617 0.43671 0.25354
@@ -133388,7 +133388,7 @@ name "fd1_led"
 data 16
 fd1_led.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 4
 -0.35786 0.44525 0.26588
@@ -133409,7 +133409,7 @@ name "fd2"
 data 12
 fd2.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 12
 -0.35904 0.44891 -0.2675
@@ -133501,7 +133501,7 @@ name "fd2_led"
 data 16
 fd2_led.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 4
 -0.35786 0.44525 -0.25572
@@ -133522,7 +133522,7 @@ name "hdg-sel"
 data 16
 hdg-sel.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 178
 -0.33882 0.48203 0.04987
@@ -135022,7 +135022,7 @@ name "hdg-sel.axis"
 data 21
 hdg-sel.axis.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 2
 -0.36926 0.4706 0.04899
@@ -135039,7 +135039,7 @@ name "hdg-vs"
 data 15
 hdg-vs.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 37
 -0.36861 0.48909 0.0002
@@ -135371,7 +135371,7 @@ name "hud_brt"
 data 16
 hud_brt.mesh.001
 crease 40.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 242
 -0.36388 0.46155 0.47119
@@ -137498,7 +137498,7 @@ name "hud_brt.mark"
 data 21
 hud_brt.mark.mesh.001
 crease 40.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 13
 -0.36464 0.47172 0.48288
@@ -137562,7 +137562,7 @@ name "hud_declutter_btn"
 data 26
 hud_declutter_btn.mesh.001
 crease 40.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 49
 -0.3675 0.46642 0.44941
@@ -137941,7 +137941,7 @@ name "hud_norm_sw"
 data 20
 hud_norm_sw.mesh.001
 crease 40.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 97
 -0.36761 0.46315 0.51616
@@ -138726,7 +138726,7 @@ name "ils"
 data 12
 ils.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 12
 -0.35904 0.44896 0.2352
@@ -138818,7 +138818,7 @@ name "ils_led"
 data 16
 ils_led.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 4
 -0.35786 0.44525 0.24711
@@ -138839,7 +138839,7 @@ name "ils2"
 data 13
 ils2.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 12
 -0.36609 0.43623 -0.24908
@@ -138931,7 +138931,7 @@ name "ils2_led"
 data 17
 ils2_led.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 4
 -0.35786 0.44525 -0.2365
@@ -138952,7 +138952,7 @@ name "loc"
 data 12
 loc.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 12
 -0.35936 0.44998 0.04239
@@ -139044,7 +139044,7 @@ name "loc_led"
 data 13
 cstr.mesh.025
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 4
 -0.35824 0.44651 0.05421
@@ -139065,7 +139065,7 @@ name "lt_knb_1"
 data 7
 sfl.001
 crease 30.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 128
 -0.38504 0.40356 0.63579
@@ -140011,7 +140011,7 @@ name "lt_knb_1.001"
 data 7
 sfl.003
 crease 30.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 64
 -0.44782 0.37616 -0.06013
@@ -140489,7 +140489,7 @@ name "master_caution"
 data 23
 master_caution.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 36
 -0.36281 0.44764 0.38975
@@ -140724,7 +140724,7 @@ name "master_caution_on"
 data 26
 master_caution_on.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 8
 -0.35881 0.44989 0.39071
@@ -140756,7 +140756,7 @@ name "master_warning"
 data 23
 master_warning.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 32
 -0.37115 0.47437 0.38975
@@ -140980,7 +140980,7 @@ name "master_warning_on"
 data 26
 master_warning_on.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 8
 -0.3671 0.47663 0.39071
@@ -141012,7 +141012,7 @@ name "metric_alt"
 data 19
 metric_alt.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 37
 -0.36994 0.48386 -0.07031
@@ -141349,7 +141349,7 @@ name "nd_mode"
 data 16
 nd_mode.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 109
 -0.3719 0.48044 0.2021
@@ -142331,7 +142331,7 @@ name "nd_mode.mark"
 data 21
 nd_mode.mark.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 80
 -0.37199 0.48054 0.20208
@@ -142778,7 +142778,7 @@ name "nd_mode_fo"
 data 19
 nd_mode_fo.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 109
 -0.372 0.48046 -0.20486
@@ -143760,7 +143760,7 @@ name "nd_mode_fo.mark"
 data 24
 nd_mode_fo.mark.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 80
 -0.37207 0.48048 -0.20488
@@ -144207,7 +144207,7 @@ name "nd_range"
 data 17
 nd_range.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 109
 -0.3719 0.48045 0.15307
@@ -145189,7 +145189,7 @@ name "nd_range.mark"
 data 22
 nd_range.mark.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 80
 -0.37198 0.48054 0.15305
@@ -145636,7 +145636,7 @@ name "nd_range_fo"
 data 20
 nd_range_fo.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 109
 -0.37201 0.48073 -0.15589
@@ -146618,7 +146618,7 @@ name "nd_range_fo.mark"
 data 25
 nd_range_fo.mark.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 80
 -0.37216 0.48074 -0.15585
@@ -147065,7 +147065,7 @@ name "ndb"
 data 12
 ndb.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 12
 -0.37648 0.50558 0.15477
@@ -147157,7 +147157,7 @@ name "ndb_led"
 data 13
 cstr.mesh.026
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 4
 -0.37532 0.50206 0.16637
@@ -147178,7 +147178,7 @@ name "ndb.001"
 data 16
 ndb.001.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 12
 -0.38362 0.49331 -0.154
@@ -147270,7 +147270,7 @@ name "ndb_led.001"
 data 13
 cstr.mesh.027
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 4
 -0.37532 0.50206 -0.15616
@@ -147291,7 +147291,7 @@ name "prio_capt"
 data 19
 box0000042.mesh.004
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 16
 -0.36281 0.44764 0.30281
@@ -147408,7 +147408,7 @@ name "prio_capt.arrow"
 data 19
 box0000042.mesh.006
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 4
 -0.36083 0.45637 0.30377
@@ -147429,7 +147429,7 @@ name "prio_capt.capt"
 data 19
 box0000042.mesh.007
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 4
 -0.36083 0.45637 0.30377
@@ -147450,7 +147450,7 @@ name "prio_fo_fo"
 data 19
 box0000042.mesh.010
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 4
 -0.36083 0.45637 -0.31726
@@ -147471,7 +147471,7 @@ name "prio_capt.arrow.001"
 data 19
 box0000042.mesh.011
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 4
 -0.36083 0.45637 0.30377
@@ -147492,7 +147492,7 @@ name "prio_capt.capt.001"
 data 19
 box0000042.mesh.012
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 4
 -0.36083 0.45637 0.30377
@@ -147513,7 +147513,7 @@ name "prio_fo"
 data 16
 prio_fo.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 16
 -0.36281 0.44764 -0.31822
@@ -147630,7 +147630,7 @@ name "prio_fo.arrow"
 data 19
 box0000042.mesh.013
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 4
 -0.36083 0.45637 -0.31726
@@ -147651,7 +147651,7 @@ name "qnh_cpt_knb"
 data 20
 qnh_cpt_knb.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 146
 -0.3362 0.4732 0.25883
@@ -148950,7 +148950,7 @@ name "qnh_cpt_sw"
 data 19
 qnh_cpt_sw.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 98
 -0.36636 0.47208 0.25484
@@ -149865,7 +149865,7 @@ name "qnh_fo_knb"
 data 19
 qnh_fo_knb.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 146
 -0.3362 0.4732 -0.24358
@@ -151164,7 +151164,7 @@ name "qnh_fo_sw"
 data 18
 qnh_fo_sw.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 98
 -0.36636 0.47208 -0.24757
@@ -152079,7 +152079,7 @@ name "rect.003"
 data 13
 rect.mesh.001
 crease 45.0
-texture "fcu_labels.png"
+texture "fcu_labels.webp"
 texrep 1 1
 numvert 4
 -0.36319 0.45959 -0.32917
@@ -152100,7 +152100,7 @@ name "rect.004"
 data 13
 rect.mesh.002
 crease 45.0
-texture "fcu_labels.png"
+texture "fcu_labels.webp"
 texrep 1 1
 numvert 4
 -0.37505 0.49648 0.29263
@@ -152121,7 +152121,7 @@ name "spd-mach"
 data 17
 spd-mach.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 37
 -0.37004 0.48387 0.11597
@@ -152458,7 +152458,7 @@ name "spd-sel"
 data 16
 spd-sel.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 210
 -0.36514 0.47982 0.09767
@@ -154229,7 +154229,7 @@ name "vor-adf-1"
 data 18
 vor-adf-1.mesh.002
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 109
 -0.3395 0.45507 0.20552
@@ -155092,7 +155092,7 @@ name "vor-adf-1-right"
 data 24
 vor-adf-1-right.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 109
 -0.3395 0.45507 -0.1526
@@ -155985,7 +155985,7 @@ name "vor-adf-2"
 data 18
 vor-adf-2.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 109
 -0.3395 0.45507 0.15633
@@ -156848,7 +156848,7 @@ name "vor-adf-2-right"
 data 24
 vor-adf-2-right.mesh.002
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 109
 -0.3395 0.45507 -0.20154
@@ -157741,7 +157741,7 @@ name "vord"
 data 13
 vord.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 12
 -0.38359 0.49332 0.173
@@ -157833,7 +157833,7 @@ name "vord_led"
 data 13
 cstr.mesh.028
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 4
 -0.37532 0.50206 0.18533
@@ -157854,7 +157854,7 @@ name "vord.001"
 data 17
 vord.001.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 12
 -0.37387 0.49724 -0.18663
@@ -157946,7 +157946,7 @@ name "vord_led.001"
 data 13
 cstr.mesh.029
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 4
 -0.37532 0.50206 -0.17491
@@ -157967,7 +157967,7 @@ name "vs-sel"
 data 15
 vs-sel.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 210
 -0.36517 0.47991 -0.08829
@@ -159723,7 +159723,7 @@ name "vs-sel.axis"
 data 20
 vs-sel.axis.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 2
 -0.36889 0.47072 -0.09599
@@ -159740,7 +159740,7 @@ name "wpt"
 data 12
 wpt.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 12
 -0.37649 0.50559 0.19277
@@ -159832,7 +159832,7 @@ name "wpt_led"
 data 13
 cstr.mesh.030
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 4
 -0.37532 0.50206 0.20438
@@ -159853,7 +159853,7 @@ name "wpt.001"
 data 16
 wpt.001.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 12
 -0.38361 0.49332 -0.192
@@ -159945,7 +159945,7 @@ name "wpt_led.001"
 data 13
 cstr.mesh.031
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 4
 -0.37532 0.50206 -0.19392
@@ -159969,7 +159969,7 @@ name "alt.ind"
 data 16
 alt.ind.mesh.001
 crease 45.0
-texture "fcu.png"
+texture "fcu.webp"
 texrep 1 1
 numvert 4
 -0.37909 0.50601 -0.03945
@@ -159990,7 +159990,7 @@ name "fpa.ind"
 data 16
 fpa.ind.mesh.002
 crease 45.0
-texture "fcu.png"
+texture "fcu.webp"
 texrep 1 1
 numvert 4
 -0.37909 0.50601 -0.09504
@@ -160011,7 +160011,7 @@ name "fpa.ind.001"
 data 16
 fpa.ind.mesh.003
 crease 45.0
-texture "fcu.png"
+texture "fcu.webp"
 texrep 1 1
 numvert 4
 -0.37661 0.49758 -0.00861
@@ -160032,7 +160032,7 @@ name "hdg.ind"
 data 16
 hdg.ind.mesh.001
 crease 45.0
-texture "fcu.png"
+texture "fcu.webp"
 texrep 1 1
 numvert 4
 -0.3791 0.50614 0.06238
@@ -160053,7 +160053,7 @@ name "hdg2.ind"
 data 17
 hdg2.ind.mesh.001
 crease 45.0
-texture "fcu.png"
+texture "fcu.webp"
 texrep 1 1
 numvert 4
 -0.37787 0.50212 0.00508
@@ -160074,7 +160074,7 @@ name "lat.dash"
 data 17
 lat.dash.mesh.001
 crease 45.0
-texture "fcu.png"
+texture "fcu.webp"
 texrep 1 1
 numvert 4
 -0.37738 0.49979 0.06239
@@ -160095,7 +160095,7 @@ name "lat.fmgc"
 data 17
 lat.fmgc.mesh.001
 crease 45.0
-texture "fcu.png"
+texture "fcu.webp"
 texrep 1 1
 numvert 8
 -0.37926 0.50628 0.0419
@@ -160127,7 +160127,7 @@ name "lvlch.ind"
 data 18
 lvlch.ind.mesh.001
 crease 45.0
-texture "fcu.png"
+texture "fcu.webp"
 texrep 1 1
 numvert 4
 -0.37912 0.50596 -0.0857
@@ -160148,7 +160148,7 @@ name "mach.ind"
 data 17
 mach.ind.mesh.001
 crease 45.0
-texture "fcu.png"
+texture "fcu.webp"
 texrep 1 1
 numvert 4
 -0.3791 0.50614 0.0932
@@ -160169,7 +160169,7 @@ name "spd.dash"
 data 17
 spd.dash.mesh.001
 crease 45.0
-texture "fcu.png"
+texture "fcu.webp"
 texrep 1 1
 numvert 4
 -0.37738 0.49982 0.10339
@@ -160190,7 +160190,7 @@ name "spd.fmgc"
 data 17
 spd.fmgc.mesh.001
 crease 45.0
-texture "fcu.png"
+texture "fcu.webp"
 texrep 1 1
 numvert 4
 -0.37728 0.49985 0.07583
@@ -160211,7 +160211,7 @@ name "spd.ind"
 data 16
 spd.ind.mesh.001
 crease 45.0
-texture "fcu.png"
+texture "fcu.webp"
 texrep 1 1
 numvert 4
 -0.3791 0.50614 0.09445
@@ -160232,7 +160232,7 @@ name "trk.ind"
 data 16
 trk.ind.mesh.001
 crease 45.0
-texture "fcu2.png"
+texture "fcu2.webp"
 texrep 1 1
 numvert 4
 -0.3791 0.50614 0.05322
@@ -160253,7 +160253,7 @@ name "trk2.ind"
 data 17
 trk2.ind.mesh.001
 crease 45.0
-texture "fcu2.png"
+texture "fcu2.webp"
 texrep 1 1
 numvert 4
 -0.37662 0.49759 0.00512
@@ -160274,7 +160274,7 @@ name "ver.fmgc"
 data 17
 ver.fmgc.mesh.001
 crease 45.0
-texture "fcu.png"
+texture "fcu.webp"
 texrep 1 1
 numvert 8
 -0.37735 0.49973 -0.06848
@@ -160306,7 +160306,7 @@ name "vs.dash"
 data 16
 vs.dash.mesh.001
 crease 45.0
-texture "fcu.png"
+texture "fcu.webp"
 texrep 1 1
 numvert 4
 -0.37743 0.49999 -0.10258
@@ -160327,7 +160327,7 @@ name "vs.ind"
 data 15
 vs.ind.mesh.002
 crease 45.0
-texture "fcu.png"
+texture "fcu.webp"
 texrep 1 1
 numvert 4
 -0.37909 0.50601 -0.09358
@@ -160348,7 +160348,7 @@ name "vs.ind.001"
 data 15
 vs.ind.mesh.003
 crease 45.0
-texture "fcu.png"
+texture "fcu.webp"
 texrep 1 1
 numvert 4
 -0.37787 0.50212 -0.00003
@@ -160369,7 +160369,7 @@ name "footrest3"
 data 18
 footrest3.mesh.001
 crease 45.0
-texture "pedal_2.png"
+texture "pedal_2.webp"
 texrep 1 1
 numvert 16
 -0.3925 -0.35258 0.42453
@@ -160423,7 +160423,7 @@ name "footrest_cpt"
 data 21
 footrest_cpt.mesh.001
 crease 180.0
-texture "pedal_2.png"
+texture "pedal_2.webp"
 texrep 1 1
 numvert 220
 -0.5105 0.03177 0.6615
@@ -162202,7 +162202,7 @@ name "footrest_cpt2"
 data 22
 footrest_cpt2.mesh.001
 crease 180.0
-texture "pedal_2.png"
+texture "pedal_2.webp"
 texrep 1 1
 numvert 220
 -0.50679 0.05234 0.29408
@@ -163964,7 +163964,7 @@ name "footrest_fo"
 data 20
 footrest_fo.mesh.001
 crease 180.0
-texture "pedal_2.png"
+texture "pedal_2.webp"
 texrep 1 1
 numvert 220
 -0.50679 0.05234 -0.29408
@@ -165741,7 +165741,7 @@ name "footrest_fo2"
 data 21
 footrest_fo2.mesh.001
 crease 180.0
-texture "pedal_2.png"
+texture "pedal_2.webp"
 texrep 1 1
 numvert 220
 -0.5105 0.03177 -0.6615
@@ -167505,7 +167505,7 @@ name "gallery_l"
 data 18
 gallery_l.mesh.001
 crease 40.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 429
 2.12373 0.58003 0.93108
@@ -170501,7 +170501,7 @@ name "gear_lever_body"
 data 25
 gear_lever_body_73.5°.00
 crease 40.0
-texture "Main-Panel.png"
+texture "Main-Panel.webp"
 texrep 1 1
 numvert 298
 -0.53462 0.14594 -0.17765
@@ -172677,7 +172677,7 @@ name "hud_1"
 data 15
 hud_01.mesh.001
 crease 45.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 146
 0.07531 0.89627 0.37135
@@ -174021,7 +174021,7 @@ name "hud_2"
 data 14
 hud_2.mesh.001
 crease 45.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 257
 0.06756 0.91331 0.40696
@@ -176227,7 +176227,7 @@ name "hud_3"
 data 14
 hud_3.mesh.001
 crease 45.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 48
 -0.06562 0.78675 0.3887
@@ -176627,7 +176627,7 @@ name "hud_glass"
 data 18
 hud_glass.mesh.001
 crease 45.0
-texture "hud.png"
+texture "hud.webp"
 texrep 1 1
 numvert 1250
 -0.0619 0.72793 0.41791
@@ -191305,7 +191305,7 @@ name "hud_2.axis"
 data 19
 hud_2.axis.mesh.001
 crease 45.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 2
 0.05124 0.8956 0.40839
@@ -191322,7 +191322,7 @@ name "hud_box"
 data 16
 hud_box.mesh.001
 crease 45.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 506
 0.577 1.05153 0.49179
@@ -195220,7 +195220,7 @@ name "hud_ceiling"
 data 20
 hud_ceiling.mesh.001
 crease 45.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 197
 -0.05084 0.89093 0.3706
@@ -196659,7 +196659,7 @@ name "lamp_flood_main"
 data 24
 lamp_flood_main.mesh.001
 crease 45.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 12
 -0.54931 0.35503 -0.17583
@@ -196971,7 +196971,7 @@ name "land_sw"
 data 16
 land_sw.mesh.001
 crease 45.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 33
 -0.56632 0.26155 -0.22798
@@ -197245,7 +197245,7 @@ name "level0"
 data 21
 Cylinder.023.mesh.003
 crease 40.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 97
 -0.19457 0.00377 0.87536
@@ -197940,7 +197940,7 @@ name "level0.001"
 data 21
 Cylinder.023.mesh.004
 crease 40.0
-texture "leather.png"
+texture "leather.webp"
 texrep 1 1
 numvert 96
 -0.11493 -0.00705 0.86803
@@ -198382,7 +198382,7 @@ name "level0_2"
 data 21
 Cylinder.023.mesh.005
 crease 40.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 97
 -0.19457 0.00377 -0.87394
@@ -199077,7 +199077,7 @@ name "level1"
 data 15
 level1.mesh.002
 crease 40.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 96
 -0.13917 0.02354 0.82142
@@ -199687,7 +199687,7 @@ name "level1_2"
 data 15
 level1.mesh.003
 crease 40.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 96
 -0.13917 0.02354 -0.82
@@ -200297,7 +200297,7 @@ name "level2"
 data 15
 level2.mesh.002
 crease 40.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 96
 -0.1464 0.03649 0.8273
@@ -200907,7 +200907,7 @@ name "level2_2"
 data 15
 level2.mesh.003
 crease 40.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 96
 -0.1464 0.03649 -0.82588
@@ -201517,7 +201517,7 @@ name "level3"
 data 15
 level3.mesh.002
 crease 40.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 97
 -0.17277 0.04926 0.87062
@@ -202212,7 +202212,7 @@ name "level3_2"
 data 15
 level3.mesh.003
 crease 40.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 97
 -0.17277 0.04926 -0.8692
@@ -202907,7 +202907,7 @@ name "light_console_cpt_sw"
 data 29
 light_console_cpt_sw.mesh.001
 crease 40.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 97
 -0.53819 0.23941 0.71351
@@ -203685,7 +203685,7 @@ name "light_console_cpt_sw.mark"
 data 34
 light_console_cpt_sw.mark.mesh.001
 crease 40.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 17
 -0.53812 0.23941 0.71352
@@ -203808,7 +203808,7 @@ name "light_console_fo_sw"
 data 28
 light_console_fo_sw.mesh.001
 crease 40.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 97
 -0.53819 0.23941 -0.71351
@@ -204586,7 +204586,7 @@ name "light_console_fo_sw.mark"
 data 33
 light_console_fo_sw.mark.mesh.001
 crease 40.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 17
 -0.53809 0.23943 -0.71351
@@ -204709,7 +204709,7 @@ name "LRudderPedalL"
 data 22
 LRudderPedalL.mesh.001
 crease 45.0
-texture "pedal_2.png"
+texture "pedal_2.webp"
 texrep 1 1
 numvert 353
 -0.62398 -0.43319 0.67364
@@ -207628,7 +207628,7 @@ name "LRudderPedalR"
 data 22
 LRudderPedalR.mesh.001
 crease 45.0
-texture "pedal_2.png"
+texture "pedal_2.webp"
 texrep 1 1
 numvert 352
 -0.76068 -0.19638 -0.29928
@@ -210537,7 +210537,7 @@ name "abs_low"
 data 16
 abs_low.mesh.001
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 12
 -0.56784 0.25106 -0.13941
@@ -210622,7 +210622,7 @@ name "abs_low_on"
 data 19
 abs_low_on.mesh.001
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 6
 -0.56392 0.25395 -0.14098
@@ -210647,7 +210647,7 @@ name "abs_max"
 data 16
 abs_max.mesh.001
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 12
 -0.56769 0.25101 -0.1864
@@ -210732,7 +210732,7 @@ name "abs_max_on"
 data 19
 abs_max_om.mesh.001
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 6
 -0.56377 0.2539 -0.18797
@@ -210757,7 +210757,7 @@ name "abs_med"
 data 16
 abs_med.mesh.001
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 12
 -0.56409 0.25384 -0.17718
@@ -210842,7 +210842,7 @@ name "abs_med_on"
 data 19
 abs_med_on.mesh.001
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 6
 -0.56392 0.25395 -0.17718
@@ -210867,7 +210867,7 @@ name "brightness_nd_1_cpt"
 data 28
 brightness_nd_1_cpt.mesh.001
 crease 40.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 265
 -0.56626 0.26187 0.67277
@@ -213026,7 +213026,7 @@ name "brightness_nd_1_cpt.mark"
 data 33
 brightness_nd_1_cpt.mark.mesh.001
 crease 40.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 11
 -0.56744 0.27077 0.68126
@@ -213081,7 +213081,7 @@ name "brightness_nd_1_fo"
 data 27
 brightness_nd_1_fo.mesh.001
 crease 40.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 265
 -0.56618 0.26161 -0.6728
@@ -215240,7 +215240,7 @@ name "brightness_nd_1_fo.mark"
 data 32
 brightness_nd_1_fo.mark.mesh.001
 crease 40.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 11
 -0.56746 0.27077 -0.68099
@@ -215295,7 +215295,7 @@ name "brightness_nd_2_cpt"
 data 28
 brightness_nd_2_cpt.mesh.001
 crease 40.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 170
 -0.55747 0.26493 0.67731
@@ -216831,7 +216831,7 @@ name "brightness_nd_2_cpt.mark"
 data 33
 brightness_nd_2_cpt.mark.mesh.001
 crease 40.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 12
 -0.55858 0.26895 0.68163
@@ -216888,7 +216888,7 @@ name "brightness_nd_2_fo"
 data 27
 brightness_nd_2_fo.mesh.001
 crease 40.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 170
 -0.55744 0.26481 -0.67733
@@ -218424,7 +218424,7 @@ name "brightness_nd_2_fo.mark"
 data 32
 brightness_nd_2_f.omark.mesh.001
 crease 40.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 12
 -0.55823 0.26903 -0.68142
@@ -218511,7 +218511,7 @@ name "brightness_panel_emit"
 data 30
 brightness_panel_emit.mesh.001
 crease 40.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 404
 -0.5671 0.26373 0.71934
@@ -220329,7 +220329,7 @@ name "brk_fan"
 data 12
 brk_fan.mesh
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 12
 -0.57584 0.29162 -0.23334
@@ -220414,7 +220414,7 @@ name "brk_fan_on"
 data 15
 brk_fan_on.mesh
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 6
 -0.57569 0.29221 -0.21657
@@ -220439,7 +220439,7 @@ name "brk_hot_on"
 data 15
 brk_hot_on.mesh
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 6
 -0.57794 0.29972 -0.22471
@@ -220464,7 +220464,7 @@ name "dec_low_on"
 data 16
 dec_low.mesh.001
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 6
 -0.56607 0.26101 -0.14921
@@ -220489,7 +220489,7 @@ name "dec_max_on"
 data 16
 dec_max.mesh.001
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 6
 -0.56591 0.26095 -0.1962
@@ -220514,7 +220514,7 @@ name "dec_med_on"
 data 16
 dec_med.mesh.001
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 6
 -0.56607 0.26101 -0.16895
@@ -220539,7 +220539,7 @@ name "foot_warmer_cpt_sw"
 data 27
 foot_warmer_cpt_sw.mesh.001
 crease 40.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 97
 -0.5606 0.2337 0.68119
@@ -221317,7 +221317,7 @@ name "foot_warmer_cpt_sw.mark"
 data 32
 foot_warmer_cpt_sw.mark.mesh.001
 crease 40.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 17
 -0.53879 0.24056 0.68119
@@ -221440,7 +221440,7 @@ name "foot_warmer_fo_sw"
 data 26
 foot_warmer_fo_sw.mesh.001
 crease 40.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 114
 -0.5606 0.2337 -0.68093
@@ -222331,7 +222331,7 @@ name "foot_warmer_fo_sw.mark"
 data 31
 foot_warmer_fo_sw.mark.mesh.001
 crease 40.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 17
 -0.53875 0.24059 -0.68093
@@ -222454,7 +222454,7 @@ name "gear_labels"
 data 20
 gear_labels.mesh.001
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 4
 -0.58527 0.32421 -0.24858
@@ -222475,7 +222475,7 @@ name "gear_lever"
 data 19
 gear_lever.mesh.001
 crease 45.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 174
 -0.50178 0.12873 -0.1444
@@ -223982,7 +223982,7 @@ name "gear_lever_down_arrow"
 data 25
 gear_lever_down_arrow.001
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 4
 -0.51333 0.08788 -0.17177
@@ -224003,7 +224003,7 @@ name "gear_lever_glare"
 data 20
 gear_lever_glare.001
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 4
 -0.52863 0.14089 -0.17457
@@ -224052,7 +224052,7 @@ name "gpws_gs_sw"
 data 14
 gpws_gs_sw.001
 crease 40.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 16
 -0.57632 0.2863 0.6874
@@ -224148,7 +224148,7 @@ name "iesi"
 data 13
 iesi.mesh.001
 crease 40.0
-texture "iesi.png"
+texture "iesi.webp"
 texrep 1 1
 numvert 90
 -0.55846 0.23655 0.10069
@@ -224750,7 +224750,7 @@ name "iesi_baro_knb"
 data 22
 iesi_baro_knb.mesh.001
 crease 40.0
-texture "iesi.png"
+texture "iesi.webp"
 texrep 1 1
 numvert 66
 -0.52617 0.1754 0.10036
@@ -225354,7 +225354,7 @@ name "iesi_baro_knb.axis"
 data 27
 iesi_baro_knb.axis.mesh.001
 crease 40.0
-texture "iesi.png"
+texture "iesi.webp"
 texrep 1 1
 numvert 2
 -0.53952 0.16977 0.10451
@@ -225371,7 +225371,7 @@ name "iesi_btn_bugs"
 data 22
 iesi_btn_bugs.mesh.001
 crease 40.0
-texture "iesi.png"
+texture "iesi.webp"
 texrep 1 1
 numvert 8
 -0.55902 0.23461 0.16166
@@ -225424,7 +225424,7 @@ name "iesi_btn_ls"
 data 20
 iesi_btn_ls.mesh.001
 crease 40.0
-texture "iesi.png"
+texture "iesi.webp"
 texrep 1 1
 numvert 8
 -0.55902 0.23461 0.12846
@@ -225477,7 +225477,7 @@ name "iesi_btn_minus"
 data 23
 iesi_btn_minus.mesh.001
 crease 40.0
-texture "iesi.png"
+texture "iesi.webp"
 texrep 1 1
 numvert 8
 -0.54248 0.17707 0.1724
@@ -225530,7 +225530,7 @@ name "iesi_btn_plus"
 data 22
 iesi_btn_plus.mesh.001
 crease 40.0
-texture "iesi.png"
+texture "iesi.webp"
 texrep 1 1
 numvert 8
 -0.55165 0.20897 0.1724
@@ -225583,7 +225583,7 @@ name "iesi_btn_rst"
 data 21
 iesi_btn_rst.mesh.001
 crease 40.0
-texture "iesi.png"
+texture "iesi.webp"
 texrep 1 1
 numvert 8
 -0.53861 0.1636 0.16166
@@ -225636,7 +225636,7 @@ name "iesi_labels"
 data 20
 iesi_labels.mesh.001
 crease 40.0
-texture "iesi.png"
+texture "iesi.webp"
 texrep 1 1
 numvert 8
 -0.53607 0.16797 0.12131
@@ -225687,7 +225687,7 @@ name "lgear"
 data 19
 lgear_unlk.mesh.002
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 8
 -0.57958 0.28895 -0.14207
@@ -225740,7 +225740,7 @@ name "lgear_down"
 data 19
 lgear_down.mesh.001
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 6
 -0.57765 0.29884 -0.15187
@@ -225765,7 +225765,7 @@ name "lgear_unlk"
 data 19
 lgear_unlk.mesh.003
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 6
 -0.57971 0.30593 -0.14364
@@ -225790,7 +225790,7 @@ name "main_panel"
 data 19
 main_panel.mesh.001
 crease 40.0
-texture "Main-Panel.png"
+texture "Main-Panel.webp"
 texrep 1 1
 numvert 3426
 -0.53206 0.14186 -0.2705
@@ -249620,7 +249620,7 @@ name "main_panel_box"
 data 8
 Mesh.001
 crease 40.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 48
 -0.51567 0.08622 0.3335
@@ -250355,7 +250355,7 @@ name "main_panel_signboard"
 data 24
 main_panel_signboard.001
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 8
 -0.58163 0.32655 0.12101
@@ -250387,7 +250387,7 @@ name "ngear"
 data 19
 ngear_unlk.mesh.002
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 8
 -0.58457 0.30613 -0.18151
@@ -250440,7 +250440,7 @@ name "ngear_down"
 data 19
 ngear_down.mesh.001
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 6
 -0.57765 0.29884 -0.17171
@@ -250465,7 +250465,7 @@ name "ngear_unlk"
 data 19
 ngear_unlk.mesh.003
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 6
 -0.57971 0.30593 -0.16347
@@ -250490,7 +250490,7 @@ name "pfd_brt_cpt"
 data 20
 pfd_brt_cpt.mesh.001
 crease 40.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 242
 -0.56614 0.26149 0.73715
@@ -252617,7 +252617,7 @@ name "pfd_brt_cpt.mark"
 data 25
 pfd_brt_cpt.mark.mesh.001
 crease 40.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 13
 -0.55269 0.27174 0.74588
@@ -252681,7 +252681,7 @@ name "pfd_brt_fo"
 data 19
 pfd_brt_fo.mesh.001
 crease 40.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 242
 -0.56618 0.2616 -0.73713
@@ -254808,7 +254808,7 @@ name "pfd_brt_fo.mark"
 data 24
 pfd_brt_fo.mark.mesh.001
 crease 40.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 13
 -0.5674 0.27079 -0.74531
@@ -254872,7 +254872,7 @@ name "pfd_nd_xfr_sw"
 data 17
 pfd_nd_xfr_sw.001
 crease 40.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 49
 -0.57079 0.26598 0.7132
@@ -255251,7 +255251,7 @@ name "pfd_nd_xfr_sw2"
 data 23
 pfd_nd_xfr_sw2.mesh.001
 crease 40.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 49
 -0.57079 0.26598 -0.7132
@@ -255630,7 +255630,7 @@ name "rect"
 data 13
 rect.mesh.005
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 4
 -0.59012 0.29817 0.11331
@@ -255651,7 +255651,7 @@ name "rgear"
 data 19
 rgear_unlk.mesh.002
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 8
 -0.57958 0.28895 -0.1818
@@ -255704,7 +255704,7 @@ name "rgear_down"
 data 19
 rgear_down.mesh.001
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 6
 -0.57769 0.29883 -0.19156
@@ -255729,7 +255729,7 @@ name "rgear_unlk"
 data 19
 rgear_unlk.mesh.003
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 6
 -0.57978 0.3059 -0.18332
@@ -255754,7 +255754,7 @@ name "speaker_volume_cpt"
 data 27
 speaker_volume_cpt.mesh.001
 crease 40.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 242
 -0.55713 0.23083 0.73715
@@ -257881,7 +257881,7 @@ name "speaker_volume_cpt.mark"
 data 32
 speaker_volume_cpt.mark.mesh.001
 crease 40.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 13
 -0.55838 0.24024 0.74517
@@ -257945,7 +257945,7 @@ name "speaker_volume_fo"
 data 26
 speaker_volume_fo.mesh.001
 crease 40.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 242
 -0.55719 0.23106 -0.73712
@@ -260072,7 +260072,7 @@ name "speaker_volume_fo.mark"
 data 31
 speaker_volume_fo.mark.mesh.001
 crease 40.0
-texture "glare_sw.png"
+texture "glare_sw.webp"
 texrep 1 1
 numvert 13
 -0.55837 0.24016 -0.7454
@@ -260136,7 +260136,7 @@ name "switch_bas"
 data 19
 switch_bas.mesh.001
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 17
 -0.56628 0.26714 -0.23094
@@ -260270,7 +260270,7 @@ name "ohpanel2"
 data 17
 ohpanel2.mesh.001
 crease 40.0
-texture "ohpanel2-tex.png"
+texture "ohpanel2-tex.webp"
 texrep 1 1
 numvert 17667
 0.70993 1.19595 0.24613
@@ -402128,7 +402128,7 @@ name "ohpanel2_illu"
 data 22
 ohpanel2_illu.mesh.001
 crease 40.0
-texture "ohpanel2-illu.png"
+texture "ohpanel2-illu.webp"
 texrep 1 1
 numvert 4
 0.45414 1.10649 0.32243
@@ -402149,7 +402149,7 @@ name "ohpanel2_knob"
 data 22
 ohpanel2_knob.mesh.001
 crease 40.0
-texture "111VU_112VU_tex.png"
+texture "111VU_112VU_tex.webp"
 texrep 1 1
 numvert 486
 0.58204 1.15569 -0.29414
@@ -406399,7 +406399,7 @@ name "ohpanel2_knob.mark"
 data 27
 ohpanel2_knob.mark.mesh.001
 crease 40.0
-texture "111VU_112VU_tex.png"
+texture "111VU_112VU_tex.webp"
 texrep 1 1
 numvert 26
 0.72438 1.20668 0.21138
@@ -406517,7 +406517,7 @@ name "ped_footrest"
 data 21
 ped_footrest.mesh.001
 crease 45.0
-texture "Pedestal_Base.png"
+texture "Pedestal_Base.webp"
 texrep 1 1
 numvert 44
 0.33854 -0.13849 -0.19486
@@ -406781,7 +406781,7 @@ name "pedal_adjust"
 data 21
 pedal_adjust.mesh.001
 crease 45.0
-texture "pedal_2.png"
+texture "pedal_2.webp"
 texrep 1 1
 numvert 62
 -0.7139 -0.14998 0.47944
@@ -407251,7 +407251,7 @@ name "pedals_block_capt"
 data 26
 pedals_block_capt.mesh.001
 crease 45.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 692
 -0.67715 -0.22893 0.52242
@@ -413439,7 +413439,7 @@ name "pedals_indicator_1"
 data 19
 box0000000.mesh.002
 crease 45.0
-texture "pedal_2.png"
+texture "pedal_2.webp"
 texrep 1 1
 numvert 8
 -0.65601 -0.25446 0.51251
@@ -413474,7 +413474,7 @@ name "CockpitDoorFault"
 data 25
 CockpitDoorFault.mesh.001
 crease 40.0
-texture "Pedestal_low.png"
+texture "Pedestal_low.webp"
 texrep 1 1
 numvert 4
 0.17778 -0.13321 0.16066
@@ -413495,7 +413495,7 @@ name "CockpitDoorOpen"
 data 24
 CockpitDoorOpen.mesh.001
 crease 40.0
-texture "Pedestal_low.png"
+texture "Pedestal_low.webp"
 texrep 1 1
 numvert 4
 0.16289 -0.13321 0.17555
@@ -413516,7 +413516,7 @@ name "CockpitDoorSwitch"
 data 26
 CockpitDoorSwitch.mesh.001
 crease 40.0
-texture "Pedestal_low.png"
+texture "Pedestal_low.webp"
 texrep 1 1
 numvert 96
 0.17175 -0.13554 0.1411
@@ -414153,7 +414153,7 @@ name "CockpitDoorSwitch.axis"
 data 31
 CockpitDoorSwitch.axis.mesh.001
 crease 40.0
-texture "Pedestal_low.png"
+texture "Pedestal_low.webp"
 texrep 1 1
 numvert 2
 0.17034 -0.13554 0.13969
@@ -414170,7 +414170,7 @@ name "CockpitDoorSwitch.mark"
 data 31
 CockpitDoorSwitch.mark.mesh.001
 crease 40.0
-texture "Pedestal_low.png"
+texture "Pedestal_low.webp"
 texrep 1 1
 numvert 48
 0.16983 -0.11368 0.13925
@@ -414396,7 +414396,7 @@ name "CockpitDoorVideoButton"
 data 31
 CockpitDoorVideoButton.mesh.001
 crease 40.0
-texture "Pedestal_low.png"
+texture "Pedestal_low.webp"
 texrep 1 1
 numvert 49
 0.16699 -0.13129 0.09821
@@ -414767,7 +414767,7 @@ name "FlapsLever"
 data 19
 FlapsLever.mesh.001
 crease 40.0
-texture "Pedestal_low.png"
+texture "Pedestal_low.webp"
 texrep 1 1
 numvert 189
 0.06476 -0.14585 -0.08351
@@ -416230,7 +416230,7 @@ name "FlapsLever.axis"
 data 24
 FlapsLever.axis.mesh.001
 crease 40.0
-texture "Pedestal_low.png"
+texture "Pedestal_low.webp"
 texrep 1 1
 numvert 2
 0.08696 -0.18768 -0.0995
@@ -416247,7 +416247,7 @@ name "gravity_gear"
 data 21
 gravity_gear.mesh.001
 crease 45.0
-texture "Pedestal_low.png"
+texture "Pedestal_low.webp"
 texrep 1 1
 numvert 240
 0.352 -0.24016 0.00659
@@ -418104,7 +418104,7 @@ name "ParkBrk"
 data 16
 ParkBrk.mesh.001
 crease 40.0
-texture "Pedestal_low.png"
+texture "Pedestal_low.webp"
 texrep 1 1
 numvert 396
 0.22246 -0.11179 -0.04495
@@ -420949,7 +420949,7 @@ name "ParkBrk.axis"
 data 21
 ParkBrk.axis.mesh.001
 crease 40.0
-texture "Pedestal_low.png"
+texture "Pedestal_low.webp"
 texrep 1 1
 numvert 2
 0.22062 -0.15109 -0.01512
@@ -420966,7 +420966,7 @@ name "RudderTrim"
 data 19
 RudderTrim.mesh.001
 crease 45.0
-texture "Pedestal_low.png"
+texture "Pedestal_low.webp"
 texrep 1 1
 numvert 137
 0.12987 -0.1319 -0.035
@@ -421999,7 +421999,7 @@ name "RudderTrim.axis"
 data 24
 RudderTrim.axis.mesh.001
 crease 45.0
-texture "Pedestal_low.png"
+texture "Pedestal_low.webp"
 texrep 1 1
 numvert 2
 0.12812 -0.12232 -0.01723
@@ -422016,7 +422016,7 @@ name "RudderTrim.mark"
 data 24
 RudderTrim.mark.mesh.001
 crease 45.0
-texture "Pedestal_low.png"
+texture "Pedestal_low.webp"
 texrep 1 1
 numvert 8
 0.11051 -0.10543 -0.0182
@@ -422055,7 +422055,7 @@ name "RudderTrimReset"
 data 24
 RudderTrimReset.mesh.001
 crease 40.0
-texture "Pedestal_low.png"
+texture "Pedestal_low.webp"
 texrep 1 1
 numvert 49
 0.13486 -0.13424 0.01567
@@ -422426,7 +422426,7 @@ name "SpdBrk"
 data 15
 SpdBrk.mesh.001
 crease 40.0
-texture "Pedestal_low.png"
+texture "Pedestal_low.webp"
 texrep 1 1
 numvert 128
 0.05411 -0.12074 0.07565
@@ -423266,7 +423266,7 @@ name "SpdBrk.axis"
 data 20
 SpdBrk.axis.mesh.001
 crease 40.0
-texture "Pedestal_low.png"
+texture "Pedestal_low.webp"
 texrep 1 1
 numvert 2
 0.08696 -0.20617 0.07369
@@ -423283,7 +423283,7 @@ name "pedestal1"
 data 18
 pedestal1.mesh.001
 crease 40.0
-texture "Pedestal_Base.png"
+texture "Pedestal_Base.webp"
 texrep 1 1
 numvert 102
 -0.55261 -0.48811 -0.25595
@@ -424000,7 +424000,7 @@ name "pedestal3"
 data 18
 pedestal3.mesh.001
 crease 40.0
-texture "Pedestal_Leather.png"
+texture "Pedestal_Leather.webp"
 texrep 1 1
 numvert 161
 0.03846 -0.20404 -0.19495
@@ -425250,7 +425250,7 @@ name "pedestal_low"
 data 21
 pedestal_low.mesh.001
 crease 40.0
-texture "Pedestal_low.png"
+texture "Pedestal_low.webp"
 texrep 1 1
 numvert 6755
 0.27957 -0.1331 -0.07145
@@ -471074,7 +471074,7 @@ name "pedestal_low_glare"
 data 27
 pedestal_low_glare.mesh.001
 crease 40.0
-texture "Pedestal_low_glare.png"
+texture "Pedestal_low_glare.webp"
 texrep 1 1
 numvert 116
 0.03846 -0.13291 0.1916
@@ -471555,7 +471555,7 @@ name "pedestal_map_case"
 data 26
 pedestal_map_case.mesh.001
 crease 40.0
-texture "Pedestal_Base.png"
+texture "Pedestal_Base.webp"
 texrep 1 1
 numvert 544
 -0.49316 -0.18899 0.26254
@@ -475237,7 +475237,7 @@ name "phone"
 data 14
 phone.mesh.001
 crease 30.0
-texture "Pedestal_Base.png"
+texture "Pedestal_Base.webp"
 texrep 1 1
 numvert 72
 0.35456 -0.31617 0.03593
@@ -475774,7 +475774,7 @@ name "phone2"
 data 15
 phone2.mesh.001
 crease 30.0
-texture "Pedestal_Base.png"
+texture "Pedestal_Base.webp"
 texrep 1 1
 numvert 434
 0.35504 -0.1817 0.03887
@@ -479107,7 +479107,7 @@ name "pl"
 data 11
 pl.mesh.001
 crease 30.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 48
 0.04184 -0.16407 0.88664
@@ -479529,7 +479529,7 @@ name "poly000041"
 data 19
 poly000041.mesh.001
 crease 45.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 10
 -0.48713 -0.03415 0.26767
@@ -479600,7 +479600,7 @@ name "radar_body"
 data 15
 CU1_curve_.1263
 crease 40.0
-texture "Radar.png"
+texture "Radar.webp"
 texrep 1 1
 numvert 1340
 0.01974 -0.14374 0.11093
@@ -489713,7 +489713,7 @@ name "radar_gain"
 data 14
 CU1_curve_.544
 crease 40.0
-texture "Radar.png"
+texture "Radar.webp"
 texrep 1 1
 numvert 196
 0.00303 -0.13657 0.21401
@@ -491090,7 +491090,7 @@ name "radar_gcs"
 data 14
 CU1_curve_.543
 crease 40.0
-texture "Radar.png"
+texture "Radar.webp"
 texrep 1 1
 numvert 61
 -0.01884 -0.13402 0.166
@@ -491584,7 +491584,7 @@ name "radar_glare"
 data 15
 CU1_curve_.1150
 crease 40.0
-texture "Radar.png"
+texture "Radar.webp"
 texrep 1 1
 numvert 4
 -0.02965 -0.13135 0.2531
@@ -491605,7 +491605,7 @@ name "radar_mode"
 data 14
 CU1_curve_.537
 crease 40.0
-texture "Radar.png"
+texture "Radar.webp"
 texrep 1 1
 numvert 220
 0.00927 -0.1376 0.1922
@@ -493047,7 +493047,7 @@ name "radar_mode.mark"
 data 15
 CU1_curve_.1151
 crease 40.0
-texture "Radar.png"
+texture "Radar.webp"
 texrep 1 1
 numvert 13
 0.01528 -0.12449 0.18456
@@ -493142,7 +493142,7 @@ name "radar_multiscan"
 data 14
 CU1_curve_.542
 crease 40.0
-texture "Radar.png"
+texture "Radar.webp"
 texrep 1 1
 numvert 61
 -0.01884 -0.13402 0.19801
@@ -493636,7 +493636,7 @@ name "radar_pws"
 data 14
 CU1_curve_.538
 crease 40.0
-texture "Radar.png"
+texture "Radar.webp"
 texrep 1 1
 numvert 61
 0.02061 -0.14055 0.15403
@@ -494130,7 +494130,7 @@ name "radar_sys"
 data 14
 CU1_curve_.541
 crease 40.0
-texture "Radar.png"
+texture "Radar.webp"
 texrep 1 1
 numvert 60
 0.02061 -0.14055 0.21007
@@ -494566,7 +494566,7 @@ name "radar_tilt"
 data 15
 CU1_curve_.1265
 crease 40.0
-texture "Radar.png"
+texture "Radar.webp"
 texrep 1 1
 numvert 198
 -0.00952 -0.13449 0.1512
@@ -495905,7 +495905,7 @@ name "rear_breakers"
 data 22
 rear_breakers.mesh.001
 crease 40.0
-texture "rear_breakers.png"
+texture "rear_breakers.webp"
 texrep 1 1
 numvert 11
 1.27949 0.78392 -0.0807
@@ -495967,7 +495967,7 @@ name "RRudderPedalL"
 data 22
 RRudderPedalL.mesh.001
 crease 45.0
-texture "pedal_2.png"
+texture "pedal_2.webp"
 texrep 1 1
 numvert 351
 -0.65615 -0.41141 0.30151
@@ -498877,7 +498877,7 @@ name "RRudderPedalR"
 data 22
 RRudderPedalR.mesh.001
 crease 45.0
-texture "pedal_2.png"
+texture "pedal_2.webp"
 texrep 1 1
 numvert 350
 -0.66333 -0.43953 -0.75644
@@ -501774,7 +501774,7 @@ name "screws"
 data 15
 screws.mesh.001
 crease 45.0
-texture "pedal_2.png"
+texture "pedal_2.webp"
 texrep 1 1
 numvert 500
 -0.68093 -0.2073 0.50005
@@ -505407,7 +505407,7 @@ name "seat0"
 data 11
 seatCap.004
 crease 45.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 96
 0.32774 -0.48279 0.64061
@@ -506017,7 +506017,7 @@ name "seat1"
 data 11
 seatCap.005
 crease 45.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 452
 0.59328 -0.18046 0.28441
@@ -509461,7 +509461,7 @@ name "seat3"
 data 11
 seatCap.019
 crease 45.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 488
 0.61263 -0.00836 0.3119
@@ -513263,7 +513263,7 @@ name "seat4"
 data 11
 seatCap.007
 crease 45.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 454
 0.59984 0.06012 0.69366
@@ -516553,7 +516553,7 @@ name "seat6"
 data 11
 seatCap.013
 crease 45.0
-texture "fabric2.png"
+texture "fabric2.webp"
 texrep 1 1
 numvert 5432
 0.61873 0.47509 0.68951
@@ -557807,7 +557807,7 @@ name "seat7"
 data 11
 seatCap.015
 crease 45.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 3466
 0.57188 0.47801 0.71265
@@ -583543,7 +583543,7 @@ name "seat8"
 data 11
 seatCap.016
 crease 45.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 208
 0.61775 0.45412 0.69034
@@ -584973,7 +584973,7 @@ name "seat_belt"
 data 13
 belt.mesh.001
 crease 45.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 770
 0.02118 -0.18649 0.53198
@@ -590485,7 +590485,7 @@ name "seat_label"
 data 11
 seatCap.017
 crease 45.0
-texture "cpit_6.png"
+texture "cpit_6.webp"
 texrep 1 1
 numvert 4
 0.68513 0.38796 0.57027
@@ -590506,7 +590506,7 @@ name "seat_label.001"
 data 11
 seatCap.018
 crease 45.0
-texture "cpit_6.png"
+texture "cpit_6.webp"
 texrep 1 1
 numvert 4
 0.68488 0.38792 -0.5704
@@ -590527,7 +590527,7 @@ name "seat3.001"
 data 14
 seat3.mesh.001
 crease 30.0
-texture "fabric2.png"
+texture "fabric2.webp"
 texrep 1 1
 numvert 28
 1.22452 0.65179 0.51707
@@ -590712,7 +590712,7 @@ name "seat4.001"
 data 14
 seat4.mesh.002
 crease 30.0
-texture "fabric2.png"
+texture "fabric2.webp"
 texrep 1 1
 numvert 50
 1.18635 0.51958 -0.08602
@@ -591065,7 +591065,7 @@ name "seat4.002"
 data 14
 seat4.mesh.003
 crease 30.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 12
 1.19594 0.03151 -0.53768
@@ -591129,7 +591129,7 @@ name "sfl.001"
 data 7
 sfl.005
 crease 30.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 400
 -0.44348 0.36973 0.90205
@@ -593757,7 +593757,7 @@ name "sfl.002"
 data 7
 sfl.008
 crease 30.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 30
 -0.32276 0.19024 0.98314
@@ -593881,7 +593881,7 @@ name "sfl.006"
 data 7
 sfl.009
 crease 30.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 42
 0.44653 0.87043 1.05161
@@ -594095,7 +594095,7 @@ name "sfl.010"
 data 7
 sfl.010
 crease 30.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 32
 0.34001 0.33817 1.36033
@@ -594249,7 +594249,7 @@ name "sfl.011"
 data 7
 sfl.012
 crease 30.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 18
 -0.41204 0.1787 0.92396
@@ -594331,7 +594331,7 @@ name "sfl.012"
 data 7
 sfl.013
 crease 30.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 54
 -0.45221 0.1149 1.02476
@@ -594563,7 +594563,7 @@ name "sfl.013"
 data 7
 sfl.017
 crease 30.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 16
 0.43014 -0.02378 1.3922
@@ -594659,7 +594659,7 @@ name "sfl.014"
 data 7
 sfl.019
 crease 30.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 24
 0.98915 0.02065 -1.57461
@@ -594761,7 +594761,7 @@ name "side_base.000"
 data 7
 sts.001
 crease 30.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 32
 -0.07134 0.0045 1.07987
@@ -594934,7 +594934,7 @@ name "side_base.002"
 data 7
 sts.005
 crease 30.0
-texture "leather.png"
+texture "leather.webp"
 texrep 1 1
 numvert 280
 -0.04206 -0.08348 0.7943
@@ -597031,7 +597031,7 @@ name "sidestick_1"
 data 20
 sidestick_1.mesh.002
 crease 40.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 2532
 -0.27857 0.15774 0.87656
@@ -618486,7 +618486,7 @@ name "sidestick_2"
 data 20
 sidestick_1.mesh.003
 crease 40.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 2532
 -0.27857 0.15774 -0.87515
@@ -640007,7 +640007,7 @@ name "so.1"
 data 6
 so.004
 crease 30.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 1178
 -0.14417 -0.03447 0.78542
@@ -648303,7 +648303,7 @@ name "so.2"
 data 6
 so.005
 crease 45.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 48
 -0.49024 -0.48811 0.79472
@@ -648607,7 +648607,7 @@ name "sphere"
 data 15
 sphere.mesh.001
 crease 45.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 68
 -0.5848 0.65762 0.00049
@@ -649147,7 +649147,7 @@ name "sphere.007"
 data 15
 sphere.mesh.002
 crease 45.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 136
 -0.61353 0.66902 -0.01648
@@ -650217,7 +650217,7 @@ name "sts"
 data 7
 sts.008
 crease 30.0
-texture "leather.png"
+texture "leather.webp"
 texrep 1 1
 numvert 138
 -0.04635 -0.03537 1.23671
@@ -651091,7 +651091,7 @@ name "sts.001"
 data 7
 sts.009
 crease 30.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 65
 0.79334 -0.48343 1.0581
@@ -651530,7 +651530,7 @@ name "sts.003"
 data 7
 sts.010
 crease 30.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 45
 1.05741 -0.48343 -1.0581
@@ -651817,7 +651817,7 @@ name "sts.004"
 data 7
 sts.011
 crease 30.0
-texture "leather.png"
+texture "leather.webp"
 texrep 1 1
 numvert 142
 -0.04639 -0.03532 -1.23671
@@ -652743,7 +652743,7 @@ name "sts.006"
 data 7
 sts.012
 crease 30.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 48
 -0.0192 -0.29545 1.20987
@@ -653009,7 +653009,7 @@ name "sts.007"
 data 7
 sts.013
 crease 30.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 56
 -0.02013 -0.19741 -1.21011
@@ -653294,7 +653294,7 @@ name "terr_on_nd_l"
 data 17
 terr_on_nd_l.mesh
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 12
 -0.53878 0.15383 0.23151
@@ -653386,7 +653386,7 @@ name "terr_on_nd_label"
 data 21
 terr_on_nd_label.mesh
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 8
 -0.53439 0.15016 0.20632
@@ -653418,7 +653418,7 @@ name "terr_on_nd_on_l"
 data 20
 terr_on_nd_on_l.mesh
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 4
 -0.53508 0.15674 0.22982
@@ -653439,7 +653439,7 @@ name "terr_on_nd_on_r"
 data 20
 terr_on_nd_on_r.mesh
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 4
 -0.54903 0.20573 -0.21972
@@ -653460,7 +653460,7 @@ name "terr_on_nd_r"
 data 17
 terr_on_nd_r.mesh
 crease 45.0
-texture "main_labels.png"
+texture "main_labels.webp"
 texrep 1 1
 numvert 12
 -0.55374 0.21983 -0.23609
@@ -653555,7 +653555,7 @@ name "rev_l"
 data 14
 rev_l.mesh.001
 crease 45.0
-texture "thr_1.png"
+texture "thr_1.webp"
 texrep 1 1
 numvert 110
 -0.14652 0.02841 0.01272
@@ -654611,7 +654611,7 @@ name "thr_l_body"
 data 19
 thr_l_body.mesh.001
 crease 45.0
-texture "thr_1.png"
+texture "thr_1.webp"
 texrep 1 1
 numvert 639
 -0.08549 -0.05829 0.00725
@@ -660024,7 +660024,7 @@ name "thr_l_button"
 data 21
 thr_l_button.mesh.001
 crease 45.0
-texture "thr_1.png"
+texture "thr_1.webp"
 texrep 1 1
 numvert 91
 -0.05269 0.06565 0.0463
@@ -660858,7 +660858,7 @@ name "thr_l_screw"
 data 20
 thr_l_screw.mesh.001
 crease 45.0
-texture "extra.png"
+texture "extra.webp"
 texrep 1 1
 numvert 780
 -0.09348 -0.03533 0.03159
@@ -667504,7 +667504,7 @@ name "thr_quad"
 data 17
 thr_quad.mesh.001
 crease 45.0
-texture "Pedestal_up.png"
+texture "Pedestal_up.webp"
 texrep 1 1
 numvert 542
 -0.06248 -0.11218 0.02862
@@ -672010,7 +672010,7 @@ name "thr_quad_lts"
 data 21
 thr_quad_lts.mesh.001
 crease 45.0
-texture "thr_lt.png"
+texture "thr_lt.webp"
 texrep 1 1
 numvert 50
 -0.07437 -0.07402 0.03391
@@ -672227,7 +672227,7 @@ name "rev_r"
 data 14
 rev_r.mesh.001
 crease 45.0
-texture "thr_1.png"
+texture "thr_1.webp"
 texrep 1 1
 numvert 110
 -0.14652 0.02842 -0.02451
@@ -673283,7 +673283,7 @@ name "thr_button"
 data 19
 thr_button.mesh.001
 crease 45.0
-texture "thr_1.png"
+texture "thr_1.webp"
 texrep 1 1
 numvert 91
 -0.05322 0.067 -0.04235
@@ -674117,7 +674117,7 @@ name "thr_r_body"
 data 19
 thr_r_body.mesh.001
 crease 45.0
-texture "thr_1.png"
+texture "thr_1.webp"
 texrep 1 1
 numvert 631
 -0.15177 -0.02588 -0.02908
@@ -679476,7 +679476,7 @@ name "thr_r_screw"
 data 20
 thr_r_screw.mesh.001
 crease 45.0
-texture "extra.png"
+texture "extra.webp"
 texrep 1 1
 numvert 780
 -0.13234 -0.01839 -0.03165
@@ -686122,7 +686122,7 @@ name "throttle_1"
 data 15
 CU1_curve_.1266
 crease 40.0
-texture "Pedestal_up.png"
+texture "Pedestal_up.webp"
 texrep 1 1
 numvert 1528
 -0.04156 -0.13461 0.10618
@@ -697746,7 +697746,7 @@ name "throttle_1_label"
 data 15
 CU1_curve_.1267
 crease 40.0
-texture "Pedestal_up.png"
+texture "Pedestal_up.webp"
 texrep 1 1
 numvert 4
 -0.26968 -0.08935 0.05384
@@ -697767,7 +697767,7 @@ name "tiller"
 data 15
 tiller.mesh.001
 crease 45.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 853
 -0.21595 0.0142 1.04164
@@ -704468,7 +704468,7 @@ name "tillerFo"
 data 17
 tillerFo.mesh.001
 crease 45.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 853
 -0.21595 0.0142 -1.02867
@@ -711169,7 +711169,7 @@ name "torch"
 data 8
 Cylinder
 crease 40.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 512
 -0.36814 -0.36657 0.85348
@@ -714897,7 +714897,7 @@ name "tray0-cpt"
 data 18
 tray0-cpt.mesh.001
 crease 180.0
-texture "pedal_2.png"
+texture "pedal_2.webp"
 texrep 1 1
 numvert 172
 -0.51765 0.08441 0.59301
@@ -716289,7 +716289,7 @@ name "tray0-fo"
 data 17
 tray0-fo.mesh.001
 crease 180.0
-texture "pedal_2.png"
+texture "pedal_2.webp"
 texrep 1 1
 numvert 172
 -0.51765 0.08441 -0.59301
@@ -717681,7 +717681,7 @@ name "tray1-cpt"
 data 18
 tray1-cpt.mesh.001
 crease 45.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 173
 -0.51065 0.10008 0.71375
@@ -719228,7 +719228,7 @@ name "tray1-fo"
 data 17
 tray1-fo.mesh.001
 crease 45.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 173
 -0.51048 0.1007 -0.71559
@@ -720775,7 +720775,7 @@ name "tray2-cpt"
 data 18
 tray2-cpt.mesh.001
 crease 45.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 218
 -0.5159 0.10304 0.34404
@@ -722526,7 +722526,7 @@ name "tray2-fo"
 data 17
 tray2-fo.mesh.001
 crease 45.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 218
 -0.51574 0.10366 -0.34591
@@ -724295,7 +724295,7 @@ name "trim_1"
 data 15
 trim_1.mesh.001
 crease 45.0
-texture "trim.png"
+texture "trim.webp"
 texrep 1 1
 numvert 1992
 -0.16043 -0.12889 -0.09243
@@ -740025,7 +740025,7 @@ name "trim_2"
 data 15
 trim_2.mesh.001
 crease 45.0
-texture "Pedestal_up.png"
+texture "Pedestal_up.webp"
 texrep 1 1
 numvert 166
 -0.2452 -0.12074 0.07525
@@ -741159,7 +741159,7 @@ name "trim_2_lts"
 data 19
 trim_2_lts.mesh.001
 crease 45.0
-texture "thr_lt.png"
+texture "thr_lt.webp"
 texrep 1 1
 numvert 64
 -0.07571 -0.13687 0.07594
@@ -741443,7 +741443,7 @@ name "trray_slide"
 data 19
 tray_slide.mesh.001
 crease 180.0
-texture "pedal_2.png"
+texture "pedal_2.webp"
 texrep 1 1
 numvert 224
 -0.51836 0.08432 0.2679
@@ -743257,7 +743257,7 @@ name "visor_cpt"
 data 18
 visor_cpt.mesh.001
 crease 30.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 302
 0.0542 0.90618 0.58751
@@ -745570,7 +745570,7 @@ name "visor_fo"
 data 17
 visor_fo.mesh.001
 crease 30.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 302
 0.0548 0.90618 -0.58882
@@ -748002,7 +748002,7 @@ name "flood_lt_main"
 data 22
 flood_lt_main.mesh.001
 crease 40.0
-texture "VU11x.png"
+texture "VU11x.webp"
 texrep 1 1
 numvert 243
 -0.05061 -0.1274 0.21186
@@ -750147,7 +750147,7 @@ name "flood_lt_main.mark"
 data 23
 flood_lt_main.mark.mesh
 crease 40.0
-texture "VU11x.png"
+texture "VU11x.webp"
 texrep 1 1
 numvert 13
 -0.05973 -0.12281 0.2234
@@ -750211,7 +750211,7 @@ name "flood_lt_ped"
 data 21
 flood_lt_ped.mesh.001
 crease 40.0
-texture "VU11x.png"
+texture "VU11x.webp"
 texrep 1 1
 numvert 243
 -0.05061 -0.1274 -0.15325
@@ -752356,7 +752356,7 @@ name "flood_lt_ped.mark"
 data 22
 flood_lt_ped.mark.mesh
 crease 40.0
-texture "VU11x.png"
+texture "VU11x.webp"
 texrep 1 1
 numvert 13
 -0.05981 -0.12278 -0.14171
@@ -752420,7 +752420,7 @@ name "integ_lt"
 data 17
 integ_lt.mesh.001
 crease 40.0
-texture "VU11x.png"
+texture "VU11x.webp"
 texrep 1 1
 numvert 243
 -0.05061 -0.1274 0.17182
@@ -754565,7 +754565,7 @@ name "integ_lt.mark"
 data 18
 integ_lt.mark.mesh
 crease 40.0
-texture "VU11x.png"
+texture "VU11x.webp"
 texrep 1 1
 numvert 13
 -0.05971 -0.12278 0.18343
@@ -754629,7 +754629,7 @@ name "vu111_body"
 data 15
 CU1_curve_.1268
 crease 40.0
-texture "VU11x.png"
+texture "VU11x.webp"
 texrep 1 1
 numvert 488
 -0.05193 -0.13188 0.11593
@@ -758290,7 +758290,7 @@ name "vu111_glare"
 data 15
 CU1_curve_.1114
 crease 40.0
-texture "VU11x.png"
+texture "VU11x.webp"
 texrep 1 1
 numvert 4
 -0.03281 -0.13056 0.2408
@@ -758311,7 +758311,7 @@ name "vu112_aids"
 data 15
 CU1_curve_.1269
 crease 40.0
-texture "VU11x.png"
+texture "VU11x.webp"
 texrep 1 1
 numvert 73
 -0.05042 -0.12977 -0.18785
@@ -758874,7 +758874,7 @@ name "vu112_body"
 data 14
 CU1_curve_.550
 crease 40.0
-texture "VU11x.png"
+texture "VU11x.webp"
 texrep 1 1
 numvert 842
 -0.05193 -0.13188 -0.24916
@@ -764440,7 +764440,7 @@ name "vu112_dfdr"
 data 15
 CU1_curve_.1270
 crease 40.0
-texture "VU11x.png"
+texture "VU11x.webp"
 texrep 1 1
 numvert 73
 -0.05326 -0.1293 -0.22818
@@ -765003,7 +765003,7 @@ name "vu112_glare"
 data 15
 CU1_curve_.1113
 crease 40.0
-texture "VU11x.png"
+texture "VU11x.webp"
 texrep 1 1
 numvert 4
 -0.07661 -0.12331 -0.12191
@@ -765024,7 +765024,7 @@ name "wall_1"
 data 15
 wall_1.mesh.001
 crease 40.0
-texture "doors.png"
+texture "doors.webp"
 texrep 1 1
 numvert 40
 1.23556 -0.50093 1.57332
@@ -765199,7 +765199,7 @@ name "wall_2"
 data 15
 wall_2.mesh.001
 crease 40.0
-texture "front_gallery_r.png"
+texture "front_gallery_r.webp"
 texrep 1 1
 numvert 43
 2.2024 1.74374 -0.08383
@@ -765460,7 +765460,7 @@ name "window_frame"
 data 9
 Plane.002
 crease 40.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 28
 -0.48186 0.86144 0.0189
@@ -765596,7 +765596,7 @@ name "WindowCpt"
 data 18
 WindowCpt.mesh.001
 crease 30.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 912
 0.3072 0.3187 1.37788
@@ -772521,7 +772521,7 @@ name "HeadsetCpt"
 data 19
 HeadsetCpt.mesh.001
 crease 45.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 1366
 0.43967 0.54598 1.05662
@@ -783733,7 +783733,7 @@ name "Sticker"
 data 16
 Sticker.mesh.001
 crease 30.0
-texture "checklist.png"
+texture "checklist.webp"
 texrep 1 1
 numvert 4
 -0.14479 0.35679 0.93343
@@ -783754,7 +783754,7 @@ name "WindowGlassCpt"
 data 23
 WindowGlassCpt.mesh.001
 crease 30.0
-texture "A320neo.png"
+texture "A320neo.webp"
 texrep 1 1
 numvert 23
 0.17258 0.3448 1.26594
@@ -783866,7 +783866,7 @@ name "WindowOpenerCpt"
 data 24
 WindowOpenerCpt.mesh.001
 crease 30.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 107
 0.24953 0.29689 1.16894
@@ -784676,7 +784676,7 @@ name "WindowOpenerCpt.axis"
 data 29
 WindowOpenerCpt.axis.mesh.001
 crease 30.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 2
 0.31885 0.27684 1.25529
@@ -784693,7 +784693,7 @@ name "WindowFo"
 data 17
 WindowFo.mesh.001
 crease 30.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 912
 0.3072 0.3187 -1.37788
@@ -791618,7 +791618,7 @@ name "HeadsetFo"
 data 18
 HeadsetFo.mesh.001
 crease 45.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 1366
 0.43967 0.54598 -1.05662
@@ -802830,7 +802830,7 @@ name "WindowGlassFo"
 data 22
 WindowGlassFo.mesh.001
 crease 30.0
-texture "A320neo.png"
+texture "A320neo.webp"
 texrep 1 1
 numvert 23
 0.17258 0.3448 -1.27145
@@ -802942,7 +802942,7 @@ name "WindowOpenerFo"
 data 23
 WindowOpenerFo.mesh.001
 crease 30.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 107
 0.24953 0.29689 -1.16894
@@ -803752,7 +803752,7 @@ name "WindowOpenerFo.axis"
 data 28
 WindowOpenerFo.axis.mesh.001
 crease 30.0
-texture "cpit_5.png"
+texture "cpit_5.webp"
 texrep 1 1
 numvert 2
 0.31885 0.27684 -1.25529

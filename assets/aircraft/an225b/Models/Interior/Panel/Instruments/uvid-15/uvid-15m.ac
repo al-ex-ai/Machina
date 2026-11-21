@@ -11,7 +11,7 @@ name "base"
 data 9
 base.mesh
 crease 40.0
-texture "uvid-15m.png"
+texture "uvid-15m.webp"
 texrep 1 1
 numvert 4
 0.00156 -0.044 0.04645
@@ -640,7 +640,7 @@ name "dig_a_dec"
 data 14
 dig_a_dec.mesh
 crease 40.0
-texture "digit.png"
+texture "digit.webp"
 texrep 1 1
 numvert 34
 -0.01868 0.00547 -0.01195
@@ -988,7 +988,7 @@ name "dig_a_decths"
 data 17
 dig_a_decths.mesh
 crease 40.0
-texture "digit.png"
+texture "digit.webp"
 texrep 1 1
 numvert 34
 -0.01868 0.00547 0.01682
@@ -1336,7 +1336,7 @@ name "dig_a_hund"
 data 15
 dig_a_hund.mesh
 crease 40.0
-texture "digit.png"
+texture "digit.webp"
 texrep 1 1
 numvert 34
 -0.01868 0.00547 -0.00244
@@ -1684,7 +1684,7 @@ name "dig_a_ths"
 data 14
 dig_a_ths.mesh
 crease 40.0
-texture "digit.png"
+texture "digit.webp"
 texrep 1 1
 numvert 34
 -0.01868 0.00547 0.00834
@@ -2032,7 +2032,7 @@ name "dig_p_dec"
 data 14
 dig_p_dec.mesh
 crease 40.0
-texture "digit.png"
+texture "digit.webp"
 texrep 1 1
 numvert 34
 0.00063 -0.02588 -0.00172
@@ -2380,7 +2380,7 @@ name "dig_p_hund"
 data 15
 dig_p_hund.mesh
 crease 40.0
-texture "digit.png"
+texture "digit.webp"
 texrep 1 1
 numvert 34
 -0.01139 -0.03011 0.01072
@@ -2728,7 +2728,7 @@ name "dig_p_ones"
 data 15
 dig_p_ones.mesh
 crease 40.0
-texture "digit.png"
+texture "digit.webp"
 texrep 1 1
 numvert 34
 -0.01139 -0.03011 -0.00202
@@ -3095,7 +3095,7 @@ name "needle"
 data 11
 needle.mesh
 crease 40.0
-texture "digit.png"
+texture "digit.webp"
 texrep 1 1
 numvert 4
 0.00264 -0.00162 0.00218

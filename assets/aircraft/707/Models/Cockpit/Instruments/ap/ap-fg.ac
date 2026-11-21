@@ -8,7 +8,7 @@ name "altOff"
 loc 0.010217 -0.005936 0.045886
 data 6
 altOff
-texture "ap.png"
+texture "ap.webp"
 texrep 1 1
 numvert 8
 -0.003277 -0.004369 -0.018554
@@ -61,7 +61,7 @@ name "altOn"
 loc 0.007611 0.001591 0.033005
 data 5
 altOn
-texture "ap.png"
+texture "ap.webp"
 texrep 1 1
 numvert 4
 -0.005451 -0.01173 -0.005459
@@ -82,7 +82,7 @@ name "apOff"
 loc 0.010217 0.006628 0.046669
 data 5
 apOff
-texture "ap.png"
+texture "ap.webp"
 texrep 1 1
 numvert 8
 -0.003277 -0.003608 -0.01911
@@ -135,7 +135,7 @@ name "apOn"
 loc 0.007611 0.014466 0.010496
 data 4
 apOn
-texture "ap.png"
+texture "ap.webp"
 texrep 1 1
 numvert 4
 -0.005451 -0.011247 0.017276
@@ -156,7 +156,7 @@ name "apprOff"
 loc 0.010217 -0.006047 -0.0239
 data 7
 apprOff
-texture "ap.png"
+texture "ap.webp"
 texrep 1 1
 numvert 8
 -0.003277 -0.004369 -0.018554
@@ -209,7 +209,7 @@ name "apprOn"
 loc 0.007611 0.00148 0.055004
 data 6
 apprOn
-texture "ap.png"
+texture "ap.webp"
 texrep 1 1
 numvert 4
 -0.005451 -0.011649 -0.097267
@@ -230,7 +230,7 @@ name "bg"
 loc 0.010155 0.015116 0.090775
 data 2
 bg
-texture "ap.png"
+texture "ap.webp"
 texrep 1 1
 numvert 16
 -0.00841 -0.014634 -0.137235
@@ -284,7 +284,7 @@ name "gpsOff"
 loc 0.010217 0.00723 -0.000921
 data 6
 gpsOff
-texture "ap.png"
+texture "ap.webp"
 texrep 1 1
 numvert 8
 -0.003277 -0.004369 -0.018554
@@ -337,7 +337,7 @@ name "gpsOn"
 loc 0.007611 0.049509 -0.013803
 data 5
 gpsOn
-texture "ap.png"
+texture "ap.webp"
 texrep 1 1
 numvert 4
 -0.005451 -0.046486 -0.005459
@@ -358,7 +358,7 @@ name "hdgOff"
 loc 0.010155 0.007244 0.022877
 data 6
 hdgOff
-texture "ap.png"
+texture "ap.webp"
 texrep 1 1
 numvert 8
 -0.003277 -0.004369 -0.018554
@@ -411,7 +411,7 @@ name "hdgOn"
 loc 0.007611 0.014768 0.010019
 data 5
 hdgOn
-texture "ap.png"
+texture "ap.webp"
 texrep 1 1
 numvert 4
 -0.005451 -0.011706 -0.00551
@@ -432,7 +432,7 @@ name "iasOff"
 loc 0.010217 -0.005936 0.022691
 data 6
 iasOff
-texture "ap.png"
+texture "ap.webp"
 texrep 1 1
 numvert 8
 -0.003277 -0.004369 -0.018554
@@ -485,7 +485,7 @@ name "iasOn"
 loc 0.007611 0.001591 0.05579
 data 5
 iasOn
-texture "ap.png"
+texture "ap.webp"
 texrep 1 1
 numvert 4
 -0.005451 -0.011733 -0.051491
@@ -506,7 +506,7 @@ name "navOff"
 loc 0.010217 -0.006047 -0.000884
 data 6
 navOff
-texture "ap.png"
+texture "ap.webp"
 texrep 1 1
 numvert 8
 -0.003277 -0.004369 -0.018554
@@ -559,7 +559,7 @@ name "navOn"
 loc 0.007611 0.00148 0.055004
 data 5
 navOn
-texture "ap.png"
+texture "ap.webp"
 texrep 1 1
 numvert 4
 -0.005451 -0.011733 -0.074298
@@ -580,7 +580,7 @@ name "pitchOff"
 loc 0.010217 0.007431 -0.024117
 data 8
 pitchOff
-texture "ap.png"
+texture "ap.webp"
 texrep 1 1
 numvert 8
 -0.003277 -0.004369 -0.018554
@@ -633,7 +633,7 @@ name "pitchOn"
 loc 0.007611 0.049509 0.008983
 data 7
 pitchOn
-texture "ap.png"
+texture "ap.webp"
 texrep 1 1
 numvert 4
 -0.005451 -0.046056 -0.051491
@@ -654,7 +654,7 @@ name "shadow"
 loc 0.002665 0.002837 0.000002
 data 6
 shadow
-texture "shadow-helper.png"
+texture "shadow-helper.webp"
 texrep 1 1
 numvert 4
 -0 -0.025961 -0.048241

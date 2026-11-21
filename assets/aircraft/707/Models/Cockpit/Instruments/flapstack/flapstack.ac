@@ -8,7 +8,7 @@ name "Flap.bezel"
 loc 0.005564 -0.026196 -0.102137
 data 10
 Flap.bezel
-texture "falps.png"
+texture "falps.webp"
 texrep 1 1
 crease 30.000001
 numvert 144
@@ -667,7 +667,7 @@ name "Flap.bezel.001"
 loc 0.005564 0.022302 -0.102137
 data 14
 Flap.bezel.001
-texture "falps.png"
+texture "falps.webp"
 texrep 1 1
 crease 30.000001
 numvert 144
@@ -1326,7 +1326,7 @@ name "Flap.face"
 loc 0.006278 -0.026196 -0.102137
 data 9
 Flap.face
-texture "falps.png"
+texture "falps.webp"
 texrep 1 1
 crease 30.000001
 numvert 9
@@ -1394,7 +1394,7 @@ name "Flap.face.001"
 loc 0.006278 0.02232 -0.102137
 data 13
 Flap.face.001
-texture "falps.png"
+texture "falps.webp"
 texrep 1 1
 crease 30.000001
 numvert 9
@@ -1462,7 +1462,7 @@ name "Flap.needle"
 loc 0.006278 -0.026196 -0.102137
 data 11
 Flap.needle
-texture "falps.png"
+texture "falps.webp"
 texrep 1 1
 crease 30.000001
 numvert 9
@@ -1509,7 +1509,7 @@ name "Flap.needle.001"
 loc 0.006278 0.02232 -0.102137
 data 15
 Flap.needle.001
-texture "falps.png"
+texture "falps.webp"
 texrep 1 1
 crease 30.000001
 numvert 9
@@ -1556,7 +1556,7 @@ name "Gear.lever"
 loc 0.035735 0.000226 -0.172005
 data 10
 Gear.lever
-texture "flapstack.png"
+texture "flapstack.webp"
 texrep 1 1
 crease 80.999999
 numvert 306
@@ -3525,7 +3525,7 @@ name "LampBlue"
 loc 0.051777 0.051956 -0.150268
 data 8
 LampBlue
-texture "flapstack.png"
+texture "flapstack.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -4161,7 +4161,7 @@ name "LampBlueON"
 loc 0.051777 0.051956 -0.150268
 data 10
 LampBlueON
-texture "flapstack.png"
+texture "flapstack.webp"
 texrep 1 1
 crease 45.000001
 numvert 81
@@ -4797,7 +4797,7 @@ name "Slats.needle"
 loc 0.005997 -0.026196 -0.102137
 data 12
 Slats.needle
-texture "falps.png"
+texture "falps.webp"
 texrep 1 1
 crease 30.000001
 numvert 9
@@ -4844,7 +4844,7 @@ name "Slats.needle.001"
 loc 0.005997 0.02232 -0.102137
 data 16
 Slats.needle.001
-texture "falps.png"
+texture "falps.webp"
 texrep 1 1
 crease 30.000001
 numvert 9
@@ -4891,7 +4891,7 @@ name "lamp.door.ON"
 loc -0.002593 -0.006771 0.007429
 data 12
 lamp.door.ON
-texture "flapstack.png"
+texture "flapstack.webp"
 texrep 1 1
 numvert 12
 0.009116 0.090911 -0.1013
@@ -4948,7 +4948,7 @@ name "lamp.gear.ON"
 loc -0.002593 -0.006771 -0.00851
 data 12
 lamp.gear.ON
-texture "flapstack.png"
+texture "flapstack.webp"
 texrep 1 1
 numvert 12
 0.009116 0.090911 -0.1013
@@ -5005,7 +5005,7 @@ name "lamp.warning.ON"
 loc -0.002593 -0.006771 0.007429
 data 15
 lamp.warning.ON
-texture "flapstack.png"
+texture "flapstack.webp"
 texrep 1 1
 numvert 12
 0.009116 0.067967 -0.090669
@@ -5062,7 +5062,7 @@ name "lamps.gears.ON"
 loc -0.002593 -0.000574 -0.043828
 data 14
 lamps.gears.ON
-texture "flapstack.png"
+texture "flapstack.webp"
 texrep 1 1
 numvert 36
 0.009116 0.090911 -0.1013
@@ -5213,7 +5213,7 @@ name "sockle"
 loc -0.58129 0.458074 0.081087
 data 6
 sockle
-texture "flapstack.png"
+texture "flapstack.webp"
 texrep 1 1
 crease 30.000001
 numvert 38
@@ -5376,7 +5376,7 @@ name "stack"
 loc 0.005926 0.004731 -0.128142
 data 5
 stack
-texture "flapstack.png"
+texture "flapstack.webp"
 texrep 1 1
 numvert 69
 0 -0.133901 -0.051304
@@ -5852,7 +5852,7 @@ name "switch"
 loc -0.55404 0.437961 0.027773
 data 6
 switch
-texture "flapstack.png"
+texture "flapstack.webp"
 texrep 1 1
 crease 79.999998
 numvert 274

@@ -18,7 +18,7 @@ name "Back"
 loc 0 0 -0
 data 4
 Back
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 456
@@ -3245,7 +3245,7 @@ name "Cabin"
 loc 0 0 -0
 data 5
 Cabin
-texture "concorde-window.png"
+texture "concorde-window.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 1152
@@ -7768,7 +7768,7 @@ name "Cockpit"
 loc 0 0 -0
 data 7
 Cockpit
-texture "concorde-cockpit-textures.png"
+texture "concorde-cockpit-textures.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 95
@@ -8562,7 +8562,7 @@ name "Engine"
 loc 0 0 -0
 data 6
 Engine
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4425
@@ -42862,7 +42862,7 @@ name "EngineIntake"
 loc 0 0 -0
 data 12
 EngineIntake
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 898
@@ -48939,7 +48939,7 @@ name "Fhub"
 loc 0 0 -0
 data 4
 Fhub
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 112
@@ -49552,7 +49552,7 @@ name "Fram"
 loc 0 0 -0
 data 4
 Fram
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 80
@@ -50067,7 +50067,7 @@ name "Front_0"
 loc 0 0 -0
 data 7
 Front_0
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 22
@@ -50194,7 +50194,7 @@ name "Front_1"
 loc 0 0 -0
 data 7
 Front_1
-texture "concorde-window.png"
+texture "concorde-window.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10
@@ -50241,7 +50241,7 @@ name "Fstrut"
 loc 0 0 -0
 data 6
 Fstrut
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 994
@@ -58243,7 +58243,7 @@ name "Fsucdclosed"
 loc 0 0 -0
 data 11
 Fsucdclosed
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 144
@@ -59086,7 +59086,7 @@ name "Fucdclosed"
 loc 0 0 -0
 data 10
 Fucdclosed
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 198
@@ -60305,7 +60305,7 @@ name "Fwheels"
 loc 0 0 -0
 data 7
 Fwheels
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 1024
@@ -68780,7 +68780,7 @@ name "Hull"
 loc 0 0 -0
 data 4
 Hull
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4357
@@ -101000,7 +101000,7 @@ name "HullInside"
 loc 0 0 -0
 data 10
 HullInside
-texture "concorde-cockpit-textures.png"
+texture "concorde-cockpit-textures.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 1830
@@ -113501,7 +113501,7 @@ name "InnerFlame1"
 loc 0 0 -0
 data 11
 InnerFlame1
-texture "fx.png"
+texture "fx.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 16
@@ -113584,7 +113584,7 @@ name "InnerFlame2"
 loc 0 0 -0
 data 11
 InnerFlame2
-texture "fx.png"
+texture "fx.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 16
@@ -113667,7 +113667,7 @@ name "InnerFlame3"
 loc 0 0 -0
 data 11
 InnerFlame3
-texture "fx.png"
+texture "fx.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 16
@@ -113750,7 +113750,7 @@ name "InnerFlame4"
 loc 0 0 -0
 data 11
 InnerFlame4
-texture "fx.png"
+texture "fx.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 16
@@ -113833,7 +113833,7 @@ name "Intake"
 loc 0 0 -0
 data 6
 Intake
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 212
@@ -115382,7 +115382,7 @@ name "LActuatingCylinder"
 loc 0 0 -0
 data 18
 LActuatingCylinder
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 58
@@ -115729,7 +115729,7 @@ name "LActuatingPiston"
 loc 0 0 -0
 data 16
 LActuatingPiston
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 117
@@ -116602,7 +116602,7 @@ name "LIailaron"
 loc 0 0 -0
 data 9
 LIailaron
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 338
@@ -119189,7 +119189,7 @@ name "LIdoorclosed"
 loc 0 0 -0
 data 12
 LIdoorclosed
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 199
@@ -120423,7 +120423,7 @@ name "LMailaron"
 loc 0 0 -0
 data 9
 LMailaron
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 298
@@ -122695,7 +122695,7 @@ name "LMainActuator"
 loc 0 0 -0
 data 13
 LMainActuator
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 136
@@ -123819,7 +123819,7 @@ name "LMainCylinder"
 loc 0 0 -0
 data 13
 LMainCylinder
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 60
@@ -124170,7 +124170,7 @@ name "LMainPiston"
 loc 0 0 -0
 data 11
 LMainPiston
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 40
@@ -124361,7 +124361,7 @@ name "LMainstrut"
 loc 0 0 -0
 data 10
 LMainstrut
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 1074
@@ -132751,7 +132751,7 @@ name "LOailaron"
 loc 0 0 -0
 data 9
 LOailaron
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 338
@@ -135343,7 +135343,7 @@ name "LOdoorclosed"
 loc 0 0 -0
 data 12
 LOdoorclosed
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 120
@@ -136048,7 +136048,7 @@ name "Littledoorleft"
 loc 0 0 -0
 data 14
 Littledoorleft
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 12
@@ -136141,7 +136141,7 @@ name "Littledoorright"
 loc 0 0 -0
 data 15
 Littledoorright
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 12
@@ -136234,7 +136234,7 @@ name "Lmainhub"
 loc 0 0 -0
 data 8
 Lmainhub
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 196
@@ -137568,7 +137568,7 @@ name "Lmainram"
 loc 0 0 -0
 data 8
 Lmainram
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 136
@@ -138692,7 +138692,7 @@ name "Lmainwheels"
 loc 0 0 -0
 data 11
 Lmainwheels
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 1024
@@ -147167,7 +147167,7 @@ name "Lmainwheels2"
 loc 0 0 -0
 data 12
 Lmainwheels2
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 1024
@@ -155642,7 +155642,7 @@ name "Lowerrudder"
 loc 0 0 -0
 data 11
 Lowerrudder
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 208
@@ -157174,7 +157174,7 @@ name "Lpiston"
 loc 0 0 -0
 data 7
 Lpiston
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 40
@@ -157373,7 +157373,7 @@ name "Nose_0"
 loc 0 0 -0
 data 6
 Nose_0
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 81
@@ -157985,7 +157985,7 @@ name "Nose_1"
 loc 0 0 -0
 data 6
 Nose_1
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 1283
@@ -168369,7 +168369,7 @@ name "NozzleBottom1"
 loc 0 0 -0
 data 13
 NozzleBottom1
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 304
@@ -170916,7 +170916,7 @@ name "NozzleBottom2"
 loc 0 0 -0
 data 13
 NozzleBottom2
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 304
@@ -173463,7 +173463,7 @@ name "NozzleBottom3"
 loc 0 0 -0
 data 13
 NozzleBottom3
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 304
@@ -176010,7 +176010,7 @@ name "NozzleBottom4"
 loc 0 0 -0
 data 13
 NozzleBottom4
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 304
@@ -178557,7 +178557,7 @@ name "NozzleTop1"
 loc 0 0 -0
 data 10
 NozzleTop1
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 304
@@ -181104,7 +181104,7 @@ name "NozzleTop2"
 loc 0 0 -0
 data 10
 NozzleTop2
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 304
@@ -183651,7 +183651,7 @@ name "NozzleTop3"
 loc 0 0 -0
 data 10
 NozzleTop3
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 304
@@ -186198,7 +186198,7 @@ name "NozzleTop4"
 loc 0 0 -0
 data 10
 NozzleTop4
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 304
@@ -188745,7 +188745,7 @@ name "OFLbigdoor"
 loc 0 0 -0
 data 10
 OFLbigdoor
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 75
@@ -189303,7 +189303,7 @@ name "OFRbigdoor"
 loc 0 0 -0
 data 10
 OFRbigdoor
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 75
@@ -189861,7 +189861,7 @@ name "OFRsmalldoor"
 loc 0 0 -0
 data 12
 OFRsmalldoor
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 38
@@ -190177,7 +190177,7 @@ name "OFlegdoor"
 loc 0 0 -0
 data 9
 OFlegdoor
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 24
@@ -190366,7 +190366,7 @@ name "OFlsmalldoor"
 loc 0 0 -0
 data 12
 OFlsmalldoor
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 38
@@ -190682,7 +190682,7 @@ name "OLImaindoor"
 loc 0 0 -0
 data 11
 OLImaindoor
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 144
@@ -191861,7 +191861,7 @@ name "OLOmaindoor"
 loc 0 0 -0
 data 11
 OLOmaindoor
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 84
@@ -192530,7 +192530,7 @@ name "ORImaindoor"
 loc 0 0 -0
 data 11
 ORImaindoor
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 144
@@ -193709,7 +193709,7 @@ name "OROmaindoor"
 loc 0 0 -0
 data 11
 OROmaindoor
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 84
@@ -194378,7 +194378,7 @@ name "OuterFlame1"
 loc 0 0 -0
 data 11
 OuterFlame1
-texture "fx.png"
+texture "fx.webp"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 48
@@ -194797,7 +194797,7 @@ name "OuterFlame2"
 loc 0 0 -0
 data 11
 OuterFlame2
-texture "fx.png"
+texture "fx.webp"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 48
@@ -195216,7 +195216,7 @@ name "OuterFlame3"
 loc 0 0 -0
 data 11
 OuterFlame3
-texture "fx.png"
+texture "fx.webp"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 48
@@ -195635,7 +195635,7 @@ name "OuterFlame4"
 loc 0 0 -0
 data 11
 OuterFlame4
-texture "fx.png"
+texture "fx.webp"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 48
@@ -196054,7 +196054,7 @@ name "Pillar"
 loc 0 0 -0
 data 6
 Pillar
-texture "concorde-cockpit-textures.png"
+texture "concorde-cockpit-textures.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 12
@@ -203640,7 +203640,7 @@ name "RActuatingCylinder"
 loc 0 0 -0
 data 18
 RActuatingCylinder
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 58
@@ -203987,7 +203987,7 @@ name "RActuatingPiston"
 loc 0 0 -0
 data 16
 RActuatingPiston
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 117
@@ -204860,7 +204860,7 @@ name "RIailaron"
 loc 0 0 -0
 data 9
 RIailaron
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 338
@@ -207447,7 +207447,7 @@ name "RIdoorclosed"
 loc 0 0 -0
 data 12
 RIdoorclosed
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 199
@@ -208681,7 +208681,7 @@ name "RMailaron"
 loc 0 0 -0
 data 9
 RMailaron
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 298
@@ -210953,7 +210953,7 @@ name "RMainActuator"
 loc 0 0 -0
 data 13
 RMainActuator
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 136
@@ -212077,7 +212077,7 @@ name "RMainCylinder"
 loc 0 0 -0
 data 13
 RMainCylinder
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 60
@@ -212428,7 +212428,7 @@ name "RMainPiston"
 loc 0 0 -0
 data 11
 RMainPiston
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 40
@@ -212619,7 +212619,7 @@ name "RMainstrut"
 loc 0 0 -0
 data 10
 RMainstrut
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 1074
@@ -221009,7 +221009,7 @@ name "ROailaron"
 loc 0 0 -0
 data 9
 ROailaron
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 339
@@ -223602,7 +223602,7 @@ name "ROdoorclosed"
 loc 0 0 -0
 data 12
 ROdoorclosed
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 120
@@ -224307,7 +224307,7 @@ name "Reheat1"
 loc 0 0 -0
 data 7
 Reheat1
-texture "fx.png"
+texture "fx.webp"
 texrep 1.000000 1.000000
 crease 60.000002
 numvert 49
@@ -224799,7 +224799,7 @@ name "Reheat2"
 loc 0 0 -0
 data 7
 Reheat2
-texture "fx.png"
+texture "fx.webp"
 texrep 1.000000 1.000000
 crease 60.000002
 numvert 49
@@ -225291,7 +225291,7 @@ name "Reheat3"
 loc 0 0 -0
 data 7
 Reheat3
-texture "fx.png"
+texture "fx.webp"
 texrep 1.000000 1.000000
 crease 60.000002
 numvert 49
@@ -225783,7 +225783,7 @@ name "Reheat4"
 loc 0 0 -0
 data 7
 Reheat4
-texture "fx.png"
+texture "fx.webp"
 texrep 1.000000 1.000000
 crease 60.000002
 numvert 49
@@ -226275,7 +226275,7 @@ name "Rmainhub"
 loc 0 0 -0
 data 8
 Rmainhub
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 196
@@ -227609,7 +227609,7 @@ name "Rmainram"
 loc 0 0 -0
 data 8
 Rmainram
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 136
@@ -228733,7 +228733,7 @@ name "Rmainwheels"
 loc 0 0 -0
 data 11
 Rmainwheels
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 1024
@@ -237208,7 +237208,7 @@ name "Rmainwheels2"
 loc 0 0 -0
 data 12
 Rmainwheels2
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 1024
@@ -245683,7 +245683,7 @@ name "Rpiston"
 loc 0 0 -0
 data 7
 Rpiston
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 40
@@ -245878,7 +245878,7 @@ name "Screen_0"
 loc 0 0 -0
 data 8
 Screen_0
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 74
@@ -246711,7 +246711,7 @@ name "Screen_1"
 loc 0 0 -0
 data 8
 Screen_1
-texture "concorde-window.png"
+texture "concorde-window.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 26
@@ -246802,7 +246802,7 @@ name "Side"
 loc 0 0 -0
 data 4
 Side
-texture "concorde-window.png"
+texture "concorde-window.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 16
@@ -246857,7 +246857,7 @@ name "Taildoorclosed"
 loc 0 0 -0
 data 14
 Taildoorclosed
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 76
@@ -247210,7 +247210,7 @@ name "Taildoorfront"
 loc 0 0 -0
 data 13
 Taildoorfront
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 30
@@ -247447,7 +247447,7 @@ name "Tailram"
 loc 0 0 -0
 data 7
 Tailram
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 24
@@ -247566,7 +247566,7 @@ name "Tailstrut"
 loc 0 0 -0
 data 9
 Tailstrut
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8
@@ -247627,7 +247627,7 @@ name "Tailwheels"
 loc 0 0 -0
 data 10
 Tailwheels
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 484
@@ -251682,7 +251682,7 @@ name "Upperrudder"
 loc 0 0 -0
 data 11
 Upperrudder
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 202
@@ -253184,7 +253184,7 @@ name "Wheel"
 loc 0 0 -0
 data 5
 Wheel
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 360
@@ -255759,7 +255759,7 @@ name "Wing"
 loc 0 0 -0
 data 4
 Wing
-texture "concorde.png"
+texture "concorde.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4760

@@ -7,7 +7,7 @@ name "engineCone"
 loc -2.120932 -2.493981 1.186664
 data 10
 engineCone
-texture "707.png"
+texture "707.webp"
 texrep 1 1
 numvert 97
 0.648865 2.494627 -1.231742
@@ -770,7 +770,7 @@ name "engineCowlCenter"
 loc -0.669637 -0.023689 0.000028
 data 16
 engineCowlCenter
-texture "707.png"
+texture "707.webp"
 texrep 1 1
 numvert 160
 0.181574 -0.648185 -0
@@ -1836,7 +1836,7 @@ name "engineCowlFront"
 loc -0.751007 -0.023689 0.000028
 data 15
 engineCowlFront
-texture "707.png"
+texture "707.webp"
 texrep 1 1
 numvert 87
 -0.973514 0.253117 -0.539802
@@ -2241,7 +2241,7 @@ name "engineCowlRear"
 loc -0.751007 -0.023689 0.000028
 data 14
 engineCowlRear
-texture "707.png"
+texture "707.webp"
 texrep 1 1
 numvert 320
 2.297692 0.581406 -0
@@ -4811,7 +4811,7 @@ name "engineDisk"
 loc 1.297266 0.728141 -11.215694
 data 10
 engineDisk
-texture "707.png"
+texture "707.webp"
 texrep 1 1
 crease 45.000001
 numvert 13
@@ -4907,7 +4907,7 @@ name "engineDiskFast"
 loc 1.297266 0.728141 -11.215694
 data 14
 engineDiskFast
-texture "707.png"
+texture "707.webp"
 texrep 1 1
 crease 45.000001
 numvert 13
@@ -5003,7 +5003,7 @@ name "engineInner"
 loc -0.751007 -0.023689 0.000028
 data 11
 engineInner
-texture "707.png"
+texture "707.webp"
 texrep 1 1
 numvert 1064
 -1.086362 -0.504554 -0
@@ -13481,7 +13481,7 @@ name "exhaustHeat"
 loc -0.751007 -0.023689 0.000028
 data 11
 exhaustHeat
-texture "707.png"
+texture "707.webp"
 texrep 1 1
 numvert 96
 2.391557 0.328642 -0

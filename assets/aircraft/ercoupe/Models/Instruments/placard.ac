@@ -6,7 +6,7 @@ OBJECT poly
 name "Face"
 data 6
 Circle
-texture "placard.png"
+texture "placard.webp"
 crease 30.000000
 numvert 33
 -0.009 0 0

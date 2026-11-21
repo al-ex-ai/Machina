@@ -7,7 +7,7 @@ kids 13
 OBJECT poly
 name "ActDigit1"
 loc 0.0102845 0.0106927 -0.0007195
-texture "digits.png"
+texture "digits.webp"
 texrep 1 1
 numvert 4
 0.0000734 0.0023789 0.0189783
@@ -26,7 +26,7 @@ kids 0
 OBJECT poly
 name "ActDigit2"
 loc 0.0102845 0.0047437 -0.0007195
-texture "digits.png"
+texture "digits.webp"
 texrep 1 1
 numvert 4
 0.0000734 0.0023789 0.0189783
@@ -45,7 +45,7 @@ kids 0
 OBJECT poly
 name "chan-knob"
 loc 0.0178272 0.0010421 0.0444480
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 numvert 51
 -0.0027435 -0.0016475 -0.0285807
@@ -433,7 +433,7 @@ kids 0
 OBJECT poly
 name "LampAmber"
 loc 0.0384833 0.0182015 -0.0200207
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 numvert 81
 -0.0399368 0.0059616 0.0201440
@@ -1066,7 +1066,7 @@ kids 0
 OBJECT poly
 name "LampAmberON"
 loc 0.0386425 0.0182015 -0.0200207
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 numvert 81
 -0.0399368 0.0059616 0.0201440
@@ -1699,7 +1699,7 @@ kids 0
 OBJECT poly
 name "LampGreen"
 loc 0.0426641 -0.0033225 0.0382460
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 numvert 81
 -0.0440432 0.0218608 -0.0051464
@@ -2332,7 +2332,7 @@ kids 0
 OBJECT poly
 name "LampGreenON"
 loc 0.0428385 -0.0033225 0.0382460
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 numvert 81
 -0.0440864 0.0218648 -0.0054232
@@ -2965,7 +2965,7 @@ kids 0
 OBJECT poly
 name "mode-knob"
 loc 0.0131112 0.0114748 -0.0063142
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 numvert 51
 -0.0014555 -0.0037978 -0.0300035
@@ -3353,7 +3353,7 @@ kids 0
 OBJECT poly
 name "Panel"
 loc 0.0027760 -0.0019630 0.1441310
-texture "tacan.png"
+texture "tacan.webp"
 texrep 1 1
 numvert 212
 -0.0002150 -0.0246000 -0.1950470
@@ -4392,7 +4392,7 @@ kids 0
 OBJECT poly
 name "Panel.001"
 loc 0.0027760 -0.0019630 0.1441310
-texture "tacan.png"
+texture "tacan.webp"
 texrep 1 1
 numvert 101
 -0.0024169 0.0052432 -0.1447494
@@ -4933,7 +4933,7 @@ kids 0
 OBJECT poly
 name "sockle"
 loc -0.5836987 0.3689100 0.2111392
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 numvert 38
 0.5859140 -0.3796730 -0.2162940
@@ -5093,7 +5093,7 @@ kids 0
 OBJECT poly
 name "switch"
 loc -0.1611786 0.6439472 0.1580717
-texture "lamps.png"
+texture "lamps.webp"
 texrep 1 1
 numvert 65
 0.1643060 -0.6559010 -0.1697150
@@ -5598,7 +5598,7 @@ kids 0
 OBJECT poly
 name "vol-knob"
 loc -0.0097582 -0.0004564 -0.0619564
-texture "digitsKnob.png"
+texture "digitsKnob.webp"
 texrep 1 1
 numvert 81
 0.0120330 -0.0090098 0.0354114

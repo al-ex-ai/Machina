@@ -9,7 +9,7 @@ kids 15
 OBJECT poly
 name "elec"
 loc -0.000389598 -0.0932114 -0.255759
-texture "electric.png"
+texture "electric.webp"
 crease 45.000000
 numvert 4
 0 0.154111 0.392651
@@ -28,7 +28,7 @@ kids 0
 OBJECT poly
 name "apu.spool"
 loc 4.27619e-05 0.0834333 -0.000291277
-texture "electric.png"
+texture "electric.webp"
 crease 45.000000
 numvert 4
 0 -0.000816986 0.0685442
@@ -47,7 +47,7 @@ kids 0
 OBJECT poly
 name "apu.started"
 loc 4.27619e-05 0.0835103 -0.000257879
-texture "electric.png"
+texture "electric.webp"
 crease 45.000000
 numvert 4
 0 0.00352448 0.0684446
@@ -66,7 +66,7 @@ kids 0
 OBJECT poly
 name "apu.avail"
 loc 4.27619e-05 0.0834333 -0.000291277
-texture "electric.png"
+texture "electric.webp"
 crease 45.000000
 numvert 4
 0 0.0035245 0.0685442
@@ -85,7 +85,7 @@ kids 0
 OBJECT poly
 name "elec"
 loc -0.000166306 0.0641737 -0.0766947
-texture "electric.png"
+texture "electric.webp"
 crease 45.000000
 numvert 4
 0 -0.00606649 0.197116
@@ -104,7 +104,7 @@ kids 0
 OBJECT poly
 name "rbus"
 loc 4.27619e-05 0.0359875 -0.0189657
-texture "electric.png"
+texture "electric.webp"
 crease 45.000000
 numvert 4
 0 -0.0023916 0.031041
@@ -123,7 +123,7 @@ kids 0
 OBJECT poly
 name "lbus"
 loc 4.27619e-05 0.0359875 0.0774281
-texture "electric.png"
+texture "electric.webp"
 crease 45.000000
 numvert 4
 0 0.0103173 0.031041
@@ -142,7 +142,7 @@ kids 0
 OBJECT poly
 name "rgen"
 loc 4.27619e-05 -0.0645565 -0.0379715
-texture "electric.png"
+texture "electric.webp"
 crease 45.000000
 numvert 4
 0 -0.0032293 0.025575
@@ -161,7 +161,7 @@ kids 0
 OBJECT poly
 name "bgenr"
 loc 4.27619e-05 -0.0793302 0.00887762
-texture "electric.png"
+texture "electric.webp"
 crease 45.000000
 numvert 4
 0 -0.00326722 0.0291055
@@ -180,7 +180,7 @@ kids 0
 OBJECT poly
 name "bgenl"
 loc 4.27619e-05 -0.0793302 0.0527078
-texture "electric.png"
+texture "electric.webp"
 crease 45.000000
 numvert 4
 0 0.0140947 0.0291055
@@ -199,7 +199,7 @@ kids 0
 OBJECT poly
 name "lgen"
 loc 4.27619e-05 -0.0644557 0.105308
-texture "electric.png"
+texture "electric.webp"
 crease 45.000000
 numvert 4
 0 0.0139311 0.025575
@@ -218,7 +218,7 @@ kids 0
 OBJECT poly
 name "extpwr"
 loc 4.27619e-05 0.0136354 0.00792352
-texture "electric.png"
+texture "electric.webp"
 crease 45.000000
 numvert 4
 0 -0.00226228 0.0305176
@@ -237,7 +237,7 @@ kids 0
 OBJECT poly
 name "extpwr"
 loc 4.27619e-05 0.0136354 0.051659
-texture "electric.png"
+texture "electric.webp"
 crease 45.000000
 numvert 4
 0 0.00975944 0.0305176
@@ -256,7 +256,7 @@ kids 0
 OBJECT poly
 name "apugen"
 loc 4.27619e-05 0.0444294 0.0326085
-texture "electric.png"
+texture "electric.webp"
 crease 45.000000
 numvert 4
 0 -0.00322859 0.0265884
@@ -275,7 +275,7 @@ kids 0
 OBJECT poly
 name "drive"
 loc 4.27619e-05 -0.0773422 0.0537185
-texture "electric.png"
+texture "electric.webp"
 crease 45.000000
 numvert 8
 0 -0.00817718 -0.0651074

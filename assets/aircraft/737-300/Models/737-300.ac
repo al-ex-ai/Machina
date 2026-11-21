@@ -41,7 +41,7 @@ name "ailerontablh"
 data 17
 ailerontablh.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 6
 11.0934 0.15142 10.4317
@@ -90,7 +90,7 @@ name "ailerontabrh"
 data 17
 ailerontabrh.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 6
 11.0936 0.15114 -10.4238
@@ -521,7 +521,7 @@ name "backdoorleft"
 data 17
 backdoorleft.mesh
 crease 40.0
-texture "733_white.png"
+texture "733_white.webp"
 texrep 1 1
 numvert 92
 17.048 0.19852 1.41791
@@ -1403,7 +1403,7 @@ name "backdoorright"
 data 18
 backdoorright.mesh
 crease 40.0
-texture "733_white.png"
+texture "733_white.webp"
 texrep 1 1
 numvert 108
 17.7908 1.87053 -1.34818
@@ -2413,7 +2413,7 @@ name "Blades"
 data 11
 Blades.mesh
 crease 40.0
-texture "fans.png"
+texture "fans.webp"
 texrep 1 1
 numvert 624
 2.66504 -1.09256 4.86249
@@ -5504,7 +5504,7 @@ name "Blades.001"
 data 15
 Blades.001.mesh
 crease 40.0
-texture "fans.png"
+texture "fans.webp"
 texrep 1 1
 numvert 624
 2.66504 -1.09256 -4.92324
@@ -8595,7 +8595,7 @@ name "BulkheadFront"
 data 18
 BulkheadFront.mesh
 crease 40.0
-texture "bulkhead.png"
+texture "bulkhead.webp"
 texrep 1 1
 numvert 624
 -2.96852 1.66447 -1.3189
@@ -14169,7 +14169,7 @@ name "BulkheadRear"
 data 17
 BulkheadRear.mesh
 crease 40.0
-texture "bulkhead.png"
+texture "bulkhead.webp"
 texrep 1 1
 numvert 624
 2.69933 1.66447 -1.3189
@@ -29919,7 +29919,7 @@ name "Cone"
 data 9
 Cone.mesh
 crease 40.0
-texture "fans.png"
+texture "fans.webp"
 texrep 1 1
 numvert 66
 2.38422 -1.39149 4.79348
@@ -30523,7 +30523,7 @@ name "Cone.001"
 data 13
 Cone.001.mesh
 crease 40.0
-texture "fans.png"
+texture "fans.webp"
 texrep 1 1
 numvert 66
 2.38422 -1.39149 -4.99225
@@ -53351,7 +53351,7 @@ name "engcore"
 data 12
 engcore.mesh
 crease 40.0
-texture "733_white.png"
+texture "733_white.webp"
 texrep 1 1
 numvert 160
 3.43173 -0.75839 4.91276
@@ -61071,7 +61071,7 @@ name "flap1"
 data 10
 flap1.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 11
 4.55147 -0.60918 3.14217
@@ -61133,7 +61133,7 @@ name "flap2"
 data 10
 flap2.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 11
 3.63409 -0.68116 1.78469
@@ -61195,7 +61195,7 @@ name "flap3"
 data 10
 flap3.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 11
 3.6343 -0.68145 -1.7767
@@ -61257,7 +61257,7 @@ name "flap4"
 data 10
 flap4.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 11
 4.55168 -0.60947 -3.13415
@@ -61319,7 +61319,7 @@ name "flapfairing"
 data 16
 flapfairing.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 45
 9.95535 -0.18865 8.58534
@@ -62423,7 +62423,7 @@ name "frontdoorleft"
 data 18
 frontdoorleft.mesh
 crease 40.0
-texture "733_white.png"
+texture "733_white.webp"
 texrep 1 1
 numvert 108
 -4.06405 0.18325 1.57578
@@ -63363,7 +63363,7 @@ name "frontdoorright"
 data 19
 frontdoorright.mesh
 crease 40.0
-texture "733_white.png"
+texture "733_white.webp"
 texrep 1 1
 numvert 163
 -4.01541 1.47987 -1.39191
@@ -64862,7 +64862,7 @@ name "Fuselage"
 data 13
 Fuselage.mesh
 crease 40.0
-texture "733_white.png"
+texture "733_white.webp"
 texrep 1 1
 numvert 6516
 -8.73919 0.04611 -0.00356
@@ -111874,7 +111874,7 @@ name "fwdpylon"
 data 13
 fwdpylon.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 160
 4.84452 -0.51141 5.04325
@@ -113452,7 +113452,7 @@ name "geardoor"
 data 13
 geardoor.mesh
 crease 40.0
-texture "733_white.png"
+texture "733_white.webp"
 texrep 1 1
 numvert 9
 7.71391 -1.41129 2.86349
@@ -128700,7 +128700,7 @@ name "hstab"
 data 10
 hstab.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 14
 20.5145 1.66121 1.09749
@@ -128786,7 +128786,7 @@ name "hstab.001"
 data 14
 hstab.001.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 14
 20.5048 1.66042 -1.09643
@@ -128872,7 +128872,7 @@ name "ibflapfairing"
 data 18
 ibflapfairing.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 45
 9.04342 -0.47257 6.07241
@@ -129373,7 +129373,7 @@ name "ibflapfairingrh"
 data 20
 ibflapfairingrh.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 45
 9.04363 -0.47286 -6.06443
@@ -129874,7 +129874,7 @@ name "ible"
 data 9
 ible.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 69
 3.74509 -0.7515 1.78436
@@ -148253,7 +148253,7 @@ name "lehstab"
 data 12
 lehstab.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 33
 20.5066 1.66121 1.0975
@@ -148500,7 +148500,7 @@ name "lehstab.001"
 data 16
 lehstab.001.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 33
 20.5064 1.66042 -1.09644
@@ -148747,7 +148747,7 @@ name "lengfanouterib"
 data 19
 lengfanouterib.mesh
 crease 40.0
-texture "733_white.png"
+texture "733_white.webp"
 texrep 1 1
 numvert 723
 3.85361 -0.36234 5.0767
@@ -153953,7 +153953,7 @@ name "lhaftflapib"
 data 16
 lhaftflapib.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 22
 9.32381 -0.5723 4.0992
@@ -154170,7 +154170,7 @@ name "lhaftflapob"
 data 16
 lhaftflapob.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 22
 11.0317 0.14254 10.3153
@@ -154387,7 +154387,7 @@ name "lhaileron"
 data 14
 lhaileron.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 12
 10.7776 0.12448 10.4318
@@ -154723,7 +154723,7 @@ name "lhelevator"
 data 15
 lhelevator.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 24
 23.3054 1.5188 0.70294
@@ -154914,7 +154914,7 @@ name "lhelevatortab"
 data 18
 lhelevatortab.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 6
 23.0514 1.4977 0.78806
@@ -154963,7 +154963,7 @@ name "lhexgateib"
 data 15
 lhexgateib.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 6
 8.8178 -0.57173 4.53131
@@ -155012,7 +155012,7 @@ name "lhexgateob"
 data 15
 lhexgateob.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 6
 8.92252 -0.47264 4.93397
@@ -155061,7 +155061,7 @@ name "lhforeflapib"
 data 17
 lhforeflapib.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 24
 8.78112 -0.44123 4.53129
@@ -155299,7 +155299,7 @@ name "lhforeflapob"
 data 17
 lhforeflapob.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 24
 10.6118 0.19489 10.3167
@@ -155717,7 +155717,7 @@ name "lhgdmid"
 data 12
 lhgdmid.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 4
 7.71362 -1.39576 2.77855
@@ -155738,7 +155738,7 @@ name "lhibflapfairaftob"
 data 22
 lhibflapfairaftob.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 44
 9.05157 -0.47298 6.07126
@@ -156263,7 +156263,7 @@ name "lhmidflapib"
 data 16
 lhmidflapib.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 45
 8.81793 -0.45784 4.5305
@@ -156513,7 +156513,7 @@ name "lhmidflapob"
 data 16
 lhmidflapob.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 52
 8.48588 -0.46609 4.93493
@@ -156924,7 +156924,7 @@ name "lhngdoor"
 data 13
 lhngdoor.mesh
 crease 40.0
-texture "733_white.png"
+texture "733_white.webp"
 texrep 1 1
 numvert 48
 -6.19255 -1.22408 -0.00444
@@ -157319,7 +157319,7 @@ name "lhobflapfairaftob"
 data 22
 lhobflapfairaftob.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 44
 9.9635 -0.18909 8.5842
@@ -157981,7 +157981,7 @@ name "Llightl"
 data 12
 Llightl.mesh
 crease 40.0
-texture "halos.png"
+texture "halos.webp"
 texrep 1 1
 numvert 9
 3.29521 -1.51989 0.99804
@@ -158028,7 +158028,7 @@ name "Llightr"
 data 12
 Llightr.mesh
 crease 40.0
-texture "halos.png"
+texture "halos.webp"
 texrep 1 1
 numvert 9
 3.68678 -0.51989 -2.10341
@@ -158155,7 +158155,7 @@ name "lowerpanel"
 data 15
 lowerpanel.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 15
 7.24436 -0.93926 1.7913
@@ -158227,7 +158227,7 @@ name "lowerpanel1"
 data 16
 lowerpanel1.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 10
 10.2739 0.10692 10.4847
@@ -158275,7 +158275,7 @@ name "lreverserib"
 data 16
 lreverserib.mesh
 crease 40.0
-texture "733_white.png"
+texture "733_white.webp"
 texrep 1 1
 numvert 200
 4.1415 -0.41233 5.23924
@@ -160657,7 +160657,7 @@ name "mglhtyrelh"
 data 15
 mglhtyrelh.mesh
 crease 40.0
-texture "733_white.png"
+texture "733_white.webp"
 texrep 1 1
 numvert 802
 8.33459 -1.83336 3.12185
@@ -167235,7 +167235,7 @@ name "mglhtyrerh"
 data 15
 mglhtyrerh.mesh
 crease 40.0
-texture "733_white.png"
+texture "733_white.webp"
 texrep 1 1
 numvert 802
 8.33459 -1.83336 2.33897
@@ -174935,7 +174935,7 @@ name "mgrhtyrelh"
 data 15
 mgrhtyrelh.mesh
 crease 40.0
-texture "733_white.png"
+texture "733_white.webp"
 texrep 1 1
 numvert 802
 8.33459 -1.83336 -2.04456
@@ -181513,7 +181513,7 @@ name "mgrhtyrerh"
 data 15
 mgrhtyrerh.mesh
 crease 40.0
-texture "733_white.png"
+texture "733_white.webp"
 texrep 1 1
 numvert 802
 8.33459 -1.83336 -2.82744
@@ -188486,7 +188486,7 @@ name "navlight_back"
 data 18
 navlight_back.mesh
 crease 40.0
-texture "halos.png"
+texture "halos.webp"
 texrep 1 1
 numvert 9
 23.59032 1.87272 -0.12728
@@ -188553,7 +188553,7 @@ name "navlight_left"
 data 18
 navlight_left.mesh
 crease 40.0
-texture "halos.png"
+texture "halos.webp"
 texrep 1 1
 numvert 9
 11.5051 0.42632 14.4748
@@ -188620,7 +188620,7 @@ name "navlight_right"
 data 19
 navlight_right.mesh
 crease 40.0
-texture "halos.png"
+texture "halos.webp"
 texrep 1 1
 numvert 9
 11.2489 0.42636 -14.4191
@@ -190099,7 +190099,7 @@ name "oble"
 data 9
 oble.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 42
 6.24194 -0.14905 5.28194
@@ -190589,7 +190589,7 @@ name "obwing"
 data 11
 obwing.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 12
 6.05102 -0.17401 4.51999
@@ -190701,7 +190701,7 @@ name "panel1upper"
 data 16
 panel1upper.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 12
 7.97514 -0.33268 4.52516
@@ -190758,7 +190758,7 @@ name "panellowerob"
 data 17
 panellowerob.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 6
 8.77151 -0.47586 5.28916
@@ -190788,7 +190788,7 @@ name "panelupper"
 data 15
 panelupper.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 7
 8.12656 -0.29843 4.92136
@@ -190819,7 +190819,7 @@ name "panelupperob"
 data 17
 panelupperob.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 10
 10.768 0.21651 10.4302
@@ -191983,7 +191983,7 @@ name "Plane.009X0"
 data 16
 Plane.009X0.mesh
 crease 40.0
-texture "halos.png"
+texture "halos.webp"
 texrep 1 1
 numvert 4
 -1 -1 -0
@@ -192009,7 +192009,7 @@ name "Plane.009X1"
 data 16
 Plane.009X1.mesh
 crease 40.0
-texture "halos.png"
+texture "halos.webp"
 texrep 1 1
 numvert 4
 -1 -1 -0
@@ -192062,7 +192062,7 @@ name "Plane.010X"
 data 15
 Plane.010X.mesh
 crease 40.0
-texture "halos.png"
+texture "halos.webp"
 texrep 1 1
 numvert 4
 -1 -1 -0
@@ -192088,7 +192088,7 @@ name "Plane.011"
 data 14
 Plane.011.mesh
 crease 40.0
-texture "733_white.png"
+texture "733_white.webp"
 texrep 1 1
 numvert 271
 -5.79561 1.40105 -0.944
@@ -195751,7 +195751,7 @@ name "pylonaft"
 data 13
 pylonaft.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 43
 7.69139 -0.56594 4.50768
@@ -196131,7 +196131,7 @@ name "removal"
 data 12
 removal.mesh
 crease 40.0
-texture "733_white.png"
+texture "733_white.webp"
 texrep 1 1
 numvert 32
 -6.31831 1.47549 -0.64354
@@ -196341,7 +196341,7 @@ name "rhaftflapib"
 data 16
 rhaftflapib.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 22
 9.32401 -0.57259 -4.0912
@@ -196558,7 +196558,7 @@ name "rhaftflapob"
 data 16
 rhaftflapob.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 22
 11.0319 0.14226 -10.3073
@@ -196775,7 +196775,7 @@ name "rhaileron"
 data 14
 rhaileron.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 12
 10.7778 0.1242 -10.4238
@@ -197111,7 +197111,7 @@ name "rhelevator"
 data 15
 rhelevator.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 24
 23.3074 1.51918 -0.70872
@@ -197302,7 +197302,7 @@ name "rhelevatortab"
 data 18
 rhelevatortab.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 6
 23.0571 1.49809 -0.79384
@@ -197351,7 +197351,7 @@ name "rhexgateib"
 data 15
 rhexgateib.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 6
 8.81801 -0.57202 -4.5233
@@ -197400,7 +197400,7 @@ name "rhexgateob"
 data 15
 rhexgateob.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 6
 8.92273 -0.47293 -4.92599
@@ -197455,7 +197455,7 @@ name "rhflapfairingob"
 data 20
 rhflapfairingob.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 45
 9.95556 -0.18894 -8.57735
@@ -197956,7 +197956,7 @@ name "rhforeflapib"
 data 17
 rhforeflapib.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 24
 8.78132 -0.44152 -4.5233
@@ -198194,7 +198194,7 @@ name "rhforeflapob"
 data 17
 rhforeflapob.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 24
 10.612 0.19461 -10.3086
@@ -198432,7 +198432,7 @@ name "rhgdmid"
 data 12
 rhgdmid.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 4
 7.71383 -1.39605 -2.77058
@@ -198453,7 +198453,7 @@ name "rhgeardoor"
 data 15
 rhgeardoor.mesh
 crease 40.0
-texture "733_white.png"
+texture "733_white.webp"
 texrep 1 1
 numvert 9
 7.71412 -1.30325 -2.88
@@ -198504,7 +198504,7 @@ name "rhibflapfairaftob"
 data 22
 rhibflapfairaftob.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 44
 9.05178 -0.47327 -6.06328
@@ -199010,7 +199010,7 @@ name "rhible"
 data 11
 rhible.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 82
 3.88272 -0.8155 -1.77652
@@ -199700,7 +199700,7 @@ name "rhlowerpanel"
 data 17
 rhlowerpanel.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 15
 7.24457 -0.93955 -1.78332
@@ -199772,7 +199772,7 @@ name "rhlowerpanel1"
 data 18
 rhlowerpanel1.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 10
 10.2741 0.10663 -10.4767
@@ -200195,7 +200195,7 @@ name "rhmidflapib"
 data 16
 rhmidflapib.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 45
 8.81814 -0.45813 -4.52255
@@ -200445,7 +200445,7 @@ name "rhmidflapob"
 data 16
 rhmidflapob.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 52
 8.48609 -0.46638 -4.92695
@@ -201251,7 +201251,7 @@ name "rhngdoor"
 data 13
 rhngdoor.mesh
 crease 40.0
-texture "733_white.png"
+texture "733_white.webp"
 texrep 1 1
 numvert 50
 -6.19274 -1.20516 -0.13049
@@ -201657,7 +201657,7 @@ name "rhobflapfairaftob"
 data 22
 rhobflapfairaftob.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 44
 9.9637 -0.18937 -8.57622
@@ -202163,7 +202163,7 @@ name "rhoble"
 data 11
 rhoble.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 42
 6.24215 -0.14934 -5.27396
@@ -202653,7 +202653,7 @@ name "rhobwing"
 data 13
 rhobwing.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 12
 6.05124 -0.1743 -4.51201
@@ -202765,7 +202765,7 @@ name "rhpanel1upper"
 data 18
 rhpanel1upper.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 12
 7.97535 -0.33296 -4.51717
@@ -202822,7 +202822,7 @@ name "rhpanellowerob"
 data 19
 rhpanellowerob.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 6
 8.77172 -0.47615 -5.28118
@@ -202852,7 +202852,7 @@ name "rhpanelupper"
 data 17
 rhpanelupper.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 7
 8.12677 -0.29872 -4.91338
@@ -202883,7 +202883,7 @@ name "rhpanelupperob"
 data 19
 rhpanelupperob.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 10
 10.7682 0.21623 -10.4222
@@ -202931,7 +202931,7 @@ name "rhpylonaft"
 data 15
 rhpylonaft.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 43
 7.6916 -0.56623 -4.4997
@@ -204099,7 +204099,7 @@ name "rhwinginbd"
 data 15
 rhwinginbd.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 24
 4.07027 -0.10012 -1.77614
@@ -204283,7 +204283,7 @@ name "rhwingtip"
 data 14
 rhwingtip.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 63
 11.6205 0.58535 -14.2438
@@ -205325,7 +205325,7 @@ name "rudder"
 data 11
 rudder.mesh
 crease 40.0
-texture "733_white.png"
+texture "733_white.webp"
 texrep 1 1
 numvert 33
 23.9694 8.60246 0.02194
@@ -206719,7 +206719,7 @@ name "slat1"
 data 10
 slat1.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 24
 9.27394 0.33259 10.6446
@@ -206837,7 +206837,7 @@ name "slat2"
 data 10
 slat2.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 24
 7.68663 0.09724 7.69393
@@ -206955,7 +206955,7 @@ name "slat3"
 data 10
 slat3.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 24
 6.34183 -0.13717 5.24482
@@ -207073,7 +207073,7 @@ name "slat4"
 data 10
 slat4.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 24
 6.34204 -0.13746 -5.23684
@@ -207191,7 +207191,7 @@ name "slat5"
 data 10
 slat5.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 24
 7.68684 0.09695 -7.68594
@@ -207309,7 +207309,7 @@ name "slat6"
 data 10
 slat6.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 24
 9.27415 0.3323 -10.6366
@@ -207427,7 +207427,7 @@ name "spoiler0"
 data 13
 spoiler0.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 6
 9.85325 0.11658 9.14821
@@ -207476,7 +207476,7 @@ name "spoiler1"
 data 13
 spoiler1.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 6
 9.37047 -0.00096 7.88577
@@ -207525,7 +207525,7 @@ name "spoiler2"
 data 13
 spoiler2.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 6
 8.89039 -0.11432 6.67962
@@ -207574,7 +207574,7 @@ name "spoiler3"
 data 13
 spoiler3.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 6
 8.4223 -0.23073 5.41457
@@ -207623,7 +207623,7 @@ name "spoiler4"
 data 13
 spoiler4.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 6
 8.42895 -0.53469 2.25581
@@ -207672,7 +207672,7 @@ name "spoiler5"
 data 13
 spoiler5.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 6
 8.42916 -0.53498 -2.2478
@@ -207721,7 +207721,7 @@ name "spoiler6"
 data 13
 spoiler6.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 6
 8.4225 -0.23102 -5.40661
@@ -207770,7 +207770,7 @@ name "spoiler7"
 data 13
 spoiler7.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 6
 8.89059 -0.11461 -6.67163
@@ -207819,7 +207819,7 @@ name "spoiler8"
 data 13
 spoiler8.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 6
 9.37067 -0.00125 -7.87779
@@ -207868,7 +207868,7 @@ name "spoiler9"
 data 13
 spoiler9.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 6
 9.85345 0.11629 -9.14023
@@ -207917,7 +207917,7 @@ name "tailpipe"
 data 13
 tailpipe.mesh
 crease 40.0
-texture "733_white.png"
+texture "733_white.webp"
 texrep 1 1
 numvert 200
 5.54527 -0.94805 4.87629
@@ -209247,7 +209247,7 @@ name "tyreln"
 data 11
 tyreln.mesh
 crease 40.0
-texture "733_white.png"
+texture "733_white.webp"
 texrep 1 1
 numvert 802
 -4.41721 -1.88756 0.32613
@@ -215819,7 +215819,7 @@ name "tyrern"
 data 11
 tyrern.mesh
 crease 40.0
-texture "733_white.png"
+texture "733_white.webp"
 texrep 1 1
 numvert 802
 -4.4189 -1.88745 -0.17069
@@ -222793,7 +222793,7 @@ name "vstab"
 data 10
 vstab.mesh
 crease 40.0
-texture "733_white.png"
+texture "733_white.webp"
 texrep 1 1
 numvert 75
 22.8111 8.64408 -0.08486
@@ -224591,7 +224591,7 @@ name "winginbd"
 data 13
 winginbd.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 24
 4.07006 -0.09983 1.78411
@@ -224775,7 +224775,7 @@ name "wingtip"
 data 12
 wingtip.mesh
 crease 40.0
-texture "wing.png"
+texture "wing.webp"
 texrep 1 1
 numvert 63
 11.6223 0.58545 14.2518

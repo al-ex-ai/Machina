@@ -10,7 +10,7 @@ name "CockpitBulkhead"
 loc 0 0 -0
 data 15
 CockpitBulkhead
-texture "cockpitwall.png"
+texture "cockpitwall.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 68
@@ -494,7 +494,7 @@ name "CockpitDoor"
 loc 0 0 -0
 data 11
 CockpitDoor
-texture "cockpitdoor.png"
+texture "cockpitdoor.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 12
@@ -587,7 +587,7 @@ name "Doorknob"
 loc 0 0 -0
 data 8
 Doorknob
-texture "doorknob.png"
+texture "doorknob.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 96

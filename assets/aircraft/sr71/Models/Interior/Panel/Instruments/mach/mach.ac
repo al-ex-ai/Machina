@@ -8,7 +8,7 @@ name "Course1"
 loc 0 0 -0
 data 7
 Course1
-texture "mach.png"
+texture "mach.webp"
 texrep 1.000000 1.000000
 crease 45.000001
 numvert 12
@@ -107,7 +107,7 @@ name "Course10"
 loc 0 0 -0
 data 8
 Course10
-texture "mach.png"
+texture "mach.webp"
 texrep 1.000000 1.000000
 crease 45.000001
 numvert 12
@@ -206,7 +206,7 @@ name "Course100"
 loc 0 0 -0
 data 9
 Course100
-texture "mach.png"
+texture "mach.webp"
 texrep 1.000000 1.000000
 crease 45.000001
 numvert 12
@@ -305,7 +305,7 @@ name "face"
 loc 0 0 -0
 data 4
 face
-texture "mach.png"
+texture "mach.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 17
@@ -394,7 +394,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "mach.png"
+texture "mach.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 128
@@ -1205,7 +1205,7 @@ name "needle"
 loc -0.002003 0 -0
 data 6
 needle
-texture "mach.png"
+texture "mach.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 52

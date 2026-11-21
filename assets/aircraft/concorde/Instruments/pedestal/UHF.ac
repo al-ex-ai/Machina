@@ -8,7 +8,7 @@ name "Plate"
 loc 0.019343 0 -0
 data 5
 Plate
-texture "UHF.png"
+texture "UHF.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 32
@@ -277,7 +277,7 @@ name "SelectorDecimal"
 loc 0.016266 -0.014436 0.103146
 data 15
 SelectorDecimal
-texture "UHF.png"
+texture "UHF.webp"
 texrep 1.000000 1.000000
 crease 16.999999
 numvert 129
@@ -1249,7 +1249,7 @@ name "SelectorDecimal2"
 loc 0.016255 -0.014436 0.029947
 data 16
 SelectorDecimal2
-texture "UHF.png"
+texture "UHF.webp"
 texrep 1.000000 1.000000
 crease 16.999999
 numvert 129
@@ -2221,7 +2221,7 @@ name "SelectorHundred"
 loc 0.016266 -0.005021 0.142383
 data 15
 SelectorHundred
-texture "UHF.png"
+texture "UHF.webp"
 texrep 1.000000 1.000000
 crease 16.999999
 numvert 129
@@ -3193,7 +3193,7 @@ name "SelectorHundred2"
 loc 0.016255 -0.005021 0.068405
 data 16
 SelectorHundred2
-texture "UHF.png"
+texture "UHF.webp"
 texrep 1.000000 1.000000
 crease 16.999999
 numvert 129
@@ -4174,7 +4174,7 @@ name "SelectorThausend"
 loc 0.016266 -0.014436 0.142383
 data 16
 SelectorThausend
-texture "UHF.png"
+texture "UHF.webp"
 texrep 1.000000 1.000000
 crease 16.999999
 numvert 129
@@ -5146,7 +5146,7 @@ name "SelectorThausend2"
 loc 0.016255 -0.014436 0.068477
 data 17
 SelectorThausend2
-texture "UHF.png"
+texture "UHF.webp"
 texrep 1.000000 1.000000
 crease 16.999999
 numvert 129
@@ -6118,7 +6118,7 @@ name "SelectorUnit"
 loc 0.016266 -0.005021 0.103146
 data 12
 SelectorUnit
-texture "UHF.png"
+texture "UHF.webp"
 texrep 1.000000 1.000000
 crease 16.999999
 numvert 129
@@ -7090,7 +7090,7 @@ name "SelectorUnit2"
 loc 0.016255 -0.005021 0.029875
 data 13
 SelectorUnit2
-texture "UHF.png"
+texture "UHF.webp"
 texrep 1.000000 1.000000
 crease 16.999999
 numvert 129

@@ -1761,7 +1761,7 @@ OBJECT poly
 name "d1"
 data 8
 Mesh.001
-texture "base.png"
+texture "base.webp"
 texrep 1 1
 crease 80.000000
 numvert 17
@@ -1884,7 +1884,7 @@ OBJECT poly
 name "d1_night"
 data 8
 Mesh.013
-texture "base.png"
+texture "base.webp"
 texrep 1 1
 crease 80.000000
 numvert 17
@@ -2356,7 +2356,7 @@ OBJECT poly
 name "d2"
 data 8
 Mesh.003
-texture "base.png"
+texture "base.webp"
 texrep 1 1
 crease 80.000000
 numvert 17
@@ -2479,7 +2479,7 @@ OBJECT poly
 name "d2_night"
 data 8
 Mesh.014
-texture "base.png"
+texture "base.webp"
 texrep 1 1
 crease 80.000000
 numvert 17
@@ -2602,7 +2602,7 @@ OBJECT poly
 name "base"
 data 4
 Mesh
-texture "base.png"
+texture "base.webp"
 texrep 1 1
 crease 80.000000
 numvert 4

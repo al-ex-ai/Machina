@@ -9,7 +9,7 @@ kids 8
 OBJECT poly
 name "face"
 loc 0.0007999 -0.0016948 0.0000530
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 numvert 16
 0.0009884 0.0253268 -0.0253268
@@ -82,7 +82,7 @@ kids 0
 OBJECT poly
 name "faceInner"
 loc 0.0007999 -0.0016948 0.0000530
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 numvert 16
 0.0011451 0.0149352 -0.0213826
@@ -155,7 +155,7 @@ kids 0
 OBJECT poly
 name "innerMarkerOn"
 loc -0.0152997 -0.0696609 -0.0112852
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 numvert 93
 0.0102660 0.0356360 0.0261154
@@ -580,7 +580,7 @@ kids 0
 OBJECT poly
 name "innerMarkerOut"
 loc -0.0152997 -0.0696609 -0.0112852
-texture "face.png"
+texture "face.webp"
 texrep 1 1
 numvert 91
 0.0104392 0.0354874 0.0262727
@@ -1141,7 +1141,7 @@ kids 0
 OBJECT poly
 name "shadow"
 loc 0.0015520 0.0007300 0.0000000
-texture "instr-shadow.png"
+texture "instr-shadow.webp"
 texrep 1 1
 numvert 4
 0.0005240 0.0463330 -0.0472740

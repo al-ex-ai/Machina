@@ -8,7 +8,7 @@ name "bracket"
 loc -0.340908 -0.530892 0.070335
 data 7
 bracket
-texture "autopilot.png"
+texture "autopilot.webp"
 texrep 1 1
 crease 79.999998
 numvert 640
@@ -4691,7 +4691,7 @@ name "shadow"
 loc 0.002684 0.000786 0.001759
 data 6
 shadow
-texture "shadow.png"
+texture "shadow.webp"
 texrep 1 1
 numvert 4
 0.04538 0.000573 -0.124885
@@ -4712,7 +4712,7 @@ name "sockle"
 loc -0.381387 -0.579627 0.127629
 data 6
 sockle
-texture "autopilot.png"
+texture "autopilot.webp"
 texrep 1 1
 crease 30.000001
 numvert 86
@@ -5049,7 +5049,7 @@ name "sup"
 loc 0.002776 0.003482 0.144131
 data 3
 sup
-texture "autopilot.png"
+texture "autopilot.webp"
 texrep 1 1
 crease 30.000001
 numvert 212
@@ -6091,7 +6091,7 @@ name "switch"
 loc -0.655793 -0.157231 0.074371
 data 6
 switch
-texture "autopilot.png"
+texture "autopilot.webp"
 texrep 1 1
 crease 79.999998
 numvert 65
@@ -6599,7 +6599,7 @@ name "switch.001"
 loc -0.655793 -0.157231 0.098587
 data 10
 switch.001
-texture "autopilot.png"
+texture "autopilot.webp"
 texrep 1 1
 crease 79.999998
 numvert 65
@@ -7107,7 +7107,7 @@ name "turn"
 loc 0.00089 0.016818 -0.009599
 data 4
 turn
-texture "autopilot.png"
+texture "autopilot.webp"
 texrep 1 1
 numvert 190
 -0.023768 0.000204 0.009589
@@ -8575,7 +8575,7 @@ name "turn.001"
 loc -0.010065 0.010383 0.046356
 data 8
 turn.001
-texture "autopilot.png"
+texture "autopilot.webp"
 texrep 1 1
 numvert 256
 0.010005 -0.051413 -0.002112
@@ -10905,7 +10905,7 @@ name "turn.002"
 loc 0 0 -0
 data 8
 turn.002
-texture "autopilot.png"
+texture "autopilot.webp"
 texrep 1 1
 numvert 120
 -0.014598 0.00493 0.091343

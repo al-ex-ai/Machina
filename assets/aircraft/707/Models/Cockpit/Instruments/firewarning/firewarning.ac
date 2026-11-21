@@ -7,7 +7,7 @@ name "button.001"
 loc 0 0 -0
 data 10
 button.001
-texture "firewarning.png"
+texture "firewarning.webp"
 texrep 1 1
 numvert 100
 0.007183 -0.019181 0.05551
@@ -804,7 +804,7 @@ name "button.002"
 loc 0 0 -0
 data 10
 button.002
-texture "firewarning.png"
+texture "firewarning.webp"
 texrep 1 1
 numvert 100
 -0.039306 0.005187 0.027745
@@ -1601,7 +1601,7 @@ name "button.003"
 loc 0 0 -0
 data 10
 button.003
-texture "firewarning.png"
+texture "firewarning.webp"
 texrep 1 1
 numvert 100
 0.007183 -0.019181 -0.033035
@@ -2398,7 +2398,7 @@ name "button.004"
 loc 0 0 -0
 data 10
 button.004
-texture "firewarning.png"
+texture "firewarning.webp"
 texrep 1 1
 numvert 100
 -0.039667 0.005187 -0.06105
@@ -3195,7 +3195,7 @@ name "lampfour"
 loc 0 0 0.006234
 data 8
 lampfour
-texture "firewarning.png"
+texture "firewarning.webp"
 texrep 1 1
 numvert 36
 0.009577 -0.018257 -0.082553
@@ -3416,7 +3416,7 @@ name "lampone"
 loc 0 0 -0.006484
 data 7
 lampone
-texture "firewarning.png"
+texture "firewarning.webp"
 texrep 1 1
 numvert 36
 0.007403 -0.019181 0.061993
@@ -3637,7 +3637,7 @@ name "lampthree"
 loc 0 0 0.002285
 data 9
 lampthree
-texture "firewarning.png"
+texture "firewarning.webp"
 texrep 1 1
 numvert 36
 0.007551 -0.019181 -0.035279
@@ -3858,7 +3858,7 @@ name "lamptwo"
 loc 0 0 -0.002285
 data 7
 lamptwo
-texture "firewarning.png"
+texture "firewarning.webp"
 texrep 1 1
 numvert 36
 0.009598 -0.018257 0.01472

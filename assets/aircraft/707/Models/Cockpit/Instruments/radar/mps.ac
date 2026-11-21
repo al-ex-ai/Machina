@@ -7,7 +7,7 @@ kids 41
 OBJECT poly
 name "ai"
 loc 0.0021600 -0.0035030 -0.0130860
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -26,7 +26,7 @@ kids 0
 OBJECT poly
 name "ai.001"
 loc 0.0021600 -0.0032320 -0.0133560
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -45,7 +45,7 @@ kids 0
 OBJECT poly
 name "ai.002"
 loc 0.0022110 -0.0032320 -0.0133560
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -64,7 +64,7 @@ kids 0
 OBJECT poly
 name "ai.003"
 loc 0.0021600 -0.0035030 -0.0130860
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -83,7 +83,7 @@ kids 0
 OBJECT poly
 name "ai.004"
 loc 0.0021600 -0.0035030 -0.0130860
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -102,7 +102,7 @@ kids 0
 OBJECT poly
 name "ai.005"
 loc 0.0021600 -0.0035030 -0.0130860
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -121,7 +121,7 @@ kids 0
 OBJECT poly
 name "ai.006"
 loc 0.0021600 -0.0035030 -0.0130860
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -140,7 +140,7 @@ kids 0
 OBJECT poly
 name "ai.007"
 loc 0.0021600 -0.0035030 -0.0130860
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -159,7 +159,7 @@ kids 0
 OBJECT poly
 name "ai.008"
 loc 0.0021600 -0.0035030 -0.0130860
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -178,7 +178,7 @@ kids 0
 OBJECT poly
 name "ai.009"
 loc 0.0021600 -0.0035030 -0.0130860
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -197,7 +197,7 @@ kids 0
 OBJECT poly
 name "ai.010"
 loc 0.0021600 -0.0035030 -0.0130860
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -216,7 +216,7 @@ kids 0
 OBJECT poly
 name "ai.011"
 loc 0.0021600 -0.0035030 -0.0130860
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -235,7 +235,7 @@ kids 0
 OBJECT poly
 name "ai.012"
 loc 0.0021600 -0.0035030 -0.0130860
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -254,7 +254,7 @@ kids 0
 OBJECT poly
 name "ai.013"
 loc 0.0021600 -0.0035030 -0.0130860
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -273,7 +273,7 @@ kids 0
 OBJECT poly
 name "ai.014"
 loc 0.0021600 -0.0035030 -0.0130860
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -292,7 +292,7 @@ kids 0
 OBJECT poly
 name "ai.015"
 loc 0.0021600 -0.0035030 -0.0130860
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -311,7 +311,7 @@ kids 0
 OBJECT poly
 name "ai.016"
 loc 0.0021600 -0.0035030 -0.0130860
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -330,7 +330,7 @@ kids 0
 OBJECT poly
 name "ai.017"
 loc 0.0021600 -0.0035030 -0.0130860
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -349,7 +349,7 @@ kids 0
 OBJECT poly
 name "ai.018"
 loc 0.0020340 -0.0035030 -0.0130860
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -368,7 +368,7 @@ kids 0
 OBJECT poly
 name "ai.019"
 loc 0.0020340 -0.0035030 -0.0130860
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -387,7 +387,7 @@ kids 0
 OBJECT poly
 name "mp"
 loc 0.0020550 -0.0025300 -0.0134890
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -406,7 +406,7 @@ kids 0
 OBJECT poly
 name "mp.001"
 loc 0.0020550 -0.0025300 -0.0134890
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -425,7 +425,7 @@ kids 0
 OBJECT poly
 name "mp.002"
 loc 0.0020550 -0.0025300 -0.0134890
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -444,7 +444,7 @@ kids 0
 OBJECT poly
 name "mp.003"
 loc 0.0020550 -0.0025300 -0.0134890
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -463,7 +463,7 @@ kids 0
 OBJECT poly
 name "mp.004"
 loc 0.0020550 -0.0025300 -0.0134890
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -482,7 +482,7 @@ kids 0
 OBJECT poly
 name "mp.005"
 loc 0.0020550 -0.0025300 -0.0134890
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -501,7 +501,7 @@ kids 0
 OBJECT poly
 name "mp.006"
 loc 0.0020550 -0.0025300 -0.0134890
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -520,7 +520,7 @@ kids 0
 OBJECT poly
 name "mp.007"
 loc 0.0020550 -0.0025300 -0.0134890
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -539,7 +539,7 @@ kids 0
 OBJECT poly
 name "mp.008"
 loc 0.0020550 -0.0025300 -0.0134890
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -558,7 +558,7 @@ kids 0
 OBJECT poly
 name "mp.009"
 loc 0.0020550 -0.0025300 -0.0134890
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -577,7 +577,7 @@ kids 0
 OBJECT poly
 name "mp.010"
 loc 0.0020550 -0.0025300 -0.0134890
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -596,7 +596,7 @@ kids 0
 OBJECT poly
 name "mp.011"
 loc 0.0020550 -0.0025300 -0.0134890
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -615,7 +615,7 @@ kids 0
 OBJECT poly
 name "mp.012"
 loc 0.0020550 -0.0025300 -0.0134890
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -634,7 +634,7 @@ kids 0
 OBJECT poly
 name "mp.013"
 loc 0.0020550 -0.0025300 -0.0134890
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -653,7 +653,7 @@ kids 0
 OBJECT poly
 name "mp.014"
 loc 0.0020550 -0.0025300 -0.0134890
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -672,7 +672,7 @@ kids 0
 OBJECT poly
 name "mp.015"
 loc 0.0020550 -0.0025300 -0.0134890
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -691,7 +691,7 @@ kids 0
 OBJECT poly
 name "mp.016"
 loc 0.0020550 -0.0025300 -0.0134890
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -710,7 +710,7 @@ kids 0
 OBJECT poly
 name "mp.017"
 loc 0.0020550 -0.0025300 -0.0134890
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -729,7 +729,7 @@ kids 0
 OBJECT poly
 name "mp.018"
 loc 0.0020550 -0.0025300 -0.0134890
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -748,7 +748,7 @@ kids 0
 OBJECT poly
 name "mp.019"
 loc 0.0020550 -0.0025300 -0.0134890
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310
@@ -767,7 +767,7 @@ kids 0
 OBJECT poly
 name "ta"
 loc 0.0021600 -0.0035030 -0.0130860
-texture "radarblade.png"
+texture "radarblade.webp"
 texrep 1 1
 numvert 4
 0.0000000 -0.0024790 0.0180310

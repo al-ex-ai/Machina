@@ -7,7 +7,7 @@ name "base"
 loc 0 0 -0
 data 4
 base
-texture "gear.png"
+texture "gear.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 620
@@ -4812,7 +4812,7 @@ name "gearLoff"
 loc 0 0 -0
 data 8
 gearLoff
-texture "gear.png"
+texture "gear.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 121
@@ -5760,7 +5760,7 @@ name "gearLon"
 loc 0 0 -0
 data 7
 gearLon
-texture "gear.png"
+texture "gear.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 121
@@ -6708,7 +6708,7 @@ name "gearNoff"
 loc 0 0 -0
 data 8
 gearNoff
-texture "gear.png"
+texture "gear.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 121
@@ -7656,7 +7656,7 @@ name "gearNon"
 loc 0 0 -0
 data 7
 gearNon
-texture "gear.png"
+texture "gear.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 121
@@ -8604,7 +8604,7 @@ name "gearRoff"
 loc 0 0 -0
 data 8
 gearRoff
-texture "gear.png"
+texture "gear.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 121
@@ -9552,7 +9552,7 @@ name "gearRon"
 loc 0 0 -0
 data 7
 gearRon
-texture "gear.png"
+texture "gear.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 121
@@ -10500,7 +10500,7 @@ name "gearoff"
 loc 0 0 -0
 data 7
 gearoff
-texture "gear.png"
+texture "gear.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 121
@@ -11448,7 +11448,7 @@ name "gearon"
 loc 0 0 -0
 data 6
 gearon
-texture "gear.png"
+texture "gear.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 121
@@ -12396,7 +12396,7 @@ name "lever"
 loc 0 0 -0
 data 5
 lever
-texture "gear.png"
+texture "gear.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 98

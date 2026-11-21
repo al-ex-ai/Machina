@@ -5,7 +5,7 @@ kids 7
 OBJECT poly
 name "base"
 loc 4.92132e-05 -0.00136245 0.000702051
-texture "achs-2_1.png"
+texture "achs-2_1.webp"
 crease 100.000000
 numvert 4
 -1.59816e-08 -0.0404738 0.0378242
@@ -24,7 +24,7 @@ kids 0
 OBJECT poly
 name "hour_needle"
 loc 0.000434669 0.0105156 0.000481946
-texture "achs-2_2.png"
+texture "achs-2_2.webp"
 crease 100.000000
 numvert 4
 -9.83709e-09 -0.0134564 0.00242368
@@ -43,7 +43,7 @@ kids 0
 OBJECT poly
 name "min_needle"
 loc 0.000598827 0.0135573 0.000476145
-texture "achs-2_2.png"
+texture "achs-2_2.webp"
 crease 100.000000
 numvert 4
 1.16415e-08 -0.0168155 0.0024237
@@ -62,7 +62,7 @@ kids 0
 OBJECT poly
 name "sec_needle"
 loc 0.000782802 0.00851215 0.000460427
-texture "achs-2_2.png"
+texture "achs-2_2.webp"
 crease 100.000000
 numvert 4
 2.03727e-09 -0.020611 -0.00291943
@@ -81,7 +81,7 @@ kids 0
 OBJECT poly
 name "timer_hour_needle"
 loc 0.00031754 0.01884 0.00046363
-texture "achs-2_2.png"
+texture "achs-2_2.webp"
 crease 100.000000
 numvert 4
 -4.77303e-09 -0.0067282 -0.00121185
@@ -100,7 +100,7 @@ kids 0
 OBJECT poly
 name "timer_min_needle"
 loc 0.000399622 0.020685 0.000455208
-texture "achs-2_2.png"
+texture "achs-2_2.webp"
 crease 100.000000
 numvert 4
 1.62981e-09 -0.00840776 -0.00121185
@@ -119,7 +119,7 @@ kids 0
 OBJECT poly
 name "secundomer_needle"
 loc 0.00055365 -0.0112974 0.000436203
-texture "achs-2_2.png"
+texture "achs-2_2.webp"
 crease 100.000000
 numvert 4
 -4.48199e-09 -0.0067282 0.00121185

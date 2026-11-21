@@ -8,7 +8,7 @@ kids 32
 OBJECT poly
 name "AileronArrow"
 loc -18.1985931 0.6345830 -0.0621530
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1 1
 numvert 27
 -0.0140630 -0.0185830 0.0126360
@@ -183,7 +183,7 @@ kids 0
 OBJECT poly
 name "AileronScale"
 loc -18.2187843 0.6480500 -0.0549950
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1 1
 numvert 4
 -0.0030330 -0.0228700 -0.0414540
@@ -202,7 +202,7 @@ kids 0
 OBJECT poly
 name "AileronTab"
 loc -18.1658497 0.6430010 -0.1355300
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1 1
 numvert 128
 -0.0461060 -0.0555290 0.1256090
@@ -1190,7 +1190,7 @@ kids 0
 OBJECT poly
 name "BrkLever"
 loc -4.4248800 9.4743471 -0.0044220
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1 1
 numvert 204
 -14.2761126 -8.7279129 0.0767220
@@ -1972,7 +1972,7 @@ kids 0
 OBJECT poly
 name "cutoff.001"
 loc -19.2795506 -0.2460010 0.0000000
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1 1
 numvert 174
 0.7498000 0.9673210 0.0216610
@@ -2848,7 +2848,7 @@ kids 0
 OBJECT poly
 name "cutoff.002"
 loc -19.2795506 -0.2460010 0.0000000
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1 1
 numvert 174
 0.6961250 0.9440690 0.0090780
@@ -3724,7 +3724,7 @@ kids 0
 OBJECT poly
 name "cutoff.003"
 loc -19.2795506 -0.2460010 0.0000000
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1 1
 numvert 174
 0.6962430 0.9441210 -0.0117300
@@ -4600,7 +4600,7 @@ kids 0
 OBJECT poly
 name "cutoff.004"
 loc -19.2795506 -0.2460010 0.0000000
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1 1
 numvert 174
 0.7496810 0.9672690 -0.0239850
@@ -5476,7 +5476,7 @@ kids 0
 OBJECT poly
 name "ElevatorArrow"
 loc -18.4762516 0.7181740 0.0006220
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1 1
 numvert 8
 -0.1399500 -0.0068220 0.0888820
@@ -5506,7 +5506,7 @@ kids 0
 OBJECT poly
 name "ElevatorHelpL"
 loc -18.6087666 0.3310270 -0.1315230
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1 1
 numvert 66
 -0.0265250 0.3214430 0.2480010
@@ -6108,7 +6108,7 @@ kids 0
 OBJECT poly
 name "ElevatorHelpR"
 loc -18.6087666 0.3310270 -0.3783370
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1 1
 numvert 66
 -0.0265250 0.3214430 0.2480010
@@ -6710,7 +6710,7 @@ kids 0
 OBJECT poly
 name "ElevatorScale"
 loc -18.4762516 0.7181740 0.0006220
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1 1
 numvert 52
 -0.1037480 -0.0269440 0.0961850
@@ -6938,7 +6938,7 @@ kids 0
 OBJECT poly
 name "ElevatorStab"
 loc -18.2385883 1.0329390 0.4260300
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1 1
 numvert 8
 -0.3113828 -0.3802433 -0.4996124
@@ -6975,7 +6975,7 @@ kids 0
 OBJECT poly
 name "ElevatorStabArrow"
 loc -18.4762516 0.7181740 0.0006220
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1 1
 numvert 16
 -0.0790355 -0.0541743 -0.0824577
@@ -7083,7 +7083,7 @@ kids 0
 OBJECT poly
 name "ElevatorTab"
 loc -18.6355801 0.6460910 -0.1355300
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1 1
 numvert 512
 0.0004520 0.0845030 0.0335740
@@ -11459,7 +11459,7 @@ kids 0
 OBJECT poly
 name "FlapLever"
 loc -2.3515620 -3.1120610 0.0196010
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1 1
 numvert 740
 -16.2857380 3.8799720 -0.0940440
@@ -13823,7 +13823,7 @@ kids 0
 OBJECT poly
 name "FlapSBrakeSup"
 loc -18.2385883 1.0163440 0.4254970
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1 1
 numvert 76
 -0.3446620 -0.3137220 -0.4971240
@@ -14145,7 +14145,7 @@ kids 0
 OBJECT poly
 name "IdleSup"
 loc -18.2715874 1.0473230 0.4267150
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1 1
 numvert 14
 -0.3254090 -0.3248090 -0.4314410
@@ -14202,7 +14202,7 @@ kids 0
 OBJECT poly
 name "PBrakeLever"
 loc -18.5358448 0.6842770 0.0569000
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1 1
 numvert 128
 -0.0165600 0.0216700 0.0121600
@@ -15129,7 +15129,7 @@ kids 0
 OBJECT poly
 name "pedestal"
 loc -18.2385883 1.0329390 0.4260300
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1 1
 numvert 197
 -0.3523390 -0.3152820 -0.3585810
@@ -16655,7 +16655,7 @@ kids 0
 OBJECT poly
 name "reverser.001"
 loc -19.8050880 0.1951560 0.0060830
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1 1
 numvert 174
 1.1965450 0.5875320 0.0432740
@@ -17531,7 +17531,7 @@ kids 0
 OBJECT poly
 name "reverser.002"
 loc -19.8050880 0.1951560 0.0060830
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1 1
 numvert 174
 1.2016120 0.5768420 0.0106610
@@ -18407,7 +18407,7 @@ kids 0
 OBJECT poly
 name "reverser.003"
 loc -19.8050880 0.1951560 0.0060830
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1 1
 numvert 174
 1.1965450 0.5875320 -0.0094300
@@ -19283,7 +19283,7 @@ kids 0
 OBJECT poly
 name "reverser.004"
 loc -19.8050880 0.1951560 0.0060830
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1 1
 numvert 174
 1.2016120 0.5768420 -0.0434500
@@ -20159,7 +20159,7 @@ kids 0
 OBJECT poly
 name "RudderArrow"
 loc -18.3463898 0.6345830 0.0493620
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1 1
 numvert 22
 0.0162580 0.0077390 -0.0045880
@@ -20301,7 +20301,7 @@ kids 0
 OBJECT poly
 name "RudderScale"
 loc -18.2398701 1.0108830 0.4510300
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1 1
 numvert 34
 -0.0490470 -0.3591350 -0.3611720
@@ -20455,7 +20455,7 @@ kids 0
 OBJECT poly
 name "RudderSup"
 loc -18.2385883 1.0329390 0.4510300
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1 1
 numvert 128
 -0.0578420 -0.4079550 -0.3576160
@@ -21443,7 +21443,7 @@ kids 0
 OBJECT poly
 name "RudderTab"
 loc -18.3609447 0.6710910 -0.1105300
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1 1
 numvert 162
 0.1226980 -0.0144390 0.1676690
@@ -22553,7 +22553,7 @@ kids 0
 OBJECT poly
 name "throttle.001"
 loc -19.6468678 0.1951560 0.0060830
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1 1
 numvert 198
 1.0991440 0.5840550 0.0356090
@@ -23527,7 +23527,7 @@ kids 0
 OBJECT poly
 name "throttle.002"
 loc -19.6468678 0.1951560 0.0060830
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1 1
 numvert 198
 1.1325819 0.6016810 0.0186510
@@ -24501,7 +24501,7 @@ kids 0
 OBJECT poly
 name "throttle.003"
 loc -19.6468678 0.1951560 0.0060830
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1 1
 numvert 198
 1.0991440 0.5840550 -0.0174630
@@ -25475,7 +25475,7 @@ kids 0
 OBJECT poly
 name "throttle.004"
 loc -19.6468678 0.1951560 0.0060830
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1 1
 numvert 198
 1.1325819 0.6016810 -0.0350460

@@ -10,7 +10,7 @@ name "ARMRESTS"
 loc 0 0 0.003778
 data 8
 ARMRESTS
-texture "737-300-seat.png"
+texture "737-300-seat.webp"
 texrep 1.000000 1.000000
 crease 30.000000
 numvert 76
@@ -619,7 +619,7 @@ name "SEAT"
 loc 0 0 -0.011648
 data 4
 SEAT
-texture "737-300-seat.png"
+texture "737-300-seat.webp"
 texrep 1.000000 1.000000
 crease 30.000000
 numvert 108
@@ -1552,7 +1552,7 @@ name "TRAYTABLE"
 loc 0 0 -0.011648
 data 9
 TRAYTABLE
-texture "737-300-seat.png"
+texture "737-300-seat.webp"
 texrep 1.000000 1.000000
 crease 30.000000
 numvert 16

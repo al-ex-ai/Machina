@@ -8,7 +8,7 @@ OBJECT poly
 name "Chrono.knob"
 data 4
 Mesh
-texture "clock.png"
+texture "clock.webp"
 texrep 1 1
 crease 50.000000
 numvert 17
@@ -139,7 +139,7 @@ OBJECT poly
 name "Chronobezel.001"
 data 8
 Mesh.001
-texture "clock2.png"
+texture "clock2.webp"
 texrep 1 1
 crease 15.000000
 numvert 188
@@ -1641,7 +1641,7 @@ OBJECT poly
 name "Chronoface.001"
 data 8
 Mesh.002
-texture "clock.png"
+texture "clock.webp"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -1708,7 +1708,7 @@ OBJECT poly
 name "ET.01"
 data 8
 Mesh.003
-texture "clock.png"
+texture "clock.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -1729,7 +1729,7 @@ OBJECT poly
 name "ET.10"
 data 8
 Mesh.004
-texture "clock.png"
+texture "clock.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -1750,7 +1750,7 @@ OBJECT poly
 name "ET.switch"
 data 8
 Mesh.005
-texture "clock.png"
+texture "clock.webp"
 texrep 1 1
 crease 30.000000
 numvert 10
@@ -1831,7 +1831,7 @@ OBJECT poly
 name "ET01"
 data 8
 Mesh.006
-texture "clock.png"
+texture "clock.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -1852,7 +1852,7 @@ OBJECT poly
 name "ET10"
 data 8
 Mesh.007
-texture "clock.png"
+texture "clock.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -1873,7 +1873,7 @@ OBJECT poly
 name "Hr.01"
 data 8
 Mesh.008
-texture "clock.png"
+texture "clock.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -1894,7 +1894,7 @@ OBJECT poly
 name "Hr.10"
 data 8
 Mesh.009
-texture "clock.png"
+texture "clock.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -1915,7 +1915,7 @@ OBJECT poly
 name "Mn.10"
 data 8
 Mesh.011
-texture "clock.png"
+texture "clock.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -1936,7 +1936,7 @@ OBJECT poly
 name "Mn.01"
 data 8
 Mesh.010
-texture "clock.png"
+texture "clock.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -1957,7 +1957,7 @@ OBJECT poly
 name "Plane.027"
 data 8
 Mesh.012
-texture "clock.png"
+texture "clock.webp"
 texrep 1 1
 crease 30.000000
 numvert 36
@@ -2066,7 +2066,7 @@ OBJECT poly
 name "SET.switch"
 data 8
 Mesh.013
-texture "clock.png"
+texture "clock.webp"
 texrep 1 1
 crease 30.000000
 numvert 10
@@ -2147,7 +2147,7 @@ OBJECT poly
 name "UTC.switch.003"
 data 8
 Mesh.014
-texture "clock.png"
+texture "clock.webp"
 texrep 1 1
 crease 30.000000
 numvert 10
@@ -2228,7 +2228,7 @@ OBJECT poly
 name "colon"
 data 8
 Mesh.016
-texture "clock.png"
+texture "clock.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -2249,7 +2249,7 @@ OBJECT poly
 name "colon.002"
 data 8
 Mesh.015
-texture "clock.png"
+texture "clock.webp"
 texrep 1 1
 crease 30.000000
 numvert 4

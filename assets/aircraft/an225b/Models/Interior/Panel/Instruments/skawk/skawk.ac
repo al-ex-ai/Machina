@@ -6,7 +6,7 @@ name "Blender_export__skawk.ac"
 kids 7
 OBJECT poly
 name "base"
-texture "base.png"
+texture "base.webp"
 texrep 1 1
 numvert 4
 0.0006000 -0.0493920 -0.0756162
@@ -25,7 +25,7 @@ kids 0
 OBJECT poly
 name "handle_1"
 loc 0.0000000 0.0000000 0.0010000
-texture "handle.png"
+texture "handle.webp"
 texrep 1 1
 numvert 8
 0.0004610 -0.0401364 0.0495666
@@ -83,7 +83,7 @@ kids 0
 OBJECT poly
 name "handle_2"
 loc 0.0000000 0.0000000 0.0010000
-texture "handle.png"
+texture "handle.webp"
 texrep 1 1
 numvert 8
 0.0004610 -0.0454848 0.0126621
@@ -141,7 +141,7 @@ kids 0
 OBJECT poly
 name "handle_3"
 loc 0.0000000 0.0000000 0.0010000
-texture "handle.png"
+texture "handle.webp"
 texrep 1 1
 numvert 8
 0.0004610 -0.0172176 -0.0245097
@@ -199,7 +199,7 @@ kids 0
 OBJECT poly
 name "handle_4"
 loc 0.0000000 0.0000000 0.0010000
-texture "handle.png"
+texture "handle.webp"
 texrep 1 1
 numvert 8
 0.0004610 -0.0118692 -0.0614142
@@ -256,7 +256,7 @@ refs 4
 kids 0
 OBJECT poly
 name "handle_5"
-texture "handle.png"
+texture "handle.webp"
 texrep 1 1
 numvert 8
 0.0004610 0.0234504 -0.0063504
@@ -313,7 +313,7 @@ refs 4
 kids 0
 OBJECT poly
 name "text"
-texture "text.png"
+texture "text.webp"
 texrep 1 1
 numvert 4
 0.0007250 0.0347352 -0.0756162

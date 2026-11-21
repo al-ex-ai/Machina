@@ -17,7 +17,7 @@ OBJECT poly
 name "Plane.006"
 data 9
 Plane.015
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 49
@@ -437,7 +437,7 @@ OBJECT poly
 name "btn.alt"
 data 9
 Plane.051
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 25
@@ -628,7 +628,7 @@ OBJECT poly
 name "btn.althold"
 data 9
 Plane.040
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -681,7 +681,7 @@ OBJECT poly
 name "btn.ap.disengage"
 data 9
 Plane.080
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -734,7 +734,7 @@ OBJECT poly
 name "btn.app"
 data 9
 Plane.041
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -787,7 +787,7 @@ OBJECT poly
 name "btn.arpt.L"
 data 9
 Plane.012
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -840,7 +840,7 @@ OBJECT poly
 name "btn.arpt.R"
 data 9
 Plane.091
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -893,7 +893,7 @@ OBJECT poly
 name "btn.banklimit"
 data 9
 Plane.049
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 36
@@ -1107,7 +1107,7 @@ OBJECT poly
 name "btn.cmd.c"
 data 9
 Plane.081
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -1160,7 +1160,7 @@ OBJECT poly
 name "btn.cmd.l"
 data 9
 Plane.027
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -1213,7 +1213,7 @@ OBJECT poly
 name "btn.cmd.r"
 data 9
 Plane.082
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -1266,7 +1266,7 @@ OBJECT poly
 name "btn.data.L"
 data 9
 Plane.024
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -1319,7 +1319,7 @@ OBJECT poly
 name "btn.data.R"
 data 9
 Plane.092
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -1372,7 +1372,7 @@ OBJECT poly
 name "btn.eicas.drs"
 data 9
 Plane.071
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -1425,7 +1425,7 @@ OBJECT poly
 name "btn.eicas.ecs"
 data 9
 Plane.067
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -1478,7 +1478,7 @@ OBJECT poly
 name "btn.eicas.elec"
 data 9
 Plane.069
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -1531,7 +1531,7 @@ OBJECT poly
 name "btn.eicas.eng"
 data 9
 Plane.064
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -1584,7 +1584,7 @@ OBJECT poly
 name "btn.eicas.fuel"
 data 9
 Plane.068
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -1637,7 +1637,7 @@ OBJECT poly
 name "btn.eicas.gear"
 data 9
 Plane.072
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -1690,7 +1690,7 @@ OBJECT poly
 name "btn.eicas.hyd"
 data 9
 Plane.070
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -1743,7 +1743,7 @@ OBJECT poly
 name "btn.eicas.stat"
 data 9
 Plane.066
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -1796,7 +1796,7 @@ OBJECT poly
 name "btn.flch"
 data 9
 Plane.029
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -1849,7 +1849,7 @@ OBJECT poly
 name "btn.hdghold"
 data 9
 Plane.026
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -1902,7 +1902,7 @@ OBJECT poly
 name "btn.hdgsel"
 data 9
 Plane.050
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 25
@@ -2093,7 +2093,7 @@ OBJECT poly
 name "btn.hdgsel.001"
 data 9
 Plane.001
-texture "forward.png"
+texture "forward.webp"
 texrep 1 1
 crease 30.000000
 numvert 1775
@@ -15390,7 +15390,7 @@ OBJECT poly
 name "btn.hdgselector"
 data 9
 Plane.053
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 36
@@ -15604,7 +15604,7 @@ OBJECT poly
 name "btn.lnav"
 data 9
 Plane.032
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -15657,7 +15657,7 @@ OBJECT poly
 name "btn.loc"
 data 9
 Plane.042
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -15710,7 +15710,7 @@ OBJECT poly
 name "btn.nd.mode.L"
 data 9
 Plane.084
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 49
@@ -16093,7 +16093,7 @@ OBJECT poly
 name "btn.nd.mode.R"
 data 9
 Plane.017
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 49
@@ -16476,7 +16476,7 @@ OBJECT poly
 name "btn.nd.range.L"
 data 9
 Plane.085
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 49
@@ -16859,7 +16859,7 @@ OBJECT poly
 name "btn.nd.range.R"
 data 9
 Plane.019
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 49
@@ -17242,7 +17242,7 @@ OBJECT poly
 name "btn.pos.L"
 data 9
 Plane.018
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -17295,7 +17295,7 @@ OBJECT poly
 name "btn.pos.R"
 data 9
 Plane.093
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -17348,7 +17348,7 @@ OBJECT poly
 name "btn.spd"
 data 9
 Plane.030
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -17401,7 +17401,7 @@ OBJECT poly
 name "btn.spd.sel"
 data 9
 Plane.083
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 25
@@ -17592,7 +17592,7 @@ OBJECT poly
 name "btn.spd.sel.001"
 data 9
 Plane.016
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 1821
@@ -31593,7 +31593,7 @@ OBJECT poly
 name "btn.speed"
 data 9
 Plane.048
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 73
@@ -32168,7 +32168,7 @@ OBJECT poly
 name "btn.sta.L"
 data 9
 Plane.020
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -32221,7 +32221,7 @@ OBJECT poly
 name "btn.sta.R"
 data 9
 Plane.022
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -32274,7 +32274,7 @@ OBJECT poly
 name "btn.thr"
 data 9
 Plane.031
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -32327,7 +32327,7 @@ OBJECT poly
 name "btn.vnav"
 data 9
 Plane.028
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -32380,7 +32380,7 @@ OBJECT poly
 name "btn.vs"
 data 9
 Plane.039
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -32433,7 +32433,7 @@ OBJECT poly
 name "btn.vs.dn"
 data 9
 Plane.052
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 12
@@ -32531,7 +32531,7 @@ OBJECT poly
 name "btn.vs.up"
 data 9
 Plane.073
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 12
@@ -32629,7 +32629,7 @@ OBJECT poly
 name "btn.wpt.L"
 data 9
 Plane.008
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -32682,7 +32682,7 @@ OBJECT poly
 name "btn.wpt.R"
 data 9
 Plane.023
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -32735,7 +32735,7 @@ OBJECT poly
 name "btn.wxr.L"
 data 9
 Plane.006
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -32788,7 +32788,7 @@ OBJECT poly
 name "btn.wxr.R"
 data 9
 Plane.021
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -32841,7 +32841,7 @@ OBJECT poly
 name "cpt.panel.light"
 data 9
 Plane.011
-texture "forward-switches.png"
+texture "forward-switches.webp"
 texrep 1 1
 crease 30.000000
 numvert 73
@@ -33416,7 +33416,7 @@ OBJECT poly
 name "dis.alt.1"
 data 9
 Plane.088
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -33570,7 +33570,7 @@ OBJECT poly
 name "dis.alt.2"
 data 9
 Plane.089
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -33724,7 +33724,7 @@ OBJECT poly
 name "dis.alt.3"
 data 9
 Plane.090
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -33878,7 +33878,7 @@ OBJECT poly
 name "dis.hdg.1"
 data 9
 Plane.077
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -34032,7 +34032,7 @@ OBJECT poly
 name "dis.hdg.2"
 data 9
 Plane.078
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -34186,7 +34186,7 @@ OBJECT poly
 name "dis.hdg.3"
 data 9
 Plane.079
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -34340,7 +34340,7 @@ OBJECT poly
 name "dis.spd.1"
 data 9
 Plane.076
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -34494,7 +34494,7 @@ OBJECT poly
 name "dis.spd.2"
 data 9
 Plane.075
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -34648,7 +34648,7 @@ OBJECT poly
 name "dis.spd.3"
 data 9
 Plane.074
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -34802,7 +34802,7 @@ OBJECT poly
 name "dis.vertspd"
 data 9
 Plane.063
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 64
@@ -35128,7 +35128,7 @@ OBJECT poly
 name "dis.vertspd.1"
 data 9
 Plane.062
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -35282,7 +35282,7 @@ OBJECT poly
 name "dis.vertspd.2"
 data 9
 Plane.061
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -35436,7 +35436,7 @@ OBJECT poly
 name "dis.vertspd.3"
 data 9
 Plane.060
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -35590,7 +35590,7 @@ OBJECT poly
 name "dis.vertspd.4"
 data 9
 Plane.059
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -35744,7 +35744,7 @@ OBJECT poly
 name "dis.vertspd.5"
 data 9
 Plane.058
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -35898,7 +35898,7 @@ OBJECT poly
 name "gear.lever"
 data 9
 Plane.013
-texture "forward.png"
+texture "forward.webp"
 texrep 1 1
 crease 30.000000
 numvert 178
@@ -37286,7 +37286,7 @@ OBJECT poly
 name "lettering"
 data 9
 Plane.010
-texture "lettering.png"
+texture "lettering.webp"
 texrep 1 1
 crease 30.000000
 numvert 28
@@ -37373,7 +37373,7 @@ OBJECT poly
 name "lettering.001"
 data 9
 Plane.025
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 132
@@ -39715,7 +39715,7 @@ OBJECT poly
 name "lt.althold"
 data 9
 Plane.044
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -39736,7 +39736,7 @@ OBJECT poly
 name "lt.app"
 data 9
 Plane.045
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -39757,7 +39757,7 @@ OBJECT poly
 name "lt.flch"
 data 9
 Plane.033
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -39778,7 +39778,7 @@ OBJECT poly
 name "lt.hdghold"
 data 9
 Plane.034
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -39799,7 +39799,7 @@ OBJECT poly
 name "lt.lnav"
 data 9
 Plane.036
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -39820,7 +39820,7 @@ OBJECT poly
 name "lt.loc"
 data 9
 Plane.046
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -39841,7 +39841,7 @@ OBJECT poly
 name "lt.spd"
 data 9
 Plane.038
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -39862,7 +39862,7 @@ OBJECT poly
 name "lt.thr"
 data 9
 Plane.037
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -39883,7 +39883,7 @@ OBJECT poly
 name "lt.vnav"
 data 9
 Plane.035
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -39904,7 +39904,7 @@ OBJECT poly
 name "lt.vs"
 data 9
 Plane.043
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -39999,7 +39999,7 @@ OBJECT poly
 name "stby.ai.knob"
 data 9
 Plane.014
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 25
@@ -40190,7 +40190,7 @@ OBJECT poly
 name "stby.alt.knob"
 data 9
 Plane.009
-texture "glareshield2.png"
+texture "glareshield2.webp"
 texrep 1 1
 crease 30.000000
 numvert 25

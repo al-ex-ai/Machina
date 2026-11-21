@@ -8,7 +8,7 @@ name "LeftSelector"
 loc -0.013096 0.009644 -0.225579
 data 12
 LeftSelector
-texture "wiper.png"
+texture "wiper.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 136
@@ -785,7 +785,7 @@ name "Plate"
 loc 0.080639 0.003954 -0
 data 5
 Plate
-texture "wiper.png"
+texture "wiper.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 14
@@ -870,7 +870,7 @@ name "RightSelector"
 loc -0.013096 0.009644 -0.272861
 data 13
 RightSelector
-texture "wiper.png"
+texture "wiper.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 136

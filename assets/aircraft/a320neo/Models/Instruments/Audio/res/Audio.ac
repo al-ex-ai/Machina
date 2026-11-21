@@ -10,7 +10,7 @@ name "audio_adf1"
 data 14
 CU1_curve_.056
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 168
 -0.09293 -0.1244 0.14469
@@ -1598,7 +1598,7 @@ name "audio_adf2"
 data 14
 CU1_curve_.055
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 168
 -0.09293 -0.1244 0.12819
@@ -3186,7 +3186,7 @@ name "audio_att"
 data 14
 CU1_curve_.013
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 12
 -0.15321 -0.10404 0.1266
@@ -3271,7 +3271,7 @@ name "audio_att_led"
 data 14
 CU1_curve_.226
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 4
 -0.15325 -0.10201 0.1242
@@ -3292,7 +3292,7 @@ name "audio_att_sgn"
 data 15
 CU1_curve_.1222
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 4
 -0.14364 -0.1036 0.1242
@@ -3313,7 +3313,7 @@ name "audio_body"
 data 15
 audio_body.mesh
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 3132
 -0.09236 -0.12093 0.11193
@@ -24852,7 +24852,7 @@ name "audio_cab"
 data 14
 CU1_curve_.052
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 168
 -0.13239 -0.11787 0.12819
@@ -26440,7 +26440,7 @@ name "audio_call_hf1"
 data 14
 CU1_curve_.016
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 12
 -0.14434 -0.10551 0.1891
@@ -26525,7 +26525,7 @@ name "audio_call_hf1_led"
 data 15
 CU1_curve_.1219
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 4
 -0.14364 -0.1036 0.19105
@@ -26546,7 +26546,7 @@ name "audio_call_hf2"
 data 14
 CU1_curve_.017
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 12
 -0.14434 -0.10551 0.1596
@@ -26631,7 +26631,7 @@ name "audio_call_hf2_led"
 data 15
 CU1_curve_.1220
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 4
 -0.14845 -0.1028 0.17436
@@ -26652,7 +26652,7 @@ name "audio_call_vhf1"
 data 14
 CU1_curve_.012
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 12
 -0.14434 -0.10551 0.2256
@@ -26737,7 +26737,7 @@ name "audio_call_vhf1_led"
 data 14
 CU1_curve_.002
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 4
 -0.14364 -0.1036 0.24121
@@ -26758,7 +26758,7 @@ name "audio_call_vhf2"
 data 14
 CU1_curve_.014
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 12
 -0.15321 -0.10404 0.2091
@@ -26843,7 +26843,7 @@ name "audio_call_vhf2_led"
 data 14
 CU1_curve_.018
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 4
 -0.14364 -0.1036 0.22445
@@ -26864,7 +26864,7 @@ name "audio_call_vhf3"
 data 14
 CU1_curve_.015
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 12
 -0.15321 -0.10404 0.1926
@@ -26949,7 +26949,7 @@ name "audio_call_vhf3_led"
 data 14
 CU1_curve_.019
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 4
 -0.14364 -0.1036 0.20779
@@ -26970,7 +26970,7 @@ name "audio_glare"
 data 16
 audio_glare.mesh
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 27
 -0.09689 -0.11208 0.24121
@@ -27057,7 +27057,7 @@ name "audio_adf1_glare"
 data 14
 CU1_curve_.237
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 24
 -0.08915 -0.10159 0.14471
@@ -27118,7 +27118,7 @@ name "audio_adf2_glare"
 data 14
 CU1_curve_.236
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 24
 -0.08915 -0.10159 0.12821
@@ -27179,7 +27179,7 @@ name "audio_cab_glare"
 data 14
 CU1_curve_.234
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 24
 -0.12862 -0.09506 0.12821
@@ -27240,7 +27240,7 @@ name "audio_hf1_glare"
 data 14
 CU1_curve_.231
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 24
 -0.12862 -0.09506 0.17771
@@ -27301,7 +27301,7 @@ name "audio_hf2_glare"
 data 14
 CU1_curve_.232
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 24
 -0.12862 -0.09506 0.16121
@@ -27362,7 +27362,7 @@ name "audio_ils_glare"
 data 14
 CU1_curve_.239
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 24
 -0.08915 -0.10159 0.17771
@@ -27423,7 +27423,7 @@ name "audio_int_glare"
 data 14
 CU1_curve_.233
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 24
 -0.12862 -0.09506 0.14471
@@ -27484,7 +27484,7 @@ name "audio_mkr_glare"
 data 14
 CU1_curve_.240
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 24
 -0.08915 -0.10159 0.19421
@@ -27545,7 +27545,7 @@ name "audio_mls_glare"
 data 14
 CU1_curve_.238
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 24
 -0.08915 -0.10159 0.16121
@@ -27606,7 +27606,7 @@ name "audio_pa_glare"
 data 14
 CU1_curve_.235
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 24
 -0.11107 -0.09796 0.15296
@@ -27667,7 +27667,7 @@ name "audio_vhf1_glare"
 data 14
 CU1_curve_.228
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 24
 -0.12862 -0.09506 0.22721
@@ -27728,7 +27728,7 @@ name "audio_vhf2_glare"
 data 14
 CU1_curve_.229
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 24
 -0.12862 -0.09506 0.21071
@@ -27789,7 +27789,7 @@ name "audio_vhf3_glare"
 data 14
 CU1_curve_.230
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 24
 -0.12862 -0.09506 0.19421
@@ -27850,7 +27850,7 @@ name "audio_vor1_glare"
 data 14
 CU1_curve_.242
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 24
 -0.08915 -0.10159 0.22721
@@ -27911,7 +27911,7 @@ name "audio_vor2_glare"
 data 14
 CU1_curve_.241
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 24
 -0.08915 -0.10159 0.21071
@@ -27972,7 +27972,7 @@ name "audio_hf1"
 data 14
 CU1_curve_.049
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 168
 -0.13239 -0.11787 0.17769
@@ -29560,7 +29560,7 @@ name "audio_hf1_led"
 data 14
 CU1_curve_.222
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 4
 -0.15325 -0.10201 0.19106
@@ -29581,7 +29581,7 @@ name "audio_hf2"
 data 14
 CU1_curve_.050
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 168
 -0.13239 -0.11787 0.16119
@@ -31169,7 +31169,7 @@ name "audio_hf2_led"
 data 14
 CU1_curve_.223
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 4
 -0.15325 -0.10201 0.17434
@@ -31190,7 +31190,7 @@ name "audio_ils"
 data 14
 CU1_curve_.058
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 168
 -0.09293 -0.1244 0.17769
@@ -32778,7 +32778,7 @@ name "audio_int"
 data 14
 CU1_curve_.051
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 168
 -0.13239 -0.11787 0.14469
@@ -34366,7 +34366,7 @@ name "audio_int_rad"
 data 14
 CU1_curve_.063
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 60
 -0.11398 -0.10968 0.22489
@@ -34754,7 +34754,7 @@ name "audio_int_rad.mark"
 data 15
 CU1_curve_.1203
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 20
 -0.11215 -0.09724 0.22512
@@ -34807,7 +34807,7 @@ name "audio_mech"
 data 14
 CU1_curve_.020
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 12
 -0.15321 -0.10404 0.1431
@@ -34892,7 +34892,7 @@ name "audio_mech_led"
 data 14
 CU1_curve_.225
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 4
 -0.15325 -0.10201 0.15763
@@ -34913,7 +34913,7 @@ name "audio_mech_sgn"
 data 15
 CU1_curve_.1221
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 4
 -0.14364 -0.1036 0.15763
@@ -34934,7 +34934,7 @@ name "audio_mkr"
 data 14
 CU1_curve_.059
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 168
 -0.09293 -0.1244 0.19419
@@ -36522,7 +36522,7 @@ name "audio_mls"
 data 14
 CU1_curve_.057
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 168
 -0.09293 -0.1244 0.16119
@@ -38110,7 +38110,7 @@ name "audio_pa"
 data 14
 CU1_curve_.045
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 12
 -0.11761 -0.10994 0.1266
@@ -38195,7 +38195,7 @@ name "audio_pa_led"
 data 14
 CU1_curve_.227
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 4
 -0.11737 -0.10795 0.14071
@@ -38216,7 +38216,7 @@ name "audio_pa_rot"
 data 14
 CU1_curve_.053
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 168
 -0.11484 -0.12077 0.15294
@@ -39804,7 +39804,7 @@ name "audio_reset"
 data 14
 CU1_curve_.044
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 12
 -0.10873 -0.11141 0.1761
@@ -39889,7 +39889,7 @@ name "audio_vhf1"
 data 14
 CU1_curve_.046
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 168
 -0.13239 -0.11787 0.22719
@@ -41477,7 +41477,7 @@ name "audio_vhf1_led"
 data 14
 CU1_curve_.219
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 4
 -0.15325 -0.10201 0.22449
@@ -41498,7 +41498,7 @@ name "audio_vhf2"
 data 14
 CU1_curve_.047
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 168
 -0.13239 -0.11787 0.21069
@@ -43086,7 +43086,7 @@ name "audio_vhf2_led"
 data 14
 CU1_curve_.220
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 4
 -0.15325 -0.10201 0.20778
@@ -43107,7 +43107,7 @@ name "audio_vhf3"
 data 14
 CU1_curve_.048
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 168
 -0.13239 -0.11787 0.19419
@@ -44695,7 +44695,7 @@ name "audio_vhf3_led"
 data 14
 CU1_curve_.221
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 4
 -0.15325 -0.10201 0.20778
@@ -44716,7 +44716,7 @@ name "audio_voice"
 data 14
 CU1_curve_.021
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 12
 -0.11761 -0.10994 0.1926
@@ -44801,7 +44801,7 @@ name "audio_voice_led"
 data 14
 CU1_curve_.224
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 4
 -0.11737 -0.10795 0.20748
@@ -44822,7 +44822,7 @@ name "audio_vor1"
 data 14
 CU1_curve_.061
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 168
 -0.09293 -0.1244 0.22719
@@ -46410,7 +46410,7 @@ name "audio_vor2"
 data 14
 CU1_curve_.060
 crease 40.0
-texture "Audio.png"
+texture "Audio.webp"
 texrep 1 1
 numvert 168
 -0.09293 -0.1244 0.21069

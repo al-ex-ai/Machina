@@ -7,7 +7,7 @@ name "TopConsole"
 loc 23.184174 -0.956762 -0.893791
 data 10
 TopConsole
-texture "concorde-flight-deck.png"
+texture "concorde-flight-deck.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8

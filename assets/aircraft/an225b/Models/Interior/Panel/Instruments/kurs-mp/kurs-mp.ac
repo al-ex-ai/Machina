@@ -12,7 +12,7 @@ OBJECT poly
 name "dig_f_hi"
 data 8
 Mesh.008
-texture "digit_1.png"
+texture "digit_1.webp"
 texrep 1 1
 crease 80.000000
 numvert 34
@@ -708,7 +708,7 @@ OBJECT poly
 name "dig_h_dec"
 data 8
 Mesh.010
-texture "digit.png"
+texture "digit.webp"
 texrep 1 1
 crease 80.000000
 numvert 34
@@ -1056,7 +1056,7 @@ OBJECT poly
 name "dig_h_hund"
 data 8
 Mesh.011
-texture "digit.png"
+texture "digit.webp"
 texrep 1 1
 crease 80.000000
 numvert 34
@@ -1404,7 +1404,7 @@ OBJECT poly
 name "dig_h_ones"
 data 8
 Mesh.009
-texture "digit.png"
+texture "digit.webp"
 texrep 1 1
 crease 80.000000
 numvert 34
@@ -1752,7 +1752,7 @@ OBJECT poly
 name "base_1"
 data 4
 Mesh
-texture "base_1.png"
+texture "base_1.webp"
 texrep 1 1
 crease 80.000000
 numvert 4
@@ -1773,7 +1773,7 @@ OBJECT poly
 name "base_2"
 data 8
 Mesh.001
-texture "base_2.png"
+texture "base_2.webp"
 texrep 1 1
 crease 80.000000
 numvert 4
@@ -1794,7 +1794,7 @@ OBJECT poly
 name "handle"
 data 8
 Mesh.005
-texture "base_2.png"
+texture "base_2.webp"
 texrep 1 1
 crease 80.000000
 numvert 17
@@ -2278,7 +2278,7 @@ OBJECT poly
 name "mhz"
 data 8
 Mesh.004
-texture "mgz.png"
+texture "mgz.webp"
 texrep 1 1
 crease 80.000000
 numvert 4
@@ -2299,7 +2299,7 @@ OBJECT poly
 name "na"
 data 8
 Mesh.002
-texture "na.png"
+texture "na.webp"
 texrep 1 1
 crease 80.000000
 numvert 4
@@ -2320,7 +2320,7 @@ OBJECT poly
 name "ot"
 data 8
 Mesh.003
-texture "ot.png"
+texture "ot.webp"
 texrep 1 1
 crease 80.000000
 numvert 4

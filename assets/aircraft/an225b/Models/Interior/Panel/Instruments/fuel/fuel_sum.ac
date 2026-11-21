@@ -5,7 +5,7 @@ kids 5
 OBJECT group
 name "fuel_s"
 loc 0.0075 -1.86265e-009 0
-texture "fon5.png"
+texture "fon5.webp"
 numvert 180
 -0.005 0.004047 0.039795
 -0.005 0.011975 0.038166
@@ -2154,7 +2154,7 @@ kids 0
 OBJECT poly
 name "s2"
 loc -0.00272302 -0.0300219 0.0301628
-texture "fon1_knob.png"
+texture "fon1_knob.webp"
 crease 45.000000
 numvert 26
 0.00485149 0.00238164 0.0042779
@@ -2454,7 +2454,7 @@ kids 0
 OBJECT poly
 name "s1"
 loc -0.00272302 -0.0300219 -0.0301628
-texture "fon1_knob.png"
+texture "fon1_knob.webp"
 crease 45.000000
 numvert 26
 -0.00485149 0 0

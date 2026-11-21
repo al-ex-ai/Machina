@@ -8,7 +8,7 @@ name "AI"
 loc 0 0 -0
 data 2
 AI
-texture "ai2.png"
+texture "ai2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 158
@@ -1161,7 +1161,7 @@ name "AI.face"
 loc 0 0 -0
 data 7
 AI.face
-texture "ai2.png"
+texture "ai2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 45
@@ -1443,7 +1443,7 @@ name "AI.fond"
 loc 0 0 -0
 data 7
 AI.fond
-texture "ai2.png"
+texture "ai2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 70
@@ -1776,7 +1776,7 @@ name "AI.fond2"
 loc 0 0 -0
 data 8
 AI.fond2
-texture "ai2.png"
+texture "ai2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 32
@@ -1920,7 +1920,7 @@ name "AI.gsneedle"
 loc 0 0 -0
 data 11
 AI.gsneedle
-texture "ai2.png"
+texture "ai2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -1942,7 +1942,7 @@ name "AI.ring"
 loc 0 0 -0
 data 7
 AI.ring
-texture "ai2.png"
+texture "ai2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 78
@@ -2297,7 +2297,7 @@ name "AI.slipball"
 loc 0.005092 0 -0
 data 11
 AI.slipball
-texture "ai2.png"
+texture "ai2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 17
@@ -2421,7 +2421,7 @@ name "AIball"
 loc -0.027631 0.000066 -0.000034
 data 6
 AIball
-texture "ai2.png"
+texture "ai2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 646
@@ -7334,7 +7334,7 @@ name "LOC.needle"
 loc 0 0 -0
 data 10
 LOC.needle
-texture "ai2.png"
+texture "ai2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8
@@ -7374,7 +7374,7 @@ name "aircraft"
 loc 0 0 -0
 data 8
 aircraft
-texture "ai2.png"
+texture "ai2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 30
@@ -7574,7 +7574,7 @@ name "aoa.needle"
 loc 0 0 -0
 data 10
 aoa.needle
-texture "ai2.png"
+texture "ai2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 32
@@ -7729,7 +7729,7 @@ name "button"
 loc 0.002018 0 -0
 data 6
 button
-texture "ai2.png"
+texture "ai2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 33
@@ -7981,7 +7981,7 @@ name "gradation"
 loc 0 0 -0
 data 9
 gradation
-texture "ai2.png"
+texture "ai2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 44
@@ -8113,7 +8113,7 @@ name "gs.flag"
 loc 0 0 -0
 data 7
 gs.flag
-texture "ai2.png"
+texture "ai2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -8135,7 +8135,7 @@ name "loc.flag"
 loc 0 0 -0
 data 8
 loc.flag
-texture "ai2.png"
+texture "ai2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -8157,7 +8157,7 @@ name "turn.needle"
 loc 0 0 -0
 data 11
 turn.needle
-texture "ai2.png"
+texture "ai2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6

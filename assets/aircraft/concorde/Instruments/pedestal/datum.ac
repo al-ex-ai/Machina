@@ -8,7 +8,7 @@ name "Altitude"
 loc 0.056045 0.003235 -0.06396
 data 8
 Altitude
-texture "datum.png"
+texture "datum.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 101
@@ -764,7 +764,7 @@ name "AltitudeCursor"
 loc 0.050956 0.011482 -0.063749
 data 14
 AltitudeCursor
-texture "datum.png"
+texture "datum.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 32
@@ -983,7 +983,7 @@ name "BankCursor"
 loc -0.021308 0.028313 0.256025
 data 10
 BankCursor
-texture "datum.png"
+texture "datum.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 268
@@ -2636,7 +2636,7 @@ name "Plate"
 loc 0.019343 0.003954 -0
 data 5
 Plate
-texture "datum.png"
+texture "datum.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8
@@ -2690,7 +2690,7 @@ name "Speed"
 loc 0.056045 0.003235 0.030937
 data 5
 Speed
-texture "datum.png"
+texture "datum.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 101
@@ -3446,7 +3446,7 @@ name "SpeedCursor"
 loc 0.099697 0.008331 -0.010521
 data 11
 SpeedCursor
-texture "datum.png"
+texture "datum.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 104

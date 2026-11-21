@@ -224,7 +224,7 @@ name "ReheatSelector1"
 loc 23.291973 -0.821445 -0.000272
 data 15
 ReheatSelector1
-texture "concorde-trim2.png"
+texture "concorde-trim2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 94
@@ -1153,7 +1153,7 @@ name "ReheatSelector2"
 loc 23.291973 -0.821445 -0.000272
 data 15
 ReheatSelector2
-texture "concorde-trim2.png"
+texture "concorde-trim2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 94
@@ -2082,7 +2082,7 @@ name "ReheatSelector3"
 loc 23.291973 -0.821445 -0.000272
 data 15
 ReheatSelector3
-texture "concorde-trim2.png"
+texture "concorde-trim2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 94
@@ -3011,7 +3011,7 @@ name "ReheatSelector4"
 loc 23.291973 -0.821445 -0.000272
 data 15
 ReheatSelector4
-texture "concorde-trim2.png"
+texture "concorde-trim2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 94
@@ -3940,7 +3940,7 @@ name "Reverse1"
 loc 23.291973 -0.821445 -0.000272
 data 8
 Reverse1
-texture "concorde-trim2.png"
+texture "concorde-trim2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 210
@@ -5763,7 +5763,7 @@ name "Reverse2"
 loc 23.291973 -0.821445 -0.000272
 data 8
 Reverse2
-texture "concorde-trim2.png"
+texture "concorde-trim2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 210
@@ -7586,7 +7586,7 @@ name "Reverse3"
 loc 23.291973 -0.821445 -0.000272
 data 8
 Reverse3
-texture "concorde-trim2.png"
+texture "concorde-trim2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 210
@@ -9409,7 +9409,7 @@ name "Reverse4"
 loc 23.291973 -0.821445 -0.000272
 data 8
 Reverse4
-texture "concorde-trim2.png"
+texture "concorde-trim2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 210
@@ -11232,7 +11232,7 @@ name "Throttle1"
 loc 23.291973 -0.821445 -0.000272
 data 9
 Throttle1
-texture "concorde-trim2.png"
+texture "concorde-trim2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 619
@@ -16348,7 +16348,7 @@ name "Throttle2"
 loc 23.291973 -0.821445 -0.000272
 data 9
 Throttle2
-texture "concorde-trim2.png"
+texture "concorde-trim2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 424
@@ -20021,7 +20021,7 @@ name "Throttle3"
 loc 23.291973 -0.821445 -0.000272
 data 9
 Throttle3
-texture "concorde-trim2.png"
+texture "concorde-trim2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 424
@@ -23694,7 +23694,7 @@ name "Throttle4"
 loc 23.291973 -0.821445 -0.000272
 data 9
 Throttle4
-texture "concorde-trim2.png"
+texture "concorde-trim2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 619
@@ -28810,7 +28810,7 @@ name "ThrottleBase"
 loc 23.291973 -0.821445 -0.000272
 data 12
 ThrottleBase
-texture "concorde-trim2.png"
+texture "concorde-trim2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 32
@@ -29070,7 +29070,7 @@ name "ThrottleIndexLeft"
 loc 23.291973 -0.821445 -0.000272
 data 17
 ThrottleIndexLeft
-texture "concorde-trim2.png"
+texture "concorde-trim2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 16
@@ -29181,7 +29181,7 @@ name "ThrottleIndexRight"
 loc 23.291973 -0.821445 -0.000272
 data 18
 ThrottleIndexRight
-texture "concorde-trim2.png"
+texture "concorde-trim2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 16

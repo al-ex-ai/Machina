@@ -8,7 +8,7 @@ name "Tiller"
 loc -0.412207 -1.374048 0.629346
 data 6
 Tiller
-texture "tiller.png"
+texture "tiller.webp"
 texrep 1 1
 crease 30.000001
 numvert 434
@@ -3129,7 +3129,7 @@ name "shadow"
 loc 0.013528 0.008199 -0.012002
 data 6
 shadow
-texture "tiller-shadow.png"
+texture "tiller-shadow.webp"
 texrep 1 1
 numvert 9
 0.132671 -0.072456 -0.058262

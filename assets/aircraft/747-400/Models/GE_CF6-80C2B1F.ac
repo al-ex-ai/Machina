@@ -1566,7 +1566,7 @@ OBJECT poly
 name "Blades"
 data 8
 Mesh.002
-texture "747-400_engine.png"
+texture "747-400_engine.webp"
 texrep 1 1
 crease 30.000000
 numvert 305
@@ -2679,7 +2679,7 @@ OBJECT poly
 name "Cone"
 data 8
 Mesh.005
-texture "747-400_engine.png"
+texture "747-400_engine.webp"
 texrep 1 1
 crease 30.000000
 numvert 66
@@ -7965,7 +7965,7 @@ OBJECT poly
 name "engine_nozzle"
 data 12
 Cylinder.003
-texture "747-400_engine.png"
+texture "747-400_engine.webp"
 texrep 1 1
 crease 30.000000
 numvert 160
