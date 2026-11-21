@@ -2,11 +2,17 @@
   "id": "a380-800",
   "name": "Airbus A380-800",
   "category": "aviation",
-  "group": "Airliners",
+  "class": "airliners",
   "builder": "asset",
   "summary": "The largest passenger airliner ever built, a full-length double-deck quadjet. Production ended in 2021.",
   "specs": {
     "manufacturer": "Airbus",
+    "country": [
+      "France",
+      "Germany",
+      "United Kingdom",
+      "Spain"
+    ],
     "role": "Wide-body double-deck airliner",
     "first_flight": 2005,
     "length_m": 72.72,

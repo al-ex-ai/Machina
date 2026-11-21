@@ -2,11 +2,14 @@
   "id": "dhc6",
   "name": "de Havilland Canada DHC-6 Twin Otter",
   "category": "aviation",
-  "group": "Light aircraft",
+  "class": "light",
   "builder": "asset",
   "summary": "Rugged 19-seat utility turboprop with a high strut-braced wing and fixed gear, built for short, rough strips from the Arctic to the tropics.",
   "specs": {
     "manufacturer": "de Havilland Canada",
+    "country": [
+      "Canada"
+    ],
     "role": "STOL utility aircraft",
     "first_flight": 1965,
     "length_m": 15.77,

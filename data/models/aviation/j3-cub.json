@@ -2,11 +2,14 @@
   "id": "j3-cub",
   "name": "Piper J-3 Cub",
   "category": "aviation",
-  "group": "Light aircraft",
+  "class": "light",
   "builder": "asset",
   "summary": "Tandem two-seat tailwheel trainer from 1938, the aircraft that taught a generation to fly. Fabric over a steel-tube frame.",
   "specs": {
     "manufacturer": "Piper Aircraft",
+    "country": [
+      "United States"
+    ],
     "role": "Trainer and light utility",
     "first_flight": 1938,
     "length_m": 6.83,

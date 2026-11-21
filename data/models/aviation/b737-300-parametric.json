@@ -2,11 +2,14 @@
   "id": "b737-300-parametric",
   "name": "Boeing 737-300 (parametric)",
   "category": "aviation",
-  "group": "Prototype",
+  "class": "airliners",
   "builder": "parametric",
   "summary": "Built by Machina from published dimensions, not from a downloaded mesh: the fuselage is lofted through measured cross-sections and the wings are NACA airfoils on the true planform. Prototype of the parametric builder.",
   "specs": {
     "manufacturer": "Boeing",
+    "country": [
+      "United States"
+    ],
     "role": "Narrow-body airliner",
     "first_flight": 1984,
     "length_m": 33.4,

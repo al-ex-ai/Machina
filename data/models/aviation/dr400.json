@@ -2,11 +2,14 @@
   "id": "dr400",
   "name": "Robin DR400/180 Régent",
   "category": "aviation",
-  "group": "Light aircraft",
+  "class": "light",
   "builder": "asset",
   "summary": "French four-seat tourer with the cranked \"Jodel\" wing and a sliding bubble canopy, built in wood and fabric.",
   "specs": {
     "manufacturer": "Robin Aircraft",
+    "country": [
+      "France"
+    ],
     "role": "Light touring aircraft",
     "first_flight": 1972,
     "length_m": 6.96,

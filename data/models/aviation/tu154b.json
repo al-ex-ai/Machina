@@ -2,11 +2,14 @@
   "id": "tu154b",
   "name": "Tupolev Tu-154B-2",
   "category": "aviation",
-  "group": "Airliners",
+  "class": "airliners",
   "builder": "asset",
   "summary": "The trijet that carried most of the Soviet Union's passengers: three rear engines, a T-tail and main gear that folds into pods behind the wing.",
   "specs": {
     "manufacturer": "Tupolev",
+    "country": [
+      "Soviet Union"
+    ],
     "role": "Medium-range airliner",
     "first_flight": 1968,
     "length_m": 47.9,

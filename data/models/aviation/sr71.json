@@ -2,11 +2,14 @@
   "id": "sr71",
   "name": "Lockheed SR-71 Blackbird",
   "category": "aviation",
-  "group": "Historic",
+  "class": "military",
   "builder": "asset",
   "summary": "The fastest air-breathing crewed aircraft: Mach 3.3 reconnaissance at 85,000 ft, a titanium body with chines, two J58 engines with spiked inlets.",
   "specs": {
     "manufacturer": "Lockheed",
+    "country": [
+      "United States"
+    ],
     "role": "Strategic reconnaissance",
     "first_flight": 1964,
     "length_m": 32.74,

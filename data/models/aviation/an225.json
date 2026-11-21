@@ -2,11 +2,14 @@
   "id": "an225",
   "name": "Antonov An-225 Mriya",
   "category": "aviation",
-  "group": "Historic",
+  "class": "freighters",
   "builder": "asset",
   "summary": "The largest aircraft ever flown: six engines under a high wing, a twin tail and 32 wheels. The only one built was destroyed in 2022.",
   "specs": {
     "manufacturer": "Antonov",
+    "country": [
+      "Soviet Union"
+    ],
     "role": "Strategic airlifter",
     "first_flight": 1988,
     "length_m": 84,

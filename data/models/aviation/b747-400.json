@@ -2,11 +2,14 @@
   "id": "b747-400",
   "name": "Boeing 747-400",
   "category": "aviation",
-  "group": "Airliners",
+  "class": "airliners",
   "builder": "asset",
   "summary": "The best-selling 747: a two-crew glass cockpit, winglets and a stretched upper deck. It carried most of the world’s long-haul traffic for two decades.",
   "specs": {
     "manufacturer": "Boeing",
+    "country": [
+      "United States"
+    ],
     "role": "Wide-body airliner",
     "first_flight": 1988,
     "length_m": 70.66,

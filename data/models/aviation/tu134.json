@@ -2,11 +2,14 @@
   "id": "tu134",
   "name": "Tupolev Tu-134A",
   "category": "aviation",
-  "group": "Airliners",
+  "class": "airliners",
   "builder": "asset",
   "summary": "Soviet twin-jet with its engines on the rear fuselage, a T-tail and a glazed navigator's nose, built from 1966 for short and medium routes.",
   "specs": {
     "manufacturer": "Tupolev",
+    "country": [
+      "Soviet Union"
+    ],
     "role": "Short and medium-range airliner",
     "first_flight": 1963,
     "length_m": 37.1,

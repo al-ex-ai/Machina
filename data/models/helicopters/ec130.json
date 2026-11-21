@@ -2,11 +2,14 @@
   "id": "ec130",
   "name": "Eurocopter EC130 B4",
   "category": "helicopters",
-  "group": "Helicopters",
+  "class": "light",
   "builder": "asset",
   "summary": "Single-engine light helicopter with a wide cabin and a Fenestron tail, a favorite for sightseeing tours thanks to its quiet tail and big windows.",
   "specs": {
     "manufacturer": "Eurocopter, now Airbus Helicopters",
+    "country": [
+      "France"
+    ],
     "role": "Light utility helicopter",
     "first_flight": 1999,
     "length_m": 12.64,

@@ -2,11 +2,14 @@
   "id": "b707",
   "name": "Boeing 707-320B",
   "category": "aviation",
-  "group": "Airliners",
+  "class": "airliners",
   "builder": "asset",
   "summary": "The airliner that opened the jet age for most of the world: four engines on pylons under a 35-degree swept wing.",
   "specs": {
     "manufacturer": "Boeing",
+    "country": [
+      "United States"
+    ],
     "role": "Narrow-body airliner",
     "first_flight": 1957,
     "length_m": 46.61,

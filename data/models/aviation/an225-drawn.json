@@ -2,11 +2,15 @@
   "id": "an225-drawn",
   "name": "Antonov An-225 Mriya",
   "category": "aviation",
+  "class": "freighters",
   "builder": "parametric",
   "specs": {
     "length_m": 84,
     "wingspan_m": 88.4,
-    "height_m": 18.1
+    "height_m": 18.1,
+    "country": [
+      "Soviet Union"
+    ]
   },
   "note": "Built from a three-view drawing: outside only, no cockpit or cabin interior.",
   "livery": {

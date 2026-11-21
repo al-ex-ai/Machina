@@ -2,11 +2,14 @@
   "id": "tu144d",
   "name": "Tupolev Tu-144D",
   "category": "aviation",
-  "group": "Historic",
+  "class": "airliners",
   "builder": "asset",
   "summary": "The Soviet supersonic airliner: an ogival delta wing, four engines in paired boxes under the wing, a nose that droops for landing and retractable canards behind the cockpit.",
   "specs": {
     "manufacturer": "Tupolev",
+    "country": [
+      "Soviet Union"
+    ],
     "role": "Supersonic airliner",
     "first_flight": 1968,
     "length_m": 65.7,

@@ -2,11 +2,14 @@
   "id": "il76",
   "name": "Ilyushin Il-76TD",
   "category": "aviation",
-  "group": "Freighters",
+  "class": "freighters",
   "builder": "asset",
   "summary": "Four-engine strategic freighter with a high wing, a T-tail and a rear cargo ramp, designed to land on short, rough strips.",
   "specs": {
     "manufacturer": "Ilyushin",
+    "country": [
+      "Soviet Union"
+    ],
     "role": "Heavy freighter",
     "first_flight": 1971,
     "length_m": 46.59,

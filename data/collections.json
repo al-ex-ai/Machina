@@ -1,0 +1,82 @@
+[
+  {
+    "id": "true-scale",
+    "label": "Smallest to largest",
+    "description": "From the Wright Flyer to the An-225, at true scale. The home page line-up.",
+    "ids": [
+      "wright-flyer",
+      "cessna-172s",
+      "ec130",
+      "b737-300",
+      "concorde",
+      "a380-800",
+      "an225"
+    ]
+  },
+  {
+    "id": "giants",
+    "label": "Giants",
+    "description": "The largest machines ever to fly, side by side.",
+    "ids": [
+      "an225",
+      "a380-800",
+      "b747-400",
+      "il76"
+    ]
+  },
+  {
+    "id": "supersonic",
+    "label": "Supersonic",
+    "description": "Faster than sound: an airliner and a spy plane.",
+    "ids": [
+      "concorde",
+      "sr71"
+    ]
+  },
+  {
+    "id": "firsts",
+    "label": "Firsts",
+    "description": "The first powered aeroplane next to the jets that followed.",
+    "ids": [
+      "wright-flyer",
+      "b707",
+      "b747-400"
+    ]
+  },
+  {
+    "id": "jet-airliners",
+    "label": "Jet airliners",
+    "description": "Sixty years of airliners, from the 707 to the A380.",
+    "ids": [
+      "b707",
+      "tu134",
+      "b737-300",
+      "b747-400",
+      "a320neo",
+      "b787-8",
+      "a380-800"
+    ]
+  },
+  {
+    "id": "soviet",
+    "label": "Soviet designs",
+    "description": "Tupolev, Ilyushin and Antonov.",
+    "ids": [
+      "tu134",
+      "il76",
+      "an225"
+    ]
+  },
+  {
+    "id": "light-aircraft",
+    "label": "Light aircraft",
+    "description": "Trainers and tourers, the aircraft most pilots start in.",
+    "ids": [
+      "j3-cub",
+      "ercoupe",
+      "cessna-172s",
+      "dr400",
+      "cessna337"
+    ]
+  }
+]

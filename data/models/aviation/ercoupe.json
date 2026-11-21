@@ -2,11 +2,14 @@
   "id": "ercoupe",
   "name": "ERCO Ercoupe 415-C",
   "category": "aviation",
-  "group": "Light aircraft",
+  "class": "light",
   "builder": "asset",
   "summary": "Two-seat 1940s design meant to be spin-proof, with twin tails, tricycle gear and linked controls that let it fly without rudder pedals.",
   "specs": {
     "manufacturer": "Engineering and Research Corporation (ERCO)",
+    "country": [
+      "United States"
+    ],
     "role": "Light personal aircraft",
     "first_flight": 1937,
     "length_m": 6.3,

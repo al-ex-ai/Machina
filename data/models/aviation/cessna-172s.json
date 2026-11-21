@@ -2,11 +2,14 @@
   "id": "cessna-172s",
   "name": "Cessna 172S Skyhawk",
   "category": "aviation",
-  "group": "Light aircraft",
+  "class": "light",
   "builder": "fixed-wing",
   "summary": "Four-seat high-wing trainer and tourer, the most produced aircraft in history with more than 44,000 built.",
   "specs": {
     "manufacturer": "Cessna (Textron Aviation)",
+    "country": [
+      "United States"
+    ],
     "role": "Light utility aircraft",
     "first_flight": 1955,
     "length_m": 8.28,

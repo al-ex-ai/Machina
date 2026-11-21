@@ -2,11 +2,14 @@
   "id": "b737-300",
   "name": "Boeing 737-300",
   "category": "aviation",
-  "group": "Airliners",
+  "class": "airliners",
   "builder": "asset",
   "summary": "The first 737 Classic, re-engined with CFM56 turbofans whose flattened nacelles let the big fans fit under the low wing.",
   "specs": {
     "manufacturer": "Boeing",
+    "country": [
+      "United States"
+    ],
     "role": "Narrow-body airliner",
     "first_flight": 1984,
     "length_m": 33.4,

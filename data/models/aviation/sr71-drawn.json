@@ -2,6 +2,7 @@
   "id": "sr71-drawn",
   "name": "Lockheed SR-71 Blackbird",
   "category": "aviation",
+  "class": "military",
   "builder": "parametric",
   "specs": {
     "length_m": 32.74,

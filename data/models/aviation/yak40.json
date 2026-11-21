@@ -2,11 +2,14 @@
   "id": "yak40",
   "name": "Yakovlev Yak-40",
   "category": "aviation",
-  "group": "Airliners",
+  "class": "airliners",
   "builder": "asset",
   "summary": "Small three-engine regional jet built to fly from short, unpaved strips, with a straight wing and a rear airstair under the tail.",
   "specs": {
     "manufacturer": "Yakovlev",
+    "country": [
+      "Soviet Union"
+    ],
     "role": "Regional airliner",
     "first_flight": 1966,
     "length_m": 20.36,

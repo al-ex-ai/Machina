@@ -1,6 +1,7 @@
 // Every model must be well formed, buildable, and match its published size.
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import * as THREE from 'three';
 import '../src/builders/index.js';
 import { buildModel, hasBuilder } from '../src/registry.js';
@@ -10,6 +11,15 @@ const TOLERANCE = 0.02; // 2 percent
 const { categories, models } = loadCatalog();
 const categoryIds = new Set(categories.map(c => c.id));
 
+test('collections only name listed models, at least two each', () => {
+  const listed = new Set(models.map(m => m.id));
+  for (const c of JSON.parse(readFileSync(new URL('../data/collections.json', import.meta.url), 'utf8'))) {
+    const missing = c.ids.filter(id => !listed.has(id));
+    assert.deepEqual(missing, [], `${c.id} names unlisted models`);
+    assert.ok(c.ids.length >= 2, `${c.id} needs at least two models`);
+  }
+});
+
 test('model ids are unique', () => {
   const ids = models.map(m => m.id);
   assert.equal(new Set(ids).size, ids.length);
@@ -17,10 +27,14 @@ test('model ids are unique', () => {
 
 for (const m of models) {
   test(`${m.id}: required fields`, () => {
-    for (const k of ['id', 'name', 'category', 'group', 'builder', 'summary', 'specs', 'sources', ...(m.builder === 'asset' ? ['asset'] : ['geometry'])]) {
+    for (const k of ['id', 'name', 'category', 'class', 'builder', 'summary', 'specs', 'sources', ...(m.builder === 'asset' ? ['asset'] : ['geometry'])]) {
       assert.ok(m[k] !== undefined, `missing "${k}"`);
     }
     assert.ok(categoryIds.has(m.category), `unknown category "${m.category}"`);
+    const cat = categories.find(c => c.id === m.category);
+    assert.ok(cat.classes?.some(c => c.id === m.class), `class "${m.class}" is not one of ${m.category}'s classes`);
+    assert.ok(!cat.planned, 'a listed model cannot be in a planned category');
+    assert.ok(Array.isArray(m.specs.country) && m.specs.country.length, 'specs.country lists the country or countries of origin');
     assert.ok(hasBuilder(m.builder), `no builder "${m.builder}"`);
     assert.ok(m.sources.length > 0, 'needs at least one source');
     assert.ok(m._file.includes(`/${m.category}/`), 'file should live in its category folder');

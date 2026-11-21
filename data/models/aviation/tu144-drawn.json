@@ -2,11 +2,15 @@
   "id": "tu144-drawn",
   "name": "Tupolev Tu-144",
   "category": "aviation",
+  "class": "airliners",
   "builder": "parametric",
   "specs": {
     "length_m": 65.7,
     "wingspan_m": 28.8,
-    "height_m": 12.5
+    "height_m": 12.5,
+    "country": [
+      "Soviet Union"
+    ]
   },
   "note": "Built from a three-view drawing: outside only, no cockpit or cabin interior.",
   "livery": {

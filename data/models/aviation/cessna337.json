@@ -2,11 +2,14 @@
   "id": "cessna337",
   "name": "Cessna 337G Skymaster",
   "category": "aviation",
-  "group": "Light aircraft",
+  "class": "light",
   "builder": "asset",
   "summary": "Push-pull twin with one engine in the nose and one behind the cabin, on twin tail booms. Losing an engine never swings the aircraft sideways.",
   "specs": {
     "manufacturer": "Cessna",
+    "country": [
+      "United States"
+    ],
     "role": "Light twin utility aircraft",
     "first_flight": 1961,
     "length_m": 9.07,

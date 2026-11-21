@@ -2,11 +2,14 @@
   "id": "ec135",
   "name": "Eurocopter EC135 T2+",
   "category": "helicopters",
-  "group": "Helicopters",
+  "class": "light",
   "builder": "asset",
   "summary": "Light twin-engine helicopter with a bearingless main rotor and an enclosed \"Fenestron\" tail rotor, widely used for air ambulance and police work.",
   "specs": {
     "manufacturer": "Eurocopter, now Airbus Helicopters",
+    "country": [
+      "Germany"
+    ],
     "role": "Light utility helicopter",
     "first_flight": 1994,
     "length_m": 12.16,

@@ -19,6 +19,8 @@ for (const m of models) {
     assert.ok(entry, 'no thumbnail, run: npm run thumbs -- ' + m.id);
     const img = `${root}assets/thumbs/${m.id}.webp`;
     assert.ok(existsSync(img) && statSync(img).size > 2000, `missing or empty ${img}`);
+    const side = `${root}assets/thumbs/${m.id}-side.webp`;
+    assert.ok(existsSync(side) && statSync(side).size > 200, `missing side profile ${side}`);
     assert.equal(entry.hash, modelHash(m._file), 'model changed since its thumbnail, run: npm run thumbs -- ' + m.id);
     assert.equal(entry.parts, partCount(m), 'part count changed, run: npm run thumbs -- ' + m.id);
   });

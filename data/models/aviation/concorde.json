@@ -2,11 +2,15 @@
   "id": "concorde",
   "name": "Aérospatiale/BAC Concorde",
   "category": "aviation",
-  "group": "Historic",
+  "class": "airliners",
   "builder": "asset",
   "summary": "The Anglo-French supersonic airliner that flew at Mach 2 for 27 years: an ogival delta wing, four Olympus engines with reheat in paired nacelles, and a nose that droops for take-off and landing.",
   "specs": {
     "manufacturer": "Aérospatiale and British Aircraft Corporation",
+    "country": [
+      "France",
+      "United Kingdom"
+    ],
     "role": "Supersonic airliner",
     "first_flight": 1969,
     "length_m": 61.66,

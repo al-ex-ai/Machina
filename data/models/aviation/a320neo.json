@@ -2,11 +2,17 @@
   "id": "a320neo",
   "name": "Airbus A320neo",
   "category": "aviation",
-  "group": "Airliners",
+  "class": "airliners",
   "builder": "fixed-wing",
   "summary": "Narrow-body twinjet and the best-selling member of the A320 family, re-engined with LEAP-1A or PW1100G turbofans.",
   "specs": {
     "manufacturer": "Airbus",
+    "country": [
+      "France",
+      "Germany",
+      "United Kingdom",
+      "Spain"
+    ],
     "role": "Narrow-body airliner",
     "first_flight": 2014,
     "length_m": 37.57,

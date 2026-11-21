@@ -15,14 +15,16 @@ export function loadCatalog() {
 
 /**
  * Everything the catalog page needs in one file, so the browser boots with a single request:
- * categories, every listed model and the thumbnail manifest. Served live by the dev server and
+ * categories, collections, every listed model and the thumbnail manifest. Served live by the dev server and
  * written to data/catalog.json by the deploy hook, so it is never stale and never committed.
  */
 export function catalogBundle() {
   const { categories, models } = loadCatalog();
   const thumbsFile = join(DATA, 'thumbs.json');
   const thumbs = existsSync(thumbsFile) ? JSON.parse(readFileSync(thumbsFile, 'utf8')) : {};
-  return JSON.stringify({ categories, models: models.map(({ _file, ...m }) => m), thumbs });
+  const collectionsFile = join(DATA, 'collections.json');
+  const collections = existsSync(collectionsFile) ? JSON.parse(readFileSync(collectionsFile, 'utf8')) : [];
+  return JSON.stringify({ categories, collections, models: models.map(({ _file, ...m }) => m), thumbs });
 }
 
 export function writeCatalogBundle(file = join(DATA, 'catalog.json')) {

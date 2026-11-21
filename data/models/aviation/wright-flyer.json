@@ -2,11 +2,14 @@
   "id": "wright-flyer",
   "name": "1903 Wright Flyer",
   "category": "aviation",
-  "group": "Historic",
+  "class": "pioneers",
   "builder": "asset",
   "summary": "The first powered, controlled, sustained flight: 12 seconds and 37 meters at Kitty Hawk on 17 December 1903. Spruce and muslin, two pusher propellers driven by bicycle chains.",
   "specs": {
     "manufacturer": "Wilbur and Orville Wright",
+    "country": [
+      "United States"
+    ],
     "role": "Experimental canard biplane",
     "first_flight": 1903,
     "length_m": 6.43,

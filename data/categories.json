@@ -1,12 +1,27 @@
 [
   {
     "id": "aviation",
-    "label": "Aviation",
-    "description": "Airliners, light aircraft and historic aircraft."
+    "label": "Aircraft",
+    "description": "Fixed-wing aircraft, from the first powered flight to double-deck jets.",
+    "classes": [
+      { "id": "airliners", "label": "Airliners" },
+      { "id": "freighters", "label": "Freighters" },
+      { "id": "light", "label": "Light aircraft" },
+      { "id": "military", "label": "Military" },
+      { "id": "pioneers", "label": "Pioneers and experimental" }
+    ]
   },
   {
     "id": "helicopters",
     "label": "Helicopters",
-    "description": "Rotorcraft from light utility helicopters to twin-engine workhorses."
-  }
+    "description": "Rotorcraft, from light utility helicopters to heavy lifters.",
+    "classes": [
+      { "id": "light", "label": "Light helicopters" },
+      { "id": "medium", "label": "Medium helicopters" },
+      { "id": "heavy", "label": "Heavy lift" }
+    ]
+  },
+  { "id": "space", "label": "Spacecraft", "description": "Rockets, capsules and space stations.", "planned": true },
+  { "id": "naval", "label": "Ships", "description": "Ships and submarines.", "planned": true },
+  { "id": "land", "label": "Land vehicles", "description": "Cars, trucks and trains.", "planned": true }
 ]
