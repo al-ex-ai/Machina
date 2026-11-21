@@ -80,9 +80,30 @@ export function assembleParts(loaded, model) {
     m.userData = { partChild: true, source: mesh.name, texture: mesh.userData.texture };
     partFor(rule).add(m);
   }
+  neutralGlass(groups);
   if (model.asset.compress) compressGear(groups, model.asset.compress);
   if (model.asset.restOnTail) restOnTail(root, groups, model.asset.restOnTail);
   return root;
+}
+
+/**
+ * Windows (the glazing parts) left in a modeler's placeholder colour, an untextured fully saturated
+ * primary such as pure green, render as neutral blue-grey glass. Light lenses are other parts and
+ * keep their colours.
+ */
+function neutralGlass(groups) {
+  const glass = new THREE.Color('#9fb6c8');
+  for (const g of groups.values()) {
+    if (g.userData.system !== 'glazing') continue;
+    g.traverse(o => {
+      if (!o.isMesh) return;
+      for (const mat of [o.material].flat()) {
+        if (!mat.transparent || mat.map || !mat.color) continue;
+        const { r, g: gr, b } = mat.color, hi = Math.max(r, gr, b), lo = Math.min(r, gr, b);
+        if (hi > 0.85 && lo < 0.05) mat.color.copy(glass);
+      }
+    });
+  }
 }
 
 /**
