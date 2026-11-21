@@ -7,7 +7,7 @@ name "avantbrasD"
 loc -0.017771 -0.002791 0.196245
 data 10
 avantbrasD
-texture "liner_pilot.png"
+texture "liner_pilot.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 35
@@ -289,7 +289,7 @@ name "avantbrasG"
 loc -0.170833 -0.056231 -0.207946
 data 10
 avantbrasG
-texture "liner_pilot.png"
+texture "liner_pilot.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 183
@@ -2096,7 +2096,7 @@ name "brasD"
 loc 0.230016 0.164857 -0.180619
 data 5
 brasD
-texture "liner_pilot.png"
+texture "liner_pilot.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 22
@@ -2329,7 +2329,7 @@ name "brasG"
 loc 0.150229 0.075758 0.20162
 data 5
 brasG
-texture "liner_pilot.png"
+texture "liner_pilot.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 32
@@ -2637,7 +2637,7 @@ name "corps"
 loc 0.182241 0.145634 0.002953
 data 5
 corps
-texture "liner_pilot.png"
+texture "liner_pilot.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 421
@@ -5124,7 +5124,7 @@ name "cuisseD"
 loc -0.036676 -0.157437 -0.132923
 data 7
 cuisseD
-texture "liner_pilot.png"
+texture "liner_pilot.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 30
@@ -5338,7 +5338,7 @@ name "cuisseG"
 loc -0.038857 -0.145134 0.119059
 data 7
 cuisseG
-texture "liner_pilot.png"
+texture "liner_pilot.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 30
@@ -5545,7 +5545,7 @@ name "jambeD"
 loc -0.303752 -0.315816 -0.137182
 data 6
 jambeD
-texture "liner_pilot.png"
+texture "liner_pilot.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 112
@@ -6414,7 +6414,7 @@ name "jambeG"
 loc -0.292523 -0.300409 0.126081
 data 6
 jambeG
-texture "liner_pilot.png"
+texture "liner_pilot.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 112
@@ -7293,7 +7293,7 @@ name "manche"
 loc -0.166756 -0.031424 0.136856
 data 6
 manche
-texture "liner_pilot.png"
+texture "liner_pilot.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 140
@@ -8584,7 +8584,7 @@ name "piedD"
 loc -0.478367 -0.511967 -0.129023
 data 5
 piedD
-texture "liner_pilot.png"
+texture "liner_pilot.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 51
@@ -8937,7 +8937,7 @@ name "piedG"
 loc -0.486077 -0.51186 0.124642
 data 5
 piedG
-texture "liner_pilot.png"
+texture "liner_pilot.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 51
@@ -9290,7 +9290,7 @@ name "tete"
 loc 0.195872 0.450586 0.004389
 data 4
 tete
-texture "liner_pilot.png"
+texture "liner_pilot.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 616

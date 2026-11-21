@@ -8,7 +8,7 @@ name "ND"
 loc 0.001827 0 -0
 data 2
 ND
-texture "n1-0.png"
+texture "n1-0.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 75
@@ -551,7 +551,7 @@ name "face"
 loc 0.001827 0 -0
 data 4
 face
-texture "n1-0.png"
+texture "n1-0.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 25
@@ -731,7 +731,7 @@ name "fond"
 loc -0.000166 0 -0
 data 4
 fond
-texture "n1-0.png"
+texture "n1-0.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 96

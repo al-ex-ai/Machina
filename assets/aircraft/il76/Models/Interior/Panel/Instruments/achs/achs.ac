@@ -8,7 +8,7 @@ name "buttonL"
 loc 0.007676 -0.020331 0.040687
 data 7
 buttonL
-texture "achs.png"
+texture "achs.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 129
@@ -1012,7 +1012,7 @@ name "buttonR"
 loc 0.007676 -0.020331 0.040687
 data 7
 buttonR
-texture "achs.png"
+texture "achs.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 129
@@ -2016,7 +2016,7 @@ name "face"
 loc -0.000012 0 -0
 data 4
 face
-texture "achs.png"
+texture "achs.webp"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 17
@@ -2140,7 +2140,7 @@ name "fond"
 loc -0.000012 0 -0
 data 4
 fond
-texture "achs.png"
+texture "achs.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 124
@@ -2967,7 +2967,7 @@ name "hour_needle"
 loc 0.002064 0.010981 0.0004
 data 11
 hour_needle
-texture "achs.png"
+texture "achs.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 96
@@ -3592,7 +3592,7 @@ name "min_needle"
 loc 0.002432 0.010981 0.0004
 data 10
 min_needle
-texture "achs.png"
+texture "achs.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 62
@@ -4001,7 +4001,7 @@ name "sec_needle"
 loc 0.002801 0.010981 0.0004
 data 10
 sec_needle
-texture "achs.png"
+texture "achs.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 98
@@ -4642,7 +4642,7 @@ name "secundomer_needle"
 loc 0.001631 -0.02693 0.0004
 data 17
 secundomer_needle
-texture "achs.png"
+texture "achs.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 96
@@ -5267,7 +5267,7 @@ name "timer_hour_needle"
 loc 0.001631 0.010981 0.0004
 data 17
 timer_hour_needle
-texture "achs.png"
+texture "achs.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 96
@@ -5892,7 +5892,7 @@ name "timer_min_needle"
 loc 0.001623 0.021218 0.0004
 data 16
 timer_min_needle
-texture "achs.png"
+texture "achs.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 62

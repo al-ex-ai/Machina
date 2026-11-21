@@ -8,7 +8,7 @@ name "face"
 loc -0.050876 -0.000272 -0.00049
 data 4
 face
-texture "ias.png"
+texture "ias.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 33
@@ -244,7 +244,7 @@ name "fond"
 loc 0.004084 -0.000272 -0.00049
 data 4
 fond
-texture "ias.png"
+texture "ias.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 96
@@ -855,7 +855,7 @@ name "needle"
 loc 0.003539 0 -0
 data 6
 needle
-texture "ias.png"
+texture "ias.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 84
@@ -1478,7 +1478,7 @@ name "needle2"
 loc 0.003201 0 -0
 data 7
 needle2
-texture "ias.png"
+texture "ias.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 84

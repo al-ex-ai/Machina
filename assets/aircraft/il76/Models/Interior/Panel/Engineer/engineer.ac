@@ -7,7 +7,7 @@ name "engineer"
 loc 0 0 -0
 data 8
 engineer
-texture "engineer.png"
+texture "engineer.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 19

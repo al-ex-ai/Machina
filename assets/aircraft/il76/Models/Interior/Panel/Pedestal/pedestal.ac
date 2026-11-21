@@ -7,7 +7,7 @@ name "pedestal"
 loc 0 0 -0
 data 8
 pedestal
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 90

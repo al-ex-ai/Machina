@@ -8,7 +8,7 @@ name "face"
 loc 0.001827 0 -0
 data 4
 face
-texture "brake.png"
+texture "brake.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 25
@@ -188,7 +188,7 @@ name "fond"
 loc -0.000166 0 -0
 data 4
 fond
-texture "brake.png"
+texture "brake.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 96
@@ -799,7 +799,7 @@ name "needle"
 loc 0.001827 0 -0
 data 6
 needle
-texture "brake.png"
+texture "brake.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 75

@@ -8,7 +8,7 @@ name "NAV1BUTT"
 loc 0.001481 -0 -0
 data 8
 NAV1BUTT
-texture "rmi.png"
+texture "rmi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8
@@ -62,7 +62,7 @@ name "NAV2BUTT"
 loc 0.001481 -0 -0
 data 8
 NAV2BUTT
-texture "rmi.png"
+texture "rmi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8
@@ -116,7 +116,7 @@ name "RMI"
 loc 0.001481 -0 -0
 data 3
 RMI
-texture "rmi.png"
+texture "rmi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 242
@@ -1833,7 +1833,7 @@ name "RMI-bug"
 loc 0.001481 -0 -0
 data 7
 RMI-bug
-texture "rmi.png"
+texture "rmi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 16
@@ -1949,7 +1949,7 @@ name "RMI.adf"
 loc 0.001481 -0 -0
 data 7
 RMI.adf
-texture "rmi.png"
+texture "rmi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 52
@@ -2282,7 +2282,7 @@ name "RMI.brgN1"
 loc 0.001481 -0 -0
 data 9
 RMI.brgN1
-texture "rmi.png"
+texture "rmi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 20
@@ -2421,7 +2421,7 @@ name "RMI.brgN2"
 loc 0.001481 -0 -0
 data 9
 RMI.brgN2
-texture "rmi.png"
+texture "rmi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 20
@@ -2560,7 +2560,7 @@ name "RMI.brgTAC"
 loc 0.001481 -0 -0
 data 10
 RMI.brgTAC
-texture "rmi.png"
+texture "rmi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 20
@@ -2699,7 +2699,7 @@ name "RMI.face"
 loc 0.001481 0 -0
 data 8
 RMI.face
-texture "rmi.png"
+texture "rmi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 9
@@ -2767,7 +2767,7 @@ name "RMI.ticks"
 loc 0.001481 -0 -0
 data 9
 RMI.ticks
-texture "rmi.png"
+texture "rmi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 92
@@ -3276,7 +3276,7 @@ name "TACBUTT"
 loc 0.001481 -0 -0
 data 7
 TACBUTT
-texture "rmi.png"
+texture "rmi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8
@@ -3330,7 +3330,7 @@ name "TACon"
 loc 0.001481 -0 -0
 data 5
 TACon
-texture "rmi.png"
+texture "rmi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8
@@ -3384,7 +3384,7 @@ name "V1on"
 loc 0.001481 -0 -0
 data 4
 V1on
-texture "rmi.png"
+texture "rmi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8
@@ -3438,7 +3438,7 @@ name "V2on"
 loc 0.001481 -0 -0
 data 4
 V2on
-texture "rmi.png"
+texture "rmi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8
@@ -3492,7 +3492,7 @@ name "knob"
 loc 0.001481 -0 -0
 data 4
 knob
-texture "rmi.png"
+texture "rmi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 25
@@ -3684,7 +3684,7 @@ name "switchbox"
 loc 0.001481 -0 -0
 data 9
 switchbox
-texture "rmi.png"
+texture "rmi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8

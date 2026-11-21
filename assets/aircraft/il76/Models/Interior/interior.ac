@@ -8,7 +8,7 @@ name "HDRintvitres"
 loc -21.07695 -3.416404 -0
 data 12
 HDRintvitres
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 212
@@ -669,7 +669,7 @@ name "cabine"
 loc 4.512214 -5.753166 0.878498
 data 6
 cabine
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 136
@@ -1666,7 +1666,7 @@ name "cloisons"
 loc -14.032116 -3.337677 -0
 data 8
 cloisons
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 180
@@ -2913,7 +2913,7 @@ name "intcargo0"
 loc 4.512214 -5.753166 0.878498
 data 9
 intcargo0
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 61
@@ -3345,7 +3345,7 @@ name "intcargoD1"
 loc -0.46732 0.326558 -0
 data 10
 intcargoD1
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 45
@@ -3651,7 +3651,7 @@ name "intcargoD2"
 loc -0.46732 0.326558 -0
 data 10
 intcargoD2
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 58
@@ -4054,7 +4054,7 @@ name "intcargoG1"
 loc -0.46732 0.326558 -0
 data 10
 intcargoG1
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 45
@@ -4360,7 +4360,7 @@ name "intcargoG2"
 loc -0.46732 0.326558 -0
 data 10
 intcargoG2
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 57
@@ -4760,7 +4760,7 @@ name "intcrewD"
 loc -0.46732 0.326558 -0
 data 8
 intcrewD
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 44
@@ -5039,7 +5039,7 @@ name "intcrewG"
 loc -0.46732 0.326558 -0
 data 8
 intcrewG
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 44
@@ -5318,7 +5318,7 @@ name "interieur"
 loc -14.032116 -3.337677 -0
 data 9
 interieur
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 496
@@ -8975,7 +8975,7 @@ name "inttour"
 loc -14.032116 -3.337677 -0
 data 7
 inttour
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 212
@@ -9940,7 +9940,7 @@ name "inttourvitres"
 loc -14.032116 -3.337677 -0
 data 13
 inttourvitres
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 647
@@ -14562,7 +14562,7 @@ name "intvitres"
 loc -21.07695 -3.416404 -0
 data 9
 intvitres
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 212
@@ -15223,7 +15223,7 @@ name "planchet"
 loc -14.032116 -3.337677 -0
 data 8
 planchet
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 216
@@ -16438,7 +16438,7 @@ name "rampe"
 loc 6.543523 -4.442159 -0
 data 5
 rampe
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 16

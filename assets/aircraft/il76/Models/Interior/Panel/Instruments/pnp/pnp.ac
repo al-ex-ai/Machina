@@ -8,7 +8,7 @@ name "blanker_dkm"
 loc 0 0 -0
 data 11
 blanker_dkm
-texture "pnp.png"
+texture "pnp.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 4
@@ -30,7 +30,7 @@ name "blanker_g"
 loc 0.000944 0.022275 -0.008553
 data 9
 blanker_g
-texture "pnp.png"
+texture "pnp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8
@@ -84,7 +84,7 @@ name "blanker_heading"
 loc 0 0 -0
 data 15
 blanker_heading
-texture "pnp.png"
+texture "pnp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -106,7 +106,7 @@ name "blanker_k"
 loc 0.000944 -0.024084 0.000006
 data 9
 blanker_k
-texture "pnp.png"
+texture "pnp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8
@@ -160,7 +160,7 @@ name "blanker_ks"
 loc 0.00309 -0.039656 -0.032885
 data 10
 blanker_ks
-texture "pnp.png"
+texture "pnp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 18
@@ -284,7 +284,7 @@ name "center"
 loc 0.00222 0.020195 0.000025
 data 6
 center
-texture "pnp.png"
+texture "pnp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 100
@@ -879,7 +879,7 @@ name "compass"
 loc 0.000573 0 -0
 data 7
 compass
-texture "pnp.png"
+texture "pnp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 64
@@ -1178,7 +1178,7 @@ name "dig_heading_dec"
 loc 0 0 -0
 data 15
 dig_heading_dec
-texture "pnp.png"
+texture "pnp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 32
@@ -1333,7 +1333,7 @@ name "dig_heading_hund"
 loc 0 0 -0
 data 16
 dig_heading_hund
-texture "pnp.png"
+texture "pnp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 32
@@ -1488,7 +1488,7 @@ name "dig_heading_ones"
 loc 0 0 -0
 data 16
 dig_heading_ones
-texture "pnp.png"
+texture "pnp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 32
@@ -1643,7 +1643,7 @@ name "dig_plane_dec"
 loc 0 0 -0
 data 13
 dig_plane_dec
-texture "pnp.png"
+texture "pnp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 32
@@ -1798,7 +1798,7 @@ name "dig_plane_hund"
 loc 0 0 -0
 data 14
 dig_plane_hund
-texture "pnp.png"
+texture "pnp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 32
@@ -1953,7 +1953,7 @@ name "dig_plane_ones"
 loc 0 0 -0
 data 14
 dig_plane_ones
-texture "pnp.png"
+texture "pnp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 32
@@ -2108,7 +2108,7 @@ name "dkm"
 loc 0 0 -0
 data 3
 dkm
-texture "pnp.png"
+texture "pnp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -2130,7 +2130,7 @@ name "drift"
 loc 0.000894 0.059714 0.000291
 data 5
 drift
-texture "pnp.png"
+texture "pnp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -2174,7 +2174,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "pnp.png"
+texture "pnp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 428
@@ -5457,7 +5457,7 @@ name "gliss_planka"
 loc 0.002455 -0.000121 0.000405
 data 12
 gliss_planka
-texture "pnp.png"
+texture "pnp.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 8
@@ -5511,7 +5511,7 @@ name "heading_marker_180"
 loc 0.002323 -0.045455 0.000189
 data 18
 heading_marker_180
-texture "pnp.png"
+texture "pnp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -5555,7 +5555,7 @@ name "heading_marker_270"
 loc 0.002323 0.000414 0.046059
 data 18
 heading_marker_270
-texture "pnp.png"
+texture "pnp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -5599,7 +5599,7 @@ name "heading_marker_90"
 loc 0.002323 0.000414 -0.04568
 data 17
 heading_marker_90
-texture "pnp.png"
+texture "pnp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 6
@@ -5643,7 +5643,7 @@ name "heading_marker_main"
 loc 0.002133 0.045857 0.000198
 data 19
 heading_marker_main
-texture "pnp.png"
+texture "pnp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 18
@@ -5753,7 +5753,7 @@ name "heading_sym_handle"
 loc 0.000563 -0.055285 0.053921
 data 18
 heading_sym_handle
-texture "pnp.png"
+texture "pnp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 33
@@ -6005,7 +6005,7 @@ name "kurs_plan"
 loc -0.000347 0 -0
 data 9
 kurs_plan
-texture "pnp.png"
+texture "pnp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 185
@@ -7281,7 +7281,7 @@ name "kurs_planka"
 loc 0.002632 -0.00067 0.000025
 data 11
 kurs_planka
-texture "pnp.png"
+texture "pnp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 12
@@ -7360,7 +7360,7 @@ name "limb"
 loc 0.000437 0.054139 0.000321
 data 4
 limb
-texture "pnp.png"
+texture "pnp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -7382,7 +7382,7 @@ name "needle"
 loc 0.002091 0.006144 0.000025
 data 6
 needle
-texture "pnp.png"
+texture "pnp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 60
@@ -7781,7 +7781,7 @@ name "nv_on"
 loc 0.000344 0 -0
 data 5
 nv_on
-texture "pnp.png"
+texture "pnp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -7803,7 +7803,7 @@ name "plane_sym"
 loc 0 0 -0
 data 9
 plane_sym
-texture "pnp.png"
+texture "pnp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -7825,7 +7825,7 @@ name "plane_sym_handle"
 loc 0.000563 -0.055285 -0.0539
 data 16
 plane_sym_handle
-texture "pnp.png"
+texture "pnp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 33
@@ -8077,7 +8077,7 @@ name "rsbn_on"
 loc 0.000344 0 -0
 data 7
 rsbn_on
-texture "pnp.png"
+texture "pnp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -8099,7 +8099,7 @@ name "sp_on"
 loc 0.000344 0 -0
 data 5
 sp_on
-texture "pnp.png"
+texture "pnp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -8458,7 +8458,7 @@ name "vor_on"
 loc 0.000344 0 -0
 data 6
 vor_on
-texture "pnp.png"
+texture "pnp.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4

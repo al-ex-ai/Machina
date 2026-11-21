@@ -8,7 +8,7 @@ name "face"
 loc -0.98304 -0.020284 -0.054818
 data 4
 face
-texture "uvpd.png"
+texture "uvpd.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 25
@@ -188,7 +188,7 @@ name "fond"
 loc -0.987694 -0.020284 -0.054818
 data 4
 fond
-texture "uvpd.png"
+texture "uvpd.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 144
@@ -1183,7 +1183,7 @@ name "needle1"
 loc 0.000032 0 -0
 data 7
 needle1
-texture "uvpd.png"
+texture "uvpd.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 70
@@ -1703,7 +1703,7 @@ name "needle2"
 loc 0.000453 0 -0
 data 7
 needle2
-texture "uvpd.png"
+texture "uvpd.webp"
 texrep 1.000000 1.000000
 crease 30.000005
 numvert 70

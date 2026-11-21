@@ -7,7 +7,7 @@ name "manche"
 loc 0.091253 0.643334 0.00035
 data 6
 manche
-texture "yoke.png"
+texture "yoke.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 95
@@ -668,7 +668,7 @@ name "yoke"
 loc 0.091253 0.643334 0.00035
 data 4
 yoke
-texture "yoke.png"
+texture "yoke.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 1363

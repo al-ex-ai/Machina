@@ -8,7 +8,7 @@ name "ball"
 loc -0.000308 -0.00022 0.000025
 data 4
 ball
-texture "ai2.png"
+texture "ai2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 58
@@ -509,7 +509,7 @@ name "cache2"
 loc -0.000308 -0.00022 0.000025
 data 6
 cache2
-texture "ai2.png"
+texture "ai2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 21
@@ -625,7 +625,7 @@ name "craft"
 loc -0.000308 -0.00022 0.000025
 data 5
 craft
-texture "ai2.png"
+texture "ai2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 178
@@ -1822,7 +1822,7 @@ name "face"
 loc -0.000308 -0.00022 0.000025
 data 4
 face
-texture "ai2.png"
+texture "ai2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 108
@@ -2529,7 +2529,7 @@ name "fond"
 loc -0.000308 -0.00022 0.000025
 data 4
 fond
-texture "ai2.png"
+texture "ai2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 210
@@ -4002,7 +4002,7 @@ name "fond2"
 loc -0.000308 -0.00022 0.000025
 data 5
 fond2
-texture "ai2.png"
+texture "ai2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 9
@@ -5099,7 +5099,7 @@ name "zoneball"
 loc -0.000308 -0.00022 0.000025
 data 8
 zoneball
-texture "ai2.png"
+texture "ai2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 101
