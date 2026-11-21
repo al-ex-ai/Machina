@@ -19,14 +19,7 @@ const SORTS = {
   first_flight: { label: 'First flight', get: m => m.specs.first_flight, unit: '' },
 };
 
-// Suggested sets, kept only when at least two of their models are listed.
-const PRESETS = [
-  { label: 'Airliners', ids: ['b747-400', 'b777', 'b787-8', 'b707', 'a320neo', 'b737-300'] },
-  { label: 'Light aircraft', ids: ['cessna-172s', 'dr400', 'j3-cub', 'ercoupe'] },
-  { label: 'Tupolev, Ilyushin and Concorde', ids: ['concorde', 'il76', 'tu134'] },
-  { label: 'First and biggest', ids: ['wright-flyer', 'b747-400', 'an225'] },
-  { label: 'Supersonic', ids: ['concorde', 'sr71'] },
-];
+// Suggested sets come from data/collections.json, kept only when at least two of their models are listed.
 
 const css = name => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
 const YEARS = new Set(['first_flight', 'in_service']);
@@ -177,12 +170,15 @@ function disposeDeep(obj) {
  * @param {(s: string) => string} ctx.esc
  * @param {() => object[]} ctx.models listed models
  * @param {object} ctx.specLabels the model page's spec labels, in display order
- * @param {string[]} ctx.groupOrder
+ * @param {(m: object) => string} ctx.classLabel
+ * @param {(m: object) => number} ctx.classRank
+ * @param {() => object[]} ctx.collections
  * @param {() => object} ctx.ensureViewer
  * @param {(m: object) => Promise<THREE.Object3D>} ctx.modelObject build or load one model
  */
 export function createCompare(ctx) {
   const { $, esc } = ctx;
+  const presets = () => (ctx.collections() ?? []).map(p => ({ ...p, ids: p.ids.filter(id => byId(id)) })).filter(p => p.ids.length > 1);
   const cache = new Map(); // id -> Promise<Object3D>, only for the current selection
   let token = 0;
   let current = { key: '', sel: [], all: false, tab: 'lineup', mode: 'lineup', sort: 'length', objs: null, arranged: false };
@@ -378,18 +374,18 @@ export function createCompare(ctx) {
   function headerHTML() {
     const listed = ctx.models();
     const chosen = new Set(current.sel.map(m => m.id));
-    const groups = [...new Set(listed.map(m => m.group))].sort((a, b) => (ctx.groupOrder.indexOf(a) + 1 || 99) - (ctx.groupOrder.indexOf(b) + 1 || 99));
-    const presets = PRESETS.map(p => ({ ...p, ids: p.ids.filter(id => byId(id)) })).filter(p => p.ids.length > 1);
+    const byClass = [...listed].sort((a, b) => ctx.classRank(a) - ctx.classRank(b) || a.name.localeCompare(b.name));
+    const suggested = presets();
     const chips = current.all ? `<span class="cmp-chip"><span class="dot" style="background:var(--ink)"></span>All ${listed.length} models<a class="x" href="${hrefFor([], { tab: 'lineup' })}" aria-label="Clear the line-up">×</a></span>`
       : current.sel.map(m => `<span class="cmp-chip"><span class="dot" style="background:${colorOf(m)}"></span>${esc(m.name)}<a class="x" href="${hrefFor(current.sel.filter(x => x !== m).map(x => x.id))}" aria-label="Remove ${esc(m.name)}">×</a></span>`).join('');
     const add = !current.all && current.sel.length < MAX ? pickerHTML({
       name: 'cmp-add', action: true, label: 'Add a model to compare', placeholder: current.sel.length ? 'Add a model' : 'Pick a model',
-      options: groups.flatMap(g => listed.filter(m => m.group === g && !chosen.has(m.id)).map(m => ({ value: m.id, label: m.name, group: g }))),
+      options: byClass.filter(m => !chosen.has(m.id)).map(m => ({ value: m.id, label: m.name, group: ctx.classLabel(m) })),
     }) : '';
     const sets = pickerHTML({
       name: 'cmp-sets', action: true, label: 'Suggested sets', placeholder: 'Suggested sets', align: 'end',
       options: [
-        ...presets.map((p, i) => ({ value: String(i), label: p.label, hint: `${p.ids.length} models` })),
+        ...suggested.map((p, i) => ({ value: String(i), label: p.label, hint: `${p.ids.length} models` })),
         { value: 'all', label: `Line up all ${listed.length}`, hint: 'every model' },
       ],
     });
@@ -445,7 +441,7 @@ export function createCompare(ctx) {
       if (name === 'cmp-add') location.hash = hrefFor([...current.sel.map(m => m.id), value]);
       else if (name === 'cmp-sets') {
         if (value === 'all') location.hash = hrefFor([], { all: true, tab: 'lineup' });
-        else location.hash = hrefFor(PRESETS.map(p => ({ ...p, ids: p.ids.filter(id => byId(id)) })).filter(p => p.ids.length > 1)[Number(value)].ids);
+        else location.hash = hrefFor(presets()[Number(value)].ids);
       } else if (name === 'cmp-sort') {
         current.sort = value;
         history.replaceState(null, '', hrefFor(current.sel.map(m => m.id), { all: current.all }));
@@ -484,7 +480,7 @@ export function createCompare(ctx) {
         <h2>Pick two to four models</h2>
         <p>Line them up on one apron, stack them on one spot, see their outlines from three sides and read their specs side by side, all at true scale.</p>
         <p class="label">Or start from a set</p>
-        <div class="cmp-empty-sets">${PRESETS.map(p => ({ ...p, ids: p.ids.filter(id => byId(id)) })).filter(p => p.ids.length > 1).map(p => `<a class="cmp-preset" href="${hrefFor(p.ids)}">${esc(p.label)}</a>`).join('')}<a class="cmp-preset" href="${hrefFor([], { all: true, tab: 'lineup' })}">Line up all ${listed.length}</a></div>
+        <div class="cmp-empty-sets">${presets().map(p => `<a class="cmp-preset" href="${hrefFor(p.ids)}">${esc(p.label)}</a>`).join('')}<a class="cmp-preset" href="${hrefFor([], { all: true, tab: 'lineup' })}">Line up all ${listed.length}</a></div>
       </div></div>`;
     $('#page').innerHTML = `
       <div class="compare-page">

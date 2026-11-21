@@ -17,6 +17,7 @@ let engineReady = false;
 
 const SPEC_LABELS = {
   manufacturer: 'Manufacturer',
+  country: 'Country',
   role: 'Role',
   first_flight: 'First flight',
   in_service: 'In service',
@@ -37,17 +38,31 @@ const SPEC_LABELS = {
   seats: 'Seats',
 };
 
-// Categories planned on the roadmap, shown as "coming" until they have models.
-const PLANNED = [
-  { id: 'naval', label: 'Naval', description: 'Ships and submarines.' },
-  { id: 'space', label: 'Space', description: 'Rockets and spacecraft.' },
-  { id: 'automotive', label: 'Automotive', description: 'Cars and trucks.' },
+// Eras, from the first powered flight on, computed from a model's first flight.
+const ERAS = [
+  { id: 'pioneers', label: 'Pioneers', from: 1903, to: 1918 },
+  { id: 'golden-age', label: 'Golden age', from: 1919, to: 1938 },
+  { id: 'war-years', label: 'War years', from: 1939, to: 1945 },
+  { id: 'jet-age', label: 'Jet age', from: 1946, to: 1969 },
+  { id: 'wide-body', label: 'Wide-body era', from: 1970, to: 1989 },
+  { id: 'digital', label: 'Digital era', from: 1990, to: 2009 },
+  { id: 'modern', label: 'Modern', from: 2010, to: 9999 },
 ];
+const eraOf = m => ERAS.find(e => m.specs.first_flight >= e.from && m.specs.first_flight <= e.to);
+const liveCategories = () => state.categories.filter(c => !c.planned);
+const plannedCategories = () => state.categories.filter(c => c.planned);
+const classOf = m => state.categories.find(c => c.id === m.category)?.classes?.find(k => k.id === m.class);
+const classLabel = m => classOf(m)?.label ?? '';
+const countriesOf = m => [].concat(m.specs.country ?? []);
+// Category order, then class order within it: the order the data files give.
+const classRank = m => {
+  const ci = state.categories.findIndex(c => c.id === m.category), cat = state.categories[ci];
+  return ci * 100 + Math.max(0, cat?.classes?.findIndex(k => k.id === m.class) ?? 0);
+};
 
-// Sorting for galleries. "type" groups by kind of aircraft, biggest first within each.
-const GROUP_ORDER = ['Airliners', 'Light aircraft', 'Helicopters', 'Historic', 'Prototype'];
+// Sorting for galleries. "type" groups by class, biggest first within each.
 const SORTS = {
-  type: { label: 'Type, then size', cmp: (a, b) => groupRank(a) - groupRank(b) || b.specs.length_m - a.specs.length_m },
+  type: { label: 'Type, then size', cmp: (a, b) => classRank(a) - classRank(b) || b.specs.length_m - a.specs.length_m },
   name: { label: 'Name', cmp: (a, b) => a.name.localeCompare(b.name) },
   largest: { label: 'Largest first', cmp: (a, b) => b.specs.length_m - a.specs.length_m },
   smallest: { label: 'Smallest first', cmp: (a, b) => a.specs.length_m - b.specs.length_m },
@@ -55,7 +70,6 @@ const SORTS = {
   newest: { label: 'First flight, newest', cmp: (a, b) => (b.specs.first_flight ?? 0) - (a.specs.first_flight ?? 0) },
   maker: { label: 'Manufacturer', cmp: (a, b) => (a.specs.manufacturer ?? '').localeCompare(b.specs.manufacturer ?? '') || a.name.localeCompare(b.name) },
 };
-const groupRank = m => { const i = GROUP_ORDER.indexOf(m.group); return i < 0 ? GROUP_ORDER.length : i; };
 let sortKey = (() => { try { return localStorage.getItem('machina-sort') || 'type'; } catch { return 'type'; } })();
 if (!SORTS[sortKey]) sortKey = 'type';
 const sorted = list => [...list].sort(SORTS[sortKey].cmp);
@@ -126,7 +140,9 @@ function parseRoute() {
   const seg = path.split('/').filter(Boolean);
   const q = new URLSearchParams(query);
   if (seg[0] === 'm' && seg[1]) return { name: 'model', id: seg[1], part: q.get('part'), xray: q.get('xray') === '1', person: q.get('person') === '1', view: q.get('view'), livery: q.get('livery') };
-  if (seg[0] === 'c' && seg[1]) return { name: 'category', id: seg[1] };
+  const filters = Object.fromEntries(['class', 'era', 'country', 'maker', 'q'].map(k => [k, q.get(k) ?? '']));
+  if (seg[0] === 'c' && seg[1]) return { name: 'category', id: seg[1], filters };
+  if (seg[0] === 'browse') return { name: 'browse', filters };
   if (seg[0] === 'history') return { name: 'history' };
   if (seg[0] === 'compare') return { name: 'compare', all: seg[1] === 'all', ids: seg[1] && seg[1] !== 'all' ? seg[1].split(',') : [], mode: q.get('mode'), view: q.get('view'), sort: q.get('sort') };
   return { name: 'home' };
@@ -134,13 +150,22 @@ function parseRoute() {
 
 function navLinks(route) {
   const cur = route.name === 'category' ? route.id : route.name === 'model' ? state.model?.category : null;
+  const q = route.name === 'browse' ? route.filters.q : '';
   $('#nav').innerHTML = [
     `<a href="#/" ${route.name === 'home' ? 'aria-current="page"' : ''}>Catalog</a>`,
-    ...state.categories.map(c => `<a href="#/c/${esc(c.id)}" ${cur === c.id ? 'aria-current="page"' : ''}>${esc(c.label)}</a>`),
+    ...liveCategories().map(c => `<a href="#/c/${esc(c.id)}" ${cur === c.id ? 'aria-current="page"' : ''}>${esc(c.label)}</a>`),
     `<a href="#/compare" ${route.name === 'compare' ? 'aria-current="page"' : ''}>Compare</a>`,
     `<a href="#/history" ${route.name === 'history' ? 'aria-current="page"' : ''}>History</a>`,
+    `<form class="nav-search" role="search"><input type="search" name="q" value="${esc(q)}" placeholder="Search machines" aria-label="Search machines"></form>`,
   ].join('');
 }
+// The header search opens Browse with the query; one listener, since the nav is rebuilt per route.
+document.addEventListener('submit', e => {
+  if (!e.target.matches('.nav-search')) return;
+  e.preventDefault();
+  const q = e.target.q.value.trim();
+  location.hash = q ? `#/browse?q=${encodeURIComponent(q)}` : '#/browse';
+});
 
 function render() {
   const route = parseRoute();
@@ -158,7 +183,9 @@ function render() {
       $, esc,
       models: () => state.models,
       specLabels: SPEC_LABELS,
-      groupOrder: GROUP_ORDER,
+      classLabel,
+      classRank,
+      collections: () => state.collections,
       ensureViewer,
       modelObject,
     });
@@ -181,7 +208,8 @@ function render() {
   else {
     parkViewer();
     state.loadToken++;
-    if (route.name === 'category') renderCategory(route.id);
+    if (route.name === 'category') renderCategory(route.id, route.filters);
+    else if (route.name === 'browse') renderBrowse(route.filters);
     else if (route.name === 'history') renderHistory();
     else renderHome();
     window.scrollTo(0, 0);
@@ -221,50 +249,179 @@ function hydrateThumbs(root = document) {
 
 // ── Home ───────────────────────────────────────────────
 function renderHome() {
-  document.title = 'Machina';
-  const cats = state.categories.map(c => ({ ...c, models: state.models.filter(m => m.category === c.id) }));
-  const partCount = state.models.reduce((n, m) => n + (m._parts ?? 0), 0);
+  document.title = 'Machina · Machines, as they really are';
+  const models = state.models;
+  const parts = models.reduce((n, m) => n + (m._parts ?? 0), 0);
+  const sources = new Set(models.map(m => m.asset?.author ?? m.id)).size;
+  const live = liveCategories().map(c => ({ ...c, models: models.filter(m => m.category === c.id) }));
+  // The line-up is the true-scale collection when there is one, else machines spread across the size range.
+  const scale = state.collections?.find(c => c.id === 'true-scale')?.ids.map(id => models.find(m => m.id === id)).filter(Boolean);
+  const lineup = scale?.length > 2 ? [...scale].sort((a, b) => a.specs.length_m - b.specs.length_m) : lineupPick(models, 7);
+  const collections = (state.collections ?? []).filter(c => c.id !== 'true-scale').map(c => ({ ...c, models: c.ids.map(id => models.find(m => m.id === id)).filter(Boolean) })).filter(c => c.models.length > 1);
+  const eras = ERAS.map(e => ({ ...e, n: models.filter(m => eraOf(m)?.id === e.id).length }));
   $('#page').innerHTML = `
-    <div class="blueprint"><div class="page">
-      <section class="hero">
+    <div class="blueprint"><div class="page home">
+      <section class="hero home-hero">
         <div>
-          <span class="label">Data-driven 3D catalog</span>
-          <h1>Machines, built from <em>their numbers.</em></h1>
-          <p>Real open-source 3D models, grouped into named parts and measured against their published specifications. Click any part to see what it is and how big it really is.</p>
+          <span class="label">Open 3D catalog of real machines</span>
+          <h1>Machines, <em>as they really are.</em></h1>
+          <p>Real machines you can take apart, compare at true scale and trust, because every one is measured.</p>
+          <p class="values"><span>Real.</span> <span>Measured.</span> <span>Open.</span></p>
         </div>
         <div class="stats bracket">
-          <div class="stat"><b>${state.models.length}</b><span>models</span></div>
-          <div class="stat"><b>${partCount || '…'}</b><span>selectable parts</span></div>
-          <div class="stat"><b>100%</b><span>open licenses, credited</span></div>
+          <div class="stat"><b>${models.length}</b><span>machines</span></div>
+          <div class="stat"><b>${parts || '…'}</b><span>named parts</span></div>
+          <div class="stat"><b>${sources}</b><span>credited sources</span></div>
         </div>
       </section>
 
-      <div class="section-head"><h2>Categories</h2><span class="label">${cats.length} live · ${PLANNED.length} planned</span></div>
-      <div class="cats cats-live">
-        ${cats.map(c => `<a class="cat" href="#/c/${esc(c.id)}">
-          <div class="cat-art">${c.models[0] ? `<img data-thumb="${esc(c.models[0].id)}" alt="" hidden>` : ''}</div>
-          <div class="cat-body"><div><span class="label">Category</span><h3>${esc(c.label)}</h3><p>${esc(c.description)}</p></div><span class="count">${String(c.models.length).padStart(2, '0')}</span></div>
-        </a>`).join('')}
-      </div>
-      <div class="cats cats-planned">
-        ${PLANNED.map(c => `<div class="cat soon" aria-disabled="true">
-          <div class="cat-body"><div><span class="label">Coming, milestone M5</span><h3>${esc(c.label)}</h3><p>${esc(c.description)}</p></div><span class="count">--</span></div>
-        </div>`).join('')}
-      </div>
+      <section class="lineup-wrap" aria-label="Machines at true scale">
+        <div class="lineup-head"><span class="label">True scale</span><span class="label" id="lineup-scale"></span></div>
+        <div class="lineup" id="lineup">${lineup.map(m => `
+          <a class="lineup-item" href="#/m/${esc(m.id)}" title="${esc(m.name)}, ${num(m.specs.length_m)} m">
+            <img alt="${esc(m.name)}" data-length="${m.specs.length_m}" src="./assets/thumbs/${encodeURIComponent(m.id)}-side.webp${state.thumbs[m.id] ? `?v=${state.thumbs[m.id].hash}` : ''}">
+            <span class="lineup-name">${esc(shortName(m))}</span><span class="lineup-len">${num(m.specs.length_m)} m</span>
+          </a>`).join('')}
+        </div>
+        <div class="ruler" id="ruler" aria-hidden="true"></div>
+      </section>
 
-      <div class="section-head"><h2>All models</h2><div class="toolbar-row">${sortSelect()}<input class="search" id="search" type="search" placeholder="Search by name, maker or role" aria-label="Search models"></div></div>
-      <div class="gallery" id="gallery"></div>
+      <div class="section-head"><h2>Categories</h2><span class="label">${live.length} live · ${plannedCategories().length} coming</span></div>
+      <div class="cats cats-live">
+        ${live.map(c => {
+          const rep = [...c.models].sort((a, b) => b.specs.length_m - a.specs.length_m)[Math.floor(c.models.length / 3)] ?? c.models[0];
+          const classes = (c.classes ?? []).map(k => ({ ...k, n: c.models.filter(m => m.class === k.id).length })).filter(k => k.n);
+          return `<div class="cat">
+            <a class="cat-art" href="#/c/${esc(c.id)}" tabindex="-1" aria-hidden="true">${rep ? `<img data-thumb="${esc(rep.id)}" alt="" hidden>` : ''}</a>
+            <div class="cat-body">
+              <div><a class="cat-title" href="#/c/${esc(c.id)}"><h3>${esc(c.label)}</h3></a><p>${esc(c.description)}</p>
+                <div class="chips">${classes.map(k => `<a class="class-chip" href="#/c/${esc(c.id)}?class=${esc(k.id)}">${esc(k.label)} <b>${k.n}</b></a>`).join('')}</div>
+              </div>
+              <span class="count">${String(c.models.length).padStart(2, '0')}</span>
+            </div>
+          </div>`;
+        }).join('')}
+      </div>
+      <p class="coming"><span class="label">Coming</span>${plannedCategories().map(c => `<span class="soon-chip" title="${esc(c.description)}">${esc(c.label)}</span>`).join('')}</p>
+
+      ${collections.length ? `<div class="section-head"><h2>Collections</h2><span class="label">opens in Compare</span></div>
+      <div class="collections">${collections.map(c => `
+        <a class="collection" href="#/compare/${c.models.map(m => encodeURIComponent(m.id)).join(',')}">
+          <div class="coll-thumbs">${c.models.slice(0, 4).map(m => `<img data-thumb="${esc(m.id)}" alt="" hidden>`).join('')}</div>
+          <div class="coll-body"><h3>${esc(c.label)}</h3><p>${esc(c.description)}</p><span class="label">${c.models.length} machines</span></div>
+        </a>`).join('')}</div>` : ''}
+
+      <div class="section-head"><h2>Eras</h2><span class="label">by first flight</span></div>
+      <div class="eras">${eras.map(e => `
+        <a class="era${e.n ? '' : ' empty'}" href="#/browse?era=${esc(e.id)}"${e.n ? '' : ' aria-disabled="true" tabindex="-1"'}>
+          <span class="era-years">${e.from}${e.to < 9999 ? `–${e.to}` : '+'}</span><span class="era-name">${esc(e.label)}</span><b>${e.n}</b>
+        </a>`).join('')}</div>
+
+      <section class="trust">
+        <div><h3>Real</h3><p>Only genuine models: open-source simulator models and museum scans, never generated guesses.</p></div>
+        <div><h3>Measured</h3><p>Every machine is checked against its published specifications and drawn from its own geometry.</p></div>
+        <div><h3>Open</h3><p>Every source and license is credited, and everything here is free to explore.</p></div>
+      </section>
+
+      <div class="browse-all"><a class="button" href="#/browse">Browse all ${models.length} machines</a></div>
     </div></div>`;
   hydrateThumbs();
-  const fill = () => {
-    const q = $('#search').value.toLowerCase();
-    const list = sorted(state.models.filter(m => `${m.name} ${m.group} ${m.specs.manufacturer} ${m.specs.role}`.toLowerCase().includes(q)));
-    $('#gallery').innerHTML = list.map(cardHTML).join('') || '<p class="note">No models match.</p>';
-    hydrateThumbs($('#gallery'));
+  layoutLineup();
+}
+
+/** Up to n machines from smallest to largest, spread evenly across the size range. */
+function lineupPick(models, n) {
+  const bySize = [...models].sort((a, b) => a.specs.length_m - b.specs.length_m);
+  if (bySize.length <= n) return bySize;
+  return [...new Set(Array.from({ length: n }, (_, i) => bySize[Math.round((i * (bySize.length - 1)) / (n - 1))]))];
+}
+
+/** A short label for the line-up: the type without the maker. */
+const shortName = m => m.name.replace(/^(Boeing|Airbus|Lockheed|Antonov|Ilyushin|Tupolev|Cessna|Piper|Robin|Eurocopter|Aérospatiale\/BAC)\s+/, '');
+
+/** Size the line-up so every profile shares one meters-to-pixels scale that fits the row. */
+function layoutLineup() {
+  const row = $('#lineup');
+  if (!row) return;
+  const items = [...row.querySelectorAll('img')];
+  const gap = 28, room = row.clientWidth - gap * (items.length - 1);
+  const total = items.reduce((a, img) => a + Number(img.dataset.length), 0);
+  const pxPerM = Math.min(12, room / total);
+  for (const img of items) img.style.width = `${(Number(img.dataset.length) * pxPerM).toFixed(1)}px`;
+  const tick = pxPerM * 10;
+  const ruler = $('#ruler');
+  ruler.style.backgroundSize = `${tick}px 100%`;
+  $('#lineup-scale').textContent = `ruler ticks 10 m`;
+}
+window.addEventListener('resize', () => { if (parseRoute().name === 'home') layoutLineup(); });
+
+// ── Browse and category pages ──────────────────────────
+const FILTERS = ['class', 'era', 'country', 'maker'];
+const makerOf = m => m.specs.manufacturer ?? '';
+
+/** Browse every machine, or one category (fixed), filtered by class, era, country, maker and text. */
+function renderBrowse(f, fixed = null) {
+  const cat = fixed ? state.categories.find(c => c.id === fixed && !c.planned) : null;
+  if (fixed && !cat) { location.hash = '#/'; return; }
+  document.title = `${cat ? cat.label : 'Browse'} · Machina`;
+  const base = cat ? state.models.filter(m => m.category === cat.id) : state.models;
+  const q = (f.q ?? '').toLowerCase();
+  const match = (m, skip) => (skip === 'class' || !f.class || `${m.category}:${m.class}` === f.class || (cat && m.class === f.class))
+    && (skip === 'era' || !f.era || eraOf(m)?.id === f.era)
+    && (skip === 'country' || !f.country || countriesOf(m).includes(f.country))
+    && (skip === 'maker' || !f.maker || makerOf(m) === f.maker)
+    && (!q || `${m.name} ${classLabel(m)} ${makerOf(m)} ${m.specs.role ?? ''} ${countriesOf(m).join(' ')}`.toLowerCase().includes(q));
+  const list = sorted(base.filter(m => match(m)));
+  // Each filter offers the values present among machines matching the other filters, with counts.
+  const opts = (key, values, label) => {
+    const counts = new Map();
+    for (const m of base.filter(m => match(m, key))) for (const v of values(m)) counts.set(v, (counts.get(v) ?? 0) + 1);
+    return [{ value: '', label: `All` }, ...[...counts].sort((a, b) => label(a[0]).localeCompare(label(b[0]))).map(([v, n]) => ({ value: v, label: `${label(v)} (${n})` }))];
   };
-  fill();
-  $('#search').addEventListener('input', fill);
-  onSort(fill);
+  const classValue = m => (cat ? m.class : `${m.category}:${m.class}`);
+  const classText = v => { const [c, k] = cat ? [cat.id, v] : v.split(':'); const cc = state.categories.find(x => x.id === c); const kk = cc?.classes?.find(x => x.id === k)?.label ?? k; return cat ? kk : `${cc?.label ?? c}: ${kk}`; };
+  const eraText = v => { const e = ERAS.find(x => x.id === v); return e ? `${e.label}, ${e.from}${e.to < 9999 ? `–${e.to}` : '+'}` : v; };
+  const pick = (name, prefix, options, value) => pickerHTML({ name, label: `Filter by ${prefix.toLowerCase()}`, prefix, value, options });
+  const active = FILTERS.filter(k => f[k]).length + (q ? 1 : 0);
+  const groups = cat && !f.class ? (cat.classes ?? []).filter(k => list.some(m => m.class === k.id)) : null;
+  $('#page').innerHTML = `
+    <div class="blueprint"><div class="page">
+      <div class="crumbs"><a href="#/">Catalog</a><span class="sep">/</span><span>${esc(cat ? cat.label : 'Browse')}</span></div>
+      <section class="hero browse-hero">
+        <div><span class="label">${cat ? 'Category' : 'All machines'}</span><h1>${esc(cat ? cat.label : 'Browse')}</h1><p>${esc(cat ? cat.description : 'Every machine in the catalog, by class, era, country and maker.')}</p></div>
+        <div class="stats bracket" style="grid-template-columns:repeat(2,1fr)">
+          <div class="stat"><b>${base.length}</b><span>machines</span></div>
+          <div class="stat"><b>${new Set(base.map(m => (cat ? '' : m.category) + m.class)).size}</b><span>classes</span></div>
+        </div>
+      </section>
+      <div class="filters">
+        ${pick('class', 'Class', opts('class', m => [classValue(m)], classText), f.class)}
+        ${pick('era', 'Era', opts('era', m => (eraOf(m) ? [eraOf(m).id] : []), eraText), f.era)}
+        ${pick('country', 'Country', opts('country', countriesOf, v => v), f.country)}
+        ${pick('maker', 'Maker', opts('maker', m => (makerOf(m) ? [makerOf(m)] : []), v => v), f.maker)}
+        <input class="search" id="filter-q" type="search" value="${esc(f.q ?? '')}" placeholder="Search by name, maker or role" aria-label="Search">
+        ${active ? `<a class="clear" href="#/${cat ? `c/${esc(cat.id)}` : 'browse'}">Clear ${active > 1 ? `${active} filters` : 'filter'}</a>` : ''}
+        <span class="spacer"></span>${sortSelect()}
+      </div>
+      <p class="result-count label">${list.length} of ${base.length} machines</p>
+      ${!list.length ? '<p class="note">No machines match these filters.</p>'
+        : groups ? groups.map(k => `<div class="group-title"><span class="label">${esc(k.label)}</span></div>
+          <div class="gallery">${list.filter(m => m.class === k.id).map(cardHTML).join('')}</div>`).join('')
+        : `<div class="gallery">${list.map(cardHTML).join('')}</div>`}
+    </div></div>`;
+  hydrateThumbs();
+  const go = next => {
+    const p = new URLSearchParams();
+    for (const k of [...FILTERS, 'q']) if (next[k]) p.set(k, next[k]);
+    const path = cat ? `#/c/${cat.id}` : '#/browse';
+    history.replaceState(null, '', `${path}${p.size ? `?${p}` : ''}`);
+    renderBrowse(next, fixed);
+  };
+  for (const k of FILTERS) document.querySelector(`[data-pick="${k}"]`)?.addEventListener('pick', e => go({ ...f, [k]: e.detail.value }));
+  const input = $('#filter-q');
+  let t = null;
+  input.addEventListener('input', () => { clearTimeout(t); t = setTimeout(() => { go({ ...f, q: input.value.trim() }); const el = $('#filter-q'); el.focus(); el.setSelectionRange(el.value.length, el.value.length); }, 250); });
+  onSort(() => renderBrowse(f, fixed));
 }
 
 // ── Category ───────────────────────────────────────────
@@ -295,29 +452,8 @@ async function renderHistory() {
   </div>`;
 }
 
-function renderCategory(id) {
-  const cat = state.categories.find(c => c.id === id);
-  if (!cat) { location.hash = '#/'; return; }
-  document.title = `${cat.label} · Machina`;
-  const models = state.models.filter(m => m.category === id);
-  const groups = [...new Set(sorted(models).map(m => m.group))].sort((a, b) => (GROUP_ORDER.indexOf(a) + 1 || 99) - (GROUP_ORDER.indexOf(b) + 1 || 99));
-  $('#page').innerHTML = `
-    <div class="blueprint"><div class="page">
-      <div class="crumbs"><a href="#/">Catalog</a><span class="sep">/</span><span>${esc(cat.label)}</span></div>
-      <section class="hero" style="grid-template-columns:1fr auto">
-        <div><span class="label">Category</span><h1>${esc(cat.label)}</h1><p>${esc(cat.description)}</p></div>
-        <div class="stats bracket" style="grid-template-columns:repeat(2,1fr)">
-          <div class="stat"><b>${models.length}</b><span>models</span></div>
-          <div class="stat"><b>${groups.length}</b><span>groups</span></div>
-        </div>
-      </section>
-      <div class="section-head" style="margin-top:24px"><span></span>${sortSelect()}</div>
-      ${groups.map(g => `<div class="group-title"><span class="label">${esc(g)}</span></div>
-        <div class="gallery">${sorted(models.filter(m => m.group === g)).map(cardHTML).join('')}</div>`).join('')}
-    </div></div>`;
-  hydrateThumbs();
-  onSort(() => renderCategory(id));
-}
+/** A category page is Browse with the category fixed. */
+function renderCategory(id, filters = {}) { renderBrowse(filters, id); }
 
 // ── Model ──────────────────────────────────────────────
 function ensureViewer() {
@@ -597,7 +733,7 @@ function specRows(m) {
     const [label, unit] = Array.isArray(l) ? l : [l, ''];
     const isYear = k === 'first_flight' || k === 'in_service';
     const numeric = typeof v === 'number' && !isYear;
-    const value = unit === 'Mach' ? `Mach ${v}` : `${isYear ? v : num(v)}${unit ? ` ${unit}` : ''}`;
+    const value = Array.isArray(v) ? v.join(', ') : unit === 'Mach' ? `Mach ${v}` : `${isYear ? v : num(v)}${unit ? ` ${unit}` : ''}`;
     return `<div><dt>${esc(label)}</dt><dd class="${numeric ? 'num' : ''}">${esc(value)}</dd></div>`;
   }).join('');
 }
@@ -658,7 +794,7 @@ const builtFrom = m => m.asset && state.shownDetailed ? 'Detailed FlightGear mod
 
 const PANELS = {
   overview: m => `
-    <span class="label">${esc(m.group)} · ${esc(code(m))}</span>
+    <span class="label">${esc(classLabel(m))} · ${esc(code(m))}</span>
     <h1>${esc(m.name)}</h1>
     <p class="sub">${esc(m.summary)}</p>
     ${sizeBadge(m)}
@@ -800,17 +936,19 @@ window.addEventListener('hashchange', render);
 async function loadCatalog() {
   const bundle = await fetch('./data/catalog.json').then(r => (r.ok ? r.json() : null)).catch(() => null);
   if (bundle) return bundle;
-  const [categories, index, thumbs] = await Promise.all([
+  const [categories, collections, index, thumbs] = await Promise.all([
     fetch('./data/categories.json').then(r => r.json()),
+    fetch('./data/collections.json').then(r => (r.ok ? r.json() : [])).catch(() => []),
     fetch('./data/index.json').then(r => r.json()),
     fetch('./data/thumbs.json').then(r => (r.ok ? r.json() : {})).catch(() => ({})),
   ]);
   const models = await Promise.all(index.models.map(p => fetch(`./data/${p}`).then(r => r.json())));
-  return { categories, models, thumbs };
+  return { categories, collections, models, thumbs };
 }
 
 async function boot() {
-  const { categories, models, thumbs } = await loadCatalog();
+  const { categories, collections = [], models, thumbs } = await loadCatalog();
+  state.collections = collections;
   // ?workshop opens unlisted models too, to check them before they are listed.
   if (/[?&]workshop/.test(location.search)) {
     const index = await fetch('./data/index.json').then(r => r.json());
