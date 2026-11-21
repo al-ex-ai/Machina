@@ -8,7 +8,7 @@ OBJECT poly
 name "face"
 data 6
 Circle
-texture "asi.png"
+texture "asi.webp"
 texrep 1 1
 crease 30.000000
 numvert 128

@@ -79,7 +79,7 @@ OBJECT poly
 name "face"
 data 9
 Plane.001
-texture "vehiclepage.png"
+texture "vehiclepage.webp"
 texrep 1 1
 crease 30.000000
 numvert 4

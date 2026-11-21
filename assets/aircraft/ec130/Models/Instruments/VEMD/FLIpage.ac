@@ -9,7 +9,7 @@ OBJECT poly
 name "FLIface"
 data 9
 Plane.013
-texture "FLIpage.png"
+texture "FLIpage.webp"
 crease 30.000000
 numvert 4
 0.000335 3.1e-005 -0.087351

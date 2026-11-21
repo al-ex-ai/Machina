@@ -31,7 +31,7 @@ name "warnlights1"
 loc 0.00316682 -0.00621925 0.0934443
 data 8
 Cube.009
-texture "panel_t2.png"
+texture "panel_t2.webp"
 crease 30.000000
 numvert 8
 -0.00262065 0.00452165 -0.0107967
@@ -777,7 +777,7 @@ name "face"
 loc 0.0029035 -0.0074256 0
 data 8
 Cube.006
-texture "panel_t2.png"
+texture "panel_t2.webp"
 crease 30.000000
 numvert 521
 0.0015485 -0.0304696 -0.077643

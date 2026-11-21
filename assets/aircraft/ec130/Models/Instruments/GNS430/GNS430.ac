@@ -6,7 +6,7 @@ OBJECT poly
 name "ComFlipFlop.btn"
 data 8
 Cube.003
-texture "GNS430Textur.png"
+texture "GNS430Textur.webp"
 crease 30.000000
 numvert 30
 0.010429 0.02171 0.051245
@@ -213,7 +213,7 @@ OBJECT poly
 name "ComVLOCkhz.knob"
 data 12
 Cylinder.003
-texture "GNS430Textur.png"
+texture "GNS430Textur.webp"
 crease 30.000000
 numvert 49
 0.029609 -0.019855 0.066861
@@ -591,7 +591,7 @@ OBJECT poly
 name "ComVLOCmhz.knob"
 data 12
 Cylinder.001
-texture "GNS430Textur.png"
+texture "GNS430Textur.webp"
 crease 30.000000
 numvert 48
 0.009787 -0.011788 0.058794
@@ -872,7 +872,7 @@ OBJECT poly
 name "Cube.001"
 data 8
 Cube.004
-texture "GNS430Textur.png"
+texture "GNS430Textur.webp"
 crease 30.000000
 numvert 58
 0.010476 -0.03284 -0.046994
@@ -1292,7 +1292,7 @@ OBJECT poly
 name "NavFlipFlop.btn"
 data 8
 Cube.008
-texture "GNS430Textur.png"
+texture "GNS430Textur.webp"
 crease 30.000000
 numvert 30
 0.010429 0.005568 0.051108
@@ -1499,7 +1499,7 @@ OBJECT poly
 name "NavVolume.knob"
 data 12
 Cylinder.002
-texture "GNS430Textur.png"
+texture "GNS430Textur.webp"
 crease 30.000000
 numvert 49
 0.018904 0.00695 0.066238
@@ -1877,7 +1877,7 @@ OBJECT poly
 name "PwrComVol.knob"
 data 12
 Cylinder.004
-texture "GNS430Textur.png"
+texture "GNS430Textur.webp"
 crease 30.000000
 numvert 49
 0.018904 0.02198 0.066089
@@ -2255,7 +2255,7 @@ OBJECT poly
 name "RangeKeys.btn"
 data 8
 Cube.012
-texture "GNS430Textur.png"
+texture "GNS430Textur.webp"
 crease 30.000000
 numvert 30
 0.010429 0.026116 -0.074717
@@ -2462,7 +2462,7 @@ OBJECT poly
 name "cdi.btn"
 data 8
 Cube.013
-texture "GNS430Textur.png"
+texture "GNS430Textur.webp"
 crease 30.000000
 numvert 30
 0.010429 -0.025936 0.028138
@@ -2669,7 +2669,7 @@ OBJECT poly
 name "clear.btn.001"
 data 8
 Cube.011
-texture "GNS430Textur.png"
+texture "GNS430Textur.webp"
 crease 30.000000
 numvert 30
 0.010246 0.005865 -0.06169
@@ -2876,7 +2876,7 @@ OBJECT poly
 name "cursor.knob"
 data 12
 Cylinder.005
-texture "GNS430Textur.png"
+texture "GNS430Textur.webp"
 crease 30.000000
 numvert 49
 0.018973 -0.014837 -0.074215
@@ -3254,7 +3254,7 @@ OBJECT poly
 name "directto.btn"
 data 8
 Cube.009
-texture "GNS430Textur.png"
+texture "GNS430Textur.webp"
 crease 30.000000
 numvert 30
 0.01024 0.015836 -0.061803
@@ -3461,7 +3461,7 @@ OBJECT poly
 name "enter.btn"
 data 8
 Cube.010
-texture "GNS430Textur.png"
+texture "GNS430Textur.webp"
 crease 30.000000
 numvert 30
 0.010249 0.006475 -0.075186
@@ -3668,7 +3668,7 @@ OBJECT poly
 name "fpl.btn"
 data 8
 Cube.016
-texture "GNS430Textur.png"
+texture "GNS430Textur.webp"
 crease 30.000000
 numvert 30
 0.010429 -0.025777 -0.024988
@@ -3875,7 +3875,7 @@ OBJECT poly
 name "large.knob"
 data 12
 Cylinder.006
-texture "GNS430Textur.png"
+texture "GNS430Textur.webp"
 crease 30.000000
 numvert 48
 0.009936 -0.013474 -0.075577
@@ -4156,7 +4156,7 @@ OBJECT poly
 name "menu.btn"
 data 8
 Cube.014
-texture "GNS430Textur.png"
+texture "GNS430Textur.webp"
 crease 30.000000
 numvert 30
 0.010337 0.015817 -0.075287
@@ -4363,7 +4363,7 @@ OBJECT poly
 name "msg.btn"
 data 8
 Cube.015
-texture "GNS430Textur.png"
+texture "GNS430Textur.webp"
 crease 30.000000
 numvert 30
 0.010429 -0.025889 -0.007576
@@ -4570,7 +4570,7 @@ OBJECT poly
 name "obs.btn"
 data 8
 Cube.017
-texture "GNS430Textur.png"
+texture "GNS430Textur.webp"
 crease 30.000000
 numvert 30
 0.010429 -0.026002 0.010624
@@ -4777,7 +4777,7 @@ OBJECT poly
 name "proc.btn"
 data 8
 Cube.018
-texture "GNS430Textur.png"
+texture "GNS430Textur.webp"
 crease 30.000000
 numvert 30
 0.010429 -0.026114 -0.042992

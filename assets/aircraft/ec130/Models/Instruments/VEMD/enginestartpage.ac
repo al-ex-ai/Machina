@@ -240,7 +240,7 @@ OBJECT poly
 name "face"
 data 9
 Plane.001
-texture "enginepagestart.png"
+texture "enginepagestart.webp"
 crease 30.000000
 numvert 16
 2.1e-005 3e-006 -0.102125

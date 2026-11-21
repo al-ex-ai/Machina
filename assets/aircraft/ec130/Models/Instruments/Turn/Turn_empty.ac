@@ -7,7 +7,7 @@ name "fill"
 loc 0.0177 0 3.26406e-014
 data 10
 Circle.001
-texture "../../panel.png"
+texture "../../panel.webp"
 crease 30.000000
 numvert 32
 3.72529e-009 0.0302492 0.0302492

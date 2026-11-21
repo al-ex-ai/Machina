@@ -562,7 +562,7 @@ name "cutofflever"
 loc 0.00261973 0.00868239 0.014917
 data 8
 Cube.008
-texture "levers.png"
+texture "levers.webp"
 crease 30.000000
 numvert 20
 -0.014549 -0.053166 0.02417
@@ -728,7 +728,7 @@ name "rotorbrakelever"
 loc 0.00261973 0.00868239 0.014917
 data 8
 Cube.009
-texture "levers.png"
+texture "levers.webp"
 crease 30.000000
 numvert 30
 0.0101831 -0.0610242 -0.004833

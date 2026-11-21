@@ -11,7 +11,7 @@ OBJECT poly
 name "Plane"
 data 5
 Plane
-texture "breakers2.png"
+texture "breakers2.webp"
 crease 30.000000
 numvert 104
 -0.040623 0.001592 -0.079755
@@ -737,7 +737,7 @@ OBJECT poly
 name "Plane.001_1"
 data 9
 Plane.001
-texture "breakerspanel.png"
+texture "breakerspanel.webp"
 crease 30.000000
 numvert 8
 0.017018 0.003225 0.026283
@@ -804,7 +804,7 @@ OBJECT poly
 name "Plane.002_1"
 data 9
 Plane.024
-texture "breakerspanel.png"
+texture "breakerspanel.webp"
 crease 30.000000
 numvert 8
 -0.017359 0.003225 -0.026354

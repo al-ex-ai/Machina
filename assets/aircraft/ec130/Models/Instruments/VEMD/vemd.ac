@@ -7,7 +7,7 @@ OBJECT poly
 name "face"
 data 9
 Plane.004
-texture "vemd.png"
+texture "vemd.webp"
 crease 30.000000
 numvert 360
 0.008826 -0.084203 -0.037818
@@ -3073,7 +3073,7 @@ OBJECT poly
 name "Plane"
 data 9
 Plane.005
-texture "vemd.png"
+texture "vemd.webp"
 crease 30.000000
 numvert 8
 0.008826 -0.084203 -0.037818
@@ -3103,7 +3103,7 @@ kids 0
 OBJECT poly
 name "button_off1"
 loc 0.0133784 0.0771916 -0.0622342
-texture "vemd.png"
+texture "vemd.webp"
 crease 45.000000
 numvert 8
 0.00169881 0.00368631 0.00636645
@@ -3161,7 +3161,7 @@ kids 0
 OBJECT poly
 name "button_off2"
 loc 0.0133784 0.0600098 -0.0622342
-texture "vemd.png"
+texture "vemd.webp"
 crease 45.000000
 numvert 8
 -0.00169881 -0.00368631 -0.00636645
@@ -3219,7 +3219,7 @@ kids 0
 OBJECT poly
 name "button_scroll"
 loc 0.0133784 0.0426764 -0.0622342
-texture "vemd.png"
+texture "vemd.webp"
 crease 45.000000
 numvert 8
 0.00169881 0.00368631 0.00636645
@@ -3277,7 +3277,7 @@ kids 0
 OBJECT poly
 name "button_reset"
 loc 0.0133784 0.0258824 -0.0622342
-texture "vemd.png"
+texture "vemd.webp"
 crease 45.000000
 numvert 8
 -0.00169881 -0.00368631 -0.00636645
@@ -3335,7 +3335,7 @@ kids 0
 OBJECT poly
 name "button_select"
 loc 0.0133784 0.00156069 -0.0622342
-texture "vemd.png"
+texture "vemd.webp"
 crease 45.000000
 numvert 8
 0.00169881 0.00368631 0.00636645
@@ -3393,7 +3393,7 @@ kids 0
 OBJECT poly
 name "button_plus"
 loc 0.0133784 -0.0163074 -0.0622342
-texture "vemd.png"
+texture "vemd.webp"
 crease 45.000000
 numvert 8
 -0.00169881 -0.00368631 -0.00636645
@@ -3451,7 +3451,7 @@ kids 0
 OBJECT poly
 name "button_minus"
 loc 0.0133784 -0.0317218 -0.0622342
-texture "vemd.png"
+texture "vemd.webp"
 crease 45.000000
 numvert 8
 0.00169881 0.00368631 0.00636645
@@ -3509,7 +3509,7 @@ kids 0
 OBJECT poly
 name "button_enter"
 loc 0.0133784 -0.0481509 -0.0622342
-texture "vemd.png"
+texture "vemd.webp"
 crease 45.000000
 numvert 8
 -0.00169881 -0.00368631 -0.00636645
@@ -3567,7 +3567,7 @@ kids 0
 OBJECT poly
 name "button_brtplus"
 loc 0.0133784 -0.0649507 -0.0622342
-texture "vemd.png"
+texture "vemd.webp"
 crease 45.000000
 numvert 8
 0.00169881 0.00368632 0.00636645
@@ -3625,7 +3625,7 @@ kids 0
 OBJECT poly
 name "button_brtmin"
 loc 0.0133784 -0.0753848 -0.0622342
-texture "vemd.png"
+texture "vemd.webp"
 crease 45.000000
 numvert 8
 -0.00169881 -0.00368632 -0.00636645

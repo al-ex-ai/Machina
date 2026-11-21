@@ -13,7 +13,7 @@ name "Plane"
 loc 0.0098685 -7.59996e-005 -0.0119555
 data 9
 Plane.002
-texture "panel.png"
+texture "panel.webp"
 crease 30.000000
 numvert 178
 -0.0001125 0.022274 -0.0539855
@@ -2370,7 +2370,7 @@ kids 0
 OBJECT poly
 name "ebcaubutton"
 loc 0.00893548 0.000733769 0.0405906
-texture "panel.png"
+texture "panel.webp"
 crease 45.000000
 numvert 8
 -0.00169881 -0.0101328 -0.00900645

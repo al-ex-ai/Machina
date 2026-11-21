@@ -7,7 +7,7 @@ OBJECT poly
 name "0.btn"
 data 9
 Plane.006
-texture "GTX330Textur.png"
+texture "GTX330Textur.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -231,7 +231,7 @@ OBJECT poly
 name "1.btn"
 data 9
 Plane.021
-texture "GTX330Textur.png"
+texture "GTX330Textur.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -455,7 +455,7 @@ OBJECT poly
 name "2.btn"
 data 9
 Plane.022
-texture "GTX330Textur.png"
+texture "GTX330Textur.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -679,7 +679,7 @@ OBJECT poly
 name "3.btn"
 data 9
 Plane.023
-texture "GTX330Textur.png"
+texture "GTX330Textur.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -903,7 +903,7 @@ OBJECT poly
 name "4.btn"
 data 9
 Plane.024
-texture "GTX330Textur.png"
+texture "GTX330Textur.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -1127,7 +1127,7 @@ OBJECT poly
 name "5.btn"
 data 9
 Plane.025
-texture "GTX330Textur.png"
+texture "GTX330Textur.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -1351,7 +1351,7 @@ OBJECT poly
 name "6.btn"
 data 9
 Plane.026
-texture "GTX330Textur.png"
+texture "GTX330Textur.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -1575,7 +1575,7 @@ OBJECT poly
 name "7.btn"
 data 9
 Plane.027
-texture "GTX330Textur.png"
+texture "GTX330Textur.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -1799,7 +1799,7 @@ OBJECT poly
 name "8.btn"
 data 9
 Plane.028
-texture "GTX330Textur.png"
+texture "GTX330Textur.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -2023,7 +2023,7 @@ OBJECT poly
 name "9.btn"
 data 9
 Plane.029
-texture "GTX330Textur.png"
+texture "GTX330Textur.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -2247,7 +2247,7 @@ OBJECT poly
 name "Cube"
 data 8
 Cube.001
-texture "GTX330Textur.png"
+texture "GTX330Textur.webp"
 texrep 1 1
 crease 30.000000
 numvert 59
@@ -2669,7 +2669,7 @@ OBJECT poly
 name "alt.btn"
 data 8
 Cylinder
-texture "GTX330Textur.png"
+texture "GTX330Textur.webp"
 texrep 1 1
 crease 30.000000
 numvert 49
@@ -3048,7 +3048,7 @@ OBJECT poly
 name "clear.btn"
 data 9
 Plane.020
-texture "GTX330Textur.png"
+texture "GTX330Textur.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -3272,7 +3272,7 @@ OBJECT poly
 name "cursor.btn"
 data 9
 Plane.019
-texture "GTX330Textur.png"
+texture "GTX330Textur.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -3496,7 +3496,7 @@ OBJECT poly
 name "func.btn"
 data 9
 Plane.018
-texture "GTX330Textur.png"
+texture "GTX330Textur.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -3720,7 +3720,7 @@ OBJECT poly
 name "ident.btn"
 data 5
 Plane
-texture "GTX330Textur.png"
+texture "GTX330Textur.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -3944,7 +3944,7 @@ OBJECT poly
 name "off.btn"
 data 8
 Cube.006
-texture "GTX330Textur.png"
+texture "GTX330Textur.webp"
 texrep 1 1
 crease 30.000000
 numvert 30
@@ -4152,7 +4152,7 @@ OBJECT poly
 name "on.btn"
 data 8
 Cube.002
-texture "GTX330Textur.png"
+texture "GTX330Textur.webp"
 texrep 1 1
 crease 30.000000
 numvert 30
@@ -4360,7 +4360,7 @@ OBJECT poly
 name "startstop.btn"
 data 9
 Plane.017
-texture "GTX330Textur.png"
+texture "GTX330Textur.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -4584,7 +4584,7 @@ OBJECT poly
 name "stby.btn"
 data 8
 Cube.005
-texture "GTX330Textur.png"
+texture "GTX330Textur.webp"
 texrep 1 1
 crease 30.000000
 numvert 30
@@ -4792,7 +4792,7 @@ OBJECT poly
 name "vfr.btn"
 data 9
 Plane.016
-texture "GTX330Textur.png"
+texture "GTX330Textur.webp"
 texrep 1 1
 crease 30.000000
 numvert 32

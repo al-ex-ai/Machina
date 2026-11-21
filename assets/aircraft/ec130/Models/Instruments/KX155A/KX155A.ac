@@ -7,7 +7,7 @@ OBJECT poly
 name "CommA1.1"
 data 9
 Plane.029
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -28,7 +28,7 @@ OBJECT poly
 name "CommA1.2"
 data 9
 Plane.011
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -49,7 +49,7 @@ OBJECT poly
 name "CommA1.3"
 data 9
 Plane.012
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -70,7 +70,7 @@ OBJECT poly
 name "CommA1.4"
 data 9
 Plane.013
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -91,7 +91,7 @@ OBJECT poly
 name "CommA1.5"
 data 9
 Plane.014
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -112,7 +112,7 @@ OBJECT poly
 name "CommA1.6"
 data 9
 Plane.015
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -133,7 +133,7 @@ OBJECT poly
 name "CommA1.7"
 data 9
 Plane.016
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -154,7 +154,7 @@ OBJECT poly
 name "CommA2.1"
 data 9
 Plane.033
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -175,7 +175,7 @@ OBJECT poly
 name "CommA2.2"
 data 9
 Plane.032
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -196,7 +196,7 @@ OBJECT poly
 name "CommA2.3"
 data 9
 Plane.031
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -217,7 +217,7 @@ OBJECT poly
 name "CommA2.4"
 data 9
 Plane.020
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -238,7 +238,7 @@ OBJECT poly
 name "CommA2.5"
 data 9
 Plane.019
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -259,7 +259,7 @@ OBJECT poly
 name "CommA2.6"
 data 9
 Plane.018
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -280,7 +280,7 @@ OBJECT poly
 name "CommA2.7"
 data 9
 Plane.017
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -301,7 +301,7 @@ OBJECT poly
 name "CommA3.1"
 data 9
 Plane.034
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -322,7 +322,7 @@ OBJECT poly
 name "CommA3.2"
 data 9
 Plane.035
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -343,7 +343,7 @@ OBJECT poly
 name "CommA3.3"
 data 9
 Plane.036
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -364,7 +364,7 @@ OBJECT poly
 name "CommA3.4"
 data 9
 Plane.037
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -385,7 +385,7 @@ OBJECT poly
 name "CommA3.5"
 data 9
 Plane.038
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -406,7 +406,7 @@ OBJECT poly
 name "CommA3.6"
 data 9
 Plane.039
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -427,7 +427,7 @@ OBJECT poly
 name "CommA3.7"
 data 9
 Plane.040
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -448,7 +448,7 @@ OBJECT poly
 name "CommA4.1"
 data 9
 Plane.047
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -469,7 +469,7 @@ OBJECT poly
 name "CommA4.2"
 data 9
 Plane.046
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -490,7 +490,7 @@ OBJECT poly
 name "CommA4.3"
 data 9
 Plane.045
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -511,7 +511,7 @@ OBJECT poly
 name "CommA4.4"
 data 9
 Plane.044
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -532,7 +532,7 @@ OBJECT poly
 name "CommA4.5"
 data 9
 Plane.043
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -553,7 +553,7 @@ OBJECT poly
 name "CommA4.6"
 data 9
 Plane.042
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -574,7 +574,7 @@ OBJECT poly
 name "CommA4.7"
 data 9
 Plane.041
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -595,7 +595,7 @@ OBJECT poly
 name "CommA5.1"
 data 9
 Plane.048
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -616,7 +616,7 @@ OBJECT poly
 name "CommA5.2"
 data 9
 Plane.049
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -637,7 +637,7 @@ OBJECT poly
 name "CommA5.3"
 data 9
 Plane.050
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -658,7 +658,7 @@ OBJECT poly
 name "CommA5.4"
 data 9
 Plane.051
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -679,7 +679,7 @@ OBJECT poly
 name "CommA5.5"
 data 9
 Plane.052
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -700,7 +700,7 @@ OBJECT poly
 name "CommA5.6"
 data 9
 Plane.053
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -721,7 +721,7 @@ OBJECT poly
 name "CommA5.7"
 data 9
 Plane.054
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -742,7 +742,7 @@ OBJECT poly
 name "CommADec"
 data 10
 Circle.001
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 16
@@ -824,7 +824,7 @@ OBJECT poly
 name "CommInner"
 data 10
 Circle.006
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 129
@@ -1833,7 +1833,7 @@ OBJECT poly
 name "CommOuter"
 data 10
 Circle.005
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 256
@@ -3481,7 +3481,7 @@ OBJECT poly
 name "CommS1.1"
 data 9
 Plane.089
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -3502,7 +3502,7 @@ OBJECT poly
 name "CommS1.2"
 data 9
 Plane.088
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -3523,7 +3523,7 @@ OBJECT poly
 name "CommS1.3"
 data 9
 Plane.087
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -3544,7 +3544,7 @@ OBJECT poly
 name "CommS1.4"
 data 9
 Plane.086
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -3565,7 +3565,7 @@ OBJECT poly
 name "CommS1.5"
 data 9
 Plane.085
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -3586,7 +3586,7 @@ OBJECT poly
 name "CommS1.6"
 data 9
 Plane.084
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -3607,7 +3607,7 @@ OBJECT poly
 name "CommS1.7"
 data 9
 Plane.083
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -3628,7 +3628,7 @@ OBJECT poly
 name "CommS2.1"
 data 9
 Plane.076
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -3649,7 +3649,7 @@ OBJECT poly
 name "CommS2.2"
 data 9
 Plane.077
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -3670,7 +3670,7 @@ OBJECT poly
 name "CommS2.3"
 data 9
 Plane.078
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -3691,7 +3691,7 @@ OBJECT poly
 name "CommS2.4"
 data 9
 Plane.079
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -3712,7 +3712,7 @@ OBJECT poly
 name "CommS2.5"
 data 9
 Plane.080
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -3733,7 +3733,7 @@ OBJECT poly
 name "CommS2.6"
 data 9
 Plane.081
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -3754,7 +3754,7 @@ OBJECT poly
 name "CommS2.7"
 data 9
 Plane.082
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -3775,7 +3775,7 @@ OBJECT poly
 name "CommS3.1"
 data 9
 Plane.075
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -3796,7 +3796,7 @@ OBJECT poly
 name "CommS3.2"
 data 9
 Plane.074
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -3817,7 +3817,7 @@ OBJECT poly
 name "CommS3.3"
 data 9
 Plane.073
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -3838,7 +3838,7 @@ OBJECT poly
 name "CommS3.4"
 data 9
 Plane.072
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -3859,7 +3859,7 @@ OBJECT poly
 name "CommS3.5"
 data 9
 Plane.071
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -3880,7 +3880,7 @@ OBJECT poly
 name "CommS3.6"
 data 9
 Plane.070
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -3901,7 +3901,7 @@ OBJECT poly
 name "CommS3.7"
 data 9
 Plane.069
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -3922,7 +3922,7 @@ OBJECT poly
 name "CommS4.1"
 data 9
 Plane.062
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -3943,7 +3943,7 @@ OBJECT poly
 name "CommS4.2"
 data 9
 Plane.063
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -3964,7 +3964,7 @@ OBJECT poly
 name "CommS4.3"
 data 9
 Plane.064
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -3985,7 +3985,7 @@ OBJECT poly
 name "CommS4.4"
 data 9
 Plane.065
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -4006,7 +4006,7 @@ OBJECT poly
 name "CommS4.5"
 data 9
 Plane.066
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -4027,7 +4027,7 @@ OBJECT poly
 name "CommS4.6"
 data 9
 Plane.067
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -4048,7 +4048,7 @@ OBJECT poly
 name "CommS4.7"
 data 9
 Plane.068
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -4069,7 +4069,7 @@ OBJECT poly
 name "CommS5.1"
 data 9
 Plane.061
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -4090,7 +4090,7 @@ OBJECT poly
 name "CommS5.2"
 data 9
 Plane.060
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -4111,7 +4111,7 @@ OBJECT poly
 name "CommS5.3"
 data 9
 Plane.059
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -4132,7 +4132,7 @@ OBJECT poly
 name "CommS5.4"
 data 9
 Plane.058
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -4153,7 +4153,7 @@ OBJECT poly
 name "CommS5.5"
 data 9
 Plane.057
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -4174,7 +4174,7 @@ OBJECT poly
 name "CommS5.6"
 data 9
 Plane.056
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -4195,7 +4195,7 @@ OBJECT poly
 name "CommS5.7"
 data 9
 Plane.055
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -4216,7 +4216,7 @@ OBJECT poly
 name "CommSDec"
 data 10
 Circle.003
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 16
@@ -4298,7 +4298,7 @@ OBJECT poly
 name "CommSwap"
 data 8
 Cube.001
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -4351,7 +4351,7 @@ OBJECT poly
 name "CommVol"
 data 7
 CommVol
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 65
@@ -4880,7 +4880,7 @@ OBJECT poly
 name "NavA1.1"
 data 9
 Plane.090
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -4901,7 +4901,7 @@ OBJECT poly
 name "NavA1.2"
 data 9
 Plane.091
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -4922,7 +4922,7 @@ OBJECT poly
 name "NavA1.3"
 data 9
 Plane.092
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -4943,7 +4943,7 @@ OBJECT poly
 name "NavA1.4"
 data 9
 Plane.093
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -4964,7 +4964,7 @@ OBJECT poly
 name "NavA1.5"
 data 9
 Plane.094
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -4985,7 +4985,7 @@ OBJECT poly
 name "NavA1.6"
 data 9
 Plane.095
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -5006,7 +5006,7 @@ OBJECT poly
 name "NavA1.7"
 data 9
 Plane.096
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -5027,7 +5027,7 @@ OBJECT poly
 name "NavA2.1"
 data 9
 Plane.103
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -5048,7 +5048,7 @@ OBJECT poly
 name "NavA2.2"
 data 9
 Plane.102
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -5069,7 +5069,7 @@ OBJECT poly
 name "NavA2.3"
 data 9
 Plane.101
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -5090,7 +5090,7 @@ OBJECT poly
 name "NavA2.4"
 data 9
 Plane.100
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -5111,7 +5111,7 @@ OBJECT poly
 name "NavA2.5"
 data 9
 Plane.099
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -5132,7 +5132,7 @@ OBJECT poly
 name "NavA2.6"
 data 9
 Plane.098
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -5153,7 +5153,7 @@ OBJECT poly
 name "NavA2.7"
 data 9
 Plane.097
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -5174,7 +5174,7 @@ OBJECT poly
 name "NavA3.1"
 data 9
 Plane.104
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -5195,7 +5195,7 @@ OBJECT poly
 name "NavA3.2"
 data 9
 Plane.105
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -5216,7 +5216,7 @@ OBJECT poly
 name "NavA3.3"
 data 9
 Plane.106
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -5237,7 +5237,7 @@ OBJECT poly
 name "NavA3.4"
 data 9
 Plane.107
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -5258,7 +5258,7 @@ OBJECT poly
 name "NavA3.5"
 data 9
 Plane.108
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -5279,7 +5279,7 @@ OBJECT poly
 name "NavA3.6"
 data 9
 Plane.109
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -5300,7 +5300,7 @@ OBJECT poly
 name "NavA3.7"
 data 9
 Plane.110
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -5321,7 +5321,7 @@ OBJECT poly
 name "NavA4.1"
 data 9
 Plane.117
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -5342,7 +5342,7 @@ OBJECT poly
 name "NavA4.2"
 data 9
 Plane.116
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -5363,7 +5363,7 @@ OBJECT poly
 name "NavA4.3"
 data 9
 Plane.115
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -5384,7 +5384,7 @@ OBJECT poly
 name "NavA4.4"
 data 9
 Plane.114
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -5405,7 +5405,7 @@ OBJECT poly
 name "NavA4.5"
 data 9
 Plane.113
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -5426,7 +5426,7 @@ OBJECT poly
 name "NavA4.6"
 data 9
 Plane.112
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -5447,7 +5447,7 @@ OBJECT poly
 name "NavA4.7"
 data 9
 Plane.111
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -5468,7 +5468,7 @@ OBJECT poly
 name "NavA5.1"
 data 9
 Plane.118
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -5489,7 +5489,7 @@ OBJECT poly
 name "NavA5.2"
 data 9
 Plane.119
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -5510,7 +5510,7 @@ OBJECT poly
 name "NavA5.3"
 data 9
 Plane.120
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -5531,7 +5531,7 @@ OBJECT poly
 name "NavA5.4"
 data 9
 Plane.121
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -5552,7 +5552,7 @@ OBJECT poly
 name "NavA5.5"
 data 9
 Plane.122
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -5573,7 +5573,7 @@ OBJECT poly
 name "NavA5.6"
 data 9
 Plane.123
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -5594,7 +5594,7 @@ OBJECT poly
 name "NavA5.7"
 data 9
 Plane.124
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -5615,7 +5615,7 @@ OBJECT poly
 name "NavADec"
 data 10
 Circle.011
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 16
@@ -5697,7 +5697,7 @@ OBJECT poly
 name "NavInner"
 data 10
 Circle.004
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 129
@@ -6706,7 +6706,7 @@ OBJECT poly
 name "NavOuter"
 data 10
 Circle.007
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 256
@@ -8354,7 +8354,7 @@ OBJECT poly
 name "NavS1.1"
 data 9
 Plane.159
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -8375,7 +8375,7 @@ OBJECT poly
 name "NavS1.2"
 data 9
 Plane.158
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -8396,7 +8396,7 @@ OBJECT poly
 name "NavS1.3"
 data 9
 Plane.157
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -8417,7 +8417,7 @@ OBJECT poly
 name "NavS1.4"
 data 9
 Plane.156
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -8438,7 +8438,7 @@ OBJECT poly
 name "NavS1.5"
 data 9
 Plane.155
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -8459,7 +8459,7 @@ OBJECT poly
 name "NavS1.6"
 data 9
 Plane.154
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -8480,7 +8480,7 @@ OBJECT poly
 name "NavS1.7"
 data 9
 Plane.153
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -8501,7 +8501,7 @@ OBJECT poly
 name "NavS2.1"
 data 9
 Plane.146
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -8522,7 +8522,7 @@ OBJECT poly
 name "NavS2.2"
 data 9
 Plane.147
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -8543,7 +8543,7 @@ OBJECT poly
 name "NavS2.3"
 data 9
 Plane.148
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -8564,7 +8564,7 @@ OBJECT poly
 name "NavS2.4"
 data 9
 Plane.149
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -8585,7 +8585,7 @@ OBJECT poly
 name "NavS2.5"
 data 9
 Plane.150
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -8606,7 +8606,7 @@ OBJECT poly
 name "NavS2.6"
 data 9
 Plane.151
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -8627,7 +8627,7 @@ OBJECT poly
 name "NavS2.7"
 data 9
 Plane.152
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -8648,7 +8648,7 @@ OBJECT poly
 name "NavS3.1"
 data 9
 Plane.145
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -8669,7 +8669,7 @@ OBJECT poly
 name "NavS3.2"
 data 9
 Plane.144
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -8690,7 +8690,7 @@ OBJECT poly
 name "NavS3.3"
 data 9
 Plane.143
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -8711,7 +8711,7 @@ OBJECT poly
 name "NavS3.4"
 data 9
 Plane.142
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -8732,7 +8732,7 @@ OBJECT poly
 name "NavS3.5"
 data 9
 Plane.141
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -8753,7 +8753,7 @@ OBJECT poly
 name "NavS3.6"
 data 9
 Plane.140
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -8774,7 +8774,7 @@ OBJECT poly
 name "NavS3.7"
 data 9
 Plane.139
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -8795,7 +8795,7 @@ OBJECT poly
 name "NavS4.1"
 data 9
 Plane.132
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -8816,7 +8816,7 @@ OBJECT poly
 name "NavS4.2"
 data 9
 Plane.133
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -8837,7 +8837,7 @@ OBJECT poly
 name "NavS4.3"
 data 9
 Plane.134
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -8858,7 +8858,7 @@ OBJECT poly
 name "NavS4.4"
 data 9
 Plane.135
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -8879,7 +8879,7 @@ OBJECT poly
 name "NavS4.5"
 data 9
 Plane.136
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -8900,7 +8900,7 @@ OBJECT poly
 name "NavS4.6"
 data 9
 Plane.137
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -8921,7 +8921,7 @@ OBJECT poly
 name "NavS4.7"
 data 9
 Plane.138
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -8942,7 +8942,7 @@ OBJECT poly
 name "NavS5.1"
 data 9
 Plane.131
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -8963,7 +8963,7 @@ OBJECT poly
 name "NavS5.2"
 data 9
 Plane.130
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -8984,7 +8984,7 @@ OBJECT poly
 name "NavS5.3"
 data 9
 Plane.129
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -9005,7 +9005,7 @@ OBJECT poly
 name "NavS5.4"
 data 9
 Plane.128
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -9026,7 +9026,7 @@ OBJECT poly
 name "NavS5.5"
 data 9
 Plane.127
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -9047,7 +9047,7 @@ OBJECT poly
 name "NavS5.6"
 data 9
 Plane.126
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -9068,7 +9068,7 @@ OBJECT poly
 name "NavS5.7"
 data 9
 Plane.125
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -9089,7 +9089,7 @@ OBJECT poly
 name "NavSDec"
 data 10
 Circle.012
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 16
@@ -9171,7 +9171,7 @@ OBJECT poly
 name "NavSwap"
 data 4
 Cube
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 12
@@ -9228,7 +9228,7 @@ OBJECT poly
 name "NavVol"
 data 10
 Circle.008
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 65
@@ -9757,7 +9757,7 @@ OBJECT poly
 name "boite"
 data 5
 boite
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 26
@@ -9884,7 +9884,7 @@ OBJECT poly
 name "button1"
 data 7
 button1
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -10135,7 +10135,7 @@ OBJECT poly
 name "button2"
 data 7
 button2
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -10386,7 +10386,7 @@ OBJECT poly
 name "trim"
 data 4
 trim
-texture "KX155A.png"
+texture "KX155A.webp"
 texrep 1 1
 crease 30.000000
 numvert 80

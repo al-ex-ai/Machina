@@ -1058,7 +1058,7 @@ OBJECT poly
 name "face.002"
 data 10
 Circle.003
-texture "tach.png"
+texture "tach.webp"
 crease 30.000000
 numvert 313
 0 0.019929 0.019929

@@ -132,7 +132,7 @@ name "screwlock"
 loc -0.0209449 -0.0317331 0.0497307
 data 4
 Mesh
-texture "panel.png"
+texture "panel.webp"
 crease 78.000000
 numvert 25
 0.000420423 0.054394 -0.052512
@@ -327,7 +327,7 @@ name "knob"
 loc -0.00403608 0.00373963 8.07577e-005
 data 8
 Mesh.004
-texture "panel.png"
+texture "panel.webp"
 crease 78.000000
 numvert 49
 0.00383049 -1.86265e-009 0.00456625
@@ -708,7 +708,7 @@ kids 0
 OBJECT poly
 name "block"
 loc 0.000406798 -0.000157404 0
-texture "panel.png"
+texture "panel.webp"
 crease 45.000000
 numvert 32
 0.0020594 -0.0143182 -0.00772581
@@ -1076,7 +1076,7 @@ kids 0
 OBJECT poly
 name "label"
 loc -0.00014333 -0.00756225 -0.0252392
-texture "panel.png"
+texture "panel.webp"
 crease 45.000000
 numvert 4
 0 0.0202234 0.0337669

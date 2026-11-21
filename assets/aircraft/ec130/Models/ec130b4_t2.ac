@@ -85960,7 +85960,7 @@ OBJECT poly
 name "panel_instr"
 data 9
 Plane.001
-texture "panel.png"
+texture "panel.webp"
 crease 30.000000
 numvert 452
 -4.53888 -0.360635 0.634898
@@ -89374,7 +89374,7 @@ OBJECT poly
 name "panel_warn"
 data 9
 Plane.002
-texture "panel.png"
+texture "panel.webp"
 crease 30.000000
 numvert 492
 -4.52712 -0.424791 0.606224
@@ -92541,7 +92541,7 @@ OBJECT poly
 name "Plane.005X"
 data 14
 Plane.005Xmesh
-texture "transparent.png"
+texture "transparent.webp"
 crease 30.000000
 numvert 4
 -0.997998 -1.00001 0
@@ -92566,7 +92566,7 @@ OBJECT poly
 name "Plane.005Xb"
 data 14
 Plane.005Xmesh
-texture "transparent.png"
+texture "transparent.webp"
 crease 30.000000
 numvert 4
 -1 1 0
@@ -92591,7 +92591,7 @@ OBJECT poly
 name "Plane.005Xbsl"
 data 14
 Plane.005Xmesh
-texture "transparent.png"
+texture "transparent.webp"
 crease 30.000000
 numvert 4
 -0.997998 -1.00001 0
@@ -92616,7 +92616,7 @@ OBJECT poly
 name "Plane.005Xbsr"
 data 14
 Plane.005Xmesh
-texture "transparent.png"
+texture "transparent.webp"
 crease 30.000000
 numvert 4
 -1 1 0
@@ -93214,7 +93214,7 @@ name "seat_upholstery_up"
 loc 0.0346274 -0.00562868 0.01474
 data 9
 Torus.001
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 30.000000
 numvert 53
 -0.908496 -0.303295 -0.191847
@@ -93583,7 +93583,7 @@ name "seat_upholstery_low"
 loc -0.0346277 0.00562865 -0.01474
 data 9
 Torus.001
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 30.000000
 numvert 137
 -0.859198 -0.270089 -0.176167
@@ -95088,7 +95088,7 @@ name "seat_upholstery_up"
 loc 0.0346274 -0.00562868 -0.0152602
 data 9
 Torus.001
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 30.000000
 numvert 53
 -0.908496 -0.303295 -0.191846
@@ -95457,7 +95457,7 @@ name "seat_upholstery_low"
 loc -0.0346277 0.00562865 -0.0447398
 data 9
 Torus.001
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 30.000000
 numvert 137
 -0.859198 -0.270089 -0.176167
@@ -96962,7 +96962,7 @@ name "seat_upholstery_up"
 loc 0.0646276 0.0743713 0.01474
 data 9
 Torus.001
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 30.000000
 numvert 53
 -0.908496 -0.303295 -0.191847
@@ -97331,7 +97331,7 @@ name "seat_upholstery_low"
 loc -0.00462759 0.0856287 -0.01474
 data 9
 Torus.001
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 30.000000
 numvert 137
 -0.859198 -0.270089 -0.176167
@@ -98836,7 +98836,7 @@ name "seat_upholstery_up"
 loc 0.0646274 0.0743713 0.0147398
 data 9
 Torus.001
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 30.000000
 numvert 53
 -0.920082 -0.12141 -0.360711
@@ -99205,7 +99205,7 @@ name "seat_upholstery_low"
 loc -0.00462747 0.0856287 -0.0147397
 data 9
 Torus.001
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 30.000000
 numvert 137
 -1.26168 -0.259301 -0.327914
@@ -111342,7 +111342,7 @@ name "seat_upholstery_up"
 loc 0.0346274 -0.00562868 0.0147398
 data 9
 Torus.001
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 30.000000
 numvert 53
 -0.920083 -0.12141 -0.360711
@@ -111711,7 +111711,7 @@ name "seat_upholstery_low"
 loc -0.0346277 0.00562865 -0.0147398
 data 9
 Torus.001
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 30.000000
 numvert 137
 -1.26268 -0.256301 -0.327914
@@ -114564,7 +114564,7 @@ name "seat_upholstery_up"
 loc 0.0346274 -0.00562868 0.0147398
 data 9
 Torus.001
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 30.000000
 numvert 53
 -0.908496 -0.303295 -0.191846
@@ -114933,7 +114933,7 @@ name "seat_upholstery_low"
 loc -0.0346277 0.00562865 -0.0147398
 data 9
 Torus.001
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 30.000000
 numvert 137
 -0.859198 -0.270089 -0.176167
@@ -119095,7 +119095,7 @@ name "seat_upholstery_up"
 loc 0.0646274 0.0743713 0.0147396
 data 9
 Torus.001
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 30.000000
 numvert 53
 -0.908495 -0.303295 -0.191846
@@ -119464,7 +119464,7 @@ name "seat_upholstery_low"
 loc -0.00462747 0.0856287 -0.0147396
 data 9
 Torus.001
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 30.000000
 numvert 137
 -0.859197 -0.270089 -0.176167
@@ -122317,7 +122317,7 @@ name "seat_upholstery_up"
 loc 0.0646274 0.0743713 0.01474
 data 9
 Torus.001
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 30.000000
 numvert 53
 -0.920087 -0.12141 -0.360711
@@ -122686,7 +122686,7 @@ name "seat_upholstery_low"
 loc -0.00462747 0.0856287 -0.01474
 data 9
 Torus.001
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 30.000000
 numvert 137
 -1.26168 -0.259301 -0.327914
@@ -147096,7 +147096,7 @@ name "frontdoorl"
 loc 0.664306 0.0623052 -0.152726
 data 8
 Mesh.008
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 80.000000
 numvert 147
 -4.23909 -0.194623 0.974161
@@ -148003,7 +148003,7 @@ name "frontdoorl_t2"
 loc 0.664306 0.0623052 -0.152726
 data 8
 Mesh.008
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 80.000000
 numvert 147
 -3.42456 0.128529 0.990666
@@ -153007,7 +153007,7 @@ OBJECT poly
 name "frontdoorr"
 data 8
 Mesh.004
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 80.000000
 numvert 154
 -4.23909 -0.194623 -0.974161
@@ -157719,7 +157719,7 @@ name "frontdoorr_t2"
 loc -3.32096 -0.311481 -2.07797
 data 8
 Mesh.008
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 80.000000
 numvert 147
 0.56071 0.502316 -0.0654249
@@ -160737,7 +160737,7 @@ OBJECT poly
 name "backdoorl"
 data 8
 Mesh.013
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 80.000000
 numvert 104
 -3.39165 0.260511 0.915691
@@ -162102,7 +162102,7 @@ OBJECT poly
 name "backdoorl_t2"
 data 8
 Mesh.013
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 80.000000
 numvert 104
 -2.64778 -0.508944 1.03756
@@ -163641,7 +163641,7 @@ OBJECT poly
 name "backdoorr"
 data 8
 Mesh.005
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 80.000000
 numvert 43
 -2.7151 -0.77186 -1.02758
@@ -165401,7 +165401,7 @@ name "backdoorr_t2"
 loc -3.10494 -0.383429 -1.98227
 data 8
 Mesh.013
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 80.000000
 numvert 104
 -0.286705 0.64394 0.0665826
@@ -167695,7 +167695,7 @@ name "doorbr_lead_t2"
 loc 0.0363469 0.046815 0.9997
 data 8
 Mesh.025
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 80.000000
 numvert 12
 -2.63537 0.234635 -1.85812
@@ -168325,7 +168325,7 @@ name "luggagel"
 loc -1.49012e-008 0 1.49012e-008
 data 8
 Mesh.001
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 80.000000
 numvert 66
 -1.59125 -0.206144 0.781455
@@ -170958,7 +170958,7 @@ name "luggager"
 loc 0 0 7.45058e-008
 data 8
 Mesh.003
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 80.000000
 numvert 74
 -1.76996 -0.164922 -0.833307
@@ -172060,7 +172060,7 @@ name "luggager_slight"
 loc 0 0 7.45058e-008
 data 8
 Mesh.003
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 80.000000
 numvert 9
 -2.37959 -0.940402 -0.975642
@@ -174205,7 +174205,7 @@ name "luggagelw"
 loc -1.90992 -0.546674 0.975953
 data 8
 Mesh.003
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 80.000000
 numvert 131
 0.0320506 -0.270047 0.0458409
@@ -178030,7 +178030,7 @@ name "fuselage_luggagelw"
 loc -1.82171 -0.529866 -0.730187
 data 8
 Mesh.003
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 58.000000
 numvert 182
 -0.592376 0.337156 1.73102
@@ -180004,7 +180004,7 @@ name "luggagerw"
 loc -1.90992 -0.546674 -0.975953
 data 8
 Mesh.003
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 80.000000
 numvert 131
 -0.0047307 -0.257647 -0.01401
@@ -183857,7 +183857,7 @@ name "fuselage_luggagerw"
 loc -1.82171 -0.529866 -0.730187
 data 8
 Mesh.003
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 58.000000
 numvert 174
 0.456876 0.414484 -0.191173
@@ -185294,7 +185294,7 @@ name "doorb"
 loc -0.748819 -0.523163 0.938763
 data 8
 Mesh.014
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 80.000000
 numvert 33
 -0.021113 0.247507 -0.448164
@@ -186701,7 +186701,7 @@ name "fuselage"
 loc 0.0363469 0.046815 -0.000299931
 data 8
 Mesh.025
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 80.000000
 numvert 4106
 -1.58555 0.201563 0.356853
@@ -215946,7 +215946,7 @@ kids 0
 OBJECT poly
 name "fuselage_t2"
 loc 0.0363469 0.0483253 -0.000299931
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 81.000000
 numvert 4114
 -3.98788 0.29716 0.0678439
@@ -245295,7 +245295,7 @@ name "fuselage_air_in"
 loc -3.21382 0.592026 5.96046e-008
 data 8
 Mesh.025
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 80.000000
 numvert 740
 0.64809 0.235251 -0.0382031
@@ -250853,7 +250853,7 @@ name "fuselage_air_in_t2"
 loc -3.17284 0.591251 -5.41806e-005
 data 8
 Mesh.025
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 84.000000
 numvert 819
 -0.699131 -0.22684 0.0257438
@@ -256621,7 +256621,7 @@ kids 0
 OBJECT poly
 name "top_expipes_t2"
 loc 3.7462 -0.0980462 0.992674
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 45.000000
 numvert 52
 -4.40706 0.864841 -1.0988
@@ -257139,7 +257139,7 @@ name "tail_filter_prot"
 loc 0.0363469 0.046815 -0.000299931
 data 8
 Mesh.025
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 80.000000
 numvert 134
 0.499904 -0.501992 -0.344144
@@ -258639,7 +258639,7 @@ name "exhaust"
 loc -0.245737 0.371138 -0.000641987
 data 12
 Cylinder.002
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 69.000000
 numvert 370
 0.392003 0.143603 -0.129999
@@ -264921,7 +264921,7 @@ kids 8
 OBJECT poly
 name "tailrotor_drive"
 loc 0.0951004 4.22522e-005 0.0387522
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 45.000000
 numvert 26
 -0.469177 1.49012e-008 3.8147e-006
@@ -265183,7 +265183,7 @@ kids 0
 OBJECT poly
 name "tailrotor_control"
 loc -0.02525 0.000828251 -0.052499
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 45.000000
 numvert 160
 0.290778 0.0108661 -0.00265865
@@ -266563,7 +266563,7 @@ kids 0
 OBJECT poly
 name "tailrotor_control2"
 loc 0.26578 0.000787996 -0.0133094
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 45.000000
 numvert 144
 0.000358582 -0.000612363 -0.0153836
@@ -267436,7 +267436,7 @@ kids 0
 OBJECT poly
 name "tailrotor_gearbox"
 loc 0.25945 -0.000567004 0.0640955
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 45.000000
 numvert 216
 -0.211144 -0.0360541 1.49012e-008
@@ -268812,7 +268812,7 @@ kids 0
 OBJECT poly
 name "tailrotor_gearbox_inner_end"
 loc 0.2485 -0.000567004 0.0057522
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 45.000000
 numvert 36
 0.19716 -0.0336662 0
@@ -270260,7 +270260,7 @@ OBJECT poly
 name "stator_1"
 data 9
 Plane.019
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 30.000000
 numvert 10
 -0.110599 -0.167654 0.0025251
@@ -270350,7 +270350,7 @@ OBJECT poly
 name "stator_2"
 data 9
 Plane.019
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 30.000000
 numvert 10
 0.138864 -0.488474 0.0129568
@@ -270440,7 +270440,7 @@ OBJECT poly
 name "stator_3"
 data 9
 Plane.019
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 30.000000
 numvert 10
 0.105205 -0.17109 0.0025251
@@ -270530,7 +270530,7 @@ OBJECT poly
 name "stator_4"
 data 9
 Plane.019
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 30.000000
 numvert 10
 0.501394 -0.0805851 0.0129568
@@ -270620,7 +270620,7 @@ OBJECT poly
 name "stator_5"
 data 9
 Plane.019
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 30.000000
 numvert 10
 0.199893 0.0195562 0.0025251
@@ -270710,7 +270710,7 @@ OBJECT poly
 name "stator_6"
 data 9
 Plane.019
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 30.000000
 numvert 10
 0.292226 0.415324 0.0129568
@@ -270800,7 +270800,7 @@ OBJECT poly
 name "stator_7"
 data 9
 Plane.019
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 30.000000
 numvert 10
 0.0700507 0.188236 0.0025251
@@ -270890,7 +270890,7 @@ OBJECT poly
 name "stator_8"
 data 9
 Plane.019
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 30.000000
 numvert 10
 -0.245187 0.444717 0.0129568
@@ -270980,7 +270980,7 @@ OBJECT poly
 name "stator_9"
 data 9
 Plane.019
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 30.000000
 numvert 10
 -0.138477 0.145479 0.0025251
@@ -271070,7 +271070,7 @@ OBJECT poly
 name "stator_10"
 data 9
 Plane.019
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 30.000000
 numvert 10
 -0.416652 -0.29033 0.0129568
@@ -271160,7 +271160,7 @@ OBJECT poly
 name "landing_light"
 data 8
 Cone.004
-texture "light.png"
+texture "light.webp"
 crease 30.000000
 numvert 9
 -3.36862 -1.39736 0.392485
@@ -271269,7 +271269,7 @@ OBJECT poly
 name "taxilight"
 data 8
 Cone.003
-texture "light.png"
+texture "light.webp"
 crease 30.000000
 numvert 9
 -3.42763 -1.42166 -0.493456
@@ -271378,7 +271378,7 @@ OBJECT poly
 name "navlight_left"
 data 4
 Cone
-texture "transparent.png"
+texture "transparent.webp"
 crease 30.000000
 numvert 9
 3.065 -0.385757 1.49672
@@ -271444,7 +271444,7 @@ OBJECT poly
 name "navlight_right"
 data 8
 Cone.001
-texture "transparent.png"
+texture "transparent.webp"
 crease 30.000000
 numvert 9
 3.065 -0.385757 -1.49672
@@ -271511,7 +271511,7 @@ name "navlight_back"
 loc 0.0709014 -0.151087 0
 data 8
 Cone.002
-texture "transparent.png"
+texture "transparent.webp"
 crease 30.000000
 numvert 9
 5.40262 1.84629 -0.239179
@@ -275373,7 +275373,7 @@ name "gear_strobe_light_base"
 loc 0.348022 0.711475 -0.000215579
 data 8
 Mesh.025
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 80.000000
 numvert 32
 -1.24145 -1.67493 0.000122851
@@ -277049,7 +277049,7 @@ name "landing_light_gear_left"
 loc 2.15277 0.150152 -0.277369
 data 8
 Cone.004
-texture "light.png"
+texture "light.webp"
 crease 30.000000
 numvert 9
 -3.40975 -1.29485 0.485768
@@ -278638,7 +278638,7 @@ name "landing_light_gear_right"
 loc 2.15277 0.150152 -0.670966
 data 8
 Cone.004
-texture "light.png"
+texture "light.webp"
 crease 30.000000
 numvert 9
 -3.36862 -1.39736 0.392485
@@ -290609,7 +290609,7 @@ kids 0
 OBJECT poly
 name "dme_base"
 loc 2.39151 -0.263275 0.00301458
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 45.000000
 numvert 50
 -0.196226 -0.245102 0.0130225
@@ -291974,7 +291974,7 @@ kids 0
 OBJECT poly
 name "dme_small_base"
 loc 2.94074 -0.273155 0.00301425
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 45.000000
 numvert 50
 -0.00970244 -0.139225 1.16415e-009
@@ -293210,7 +293210,7 @@ kids 0
 OBJECT poly
 name "vuhf_base"
 loc 3.03913 -0.208318 0.00301458
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 45.000000
 numvert 50
 -0.0240908 -0.194795 3.25963e-009
@@ -302610,7 +302610,7 @@ OBJECT poly
 name "wirecutter"
 data 8
 Mesh.085
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 80.000000
 numvert 47
 -3.91066 0.347207 -0.175663
@@ -307266,7 +307266,7 @@ OBJECT poly
 name "basket_mesh_left"
 data 10
 Circle.001
-texture "mesh.png"
+texture "mesh.webp"
 crease 30.000000
 numvert 96
 -3.31852 -1.3182 1.25494
@@ -309084,7 +309084,7 @@ OBJECT poly
 name "basket_mesh_left_cover"
 data 10
 Circle.001
-texture "mesh.png"
+texture "mesh.webp"
 crease 30.000000
 numvert 72
 -1.77293 -1.05742 1.64071
@@ -311687,7 +311687,7 @@ OBJECT poly
 name "basket_mesh_right"
 data 6
 Circle
-texture "mesh.png"
+texture "mesh.webp"
 crease 30.000000
 numvert 96
 -3.31852 -1.3182 -1.25494
@@ -313593,7 +313593,7 @@ name "basket_mesh_right_cover"
 loc -2.0963 -1.02919 -1.41756
 data 6
 Circle
-texture "mesh.png"
+texture "mesh.webp"
 crease 30.000000
 numvert 72
 1.22222 -0.031708 -0.212725
@@ -315717,7 +315717,7 @@ kids 0
 OBJECT poly
 name "shadow_fuselage"
 loc 0.0992547 -1.71541 0.0162892
-texture "shadow_fuselage.png"
+texture "shadow_fuselage.webp"
 crease 45.000000
 numvert 4
 -5.5991 0 5.6472
@@ -315742,7 +315742,7 @@ name "hoist_frame"
 loc -2.17208 -1.95602 -0.354156
 data 19
 tailboom_profil.001
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 80.000000
 numvert 170
 0.266475 0.01341 0.243787
@@ -318034,7 +318034,7 @@ name "hoist_pyramid"
 loc -2.1749 -1.8611 -0.351507
 data 19
 tailboom_profil.001
-texture "FLIGHTGEAR.png"
+texture "FLIGHTGEAR.webp"
 crease 80.000000
 numvert 102
 0.323447 -0.0974172 -0.241288

@@ -8,7 +8,7 @@ name "belt"
 loc -3.79899 -0.50607 0.678153
 data 9
 corps.001
-texture "general_pilot.png"
+texture "general_pilot.webp"
 crease 30.000000
 numvert 287
 -0.159044 -0.0643082 0.0430129
@@ -1454,7 +1454,7 @@ name "forearmr"
 loc 0.649689 0.314339 0.0241591
 data 14
 avantbrasD.001
-texture "general_pilot.png"
+texture "general_pilot.webp"
 crease 30.000000
 numvert 35
 -4.79239 -0.884412 0.571401
@@ -1705,7 +1705,7 @@ name "forearml"
 loc -0.0759945 -0.881072 -0.248099
 data 14
 avantbrasG.001
-texture "general_pilot.png"
+texture "general_pilot.webp"
 crease 80.000000
 numvert 42
 -3.97171 0.112017 1.16355
@@ -2050,7 +2050,7 @@ name "armr"
 loc -0.322402 1.24604 0
 data 9
 brasD.001
-texture "general_pilot.png"
+texture "general_pilot.webp"
 crease 30.000000
 numvert 22
 -3.35944 -1.61512 0.43972
@@ -2231,7 +2231,7 @@ OBJECT poly
 name "arml"
 data 9
 brasG.001
-texture "general_pilot.png"
+texture "general_pilot.webp"
 crease 30.000000
 numvert 32
 -3.63213 -0.3102 0.885848
@@ -2472,7 +2472,7 @@ OBJECT poly
 name "corps"
 data 9
 corps.001
-texture "general_pilot.png"
+texture "general_pilot.webp"
 crease 30.000000
 numvert 144
 -3.80738 -0.287093 0.661155
@@ -3569,7 +3569,7 @@ name "thighr"
 loc -0.0190911 0.283754 0.26987
 data 11
 cuisseD.001
-texture "general_pilot.png"
+texture "general_pilot.webp"
 crease 30.000000
 numvert 30
 -4.2302 -0.872674 0.336787
@@ -3897,7 +3897,7 @@ name "thighl"
 loc -0.0266829 -0.0117525 -0.275078
 data 11
 cuisseG.001
-texture "general_pilot.png"
+texture "general_pilot.webp"
 crease 30.000000
 numvert 30
 -4.12345 -0.653861 1.14233
@@ -4213,7 +4213,7 @@ name "legr"
 loc 0.0368319 -0.669345 -0.332398
 data 10
 jambeD.001
-texture "general_pilot.png"
+texture "general_pilot.webp"
 crease 30.000000
 numvert 112
 -4.26575 -0.00679308 0.879561
@@ -5046,7 +5046,7 @@ name "legl"
 loc 0.0407209 -0.451522 -0.137461
 data 10
 jambeG.001
-texture "general_pilot.png"
+texture "general_pilot.webp"
 crease 30.000000
 numvert 112
 -4.25869 -0.234888 0.936594
@@ -5879,7 +5879,7 @@ name "handr"
 loc -0.502295 -2.32971 -0.519238
 data 10
 manche.001
-texture "general_pilot.png"
+texture "general_pilot.webp"
 crease 30.000000
 numvert 140
 -3.65244 1.78779 1.19757
@@ -7024,7 +7024,7 @@ name "footr"
 loc 0.810383 -0.36093 -0.0970958
 data 9
 piedD.001
-texture "general_pilot.png"
+texture "general_pilot.webp"
 crease 30.000000
 numvert 65
 -5.39742 -0.579944 0.641334
@@ -7399,7 +7399,7 @@ name "footl"
 loc 0.824747 -0.550584 -0.115353
 data 9
 piedG.001
-texture "general_pilot.png"
+texture "general_pilot.webp"
 crease 30.000000
 numvert 65
 -5.54141 -0.222869 0.886446
@@ -7773,7 +7773,7 @@ OBJECT poly
 name "head"
 data 8
 tete.001
-texture "general_pilot.png"
+texture "general_pilot.webp"
 crease 30.000000
 numvert 782
 -3.73794 -0.142901 0.739755
@@ -14002,7 +14002,7 @@ OBJECT poly
 name "shield"
 data 7
 visiere
-texture "general_pilot.png"
+texture "general_pilot.webp"
 crease 30.000000
 numvert 40
 -3.80076 -0.073736 0.583955
@@ -14290,7 +14290,7 @@ name "handl"
 loc -4.10833 -0.741623 0.915557
 data 14
 avantbrasG.001
-texture "general_pilot.png"
+texture "general_pilot.webp"
 crease 80.000000
 numvert 140
 0.0384827 0.041924 0.0042519

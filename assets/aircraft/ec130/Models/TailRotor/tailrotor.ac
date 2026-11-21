@@ -7,7 +7,7 @@ name "rotor_disc_T"
 loc -5.112 0.0800887 2.4416
 data 12
 Cylinder.004
-texture "../FLIGHTGEAR.png"
+texture "../FLIGHTGEAR.webp"
 crease 30.000000
 numvert 34
 5.51552 -0.080219 -2.84517

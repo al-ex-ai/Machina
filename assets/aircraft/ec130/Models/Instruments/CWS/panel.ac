@@ -94,7 +94,7 @@ name "warnlights1"
 loc 0.00103141 0.0303861 0.0246354
 data 8
 Cube.009
-texture "panel.png"
+texture "panel.webp"
 crease 30.000000
 numvert 40
 -0.000484889 -0.0323245 0.0580123
@@ -318,7 +318,7 @@ OBJECT poly
 name "fuel"
 data 8
 Cube.011
-texture "text.png"
+texture "text.webp"
 crease 30.000000
 numvert 4
 0.004835 0.018436 0.063803
@@ -338,7 +338,7 @@ OBJECT poly
 name "fuelp"
 data 8
 Cube.013
-texture "text.png"
+texture "text.webp"
 crease 30.000000
 numvert 4
 0.004835 -0.00448 0.063803
@@ -358,7 +358,7 @@ OBJECT poly
 name "fuelf"
 data 8
 Cube.018
-texture "text.png"
+texture "text.webp"
 crease 30.000000
 numvert 4
 0.004835 -0.008193 0.050123
@@ -378,7 +378,7 @@ OBJECT poly
 name "servo"
 data 8
 Cube.028
-texture "text.png"
+texture "text.webp"
 crease 30.000000
 numvert 4
 0.004835 0.018436 0.047634
@@ -398,7 +398,7 @@ OBJECT poly
 name "hydr"
 data 8
 Cube.016
-texture "text.png"
+texture "text.webp"
 crease 30.000000
 numvert 4
 0.004835 0.005084 0.047634
@@ -418,7 +418,7 @@ OBJECT poly
 name "emergxmit"
 data 8
 Cube.019
-texture "text.png"
+texture "text.webp"
 crease 30.000000
 numvert 4
 0.004835 -0.008193 0.034078
@@ -438,7 +438,7 @@ OBJECT poly
 name "GEN"
 data 8
 Cube.008
-texture "text.png"
+texture "text.webp"
 crease 30.000000
 numvert 4
 0.004835 0.018436 0.031559
@@ -458,7 +458,7 @@ OBJECT poly
 name "batt"
 data 8
 Cube.012
-texture "text.png"
+texture "text.webp"
 crease 30.000000
 numvert 4
 0.004835 0.005084 0.031559
@@ -478,7 +478,7 @@ OBJECT poly
 name "inv"
 data 8
 Cube.020
-texture "text.png"
+texture "text.webp"
 crease 30.000000
 numvert 4
 0.004835 -0.008193 0.017907
@@ -498,7 +498,7 @@ OBJECT poly
 name "pitot"
 data 8
 Cube.027
-texture "text.png"
+texture "text.webp"
 crease 30.000000
 numvert 4
 0.004835 0.018436 0.000982
@@ -518,7 +518,7 @@ OBJECT poly
 name "horn"
 data 8
 Cube.015
-texture "text.png"
+texture "text.webp"
 crease 30.000000
 numvert 4
 0.004835 0.005084 0.000982
@@ -538,7 +538,7 @@ OBJECT poly
 name "-"
 data 8
 Cube.021
-texture "text.png"
+texture "text.webp"
 crease 30.000000
 numvert 4
 0.004835 -0.017846 0.000982
@@ -558,7 +558,7 @@ OBJECT poly
 name "mgbtemp"
 data 8
 Cube.026
-texture "text.png"
+texture "text.webp"
 crease 30.000000
 numvert 4
 0.004835 0.018436 -0.014637
@@ -578,7 +578,7 @@ OBJECT poly
 name "door"
 data 8
 Cube.014
-texture "text.png"
+texture "text.webp"
 crease 30.000000
 numvert 4
 0.004835 0.005084 -0.001076
@@ -598,7 +598,7 @@ OBJECT poly
 name "gov"
 data 8
 Cube.022
-texture "text.png"
+texture "text.webp"
 crease 30.000000
 numvert 4
 0.004835 -0.017846 -0.014637
@@ -618,7 +618,7 @@ OBJECT poly
 name "engchip"
 data 8
 Cube.007
-texture "text.png"
+texture "text.webp"
 crease 30.000000
 numvert 4
 0.004835 0.018436 -0.033841
@@ -638,7 +638,7 @@ OBJECT poly
 name "mgbchip"
 data 8
 Cube.023
-texture "text.png"
+texture "text.webp"
 crease 30.000000
 numvert 4
 0.004835 0.005084 -0.033841
@@ -658,7 +658,7 @@ OBJECT poly
 name "tgbchip"
 data 8
 Cube.029
-texture "text.png"
+texture "text.webp"
 crease 30.000000
 numvert 4
 0.004835 -0.017846 -0.033841
@@ -678,7 +678,7 @@ OBJECT poly
 name "engp"
 data 8
 Cube.010
-texture "text.png"
+texture "text.webp"
 crease 30.000000
 numvert 4
 0.004835 0.018436 -0.047666
@@ -698,7 +698,7 @@ OBJECT poly
 name "mgbp"
 data 8
 Cube.025
-texture "text.png"
+texture "text.webp"
 crease 30.000000
 numvert 4
 0.004835 0.005084 -0.033841
@@ -718,7 +718,7 @@ OBJECT poly
 name "gov.001"
 data 8
 Cube.024
-texture "text.png"
+texture "text.webp"
 crease 30.000000
 numvert 4
 0.004835 -0.017846 -0.047666
@@ -738,7 +738,7 @@ OBJECT poly
 name "engfire"
 data 8
 Cube.009
-texture "text.png"
+texture "text.webp"
 crease 30.000000
 numvert 4
 0.004835 0.009103 -0.049926
@@ -758,7 +758,7 @@ OBJECT poly
 name "batttemp"
 data 8
 Cube.017
-texture "text.png"
+texture "text.webp"
 crease 30.000000
 numvert 4
 0.004835 0.005084 -0.049926
@@ -778,7 +778,7 @@ OBJECT poly
 name "twtgrip"
 data 8
 Cube.030
-texture "text.png"
+texture "text.webp"
 crease 30.000000
 numvert 4
 0.004835 -0.008193 -0.049926
@@ -817,7 +817,7 @@ OBJECT poly
 name "face"
 data 8
 Cube.006
-texture "panel.png"
+texture "panel.webp"
 crease 30.000000
 numvert 380
 0.004452 -0.023044 -0.077643

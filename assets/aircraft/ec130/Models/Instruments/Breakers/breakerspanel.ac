@@ -8,7 +8,7 @@ OBJECT poly
 name "Plane"
 data 5
 Plane
-texture "breakerspanel.png"
+texture "breakerspanel.webp"
 texrep 1 1
 crease 30.000000
 numvert 24

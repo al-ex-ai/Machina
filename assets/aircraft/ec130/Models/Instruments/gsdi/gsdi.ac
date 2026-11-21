@@ -8,7 +8,7 @@ OBJECT poly
 name "Face.002"
 data 8
 Mesh.003
-texture "gsdi.png"
+texture "gsdi.webp"
 crease 30.000000
 numvert 11
 0.004225 0.03 0.03
@@ -67,7 +67,7 @@ OBJECT poly
 name "Face.003"
 data 8
 Mesh.006
-texture "tach.png"
+texture "tach.webp"
 crease 30.000000
 numvert 56
 0 0.029938 -0.028148

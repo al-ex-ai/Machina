@@ -15,7 +15,7 @@ kids 58
 OBJECT poly
 name "shadow_rotor"
 loc 0.0012899 -3.10639 0.0012892
-texture "shadow_rotor.png"
+texture "shadow_rotor.webp"
 crease 45.000000
 numvert 4
 -5.59569 0.195406 -5.6472
@@ -2018,7 +2018,7 @@ OBJECT poly
 name "blurred1"
 data 9
 Plane.087
-texture "rotorblur.png"
+texture "rotorblur.webp"
 crease 30.000000
 numvert 38
 -0.094194 0.02627 -0.175312
@@ -2301,7 +2301,7 @@ OBJECT poly
 name "blurred1a"
 data 9
 Plane.088
-texture "rotorblur.png"
+texture "rotorblur.webp"
 crease 30.000000
 numvert 16
 -1.22624 0.000833001 0.154265
@@ -2382,7 +2382,7 @@ OBJECT poly
 name "blurred1b"
 data 9
 Plane.089
-texture "rotorblur.png"
+texture "rotorblur.webp"
 crease 30.000000
 numvert 16
 -2.20809 0.000833001 -0.282958
@@ -2463,7 +2463,7 @@ OBJECT poly
 name "blurred1c"
 data 9
 Plane.090
-texture "rotorblur.png"
+texture "rotorblur.webp"
 crease 30.000000
 numvert 16
 -4.24019 0.000833001 0.517764
@@ -2544,7 +2544,7 @@ OBJECT poly
 name "blurred1d"
 data 9
 Plane.091
-texture "rotorblur.png"
+texture "rotorblur.webp"
 crease 30.000000
 numvert 16
 -5.31847 -0.042017 0.611667
@@ -2651,7 +2651,7 @@ OBJECT poly
 name "blurred2"
 data 9
 Plane.077
-texture "rotorblur.png"
+texture "rotorblur.webp"
 crease 30.000000
 numvert 38
 0.198922 -0.07258 0.006081
@@ -2934,7 +2934,7 @@ OBJECT poly
 name "blurred2a"
 data 9
 Plane.078
-texture "rotorblur.png"
+texture "rotorblur.webp"
 crease 30.000000
 numvert 16
 0.47952 0.000833001 -1.13908
@@ -3015,7 +3015,7 @@ OBJECT poly
 name "blurred2b"
 data 9
 Plane.079
-texture "rotorblur.png"
+texture "rotorblur.webp"
 crease 30.000000
 numvert 16
 1.34909 0.000833001 -1.77078
@@ -3096,7 +3096,7 @@ OBJECT poly
 name "blurred2c"
 data 9
 Plane.080
-texture "rotorblur.png"
+texture "rotorblur.webp"
 crease 30.000000
 numvert 16
 1.6717 0.000833001 -3.931
@@ -3177,7 +3177,7 @@ OBJECT poly
 name "blurred2d"
 data 9
 Plane.081
-texture "rotorblur.png"
+texture "rotorblur.webp"
 crease 30.000000
 numvert 16
 2.12951 -0.042017 -4.91177
@@ -3284,7 +3284,7 @@ OBJECT poly
 name "blurred3a"
 data 9
 Plane.083
-texture "rotorblur.png"
+texture "rotorblur.webp"
 crease 30.000000
 numvert 16
 1.11453 0.000833001 1.94716
@@ -3365,7 +3365,7 @@ OBJECT poly
 name "blurred3"
 data 9
 Plane.082
-texture "rotorblur.png"
+texture "rotorblur.webp"
 crease 30.000000
 numvert 38
 0.198922 -0.07258 0.006081
@@ -3648,7 +3648,7 @@ OBJECT poly
 name "blurred3b"
 data 9
 Plane.084
-texture "rotorblur.png"
+texture "rotorblur.webp"
 crease 30.000000
 numvert 16
 1.62756 0.000833001 2.83538
@@ -3729,7 +3729,7 @@ OBJECT poly
 name "blurred3c"
 data 9
 Plane.085
-texture "rotorblur.png"
+texture "rotorblur.webp"
 crease 30.000000
 numvert 16
 1.62756 0.000833001 2.83538
@@ -3810,7 +3810,7 @@ OBJECT poly
 name "blurred3d"
 data 9
 Plane.086
-texture "rotorblur.png"
+texture "rotorblur.webp"
 crease 30.000000
 numvert 16
 2.14317 0.000833001 3.72806

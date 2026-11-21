@@ -35,7 +35,7 @@ OBJECT poly
 name "face"
 data 5
 Plane
-texture "scu2.png"
+texture "scu2.webp"
 crease 30.000000
 numvert 284
 0.000445 0.016987 0.077047
@@ -3207,7 +3207,7 @@ OBJECT poly
 name "empty"
 data 10
 Circle.024
-texture "scu2.png"
+texture "scu2.webp"
 crease 30.000000
 numvert 1815
 0.023256 0.015877 -0.056337
@@ -17561,7 +17561,7 @@ OBJECT poly
 name "acollt"
 data 10
 Circle.010
-texture "scubutton.png"
+texture "scubutton.webp"
 crease 30.000000
 numvert 121
 -0.030301 0.016727 -0.024299
@@ -18595,7 +18595,7 @@ OBJECT poly
 name "avionic"
 data 10
 Circle.012
-texture "scubutton.png"
+texture "scubutton.webp"
 crease 30.000000
 numvert 121
 -0.030301 0.016727 0.02696
@@ -19627,7 +19627,7 @@ OBJECT poly
 name "batepu"
 data 10
 Circle.001
-texture "scubutton.png"
+texture "scubutton.webp"
 crease 30.000000
 numvert 121
 -0.055576 0.016727 0.052708
@@ -20659,7 +20659,7 @@ OBJECT poly
 name "crank"
 data 10
 Circle.020
-texture "scubutton.png"
+texture "scubutton.webp"
 crease 30.000000
 numvert 121
 0.04613 0.016727 0.053146
@@ -21609,7 +21609,7 @@ OBJECT poly
 name "directbat"
 data 10
 Circle.005
-texture "scubutton.png"
+texture "scubutton.webp"
 crease 30.000000
 numvert 121
 -0.055576 0.016727 0.02696
@@ -22721,7 +22721,7 @@ OBJECT poly
 name "domelt"
 data 10
 Circle.013
-texture "scubutton.png"
+texture "scubutton.webp"
 crease 30.000000
 numvert 121
 -0.030301 0.016727 0.052708
@@ -23753,7 +23753,7 @@ OBJECT poly
 name "firettest"
 data 10
 Circle.022
-texture "scubutton.png"
+texture "scubutton.webp"
 crease 30.000000
 numvert 121
 0.071394 0.016727 0.027339
@@ -24703,7 +24703,7 @@ OBJECT poly
 name "floatarm"
 data 10
 Circle.002
-texture "scubutton.png"
+texture "scubutton.webp"
 crease 30.000000
 numvert 121
 0.020595 0.016733 -0.075888
@@ -25755,7 +25755,7 @@ OBJECT poly
 name "fuelp"
 data 10
 Circle.008
-texture "scubutton.png"
+texture "scubutton.webp"
 crease 30.000000
 numvert 121
 -0.030301 0.016727 -0.076031
@@ -26867,7 +26867,7 @@ OBJECT poly
 name "gene"
 data 10
 Circle.006
-texture "scubutton.png"
+texture "scubutton.webp"
 crease 30.000000
 numvert 121
 -0.055576 0.016727 0.001212
@@ -27901,7 +27901,7 @@ OBJECT poly
 name "generst"
 data 10
 Circle.011
-texture "scubutton.png"
+texture "scubutton.webp"
 crease 30.000000
 numvert 121
 -0.030301 0.016727 0.001212
@@ -28851,7 +28851,7 @@ OBJECT poly
 name "gyro"
 data 10
 Circle.019
-texture "scubutton.png"
+texture "scubutton.webp"
 crease 30.000000
 numvert 121
 -0.004668 0.016727 -0.050353
@@ -29885,7 +29885,7 @@ OBJECT poly
 name "horizon"
 data 10
 Circle.018
-texture "scubutton.png"
+texture "scubutton.webp"
 crease 30.000000
 numvert 121
 -0.004668 0.016727 -0.024454
@@ -30917,7 +30917,7 @@ OBJECT poly
 name "horn"
 data 10
 Circle.007
-texture "scubutton.png"
+texture "scubutton.webp"
 crease 30.000000
 numvert 121
 -0.055576 0.016727 -0.050756
@@ -31949,7 +31949,7 @@ OBJECT poly
 name "instl1"
 data 10
 Circle.014
-texture "scubutton.png"
+texture "scubutton.webp"
 crease 30.000000
 numvert 121
 -0.004668 0.016727 0.052886
@@ -32981,7 +32981,7 @@ OBJECT poly
 name "instl2"
 data 10
 Circle.015
-texture "scubutton.png"
+texture "scubutton.webp"
 crease 30.000000
 numvert 121
 -0.004668 0.016727 0.027166
@@ -34013,7 +34013,7 @@ OBJECT poly
 name "pitot12"
 data 10
 Circle.016
-texture "scubutton.png"
+texture "scubutton.webp"
 crease 30.000000
 numvert 121
 -0.004668 0.016727 0.001445
@@ -35045,7 +35045,7 @@ OBJECT poly
 name "poslt"
 data 10
 Circle.009
-texture "scubutton.png"
+texture "scubutton.webp"
 crease 30.000000
 numvert 121
 -0.030301 0.016727 -0.05052
@@ -36077,7 +36077,7 @@ OBJECT poly
 name "servotest"
 data 10
 Circle.023
-texture "scubutton.png"
+texture "scubutton.webp"
 crease 30.000000
 numvert 121
 0.071394 0.016727 0.001532
@@ -37027,7 +37027,7 @@ OBJECT poly
 name "wlttest"
 data 10
 Circle.021
-texture "scubutton.png"
+texture "scubutton.webp"
 crease 30.000000
 numvert 121
 0.071394 0.016727 0.053146
@@ -37977,7 +37977,7 @@ OBJECT poly
 name "taxilt"
 data 10
 Circle.024
-texture "scubutton.png"
+texture "scubutton.webp"
 crease 30.000000
 numvert 121
 0.020595 0.016288 -0.024275
@@ -39092,7 +39092,7 @@ OBJECT poly
 name "landinglight"
 data 10
 Circle.024
-texture "scubutton.png"
+texture "scubutton.webp"
 crease 30.000000
 numvert 121
 0.020595 0.016288 -0.050353

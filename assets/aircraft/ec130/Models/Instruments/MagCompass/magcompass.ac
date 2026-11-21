@@ -6,7 +6,7 @@ OBJECT poly
 name "Compass"
 data 12
 Cylinder.006
-texture "compass.png"
+texture "compass.webp"
 crease 60.000000
 numvert 180
 -0.184756 -0.119768 -0.0160585
@@ -1209,7 +1209,7 @@ OBJECT poly
 name "Compass.ball"
 data 10
 Sphere.004
-texture "compass.png"
+texture "compass.webp"
 crease 60.000000
 numvert 254
 1e-006 -0.0481155 -0.000200534
