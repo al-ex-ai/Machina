@@ -78,5 +78,14 @@
       "dr400",
       "cessna337"
     ]
+  },
+  {
+    "id": "warbirds",
+    "label": "Warbirds",
+    "description": "A Second World War fighter beside the Cold War spy plane that outran missiles.",
+    "ids": [
+      "spitfire-ix",
+      "sr71"
+    ]
   }
 ]
