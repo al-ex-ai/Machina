@@ -623,3 +623,24 @@ button { font: inherit; color: inherit; }
 @media (min-width: 761px) and (max-width: 900px) {
   .brand > :not(.brand-mark) { display: none; }
 }
+
+/* Compare: a model picked in the view */
+.cmp-chip-name { display: inline-flex; align-items: center; gap: 8px; font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+.cmp-chip-name:hover, .cmp-chip-name[aria-pressed="true"] { color: var(--accent-ink); }
+.cmp-chip-name:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+.cmp-pick { position: absolute; left: 14px; bottom: 14px; z-index: 3; display: flex; align-items: center; gap: 12px; max-width: min(560px, calc(100% - 28px)); padding: 10px 44px 10px 14px; background: color-mix(in srgb, var(--surface) 90%, transparent); border: 1px solid var(--line); border-radius: var(--radius); backdrop-filter: blur(8px); box-shadow: var(--shadow); }
+.cmp-pick[hidden] { display: none; }
+.cmp-pick-txt { display: grid; gap: 2px; min-width: 0; }
+.cmp-pick-txt b { font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cmp-pick-txt span { font-size: 12px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cmp-pick-acts { display: flex; gap: 8px; flex: none; }
+.cmp-pick-acts .button { padding: 0 14px; height: 34px; font-size: 13px; }
+.cmp-pick-acts .pick-btn { text-decoration: none; padding: 0 12px; }
+.cmp-pick-x { position: absolute; top: 8px; right: 8px; width: 26px; height: 26px; display: grid; place-items: center; border: 0; border-radius: 50%; background: none; color: var(--muted); font-size: 18px; line-height: 1; cursor: pointer; }
+.cmp-pick-x:hover { background: var(--raised); color: var(--ink); }
+@media (max-width: 760px) {
+  .cmp-pick { left: 10px; right: 10px; top: 10px; bottom: auto; max-width: none; flex-wrap: wrap; row-gap: 10px; }
+  .cmp-pick-txt { flex: 1; }
+  .cmp-pick-acts { width: 100%; }
+  .cmp-pick-acts > * { flex: 1; justify-content: center; white-space: nowrap; }
+}

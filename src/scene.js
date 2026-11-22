@@ -563,6 +563,10 @@ export function createViewer(container) {
     listParts: () => parts.map(p => p.userData),
     /** The WebGL renderer, so off-screen drawing (Compare's silhouettes) can reuse its uploaded geometry. */
     renderer,
+    /** The camera, for pages that pick in the view themselves (Compare picks whole models). */
+    camera,
+    /** Draw again after a change the viewer does not know about (a material tint). */
+    redraw: () => invalidate(true),
     modelSize: () => (model ? new THREE.Box3().setFromObject(model).getSize(new THREE.Vector3()) : null),
     on(event, fn) { listeners[event].push(fn); },
   };

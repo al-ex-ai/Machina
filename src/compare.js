@@ -4,6 +4,7 @@
 import * as THREE from 'three';
 import { silhouettes } from './silhouette.js';
 import { pickerHTML } from './picker.js';
+import { batchByMaterial } from './batch.js';
 
 export const SLOT_COLORS = ['#ff8a3d', '#3fa7d6', '#5fc46a', '#b48cf2'];
 const MAX = 4;
@@ -186,7 +187,7 @@ export function createCompare(ctx) {
   const byId = id => ctx.models().find(m => m.id === id);
   const load = m => {
     if (!cache.has(m.id)) {
-      cache.set(m.id, ctx.modelObject(m).then(obj => {
+      cache.set(m.id, ctx.modelObject(m).then(batchByMaterial).then(obj => {
         obj.updateMatrixWorld(true);
         obj.userData.cmpBox = new THREE.Box3().setFromObject(obj);
         return obj;
@@ -298,6 +299,108 @@ export function createCompare(ctx) {
     return Math.min(1, Math.max(0.2, (Math.max(needW, needD) * 1.12) / sphere));
   }
 
+  // ── Picking a model in the view ───────────────────────
+  // Click or tap a model on the apron to select it: it lights up and a card offers to open it,
+  // read the specs or take it out. A double click opens it straight away.
+  let picked = null;
+  let pickWired = false;
+  const raycaster = new THREE.Raycaster();
+  const PICK_TINT = new THREE.Color('#ff8a3d');
+
+  function tint(obj, on) {
+    const seen = new Set();
+    obj?.traverse(o => {
+      if (!o.isMesh || o.userData.cmpLabel) return;
+      for (const m of [o.material].flat()) {
+        if (!m?.emissive || seen.has(m)) continue;
+        seen.add(m);
+        m.userData.cmpEmissive ??= { color: m.emissive.clone(), intensity: m.emissiveIntensity };
+        const own = m.userData.cmpEmissive;
+        m.emissive.copy(on ? PICK_TINT : own.color);
+        m.emissiveIntensity = on ? 0.45 : own.intensity;
+      }
+    });
+  }
+
+  function cardHTML(m) {
+    const len = m.specs.length_m, span = widthOf(m);
+    const facts = [ctx.classLabel(m), len && `${fmt(len)} m long`, span && `${fmt(span)} m ${m.specs.rotor_diameter_m && !m.specs.wingspan_m ? 'rotor' : 'span'}`].filter(Boolean).join(' · ');
+    return `<span class="dot" style="background:${colorOf(m)}"></span>
+      <div class="cmp-pick-txt"><b>${esc(m.name)}</b><span>${esc(facts)}</span></div>
+      <div class="cmp-pick-acts">
+        <a class="button" href="#/m/${esc(m.id)}">Open model</a>
+        ${current.all ? `<a class="pick-btn" href="${hrefFor([m.id], { tab: 'lineup' })}">Compare it</a>`
+          : `<button type="button" class="pick-btn" data-cmp-act="specs">Specs</button><button type="button" class="pick-btn" data-cmp-act="remove">Remove</button>`}
+      </div>
+      <button type="button" class="cmp-pick-x" data-cmp-act="close" aria-label="Clear the selection">×</button>`;
+  }
+
+  function setPicked(id) {
+    if (id === picked) return;
+    tint(current.objs?.get(picked), false);
+    picked = id && current.objs?.has(id) ? id : null;
+    tint(current.objs?.get(picked), true);
+    const card = $('#cmp-pick');
+    if (card) {
+      const m = picked && byId(picked);
+      card.hidden = !m;
+      card.innerHTML = m ? cardHTML(m) : '';
+    }
+    for (const c of document.querySelectorAll('[data-cmp-select]')) c.setAttribute('aria-pressed', String(c.dataset.cmpSelect === picked));
+    ctx.ensureViewer().redraw();
+  }
+
+  /** The model under the pointer: boxes for hover (cheap), triangles for a click. */
+  function modelAt(ev, precise) {
+    const viewer = ctx.ensureViewer();
+    const r = viewer.renderer.domElement.getBoundingClientRect();
+    const ndc = new THREE.Vector2(((ev.clientX - r.left) / r.width) * 2 - 1, -((ev.clientY - r.top) / r.height) * 2 + 1);
+    raycaster.setFromCamera(ndc, viewer.camera);
+    const box = new THREE.Box3(), at = new THREE.Vector3();
+    const hits = [];
+    for (const [id, obj] of current.objs) {
+      if (!obj.visible || !raycaster.ray.intersectBox(box.setFromObject(obj), at)) continue;
+      // In the overlay a smaller model is drawn over a larger one whatever its depth: the top layer wins.
+      const layer = current.mode === 'overlay' ? stack.indexOf(obj) : 0;
+      if (!precise) { hits.push({ id, layer, d: at.distanceTo(raycaster.ray.origin) }); continue; }
+      const hit = raycaster.intersectObject(obj, true)[0];
+      if (hit) hits.push({ id, layer, d: hit.distance });
+    }
+    hits.sort((a, b) => b.layer - a.layer || a.d - b.d);
+    if (hits.length || !precise) return hits[0]?.id ?? null;
+    // Missed every triangle: take the model whose box, grown a little, the ray passes through, so a
+    // small aircraft far down the row can still be tapped with a finger.
+    let best = null;
+    for (const [id, obj] of current.objs) {
+      if (!obj.visible) continue;
+      box.setFromObject(obj);
+      const grow = box.getSize(at).length() * 0.15;
+      if (raycaster.ray.intersectBox(box.expandByScalar(grow), at) && (!best || at.distanceTo(raycaster.ray.origin) < best.d)) best = { id, d: at.distanceTo(raycaster.ray.origin) };
+    }
+    return best?.id ?? null;
+  }
+
+  function wirePicking() {
+    if (pickWired) return;
+    pickWired = true;
+    const canvas = ctx.ensureViewer().renderer.domElement;
+    const active = () => $('.compare-page') && current.objs && !$('#stage')?.hidden;
+    let down = null;
+    canvas.addEventListener('pointerdown', ev => { down = active() ? { x: ev.clientX, y: ev.clientY, t: performance.now() } : null; });
+    canvas.addEventListener('pointerup', ev => {
+      if (!down || !active() || Math.hypot(ev.clientX - down.x, ev.clientY - down.y) > 6 || performance.now() - down.t > 600) return;
+      setPicked(modelAt(ev, true));
+    });
+    canvas.addEventListener('dblclick', ev => { if (active()) { const id = modelAt(ev, true); if (id) location.hash = `#/m/${id}`; } });
+    let hovering = false;
+    canvas.addEventListener('pointermove', ev => {
+      if (ev.buttons || ev.pointerType !== 'mouse') return;
+      const on = Boolean(active() && modelAt(ev, false));
+      if (on !== hovering) { hovering = on; canvas.style.cursor = on ? 'pointer' : ''; }
+    });
+    addEventListener('keydown', ev => { if (ev.key === 'Escape' && active() && picked) setPicked(null); });
+  }
+
   // ── Silhouettes and specs ─────────────────────────────
   let silDirty = true;
   function drawSilhouettes() {
@@ -377,7 +480,7 @@ export function createCompare(ctx) {
     const byClass = [...listed].sort((a, b) => ctx.classRank(a) - ctx.classRank(b) || a.name.localeCompare(b.name));
     const suggested = presets();
     const chips = current.all ? `<span class="cmp-chip"><span class="dot" style="background:var(--ink)"></span>All ${listed.length} models<a class="x" href="${hrefFor([], { tab: 'lineup' })}" aria-label="Clear the line-up">×</a></span>`
-      : current.sel.map(m => `<span class="cmp-chip"><span class="dot" style="background:${colorOf(m)}"></span>${esc(m.name)}<a class="x" href="${hrefFor(current.sel.filter(x => x !== m).map(x => x.id))}" aria-label="Remove ${esc(m.name)}">×</a></span>`).join('');
+      : current.sel.map(m => `<span class="cmp-chip"><button type="button" class="cmp-chip-name" data-cmp-select="${esc(m.id)}" aria-pressed="false" title="Select in the view"><span class="dot" style="background:${colorOf(m)}"></span>${esc(m.name)}</button><a class="x" href="${hrefFor(current.sel.filter(x => x !== m).map(x => x.id))}" aria-label="Remove ${esc(m.name)}">×</a></span>`).join('');
     const add = !current.all && current.sel.length < MAX ? pickerHTML({
       name: 'cmp-add', action: true, label: 'Add a model to compare', placeholder: current.sel.length ? 'Add a model' : 'Pick a model',
       options: byClass.filter(m => !chosen.has(m.id)).map(m => ({ value: m.id, label: m.name, group: ctx.classLabel(m) })),
@@ -448,6 +551,19 @@ export function createCompare(ctx) {
         if (current.objs) arrange();
       }
     });
+    page.addEventListener('click', e => {
+      const chip = e.target.closest('[data-cmp-select]');
+      if (chip) {
+        if (!current.objs) return;
+        if (TABS.find(t => t.id === current.tab).panel !== 'stage') setTab('lineup');
+        setPicked(chip.dataset.cmpSelect === picked ? null : chip.dataset.cmpSelect);
+        return;
+      }
+      const act = e.target.closest('[data-cmp-act]')?.dataset.cmpAct;
+      if (act === 'close') setPicked(null);
+      else if (act === 'specs') setTab('specs');
+      else if (act === 'remove' && picked) location.hash = hrefFor(current.sel.filter(m => m.id !== picked).map(m => m.id));
+    });
     const tabs = $('.cmp-tabs');
     tabs.addEventListener('click', e => { const b = e.target.closest('[data-cmp-tab]'); if (b && !b.disabled) setTab(b.dataset.cmpTab); });
     $('#cmp-tools').addEventListener('click', e => { if (e.target.closest('[data-cmp-replay]')) replay(); });
@@ -470,10 +586,12 @@ export function createCompare(ctx) {
     const sel = ids.map(byId);
     const key = (all ? 'all' : ids.join(','));
     const wanted = route.view ?? (route.mode === 'overlay' ? 'overlay' : 'lineup');
+    tint(current.objs?.get(picked), false); // a model kept from the last selection must not stay lit
     current = { ...current, sel, all, sort: SORTS[route.sort] ? route.sort : 'length', tab: 'lineup', arranged: false, objs: null };
     current.tab = TABS.some(t => t.id === wanted) && !tabOff(wanted) ? wanted : 'lineup';
     current.mode = current.tab === 'overlay' ? 'overlay' : 'lineup';
     silDirty = true;
+    picked = null;
     document.title = 'Compare · Machina';
 
     const empty = `<div class="cmp-empty"><div>
@@ -491,6 +609,7 @@ export function createCompare(ctx) {
         </div>
         <div class="cmp-panels">
           <section class="stage cmp-stage" id="stage" role="tabpanel" aria-label="3D comparison">
+            <div class="cmp-pick" id="cmp-pick" role="region" aria-label="Selected model" aria-live="polite" hidden></div>
             <div class="loading" id="loading" role="status" aria-live="polite" hidden><span class="spinner"></span><span class="label" id="cmp-progress">Loading</span></div>
             ${sel.length ? '' : empty}
           </section>
@@ -502,6 +621,7 @@ export function createCompare(ctx) {
     wire();
     showTab();
     const viewer = ctx.ensureViewer();
+    wirePicking();
 
     if (!sel.length) { viewer.clear(); current.objs = null; current.key = key; return; }
 

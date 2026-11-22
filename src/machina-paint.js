@@ -107,8 +107,13 @@ const FRAG_BODY = `
   }
 `;
 
-function patch(mat, uniforms) {
+/**
+ * Give a livery-painted material the livery's uniforms. Exported so a merged copy of painted meshes
+ * (Compare) can be painted again with its own uToRoot; mat.userData.livery keeps the uniforms.
+ */
+export function patch(mat, uniforms) {
   if (mat.transparent) return;
+  mat.userData.livery = uniforms;
   mat.onBeforeCompile = shader => {
     Object.assign(shader.uniforms, uniforms);
     shader.vertexShader = VERT_HEAD + shader.vertexShader.replace('#include <begin_vertex>', '#include <begin_vertex>\nvLiv = (uToRoot * vec4(transformed, 1.0)).xyz;\nvLivN = normalize(mat3(uToRoot) * objectNormal);');
