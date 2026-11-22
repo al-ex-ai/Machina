@@ -82,22 +82,28 @@ function measure(meshes, toRoot) {
 }
 
 const VERT_HEAD = 'uniform mat4 uToRoot;\nvarying vec3 vLiv;\nvarying vec3 vLivN;\n';
-const FRAG_HEAD = `uniform float uBot[${N}];\nuniform float uH[${N}];\nuniform vec2 uX;\nuniform float uH0;\nuniform vec3 uBase, uBelly, uStripe, uTail;\nuniform float uTailAll;\nuniform vec2 uLight;\nuniform vec4 uTitleBox;\nuniform sampler2D uTitle;\nvarying vec3 vLiv;\nvarying vec3 vLivN;\n`;
+const FRAG_HEAD = `uniform float uBot[${N}];\nuniform float uH[${N}];\nuniform vec2 uX;\nuniform float uH0;\nuniform vec3 uBase, uBelly, uStripe, uTail;\nuniform float uTailAll;\nuniform vec2 uLight;\nuniform float uShade, uSat;\nuniform vec4 uTitleBox;\nuniform sampler2D uTitle;\nvarying vec3 vLiv;\nvarying vec3 vLivN;\n`;
 const FRAG_BODY = `
   {
     float fx = clamp((vLiv.x - uX.x) / (uX.y - uX.x), 0.0, 1.0) * ${N - 1}.0;
     int i0 = int(floor(fx)); int i1 = min(i0 + 1, ${N - 1}); float ft = fract(fx);
     float bot = mix(uBot[i0], uBot[i1], ft), hh = mix(uH[i0], uH[i1], ft);
     float lum = dot(diffuseColor.rgb, vec3(0.299, 0.587, 0.114));
-    float paint = smoothstep(uLight.x, uLight.y, lum);
+    // Light paint, plus coloured paint (red, blue, yellow); dark unsaturated detail such as windows and panel lines stays.
+    float mx = max(diffuseColor.r, max(diffuseColor.g, diffuseColor.b));
+    float sat = mx > 0.02 ? (mx - min(diffuseColor.r, min(diffuseColor.g, diffuseColor.b))) / mx : 0.0;
+    float colored = uSat > 0.0 ? smoothstep(uSat, uSat + 0.2, sat) * smoothstep(0.01, 0.04, mx) : 0.0;
+    float paint = max(smoothstep(uLight.x, uLight.y, lum), colored);
     float cheat = bot + 0.36 * hh, band = 0.045 * uH0;
     vec3 col = vLiv.y < cheat ? uBelly : (vLiv.y < cheat + band ? uStripe : uBase);
     bool fin = vLiv.y > bot + hh + 0.12 * uH0 && vLiv.x > uX.x + 0.62 * (uX.y - uX.x);
-    if (uTailAll > 0.5 || fin) col = uTail;
+    if (uTailAll > 1.5) col = uBase; // plain parts: wings, tailplanes, cowlings
+    else if (uTailAll > 0.5 || fin) col = uTail;
     vec2 t = vec2((vLiv.x - uTitleBox.x) / uTitleBox.z, (vLiv.y - uTitleBox.y) / uTitleBox.w); // canvas textures are flipped in v already
     if (vLiv.z < 0.0) t.x = 1.0 - t.x; // right side (z < 0): mirror so the title reads normally from that side too
     if (abs(vLivN.z) > 0.3 && t.x > 0.0 && t.x < 1.0 && t.y > 0.0 && t.y < 1.0 && uTailAll < 0.5) { vec4 tc = texture2D(uTitle, t); col = mix(col, tc.rgb, tc.a); }
-    diffuseColor.rgb = mix(diffuseColor.rgb, col * clamp(lum / (uLight.y + 0.18), 0.55, 1.0), paint);
+    float shade = mix(clamp(lum / uShade, 0.55, 1.0), 0.92, colored);
+    diffuseColor.rgb = mix(diffuseColor.rgb, col * shade, paint);
   }
 `;
 
@@ -114,9 +120,12 @@ function patch(mat, uniforms) {
 
 /**
  * Paint the Machina livery onto a loaded detailed model (before finalize).
- * cfg (model.asset.machina): { parts: body part ids, tail: part ids painted all tail color, light: [lo, hi]
+ * cfg (model.asset.machina): { parts: body part ids, tail: part ids painted all tail color, plain: part ids
+ * painted all base white (wings, tailplanes, cowlings in a colour of their own), light: [lo, hi]
  * linear luminance ramp of the paint that gets replaced, [0.5, 0.72] by default for white airliner
- * paint, lower for bare metal }
+ * paint, lower for bare metal or dark paint; shade: the luminance kept at full livery brightness,
+ * light[1] + 0.18 by default; sat: HSV saturation from which coloured paint is repainted too,
+ * 0.3 by default, 0 to leave it }
  * @param {{ stripe?: string }} [opts] stripe overrides the cheatline color
  */
 export function applyMachinaPaint(root, cfg, opts = {}) {
@@ -135,7 +144,7 @@ export function applyMachinaPaint(root, cfg, opts = {}) {
       if (q.isMesh) for (const mat of [q.material].flat()) { mat.polygonOffset = true; mat.polygonOffsetFactor = 2; mat.polygonOffsetUnits = 2; }
     });
   });
-  const body = meshesOf(cfg.parts ?? ['fuselage']), tail = meshesOf(cfg.tail ?? []);
+  const body = meshesOf(cfg.parts ?? ['fuselage']), tail = meshesOf(cfg.tail ?? []), plain = meshesOf(cfg.plain ?? []);
   if (!body.length) return;
   const p = measure(body, toRoot);
   const L = p.x1 - p.x0;
@@ -145,9 +154,9 @@ export function applyMachinaPaint(root, cfg, opts = {}) {
   const common = {
     uBot: { value: p.bot }, uH: { value: p.h }, uX: { value: new THREE.Vector2(p.x0, p.x1) }, uH0: { value: p.h0 },
     uBase: { value: new THREE.Color(WHITE) }, uBelly: { value: new THREE.Color(NAVY) }, uStripe: { value: new THREE.Color(opts.stripe ?? ORANGE) }, uTail: { value: new THREE.Color(NAVY) },
-    uTitleBox: { value: new THREE.Vector4(tx, ty, tw, th) }, uLight: { value: new THREE.Vector2(...(cfg.light ?? [0.5, 0.72])) }, uTitle: { value: title() },
+    uTitleBox: { value: new THREE.Vector4(tx, ty, tw, th) }, uLight: { value: new THREE.Vector2(...(cfg.light ?? [0.5, 0.72])) }, uShade: { value: cfg.shade ?? (cfg.light?.[1] ?? 0.72) + 0.18 }, uSat: { value: cfg.sat ?? 0.3 }, uTitle: { value: title() },
   };
-  for (const [list, tailAll] of [[body, 0], [tail, 1]]) for (const m of list) {
+  for (const [list, tailAll] of [[body, 0], [tail, 1], [plain, 2]]) for (const m of list) {
     const u = { ...common, uToRoot: { value: toRoot.get(m) }, uTailAll: { value: tailAll } };
     for (const mat of [m.material].flat()) patch(mat, u);
   }

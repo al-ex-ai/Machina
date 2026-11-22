@@ -331,7 +331,8 @@ export async function loadAssetModel(model, opts = {}) {
       textures.set(url, t);
       t.flipY = false;
       const isNormal = /normal/i.test(tex);
-      const paint = opts.accent && a.recolor?.textures?.find(r => url.endsWith(r.file ?? r));
+      // With the Machina livery on, the accent colours its stripe instead of repainting the skin.
+      const paint = opts.accent && !(a.machina && !opts.original) && a.recolor?.textures?.find(r => url.endsWith(r.file ?? r));
       const cfg = paint && (typeof paint === 'string' ? a.recolor : { ...a.recolor, ...paint });
       pending.push(loadBitmap(url).then(bmp => (paint ? recolor(bmp, opts.accent, cfg) : bmp)).then(bmp => { t.image = bmp; t.needsUpdate = true; }).catch(err => console.warn('texture', url, err)));
       t.colorSpace = isNormal ? THREE.NoColorSpace : THREE.SRGBColorSpace;

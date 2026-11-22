@@ -1374,6 +1374,21 @@
         187,
         231
       ]
+    },
+    "machina": {
+      "parts": [
+        "fuselage",
+        "left-doors",
+        "right-doors",
+        "cargo-doors"
+      ],
+      "tail": [
+        "fin",
+        "rudder"
+      ],
+      "plain": [
+        "sharklets"
+      ]
     }
   }
 }

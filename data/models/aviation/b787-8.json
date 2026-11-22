@@ -1754,6 +1754,15 @@
         184,
         228
       ]
+    },
+    "machina": {
+      "parts": [
+        "fuselage"
+      ],
+      "tail": [
+        "fin",
+        "rudder"
+      ]
     }
   },
   "parts": {

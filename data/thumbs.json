@@ -1,6 +1,6 @@
 {
   "a320neo": {
-    "hash": "7cef46ddac",
+    "hash": "12f68c22ad",
     "parts": 29
   },
   "a380-800": {
@@ -28,7 +28,7 @@
     "parts": 23
   },
   "b787-8": {
-    "hash": "212fc2c9ed",
+    "hash": "5410e65f8c",
     "parts": 26
   },
   "cessna-172s": {
@@ -52,7 +52,7 @@
     "parts": 12
   },
   "ercoupe": {
-    "hash": "bf49b558d3",
+    "hash": "66d90f6524",
     "parts": 18
   },
   "il76": {

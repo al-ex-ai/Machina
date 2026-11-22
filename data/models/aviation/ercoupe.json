@@ -864,6 +864,24 @@
         0,
         24
       ]
+    },
+    "machina": {
+      "parts": [
+        "fuselage"
+      ],
+      "tail": [
+        "fins",
+        "rudders"
+      ],
+      "plain": [
+        "left-wing",
+        "right-wing",
+        "left-aileron",
+        "right-aileron",
+        "horizontal-stabilizer",
+        "elevator",
+        "engine"
+      ]
     }
   },
   "parts": {
