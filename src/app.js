@@ -277,6 +277,7 @@ function renderHome() {
 
       <section class="lineup-wrap" aria-label="Machines at true scale">
         <div class="lineup-head"><span class="label">True scale</span><span class="label" id="lineup-scale"></span></div>
+        <div class="lineup-scroll" id="lineup-scroll">
         <div class="lineup" id="lineup">${lineup.map(m => `
           <a class="lineup-item" href="#/m/${esc(m.id)}" title="${esc(m.name)}, ${num(m.specs.length_m)} m">
             <img alt="${esc(m.name)}" data-length="${m.specs.length_m}" src="./assets/thumbs/${encodeURIComponent(m.id)}-side.webp${state.thumbs[m.id] ? `?v=${state.thumbs[m.id].hash}` : ''}">
@@ -284,6 +285,7 @@ function renderHome() {
           </a>`).join('')}
         </div>
         <div class="ruler" id="ruler" aria-hidden="true"></div>
+        </div>
       </section>
 
       <div class="section-head"><h2>Categories</h2><span class="label">${live.length} live · ${plannedCategories().length} coming</span></div>
@@ -339,19 +341,28 @@ function lineupPick(models, n) {
 /** A short label for the line-up: the type without the maker. */
 const shortName = m => m.name.replace(/^(Boeing|Airbus|Lockheed|Antonov|Ilyushin|Tupolev|Cessna|Piper|Robin|Eurocopter|Aérospatiale\/BAC)\s+/, '');
 
-/** Size the line-up so every profile shares one meters-to-pixels scale that fits the row. */
+/**
+ * Size the line-up so every profile shares one meters-to-pixels scale. Each item is as wide as its
+ * profile or its label, whichever is wider, and the scale is the largest that fits the row. When that
+ * would shrink the smallest model below 20 px (phones, tablets) the row keeps a readable scale and
+ * scrolls sideways instead.
+ */
 function layoutLineup() {
-  const row = $('#lineup');
+  const row = $('#lineup'), scroller = $('#lineup-scroll');
   if (!row) return;
-  const items = [...row.querySelectorAll('img')];
-  const gap = 28, room = row.clientWidth - gap * (items.length - 1);
-  const total = items.reduce((a, img) => a + Number(img.dataset.length), 0);
-  const pxPerM = Math.min(12, room / total);
-  for (const img of items) img.style.width = `${(Number(img.dataset.length) * pxPerM).toFixed(1)}px`;
-  const tick = pxPerM * 10;
-  const ruler = $('#ruler');
-  ruler.style.backgroundSize = `${tick}px 100%`;
-  $('#lineup-scale').textContent = `ruler ticks 10 m`;
+  const items = [...row.querySelectorAll('.lineup-item')];
+  const lengths = items.map(it => Number(it.querySelector('img').dataset.length));
+  const labels = items.map(it => Math.max(...[...it.querySelectorAll('span')].map(s => s.scrollWidth)));
+  const width = px => lengths.reduce((sum, len, i) => sum + Math.max(len * px, labels[i]), 0);
+  const gap = 28, room = scroller.clientWidth - gap * (items.length - 1);
+  let lo = 0, hi = 12;
+  for (let k = 0; k < 30; k++) { const mid = (lo + hi) / 2; if (width(mid) <= room) lo = mid; else hi = mid; }
+  const smallest = Math.min(...lengths), scrolls = lo * smallest < 20;
+  const pxPerM = scrolls ? 28 / smallest : lo;
+  row.classList.toggle('scrolls', scrolls);
+  items.forEach((it, i) => { it.querySelector('img').style.width = `${(lengths[i] * pxPerM).toFixed(1)}px`; });
+  $('#ruler').style.backgroundSize = `${pxPerM * 10}px 100%`;
+  $('#lineup-scale').textContent = scrolls ? 'ruler ticks 10 m · swipe' : 'ruler ticks 10 m';
 }
 window.addEventListener('resize', () => { if (parseRoute().name === 'home') layoutLineup(); });
 

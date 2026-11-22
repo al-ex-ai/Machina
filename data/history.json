@@ -117,13 +117,15 @@
         "A color picker on every detailed model, including camouflage, bare metal, black paint and fabric, leaving markings, tyres and wood alone",
         "Every texture as WebP and capped at 2048 px: 96.5 MB of PNG down to 19.4 MB, each model under a 20 MB budget",
         "Drawing sheets follow the standard three-view set, with wheelbase, track, tail span and a scale bar",
+        "National markings painted off the Spitfire and SR-71",
+        "Phone and tablet layouts: every page link and search reachable in a two-row header, and a true-scale line-up that keeps a readable scale and scrolls sideways on small screens",
         "A written model standard (MODEL_STANDARD.md): 23 rules a model must pass before it is listed"
       ]
     }
   ],
   "next": [
-    "Milestone 1: a clean three-view drawing goes in and a model comes out, with no hand-written settings, its accuracy proved by the benchmark",
-    "Lower the Tu-154B and Tu-144D gear correctly and list them again",
-    "M3 Compare: two to four models side by side or overlaid at true scale"
+    "Finish the Ju 52: silver finish, markings off, color picker, then list it",
+    "Next real aircraft: Constellation L-1049H, CH-47, Alouette III, Bell X-1, DC-6, ATR 72 and EC135, each held to the model standard",
+    "M4 Deeper detail: animations from the model data, labels and a measure tool, cutaway view"
   ]
 }
