@@ -2130,7 +2130,7 @@ OBJECT poly
 name "cargodoor1"
 data 8
 Mesh.031
-texture "BOE.png"
+texture "BOE.webp"
 texrep 1 1
 crease 30.000000
 numvert 52
@@ -2671,7 +2671,7 @@ OBJECT poly
 name "rudder"
 data 21
 Mesh26 Group_21_1.004
-texture "BOE.png"
+texture "BOE.webp"
 texrep 1 1
 crease 30.000000
 numvert 16
@@ -2804,7 +2804,7 @@ OBJECT poly
 name "nlg_large_door.left"
 data 8
 Mesh.035
-texture "BOE.png"
+texture "BOE.webp"
 texrep 1 1
 crease 30.000000
 numvert 40
@@ -3102,7 +3102,7 @@ OBJECT poly
 name "nlg_large_door.right"
 data 8
 Mesh.036
-texture "BOE.png"
+texture "BOE.webp"
 texrep 1 1
 crease 30.000000
 numvert 42
@@ -3482,7 +3482,7 @@ OBJECT poly
 name "nlg_small_door.right"
 data 8
 Mesh.038
-texture "BOE.png"
+texture "BOE.webp"
 texrep 1 1
 crease 30.000000
 numvert 24
@@ -5298,7 +5298,7 @@ OBJECT poly
 name "fuselage"
 data 8
 Mesh.040
-texture "BOE.png"
+texture "BOE.webp"
 texrep 1 1
 crease 30.000000
 numvert 912
@@ -15067,7 +15067,7 @@ OBJECT poly
 name "nlg_small_door.left"
 data 8
 Mesh.047
-texture "BOE.png"
+texture "BOE.webp"
 texrep 1 1
 crease 30.000000
 numvert 12
@@ -15152,7 +15152,7 @@ OBJECT poly
 name "nosecone"
 data 12
 Cylinder.002
-texture "BOE.png"
+texture "BOE.webp"
 texrep 1 1
 crease 30.000000
 numvert 450
@@ -18908,7 +18908,7 @@ OBJECT poly
 name "vstab"
 data 17
 Mesh15 VerticleSt
-texture "BOE.png"
+texture "BOE.webp"
 texrep 1 1
 crease 30.000000
 numvert 24
@@ -19170,7 +19170,7 @@ OBJECT poly
 name "wlg_inner_door.left"
 data 8
 Mesh.048
-texture "BOE.png"
+texture "BOE.webp"
 texrep 1 1
 crease 30.000000
 numvert 6
@@ -19200,7 +19200,7 @@ OBJECT poly
 name "wlg_inner_door.right"
 data 8
 Mesh.049
-texture "BOE.png"
+texture "BOE.webp"
 texrep 1 1
 crease 30.000000
 numvert 6
@@ -19230,7 +19230,7 @@ OBJECT poly
 name "wlg_outer_door.left"
 data 8
 Mesh.050
-texture "BOE.png"
+texture "BOE.webp"
 texrep 1 1
 crease 30.000000
 numvert 6
@@ -19260,7 +19260,7 @@ OBJECT poly
 name "wlg_outer_door.right"
 data 8
 Mesh.051
-texture "BOE.png"
+texture "BOE.webp"
 texrep 1 1
 crease 30.000000
 numvert 6

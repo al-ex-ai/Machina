@@ -1,4 +1,5 @@
-// Re-encode the textures of detailed models as WebP (quality 0.9, alpha kept) in headless
+// Re-encode the textures of detailed models as WebP (quality 0.9, alpha kept, longest side at most
+// 2048 px) in headless
 // Chromium, no extra dependency. A WebP is kept only when it is smaller; the .ac files,
 // textureMap and recolor settings are pointed at it and the original is deleted once no
 // model file refers to it. Run debrand/whiten/recolor-setup before this: they read PNG.
@@ -9,6 +10,7 @@ import { join, dirname, normalize, extname } from 'node:path';
 import { homedir, tmpdir } from 'node:os';
 
 const QUALITY = 0.9;
+const MAX = 2048; // longest side; larger simulator textures are scaled down
 const args = process.argv.slice(2);
 const index = JSON.parse(readFileSync('data/index.json', 'utf8'));
 const files = [...index.models, ...index.workshop];
@@ -33,8 +35,12 @@ const send = (method, params) => new Promise(r => { const i = ++id; pending.set(
 async function toWebp(buf, mime) {
   const expr = `(async () => {
     const blob = await (await fetch('data:${mime};base64,${buf.toString('base64')}')).blob();
-    const bmp = await createImageBitmap(blob, { premultiplyAlpha: 'none', colorSpaceConversion: 'none' });
-    const c = new OffscreenCanvas(bmp.width, bmp.height);
+    const probe = await createImageBitmap(blob);
+    const k = Math.min(1, ${MAX} / Math.max(probe.width, probe.height));
+    const w = Math.round(probe.width * k), h = Math.round(probe.height * k);
+    probe.close();
+    const bmp = await createImageBitmap(blob, { premultiplyAlpha: 'none', colorSpaceConversion: 'none', resizeWidth: w, resizeHeight: h, resizeQuality: 'high' });
+    const c = new OffscreenCanvas(w, h);
     c.getContext('2d').drawImage(bmp, 0, 0);
     const out = await c.convertToBlob({ type: 'image/webp', quality: ${QUALITY} });
     const b = new Uint8Array(await out.arrayBuffer());
@@ -48,6 +54,15 @@ async function toWebp(buf, mime) {
 
 const acFiles = m => [...new Set((m.asset.files ?? [{ file: m.asset.file }]).map(f => join(m.asset.path, normalize(f.file))))].filter(existsSync);
 const done = new Map(); // full texture path -> new file name (or null when kept)
+const resized = new Set(); // WebP files already checked against MAX
+let shrunk = 0;
+/** Width and height from a WebP header (lossy VP8, lossless VP8L or extended VP8X). */
+function webpSize(b) {
+  const t = b.toString('ascii', 12, 16);
+  if (t === 'VP8X') return [1 + b.readUIntLE(24, 3), 1 + b.readUIntLE(27, 3)];
+  if (t === 'VP8L') { const v = b.readUInt32LE(21); return [1 + (v & 0x3fff), 1 + ((v >> 14) & 0x3fff)]; }
+  return [b.readUInt16LE(26) & 0x3fff, b.readUInt16LE(28) & 0x3fff];
+}
 let before = 0, after = 0;
 for (const { file, m } of targets) {
   const a = m.asset;
@@ -57,6 +72,17 @@ for (const { file, m } of targets) {
     const names = new Set([...text.matchAll(/^texture "([^"]+)"/gm)].map(t => t[1]));
     for (const name of names) {
       for (const src of [name, map[name]].filter(Boolean)) {
+        // A WebP already in place is only re-encoded when it is larger than MAX.
+        if (/\.webp$/i.test(src)) {
+          const full = normalize(join(dirname(ac), src));
+          if (resized.has(full) || !existsSync(full)) continue;
+          resized.add(full);
+          const buf = readFileSync(full);
+          if (Math.max(...webpSize(buf)) <= MAX) continue;
+          const small = await toWebp(buf, 'image/webp');
+          writeFileSync(full, small); before += buf.length; after += small.length; shrunk++;
+          continue;
+        }
         if (!/\.(png|jpe?g)$/i.test(src)) continue;
         const full = normalize(join(dirname(ac), src));
         if (!done.has(full)) {
@@ -94,4 +120,4 @@ for (const [full, converted] of done) if (converted && !stillNamed.has(full) && 
 
 ws.close(); chrome.kill(); await sleep(300);
 try { rmSync(profile, { recursive: true, force: true }); } catch {}
-console.log(`textures: ${(before / 1e6).toFixed(1)} MB -> ${(after / 1e6).toFixed(1)} MB, ${[...done.values()].filter(Boolean).length} converted, ${removed} originals removed`);
+console.log(`textures: ${(before / 1e6).toFixed(1)} MB -> ${(after / 1e6).toFixed(1)} MB, ${[...done.values()].filter(Boolean).length} converted, ${shrunk} scaled down, ${removed} originals removed`);

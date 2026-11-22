@@ -10192,7 +10192,7 @@ OBJECT poly
 name "winglet_left"
 data 21
 Mesh76 Group_69_2.006
-texture "BOE.png"
+texture "BOE.webp"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -10335,7 +10335,7 @@ OBJECT poly
 name "winglet_right"
 data 21
 Mesh76 Group_69_2.009
-texture "BOE.png"
+texture "BOE.webp"
 texrep 1 1
 crease 30.000000
 numvert 32

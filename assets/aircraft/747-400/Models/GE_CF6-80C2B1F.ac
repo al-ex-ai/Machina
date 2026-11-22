@@ -756,7 +756,7 @@ OBJECT poly
 name "engine_body_1"
 data 12
 Cylinder.001
-texture "BOE.png"
+texture "BOE.webp"
 texrep 1 1
 crease 30.000000
 numvert 128
@@ -9031,7 +9031,7 @@ OBJECT poly
 name "engine_reverser"
 data 12
 Cylinder.004
-texture "BOE.png"
+texture "BOE.webp"
 texrep 1 1
 crease 30.000000
 numvert 99
