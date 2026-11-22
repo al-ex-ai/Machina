@@ -194,14 +194,17 @@ function render() {
     compareView.render(route);
     state.inCompare = true;
     window.scrollTo(0, 0);
+    state.pageName = route.name;
     navLinks(route);
     return;
   }
   if (route.name === 'model') {
     if (state.inCompare) { state.inCompare = false; viewer?.setView(null); } // Compare leaves the apron camera on
     if (route.xray) state.xray = true;
+    const opening = state.model?.id !== route.id || state.pageName !== 'model';
     if (state.model?.id !== route.id) state.livery = route.livery ?? null;
     renderModel(route.id, route.part);
+    if (opening) window.scrollTo(0, 0); // a model opened from a scrolled list starts at the top (phones scroll the model page)
     if (route.view) viewer?.setView(route.view);
     if (route.person) $('#person')?.getAttribute('aria-pressed') !== 'true' && $('#person')?.click();
   }
@@ -214,6 +217,7 @@ function render() {
     else renderHome();
     window.scrollTo(0, 0);
   }
+  state.pageName = route.name;
   navLinks(route);
 }
 
