@@ -159,29 +159,104 @@ export function createViewer(container) {
   // so rounded seats that have few sharp creases still read through the skin.
   const XRAY_FILL_INSIDE = new THREE.MeshBasicMaterial({ color: '#5ec8ff', transparent: true, opacity: 0.16, depthWrite: false, side: THREE.DoubleSide });
   const XRAY_EDGE_INSIDE = new THREE.LineBasicMaterial({ color: '#7fd4ff', transparent: true, opacity: 0.7, depthWrite: false });
-  function edgesOf(mesh, inside = false) {
-    if (!mesh.userData.edges) {
-      const lines = new THREE.LineSegments(new THREE.EdgesGeometry(mesh.geometry, inside ? 20 : 35), inside ? XRAY_EDGE_INSIDE : XRAY_EDGE);
-      lines.raycast = () => {};
-      lines.visible = false;
-      mesh.add(lines);
-      mesh.userData.edges = lines;
+  // Hides a mesh from the render while keeping it pickable (the raycaster ignores material visibility).
+  const HIDDEN = new THREE.MeshBasicMaterial({ visible: false });
+  const SHARED = new Set([XRAY_FILL, XRAY_EDGE, XRAY_FILL_INSIDE, XRAY_EDGE_INSIDE, HIDDEN]);
+
+  /** A part's own meshes, not those of parts nested in it. */
+  function meshesOf(p) {
+    if (!p.userData.meshes) {
+      const out = [];
+      const walk = o => { for (const c of o.children) if (!c.userData?.part && !c.userData?.xrayOf) { if (c.isMesh) out.push(c); walk(c); } };
+      if (p.isMesh) out.push(p);
+      walk(p);
+      p.userData.meshes = out;
     }
-    return mesh.userData.edges;
+    return p.userData.meshes;
+  }
+
+  // Each part's x-ray geometry (all its meshes merged into one fill and one edge set) is built in a
+  // worker shortly after the model loads, so the first toggle is instant. Until a part's merged
+  // geometry arrives, its meshes swap to the fill material one by one.
+  let xrayWorker = null, xraySeq = 0, xrayGen = 0;
+  const xrayPending = new Map();
+  function runXrayBuild(meshes, threshold) {
+    if (typeof Worker === 'undefined' || /noworker/.test(location.href)) return import('./xray-build.js').then(m => m.buildXray(meshes, threshold));
+    if (!xrayWorker) {
+      xrayWorker = new Worker(new URL('./xray-worker.js', import.meta.url), { type: 'module' });
+      xrayWorker.onmessage = e => {
+        const p = xrayPending.get(e.data.id);
+        xrayPending.delete(e.data.id);
+        if (e.data.error) p?.reject(new Error(e.data.error)); else p?.resolve(e.data.data);
+      };
+    }
+    const id = ++xraySeq;
+    const transfer = meshes.flatMap(m => (m.index ? [m.pos.buffer, m.index.buffer] : [m.pos.buffer]));
+    return new Promise((resolve, reject) => { xrayPending.set(id, { resolve, reject }); xrayWorker.postMessage({ id, meshes, threshold }, transfer); });
+  }
+  function positionsOf(g) {
+    const a = g.attributes.position;
+    if (!a.isInterleavedBufferAttribute && a.array instanceof Float32Array && !a.normalized) return a.array.slice(0, a.count * 3);
+    const out = new Float32Array(a.count * 3);
+    for (let i = 0; i < a.count; i++) { out[i * 3] = a.getX(i); out[i * 3 + 1] = a.getY(i); out[i * 3 + 2] = a.getZ(i); }
+    return out;
+  }
+  function prepareXray() {
+    if (!model || model.userData.xrayQueued) return;
+    model.userData.xrayQueued = true;
+    const gen = xrayGen, root = model;
+    root.updateMatrixWorld(true);
+    const inv = new THREE.Matrix4(), rel = new THREE.Matrix4();
+    // One part at a time, so a model switch stops the queue early and the worker never holds the whole model.
+    (async () => {
+      for (const p of [...parts]) {
+        if (gen !== xrayGen) return;
+        const own = meshesOf(p).filter(o => o.geometry?.attributes.position);
+        if (!own.length) continue;
+        inv.copy(p.matrixWorld).invert();
+        const meshes = own.map(o => ({
+          pos: positionsOf(o.geometry),
+          index: o.geometry.index ? Uint32Array.from(o.geometry.index.array) : null,
+          matrix: rel.multiplyMatrices(inv, o.matrixWorld).toArray(),
+        }));
+        const inside = p.userData.system === 'interior';
+        const r = await runXrayBuild(meshes, inside ? 20 : 35).catch(() => null);
+        if (!r || gen !== xrayGen) return;
+        const g = new THREE.BufferGeometry();
+        g.setAttribute('position', new THREE.BufferAttribute(r.pos, 3));
+        g.setIndex(new THREE.BufferAttribute(r.index, 1));
+        const group = new THREE.Group();
+        group.userData.xrayOf = p;
+        const fill = new THREE.Mesh(g, inside ? XRAY_FILL_INSIDE : XRAY_FILL);
+        const eg = new THREE.BufferGeometry();
+        eg.setAttribute('position', new THREE.BufferAttribute(r.edges, 3));
+        const lines = new THREE.LineSegments(eg, inside ? XRAY_EDGE_INSIDE : XRAY_EDGE);
+        for (const o of [fill, lines]) { o.raycast = () => {}; o.castShadow = false; o.receiveShadow = false; o.matrixAutoUpdate = false; }
+        group.add(fill, lines);
+        group.visible = false;
+        p.add(group);
+        p.userData.xray = group;
+        if (xray) { applyXrayPart(p); invalidate(true); }
+        await new Promise(res => setTimeout(res, 0));
+      }
+    })();
+  }
+  function applyXrayPart(p) {
+    const solid = !xray || p === selected;
+    const merged = p.userData.xray;
+    const fill = p.userData.system === 'interior' ? XRAY_FILL_INSIDE : XRAY_FILL;
+    const stand = merged ? HIDDEN : fill;
+    for (const o of meshesOf(p)) {
+      o.userData.solid ??= o.material;
+      o.userData.shadow ??= o.castShadow;
+      o.material = solid ? o.userData.solid : Array.isArray(o.userData.solid) ? o.userData.solid.map(() => stand) : stand;
+      o.castShadow = xray ? false : o.userData.shadow;
+    }
+    if (merged) merged.visible = !solid;
   }
   function applyXray() {
-    for (const p of parts) {
-      p.traverse(o => {
-        if (!o.isMesh) return;
-        o.userData.solid ??= o.material;
-        const solid = !xray || p === selected;
-        const inside = p.userData.system === 'interior', fill = inside ? XRAY_FILL_INSIDE : XRAY_FILL;
-        o.material = solid ? o.userData.solid : Array.isArray(o.userData.solid) ? o.userData.solid.map(() => fill) : fill;
-        o.castShadow = !xray;
-        if (xray) edgesOf(o, inside).visible = p !== selected;
-        else if (o.userData.edges) o.userData.edges.visible = false;
-      });
-    }
+    if (xray) prepareXray();
+    for (const p of parts) applyXrayPart(p);
     renderer.shadowMap.needsUpdate = true;
   }
 
@@ -367,7 +442,12 @@ export function createViewer(container) {
     scene.remove(model);
     // Textures are usually shared with a loader cache, so only those a material owns outright
     // (userData.ownsMap, like Compare's ground labels) are freed here.
-    model.traverse(o => { if (o.isMesh) { o.geometry.dispose(); for (const m of [o.material].flat()) { if (m.userData?.ownsMap) m.map?.dispose(); m.dispose(); } } });
+    xrayGen++; // x-ray builds still queued for this model are dropped
+    model.traverse(o => {
+      if (!o.isMesh && !o.isLineSegments) return;
+      o.geometry.dispose();
+      for (const m of new Set([o.material, o.userData.solid].flat())) { if (!m || SHARED.has(m)) continue; if (m.userData?.ownsMap) m.map?.dispose(); m.dispose(); }
+    });
     model = null;
     parts = [];
     selected = hovered = null;
@@ -377,8 +457,9 @@ export function createViewer(container) {
 
   /**
    * @param {THREE.Object3D} group
-   * @param {{ keepView?: boolean, fit?: number }} [opts] keepView: same model repainted, leave the camera alone.
+   * @param {{ keepView?: boolean, fit?: number, xray?: boolean }} [opts] keepView: same model repainted, leave the camera alone.
    *   fit: camera distance as a share of the whole-model fit (default 0.78, a little tight for a closer look).
+   *   xray: false when the caller never turns x-ray on, so its geometry is not built.
    */
   function setModel(group, opts = {}) {
     clearModel();
@@ -393,6 +474,8 @@ export function createViewer(container) {
     applyExplode();
     if (opts.keepView) { renderer.shadowMap.needsUpdate = true; invalidate(true); }
     else frame();
+    // Build the x-ray geometry once the first frames are out, unless the caller never uses x-ray (Compare).
+    if (opts.xray !== false) { const m = model; setTimeout(() => { if (model === m) prepareXray(); }, 1500); }
   }
 
   function loop() {
