@@ -1,0 +1,711 @@
+{
+  "id": "p51d",
+  "name": "North American P-51D Mustang",
+  "category": "aviation",
+  "class": "military",
+  "builder": "asset",
+  "summary": "The long-range escort fighter of the Second World War: a laminar-flow wing, a belly radiator and a Packard-built Merlin, with the bubble canopy of the D model. Over 8,000 P-51Ds were built.",
+  "specs": {
+    "manufacturer": "North American Aviation",
+    "country": [
+      "United States"
+    ],
+    "role": "Fighter",
+    "first_flight": 1943,
+    "length_m": 9.83,
+    "wingspan_m": 11.28,
+    "height_m": 4.08,
+    "mtow_kg": 5490,
+    "max_speed_kmh": 703,
+    "engine_count": 1,
+    "engine_type": "Packard V-1650-7 Merlin",
+    "crew": 1
+  },
+  "sources": [
+    {
+      "label": "Wikipedia: North American P-51 Mustang",
+      "url": "https://en.wikipedia.org/wiki/North_American_P-51_Mustang"
+    }
+  ],
+  "asset": {
+    "path": "assets/aircraft/p51d",
+    "license": "GPL-2.0 (FlightGear FGAddon)",
+    "author": "Hal Van Engel and the P-51D contributors",
+    "source": "https://mirrors.ibiblio.org/flightgear/ftp/Aircraft-2020/p51d.zip",
+    "fallback": {
+      "id": "fuselage",
+      "label": "Fuselage",
+      "system": "structure"
+    },
+    "files": [
+      {
+        "file": "Models/P-51D-25NA.ac"
+      },
+      {
+        "file": "Models/Pilot/pilotWWII.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": 2.99,
+              "y": 0,
+              "z": 0.215
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/prop.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "propeller",
+          "label": "Propeller",
+          "system": "propulsion"
+        }
+      },
+      {
+        "file": "Models/Instruments/Altimeter/p51d-jw-alt.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": 2.565,
+              "y": -0.21,
+              "z": 0.135
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Instruments/Compass/p51d-jw-compass.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": 2.565,
+              "y": -0.1,
+              "z": 0.225
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Instruments/Attitude/p51d-jw-attitude.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": 2.565,
+              "y": 0.035,
+              "z": 0.225
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Instruments/CarbAndCoolingTemp/p51d-jw-temp.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": 2.565,
+              "y": 0.135,
+              "z": 0.26
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Instruments/CarbAndCoolingTemp/p51d-jw-temp.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": 2.565,
+              "y": 0.135,
+              "z": 0.19
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Instruments/ASI/p51d-jw-asi.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": 2.565,
+              "y": -0.21,
+              "z": 0.235
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Instruments/Tachometer/p51d-jw-tach.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": 2.565,
+              "y": 0.21,
+              "z": 0.24
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Instruments/EngineCluster/p51d-jw-engine.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": 2.565,
+              "y": 0.21,
+              "z": 0.135
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Instruments/GMeter/p51d-jw-acc.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": 2.565,
+              "y": 0.123,
+              "z": 0.105
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Instruments/VSI/p51d-jw-vsi.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": 2.565,
+              "y": 0.02,
+              "z": 0.105
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Instruments/BankAndTurn/p51d-jw-turn.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": 2.565,
+              "y": -0.1,
+              "z": 0.105
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Instruments/RemoteCompass/p51d-jw-remote.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": 2.565,
+              "y": -0.16,
+              "z": 0.34
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Instruments/Vacuum/p51d-jw-vac.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": 2.565,
+              "y": 0.085,
+              "z": 0.335
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Instruments/Clock/p51d-jw-clock.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": 2.565,
+              "y": -0.085,
+              "z": 0.335
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Instruments/ManifoldPressure/p51d-jw-man.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": 2.565,
+              "y": 0.16,
+              "z": 0.34
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Instruments/MagCompass/p51d-jw-magcompass.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": 2.59,
+              "y": 0.15,
+              "z": 0.452
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Instruments/GearWarning/p51d-jw-gearwarn.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": 2.5754,
+              "y": -0.08,
+              "z": 0.035
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Instruments/OxBlinker/blinker.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": 2.58542,
+              "y": 0.2,
+              "z": -0.005
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Instruments/OxPressure/ox-pressure.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": 2.58542,
+              "y": 0.27,
+              "z": -0.005
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Cockpit/K14/K14-gun-sight.ac",
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Cockpit/SeatAndArmor/seat-armor.ac",
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Cockpit/P-51D-cockpit.ac",
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Cockpit/canopy.ac",
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      }
+    ],
+    "hide": [],
+    "parts": [
+      {
+        "id": "left-wing",
+        "label": "Left wing",
+        "system": "surfaces",
+        "match": [
+          "wingLeft",
+          "wingFilletLeft",
+          "wingTipLightBodyLeft",
+          "wingTipLightLeft"
+        ]
+      },
+      {
+        "id": "right-wing",
+        "label": "Right wing",
+        "system": "surfaces",
+        "match": [
+          "wingRight",
+          "wingFilletRight",
+          "wingTipLightBodyRight",
+          "wingTipLightRight"
+        ]
+      },
+      {
+        "id": "ailerons",
+        "label": "Ailerons",
+        "system": "controls",
+        "match": [
+          "/^aileron/"
+        ]
+      },
+      {
+        "id": "flaps",
+        "label": "Flaps",
+        "system": "controls",
+        "match": [
+          "/^flaps/"
+        ]
+      },
+      {
+        "id": "stabilizer",
+        "label": "Horizontal stabilizer",
+        "system": "surfaces",
+        "match": [
+          "horizontalStabilizer"
+        ]
+      },
+      {
+        "id": "elevators",
+        "label": "Elevators",
+        "system": "controls",
+        "match": [
+          "elevator",
+          "/^elevatorTrim/"
+        ]
+      },
+      {
+        "id": "fin",
+        "label": "Fin",
+        "system": "surfaces",
+        "match": [
+          "VerticalStab",
+          "dorsal",
+          "/^tailFaring/"
+        ]
+      },
+      {
+        "id": "rudder",
+        "label": "Rudder",
+        "system": "controls",
+        "match": [
+          "rudder",
+          "/^rudderTrim/"
+        ]
+      },
+      {
+        "id": "engine",
+        "label": "Engine and cowling",
+        "system": "propulsion",
+        "match": [
+          "/^cowl/",
+          "/^exhaust/",
+          "inductionDuct"
+        ]
+      },
+      {
+        "id": "radiator",
+        "label": "Belly radiator",
+        "system": "propulsion",
+        "match": [
+          "radiator",
+          "mainCoolingDuct",
+          "/^coolingD/",
+          "/^oil(Cooler|Radiator)/"
+        ]
+      },
+      {
+        "id": "tail-wheel",
+        "label": "Tail wheel",
+        "system": "gear",
+        "match": [
+          "/^tailWheel/"
+        ]
+      },
+      {
+        "id": "left-main-gear",
+        "label": "Left main gear",
+        "system": "gear",
+        "match": [
+          "/Left$/"
+        ]
+      },
+      {
+        "id": "right-main-gear",
+        "label": "Right main gear",
+        "system": "gear",
+        "match": [
+          "/Right$/"
+        ]
+      },
+      {
+        "id": "gear-wells",
+        "label": "Gear wells",
+        "system": "gear",
+        "match": [
+          "wheelWells",
+          "centerWingFairing"
+        ]
+      },
+      {
+        "id": "canopy",
+        "label": "Canopy and windshield",
+        "system": "glazing",
+        "match": [
+          "windshieldFrame",
+          "frontCanopySeal",
+          "amorGlassLowerFrame",
+          "canopyreleaseCableCover"
+        ]
+      },
+      {
+        "id": "guns",
+        "label": "Machine guns",
+        "system": "structure",
+        "match": [
+          "guns",
+          "/^gunBast/"
+        ]
+      },
+      {
+        "id": "lights",
+        "label": "Lights",
+        "system": "lights",
+        "match": [
+          "landingLight",
+          "/^signalLight/",
+          "/^tailLight/"
+        ]
+      }
+    ],
+    "restOnTail": {
+      "main": "left-main-gear",
+      "tail": "tail-wheel"
+    },
+    "verify": {
+      "tolerance": {
+        "height": 0.08
+      },
+      "note": "Standing on its tail wheel with one propeller blade straight up, the FlightGear model reaches 4.36 m against the published 4.08 m; the fin top stands at 2.98 m, and the propeller is the right 3.4 m across, so the difference is in the ground attitude."
+    }
+  }
+}
