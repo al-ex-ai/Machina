@@ -63,11 +63,12 @@ One milestone per week. Each milestone ends with everything committed, `npm test
 - Cutaway view and richer part data sheets
 - Machina livery for engines and any remaining plain models
 
-## M5. More aircraft and categories
+## M5. More aircraft and categories (in progress)
 
-- Next FlightGear batch, each vetted for license, quality and size: 777, ATR 72, Cessna Caravan, DC-3, more helicopters (the Concorde shipped early)
+- Shipped: 777, A380 real mesh, 707 full package, Spitfire Mk IX, P-51D (Warbirds collection), Helicopters category with classes and collections
+- In the workshop: Ju 52 (silver finish and markings to finish), DC-3 and Tu-154M (below the standard)
+- Next FlightGear batch, each held to MODEL_STANDARD.md: Constellation L-1049H, CH-47, Alouette III, Bell X-1, DC-6, ATR 72, EC135
 - Space category from NASA's public-domain models: Space Shuttle, ISS, Hubble, Curiosity
-- Military set stays parked until asked for
 
 ## M6. Data and authoring
 
