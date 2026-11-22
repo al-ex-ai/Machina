@@ -40,6 +40,7 @@
     "models/aviation/tu154b.json",
     "models/aviation/tu144d.json",
     "models/aviation/b707-parametric.json",
-    "models/aviation/tu-154m.json"
+    "models/aviation/tu-154m.json",
+    "models/aviation/ju52.json"
   ]
 }
