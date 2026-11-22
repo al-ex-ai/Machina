@@ -1448,7 +1448,25 @@
           "/^portepara/"
         ]
       }
-    ]
+    ],
+    "recolor": {
+      "textures": [
+        "Models/texture.webp"
+      ],
+      "neutral": [
+        0.05,
+        0.3,
+        0.12
+      ],
+      "skip": [
+        [
+          0,
+          0.87,
+          1,
+          1
+        ]
+      ]
+    }
   },
   "sources": [
     {

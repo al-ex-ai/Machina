@@ -103,7 +103,7 @@ for (const { file, m } of targets) {
   const webpName = (base, n) => (done.get(normalize(join(base, n))) ? n.replace(/\.(png|jpe?g)$/i, '.webp') : n);
   const acDir = dirname(normalize(join(a.path, (a.files ?? [{ file: a.file }])[0].file)));
   if (a.textureMap) a.textureMap = Object.fromEntries(Object.entries(a.textureMap).map(([k, v]) => [webpName(acDir, k), webpName(acDir, v)]));
-  if (a.recolor?.textures) a.recolor.textures = a.recolor.textures.map(t => webpName(a.path, t));
+  if (a.recolor?.textures) a.recolor.textures = a.recolor.textures.map(t => (typeof t === 'string' ? webpName(a.path, t) : { ...t, file: webpName(a.path, t.file) }));
   writeFileSync(file, JSON.stringify(m, null, 2) + '\n');
 }
 
@@ -113,7 +113,7 @@ for (const { m } of models) for (const ac of acFiles(m)) for (const t of readFil
 for (const { m } of models) {
   const a = m.asset, acDir = dirname(normalize(join(a.path, (a.files ?? [{ file: a.file }])[0].file)));
   for (const v of Object.values(a.textureMap ?? {})) stillNamed.add(normalize(join(acDir, v)));
-  for (const t of a.recolor?.textures ?? []) stillNamed.add(normalize(join(a.path, t)));
+  for (const t of a.recolor?.textures ?? []) stillNamed.add(normalize(join(a.path, t.file ?? t)));
 }
 let removed = 0;
 for (const [full, converted] of done) if (converted && !stillNamed.has(full) && existsSync(full)) { unlinkSync(full); removed++; }

@@ -29,7 +29,7 @@ function used(m) {
       out.add(normalize(join(dirname(file), tex)).replace(/\\/g, '/'));
     }
   }
-  if (a.recolor?.textures) for (const t of a.recolor.textures) out.add(t);
+  if (a.recolor?.textures) for (const t of a.recolor.textures) out.add(t.file ?? t);
   return out;
 }
 

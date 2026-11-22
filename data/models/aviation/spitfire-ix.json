@@ -1596,6 +1596,20 @@
         "height": 0.03
       },
       "note": "The FlightGear model measures 9.13 m long against the Mk IX's published 9.47 m: its fuselage keeps the early marks' shorter nose (9.12 m), not the longer one the two-stage Merlin brought. It stands 3.78 m tall on its tail wheel against the published 3.86 m."
+    },
+    "recolor": {
+      "textures": [
+        "Models/spit9-1.webp"
+      ],
+      "hue": [
+        36,
+        90
+      ],
+      "sat": [
+        0.12,
+        0.45
+      ],
+      "base": 0.14
     }
   }
 }

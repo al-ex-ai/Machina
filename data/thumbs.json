@@ -64,15 +64,15 @@
     "parts": 20
   },
   "p51d": {
-    "hash": "fd86285508",
+    "hash": "c826169048",
     "parts": 20
   },
   "spitfire-ix": {
-    "hash": "39ff738e28",
+    "hash": "e0b1585ab1",
     "parts": 19
   },
   "sr71": {
-    "hash": "d092f97d2d",
+    "hash": "b331fcae26",
     "parts": 15
   },
   "tu134": {
@@ -80,7 +80,7 @@
     "parts": 19
   },
   "wright-flyer": {
-    "hash": "ddfa81b82a",
+    "hash": "c92ee126a8",
     "parts": 10
   }
 }

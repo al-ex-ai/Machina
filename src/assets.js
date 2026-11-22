@@ -253,24 +253,44 @@ async function loadBitmap(url) {
 
 /** Browser: fetch and build the detailed model. */
 /**
- * Recolor a livery: pixels whose hue falls in the asset's livery hue range (the cheatline
- * and titles) take the accent's hue and saturation, keeping their lightness, so shading
- * and panel lines stay. Everything else in the texture is untouched.
+ * Repaint a livery texture in the accent colour, keeping each pixel's lightness relative to its paint so
+ * shading and panel lines stay. cfg (asset.recolor): hue [h0, h1] repaints that hue band (sat: minimum
+ * saturation, 0.3 by default, lower for muted camouflage; base: the paint's usual lightness, 0.35 by
+ * default); neutral [l0, l1, base] instead repaints the uncoloured skin (bare metal, white or black paint,
+ * fabric) whose lightness lies in [l0, l1] and chroma (max - min channel) is at most sat, 0.08 by default;
+ * chroma rather than HSL saturation, which runs high on near-whites. In hue mode sat may be [min, max] to
+ * spare bright markings next to muted paint. skip lists texture rectangles [x0, y0, x1, y1] (0..1,
+ * top-left origin) left alone, such as tyres and engine faces in the same atlas. A textures entry may be
+ * { file, ...overrides } for a texture whose paint sits at another lightness.
  */
-function recolor(bmp, accent, [h0, h1]) {
+function recolor(bmp, accent, cfg) {
+  const [h0, h1] = cfg.hue ?? [0, 360], neutral = cfg.neutral, skip = cfg.skip ?? [];
+  const [minSat, satCap] = Array.isArray(cfg.sat) ? cfg.sat : [cfg.sat ?? 0.3, 1];
+  const maxChroma = cfg.sat ?? 0.08, hueBase = cfg.base ?? 0.35;
   const c = new OffscreenCanvas(bmp.width, bmp.height), g = c.getContext('2d');
   g.drawImage(bmp, 0, 0);
   const img = g.getImageData(0, 0, c.width, c.height), d = img.data;
   const target = new THREE.Color(accent), hsl = {};
   target.getHSL(hsl);
   const col = new THREE.Color(), px = {};
+  const W = c.width, H = c.height;
   for (let i = 0; i < d.length; i += 4) {
+    if (skip.length) {
+      const x = ((i >> 2) % W) / W, y = Math.floor((i >> 2) / W) / H;
+      if (skip.some(([x0, y0, x1, y1]) => x >= x0 && x <= x1 && y >= y0 && y <= y1)) continue;
+    }
     col.setRGB(d[i] / 255, d[i + 1] / 255, d[i + 2] / 255);
     col.getHSL(px);
     const deg = px.h * 360;
-    if (px.s < 0.3 || px.l < 0.06 || px.l > 0.94 || deg < h0 || deg > h1) continue;
-    // Lightness follows the original relative to its paint, centered on the accent's own.
-    col.setHSL(hsl.h, Math.min(1, hsl.s), Math.min(0.95, Math.max(0.05, hsl.l + (px.l - 0.35) * 0.8)));
+    if (neutral) {
+      const [l0, l1, base] = neutral;
+      if (Math.max(d[i], d[i + 1], d[i + 2]) - Math.min(d[i], d[i + 1], d[i + 2]) > maxChroma * 255 || px.l < l0 || px.l > l1) continue;
+      col.setHSL(hsl.h, Math.min(1, hsl.s), Math.min(0.95, Math.max(0.05, hsl.l + (px.l - base) * 0.8)));
+    } else {
+      if (px.s < minSat || px.s > satCap || px.l < 0.06 || px.l > 0.94 || deg < h0 || deg > h1) continue;
+      // Lightness follows the original relative to its paint, centered on the accent's own.
+      col.setHSL(hsl.h, Math.min(1, hsl.s), Math.min(0.95, Math.max(0.05, hsl.l + (px.l - hueBase) * 0.8)));
+    }
     d[i] = col.r * 255; d[i + 1] = col.g * 255; d[i + 2] = col.b * 255;
   }
   g.putImageData(img, 0, 0);
@@ -311,8 +331,9 @@ export async function loadAssetModel(model, opts = {}) {
       textures.set(url, t);
       t.flipY = false;
       const isNormal = /normal/i.test(tex);
-      const paint = opts.accent && a.recolor?.textures?.some(r => url.endsWith(r));
-      pending.push(loadBitmap(url).then(bmp => (paint ? recolor(bmp, opts.accent, a.recolor.hue) : bmp)).then(bmp => { t.image = bmp; t.needsUpdate = true; }).catch(err => console.warn('texture', url, err)));
+      const paint = opts.accent && a.recolor?.textures?.find(r => url.endsWith(r.file ?? r));
+      const cfg = paint && (typeof paint === 'string' ? a.recolor : { ...a.recolor, ...paint });
+      pending.push(loadBitmap(url).then(bmp => (paint ? recolor(bmp, opts.accent, cfg) : bmp)).then(bmp => { t.image = bmp; t.needsUpdate = true; }).catch(err => console.warn('texture', url, err)));
       t.colorSpace = isNormal ? THREE.NoColorSpace : THREE.SRGBColorSpace;
       t.wrapS = t.wrapT = THREE.RepeatWrapping;
       t.anisotropy = 8;

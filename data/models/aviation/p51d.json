@@ -706,6 +706,32 @@
         "height": 0.08
       },
       "note": "Standing on its tail wheel with one propeller blade straight up, the FlightGear model reaches 4.36 m against the published 4.08 m; the fin top stands at 2.98 m, and the propeller is the right 3.4 m across, so the difference is in the ground attitude."
+    },
+    "recolor": {
+      "textures": [
+        "Models/fus-texture.webp",
+        {
+          "file": "Models/wing-texture.webp",
+          "neutral": [
+            0.55,
+            0.92,
+            0.66
+          ]
+        },
+        {
+          "file": "Models/invariant-texture.webp",
+          "neutral": [
+            0.55,
+            0.92,
+            0.66
+          ]
+        }
+      ],
+      "neutral": [
+        0.55,
+        0.92,
+        0.8
+      ]
     }
   }
 }

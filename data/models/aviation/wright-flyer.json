@@ -133,6 +133,17 @@
         "height": 0.05
       },
       "note": "The FlightGear model measures 6.56 m long and 2.96 m tall against the published 6.43 m and 2.82 m."
+    },
+    "recolor": {
+      "textures": [
+        "Models/WrightFlyer-pb-jw-03.webp"
+      ],
+      "neutral": [
+        0.7,
+        1,
+        0.88
+      ],
+      "sat": 0.2
     }
   },
   "parts": {
