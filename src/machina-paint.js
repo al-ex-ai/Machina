@@ -82,14 +82,14 @@ function measure(meshes, toRoot) {
 }
 
 const VERT_HEAD = 'uniform mat4 uToRoot;\nvarying vec3 vLiv;\nvarying vec3 vLivN;\n';
-const FRAG_HEAD = `uniform float uBot[${N}];\nuniform float uH[${N}];\nuniform vec2 uX;\nuniform float uH0;\nuniform vec3 uBase, uBelly, uStripe, uTail;\nuniform float uTailAll;\nuniform vec4 uTitleBox;\nuniform sampler2D uTitle;\nvarying vec3 vLiv;\nvarying vec3 vLivN;\n`;
+const FRAG_HEAD = `uniform float uBot[${N}];\nuniform float uH[${N}];\nuniform vec2 uX;\nuniform float uH0;\nuniform vec3 uBase, uBelly, uStripe, uTail;\nuniform float uTailAll;\nuniform vec2 uLight;\nuniform vec4 uTitleBox;\nuniform sampler2D uTitle;\nvarying vec3 vLiv;\nvarying vec3 vLivN;\n`;
 const FRAG_BODY = `
   {
     float fx = clamp((vLiv.x - uX.x) / (uX.y - uX.x), 0.0, 1.0) * ${N - 1}.0;
     int i0 = int(floor(fx)); int i1 = min(i0 + 1, ${N - 1}); float ft = fract(fx);
     float bot = mix(uBot[i0], uBot[i1], ft), hh = mix(uH[i0], uH[i1], ft);
     float lum = dot(diffuseColor.rgb, vec3(0.299, 0.587, 0.114));
-    float paint = smoothstep(0.5, 0.72, lum);
+    float paint = smoothstep(uLight.x, uLight.y, lum);
     float cheat = bot + 0.36 * hh, band = 0.045 * uH0;
     vec3 col = vLiv.y < cheat ? uBelly : (vLiv.y < cheat + band ? uStripe : uBase);
     bool fin = vLiv.y > bot + hh + 0.12 * uH0 && vLiv.x > uX.x + 0.62 * (uX.y - uX.x);
@@ -97,7 +97,7 @@ const FRAG_BODY = `
     vec2 t = vec2((vLiv.x - uTitleBox.x) / uTitleBox.z, (vLiv.y - uTitleBox.y) / uTitleBox.w); // canvas textures are flipped in v already
     if (vLiv.z < 0.0) t.x = 1.0 - t.x; // right side (z < 0): mirror so the title reads normally from that side too
     if (abs(vLivN.z) > 0.3 && t.x > 0.0 && t.x < 1.0 && t.y > 0.0 && t.y < 1.0 && uTailAll < 0.5) { vec4 tc = texture2D(uTitle, t); col = mix(col, tc.rgb, tc.a); }
-    diffuseColor.rgb = mix(diffuseColor.rgb, col * clamp(lum / 0.9, 0.55, 1.0), paint);
+    diffuseColor.rgb = mix(diffuseColor.rgb, col * clamp(lum / (uLight.y + 0.18), 0.55, 1.0), paint);
   }
 `;
 
@@ -114,7 +114,9 @@ function patch(mat, uniforms) {
 
 /**
  * Paint the Machina livery onto a loaded detailed model (before finalize).
- * cfg (model.asset.machina): { parts: body part ids, tail: part ids painted all tail color }
+ * cfg (model.asset.machina): { parts: body part ids, tail: part ids painted all tail color, light: [lo, hi]
+ * linear luminance ramp of the paint that gets replaced, [0.5, 0.72] by default for white airliner
+ * paint, lower for bare metal }
  * @param {{ stripe?: string }} [opts] stripe overrides the cheatline color
  */
 export function applyMachinaPaint(root, cfg, opts = {}) {
@@ -143,7 +145,7 @@ export function applyMachinaPaint(root, cfg, opts = {}) {
   const common = {
     uBot: { value: p.bot }, uH: { value: p.h }, uX: { value: new THREE.Vector2(p.x0, p.x1) }, uH0: { value: p.h0 },
     uBase: { value: new THREE.Color(WHITE) }, uBelly: { value: new THREE.Color(NAVY) }, uStripe: { value: new THREE.Color(opts.stripe ?? ORANGE) }, uTail: { value: new THREE.Color(NAVY) },
-    uTitleBox: { value: new THREE.Vector4(tx, ty, tw, th) }, uTitle: { value: title() },
+    uTitleBox: { value: new THREE.Vector4(tx, ty, tw, th) }, uLight: { value: new THREE.Vector2(...(cfg.light ?? [0.5, 0.72])) }, uTitle: { value: title() },
   };
   for (const [list, tailAll] of [[body, 0], [tail, 1]]) for (const m of list) {
     const u = { ...common, uToRoot: { value: toRoot.get(m) }, uTailAll: { value: tailAll } };
