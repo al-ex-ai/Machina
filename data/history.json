@@ -121,11 +121,24 @@
         "Phone and tablet layouts: every page link and search reachable in a two-row header, and a true-scale line-up that keeps a readable scale and scrolls sideways on small screens",
         "A written model standard (MODEL_STANDARD.md): 23 rules a model must pass before it is listed"
       ]
+    },
+    {
+      "date": "2026-11-22",
+      "title": "Faster X-ray and Compare, and two propliners",
+      "items": [
+        "The Machina livery tried on every model, then kept only where it renders clean: A320neo, 787-8 and Ercoupe joined the list, and the An-225 and twelve others went back to their own paint because old cheatlines and titles showed through",
+        "X-ray outlines built in a background worker after the model loads, merged per part: on the 777 the switch went from 2.9 s to 0.2 s and from 8 to 41 fps",
+        "Compare merges each model by material and draws cabins only up close: four airliners went from 7,671 to 209 draw calls and from 12 to 55 fps, every model at once from 3 to 25 fps",
+        "Select a model in Compare with a click or tap to open it, see its specs or remove it; small aircraft stay easy to hit on a phone",
+        "A model opened from a scrolled page starts at the top",
+        "Junkers Ju 52/3m in silver duralumin, with the crosses and lettering painted off its tail",
+        "Lockheed L-1049H Super Constellation with the Eastern Air Lines livery painted off, in a new Propliners collection with the Ju 52; its three fins stand 8.47 m against the published 7.54 m, which the model notes",
+        "The gear tool mirrored two doors of one nacelle as if they were left and right twins, which left the Constellation's doors floating; it now mirrors only true pairs"
+      ]
     }
   ],
   "next": [
-    "Finish the Ju 52: silver finish, markings off, color picker, then list it",
-    "Next real aircraft: Constellation L-1049H, CH-47, Alouette III, Bell X-1, DC-6, ATR 72 and EC135, each held to the model standard",
+    "Next real aircraft: Boeing 314 Clipper, DC-6, CH-47, Alouette III, Bell X-1, ATR 72 and EC135, each held to the model standard",
     "M4 Deeper detail: animations from the model data, labels and a measure tool, cutaway view"
   ]
 }
