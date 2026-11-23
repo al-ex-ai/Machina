@@ -1,0 +1,643 @@
+{
+  "id": "l1049h",
+  "name": "Lockheed L-1049H Super Constellation",
+  "category": "aviation",
+  "class": "airliners",
+  "builder": "asset",
+  "summary": "The triple-tailed piston airliner of the 1950s: four Wright Turbo Compound radials, a dolphin-curved fuselage and three fins to fit the hangars of the day. The H model carried passengers or freight; 53 were built.",
+  "specs": {
+    "manufacturer": "Lockheed",
+    "country": [
+      "United States"
+    ],
+    "role": "Airliner and freighter",
+    "first_flight": 1950,
+    "length_m": 35.41,
+    "wingspan_m": 37.62,
+    "height_m": 7.54,
+    "mtow_kg": 62370,
+    "max_speed_kmh": 607,
+    "engine_count": 4,
+    "engine_type": "Wright R-3350 Turbo Compound",
+    "crew": 5
+  },
+  "sources": [
+    {
+      "label": "Wikipedia: Lockheed L-1049 Super Constellation",
+      "url": "https://en.wikipedia.org/wiki/Lockheed_L-1049_Super_Constellation"
+    }
+  ],
+  "asset": {
+    "path": "assets/aircraft/l1049h",
+    "license": "GPL-2.0 (FlightGear FGAddon)",
+    "author": "Gary R. Neely",
+    "source": "https://mirrors.ibiblio.org/flightgear/ftp/Aircraft-2020/Lockheed1049h.zip",
+    "fallback": {
+      "id": "fuselage",
+      "label": "Fuselage",
+      "system": "structure"
+    },
+    "files": [
+      {
+        "file": "Models/mesh_airframe.ac",
+        "pose": [
+          {
+            "type": "rotate",
+            "objects": [
+              "LGNDoorFA",
+              "LGNDoorFF"
+            ],
+            "value": 98,
+            "origin": [
+              -14.771,
+              -0.63,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LightTaxi"
+            ],
+            "value": 98,
+            "origin": [
+              -14.771,
+              -0.63,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LGNDoorFF"
+            ],
+            "value": -94,
+            "origin": [
+              -14.524,
+              -0.8,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LGNDoorL"
+            ],
+            "value": -80,
+            "origin": [
+              -13.386,
+              -0.784,
+              0.535
+            ],
+            "axis": [
+              0.998537,
+              -0.038974,
+              0.037494
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LGNDoorR"
+            ],
+            "value": -80,
+            "origin": [
+              -13.386,
+              -0.784,
+              -0.535
+            ],
+            "axis": [
+              -0.998537,
+              0.038974,
+              0.037494
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LGmainLDoorFL"
+            ],
+            "value": -64,
+            "origin": [
+              -4.118,
+              -0.933,
+              4.977
+            ],
+            "axis": [
+              0.999557,
+              0.021048,
+              -0.021048
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LGmainLDoorAL"
+            ],
+            "value": -64,
+            "origin": [
+              -2.076,
+              -0.89,
+              4.934
+            ],
+            "axis": [
+              0.991216,
+              0.087557,
+              -0.099122
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LGmainLDoorFR"
+            ],
+            "value": 64,
+            "origin": [
+              -4.118,
+              -0.933,
+              3.557
+            ],
+            "axis": [
+              0.999557,
+              0.021048,
+              0.021048
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LGmainLDoorAR"
+            ],
+            "value": 64,
+            "origin": [
+              -2.076,
+              -0.89,
+              3.6
+            ],
+            "axis": [
+              0.991216,
+              0.087557,
+              0.099122
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LGmainRDoorFL"
+            ],
+            "value": -64,
+            "origin": [
+              -4.118,
+              -0.933,
+              -3.557
+            ],
+            "axis": [
+              0.999557,
+              0.021048,
+              -0.021048
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LGmainRDoorAL"
+            ],
+            "value": -64,
+            "origin": [
+              -2.076,
+              -0.89,
+              -3.6
+            ],
+            "axis": [
+              0.991216,
+              0.087557,
+              -0.099122
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LGmainRDoorFR"
+            ],
+            "value": 64,
+            "origin": [
+              -4.118,
+              -0.933,
+              -4.977
+            ],
+            "axis": [
+              0.999557,
+              0.021048,
+              0.021048
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LGmainRDoorAR"
+            ],
+            "value": 64,
+            "origin": [
+              -2.076,
+              -0.89,
+              -4.934
+            ],
+            "axis": [
+              0.991216,
+              0.087557,
+              0.099122
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "LGmainLL",
+              "LGmainTiresL",
+              "LGmainRimL",
+              "LGmainTorqueBarLL"
+            ],
+            "value": 0.097,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0.03783,
+              0.999284,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LGmainTorqueBarUL"
+            ],
+            "value": 15.937,
+            "origin": [
+              -1.14,
+              -2.267,
+              4.267
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LGmainTorqueBarLL"
+            ],
+            "value": 15.937,
+            "origin": [
+              -1.205,
+              -2.886,
+              4.267
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "LGmainLR",
+              "LGmainTiresR",
+              "LGmainRimR",
+              "LGmainTorqueBarLR"
+            ],
+            "value": 0.097,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0.03783,
+              0.999284,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LGmainTorqueBarUR"
+            ],
+            "value": 15.937,
+            "origin": [
+              -1.14,
+              -2.267,
+              -4.267
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LGmainTorqueBarLR"
+            ],
+            "value": 15.937,
+            "origin": [
+              -1.205,
+              -2.886,
+              -4.267
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "LGnoseL",
+              "LGnoseTires",
+              "LGnoseHubL",
+              "LGnoseHubR",
+              "LGnoseTorqueBarL"
+            ],
+            "value": 0.432,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0.207806,
+              0.97817,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LGnoseTorqueBarU"
+            ],
+            "value": 41.112,
+            "origin": [
+              -15.293,
+              -2.603,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LGnoseTorqueBarL"
+            ],
+            "value": 41.112,
+            "origin": [
+              -15.396,
+              -3.088,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "file": "Models/mesh_props.ac"
+      },
+      {
+        "file": "Models/mesh_antennas.ac"
+      },
+      {
+        "file": "Models/mesh_cockpit.ac",
+        "fallback": {
+          "id": "cockpit",
+          "label": "Flight deck",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/mesh_pedestal.ac",
+        "fallback": {
+          "id": "cockpit",
+          "label": "Flight deck",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/mesh_lights.ac",
+        "fallback": {
+          "id": "lights",
+          "label": "Lights",
+          "system": "lights"
+        }
+      }
+    ],
+    "hide": [
+      "/^PropBlur/",
+      "/Volume/",
+      "LightBall",
+      "/Glow/",
+      "/On$/"
+    ],
+    "parts": [
+      {
+        "id": "wing",
+        "label": "Wing",
+        "system": "surfaces",
+        "match": [
+          "Wing"
+        ]
+      },
+      {
+        "id": "ailerons",
+        "label": "Ailerons and trim tabs",
+        "system": "controls",
+        "match": [
+          "/^Aileron/"
+        ]
+      },
+      {
+        "id": "flaps",
+        "label": "Flaps",
+        "system": "controls",
+        "match": [
+          "/^Flaps/",
+          "FlapWell"
+        ]
+      },
+      {
+        "id": "stabilizer",
+        "label": "Horizontal stabilizer",
+        "system": "surfaces",
+        "match": [
+          "Stabilizer"
+        ]
+      },
+      {
+        "id": "elevators",
+        "label": "Elevator and trim tab",
+        "system": "controls",
+        "match": [
+          "/^Elevator/"
+        ]
+      },
+      {
+        "id": "fins",
+        "label": "Three fins",
+        "system": "surfaces",
+        "match": [
+          "Vstabs"
+        ]
+      },
+      {
+        "id": "rudders",
+        "label": "Rudders and trim tabs",
+        "system": "controls",
+        "match": [
+          "/^Rudder/"
+        ]
+      },
+      {
+        "id": "engines",
+        "label": "Engines and cowlings",
+        "system": "propulsion",
+        "match": [
+          "/^Eng/",
+          "/^CowlFlap/",
+          "PropShafts"
+        ]
+      },
+      {
+        "id": "propellers",
+        "label": "Propellers",
+        "system": "propulsion",
+        "match": [
+          "/^Prop[0-9]/"
+        ]
+      },
+      {
+        "id": "left-main-gear",
+        "label": "Left main gear",
+        "system": "gear",
+        "match": [
+          "/^LGmain(?!.*Door).*L$/",
+          "/^LGmainLDoor/"
+        ]
+      },
+      {
+        "id": "right-main-gear",
+        "label": "Right main gear",
+        "system": "gear",
+        "match": [
+          "/^LGmain(?!.*Door).*R$/",
+          "/^LGmainRDoor/"
+        ]
+      },
+      {
+        "id": "nose-gear",
+        "label": "Nose gear",
+        "system": "gear",
+        "match": [
+          "/^LGnose/",
+          "/^LGNDoor/"
+        ]
+      },
+      {
+        "id": "gear-wells",
+        "label": "Gear wells",
+        "system": "gear",
+        "match": [
+          "GearWells",
+          "GearWellNose"
+        ]
+      },
+      {
+        "id": "windows",
+        "label": "Windows and windshield",
+        "system": "glazing",
+        "match": [
+          "GlassCabin",
+          "GlassCockpit",
+          "CabinWindowBox"
+        ]
+      },
+      {
+        "id": "crew-door",
+        "label": "Crew door",
+        "system": "structure",
+        "match": [
+          "/^DoorCrew/"
+        ]
+      },
+      {
+        "id": "landing-lights",
+        "label": "Landing and taxi lights",
+        "system": "lights",
+        "match": [
+          "/^Light(Landing|Taxi)/"
+        ]
+      },
+      {
+        "id": "antennas",
+        "label": "Antennas",
+        "system": "avionics",
+        "match": [
+          "/^ADF/",
+          "HF",
+          "HFMast",
+          "/^RadAlt/",
+          "Terrain",
+          "VHF",
+          "VorLoc"
+        ]
+      }
+    ],
+    "machina": {
+      "parts": [
+        "fuselage",
+        "crew-door"
+      ],
+      "tail": [
+        "fins",
+        "rudders"
+      ],
+      "light": [
+        0.22,
+        0.4
+      ]
+    },
+    "verify": {
+      "tolerance": {
+        "height": 0.13
+      },
+      "note": "Standing on all three wheels with the oleos settled, the FlightGear model reaches 8.47 m at the fin tips against the published 7.54 m; length (with the long weather-radar nose) and span match within 0.3%, so the gap is in the height of the three fins."
+    }
+  }
+}

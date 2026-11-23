@@ -34,6 +34,7 @@ Machina's own code is MIT licensed (see `LICENSE`). Third-party files keep their
 | Supermarine Spitfire Mk IX model and textures | `assets/aircraft/spitfire9/` | Detlef Faber, with instruments by AJ MacLeod, Vivian Meazza and Anders Gidenstam | GPL-2.0 |
 | North American P-51D Mustang model and textures | `assets/aircraft/p51d/` | Hal Van Engel and the P-51D contributors | GPL-2.0 |
 | Junkers Ju 52/3m model and textures | `assets/aircraft/ju52/` | Detlef Faber and the Ju 52 contributors | GPL-2.0 |
+| Lockheed L-1049H Super Constellation model and textures | `assets/aircraft/l1049h/` | Gary R. Neely | GPL-2.0 |
 | Parametric A320neo, 787-8, 747-400 and 707 (shapes measured from the FlightGear models above) | `data/models/aviation/*-parametric.json` | Authors of each source model, measured by Machina | Same license as the source model |
 | Boeing 737-300 reference drawing (measurements only) | `references/b737-300/` | Julien.scavini | CC BY-SA 3.0 |
 

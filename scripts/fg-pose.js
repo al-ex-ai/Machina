@@ -2,12 +2,18 @@
 // translate animations at chosen property values (by default, landing gear down) and
 // store the resulting transforms on the asset file, in document order. Some models are
 // saved with the gear retracted and only lower it through these animations.
-// Usage: node scripts/fg-pose.js <model.xml> data/models/aviation/<id>.json [fileIndex]
+// Usage: node scripts/fg-pose.js <model.xml> data/models/aviation/<id>.json [fileIndex] [property=value ...]
+//   Extra property=value pairs pose more animations, e.g. gear/gear[0]/compression-norm=1 to
+//   settle oleos stored at full extension onto the ground.
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 
-const [xmlPath, modelFile, fileIndex = '0'] = process.argv.slice(2);
-const POSE = [[/gear\/gear\[\d+\]\/position-norm/, 1]]; // property pattern -> value
+const [xmlPath, modelFile, fileIndex = '0', ...sets] = process.argv.slice(2);
+const exact = k => new RegExp(`^${k.replace(/[.*+?^${}()|[\]\\/]/g, '\\$&')}$`);
+const POSE = [ // property pattern -> value
+  ...sets.map(kv => { const i = kv.lastIndexOf('='); return [exact(kv.slice(0, i)), Number(kv.slice(i + 1))]; }),
+  [/gear\/gear\[\d+\]\/position-norm/, 1],
+];
 const xml = readFileSync(xmlPath, 'latin1').replace(/<!--[\s\S]*?-->/g, '');
 const num = (s, tag) => { const m = new RegExp(`<${tag}>\\s*([-\\d.eE+]+)\\s*</${tag}>`).exec(s); return m ? Number(m[1]) : undefined; };
 const fgToAc = ([x, y, z]) => [x, z, -y]; // FlightGear x aft, y right, z up -> AC x aft, y up, z left
@@ -118,6 +124,9 @@ for (let i = 0; i < out.length; i++) {
   if (!t.objects.every(n => /R$/.test(n))) continue;
   const l = lefts.get(t.objects.map(n => n.replace(/R$/, '#')).join(','));
   if (!l || l.type !== t.type) continue;
+  // Only true twins across the centerline: in some models L and R name the two doors of one
+  // nacelle (LGmainLDoorFL and LGmainLDoorFR are both on the left gear), which must stay as given.
+  if (Math.sign(t.origin[2]) === Math.sign(l.origin[2]) && t.origin[2] !== 0) continue;
   out[i] = { ...t, value: l.value, origin: [l.origin[0], l.origin[1], -l.origin[2]], axis: t.type === 'rotate' ? [-l.axis[0], -l.axis[1], l.axis[2]] : [l.axis[0], l.axis[1], -l.axis[2]] };
 }
 

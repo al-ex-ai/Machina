@@ -88,5 +88,14 @@
       "p51d",
       "sr71"
     ]
+  },
+  {
+    "id": "propliners",
+    "label": "Propliners",
+    "description": "Airliners from before the jet age: the corrugated trimotor and the triple-tailed Constellation.",
+    "ids": [
+      "ju52",
+      "l1049h"
+    ]
   }
 ]
