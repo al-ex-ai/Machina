@@ -11,7 +11,7 @@ OBJECT poly
 name "bezel"
 data 10
 Circle.005
-texture "bezel.png"
+texture "bezel.webp"
 texrep 1 1
 crease 30
 numvert 168
@@ -1246,7 +1246,7 @@ OBJECT poly
 name "screws"
 data 10
 Circle.007
-texture "bezel.png"
+texture "bezel.webp"
 texrep 1 1
 crease 30
 numvert 360
@@ -3632,7 +3632,7 @@ OBJECT poly
 name "ball"
 data 10
 Sphere.002
-texture "att-ger.png"
+texture "att-ger.webp"
 texrep 1 1
 crease 30
 numvert 44
@@ -4015,7 +4015,7 @@ OBJECT poly
 name "Sphere"
 data 10
 Sphere.001
-texture "att-ger.png"
+texture "att-ger.webp"
 texrep 1 1
 crease 30
 numvert 86
@@ -4854,7 +4854,7 @@ OBJECT poly
 name "case_1_1"
 data 10
 Circle.001
-texture "misc.png"
+texture "misc.webp"
 texrep 1 1
 crease 30
 numvert 160
@@ -6213,7 +6213,7 @@ OBJECT poly
 name "bezel.001"
 data 10
 Circle.008
-texture "remote-2.png"
+texture "remote-2.webp"
 texrep 1 1
 crease 30
 numvert 294

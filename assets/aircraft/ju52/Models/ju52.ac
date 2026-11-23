@@ -1,6 +1,6 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
-MATERIAL "fuselage" rgb 0.585713 0.660948 0.886653 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 64 trans 0
+MATERIAL "fuselage" rgb 0.8 0.8 0.8 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 64 trans 0
 MATERIAL "glass" rgb 0.8 0.8 0.8 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 64 trans 0.76666
 MATERIAL "fuselage.001" rgb 0.8 0.8 0.8 amb 1 1 1 emis 0 0 0 spec 0.97468 0.92138 0.746801 shi 83 trans 0
 MATERIAL "yokes" rgb 0.724865 0.715201 0.715201 amb 1 1 1 emis 0 0 0 spec 0.186042 0.12343 0.183519 shi 64 trans 0
@@ -21,7 +21,7 @@ name "B132"
 loc 0.043835 0 -0
 data 4
 B132
-texture "b132.png"
+texture "b132.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 3112
@@ -23775,7 +23775,7 @@ name "B132.001"
 loc 2.151373 -0.783089 3.80234
 data 8
 B132.001
-texture "b132.png"
+texture "b132.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 3112
@@ -47529,7 +47529,7 @@ name "B132.002"
 loc 2.151373 -0.783089 3.80234
 data 8
 B132.002
-texture "b132.png"
+texture "b132.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 3112
@@ -71283,7 +71283,7 @@ name "aileron.L"
 loc 8.413755 -1.421027 1.603013
 data 9
 aileron.L
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 24
@@ -71532,7 +71532,7 @@ name "aileron.R"
 loc 8.413755 -1.421027 1.603013
 data 9
 aileron.R
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 24
@@ -71781,7 +71781,7 @@ name "bmw132.001"
 loc 0.219239 -0.035575 -1.900077
 data 10
 bmw132.001
-texture "BMW132.png"
+texture "BMW132.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 109
@@ -72639,7 +72639,7 @@ name "bmw132.003"
 loc 0.219239 -0.035575 -1.900077
 data 10
 bmw132.003
-texture "BMW132.png"
+texture "BMW132.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 72
@@ -72848,7 +72848,7 @@ name "bmw132.L.001"
 loc 0.219239 -0.035575 -1.900077
 data 12
 bmw132.L.001
-texture "BMW132.png"
+texture "BMW132.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 109
@@ -73706,7 +73706,7 @@ name "bmw132.R.001"
 loc 0.219239 -0.035575 -1.900077
 data 12
 bmw132.R.001
-texture "BMW132.png"
+texture "BMW132.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 109
@@ -74564,7 +74564,7 @@ name "cabinroof"
 loc 0.028758 -0.035575 -1.900077
 data 9
 cabinroof
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 87
@@ -75381,7 +75381,7 @@ name "cabinroof.001"
 loc 0.028758 -0.035575 -1.900077
 data 13
 cabinroof.001
-texture "frame2.png"
+texture "frame2.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 16
@@ -75506,7 +75506,7 @@ name "cowling.L"
 loc 8.413755 -1.421027 1.603013
 data 9
 cowling.L
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 144
@@ -76669,7 +76669,7 @@ name "cowling.R"
 loc 8.413755 -1.421027 1.603013
 data 9
 cowling.R
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 144
@@ -77832,7 +77832,7 @@ name "cowlmid"
 loc 0.972635 0 -0
 data 7
 cowlmid
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 144
@@ -78995,7 +78995,7 @@ name "elevator.L"
 loc 16.66655 0.85354 0.383024
 data 10
 elevator.L
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 24
@@ -79231,7 +79231,7 @@ name "elevator.R"
 loc 16.66655 0.85354 0.383024
 data 10
 elevator.R
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 24
@@ -79467,7 +79467,7 @@ name "enginecover"
 loc 0.972635 0 -0
 data 11
 enginecover
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 14
@@ -79534,7 +79534,7 @@ name "exhaustl"
 loc 0.41515 -0.223257 0.859678
 data 8
 exhaustl
-texture "BMW132.png"
+texture "BMW132.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 116
@@ -80520,7 +80520,7 @@ name "exhaustl.001"
 loc 2.715481 -0.961228 4.621963
 data 12
 exhaustl.001
-texture "BMW132.png"
+texture "BMW132.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 209
@@ -82262,7 +82262,7 @@ name "exhaustl.002"
 loc 2.715481 -0.961228 4.621963
 data 12
 exhaustl.002
-texture "BMW132.png"
+texture "BMW132.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 209
@@ -84004,7 +84004,7 @@ name "exhaustr"
 loc 0.41515 -0.223257 0.859678
 data 8
 exhaustr
-texture "BMW132.png"
+texture "BMW132.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 93
@@ -84780,7 +84780,7 @@ name "flap.L"
 loc 8.413755 -1.421027 1.603013
 data 6
 flap.L
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 12
@@ -84883,7 +84883,7 @@ name "flap.R"
 loc 8.413755 -1.421027 1.603013
 data 6
 flap.R
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 12
@@ -84986,7 +84986,7 @@ name "fuselage"
 loc 0.028758 -0.035575 -1.900077
 data 8
 fuselage
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 714
@@ -90721,7 +90721,7 @@ name "guncover"
 loc 0.028758 -0.035575 -1.900077
 data 8
 guncover
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 21
@@ -90837,7 +90837,7 @@ name "gunnerposition"
 loc 0.028758 -0.035575 -1.900077
 data 14
 gunnerposition
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 52
@@ -91156,7 +91156,7 @@ name "gunnershield"
 loc 0.028758 -0.035575 -1.900077
 data 12
 gunnershield
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 52
@@ -91686,7 +91686,7 @@ name "hstab.L"
 loc 16.66655 0.85354 0.383024
 data 7
 hstab.L
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 56
@@ -92063,7 +92063,7 @@ name "hstab.R"
 loc 16.66655 0.85354 0.383024
 data 7
 hstab.R
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 56
@@ -92440,7 +92440,7 @@ name "lafette1"
 loc 3.096086 0.248473 -1.425918
 data 8
 lafette1
-texture "gunturret.png"
+texture "gunturret.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 582
@@ -97161,7 +97161,7 @@ name "lafette2"
 loc 3.096086 0.248473 -1.425918
 data 8
 lafette2
-texture "gunturret.png"
+texture "gunturret.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 210
@@ -98745,7 +98745,7 @@ name "leftdoor"
 loc 0.028758 -0.035575 -1.900077
 data 8
 leftdoor
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 8
@@ -98792,7 +98792,7 @@ name "leftgear1"
 loc 2.715481 -0.697993 2.71824
 data 9
 leftgear1
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 73
@@ -99481,7 +99481,7 @@ name "leftgear2"
 loc 2.715481 -0.697993 2.71824
 data 9
 leftgear2
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 24
@@ -99671,7 +99671,7 @@ name "mast"
 loc 3.559691 1.752794 0.479538
 data 4
 mast
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 12
@@ -99764,7 +99764,7 @@ name "midfliter"
 loc 1.678802 -0.912533 -0
 data 9
 midfliter
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 234
@@ -101647,7 +101647,7 @@ name "oiltank2.0"
 loc 4.190045 -0.141441 3.554984
 data 10
 oiltank2.0
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 16
@@ -101730,7 +101730,7 @@ name "oiltank2.1"
 loc 1.946365 0.692498 -0
 data 10
 oiltank2.1
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 16
@@ -101813,7 +101813,7 @@ name "oiltank2.2"
 loc 4.190045 -0.141441 3.554984
 data 10
 oiltank2.2
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 16
@@ -101896,7 +101896,7 @@ name "oiltank3.0"
 loc 4.210727 -0.141441 3.554984
 data 10
 oiltank3.0
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 74
@@ -102575,7 +102575,7 @@ name "oiltank3.1"
 loc 1.967046 0.692498 0
 data 10
 oiltank3.1
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 74
@@ -103254,7 +103254,7 @@ name "oiltank3.2"
 loc 4.210727 -0.141441 3.554984
 data 10
 oiltank3.2
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 74
@@ -103973,7 +103973,7 @@ name "rear.door1"
 loc 2.656494 0.341942 -0
 data 10
 rear.door1
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 14
@@ -104067,7 +104067,7 @@ name "rear.door2"
 loc 2.656494 0.341942 -0
 data 10
 rear.door2
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 23
@@ -104227,7 +104227,7 @@ name "rear.windows"
 loc 0.028758 -0.035575 -1.900077
 data 12
 rear.windows
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 26
@@ -104410,7 +104410,7 @@ name "rightdoor"
 loc 0.028758 -0.035575 -1.900077
 data 9
 rightdoor
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 20
@@ -104546,7 +104546,7 @@ name "rightgear1"
 loc 2.715481 -0.697993 2.71824
 data 10
 rightgear1
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 73
@@ -105235,7 +105235,7 @@ name "rightgear2"
 loc 2.715481 -0.697993 2.71824
 data 10
 rightgear2
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 24
@@ -105425,7 +105425,7 @@ name "roofhatch"
 loc 0.028758 -0.035575 -1.900077
 data 9
 roofhatch
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 10
@@ -105474,7 +105474,7 @@ name "rudder"
 loc 0.028758 -0.035575 -1.900077
 data 6
 rudder
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 38
@@ -105816,7 +105816,7 @@ name "tailgear1"
 loc 17.757555 -1.535282 -0.000001
 data 9
 tailgear1
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 20
@@ -105988,7 +105988,7 @@ name "tailgear2"
 loc 17.337772 -1.543974 -0.000001
 data 9
 tailgear2
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 40
@@ -106312,7 +106312,7 @@ name "tailwheel"
 loc 17.676304 -0.345472 -0.048269
 data 9
 tailwheel
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 74
@@ -106961,7 +106961,7 @@ name "vstab"
 loc 0.028758 -0.035575 -1.900077
 data 5
 vstab
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 27
@@ -107138,7 +107138,7 @@ name "wheel.L"
 loc 8.413755 -1.421027 1.603013
 data 7
 wheel.L
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 164
@@ -108537,7 +108537,7 @@ name "wheel.R"
 loc 8.413755 -1.421027 1.603013
 data 7
 wheel.R
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 164
@@ -109936,7 +109936,7 @@ name "wheelcover.L"
 loc 4.570451 -2.217585 -1.994663
 data 12
 wheelcover.L
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 314
@@ -112565,7 +112565,7 @@ name "wheelcover.R"
 loc 4.570451 -2.217585 -1.994663
 data 12
 wheelcover.R
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 314
@@ -115194,7 +115194,7 @@ name "wing0.L"
 loc 8.413755 -1.421027 1.603013
 data 7
 wing0.L
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 391
@@ -118283,7 +118283,7 @@ name "wing0.R"
 loc 8.413755 -1.421027 1.603013
 data 7
 wing0.R
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 392
@@ -121375,7 +121375,7 @@ name "wing1.L"
 loc 8.413755 -1.421027 1.603013
 data 7
 wing1.L
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 115
@@ -122229,7 +122229,7 @@ name "wing1.R"
 loc 8.413755 -1.421027 1.603013
 data 7
 wing1.R
-texture "ju52-1.png"
+texture "ju52-1.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 115

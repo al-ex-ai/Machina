@@ -20,7 +20,7 @@ name "Circle.002"
 loc 2.043928 0 0
 data 10
 Circle.002
-texture "quadrant.png"
+texture "quadrant.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 168
@@ -1060,7 +1060,7 @@ name "Circle.004"
 loc 2.043928 0 0
 data 10
 Circle.004
-texture "quadrant.png"
+texture "quadrant.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 72
@@ -1500,7 +1500,7 @@ name "Cube"
 loc 3.292288 0.681776 -0
 data 4
 Cube
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 32
@@ -1753,7 +1753,7 @@ name "Cube.001"
 loc 2.247636 0.059167 -0.430785
 data 8
 Cube.001
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 8
@@ -1814,7 +1814,7 @@ name "Cube.002"
 loc 2.043928 0.288053 0.129917
 data 8
 Cube.002
-texture "quadrant.png"
+texture "quadrant.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 248
@@ -4301,7 +4301,7 @@ name "Cube.003"
 loc 2.043928 0.288053 0.129917
 data 8
 Cube.003
-texture "quadrant.png"
+texture "quadrant.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 50
@@ -4884,7 +4884,7 @@ name "Cube.004"
 loc 2.043928 0.288053 0.129917
 data 8
 Cube.004
-texture "quadrant.png"
+texture "quadrant.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 32
@@ -5039,7 +5039,7 @@ name "Cube.005"
 loc 2.043928 0.288053 0.129917
 data 8
 Cube.005
-texture "quadrant.png"
+texture "quadrant.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 126
@@ -6616,7 +6616,7 @@ name "Cube.006"
 loc 2.043928 0.288053 0.129917
 data 8
 Cube.006
-texture "quadrant.png"
+texture "quadrant.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 126
@@ -8193,7 +8193,7 @@ name "cockpitwalls"
 loc 2.656494 0.341942 -0
 data 12
 cockpitwalls
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 61
@@ -15199,7 +15199,7 @@ name "frame"
 loc 0.028758 -0.035575 -1.900077
 data 5
 frame
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 301
@@ -17414,7 +17414,7 @@ name "interiour.000"
 loc 2.656494 0.273262 -0
 data 13
 interiour.000
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 8
@@ -17468,7 +17468,7 @@ name "interiour.003"
 loc 1.622001 0.341942 -0
 data 13
 interiour.003
-texture "interiour.png"
+texture "interiour.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 8
@@ -17508,7 +17508,7 @@ name "interiour.004"
 loc 2.656494 0.341942 -0
 data 13
 interiour.004
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 128
@@ -18404,7 +18404,7 @@ name "interiour.005"
 loc 2.656494 0.341942 -0
 data 13
 interiour.005
-texture "floor.png"
+texture "floor.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 33
@@ -18575,7 +18575,7 @@ name "interiour.009"
 loc 2.656494 0.341942 -0
 data 13
 interiour.009
-texture "wall.png"
+texture "wall.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 44
@@ -18904,7 +18904,7 @@ name "interiour.011"
 loc 2.656494 0.341942 -0
 data 13
 interiour.011
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 38
@@ -19079,7 +19079,7 @@ name "interiour.013"
 loc 2.656494 0.341942 -0
 data 13
 interiour.013
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 4
@@ -19101,7 +19101,7 @@ name "interiour.014"
 loc 2.656494 0.341942 -0
 data 13
 interiour.014
-texture "intciv.png"
+texture "intciv.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 44
@@ -19430,7 +19430,7 @@ name "interiour.civ"
 loc 2.656494 0.341942 -0
 data 13
 interiour.civ
-texture "intciv.png"
+texture "intciv.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 277
@@ -21484,7 +21484,7 @@ name "interiour.civ.floor"
 loc 2.656494 0.341942 -0
 data 19
 interiour.civ.floor
-texture "carpet.png"
+texture "carpet.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 34
@@ -21672,7 +21672,7 @@ name "interiour.door"
 loc 2.656494 0.341942 -0
 data 14
 interiour.door
-texture "wall.png"
+texture "wall.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 78
@@ -22181,7 +22181,7 @@ name "interiour.mil"
 loc 2.656494 0.341942 -0
 data 13
 interiour.mil
-texture "wall.png"
+texture "wall.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 297
@@ -24299,7 +24299,7 @@ name "interiour.mil.floor"
 loc 2.656494 0.341942 -0
 data 19
 interiour.mil.floor
-texture "floor.png"
+texture "floor.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 35
@@ -24490,7 +24490,7 @@ name "interiour.struts"
 loc 2.656494 0.341942 -0
 data 16
 interiour.struts
-texture "frame.png"
+texture "frame.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 480
@@ -27200,7 +27200,7 @@ name "leftdoor.I"
 loc 0.028758 -0.035575 -1.900077
 data 10
 leftdoor.I
-texture "frame2.png"
+texture "frame2.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 26
@@ -27379,7 +27379,7 @@ name "leftdoor2.I"
 loc 0.028758 -0.035575 -1.900077
 data 11
 leftdoor2.I
-texture "wall.png"
+texture "wall.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 4
@@ -27401,7 +27401,7 @@ name "leftseat"
 loc 2.67803 0.526686 -0
 data 8
 leftseat
-texture "alu-gradi.png"
+texture "alu-gradi.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 25
@@ -27683,7 +27683,7 @@ name "leftyoke"
 loc 2.567611 0.075881 -0.474318
 data 8
 leftyoke
-texture "alu-gradi.png"
+texture "alu-gradi.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 89
@@ -30605,7 +30605,7 @@ name "leftyokewheel1"
 loc 2.640869 0.489174 -0.474315
 data 14
 leftyokewheel1
-texture "alu-gradi.png"
+texture "alu-gradi.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 140
@@ -31758,7 +31758,7 @@ name "panel"
 loc 2.656494 0.308922 -0
 data 5
 panel
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 64
@@ -32270,7 +32270,7 @@ name "quadrant"
 loc 2.656494 0.273262 -0
 data 8
 quadrant
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 296
@@ -34164,7 +34164,7 @@ name "rear.door1.I"
 loc 2.656494 0.341942 -0
 data 12
 rear.door1.I
-texture "wall.png"
+texture "wall.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 27
@@ -34368,7 +34368,7 @@ name "rear.door2.I"
 loc 2.656494 0.341942 -0
 data 12
 rear.door2.I
-texture "wall.png"
+texture "wall.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 45
@@ -34734,7 +34734,7 @@ name "rear.windows.I"
 loc 2.656494 0.341942 -0
 data 14
 rear.windows.I
-texture "intciv.png"
+texture "intciv.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 32
@@ -34956,7 +34956,7 @@ name "rightdoor.I"
 loc 0.028758 -0.035575 -1.900077
 data 11
 rightdoor.I
-texture "frame2.png"
+texture "frame2.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 18
@@ -35069,7 +35069,7 @@ name "rightdoor2.I"
 loc 0.028758 -0.035575 -1.900077
 data 12
 rightdoor2.I
-texture "wall.png"
+texture "wall.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 4
@@ -35091,7 +35091,7 @@ name "rightseat"
 loc 2.67803 0.526686 -0
 data 9
 rightseat
-texture "alu-gradi.png"
+texture "alu-gradi.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 25
@@ -35373,7 +35373,7 @@ name "rightyoke"
 loc 2.567611 0.075881 -0.474318
 data 9
 rightyoke
-texture "alu-gradi.png"
+texture "alu-gradi.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 89
@@ -38295,7 +38295,7 @@ name "rightyokewheel1"
 loc 2.640869 0.489174 -0.474315
 data 15
 rightyokewheel1
-texture "alu-gradi.png"
+texture "alu-gradi.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 140
@@ -39448,7 +39448,7 @@ name "roofhatch.I"
 loc 2.656494 0.341942 -0
 data 11
 roofhatch.I
-texture "wall.png"
+texture "wall.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 42
@@ -51002,7 +51002,7 @@ name "seat2"
 loc 8.586604 -0.382226 0.485356
 data 5
 seat2
-texture "frame2.png"
+texture "frame2.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 2156
@@ -67909,7 +67909,7 @@ name "seat3"
 loc 9.962729 -0.382226 -0.442126
 data 5
 seat3
-texture "frame2.png"
+texture "frame2.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 48
@@ -69259,7 +69259,7 @@ name "struts"
 loc 2.656494 0.341942 -0
 data 6
 struts
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 66
@@ -69577,7 +69577,7 @@ name "trimwheel0"
 loc 2.079622 -0.093776 0.200846
 data 10
 trimwheel0
-texture "alu-gradi.png"
+texture "alu-gradi.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 140
@@ -72975,7 +72975,7 @@ name "tubes"
 loc 1.967046 0.692498 0
 data 5
 tubes
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 624

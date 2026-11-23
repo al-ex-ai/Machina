@@ -43,7 +43,12 @@
         "file": "Models/ju52.ac"
       },
       {
-        "file": "Models/interiour.ac"
+        "file": "Models/interiour.ac",
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
       },
       {
         "file": "Models/Instruments/asi350-ger.ac",
@@ -775,7 +780,8 @@
     "hide": [
       "/^gun/",
       "/^lafette/",
-      "/pdisk$/"
+      "/pdisk$/",
+      "/^interiour[.]mil/"
     ],
     "parts": [
       {
@@ -914,11 +920,52 @@
           "wire",
           "/^pick/"
         ]
+      },
+      {
+        "id": "cabin",
+        "label": "Cockpit and cabin",
+        "system": "interior",
+        "match": [
+          "cockpitwalls",
+          "curtains",
+          "frame",
+          "/^interiour/",
+          "/[.]I$/",
+          "leftseat",
+          "rightseat",
+          "/yoke/",
+          "panel",
+          "quadrant",
+          "/^seatd/",
+          "struts",
+          "/^trimwheel/",
+          "tubes",
+          "/^Cube/",
+          "/^Circle/",
+          "/^cabinroof/"
+        ]
       }
     ],
     "restOnTail": {
       "main": "left-main-gear",
       "tail": "tail-wheel"
+    },
+    "recolor": {
+      "textures": [
+        "Models/ju52-1.webp"
+      ],
+      "neutral": [
+        0.3,
+        1,
+        0.72
+      ],
+      "sat": 0.12
+    },
+    "verify": {
+      "tolerance": {
+        "height": 0.24
+      },
+      "note": "The radio mast on the cockpit roof reaches 5.54 m. The roof itself stands at 4.61 m on its tail wheel, 2% over the published 4.5 m, which leaves the mast out."
     }
   }
 }

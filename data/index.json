@@ -9,6 +9,7 @@
     "models/aviation/wright-flyer.json",
     "models/aviation/spitfire-ix.json",
     "models/aviation/p51d.json",
+    "models/aviation/ju52.json",
     "models/aviation/b737-300.json",
     "models/aviation/a320neo.json",
     "models/aviation/b787-8.json",
@@ -40,7 +41,6 @@
     "models/aviation/tu154b.json",
     "models/aviation/tu144d.json",
     "models/aviation/b707-parametric.json",
-    "models/aviation/tu-154m.json",
-    "models/aviation/ju52.json"
+    "models/aviation/tu-154m.json"
   ]
 }

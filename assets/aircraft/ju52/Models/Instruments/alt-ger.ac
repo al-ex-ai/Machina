@@ -13,7 +13,7 @@ OBJECT poly
 name "Face"
 data 8
 Mesh.005
-texture "alt-ger.png"
+texture "alt-ger.webp"
 texrep 1 1
 crease 30.000000
 numvert 27
@@ -218,7 +218,7 @@ OBJECT poly
 name "bezel"
 data 10
 Circle.005
-texture "bezel.png"
+texture "bezel.webp"
 texrep 1 1
 crease 30.000000
 numvert 296
@@ -2316,7 +2316,7 @@ OBJECT poly
 name "bezel.top"
 data 10
 Circle.006
-texture "bezel.png"
+texture "bezel.webp"
 texrep 1 1
 crease 30.000000
 numvert 200
@@ -3638,7 +3638,7 @@ OBJECT poly
 name "kilodisk"
 data 12
 Cylinder.002
-texture "alt-ger2.png"
+texture "alt-ger2.webp"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -3705,7 +3705,7 @@ OBJECT poly
 name "knob"
 data 12
 Cylinder.001
-texture "bezel.png"
+texture "bezel.webp"
 texrep 1 1
 crease 30.000000
 numvert 18
@@ -3885,7 +3885,7 @@ OBJECT poly
 name "needle"
 data 12
 Cylinder.003
-texture "alt-ger.png"
+texture "alt-ger.webp"
 texrep 1 1
 crease 30.000000
 numvert 44
@@ -4206,7 +4206,7 @@ OBJECT poly
 name "screws"
 data 10
 Circle.007
-texture "bezel.png"
+texture "bezel.webp"
 texrep 1 1
 crease 30.000000
 numvert 360

@@ -11,7 +11,7 @@ OBJECT poly
 name "Circle"
 data 6
 Circle
-texture "vario15.png"
+texture "vario15.webp"
 texrep 1 1
 crease 30.000000
 numvert 17
@@ -124,7 +124,7 @@ OBJECT poly
 name "Face"
 data 8
 Mesh.005
-texture "vario15.png"
+texture "vario15.webp"
 texrep 1 1
 crease 30.000000
 numvert 17
@@ -247,7 +247,7 @@ OBJECT poly
 name "bezel"
 data 10
 Circle.005
-texture "bezel.png"
+texture "bezel.webp"
 texrep 1 1
 crease 30.000000
 numvert 296
@@ -2345,7 +2345,7 @@ OBJECT poly
 name "bezel.top"
 data 10
 Circle.006
-texture "bezel.png"
+texture "bezel.webp"
 texrep 1 1
 crease 30.000000
 numvert 200
@@ -3667,7 +3667,7 @@ OBJECT poly
 name "needle"
 data 8
 Cylinder
-texture "vario15.png"
+texture "vario15.webp"
 texrep 1 1
 crease 30.000000
 numvert 41
@@ -4071,7 +4071,7 @@ OBJECT poly
 name "screws"
 data 10
 Circle.007
-texture "bezel.png"
+texture "bezel.webp"
 texrep 1 1
 crease 30.000000
 numvert 360

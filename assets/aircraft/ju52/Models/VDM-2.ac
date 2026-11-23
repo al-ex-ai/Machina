@@ -10,7 +10,7 @@ name "blade1"
 loc 0 0 -0
 data 6
 blade1
-texture "prop.png"
+texture "prop.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 157
@@ -1258,7 +1258,7 @@ name "blade2"
 loc 0 0 -0
 data 6
 blade2
-texture "prop.png"
+texture "prop.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 157
@@ -2506,7 +2506,7 @@ name "fastpdisk"
 loc 0.538084 0 -0
 data 9
 fastpdisk
-texture "fastdisc.png"
+texture "fastdisc.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 34
@@ -2935,7 +2935,7 @@ name "hub"
 loc 0 0 -0
 data 3
 hub
-texture "prop.png"
+texture "prop.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 49
@@ -3319,7 +3319,7 @@ name "slowpdisk"
 loc 0.557923 0 -0
 data 9
 slowpdisk
-texture "2blade.png"
+texture "2blade.webp"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 34

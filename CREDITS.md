@@ -28,6 +28,12 @@ Machina's own code is MIT licensed (see `LICENSE`). Third-party files keep their
 | Yakovlev Yak-40 model and textures | `assets/aircraft/yak40/` | Yak40devels | GPL-3.0 |
 | Concorde model and textures (airline branding painted out) | `assets/aircraft/concorde/` | FlightGear Concorde contributors | GPL-2.0 |
 | Eurocopter EC135 model and textures | `assets/aircraft/ec135/` | Heiko Schulz and contributors | GPL-2.0 |
+| Antonov An-225 Mriya model and textures | `assets/aircraft/an225b/` | Firefly (model), HerbyW (FlightGear), Lee Elliot (original project) | GPL-2.0 |
+| Lockheed SR-71 Blackbird model and textures | `assets/aircraft/sr71/` | FlightGear Lockheed-SR71 contributors | GPL-2.0 |
+| Boeing 777-200ER model and textures | `assets/aircraft/777/` | Syd Adams and the 777 contributors | GPL-2.0 |
+| Supermarine Spitfire Mk IX model and textures | `assets/aircraft/spitfire9/` | Detlef Faber, with instruments by AJ MacLeod, Vivian Meazza and Anders Gidenstam | GPL-2.0 |
+| North American P-51D Mustang model and textures | `assets/aircraft/p51d/` | Hal Van Engel and the P-51D contributors | GPL-2.0 |
+| Junkers Ju 52/3m model and textures | `assets/aircraft/ju52/` | Detlef Faber and the Ju 52 contributors | GPL-2.0 |
 | Parametric A320neo, 787-8, 747-400 and 707 (shapes measured from the FlightGear models above) | `data/models/aviation/*-parametric.json` | Authors of each source model, measured by Machina | Same license as the source model |
 | Boeing 737-300 reference drawing (measurements only) | `references/b737-300/` | Julien.scavini | CC BY-SA 3.0 |
 

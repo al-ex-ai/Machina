@@ -11,7 +11,7 @@ OBJECT poly
 name "Circle.001"
 data 6
 Circle
-texture "bezel.png"
+texture "bezel.webp"
 texrep 1 1
 crease 30.000000
 numvert 296
@@ -2109,7 +2109,7 @@ OBJECT poly
 name "Circle.002"
 data 10
 Circle.001
-texture "ring-metal.png"
+texture "ring-metal.webp"
 texrep 1 1
 crease 30.000000
 numvert 200
@@ -3431,7 +3431,7 @@ OBJECT poly
 name "Circle.003"
 data 10
 Circle.003
-texture "bezel.png"
+texture "bezel.webp"
 texrep 1 1
 crease 30.000000
 numvert 360
@@ -5817,7 +5817,7 @@ OBJECT poly
 name "Face"
 data 8
 Mesh.002
-texture "temp0130-ger.png"
+texture "temp0130-ger.webp"
 texrep 1 1
 crease 30.000000
 numvert 17
@@ -5986,7 +5986,7 @@ OBJECT poly
 name "ring"
 data 10
 Circle.004
-texture "temp0130-ger.png"
+texture "temp0130-ger.webp"
 texrep 1 1
 crease 30.000000
 numvert 28

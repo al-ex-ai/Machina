@@ -6,7 +6,7 @@ OBJECT poly
 name "case"
 data 4
 Cube
-texture "../common/ignswitch.png"
+texture "../common/ignswitch.webp"
 texrep 1 1
 crease 30
 numvert 44
@@ -425,7 +425,7 @@ OBJECT poly
 name "knob"
 data 8
 Cube.001
-texture "../common/misc.png"
+texture "../common/misc.webp"
 texrep 1 1
 crease 30
 numvert 25

@@ -11,7 +11,7 @@ OBJECT poly
 name "Face"
 data 8
 Mesh.001
-texture "compass.png"
+texture "compass.webp"
 texrep 1 1
 crease 30.000000
 numvert 17
@@ -134,7 +134,7 @@ OBJECT poly
 name "Face2"
 data 8
 Mesh.002
-texture "compass2.png"
+texture "compass2.webp"
 texrep 1 1
 crease 30.000000
 numvert 50
@@ -610,7 +610,7 @@ OBJECT poly
 name "Plane"
 data 5
 Plane
-texture "compass.png"
+texture "compass.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -631,7 +631,7 @@ OBJECT poly
 name "bezel"
 data 10
 Circle.005
-texture "bezel.png"
+texture "bezel.webp"
 texrep 1 1
 crease 30.000000
 numvert 168
@@ -1705,7 +1705,7 @@ OBJECT poly
 name "bezel.001"
 data 10
 Circle.008
-texture "remote-2.png"
+texture "remote-2.webp"
 texrep 1 1
 crease 30.000000
 numvert 294
@@ -3945,7 +3945,7 @@ OBJECT poly
 name "knob"
 data 6
 Sphere
-texture "compass.png"
+texture "compass.webp"
 texrep 1 1
 crease 30.000000
 numvert 58
@@ -4445,7 +4445,7 @@ OBJECT poly
 name "screws"
 data 10
 Circle.007
-texture "bezel.png"
+texture "bezel.webp"
 texrep 1 1
 crease 30.000000
 numvert 360

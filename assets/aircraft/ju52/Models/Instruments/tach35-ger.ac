@@ -11,7 +11,7 @@ OBJECT poly
 name "bezel.top"
 data 10
 Circle.006
-texture "bezel.png"
+texture "bezel.webp"
 texrep 1 1
 crease 30
 numvert 200
@@ -1333,7 +1333,7 @@ OBJECT poly
 name "screws"
 data 10
 Circle.007
-texture "bezel.png"
+texture "bezel.webp"
 texrep 1 1
 crease 30
 numvert 360
@@ -3719,7 +3719,7 @@ OBJECT poly
 name "Face"
 data 8
 Mesh.005
-texture "rpm35.png"
+texture "rpm35.webp"
 texrep 1 1
 crease 30
 numvert 17
@@ -3842,7 +3842,7 @@ OBJECT poly
 name "bezel"
 data 10
 Circle.005
-texture "bezel.png"
+texture "bezel.webp"
 texrep 1 1
 crease 30
 numvert 296
@@ -5940,7 +5940,7 @@ OBJECT poly
 name "needle"
 data 8
 Cylinder
-texture "rpm35.png"
+texture "rpm35.webp"
 texrep 1 1
 crease 30
 numvert 41

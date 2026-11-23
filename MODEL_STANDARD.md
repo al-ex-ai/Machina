@@ -28,7 +28,7 @@ Every model in the catalog meets all of these rules. A model that misses any of 
 ## Livery
 
 12. Neutral: no national markings, roundels, flags, airline titles, registrations, squadron codes or author text. Painted out of the texture, never covered up.
-13. Default look is never a bare white or grey skin. Plain-skinned models wear the Machina livery by default (`asset.machina`).
+13. Default look is never a bare white or grey skin. A model wears the Machina livery by default (`asset.machina`) only where it renders clean: no old cheatlines or titles showing through, belly and tail lines following the body. Where it does not, the default is the model's own neutral paint (debranded) with a colour picker.
 14. Working colour picker (`asset.machina` or `asset.recolor`). Each colour changes only the paint. Markings, glass, tyres, engine faces, cockpit and wood stay as they are.
 
 ## Visual checks

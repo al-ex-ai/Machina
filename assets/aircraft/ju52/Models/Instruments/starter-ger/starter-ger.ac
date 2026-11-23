@@ -211,7 +211,7 @@ OBJECT poly
 name "cover_1"
 data 5
 Plane
-texture "../common/misc.png"
+texture "../common/misc.webp"
 texrep 1 1
 crease 30
 numvert 31
@@ -402,7 +402,7 @@ OBJECT poly
 name "handle"
 data 8
 Cylinder
-texture "../common/misc.png"
+texture "../common/misc.webp"
 texrep 1 1
 crease 30
 numvert 64
