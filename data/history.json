@@ -135,10 +135,23 @@
         "Lockheed L-1049H Super Constellation with the Eastern Air Lines livery painted off, in a new Propliners collection with the Ju 52; its three fins stand 8.47 m against the published 7.54 m, which the model notes",
         "The gear tool mirrored two doors of one nacelle as if they were left and right twins, which left the Constellation's doors floating; it now mirrors only true pairs"
       ]
+    },
+    {
+      "date": "2026-11-22",
+      "title": "Takeoff",
+      "tag": "M4",
+      "items": [
+        "A takeoff scene for the Super Constellation: engine run-up, a 1,500 m roll, rotation at 112 kt, liftoff and climb out on a 3 km runway, at 1x, 2x or 4x",
+        "Gear, doors, oleos, flaps, elevator, propellers and wheels move by the model's own FlightGear animations, kept by the gear tool instead of frozen gear down",
+        "Follow, runway spotter and chase cameras; the spotter's lens zooms to keep the aircraft in frame",
+        "Animations now nest as FlightGear nests them, later ones inside earlier ones: the first try spun the wheel hubs about their static axle after the oleo had moved them, so they floated under the wing",
+        "The runway flickered: tiny edge lights and fine asphalt grain sparkled in motion, and the grass under the runway fought it for depth at a distance; lights gone, grain softened, grass cut around the runway, shadow box snapped to its texels"
+      ]
     }
   ],
   "next": [
+    "Takeoff for more aircraft, one at a time and only where the model's own animations hold up",
     "Next real aircraft: Boeing 314 Clipper, DC-6, CH-47, Alouette III, Bell X-1, ATR 72 and EC135, each held to the model standard",
-    "M4 Deeper detail: animations from the model data, labels and a measure tool, cutaway view"
+    "M4 Deeper detail: labels and a measure tool, cutaway view"
   ]
 }

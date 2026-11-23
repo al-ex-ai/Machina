@@ -35,6 +35,24 @@ function backdrop(name) {
   return t;
 }
 
+const _sunOff = new THREE.Vector3(), _sunC = new THREE.Vector3(), _zero = new THREE.Vector3(), _sunRot = new THREE.Matrix4(), _sunInv = new THREE.Matrix4();
+
+/** A clear day sky, deep blue overhead to pale haze at the horizon. */
+function daySky() {
+  const c = document.createElement('canvas');
+  c.width = 2; c.height = 256;
+  const g = c.getContext('2d');
+  const grad = g.createLinearGradient(0, 0, 0, 256);
+  grad.addColorStop(0, '#4a7fb5');
+  grad.addColorStop(0.55, '#9dbcd8');
+  grad.addColorStop(1, '#d6e0e8');
+  g.fillStyle = grad;
+  g.fillRect(0, 0, 2, 256);
+  const t = new THREE.CanvasTexture(c);
+  t.colorSpace = THREE.SRGBColorSpace;
+  return t;
+}
+
 const HIGHLIGHT = new THREE.Color('#ff8a3d');
 const HOVER = new THREE.Color('#ffb27a');
 
@@ -144,6 +162,7 @@ export function createViewer(container) {
   ground.receiveShadow = true;
   scene.add(ground);
   let grid = null;
+  let outdoor = false;
 
   // Person for scale: 1.8 m tall
   const person = makeMannequin();
@@ -365,6 +384,7 @@ export function createViewer(container) {
   let view = null;
   let fit = 0.78;
   function frame() {
+    if (outdoor) return; // the outdoor scene drives the camera itself
     if (!container.clientWidth || !container.clientHeight) { framePending = true; return; }
     framePending = false;
     if (container.clientWidth / container.clientHeight !== camera.aspect) resize();
@@ -496,7 +516,7 @@ export function createViewer(container) {
     } else if (dirty) {
       gtao.enabled = false; // camera moving: same pipeline, just without ambient occlusion
       composer.render();
-      gtao.enabled = !xray && ao;
+      gtao.enabled = !xray && ao && !outdoor;
       dirty = false;
     } else if (fullPending && !moving) {
       composer.render(); // full quality with ambient occlusion
@@ -520,6 +540,7 @@ export function createViewer(container) {
     setPerson(v) { person.visible = v; renderer.shadowMap.needsUpdate = true; invalidate(true); },
     setTheme(name) {
       themeName = name;
+      if (outdoor) return;
       scene.background = backdrop(name);
       ground.material.opacity = stageFor(name).shadow;
       for (const mat of [XRAY_EDGE, XRAY_FILL, XRAY_EDGE_INSIDE, XRAY_FILL_INSIDE]) mat.color.set(stageFor(name).xray);
@@ -541,16 +562,61 @@ export function createViewer(container) {
     selectedId: () => selected?.userData.id ?? null,
     setXray(on) {
       xray = on;
-      gtao.enabled = !on && ao; // see-through fills still write depth, so occlusion would darken the ground under them
+      gtao.enabled = !on && ao && !outdoor; // see-through fills still write depth, so occlusion would darken the ground under them
       if (model) applyXray();
       invalidate(true);
     },
     /** Run fn(now) every frame until it returns false. Returns a function that stops it. */
     animate(fn) { anims.add(fn); invalidate(true); return () => anims.delete(fn); },
+    /**
+     * Outdoor scenes (the takeoff): the studio floor, grid and person go, ambient occlusion is off so
+     * every frame stays cheap, shadows follow the moving model, and the backdrop becomes a day sky with
+     * haze. Turning it off restores the studio and frames the model again.
+     */
+    setOutdoor(on) {
+      outdoor = on;
+      ground.visible = !on;
+      if (grid) grid.visible = !on;
+      if (on) person.visible = false;
+      sun.shadow.autoUpdate = on;
+      gtao.enabled = !on && !xray && ao;
+      scene.background = on ? daySky() : backdrop(themeName);
+      scene.fog = on ? new THREE.Fog('#c9d6e2', 1500, 9000) : null;
+      // Depth precision: a near plane a meter out and a far plane just past the haze, so the runway
+      // markings never fight the asphalt for depth.
+      if (on) { camera.near = 1; camera.far = 10000; }
+      sun.shadow.normalBias = on ? 0.04 : 0;
+      controls.maxDistance = on ? 3000 : controls.maxDistance;
+      camera.updateProjectionMatrix();
+      if (!on && model) frame();
+      invalidate(true);
+    },
+    /** Keep the sun's shadow box around a point (a moving model), radius in meters. */
+    sunAround(center, radius) {
+      // Snap the box to whole shadow-map texels in the light's own frame: a box that slides with the
+      // model every frame makes its shadow edges and the ground under it shimmer.
+      const off = _sunOff.set(-1.2, 3, 1.6).multiplyScalar(radius);
+      _sunRot.lookAt(off, _zero, THREE.Object3D.DEFAULT_UP);
+      const texel = (radius * 3.2) / sun.shadow.mapSize.x;
+      const c = _sunC.copy(center).applyMatrix4(_sunInv.copy(_sunRot).transpose());
+      c.x = Math.round(c.x / texel) * texel;
+      c.y = Math.round(c.y / texel) * texel;
+      c.applyMatrix4(_sunRot);
+      sun.position.copy(c).add(off);
+      sun.target.position.copy(c);
+      const sc = sun.shadow.camera;
+      sc.left = sc.bottom = -radius * 1.6;
+      sc.right = sc.top = radius * 1.6;
+      sc.far = radius * 8 + center.y * 2;
+      sc.updateProjectionMatrix();
+    },
+    scene,
+    controls,
+    getModel: () => model,
     /** Ambient occlusion on or off. Compare turns it off for its stacked overlay. */
     setAmbientOcclusion(on) {
       ao = on;
-      gtao.enabled = !xray && ao;
+      gtao.enabled = !xray && ao && !outdoor;
       invalidate(true);
     },
     resetView() { view = null; if (model) frame(); },

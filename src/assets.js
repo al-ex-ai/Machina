@@ -35,8 +35,8 @@ export function assembleParts(loaded, model) {
   const defaultFallback = model.asset.fallback ?? { id: 'airframe', label: 'Airframe details', system: 'structure' };
 
   const meshes = [];
-  for (const { group, fallback, offset, rotation, chain, pose, parts: fileParts } of sources) {
-    if (pose?.length) applyPose(group, pose);
+  for (const { group, fallback, offset, rotation, chain, pose, anim, parts: fileParts } of sources) {
+    if (pose?.length || anim?.length) applyPose(group, pose, anim);
     if (chain?.length) {
       // Nested FlightGear placements (an instrument in a panel in the interior), outermost first.
       const m = new THREE.Matrix4(), tmp = new THREE.Object3D();
@@ -78,6 +78,13 @@ export function assembleParts(loaded, model) {
     m.name = mesh.name;
     m.castShadow = m.receiveShadow = true;
     m.userData = { partChild: true, source: mesh.name, texture: mesh.userData.texture };
+    const fa = mesh.userData.fgAnim;
+    if (fa) {
+      // File space to this model's space: the geometry went through base * matrixWorld from the
+      // mesh's own frame, and the mesh's own frame is toFile away from file space.
+      const F = new THREE.Matrix4().multiplyMatrices(base, mesh.matrixWorld).multiply(fa.toFile.clone().invert());
+      m.userData.fgAnim = { chain: fa.chain, F, tail: fa.poseInv.clone().multiply(F.clone().invert()) };
+    }
     partFor(rule).add(m);
   }
   neutralGlass(groups);
@@ -179,27 +186,40 @@ function applyFgPlacement(group, offset = {}, rotation = {}) {
  * name, in document order: each turns or slides the named objects, including meshes
  * inside a named group, in the file's own coordinates.
  */
-function applyPose(group, pose) {
+function applyPose(group, pose = [], anim = []) {
   const byName = new Map();
   group.traverse(o => { if (o.isMesh) { const names = []; for (let p = o; p && p !== group; p = p.parent) names.push(p.name); byName.set(o, names); } });
   group.updateMatrixWorld(true);
   const inv = new THREE.Matrix4().copy(group.matrixWorld).invert();
-  const matrixOf = t => {
-    const o = new THREE.Vector3(...t.origin), ax = new THREE.Vector3(...t.axis);
-    return t.type === 'rotate'
-      ? new THREE.Matrix4().makeTranslation(o.x, o.y, o.z).multiply(new THREE.Matrix4().makeRotationAxis(ax, THREE.MathUtils.degToRad(t.value))).multiply(new THREE.Matrix4().makeTranslation(-o.x, -o.y, -o.z))
-      : new THREE.Matrix4().makeTranslation(ax.x * t.value, ax.y * t.value, ax.z * t.value);
-  };
   // FlightGear nests a transform above each animated object, so an object's own
-  // animations act first, then its parent's, and so on up; at one level, file order.
+  // animations act first, then its parent's, and so on up. At one level, each later animation
+  // is inserted between the object and the earlier ones, so it acts first: a wheel spins about its
+  // axle, then the oleo slides it, then the gear leg swings it up.
+  const late = list => [...list].reverse();
+  const poseR = late(pose), animR = late(anim);
   for (const [mesh, names] of byName) {
     const m = new THREE.Matrix4();
-    for (const name of names) for (const t of pose) if (t.objects.includes(name)) m.premultiply(matrixOf(t));
-    if (m.equals(new THREE.Matrix4())) continue;
+    for (const name of names) for (const t of poseR) if (t.objects.includes(name)) m.premultiply(fgMatrix(t, t.value));
+    const chain = [];
+    for (const name of names) for (const t of animR) if (t.objects.includes(name)) chain.push(t);
+    const identity = m.equals(new THREE.Matrix4());
+    if (identity && !chain.length) continue;
     const toFile = new THREE.Matrix4().multiplyMatrices(inv, mesh.matrixWorld);
-    mesh.geometry.applyMatrix4(new THREE.Matrix4().copy(toFile).invert().multiply(m).multiply(toFile));
+    if (!identity) mesh.geometry.applyMatrix4(new THREE.Matrix4().copy(toFile).invert().multiply(m).multiply(toFile));
+    // Kept for the runtime animations (see src/fg-anim.js): the geometry now holds the pose, so a
+    // new state is applied as that state's transform times the pose's inverse.
+    if (chain.length) mesh.userData.fgAnim = { chain, poseInv: m.clone().invert(), toFile };
   }
 }
+
+/** One FlightGear rotate, spin or translate transform at a value (degrees or meters), in file space. */
+export function fgMatrix(t, value, out = new THREE.Matrix4()) {
+  const [ox, oy, oz] = t.origin, [ax, ay, az] = t.axis;
+  if (t.type === 'translate') return out.makeTranslation(ax * value, ay * value, az * value);
+  _axis.set(ax, ay, az);
+  return out.makeTranslation(ox, oy, oz).multiply(_rot.makeRotationAxis(_axis, THREE.MathUtils.degToRad(value))).multiply(_tr.makeTranslation(-ox, -oy, -oz));
+}
+const _axis = new THREE.Vector3(), _rot = new THREE.Matrix4(), _tr = new THREE.Matrix4();
 
 function toRegExp(s) {
   return s.startsWith('/') ? new RegExp(s.slice(1, s.lastIndexOf('/')), s.slice(s.lastIndexOf('/') + 1)) : new RegExp(`^${s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}$`);

@@ -6,10 +6,10 @@ installPickers();
 
 // The 3D engine (Three.js, builders, viewer) loads on demand: the catalog only shows prerendered
 // thumbnails, so it renders without it. Model pages wait for it; the home page fetches it when idle.
-let buildModel, finalize, partCount, loadAssetModel, createViewer, SYSTEMS, thumbnail, createCompare;
+let buildModel, finalize, partCount, loadAssetModel, createViewer, SYSTEMS, thumbnail, createCompare, startTakeoff;
 let engine = null;
 const loadEngine = () => (engine ??= import('./engine.js').then(e => {
-  ({ buildModel, finalize, partCount, loadAssetModel, createViewer, SYSTEMS, thumbnail, createCompare } = e);
+  ({ buildModel, finalize, partCount, loadAssetModel, createViewer, SYSTEMS, thumbnail, createCompare, startTakeoff } = e);
 }));
 const needsEngine = route => route.name === 'model' || route.name === 'compare';
 let compareView = null;
@@ -169,6 +169,7 @@ document.addEventListener('submit', e => {
 
 function render() {
   const route = parseRoute();
+  if (!(route.name === 'model' && route.id === state.model?.id)) endTakeoff();
   if (needsEngine(route) && !engineReady) {
     navLinks(route);
     if (!$('#stage')) $('#page').innerHTML = `<div class="page"><p class="note">Loading the 3D viewer…</p></div>`;
@@ -539,6 +540,7 @@ function renderModel(id, partId) {
             </div>
           </div>
           <div class="tip" id="tip" hidden></div>
+          <div class="takeoff-hud" id="takeoff-hud" hidden></div>
           <div class="loading" id="loading" role="status" aria-live="polite" hidden><span class="spinner"></span><span class="label">Loading detailed model</span></div>
           <button type="button" class="drawer-open" data-drawer="rail" title="Show parts" aria-label="Show the parts panel">${icon('right', 16)}<span>Parts</span></button>
           <div class="paint" id="paint" role="radiogroup" aria-label="Livery" hidden></div>
@@ -549,6 +551,7 @@ function renderModel(id, partId) {
             <button class="tool" id="xray" type="button" aria-pressed="${state.xray}" title="See through the airframe (X)">X-ray <kbd>X</kbd></button>
             <button class="tool" id="person" type="button" aria-pressed="false" title="Show a 1.8 m person (P)">Person <kbd>P</kbd></button>
             <button class="tool" id="reset" type="button" title="Reset the camera (R)">Reset <kbd>R</kbd></button>
+            ${m.takeoff && m.asset ? '<span class="sep"></span><button class="tool" id="takeoff" type="button" aria-pressed="false" title="Watch it take off (T)">Takeoff <kbd>T</kbd></button>' : ''}
           </div>
         </section>
         <aside class="sheet">
@@ -575,6 +578,17 @@ function renderModel(id, partId) {
       v.setPerson(on);
     });
     $('#reset').addEventListener('click', () => v.resetView());
+    $('#takeoff')?.addEventListener('click', () => {
+      if (stopTakeoff) return endTakeoff();
+      if (!state.shownDetailed || !v.getModel()) return;
+      setPicking(false);
+      if (state.xray) $('#xray').click();
+      $('#explode').value = 0;
+      v.setExplode(0);
+      $('#stage').classList.add('takeoff-on');
+      $('#takeoff').setAttribute('aria-pressed', 'true');
+      stopTakeoff = startTakeoff(v, m, $('#takeoff-hud'), endTakeoff);
+    });
     showModel(m, partId);
     return;
   }
@@ -590,6 +604,17 @@ function applyDrawers() {
   page.classList.toggle('rail-closed', Boolean(drawers.rail));
   page.classList.toggle('sheet-closed', Boolean(drawers.sheet));
   try { localStorage.setItem('machina-drawers', JSON.stringify(drawers)); } catch {}
+}
+
+// The takeoff scene borrows the model page's viewer; anything that replaces the model or leaves the page ends it.
+let stopTakeoff = null;
+function endTakeoff() {
+  if (!stopTakeoff) return;
+  const stop = stopTakeoff;
+  stopTakeoff = null;
+  stop();
+  $('#stage')?.classList.remove('takeoff-on');
+  $('#takeoff')?.setAttribute('aria-pressed', 'false');
 }
 
 /** Turn clicking parts in the view on or off. Turning it off clears the selection. */
@@ -612,6 +637,7 @@ function modelObject(m) {
 }
 
 function showModel(m, partId) {
+  endTakeoff();
   const token = ++state.loadToken;
   const done = obj => {
     if (token !== state.loadToken) return;
@@ -643,6 +669,7 @@ function showModel(m, partId) {
 function setLivery(id) {
   const m = state.model;
   if (!m) return;
+  endTakeoff();
   state.livery = id === (liveriesFor(m)[0]?.id ?? 'machina') ? null : id; // the first preset is the default
   if (m.asset) {
     const token = ++state.loadToken;
@@ -930,7 +957,8 @@ document.addEventListener('mouseout', e => {
 
 document.addEventListener('keydown', e => {
   if (parseRoute().name !== 'model' || e.target.matches('input, textarea') || e.target.closest('.vtab, .paint-btn')) return;
-  if (e.key === 'Escape') viewer?.select(null);
+  if (e.key === 'Escape') { if (stopTakeoff) endTakeoff(); else viewer?.select(null); }
+  else if (e.key === 't' || e.key === 'T') $('#takeoff')?.click();
   else if (e.key === 'r' || e.key === 'R') viewer?.resetView();
   else if (e.key === 'p' || e.key === 'P') $('#person')?.click();
   else if (e.key === 'x' || e.key === 'X') $('#xray')?.click();
