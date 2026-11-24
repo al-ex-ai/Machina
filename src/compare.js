@@ -628,6 +628,8 @@ export function createCompare(ctx) {
     // Drop models that left the selection; dispose them once they are off the stage.
     const leaving = [...cache.keys()].filter(id => !ids.includes(id));
     const myToken = ++token;
+    // Coming from a model page the viewer still holds that model: never show it while the comparison loads.
+    if (viewer.getModel()?.name !== 'compare') viewer.clear();
     const loadingEl = $('#loading');
     loadingEl.hidden = false;
     let done = 0;
