@@ -29,7 +29,14 @@
     "pitch_deg": 8,
     "climb_deg": 6,
     "rpm": 2700,
-    "note": "Approximate: POH ground roll at sea level, standard day"
+    "note": "Approximate: POH ground roll at sea level, standard day",
+    "cockpit": {
+      "offset": [
+        0,
+        0.15,
+        0
+      ]
+    }
   },
   "paint": {
     "stripe": "#b3262e"
@@ -474,7 +481,29 @@
     },
     "files": [
       {
-        "file": "c172-common.ac"
+        "file": "c172-common.ac",
+        "anim": [
+          {
+            "type": "spin",
+            "objects": [
+              "Propeller",
+              "Spinner"
+            ],
+            "prop": "engines/engine[0]/rpm",
+            "factor": 1,
+            "origin": [
+              -1.812,
+              -0.051,
+              -0.004
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ],
+            "note": "The c172p package spins these from its own XML; the hub and axis are the spinner's, measured from the mesh."
+          }
+        ]
       },
       {
         "file": "c172sp-interior.ac",

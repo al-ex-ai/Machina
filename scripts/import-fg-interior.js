@@ -31,8 +31,12 @@ function placement(block) {
 function resolvePath(p, fromDir) {
   p = p.trim().replace(/\\/g, '/');
   const abs = /^Aircraft\/([^/]+)\/(.*)$/.exec(p);
-  if (abs) return abs[1].toLowerCase() === aircraftName.toLowerCase() ? normalize(join(root, abs[2])) : null;
-  return normalize(join(fromDir, p));
+  // A package checked out under another folder name (gh_AN-225-Mrija) still resolves its own
+  // Aircraft/<Name>/... paths when the file is there.
+  if (abs) return abs[1].toLowerCase() === aircraftName.toLowerCase() || existsSync(join(root, abs[2])) ? normalize(join(root, abs[2])) : null;
+  // Some packages write paths from the aircraft root without the Aircraft/<Name>/ prefix (the Tu-144D).
+  const rel = normalize(join(fromDir, p));
+  return existsSync(rel) || !existsSync(join(root, p)) ? rel : normalize(join(root, p));
 }
 
 const found = []; // { file (relative to root), chain }
@@ -73,6 +77,17 @@ const top = topArg ?? (() => {
   return 'Models/' + (models.find(f => basename(f, '.xml').toLowerCase() === stem) ?? models[0]);
 })();
 walk(normalize(join(root, top)), [], false);
+// The top XML's own <offsets> place the whole aircraft (the Concorde's 31.3 m, the Constellation's 17.8 m).
+// The asset's main file is placed without them, so files inside must not carry them either, or the whole
+// cockpit lands that far down the cabin.
+{
+  const own = readFileSync(normalize(join(root, top)), 'latin1').replace(/<!--[\s\S]*?-->/g, '').replace(/<(model|animation|text|light|effect|particlesystem|params)>[\s\S]*?<\/>/g, '');
+  const mainPlaced = (model.asset.files?.[0]?.chain?.length ?? 0) > 0 || model.asset.files?.[0]?.offset;
+  // Only when the top XML is the main model file itself (the one drawing the airframe the asset starts with).
+  const ownAc = /<path>\s*([^<]+?\.ac)\s*<\/path>/.exec(own)?.[1], mainAc = model.asset.files?.[0]?.file ?? model.asset.file;
+  const isMain = ownAc && resolvePath(ownAc, dirname(normalize(join(root, top)))) === normalize(join(root, mainAc));
+  if (isMain && placement(own) && !mainPlaced && !all) for (const f of found) f.chain = f.chain.slice(1);
+}
 
 // Keep only what is inside, and not already in the asset.
 const have = new Set((model.asset.files ?? [{ file: model.asset.file }]).map(f => f.file));

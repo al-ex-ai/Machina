@@ -3246,6 +3246,362 @@
           "label": "Passenger seats",
           "system": "interior"
         }
+      },
+      {
+        "file": "Models/Tu-144D-cockpit/Panels/front.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -28.6439,
+              "y": 0,
+              "z": 0.9424
+            },
+            "rotation": {
+              "pitch": -10,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Tu-144D-cockpit/Instruments/PKP-72-8_PNP-72-7.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -28.6439,
+              "y": 0,
+              "z": 0.9424
+            },
+            "rotation": {
+              "pitch": -10,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 0,
+              "y": -0.5,
+              "z": -0.14
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Tu-144D-cockpit/Instruments/PKP-72-8_PNP-72-7.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -28.6439,
+              "y": 0,
+              "z": 0.9424
+            },
+            "rotation": {
+              "pitch": -10,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 0,
+              "y": 0.5,
+              "z": -0.14
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Tu-144D-cockpit/Instruments/INO/INO.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -28.6439,
+              "y": 0,
+              "z": 0.9424
+            },
+            "rotation": {
+              "pitch": -10,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 0,
+              "y": -0.185,
+              "z": -0.275
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Tu-144D-cockpit/Instruments/GROZA/GROZA.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -28.6439,
+              "y": 0,
+              "z": 0.9424
+            },
+            "rotation": {
+              "pitch": -10,
+              "heading": 0,
+              "roll": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 0,
+              "y": 0.035,
+              "z": -0.01
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Tu-144D-cockpit/Instruments/front-addons.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -28.6439,
+              "y": 0,
+              "z": 0.9424
+            },
+            "rotation": {
+              "pitch": -10,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Tu-144D-cockpit/Panels/left.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -28.45,
+              "y": -0.786745,
+              "z": 0.420789
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": -2.25,
+              "roll": -4.5
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Tu-144D-cockpit/Panels/radio.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -28.1883,
+              "y": 0,
+              "z": 1.40093
+            },
+            "rotation": {
+              "pitch": 65,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Tu-144D-cockpit/Instruments/PR-2.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -28.1176,
+              "y": -0.507486,
+              "z": 0.69723
+            },
+            "rotation": {
+              "pitch": -45,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Tu-144D-cockpit/Instruments/PR-2.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -28.1176,
+              "y": 0.516244,
+              "z": 0.69723
+            },
+            "rotation": {
+              "pitch": -45,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Tu-144D-cockpit/Instruments/PIK.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -28.0669,
+              "y": 0.810527,
+              "z": 0.420475
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 2.25,
+              "roll": 4.5
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Tu-144D-cockpit/Instruments/Orbita-10.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -28.56,
+              "y": -0.135,
+              "z": 0.456
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Tu-144D-cockpit/Panels/engineer.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -26.7368,
+              "y": 0.552499,
+              "z": 1.02973
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Tu-144D-cockpit/temporary_FSX/UUT-144.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -28.782,
+              "y": 0,
+              "z": 1.174
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
       }
     ],
     "fallback": {

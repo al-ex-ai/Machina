@@ -1838,18 +1838,6 @@
         "chain": [
           {
             "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
-          {
-            "offset": {
               "x": -23.779,
               "y": -0.194,
               "z": 0.887
@@ -1882,18 +1870,6 @@
       {
         "file": "Instruments/INS/INS.ac",
         "chain": [
-          {
-            "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
           {
             "offset": {
               "x": -23.69,
@@ -1930,18 +1906,6 @@
         "chain": [
           {
             "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
-          {
-            "offset": {
               "x": -23.69,
               "y": 0.155,
               "z": 0.833
@@ -1974,18 +1938,6 @@
       {
         "file": "Instruments/pedestal/temperature.ac",
         "chain": [
-          {
-            "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
           {
             "offset": {
               "x": -23.565,
@@ -2022,18 +1974,6 @@
         "chain": [
           {
             "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
-          {
-            "offset": {
               "x": -23.593,
               "y": 0,
               "z": 0.825
@@ -2054,18 +1994,6 @@
       {
         "file": "Instruments/pedestal/temperature.ac",
         "chain": [
-          {
-            "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
           {
             "offset": {
               "x": -23.565,
@@ -2102,18 +2030,6 @@
         "chain": [
           {
             "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
-          {
-            "offset": {
               "x": -23.402,
               "y": -0.155,
               "z": 0.82
@@ -2134,18 +2050,6 @@
       {
         "file": "Instruments/pedestal/audio.ac",
         "chain": [
-          {
-            "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
           {
             "offset": {
               "x": -23.402,
@@ -2170,18 +2074,6 @@
         "chain": [
           {
             "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
-          {
-            "offset": {
               "x": -23.224,
               "y": -0.149,
               "z": 0.825
@@ -2202,18 +2094,6 @@
       {
         "file": "Instruments/pedestal/throttle-cylinder.ac",
         "chain": [
-          {
-            "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
           {
             "offset": {
               "x": -23.292,
@@ -2238,18 +2118,6 @@
         "chain": [
           {
             "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
-          {
-            "offset": {
               "x": -23.185,
               "y": 0.1145,
               "z": 0.807
@@ -2272,18 +2140,6 @@
         "chain": [
           {
             "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
-          {
-            "offset": {
               "x": -23.342,
               "y": 0.155,
               "z": 0.818
@@ -2304,18 +2160,6 @@
       {
         "file": "Instruments/pedestal/VHF.ac",
         "chain": [
-          {
-            "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
           {
             "offset": {
               "x": -23.047,
@@ -2350,18 +2194,6 @@
       {
         "file": "Instruments/pedestal/VHF.ac",
         "chain": [
-          {
-            "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
           {
             "offset": {
               "x": -23.047,
@@ -2398,18 +2230,6 @@
         "chain": [
           {
             "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
-          {
-            "offset": {
               "x": -22.92,
               "y": 0.077,
               "z": 0.82
@@ -2442,18 +2262,6 @@
       {
         "file": "Instruments/pedestal/ADF.ac",
         "chain": [
-          {
-            "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
           {
             "offset": {
               "x": -22.797,
@@ -2490,18 +2298,6 @@
         "chain": [
           {
             "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
-          {
-            "offset": {
               "x": -22.797,
               "y": 0.077,
               "z": 0.818
@@ -2536,18 +2332,6 @@
         "chain": [
           {
             "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
-          {
-            "offset": {
               "x": -23.575,
               "y": -0.736,
               "z": 0.806
@@ -2568,18 +2352,6 @@
       {
         "file": "Instruments/yoke/steering.ac",
         "chain": [
-          {
-            "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
           {
             "offset": {
               "x": -23.575,
@@ -2604,18 +2376,6 @@
         "chain": [
           {
             "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
-          {
-            "offset": {
               "x": -23.109,
               "y": -0.446,
               "z": 0.272
@@ -2638,18 +2398,6 @@
         "chain": [
           {
             "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
-          {
-            "offset": {
               "x": -23.109,
               "y": 0.458,
               "z": 0.272
@@ -2670,18 +2418,6 @@
       {
         "file": "Instruments/seat/seat-engineer.ac",
         "chain": [
-          {
-            "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
           {
             "offset": {
               "x": -21.788,
@@ -2706,18 +2442,6 @@
         "chain": [
           {
             "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
-          {
-            "offset": {
               "x": -21.63,
               "y": -0.689,
               "z": 0.272
@@ -2738,18 +2462,6 @@
       {
         "file": "Instruments/seat/seat-observer2.ac",
         "chain": [
-          {
-            "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
           {
             "offset": {
               "x": -21.016,
@@ -2774,18 +2486,6 @@
         "chain": [
           {
             "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
-          {
-            "offset": {
               "x": -23.456,
               "y": -0.446,
               "z": 0.325
@@ -2806,18 +2506,6 @@
       {
         "file": "Instruments/yoke/yoke.ac",
         "chain": [
-          {
-            "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
           {
             "offset": {
               "x": -23.456,
@@ -2842,18 +2530,6 @@
         "chain": [
           {
             "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
-          {
-            "offset": {
               "x": -22.356,
               "y": 0.327,
               "z": 1.703
@@ -2874,18 +2550,6 @@
       {
         "file": "Instruments/pedestal/audio.ac",
         "chain": [
-          {
-            "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
           {
             "offset": {
               "x": -22.11,
@@ -2910,18 +2574,6 @@
         "chain": [
           {
             "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
-          {
-            "offset": {
               "x": -22.38,
               "y": -0.891,
               "z": 1.3
@@ -2942,18 +2594,6 @@
       {
         "file": "Models/Interior/flightdeck/overhead.ac",
         "chain": [
-          {
-            "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
           {
             "offset": {
               "x": -23.54775,
@@ -2978,18 +2618,6 @@
         "chain": [
           {
             "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
-          {
-            "offset": {
               "x": -23.19,
               "y": -0.893,
               "z": 0.957
@@ -3010,18 +2638,6 @@
       {
         "file": "Models/Interior/flightdeck/panel.ac",
         "chain": [
-          {
-            "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
           {
             "offset": {
               "x": -24.0418,
@@ -3046,18 +2662,6 @@
         "chain": [
           {
             "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
-          {
-            "offset": {
               "x": -23.19,
               "y": 0.881,
               "z": 0.957
@@ -3078,18 +2682,6 @@
       {
         "file": "Models/Interior/flightdeck/foot-plate.ac",
         "chain": [
-          {
-            "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
           {
             "offset": {
               "x": -24.037,
@@ -3114,18 +2706,6 @@
         "chain": [
           {
             "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
-          {
-            "offset": {
               "x": -23.788,
               "y": -0.448,
               "z": 0.328
@@ -3146,18 +2726,6 @@
       {
         "file": "Models/Interior/flightdeck/foot-plate.ac",
         "chain": [
-          {
-            "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
           {
             "offset": {
               "x": -24.037,
@@ -3182,18 +2750,6 @@
         "chain": [
           {
             "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
-          {
-            "offset": {
               "x": -24.037,
               "y": 0.321,
               "z": 0.332
@@ -3214,18 +2770,6 @@
       {
         "file": "Models/Interior/flightdeck/panel-pedestal.ac",
         "chain": [
-          {
-            "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
           {
             "offset": {
               "x": -23.788,
@@ -3250,18 +2794,6 @@
         "chain": [
           {
             "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
-          {
-            "offset": {
               "x": -24.037,
               "y": 0.593,
               "z": 0.332
@@ -3282,18 +2814,6 @@
       {
         "file": "Models/Interior/flightdeck/pedestal.ac",
         "chain": [
-          {
-            "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
           {
             "offset": {
               "x": -23.7671,
@@ -3318,18 +2838,6 @@
         "chain": [
           {
             "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
-          {
-            "offset": {
               "x": -21.8035,
               "y": 0.523,
               "z": 0.279
@@ -3350,18 +2858,6 @@
       {
         "file": "Models/Interior/flightdeck/deck.ac",
         "chain": [
-          {
-            "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
           {
             "offset": {
               "x": -21.802,
@@ -3386,18 +2882,6 @@
         "chain": [
           {
             "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
-          {
-            "offset": {
               "x": -21.325,
               "y": -0.947,
               "z": 0.274
@@ -3418,18 +2902,6 @@
       {
         "file": "Models/Interior/flightdeck/rack.ac",
         "chain": [
-          {
-            "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
           {
             "offset": {
               "x": -19.649,
@@ -3454,18 +2926,6 @@
         "chain": [
           {
             "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
-          {
-            "offset": {
               "x": -19.649,
               "y": 0,
               "z": 0.26
@@ -3486,18 +2946,6 @@
       {
         "file": "Instruments/seat/seat-attendant.ac",
         "chain": [
-          {
-            "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
           {
             "offset": {
               "x": -18.511,
@@ -3522,18 +2970,6 @@
         "chain": [
           {
             "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
-          {
-            "offset": {
               "x": -17.622,
               "y": -0.537,
               "z": 1.579
@@ -3556,18 +2992,6 @@
         "chain": [
           {
             "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
-          {
-            "offset": {
               "x": -18.553,
               "y": 0,
               "z": 0.26
@@ -3588,18 +3012,6 @@
       {
         "file": "Instruments/crew/glass.ac",
         "chain": [
-          {
-            "offset": {
-              "x": 31.3,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "pitch": 0,
-              "heading": 0,
-              "roll": 0
-            }
-          },
           {
             "offset": {
               "x": -23.71,
