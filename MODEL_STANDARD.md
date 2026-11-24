@@ -34,7 +34,7 @@ Every model in the catalog meets all of these rules. A model that misses any of 
 ## Visual checks
 
 15. Screenshots looked at before the model is called done: side at eye level, each gear leg close up, nose, cockpit through the windshield, and the model in at least two colours.
-16. X-ray view clean.
+16. X-ray view clean, with seats inside: crew seats in every cockpit and passenger seats in every passenger cabin, the package's own or the shared FlightGear seats (`assets/aircraft/cabin`, `assets/aircraft/crew`) laid out from the fuselage's own sections, every seat inside the skin. Freighters keep their empty holds. Tested in test/xray.test.js.
 17. Default framing fits the whole model, with nothing clipped on long or wide aircraft.
 18. Textures load correctly: no placeholder colours, no see-through skins.
 
@@ -47,7 +47,20 @@ Every model in the catalog meets all of these rules. A model that misses any of 
 
 21. Compact: textures in WebP, at most 2048 px, unused files removed (`npm run compact`, then check `npm run size`).
 
+## Takeoff
+
+Fixed-wing models only. `npm run takeoff-check` prints the measurements and `npm test` enforces them (test/takeoff.test.js, src/takeoff-check.js).
+
+22. A `takeoff` block with the published figures: rotation speed, ground roll, flaps, and `tailwheel` for taildraggers.
+23. Nothing jumps when the takeoff starts: no animated mesh moves more than 3 cm from the studio pose. Oleos and control surfaces drawn away from their zero (the Concorde nose oleo, the Tu-144D rudder) start where they are drawn (`poseState`, written by `fg-pose.js`).
+24. Every wheel on the ground at the start: each wheel part's lowest point is between 3 cm below and 5 cm above the ground the studio stands the model on (its lowest point outside the cabin, not the lowest wheel), and nothing is below it. Oleos stored extended are settled from the model's own compression animation (the 737 nose), or with `asset.compress` where it has none (the Tu-134 nose). A wheel that does not touch at rest on the real aircraft (Concorde tail bumper) is listed in `takeoff.offGround`.
+25. Nothing goes through the runway at any moment of the takeoff: the test plays the scene's own simulation (src/takeoff-sim.js) frame by frame, wheels spinning, oleos unloading, nose rotating and gear folding, and every visible mesh stays above the runway. Rotation stops a degree short of the angle where the tail or tail bumper would touch.
+26. Gear up closes: each retracting wheel part ends no more than 10 cm below the belly. Wheels the real aircraft leaves out (DC-3 and Spitfire tail wheels) are listed in `takeoff.exposed`.
+27. Propellers turn into a faint disc when spun up, wheels spin while rolling, and nothing extra shows on them.
+28. Takeoff screenshots looked at before the model is called done: follow camera at the start, rotation and liftoff, chase camera with the gear coming up, and the wheels close up while rolling.
+29. Pilots aboard: the package's own pilot figures where it has them, otherwise a FlightGear pilot from `assets/aircraft/crew` (airline, light-aircraft or WWII) with its head at the aircraft's captain eye point, a first officer mirrored where the type has two. Checked in close-ups: seated, nothing through the skin, visible through the windshield. A model with no fitting pilot states why in `asset.noCrew`.
+
 ## Gate
 
-22. `npm run validate` and `npm test` pass.
-23. Only after rules 1 to 22 pass does the model move from "workshop" to "models".
+30. `npm run validate` and `npm test` pass.
+31. Only after rules 1 to 30 pass does the model move from "workshop" to "models".

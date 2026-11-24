@@ -22,6 +22,20 @@
     "engine_type": "Rolls-Royce/Snecma Olympus 593 Mk 610",
     "seats": "92 to 128"
   },
+  "takeoff": {
+    "offGround": [
+      "tail-wheel"
+    ],
+    "vr_kt": 195,
+    "lof_kt": 215,
+    "roll_m": 2300,
+    "flaps": 0,
+    "pitch_deg": 13,
+    "climb_deg": 8,
+    "gear_s": 10,
+    "jet": true,
+    "note": "Approximate: reheat takeoff, mid weight"
+  },
   "sources": [
     {
       "label": "Wikipedia: Concorde",
@@ -35,7 +49,1782 @@
     "source": "https://mirrors.ibiblio.org/flightgear/ftp/Aircraft-2020/Concorde.zip",
     "files": [
       {
-        "file": "Models/concorde.ac"
+        "file": "Models/concorde.ac",
+        "pose": [
+          {
+            "type": "rotate",
+            "objects": [
+              "OFLbigdoor"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "value": 74,
+            "origin": [
+              -16.135,
+              -0.737,
+              0.605
+            ],
+            "axis": [
+              0.999968,
+              -0.001564,
+              0.00782
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "OFRbigdoor"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "value": -74,
+            "origin": [
+              -16.135,
+              -0.737,
+              -0.605
+            ],
+            "axis": [
+              0.999968,
+              -0.001564,
+              -0.00782
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "ROdoorclosed"
+            ],
+            "prop": "gear/gear[3]/position-norm",
+            "value": 85.5,
+            "origin": [
+              4.904,
+              -0.425,
+              -3.897
+            ],
+            "axis": [
+              0.999949,
+              -0.009894,
+              -0.001855
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LOdoorclosed"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "value": -85.5,
+            "origin": [
+              4.904,
+              -0.425,
+              3.912
+            ],
+            "axis": [
+              0.999949,
+              -0.009894,
+              0.001855
+            ]
+          }
+        ],
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "NoseVisor"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.34,
+                0
+              ],
+              [
+                0.68,
+                -5
+              ],
+              [
+                1,
+                -12.5
+              ]
+            ],
+            "origin": [
+              -23.2,
+              -0.43,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Screen"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.11,
+                0
+              ],
+              [
+                0.33,
+                9
+              ]
+            ],
+            "origin": [
+              -25.72,
+              0,
+              -1.108
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "Screen"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.11,
+                -0.25
+              ]
+            ],
+            "origin": [
+              -25.72,
+              0,
+              -1.108
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "Screen"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.33,
+                -0.7
+              ]
+            ],
+            "origin": [
+              -25.72,
+              0,
+              -1.108
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "Fwheels"
+            ],
+            "prop": "velocities/uBody-fps",
+            "factor": -6.56,
+            "origin": [
+              -12.123,
+              -3.646,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "FrontBogie"
+            ],
+            "prop": "gear/gear[0]/compression-norm",
+            "factor": 0.35,
+            "offset": -0.6,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Fram"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                -28
+              ],
+              [
+                0.17,
+                -28
+              ],
+              [
+                0.83,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -11.965,
+              -2.688,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "FrontAllGear"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                97
+              ],
+              [
+                0.17,
+                97
+              ],
+              [
+                0.83,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -12.133,
+              -0.65,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "OFLbigdoor"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                74
+              ],
+              [
+                0.17,
+                0
+              ],
+              [
+                0.83,
+                0
+              ],
+              [
+                1,
+                74
+              ]
+            ],
+            "origin": [
+              -16.135,
+              -0.737,
+              0.605
+            ],
+            "axis": [
+              0.999968,
+              -0.001564,
+              0.00782
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "OFlsmalldoor"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                74
+              ],
+              [
+                0.17,
+                74
+              ],
+              [
+                0.83,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -12.268,
+              -0.743,
+              0.637
+            ],
+            "axis": [
+              0.999974,
+              -0.006142,
+              0.003685
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "OFRbigdoor"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                -74
+              ],
+              [
+                0.17,
+                0
+              ],
+              [
+                0.83,
+                0
+              ],
+              [
+                1,
+                -74
+              ]
+            ],
+            "origin": [
+              -16.135,
+              -0.737,
+              -0.605
+            ],
+            "axis": [
+              0.999968,
+              -0.001564,
+              -0.00782
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "OFRsmalldoor"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                -74
+              ],
+              [
+                0.17,
+                -74
+              ],
+              [
+                0.83,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -12.268,
+              -0.743,
+              -0.637
+            ],
+            "axis": [
+              0.999974,
+              -0.006142,
+              -0.003685
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "OFlegdoor"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                66
+              ],
+              [
+                0.17,
+                66
+              ],
+              [
+                0.83,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -10.924,
+              -0.965,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "Rmainwheels"
+            ],
+            "prop": "velocities/uBody-fps",
+            "factor": -6.56,
+            "origin": [
+              4.49,
+              -3.461,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "Rmainwheels2"
+            ],
+            "prop": "velocities/uBody-fps",
+            "factor": -6.56,
+            "origin": [
+              6.243,
+              -3.478,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "RightPiston"
+            ],
+            "prop": "gear/gear[3]/position-norm",
+            "table": [
+              [
+                0,
+                0.15
+              ],
+              [
+                0.7,
+                0.15
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "RightPiston"
+            ],
+            "prop": "gear/gear[3]/compression-norm",
+            "factor": 0.3,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RMainPiston"
+            ],
+            "prop": "gear/gear[3]/position-norm",
+            "table": [
+              [
+                0,
+                107
+              ],
+              [
+                0.17,
+                107
+              ],
+              [
+                0.43,
+                56
+              ],
+              [
+                0.63,
+                24
+              ],
+              [
+                0.83,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              0,
+              -1.45,
+              -3.577
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RMainCylinder"
+            ],
+            "prop": "gear/gear[3]/position-norm",
+            "table": [
+              [
+                0,
+                19
+              ],
+              [
+                0.17,
+                19
+              ],
+              [
+                0.27,
+                12
+              ],
+              [
+                0.37,
+                6
+              ],
+              [
+                0.43,
+                4
+              ],
+              [
+                0.53,
+                1
+              ],
+              [
+                0.63,
+                0
+              ],
+              [
+                0.73,
+                -1
+              ],
+              [
+                0.83,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              0,
+              0.053,
+              -0.333
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RActuatingPiston"
+            ],
+            "prop": "gear/gear[3]/position-norm",
+            "table": [
+              [
+                0,
+                102
+              ],
+              [
+                0.17,
+                102
+              ],
+              [
+                0.43,
+                59
+              ],
+              [
+                0.63,
+                29
+              ],
+              [
+                0.83,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              0,
+              -0.655,
+              -3.638
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RActuatingCylinder"
+            ],
+            "prop": "gear/gear[3]/position-norm",
+            "table": [
+              [
+                0,
+                15
+              ],
+              [
+                0.17,
+                15
+              ],
+              [
+                0.53,
+                3
+              ],
+              [
+                0.73,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              0,
+              -0.272,
+              -1.715
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RightAllGear"
+            ],
+            "prop": "gear/gear[3]/position-norm",
+            "table": [
+              [
+                0,
+                -87
+              ],
+              [
+                0.17,
+                -87
+              ],
+              [
+                0.83,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              0,
+              -0.246,
+              -3.731
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "ROdoorclosed"
+            ],
+            "prop": "gear/gear[3]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.17,
+                0
+              ],
+              [
+                0.83,
+                85.5
+              ],
+              [
+                1,
+                85.5
+              ]
+            ],
+            "origin": [
+              4.904,
+              -0.425,
+              -3.897
+            ],
+            "axis": [
+              0.999949,
+              -0.009894,
+              -0.001855
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RIdoorclosed"
+            ],
+            "prop": "gear/gear[3]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.17,
+                -81.4
+              ],
+              [
+                0.83,
+                -81.4
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              4.257,
+              -1.041,
+              -0.109
+            ],
+            "axis": [
+              0.999947,
+              0.010179,
+              -0.001454
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "Lmainwheels"
+            ],
+            "prop": "velocities/uBody-fps",
+            "factor": -6.56,
+            "origin": [
+              4.49,
+              -3.461,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "Lmainwheels2"
+            ],
+            "prop": "velocities/uBody-fps",
+            "factor": -6.56,
+            "origin": [
+              6.243,
+              -3.478,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "LeftPiston"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                0.15
+              ],
+              [
+                0.7,
+                0.15
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "LeftPiston"
+            ],
+            "prop": "gear/gear[1]/compression-norm",
+            "factor": 0.3,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LMainPiston"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                -107
+              ],
+              [
+                0.17,
+                -107
+              ],
+              [
+                0.43,
+                -56
+              ],
+              [
+                0.63,
+                -24
+              ],
+              [
+                0.83,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              0,
+              -1.45,
+              3.577
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LMainCylinder"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                -19
+              ],
+              [
+                0.17,
+                -19
+              ],
+              [
+                0.27,
+                -12
+              ],
+              [
+                0.37,
+                -6
+              ],
+              [
+                0.43,
+                -4
+              ],
+              [
+                0.53,
+                -1
+              ],
+              [
+                0.63,
+                0
+              ],
+              [
+                0.73,
+                1
+              ],
+              [
+                0.83,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              0,
+              0.053,
+              0.333
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LActuatingPiston"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                -102
+              ],
+              [
+                0.17,
+                -102
+              ],
+              [
+                0.43,
+                -59
+              ],
+              [
+                0.63,
+                -29
+              ],
+              [
+                0.83,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              0,
+              -0.655,
+              3.638
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LActuatingCylinder"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                -15
+              ],
+              [
+                0.17,
+                -15
+              ],
+              [
+                0.53,
+                -3
+              ],
+              [
+                0.73,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              0,
+              -0.272,
+              1.715
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LeftAllGear"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                87
+              ],
+              [
+                0.17,
+                87
+              ],
+              [
+                0.83,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              0,
+              -0.246,
+              3.731
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LOdoorclosed"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.17,
+                0
+              ],
+              [
+                0.83,
+                -85.5
+              ],
+              [
+                1,
+                -85.5
+              ]
+            ],
+            "origin": [
+              4.904,
+              -0.425,
+              3.912
+            ],
+            "axis": [
+              0.999949,
+              -0.009894,
+              0.001855
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LIdoorclosed"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.17,
+                81.4
+              ],
+              [
+                0.83,
+                81.4
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              4.257,
+              -1.041,
+              0.124
+            ],
+            "axis": [
+              0.999947,
+              0.010179,
+              0.001454
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Tail2Gear"
+            ],
+            "prop": "gear/gear[5]/position-norm",
+            "table": [
+              [
+                0,
+                -50
+              ],
+              [
+                0.17,
+                -50
+              ],
+              [
+                0.83,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              22.88,
+              0.041,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Littledoorleft"
+            ],
+            "prop": "gear/gear[5]/position-norm",
+            "table": [
+              [
+                0,
+                90
+              ],
+              [
+                0.17,
+                90
+              ],
+              [
+                0.5,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              23.954,
+              0.214,
+              0.265
+            ],
+            "axis": [
+              0.977819,
+              0.208854,
+              -0.015822
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Littledoorright"
+            ],
+            "prop": "gear/gear[5]/position-norm",
+            "table": [
+              [
+                0,
+                -90
+              ],
+              [
+                0.17,
+                -90
+              ],
+              [
+                0.5,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              23.954,
+              0.214,
+              -0.265
+            ],
+            "axis": [
+              0.977819,
+              0.208854,
+              0.015822
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Taildoorfront"
+            ],
+            "prop": "gear/gear[5]/position-norm",
+            "table": [
+              [
+                0,
+                -36
+              ],
+              [
+                0.17,
+                -36
+              ],
+              [
+                0.5,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              22.847,
+              -0.053,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Right2Elevon"
+            ],
+            "prop": "surface-positions/elevator-pos-norm",
+            "factor": -22.5,
+            "offset": 0,
+            "origin": [
+              14.008,
+              -0.852,
+              -12.036
+            ],
+            "axis": [
+              -0.003008,
+              0.103226,
+              0.994653
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RIailaron"
+            ],
+            "prop": "surface-positions/elevator-pos-norm",
+            "factor": 8,
+            "offset": 0,
+            "origin": [
+              13.965,
+              -0.182,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Left2Elevon"
+            ],
+            "prop": "surface-positions/elevator-pos-norm",
+            "factor": 22.5,
+            "offset": 0,
+            "origin": [
+              14.008,
+              -0.852,
+              12.036
+            ],
+            "axis": [
+              -0.003008,
+              0.103226,
+              -0.994653
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LIailaron"
+            ],
+            "prop": "surface-positions/elevator-pos-norm",
+            "factor": 8,
+            "offset": 0,
+            "origin": [
+              13.965,
+              -0.182,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Upperrudder",
+              "Lowerrudder"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "factor": 29,
+            "offset": 0,
+            "origin": [
+              23.085,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          }
+        ],
+        "poseState": {
+          "gear/gear[0]/compression-norm": 1.714286
+        },
+        "groups": {
+          "Nose": [
+            "Nose_0",
+            "Nose_1"
+          ],
+          "Screen": [
+            "Screen_0",
+            "Screen_1"
+          ],
+          "NoseVisor": [
+            "Nose",
+            "Screen"
+          ],
+          "FrontBogie": [
+            "Fwheels",
+            "Fhub"
+          ],
+          "Front2Gear": [
+            "FrontBogie",
+            "Fstrut"
+          ],
+          "FrontAllGear": [
+            "Front2Gear",
+            "Fram"
+          ],
+          "bigdoor": [
+            "OFLbigdoor",
+            "OFRbigdoor"
+          ],
+          "smalldoor": [
+            "OFlsmalldoor",
+            "OFRsmalldoor"
+          ],
+          "RightBogie": [
+            "Rmainwheels",
+            "Rmainwheels2",
+            "Rmainhub"
+          ],
+          "RightPiston": [
+            "RightBogie",
+            "Rpiston"
+          ],
+          "Right4Gear": [
+            "RightPiston",
+            "RMainstrut"
+          ],
+          "RightAllGear": [
+            "Right4Gear",
+            "RMainPiston",
+            "RActuatingPiston"
+          ],
+          "RightGearWell": [
+            "RMainCylinder",
+            "RActuatingCylinder",
+            "Rmainram",
+            "RMainActuator"
+          ],
+          "LeftBogie": [
+            "Lmainwheels",
+            "Lmainwheels2",
+            "Lmainhub"
+          ],
+          "LeftPiston": [
+            "LeftBogie",
+            "Lpiston"
+          ],
+          "Left4Gear": [
+            "LeftPiston",
+            "LMainstrut"
+          ],
+          "LeftAllGear": [
+            "Left4Gear",
+            "LMainPiston",
+            "LActuatingPiston"
+          ],
+          "LeftGearWell": [
+            "LMainCylinder",
+            "LActuatingCylinder",
+            "Lmainram",
+            "LMainActuator"
+          ],
+          "Tail2Gear": [
+            "Tailwheels",
+            "Tailstrut",
+            "Tailram"
+          ],
+          "TailDoors": [
+            "Littledoorleft",
+            "Littledoorright",
+            "Taildoorfront"
+          ],
+          "Right2Elevon": [
+            "ROailaron",
+            "RMailaron"
+          ],
+          "Left2Elevon": [
+            "LOailaron",
+            "LMailaron"
+          ]
+        },
+        "select": [
+          {
+            "objects": [
+              "FrontAllGear"
+            ],
+            "cond": [
+              "and",
+              [
+                "or",
+                [
+                  "gt",
+                  "gear/gear[0]/position-norm",
+                  0
+                ],
+                [
+                  "prop",
+                  "systems/seat/gear-front"
+                ]
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "bigdoor"
+            ],
+            "cond": [
+              "and",
+              [
+                "and",
+                [
+                  "gt",
+                  "gear/gear[0]/position-norm",
+                  0
+                ],
+                [
+                  "lt",
+                  "gear/gear[0]/position-norm",
+                  1
+                ]
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "smalldoor"
+            ],
+            "cond": [
+              "and",
+              [
+                "gt",
+                "gear/gear[0]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "OFlegdoor"
+            ],
+            "cond": [
+              "and",
+              [
+                "gt",
+                "gear/gear[0]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "Fucdclosed"
+            ],
+            "cond": [
+              "and",
+              [
+                "or",
+                [
+                  "eq",
+                  "gear/gear[0]/position-norm",
+                  1
+                ],
+                [
+                  "eq",
+                  "gear/gear[0]/position-norm",
+                  0
+                ]
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "Fsucdclosed"
+            ],
+            "cond": [
+              "and",
+              [
+                "eq",
+                "gear/gear[0]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "RightAllGear",
+              "RightGearWell"
+            ],
+            "cond": [
+              "and",
+              [
+                "or",
+                [
+                  "gt",
+                  "gear/gear[3]/position-norm",
+                  0
+                ],
+                [
+                  "prop",
+                  "systems/seat/gear-main"
+                ]
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "OROmaindoor",
+              "ORImaindoor"
+            ],
+            "cond": [
+              "and",
+              [
+                "const",
+                false
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "LeftAllGear",
+              "LeftGearWell"
+            ],
+            "cond": [
+              "and",
+              [
+                "or",
+                [
+                  "gt",
+                  "gear/gear[1]/position-norm",
+                  0
+                ],
+                [
+                  "prop",
+                  "systems/seat/gear-main"
+                ]
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "OLOmaindoor",
+              "OLImaindoor"
+            ],
+            "cond": [
+              "and",
+              [
+                "const",
+                false
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "Tail2Gear"
+            ],
+            "cond": [
+              "and",
+              [
+                "gt",
+                "gear/gear[5]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "TailDoors"
+            ],
+            "cond": [
+              "and",
+              [
+                "gt",
+                "gear/gear[5]/position-norm",
+                0.17
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "Taildoorclosed"
+            ],
+            "cond": [
+              "and",
+              [
+                "le",
+                "gear/gear[5]/position-norm",
+                0.17
+              ]
+            ]
+          }
+        ]
       },
       {
         "file": "Instruments/pilot/altimeter-standby.ac",
@@ -1822,6 +3611,620 @@
           "label": "Cockpit and cabin",
           "system": "interior"
         }
+      },
+      {
+        "file": "../crew/liner_pilot.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -23.417,
+              "y": -0.447,
+              "z": 1.065
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "crew",
+          "label": "Pilots",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "../crew/liner_pilot.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -23.417,
+              "y": 0.457,
+              "z": 1.065
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "crew",
+          "label": "Pilots",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "../cabin/cabin_seat.ac",
+        "places": [
+          [
+            -20.521,
+            0.939,
+            0.127
+          ],
+          [
+            -20.521,
+            0.479,
+            0.127
+          ],
+          [
+            -20.521,
+            -0.481,
+            0.127
+          ],
+          [
+            -20.521,
+            -0.941,
+            0.127
+          ],
+          [
+            -19.661,
+            0.939,
+            0.101
+          ],
+          [
+            -19.661,
+            0.479,
+            0.101
+          ],
+          [
+            -19.661,
+            -0.481,
+            0.101
+          ],
+          [
+            -19.661,
+            -0.941,
+            0.101
+          ],
+          [
+            -18.801,
+            0.939,
+            0.084
+          ],
+          [
+            -18.801,
+            0.479,
+            0.084
+          ],
+          [
+            -18.801,
+            -0.481,
+            0.084
+          ],
+          [
+            -18.801,
+            -0.941,
+            0.084
+          ],
+          [
+            -17.941,
+            0.939,
+            0.066
+          ],
+          [
+            -17.941,
+            0.479,
+            0.066
+          ],
+          [
+            -17.941,
+            -0.481,
+            0.066
+          ],
+          [
+            -17.941,
+            -0.941,
+            0.066
+          ],
+          [
+            -17.081,
+            0.939,
+            0.05
+          ],
+          [
+            -17.081,
+            0.479,
+            0.05
+          ],
+          [
+            -17.081,
+            -0.481,
+            0.05
+          ],
+          [
+            -17.081,
+            -0.941,
+            0.05
+          ],
+          [
+            -16.221,
+            0.939,
+            0.034
+          ],
+          [
+            -16.221,
+            0.479,
+            0.034
+          ],
+          [
+            -16.221,
+            -0.481,
+            0.034
+          ],
+          [
+            -16.221,
+            -0.941,
+            0.034
+          ],
+          [
+            -10.201,
+            0.939,
+            -0.037
+          ],
+          [
+            -10.201,
+            0.479,
+            -0.037
+          ],
+          [
+            -10.201,
+            -0.481,
+            -0.037
+          ],
+          [
+            -10.201,
+            -0.941,
+            -0.037
+          ],
+          [
+            -9.341,
+            0.939,
+            -0.042
+          ],
+          [
+            -9.341,
+            0.479,
+            -0.042
+          ],
+          [
+            -9.341,
+            -0.481,
+            -0.042
+          ],
+          [
+            -9.341,
+            -0.941,
+            -0.042
+          ],
+          [
+            -8.481,
+            0.939,
+            -0.046
+          ],
+          [
+            -8.481,
+            0.479,
+            -0.046
+          ],
+          [
+            -8.481,
+            -0.481,
+            -0.046
+          ],
+          [
+            -8.481,
+            -0.941,
+            -0.046
+          ],
+          [
+            -7.621,
+            0.939,
+            -0.051
+          ],
+          [
+            -7.621,
+            0.479,
+            -0.051
+          ],
+          [
+            -7.621,
+            -0.481,
+            -0.051
+          ],
+          [
+            -7.621,
+            -0.941,
+            -0.051
+          ],
+          [
+            -6.761,
+            0.939,
+            -0.054
+          ],
+          [
+            -6.761,
+            0.479,
+            -0.054
+          ],
+          [
+            -6.761,
+            -0.481,
+            -0.054
+          ],
+          [
+            -6.761,
+            -0.941,
+            -0.054
+          ],
+          [
+            -5.901,
+            0.939,
+            -0.056
+          ],
+          [
+            -5.901,
+            0.479,
+            -0.056
+          ],
+          [
+            -5.901,
+            -0.481,
+            -0.056
+          ],
+          [
+            -5.901,
+            -0.941,
+            -0.056
+          ],
+          [
+            -5.041,
+            0.939,
+            -0.059
+          ],
+          [
+            -5.041,
+            0.479,
+            -0.059
+          ],
+          [
+            -5.041,
+            -0.481,
+            -0.059
+          ],
+          [
+            -5.041,
+            -0.941,
+            -0.059
+          ],
+          [
+            -4.181,
+            0.939,
+            -0.061
+          ],
+          [
+            -4.181,
+            0.479,
+            -0.061
+          ],
+          [
+            -4.181,
+            -0.481,
+            -0.061
+          ],
+          [
+            -4.181,
+            -0.941,
+            -0.061
+          ],
+          [
+            -3.321,
+            0.939,
+            -0.064
+          ],
+          [
+            -3.321,
+            0.479,
+            -0.064
+          ],
+          [
+            -3.321,
+            -0.481,
+            -0.064
+          ],
+          [
+            -3.321,
+            -0.941,
+            -0.064
+          ],
+          [
+            -2.461,
+            0.939,
+            -0.066
+          ],
+          [
+            -2.461,
+            0.479,
+            -0.066
+          ],
+          [
+            -2.461,
+            -0.481,
+            -0.066
+          ],
+          [
+            -2.461,
+            -0.941,
+            -0.066
+          ],
+          [
+            -1.601,
+            0.939,
+            -0.069
+          ],
+          [
+            -1.601,
+            0.479,
+            -0.069
+          ],
+          [
+            -1.601,
+            -0.481,
+            -0.069
+          ],
+          [
+            -1.601,
+            -0.941,
+            -0.069
+          ],
+          [
+            -0.741,
+            0.939,
+            -0.072
+          ],
+          [
+            -0.741,
+            0.479,
+            -0.072
+          ],
+          [
+            -0.741,
+            -0.481,
+            -0.072
+          ],
+          [
+            -0.741,
+            -0.941,
+            -0.072
+          ],
+          [
+            0.119,
+            0.939,
+            -0.073
+          ],
+          [
+            0.119,
+            0.479,
+            -0.073
+          ],
+          [
+            0.119,
+            -0.481,
+            -0.073
+          ],
+          [
+            0.119,
+            -0.941,
+            -0.073
+          ],
+          [
+            0.979,
+            0.939,
+            -0.072
+          ],
+          [
+            0.979,
+            0.479,
+            -0.072
+          ],
+          [
+            0.979,
+            -0.481,
+            -0.072
+          ],
+          [
+            0.979,
+            -0.941,
+            -0.072
+          ],
+          [
+            1.839,
+            0.939,
+            -0.071
+          ],
+          [
+            1.839,
+            0.479,
+            -0.071
+          ],
+          [
+            1.839,
+            -0.481,
+            -0.071
+          ],
+          [
+            1.839,
+            -0.941,
+            -0.071
+          ],
+          [
+            2.699,
+            0.939,
+            -0.07
+          ],
+          [
+            2.699,
+            0.479,
+            -0.07
+          ],
+          [
+            2.699,
+            -0.481,
+            -0.07
+          ],
+          [
+            2.699,
+            -0.941,
+            -0.07
+          ],
+          [
+            11.299,
+            0.939,
+            -0.017
+          ],
+          [
+            11.299,
+            0.479,
+            -0.017
+          ],
+          [
+            11.299,
+            -0.481,
+            -0.017
+          ],
+          [
+            11.299,
+            -0.941,
+            -0.017
+          ],
+          [
+            12.159,
+            0.939,
+            -0.003
+          ],
+          [
+            12.159,
+            0.479,
+            -0.003
+          ],
+          [
+            12.159,
+            -0.481,
+            -0.003
+          ],
+          [
+            12.159,
+            -0.941,
+            -0.003
+          ],
+          [
+            13.879,
+            0.939,
+            0.042
+          ],
+          [
+            13.879,
+            0.479,
+            0.042
+          ],
+          [
+            13.879,
+            -0.481,
+            0.042
+          ],
+          [
+            13.879,
+            -0.941,
+            0.042
+          ],
+          [
+            14.739,
+            0.939,
+            0.077
+          ],
+          [
+            14.739,
+            0.479,
+            0.077
+          ],
+          [
+            14.739,
+            -0.481,
+            0.077
+          ],
+          [
+            14.739,
+            -0.941,
+            0.077
+          ],
+          [
+            15.599,
+            0.939,
+            0.118
+          ],
+          [
+            15.599,
+            0.479,
+            0.118
+          ],
+          [
+            15.599,
+            -0.481,
+            0.118
+          ],
+          [
+            15.599,
+            -0.941,
+            0.118
+          ],
+          [
+            16.459,
+            0.939,
+            0.176
+          ],
+          [
+            16.459,
+            0.479,
+            0.176
+          ],
+          [
+            16.459,
+            -0.481,
+            0.176
+          ],
+          [
+            16.459,
+            -0.941,
+            0.176
+          ]
+        ],
+        "fallback": {
+          "id": "passenger-seats",
+          "label": "Passenger seats",
+          "system": "interior"
+        }
       }
     ],
     "fallback": {
@@ -1832,7 +4235,8 @@
     "hide": [
       "/Flame/",
       "/^Reheat/",
-      "fx"
+      "fx",
+      "TrimCylinder"
     ],
     "parts": [
       {
@@ -1952,7 +4356,8 @@
       ],
       "tail": [
         "rudder"
-      ]
+      ],
+      "sat": 0
     }
   }
 }

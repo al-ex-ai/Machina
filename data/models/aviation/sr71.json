@@ -19,6 +19,17 @@
     "engine_count": 2,
     "engine_type": "Pratt & Whitney J58"
   },
+  "takeoff": {
+    "vr_kt": 180,
+    "lof_kt": 210,
+    "roll_m": 1500,
+    "flaps": 0,
+    "pitch_deg": 10,
+    "climb_deg": 8,
+    "gear_s": 8,
+    "jet": true,
+    "note": "Approximate: afterburner takeoff, partial fuel"
+  },
   "asset": {
     "path": "assets/aircraft/sr71",
     "license": "GPL-2.0",
@@ -26,7 +37,605 @@
     "source": "https://mirrors.ibiblio.org/flightgear/ftp/Aircraft-2020/Lockheed-SR71.zip",
     "files": [
       {
-        "file": "Models/sr71.ac"
+        "file": "Models/sr71.ac",
+        "pose": [
+          {
+            "type": "rotate",
+            "objects": [
+              "porteAG"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "value": 100,
+            "origin": [
+              -5.68,
+              -1.405,
+              0.398
+            ],
+            "axis": [
+              -1,
+              0.000955,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "porteAD"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "value": 100,
+            "origin": [
+              -7.775,
+              -1.403,
+              -0.398
+            ],
+            "axis": [
+              1,
+              -0.000955,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "porteAR"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "value": -25,
+            "origin": [
+              -4.809,
+              -1.432,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "porteG2"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "value": 97,
+            "origin": [
+              6.455,
+              -1.435,
+              0.031
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "porteD2"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "value": -97,
+            "origin": [
+              6.455,
+              -1.435,
+              -0.031
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "directionG"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "factor": 15,
+            "origin": [
+              12.146,
+              0.913,
+              3.951
+            ],
+            "axis": [
+              -0.007873,
+              0.965624,
+              -0.259824
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "directionD"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "factor": 15,
+            "origin": [
+              12.146,
+              0.913,
+              -3.951
+            ],
+            "axis": [
+              -0.007873,
+              0.965624,
+              0.259824
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "profondeurG"
+            ],
+            "prop": "surface-positions/elevator-pos-norm",
+            "factor": 15,
+            "origin": [
+              13.609,
+              -0.765,
+              3.221
+            ],
+            "axis": [
+              0.295483,
+              -0.000925,
+              -0.955348
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "aileronG"
+            ],
+            "prop": "surface-positions/elevator-pos-norm",
+            "factor": -15,
+            "origin": [
+              12.801,
+              -0.728,
+              5.687
+            ],
+            "axis": [
+              -0.060041,
+              0.040537,
+              0.997372
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "profondeurD"
+            ],
+            "prop": "surface-positions/elevator-pos-norm",
+            "factor": 15,
+            "origin": [
+              14.248,
+              -0.767,
+              -1.155
+            ],
+            "axis": [
+              -0.295483,
+              0.000925,
+              -0.955348
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "aileronD"
+            ],
+            "prop": "surface-positions/elevator-pos-norm",
+            "factor": -15,
+            "origin": [
+              12.644,
+              -0.622,
+              -8.295
+            ],
+            "axis": [
+              0.060041,
+              -0.040537,
+              0.997372
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RentreA"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                98
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -5.87,
+              -1.229,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RentreG"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                90
+              ],
+              [
+                0.3,
+                90
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              6.466,
+              -0.981,
+              2.246
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RentreD"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                -90
+              ],
+              [
+                0.3,
+                -90
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              6.466,
+              -0.981,
+              -2.246
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "porteAG"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.15,
+                100
+              ],
+              [
+                1,
+                100
+              ]
+            ],
+            "origin": [
+              -5.68,
+              -1.405,
+              0.398
+            ],
+            "axis": [
+              -1,
+              0.000955,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "porteAD"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.15,
+                100
+              ],
+              [
+                1,
+                100
+              ]
+            ],
+            "origin": [
+              -7.775,
+              -1.403,
+              -0.398
+            ],
+            "axis": [
+              1,
+              -0.000955,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "porteAR"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                -25
+              ]
+            ],
+            "origin": [
+              -4.809,
+              -1.432,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "PG1"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                85
+              ],
+              [
+                0.3,
+                85
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              6.455,
+              -1.028,
+              2.622
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "accrocheG"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                -70
+              ],
+              [
+                0.3,
+                -70
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              6.469,
+              -1.576,
+              2.63
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "porteG2"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.3,
+                97
+              ],
+              [
+                1,
+                97
+              ]
+            ],
+            "origin": [
+              6.455,
+              -1.435,
+              0.031
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "PD1"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                -85
+              ],
+              [
+                0.3,
+                -85
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              6.455,
+              -1.028,
+              -2.622
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "accrocheD"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                70
+              ],
+              [
+                0.3,
+                70
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              6.469,
+              -1.576,
+              -2.63
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "porteD2"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.3,
+                -97
+              ],
+              [
+                1,
+                -97
+              ]
+            ],
+            "origin": [
+              6.455,
+              -1.435,
+              -0.031
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {},
+        "groups": {
+          "RentreA": [
+            "roueA",
+            "axeA",
+            "verrinA",
+            "barrehautA",
+            "barrebasA"
+          ],
+          "RentreG": [
+            "roueG",
+            "axeG",
+            "verrinG",
+            "barrehautG",
+            "barrebasG"
+          ],
+          "RentreD": [
+            "roueD",
+            "axeD",
+            "verrinD",
+            "barrehautD",
+            "barrebasD"
+          ],
+          "PG1": [
+            "porteG1",
+            "accrocheG"
+          ],
+          "PD1": [
+            "porteD1",
+            "accrocheD"
+          ]
+        }
       },
       {
         "file": "Models/Interior/interior.ac",

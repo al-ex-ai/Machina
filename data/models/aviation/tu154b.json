@@ -20,6 +20,16 @@
     "engine_type": "Kuznetsov NK-8-2U",
     "seats": "Up to 180"
   },
+  "takeoff": {
+    "vr_kt": 145,
+    "roll_m": 1900,
+    "flaps": 0.5,
+    "pitch_deg": 12,
+    "climb_deg": 7,
+    "gear_s": 10,
+    "jet": true,
+    "note": "Approximate: mid-weight takeoff, flaps 15"
+  },
   "sources": [
     {
       "label": "Wikipedia: Tupolev Tu-154",
@@ -40,6 +50,7 @@
             "objects": [
               "c_gear_ME6"
             ],
+            "prop": "gear/gear[0]/position-norm",
             "value": -90,
             "origin": [
               -18.1,
@@ -57,6 +68,7 @@
             "objects": [
               "c_gear_ME8"
             ],
+            "prop": "gear/gear[0]/position-norm",
             "value": 90,
             "origin": [
               -18.1,
@@ -76,6 +88,7 @@
               "c_gear_M11",
               "c_gear_Ob0"
             ],
+            "prop": "gear/gear[0]/position-norm",
             "value": 94,
             "origin": [
               -17.934,
@@ -95,6 +108,7 @@
               "c_gear_ME4",
               "c_gear_ME5"
             ],
+            "prop": "gear/gear[0]/position-norm",
             "value": 7,
             "origin": [
               -16.9471,
@@ -112,6 +126,7 @@
             "objects": [
               "c_gear_ME3"
             ],
+            "prop": "gear/gear[0]/position-norm",
             "value": -162,
             "origin": [
               -17.571,
@@ -129,6 +144,7 @@
             "objects": [
               "c_gear_ME4"
             ],
+            "prop": "gear/gear[0]/position-norm",
             "value": 35,
             "origin": [
               -17.571,
@@ -146,6 +162,7 @@
             "objects": [
               "c_gear_ME2"
             ],
+            "prop": "gear/gear[0]/position-norm",
             "value": -25,
             "origin": [
               -17.804,
@@ -163,6 +180,7 @@
             "objects": [
               "l_gear_M16"
             ],
+            "prop": "gear/gear[1]/position-norm",
             "value": 90,
             "origin": [
               0,
@@ -180,6 +198,7 @@
             "objects": [
               "l_gear_M14"
             ],
+            "prop": "gear/gear[1]/position-norm",
             "value": 90,
             "origin": [
               0,
@@ -198,6 +217,7 @@
               "l_gear_M12",
               "l_gear_Obj"
             ],
+            "prop": "gear/gear[1]/position-norm",
             "value": 96,
             "origin": [
               0.554,
@@ -216,6 +236,7 @@
               "l_gear_Ob1",
               "l_gear_ME2"
             ],
+            "prop": "gear/gear[1]/position-norm",
             "value": 74.5,
             "origin": [
               2.5153,
@@ -234,6 +255,7 @@
               "l_gear_Ob6",
               "l_gear_M13"
             ],
+            "prop": "gear/gear[1]/position-norm",
             "value": 40,
             "origin": [
               -1.285,
@@ -251,6 +273,7 @@
             "objects": [
               "l_gear_ME9"
             ],
+            "prop": "gear/gear[1]/position-norm",
             "value": 120,
             "origin": [
               2.164,
@@ -269,6 +292,7 @@
               "l_gear_Ob7",
               "l_gear_M10"
             ],
+            "prop": "gear/gear[1]/position-norm",
             "value": 1.34,
             "origin": [
               0,
@@ -287,6 +311,7 @@
               "l_gear_Ob2",
               "l_gear_ME0"
             ],
+            "prop": "gear/gear[1]/position-norm",
             "value": -63,
             "origin": [
               2.71,
@@ -304,6 +329,7 @@
             "objects": [
               "l_gear_Ob3"
             ],
+            "prop": "gear/gear[1]/position-norm",
             "value": 70,
             "origin": [
               2.19,
@@ -321,6 +347,7 @@
             "objects": [
               "r_gear_M17"
             ],
+            "prop": "gear/gear[2]/position-norm",
             "value": 90,
             "origin": [
               0,
@@ -338,6 +365,7 @@
             "objects": [
               "r_gear_M16"
             ],
+            "prop": "gear/gear[2]/position-norm",
             "value": 90,
             "origin": [
               0,
@@ -356,6 +384,7 @@
               "r_gear_M13",
               "r_gear_Ob1"
             ],
+            "prop": "gear/gear[2]/position-norm",
             "value": 96,
             "origin": [
               0.554,
@@ -374,6 +403,7 @@
               "r_gear_Ob3",
               "r_gear_ME5"
             ],
+            "prop": "gear/gear[2]/position-norm",
             "value": 74.5,
             "origin": [
               2.5153,
@@ -392,6 +422,7 @@
               "r_gear_Obj",
               "r_gear_M12"
             ],
+            "prop": "gear/gear[2]/position-norm",
             "value": 40,
             "origin": [
               -1.285,
@@ -409,6 +440,7 @@
             "objects": [
               "r_gear_MES"
             ],
+            "prop": "gear/gear[2]/position-norm",
             "value": 120,
             "origin": [
               2.164,
@@ -427,6 +459,7 @@
               "r_gear_Ob0",
               "r_gear_ME0"
             ],
+            "prop": "gear/gear[2]/position-norm",
             "value": 1.34,
             "origin": [
               0,
@@ -445,6 +478,7 @@
               "r_gear_Ob4",
               "r_gear_ME3"
             ],
+            "prop": "gear/gear[2]/position-norm",
             "value": -63,
             "origin": [
               2.71,
@@ -462,6 +496,7 @@
             "objects": [
               "r_gear_Ob5"
             ],
+            "prop": "gear/gear[2]/position-norm",
             "value": 70,
             "origin": [
               2.19,
@@ -474,7 +509,1934 @@
               -1
             ]
           }
-        ]
+        ],
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "c_gear_ME6"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.1,
+                -90
+              ]
+            ],
+            "origin": [
+              -18.1,
+              -0.4365,
+              0.428
+            ],
+            "axis": [
+              0.999886,
+              -0.015118,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "c_gear_ME8"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.1,
+                90
+              ]
+            ],
+            "origin": [
+              -18.1,
+              -0.4365,
+              -0.428
+            ],
+            "axis": [
+              0.999886,
+              -0.015118,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "c_gear_ME7"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.1,
+                -90
+              ],
+              [
+                0.9,
+                -90
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -16.85,
+              -0.4554,
+              0.428
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "c_gear_ME9"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.1,
+                90
+              ],
+              [
+                0.9,
+                90
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -16.85,
+              -0.4554,
+              -0.428
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "c_gear_M10",
+              "c_gear_M11",
+              "c_gear_Ob0"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0.1,
+                0
+              ],
+              [
+                0.9,
+                94
+              ]
+            ],
+            "origin": [
+              -17.934,
+              -0.332,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "c_gear_ME3",
+              "c_gear_ME4",
+              "c_gear_ME5"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0.7,
+                0
+              ],
+              [
+                0.9,
+                7
+              ]
+            ],
+            "origin": [
+              -16.9471,
+              -0.1033,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "c_gear_ME3"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0.1,
+                0
+              ],
+              [
+                0.9,
+                -162
+              ]
+            ],
+            "origin": [
+              -17.571,
+              0.2793,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "c_gear_ME4"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0.7,
+                0
+              ],
+              [
+                0.9,
+                35
+              ]
+            ],
+            "origin": [
+              -17.571,
+              0.2793,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "c_gear_ME2"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0.7,
+                0
+              ],
+              [
+                0.9,
+                -25
+              ]
+            ],
+            "origin": [
+              -17.804,
+              -0.1571,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "c_wheel_Ob"
+            ],
+            "prop": "gear/gear[0]/compression-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                -0.272
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0.993884,
+              0.110432,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "l_gear_M15"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.1,
+                90
+              ],
+              [
+                0.9,
+                90
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              0.8257,
+              -0.4618,
+              5.28
+            ],
+            "axis": [
+              0.998883,
+              0.041358,
+              0.02285
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "l_gear_M17"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.1,
+                -90
+              ],
+              [
+                0.9,
+                -90
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              0.8257,
+              -0.4618,
+              6.28
+            ],
+            "axis": [
+              0.997511,
+              0.070509,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "l_gear_M16"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.1,
+                90
+              ]
+            ],
+            "origin": [
+              0,
+              -0.4785,
+              6.192
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "l_gear_M14"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.1,
+                90
+              ]
+            ],
+            "origin": [
+              0,
+              -0.4785,
+              5.3513
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "l_gear_M12",
+              "l_gear_Obj"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0.1,
+                0
+              ],
+              [
+                0.9,
+                96
+              ]
+            ],
+            "origin": [
+              0.554,
+              -0.12,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "l_gear_Ob1",
+              "l_gear_ME2"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0.5,
+                0
+              ],
+              [
+                0.9,
+                74.5
+              ]
+            ],
+            "origin": [
+              2.5153,
+              0.2355,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "l_gear_Ob6",
+              "l_gear_M13"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0.1,
+                0
+              ],
+              [
+                0.9,
+                40
+              ]
+            ],
+            "origin": [
+              -1.285,
+              -0.2725,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "l_gear_ME9"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0.1,
+                0
+              ],
+              [
+                0.9,
+                120
+              ]
+            ],
+            "origin": [
+              2.164,
+              -0.2678,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "l_gear_Ob7",
+              "l_gear_M10"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0.1,
+                0
+              ],
+              [
+                0.2,
+                0.07
+              ],
+              [
+                0.3,
+                0.16
+              ],
+              [
+                0.4,
+                0.28
+              ],
+              [
+                0.5,
+                0.42
+              ],
+              [
+                0.58,
+                0.57
+              ],
+              [
+                0.66,
+                0.735
+              ],
+              [
+                0.78,
+                1.026
+              ],
+              [
+                0.82,
+                1.13
+              ],
+              [
+                0.9,
+                1.34
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "l_gear_Ob2",
+              "l_gear_ME0"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0.5,
+                0
+              ],
+              [
+                0.9,
+                -63
+              ]
+            ],
+            "origin": [
+              2.71,
+              0.2354,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "l_gear_Ob3"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0.5,
+                0
+              ],
+              [
+                0.9,
+                70
+              ]
+            ],
+            "origin": [
+              2.19,
+              -0.1577,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "r_gear_M14"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.1,
+                -90
+              ],
+              [
+                0.9,
+                -90
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              0.8257,
+              -0.4618,
+              -5.28
+            ],
+            "axis": [
+              0.998883,
+              0.041358,
+              -0.02285
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "r_gear_M15"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.1,
+                90
+              ],
+              [
+                0.9,
+                90
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              0.8257,
+              -0.4618,
+              -6.28
+            ],
+            "axis": [
+              0.997511,
+              0.070509,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "r_gear_M17"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.1,
+                90
+              ]
+            ],
+            "origin": [
+              0,
+              -0.4785,
+              -6.192
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "r_gear_M16"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.1,
+                90
+              ]
+            ],
+            "origin": [
+              0,
+              -0.4785,
+              -5.3513
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "r_gear_M13",
+              "r_gear_Ob1"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0.1,
+                0
+              ],
+              [
+                0.9,
+                96
+              ]
+            ],
+            "origin": [
+              0.554,
+              -0.12,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "r_gear_Ob3",
+              "r_gear_ME5"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0.5,
+                0
+              ],
+              [
+                0.9,
+                74.5
+              ]
+            ],
+            "origin": [
+              2.5153,
+              0.2355,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "r_gear_Obj",
+              "r_gear_M12"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0.1,
+                0
+              ],
+              [
+                0.9,
+                40
+              ]
+            ],
+            "origin": [
+              -1.285,
+              -0.2725,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "r_gear_MES"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0.1,
+                0
+              ],
+              [
+                0.9,
+                120
+              ]
+            ],
+            "origin": [
+              2.164,
+              -0.2678,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "r_gear_Ob0",
+              "r_gear_ME0"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0.1,
+                0
+              ],
+              [
+                0.2,
+                0.07
+              ],
+              [
+                0.3,
+                0.16
+              ],
+              [
+                0.4,
+                0.28
+              ],
+              [
+                0.5,
+                0.42
+              ],
+              [
+                0.58,
+                0.57
+              ],
+              [
+                0.66,
+                0.735
+              ],
+              [
+                0.78,
+                1.026
+              ],
+              [
+                0.82,
+                1.13
+              ],
+              [
+                0.9,
+                1.34
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "r_gear_Ob4",
+              "r_gear_ME3"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0.5,
+                0
+              ],
+              [
+                0.9,
+                -63
+              ]
+            ],
+            "origin": [
+              2.71,
+              0.2354,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "r_gear_Ob5"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0.5,
+                0
+              ],
+              [
+                0.9,
+                70
+              ]
+            ],
+            "origin": [
+              2.19,
+              -0.1577,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "Object0037"
+            ],
+            "prop": "velocities/uBody-fps",
+            "factor": 25.4,
+            "origin": [
+              -16.0096,
+              -0.0664,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "Object0167"
+            ],
+            "prop": "velocities/uBody-fps",
+            "factor": 21.23,
+            "origin": [
+              3.5377,
+              0.218,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "Object0169"
+            ],
+            "prop": "velocities/uBody-fps",
+            "factor": 21.23,
+            "origin": [
+              2.5151,
+              0.2362,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "Object0171"
+            ],
+            "prop": "velocities/uBody-fps",
+            "factor": 21.23,
+            "origin": [
+              1.5421,
+              0.2552,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "Object0119"
+            ],
+            "prop": "velocities/uBody-fps",
+            "factor": 21.23,
+            "origin": [
+              3.5377,
+              0.218,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "Object0117"
+            ],
+            "prop": "velocities/uBody-fps",
+            "factor": 21.23,
+            "origin": [
+              2.5151,
+              0.2362,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "Object0121"
+            ],
+            "prop": "velocities/uBody-fps",
+            "factor": 21.23,
+            "origin": [
+              1.5421,
+              0.2552,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "engine2_M0",
+              "engine2_ME"
+            ],
+            "prop": "engines/engine[2]/n1",
+            "factor": 10,
+            "origin": [
+              7.09,
+              1.8931,
+              -3.2059
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "engine2_M1",
+              "engine2_M2"
+            ],
+            "prop": "engines/engine[2]/n1",
+            "factor": 10,
+            "origin": [
+              10.45,
+              1.7231,
+              -3.0272
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "engine1_M1",
+              "engine1_M2"
+            ],
+            "prop": "engines/engine[1]/n1",
+            "factor": 10,
+            "origin": [
+              13.7082,
+              2.3641,
+              -0.0001
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "engine1_M0",
+              "engine1_ME"
+            ],
+            "prop": "engines/engine[1]/n1",
+            "factor": 10,
+            "origin": [
+              10.1246,
+              2.3641,
+              -0.0001
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rudder"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "factor": 57.2958,
+            "origin": [
+              14.2062,
+              3.968,
+              0
+            ],
+            "axis": [
+              0.585484,
+              0.810684,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "elevator_left"
+            ],
+            "prop": "surface-positions/elevator-pos-norm",
+            "factor": -57.2958,
+            "origin": [
+              17.7806,
+              8.6638,
+              0.09
+            ],
+            "axis": [
+              0.577478,
+              0.000537,
+              0.816406
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "elevator_right"
+            ],
+            "prop": "surface-positions/elevator-pos-norm",
+            "factor": 57.2958,
+            "origin": [
+              17.7806,
+              8.6638,
+              -0.09
+            ],
+            "axis": [
+              0.577478,
+              0.000537,
+              -0.816406
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "l_pct_tra6"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.33,
+                -3
+              ],
+              [
+                0.62,
+                -7
+              ],
+              [
+                1,
+                -7
+              ]
+            ],
+            "origin": [
+              0.9134,
+              0.1615,
+              6.0562
+            ],
+            "axis": [
+              0.507409,
+              0,
+              0.861706
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "l_pct_tra6"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.33,
+                -3
+              ],
+              [
+                0.62,
+                -7
+              ],
+              [
+                1,
+                -12
+              ]
+            ],
+            "origin": [
+              0.4738,
+              -1.0938,
+              6.059
+            ],
+            "axis": [
+              0.507572,
+              0,
+              0.86161
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "l_pct_tr12",
+              "l_pct_tra9"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.33,
+                -7
+              ],
+              [
+                0.62,
+                -13
+              ],
+              [
+                1,
+                -22
+              ]
+            ],
+            "origin": [
+              0.4738,
+              -1.0938,
+              6.059
+            ],
+            "axis": [
+              0.507572,
+              0,
+              0.86161
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "l_pct_tra9"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0.62,
+                0
+              ],
+              [
+                1,
+                -30
+              ]
+            ],
+            "origin": [
+              2.0948,
+              0,
+              6.2498
+            ],
+            "axis": [
+              0.464148,
+              0,
+              0.885757
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "l_pct_tr13"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0.62,
+                0
+              ],
+              [
+                1,
+                -10
+              ]
+            ],
+            "origin": [
+              0.689,
+              0.0027,
+              1.1325
+            ],
+            "axis": [
+              0,
+              0.034802,
+              0.999394
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "l_pct_tr13"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.33,
+                -5
+              ],
+              [
+                0.62,
+                -10
+              ],
+              [
+                1,
+                -15
+              ]
+            ],
+            "origin": [
+              1.25,
+              -1.5376,
+              1.1324
+            ],
+            "axis": [
+              0,
+              0.035034,
+              0.999386
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "l_pct_tra3",
+              "l_pct_tra4"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.33,
+                -7
+              ],
+              [
+                0.62,
+                -14
+              ],
+              [
+                1,
+                -35
+              ]
+            ],
+            "origin": [
+              1.25,
+              -1.5376,
+              1.1324
+            ],
+            "axis": [
+              0,
+              0.035034,
+              0.999386
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "l_pct_tra3"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0.62,
+                0
+              ],
+              [
+                1,
+                -30
+              ]
+            ],
+            "origin": [
+              1.8846,
+              -0.2254,
+              1.1324
+            ],
+            "axis": [
+              -0.009168,
+              0.034843,
+              0.999351
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "r_pct_tr10"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0.62,
+                0
+              ],
+              [
+                1,
+                10
+              ]
+            ],
+            "origin": [
+              0.689,
+              0.0027,
+              -1.1325
+            ],
+            "axis": [
+              0,
+              0.034802,
+              -0.999394
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "r_pct_tr10"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.33,
+                5
+              ],
+              [
+                0.62,
+                10
+              ],
+              [
+                1,
+                15
+              ]
+            ],
+            "origin": [
+              1.25,
+              -1.5376,
+              -1.1324
+            ],
+            "axis": [
+              0,
+              0.035034,
+              -0.999386
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "r_pct_tra1",
+              "r_pct_tra2"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.33,
+                7
+              ],
+              [
+                0.62,
+                14
+              ],
+              [
+                1,
+                35
+              ]
+            ],
+            "origin": [
+              1.25,
+              -1.5376,
+              -1.1324
+            ],
+            "axis": [
+              0,
+              0.035034,
+              -0.999386
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "r_pct_tra1"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0.62,
+                0
+              ],
+              [
+                1,
+                30
+              ]
+            ],
+            "origin": [
+              1.8846,
+              -0.2254,
+              -1.1324
+            ],
+            "axis": [
+              -0.009168,
+              0.034843,
+              -0.999351
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "r_pct_tra9"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.33,
+                3
+              ],
+              [
+                0.62,
+                7
+              ],
+              [
+                1,
+                7
+              ]
+            ],
+            "origin": [
+              0.9134,
+              0.1615,
+              -6.0562
+            ],
+            "axis": [
+              0.507409,
+              0,
+              -0.861706
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "r_pct_tra9"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.33,
+                3
+              ],
+              [
+                0.62,
+                7
+              ],
+              [
+                1,
+                12
+              ]
+            ],
+            "origin": [
+              0.4738,
+              -1.0938,
+              -6.059
+            ],
+            "axis": [
+              0.507572,
+              0,
+              -0.86161
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "r_pct_tra7",
+              "r_pct_tra6"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.33,
+                7
+              ],
+              [
+                0.62,
+                13
+              ],
+              [
+                1,
+                22
+              ]
+            ],
+            "origin": [
+              0.4738,
+              -1.0938,
+              -6.059
+            ],
+            "axis": [
+              0.507572,
+              0,
+              -0.86161
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "r_pct_tra6"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0.62,
+                0
+              ],
+              [
+                1,
+                30
+              ]
+            ],
+            "origin": [
+              2.0948,
+              0,
+              -6.2498
+            ],
+            "axis": [
+              0.464148,
+              0,
+              -0.885757
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "l_pct_lea3"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.3,
+                12
+              ]
+            ],
+            "origin": [
+              -2.9771,
+              -2,
+              3.5035
+            ],
+            "axis": [
+              0.58811,
+              0,
+              0.808781
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "l_pct_lea0"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.3,
+                6
+              ]
+            ],
+            "origin": [
+              -2.9771,
+              -2,
+              3.5035
+            ],
+            "axis": [
+              0.58811,
+              0,
+              0.808781
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "l_pct_lea2"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.3,
+                4
+              ]
+            ],
+            "origin": [
+              -2.9771,
+              -2,
+              3.5035
+            ],
+            "axis": [
+              0.58811,
+              0,
+              0.808781
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "r_pct_lea3"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.3,
+                -12
+              ]
+            ],
+            "origin": [
+              -2.9771,
+              -2,
+              -3.5035
+            ],
+            "axis": [
+              0.58811,
+              0,
+              -0.808781
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "r_pct_lea2"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.3,
+                -6
+              ]
+            ],
+            "origin": [
+              -2.9771,
+              -2,
+              -3.5035
+            ],
+            "axis": [
+              0.58811,
+              0,
+              -0.808781
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "r_pct_lea0"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.3,
+                -4
+              ]
+            ],
+            "origin": [
+              -2.9771,
+              -2,
+              -3.5035
+            ],
+            "axis": [
+              0.58811,
+              0,
+              -0.808781
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Model/interior.ac",
@@ -6877,6 +8839,840 @@
           "label": "Cockpit and cabin",
           "system": "interior"
         }
+      },
+      {
+        "file": "../crew/liner_pilot.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -21.947,
+              "y": -0.545,
+              "z": 1.695
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "crew",
+          "label": "Pilots",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "../crew/liner_pilot.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -21.947,
+              "y": 0.555,
+              "z": 1.695
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "crew",
+          "label": "Pilots",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "../cabin/cabin_seat.ac",
+        "places": [
+          [
+            -19.05,
+            1.4,
+            0.72
+          ],
+          [
+            -19.05,
+            0.94,
+            0.72
+          ],
+          [
+            -19.05,
+            0.48,
+            0.72
+          ],
+          [
+            -19.05,
+            -0.48,
+            0.72
+          ],
+          [
+            -19.05,
+            -0.94,
+            0.72
+          ],
+          [
+            -19.05,
+            -1.4,
+            0.72
+          ],
+          [
+            -18.19,
+            1.4,
+            0.695
+          ],
+          [
+            -18.19,
+            0.94,
+            0.695
+          ],
+          [
+            -18.19,
+            0.48,
+            0.695
+          ],
+          [
+            -18.19,
+            -0.48,
+            0.695
+          ],
+          [
+            -18.19,
+            -0.94,
+            0.695
+          ],
+          [
+            -18.19,
+            -1.4,
+            0.695
+          ],
+          [
+            -14.75,
+            1.4,
+            0.666
+          ],
+          [
+            -14.75,
+            0.94,
+            0.666
+          ],
+          [
+            -14.75,
+            0.48,
+            0.666
+          ],
+          [
+            -14.75,
+            -0.48,
+            0.666
+          ],
+          [
+            -14.75,
+            -0.94,
+            0.666
+          ],
+          [
+            -14.75,
+            -1.4,
+            0.666
+          ],
+          [
+            -13.89,
+            1.4,
+            0.666
+          ],
+          [
+            -13.89,
+            0.94,
+            0.666
+          ],
+          [
+            -13.89,
+            0.48,
+            0.666
+          ],
+          [
+            -13.89,
+            -0.48,
+            0.666
+          ],
+          [
+            -13.89,
+            -0.94,
+            0.666
+          ],
+          [
+            -13.89,
+            -1.4,
+            0.666
+          ],
+          [
+            -13.03,
+            1.4,
+            0.666
+          ],
+          [
+            -13.03,
+            0.94,
+            0.666
+          ],
+          [
+            -13.03,
+            0.48,
+            0.666
+          ],
+          [
+            -13.03,
+            -0.48,
+            0.666
+          ],
+          [
+            -13.03,
+            -0.94,
+            0.666
+          ],
+          [
+            -13.03,
+            -1.4,
+            0.666
+          ],
+          [
+            -12.17,
+            1.4,
+            0.666
+          ],
+          [
+            -12.17,
+            0.94,
+            0.666
+          ],
+          [
+            -12.17,
+            0.48,
+            0.666
+          ],
+          [
+            -12.17,
+            -0.48,
+            0.666
+          ],
+          [
+            -12.17,
+            -0.94,
+            0.666
+          ],
+          [
+            -12.17,
+            -1.4,
+            0.666
+          ],
+          [
+            -11.31,
+            1.4,
+            0.666
+          ],
+          [
+            -11.31,
+            0.94,
+            0.666
+          ],
+          [
+            -11.31,
+            0.48,
+            0.666
+          ],
+          [
+            -11.31,
+            -0.48,
+            0.666
+          ],
+          [
+            -11.31,
+            -0.94,
+            0.666
+          ],
+          [
+            -11.31,
+            -1.4,
+            0.666
+          ],
+          [
+            -10.45,
+            1.4,
+            0.666
+          ],
+          [
+            -10.45,
+            0.94,
+            0.666
+          ],
+          [
+            -10.45,
+            0.48,
+            0.666
+          ],
+          [
+            -10.45,
+            -0.48,
+            0.666
+          ],
+          [
+            -10.45,
+            -0.94,
+            0.666
+          ],
+          [
+            -10.45,
+            -1.4,
+            0.666
+          ],
+          [
+            -9.59,
+            1.4,
+            0.666
+          ],
+          [
+            -9.59,
+            0.94,
+            0.666
+          ],
+          [
+            -9.59,
+            0.48,
+            0.666
+          ],
+          [
+            -9.59,
+            -0.48,
+            0.666
+          ],
+          [
+            -9.59,
+            -0.94,
+            0.666
+          ],
+          [
+            -9.59,
+            -1.4,
+            0.666
+          ],
+          [
+            -8.73,
+            1.4,
+            0.666
+          ],
+          [
+            -8.73,
+            0.94,
+            0.666
+          ],
+          [
+            -8.73,
+            0.48,
+            0.666
+          ],
+          [
+            -8.73,
+            -0.48,
+            0.666
+          ],
+          [
+            -8.73,
+            -0.94,
+            0.666
+          ],
+          [
+            -8.73,
+            -1.4,
+            0.666
+          ],
+          [
+            -7.87,
+            1.4,
+            0.666
+          ],
+          [
+            -7.87,
+            0.94,
+            0.666
+          ],
+          [
+            -7.87,
+            0.48,
+            0.666
+          ],
+          [
+            -7.87,
+            -0.48,
+            0.666
+          ],
+          [
+            -7.87,
+            -0.94,
+            0.666
+          ],
+          [
+            -7.87,
+            -1.4,
+            0.666
+          ],
+          [
+            -7.01,
+            1.4,
+            0.516
+          ],
+          [
+            -7.01,
+            0.94,
+            0.516
+          ],
+          [
+            -7.01,
+            0.48,
+            0.516
+          ],
+          [
+            -7.01,
+            -0.48,
+            0.516
+          ],
+          [
+            -7.01,
+            -0.94,
+            0.516
+          ],
+          [
+            -7.01,
+            -1.4,
+            0.516
+          ],
+          [
+            -6.15,
+            1.4,
+            0.516
+          ],
+          [
+            -6.15,
+            0.94,
+            0.516
+          ],
+          [
+            -6.15,
+            0.48,
+            0.516
+          ],
+          [
+            -6.15,
+            -0.48,
+            0.516
+          ],
+          [
+            -6.15,
+            -0.94,
+            0.516
+          ],
+          [
+            -6.15,
+            -1.4,
+            0.516
+          ],
+          [
+            -5.29,
+            1.4,
+            0.666
+          ],
+          [
+            -5.29,
+            0.94,
+            0.666
+          ],
+          [
+            -5.29,
+            0.48,
+            0.666
+          ],
+          [
+            -5.29,
+            -0.48,
+            0.666
+          ],
+          [
+            -5.29,
+            -0.94,
+            0.666
+          ],
+          [
+            -5.29,
+            -1.4,
+            0.666
+          ],
+          [
+            -4.43,
+            1.4,
+            0.666
+          ],
+          [
+            -4.43,
+            0.94,
+            0.666
+          ],
+          [
+            -4.43,
+            0.48,
+            0.666
+          ],
+          [
+            -4.43,
+            -0.48,
+            0.666
+          ],
+          [
+            -4.43,
+            -0.94,
+            0.666
+          ],
+          [
+            -4.43,
+            -1.4,
+            0.666
+          ],
+          [
+            -3.57,
+            1.4,
+            0.666
+          ],
+          [
+            -3.57,
+            0.94,
+            0.666
+          ],
+          [
+            -3.57,
+            0.48,
+            0.666
+          ],
+          [
+            -3.57,
+            -0.48,
+            0.666
+          ],
+          [
+            -3.57,
+            -0.94,
+            0.666
+          ],
+          [
+            -3.57,
+            -1.4,
+            0.666
+          ],
+          [
+            -2.71,
+            1.4,
+            0.666
+          ],
+          [
+            -2.71,
+            0.94,
+            0.666
+          ],
+          [
+            -2.71,
+            0.48,
+            0.666
+          ],
+          [
+            -2.71,
+            -0.48,
+            0.666
+          ],
+          [
+            -2.71,
+            -0.94,
+            0.666
+          ],
+          [
+            -2.71,
+            -1.4,
+            0.666
+          ],
+          [
+            -1.85,
+            1.4,
+            0.666
+          ],
+          [
+            -1.85,
+            0.94,
+            0.666
+          ],
+          [
+            -1.85,
+            0.48,
+            0.666
+          ],
+          [
+            -1.85,
+            -0.48,
+            0.666
+          ],
+          [
+            -1.85,
+            -0.94,
+            0.666
+          ],
+          [
+            -1.85,
+            -1.4,
+            0.666
+          ],
+          [
+            -0.99,
+            1.4,
+            0.666
+          ],
+          [
+            -0.99,
+            0.94,
+            0.666
+          ],
+          [
+            -0.99,
+            0.48,
+            0.666
+          ],
+          [
+            -0.99,
+            -0.48,
+            0.666
+          ],
+          [
+            -0.99,
+            -0.94,
+            0.666
+          ],
+          [
+            -0.99,
+            -1.4,
+            0.666
+          ],
+          [
+            -0.13,
+            1.4,
+            0.666
+          ],
+          [
+            -0.13,
+            0.94,
+            0.666
+          ],
+          [
+            -0.13,
+            0.48,
+            0.666
+          ],
+          [
+            -0.13,
+            -0.48,
+            0.666
+          ],
+          [
+            -0.13,
+            -0.94,
+            0.666
+          ],
+          [
+            -0.13,
+            -1.4,
+            0.666
+          ],
+          [
+            0.73,
+            1.4,
+            0.664
+          ],
+          [
+            0.73,
+            0.94,
+            0.664
+          ],
+          [
+            0.73,
+            0.48,
+            0.664
+          ],
+          [
+            0.73,
+            -0.48,
+            0.664
+          ],
+          [
+            0.73,
+            -0.94,
+            0.664
+          ],
+          [
+            0.73,
+            -1.4,
+            0.664
+          ],
+          [
+            1.59,
+            1.4,
+            0.666
+          ],
+          [
+            1.59,
+            0.94,
+            0.666
+          ],
+          [
+            1.59,
+            0.48,
+            0.666
+          ],
+          [
+            1.59,
+            -0.48,
+            0.666
+          ],
+          [
+            1.59,
+            -0.94,
+            0.666
+          ],
+          [
+            1.59,
+            -1.4,
+            0.666
+          ],
+          [
+            2.45,
+            1.4,
+            0.669
+          ],
+          [
+            2.45,
+            0.94,
+            0.669
+          ],
+          [
+            2.45,
+            0.48,
+            0.669
+          ],
+          [
+            2.45,
+            -0.48,
+            0.669
+          ],
+          [
+            2.45,
+            -0.94,
+            0.669
+          ],
+          [
+            2.45,
+            -1.4,
+            0.669
+          ],
+          [
+            3.31,
+            1.4,
+            0.687
+          ],
+          [
+            3.31,
+            0.94,
+            0.687
+          ],
+          [
+            3.31,
+            0.48,
+            0.687
+          ],
+          [
+            3.31,
+            -0.48,
+            0.687
+          ],
+          [
+            3.31,
+            -0.94,
+            0.687
+          ],
+          [
+            3.31,
+            -1.4,
+            0.687
+          ],
+          [
+            4.17,
+            1.4,
+            0.743
+          ],
+          [
+            4.17,
+            0.94,
+            0.743
+          ],
+          [
+            4.17,
+            0.48,
+            0.743
+          ],
+          [
+            4.17,
+            -0.48,
+            0.743
+          ],
+          [
+            4.17,
+            -0.94,
+            0.743
+          ],
+          [
+            4.17,
+            -1.4,
+            0.743
+          ],
+          [
+            5.03,
+            1.4,
+            0.806
+          ],
+          [
+            5.03,
+            0.94,
+            0.806
+          ],
+          [
+            5.03,
+            0.48,
+            0.806
+          ],
+          [
+            5.03,
+            -0.48,
+            0.806
+          ],
+          [
+            5.03,
+            -0.94,
+            0.806
+          ],
+          [
+            5.03,
+            -1.4,
+            0.806
+          ]
+        ],
+        "fallback": {
+          "id": "passenger-seats",
+          "label": "Passenger seats",
+          "system": "interior"
+        }
       }
     ],
     "fallback": {
@@ -6992,8 +9788,8 @@
     },
     "recolor": {
       "textures": [
-        "Model/maina_t.png",
-        "Model/mainb_t.png"
+        "Model/maina_t.webp",
+        "Model/mainb_t.webp"
       ],
       "hue": [
         195,

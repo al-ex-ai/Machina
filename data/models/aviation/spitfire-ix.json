@@ -21,6 +21,21 @@
     "engine_type": "Rolls-Royce Merlin 61 or 66",
     "crew": 1
   },
+  "takeoff": {
+    "exposed": [
+      "tail-wheel"
+    ],
+    "vr_kt": 85,
+    "roll_m": 300,
+    "flaps": 0,
+    "tailwheel": true,
+    "tail_deg": 12,
+    "pitch_deg": -8,
+    "climb_deg": 9,
+    "gear_s": 5,
+    "rpm": 3000,
+    "note": "Approximate: clean, mid weight, tail raised on the roll"
+  },
   "sources": [
     {
       "label": "Wikipedia: Supermarine Spitfire variants",
@@ -48,6 +63,7 @@
               "wheel.L",
               "wheel1.L"
             ],
+            "prop": "gear/gear[0]/position-norm",
             "value": 95,
             "origin": [
               3.042,
@@ -67,6 +83,7 @@
               "wheel.R",
               "wheel1.R"
             ],
+            "prop": "gear/gear[1]/position-norm",
             "value": 95,
             "origin": [
               3.042,
@@ -79,7 +96,276 @@
               -0.266158
             ]
           }
-        ]
+        ],
+        "anim": [
+          {
+            "type": "spin",
+            "objects": [
+              "prophub.merlin"
+            ],
+            "prop": "engines/engine[0]/rpm",
+            "factor": -0.479,
+            "origin": [
+              0.6,
+              0.127,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "gear.L",
+              "wheel.L",
+              "wheel1.L"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                95
+              ]
+            ],
+            "origin": [
+              3.042,
+              -0.6228,
+              0.606
+            ],
+            "axis": [
+              0.931552,
+              -0.247731,
+              -0.266158
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "wheel.L",
+              "wheel1.L"
+            ],
+            "prop": "velocities/uBody-fps",
+            "factor": 10,
+            "origin": [
+              3.3972,
+              -0.4508,
+              1.5477
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "gear.R",
+              "wheel.R",
+              "wheel1.R"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                95
+              ]
+            ],
+            "origin": [
+              3.042,
+              -0.6228,
+              -0.606
+            ],
+            "axis": [
+              -0.931552,
+              0.247731,
+              -0.266158
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "wheel.R",
+              "wheel1.R"
+            ],
+            "prop": "velocities/uBody-fps",
+            "factor": 10,
+            "origin": [
+              3.3972,
+              -0.4508,
+              -1.5477
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "flap1.L"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": -80,
+            "origin": [
+              4.626,
+              -0.632,
+              0.763
+            ],
+            "axis": [
+              -0.118452,
+              0.107728,
+              0.987099
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "flap2.L"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": -80,
+            "origin": [
+              4.683,
+              -0.618,
+              0.292
+            ],
+            "axis": [
+              -0.12009,
+              -0.029496,
+              0.992325
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "flap1.R"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 80,
+            "origin": [
+              4.626,
+              -0.632,
+              -0.763
+            ],
+            "axis": [
+              -0.118452,
+              0.107728,
+              -0.987099
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "flap2.R"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 80,
+            "origin": [
+              4.683,
+              -0.618,
+              -0.292
+            ],
+            "axis": [
+              -0.12009,
+              -0.029496,
+              -0.992325
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rudder"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "factor": 30,
+            "origin": [
+              9.036,
+              1.217,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "elevator.L"
+            ],
+            "prop": "surface-positions/elevator-pos-norm",
+            "table": [
+              [
+                -1,
+                -30
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                20
+              ]
+            ],
+            "origin": [
+              9.012,
+              0.405,
+              0.702
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "elevator.R"
+            ],
+            "prop": "surface-positions/elevator-pos-norm",
+            "table": [
+              [
+                -1,
+                -30
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                20
+              ]
+            ],
+            "origin": [
+              9.012,
+              0.405,
+              -0.702
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/cockpit.ac",
@@ -1435,6 +1721,92 @@
           "id": "propeller",
           "label": "Propeller",
           "system": "propulsion"
+        },
+        "anim": [
+          {
+            "type": "spin",
+            "objects": [
+              "prop1",
+              "prop2",
+              "prop3",
+              "prop4"
+            ],
+            "prop": "engines/engine[0]/rpm",
+            "factor": -0.479,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "prophub"
+            ],
+            "prop": "engines/engine[0]/rpm",
+            "factor": -0.479,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
+      },
+      {
+        "file": "../crew/pilotWWII.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": 4.362,
+              "y": -0.004,
+              "z": 0.27
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "crew",
+          "label": "Pilots",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "../crew/seat_wwii.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": 1.437,
+              "y": 0.001,
+              "z": -0.017
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "crew-seats",
+          "label": "Pilot seat",
+          "system": "interior"
         }
       }
     ],

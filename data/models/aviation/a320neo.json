@@ -25,6 +25,16 @@
     "engine_type": "CFM LEAP-1A or Pratt & Whitney PW1100G",
     "seats": "150 to 180 (typical two-class)"
   },
+  "takeoff": {
+    "vr_kt": 140,
+    "roll_m": 1700,
+    "flaps": 0.3,
+    "pitch_deg": 14,
+    "climb_deg": 8,
+    "gear_s": 8,
+    "jet": true,
+    "note": "Approximate: mid-weight takeoff, CONF 1+F"
+  },
   "geometry": {
     "fuselage": {
       "length": 37.57,
@@ -185,7 +195,334 @@
           "id": "wings",
           "label": "Wings",
           "system": "surfaces"
-        }
+        },
+        "groups": {
+          "Left inner flap nested": [
+            "FlapL1"
+          ],
+          "Left outer flap nested": [
+            "FlapL2"
+          ],
+          "Right inner flap nested": [
+            "FlapR1"
+          ],
+          "Right outer flap nested": [
+            "FlapR2"
+          ]
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "FlapL1"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.375,
+                -40.357875
+              ],
+              [
+                1,
+                -72.621
+              ]
+            ],
+            "origin": [
+              6.0809,
+              0.3365,
+              6.2375
+            ],
+            "axis": [
+              0,
+              -0.154301,
+              -0.988024
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Left inner flap nested"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 107.621,
+            "origin": [
+              6.0575,
+              -0.0804,
+              6.3028
+            ],
+            "axis": [
+              -0.001447,
+              -0.146824,
+              -0.989162
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "FlapL2"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.375,
+                -42.787875
+              ],
+              [
+                1,
+                -79.101
+              ]
+            ],
+            "origin": [
+              8.1928,
+              0.9898,
+              13.2692
+            ],
+            "axis": [
+              -0.290228,
+              -0.087688,
+              -0.952931
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Left outer flap nested"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 114.101,
+            "origin": [
+              8.2625,
+              0.6433,
+              13.3012
+            ],
+            "axis": [
+              -0.297697,
+              -0.092689,
+              -0.95015
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "FlapR1"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.375,
+                -40.357875
+              ],
+              [
+                1,
+                -72.621
+              ]
+            ],
+            "origin": [
+              6.0809,
+              -0.3128,
+              -2.0798
+            ],
+            "axis": [
+              0,
+              0.154301,
+              -0.988024
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Right inner flap nested"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 107.621,
+            "origin": [
+              6.0514,
+              -0.6983,
+              -2.1402
+            ],
+            "axis": [
+              0.001447,
+              0.146824,
+              -0.989162
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "FlapR2"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.375,
+                -42.787875
+              ],
+              [
+                1,
+                -74.101
+              ]
+            ],
+            "origin": [
+              6.0809,
+              0.3518,
+              -6.335
+            ],
+            "axis": [
+              0.290228,
+              0.087688,
+              -0.952931
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Right outer flap nested"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 114.101,
+            "origin": [
+              6.091,
+              -0.0328,
+              -6.3705
+            ],
+            "axis": [
+              0.297697,
+              0.092689,
+              -0.95015
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "FairingL1",
+              "staticDisch5"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 20,
+            "origin": [
+              4.4956,
+              -0.1859,
+              4.3464
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "FairingL2",
+              "staticDisch7"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 20,
+            "origin": [
+              5.2057,
+              0.2128,
+              7.8842
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "FairingL3",
+              "staticDisch8"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 20,
+            "origin": [
+              6.4871,
+              0.6303,
+              11.3862
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "FairingR1",
+              "staticDisch4"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 20,
+            "origin": [
+              4.4956,
+              -0.1859,
+              -4.3464
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "FairingR2",
+              "staticDisch2"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 20,
+            "origin": [
+              5.2057,
+              0.2128,
+              -7.8842
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "FairingR3",
+              "staticDisch1"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 20,
+            "origin": [
+              6.4871,
+              0.6303,
+              -11.3862
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Wings/a320neo.sharklets.ac",
@@ -232,7 +569,363 @@
           "id": "nose-gear",
           "label": "Nose gear",
           "system": "gear"
-        }
+        },
+        "groups": {
+          "Compression lower scissor": [
+            "LINK.02"
+          ],
+          "Drag_Structs.Upper": [
+            "D_STRUCT.U"
+          ],
+          "Drag_Structs.Lower": [
+            "D_STRUCT.L",
+            "Drag_Structs.Upper"
+          ]
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "LINK.02"
+            ],
+            "prop": "gear/gear[0]/compression-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.05,
+                3.609
+              ],
+              [
+                0.1,
+                6.88
+              ],
+              [
+                0.15,
+                9.901
+              ],
+              [
+                0.2,
+                12.729
+              ],
+              [
+                0.25,
+                15.402
+              ],
+              [
+                0.3,
+                17.95
+              ],
+              [
+                0.35,
+                20.391
+              ],
+              [
+                0.4,
+                22.744
+              ],
+              [
+                0.45,
+                25.019
+              ],
+              [
+                0.5,
+                27.228
+              ],
+              [
+                0.55,
+                29.379
+              ],
+              [
+                0.6,
+                31.48
+              ],
+              [
+                0.65,
+                33.535
+              ],
+              [
+                0.7,
+                35.552
+              ],
+              [
+                0.75,
+                37.533
+              ],
+              [
+                0.8,
+                39.483
+              ],
+              [
+                0.85,
+                41.407
+              ],
+              [
+                0.9,
+                43.306
+              ],
+              [
+                0.95,
+                45.184
+              ],
+              [
+                1,
+                47.043
+              ]
+            ],
+            "origin": [
+              -0.258,
+              -1.891,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LINK.01"
+            ],
+            "prop": "gear/gear[0]/compression-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.05,
+                3.609
+              ],
+              [
+                0.1,
+                6.88
+              ],
+              [
+                0.15,
+                9.901
+              ],
+              [
+                0.2,
+                12.729
+              ],
+              [
+                0.25,
+                15.402
+              ],
+              [
+                0.3,
+                17.95
+              ],
+              [
+                0.35,
+                20.391
+              ],
+              [
+                0.4,
+                22.744
+              ],
+              [
+                0.45,
+                25.019
+              ],
+              [
+                0.5,
+                27.228
+              ],
+              [
+                0.55,
+                29.379
+              ],
+              [
+                0.6,
+                31.48
+              ],
+              [
+                0.65,
+                33.535
+              ],
+              [
+                0.7,
+                35.552
+              ],
+              [
+                0.75,
+                37.533
+              ],
+              [
+                0.8,
+                39.483
+              ],
+              [
+                0.85,
+                41.407
+              ],
+              [
+                0.9,
+                43.306
+              ],
+              [
+                0.95,
+                45.184
+              ],
+              [
+                1,
+                47.043
+              ]
+            ],
+            "origin": [
+              -0.146,
+              -1.331,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "OLEO",
+              "AXLE",
+              "Nose Tires",
+              "Compression lower scissor"
+            ],
+            "prop": "gear/gear[0]/compression-norm",
+            "factor": 0.305,
+            "origin": [
+              -0.366,
+              -1.993,
+              0
+            ],
+            "axis": [
+              0.155698,
+              0.987805,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "D_STRUCT.U"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                -47
+              ],
+              [
+                0.2,
+                -47
+              ],
+              [
+                0.8,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -0.67,
+              -0.21,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "D_STRUCT.L",
+              "Drag_Structs.Upper"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                45
+              ],
+              [
+                0.2,
+                45
+              ],
+              [
+                0.8,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -0.335,
+              -0.75,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "ACUTATOR",
+              "AXLE",
+              "Drag_Structs.Lower",
+              "FITTING",
+              "LINK.01",
+              "LINK.02",
+              "LINK.FIT",
+              "OLEO",
+              "Nose Tires"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                92
+              ],
+              [
+                0.2,
+                92
+              ],
+              [
+                0.8,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/LandingGears/res/a320.nlg.tires.ac",
@@ -245,7 +938,62 @@
           "id": "nose-gear",
           "label": "Nose gear",
           "system": "gear"
-        }
+        },
+        "parentAnim": [
+          {
+            "type": "translate",
+            "objects": [
+              "@file"
+            ],
+            "prop": "gear/gear[0]/compression-norm",
+            "factor": 0.305,
+            "origin": [
+              -0.0599,
+              -0.0601,
+              0
+            ],
+            "axis": [
+              0.155698,
+              0.987805,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "@file"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                92
+              ],
+              [
+                0.2,
+                92
+              ],
+              [
+                0.8,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              0.3061,
+              1.9329,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          }
+        ]
       },
       {
         "file": "Models/LandingGears/res/a320.mlg.left.ac",
@@ -258,7 +1006,356 @@
           "id": "main-gear",
           "label": "Main gear",
           "system": "gear"
-        }
+        },
+        "groups": {
+          "Compression lower scissor": [
+            "LINKS.02"
+          ]
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "LINKS.02"
+            ],
+            "prop": "gear/gear[1]/compression-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.05,
+                -5.374
+              ],
+              [
+                0.1,
+                -18.466
+              ],
+              [
+                0.15,
+                -4.218
+              ],
+              [
+                0.2,
+                2.544
+              ],
+              [
+                0.25,
+                7.801
+              ],
+              [
+                0.3,
+                12.284
+              ],
+              [
+                0.35,
+                16.28
+              ],
+              [
+                0.4,
+                19.934
+              ],
+              [
+                0.45,
+                23.333
+              ],
+              [
+                0.5,
+                26.534
+              ],
+              [
+                0.55,
+                29.577
+              ],
+              [
+                0.6,
+                32.491
+              ],
+              [
+                0.65,
+                35.297
+              ],
+              [
+                0.7,
+                38.013
+              ],
+              [
+                0.75,
+                40.653
+              ],
+              [
+                0.8,
+                43.227
+              ],
+              [
+                0.85,
+                45.746
+              ],
+              [
+                0.9,
+                48.217
+              ],
+              [
+                0.95,
+                50.647
+              ],
+              [
+                1,
+                53.043
+              ]
+            ],
+            "origin": [
+              -0.158,
+              0.024,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LINKS.01"
+            ],
+            "prop": "gear/gear[1]/compression-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.05,
+                -5.374
+              ],
+              [
+                0.1,
+                -18.466
+              ],
+              [
+                0.15,
+                -4.218
+              ],
+              [
+                0.2,
+                2.544
+              ],
+              [
+                0.25,
+                7.801
+              ],
+              [
+                0.3,
+                12.284
+              ],
+              [
+                0.35,
+                16.28
+              ],
+              [
+                0.4,
+                19.934
+              ],
+              [
+                0.45,
+                23.333
+              ],
+              [
+                0.5,
+                26.534
+              ],
+              [
+                0.55,
+                29.577
+              ],
+              [
+                0.6,
+                32.491
+              ],
+              [
+                0.65,
+                35.297
+              ],
+              [
+                0.7,
+                38.013
+              ],
+              [
+                0.75,
+                40.653
+              ],
+              [
+                0.8,
+                43.227
+              ],
+              [
+                0.85,
+                45.746
+              ],
+              [
+                0.9,
+                48.217
+              ],
+              [
+                0.95,
+                50.647
+              ],
+              [
+                1,
+                53.043
+              ]
+            ],
+            "origin": [
+              -0.26,
+              0.643,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "OLEO",
+              "ACTUTATOR",
+              "Main Tires",
+              "Compression lower scissor"
+            ],
+            "prop": "gear/gear[1]/compression-norm",
+            "factor": 0.305,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -0.136665,
+              0.990617,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AXLE",
+              "ACTUTATOR",
+              "D_STRUCT.L",
+              "D_STRUCT.U",
+              "FITTING",
+              "OLEO",
+              "LINKS.01",
+              "LINKS.02",
+              "Main Tires"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                80.5
+              ],
+              [
+                0.2,
+                80.5
+              ],
+              [
+                0.8,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -1.1055,
+              2.7436,
+              -0.0075
+            ],
+            "axis": [
+              0.990362,
+              0.136381,
+              0.024167
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "D_STRUCT.L",
+              "D_STRUCT.U"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                45
+              ],
+              [
+                0.2,
+                45
+              ],
+              [
+                0.8,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -0.3569,
+              1.2222,
+              -0.1076
+            ],
+            "axis": [
+              0.699664,
+              0.017328,
+              -0.714262
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "D_STRUCT.U"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                180
+              ],
+              [
+                0.2,
+                180
+              ],
+              [
+                0.8,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -0.884,
+              1.968,
+              -0.836
+            ],
+            "axis": [
+              -0.699493,
+              -0.014989,
+              0.714482
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/LandingGears/res/a320.mlg.tires.ac",
@@ -271,7 +1368,62 @@
           "id": "main-gear",
           "label": "Main gear",
           "system": "gear"
-        }
+        },
+        "parentAnim": [
+          {
+            "type": "translate",
+            "objects": [
+              "@file"
+            ],
+            "prop": "gear/gear[1]/compression-norm",
+            "factor": 0.305,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -0.136665,
+              0.990617,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "@file"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                80.5
+              ],
+              [
+                0.2,
+                80.5
+              ],
+              [
+                0.8,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -1.1055,
+              2.7436,
+              -0.0075
+            ],
+            "axis": [
+              0.990362,
+              0.136381,
+              0.024167
+            ]
+          }
+        ]
       },
       {
         "file": "Models/LandingGears/res/a320.mlg.right.ac",
@@ -284,7 +1436,356 @@
           "id": "main-gear",
           "label": "Main gear",
           "system": "gear"
-        }
+        },
+        "groups": {
+          "Compression lower scissor": [
+            "LINKS.02"
+          ]
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "LINKS.02"
+            ],
+            "prop": "gear/gear[2]/compression-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.05,
+                -5.374
+              ],
+              [
+                0.1,
+                -18.466
+              ],
+              [
+                0.15,
+                -4.218
+              ],
+              [
+                0.2,
+                2.544
+              ],
+              [
+                0.25,
+                7.801
+              ],
+              [
+                0.3,
+                12.284
+              ],
+              [
+                0.35,
+                16.28
+              ],
+              [
+                0.4,
+                19.934
+              ],
+              [
+                0.45,
+                23.333
+              ],
+              [
+                0.5,
+                26.534
+              ],
+              [
+                0.55,
+                29.577
+              ],
+              [
+                0.6,
+                32.491
+              ],
+              [
+                0.65,
+                35.297
+              ],
+              [
+                0.7,
+                38.013
+              ],
+              [
+                0.75,
+                40.653
+              ],
+              [
+                0.8,
+                43.227
+              ],
+              [
+                0.85,
+                45.746
+              ],
+              [
+                0.9,
+                48.217
+              ],
+              [
+                0.95,
+                50.647
+              ],
+              [
+                1,
+                53.043
+              ]
+            ],
+            "origin": [
+              -0.158,
+              0.024,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LINKS.01"
+            ],
+            "prop": "gear/gear[2]/compression-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.05,
+                -5.374
+              ],
+              [
+                0.1,
+                -18.466
+              ],
+              [
+                0.15,
+                -4.218
+              ],
+              [
+                0.2,
+                2.544
+              ],
+              [
+                0.25,
+                7.801
+              ],
+              [
+                0.3,
+                12.284
+              ],
+              [
+                0.35,
+                16.28
+              ],
+              [
+                0.4,
+                19.934
+              ],
+              [
+                0.45,
+                23.333
+              ],
+              [
+                0.5,
+                26.534
+              ],
+              [
+                0.55,
+                29.577
+              ],
+              [
+                0.6,
+                32.491
+              ],
+              [
+                0.65,
+                35.297
+              ],
+              [
+                0.7,
+                38.013
+              ],
+              [
+                0.75,
+                40.653
+              ],
+              [
+                0.8,
+                43.227
+              ],
+              [
+                0.85,
+                45.746
+              ],
+              [
+                0.9,
+                48.217
+              ],
+              [
+                0.95,
+                50.647
+              ],
+              [
+                1,
+                53.043
+              ]
+            ],
+            "origin": [
+              -0.26,
+              0.643,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "OLEO",
+              "ACTUTATOR",
+              "Main Tires",
+              "Compression lower scissor"
+            ],
+            "prop": "gear/gear[2]/compression-norm",
+            "factor": 0.305,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -0.136665,
+              0.990617,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AXLE",
+              "ACTUTATOR",
+              "D_STRUCT.L",
+              "D_STRUCT.U",
+              "FITTING",
+              "OLEO",
+              "LINKS.01",
+              "LINKS.02",
+              "Main Tires"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                80.5
+              ],
+              [
+                0.2,
+                80.5
+              ],
+              [
+                0.8,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -0.2681,
+              2.8589,
+              -0.0129
+            ],
+            "axis": [
+              -0.990362,
+              -0.136381,
+              0.024167
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "D_STRUCT.L",
+              "D_STRUCT.U"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                45
+              ],
+              [
+                0.2,
+                45
+              ],
+              [
+                0.8,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -0.2671,
+              1.2244,
+              0.1993
+            ],
+            "axis": [
+              -0.699664,
+              -0.017328,
+              -0.714262
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "D_STRUCT.U"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                180
+              ],
+              [
+                0.2,
+                180
+              ],
+              [
+                0.8,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -1.024,
+              1.965,
+              0.693
+            ],
+            "axis": [
+              0.699493,
+              0.014989,
+              0.714482
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/LandingGears/res/a320.mlg.tires.ac",
@@ -297,7 +1798,62 @@
           "id": "main-gear",
           "label": "Main gear",
           "system": "gear"
-        }
+        },
+        "parentAnim": [
+          {
+            "type": "translate",
+            "objects": [
+              "@file"
+            ],
+            "prop": "gear/gear[2]/compression-norm",
+            "factor": 0.305,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -0.136665,
+              0.990617,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "@file"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                80.5
+              ],
+              [
+                0.2,
+                80.5
+              ],
+              [
+                0.8,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -0.2681,
+              2.8589,
+              -0.0129
+            ],
+            "axis": [
+              -0.990362,
+              -0.136381,
+              0.024167
+            ]
+          }
+        ]
       },
       {
         "file": "Models/FlightDeck/res/fd_complete.ac",
@@ -1160,6 +2716,50 @@
         "fallback": {
           "id": "cabin",
           "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "../crew/liner_pilot.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -13.82,
+              "y": -0.445,
+              "z": 1.838
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "crew",
+          "label": "Pilots",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "../crew/liner_pilot.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -13.82,
+              "y": 0.455,
+              "z": 1.838
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "crew",
+          "label": "Pilots",
           "system": "interior"
         }
       }

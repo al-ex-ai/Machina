@@ -22,6 +22,16 @@
     "engine_type": "CFM International CFM56-3",
     "seats": "128 to 149"
   },
+  "takeoff": {
+    "vr_kt": 140,
+    "roll_m": 1600,
+    "flaps": 0.2,
+    "pitch_deg": 14,
+    "climb_deg": 8,
+    "gear_s": 8,
+    "jet": true,
+    "note": "Approximate: mid-weight takeoff, flaps 5"
+  },
   "asset": {
     "path": "assets/aircraft/737-300",
     "license": "GPL-3.0",
@@ -29,7 +39,1562 @@
     "source": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/737-300/",
     "files": [
       {
-        "file": "Models/737-300.ac"
+        "file": "Models/737-300.ac",
+        "pose": [
+          {
+            "type": "translate",
+            "objects": [
+              "nlowerstrut",
+              "noseaxle",
+              "tyrern",
+              "tyreln",
+              "Cube"
+            ],
+            "prop": "gear/gear[0]/compression-norm",
+            "value": 0.2,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rhngdoor"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "value": 90,
+            "origin": [
+              -6.194,
+              -1.114,
+              -0.375
+            ],
+            "axis": [
+              0.992475,
+              -0.122159,
+              -0.008444
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "lhngdoor"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "value": -90,
+            "origin": [
+              -6.194,
+              -1.112,
+              0.372
+            ],
+            "axis": [
+              0.99263,
+              -0.120489,
+              0.01295
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "lhmgdouter"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "value": 110,
+            "origin": [
+              7.497,
+              -0.7,
+              2.77
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rhmgdouter"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "value": -110,
+            "origin": [
+              7.497,
+              -0.7,
+              -2.77
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "anim": [
+          {
+            "type": "spin",
+            "objects": [
+              "Blades"
+            ],
+            "prop": "engines/engine[0]/n1",
+            "factor": 51.75,
+            "origin": [
+              2.363,
+              -1.324,
+              4.861
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "Blades.001"
+            ],
+            "prop": "engines/engine[1]/n1",
+            "factor": 51.75,
+            "origin": [
+              2.363,
+              -1.324,
+              -4.925
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "nlowerstrut",
+              "noseaxle",
+              "tyrern",
+              "tyreln",
+              "Cube"
+            ],
+            "prop": "gear/gear[0]/compression-norm",
+            "factor": 0.2,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "mglhlowerstrut",
+              "mglhaxle",
+              "mglhtyrerh",
+              "mglhtyrelh"
+            ],
+            "prop": "gear/gear[1]/compression-norm",
+            "factor": 0.3,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "mgrhlowerstrut",
+              "mgrhaxle",
+              "mgrhtyrerh",
+              "mgrhtyrelh"
+            ],
+            "prop": "gear/gear[2]/compression-norm",
+            "factor": 0.3,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "nouterstrut",
+              "rhsteercyl",
+              "lhsteercyl",
+              "collar",
+              "nlinkupper",
+              "nlinklower",
+              "nlowerstrut",
+              "noseaxle",
+              "tyrern",
+              "tyreln",
+              "Cube",
+              "tlighthalo"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                110
+              ],
+              [
+                0.25,
+                110
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -4.65,
+              -1.02,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rhngdoor"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                90
+              ],
+              [
+                0.75,
+                90
+              ],
+              [
+                1,
+                90
+              ]
+            ],
+            "origin": [
+              -6.194,
+              -1.114,
+              -0.375
+            ],
+            "axis": [
+              0.992475,
+              -0.122159,
+              -0.008444
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "lhngdoor"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -90
+              ],
+              [
+                0.75,
+                -90
+              ],
+              [
+                1,
+                -90
+              ]
+            ],
+            "origin": [
+              -6.194,
+              -1.112,
+              0.372
+            ],
+            "axis": [
+              0.99263,
+              -0.120489,
+              0.01295
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "mgouterstrut",
+              "lhdragstrut",
+              "sidestrutl",
+              "sidestrutu",
+              "mglhlinkupper",
+              "mglhlinklower",
+              "mglhlowerstrut",
+              "mglhaxle",
+              "mglhtyrerh",
+              "mglhtyrelh",
+              "lhgdmid",
+              "geardoor"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                80
+              ],
+              [
+                0.25,
+                55
+              ],
+              [
+                0.75,
+                28
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              6.443,
+              -0.56,
+              2.59
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "sidestrutl",
+              "sidestrutu"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                50
+              ],
+              [
+                0.25,
+                42
+              ],
+              [
+                0.75,
+                35
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -6.303,
+              -1.37,
+              2.57
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "sidestrutu"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                -180
+              ],
+              [
+                0.25,
+                -150
+              ],
+              [
+                0.75,
+                -110
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -6.303,
+              -0.95,
+              2.08
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "lhmgdouter"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "factor": 110,
+            "offset": 0,
+            "origin": [
+              7.497,
+              -0.7,
+              2.77
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rhmgouterstrut",
+              "rhdragstrut",
+              "rhsidestrutl",
+              "rhsidestrutu",
+              "mgrhlinkupper",
+              "mgrhlinklower",
+              "mgrhlowerstrut",
+              "mgrhaxle",
+              "mgrhtyrerh",
+              "mgrhtyrelh",
+              "rhgdmid",
+              "rhgeardoor"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                -80
+              ],
+              [
+                0.25,
+                -55
+              ],
+              [
+                0.75,
+                -28
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              6.443,
+              -0.56,
+              -2.59
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rhsidestrutl",
+              "rhsidestrutu"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                -50
+              ],
+              [
+                0.25,
+                -42
+              ],
+              [
+                0.75,
+                -35
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -6.303,
+              -1.37,
+              -2.57
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rhsidestrutu"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                180
+              ],
+              [
+                0.25,
+                150
+              ],
+              [
+                0.75,
+                110
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -6.303,
+              -0.95,
+              -2.08
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rhmgdouter"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "factor": -110,
+            "offset": 0,
+            "origin": [
+              7.497,
+              -0.7,
+              -2.77
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "tyreln",
+              "tyrern"
+            ],
+            "prop": "velocities/uBody-fps",
+            "factor": 10,
+            "origin": [
+              -4.6504,
+              -2.1221,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "mglhtyrelh",
+              "mglhtyrerh"
+            ],
+            "prop": "velocities/uBody-fps",
+            "factor": 10,
+            "origin": [
+              7.9712,
+              -2.1989,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "mgrhtyrelh",
+              "mgrhtyrerh"
+            ],
+            "prop": "velocities/uBody-fps",
+            "factor": 10,
+            "origin": [
+              7.9712,
+              -2.1989,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "lhelevator",
+              "lhelevatortab"
+            ],
+            "prop": "surface-positions/elevator-pos-norm",
+            "factor": 15,
+            "offset": 0,
+            "origin": [
+              23.74,
+              2.275,
+              5
+            ],
+            "axis": [
+              -0.310936,
+              -0.174254,
+              -0.93432
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "lhelevatortab"
+            ],
+            "prop": "surface-positions/elevator-pos-norm",
+            "factor": -15,
+            "offset": 0,
+            "origin": [
+              23.638,
+              1.893,
+              2.974
+            ],
+            "axis": [
+              -0.253392,
+              -0.163268,
+              -0.953486
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rhelevator",
+              "rhelevatortab"
+            ],
+            "prop": "surface-positions/elevator-pos-norm",
+            "factor": 15,
+            "offset": 0,
+            "origin": [
+              22.3,
+              1.468,
+              -0.673
+            ],
+            "axis": [
+              0.310936,
+              0.174254,
+              -0.93432
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rhelevatortab"
+            ],
+            "prop": "surface-positions/elevator-pos-norm",
+            "factor": -15,
+            "offset": 0,
+            "origin": [
+              23.056,
+              1.518,
+              -0.784
+            ],
+            "axis": [
+              0.253392,
+              0.163268,
+              -0.953486
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rudder"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "factor": 25,
+            "offset": 0,
+            "origin": [
+              21.422,
+              2.23,
+              0
+            ],
+            "axis": [
+              0.371391,
+              0.928477,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "lhmidflapib",
+              "lhforeflapib",
+              "lhaftflapib",
+              "lhexgateib"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 40,
+            "offset": 0,
+            "origin": [
+              8.857,
+              -0.62,
+              1.77
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "lhmidflapib",
+              "lhforeflapib",
+              "lhaftflapib",
+              "lhexgateib"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.05,
+                0.2
+              ]
+            ],
+            "origin": [
+              8.507,
+              -0.85,
+              1.77
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "lhforeflapib"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.01,
+                0
+              ],
+              [
+                0.125,
+                -15
+              ],
+              [
+                1,
+                -15
+              ]
+            ],
+            "origin": [
+              8.677,
+              -0.63,
+              1.77
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "lhforeflapib"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.1,
+                0
+              ],
+              [
+                0.125,
+                -0.03
+              ],
+              [
+                1,
+                -0.03
+              ]
+            ],
+            "origin": [
+              7.657,
+              0,
+              4.94
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "lhaftflapib"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                0
+              ],
+              [
+                0.75,
+                0
+              ],
+              [
+                1,
+                0.1
+              ]
+            ],
+            "origin": [
+              7.657,
+              0,
+              1.77
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "lhexgateib"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": -30,
+            "offset": 0,
+            "origin": [
+              8.817,
+              -0.46,
+              4.53
+            ],
+            "axis": [
+              0.514496,
+              0,
+              -0.857493
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rhmidflapib",
+              "rhforeflapib",
+              "rhaftflapib",
+              "rhexgateib"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 40,
+            "offset": 0,
+            "origin": [
+              8.857,
+              -0.62,
+              -1.77
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "rhmidflapib",
+              "rhforeflapib",
+              "rhaftflapib",
+              "rhexgateib"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                0.2
+              ],
+              [
+                0.75,
+                0.2
+              ],
+              [
+                1,
+                0.2
+              ]
+            ],
+            "origin": [
+              8.507,
+              -0.85,
+              -1.77
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rhforeflapib"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -5
+              ],
+              [
+                0.75,
+                -10
+              ],
+              [
+                1,
+                -15
+              ]
+            ],
+            "origin": [
+              8.677,
+              -0.63,
+              -1.77
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "rhforeflapib"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                0
+              ],
+              [
+                0.75,
+                0
+              ],
+              [
+                1,
+                -0.03
+              ]
+            ],
+            "origin": [
+              7.657,
+              0,
+              -4.94
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "rhaftflapib"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                0
+              ],
+              [
+                0.75,
+                0
+              ],
+              [
+                1,
+                0.1
+              ]
+            ],
+            "origin": [
+              6.657,
+              0,
+              -1.77
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rhexgateib"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": -30,
+            "offset": 0,
+            "origin": [
+              8.817,
+              -0.46,
+              -4.53
+            ],
+            "axis": [
+              -0.514496,
+              0,
+              -0.857493
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "lhmidflapob",
+              "lhforeflapob",
+              "lhaftflapob",
+              "lhexgateob",
+              "lhibflapfairaftob",
+              "lhobflapfairaftob",
+              "loutboardhalo"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 40,
+            "offset": 0,
+            "origin": [
+              8.657,
+              -0.5,
+              4.94
+            ],
+            "axis": [
+              -0.371391,
+              0,
+              -0.928477
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "lhmidflapob",
+              "lhforeflapob",
+              "lhaftflapob",
+              "lhexgateob",
+              "lhibflapfairaftob",
+              "lhobflapfairaftob",
+              "loutboardhalo"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                0.2
+              ],
+              [
+                0.75,
+                0.2
+              ],
+              [
+                1,
+                0.2
+              ]
+            ],
+            "origin": [
+              7.657,
+              0,
+              4.94
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "lhforeflapob"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                0
+              ],
+              [
+                0.75,
+                0
+              ],
+              [
+                1,
+                -0.05
+              ]
+            ],
+            "origin": [
+              7.657,
+              0,
+              4.94
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "lhaftflapob"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                0
+              ],
+              [
+                0.75,
+                0
+              ],
+              [
+                1,
+                0.1
+              ]
+            ],
+            "origin": [
+              7.657,
+              0,
+              4.94
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "lhexgateob"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": -30,
+            "offset": 0,
+            "origin": [
+              8.927,
+              -0.37,
+              4.93
+            ],
+            "axis": [
+              -0.514496,
+              0,
+              -0.857493
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rhmidflapob",
+              "rhforeflapob",
+              "rhaftflapob",
+              "rhexgateob",
+              "rhibflapfairaftob",
+              "rhobflapfairaftob",
+              "routboardhalo"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 40,
+            "offset": 0,
+            "origin": [
+              8.657,
+              -0.5,
+              -4.94
+            ],
+            "axis": [
+              0.371391,
+              0,
+              -0.928477
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "rhmidflapob",
+              "rhforeflapob",
+              "rhaftflapob",
+              "rhexgateob",
+              "rhibflapfairaftob",
+              "rhobflapfairaftob",
+              "routboardhalo"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                0.2
+              ],
+              [
+                0.75,
+                0.2
+              ],
+              [
+                1,
+                0.2
+              ]
+            ],
+            "origin": [
+              7.657,
+              0,
+              -4.94
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "rhforeflapob"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                0
+              ],
+              [
+                0.75,
+                0
+              ],
+              [
+                1,
+                -0.05
+              ]
+            ],
+            "origin": [
+              7.657,
+              0,
+              -4.94
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "rhaftflapob"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                0
+              ],
+              [
+                0.75,
+                0
+              ],
+              [
+                1,
+                0.1
+              ]
+            ],
+            "origin": [
+              7.657,
+              0,
+              -4.94
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rhexgateob"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": -30,
+            "offset": 0,
+            "origin": [
+              8.927,
+              -0.37,
+              -4.93
+            ],
+            "axis": [
+              0.514496,
+              0,
+              -0.857493
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "flap1",
+              "flap2"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.125,
+                110
+              ],
+              [
+                1,
+                110
+              ]
+            ],
+            "origin": [
+              3.587,
+              -0.68,
+              1.77
+            ],
+            "axis": [
+              -0.571548,
+              -0.08165,
+              -0.816497
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "flap3",
+              "flap4"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.125,
+                110
+              ],
+              [
+                1,
+                110
+              ]
+            ],
+            "origin": [
+              3.587,
+              -0.68,
+              -1.77
+            ],
+            "axis": [
+              0.571548,
+              0.08165,
+              -0.816497
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "slat3",
+              "slat2",
+              "slat1"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.125,
+                -10
+              ],
+              [
+                0.375,
+                -10
+              ],
+              [
+                0.5,
+                -20
+              ],
+              [
+                1,
+                -20
+              ]
+            ],
+            "origin": [
+              6.427,
+              -1,
+              5.58
+            ],
+            "axis": [
+              -0.480079,
+              -0.087287,
+              -0.872872
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "slat4",
+              "slat5",
+              "slat6"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.125,
+                -10
+              ],
+              [
+                0.375,
+                -10
+              ],
+              [
+                0.5,
+                -20
+              ],
+              [
+                1,
+                -20
+              ]
+            ],
+            "origin": [
+              6.427,
+              -1,
+              -5.58
+            ],
+            "axis": [
+              0.480079,
+              0.087287,
+              -0.872872
+            ]
+          }
+        ],
+        "poseState": {
+          "gear/gear[0]/compression-norm": 1
+        }
       },
       {
         "file": "Models/Flightdeck/main_panel/main_panel_plate/main_panel_plate.ac",
@@ -8664,6 +10229,50 @@
           "label": "Cockpit and cabin",
           "system": "interior"
         }
+      },
+      {
+        "file": "../crew/liner_pilot.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -6.123,
+              "y": -0.465,
+              "z": 0.765
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "crew",
+          "label": "Pilots",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "../crew/liner_pilot.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -6.123,
+              "y": 0.475,
+              "z": 0.765
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "crew",
+          "label": "Pilots",
+          "system": "interior"
+        }
       }
     ],
     "fallback": {
@@ -8863,7 +10472,8 @@
           "noseaxle",
           "collar",
           "/steercyl/",
-          "/ngdoor/"
+          "/ngdoor/",
+          "/^tyre[lr]n$/"
         ]
       },
       {

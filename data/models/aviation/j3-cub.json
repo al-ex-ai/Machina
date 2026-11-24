@@ -22,6 +22,17 @@
     "engine_type": "Continental A-65, 65 hp",
     "seats": 2
   },
+  "takeoff": {
+    "vr_kt": 40,
+    "roll_m": 140,
+    "flaps": 0,
+    "tailwheel": true,
+    "tail_deg": 10,
+    "pitch_deg": -6,
+    "climb_deg": 5,
+    "rpm": 2150,
+    "note": "Approximate: solo, sea level, tail raised on the roll"
+  },
   "asset": {
     "path": "assets/aircraft/j3cub",
     "license": "GPL-3.0",
@@ -29,7 +40,981 @@
     "source": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/J3Cub/",
     "files": [
       {
-        "file": "Models/J3Cub.ac"
+        "file": "Models/J3Cub.ac",
+        "anim": [
+          {
+            "type": "spin",
+            "objects": [
+              "propeller.group",
+              "propeller_0",
+              "propeller_1",
+              "propeller_slow",
+              "propeller_fast",
+              "propeller_0_p18",
+              "propeller_1_p18",
+              "propeller_slow_p18",
+              "propeller_fast_p18",
+              "propellerD",
+              "propeller_slowD",
+              "propeller_fastD"
+            ],
+            "prop": "engines/engine[0]/rpm",
+            "factor": -1,
+            "origin": [
+              -1.291,
+              -0.5076,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "TGear"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "factor": -45,
+            "origin": [
+              5.166,
+              -0.6226,
+              0.0009
+            ],
+            "axis": [
+              0.172449,
+              -0.984318,
+              0.037137
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RearSkiL",
+              "RearSkiAxleL"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "factor": -45,
+            "origin": [
+              5.1184,
+              -2.3567,
+              0.0009
+            ],
+            "axis": [
+              0.172461,
+              -0.984316,
+              0.03714
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "tail_wheel_strut_top"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "factor": -45,
+            "origin": [
+              4.8493,
+              -0.5096,
+              -0.0015
+            ],
+            "axis": [
+              0.1237,
+              -0.992299,
+              -0.006476
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "tail_spring_left"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "factor": 0.06,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "tail_spring_right"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "factor": -0.06,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "elevator",
+              "elevator_p18"
+            ],
+            "prop": "surface-positions/elevator-pos-norm",
+            "table": [
+              [
+                -1,
+                -29
+              ],
+              [
+                1,
+                34
+              ]
+            ],
+            "origin": [
+              4.892,
+              -0.198,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rudder",
+              "rudder_p18"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "factor": 30,
+            "origin": [
+              4.895,
+              0.29,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "LFrontWheel"
+            ],
+            "prop": "velocities/uBody-fps",
+            "factor": 13,
+            "origin": [
+              -1.5794,
+              -2.4932,
+              1.0092
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "RFrontWheel"
+            ],
+            "prop": "velocities/uBody-fps",
+            "factor": 13,
+            "origin": [
+              -1.5817,
+              -2.4874,
+              -1.0429
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "LRwheel"
+            ],
+            "prop": "velocities/uBody-fps",
+            "factor": 13,
+            "origin": [
+              1.4086,
+              -2.4121,
+              1.0088
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "RRwheel"
+            ],
+            "prop": "velocities/uBody-fps",
+            "factor": 13,
+            "origin": [
+              1.4063,
+              -2.4062,
+              -1.0475
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RHrudder"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "expr": [
+              "product",
+              30,
+              "p",
+              0
+            ],
+            "origin": [
+              3.9277,
+              -1.9217,
+              -1.0464
+            ],
+            "axis": [
+              -0.087018,
+              0.996207,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LHrudder"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "expr": [
+              "product",
+              30,
+              "p",
+              0
+            ],
+            "origin": [
+              3.9264,
+              -1.9193,
+              1.0139
+            ],
+            "axis": [
+              -0.087018,
+              0.996207,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "axle_tri",
+              "nose_wheel_bush_tri",
+              "nose_wheel_strut_tri"
+            ],
+            "prop": "gear/gear[29]/compression-norm",
+            "factor": 0.3,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0.287348,
+              0.957826,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "tyre_l_bush_tri",
+              "wheel_strut_l_tri"
+            ],
+            "prop": "gear/gear[1]/compression-norm",
+            "factor": -5,
+            "origin": [
+              0.6147,
+              -1.1819,
+              0.3375
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "suspension_lower_l_tri",
+              "suspension_coil_l_tri",
+              "suspension_low_2_l_tri"
+            ],
+            "prop": "gear/gear[1]/compression-norm",
+            "factor": -5,
+            "origin": [
+              0.6138,
+              -1.1553,
+              0.3543
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "tyre_r_bush_tri",
+              "wheel_strut_r_tri"
+            ],
+            "prop": "gear/gear[2]/compression-norm",
+            "factor": -5,
+            "origin": [
+              0.6262,
+              -1.1826,
+              -0.3366
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "suspension_lower_r_tri",
+              "suspension_coil_r_tri",
+              "suspension_low_2_r_tri"
+            ],
+            "prop": "gear/gear[2]/compression-norm",
+            "factor": -5,
+            "origin": [
+              0.6504,
+              -1.4219,
+              0.278
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "TGear",
+              "tail_wheel_strut",
+              "tail_spring_left",
+              "tail_spring_right",
+              "aerotowhitch",
+              "aerotowhitchrelease"
+            ],
+            "prop": "gear/gear[0]/compression-norm",
+            "factor": -15,
+            "origin": [
+              4.8316,
+              -0.5192,
+              0.0045
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RearSkiL",
+              "RearSkiAxleL"
+            ],
+            "prop": "gear/gear[28]/compression-norm",
+            "origin": [
+              5.1815,
+              -2.5243,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LGear"
+            ],
+            "prop": "gear/gear[1]/compression-norm",
+            "factor": -5,
+            "origin": [
+              0.3,
+              -1.175,
+              0.36
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RGear"
+            ],
+            "prop": "gear/gear[1]/compression-norm",
+            "factor": -4.8,
+            "origin": [
+              0.3,
+              -1.175,
+              -0.36
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LSki"
+            ],
+            "prop": "gear/gear[23]/compression-norm",
+            "factor": -5,
+            "origin": [
+              0.3,
+              -1.175,
+              0.36
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RSki"
+            ],
+            "prop": "gear/gear[24]/compression-norm",
+            "factor": -4.8,
+            "origin": [
+              0.3,
+              -1.175,
+              -0.36
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "tyre_l",
+              "tyre_l_bush"
+            ],
+            "prop": "velocities/uBody-fps",
+            "expr": [
+              "product",
+              0,
+              "p"
+            ],
+            "origin": [
+              0.03,
+              -1.608,
+              0.907
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "tyre_r",
+              "tyre_r_bush"
+            ],
+            "prop": "velocities/uBody-fps",
+            "expr": [
+              "product",
+              0,
+              "p"
+            ],
+            "origin": [
+              0.03,
+              -1.608,
+              -0.907
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "tail_wheel"
+            ],
+            "prop": "velocities/uBody-fps",
+            "expr": [
+              "product",
+              0,
+              "p"
+            ],
+            "origin": [
+              5.2301,
+              -0.7319,
+              0.0008
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "tail_wheel_bush"
+            ],
+            "prop": "velocities/uBody-fps",
+            "expr": [
+              "product",
+              0,
+              "p"
+            ],
+            "origin": [
+              5.2339,
+              -0.7366,
+              0.0005
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "tyre_l_bush_tri"
+            ],
+            "prop": "velocities/uBody-fps",
+            "expr": [
+              "product",
+              0,
+              "p"
+            ],
+            "origin": [
+              0.6354,
+              -1.6084,
+              0.8773
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "tyre_r_bush_tri"
+            ],
+            "prop": "velocities/uBody-fps",
+            "expr": [
+              "product",
+              0,
+              "p"
+            ],
+            "origin": [
+              0.6386,
+              -1.6084,
+              -0.8665
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "nose_wheel_bush_tri"
+            ],
+            "prop": "velocities/uBody-fps",
+            "factor": 14,
+            "origin": [
+              -0.9993,
+              -1.8045,
+              -0.0109
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "LeftSkiWheel"
+            ],
+            "prop": "velocities/uBody-fps",
+            "factor": 18,
+            "origin": [
+              0.7476,
+              -1.9831,
+              1.0086
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "RightSkiWheel"
+            ],
+            "prop": "velocities/uBody-fps",
+            "factor": 18,
+            "origin": [
+              0.7451,
+              -1.9781,
+              -1.0162
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rudderpedal_l"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "factor": 15,
+            "origin": [
+              -0.563,
+              -1.05,
+              0.256
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rudderpedal_r"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "factor": 15,
+            "origin": [
+              -0.563,
+              -1.05,
+              0.256
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rudderpedal_rear_l"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "factor": 15,
+            "origin": [
+              0.2674,
+              -1.1422,
+              0.2613
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rudderpedal_rear_r"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "factor": 15,
+            "origin": [
+              0.2674,
+              -1.1422,
+              0.2613
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "cabin_rudder_cable_l"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "factor": 0.025,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "cabin_rudder_cable_r"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "factor": 0.025,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "ChockFront",
+              "ChockBack",
+              "WoodChockFront",
+              "WoodChockBack"
+            ],
+            "prop": "gear/gear[0]/compression-norm",
+            "factor": 0.3,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0.287348,
+              0.957826,
+              0
+            ]
+          }
+        ],
+        "poseState": {
+          "surface-positions/elevator-pos-norm": -0.079365
+        },
+        "groups": {
+          "TGear": [
+            "tail_wheel",
+            "tail_wheel_strut_end",
+            "tail_wheel_axle",
+            "tail_wheel_bush",
+            "tail_wheel_strut_end_bush",
+            "tail_wheel_axle_bush"
+          ],
+          "LGear": [
+            "tyre_l",
+            "tyre_l_bush",
+            "axle_l",
+            "wheel_strut_l",
+            "wheel_strut_l_p18",
+            "suspension_lower_l",
+            "suspension_coil_lB",
+            "suspension_low_2_l",
+            "LeftSki",
+            "LeftSkiAxle",
+            "LeftSkiAxleBl",
+            "LeftSkiAxleBr",
+            "LeftSkiBraceL",
+            "LeftSkiBraceR",
+            "LeftSkiWireF",
+            "LeftSkiWireB",
+            "LeftCableConnectF",
+            "LeftCableConnectB",
+            "LeftSkiWheel",
+            "LeftSkiWheelAxle",
+            "tyre_lD",
+            "tyre_l_bushD",
+            "axle_lD",
+            "wheel_strut_lD",
+            "wheel_strut_l_p18D",
+            "suspension_lower_lD",
+            "LeftSkiD",
+            "LeftSkiAxleD",
+            "LeftSkiAxleBlD",
+            "LeftSkiAxleBrD",
+            "LeftSkiBraceLD",
+            "LeftSkiBraceRD",
+            "LeftCableConnectFD",
+            "LeftCableConnectBD",
+            "LeftSkiWheelD",
+            "LeftSkiWheelAxleD",
+            "LeftSkiWireFD",
+            "LeftSkiWireBD"
+          ],
+          "RGear": [
+            "tyre_r",
+            "tyre_r_bush",
+            "axle_r",
+            "wheel_strut_r",
+            "wheel_strut_r_p18",
+            "suspension_lower_r",
+            "suspension_coil_r",
+            "suspension_coil_rB",
+            "suspension_low_2_r",
+            "RightSki",
+            "RightSkiAxle",
+            "RightSkiAxleBl",
+            "RightSkiAxleBr",
+            "RightSkiBraceL",
+            "RightSkiBraceR",
+            "RightSkiWireF",
+            "RightSkiWireB",
+            "RightCableConnectF",
+            "RightCableConnectB",
+            "RightSkiWheel",
+            "RightSkiWheelAxle",
+            "RightSkiSpring",
+            "tyre_rD",
+            "tyre_r_bushD",
+            "axle_rD",
+            "wheel_strut_rD",
+            "wheel_strut_r_p18D",
+            "suspension_lower_rD",
+            "RightSkiD",
+            "RightSkiAxleD",
+            "RightSkiWheelAxleD",
+            "RightSkiAxleBlD",
+            "RightSkiAxleBrD",
+            "RightSkiBraceLD",
+            "RightSkiBraceRD",
+            "RightCableConnectFD",
+            "RightCableConnectBD",
+            "RightSkiWheelD",
+            "RightSkiWireFD",
+            "RightSkiWireBD"
+          ],
+          "LSki": [
+            "axle_l",
+            "wheel_strut_l",
+            "wheel_strut_l_p18",
+            "suspension_lower_l",
+            "suspension_coil_lB",
+            "suspension_low_2_l",
+            "LeftSkiL",
+            "LeftSkiAxleL",
+            "LeftSkiWireFL",
+            "LeftSkiWireBL",
+            "LeftCableConnectFL",
+            "LeftCableConnectBL",
+            "LeftSkiSpringL",
+            "LeftSkiLD",
+            "LeftSkiAxleLD",
+            "LeftSkiWireFLD",
+            "LeftSkiWireBLD",
+            "LeftCableConnectFLD",
+            "LeftCableConnectBLD"
+          ],
+          "RSki": [
+            "axle_r",
+            "wheel_strut_r",
+            "wheel_strut_r_p18",
+            "suspension_lower_r",
+            "suspension_coil_rB",
+            "suspension_low_2_r",
+            "RightSkiL",
+            "RightSkiAxleL",
+            "RightSkiWireFL",
+            "RightSkiWireBL",
+            "RightCableConnectFL",
+            "RightCableConnectBL",
+            "RightSkiSpringL",
+            "RightSkiLD",
+            "RightSkiAxleLD",
+            "RightSkiWireFLD",
+            "RightSkiWireBLD",
+            "RightCableConnectFLD",
+            "RightCableConnectBLD"
+          ]
+        }
+      },
+      {
+        "file": "../crew/general_pilot.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": 0.617,
+              "y": -0.004,
+              "z": -0.776
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "crew",
+          "label": "Pilots",
+          "system": "interior"
+        }
       }
     ],
     "fallback": {

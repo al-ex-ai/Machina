@@ -22,6 +22,15 @@
     "engine_type": "Lycoming IO-360-L2A, 180 hp",
     "seats": 4
   },
+  "takeoff": {
+    "vr_kt": 55,
+    "roll_m": 290,
+    "flaps": 0,
+    "pitch_deg": 8,
+    "climb_deg": 6,
+    "rpm": 2700,
+    "note": "Approximate: POH ground roll at sea level, standard day"
+  },
   "paint": {
     "stripe": "#b3262e"
   },
@@ -472,6 +481,28 @@
         "fallback": {
           "id": "cabin",
           "label": "Cabin interior and panel",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "../crew/general_pilot.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -0.015,
+              "y": -0.204,
+              "z": -0.446
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "crew",
+          "label": "Pilots",
           "system": "interior"
         }
       }

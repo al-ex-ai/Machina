@@ -30,7 +30,8 @@
     "description": "Faster than sound: an airliner and a spy plane.",
     "ids": [
       "concorde",
-      "sr71"
+      "sr71",
+      "tu144d"
     ]
   },
   {
@@ -64,7 +65,9 @@
     "ids": [
       "tu134",
       "il76",
-      "an225"
+      "an225",
+      "tu154b",
+      "tu144d"
     ]
   },
   {
@@ -76,7 +79,8 @@
       "ercoupe",
       "cessna-172s",
       "dr400",
-      "cessna337"
+      "cessna337",
+      "dhc6"
     ]
   },
   {
@@ -95,7 +99,8 @@
     "description": "Airliners from before the jet age: the corrugated trimotor and the triple-tailed Constellation.",
     "ids": [
       "ju52",
-      "l1049h"
+      "l1049h",
+      "dc3"
     ]
   }
 ]

@@ -22,6 +22,15 @@
     "engine_type": "Lycoming O-360, 180 hp",
     "seats": 4
   },
+  "takeoff": {
+    "vr_kt": 55,
+    "roll_m": 300,
+    "flaps": 0,
+    "pitch_deg": 8,
+    "climb_deg": 6,
+    "rpm": 2600,
+    "note": "Approximate: ground roll at sea level"
+  },
   "asset": {
     "path": "assets/aircraft/dr400",
     "license": "GPL-2.0",
@@ -29,7 +38,126 @@
     "source": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/DR400/",
     "files": [
       {
-        "file": "Models/dr400.ac"
+        "file": "Models/dr400.ac",
+        "anim": [
+          {
+            "type": "spin",
+            "objects": [
+              "HeliceComplete"
+            ],
+            "prop": "engines/engine[0]/rpm",
+            "factor": 1,
+            "origin": [
+              -3.274,
+              0.029,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "ProfondeurComplete"
+            ],
+            "prop": "surface-positions/elevator-pos-norm",
+            "table": [
+              [
+                -0.75,
+                -12
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0.75,
+                9.5
+              ]
+            ],
+            "origin": [
+              2.543,
+              0.154,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "direction"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "table": [
+              [
+                -0.75,
+                -25
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0.75,
+                25
+              ]
+            ],
+            "origin": [
+              2.878,
+              -0.193,
+              0
+            ],
+            "axis": [
+              0.164523,
+              0.986373,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LesVolets"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 60,
+            "origin": [
+              -0.211,
+              -0.396,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          }
+        ],
+        "poseState": {},
+        "groups": {
+          "HeliceComplete": [
+            "propdisc",
+            "propblur",
+            "helice",
+            "bol",
+            "vis-bol"
+          ],
+          "ProfondeurComplete": [
+            "profondeur",
+            "trimprof",
+            "vis_profondeur"
+          ],
+          "LesVolets": [
+            "voletG",
+            "voletD"
+          ]
+        }
       },
       {
         "file": "Models/Interior/interior.ac",

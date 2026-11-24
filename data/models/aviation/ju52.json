@@ -22,6 +22,17 @@
     "crew": 3,
     "seats": "17"
   },
+  "takeoff": {
+    "vr_kt": 60,
+    "roll_m": 400,
+    "flaps": 0,
+    "tailwheel": true,
+    "tail_deg": 10,
+    "pitch_deg": -6,
+    "climb_deg": 4,
+    "rpm": 2200,
+    "note": "Approximate: mid-weight takeoff, tail raised on the roll"
+  },
   "sources": [
     {
       "label": "Wikipedia: Junkers Ju 52",
@@ -40,7 +51,277 @@
     },
     "files": [
       {
-        "file": "Models/ju52.ac"
+        "file": "Models/ju52.ac",
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "flap.R"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": -47,
+            "origin": [
+              7.478,
+              -0.734,
+              -6.387
+            ],
+            "axis": [
+              0.091474,
+              -0.125751,
+              0.987836
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "flap.L"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 47,
+            "origin": [
+              7.478,
+              -0.734,
+              6.387
+            ],
+            "axis": [
+              0.091474,
+              -0.125751,
+              -0.987836
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rudder"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "factor": 30,
+            "origin": [
+              17.669,
+              3.182,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "elevator.L"
+            ],
+            "prop": "surface-positions/elevator-pos-norm",
+            "table": [
+              [
+                -1,
+                -30
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                20
+              ]
+            ],
+            "origin": [
+              16.787,
+              0.854,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "elevator.R"
+            ],
+            "prop": "surface-positions/elevator-pos-norm",
+            "table": [
+              [
+                -1,
+                -30
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                20
+              ]
+            ],
+            "origin": [
+              16.787,
+              0.854,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "wheel.R",
+              "rightgear1",
+              "rightgear2",
+              "wheelcover.R"
+            ],
+            "prop": "gear/gear[1]/compression-norm",
+            "table": [
+              [
+                0,
+                2
+              ],
+              [
+                0.5,
+                8
+              ],
+              [
+                1,
+                12
+              ]
+            ],
+            "origin": [
+              4.496,
+              -1.414,
+              -0.837
+            ],
+            "axis": [
+              0.999517,
+              -0.025161,
+              -0.018242
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "wheel.L",
+              "leftgear1",
+              "leftgear2",
+              "wheelcover.L"
+            ],
+            "prop": "gear/gear[0]/compression-norm",
+            "table": [
+              [
+                0,
+                -2
+              ],
+              [
+                0.5,
+                -8
+              ],
+              [
+                1,
+                -12
+              ]
+            ],
+            "origin": [
+              4.496,
+              -1.414,
+              0.837
+            ],
+            "axis": [
+              0.999517,
+              -0.025161,
+              0.018242
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "wheel.R"
+            ],
+            "prop": "velocities/uBody-fps",
+            "factor": 5.5,
+            "origin": [
+              4.611,
+              -2.622,
+              -2.18
+            ],
+            "axis": [
+              0,
+              0.198579,
+              0.980085
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "wheel.L"
+            ],
+            "prop": "velocities/uBody-fps",
+            "factor": -5.5,
+            "origin": [
+              4.611,
+              -2.622,
+              2.18
+            ],
+            "axis": [
+              0,
+              0.198579,
+              -0.980085
+            ]
+          }
+        ],
+        "poseState": {
+          "gear/gear[0]/compression-norm": 0,
+          "gear/gear[1]/compression-norm": 0
+        },
+        "pose": [
+          {
+            "type": "rotate",
+            "objects": [
+              "wheel.R",
+              "rightgear1",
+              "rightgear2",
+              "wheelcover.R"
+            ],
+            "prop": "gear/gear[1]/compression-norm",
+            "value": 2,
+            "origin": [
+              4.496,
+              -1.414,
+              -0.837
+            ],
+            "axis": [
+              0.999517,
+              -0.025161,
+              -0.018242
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "wheel.L",
+              "leftgear1",
+              "leftgear2",
+              "wheelcover.L"
+            ],
+            "prop": "gear/gear[0]/compression-norm",
+            "value": -2,
+            "origin": [
+              4.496,
+              -1.414,
+              0.837
+            ],
+            "axis": [
+              0.999517,
+              -0.025161,
+              0.018242
+            ]
+          }
+        ]
       },
       {
         "file": "Models/interiour.ac",
@@ -730,7 +1011,65 @@
           "id": "propellers",
           "label": "Propellers",
           "system": "propulsion"
-        }
+        },
+        "anim": [
+          {
+            "type": "spin",
+            "objects": [
+              "blade1",
+              "blade2"
+            ],
+            "prop": "engines/engine[0]/rpm",
+            "factor": 0.479,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "slowpdisk"
+            ],
+            "prop": "engines/engine[0]/rpm",
+            "factor": 0.479,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "fastpdisk"
+            ],
+            "prop": "engines/engine[0]/rpm",
+            "factor": 0.01,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/VDM-2.ac",
@@ -752,7 +1091,65 @@
           "id": "propellers",
           "label": "Propellers",
           "system": "propulsion"
-        }
+        },
+        "anim": [
+          {
+            "type": "spin",
+            "objects": [
+              "blade1",
+              "blade2"
+            ],
+            "prop": "engines/engine[1]/rpm",
+            "factor": 0.479,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "slowpdisk"
+            ],
+            "prop": "engines/engine[1]/rpm",
+            "factor": 0.479,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "fastpdisk"
+            ],
+            "prop": "engines/engine[1]/rpm",
+            "factor": 0.01,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/VDM-2.ac",
@@ -774,6 +1171,108 @@
           "id": "propellers",
           "label": "Propellers",
           "system": "propulsion"
+        },
+        "anim": [
+          {
+            "type": "spin",
+            "objects": [
+              "blade1",
+              "blade2"
+            ],
+            "prop": "engines/engine[2]/rpm",
+            "factor": 0.479,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "slowpdisk"
+            ],
+            "prop": "engines/engine[2]/rpm",
+            "factor": 0.479,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "fastpdisk"
+            ],
+            "prop": "engines/engine[2]/rpm",
+            "factor": 0.01,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
+      },
+      {
+        "file": "../crew/general_pilot.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": 2.695,
+              "y": -0.494,
+              "z": 0.354
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "crew",
+          "label": "Pilots",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "../crew/general_pilot.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": 2.695,
+              "y": 0.486,
+              "z": 0.354
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "crew",
+          "label": "Pilots",
+          "system": "interior"
         }
       }
     ],

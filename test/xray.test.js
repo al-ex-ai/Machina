@@ -22,3 +22,19 @@ test('x-ray build merges meshes in the part\'s space', () => {
   assert.equal(r.pos[24], 10); // and sits where its matrix puts it
   assert.equal(r.edges.length / 6, 24);
 });
+
+// MODEL_STANDARD.md rule 18: the x-ray shows people's seats inside every listed model: the package's own
+// seat meshes, or the shared FlightGear seats (assets/aircraft/cabin, assets/aircraft/crew) laid out in it.
+import { readFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { loadCatalog } from '../src/catalog-node.js';
+const ROOT = fileURLToPath(new URL('../', import.meta.url));
+const SEAT = /name "[^"]*(seat|siege|chair|sitz)[^"]*"/i;
+for (const m of loadCatalog().models.filter(m => m.asset && m.listed !== false && ['aviation', 'helicopters'].includes(m.category))) {
+  test(`${m.id}: seats inside`, () => {
+    if (m.asset.noCrew) return; // states why the model carries nobody (the Wright Flyer's prone pilot)
+    const files = [...new Set((m.asset.files ?? [{ file: m.asset.file }]).map(f => f.file))];
+    const has = files.some(f => /(^|\/)(cabin_seat|seat_light)\.ac$/.test(f) || SEAT.test(readFileSync(`${ROOT}${m.asset.path}/${f}`, 'latin1')));
+    assert.ok(has, 'no seat in any of its files');
+  });
+}

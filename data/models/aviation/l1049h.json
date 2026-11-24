@@ -57,6 +57,7 @@
               "LGNDoorFA",
               "LGNDoorFF"
             ],
+            "prop": "gear/gear[0]/position-norm",
             "value": 98,
             "origin": [
               -14.771,
@@ -74,6 +75,7 @@
             "objects": [
               "LightTaxi"
             ],
+            "prop": "gear/gear[0]/position-norm",
             "value": 98,
             "origin": [
               -14.771,
@@ -91,6 +93,7 @@
             "objects": [
               "LGNDoorFF"
             ],
+            "prop": "gear/gear[0]/position-norm",
             "value": -94,
             "origin": [
               -14.524,
@@ -108,6 +111,7 @@
             "objects": [
               "LGNDoorL"
             ],
+            "prop": "gear/gear[0]/position-norm",
             "value": -80,
             "origin": [
               -13.386,
@@ -125,6 +129,7 @@
             "objects": [
               "LGNDoorR"
             ],
+            "prop": "gear/gear[0]/position-norm",
             "value": -80,
             "origin": [
               -13.386,
@@ -142,6 +147,7 @@
             "objects": [
               "LGmainLDoorFL"
             ],
+            "prop": "gear/gear[1]/position-norm",
             "value": -64,
             "origin": [
               -4.118,
@@ -159,6 +165,7 @@
             "objects": [
               "LGmainLDoorAL"
             ],
+            "prop": "gear/gear[1]/position-norm",
             "value": -64,
             "origin": [
               -2.076,
@@ -176,6 +183,7 @@
             "objects": [
               "LGmainLDoorFR"
             ],
+            "prop": "gear/gear[1]/position-norm",
             "value": 64,
             "origin": [
               -4.118,
@@ -193,6 +201,7 @@
             "objects": [
               "LGmainLDoorAR"
             ],
+            "prop": "gear/gear[1]/position-norm",
             "value": 64,
             "origin": [
               -2.076,
@@ -210,6 +219,7 @@
             "objects": [
               "LGmainRDoorFL"
             ],
+            "prop": "gear/gear[2]/position-norm",
             "value": -64,
             "origin": [
               -4.118,
@@ -227,6 +237,7 @@
             "objects": [
               "LGmainRDoorAL"
             ],
+            "prop": "gear/gear[2]/position-norm",
             "value": -64,
             "origin": [
               -2.076,
@@ -244,6 +255,7 @@
             "objects": [
               "LGmainRDoorFR"
             ],
+            "prop": "gear/gear[2]/position-norm",
             "value": 64,
             "origin": [
               -4.118,
@@ -261,6 +273,7 @@
             "objects": [
               "LGmainRDoorAR"
             ],
+            "prop": "gear/gear[2]/position-norm",
             "value": 64,
             "origin": [
               -2.076,
@@ -281,6 +294,7 @@
               "LGmainRimL",
               "LGmainTorqueBarLL"
             ],
+            "prop": "gear/gear[1]/compression-norm",
             "value": 0.097,
             "origin": [
               0,
@@ -298,6 +312,7 @@
             "objects": [
               "LGmainTorqueBarUL"
             ],
+            "prop": "gear/gear[1]/compression-norm",
             "value": 15.937,
             "origin": [
               -1.14,
@@ -315,6 +330,7 @@
             "objects": [
               "LGmainTorqueBarLL"
             ],
+            "prop": "gear/gear[1]/compression-norm",
             "value": 15.937,
             "origin": [
               -1.205,
@@ -335,6 +351,7 @@
               "LGmainRimR",
               "LGmainTorqueBarLR"
             ],
+            "prop": "gear/gear[2]/compression-norm",
             "value": 0.097,
             "origin": [
               0,
@@ -352,6 +369,7 @@
             "objects": [
               "LGmainTorqueBarUR"
             ],
+            "prop": "gear/gear[2]/compression-norm",
             "value": 15.937,
             "origin": [
               -1.14,
@@ -369,6 +387,7 @@
             "objects": [
               "LGmainTorqueBarLR"
             ],
+            "prop": "gear/gear[2]/compression-norm",
             "value": 15.937,
             "origin": [
               -1.205,
@@ -390,6 +409,7 @@
               "LGnoseHubR",
               "LGnoseTorqueBarL"
             ],
+            "prop": "gear/gear[0]/compression-norm",
             "value": 0.432,
             "origin": [
               0,
@@ -407,6 +427,7 @@
             "objects": [
               "LGnoseTorqueBarU"
             ],
+            "prop": "gear/gear[0]/compression-norm",
             "value": 41.112,
             "origin": [
               -15.293,
@@ -424,6 +445,7 @@
             "objects": [
               "LGnoseTorqueBarL"
             ],
+            "prop": "gear/gear[0]/compression-norm",
             "value": 41.112,
             "origin": [
               -15.396,
@@ -1882,7 +1904,75 @@
           "gear/gear[0]/compression-norm": 1,
           "gear/gear[1]/compression-norm": 0.2,
           "gear/gear[2]/compression-norm": 0.2
-        }
+        },
+        "select": [
+          {
+            "objects": [
+              "LGmainUL",
+              "LGmainLL",
+              "LGmainDragStrutL",
+              "LGmainTiresL",
+              "LGmainRimL",
+              "LGmainTorqueBarUL",
+              "LGmainTorqueBarLL"
+            ],
+            "cond": [
+              "and",
+              [
+                "gt",
+                "gear/gear[1]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "LGmainUR",
+              "LGmainLR",
+              "LGmainDragStrutR",
+              "LGmainTiresR",
+              "LGmainRimR",
+              "LGmainTorqueBarUR",
+              "LGmainTorqueBarLR"
+            ],
+            "cond": [
+              "and",
+              [
+                "gt",
+                "gear/gear[2]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "LGnoseU",
+              "LGnoseL",
+              "LGnoseDragStrutU",
+              "LGnoseDragStrutL",
+              "LGnoseTires",
+              "LGnoseHubL",
+              "LGnoseHubR",
+              "LGnoseTorqueBarU",
+              "LGnoseTorqueBarL"
+            ],
+            "cond": [
+              "and",
+              [
+                "or",
+                [
+                  "gt",
+                  "gear/gear[0]/position-norm",
+                  0
+                ],
+                [
+                  "prop",
+                  "systems/seat/gear-well"
+                ]
+              ]
+            ]
+          }
+        ]
       },
       {
         "file": "Models/mesh_props.ac",
@@ -2131,6 +2221,595 @@
           "id": "lights",
           "label": "Lights",
           "system": "lights"
+        }
+      },
+      {
+        "file": "../crew/liner_pilot.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -15.107,
+              "y": -0.445,
+              "z": 0.775
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "crew",
+          "label": "Pilots",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "../crew/liner_pilot.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -15.107,
+              "y": 0.455,
+              "z": 0.775
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "crew",
+          "label": "Pilots",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "../cabin/cabin_seat.ac",
+        "places": [
+          [
+            -11.35,
+            1.17,
+            0.08
+          ],
+          [
+            -11.35,
+            0.71,
+            0.08
+          ],
+          [
+            -11.35,
+            -0.71,
+            0.08
+          ],
+          [
+            -11.35,
+            -1.17,
+            0.08
+          ],
+          [
+            -10.49,
+            1.17,
+            0.047
+          ],
+          [
+            -10.49,
+            0.71,
+            0.047
+          ],
+          [
+            -10.49,
+            -0.25,
+            0.047
+          ],
+          [
+            -10.49,
+            -0.71,
+            0.047
+          ],
+          [
+            -10.49,
+            -1.17,
+            0.047
+          ],
+          [
+            -9.63,
+            1.17,
+            0.02
+          ],
+          [
+            -9.63,
+            0.71,
+            0.02
+          ],
+          [
+            -9.63,
+            -0.25,
+            0.02
+          ],
+          [
+            -9.63,
+            -0.71,
+            0.02
+          ],
+          [
+            -9.63,
+            -1.17,
+            0.02
+          ],
+          [
+            -8.77,
+            1.17,
+            0.008
+          ],
+          [
+            -8.77,
+            0.71,
+            0.008
+          ],
+          [
+            -8.77,
+            -0.25,
+            0.008
+          ],
+          [
+            -8.77,
+            -0.71,
+            0.008
+          ],
+          [
+            -8.77,
+            -1.17,
+            0.008
+          ],
+          [
+            -7.91,
+            1.17,
+            -0.002
+          ],
+          [
+            -7.91,
+            0.71,
+            -0.002
+          ],
+          [
+            -7.91,
+            -0.25,
+            -0.002
+          ],
+          [
+            -7.91,
+            -0.71,
+            -0.002
+          ],
+          [
+            -7.91,
+            -1.17,
+            -0.002
+          ],
+          [
+            -7.05,
+            1.17,
+            -0.011
+          ],
+          [
+            -7.05,
+            0.71,
+            -0.011
+          ],
+          [
+            -7.05,
+            -0.25,
+            -0.011
+          ],
+          [
+            -7.05,
+            -0.71,
+            -0.011
+          ],
+          [
+            -7.05,
+            -1.17,
+            -0.011
+          ],
+          [
+            -6.19,
+            1.17,
+            -0.019
+          ],
+          [
+            -6.19,
+            0.71,
+            -0.019
+          ],
+          [
+            -6.19,
+            -0.25,
+            -0.019
+          ],
+          [
+            -6.19,
+            -0.71,
+            -0.019
+          ],
+          [
+            -6.19,
+            -1.17,
+            -0.019
+          ],
+          [
+            -5.33,
+            1.17,
+            -0.031
+          ],
+          [
+            -5.33,
+            0.71,
+            -0.031
+          ],
+          [
+            -5.33,
+            -0.25,
+            -0.031
+          ],
+          [
+            -5.33,
+            -0.71,
+            -0.031
+          ],
+          [
+            -5.33,
+            -1.17,
+            -0.031
+          ],
+          [
+            -4.47,
+            1.17,
+            -0.042
+          ],
+          [
+            -4.47,
+            0.71,
+            -0.042
+          ],
+          [
+            -4.47,
+            -0.25,
+            -0.042
+          ],
+          [
+            -4.47,
+            -0.71,
+            -0.042
+          ],
+          [
+            -4.47,
+            -1.17,
+            -0.042
+          ],
+          [
+            -3.61,
+            1.17,
+            -0.044
+          ],
+          [
+            -3.61,
+            0.71,
+            -0.044
+          ],
+          [
+            -3.61,
+            -0.25,
+            -0.044
+          ],
+          [
+            -3.61,
+            -0.71,
+            -0.044
+          ],
+          [
+            -3.61,
+            -1.17,
+            -0.044
+          ],
+          [
+            -2.75,
+            1.17,
+            -0.038
+          ],
+          [
+            -2.75,
+            0.71,
+            -0.038
+          ],
+          [
+            -2.75,
+            -0.25,
+            -0.038
+          ],
+          [
+            -2.75,
+            -0.71,
+            -0.038
+          ],
+          [
+            -2.75,
+            -1.17,
+            -0.038
+          ],
+          [
+            -1.89,
+            1.17,
+            -0.035
+          ],
+          [
+            -1.89,
+            0.71,
+            -0.035
+          ],
+          [
+            -1.89,
+            -0.25,
+            -0.035
+          ],
+          [
+            -1.89,
+            -0.71,
+            -0.035
+          ],
+          [
+            -1.89,
+            -1.17,
+            -0.035
+          ],
+          [
+            -1.03,
+            1.17,
+            -0.036
+          ],
+          [
+            -1.03,
+            0.71,
+            -0.036
+          ],
+          [
+            -1.03,
+            -0.25,
+            -0.036
+          ],
+          [
+            -1.03,
+            -0.71,
+            -0.036
+          ],
+          [
+            -1.03,
+            -1.17,
+            -0.036
+          ],
+          [
+            -0.17,
+            1.17,
+            -0.04
+          ],
+          [
+            -0.17,
+            0.71,
+            -0.04
+          ],
+          [
+            -0.17,
+            -0.25,
+            -0.04
+          ],
+          [
+            -0.17,
+            -0.71,
+            -0.04
+          ],
+          [
+            -0.17,
+            -1.17,
+            -0.04
+          ],
+          [
+            0.69,
+            1.17,
+            -0.031
+          ],
+          [
+            0.69,
+            0.71,
+            -0.031
+          ],
+          [
+            0.69,
+            -0.25,
+            -0.031
+          ],
+          [
+            0.69,
+            -0.71,
+            -0.031
+          ],
+          [
+            0.69,
+            -1.17,
+            -0.031
+          ],
+          [
+            1.55,
+            1.17,
+            -0.022
+          ],
+          [
+            1.55,
+            0.71,
+            -0.022
+          ],
+          [
+            1.55,
+            -0.25,
+            -0.022
+          ],
+          [
+            1.55,
+            -0.71,
+            -0.022
+          ],
+          [
+            1.55,
+            -1.17,
+            -0.022
+          ],
+          [
+            2.41,
+            1.17,
+            -0.002
+          ],
+          [
+            2.41,
+            0.71,
+            -0.002
+          ],
+          [
+            2.41,
+            -0.25,
+            -0.002
+          ],
+          [
+            2.41,
+            -0.71,
+            -0.002
+          ],
+          [
+            2.41,
+            -1.17,
+            -0.002
+          ],
+          [
+            3.27,
+            1.17,
+            0.023
+          ],
+          [
+            3.27,
+            0.71,
+            0.023
+          ],
+          [
+            3.27,
+            -0.25,
+            0.023
+          ],
+          [
+            3.27,
+            -0.71,
+            0.023
+          ],
+          [
+            3.27,
+            -1.17,
+            0.023
+          ],
+          [
+            4.13,
+            1.17,
+            0.068
+          ],
+          [
+            4.13,
+            0.71,
+            0.068
+          ],
+          [
+            4.13,
+            -0.25,
+            0.068
+          ],
+          [
+            4.13,
+            -0.71,
+            0.068
+          ],
+          [
+            4.13,
+            -1.17,
+            0.068
+          ],
+          [
+            4.99,
+            1.17,
+            0.136
+          ],
+          [
+            4.99,
+            0.71,
+            0.136
+          ],
+          [
+            4.99,
+            -0.25,
+            0.136
+          ],
+          [
+            4.99,
+            -0.71,
+            0.136
+          ],
+          [
+            4.99,
+            -1.17,
+            0.136
+          ],
+          [
+            5.85,
+            1.17,
+            0.21
+          ],
+          [
+            5.85,
+            0.71,
+            0.21
+          ],
+          [
+            5.85,
+            -0.25,
+            0.21
+          ],
+          [
+            5.85,
+            -0.71,
+            0.21
+          ],
+          [
+            5.85,
+            -1.17,
+            0.21
+          ],
+          [
+            6.71,
+            0.71,
+            0.298
+          ],
+          [
+            6.71,
+            -0.25,
+            0.298
+          ],
+          [
+            6.71,
+            -0.71,
+            0.298
+          ]
+        ],
+        "fallback": {
+          "id": "passenger-seats",
+          "label": "Passenger seats",
+          "system": "interior"
         }
       }
     ],

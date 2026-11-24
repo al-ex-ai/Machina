@@ -22,6 +22,16 @@
     "engine_type": "GE GEnx-1B or Rolls-Royce Trent 1000",
     "seats": "248 (typical two-class)"
   },
+  "takeoff": {
+    "vr_kt": 150,
+    "roll_m": 2000,
+    "flaps": 0.3,
+    "pitch_deg": 13,
+    "climb_deg": 8,
+    "gear_s": 9,
+    "jet": true,
+    "note": "Approximate: mid-weight takeoff"
+  },
   "asset": {
     "path": "assets/aircraft/787-8",
     "license": "GPL-2.0",
@@ -29,7 +39,2236 @@
     "source": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/787-8/",
     "files": [
       {
-        "file": "Models/787-8.ac"
+        "file": "Models/787-8.ac",
+        "pose": [
+          {
+            "type": "rotate",
+            "objects": [
+              "lhnosedoor"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "value": -70,
+            "origin": [
+              -21,
+              -1.35,
+              0.6
+            ],
+            "axis": [
+              0.991656,
+              -0.128915,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "lhlightdoor"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "value": -70,
+            "origin": [
+              -21,
+              -1.35,
+              0.6
+            ],
+            "axis": [
+              0.991656,
+              -0.128915,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rhnosedoor"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "value": -70,
+            "origin": [
+              -21,
+              -1.35,
+              -0.6
+            ],
+            "axis": [
+              -0.991656,
+              0.128915,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rhlightdoor"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "value": -70,
+            "origin": [
+              -21,
+              -1.35,
+              -0.6
+            ],
+            "axis": [
+              -0.991656,
+              0.128915,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rhobdoor"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "value": 80,
+            "origin": [
+              1.5,
+              0.05,
+              -5.7
+            ],
+            "axis": [
+              0.995893,
+              0.090536,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rhfdoor"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "value": -55,
+            "origin": [
+              0.7,
+              -0.42,
+              -3.1
+            ],
+            "axis": [
+              0.997509,
+              0.069826,
+              0.009975
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rhibdoor"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "value": 80,
+            "origin": [
+              1.63,
+              0.1,
+              -5.1
+            ],
+            "axis": [
+              0.995893,
+              0.090536,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "lhobdoor"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "value": -80,
+            "origin": [
+              1.5,
+              0.05,
+              5.7
+            ],
+            "axis": [
+              0.995893,
+              0.090536,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "lhfdoor"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "value": 55,
+            "origin": [
+              0.7,
+              -0.42,
+              3.1
+            ],
+            "axis": [
+              0.997509,
+              0.069826,
+              -0.009975
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "lhibdoor"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "value": -80,
+            "origin": [
+              1.63,
+              0.1,
+              5.1
+            ],
+            "axis": [
+              0.995893,
+              0.090536,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "NGearStrut",
+              "NoseWheel",
+              "choke_nose"
+            ],
+            "prop": "gear/gear[0]/compression-norm",
+            "value": 0.18,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "LeftWheelFront",
+              "LeftWheelBack",
+              "LeftGearCompressor",
+              "LeftGearCompressor1",
+              "LeftGearBaseRod",
+              "choke_left"
+            ],
+            "prop": "gear/gear[1]/compression-norm",
+            "value": 0.18,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LeftGearCompressor1"
+            ],
+            "prop": "gear/gear[1]/compression-norm",
+            "value": 4.5,
+            "origin": [
+              2.1374,
+              -3.4862,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LeftGearCompressor2"
+            ],
+            "prop": "gear/gear[1]/compression-norm",
+            "value": -4.5,
+            "origin": [
+              2.1374,
+              -3.4862,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "RightWheelFront",
+              "RightWheelBack",
+              "RightGearCompressor",
+              "RightGearCompressor1",
+              "RightGearBaseRod",
+              "choke_right"
+            ],
+            "prop": "gear/gear[2]/compression-norm",
+            "value": 0.18,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RightGearCompressor1"
+            ],
+            "prop": "gear/gear[2]/compression-norm",
+            "value": 4.5,
+            "origin": [
+              1.9458,
+              -1.9157,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RightGearCompressor2"
+            ],
+            "prop": "gear/gear[2]/compression-norm",
+            "value": -4.5,
+            "origin": [
+              1.9458,
+              -1.9157,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LeftGearBaseRod",
+              "LeftWheelFront",
+              "LeftWheelBack"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "value": 20,
+            "origin": [
+              2.1374,
+              -3.4862,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LeftGearBaseRod",
+              "LeftWheelFront",
+              "LeftWheelBack"
+            ],
+            "prop": "gear/gear[1]/compression-norm",
+            "value": 20,
+            "origin": [
+              2.1374,
+              -3.4862,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RightGearBaseRod",
+              "RightWheelFront",
+              "RightWheelBack"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "value": 20,
+            "origin": [
+              2.1374,
+              -3.4862,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RightGearBaseRod",
+              "RightWheelFront",
+              "RightWheelBack"
+            ],
+            "prop": "gear/gear[2]/compression-norm",
+            "value": 20,
+            "origin": [
+              2.1374,
+              -3.4862,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          }
+        ],
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "lhnosedoor"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.1,
+                0
+              ],
+              [
+                0.25,
+                -80
+              ],
+              [
+                0.75,
+                -80
+              ],
+              [
+                0.9,
+                -70
+              ],
+              [
+                1,
+                -70
+              ]
+            ],
+            "origin": [
+              -21,
+              -1.35,
+              0.6
+            ],
+            "axis": [
+              0.991656,
+              -0.128915,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "lhlightdoor"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.1,
+                0
+              ],
+              [
+                0.25,
+                -80
+              ],
+              [
+                0.75,
+                -80
+              ],
+              [
+                0.9,
+                -70
+              ],
+              [
+                1,
+                -70
+              ]
+            ],
+            "origin": [
+              -21,
+              -1.35,
+              0.6
+            ],
+            "axis": [
+              0.991656,
+              -0.128915,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rhnosedoor"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.1,
+                0
+              ],
+              [
+                0.25,
+                -80
+              ],
+              [
+                0.75,
+                -80
+              ],
+              [
+                0.9,
+                -70
+              ],
+              [
+                1,
+                -70
+              ]
+            ],
+            "origin": [
+              -21,
+              -1.35,
+              -0.6
+            ],
+            "axis": [
+              -0.991656,
+              0.128915,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rhlightdoor"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.1,
+                0
+              ],
+              [
+                0.25,
+                -80
+              ],
+              [
+                0.75,
+                -80
+              ],
+              [
+                0.9,
+                -70
+              ],
+              [
+                1,
+                -70
+              ]
+            ],
+            "origin": [
+              -21,
+              -1.35,
+              -0.6
+            ],
+            "axis": [
+              -0.991656,
+              0.128915,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "lhfnosedoor"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.1,
+                -80
+              ],
+              [
+                0.9,
+                -80
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -22.5,
+              -1.07,
+              0.85
+            ],
+            "axis": [
+              0.980581,
+              -0.196116,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "lhlighteddoor"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.1,
+                -80
+              ],
+              [
+                0.9,
+                -80
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -22.5,
+              -1.07,
+              0.8
+            ],
+            "axis": [
+              0.980581,
+              -0.196116,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rhfnosedoor"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.1,
+                -80
+              ],
+              [
+                0.9,
+                -80
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -22.5,
+              -1.07,
+              -0.85
+            ],
+            "axis": [
+              -0.980581,
+              0.196116,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rhlighteddoor"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.1,
+                -80
+              ],
+              [
+                0.9,
+                -80
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -22.5,
+              -1.07,
+              -0.8
+            ],
+            "axis": [
+              -0.980581,
+              0.196116,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rhobdoor"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.1,
+                0
+              ],
+              [
+                0.9,
+                80
+              ],
+              [
+                1,
+                80
+              ]
+            ],
+            "origin": [
+              1.5,
+              0.05,
+              -5.7
+            ],
+            "axis": [
+              0.995893,
+              0.090536,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rhfdoor"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.1,
+                0
+              ],
+              [
+                0.7,
+                -15
+              ],
+              [
+                0.9,
+                -55
+              ],
+              [
+                1,
+                -55
+              ]
+            ],
+            "origin": [
+              0.7,
+              -0.42,
+              -3.1
+            ],
+            "axis": [
+              0.997509,
+              0.069826,
+              0.009975
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rhibdoor"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.1,
+                0
+              ],
+              [
+                0.9,
+                80
+              ],
+              [
+                1,
+                80
+              ]
+            ],
+            "origin": [
+              1.63,
+              0.1,
+              -5.1
+            ],
+            "axis": [
+              0.995893,
+              0.090536,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rhgearibdoor"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.1,
+                -90
+              ],
+              [
+                0.9,
+                -90
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              2,
+              -1.25,
+              -0.8
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "eng1fan",
+              "eng1fanb"
+            ],
+            "prop": "engines/engine[0]/n1",
+            "factor": 10,
+            "origin": [
+              -6.63,
+              -0.83,
+              9.72
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "eng2fan",
+              "eng2fanb"
+            ],
+            "prop": "engines/engine[1]/n1",
+            "factor": 10,
+            "origin": [
+              -6.63,
+              -0.83,
+              -9.72
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "R.Wheels.B"
+            ],
+            "prop": "velocities/uBody-fps",
+            "factor": 10,
+            "origin": [
+              2.673,
+              -3.595,
+              -4.88
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Lgear"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                80
+              ],
+              [
+                0.1,
+                80
+              ],
+              [
+                0.9,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              1.63,
+              0.3,
+              4.9
+            ],
+            "axis": [
+              0.995893,
+              0.090536,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "lhobdoor"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.1,
+                0
+              ],
+              [
+                0.9,
+                -80
+              ],
+              [
+                1,
+                -80
+              ]
+            ],
+            "origin": [
+              1.5,
+              0.05,
+              5.7
+            ],
+            "axis": [
+              0.995893,
+              0.090536,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "lhfdoor"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.1,
+                0
+              ],
+              [
+                0.7,
+                15
+              ],
+              [
+                0.9,
+                55
+              ],
+              [
+                1,
+                55
+              ]
+            ],
+            "origin": [
+              0.7,
+              -0.42,
+              3.1
+            ],
+            "axis": [
+              0.997509,
+              0.069826,
+              -0.009975
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "lhibdoor"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.1,
+                0
+              ],
+              [
+                0.9,
+                -80
+              ],
+              [
+                1,
+                -80
+              ]
+            ],
+            "origin": [
+              1.63,
+              0.1,
+              5.1
+            ],
+            "axis": [
+              0.995893,
+              0.090536,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "lhgearibdoor"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.1,
+                90
+              ],
+              [
+                0.9,
+                90
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              2,
+              -1.25,
+              0.8
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "lhibaileron"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.033,
+                0
+              ],
+              [
+                1,
+                43
+              ]
+            ],
+            "origin": [
+              3.8,
+              1.075,
+              11.215
+            ],
+            "axis": [
+              -0.301681,
+              -0.1676,
+              -0.938562
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rhibaileron"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.033,
+                0
+              ],
+              [
+                1,
+                43
+              ]
+            ],
+            "origin": [
+              3.8,
+              1.075,
+              -11.215
+            ],
+            "axis": [
+              0.301681,
+              0.1676,
+              -0.938562
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "lhobslata",
+              "lhobslat_a",
+              "lhobslatb",
+              "lhobslat_b",
+              "lhlightedslata"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                -20
+              ]
+            ],
+            "origin": [
+              3.8,
+              1.9,
+              18.25
+            ],
+            "axis": [
+              -0.561591,
+              -0.095881,
+              -0.821841
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "lhobslatc",
+              "lhobslat_c"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                -20
+              ]
+            ],
+            "origin": [
+              8.13,
+              2.4,
+              24.5
+            ],
+            "axis": [
+              -0.578237,
+              -0.121026,
+              -0.806842
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "lhibslat",
+              "lhibslat_",
+              "lhlightedslat"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                -16
+              ]
+            ],
+            "origin": [
+              -5.39,
+              -1.065,
+              3.32
+            ],
+            "axis": [
+              -0.48493,
+              -0.206913,
+              -0.849723
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rhobslata",
+              "rhobslat_a",
+              "rhlightedslata",
+              "rhobslatb",
+              "rhobslat_b"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                -20
+              ]
+            ],
+            "origin": [
+              3.8,
+              1.6,
+              -18.25
+            ],
+            "axis": [
+              0.561591,
+              0.095881,
+              -0.821841
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rhobslatc",
+              "rhobslat_c"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                -20
+              ]
+            ],
+            "origin": [
+              8.13,
+              2.4,
+              -24.5
+            ],
+            "axis": [
+              0.578237,
+              0.121026,
+              -0.806842
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rhibslat",
+              "rhibslat_",
+              "rhlightedslat"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                -16
+              ]
+            ],
+            "origin": [
+              -5.39,
+              -1.065,
+              -3.32
+            ],
+            "axis": [
+              0.48493,
+              0.206913,
+              -0.849723
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "lhkflap"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.033,
+                90
+              ],
+              [
+                1,
+                90
+              ]
+            ],
+            "origin": [
+              -2.9,
+              1.02,
+              9.02
+            ],
+            "axis": [
+              -0.55509,
+              -0.105017,
+              -0.825134
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "lhobaileron"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.033,
+                0
+              ],
+              [
+                0.666,
+                3
+              ],
+              [
+                1,
+                3
+              ]
+            ],
+            "origin": [
+              9.1,
+              2.75,
+              22.95
+            ],
+            "axis": [
+              -0.445435,
+              -0.089087,
+              -0.890871
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "lhobflapa",
+              "lhobflapb",
+              "lhobfairing",
+              "lhmfairing"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.033,
+                0
+              ],
+              [
+                1,
+                43
+              ]
+            ],
+            "origin": [
+              5.07,
+              1.4,
+              14.5
+            ],
+            "axis": [
+              -0.423064,
+              -0.116546,
+              -0.898573
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "lhibflap",
+              "lhibflapa",
+              "lhibfairing"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.033,
+                0
+              ],
+              [
+                1,
+                43
+              ]
+            ],
+            "origin": [
+              3.21,
+              0.45,
+              8.7
+            ],
+            "axis": [
+              -0.047721,
+              -0.198836,
+              -0.97887
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rhkflap"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.033,
+                90
+              ],
+              [
+                1,
+                90
+              ]
+            ],
+            "origin": [
+              -2.9,
+              1.02,
+              -9.02
+            ],
+            "axis": [
+              0.55509,
+              0.105017,
+              -0.825134
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rhobflapa",
+              "rhobflapb",
+              "rhobfairing",
+              "rhmfairing"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.033,
+                0
+              ],
+              [
+                1,
+                43
+              ]
+            ],
+            "origin": [
+              5.07,
+              1.4,
+              -14.51
+            ],
+            "axis": [
+              0.423064,
+              0.116546,
+              -0.898573
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rhibflap",
+              "rhibflapa",
+              "rhibfairing"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.033,
+                0
+              ],
+              [
+                1,
+                43
+              ]
+            ],
+            "origin": [
+              3.21,
+              0.45,
+              -8.7
+            ],
+            "axis": [
+              0.047721,
+              0.198836,
+              -0.97887
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "NoseGear"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                100
+              ],
+              [
+                0.2,
+                100
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -20.48,
+              -1.063,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "NGearStrut",
+              "NoseWheel",
+              "choke_nose"
+            ],
+            "prop": "gear/gear[0]/compression-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.32,
+                0.25
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LeftGear"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                76
+              ],
+              [
+                0.2,
+                76
+              ],
+              [
+                0.8,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              0,
+              0.287,
+              4.8453
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "leftgear.hyd1",
+              "leftgear.hyd2"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                50
+              ],
+              [
+                0.2,
+                50
+              ],
+              [
+                0.8,
+                45
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              0,
+              -1.5313,
+              4.615
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "leftgear.hyd2"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                -170
+              ],
+              [
+                0.2,
+                -170
+              ],
+              [
+                0.8,
+                -60
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              0,
+              -0.7493,
+              3.7611
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "LeftWheelFront",
+              "LeftWheelBack",
+              "LeftGearCompressor",
+              "LeftGearCompressor1",
+              "LeftGearBaseRod",
+              "choke_left"
+            ],
+            "prop": "gear/gear[1]/compression-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1.2
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LeftGearCompressor1"
+            ],
+            "prop": "gear/gear[1]/compression-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.5,
+                15
+              ]
+            ],
+            "origin": [
+              2.1374,
+              -3.4862,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LeftGearCompressor2"
+            ],
+            "prop": "gear/gear[1]/compression-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.5,
+                -15
+              ]
+            ],
+            "origin": [
+              2.1374,
+              -3.4862,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RightGear"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                76
+              ],
+              [
+                0.2,
+                76
+              ],
+              [
+                0.8,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              0,
+              0.287,
+              -4.8453
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rightgear.hyd1",
+              "rightgear.hyd2"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                -50
+              ],
+              [
+                0.2,
+                -50
+              ],
+              [
+                0.8,
+                -45
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              0,
+              -1.5313,
+              -4.615
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rightgear.hyd2"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                170
+              ],
+              [
+                0.2,
+                170
+              ],
+              [
+                0.8,
+                60
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              0,
+              -0.7493,
+              -3.7611
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "RightWheelFront",
+              "RightWheelBack",
+              "RightGearCompressor",
+              "RightGearCompressor1",
+              "RightGearBaseRod",
+              "choke_right"
+            ],
+            "prop": "gear/gear[2]/compression-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1.2
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RightGearCompressor1"
+            ],
+            "prop": "gear/gear[2]/compression-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.5,
+                15
+              ]
+            ],
+            "origin": [
+              1.9458,
+              -1.9157,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RightGearCompressor2"
+            ],
+            "prop": "gear/gear[2]/compression-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.5,
+                -15
+              ]
+            ],
+            "origin": [
+              1.9458,
+              -1.9157,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LeftGearBaseRod",
+              "LeftWheelFront",
+              "LeftWheelBack"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                20
+              ]
+            ],
+            "origin": [
+              2.1374,
+              -3.4862,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LeftGearBaseRod",
+              "LeftWheelFront",
+              "LeftWheelBack"
+            ],
+            "prop": "gear/gear[1]/compression-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.15,
+                20
+              ]
+            ],
+            "origin": [
+              2.1374,
+              -3.4862,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RightGearBaseRod",
+              "RightWheelFront",
+              "RightWheelBack"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                20
+              ]
+            ],
+            "origin": [
+              2.1374,
+              -3.4862,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RightGearBaseRod",
+              "RightWheelFront",
+              "RightWheelBack"
+            ],
+            "prop": "gear/gear[2]/compression-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.15,
+                20
+              ]
+            ],
+            "origin": [
+              2.1374,
+              -3.4862,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "NoseWheel"
+            ],
+            "prop": "velocities/uBody-fps",
+            "factor": 10,
+            "origin": [
+              -20.7626,
+              -3.2644,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "LeftWheelFront",
+              "RightWheelFront"
+            ],
+            "prop": "velocities/uBody-fps",
+            "factor": 10,
+            "origin": [
+              1.3615,
+              -3.4953,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "LeftWheelBack",
+              "RightWheelBack"
+            ],
+            "prop": "velocities/uBody-fps",
+            "factor": 10,
+            "origin": [
+              2.8982,
+              -3.4953,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          }
+        ],
+        "poseState": {
+          "gear/gear[0]/compression-norm": 0.23,
+          "gear/gear[1]/compression-norm": 0.15,
+          "gear/gear[2]/compression-norm": 0.15
+        },
+        "select": [
+          {
+            "objects": [
+              "mgearbay",
+              "Rgear",
+              "Rstrut",
+              "Rknuckle",
+              "rhgearltorque",
+              "rhgearutorque",
+              "rgearustrut",
+              "rgearlstrut",
+              "R.Wheels.F",
+              "R.Wheels.B"
+            ],
+            "cond": [
+              "and",
+              [
+                "gt",
+                "gear/gear[2]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "Lgear",
+              "Lstrut",
+              "Lknuckle",
+              "lhgearltorque",
+              "lhgearutorque",
+              "lgearustrut",
+              "lgearlstrut",
+              "Laxle",
+              "L.Wheels.F",
+              "L.Wheels.B"
+            ],
+            "cond": [
+              "and",
+              [
+                "gt",
+                "gear/gear[1]/position-norm",
+                0
+              ]
+            ]
+          }
+        ]
       },
       {
         "file": "Models/FlightDeck/OHpanel.ac",
@@ -1492,6 +3731,1945 @@
         "fallback": {
           "id": "cabin",
           "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "../crew/liner_pilot.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -22.809,
+              "y": -0.598,
+              "z": 1.777
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "crew",
+          "label": "Pilots",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "../crew/liner_pilot.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -22.809,
+              "y": 0.608,
+              "z": 1.777
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "crew",
+          "label": "Pilots",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "../cabin/cabin_seat.ac",
+        "places": [
+          [
+            -19.433,
+            1.871,
+            0.135
+          ],
+          [
+            -19.433,
+            1.411,
+            0.135
+          ],
+          [
+            -19.433,
+            0.451,
+            0.135
+          ],
+          [
+            -19.433,
+            -0.009,
+            0.135
+          ],
+          [
+            -19.433,
+            -0.469,
+            0.135
+          ],
+          [
+            -19.433,
+            -1.429,
+            0.135
+          ],
+          [
+            -19.433,
+            -1.889,
+            0.135
+          ],
+          [
+            -18.573,
+            2.331,
+            0.133
+          ],
+          [
+            -18.573,
+            1.871,
+            0.133
+          ],
+          [
+            -18.573,
+            1.411,
+            0.133
+          ],
+          [
+            -18.573,
+            0.451,
+            0.133
+          ],
+          [
+            -18.573,
+            -0.009,
+            0.133
+          ],
+          [
+            -18.573,
+            -0.469,
+            0.133
+          ],
+          [
+            -18.573,
+            -1.429,
+            0.133
+          ],
+          [
+            -18.573,
+            -1.889,
+            0.133
+          ],
+          [
+            -18.573,
+            -2.349,
+            0.133
+          ],
+          [
+            -17.713,
+            2.331,
+            0.14
+          ],
+          [
+            -17.713,
+            1.871,
+            0.14
+          ],
+          [
+            -17.713,
+            1.411,
+            0.14
+          ],
+          [
+            -17.713,
+            0.451,
+            0.14
+          ],
+          [
+            -17.713,
+            -0.009,
+            0.14
+          ],
+          [
+            -17.713,
+            -0.469,
+            0.14
+          ],
+          [
+            -17.713,
+            -1.429,
+            0.14
+          ],
+          [
+            -17.713,
+            -1.889,
+            0.14
+          ],
+          [
+            -17.713,
+            -2.349,
+            0.14
+          ],
+          [
+            -16.853,
+            2.331,
+            0.154
+          ],
+          [
+            -16.853,
+            1.871,
+            0.154
+          ],
+          [
+            -16.853,
+            1.411,
+            0.154
+          ],
+          [
+            -16.853,
+            0.451,
+            0.154
+          ],
+          [
+            -16.853,
+            -0.009,
+            0.154
+          ],
+          [
+            -16.853,
+            -0.469,
+            0.154
+          ],
+          [
+            -16.853,
+            -1.429,
+            0.154
+          ],
+          [
+            -16.853,
+            -1.889,
+            0.154
+          ],
+          [
+            -16.853,
+            -2.349,
+            0.154
+          ],
+          [
+            -15.993,
+            2.331,
+            0.168
+          ],
+          [
+            -15.993,
+            1.871,
+            0.168
+          ],
+          [
+            -15.993,
+            1.411,
+            0.168
+          ],
+          [
+            -15.993,
+            0.451,
+            0.168
+          ],
+          [
+            -15.993,
+            -0.009,
+            0.168
+          ],
+          [
+            -15.993,
+            -0.469,
+            0.168
+          ],
+          [
+            -15.993,
+            -1.429,
+            0.168
+          ],
+          [
+            -15.993,
+            -1.889,
+            0.168
+          ],
+          [
+            -15.993,
+            -2.349,
+            0.168
+          ],
+          [
+            -15.133,
+            2.331,
+            0.181
+          ],
+          [
+            -15.133,
+            1.871,
+            0.181
+          ],
+          [
+            -15.133,
+            1.411,
+            0.181
+          ],
+          [
+            -15.133,
+            0.451,
+            0.181
+          ],
+          [
+            -15.133,
+            -0.009,
+            0.181
+          ],
+          [
+            -15.133,
+            -0.469,
+            0.181
+          ],
+          [
+            -15.133,
+            -1.429,
+            0.181
+          ],
+          [
+            -15.133,
+            -1.889,
+            0.181
+          ],
+          [
+            -15.133,
+            -2.349,
+            0.181
+          ],
+          [
+            -14.273,
+            2.331,
+            0.195
+          ],
+          [
+            -14.273,
+            1.871,
+            0.195
+          ],
+          [
+            -14.273,
+            1.411,
+            0.195
+          ],
+          [
+            -14.273,
+            0.451,
+            0.195
+          ],
+          [
+            -14.273,
+            -0.009,
+            0.195
+          ],
+          [
+            -14.273,
+            -0.469,
+            0.195
+          ],
+          [
+            -14.273,
+            -1.429,
+            0.195
+          ],
+          [
+            -14.273,
+            -1.889,
+            0.195
+          ],
+          [
+            -14.273,
+            -2.349,
+            0.195
+          ],
+          [
+            -13.413,
+            2.331,
+            0.209
+          ],
+          [
+            -13.413,
+            1.871,
+            0.209
+          ],
+          [
+            -13.413,
+            1.411,
+            0.209
+          ],
+          [
+            -13.413,
+            0.451,
+            0.209
+          ],
+          [
+            -13.413,
+            -0.009,
+            0.209
+          ],
+          [
+            -13.413,
+            -0.469,
+            0.209
+          ],
+          [
+            -13.413,
+            -1.429,
+            0.209
+          ],
+          [
+            -13.413,
+            -1.889,
+            0.209
+          ],
+          [
+            -13.413,
+            -2.349,
+            0.209
+          ],
+          [
+            -12.553,
+            2.331,
+            0.223
+          ],
+          [
+            -12.553,
+            1.871,
+            0.223
+          ],
+          [
+            -12.553,
+            1.411,
+            0.223
+          ],
+          [
+            -12.553,
+            0.451,
+            0.223
+          ],
+          [
+            -12.553,
+            -0.009,
+            0.223
+          ],
+          [
+            -12.553,
+            -0.469,
+            0.223
+          ],
+          [
+            -12.553,
+            -1.429,
+            0.223
+          ],
+          [
+            -12.553,
+            -1.889,
+            0.223
+          ],
+          [
+            -12.553,
+            -2.349,
+            0.223
+          ],
+          [
+            -11.693,
+            2.331,
+            0.237
+          ],
+          [
+            -11.693,
+            1.871,
+            0.237
+          ],
+          [
+            -11.693,
+            1.411,
+            0.237
+          ],
+          [
+            -11.693,
+            0.451,
+            0.237
+          ],
+          [
+            -11.693,
+            -0.009,
+            0.237
+          ],
+          [
+            -11.693,
+            -0.469,
+            0.237
+          ],
+          [
+            -11.693,
+            -1.429,
+            0.237
+          ],
+          [
+            -11.693,
+            -1.889,
+            0.237
+          ],
+          [
+            -11.693,
+            -2.349,
+            0.237
+          ],
+          [
+            -10.833,
+            2.331,
+            0.251
+          ],
+          [
+            -10.833,
+            1.871,
+            0.251
+          ],
+          [
+            -10.833,
+            1.411,
+            0.251
+          ],
+          [
+            -10.833,
+            0.451,
+            0.251
+          ],
+          [
+            -10.833,
+            -0.009,
+            0.251
+          ],
+          [
+            -10.833,
+            -0.469,
+            0.251
+          ],
+          [
+            -10.833,
+            -1.429,
+            0.251
+          ],
+          [
+            -10.833,
+            -1.889,
+            0.251
+          ],
+          [
+            -10.833,
+            -2.349,
+            0.251
+          ],
+          [
+            -9.973,
+            2.331,
+            0.265
+          ],
+          [
+            -9.973,
+            1.871,
+            0.265
+          ],
+          [
+            -9.973,
+            1.411,
+            0.265
+          ],
+          [
+            -9.973,
+            0.451,
+            0.265
+          ],
+          [
+            -9.973,
+            -0.009,
+            0.265
+          ],
+          [
+            -9.973,
+            -0.469,
+            0.265
+          ],
+          [
+            -9.973,
+            -1.429,
+            0.265
+          ],
+          [
+            -9.973,
+            -1.889,
+            0.265
+          ],
+          [
+            -9.973,
+            -2.349,
+            0.265
+          ],
+          [
+            -9.113,
+            2.331,
+            0.278
+          ],
+          [
+            -9.113,
+            1.871,
+            0.278
+          ],
+          [
+            -9.113,
+            1.411,
+            0.278
+          ],
+          [
+            -9.113,
+            0.451,
+            0.278
+          ],
+          [
+            -9.113,
+            -0.009,
+            0.278
+          ],
+          [
+            -9.113,
+            -0.469,
+            0.278
+          ],
+          [
+            -9.113,
+            -1.429,
+            0.278
+          ],
+          [
+            -9.113,
+            -1.889,
+            0.278
+          ],
+          [
+            -9.113,
+            -2.349,
+            0.278
+          ],
+          [
+            -8.253,
+            2.331,
+            0.248
+          ],
+          [
+            -8.253,
+            1.871,
+            0.248
+          ],
+          [
+            -8.253,
+            1.411,
+            0.248
+          ],
+          [
+            -8.253,
+            0.451,
+            0.248
+          ],
+          [
+            -8.253,
+            -0.009,
+            0.248
+          ],
+          [
+            -8.253,
+            -0.469,
+            0.248
+          ],
+          [
+            -8.253,
+            -1.429,
+            0.248
+          ],
+          [
+            -8.253,
+            -1.889,
+            0.248
+          ],
+          [
+            -8.253,
+            -2.349,
+            0.248
+          ],
+          [
+            -7.393,
+            2.331,
+            0.171
+          ],
+          [
+            -7.393,
+            1.871,
+            0.171
+          ],
+          [
+            -7.393,
+            1.411,
+            0.171
+          ],
+          [
+            -7.393,
+            0.451,
+            0.171
+          ],
+          [
+            -7.393,
+            -0.009,
+            0.171
+          ],
+          [
+            -7.393,
+            -0.469,
+            0.171
+          ],
+          [
+            -7.393,
+            -1.429,
+            0.171
+          ],
+          [
+            -7.393,
+            -1.889,
+            0.171
+          ],
+          [
+            -7.393,
+            -2.349,
+            0.171
+          ],
+          [
+            -6.533,
+            2.331,
+            0.181
+          ],
+          [
+            -6.533,
+            1.871,
+            0.181
+          ],
+          [
+            -6.533,
+            1.411,
+            0.181
+          ],
+          [
+            -6.533,
+            0.451,
+            0.181
+          ],
+          [
+            -6.533,
+            -0.009,
+            0.181
+          ],
+          [
+            -6.533,
+            -0.469,
+            0.181
+          ],
+          [
+            -6.533,
+            -1.429,
+            0.181
+          ],
+          [
+            -6.533,
+            -1.889,
+            0.181
+          ],
+          [
+            -6.533,
+            -2.349,
+            0.181
+          ],
+          [
+            -5.673,
+            2.331,
+            0.191
+          ],
+          [
+            -5.673,
+            1.871,
+            0.191
+          ],
+          [
+            -5.673,
+            1.411,
+            0.191
+          ],
+          [
+            -5.673,
+            0.451,
+            0.191
+          ],
+          [
+            -5.673,
+            -0.009,
+            0.191
+          ],
+          [
+            -5.673,
+            -0.469,
+            0.191
+          ],
+          [
+            -5.673,
+            -1.429,
+            0.191
+          ],
+          [
+            -5.673,
+            -1.889,
+            0.191
+          ],
+          [
+            -5.673,
+            -2.349,
+            0.191
+          ],
+          [
+            -4.813,
+            2.331,
+            0.201
+          ],
+          [
+            -4.813,
+            1.871,
+            0.201
+          ],
+          [
+            -4.813,
+            1.411,
+            0.201
+          ],
+          [
+            -4.813,
+            0.451,
+            0.201
+          ],
+          [
+            -4.813,
+            -0.009,
+            0.201
+          ],
+          [
+            -4.813,
+            -0.469,
+            0.201
+          ],
+          [
+            -4.813,
+            -1.429,
+            0.201
+          ],
+          [
+            -4.813,
+            -1.889,
+            0.201
+          ],
+          [
+            -4.813,
+            -2.349,
+            0.201
+          ],
+          [
+            -3.953,
+            2.331,
+            0.211
+          ],
+          [
+            -3.953,
+            1.871,
+            0.211
+          ],
+          [
+            -3.953,
+            1.411,
+            0.211
+          ],
+          [
+            -3.953,
+            0.451,
+            0.211
+          ],
+          [
+            -3.953,
+            -0.009,
+            0.211
+          ],
+          [
+            -3.953,
+            -0.469,
+            0.211
+          ],
+          [
+            -3.953,
+            -1.429,
+            0.211
+          ],
+          [
+            -3.953,
+            -1.889,
+            0.211
+          ],
+          [
+            -3.953,
+            -2.349,
+            0.211
+          ],
+          [
+            -3.093,
+            2.331,
+            0.221
+          ],
+          [
+            -3.093,
+            1.871,
+            0.221
+          ],
+          [
+            -3.093,
+            1.411,
+            0.221
+          ],
+          [
+            -3.093,
+            0.451,
+            0.221
+          ],
+          [
+            -3.093,
+            -0.009,
+            0.221
+          ],
+          [
+            -3.093,
+            -0.469,
+            0.221
+          ],
+          [
+            -3.093,
+            -1.429,
+            0.221
+          ],
+          [
+            -3.093,
+            -1.889,
+            0.221
+          ],
+          [
+            -3.093,
+            -2.349,
+            0.221
+          ],
+          [
+            -2.233,
+            2.331,
+            0.232
+          ],
+          [
+            -2.233,
+            1.871,
+            0.232
+          ],
+          [
+            -2.233,
+            1.411,
+            0.232
+          ],
+          [
+            -2.233,
+            0.451,
+            0.232
+          ],
+          [
+            -2.233,
+            -0.009,
+            0.232
+          ],
+          [
+            -2.233,
+            -0.469,
+            0.232
+          ],
+          [
+            -2.233,
+            -1.429,
+            0.232
+          ],
+          [
+            -2.233,
+            -1.889,
+            0.232
+          ],
+          [
+            -2.233,
+            -2.349,
+            0.232
+          ],
+          [
+            -1.373,
+            2.331,
+            0.242
+          ],
+          [
+            -1.373,
+            1.871,
+            0.242
+          ],
+          [
+            -1.373,
+            1.411,
+            0.242
+          ],
+          [
+            -1.373,
+            0.451,
+            0.242
+          ],
+          [
+            -1.373,
+            -0.009,
+            0.242
+          ],
+          [
+            -1.373,
+            -0.469,
+            0.242
+          ],
+          [
+            -1.373,
+            -1.429,
+            0.242
+          ],
+          [
+            -1.373,
+            -1.889,
+            0.242
+          ],
+          [
+            -1.373,
+            -2.349,
+            0.242
+          ],
+          [
+            -0.513,
+            2.331,
+            0.252
+          ],
+          [
+            -0.513,
+            1.871,
+            0.252
+          ],
+          [
+            -0.513,
+            1.411,
+            0.252
+          ],
+          [
+            -0.513,
+            0.451,
+            0.252
+          ],
+          [
+            -0.513,
+            -0.009,
+            0.252
+          ],
+          [
+            -0.513,
+            -0.469,
+            0.252
+          ],
+          [
+            -0.513,
+            -1.429,
+            0.252
+          ],
+          [
+            -0.513,
+            -1.889,
+            0.252
+          ],
+          [
+            -0.513,
+            -2.349,
+            0.252
+          ],
+          [
+            1.207,
+            -0.009,
+            0.272
+          ],
+          [
+            2.067,
+            -0.009,
+            0.282
+          ],
+          [
+            2.927,
+            -0.009,
+            0.293
+          ],
+          [
+            3.787,
+            2.331,
+            0.303
+          ],
+          [
+            3.787,
+            1.871,
+            0.303
+          ],
+          [
+            3.787,
+            1.411,
+            0.303
+          ],
+          [
+            3.787,
+            0.451,
+            0.303
+          ],
+          [
+            3.787,
+            -0.009,
+            0.303
+          ],
+          [
+            3.787,
+            -0.469,
+            0.303
+          ],
+          [
+            3.787,
+            -1.429,
+            0.303
+          ],
+          [
+            3.787,
+            -1.889,
+            0.303
+          ],
+          [
+            3.787,
+            -2.349,
+            0.303
+          ],
+          [
+            4.647,
+            2.331,
+            0.313
+          ],
+          [
+            4.647,
+            1.871,
+            0.313
+          ],
+          [
+            4.647,
+            1.411,
+            0.313
+          ],
+          [
+            4.647,
+            0.451,
+            0.313
+          ],
+          [
+            4.647,
+            -0.009,
+            0.313
+          ],
+          [
+            4.647,
+            -0.469,
+            0.313
+          ],
+          [
+            4.647,
+            -1.429,
+            0.313
+          ],
+          [
+            4.647,
+            -1.889,
+            0.313
+          ],
+          [
+            4.647,
+            -2.349,
+            0.313
+          ],
+          [
+            5.507,
+            2.331,
+            0.335
+          ],
+          [
+            5.507,
+            1.871,
+            0.335
+          ],
+          [
+            5.507,
+            1.411,
+            0.335
+          ],
+          [
+            5.507,
+            0.451,
+            0.335
+          ],
+          [
+            5.507,
+            -0.009,
+            0.335
+          ],
+          [
+            5.507,
+            -0.469,
+            0.335
+          ],
+          [
+            5.507,
+            -1.429,
+            0.335
+          ],
+          [
+            5.507,
+            -1.889,
+            0.335
+          ],
+          [
+            5.507,
+            -2.349,
+            0.335
+          ],
+          [
+            6.367,
+            2.331,
+            0.412
+          ],
+          [
+            6.367,
+            1.871,
+            0.412
+          ],
+          [
+            6.367,
+            1.411,
+            0.412
+          ],
+          [
+            6.367,
+            0.451,
+            0.412
+          ],
+          [
+            6.367,
+            -0.009,
+            0.412
+          ],
+          [
+            6.367,
+            -0.469,
+            0.412
+          ],
+          [
+            6.367,
+            -1.429,
+            0.412
+          ],
+          [
+            6.367,
+            -1.889,
+            0.412
+          ],
+          [
+            6.367,
+            -2.349,
+            0.412
+          ],
+          [
+            7.227,
+            2.331,
+            0.542
+          ],
+          [
+            7.227,
+            1.871,
+            0.542
+          ],
+          [
+            7.227,
+            1.411,
+            0.542
+          ],
+          [
+            7.227,
+            0.451,
+            0.542
+          ],
+          [
+            7.227,
+            -0.009,
+            0.542
+          ],
+          [
+            7.227,
+            -0.469,
+            0.542
+          ],
+          [
+            7.227,
+            -1.429,
+            0.542
+          ],
+          [
+            7.227,
+            -1.889,
+            0.542
+          ],
+          [
+            7.227,
+            -2.349,
+            0.542
+          ],
+          [
+            8.087,
+            2.331,
+            0.555
+          ],
+          [
+            8.087,
+            1.871,
+            0.555
+          ],
+          [
+            8.087,
+            1.411,
+            0.555
+          ],
+          [
+            8.087,
+            0.451,
+            0.555
+          ],
+          [
+            8.087,
+            -0.009,
+            0.555
+          ],
+          [
+            8.087,
+            -0.469,
+            0.555
+          ],
+          [
+            8.087,
+            -1.429,
+            0.555
+          ],
+          [
+            8.087,
+            -1.889,
+            0.555
+          ],
+          [
+            8.087,
+            -2.349,
+            0.555
+          ],
+          [
+            8.947,
+            2.331,
+            0.569
+          ],
+          [
+            8.947,
+            1.871,
+            0.569
+          ],
+          [
+            8.947,
+            1.411,
+            0.569
+          ],
+          [
+            8.947,
+            0.451,
+            0.569
+          ],
+          [
+            8.947,
+            -0.009,
+            0.569
+          ],
+          [
+            8.947,
+            -0.469,
+            0.569
+          ],
+          [
+            8.947,
+            -1.429,
+            0.569
+          ],
+          [
+            8.947,
+            -1.889,
+            0.569
+          ],
+          [
+            8.947,
+            -2.349,
+            0.569
+          ],
+          [
+            9.807,
+            2.331,
+            0.583
+          ],
+          [
+            9.807,
+            1.871,
+            0.583
+          ],
+          [
+            9.807,
+            1.411,
+            0.583
+          ],
+          [
+            9.807,
+            0.451,
+            0.583
+          ],
+          [
+            9.807,
+            -0.009,
+            0.583
+          ],
+          [
+            9.807,
+            -0.469,
+            0.583
+          ],
+          [
+            9.807,
+            -1.429,
+            0.583
+          ],
+          [
+            9.807,
+            -1.889,
+            0.583
+          ],
+          [
+            9.807,
+            -2.349,
+            0.583
+          ],
+          [
+            10.667,
+            2.331,
+            0.597
+          ],
+          [
+            10.667,
+            1.871,
+            0.597
+          ],
+          [
+            10.667,
+            1.411,
+            0.597
+          ],
+          [
+            10.667,
+            0.451,
+            0.597
+          ],
+          [
+            10.667,
+            -0.009,
+            0.597
+          ],
+          [
+            10.667,
+            -0.469,
+            0.597
+          ],
+          [
+            10.667,
+            -1.429,
+            0.597
+          ],
+          [
+            10.667,
+            -1.889,
+            0.597
+          ],
+          [
+            10.667,
+            -2.349,
+            0.597
+          ],
+          [
+            11.527,
+            2.331,
+            0.611
+          ],
+          [
+            11.527,
+            1.871,
+            0.611
+          ],
+          [
+            11.527,
+            1.411,
+            0.611
+          ],
+          [
+            11.527,
+            0.451,
+            0.611
+          ],
+          [
+            11.527,
+            -0.009,
+            0.611
+          ],
+          [
+            11.527,
+            -0.469,
+            0.611
+          ],
+          [
+            11.527,
+            -1.429,
+            0.611
+          ],
+          [
+            11.527,
+            -1.889,
+            0.611
+          ],
+          [
+            11.527,
+            -2.349,
+            0.611
+          ],
+          [
+            12.387,
+            2.331,
+            0.625
+          ],
+          [
+            12.387,
+            1.871,
+            0.625
+          ],
+          [
+            12.387,
+            1.411,
+            0.625
+          ],
+          [
+            12.387,
+            0.451,
+            0.625
+          ],
+          [
+            12.387,
+            -0.009,
+            0.625
+          ],
+          [
+            12.387,
+            -0.469,
+            0.625
+          ],
+          [
+            12.387,
+            -1.429,
+            0.625
+          ],
+          [
+            12.387,
+            -1.889,
+            0.625
+          ],
+          [
+            12.387,
+            -2.349,
+            0.625
+          ],
+          [
+            13.247,
+            2.331,
+            0.638
+          ],
+          [
+            13.247,
+            1.871,
+            0.638
+          ],
+          [
+            13.247,
+            1.411,
+            0.638
+          ],
+          [
+            13.247,
+            0.451,
+            0.638
+          ],
+          [
+            13.247,
+            -0.009,
+            0.638
+          ],
+          [
+            13.247,
+            -0.469,
+            0.638
+          ],
+          [
+            13.247,
+            -1.429,
+            0.638
+          ],
+          [
+            13.247,
+            -1.889,
+            0.638
+          ],
+          [
+            13.247,
+            -2.349,
+            0.638
+          ],
+          [
+            14.107,
+            2.331,
+            0.652
+          ],
+          [
+            14.107,
+            1.871,
+            0.652
+          ],
+          [
+            14.107,
+            1.411,
+            0.652
+          ],
+          [
+            14.107,
+            0.451,
+            0.652
+          ],
+          [
+            14.107,
+            -0.009,
+            0.652
+          ],
+          [
+            14.107,
+            -0.469,
+            0.652
+          ],
+          [
+            14.107,
+            -1.429,
+            0.652
+          ],
+          [
+            14.107,
+            -1.889,
+            0.652
+          ],
+          [
+            14.107,
+            -2.349,
+            0.652
+          ],
+          [
+            14.967,
+            2.331,
+            0.757
+          ],
+          [
+            14.967,
+            1.871,
+            0.757
+          ],
+          [
+            14.967,
+            1.411,
+            0.757
+          ],
+          [
+            14.967,
+            0.451,
+            0.757
+          ],
+          [
+            14.967,
+            -0.009,
+            0.757
+          ],
+          [
+            14.967,
+            -0.469,
+            0.757
+          ],
+          [
+            14.967,
+            -1.429,
+            0.757
+          ],
+          [
+            14.967,
+            -1.889,
+            0.757
+          ],
+          [
+            14.967,
+            -2.349,
+            0.757
+          ],
+          [
+            15.827,
+            1.871,
+            0.891
+          ],
+          [
+            15.827,
+            1.411,
+            0.891
+          ],
+          [
+            15.827,
+            0.451,
+            0.891
+          ],
+          [
+            15.827,
+            -0.009,
+            0.891
+          ],
+          [
+            15.827,
+            -0.469,
+            0.891
+          ],
+          [
+            15.827,
+            -1.429,
+            0.891
+          ],
+          [
+            15.827,
+            -1.889,
+            0.891
+          ],
+          [
+            16.687,
+            1.871,
+            1.025
+          ],
+          [
+            16.687,
+            1.411,
+            1.025
+          ],
+          [
+            16.687,
+            0.451,
+            1.025
+          ],
+          [
+            16.687,
+            -0.009,
+            1.025
+          ],
+          [
+            16.687,
+            -0.469,
+            1.025
+          ],
+          [
+            16.687,
+            -1.429,
+            1.025
+          ],
+          [
+            16.687,
+            -1.889,
+            1.025
+          ],
+          [
+            17.547,
+            1.871,
+            1.163
+          ],
+          [
+            17.547,
+            1.411,
+            1.163
+          ],
+          [
+            17.547,
+            0.451,
+            1.163
+          ],
+          [
+            17.547,
+            -0.009,
+            1.163
+          ],
+          [
+            17.547,
+            -0.469,
+            1.163
+          ],
+          [
+            17.547,
+            -1.429,
+            1.163
+          ],
+          [
+            17.547,
+            -1.889,
+            1.163
+          ],
+          [
+            18.407,
+            1.871,
+            1.331
+          ],
+          [
+            18.407,
+            1.411,
+            1.331
+          ],
+          [
+            18.407,
+            0.451,
+            1.331
+          ],
+          [
+            18.407,
+            -0.009,
+            1.331
+          ],
+          [
+            18.407,
+            -0.469,
+            1.331
+          ],
+          [
+            18.407,
+            -1.429,
+            1.331
+          ],
+          [
+            18.407,
+            -1.889,
+            1.331
+          ],
+          [
+            19.267,
+            1.411,
+            1.499
+          ],
+          [
+            19.267,
+            0.451,
+            1.499
+          ],
+          [
+            19.267,
+            -0.009,
+            1.499
+          ],
+          [
+            19.267,
+            -0.469,
+            1.499
+          ],
+          [
+            19.267,
+            -1.429,
+            1.499
+          ],
+          [
+            20.127,
+            1.411,
+            1.667
+          ],
+          [
+            20.127,
+            0.451,
+            1.667
+          ],
+          [
+            20.127,
+            -0.009,
+            1.667
+          ],
+          [
+            20.127,
+            -0.469,
+            1.667
+          ],
+          [
+            20.127,
+            -1.429,
+            1.667
+          ],
+          [
+            20.987,
+            1.411,
+            1.835
+          ],
+          [
+            20.987,
+            0.451,
+            1.835
+          ],
+          [
+            20.987,
+            -0.009,
+            1.835
+          ],
+          [
+            20.987,
+            -0.469,
+            1.835
+          ],
+          [
+            20.987,
+            -1.429,
+            1.835
+          ]
+        ],
+        "fallback": {
+          "id": "passenger-seats",
+          "label": "Passenger seats",
           "system": "interior"
         }
       }

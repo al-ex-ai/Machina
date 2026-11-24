@@ -21,6 +21,18 @@
     "engine_type": "Packard V-1650-7 Merlin",
     "crew": 1
   },
+  "takeoff": {
+    "vr_kt": 90,
+    "roll_m": 450,
+    "flaps": 0,
+    "tailwheel": true,
+    "tail_deg": 11,
+    "pitch_deg": -7,
+    "climb_deg": 8,
+    "gear_s": 6,
+    "rpm": 3000,
+    "note": "Approximate: clean, mid weight, tail raised on the roll"
+  },
   "sources": [
     {
       "label": "Wikipedia: North American P-51 Mustang",
@@ -39,7 +51,755 @@
     },
     "files": [
       {
-        "file": "Models/P-51D-25NA.ac"
+        "file": "Models/P-51D-25NA.ac",
+        "pose": [
+          {
+            "type": "rotate",
+            "objects": [
+              "outerDoorLeft"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "value": -94,
+            "origin": [
+              2.0141,
+              -0.6266,
+              1.8399
+            ],
+            "axis": [
+              0.980669,
+              -0.152768,
+              0.122274
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "forwardGearDoorLinkLeft",
+              "forwardGearDoorEyeBoltLeft",
+              "rearGearDoorLinkLeft",
+              "rearGearDoorEyeBoltLeft"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "value": 10,
+            "origin": [
+              1.9633,
+              -1.0567,
+              1.6857
+            ],
+            "axis": [
+              0.978838,
+              -0.186091,
+              0.085125
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "landingLight"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "value": -30,
+            "origin": [
+              2.6441,
+              -0.6837,
+              1
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "outerDoorRight"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "value": 60,
+            "origin": [
+              2.0141,
+              -0.6266,
+              -1.8399
+            ],
+            "axis": [
+              0.979916,
+              -0.157598,
+              -0.12218
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "forwardGearDoorLinkRight",
+              "forwardGearDoorEyeBoltRight",
+              "rearGearDoorLinkRight",
+              "rearGearDoorEyeBoltRight"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "value": -10,
+            "origin": [
+              1.9655,
+              -1.0571,
+              -1.6877
+            ],
+            "axis": [
+              0.977679,
+              -0.195721,
+              -0.076403
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "tailWheelDoorRight"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "value": -90,
+            "origin": [
+              7.1285,
+              -0.3879,
+              -0.1276
+            ],
+            "axis": [
+              -0.989119,
+              -0.147113,
+              0.001001
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "tailWheelDoorLeft"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "value": 90,
+            "origin": [
+              7.1285,
+              -0.3879,
+              0.1262
+            ],
+            "axis": [
+              -0.989119,
+              -0.147116,
+              0.001055
+            ]
+          }
+        ],
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "upperStrutLeft",
+              "lowerStrutLeft",
+              "mainWheelLeft",
+              "lowerScissorsLeft",
+              "upperScissorsLeft",
+              "forwardGearDoorLinkLeft",
+              "rearGearDoorLinkLeft",
+              "rearGearDoorEyeBoltLeft",
+              "forwardGearDoorEyeBoltLeft"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                88
+              ],
+              [
+                0.33,
+                87.9
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              2.186,
+              -0.5523,
+              1.755
+            ],
+            "axis": [
+              0.983689,
+              -0.117724,
+              0.136001
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "outerDoorLeft"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.32,
+                0
+              ],
+              [
+                0.4,
+                -9
+              ],
+              [
+                0.55,
+                -29
+              ],
+              [
+                0.7,
+                -49
+              ],
+              [
+                1,
+                -94
+              ]
+            ],
+            "origin": [
+              2.0141,
+              -0.6266,
+              1.8399
+            ],
+            "axis": [
+              0.980669,
+              -0.152768,
+              0.122274
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "forwardGearDoorLinkLeft",
+              "forwardGearDoorEyeBoltLeft",
+              "rearGearDoorLinkLeft",
+              "rearGearDoorEyeBoltLeft"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0.3,
+                -42
+              ],
+              [
+                0.55,
+                -22
+              ],
+              [
+                0.7,
+                -12
+              ],
+              [
+                0.85,
+                -1
+              ],
+              [
+                1,
+                10
+              ]
+            ],
+            "origin": [
+              1.9633,
+              -1.0567,
+              1.6857
+            ],
+            "axis": [
+              0.978838,
+              -0.186091,
+              0.085125
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "landingLight"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.32,
+                0
+              ],
+              [
+                0.38,
+                -30
+              ],
+              [
+                1,
+                -30
+              ]
+            ],
+            "origin": [
+              2.6441,
+              -0.6837,
+              1
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "upperStrutRight",
+              "lowerStrutRight",
+              "mainWheelRight",
+              "lowerScissorsRight",
+              "upperScissorsRight",
+              "forwardGearDoorLinkRight",
+              "rearGearDoorLinkRight",
+              "rearGearDoorEyeBoltRight",
+              "forwardGearDoorEyeBoltRight"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                -88
+              ],
+              [
+                0.33,
+                -87.9
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              2.186,
+              -0.5523,
+              -1.755
+            ],
+            "axis": [
+              0.983689,
+              -0.117724,
+              -0.136001
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "outerDoorRight"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.32,
+                0
+              ],
+              [
+                0.4,
+                9
+              ],
+              [
+                0.55,
+                30
+              ],
+              [
+                0.76,
+                60
+              ]
+            ],
+            "origin": [
+              2.0141,
+              -0.6266,
+              -1.8399
+            ],
+            "axis": [
+              0.979916,
+              -0.157598,
+              -0.12218
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "forwardGearDoorLinkRight",
+              "forwardGearDoorEyeBoltRight",
+              "rearGearDoorLinkRight",
+              "rearGearDoorEyeBoltRight"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0.3,
+                42
+              ],
+              [
+                0.55,
+                20
+              ],
+              [
+                0.7,
+                10
+              ],
+              [
+                0.85,
+                -2
+              ],
+              [
+                1,
+                -10
+              ]
+            ],
+            "origin": [
+              1.9655,
+              -1.0571,
+              -1.6877
+            ],
+            "axis": [
+              0.977679,
+              -0.195721,
+              -0.076403
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "tailWheelOleoHousing",
+              "tailWheelSpinleAssembly",
+              "tailWheelKnuckle",
+              "tailWheel"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                -58
+              ],
+              [
+                0.4,
+                -58
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              7.0944,
+              -0.2631,
+              -1
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "tailWheelDoorRight"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.3,
+                -80
+              ],
+              [
+                1,
+                -90
+              ]
+            ],
+            "origin": [
+              7.1285,
+              -0.3879,
+              -0.1276
+            ],
+            "axis": [
+              -0.989119,
+              -0.147113,
+              0.001001
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "tailWheelDoorLeft"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.3,
+                80
+              ],
+              [
+                1,
+                90
+              ]
+            ],
+            "origin": [
+              7.1285,
+              -0.3879,
+              0.1262
+            ],
+            "axis": [
+              -0.989119,
+              -0.147116,
+              0.001055
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "flapsRight"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 47,
+            "origin": [
+              3.6326,
+              -0.7391,
+              -0.5617
+            ],
+            "axis": [
+              -0.123908,
+              0.109313,
+              -0.986254
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "flapsLeft"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": -47,
+            "origin": [
+              3.6326,
+              -0.7391,
+              0.5617
+            ],
+            "axis": [
+              -0.12946,
+              0.112841,
+              0.985143
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "tailWheel",
+              "tailWheelKnuckle",
+              "tailWheelSpinleAssembly"
+            ],
+            "prop": "gear/gear[2]/compression-norm",
+            "factor": -0.2,
+            "origin": [
+              6.9734,
+              -0.2107,
+              -0.0001
+            ],
+            "axis": [
+              -0.418184,
+              0.908362,
+              0.000513
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "mainWheelLeft",
+              "lowerStrutLeft",
+              "lowerScissorsLeft"
+            ],
+            "prop": "gear/gear[0]/compression-norm",
+            "factor": -0.5,
+            "origin": [
+              2.1585,
+              0,
+              -1.7592
+            ],
+            "axis": [
+              -0.101711,
+              -0.994814,
+              -0.000286
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "lowerScissorsLeft"
+            ],
+            "prop": "gear/gear[0]/compression-norm",
+            "factor": 83,
+            "origin": [
+              2.0651,
+              -1.4542,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "upperScissorsLeft"
+            ],
+            "prop": "gear/gear[0]/compression-norm",
+            "factor": -83,
+            "origin": [
+              2.1219,
+              -1.1396,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "mainWheelRight",
+              "lowerStrutRight",
+              "lowerScissorsRight"
+            ],
+            "prop": "gear/gear[1]/compression-norm",
+            "factor": -0.5,
+            "origin": [
+              2.1585,
+              -0.4877,
+              -1.7591
+            ],
+            "axis": [
+              -0.175166,
+              -0.984539,
+              0.000299
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "lowerScissorsRight"
+            ],
+            "prop": "gear/gear[1]/compression-norm",
+            "factor": 83,
+            "origin": [
+              2.065,
+              -1.4545,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "upperScissorsRight"
+            ],
+            "prop": "gear/gear[1]/compression-norm",
+            "factor": -83,
+            "origin": [
+              2.1219,
+              -1.1399,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          }
+        ],
+        "poseState": {},
+        "select": [
+          {
+            "objects": [
+              "upperStrutLeft",
+              "lowerStrutLeft",
+              "lowerScissorsLeft",
+              "upperScissorsLeft",
+              "forwardGearDoorLinkLeft",
+              "rearGearDoorLinkLeft",
+              "rearGearDoorEyeBoltLeft",
+              "forwardGearDoorEyeBoltLeft"
+            ],
+            "cond": [
+              "and",
+              [
+                "gt",
+                "gear/gear[0]/position-norm",
+                0.02
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "mainWheelLeft"
+            ],
+            "cond": [
+              "and",
+              [
+                "gt",
+                "gear/gear[0]/position-norm",
+                0.01
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "upperStrutRight",
+              "lowerStrutRight",
+              "lowerScissorsRight",
+              "upperScissorsRight",
+              "forwardGearDoorLinkRight",
+              "rearGearDoorLinkRight",
+              "rearGearDoorEyeBoltRight",
+              "forwardGearDoorEyeBoltRight"
+            ],
+            "cond": [
+              "and",
+              [
+                "gt",
+                "gear/gear[1]/position-norm",
+                0.02
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "mainWheelRight"
+            ],
+            "cond": [
+              "and",
+              [
+                "gt",
+                "gear/gear[1]/position-norm",
+                0.01
+              ]
+            ]
+          }
+        ]
       },
       {
         "file": "Models/Pilot/pilotWWII.ac",
@@ -83,7 +843,32 @@
           "id": "propeller",
           "label": "Propeller",
           "system": "propulsion"
-        }
+        },
+        "anim": [
+          {
+            "type": "spin",
+            "objects": [
+              "propBlade1",
+              "propBlade2",
+              "propBlade3",
+              "propBlade4",
+              "spinner"
+            ],
+            "prop": "engines/engine[6]/rpm",
+            "factor": 0.479,
+            "origin": [
+              -0.2125,
+              -0.0631,
+              0.0005
+            ],
+            "axis": [
+              -0.999546,
+              -0.030044,
+              -0.002055
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Instruments/Altimeter/p51d-jw-alt.ac",

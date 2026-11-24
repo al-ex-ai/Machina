@@ -20,6 +20,21 @@
     "engine_type": "Wright R-1820 Cyclone / P&W R-1830 Twin Wasp",
     "seats": 21
   },
+  "takeoff": {
+    "exposed": [
+      "tail-wheel"
+    ],
+    "vr_kt": 85,
+    "roll_m": 650,
+    "flaps": 0,
+    "tailwheel": true,
+    "tail_deg": 11,
+    "pitch_deg": -7,
+    "climb_deg": 4,
+    "gear_s": 10,
+    "rpm": 2700,
+    "note": "Approximate: mid-weight takeoff, tail raised on the roll"
+  },
   "sources": [
     {
       "label": "Wikipedia: Douglas DC-3",
@@ -33,7 +48,464 @@
     "source": "https://mirrors.ibiblio.org/flightgear/ftp/Aircraft-2020/Douglas-Dc3.zip",
     "files": [
       {
-        "file": "Models/dc-3.ac"
+        "file": "Models/dc-3.ac",
+        "groups": {
+          "TrainGauche": [
+            "roueG",
+            "axeG1",
+            "axeG2",
+            "axeG3",
+            "axeG4"
+          ],
+          "SousTrainGauche": [
+            "roueG",
+            "axeG1",
+            "axeG2",
+            "axeG4"
+          ],
+          "TrainDroit": [
+            "roueD",
+            "axeD1",
+            "axeD2",
+            "axeD3",
+            "axeD4"
+          ],
+          "SousTrainDroit": [
+            "roueD",
+            "axeD1",
+            "axeD2",
+            "axeD4"
+          ],
+          "EnsembleAvantG": [
+            "Ldamper",
+            "Lstrut2",
+            "roueAG"
+          ],
+          "EnsembleAvantD": [
+            "Rdamper",
+            "Rstrut2",
+            "roueAD"
+          ]
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "direction"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "factor": -15,
+            "origin": [
+              8.076,
+              2.368,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "profondeur"
+            ],
+            "prop": "surface-positions/elevator-pos-norm",
+            "factor": 15,
+            "origin": [
+              8.724,
+              0.107,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "voletG2"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 40,
+            "origin": [
+              -1.214,
+              -1.046,
+              6.313
+            ],
+            "axis": [
+              0,
+              -0.150271,
+              -0.988645
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "voletG1"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 40,
+            "origin": [
+              -1.214,
+              -1.476,
+              3.484
+            ],
+            "axis": [
+              0,
+              -0.007181,
+              -0.999974
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "voletD2"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 40,
+            "origin": [
+              -1.214,
+              -1.476,
+              -3.484
+            ],
+            "axis": [
+              0,
+              0.150271,
+              -0.988645
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "voletD1"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 40,
+            "origin": [
+              -1.214,
+              -1.5,
+              -0.142
+            ],
+            "axis": [
+              0,
+              0.007181,
+              -0.999974
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "TrainGauche"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                95
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -4.25,
+              -1.248,
+              2.814
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "SousTrainGauche"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                -135
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -4.25,
+              -2.281,
+              2.814
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "axeG4"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                79.5
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -4.25,
+              -3.011,
+              2.814
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "TrainDroit"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                95
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -4.25,
+              -1.248,
+              -2.814
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "SousTrainDroit"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                -135
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -4.25,
+              -2.281,
+              -2.814
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "axeD4"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                79.5
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -4.25,
+              -3.011,
+              2.814
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "EnsembleAvantG"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                -0.28
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -9.771,
+              -3.719,
+              2.668
+            ],
+            "axis": [
+              -0.389688,
+              -0.920947,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "EnsembleAvantD"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                -0.28
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -9.771,
+              -3.719,
+              -2.668
+            ],
+            "axis": [
+              -0.389688,
+              -0.920947,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "roueFG",
+              "axeFG"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                -0.34
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -2.112,
+              -4.175,
+              2.668
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "roueFD",
+              "axeFD"
+            ],
+            "prop": "gear/gear[3]/position-norm",
+            "table": [
+              [
+                0,
+                -0.34
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -2.112,
+              -4.175,
+              -2.668
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "gouvernailG"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "factor": -20,
+            "origin": [
+              3.5234,
+              -2.7328,
+              2.6679
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "gouvernailD"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "factor": -20,
+            "origin": [
+              3.5234,
+              -2.7328,
+              -2.6679
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/cabine.ac",
@@ -6938,7 +7410,38 @@
               "roll": 0
             }
           }
-        ]
+        ],
+        "groups": {
+          "helice": [
+            "bol",
+            "pale1",
+            "pale2",
+            "pale3",
+            "propdisc",
+            "propblur"
+          ]
+        },
+        "anim": [
+          {
+            "type": "spin",
+            "objects": [
+              "helice"
+            ],
+            "prop": "engines/engine[0]/rpm",
+            "factor": -0.479,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Engines/r1830.ac",
@@ -7175,7 +7678,38 @@
               "roll": 0
             }
           }
-        ]
+        ],
+        "groups": {
+          "helice": [
+            "bol",
+            "pale1",
+            "pale2",
+            "pale3",
+            "propdisc",
+            "propblur"
+          ]
+        },
+        "anim": [
+          {
+            "type": "spin",
+            "objects": [
+              "helice"
+            ],
+            "prop": "engines/engine[1]/rpm",
+            "factor": -0.479,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       }
     ],
     "fallback": {
@@ -7190,7 +7724,8 @@
       "/^axe(FG|FD)$/",
       "/^gouvernail[GD]$/",
       "/^structure$/",
-      "/^[LR](strut|damper)/"
+      "/^[LR](strut|damper)/",
+      "/^prop(blur|disc)/"
     ],
     "parts": [
       {
@@ -7308,6 +7843,29 @@
     "restOnTail": {
       "main": "left-main-gear",
       "tail": "tail-wheel"
+    },
+    "recolor": {
+      "textures": [
+        "Models/texture.webp"
+      ],
+      "hue": [
+        215,
+        245
+      ],
+      "skip": [
+        [
+          0.44,
+          0.775,
+          0.54,
+          0.88
+        ]
+      ]
+    },
+    "verify": {
+      "tolerance": {
+        "height": 0.06
+      },
+      "note": "Resting on its tail wheel the FlightGear model measures 5.43 m to the fin tip against the published 5.16 m."
     }
   }
 }

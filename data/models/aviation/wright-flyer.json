@@ -21,6 +21,17 @@
     "engine_type": "Wright inline four-cylinder, 12 hp",
     "crew": 1
   },
+  "takeoff": {
+    "vr_kt": 26,
+    "lof_kt": 27,
+    "roll_m": 36,
+    "flaps": 0,
+    "pitch_deg": 2,
+    "climb_deg": 1.5,
+    "rpm": 350,
+    "mains": "skids",
+    "note": "Approximate: Dec 17 1903, the headwind left out, so the roll here is longer than the 12 m on the rail"
+  },
   "asset": {
     "path": "assets/aircraft/wright-flyer",
     "license": "GPL (FlightGear aircraft distribution)",
@@ -28,7 +39,48 @@
     "source": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/wrightFlyer1903/",
     "files": [
       {
-        "file": "Models/WrightFlyer-pb-jw.ac"
+        "file": "Models/WrightFlyer-pb-jw.ac",
+        "anim": [
+          {
+            "type": "spin",
+            "objects": [
+              "RightPropeller",
+              "CogRightPropShaft"
+            ],
+            "prop": "engines/engine[0]/rpm",
+            "factor": 0.133,
+            "origin": [
+              1.56,
+              0.53,
+              -1.69
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "spin",
+            "objects": [
+              "LeftPropeller",
+              "CogLeftPropShaft"
+            ],
+            "prop": "engines/engine[0]/rpm",
+            "factor": 0.133,
+            "origin": [
+              1.56,
+              0.53,
+              1.69
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       }
     ],
     "textureMap": {
@@ -144,7 +196,8 @@
         0.88
       ],
       "sat": 0.2
-    }
+    },
+    "noCrew": "Orville flew lying prone on the lower wing; none of the open FlightGear packages has a prone pilot figure, and a seated one would be wrong."
   },
   "parts": {
     "cradle": {

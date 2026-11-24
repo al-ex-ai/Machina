@@ -19,6 +19,16 @@
     "engine_count": 6,
     "engine_type": "Progress D-18T"
   },
+  "takeoff": {
+    "vr_kt": 150,
+    "roll_m": 2300,
+    "flaps": 0.4,
+    "pitch_deg": 10,
+    "climb_deg": 5,
+    "gear_s": 14,
+    "jet": true,
+    "note": "Approximate: well below maximum weight"
+  },
   "asset": {
     "path": "assets/aircraft/an225b",
     "license": "GPL-2.0",
@@ -26,7 +36,4784 @@
     "source": "https://github.com/HerbyW/AN-225-Mrija",
     "files": [
       {
-        "file": "Models/AN225-48.ac"
+        "file": "Models/AN225-48.ac",
+        "pose": [
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-1-UDoor",
+              "L-MG-1-LDoor"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "value": -100,
+            "origin": [
+              4.1,
+              -1.95,
+              3.84
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-1-LDoor"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "value": 120,
+            "origin": [
+              4.1,
+              -2.84,
+              3.07
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-2-UDoor",
+              "L-MG-2-LDoor"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "value": -100,
+            "origin": [
+              5.75,
+              -1.95,
+              3.84
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-2-LDoor"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "value": 120,
+            "origin": [
+              5.75,
+              -2.84,
+              3.07
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-3-UDoor",
+              "L-MG-3-LDoor"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "value": -100,
+            "origin": [
+              7.41,
+              -1.95,
+              3.84
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-3-LDoor"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "value": 120,
+            "origin": [
+              7.41,
+              -2.84,
+              3.07
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-4-UDoor",
+              "L-MG-4-LDoor"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "value": -100,
+            "origin": [
+              9.05,
+              -1.95,
+              3.84
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-4-LDoor"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "value": 120,
+            "origin": [
+              9.05,
+              -2.84,
+              3.07
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-5-UDoor",
+              "L-MG-5-LDoor"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "value": -100,
+            "origin": [
+              10.72,
+              -1.95,
+              3.84
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-5-LDoor"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "value": 120,
+            "origin": [
+              10.72,
+              -2.84,
+              3.07
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-6-UDoor",
+              "L-MG-6-LDoor"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "value": -100,
+            "origin": [
+              12.42,
+              -1.95,
+              3.84
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-6-LDoor"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "value": 120,
+            "origin": [
+              12.42,
+              -2.84,
+              3.07
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-7-UDoor",
+              "L-MG-7-LDoor"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "value": -100,
+            "origin": [
+              14.1,
+              -1.95,
+              3.84
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-7-LDoor"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "value": 120,
+            "origin": [
+              14.1,
+              -2.84,
+              3.07
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-1-UDoor",
+              "R-MG-1-LDoor"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "value": -100,
+            "origin": [
+              4.1,
+              -1.95,
+              -3.84
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-1-LDoor"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "value": 120,
+            "origin": [
+              4.1,
+              -2.84,
+              -3.07
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-2-UDoor",
+              "R-MG-2-LDoor"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "value": -100,
+            "origin": [
+              5.75,
+              -1.95,
+              -3.84
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-2-LDoor"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "value": 120,
+            "origin": [
+              5.75,
+              -2.84,
+              -3.07
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-3-UDoor",
+              "R-MG-3-LDoor"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "value": -100,
+            "origin": [
+              7.41,
+              -1.95,
+              -3.84
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-3-LDoor"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "value": 120,
+            "origin": [
+              7.41,
+              -2.84,
+              -3.07
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-4-UDoor",
+              "R-MG-4-LDoor"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "value": -100,
+            "origin": [
+              9.05,
+              -1.95,
+              -3.84
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-4-LDoor"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "value": 120,
+            "origin": [
+              9.05,
+              -2.84,
+              -3.07
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-5-UDoor",
+              "R-MG-5-LDoor"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "value": -100,
+            "origin": [
+              10.72,
+              -1.95,
+              -3.84
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-5-LDoor"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "value": 120,
+            "origin": [
+              10.72,
+              -2.84,
+              -3.07
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-6-UDoor",
+              "R-MG-6-LDoor"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "value": -100,
+            "origin": [
+              12.42,
+              -1.95,
+              -3.84
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-6-LDoor"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "value": 120,
+            "origin": [
+              12.42,
+              -2.84,
+              -3.07
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-7-UDoor",
+              "R-MG-7-LDoor"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "value": -100,
+            "origin": [
+              14.1,
+              -1.95,
+              -3.84
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-7-LDoor"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "value": 120,
+            "origin": [
+              14.1,
+              -2.84,
+              -3.07
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "LU-Rudder-OS",
+              "LU-Rudder-IS",
+              "LU-Rudder-C"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "factor": -20,
+            "origin": [
+              47.85,
+              7.5,
+              15.09
+            ],
+            "axis": [
+              0.368714,
+              0.921786,
+              -0.119832
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LL-Rudder-OS",
+              "LL-Rudder-IS",
+              "LL-Rudder-C"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "factor": -20,
+            "origin": [
+              48.01,
+              3.16,
+              15.53
+            ],
+            "axis": [
+              -0.285146,
+              0.950486,
+              -0.123563
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RU-Rudder-OS",
+              "RU-Rudder-IS",
+              "RU-Rudder-C"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "factor": -20,
+            "origin": [
+              47.85,
+              7.5,
+              -15.09
+            ],
+            "axis": [
+              0.368714,
+              0.921786,
+              0.119832
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RL-Rudder-OS",
+              "RL-Rudder-IS",
+              "RL-Rudder-C"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "factor": -20,
+            "origin": [
+              48.01,
+              3.16,
+              -15.53
+            ],
+            "axis": [
+              -0.285146,
+              0.950486,
+              0.123563
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-Elevator-T",
+              "L-Elevator-B",
+              "L-Elevator-B"
+            ],
+            "prop": "surface-positions/elevator-pos-norm",
+            "factor": 20,
+            "origin": [
+              40.79,
+              5.39,
+              2.34
+            ],
+            "axis": [
+              -0.494904,
+              -0.03473,
+              -0.868253
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-Elevator-T",
+              "R-Elevator-B",
+              "R-Elevator-B"
+            ],
+            "prop": "surface-positions/elevator-pos-norm",
+            "factor": 20,
+            "origin": [
+              40.79,
+              5.39,
+              -2.34
+            ],
+            "axis": [
+              0.494904,
+              0.03473,
+              -0.868253
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "L-Flap-1"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 1.3,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "L-Flap-1"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 0.3,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-Flap-1"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 40,
+            "origin": [
+              8.46,
+              2.5,
+              3.3
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "L-Flap-Cover-1"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": -4,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LW-Flap-Br1R"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                20
+              ],
+              [
+                0.5,
+                25
+              ],
+              [
+                0.75,
+                28
+              ],
+              [
+                1,
+                30
+              ]
+            ],
+            "origin": [
+              10.54,
+              3.32,
+              5.12
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LW-Flap-Br2R"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                20
+              ],
+              [
+                0.5,
+                25
+              ],
+              [
+                0.75,
+                28
+              ],
+              [
+                1,
+                31
+              ]
+            ],
+            "origin": [
+              10.54,
+              3.4,
+              9.34
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "L-Flap-2"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 2.1,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "L-Flap-2"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 0.01,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-Flap-2"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 40,
+            "origin": [
+              8.52,
+              3.78,
+              10.77
+            ],
+            "axis": [
+              -0.329983,
+              -0.04714,
+              -0.942809
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "L-Flap-Cover-2"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": -4,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LW-Flap-Br3R"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                25
+              ],
+              [
+                0.5,
+                31
+              ],
+              [
+                0.75,
+                34
+              ],
+              [
+                1,
+                35
+              ]
+            ],
+            "origin": [
+              11.28,
+              3.33,
+              12.33
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LW-Flap-Br4R"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                25
+              ],
+              [
+                0.5,
+                31
+              ],
+              [
+                0.75,
+                34
+              ],
+              [
+                1,
+                35
+              ]
+            ],
+            "origin": [
+              12.63,
+              3.06,
+              17.15
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "L-Flap-3"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 1.5,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "L-Flap-3"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 0.01,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-Flap-3"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 40,
+            "origin": [
+              11.36,
+              3.35,
+              18
+            ],
+            "axis": [
+              -0.329983,
+              -0.04714,
+              -0.942809
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "L-Flap-Cover-3"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": -4,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LW-Flap-Br5R"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                25
+              ],
+              [
+                0.5,
+                31
+              ],
+              [
+                0.75,
+                37
+              ],
+              [
+                1,
+                38
+              ]
+            ],
+            "origin": [
+              13.54,
+              2.97,
+              19.4
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LW-Flap-Br6R"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                25
+              ],
+              [
+                0.5,
+                31
+              ],
+              [
+                0.75,
+                38
+              ],
+              [
+                1,
+                39
+              ]
+            ],
+            "origin": [
+              15.03,
+              2.68,
+              24.36
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "L-Flap-4"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 0.8,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "L-Flap-4"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": -0.01,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-Flap-4"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 40,
+            "origin": [
+              14.7,
+              2.84,
+              26.5
+            ],
+            "axis": [
+              -0.31287,
+              -0.056885,
+              -0.948091
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "L-Flap-Cover-4"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": -4,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LW-Flap-Br7R"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                25
+              ],
+              [
+                0.5,
+                35
+              ],
+              [
+                0.75,
+                45
+              ],
+              [
+                1,
+                52
+              ]
+            ],
+            "origin": [
+              16.15,
+              2.51,
+              27.75
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LW-Flap-Br8R"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                25
+              ],
+              [
+                0.5,
+                35
+              ],
+              [
+                0.75,
+                50
+              ],
+              [
+                1,
+                55
+              ]
+            ],
+            "origin": [
+              17.21,
+              2.32,
+              31.19
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "R-Flap-1"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 1.3,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "R-Flap-1"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 0.3,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-Flap-1"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 40,
+            "origin": [
+              8.46,
+              2.5,
+              -3.3
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "R-Flap-Cover-1"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": -4,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RW-Flap-Br1R"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                20
+              ],
+              [
+                0.5,
+                25
+              ],
+              [
+                0.75,
+                28
+              ],
+              [
+                1,
+                30
+              ]
+            ],
+            "origin": [
+              10.54,
+              3.32,
+              -5.12
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RW-Flap-Br2R"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                20
+              ],
+              [
+                0.5,
+                25
+              ],
+              [
+                0.75,
+                28
+              ],
+              [
+                1,
+                31
+              ]
+            ],
+            "origin": [
+              10.54,
+              3.4,
+              -9.34
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "R-Flap-2"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 2.1,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "R-Flap-2"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 0.01,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-Flap-2"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 40,
+            "origin": [
+              8.52,
+              3.78,
+              -10.77
+            ],
+            "axis": [
+              0.329983,
+              0.04714,
+              -0.942809
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "R-Flap-Cover-2"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": -4,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RW-Flap-Br3R"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                25
+              ],
+              [
+                0.5,
+                31
+              ],
+              [
+                0.75,
+                34
+              ],
+              [
+                1,
+                35
+              ]
+            ],
+            "origin": [
+              11.28,
+              3.33,
+              -12.33
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RW-Flap-Br4R"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                25
+              ],
+              [
+                0.5,
+                31
+              ],
+              [
+                0.75,
+                34
+              ],
+              [
+                1,
+                35
+              ]
+            ],
+            "origin": [
+              12.63,
+              3.06,
+              -17.15
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "R-Flap-3"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 1.5,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "R-Flap-3"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 0.01,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-Flap-3"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 40,
+            "origin": [
+              11.36,
+              3.35,
+              -18
+            ],
+            "axis": [
+              0.329983,
+              0.04714,
+              -0.942809
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "R-Flap-Cover-3"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": -4,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RW-Flap-Br5R"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                25
+              ],
+              [
+                0.5,
+                31
+              ],
+              [
+                0.75,
+                37
+              ],
+              [
+                1,
+                38
+              ]
+            ],
+            "origin": [
+              13.54,
+              2.97,
+              -19.4
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RW-Flap-Br6R"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                25
+              ],
+              [
+                0.5,
+                31
+              ],
+              [
+                0.75,
+                38
+              ],
+              [
+                1,
+                39
+              ]
+            ],
+            "origin": [
+              15.03,
+              2.68,
+              -24.36
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "R-Flap-4"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 0.8,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "R-Flap-4"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": -0.01,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-Flap-4"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 40,
+            "origin": [
+              14.7,
+              2.84,
+              -26.5
+            ],
+            "axis": [
+              0.31287,
+              0.056885,
+              -0.948091
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "R-Flap-Cover-4"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": -4,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RW-Flap-Br7R"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                25
+              ],
+              [
+                0.5,
+                35
+              ],
+              [
+                0.75,
+                45
+              ],
+              [
+                1,
+                52
+              ]
+            ],
+            "origin": [
+              16.15,
+              2.51,
+              -27.75
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RW-Flap-Br8R"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                25
+              ],
+              [
+                0.5,
+                35
+              ],
+              [
+                0.75,
+                50
+              ],
+              [
+                1,
+                55
+              ]
+            ],
+            "origin": [
+              17.21,
+              2.32,
+              -31.19
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-NG-IS-Tyre",
+              "L-NG-OS-Tyre",
+              "L-NG-IS-Hub",
+              "L-NG-OS-Hub",
+              "L-NG-Strut"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "factor": 47.3,
+            "offset": 0,
+            "origin": [
+              -20.03,
+              -2,
+              0.93
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-NG-IS-Tyre",
+              "L-NG-OS-Tyre",
+              "L-NG-IS-Hub",
+              "L-NG-OS-Hub",
+              "L-NG-Strut"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                120
+              ],
+              [
+                0.25,
+                120
+              ],
+              [
+                0.75,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -19.5,
+              -2.2,
+              0.93
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-NG-IS-Door"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                95
+              ],
+              [
+                0.75,
+                95
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -22,
+              -2.29,
+              0
+            ],
+            "axis": [
+              0.995974,
+              -0.089638,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-NG-OS-Door"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -80
+              ],
+              [
+                0.75,
+                -80
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -22,
+              -2.01,
+              1.78
+            ],
+            "axis": [
+              0.995974,
+              -0.089638,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "L-NG-IS-Tyre",
+              "L-NG-OS-Tyre",
+              "L-NG-IS-Hub",
+              "L-NG-OS-Hub",
+              "L-NG-Strut"
+            ],
+            "prop": "gear/gear[0]/compression-norm",
+            "factor": 1,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-NG-IS-Tyre",
+              "R-NG-OS-Tyre",
+              "R-NG-IS-Hub",
+              "R-NG-OS-Hub",
+              "R-NG-Strut"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "factor": 47.3,
+            "offset": 0,
+            "origin": [
+              -20.03,
+              -2,
+              -0.93
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-NG-IS-Tyre",
+              "R-NG-OS-Tyre",
+              "R-NG-IS-Hub",
+              "R-NG-OS-Hub",
+              "R-NG-Strut"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                120
+              ],
+              [
+                0.25,
+                120
+              ],
+              [
+                0.75,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -19.5,
+              -2.2,
+              -0.93
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-NG-IS-Door"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -95
+              ],
+              [
+                0.75,
+                -95
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -22,
+              -2.29,
+              0
+            ],
+            "axis": [
+              0.995974,
+              -0.089638,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-NG-OS-Door"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                80
+              ],
+              [
+                0.75,
+                80
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -22,
+              -2.01,
+              -1.78
+            ],
+            "axis": [
+              0.995974,
+              -0.089638,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "R-NG-IS-Tyre",
+              "R-NG-OS-Tyre",
+              "R-NG-IS-Hub",
+              "R-NG-OS-Hub",
+              "R-NG-Strut"
+            ],
+            "prop": "gear/gear[1]/compression-norm",
+            "factor": 1,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-1-IS-Tyre",
+              "L-MG-1-OS-Tyre",
+              "L-MG-1-IS-Hub",
+              "L-MG-1-OS-Hub",
+              "L-MG-1-Strut"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                -110
+              ],
+              [
+                0.75,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              4.1,
+              -3.2,
+              2
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-1-IS-Tyre",
+              "L-MG-1-OS-Tyre",
+              "L-MG-1-IS-Hub",
+              "L-MG-1-OS-Hub",
+              "L-MG-1-Strut"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                12
+              ],
+              [
+                0.75,
+                12
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              4.1,
+              -2.3,
+              3.2
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-1-UDoor",
+              "L-MG-1-LDoor"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -100
+              ],
+              [
+                1,
+                -100
+              ]
+            ],
+            "origin": [
+              4.1,
+              -1.95,
+              3.84
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-1-LDoor"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                120
+              ],
+              [
+                1,
+                120
+              ]
+            ],
+            "origin": [
+              4.1,
+              -2.84,
+              3.07
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "L-MG-1-IS-Tyre",
+              "L-MG-1-OS-Tyre",
+              "L-MG-1-IS-Hub",
+              "L-MG-1-OS-Hub",
+              "L-MG-1-Strut"
+            ],
+            "prop": "gear/gear[2]/compression-norm",
+            "factor": 1,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-2-IS-Tyre",
+              "L-MG-2-OS-Tyre",
+              "L-MG-2-IS-Hub",
+              "L-MG-2-OS-Hub",
+              "L-MG-2-Strut"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                -110
+              ],
+              [
+                0.75,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              5.75,
+              -3.2,
+              2
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-2-IS-Tyre",
+              "L-MG-2-OS-Tyre",
+              "L-MG-2-IS-Hub",
+              "L-MG-2-OS-Hub",
+              "L-MG-2-Strut"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                12
+              ],
+              [
+                0.75,
+                12
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              5.75,
+              -2.3,
+              3.2
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-2-UDoor",
+              "L-MG-2-LDoor"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -100
+              ],
+              [
+                1,
+                -100
+              ]
+            ],
+            "origin": [
+              5.75,
+              -1.95,
+              3.84
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-2-LDoor"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                120
+              ],
+              [
+                1,
+                120
+              ]
+            ],
+            "origin": [
+              5.75,
+              -2.84,
+              3.07
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "L-MG-2-IS-Tyre",
+              "L-MG-2-OS-Tyre",
+              "L-MG-2-IS-Hub",
+              "L-MG-2-OS-Hub",
+              "L-MG-2-Strut"
+            ],
+            "prop": "gear/gear[3]/compression-norm",
+            "factor": 1,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-3-IS-Tyre",
+              "L-MG-3-OS-Tyre",
+              "L-MG-3-IS-Hub",
+              "L-MG-3-OS-Hub",
+              "L-MG-3-Strut"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                -110
+              ],
+              [
+                0.75,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              7.41,
+              -3.2,
+              2
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-3-IS-Tyre",
+              "L-MG-3-OS-Tyre",
+              "L-MG-3-IS-Hub",
+              "L-MG-3-OS-Hub",
+              "L-MG-3-Strut"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                12
+              ],
+              [
+                0.75,
+                12
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              7.41,
+              -2.3,
+              3.2
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-3-UDoor",
+              "L-MG-3-LDoor"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -100
+              ],
+              [
+                1,
+                -100
+              ]
+            ],
+            "origin": [
+              7.41,
+              -1.95,
+              3.84
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-3-LDoor"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                120
+              ],
+              [
+                1,
+                120
+              ]
+            ],
+            "origin": [
+              7.41,
+              -2.84,
+              3.07
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "L-MG-3-IS-Tyre",
+              "L-MG-3-OS-Tyre",
+              "L-MG-3-IS-Hub",
+              "L-MG-3-OS-Hub",
+              "L-MG-3-Strut"
+            ],
+            "prop": "gear/gear[4]/compression-norm",
+            "factor": 1,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-4-IS-Tyre",
+              "L-MG-4-OS-Tyre",
+              "L-MG-4-IS-Hub",
+              "L-MG-4-OS-Hub",
+              "L-MG-4-Strut"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "factor": -7,
+            "offset": 0,
+            "origin": [
+              9.05,
+              -2,
+              3.2
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-4-IS-Tyre",
+              "L-MG-4-OS-Tyre",
+              "L-MG-4-IS-Hub",
+              "L-MG-4-OS-Hub",
+              "L-MG-4-Strut"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                -110
+              ],
+              [
+                0.75,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              9.05,
+              -3.2,
+              2
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-4-IS-Tyre",
+              "L-MG-4-OS-Tyre",
+              "L-MG-4-IS-Hub",
+              "L-MG-4-OS-Hub",
+              "L-MG-4-Strut"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                12
+              ],
+              [
+                0.75,
+                12
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              9.05,
+              -2.3,
+              3.2
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-4-UDoor",
+              "L-MG-4-LDoor"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -100
+              ],
+              [
+                1,
+                -100
+              ]
+            ],
+            "origin": [
+              9.05,
+              -1.95,
+              3.84
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-4-LDoor"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                120
+              ],
+              [
+                1,
+                120
+              ]
+            ],
+            "origin": [
+              9.05,
+              -2.84,
+              3.07
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-5-IS-Tyre",
+              "L-MG-5-OS-Tyre",
+              "L-MG-5-IS-Hub",
+              "L-MG-5-OS-Hub",
+              "L-MG-5-Strut"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "factor": -12,
+            "offset": 0,
+            "origin": [
+              10.72,
+              -2,
+              3.2
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-5-IS-Tyre",
+              "L-MG-5-OS-Tyre",
+              "L-MG-5-IS-Hub",
+              "L-MG-5-OS-Hub",
+              "L-MG-5-Strut"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                -110
+              ],
+              [
+                0.75,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              10.72,
+              -3.2,
+              2
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-5-IS-Tyre",
+              "L-MG-5-OS-Tyre",
+              "L-MG-5-IS-Hub",
+              "L-MG-5-OS-Hub",
+              "L-MG-5-Strut"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                12
+              ],
+              [
+                0.75,
+                12
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              10.72,
+              -2.3,
+              3.2
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-5-UDoor",
+              "L-MG-5-LDoor"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -100
+              ],
+              [
+                1,
+                -100
+              ]
+            ],
+            "origin": [
+              10.72,
+              -1.95,
+              3.84
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-5-LDoor"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                120
+              ],
+              [
+                1,
+                120
+              ]
+            ],
+            "origin": [
+              10.72,
+              -2.84,
+              3.07
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-6-IS-Tyre",
+              "L-MG-6-OS-Tyre",
+              "L-MG-6-IS-Hub",
+              "L-MG-6-OS-Hub",
+              "L-MG-6-Strut"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "factor": -20,
+            "offset": 0,
+            "origin": [
+              12.42,
+              -2,
+              3.2
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-6-IS-Tyre",
+              "L-MG-6-OS-Tyre",
+              "L-MG-6-IS-Hub",
+              "L-MG-6-OS-Hub",
+              "L-MG-6-Strut"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                -110
+              ],
+              [
+                0.75,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              12.42,
+              -3.2,
+              2
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-6-IS-Tyre",
+              "L-MG-6-OS-Tyre",
+              "L-MG-6-IS-Hub",
+              "L-MG-6-OS-Hub",
+              "L-MG-6-Strut"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                12
+              ],
+              [
+                0.75,
+                12
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              12.42,
+              -2.3,
+              3.2
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-6-UDoor",
+              "L-MG-6-LDoor"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -100
+              ],
+              [
+                1,
+                -100
+              ]
+            ],
+            "origin": [
+              12.42,
+              -1.95,
+              3.84
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-6-LDoor"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                120
+              ],
+              [
+                1,
+                120
+              ]
+            ],
+            "origin": [
+              12.42,
+              -2.84,
+              3.07
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-7-IS-Tyre",
+              "L-MG-7-OS-Tyre",
+              "L-MG-7-IS-Hub",
+              "L-MG-7-OS-Hub",
+              "L-MG-7-Strut"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "factor": -30,
+            "offset": 0,
+            "origin": [
+              14.1,
+              -2,
+              3.2
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-7-IS-Tyre",
+              "L-MG-7-OS-Tyre",
+              "L-MG-7-IS-Hub",
+              "L-MG-7-OS-Hub",
+              "L-MG-7-Strut"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                -110
+              ],
+              [
+                0.75,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              14.1,
+              -3.2,
+              2
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-7-IS-Tyre",
+              "L-MG-7-OS-Tyre",
+              "L-MG-7-IS-Hub",
+              "L-MG-7-OS-Hub",
+              "L-MG-7-Strut"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                12
+              ],
+              [
+                0.75,
+                12
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              14.1,
+              -2.3,
+              3.2
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-7-UDoor",
+              "L-MG-7-LDoor"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -100
+              ],
+              [
+                1,
+                -100
+              ]
+            ],
+            "origin": [
+              14.1,
+              -1.95,
+              3.84
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "L-MG-7-LDoor"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                120
+              ],
+              [
+                1,
+                120
+              ]
+            ],
+            "origin": [
+              14.1,
+              -2.84,
+              3.07
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-1-IS-Tyre",
+              "R-MG-1-OS-Tyre",
+              "R-MG-1-IS-Hub",
+              "R-MG-1-OS-Hub",
+              "R-MG-1-Strut"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                -110
+              ],
+              [
+                0.75,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              4.1,
+              -3.2,
+              -2
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-1-IS-Tyre",
+              "R-MG-1-OS-Tyre",
+              "R-MG-1-IS-Hub",
+              "R-MG-1-OS-Hub",
+              "R-MG-1-Strut"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                12
+              ],
+              [
+                0.75,
+                12
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              4.1,
+              -2.3,
+              -3.2
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-1-UDoor",
+              "R-MG-1-LDoor"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -100
+              ],
+              [
+                1,
+                -100
+              ]
+            ],
+            "origin": [
+              4.1,
+              -1.95,
+              -3.84
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-1-LDoor"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                120
+              ],
+              [
+                1,
+                120
+              ]
+            ],
+            "origin": [
+              4.1,
+              -2.84,
+              -3.07
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-2-IS-Tyre",
+              "R-MG-2-OS-Tyre",
+              "R-MG-2-IS-Hub",
+              "R-MG-2-OS-Hub",
+              "R-MG-2-Strut"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                -110
+              ],
+              [
+                0.75,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              5.75,
+              -3.2,
+              -2
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-2-IS-Tyre",
+              "R-MG-2-OS-Tyre",
+              "R-MG-2-IS-Hub",
+              "R-MG-2-OS-Hub",
+              "R-MG-2-Strut"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                12
+              ],
+              [
+                0.75,
+                12
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              5.75,
+              -2.3,
+              -3.2
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-2-UDoor",
+              "R-MG-2-LDoor"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -100
+              ],
+              [
+                1,
+                -100
+              ]
+            ],
+            "origin": [
+              5.75,
+              -1.95,
+              -3.84
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-2-LDoor"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                120
+              ],
+              [
+                1,
+                120
+              ]
+            ],
+            "origin": [
+              5.75,
+              -2.84,
+              -3.07
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-3-IS-Tyre",
+              "R-MG-3-OS-Tyre",
+              "R-MG-3-IS-Hub",
+              "R-MG-3-OS-Hub",
+              "R-MG-3-Strut"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                -110
+              ],
+              [
+                0.75,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              7.41,
+              -3.2,
+              -2
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-3-IS-Tyre",
+              "R-MG-3-OS-Tyre",
+              "R-MG-3-IS-Hub",
+              "R-MG-3-OS-Hub",
+              "R-MG-3-Strut"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                12
+              ],
+              [
+                0.75,
+                12
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              7.41,
+              -2.3,
+              -3.2
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-3-UDoor",
+              "R-MG-3-LDoor"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -100
+              ],
+              [
+                1,
+                -100
+              ]
+            ],
+            "origin": [
+              7.41,
+              -1.95,
+              -3.84
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-3-LDoor"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                120
+              ],
+              [
+                1,
+                120
+              ]
+            ],
+            "origin": [
+              7.41,
+              -2.84,
+              -3.07
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-4-IS-Tyre",
+              "R-MG-4-OS-Tyre",
+              "R-MG-4-IS-Hub",
+              "R-MG-4-OS-Hub",
+              "R-MG-4-Strut"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "factor": -7,
+            "offset": 0,
+            "origin": [
+              9.05,
+              -2,
+              -3.2
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-4-IS-Tyre",
+              "R-MG-4-OS-Tyre",
+              "R-MG-4-IS-Hub",
+              "R-MG-4-OS-Hub",
+              "R-MG-4-Strut"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                -110
+              ],
+              [
+                0.75,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              9.05,
+              -3.2,
+              -2
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-4-IS-Tyre",
+              "R-MG-4-OS-Tyre",
+              "R-MG-4-IS-Hub",
+              "R-MG-4-OS-Hub",
+              "R-MG-4-Strut"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                12
+              ],
+              [
+                0.75,
+                12
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              9.05,
+              -2.3,
+              -3.2
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-4-UDoor",
+              "R-MG-4-LDoor"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -100
+              ],
+              [
+                1,
+                -100
+              ]
+            ],
+            "origin": [
+              9.05,
+              -1.95,
+              -3.84
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-4-LDoor"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                120
+              ],
+              [
+                1,
+                120
+              ]
+            ],
+            "origin": [
+              9.05,
+              -2.84,
+              -3.07
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-5-IS-Tyre",
+              "R-MG-5-OS-Tyre",
+              "R-MG-5-IS-Hub",
+              "R-MG-5-OS-Hub",
+              "R-MG-5-Strut"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "factor": -12,
+            "offset": 0,
+            "origin": [
+              10.72,
+              -2,
+              -3.2
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-5-IS-Tyre",
+              "R-MG-5-OS-Tyre",
+              "R-MG-5-IS-Hub",
+              "R-MG-5-OS-Hub",
+              "R-MG-5-Strut"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                -110
+              ],
+              [
+                0.75,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              10.72,
+              -3.2,
+              -2
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-5-IS-Tyre",
+              "R-MG-5-OS-Tyre",
+              "R-MG-5-IS-Hub",
+              "R-MG-5-OS-Hub",
+              "R-MG-5-Strut"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                12
+              ],
+              [
+                0.75,
+                12
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              10.72,
+              -2.3,
+              -3.2
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-5-UDoor",
+              "R-MG-5-LDoor"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -100
+              ],
+              [
+                1,
+                -100
+              ]
+            ],
+            "origin": [
+              10.72,
+              -1.95,
+              -3.84
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-5-LDoor"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                120
+              ],
+              [
+                1,
+                120
+              ]
+            ],
+            "origin": [
+              10.72,
+              -2.84,
+              -3.07
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-6-IS-Tyre",
+              "R-MG-6-OS-Tyre",
+              "R-MG-6-IS-Hub",
+              "R-MG-6-OS-Hub",
+              "R-MG-6-Strut"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "factor": -20,
+            "offset": 0,
+            "origin": [
+              12.72,
+              -2,
+              -3.2
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-6-IS-Tyre",
+              "R-MG-6-OS-Tyre",
+              "R-MG-6-IS-Hub",
+              "R-MG-6-OS-Hub",
+              "R-MG-6-Strut"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                -110
+              ],
+              [
+                0.75,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              12.42,
+              -3.2,
+              -2
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-6-IS-Tyre",
+              "R-MG-6-OS-Tyre",
+              "R-MG-6-IS-Hub",
+              "R-MG-6-OS-Hub",
+              "R-MG-6-Strut"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                12
+              ],
+              [
+                0.75,
+                12
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              12.42,
+              -2.3,
+              -3.2
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-6-UDoor",
+              "R-MG-6-LDoor"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -100
+              ],
+              [
+                1,
+                -100
+              ]
+            ],
+            "origin": [
+              12.42,
+              -1.95,
+              -3.84
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-6-LDoor"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                120
+              ],
+              [
+                1,
+                120
+              ]
+            ],
+            "origin": [
+              12.42,
+              -2.84,
+              -3.07
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-7-IS-Tyre",
+              "R-MG-7-OS-Tyre",
+              "R-MG-7-IS-Hub",
+              "R-MG-7-OS-Hub",
+              "R-MG-7-Strut"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "factor": -30,
+            "offset": 0,
+            "origin": [
+              14.1,
+              -2,
+              -3.2
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-7-IS-Tyre",
+              "R-MG-7-OS-Tyre",
+              "R-MG-7-IS-Hub",
+              "R-MG-7-OS-Hub",
+              "R-MG-7-Strut"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                -110
+              ],
+              [
+                0.75,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              14.1,
+              -3.2,
+              -2
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-7-IS-Tyre",
+              "R-MG-7-OS-Tyre",
+              "R-MG-7-IS-Hub",
+              "R-MG-7-OS-Hub",
+              "R-MG-7-Strut"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                12
+              ],
+              [
+                0.75,
+                12
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              14.1,
+              -2.3,
+              -3.2
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-7-UDoor",
+              "R-MG-7-LDoor"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -100
+              ],
+              [
+                1,
+                -100
+              ]
+            ],
+            "origin": [
+              14.1,
+              -1.95,
+              -3.84
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "R-MG-7-LDoor"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                120
+              ],
+              [
+                1,
+                120
+              ]
+            ],
+            "origin": [
+              14.1,
+              -2.84,
+              -3.07
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {},
+        "select": [
+          {
+            "objects": [
+              "L-NG-IS-Tyre",
+              "L-NG-OS-Tyre",
+              "L-NG-IS-Hub",
+              "L-NG-OS-Hub",
+              "L-NG-Strut",
+              "L-NG-IS-Door",
+              "L-NG-OS-Door"
+            ],
+            "cond": [
+              "and",
+              [
+                "gt",
+                "gear/gear[0]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "L-NG-CDoor"
+            ],
+            "cond": [
+              "and",
+              [
+                "eq",
+                "gear/gear[0]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "R-NG-IS-Tyre",
+              "R-NG-OS-Tyre",
+              "R-NG-IS-Hub",
+              "R-NG-OS-Hub",
+              "R-NG-Strut",
+              "R-NG-IS-Door",
+              "R-NG-OS-Door"
+            ],
+            "cond": [
+              "and",
+              [
+                "gt",
+                "gear/gear[0]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "R-NG-CDoor"
+            ],
+            "cond": [
+              "and",
+              [
+                "eq",
+                "gear/gear[0]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "L-MG-1-IS-Tyre",
+              "L-MG-1-OS-Tyre",
+              "L-MG-1-IS-Hub",
+              "L-MG-1-OS-Hub",
+              "L-MG-1-Strut",
+              "L-MG-1-UDoor",
+              "L-MG-1-LDoor"
+            ],
+            "cond": [
+              "and",
+              [
+                "gt",
+                "gear/gear[1]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "L-MG-1-CDoor"
+            ],
+            "cond": [
+              "and",
+              [
+                "eq",
+                "gear/gear[1]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "L-MG-2-IS-Tyre",
+              "L-MG-2-OS-Tyre",
+              "L-MG-2-IS-Hub",
+              "L-MG-2-OS-Hub",
+              "L-MG-2-Strut",
+              "L-MG-2-UDoor",
+              "L-MG-2-LDoor"
+            ],
+            "cond": [
+              "and",
+              [
+                "gt",
+                "gear/gear[1]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "L-MG-2-CDoor"
+            ],
+            "cond": [
+              "and",
+              [
+                "eq",
+                "gear/gear[1]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "L-MG-3-IS-Tyre",
+              "L-MG-3-OS-Tyre",
+              "L-MG-3-IS-Hub",
+              "L-MG-3-OS-Hub",
+              "L-MG-3-Strut",
+              "L-MG-3-UDoor",
+              "L-MG-3-LDoor"
+            ],
+            "cond": [
+              "and",
+              [
+                "gt",
+                "gear/gear[1]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "L-MG-3-CDoor"
+            ],
+            "cond": [
+              "and",
+              [
+                "eq",
+                "gear/gear[1]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "L-MG-4-IS-Tyre",
+              "L-MG-4-OS-Tyre",
+              "L-MG-4-IS-Hub",
+              "L-MG-4-OS-Hub",
+              "L-MG-4-Strut",
+              "L-MG-4-UDoor",
+              "L-MG-4-LDoor"
+            ],
+            "cond": [
+              "and",
+              [
+                "gt",
+                "gear/gear[1]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "L-MG-4-CDoor"
+            ],
+            "cond": [
+              "and",
+              [
+                "eq",
+                "gear/gear[1]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "L-MG-5-IS-Tyre",
+              "L-MG-5-OS-Tyre",
+              "L-MG-5-IS-Hub",
+              "L-MG-5-OS-Hub",
+              "L-MG-5-Strut",
+              "L-MG-5-UDoor",
+              "L-MG-5-LDoor"
+            ],
+            "cond": [
+              "and",
+              [
+                "gt",
+                "gear/gear[1]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "L-MG-5-CDoor"
+            ],
+            "cond": [
+              "and",
+              [
+                "eq",
+                "gear/gear[1]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "L-MG-6-IS-Tyre",
+              "L-MG-6-OS-Tyre",
+              "L-MG-6-IS-Hub",
+              "L-MG-6-OS-Hub",
+              "L-MG-6-Strut",
+              "L-MG-6-UDoor",
+              "L-MG-6-LDoor"
+            ],
+            "cond": [
+              "and",
+              [
+                "gt",
+                "gear/gear[1]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "L-MG-6-CDoor"
+            ],
+            "cond": [
+              "and",
+              [
+                "eq",
+                "gear/gear[1]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "L-MG-7-IS-Tyre",
+              "L-MG-7-OS-Tyre",
+              "L-MG-7-IS-Hub",
+              "L-MG-7-OS-Hub",
+              "L-MG-7-Strut",
+              "L-MG-7-UDoor",
+              "L-MG-7-LDoor"
+            ],
+            "cond": [
+              "and",
+              [
+                "gt",
+                "gear/gear[1]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "L-MG-7-CDoor"
+            ],
+            "cond": [
+              "and",
+              [
+                "eq",
+                "gear/gear[1]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "R-MG-1-IS-Tyre",
+              "R-MG-1-OS-Tyre",
+              "R-MG-1-IS-Hub",
+              "R-MG-1-OS-Hub",
+              "R-MG-1-Strut",
+              "R-MG-1-UDoor",
+              "R-MG-1-LDoor"
+            ],
+            "cond": [
+              "and",
+              [
+                "gt",
+                "gear/gear[2]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "R-MG-1-CDoor"
+            ],
+            "cond": [
+              "and",
+              [
+                "eq",
+                "gear/gear[2]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "R-MG-2-IS-Tyre",
+              "R-MG-2-OS-Tyre",
+              "R-MG-2-IS-Hub",
+              "R-MG-2-OS-Hub",
+              "R-MG-2-Strut",
+              "R-MG-2-UDoor",
+              "R-MG-2-LDoor"
+            ],
+            "cond": [
+              "and",
+              [
+                "gt",
+                "gear/gear[2]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "R-MG-2-CDoor"
+            ],
+            "cond": [
+              "and",
+              [
+                "eq",
+                "gear/gear[2]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "R-MG-3-IS-Tyre",
+              "R-MG-3-OS-Tyre",
+              "R-MG-3-IS-Hub",
+              "R-MG-3-OS-Hub",
+              "R-MG-3-Strut",
+              "R-MG-3-UDoor",
+              "R-MG-3-LDoor"
+            ],
+            "cond": [
+              "and",
+              [
+                "gt",
+                "gear/gear[2]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "R-MG-3-CDoor"
+            ],
+            "cond": [
+              "and",
+              [
+                "eq",
+                "gear/gear[2]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "R-MG-4-IS-Tyre",
+              "R-MG-4-OS-Tyre",
+              "R-MG-4-IS-Hub",
+              "R-MG-4-OS-Hub",
+              "R-MG-4-Strut",
+              "R-MG-4-UDoor",
+              "R-MG-4-LDoor"
+            ],
+            "cond": [
+              "and",
+              [
+                "gt",
+                "gear/gear[2]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "R-MG-4-CDoor"
+            ],
+            "cond": [
+              "and",
+              [
+                "eq",
+                "gear/gear[2]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "R-MG-5-IS-Tyre",
+              "R-MG-5-OS-Tyre",
+              "R-MG-5-IS-Hub",
+              "R-MG-5-OS-Hub",
+              "R-MG-5-Strut",
+              "R-MG-5-UDoor",
+              "R-MG-5-LDoor"
+            ],
+            "cond": [
+              "and",
+              [
+                "gt",
+                "gear/gear[2]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "R-MG-5-CDoor"
+            ],
+            "cond": [
+              "and",
+              [
+                "eq",
+                "gear/gear[2]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "R-MG-6-IS-Tyre",
+              "R-MG-6-OS-Tyre",
+              "R-MG-6-IS-Hub",
+              "R-MG-6-OS-Hub",
+              "R-MG-6-Strut",
+              "R-MG-6-UDoor",
+              "R-MG-6-LDoor"
+            ],
+            "cond": [
+              "and",
+              [
+                "gt",
+                "gear/gear[2]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "R-MG-6-CDoor"
+            ],
+            "cond": [
+              "and",
+              [
+                "eq",
+                "gear/gear[2]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "R-MG-7-IS-Tyre",
+              "R-MG-7-OS-Tyre",
+              "R-MG-7-IS-Hub",
+              "R-MG-7-OS-Hub",
+              "R-MG-7-Strut",
+              "R-MG-7-UDoor",
+              "R-MG-7-LDoor"
+            ],
+            "cond": [
+              "and",
+              [
+                "gt",
+                "gear/gear[2]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "R-MG-7-CDoor"
+            ],
+            "cond": [
+              "and",
+              [
+                "eq",
+                "gear/gear[2]/position-norm",
+                0
+              ]
+            ]
+          }
+        ]
       },
       {
         "file": "Models/Interior/an-225interior-48b.ac",
@@ -9539,6 +14326,50 @@
         "fallback": {
           "id": "cabin",
           "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "../crew/liner_pilot.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -22.357,
+              "y": -0.645,
+              "z": 3.905
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "crew",
+          "label": "Pilots",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "../crew/liner_pilot.ac",
+        "chain": [
+          {
+            "offset": {
+              "x": -22.357,
+              "y": 0.655,
+              "z": 3.905
+            },
+            "rotation": {
+              "pitch": 0,
+              "heading": 0,
+              "roll": 0
+            }
+          }
+        ],
+        "fallback": {
+          "id": "crew",
+          "label": "Pilots",
           "system": "interior"
         }
       }
