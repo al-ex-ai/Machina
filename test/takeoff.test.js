@@ -45,6 +45,12 @@ for (const m of listed) {
     const r = measureTakeoffRun(loadAssetNode(m), m);
     assert.ok(r.depth <= 0.02, `${r.part} ${r.mesh} is ${r.depth.toFixed(2)} m under the runway during the ${r.phase} (t ${r.t} s)`);
   });
+  if (m.landing) test(`${m.id}: lands on its wheels and nothing goes through the runway`, () => {
+    const r = measureTakeoffRun(loadAssetNode(m), m, { kind: 'landing' });
+    assert.ok(r.depth <= 0.02, `${r.part} ${r.mesh} is ${r.depth.toFixed(2)} m under the runway during the ${r.phase} (t ${r.t} s)`);
+    const l = m.landing;
+    assert.ok(l.vapp_kt > 30 && l.vapp_kt < 200 && l.roll_m > 50 && l.roll_m < 3000, 'landing figures out of range');
+  });
   test(`${m.id}: the cockpit view looks out`, () => {
     // Rays from the captain's eye across the middle of the view: nothing solid closer than 43 cm (glass is
     // see-through from inside; head-up displays and visors that block it are hidden by takeoff.cockpit).

@@ -1814,7 +1814,259 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "needle"
+            ],
+            "prop": "instrumentation/altimeter[0]/indicated-altitude-ft",
+            "factor": 0.36,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "altdig1"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter[0]/indicated-altitude-ft",
+                "factor": 0.00001,
+                "offset": 0,
+                "step": 10000,
+                "scroll": 20,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "altdig2"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter[0]/indicated-altitude-ft",
+                "factor": 0.0001,
+                "offset": 0,
+                "step": 1000,
+                "scroll": 50,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "altdig3"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter[0]/indicated-altitude-ft",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "scroll": 20,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "altdig20s"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter[0]/indicated-altitude-ft",
+                "factor": 0.01,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "inhg4"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter[0]/setting-inhg",
+                "factor": 10,
+                "offset": 0,
+                "step": 0.01,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "inhg3"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter[0]/setting-inhg",
+                "factor": 1,
+                "offset": 0,
+                "step": 0.1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "inhg2"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter[0]/setting-inhg",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "inhg1"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter[0]/setting-inhg",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "mb4"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter[0]/setting-inhg",
+                "factor": 3.38639,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "mb3"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter[0]/setting-inhg",
+                "factor": 0.338639,
+                "offset": 0,
+                "step": 0.2952998,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "mb2"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter[0]/setting-inhg",
+                "factor": 0.033863886,
+                "offset": 0,
+                "step": 2.9529983,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "mb1"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter[0]/setting-inhg",
+                "factor": 0.0033863886,
+                "offset": 0,
+                "step": 29.5329983,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/ALT/alt.ac",
@@ -1872,7 +2124,259 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "needle"
+            ],
+            "prop": "instrumentation/altimeter[1]/indicated-altitude-ft",
+            "factor": 0.36,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "altdig1"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter[1]/indicated-altitude-ft",
+                "factor": 0.00001,
+                "offset": 0,
+                "step": 10000,
+                "scroll": 20,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "altdig2"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter[1]/indicated-altitude-ft",
+                "factor": 0.0001,
+                "offset": 0,
+                "step": 1000,
+                "scroll": 50,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "altdig3"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter[1]/indicated-altitude-ft",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "scroll": 20,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "altdig20s"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter[1]/indicated-altitude-ft",
+                "factor": 0.01,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "inhg4"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter[1]/setting-inhg",
+                "factor": 10,
+                "offset": 0,
+                "step": 0.01,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "inhg3"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter[1]/setting-inhg",
+                "factor": 1,
+                "offset": 0,
+                "step": 0.1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "inhg2"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter[1]/setting-inhg",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "inhg1"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter[1]/setting-inhg",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "mb4"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter[1]/setting-inhg",
+                "factor": 3.38639,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "mb3"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter[1]/setting-inhg",
+                "factor": 0.338639,
+                "offset": 0,
+                "step": 0.2952998,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "mb2"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter[1]/setting-inhg",
+                "factor": 0.033863886,
+                "offset": 0,
+                "step": 2.9529983,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "mb1"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter[1]/setting-inhg",
+                "factor": 0.0033863886,
+                "offset": 0,
+                "step": 29.5329983,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/AB/ABSelectorknob.ac",
@@ -2162,7 +2666,65 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "needle"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                -90
+              ],
+              [
+                0.025,
+                -57
+              ],
+              [
+                0.05,
+                -21
+              ],
+              [
+                0.125,
+                20
+              ],
+              [
+                0.25,
+                58
+              ],
+              [
+                0.375,
+                91
+              ],
+              [
+                0.625,
+                122
+              ],
+              [
+                0.75,
+                150
+              ],
+              [
+                1,
+                180
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/signal/signal2.ac",
@@ -2452,7 +3014,312 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "ALT.needle"
+            ],
+            "prop": "instrumentation/altimeter/indicated-altitude-ft",
+            "factor": 0.036,
+            "origin": [
+              0,
+              0.014,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "iastape"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/airspeed-indicator/indicated-speed-kt",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  -1,
+                  0
+                ],
+                "table": [
+                  [
+                    0,
+                    0
+                  ],
+                  [
+                    60,
+                    0.0244
+                  ],
+                  [
+                    300,
+                    0.412
+                  ],
+                  [
+                    580,
+                    0.8697
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "alttxt.004"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicated-altitude-ft",
+                "factor": 0.1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "alttxt.003"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicated-altitude-ft",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "alttxt.002"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicated-altitude-ft",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "alttxt.001"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicated-altitude-ft",
+                "factor": 0.0001,
+                "offset": 0,
+                "step": 1000,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "alttxt"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicated-altitude-ft",
+                "factor": 0.00001,
+                "offset": 0,
+                "step": 10000,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "inhg.001"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/setting-inhg",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "inhg.002"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/setting-inhg",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "inhg.003"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/setting-inhg",
+                "factor": 1,
+                "offset": 0,
+                "step": 0.1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "inhg.004"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/setting-inhg",
+                "factor": 10,
+                "offset": 0,
+                "step": 0.01,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "kpa.001"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/setting-inhg",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "kpa.002"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/setting-inhg",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "kpa.003"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/setting-inhg",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "kpa.004"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/setting-inhg",
+                "factor": 1,
+                "offset": 0,
+                "step": 0.1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/STBYai/backupai.ac",
@@ -2510,7 +3377,61 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "ball"
+            ],
+            "prop": "orientation/roll-deg",
+            "origin": [
+              -0.042,
+              -0.004,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "ball"
+            ],
+            "prop": "orientation/pitch-deg",
+            "origin": [
+              -0.042,
+              -0.004,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rollarrow"
+            ],
+            "prop": "orientation/roll-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/ASI/asi.ac",
@@ -2568,7 +3489,215 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "needle"
+            ],
+            "prop": "instrumentation/airspeed-indicator/indicated-speed-kt",
+            "table": [
+              [
+                56,
+                -5
+              ],
+              [
+                60,
+                0
+              ],
+              [
+                100,
+                61
+              ],
+              [
+                120,
+                91
+              ],
+              [
+                140,
+                120
+              ],
+              [
+                160,
+                149
+              ],
+              [
+                180,
+                166
+              ],
+              [
+                200,
+                183
+              ],
+              [
+                250,
+                229
+              ],
+              [
+                300,
+                256
+              ],
+              [
+                350,
+                283
+              ],
+              [
+                400,
+                309
+              ],
+              [
+                450,
+                335
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "bug-man"
+            ],
+            "prop": "instrumentation/airspeed-indicator/speed-bug",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "Cylinder"
+            ],
+            "prop": "instrumentation/airspeed-indicator/speed-bug-pushed",
+            "factor": 0.005,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "rouek1"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/airspeed-indicator/indicated-speed-numbers-kt",
+                "factor": 0.1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "rouek10"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/airspeed-indicator/indicated-speed-numbers-kt",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "scroll": 2,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "rouek100"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/airspeed-indicator/indicated-speed-numbers-kt",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "scroll": 3,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "rouem01"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/airspeed-indicator/indicated-mach",
+                "factor": 10,
+                "offset": 0,
+                "step": 0.01,
+                "scroll": 0.01,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "rouem1"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/airspeed-indicator/indicated-mach",
+                "factor": 1,
+                "offset": 0,
+                "step": 0.1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/ASI/asi.ac",
@@ -2626,7 +3755,215 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "needle"
+            ],
+            "prop": "instrumentation/airspeed-indicator/indicated-speed-kt",
+            "table": [
+              [
+                56,
+                -5
+              ],
+              [
+                60,
+                0
+              ],
+              [
+                100,
+                61
+              ],
+              [
+                120,
+                91
+              ],
+              [
+                140,
+                120
+              ],
+              [
+                160,
+                149
+              ],
+              [
+                180,
+                166
+              ],
+              [
+                200,
+                183
+              ],
+              [
+                250,
+                229
+              ],
+              [
+                300,
+                256
+              ],
+              [
+                350,
+                283
+              ],
+              [
+                400,
+                309
+              ],
+              [
+                450,
+                335
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "bug-man"
+            ],
+            "prop": "instrumentation/airspeed-indicator/speed-bug",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "Cylinder"
+            ],
+            "prop": "instrumentation/airspeed-indicator/speed-bug-pushed",
+            "factor": 0.005,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "rouek1"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/airspeed-indicator/indicated-speed-numbers-kt",
+                "factor": 0.1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "rouek10"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/airspeed-indicator/indicated-speed-numbers-kt",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "scroll": 2,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "rouek100"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/airspeed-indicator/indicated-speed-numbers-kt",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "scroll": 3,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "rouem01"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/airspeed-indicator/indicated-mach",
+                "factor": 10,
+                "offset": 0,
+                "step": 0.01,
+                "scroll": 0.01,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "rouem1"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/airspeed-indicator/indicated-mach",
+                "factor": 1,
+                "offset": 0,
+                "step": 0.1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/PFD/pfd.ac",
@@ -2684,7 +4021,404 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "translate",
+            "objects": [
+              "GSneedle"
+            ],
+            "prop": "instrumentation/nav/gs-needle-deflection",
+            "table": [
+              [
+                -10,
+                -0.0608
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                10,
+                0.0608
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "LOCneedle"
+            ],
+            "prop": "instrumentation/nav/heading-needle-deflection",
+            "table": [
+              [
+                -10,
+                -0.0253
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                10,
+                0.0253
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "FDbars"
+            ],
+            "prop": "instrumentation/flightdirector/fd-left-bank",
+            "factor": -1,
+            "origin": [
+              0.007,
+              0.005,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "FDbars"
+            ],
+            "prop": "orientation/roll-deg",
+            "origin": [
+              0.007,
+              0.005,
+              0.014
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "FDbars"
+            ],
+            "prop": "instrumentation/flightdirector/fd-left-pitch",
+            "factor": 0.0014,
+            "offset": 0.002,
+            "origin": [
+              0.007,
+              0.005,
+              0.014
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "FDbars"
+            ],
+            "prop": "orientation/pitch-deg",
+            "factor": -0.0014,
+            "origin": [
+              0.007,
+              0.005,
+              0.014
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rollarrow"
+            ],
+            "prop": "orientation/roll-deg",
+            "origin": [
+              0,
+              0,
+              0.003
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rollptr"
+            ],
+            "prop": "orientation/roll-deg",
+            "origin": [
+              0,
+              0.005,
+              0.014
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "slipball"
+            ],
+            "prop": "instrumentation/slip-skid-indicator/slip-skid-deg-filtered",
+            "min": -10,
+            "max": 10,
+            "origin": [
+              0,
+              0.095,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "AI"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "orientation/pitch-deg",
+                "factor": 0.00314,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              },
+              {
+                "kind": "rotate",
+                "prop": "orientation/roll-deg",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  0,
+                  -1
+                ],
+                "center": [
+                  0.25,
+                  0.5
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "asi1"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "velocities/airspeed-kt",
+                "factor": 0.1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "asi2"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "velocities/airspeed-kt",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "scroll": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "asi3"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "velocities/airspeed-kt",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "scroll": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "asitape1"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "velocities/airspeed-kt",
+                "factor": 0.001665,
+                "offset": 0,
+                "min": 0.0499,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "asitape2"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "velocities/airspeed-kt",
+                "factor": 0.001665,
+                "offset": 0,
+                "min": 0.0499,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "dmetxt.001"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/dme/indicated-distance-nm",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "dmetxt.002"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/dme/indicated-distance-nm",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "dmetxt.003"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/dme/indicated-distance-nm",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "dmetxt.004"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/dme/indicated-distance-nm",
+                "factor": 1,
+                "offset": 0,
+                "step": 0.1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/PFD/pfd.ac",
@@ -2742,7 +4476,404 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "translate",
+            "objects": [
+              "GSneedle"
+            ],
+            "prop": "instrumentation/nav[1]/gs-needle-deflection",
+            "table": [
+              [
+                -10,
+                -0.0608
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                10,
+                0.0608
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "LOCneedle"
+            ],
+            "prop": "instrumentation/nav[1]/heading-needle-deflection",
+            "table": [
+              [
+                -10,
+                -0.0253
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                10,
+                0.0253
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "FDbars"
+            ],
+            "prop": "instrumentation/flightdirector/fd-right-bank",
+            "factor": -1,
+            "origin": [
+              0.007,
+              0.005,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "FDbars"
+            ],
+            "prop": "orientation/roll-deg",
+            "origin": [
+              0.007,
+              0.005,
+              0.014
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "FDbars"
+            ],
+            "prop": "instrumentation/flightdirector/fd-right-pitch",
+            "factor": 0.0014,
+            "offset": 0.002,
+            "origin": [
+              0.007,
+              0.005,
+              0.014
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "FDbars"
+            ],
+            "prop": "orientation/pitch-deg",
+            "factor": -0.0014,
+            "origin": [
+              0.007,
+              0.005,
+              0.014
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rollarrow"
+            ],
+            "prop": "orientation/roll-deg",
+            "origin": [
+              0,
+              0,
+              0.003
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rollptr"
+            ],
+            "prop": "orientation/roll-deg",
+            "origin": [
+              0,
+              0.005,
+              0.014
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "slipball"
+            ],
+            "prop": "instrumentation/slip-skid-indicator/slip-skid-deg-filtered",
+            "min": -10,
+            "max": 10,
+            "origin": [
+              0,
+              0.095,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "AI"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "orientation/pitch-deg",
+                "factor": 0.00314,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              },
+              {
+                "kind": "rotate",
+                "prop": "orientation/roll-deg",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  0,
+                  -1
+                ],
+                "center": [
+                  0.25,
+                  0.5
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "asi1"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "velocities/airspeed-kt",
+                "factor": 0.1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "asi2"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "velocities/airspeed-kt",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "scroll": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "asi3"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "velocities/airspeed-kt",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "scroll": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "asitape1"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "velocities/airspeed-kt",
+                "factor": 0.001665,
+                "offset": 0,
+                "min": 0.0499,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "asitape2"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "velocities/airspeed-kt",
+                "factor": 0.001665,
+                "offset": 0,
+                "min": 0.0499,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "dmetxt.001"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/dme/indicated-distance-nm",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "dmetxt.002"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/dme/indicated-distance-nm",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "dmetxt.003"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/dme/indicated-distance-nm",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "dmetxt.004"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/dme/indicated-distance-nm",
+                "factor": 1,
+                "offset": 0,
+                "step": 0.1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/EHSI/ehsi_l.ac",
@@ -2916,7 +5047,73 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "needle"
+            ],
+            "prop": "autopilot/internal/current-vertical-speed-fpm",
+            "table": [
+              [
+                -6000,
+                170
+              ],
+              [
+                -4000,
+                140
+              ],
+              [
+                -2000,
+                100
+              ],
+              [
+                -1000,
+                60
+              ],
+              [
+                -500,
+                30
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                500,
+                -30
+              ],
+              [
+                1000,
+                -60
+              ],
+              [
+                2000,
+                -100
+              ],
+              [
+                4000,
+                -145
+              ],
+              [
+                6000,
+                -170
+              ]
+            ],
+            "origin": [
+              0.004,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/VSI/vsi.ac",
@@ -2974,7 +5171,73 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "needle"
+            ],
+            "prop": "autopilot/internal/current-vertical-speed-fpm",
+            "table": [
+              [
+                -6000,
+                170
+              ],
+              [
+                -4000,
+                140
+              ],
+              [
+                -2000,
+                100
+              ],
+              [
+                -1000,
+                60
+              ],
+              [
+                -500,
+                30
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                500,
+                -30
+              ],
+              [
+                1000,
+                -60
+              ],
+              [
+                2000,
+                -100
+              ],
+              [
+                4000,
+                -145
+              ],
+              [
+                6000,
+                -170
+              ]
+            ],
+            "origin": [
+              0.004,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/FUEL/fuelgauge.ac",
@@ -3206,7 +5469,37 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "needle"
+            ],
+            "prop": "engines/engine/n1",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                100,
+                233
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/RPM1/rpmgauge.ac",
@@ -3264,7 +5557,37 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "needle"
+            ],
+            "prop": "engines/engine[1]/n1",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                100,
+                233
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/EGT/egtgauge.ac",
@@ -3322,7 +5645,37 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "needle"
+            ],
+            "prop": "engines/engine/egt-degf",
+            "table": [
+              [
+                32,
+                0
+              ],
+              [
+                1800,
+                233
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/EGT/egtgauge.ac",
@@ -3380,7 +5733,37 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "needle"
+            ],
+            "prop": "engines/engine[1]/egt-degf",
+            "table": [
+              [
+                32,
+                0
+              ],
+              [
+                1800,
+                233
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/RPM2/rpmn2gauge.ac",
@@ -3438,7 +5821,37 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "needle"
+            ],
+            "prop": "engines/engine/n2",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                100,
+                233
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/RPM2/rpmn2gauge.ac",
@@ -3496,7 +5909,37 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "needle"
+            ],
+            "prop": "engines/engine[1]/n2",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                100,
+                233
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/FUELFLOW/fuelflow.ac",
@@ -3554,7 +5997,37 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "needle"
+            ],
+            "prop": "engines/engine/fuel-flow_pph",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                18200,
+                265
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/FUELFLOW/fuelflow.ac",
@@ -3612,7 +6085,37 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "needle"
+            ],
+            "prop": "engines/engine[1]/fuel-flow_pph",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                18200,
+                265
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/glareshield/glareshield.ac",
@@ -10533,7 +13036,10 @@
         "fin",
         "rudder"
       ]
-    }
+    },
+    "glassTextures": [
+      "pfd-mask.webp"
+    ]
   },
   "parts": {
     "engine": {
@@ -10557,5 +13063,13 @@
       "maxPlainGear": 0.32
     },
     "reason": "The 737 gear legs are painted white on the real aircraft; the FlightGear model shows them as plain white."
+  },
+  "landing": {
+    "vapp_kt": 135,
+    "roll_m": 760,
+    "flaps": 0.75,
+    "pitch_deg": 2.5,
+    "flare_deg": 5,
+    "note": "Approximate: flaps 30, typical landing weight, autobrake medium with reversers"
   }
 }

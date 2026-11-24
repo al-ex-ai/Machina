@@ -72,19 +72,20 @@ export function measureTakeoff(root, model) {
 /**
  * Play the takeoff frame by frame (src/takeoff-sim.js, the code the scene runs) and measure how far any
  * visible mesh reaches below the runway at any moment, with the gear moving, oleos unloading and wheels
- * spinning. Runs from the start until the gear is up.
+ * spinning. Runs from the start until the gear is up, or for a landing (kind 'landing') from the approach
+ * until the model stops.
  * @returns {null | { depth: number, mesh: string, part: string, t: number, phase: string }} depth: deepest point
  *   below the runway (m, positive = under it)
  */
-export function measureTakeoffRun(root, model, { every = 0.1 } = {}) {
-  const sim = createTakeoffSim(root, model);
+export function measureTakeoffRun(root, model, { every = 0.1, kind = 'takeoff' } = {}) {
+  const sim = createTakeoffSim(root, model, { kind });
   const meshes = [];
   root.traverse(o => { if (o.isMesh) meshes.push(o); });
   const partOf = o => { let p = o; while (p && !p.userData.part) p = p.parent; return p?.userData.id ?? ''; };
   const visible = o => { for (let p = o; p; p = p.parent) if (!p.visible) return false; return true; };
   let worst = { depth: -Infinity, mesh: '', part: '', t: 0, phase: '' };
-  const phase = s => (s.tR === null ? 'roll' : s.tL === null ? 'rotation' : 'climb');
-  const end = () => sim.s.tL !== null && sim.s.t > sim.s.tL + 3 + sim.gearTime + 1;
+  const phase = kind === 'landing' ? s => (s.tD === null ? (s.tF === null ? 'approach' : 'flare') : s.tN === null ? 'touchdown' : 'rollout') : s => (s.tR === null ? 'roll' : s.tL === null ? 'rotation' : 'climb');
+  const end = kind === 'landing' ? () => sim.s.done : () => sim.s.tL !== null && sim.s.t > sim.s.tL + 3 + sim.gearTime + 1;
   let next = 0;
   sim.place();
   for (let guard = 0; guard < 200000 && !end(); guard++) {

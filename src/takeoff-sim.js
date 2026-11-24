@@ -103,6 +103,23 @@ export function createTakeoffSim(root, model, opts = {}) {
   const rest = anim ? { ...anim.values } : {};
   const blur = { set: opts.blur ?? (() => {}) };
 
+  // Panel instruments (src/fg-anim.js moves their needles and digit drums): what the airplane is doing,
+  // and engine readings from how far the engines are spun up (power 0 idle .. 1 takeoff).
+  const gauges = (kt, ft, fpm, pitch, power) => {
+    if (!anim) return;
+    for (const p of anim.props) {
+      if (/airspeed-indicator\/indicated-speed(-numbers)?-kt$|^velocities\/airspeed-kt$/.test(p)) anim.values[p] = kt;
+      else if (/indicated-mach$/.test(p)) anim.values[p] = kt / 661.5;
+      else if (/altimeter(\[\d+\])?\/indicated-altitude-ft$/.test(p)) anim.values[p] = ft;
+      else if (/setting-inhg$/.test(p)) anim.values[p] = 29.92;
+      else if (/vertical-speed-fpm$|indicated-speed-fpm$/.test(p)) anim.values[p] = fpm;
+      else if (/^orientation\/pitch-deg$/.test(p)) anim.values[p] = pitch;
+      else if (/^engines\/engine(\[\d+\])?\/n1$/.test(p)) anim.values[p] = lerp(21, 92, power);
+      else if (/^engines\/engine(\[\d+\])?\/n2$/.test(p)) anim.values[p] = lerp(60, 97, power);
+      else if (/egt-degf$/.test(p)) anim.values[p] = lerp(850, 1550, power);
+      else if (/fuel-flow_pph$/.test(p)) anim.values[p] = lerp(900, 6800, power);
+    }
+  };
   let s; // simulation state
   const reset = () => {
     s = { t: 0, x: 0, v: 0, h: 0, gamma: 0, pitch: 0, tR: null, tL: null, yLift: 0, wheel: 0, prop: 0, done: false };
@@ -172,6 +189,7 @@ export function createTakeoffSim(root, model, opts = {}) {
         else if (/velocities\/uBody-fps$/.test(p)) anim.spin[p] = s.wheel;
       }
       for (const p of rpmProps) anim.spin[p] = s.prop;
+      gauges(s.v / KT, s.h * FT, s.v * Math.sin(s.gamma) * FT * 60, s.pitch, power);
       anim.apply();
     }
     if (s.tL !== null && t - s.tL > 32) s.done = true;
@@ -189,11 +207,95 @@ export function createTakeoffSim(root, model, opts = {}) {
     root.matrixWorldNeedsUpdate = true;
   };
 
+  if (opts.kind === 'landing') return landing();
   return {
     anim, cfg, pivot, lowestMain, tailClear, place, step, vr, RUNUP, gearTime, gearProps, tail,
     get s() { return s; },
     reset: () => { reset(); },
   };
+
+  /**
+   * Landing from the model's published figures (model.landing): a 3 degree approach from 50 m with the gear
+   * down and landing flaps, a flare from 7 m that raises the nose (a degree short of a tail strike) and
+   * takes the sink down to a metre a second, the mains first, the nose lowered, and a braked rollout.
+   */
+  function landing() {
+    const lc = model.landing, KT_ = 0.514444;
+    const vapp = lc.vapp_kt * KT_, decel = (0.97 * vapp) ** 2 / (2 * lc.roll_m), glide = THREE.MathUtils.degToRad(lc.glide_deg ?? 3);
+    const H0 = 50, FLARE = lc.flare_m ?? 7, SINK_TD = 1.0, appPitch = lc.pitch_deg ?? 2.5, flarePitch = Math.min(lc.flare_deg ?? appPitch + 3, tailClear - 1);
+    const TD = lc.touchdown_m ?? 400; // past the threshold, which is 100 m behind the takeoff's start
+    // Where the approach starts: far enough out that the mains, after the flare, touch down TD metres past the
+    // threshold (a quick run of the vertical profile alone gives the distance flown to touchdown).
+    const toTouchdown = (() => {
+      let h = H0, t = 0, tF = null, x = 0, v = vapp, sink = vapp * Math.sin(glide);
+      while (h > 0 && t < 120) { t += 0.01; if (tF === null && h <= FLARE) tF = t; if (tF !== null) { const f = smooth(tF, tF + 3, t); sink = lerp(vapp * Math.sin(glide), SINK_TD, f); v = vapp * lerp(1, 0.97, f); } h -= sink * 0.01; x += v * 0.01; }
+      return x;
+    })();
+    let L;
+    const resetL = () => {
+      anim?.reset();
+      // In the air the oleos hang extended: compression 0, from the first frame.
+      if (anim) { for (const p of [...mainComp, ...noseComp]) anim.values[p] = 0; anim.apply(); }
+      L = { t: 0, x: TD - 100 - toTouchdown, v: vapp, h: H0, pitch: appPitch, tF: null, tD: null, tN: null, wheel: 0, prop: 0, done: false, sink: vapp * Math.sin(glide) };
+      blur.set(0.2);
+    };
+    resetL();
+    const stepL = dt => {
+      L.t += dt;
+      if (L.tD === null) {
+        if (L.tF === null && L.h <= FLARE) L.tF = L.t;
+        if (L.tF !== null) {
+          const f = smooth(L.tF, L.tF + 3, L.t);
+          L.pitch = lerp(appPitch, flarePitch, f);
+          L.sink = lerp(vapp * Math.sin(glide), SINK_TD, f);
+          L.v = vapp * lerp(1, 0.97, f);
+        }
+        L.h -= L.sink * dt;
+        if (L.h <= 0) { L.h = 0; L.tD = L.t; }
+      } else {
+        // Mains down: hold the attitude a moment, then lower the nose; brakes and reversers to a stop.
+        const after = L.t - L.tD;
+        if (after > 1.5) L.pitch = Math.max(0, L.pitch - 2 * dt);
+        if (L.tN === null && L.pitch <= 0) L.tN = L.t;
+        L.v = Math.max(0, L.v - decel * dt);
+        if (L.v === 0 && L.t - L.tD > 5) L.done = true;
+      }
+      L.x += L.v * dt;
+      if (L.tD !== null) L.wheel += L.v * FT * 6 * dt;
+      L.prop += (L.tD === null ? 1600 : lerp(700, 1600, L.v / vapp)) * dt;
+      blur.set(0.25);
+      if (anim) {
+        for (const p of gearProps) anim.values[p] = 1;
+        const tD = L.tD ?? Infinity, tN = L.tN ?? Infinity;
+        for (const p of mainComp) anim.values[p] = comp0[p] * smooth(tD, tD + 0.5, L.t);
+        for (const p of noseComp) anim.values[p] = comp0[p] * smooth(tN, tN + 0.5, L.t);
+        const ele = L.tF === null ? -0.1 : L.tD === null ? lerp(-0.1, -0.55, smooth(L.tF, L.tF + 2, L.t)) : lerp(-0.55, 0, smooth(tD + 1.5, tD + 4, L.t));
+        for (const p of anim.props) {
+          if (/elevator-pos-norm$/.test(p)) anim.values[p] = rest[p] + ele;
+          else if (/flap-pos-norm$/.test(p)) anim.values[p] = rest[p] + (lc.flaps ?? 1);
+          else if (/velocities\/uBody-fps$/.test(p)) anim.spin[p] = L.wheel;
+        }
+        for (const p of rpmProps) anim.spin[p] = L.prop;
+        gauges(L.v / KT_, L.h * FT, L.tD === null ? -L.sink * FT * 60 : 0, L.pitch, L.tD === null ? 0.35 : L.v > 0.5 * vapp ? 0.55 : 0.05);
+        anim.apply();
+      }
+    };
+    const placeL = () => {
+      // In the air the lowest point of the gear (pitched) is L.h above the runway; on it, on the runway.
+      const y = -lowestMain() + (L.tD === null ? L.h : 0);
+      root.matrixAutoUpdate = false;
+      M.makeTranslation(-L.x, y, 0).multiply(P.makeTranslation(pivot.x, pivot.y, pivot.z)).multiply(R.makeRotationZ(-THREE.MathUtils.degToRad(L.pitch))).multiply(P.makeTranslation(-pivot.x, -pivot.y, -pivot.z));
+      root.matrix.copy(M);
+      root.matrixWorldNeedsUpdate = true;
+    };
+    // lowestMain reads s.pitch: point it at the landing state.
+    s = new Proxy({}, { get: (_, k) => L[k] });
+    return {
+      anim, cfg, landing: lc, pivot, lowestMain, tailClear, place: placeL, step: stepL, vapp, gearProps, tail,
+      get s() { return L; },
+      reset: () => { resetL(); },
+    };
+  }
 }
 
 const PILOT = /(^|\/)(pilots?|copilot|general_(co)?pilot|liner_pilot|pilotWWII|fighter_default)\.ac$/i;

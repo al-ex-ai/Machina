@@ -16,10 +16,14 @@ const keepAnim = rest.includes('--anim');
 // --no-guess: every axis-object hinge turns by FlightGear's own convention (the negated value) instead of
 // the per-hinge guess below, which cannot see a chain of hinges (a strut swinging a bogie that turns again).
 const noGuess = rest.includes('--no-guess');
+// --instruments: an instrument XML (a gauge on the panel): keep its needles and its texture animations
+// (digit drums, the attitude ball) on the flight values the takeoff and landing scenes give.
+const instruments = rest.includes('--instruments');
+const INSTR = /^(instrumentation\/|orientation\/(pitch|roll)-deg$|velocities\/airspeed-kt$|autopilot\/internal\/current-vertical-speed-fpm$|engines\/engine(\[\d+\])?\/(n1|n2|egt-degf|fuel-flow_pph)$|surface-positions\/flap-pos-norm$)/;
 // /params/x=property: the value of an alias the including model sets (e.g. a shared propeller XML's
 // /params/rpm, given per engine by the airframe XML that includes it).
 const paramArgs = rest.filter(s => s.startsWith('/params/'));
-const sets = rest.filter(s => s !== '--anim' && s !== '--no-guess' && !s.startsWith('/params/'));
+const sets = rest.filter(s => s !== '--anim' && s !== '--no-guess' && s !== '--instruments' && !s.startsWith('/params/'));
 const exact = k => new RegExp(`^${k.replace(/[.*+?^${}()|[\]\\/]/g, '\\$&')}$`);
 const POSE = [ // property pattern -> value
   ...sets.map(kv => { const i = kv.lastIndexOf('='); return [exact(kv.slice(0, i)), Number(kv.slice(i + 1)), kv.slice(0, i)]; }),
@@ -103,7 +107,7 @@ function parseExpr(s) {
   };
   return node();
 }
-const out = [], anim = [];
+const out = [], anim = [], texanim = [];
 // Named groups: an animation with a <name> gathers its objects (or other groups) under one node
 // that later animations can name. Kept on the asset file for src/assets.js to nest the same way.
 const objectNames = a => [...a.replace(/<axis>[\s\S]*?<\/axis>/g, '').matchAll(/<object-name>\s*([^<]+?)\s*<\/object-name>/g)].map(m => m[1]);
@@ -160,14 +164,15 @@ for (const [, a] of xml.matchAll(/<animation>([\s\S]*?)<\/animation>/g)) {
   const rule = type !== 'spin' && POSE.find(([re]) => re.test(prop));
   // Engine properties only turn things (propellers, fans); some models also hang blade pitch or
   // instrument needles on them.
-  const animated = keepAnim && ANIM.test(prop) && (type === 'spin' || !prop.startsWith('engines/'));
+  const animated = keepAnim && ((ANIM.test(prop) && (type === 'spin' || !prop.startsWith('engines/'))) || (instruments && INSTR.test(prop) && type !== 'spin'));
   if (!rule && !animated) continue;
   const objects = objectNames(a);
   if (!objects.length) continue;
   const unit = type === 'rotate' ? 'deg' : 'm';
   const entries = [...a.matchAll(/<entry>\s*<ind>\s*([-\d.eE+]+)\s*<\/ind>\s*<dep>\s*([-\d.eE+]+)\s*<\/dep>\s*<\/entry>/g)].map(m => [Number(m[1]), Number(m[2])]);
   const exprXml = /<expression>([\s\S]*?)<\/expression>/.exec(a)?.[1];
-  const curve = exprXml ? { expr: parseExpr(exprXml) } : entries.length ? { table: entries } : {
+  // An expression that is only a lookup table (<expression><table>, the 737's vertical speed needle) is a plain table.
+  const curve = exprXml && !/^\s*<table>/.test(exprXml) ? { expr: parseExpr(exprXml) } : entries.length ? { table: entries } : {
     factor: num(a, 'factor'), offset: num(a, `offset-${unit}`),
     min: num(a, `min-${unit}`) ?? num(a, 'min'), max: num(a, `max-${unit}`) ?? num(a, 'max'),
   };
@@ -221,6 +226,28 @@ for (const [, a] of xml.matchAll(/<animation>([\s\S]*?)<\/animation>/g)) {
   else if (keepAnim && rule && val) anim.push({ type, objects, prop, fixed: val, ...(sign !== 1 ? { sign } : {}), origin, axis });
 }
 
+// Texture animations of instruments: a digit drum scrolls its texture in steps, an attitude ball moves its
+// texture with pitch and turns it with roll (FlightGear textranslate, texrotate and texmultiple).
+if (instruments) for (const [, a] of xml.matchAll(/<animation>([\s\S]*?)<\/animation>/g)) {
+  const type = /<type>\s*(\w+)\s*<\/type>/.exec(a)?.[1];
+  if (!['textranslate', 'texrotate', 'texmultiple'].includes(type)) continue;
+  const objects = objectNames(a);
+  if (!objects.length) continue;
+  const parts = type === 'texmultiple' ? [...a.matchAll(/<transform>([\s\S]*?)<\/transform>/g)].map(m => [/<subtype>\s*(\w+)/.exec(m[1])?.[1], m[1]]) : [[type, a]];
+  const steps = [];
+  for (const [kind, x] of parts) {
+    const prop = propertyOf(x);
+    if (!prop || !INSTR.test(prop)) continue;
+    const ax = /<axis>([\s\S]*?)<\/axis>/.exec(x)?.[1] ?? '';
+    const t = { kind: kind === 'texrotate' ? 'rotate' : 'translate', prop, factor: num(x, 'factor') ?? 1, offset: num(x, 'offset') ?? num(x, 'offset-deg') ?? 0, step: num(x, 'step'), scroll: num(x, 'scroll'), bias: num(x, 'bias'), min: num(x, 'min'), max: num(x, 'max'), axis: [num(ax, 'x') ?? 0, num(ax, 'y') ?? 0, num(ax, 'z') ?? 0] };
+    const entries = [...x.matchAll(/<entry>\s*<ind>\s*([-\d.eE+]+)\s*<\/ind>\s*<dep>\s*([-\d.eE+]+)\s*<\/dep>\s*<\/entry>/g)].map(m => [Number(m[1]), Number(m[2])]);
+    if (entries.length) t.table = entries;
+    if (t.kind === 'rotate') { const c = /<center>([\s\S]*?)<\/center>/.exec(x)?.[1] ?? ''; t.center = [num(c, 'x') ?? 0, num(c, 'y') ?? 0]; }
+    for (const k of Object.keys(t)) if (t[k] === undefined) delete t[k];
+    steps.push(t);
+  }
+  if (steps.length) texanim.push({ objects, steps });
+}
 // Left and right gear are mirror images. Where a right-side transform (objects ending
 // in R) has a left twin (same names ending in L), rebuild it as the mirror of the left
 // one across the centerline: origin z flipped, axis (-x, -y, z), same angle.
@@ -310,12 +337,13 @@ for (const [j, e] of toSub) {
 if (out.length) file.pose = out; else delete file.pose;
 const used = {};
 const use = n => { if (groups[n] && !used[n]) { used[n] = groups[n]; groups[n].forEach(use); } };
-for (const t of [...out, ...anim, ...(keepAnim ? selects : [])]) t.objects.forEach(use);
+for (const t of [...out, ...anim, ...texanim, ...(keepAnim ? selects : [])]) t.objects.forEach(use);
 // In definition order: an object in two groups belongs to the later one, nested in the earlier.
 const ordered = Object.fromEntries(Object.keys(groups).filter(n => used[n]).map(n => [n, used[n]]));
 if (Object.keys(ordered).length) file.groups = ordered; else delete file.groups;
 if (keepAnim) {
   file.anim = anim;
+  if (texanim.length) file.texanim = texanim; else delete file.texanim;
   if (selects.length) file.select = selects; else delete file.select;
   // The property values the pose was baked at, so the app starts its animations from them.
   file.poseState = Object.fromEntries(POSE.filter(r => r[2]).map(r => [r[2], r[1]]));
@@ -327,6 +355,9 @@ if (keepAnim) {
     if (!/(compression|surface-positions\/\w+-pos)-norm$/.test(t.prop) || t.prop in file.poseState || t.fixed !== undefined) continue;
     byProp.set(t.prop, [...(byProp.get(t.prop) ?? []), t]);
   }
+  // An instrument shares the airplane's properties (the flap gauge reads the flap position): its needles
+  // never decide where the airplane's own surfaces rest.
+  if (instruments) byProp.clear();
   for (const [prop, ts] of byProp) {
     const off = c => Math.max(...ts.map(t => Math.abs(curveAt(t, c))));
     if (off(0) < 1e-6) continue;

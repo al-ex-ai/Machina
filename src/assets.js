@@ -38,11 +38,11 @@ export function assembleParts(loaded, model) {
 
   const meshes = [];
   let entry = -1;
-  for (const { file, group, fallback, offset, rotation, chain, pose, anim, groups: fgGroups, select: fgSelect, parentPose, parentAnim, parts: fileParts, places } of sources) {
+  for (const { file, group, fallback, offset, rotation, chain, pose, anim, groups: fgGroups, select: fgSelect, parentPose, parentAnim, parts: fileParts, places, texanim } of sources) {
     entry++;
     // parentPose and parentAnim: transforms the including XML gives this whole file (named "@file").
     const allPose = [...(pose ?? []), ...(parentPose ?? [])], allAnim = [...(anim ?? []), ...(parentAnim ?? [])];
-    if (allPose.length || allAnim.length || fgSelect?.length) applyPose(group, allPose, allAnim, fgGroups, fgSelect);
+    if (allPose.length || allAnim.length || fgSelect?.length || texanim?.length) applyPose(group, allPose, allAnim, fgGroups, fgSelect, texanim);
     if (chain?.length) {
       // Nested FlightGear placements (an instrument in a panel in the interior), outermost first.
       const m = new THREE.Matrix4(), tmp = new THREE.Object3D();
@@ -96,6 +96,7 @@ export function assembleParts(loaded, model) {
     m.castShadow = m.receiveShadow = true;
     // file and entry: which placed file the mesh came from (each pilot figure is its own entry, for the cockpit view)
     m.userData = { partChild: true, source: mesh.name, texture: mesh.userData.texture, file, entry };
+    if (mesh.userData.fgTex) m.userData.fgTex = mesh.userData.fgTex;
     if (mesh.userData.fgSelect) {
       // Shown as the simulator shows it with the gear down; src/fg-anim.js re-evaluates it as the gear moves.
       m.userData.fgSelect = mesh.userData.fgSelect;
@@ -218,7 +219,7 @@ function applyFgPlacement(group, offset = {}, rotation = {}) {
  * name, in document order: each turns or slides the named objects, including meshes
  * inside a named group, in the file's own coordinates.
  */
-function applyPose(group, pose = [], anim = [], fgGroups = {}, selects = []) {
+function applyPose(group, pose = [], anim = [], fgGroups = {}, selects = [], texanim = []) {
   // Named groups (an animation with a <name>) sit between their member objects and the members'
   // parent, so they count as levels just above each member; a group can hold another group.
   const groupsOf = new Map();
@@ -240,6 +241,9 @@ function applyPose(group, pose = [], anim = [], fgGroups = {}, selects = []) {
     // Visibility by gear position (FlightGear select animations): every condition naming this mesh must hold.
     const conds = selects.filter(s => s.objects.some(o => names.includes(o))).map(s => s.cond);
     if (conds.length) mesh.userData.fgSelect = conds;
+    // Instrument texture animations (digit drums, attitude ball): the mesh's own first, then its groups'.
+    const tex = names.flatMap(n => texanim.filter(t => t.objects.includes(n)).flatMap(t => t.steps));
+    if (tex.length) mesh.userData.fgTex = tex;
     const m = new THREE.Matrix4();
     for (const name of names) for (const t of poseR) if (t.objects.includes(name)) m.premultiply(fgMatrix(t, t.value));
     const chain = [];

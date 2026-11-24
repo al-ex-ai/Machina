@@ -178,8 +178,13 @@ export function startTakeoff(viewer, model, hud, onExit) {
 
   const L = Math.max(size.x, size.z);
   let blur = null;
-  const sim = createTakeoffSim(root, model, { blur: a => blur?.set(a) });
-  const { anim, vr, RUNUP, gearTime, gearProps, tail, step, place } = sim;
+  // Takeoff, and landing where the model has landing figures: one simulation each, on the same model; only
+  // the one shown moves it (switching resets the other's animations first).
+  const sims = { takeoff: createTakeoffSim(root, model, { blur: a => blur?.set(a) }) };
+  if (model.landing) sims.landing = createTakeoffSim(root, model, { blur: a => blur?.set(a), kind: 'landing' });
+  let kind = 'takeoff', sim = sims.takeoff;
+  const { anim, vr, RUNUP, gearTime, gearProps, tail } = sims.takeoff;
+  const step = dt => sim.step(dt), place = () => sim.place();
   blur = propellerBlur(root, anim);
   const reset = () => { sim.reset(); blur.set(0); };
 
@@ -217,7 +222,8 @@ export function startTakeoff(viewer, model, hud, onExit) {
   };
   // A spotter beside the runway just short of the liftoff point, with a long lens that keeps the model
   // about a third of the frame wide however far away it is.
-  const spot = new THREE.Vector3(-(cfg.roll_m * 0.92), 1.7, width / 2 + 110);
+  const spotAt = k => new THREE.Vector3(k === 'landing' ? -((model.landing.touchdown_m ?? 400) - 100) : -(cfg.roll_m * 0.92), 1.7, width / 2 + 110);
+  let spot = spotAt('takeoff');
   const fov0 = cam.fov;
   const aim = () => {
     focus.copy(center).applyMatrix4(root.matrix);
@@ -254,12 +260,18 @@ export function startTakeoff(viewer, model, hud, onExit) {
       <span><b id="to-kt">0</b> kt</span><span><b id="to-ft">0</b> ft</span><span><b id="to-m">0</b> m</span>
     </div>
     <div class="to-bar" role="toolbar" aria-label="Takeoff controls">
+      ${sims.landing ? `<span class="to-group" aria-label="Scene">${['takeoff', 'landing'].map(k => `<button type="button" class="tool" data-kind="${k}" aria-pressed="${k === kind}">${k[0].toUpperCase() + k.slice(1)}</button>`).join('')}</span>` : ''}
       <span class="to-group" aria-label="Camera">${['follow', 'cockpit', 'runway', 'chase'].map(c => `<button type="button" class="tool" data-cam="${c}" aria-pressed="false">${c[0].toUpperCase() + c.slice(1)}</button>`).join('')}</span>
       <span class="to-group" aria-label="Speed">${[1, 2, 4].map(k => `<button type="button" class="tool" data-speed="${k}" aria-pressed="${k === speed}">${k}×</button>`).join('')}</span>
       <button type="button" class="tool" data-to="replay">Replay</button>
       <button type="button" class="tool" data-to="exit">Exit</button>
     </div>
-    <p class="to-note">Scripted from published takeoff figures (V<sub>R</sub> ${cfg.vr_kt} kt, ${cfg.roll_m.toLocaleString('en')} m roll). ${moved}</p>`;
+    <p class="to-note" id="to-note"></p>`;
+  const note = () => {
+    $('#to-note').innerHTML = kind === 'landing'
+      ? `Scripted from published landing figures (V<sub>APP</sub> ${model.landing.vapp_kt} kt, ${model.landing.roll_m.toLocaleString('en')} m roll). ${moved}`
+      : `Scripted from published takeoff figures (V<sub>R</sub> ${cfg.vr_kt} kt, ${cfg.roll_m.toLocaleString('en')} m roll). ${moved}`;
+  };
   const $ = sel => hud.querySelector(sel);
   hud.querySelectorAll('[data-cam]').forEach(b => b.addEventListener('click', () => setMode(b.dataset.cam)));
   hud.querySelectorAll('[data-speed]').forEach(b => b.addEventListener('click', () => {
@@ -267,12 +279,24 @@ export function startTakeoff(viewer, model, hud, onExit) {
     hud.querySelectorAll('[data-speed]').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
   }));
   $('[data-to="replay"]').addEventListener('click', () => { reset(); place(); setMode(mode); });
+  hud.querySelectorAll('[data-kind]').forEach(b => b.addEventListener('click', () => {
+    if (b.dataset.kind === kind) return;
+    sim.anim?.reset();
+    kind = b.dataset.kind; sim = sims[kind]; spot = spotAt(kind);
+    hud.querySelectorAll('[data-kind]').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+    note(); reset(); place(); setMode(mode);
+  }));
+  note();
   $('[data-to="exit"]').addEventListener('click', () => onExit());
 
   place();
   setMode('follow');
   let prev = performance.now();
   const phase = () => {
+    if (kind === 'landing') {
+      const l = sim.s;
+      return l.tD === null ? (l.tF === null ? 'Approach' : 'Flare') : l.tN === null ? 'Touchdown' : l.v > 0 ? 'Rollout' : 'Stopped';
+    }
     if (sim.s.t < RUNUP) return runupLabel;
     if (sim.s.tR === null) return tail && sim.s.v > 0.5 * vr ? 'Tail up' : 'Takeoff roll';
     if (sim.s.tL === null) return 'Rotate';
@@ -299,7 +323,7 @@ export function startTakeoff(viewer, model, hud, onExit) {
     viewer.scene.remove(scenery);
     scenery.traverse(o => { if (o.isMesh) { o.geometry.dispose(); o.material.map?.dispose(); o.material.dispose(); } });
     blur.dispose();
-    anim?.reset();
+    sim.anim?.reset();
     root.matrix.identity();
     root.matrixAutoUpdate = true;
     root.matrixWorldNeedsUpdate = true;
