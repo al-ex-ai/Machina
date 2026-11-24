@@ -16,7 +16,7 @@
     "parts": 22
   },
   "b737-300": {
-    "hash": "65eb879022",
+    "hash": "c7fa9bfa32",
     "parts": 25
   },
   "b747-400": {
@@ -32,7 +32,7 @@
     "parts": 28
   },
   "cessna-172s": {
-    "hash": "8b2389a314",
+    "hash": "aeac070edf",
     "parts": 27
   },
   "cessna337": {
@@ -40,7 +40,7 @@
     "parts": 22
   },
   "concorde": {
-    "hash": "e35589ee69",
+    "hash": "0d47c2a02d",
     "parts": 13
   },
   "dc3": {
@@ -80,8 +80,8 @@
     "parts": 19
   },
   "l1049h": {
-    "hash": "7179f76474",
-    "parts": 22
+    "hash": "716672aaf2",
+    "parts": 23
   },
   "p51d": {
     "hash": "927c360a8f",
@@ -100,7 +100,7 @@
     "parts": 19
   },
   "tu144d": {
-    "hash": "e4eac4ebb1",
+    "hash": "5a4795d0e0",
     "parts": 15
   },
   "tu154b": {
