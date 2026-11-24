@@ -37,7 +37,9 @@ export function assembleParts(loaded, model) {
   const defaultFallback = model.asset.fallback ?? { id: 'airframe', label: 'Airframe details', system: 'structure' };
 
   const meshes = [];
-  for (const { group, fallback, offset, rotation, chain, pose, anim, groups: fgGroups, select: fgSelect, parentPose, parentAnim, parts: fileParts, places } of sources) {
+  let entry = -1;
+  for (const { file, group, fallback, offset, rotation, chain, pose, anim, groups: fgGroups, select: fgSelect, parentPose, parentAnim, parts: fileParts, places } of sources) {
+    entry++;
     // parentPose and parentAnim: transforms the including XML gives this whole file (named "@file").
     const allPose = [...(pose ?? []), ...(parentPose ?? [])], allAnim = [...(anim ?? []), ...(parentAnim ?? [])];
     if (allPose.length || allAnim.length || fgSelect?.length) applyPose(group, allPose, allAnim, fgGroups, fgSelect);
@@ -61,7 +63,7 @@ export function assembleParts(loaded, model) {
     }
     // File-scoped rules (for example a left wing file) win over the model-wide ones.
     const local = (fileParts ?? []).map(r => ({ ...r, res: r.match.map(toRegExp) }));
-    group.traverse(o => { if (o.isMesh) meshes.push([o, fallback ?? defaultFallback, local]); });
+    group.traverse(o => { if (o.isMesh) meshes.push([o, fallback ?? defaultFallback, local, file, entry]); });
   }
   // Rules with "split" divide their meshes into N parts by side-to-side position,
   // numbered from the left (+z), e.g. four engines with identical object names.
@@ -76,7 +78,7 @@ export function assembleParts(loaded, model) {
     list.forEach(([mesh], i) => { splitOf.set(mesh, k); if (gaps.includes(i)) k++; });
   }
 
-  for (const [mesh, fallback, local] of meshes) {
+  for (const [mesh, fallback, local, file, entry] of meshes) {
     let rule = local.find(r => r.res.some(re => re.test(mesh.name))) ?? rules.find(r => r.res.some(re => re.test(mesh.name))) ?? fallback;
     if (rule.split) {
       const k = splitOf.get(mesh) ?? 0;
@@ -92,7 +94,8 @@ export function assembleParts(loaded, model) {
     const m = new THREE.Mesh(geo, Array.isArray(mesh.material) ? mesh.material.map(own) : own(mesh.material));
     m.name = mesh.name;
     m.castShadow = m.receiveShadow = true;
-    m.userData = { partChild: true, source: mesh.name, texture: mesh.userData.texture };
+    // file and entry: which placed file the mesh came from (each pilot figure is its own entry, for the cockpit view)
+    m.userData = { partChild: true, source: mesh.name, texture: mesh.userData.texture, file, entry };
     if (mesh.userData.fgSelect) {
       // Shown as the simulator shows it with the gear down; src/fg-anim.js re-evaluates it as the gear moves.
       m.userData.fgSelect = mesh.userData.fgSelect;

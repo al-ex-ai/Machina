@@ -7,6 +7,8 @@ import { fileURLToPath } from 'node:url';
 import { loadCatalog } from '../src/catalog-node.js';
 import { loadAssetNode } from '../src/assets-node.js';
 import { measureTakeoff, measureTakeoffRun } from '../src/takeoff-check.js';
+import { captainEye } from '../src/takeoff-sim.js';
+import * as THREE from 'three';
 
 const ROOT = fileURLToPath(new URL('../', import.meta.url));
 const { models } = loadCatalog();
@@ -42,6 +44,18 @@ for (const m of listed) {
   test(`${m.id}: nothing goes through the runway at any moment of the takeoff`, () => {
     const r = measureTakeoffRun(loadAssetNode(m), m);
     assert.ok(r.depth <= 0.02, `${r.part} ${r.mesh} is ${r.depth.toFixed(2)} m under the runway during the ${r.phase} (t ${r.t} s)`);
+  });
+  test(`${m.id}: the cockpit view looks out`, () => {
+    // Rays from the captain's eye across the middle of the view: nothing solid closer than 43 cm (glass is
+    // see-through from inside; head-up displays and visors that block it are hidden by takeoff.cockpit).
+    const root = loadAssetNode(m), { eye, hide } = captainEye(root, m.takeoff?.cockpit), hid = new Set(hide), meshes = [];
+    root.traverse(o => { if (!o.isMesh || hid.has(o)) return; for (let p = o; p; p = p.parent) if (!p.visible) return; let p = o; while (p && !p.userData.part) p = p.parent; if (p?.userData.system === 'glazing' || [o.material].flat().some(x => x.transparent && x.opacity < 1)) return; o.material = new THREE.MeshBasicMaterial({ side: THREE.DoubleSide }); meshes.push(o); });
+    const rc = new THREE.Raycaster(); rc.far = 0.43;
+    for (const yaw of [-10, 0, 10]) for (const pitch of [-3, 3]) {
+      rc.set(eye, new THREE.Vector3(-1, 0, 0).applyAxisAngle(new THREE.Vector3(0, 0, 1), THREE.MathUtils.degToRad(pitch - 7)).applyAxisAngle(new THREE.Vector3(0, 1, 0), THREE.MathUtils.degToRad(yaw)));
+      const h = rc.intersectObjects(meshes, false)[0];
+      assert.ok(!h, `${h?.object.userData.source ?? h?.object.name} is ${h?.distance.toFixed(2)} m in front of the captain's eyes`);
+    }
   });
   test(`${m.id}: pilots aboard`, () => {
     const files = (m.asset.files ?? [{ file: m.asset.file }]).map(f => f.file);

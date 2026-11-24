@@ -195,3 +195,45 @@ export function createTakeoffSim(root, model, opts = {}) {
     reset: () => { reset(); },
   };
 }
+
+const PILOT = /(^|\/)(pilots?|copilot|general_(co)?pilot|liner_pilot|pilotWWII|fighter_default)\.ac$/i;
+
+/**
+ * Where the captain looks from: the head of the left-hand pilot figure in the front row, in root space
+ * (studio pose), and that figure's meshes, which the cockpit view hides so it does not look out through
+ * its own head. Models with no pilot (the Wright Flyer) get a point at pilot height over the centre.
+ * cfg (takeoff.cockpit): offset [x, y, z] metres added to the eye (x aft, y up), hide: mesh or file
+ * names ("/regex/" allowed) that block the view and are hidden in it (a head-up display), oneSided: skins
+ * drawn from outside only in the view (the Concorde's nose, whose windows are painted on).
+ * @param {THREE.Object3D} root
+ * @param {{ offset?: number[], hide?: string[], oneSided?: string[] }} [cfg]
+ * @returns {{ eye: THREE.Vector3, hide: THREE.Mesh[], oneSided: THREE.Mesh[] }}
+ */
+export function captainEye(root, cfg = {}) {
+  const re = s => (s.startsWith('/') ? new RegExp(s.slice(1, s.lastIndexOf('/')), s.slice(s.lastIndexOf('/') + 1)) : new RegExp(`^${s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}$`));
+  const pick = list => { const res = (list ?? []).map(re), out = []; if (res.length) root.traverse(o => { if (o.isMesh && res.some(r => r.test(o.userData.source ?? o.name) || r.test(o.userData.file ?? ''))) out.push(o); }); return out; };
+  const extra = pick(cfg.hide), oneSided = pick(cfg.oneSided), shift = new THREE.Vector3(...(cfg.offset ?? [0, 0, 0]));
+  root.updateMatrixWorld(true);
+  const inv = root.matrixWorld.clone().invert(), figures = new Map(), v = new THREE.Vector3();
+  root.traverse(o => { if (o.isMesh && PILOT.test(o.userData.file ?? '')) { const k = o.userData.entry; if (!figures.has(k)) figures.set(k, []); figures.get(k).push(o); } });
+  const list = [...figures.values()].map(meshes => {
+    const pts = [];
+    for (const o of meshes) { const a = o.geometry.attributes.position, M = inv.clone().multiply(o.matrixWorld); for (let i = 0; i < a.count; i += 2) pts.push(v.fromBufferAttribute(a, i).applyMatrix4(M).toArray()); }
+    let top = -Infinity, minX = Infinity; for (const p of pts) { top = Math.max(top, p[1]); minX = Math.min(minX, p[0]); }
+    // The head: everything within 25 cm of the top of the figure (one pilots.ac file can hold two
+    // figures side by side, so the head is taken on the left half when it is wider than a person).
+    let head = pts.filter(p => p[1] > top - 0.25);
+    let zMin = Infinity, zMax = -Infinity; for (const p of head) { zMin = Math.min(zMin, p[2]); zMax = Math.max(zMax, p[2]); }
+    if (zMax - zMin > 0.6) head = head.filter(p => p[2] > (zMin + zMax) / 2);
+    const c = head.reduce((a, p) => [a[0] + p[0], a[1] + p[1], a[2] + p[2]], [0, 0, 0]).map(x => x / head.length);
+    return { meshes, minX, eye: new THREE.Vector3(c[0] - 0.06, top - 0.12, c[2]) };
+  });
+  if (!list.length) {
+    const b = new THREE.Box3().setFromObject(root), c = b.getCenter(new THREE.Vector3());
+    return { eye: new THREE.Vector3(c.x, b.min.y + 1.0, 0).add(shift), hide: extra, oneSided };
+  }
+  const front = Math.min(...list.map(f => f.minX));
+  const row = list.filter(f => f.minX < front + 1.2);
+  const captain = row.reduce((a, f) => (f.eye.z > a.eye.z ? f : a));
+  return { eye: captain.eye.clone().add(shift), hide: [...captain.meshes, ...extra], oneSided };
+}

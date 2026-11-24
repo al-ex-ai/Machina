@@ -3,7 +3,7 @@
 // A scripted profile from the model's published takeoff figures, not a flight model.
 import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
-import { createTakeoffSim } from './takeoff-sim.js';
+import { createTakeoffSim, captainEye } from './takeoff-sim.js';
 
 const KT = 0.514444, FT = 3.28084;
 const RUNWAY = { length: 3000, width: 45, start: 100 }; // the model starts 100 m past the threshold, facing -x
@@ -184,13 +184,28 @@ export function startTakeoff(viewer, model, hud, onExit) {
   const reset = () => { sim.reset(); blur.set(0); };
 
   // Cameras: follow (orbit freely while it tracks the model), runway (a spectator beside the runway
-  // near the liftoff point) and chase (behind and above).
+  // near the liftoff point), chase (behind and above) and cockpit (from the captain's eyes, the captain
+  // figure hidden, with a near plane close enough for the panel).
   const cam = viewer.camera, controls = viewer.controls;
   const focus = new THREE.Vector3(), last = new THREE.Vector3(), tmp = new THREE.Vector3();
+  const pilot = captainEye(root, cfg.cockpit);
+  const near0 = cam.near;
+  // From inside, glass is mostly clear (sim liveries and tints are made to be seen from outside).
+  const glass = [], skins = new Map();
+  root.traverse(o => { if (!o.isMesh) return; let p = o; while (p && !p.userData.part) p = p.parent; if (p?.userData.system === 'glazing') for (const m of [o.material].flat()) glass.push([m, m.transparent, m.opacity]); });
+  for (const o of pilot.oneSided) for (const m of [o.material].flat()) skins.set(m, m.side);
+  const inside = on => {
+    for (const o of pilot.hide) o.visible = !on;
+    for (const [m, t, op] of glass) { m.transparent = on || t; m.opacity = on ? Math.min(op, 0.18) : op; m.needsUpdate = true; }
+    for (const [m, side] of skins) { m.side = on ? THREE.FrontSide : side; m.needsUpdate = true; }
+  };
   let mode = 'follow';
   const setMode = m => {
     mode = m;
     controls.enabled = m === 'follow';
+    inside(m === 'cockpit');
+    const near = m === 'cockpit' ? 0.08 : near0;
+    if (cam.near !== near) { cam.near = near; cam.updateProjectionMatrix(); }
     if (m === 'follow') {
       focus.copy(center).applyMatrix4(root.matrix);
       cam.position.copy(focus).add(new THREE.Vector3(-1.25 * L, 0.2 * L, 0.95 * L));
@@ -213,6 +228,11 @@ export function startTakeoff(viewer, model, hud, onExit) {
     } else if (mode === 'runway') {
       cam.position.copy(spot);
       fov = THREE.MathUtils.clamp(THREE.MathUtils.radToDeg(2 * Math.atan((L * 1.5) / (2 * spot.distanceTo(focus)))), 4, fov0);
+    } else if (mode === 'cockpit') {
+      // Eyes on the captain's seat, looking ahead and a little down over the nose, pitching with the model.
+      cam.position.copy(pilot.eye).applyMatrix4(root.matrix);
+      focus.copy(pilot.eye).add(tmp.set(-20, -2.4, 0)).applyMatrix4(root.matrix);
+      fov = 70;
     } else {
       cam.position.copy(focus).add(tmp.set(1.6 * L, 0.32 * L, 0.45 * L));
     }
@@ -221,7 +241,7 @@ export function startTakeoff(viewer, model, hud, onExit) {
     controls.target.copy(focus);
     cam.lookAt(focus);
     if (cam.fov !== fov) { cam.fov = fov; cam.updateProjectionMatrix(); }
-    viewer.sunAround(focus, L * 0.9);
+    viewer.sunAround(tmp.copy(center).applyMatrix4(root.matrix), L * 0.9);
   };
 
   let speed = 2;
@@ -234,7 +254,7 @@ export function startTakeoff(viewer, model, hud, onExit) {
       <span><b id="to-kt">0</b> kt</span><span><b id="to-ft">0</b> ft</span><span><b id="to-m">0</b> m</span>
     </div>
     <div class="to-bar" role="toolbar" aria-label="Takeoff controls">
-      <span class="to-group" aria-label="Camera">${['follow', 'runway', 'chase'].map(c => `<button type="button" class="tool" data-cam="${c}" aria-pressed="false">${c[0].toUpperCase() + c.slice(1)}</button>`).join('')}</span>
+      <span class="to-group" aria-label="Camera">${['follow', 'cockpit', 'runway', 'chase'].map(c => `<button type="button" class="tool" data-cam="${c}" aria-pressed="false">${c[0].toUpperCase() + c.slice(1)}</button>`).join('')}</span>
       <span class="to-group" aria-label="Speed">${[1, 2, 4].map(k => `<button type="button" class="tool" data-speed="${k}" aria-pressed="${k === speed}">${k}×</button>`).join('')}</span>
       <button type="button" class="tool" data-to="replay">Replay</button>
       <button type="button" class="tool" data-to="exit">Exit</button>
@@ -284,6 +304,8 @@ export function startTakeoff(viewer, model, hud, onExit) {
     root.matrixAutoUpdate = true;
     root.matrixWorldNeedsUpdate = true;
     controls.enabled = true;
+    inside(false);
+    cam.near = near0;
     cam.fov = fov0;
     cam.updateProjectionMatrix();
     hud.hidden = true;
