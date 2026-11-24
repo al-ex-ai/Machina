@@ -156,6 +156,9 @@ export function createViewer(container) {
   sun.shadow.bias = -0.0004;
   sun.shadow.autoUpdate = false; // shadows only change with the model, not the camera
   scene.add(sun, sun.target);
+  // With the sun's autoUpdate off, three redraws its shadow map only when the light itself asks;
+  // the renderer flag alone left the last map in place (after a takeoff, a shadow far off the model).
+  const refreshShadows = () => { renderer.shadowMap.needsUpdate = true; sun.shadow.needsUpdate = true; };
 
   const ground = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), new THREE.ShadowMaterial({ opacity: 0.3 }));
   ground.rotation.x = -Math.PI / 2;
@@ -276,7 +279,7 @@ export function createViewer(container) {
   function applyXray() {
     if (xray) prepareXray();
     for (const p of parts) applyXrayPart(p);
-    renderer.shadowMap.needsUpdate = true;
+    refreshShadows();
   }
 
   let model = null;
@@ -448,7 +451,7 @@ export function createViewer(container) {
     // Stand the person just ahead of the nose on the camera side, turned toward the viewer.
     person.position.set(box.min.x + size.x * 0.06, 0, center.z + Math.max(size.z * 0.1, 1.2));
     person.rotation.y = -2.4;
-    renderer.shadowMap.needsUpdate = true;
+    refreshShadows();
     invalidate(true);
   }
 
@@ -471,7 +474,7 @@ export function createViewer(container) {
     model = null;
     parts = [];
     selected = hovered = null;
-    renderer.shadowMap.needsUpdate = true;
+    refreshShadows();
     invalidate(true);
   }
 
@@ -492,7 +495,7 @@ export function createViewer(container) {
     if (xray) applyXray();
     computeExplode();
     applyExplode();
-    if (opts.keepView) { renderer.shadowMap.needsUpdate = true; invalidate(true); }
+    if (opts.keepView) { refreshShadows(); invalidate(true); }
     else frame();
     // Build the x-ray geometry once the first frames are out, unless the caller never uses x-ray (Compare).
     if (opts.xray !== false) { const m = model; setTimeout(() => { if (model === m) prepareXray(); }, 1500); }
@@ -533,11 +536,11 @@ export function createViewer(container) {
     setExplode(v) {
       explodeAmount = v;
       if (model) applyExplode();
-      renderer.shadowMap.needsUpdate = true;
+      refreshShadows();
       lastMove = performance.now();
       invalidate();
     },
-    setPerson(v) { person.visible = v; renderer.shadowMap.needsUpdate = true; invalidate(true); },
+    setPerson(v) { person.visible = v; refreshShadows(); invalidate(true); },
     setTheme(name) {
       themeName = name;
       if (outdoor) return;

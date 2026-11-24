@@ -3,19 +3,20 @@
 // A scripted profile from the model's published takeoff figures, not a flight model.
 import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
-import { fgAnimator } from './fg-anim.js';
+import { createTakeoffSim } from './takeoff-sim.js';
 
 const KT = 0.514444, FT = 3.28084;
 const RUNWAY = { length: 3000, width: 45, start: 100 }; // the model starts 100 m past the threshold, facing -x
 
-/** Runway, grass and a scatter of trees for a sense of speed. */
-function buildScenery() {
+/** Runway, grass and a scatter of trees for a sense of speed. width: meters, wide enough for the wings. */
+function buildScenery(width) {
+  const RW = { ...RUNWAY, width };
   const g = new THREE.Group();
   g.name = 'takeoff-scenery';
   // The grass has a hole where the runway is: two surfaces stacked a little apart fight for depth (and
   // flicker) once the camera is a few hundred meters away.
   const field = new THREE.Shape().moveTo(-8000 - RUNWAY.length / 2, -8000).lineTo(8000 - RUNWAY.length / 2, -8000).lineTo(8000 - RUNWAY.length / 2, 8000).lineTo(-8000 - RUNWAY.length / 2, 8000).closePath();
-  const hw0 = RUNWAY.width / 2, s0 = RUNWAY.start, e0 = RUNWAY.start - RUNWAY.length;
+  const hw0 = RW.width / 2, s0 = RUNWAY.start, e0 = RUNWAY.start - RUNWAY.length;
   field.holes.push(new THREE.Path().moveTo(e0, -hw0).lineTo(e0, hw0).lineTo(s0, hw0).lineTo(s0, -hw0).closePath());
   const grass = new THREE.Mesh(new THREE.ShapeGeometry(field), new THREE.MeshStandardMaterial({ color: '#7d8f5c', roughness: 1 }));
   grass.rotation.x = -Math.PI / 2;
@@ -32,9 +33,9 @@ function buildScenery() {
   const tex = new THREE.CanvasTexture(c);
   tex.colorSpace = THREE.SRGBColorSpace;
   tex.wrapS = tex.wrapT = THREE.RepeatWrapping;
-  tex.repeat.set(RUNWAY.length / 12, RUNWAY.width / 12);
+  tex.repeat.set(RUNWAY.length / 12, RW.width / 12);
   tex.anisotropy = 8;
-  const asphalt = new THREE.Mesh(new THREE.PlaneGeometry(RUNWAY.length, RUNWAY.width), new THREE.MeshStandardMaterial({ map: tex, roughness: 0.92 }));
+  const asphalt = new THREE.Mesh(new THREE.PlaneGeometry(RUNWAY.length, RW.width), new THREE.MeshStandardMaterial({ map: tex, roughness: 0.92 }));
   asphalt.rotation.x = -Math.PI / 2;
   asphalt.position.set(RUNWAY.start - RUNWAY.length / 2, 0, 0);
   asphalt.receiveShadow = true;
@@ -47,10 +48,10 @@ function buildScenery() {
     p.translate((x0 + x1) / 2, 0.04, z);
     strips.push(p);
   };
-  const s = RUNWAY.start, e = RUNWAY.start - RUNWAY.length, hw = RUNWAY.width / 2;
+  const s = RUNWAY.start, e = RUNWAY.start - RUNWAY.length, hw = RW.width / 2;
   for (const end of [s, e]) {
     const dir = end === s ? -1 : 1;
-    for (let k = 0; k < 6; k++) for (const side of [1, -1]) strip(end + dir * 6, end + dir * 36, side * (3 + k * 3.2), 1.8);
+    for (let k = 0; k < Math.max(6, Math.floor((hw - 4) / 3.2)); k++) for (const side of [1, -1]) strip(end + dir * 6, end + dir * 36, side * (3 + k * 3.2), 1.8);
     for (const side of [1, -1]) strip(end + dir * 400, end + dir * 445, side * 9, 6);
     for (const d of [150, 300, 600, 750, 900]) for (const side of [1, -1]) for (let b = 0; b < (d < 400 ? 3 : d < 700 ? 2 : 1); b++) strip(end + dir * d, end + dir * (d + 22.5), side * (6 + b * 1.6), 1);
   }
@@ -69,7 +70,7 @@ function buildScenery() {
   const q = new THREE.Quaternion(), sc = new THREE.Vector3(), p = new THREE.Vector3();
   for (let i = 0; i < trees.count; i++) {
     const side = rnd() < 0.5 ? -1 : 1, h = 7 + rnd() * 9;
-    p.set(s + 400 - rnd() * (RUNWAY.length + 2400), 0, side * (140 + rnd() ** 1.6 * 1600));
+    p.set(s + 400 - rnd() * (RUNWAY.length + 2400), 0, side * (hw + 120 + rnd() ** 1.6 * 1600)); // clear of the runway spotter at hw + 110
     sc.set(h * 0.32, h, h * 0.32);
     trees.setMatrixAt(i, m.compose(p, q, sc));
   }
@@ -78,38 +79,83 @@ function buildScenery() {
   return g;
 }
 
-/** Points where the wheels of the named parts meet the ground, kept as mesh-space positions. */
-function contactPoints(root, match) {
-  const out = [];
+/**
+ * Propeller blur. Each propeller (meshes spun by an engine's rpm, grouped by their spin axis) gets a faint
+ * disc the size of its blades; set(k) fades the blades out and the disc in (0 standing, 1 at power).
+ * Hubs and spinners, close to the axis, stay solid.
+ */
+function propellerBlur(root, anim) {
+  const groups = new Map();
   root.updateMatrixWorld(true);
-  const inv = root.matrixWorld.clone().invert();
-  const v = new THREE.Vector3();
-  root.traverse(o => {
-    if (!o.userData?.part || !match.test(o.userData.id)) return;
-    const list = [];
-    let low = Infinity;
-    o.traverse(c => {
-      if (!c.isMesh) return;
-      const rel = inv.clone().multiply(c.matrixWorld), a = c.geometry.attributes.position;
-      for (let i = 0; i < a.count; i++) { v.fromBufferAttribute(a, i).applyMatrix4(rel); if (v.y < low + 0.03) { low = Math.min(low, v.y); list.push([c, i, v.y]); } }
-    });
-    for (const [c, i, y] of list) if (y < low + 0.03) out.push([c, new THREE.Vector3().fromBufferAttribute(c.geometry.attributes.position, i)]);
-  });
-  return out;
-}
-
-/** A point's position in root space from its mesh's current local matrices (no world update needed). */
-function inRoot(root, mesh, p, out) {
-  out.copy(p);
-  for (let o = mesh; o && o !== root; o = o.parent) {
-    if (o.matrixAutoUpdate) o.updateMatrix();
-    out.applyMatrix4(o.matrix);
+  const toRoot = root.matrixWorld.clone().invert();
+  for (const o of anim?.meshes ?? []) {
+    // Piston propellers turn with rpm, turboprops (the Twin Otter) with n2; jet fans (n1) stay as they are.
+    const fa = o.userData.fgAnim, t = fa.chain.find(t => t.type === 'spin' && /engines\/engine\[\d+\]\/(rpm|n2)$/.test(t.prop));
+    if (!t) continue;
+    // Some models spin their wheels on a spare engine's rpm (the Tu-144D): those are not propellers.
+    let part = o; while (part && !part.userData.part) part = part.parent;
+    if (part?.userData.system === 'gear') continue;
+    // F maps the file's space into the mesh's parent; the disc hangs off the root.
+    const P = toRoot.clone().multiply(o.parent.matrixWorld).multiply(fa.F);
+    const center = new THREE.Vector3(...t.origin).applyMatrix4(P), axis = new THREE.Vector3(...t.axis).transformDirection(P);
+    const key = center.toArray().map(c => c.toFixed(2)).join(',');
+    if (!groups.has(key)) groups.set(key, { center, axis, meshes: [] });
+    groups.get(key).meshes.push(o);
   }
-  return out;
+  const v = new THREE.Vector3(), d = new THREE.Vector3();
+  const blades = [], discs = [], saved = new Map();
+  const ring = (() => {
+    const c = document.createElement('canvas');
+    c.width = c.height = 128;
+    const g = c.getContext('2d'), r = g.createRadialGradient(64, 64, 6, 64, 64, 64);
+    r.addColorStop(0, 'rgba(255,255,255,0)'); r.addColorStop(0.2, 'rgba(255,255,255,0.35)');
+    r.addColorStop(0.85, 'rgba(255,255,255,0.7)'); r.addColorStop(0.97, 'rgba(255,255,255,0.25)'); r.addColorStop(1, 'rgba(255,255,255,0)');
+    g.fillStyle = r; g.fillRect(0, 0, 128, 128);
+    return new THREE.CanvasTexture(c);
+  })();
+  for (const { center, axis, meshes } of groups.values()) {
+    // Distance from the spin axis of every vertex: the propeller's radius, and which meshes are blades.
+    let R = 0, along = 0, n = 0;
+    const reach = new Map();
+    for (const o of meshes) {
+      const a = o.geometry.attributes.position, M = toRoot.clone().multiply(o.matrixWorld);
+      let r = 0;
+      for (let i = 0; i < a.count; i++) {
+        d.copy(v.fromBufferAttribute(a, i).applyMatrix4(M)).sub(center);
+        const x = d.dot(axis);
+        r = Math.max(r, d.addScaledVector(axis, -x).length());
+        along += x; n++;
+      }
+      reach.set(o, r);
+      R = Math.max(R, r);
+    }
+    if (R < 0.3) continue;
+    for (const o of meshes) if (reach.get(o) > 0.45 * R) blades.push(o);
+    const disc = new THREE.Mesh(new THREE.CircleGeometry(R, 48), new THREE.MeshBasicMaterial({ color: '#9aa1a8', alphaMap: ring, transparent: true, opacity: 0, depthWrite: false, side: THREE.DoubleSide }));
+    disc.quaternion.setFromUnitVectors(new THREE.Vector3(0, 0, 1), axis);
+    disc.position.copy(center).addScaledVector(axis, n ? along / n : 0);
+    disc.visible = false;
+    disc.name = 'propeller-blur';
+    root.add(disc);
+    discs.push(disc);
+  }
+  return {
+    set(k) {
+      for (const o of blades) {
+        if (!saved.has(o)) { saved.set(o, o.material); o.material = [o.material].flat().map(m => m.clone()); if (!Array.isArray(saved.get(o))) o.material = o.material[0]; }
+        for (const m of [o.material].flat()) { m.transparent = k > 0; m.opacity = 1 - 0.94 * k; m.depthWrite = k < 0.5; }
+      }
+      for (const disc of discs) { disc.visible = k > 0.02; disc.material.opacity = 0.24 * k; }
+    },
+    dispose() {
+      for (const [o, m] of saved) { [o.material].flat().forEach(x => x.dispose()); o.material = m; }
+      saved.clear();
+      for (const disc of discs) { root.remove(disc); disc.geometry.dispose(); disc.material.dispose(); }
+      ring.dispose();
+    },
+  };
 }
 
-const smooth = (a, b, x) => { if (!(x > a)) return 0; if (!(x < b)) return 1; const t = (x - a) / (b - a); return t * t * (3 - 2 * t); };
-const lerp = (a, b, t) => a + (b - a) * t;
 
 /**
  * @param {ReturnType<import('./scene.js').createViewer>} viewer the model page's viewer, with the model on stage
@@ -121,92 +167,26 @@ const lerp = (a, b, t) => a + (b - a) * t;
 export function startTakeoff(viewer, model, hud, onExit) {
   const root = viewer.getModel();
   const cfg = model.takeoff;
-  const anim = fgAnimator(root, model);
-  const scenery = buildScenery();
-  viewer.scene.add(scenery);
-  viewer.setOutdoor(true);
-
   root.updateMatrixWorld(true);
   const box = new THREE.Box3().setFromObject(root);
   const size = box.getSize(new THREE.Vector3()), center = box.getCenter(new THREE.Vector3());
+  // Real runways are 45 to 60 m wide and the biggest wings overhang them; here the wingtips stay over the asphalt.
+  const width = Math.max(RUNWAY.width, Math.ceil((size.z + 16) / 5) * 5);
+  const scenery = buildScenery(width);
+  viewer.scene.add(scenery);
+  viewer.setOutdoor(true);
+
   const L = Math.max(size.x, size.z);
-  let mains = contactPoints(root, /main-gear/);
-  if (!mains.length) mains = contactPoints(root, /gear/);
-  const pivot = new THREE.Vector3();
-  const tmp = new THREE.Vector3();
-  for (const [c, p] of mains) pivot.add(inRoot(root, c, p, tmp));
-  pivot.divideScalar(mains.length || 1);
-  const lowestMain = () => { let y = Infinity; for (const [c, p] of mains) y = Math.min(y, inRoot(root, c, p, tmp).y); return mains.length ? y : 0; };
-
-  // Profile from the published figures: constant acceleration to liftoff over the ground roll.
-  const vr = cfg.vr_kt * KT, vlof = (cfg.lof_kt ?? cfg.vr_kt * 1.06) * KT, accel = (vlof * vlof) / (2 * cfg.roll_m);
-  const RUNUP = 5, pitchMax = cfg.pitch_deg ?? 8, climb = cfg.climb_deg ?? 4, gearTime = cfg.gear_s ?? 8, flaps = cfg.flaps ?? 0;
-  const gearProps = anim ? anim.props.filter(p => /position-norm$/.test(p)) : [];
-  const mainComp = anim ? anim.props.filter(p => /gear\[[1-9]\]\/compression-norm$/.test(p)) : [];
-  const noseComp = anim ? anim.props.filter(p => /gear\[0\]\/compression-norm$/.test(p)) : [];
-  const rpmProps = anim ? anim.props.filter(p => /engines\/engine\[\d+\]\/rpm$/.test(p)) : [];
-  const comp0 = anim ? Object.fromEntries([...mainComp, ...noseComp].map(p => [p, anim.values[p]])) : {};
-
-  let s; // simulation state
-  const reset = () => {
-    s = { t: 0, x: 0, v: 0, h: 0, gamma: 0, pitch: 0, tR: null, tL: null, yLift: 0, wheel: 0, prop: 0, done: false };
-    anim?.reset();
-  };
-  reset();
-
-  function step(dt) {
-    s.t += dt;
-    const t = s.t;
-    const rpm = t < 2 ? 700 : lerp(700, cfg.rpm ?? 2800, smooth(2, RUNUP, t));
-    if (t > RUNUP) {
-      const a = s.tL === null ? accel : accel * 0.35;
-      s.v += a * dt;
-    }
-    if (s.tR === null && s.v >= vr) s.tR = t;
-    if (s.tR !== null) s.pitch = Math.min(pitchMax, s.pitch + 2.6 * dt);
-    if (s.tL === null && s.v >= vlof) { s.tL = t; s.yLift = -lowestMain(); }
-    if (s.tL !== null) {
-      s.gamma = THREE.MathUtils.degToRad(climb) * smooth(s.tL, s.tL + 5, t);
-      s.h += s.v * Math.sin(s.gamma) * dt;
-    }
-    s.x += s.v * Math.cos(s.gamma) * dt;
-    // Wheels roll with the ground speed and are braked after liftoff; the propellers are shown at a rate
-    // the eye can follow (true rates alias into a standstill at screen frame rates).
-    const groundV = s.tL === null ? s.v : s.v * Math.max(0, 1 - (t - s.tL) / 3);
-    s.wheel += groundV * FT * 6 * dt;
-    s.prop += lerp(300, 650, (rpm - 700) / 2100) * 6 * dt;
-    if (anim) {
-      const after = s.tL === null ? -1 : t - s.tL;
-      for (const p of gearProps) anim.values[p] = after < 3 ? 1 : 1 - smooth(3, 3 + gearTime, after);
-      const tR = s.tR ?? Infinity, tL = s.tL;
-      for (const p of mainComp) anim.values[p] = comp0[p] * (1 - (tL !== null ? 1 : smooth(tR, tR + (vlof - vr) / accel, t)));
-      for (const p of noseComp) anim.values[p] = comp0[p] * (1 - smooth(tR, tR + 1.2, t));
-      const ele = t < tR - 0.4 ? 0 : tL === null ? -0.55 * smooth(tR - 0.4, tR + 0.6, t) : lerp(-0.55, -0.12, smooth(tL, tL + 8, t));
-      for (const p of anim.props) {
-        if (/elevator-pos-norm$/.test(p)) anim.values[p] = ele;
-        else if (/flap-pos-norm$/.test(p)) anim.values[p] = flaps * (after < 14 ? 1 : 1 - smooth(14, 22, after));
-        else if (/velocities\/uBody-fps$/.test(p)) anim.spin[p] = s.wheel;
-      }
-      for (const p of rpmProps) anim.spin[p] = s.prop;
-      anim.apply();
-    }
-    if (s.tL !== null && t - s.tL > 32) s.done = true;
-  }
-
-  // Place the model: forward along -x, lifted so the main wheels stay on the ground until liftoff, pitched about them.
-  const M = new THREE.Matrix4(), R = new THREE.Matrix4(), P = new THREE.Matrix4();
-  const place = () => {
-    const y = s.tL === null ? -lowestMain() : s.yLift + s.h;
-    root.matrixAutoUpdate = false;
-    M.makeTranslation(-s.x, y, 0).multiply(P.makeTranslation(pivot.x, pivot.y, pivot.z)).multiply(R.makeRotationZ(-THREE.MathUtils.degToRad(s.pitch))).multiply(P.makeTranslation(-pivot.x, -pivot.y, -pivot.z));
-    root.matrix.copy(M);
-    root.matrixWorldNeedsUpdate = true;
-  };
+  let blur = null;
+  const sim = createTakeoffSim(root, model, { blur: a => blur?.set(a) });
+  const { anim, vr, RUNUP, gearTime, gearProps, tail, step, place } = sim;
+  blur = propellerBlur(root, anim);
+  const reset = () => { sim.reset(); blur.set(0); };
 
   // Cameras: follow (orbit freely while it tracks the model), runway (a spectator beside the runway
   // near the liftoff point) and chase (behind and above).
   const cam = viewer.camera, controls = viewer.controls;
-  const focus = new THREE.Vector3(), last = new THREE.Vector3();
+  const focus = new THREE.Vector3(), last = new THREE.Vector3(), tmp = new THREE.Vector3();
   let mode = 'follow';
   const setMode = m => {
     mode = m;
@@ -222,7 +202,7 @@ export function startTakeoff(viewer, model, hud, onExit) {
   };
   // A spotter beside the runway just short of the liftoff point, with a long lens that keeps the model
   // about a third of the frame wide however far away it is.
-  const spot = new THREE.Vector3(-(cfg.roll_m * 0.92), 1.7, RUNWAY.width / 2 + 110);
+  const spot = new THREE.Vector3(-(cfg.roll_m * 0.92), 1.7, width / 2 + 110);
   const fov0 = cam.fov;
   const aim = () => {
     focus.copy(center).applyMatrix4(root.matrix);
@@ -245,10 +225,12 @@ export function startTakeoff(viewer, model, hud, onExit) {
   };
 
   let speed = 2;
+  const runupLabel = cfg.jet ? 'Spool up' : 'Engine run-up';
+  const moved = !anim ? '' : `${gearProps.length ? 'Gear, flaps' : 'Flaps'} and elevator move by the model's own animations.`;
   hud.hidden = false;
   hud.innerHTML = `
     <div class="to-read">
-      <span class="to-phase" id="to-phase">Engine run-up</span>
+      <span class="to-phase" id="to-phase">${runupLabel}</span>
       <span><b id="to-kt">0</b> kt</span><span><b id="to-ft">0</b> ft</span><span><b id="to-m">0</b> m</span>
     </div>
     <div class="to-bar" role="toolbar" aria-label="Takeoff controls">
@@ -257,7 +239,7 @@ export function startTakeoff(viewer, model, hud, onExit) {
       <button type="button" class="tool" data-to="replay">Replay</button>
       <button type="button" class="tool" data-to="exit">Exit</button>
     </div>
-    <p class="to-note">Scripted from published takeoff figures (V<sub>R</sub> ${cfg.vr_kt} kt, ${cfg.roll_m.toLocaleString('en')} m roll). Gear, flaps and elevator move by the model's own animations.</p>`;
+    <p class="to-note">Scripted from published takeoff figures (V<sub>R</sub> ${cfg.vr_kt} kt, ${cfg.roll_m.toLocaleString('en')} m roll). ${moved}</p>`;
   const $ = sel => hud.querySelector(sel);
   hud.querySelectorAll('[data-cam]').forEach(b => b.addEventListener('click', () => setMode(b.dataset.cam)));
   hud.querySelectorAll('[data-speed]').forEach(b => b.addEventListener('click', () => {
@@ -271,24 +253,24 @@ export function startTakeoff(viewer, model, hud, onExit) {
   setMode('follow');
   let prev = performance.now();
   const phase = () => {
-    if (s.t < RUNUP) return 'Engine run-up';
-    if (s.tR === null) return 'Takeoff roll';
-    if (s.tL === null) return 'Rotate';
-    const a = s.t - s.tL;
-    return a < 3 ? 'Liftoff' : a < 3 + gearTime ? 'Gear up' : s.done ? 'Climb out' : 'Climb';
+    if (sim.s.t < RUNUP) return runupLabel;
+    if (sim.s.tR === null) return tail && sim.s.v > 0.5 * vr ? 'Tail up' : 'Takeoff roll';
+    if (sim.s.tL === null) return 'Rotate';
+    const a = sim.s.t - sim.s.tL;
+    return a < 3 ? 'Liftoff' : gearProps.length && a < 3 + gearTime ? 'Gear up' : sim.s.done ? 'Climb out' : 'Climb';
   };
   const stopLoop = viewer.animate(now => {
     const dt = Math.min(0.05, (now - prev) / 1000) * speed;
     prev = now;
-    if (!s.done) {
+    if (!sim.s.done) {
       for (let k = 0, n = Math.ceil(dt / 0.01); k < n; k++) step(dt / n);
       place();
     }
     aim();
     $('#to-phase').textContent = phase();
-    $('#to-kt').textContent = Math.round(s.v / KT);
-    $('#to-ft').textContent = Math.round(s.h * FT);
-    $('#to-m').textContent = Math.round(s.x).toLocaleString('en');
+    $('#to-kt').textContent = Math.round(sim.s.v / KT);
+    $('#to-ft').textContent = Math.round(sim.s.h * FT);
+    $('#to-m').textContent = Math.round(sim.s.x).toLocaleString('en');
     return true;
   });
 
@@ -296,6 +278,7 @@ export function startTakeoff(viewer, model, hud, onExit) {
     stopLoop();
     viewer.scene.remove(scenery);
     scenery.traverse(o => { if (o.isMesh) { o.geometry.dispose(); o.material.map?.dispose(); o.material.dispose(); } });
+    blur.dispose();
     anim?.reset();
     root.matrix.identity();
     root.matrixAutoUpdate = true;

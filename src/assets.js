@@ -2,8 +2,10 @@
 // The model file's "asset" block says where the files are, which objects to
 // hide, and how named objects group into selectable parts.
 import * as THREE from 'three';
+import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 import { buildAC, parseACInWorker } from './loaders/ac3d.js';
 import { applyMachinaPaint } from './machina-paint.js';
+import { conditionAt } from './fg-curve.js';
 
 const parsed = new Map(); // model id -> promise of parsed AC data, shared by the viewer and thumbnails
 
@@ -35,8 +37,10 @@ export function assembleParts(loaded, model) {
   const defaultFallback = model.asset.fallback ?? { id: 'airframe', label: 'Airframe details', system: 'structure' };
 
   const meshes = [];
-  for (const { group, fallback, offset, rotation, chain, pose, anim, parts: fileParts } of sources) {
-    if (pose?.length || anim?.length) applyPose(group, pose, anim);
+  for (const { group, fallback, offset, rotation, chain, pose, anim, groups: fgGroups, select: fgSelect, parentPose, parentAnim, parts: fileParts, places } of sources) {
+    // parentPose and parentAnim: transforms the including XML gives this whole file (named "@file").
+    const allPose = [...(pose ?? []), ...(parentPose ?? [])], allAnim = [...(anim ?? []), ...(parentAnim ?? [])];
+    if (allPose.length || allAnim.length || fgSelect?.length) applyPose(group, allPose, allAnim, fgGroups, fgSelect);
     if (chain?.length) {
       // Nested FlightGear placements (an instrument in a panel in the interior), outermost first.
       const m = new THREE.Matrix4(), tmp = new THREE.Object3D();
@@ -44,6 +48,17 @@ export function assembleParts(loaded, model) {
       m.decompose(group.position, group.quaternion, group.scale);
     } else if (offset || rotation) applyFgPlacement(group, offset, rotation);
     group.updateMatrixWorld(true);
+    // places: the same file at many FlightGear offsets inside its placement (a cabin of seats), merged into
+    // one mesh per object so hundreds of copies cost a handful of draw calls.
+    if (places?.length) {
+      const P = new THREE.Object3D(), inv = group.matrixWorld.clone().invert();
+      const at = places.map(([x, y, z]) => { P.position.set(0, 0, 0); P.rotation.set(0, 0, 0); applyFgPlacement(P, { x, y, z }); P.updateMatrix(); return P.matrix.clone(); });
+      group.traverse(o => {
+        if (!o.isMesh || o.geometry.groups.length) return;
+        const rel = inv.clone().multiply(o.matrixWorld), back = rel.clone().invert();
+        o.geometry = mergeGeometries(at.map(M => o.geometry.clone().applyMatrix4(back.clone().multiply(M).multiply(rel))));
+      });
+    }
     // File-scoped rules (for example a left wing file) win over the model-wide ones.
     const local = (fileParts ?? []).map(r => ({ ...r, res: r.match.map(toRegExp) }));
     group.traverse(o => { if (o.isMesh) meshes.push([o, fallback ?? defaultFallback, local]); });
@@ -78,6 +93,12 @@ export function assembleParts(loaded, model) {
     m.name = mesh.name;
     m.castShadow = m.receiveShadow = true;
     m.userData = { partChild: true, source: mesh.name, texture: mesh.userData.texture };
+    if (mesh.userData.fgSelect) {
+      // Shown as the simulator shows it with the gear down; src/fg-anim.js re-evaluates it as the gear moves.
+      m.userData.fgSelect = mesh.userData.fgSelect;
+      m.userData.baseVisible = mesh.visible;
+      m.visible = mesh.visible && m.userData.fgSelect.every(c => conditionAt(c, poseStateOf(model)));
+    }
     const fa = mesh.userData.fgAnim;
     if (fa) {
       // File space to this model's space: the geometry went through base * matrixWorld from the
@@ -140,7 +161,11 @@ function compressGear(groups, { parts, objects, to }) {
       // Shift in world space, applied to the geometry in the mesh's own frame.
       const inv = new THREE.Matrix4().copy(o.matrixWorld).invert();
       const shift = new THREE.Matrix4().makeTranslation(0, dy, 0);
-      o.geometry.applyMatrix4(new THREE.Matrix4().multiplyMatrices(inv, shift).multiply(o.matrixWorld));
+      const S = new THREE.Matrix4().multiplyMatrices(inv, shift).multiply(o.matrixWorld);
+      o.geometry.applyMatrix4(S);
+      // Keep an animated part's frame (src/fg-anim.js) on the moved geometry, as restOnTail does.
+      const fa = o.userData.fgAnim;
+      if (fa) { fa.F.premultiply(S); fa.tail.multiply(S.clone().invert()); }
     }
   }
 }
@@ -169,6 +194,10 @@ function restOnTail(root, groups, { main, tail }) {
     .multiply(new THREE.Matrix4().makeRotationZ(angle))
     .multiply(new THREE.Matrix4().makeTranslation(-pivot.x, -pivot.y, 0));
   root.traverse(o => { if (o.isMesh) o.geometry.applyMatrix4(rot); });
+  // Animated parts (src/fg-anim.js) map file space to model space through F; the geometry is now
+  // pitched, so their frames are pitched with it or the gear would swing about the level pose.
+  const inv = rot.clone().invert();
+  root.traverse(o => { const fa = o.userData.fgAnim; if (o.isMesh && fa) { fa.F.premultiply(rot); fa.tail.multiply(inv); } });
 }
 
 /**
@@ -186,9 +215,16 @@ function applyFgPlacement(group, offset = {}, rotation = {}) {
  * name, in document order: each turns or slides the named objects, including meshes
  * inside a named group, in the file's own coordinates.
  */
-function applyPose(group, pose = [], anim = []) {
+function applyPose(group, pose = [], anim = [], fgGroups = {}, selects = []) {
+  // Named groups (an animation with a <name>) sit between their member objects and the members'
+  // parent, so they count as levels just above each member; a group can hold another group.
+  const groupsOf = new Map();
+  for (const [g, members] of Object.entries(fgGroups)) for (const n of members) groupsOf.set(n, [...(groupsOf.get(n) ?? []), g]);
+  // An object in two groups sits in the one defined later, which FlightGear builds inside the earlier
+  // one (the DC-3's lower leg folds within its whole leg): later groups are the inner levels.
+  const levels = (name, out) => { out.push(name); for (const g of [...(groupsOf.get(name) ?? [])].reverse()) levels(g, out); return out; };
   const byName = new Map();
-  group.traverse(o => { if (o.isMesh) { const names = []; for (let p = o; p && p !== group; p = p.parent) names.push(p.name); byName.set(o, names); } });
+  group.traverse(o => { if (o.isMesh) { const names = []; for (let p = o; p && p !== group; p = p.parent) levels(p.name, names); names.push('@file'); byName.set(o, names); } });
   group.updateMatrixWorld(true);
   const inv = new THREE.Matrix4().copy(group.matrixWorld).invert();
   // FlightGear nests a transform above each animated object, so an object's own
@@ -198,6 +234,9 @@ function applyPose(group, pose = [], anim = []) {
   const late = list => [...list].reverse();
   const poseR = late(pose), animR = late(anim);
   for (const [mesh, names] of byName) {
+    // Visibility by gear position (FlightGear select animations): every condition naming this mesh must hold.
+    const conds = selects.filter(s => s.objects.some(o => names.includes(o))).map(s => s.cond);
+    if (conds.length) mesh.userData.fgSelect = conds;
     const m = new THREE.Matrix4();
     for (const name of names) for (const t of poseR) if (t.objects.includes(name)) m.premultiply(fgMatrix(t, t.value));
     const chain = [];
@@ -367,4 +406,9 @@ export async function loadAssetModel(model, opts = {}) {
   // The Machina livery is the default for models that opt in; "original" keeps the source paint.
   if (a.machina && !opts.original) applyMachinaPaint(root, a.machina, { stripe: opts.accent });
   return root;
+}
+
+/** The property values a model's baked pose stands for (gear down, oleos as modelled), from all its files. */
+export function poseStateOf(model) {
+  return Object.assign({}, ...(model.asset.files ?? []).map(f => f.poseState ?? {}));
 }

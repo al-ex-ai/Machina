@@ -22,6 +22,7 @@
     "fit": "node --import ./scripts/node/register.js scripts/from-drawing.js",
     "validate": "node --import ./scripts/node/register.js scripts/validate.js",
     "thumbs": "node --import ./scripts/node/register.js scripts/thumbs.js",
+    "takeoff-check": "node --import ./scripts/node/register.js scripts/check-takeoff.js",
     "known": "node --import ./scripts/node/register.js scripts/known-aircraft.js",
     "build-drawn": "node --import ./scripts/node/register.js scripts/build-drawn.js",
     "check-drawing": "node --import ./scripts/node/register.js scripts/check-drawing.js",

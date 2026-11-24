@@ -2,7 +2,7 @@
 // translate animations at chosen property values (by default, landing gear down) and
 // store the resulting transforms on the asset file, in document order. Some models are
 // saved with the gear retracted and only lower it through these animations.
-// Usage: node scripts/fg-pose.js <model.xml> data/models/aviation/<id>.json [fileIndex] [--anim] [property=value ...]
+// Usage: node scripts/fg-pose.js <model.xml> data/models/aviation/<id>.json [fileIndex] [--anim] [property=value ...] [/params/x=property ...]
 //   Extra property=value pairs pose more animations, e.g. gear/gear[0]/compression-norm=1 to
 //   settle oleos stored at full extension onto the ground.
 //   --anim also keeps the animations themselves (gear, oleos, flaps, elevator, rudder, propellers,
@@ -13,14 +13,36 @@ import { curveAt } from '../src/fg-curve.js';
 
 const [xmlPath, modelFile, fileIndex = '0', ...rest] = process.argv.slice(2);
 const keepAnim = rest.includes('--anim');
-const sets = rest.filter(s => s !== '--anim');
+// --no-guess: every axis-object hinge turns by FlightGear's own convention (the negated value) instead of
+// the per-hinge guess below, which cannot see a chain of hinges (a strut swinging a bogie that turns again).
+const noGuess = rest.includes('--no-guess');
+// /params/x=property: the value of an alias the including model sets (e.g. a shared propeller XML's
+// /params/rpm, given per engine by the airframe XML that includes it).
+const paramArgs = rest.filter(s => s.startsWith('/params/'));
+const sets = rest.filter(s => s !== '--anim' && s !== '--no-guess' && !s.startsWith('/params/'));
 const exact = k => new RegExp(`^${k.replace(/[.*+?^${}()|[\]\\/]/g, '\\$&')}$`);
 const POSE = [ // property pattern -> value
   ...sets.map(kv => { const i = kv.lastIndexOf('='); return [exact(kv.slice(0, i)), Number(kv.slice(i + 1)), kv.slice(0, i)]; }),
   [/gear\/gear\[\d+\]\/position-norm/, 1],
 ];
-const ANIM = /^(gear\/gear\[\d+\]\/(position|compression)-norm|surface-positions\/(flap|elevator|rudder)-pos-norm|engines\/engine\[\d+\]\/rpm|velocities\/uBody-fps)$/;
+const ANIM = /^(gear\/gear\[\d+\]\/(position|compression)-norm|surface-positions\/(flap|elevator|rudder)-pos-norm|engines\/engine\[\d+\]\/(rpm|n1|n2)|velocities\/uBody-fps)$/;
 const xml = readFileSync(xmlPath, 'latin1').replace(/<!--[\s\S]*?-->/g, '');
+// Property aliases: <property alias="/params/a/b"/> reads the text of <params><a><b> in this file.
+const params = new Map();
+{
+  const block = /<params>([\s\S]*?)<\/params>/.exec(xml.replace(/<model>[\s\S]*?<\/model>/g, ''))?.[1] ?? '';
+  const stack = ['/params'];
+  for (const [, close, tag, text] of block.matchAll(/<(\/?)([\w-]+(?:\[\d+\])?)[^>]*>([^<]*)/g)) {
+    if (close) { stack.pop(); continue; }
+    stack.push(tag);
+    if (text.trim()) params.set(stack.join('/'), text.trim());
+  }
+  for (const kv of paramArgs) { const i = kv.indexOf('='); params.set(kv.slice(0, i), kv.slice(i + 1)); }
+}
+const propertyOf = a => {
+  const s = a.replace(/<condition>[\s\S]*?<\/condition>/g, '');
+  return /<property>\s*([^<]+?)\s*<\/property>/.exec(s)?.[1] ?? params.get(/<property\s+alias="([^"]+)"/.exec(s)?.[1])?.replace(/^\//, '');
+};
 const num = (s, tag) => { const m = new RegExp(`<${tag}>\\s*([-\\d.eE+]+)\\s*</${tag}>`).exec(s); return m ? Number(m[1]) : undefined; };
 const fgToAc = ([x, y, z]) => [x, z, -y]; // FlightGear x aft, y right, z up -> AC x aft, y up, z left
 
@@ -56,20 +78,96 @@ if (acPath && existsSync(acPath)) {
 }
 
 const r4 = c => Math.round(c * 1e4) / 1e4, r6 = c => Math.round(c * 1e6) / 1e6;
+
+// FlightGear <expression>: nested operators over one property and constants, kept as a small tree
+// ([op, ...args], 'p' for the property, numbers as they are) that src/fg-curve.js evaluates.
+function parseExpr(s) {
+  const tokens = [...s.matchAll(/<(\/?)([\w-]+)[^>]*?(\/?)>|([^<]+)/g)];
+  let i = 0;
+  const node = () => {
+    for (; i < tokens.length; i++) {
+      const [, close, tag, selfClose, text] = tokens[i];
+      if (text !== undefined || close) continue;
+      i++;
+      // A second property (the Cub's <property alias="/params/water-rudder-norm"/>) is not driven: 0.
+      if (selfClose) { if (tag === 'property') return 0; continue; }
+      if (tag === 'property') { while (i < tokens.length && tokens[i][2] !== 'property') i++; i++; return 'p'; }
+      if (tag === 'value') { const v = Number(tokens[i][4]); while (i < tokens.length && tokens[i][2] !== 'value') i++; i++; return v; }
+      const args = [];
+      for (;;) {
+        while (i < tokens.length && tokens[i][4] !== undefined) i++;
+        if (i >= tokens.length || (tokens[i][1] && tokens[i][2] === tag)) { i++; return [tag, ...args]; }
+        args.push(node());
+      }
+    }
+  };
+  return node();
+}
 const out = [], anim = [];
+// Named groups: an animation with a <name> gathers its objects (or other groups) under one node
+// that later animations can name. Kept on the asset file for src/assets.js to nest the same way.
+const objectNames = a => [...a.replace(/<axis>[\s\S]*?<\/axis>/g, '').matchAll(/<object-name>\s*([^<]+?)\s*<\/object-name>/g)].map(m => m[1]);
+const groups = {};
+for (const [, a] of xml.matchAll(/<animation>([\s\S]*?)<\/animation>/g)) {
+  const name = /<name>\s*([^<]+?)\s*<\/name>/.exec(a)?.[1];
+  const members = objectNames(a);
+  if (name && members.length && !members.includes(name)) groups[name] = [...new Set([...(groups[name] ?? []), ...members])];
+}
+const members = n => groups[n] ? groups[n].flatMap(members) : [n];
+// Select animations on the gear: open and closed door sets, wells and legs shown only while they are out.
+// Kept as condition trees (src/fg-curve.js conditionAt) so the app shows the same set the simulator would.
+const COMPARE = { 'greater-than': 'gt', 'less-than': 'lt', 'greater-than-equals': 'ge', 'less-than-equals': 'le', equals: 'eq' };
+function parseCond(s) {
+  const tokens = [...s.matchAll(/<(\/?)([\w-]+)[^>]*?(\/?)>|([^<]+)/g)].filter(t => t[4] === undefined || t[4].trim());
+  let i = 0;
+  const text = () => (tokens[i]?.[4] ?? '').trim();
+  const node = () => {
+    const [, close, tag] = tokens[i++];
+    if (close) return null;
+    if (tag === 'property') { const p = text(); i += 2; return ['prop', p.replace(/^\//, '')]; }
+    if (tag === 'value') { const v = Number(text()); i += 2; return v; }
+    const kids = [];
+    while (i < tokens.length && !(tokens[i][1] && tokens[i][2] === tag)) { const k = node(); if (k !== null) kids.push(k); }
+    i++;
+    if (COMPARE[tag]) {
+      const prop = kids.find(k => Array.isArray(k) && k[0] === 'prop'), nums = kids.filter(k => typeof k === 'number');
+      if (prop && nums.length) return [COMPARE[tag], prop[1], nums[0]];
+      // Two constants: an object switched on or off for good (the Concorde's open main-gear doors).
+      if (nums.length === 2) { const [a, b] = nums; return ['const', { gt: a > b, lt: a < b, ge: a >= b, le: a <= b, eq: a === b }[COMPARE[tag]]]; }
+      return ['prop', ''];
+    }
+    if (tag === 'and' || tag === 'or' || tag === 'not') return [tag, ...kids];
+    return kids.length === 1 ? kids[0] : ['and', ...kids];
+  };
+  return node();
+}
+const selects = [];
+for (const [, a] of xml.matchAll(/<animation>([\s\S]*?)<\/animation>/g)) {
+  if (/<type>\s*(\w+)\s*<\/type>/.exec(a)?.[1] !== 'select') continue;
+  const c = /<condition>([\s\S]*?)<\/condition>/.exec(a)?.[1];
+  if (!c || !(/gear\/gear(\[\d+\])?\/(position|compression)-norm/.test(c) || !/<property/.test(c))) continue;
+  const objects = objectNames(a.replace(/<condition>[\s\S]*?<\/condition>/g, ''));
+  if (objects.length) selects.push({ objects, cond: parseCond(`<and>${c}</and>`) });
+}
 for (const [, a] of xml.matchAll(/<animation>([\s\S]*?)<\/animation>/g)) {
   const type = /<type>\s*(\w+)\s*<\/type>/.exec(a)?.[1];
   if (type !== 'rotate' && type !== 'translate' && type !== 'spin') continue;
-  const prop = /<property>\s*([^<]+?)\s*<\/property>/.exec(a.replace(/<condition>[\s\S]*?<\/condition>/g, ''))?.[1];
+  let prop = propertyOf(a);
   if (!prop) continue;
+  // Wheels spun from the flight model's own wheel speed (the Cub's fdm/jsbsim/gear/gear-spin-left) roll
+  // with the ground speed, as the gear/gear[n]/rollspeed-ms ones do.
+  if (type === 'spin' && /gear.*(spin|rollspeed)|wheel.*(spin|speed)/i.test(prop) && !ANIM.test(prop)) prop = 'velocities/uBody-fps';
   const rule = type !== 'spin' && POSE.find(([re]) => re.test(prop));
-  const animated = keepAnim && ANIM.test(prop);
+  // Engine properties only turn things (propellers, fans); some models also hang blade pitch or
+  // instrument needles on them.
+  const animated = keepAnim && ANIM.test(prop) && (type === 'spin' || !prop.startsWith('engines/'));
   if (!rule && !animated) continue;
-  const objects = [...a.replace(/<axis>[\s\S]*?<\/axis>/g, '').matchAll(/<object-name>\s*([^<]+?)\s*<\/object-name>/g)].map(m => m[1]);
+  const objects = objectNames(a);
   if (!objects.length) continue;
   const unit = type === 'rotate' ? 'deg' : 'm';
   const entries = [...a.matchAll(/<entry>\s*<ind>\s*([-\d.eE+]+)\s*<\/ind>\s*<dep>\s*([-\d.eE+]+)\s*<\/dep>\s*<\/entry>/g)].map(m => [Number(m[1]), Number(m[2])]);
-  const curve = entries.length ? { table: entries } : {
+  const exprXml = /<expression>([\s\S]*?)<\/expression>/.exec(a)?.[1];
+  const curve = exprXml ? { expr: parseExpr(exprXml) } : entries.length ? { table: entries } : {
     factor: num(a, 'factor'), offset: num(a, `offset-${unit}`),
     min: num(a, `min-${unit}`) ?? num(a, 'min'), max: num(a, `max-${unit}`) ?? num(a, 'max'),
   };
@@ -90,14 +188,14 @@ for (const [, a] of xml.matchAll(/<animation>([\s\S]*?)<\/animation>/g)) {
     const lowest = s => {
       const th = (s * val * Math.PI) / 180, u = d.map(c => c / len), cs = Math.cos(th), sn = Math.sin(th);
       let lo = Infinity;
-      for (const n of objects) for (const p0 of acVerts.get(n) ?? []) {
+      for (const n of objects.flatMap(members)) for (const p0 of acVerts.get(n) ?? []) {
         const q = p0.map((c, k) => c - v[0][k]), dot = q[0] * u[0] + q[1] * u[1] + q[2] * u[2];
         const cr = [u[1] * q[2] - u[2] * q[1], u[2] * q[0] - u[0] * q[2], u[0] * q[1] - u[1] * q[0]];
         lo = Math.min(lo, v[0][1] + q[1] * cs + cr[1] * sn + u[1] * dot * (1 - cs));
       }
       return lo;
     };
-    sign = val && lowest(1) < lowest(-1) - 0.05 ? 1 : -1;
+    sign = !noGuess && val && lowest(1) < lowest(-1) - 0.05 ? 1 : -1;
     origin = v[0].map(r4);
     axis = d.map(c => r6(c / len));
   } else {
@@ -116,8 +214,11 @@ for (const [, a] of xml.matchAll(/<animation>([\s\S]*?)<\/animation>/g)) {
     origin = fgToAc(p1).map(r4);
     axis = fgToAc(dir.map(c => c / len)).map(r6);
   }
-  if (rule && val) out.push({ type, objects, value: Math.round(sign * val * 1000) / 1000, origin, axis });
+  if (rule && val) out.push({ type, objects, prop, value: Math.round(sign * val * 1000) / 1000, origin, axis });
   if (animated) anim.push({ type, objects, prop, ...curve, ...(sign !== 1 ? { sign } : {}), origin, axis });
+  // A baked transform the app does not animate (nose-wheel steering set straight) still sits in the
+  // chain at its baked value, or replaying the animated ones around it would undo it.
+  else if (keepAnim && rule && val) anim.push({ type, objects, prop, fixed: val, ...(sign !== 1 ? { sign } : {}), origin, axis });
 }
 
 // Left and right gear are mirror images. Where a right-side transform (objects ending
@@ -144,15 +245,96 @@ const gearAnim = anim.filter(t => t.prop.startsWith('gear/'));
 mirror(gearAnim, l => { const { type, objects, prop, origin, axis, ...curve } = l; return curve; });
 let g = 0;
 for (let i = 0; i < anim.length; i++) if (anim[i].prop.startsWith('gear/')) anim[i] = gearAnim[g++];
+// The takeoff starts from the baked pose: an animation that also has a baked transform must give exactly
+// that transform at the pose's property value, or the part jumps when the scene begins (a right-hand door
+// whose pose was mirrored from the left one while its animation kept the other sense). Take the pose's
+// hinge and sense.
+for (const t of anim) {
+  const rule = POSE.find(([re]) => re.test(t.prop));
+  if (!rule || t.type === 'spin') continue;
+  const p = out.find(q => q.type === t.type && q.prop === t.prop && q.objects.join() === t.objects.join());
+  if (!p) continue;
+  t.origin = p.origin; t.axis = p.axis;
+  // A fixed entry holds a baked transform under the animations (the Tu-144D steering links): exactly the pose's.
+  if (t.fixed !== undefined) { t.fixed = p.value; delete t.sign; continue; }
+  const v = curveAt(t, rule[1]);
+  if (Math.abs(v + p.value) < 1e-6 && Math.abs(v) > 1e-6) { t.sign = -(t.sign ?? 1); if (t.sign === 1) delete t.sign; }
+}
 
 const model = JSON.parse(readFileSync(modelFile, 'utf8'));
 const files = model.asset.files ?? [{ file: model.asset.file }];
 const file = files[Number(fileIndex)];
+
+// Sub-models: a <model> block with a <name> places another file, and this XML's animations can
+// move it by that name (the 707's wheel bogies ride on its gear legs). Each one is matched to the
+// asset file with the same mesh and offsets, and gets the transforms as its outermost level
+// ("@file"), moved into its own coordinates.
+const subs = new Map();
+for (const [, b] of xml.matchAll(/<model>([\s\S]*?)<\/model>/g)) {
+  const name = /<name>\s*([^<]+?)\s*<\/name>/.exec(b)?.[1], path = /<path>\s*([^<]+?)\s*<\/path>/.exec(b)?.[1];
+  if (!name || !path) continue;
+  let ac = path;
+  if (/\.xml$/.test(path)) {
+    // Aircraft/<name>/... is relative to the aircraft folder (the one holding Models), anything else to this XML.
+    const sub = /^Aircraft\//.test(path) ? join(xmlPath.replace(/[\\/]Models?[\\/].*$/, ''), path.replace(/^Aircraft\/[^/]+\//, '')) : join(dirname(xmlPath), path);
+    ac = existsSync(sub) ? /<path>\s*([^<]+?\.ac)\s*<\/path>/.exec(readFileSync(sub, 'latin1').replace(/<!--[\s\S]*?-->/g, '').replace(/<model>[\s\S]*?<\/model>/g, ''))?.[1] : undefined;
+  }
+  if (!ac) continue;
+  const o = /<offsets>([\s\S]*?)<\/offsets>/.exec(b)?.[1] ?? '';
+  // Offsets are relative to this XML's own file; the asset stores where each file sits overall.
+  const off = [num(o, 'x-m') ?? 0, num(o, 'y-m') ?? 0, num(o, 'z-m') ?? 0], at = file.offset ?? {};
+  const abs = [off[0] + (at.x ?? 0), off[1] + (at.y ?? 0), off[2] + (at.z ?? 0)];
+  const j = files.findIndex(f => f.file.split('/').pop() === ac.split('/').pop() && Math.hypot(abs[0] - (f.offset?.x ?? 0), abs[1] - (f.offset?.y ?? 0), abs[2] - (f.offset?.z ?? 0)) < 0.01);
+  // Files the asset places rotated are left alone: the shift below assumes axes parallel to ours.
+  if (j >= 0 && j !== Number(fileIndex) && !Object.values(files[j].rotation ?? {}).some(Boolean)) subs.set(name, { j, shift: fgToAc(off) });
+}
+const toSub = new Map();
+const moveTo = (t, kind) => {
+  for (const n of t.objects) {
+    const s = subs.get(n);
+    if (!s) continue;
+    const e = toSub.get(s.j) ?? { pose: [], anim: [] };
+    e[kind].push({ ...t, objects: ['@file'], origin: t.origin.map((c, k) => r4(c - s.shift[k])) });
+    toSub.set(s.j, e);
+  }
+};
+out.forEach(t => moveTo(t, 'pose'));
+anim.forEach(t => moveTo(t, 'anim'));
+for (const [j, e] of toSub) {
+  const f = files[j];
+  if (e.pose.length) f.parentPose = e.pose; else delete f.parentPose;
+  if (keepAnim) f.parentAnim = e.anim;
+  console.log(`  ${f.file} [${j}]: ${e.pose.length} gear-down transforms and ${e.anim.length} animations from the parent`);
+}
+
 if (out.length) file.pose = out; else delete file.pose;
+const used = {};
+const use = n => { if (groups[n] && !used[n]) { used[n] = groups[n]; groups[n].forEach(use); } };
+for (const t of [...out, ...anim, ...(keepAnim ? selects : [])]) t.objects.forEach(use);
+// In definition order: an object in two groups belongs to the later one, nested in the earlier.
+const ordered = Object.fromEntries(Object.keys(groups).filter(n => used[n]).map(n => [n, used[n]]));
+if (Object.keys(ordered).length) file.groups = ordered; else delete file.groups;
 if (keepAnim) {
   file.anim = anim;
+  if (selects.length) file.select = selects; else delete file.select;
   // The property values the pose was baked at, so the app starts its animations from them.
   file.poseState = Object.fromEntries(POSE.filter(r => r[2]).map(r => [r[2], r[1]]));
+  // An oleo whose stroke is not zero at compression 0 (the Concorde nose: 0.35 c - 0.6) is modelled at the
+  // compression where it is: start there, or the takeoff would drop the strut the moment it begins.
+  // Control surfaces are not baked either: the Tu-144D rudder (23 v + 20 deg) rests where v = -0.87.
+  const byProp = new Map();
+  for (const t of anim) {
+    if (!/(compression|surface-positions\/\w+-pos)-norm$/.test(t.prop) || t.prop in file.poseState || t.fixed !== undefined) continue;
+    byProp.set(t.prop, [...(byProp.get(t.prop) ?? []), t]);
+  }
+  for (const [prop, ts] of byProp) {
+    const off = c => Math.max(...ts.map(t => Math.abs(curveAt(t, c))));
+    if (off(0) < 1e-6) continue;
+    let best = 0;
+    for (let c = /compression/.test(prop) ? 0 : -1; c <= 3; c += 0.001) if (off(c) < off(best)) best = c;
+    for (let c = best - 0.001, b = best; c <= b + 0.001; c += 1e-6) if (off(c) < off(best)) best = c;
+    if (off(best) < 1e-3) file.poseState[prop] = r6(best);
+  }
 }
 model.asset.files = files;
 delete model.asset.file;

@@ -1,0 +1,197 @@
+// The takeoff profile and pose, without the scene: the model's own animations driven from published
+// figures, and where the model sits on the runway at each moment. src/takeoff.js draws it;
+// src/takeoff-check.js plays it frame by frame in Node to check nothing goes through the runway.
+import * as THREE from 'three';
+import { fgAnimator } from './fg-anim.js';
+
+const KT = 0.514444, FT = 3.28084;
+
+/** Points where the wheels of the named parts meet the ground, kept as mesh-space positions. */
+export function contactPoints(root, match) {
+  const out = [];
+  root.updateMatrixWorld(true);
+  const inv = root.matrixWorld.clone().invert();
+  const v = new THREE.Vector3();
+  root.traverse(o => {
+    if (!o.userData?.part || !match.test(o.userData.id)) return;
+    const list = [];
+    let low = Infinity;
+    o.traverse(c => {
+      if (!c.isMesh) return;
+      const rel = inv.clone().multiply(c.matrixWorld), a = c.geometry.attributes.position;
+      for (let i = 0; i < a.count; i++) { v.fromBufferAttribute(a, i).applyMatrix4(rel); if (v.y < low + 0.03) { low = Math.min(low, v.y); list.push([c, i, v.y]); } }
+    });
+    for (const [c, i, y] of list) if (y < low + 0.03) out.push([c, new THREE.Vector3().fromBufferAttribute(c.geometry.attributes.position, i)]);
+  });
+  return out;
+}
+
+/** A point's position in root space from its mesh's current local matrices (no world update needed). */
+export function inRoot(root, mesh, p, out) {
+  out.copy(p);
+  for (let o = mesh; o && o !== root; o = o.parent) {
+    if (o.matrixAutoUpdate) o.updateMatrix();
+    out.applyMatrix4(o.matrix);
+  }
+  return out;
+}
+
+export const smooth = (a, b, x) => { if (!(x > a)) return 0; if (!(x < b)) return 1; const t = (x - a) / (b - a); return t * t * (3 - 2 * t); };
+export const lerp = (a, b, t) => a + (b - a) * t;
+
+/**
+ * @param {THREE.Object3D} root a loaded model in its studio pose
+ * @param {any} model catalog entry with a takeoff block
+ * @param {{ blur?: (amount: number) => void }} [opts] blur: called each step with how far the propellers are spun up (0..1)
+ */
+export function createTakeoffSim(root, model, opts = {}) {
+  const cfg = model.takeoff;
+  const anim = fgAnimator(root, model);
+  root.updateMatrixWorld(true);
+  const box = new THREE.Box3().setFromObject(root);
+  const size = box.getSize(new THREE.Vector3());
+  const L = Math.max(size.x, size.z);
+  let mains = contactPoints(root, cfg.mains ? new RegExp(cfg.mains) : /main-gear|body-gear|wing-gear/);
+  if (!mains.length) {
+    // One part holds every wheel (or skid): keep the rearmost contacts for a nose-wheel airplane,
+    // the foremost for a tailwheel one.
+    mains = contactPoints(root, /gear|skid/);
+    if (!mains.length) mains = contactPoints(root, /./);
+    const xs = mains.map(([c, p]) => inRoot(root, c, p, new THREE.Vector3()).x), lo = Math.min(...xs), hi = Math.max(...xs);
+    if (hi - lo > 0.2 * L) mains = mains.filter((_, i) => cfg.tailwheel ? xs[i] < lo + 0.25 * (hi - lo) : xs[i] > hi - 0.25 * (hi - lo));
+  }
+  const pivot = new THREE.Vector3();
+  const tmp = new THREE.Vector3();
+  for (const [c, p] of mains) pivot.add(inRoot(root, c, p, tmp));
+  pivot.divideScalar(mains.length || 1);
+  // On the ground the lowest of every gear contact sits on the runway, not only the mains: a nose oleo
+  // extending as it unloads must lift the airplane, never sink into the ground.
+  // The runway carries the true lowest point of the gear each moment: fixed contact vertices ride up
+  // with a spinning tyre and would sink the airplane into the ground as the wheels turn.
+  const gearMeshes = [];
+  root.traverse(o => { if (o.isMesh) { let p = o; while (p && !p.userData.part) p = p.parent; if (p && /gear|skid/.test(p.userData.id)) gearMeshes.push(o); } });
+  if (!gearMeshes.length) root.traverse(o => { if (o.isMesh) gearMeshes.push(o); });
+  const toRoot = new THREE.Matrix4(), gv = new THREE.Vector3();
+  // Lowest point with the model pitched as it will be placed (rear wheels swing down as the nose comes up).
+  const pitched = new THREE.Matrix4(), PZ = new THREE.Matrix4();
+  const lowestMain = () => {
+    let y = Infinity;
+    pitched.makeTranslation(pivot.x, pivot.y, pivot.z).multiply(PZ.makeRotationZ(-THREE.MathUtils.degToRad(s.pitch))).multiply(new THREE.Matrix4().makeTranslation(-pivot.x, -pivot.y, -pivot.z));
+    for (const o of gearMeshes) {
+      let shown = true;
+      toRoot.identity();
+      for (let q = o; q && q !== root; q = q.parent) { if (!q.visible) { shown = false; break; } if (q.matrixAutoUpdate) q.updateMatrix(); toRoot.premultiply(q.matrix); }
+      if (!shown) continue;
+      toRoot.premultiply(pitched);
+      const a = o.geometry.attributes.position;
+      for (let i = 0; i < a.count; i++) y = Math.min(y, gv.fromBufferAttribute(a, i).applyMatrix4(toRoot).y);
+    }
+    return y === Infinity ? 0 : y;
+  };
+
+  // Profile from the published figures: constant acceleration to liftoff over the ground roll.
+  const vr = cfg.vr_kt * KT, vlof = (cfg.lof_kt ?? cfg.vr_kt * 1.06) * KT, accel = (vlof * vlof) / (2 * cfg.roll_m);
+  const RUNUP = 5, pitchMax = cfg.pitch_deg ?? 8, climb = cfg.climb_deg ?? 4, gearTime = cfg.gear_s ?? 8, flaps = cfg.flaps ?? 0;
+  const gearProps = anim ? anim.props.filter(p => /position-norm$/.test(p)) : [];
+  const mainComp = anim ? anim.props.filter(p => /gear\[[1-9]\]\/compression-norm$/.test(p)) : [];
+  const noseComp = anim ? anim.props.filter(p => /gear\[0\]\/compression-norm$/.test(p)) : [];
+  const rpmProps = anim ? anim.props.filter(p => /engines\/engine\[\d+\]\/(rpm|n1|n2)$/.test(p)) : [];
+  // Tailwheel airplanes run with the tail raised once the elevator bites, then fly off near level.
+  const tail = cfg.tailwheel ? (cfg.tail_deg ?? 10) : 0;
+  const comp0 = anim ? Object.fromEntries([...mainComp, ...noseComp].map(p => [p, anim.values[p]])) : {};
+  // Surfaces rest where the model was drawn (poseState), and move from there.
+  const rest = anim ? { ...anim.values } : {};
+  const blur = { set: opts.blur ?? (() => {}) };
+
+  let s; // simulation state
+  const reset = () => {
+    s = { t: 0, x: 0, v: 0, h: 0, gamma: 0, pitch: 0, tR: null, tL: null, yLift: 0, wheel: 0, prop: 0, done: false };
+    anim?.reset();
+    blur.set(0);
+  };
+  reset();
+
+  // How far the nose can come up on the ground before the tail (or a tail bumper) touches: rotation stops a
+  // degree short of it until the model is 10 m up (the Tu-144D bumper touches at 8 degrees, the 707 tail at 9.75).
+  const tailClear = (() => {
+    const ground = lowestMain(); // runway level in root space, pitch 0
+    const list = [];
+    root.traverse(o => { if (!o.isMesh) return; for (let q = o; q; q = q.parent) if (!q.visible) return; let p = o; while (p && !p.userData.part) p = p.parent;
+      if (p?.userData.system === 'gear' && !/bumper|tail-wheel|skid/.test(p.userData.id)) return; list.push(o); });
+    root.updateMatrixWorld(true);
+    const inv = root.matrixWorld.clone().invert(), mats = list.map(o => inv.clone().multiply(o.matrixWorld));
+    const R = new THREE.Matrix4(), T = new THREE.Matrix4(), B = new THREE.Matrix4().makeTranslation(-pivot.x, -pivot.y, -pivot.z), w = new THREE.Vector3();
+    for (let deg = 0.5; deg <= 25; deg += 0.25) {
+      R.makeTranslation(pivot.x, pivot.y, pivot.z).multiply(T.makeRotationZ(-THREE.MathUtils.degToRad(deg))).multiply(B);
+      for (let k = 0; k < list.length; k++) {
+        const M = R.clone().multiply(mats[k]), a = list[k].geometry.attributes.position;
+        for (let i = 0; i < a.count; i += 3) if (w.fromBufferAttribute(a, i).applyMatrix4(M).y < ground - 0.02) return deg;
+      }
+    }
+    return 25;
+  })();
+
+  function step(dt) {
+    s.t += dt;
+    const t = s.t;
+    const rpm = t < 2 ? 700 : lerp(700, cfg.rpm ?? 2800, smooth(2, RUNUP, t));
+    if (t > RUNUP) {
+      const a = s.tL === null ? accel : accel * 0.35;
+      s.v += a * dt;
+    }
+    if (s.tR === null && s.v >= vr) s.tR = t;
+    if (tail && s.tR === null) s.pitch = -tail * smooth(0.35 * vr, 0.8 * vr, s.v);
+    if (s.tR !== null) s.pitch = Math.min(s.h < 10 ? Math.min(pitchMax, tailClear - 1) : pitchMax, s.pitch + (tail ? 1.5 : 2.6) * dt);
+    if (s.tL === null && s.v >= vlof) { s.tL = t; s.yLift = -lowestMain(); }
+    if (s.tL !== null) {
+      s.gamma = THREE.MathUtils.degToRad(climb) * smooth(s.tL, s.tL + 5, t);
+      s.h += s.v * Math.sin(s.gamma) * dt;
+    }
+    s.x += s.v * Math.cos(s.gamma) * dt;
+    // Wheels roll with the ground speed and are braked after liftoff; the propellers are shown at a rate
+    // the eye can follow (true rates alias into a standstill at screen frame rates).
+    const groundV = s.tL === null ? s.v : s.v * Math.max(0, 1 - (t - s.tL) / 3);
+    s.wheel += groundV * FT * 6 * dt;
+    // Propellers turn visibly at idle; spun up they are a blur, so the blades fade into a faint disc
+    // (src/takeoff.js, propellerBlur) and spin fast enough not to be followed.
+    const power = smooth(0, 1, (rpm - 700) / ((cfg.rpm ?? 2800) - 700));
+    s.prop += lerp(540, 5400, power) * dt;
+    blur.set(smooth(0.15, 0.6, power));
+    if (anim) {
+      const after = s.tL === null ? -1 : t - s.tL;
+      for (const p of gearProps) anim.values[p] = after < 3 ? 1 : 1 - smooth(3, 3 + gearTime, after);
+      const tR = s.tR ?? Infinity, tL = s.tL;
+      for (const p of mainComp) anim.values[p] = comp0[p] * (1 - (tL !== null ? 1 : smooth(tR, tR + (vlof - vr) / accel, t)));
+      for (const p of noseComp) anim.values[p] = comp0[p] * (1 - smooth(tR, tR + 1.2, t));
+      // Tailwheel: stick back to hold the tail down, forward to raise it, then back to fly off.
+      const pre = tail ? (s.v < 0.35 * vr ? -0.35 : 0.3 * (1 - smooth(0.8 * vr, vr, s.v))) : 0;
+      const ele = t < tR - 0.4 ? pre : tL === null ? lerp(pre, -0.55, smooth(tR - 0.4, tR + 0.6, t)) : lerp(-0.55, -0.12, smooth(tL, tL + 8, t));
+      for (const p of anim.props) {
+        if (/elevator-pos-norm$/.test(p)) anim.values[p] = rest[p] + ele;
+        else if (/flap-pos-norm$/.test(p)) anim.values[p] = rest[p] + flaps * (after < 14 ? 1 : 1 - smooth(14, 22, after));
+        else if (/velocities\/uBody-fps$/.test(p)) anim.spin[p] = s.wheel;
+      }
+      for (const p of rpmProps) anim.spin[p] = s.prop;
+      anim.apply();
+    }
+    if (s.tL !== null && t - s.tL > 32) s.done = true;
+  }
+
+  // Place the model: forward along -x, lifted so the main wheels stay on the ground until liftoff, pitched about them.
+  const M = new THREE.Matrix4(), R = new THREE.Matrix4(), P = new THREE.Matrix4();
+  const place = () => {
+    // After liftoff the climb carries the model, but the nose keeps coming up: wheels aft of the pivot (the
+    // 747's body gear) must not swing into the runway while it is still close.
+    const y = s.tL === null ? -lowestMain() : Math.max(s.yLift + s.h, s.h < 20 ? -lowestMain() : -Infinity);
+    root.matrixAutoUpdate = false;
+    M.makeTranslation(-s.x, y, 0).multiply(P.makeTranslation(pivot.x, pivot.y, pivot.z)).multiply(R.makeRotationZ(-THREE.MathUtils.degToRad(s.pitch))).multiply(P.makeTranslation(-pivot.x, -pivot.y, -pivot.z));
+    root.matrix.copy(M);
+    root.matrixWorldNeedsUpdate = true;
+  };
+
+  return {
+    anim, cfg, pivot, lowestMain, tailClear, place, step, vr, RUNUP, gearTime, gearProps, tail,
+    get s() { return s; },
+    reset: () => { reset(); },
+  };
+}
