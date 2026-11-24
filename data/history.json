@@ -147,6 +147,37 @@
         "Animations now nest as FlightGear nests them, later ones inside earlier ones: the first try spun the wheel hubs about their static axle after the oleo had moved them, so they floated under the wing",
         "The runway flickered: tiny edge lights and fine asphalt grain sparkled in motion, and the grass under the runway fought it for depth at a distance; lights gone, grain softened, grass cut around the runway, shadow box snapped to its texels"
       ]
+    },
+    {
+      "date": "2026-11-23",
+      "title": "Takeoff for every airplane",
+      "items": [
+        "Every listed airplane now takes off, from the Wright Flyer and the Cub to the A380 and An-225, each from its own rotation speed and ground roll",
+        "Gear, doors, flaps, oleos, propellers and fans move by each model's own FlightGear animations, as on the Constellation; the A320neo's came from a 2020 version of its source, the one its meshes were taken from",
+        "Tailwheel airplanes (Cub, Ju 52, Spitfire, P-51D) raise the tail on the roll and fly off near level; jets spool up instead of running up",
+        "The 747's gear never left the runway: its animations name FlightGear groups, not meshes. Groups are now kept, and parts placed as separate files (the 707's wheel bogies, the A320neo's tires) follow the leg that carries them",
+        "Gear doors now stand as FlightGear shows them on the ground, open where the real aircraft leaves them open; the 787's oleos are settled so its bogies sit level and tilt down once it lifts off",
+        "Five aircraft out of the workshop and into the catalog: Douglas DC-3, DHC-6 Twin Otter, Eurocopter EC135, Tupolev Tu-154B-2 and Tupolev Tu-144D, each through the model standard and the visual checks, the four airplanes with their own takeoff",
+        "The Tu-144D stood 2.2 m too tall with its main wheels in the air: the flight model rests it nose-high on a long nose leg, so it now sits on all its wheels the same way, oleos settled from its own expressions, and measures 12.49 m against the published 12.5 m",
+        "Its nose wheels stood turned: the mesh is stored steered and FlightGear turns it 60 degrees at centre, so the steering is now baked straight as well",
+        "The gear tool reads FlightGear expressions (an oleo stroke written as max(compression times -0.3048, -0.6)) instead of treating them as a plain one-to-one curve",
+        "The Twin Otter and EC135 get their cockpits and cabins from their FlightGear packages, so their windows have something behind them; the EC135 operator swooshes and the DC-3 author signature are painted out of the textures",
+        "The Yak-40 has its gear settled, a red band on its wing roots painted out and the Machina livery, but stays in the workshop: its FlightGear model leaves 34% of the surface as untextured white, over the 15% the standard allows",
+        "Propellers turn visibly at idle, then fade into a faint spinning disc as the engines come up to power, instead of blades circling at a rate the eye can count",
+        "Animated parts keep the transforms baked around them (the Tu-144D nose wheels no longer turn back mid-takeoff), and models pitched onto their tail wheel or nose leg move their gear about the pitched frame",
+        "Takeoff rules added to the model standard and checked by the tests for every airplane: nothing jumps when the scene starts, every wheel on the ground, and the gear closes up to the belly with the wheels up",
+        "Those checks found the 747 missing its nose wheels: a rule hiding small hub planes also hid the group holding the wheels, so the airplane stood on its nose strut. The wheels are back and the nose oleo is settled from its own animation, so all 18 wheels touch the ground with the fuselage level",
+        "Control surfaces drawn off their zero now start where they are drawn: the Tu-144D rudder no longer swings 20 degrees as the takeoff begins, and the Cub and Skymaster elevators no longer twitch",
+        "On the ground the takeoff now rests the airplane on its lowest wheel of all, not only the mains, so an extending nose leg lifts the airplane rather than sinking into the runway",
+        "Pilots in every cockpit: models whose FlightGear packages have none borrow a real FlightGear pilot (airline, light-aircraft or WWII) seated with its head at the aircraft's own captain eye point, with a first officer where the type has two. The Wright Flyer stays empty: Orville flew lying prone and no open package has a prone figure",
+        "The runway widens with the wingspan, so the A380 and An-225 wingtips stay over the asphalt instead of hanging over the grass",
+        "The Yak-40 is listed: its FlightGear model leaves the wings, engines and tail planes untextured, 63% of the surface, which the Machina livery and the model page state plainly",
+        "Opening Compare from a model page no longer shows that model while the comparison loads",
+        "The takeoff rested the airplane on fixed points of its tyres, so once the wheels spun those points rode up and the airplane sank into the runway and pumped up and down (the 737 nose wheel, the 747 nose gear). It now rests on the true lowest point of the gear every frame, measured with the nose pitched as it will be",
+        "A new test plays every takeoff frame by frame with the scene's own code and fails if anything goes under the runway at any moment. It found the 737 nose leg stored extended (now settled from its own animation), the 747 body gear swinging down after liftoff, the Il-76 and Tu-134 standing on uneven legs, a Concorde trim wheel left at the tail by its source, and tails touching on rotation: rotation now stops a degree short of the angle where the tail or tail bumper would touch",
+        "Wheels spun by the flight model's own wheel speed now roll on 12 more airplanes, the Cub's propeller turns, and the Yak-40 shows its stowed airstair, which closes the underside of its tail",
+        "Seats in every x-ray: the 747, 777, 787, A380, 707, Constellation, Concorde, Tu-154B, Tu-144D and Yak-40 cabins get rows of the 737's FlightGear seat at real abreast counts, laid out from each fuselage's own sections and each one checked to sit inside the skin; the Spitfire and EC135 pilots get FlightGear seats under them"
+      ]
     }
   ],
   "next": [
