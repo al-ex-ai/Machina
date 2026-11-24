@@ -8,7 +8,7 @@ name "Plane"
 loc 0 0 -0
 data 5
 Plane
-texture "hydgear.png"
+texture "hydgear.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -30,7 +30,7 @@ name "bloc"
 loc 0 0 -0
 data 4
 bloc
-texture "hydgear.png"
+texture "hydgear.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 61
@@ -366,7 +366,7 @@ name "face"
 loc 0 0 -0
 data 4
 face
-texture "hydgear.png"
+texture "hydgear.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 66
@@ -827,7 +827,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "hydgear.png"
+texture "hydgear.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 192
@@ -1926,7 +1926,7 @@ name "needleL"
 loc 0 0 -0
 data 7
 needleL
-texture "hydgear.png"
+texture "hydgear.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 75
@@ -2476,7 +2476,7 @@ name "needleR"
 loc 0 0 -0
 data 7
 needleR
-texture "hydgear.png"
+texture "hydgear.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 75

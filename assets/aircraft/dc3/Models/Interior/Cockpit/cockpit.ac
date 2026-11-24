@@ -8,7 +8,7 @@ name "HDRcab-intvitres"
 loc 0 0 -0
 data 16
 HDRcab-intvitres
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 146
@@ -639,7 +639,7 @@ name "cab-interieur"
 loc 0 0 -0
 data 13
 cab-interieur
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 44
@@ -916,7 +916,7 @@ name "cab-intvitres"
 loc 0 0 -0
 data 13
 cab-intvitres
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 146
@@ -1547,7 +1547,7 @@ name "cab-plancher"
 loc 0 0 -0
 data 12
 cab-plancher
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 272
@@ -3642,7 +3642,7 @@ name "cadres-vitres"
 loc 0 0 -0
 data 13
 cadres-vitres
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 1306
@@ -13114,7 +13114,7 @@ name "guide"
 loc 0 0 -0
 data 5
 guide
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 412
@@ -16071,7 +16071,7 @@ name "poignee"
 loc 0 0 -0
 data 7
 poignee
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 488
@@ -20290,7 +20290,7 @@ name "sides"
 loc 0 0 -0
 data 5
 sides
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 56
@@ -20525,7 +20525,7 @@ name "verrou"
 loc 0 0 -0
 data 6
 verrou
-texture "cockpit.png"
+texture "cockpit.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 108

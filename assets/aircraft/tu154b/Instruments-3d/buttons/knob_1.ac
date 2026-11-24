@@ -9,7 +9,7 @@ kids 2
 OBJECT poly
 name "rect"
 loc 0.00130687 -3.12492e-05 -3.12506e-05
-texture "knob_1.png"
+texture "knob_1.webp"
 crease 100.000000
 numvert 4
 -4.65661e-10 -0.008 0.007875
@@ -28,7 +28,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -0.00130687 3.12496e-05 3.12508e-05
-texture "knob_1.png"
+texture "knob_1.webp"
 crease 100.000000
 numvert 32
 -0.00265625 0.00313322 -0.00756426

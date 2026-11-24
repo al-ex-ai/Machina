@@ -1542,7 +1542,7 @@ name "long_needle"
 loc 0.000854256 0 0
 data 11
 long_needle
-texture "ias.png"
+texture "ias.webp"
 crease 30.000002
 numvert 150
 0.001799 0.028881 0.001682
@@ -2660,7 +2660,7 @@ name "short_needle"
 loc 9.436e-05 0 0
 data 12
 short_needle
-texture "ias.png"
+texture "ias.webp"
 crease 30.000002
 numvert 140
 0.001789 0.004702 0.000955
@@ -3710,7 +3710,7 @@ kids 0
 OBJECT poly
 name "cache"
 loc 0.00235631 -0.0110553 0
-texture "ias.png"
+texture "ias.webp"
 crease 45.000000
 numvert 8
 -0.00125626 -0.0102734 -0.00240018
@@ -3763,7 +3763,7 @@ name "housing"
 loc 0.001996 0 0
 data 4
 face
-texture "ias.png"
+texture "ias.webp"
 crease 179.000000
 numvert 129
 -0.000446 0.014032 -0.033877

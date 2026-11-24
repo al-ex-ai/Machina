@@ -1540,7 +1540,7 @@ kids 0
 OBJECT poly
 name "urvk_housing"
 loc 3.73921e-05 1.90836e-09 -3.72529e-09
-texture "uvrk-18.png"
+texture "uvrk-18.webp"
 crease 45.000000
 numvert 193
 0.00611381 -0.0378889 3.63386e-09
@@ -2893,7 +2893,7 @@ kids 0
 OBJECT poly
 name "urvk_needle"
 loc 0.00223557 -0.00444125 -3.72529e-09
-texture "uvrk-18.png"
+texture "uvrk-18.webp"
 crease 45.000000
 numvert 39
 0 0.0354295 -1.01748e-07

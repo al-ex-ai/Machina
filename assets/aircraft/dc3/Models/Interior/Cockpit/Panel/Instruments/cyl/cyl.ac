@@ -8,7 +8,7 @@ name "face"
 loc 0.001172 0 -0
 data 4
 face
-texture "cyl.png"
+texture "cyl.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 17
@@ -132,7 +132,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "cyl.png"
+texture "cyl.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 260
@@ -1939,7 +1939,7 @@ name "fond2"
 loc 0 0 -0
 data 5
 fond2
-texture "cyl.png"
+texture "cyl.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 94
@@ -2464,7 +2464,7 @@ name "needleL"
 loc 0.001172 0 -0
 data 7
 needleL
-texture "cyl.png"
+texture "cyl.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10
@@ -2533,7 +2533,7 @@ name "needleR"
 loc 0.001172 0 -0
 data 7
 needleR
-texture "cyl.png"
+texture "cyl.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10

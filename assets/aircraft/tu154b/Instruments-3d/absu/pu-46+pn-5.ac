@@ -10,7 +10,7 @@ kids 54
 OBJECT poly
 name "base"
 loc -0.000231769 -0.011444 -0.0118183
-texture "base_pn-5.png"
+texture "base_pn-5.webp"
 crease 100.000000
 numvert 4
 -2.21116e-07 -0.229335 -0.0727811
@@ -29,7 +29,7 @@ kids 0
 OBJECT poly
 name "zk"
 loc 0.00030888 0.18337 0.0382876
-texture "zk.png"
+texture "zk.webp"
 crease 100.000000
 numvert 4
 -2.08791e-07 -0.0156027 0.0170831
@@ -48,7 +48,7 @@ kids 0
 OBJECT poly
 name "sbros"
 loc 0.00030888 0.18337 -0.0634459
-texture "sbros.png"
+texture "sbros.webp"
 crease 100.000000
 numvert 4
 -2.2052e-07 -0.0156027 -0.0170831
@@ -67,7 +67,7 @@ kids 0
 OBJECT poly
 name "nvu"
 loc 0.00030888 0.139898 0.0378395
-texture "nvu.png"
+texture "nvu.webp"
 crease 100.000000
 numvert 4
 -2.0882e-07 -0.0156027 0.0170831
@@ -86,7 +86,7 @@ kids 0
 OBJECT poly
 name "az-1"
 loc 0.000308881 0.139898 -0.0114587
-texture "az-1.png"
+texture "az-1.webp"
 crease 100.000000
 numvert 4
 -2.20549e-07 -0.0156027 -0.0170831
@@ -105,7 +105,7 @@ kids 0
 OBJECT poly
 name "az-2"
 loc 0.00030888 0.139898 -0.0625496
-texture "az-2.png"
+texture "az-2.webp"
 crease 100.000000
 numvert 4
 -2.10683e-07 -0.0156027 0.0170831
@@ -124,7 +124,7 @@ kids 0
 OBJECT poly
 name "gliss"
 loc 0.00030888 0.0215826 -0.0625496
-texture "gliss.png"
+texture "gliss.webp"
 crease 100.000000
 numvert 4
 -2.20549e-07 -0.0156027 -0.0170831
@@ -143,7 +143,7 @@ kids 0
 OBJECT poly
 name "zahod"
 loc 0.00030888 0.0215826 0.0378395
-texture "zahod.png"
+texture "zahod.webp"
 crease 100.000000
 numvert 4
 -2.20549e-07 -0.0156027 -0.0170831
@@ -162,7 +162,7 @@ kids 0
 OBJECT poly
 name "h"
 loc 0.00030888 -0.0873639 -0.0625496
-texture "h.png"
+texture "h.webp"
 crease 100.000000
 numvert 4
 -2.20549e-07 -0.0156027 -0.0170831
@@ -181,7 +181,7 @@ kids 0
 OBJECT poly
 name "stab"
 loc 0.000308881 -0.12094 -0.0280772
-texture "stab.png"
+texture "stab.webp"
 crease 100.000000
 numvert 4
 -2.09897e-07 -0.0119899 0.0134703
@@ -200,7 +200,7 @@ kids 0
 OBJECT poly
 name "m"
 loc 0.00030888 -0.0873639 0.0378395
-texture "m.png"
+texture "m.webp"
 crease 100.000000
 numvert 4
 -2.20549e-07 -0.0156027 -0.0170831
@@ -219,7 +219,7 @@ kids 0
 OBJECT poly
 name "otkl_heading"
 loc 0.00030888 -0.0381284 0.0375741
-texture "otkl.png"
+texture "otkl.webp"
 crease 100.000000
 numvert 4
 -2.08733e-07 -0.0169296 0.01841
@@ -238,7 +238,7 @@ kids 0
 OBJECT poly
 name "otkl_pitch"
 loc 0.00030888 -0.0381284 -0.0600865
-texture "otkl.png"
+texture "otkl.webp"
 crease 100.000000
 numvert 4
 -2.20607e-07 -0.0169296 -0.01841
@@ -257,7 +257,7 @@ kids 0
 OBJECT poly
 name "yoke_pitch"
 loc 0.00030888 -0.0381284 -0.0600865
-texture "yoke.png"
+texture "yoke.webp"
 crease 100.000000
 numvert 4
 -2.09693e-07 -0.0169296 0.01841
@@ -276,7 +276,7 @@ kids 0
 OBJECT poly
 name "yoke_heading"
 loc 0.00030888 -0.0381284 0.0375741
-texture "yoke.png"
+texture "yoke.webp"
 crease 100.000000
 numvert 4
 -2.20578e-07 -0.0169296 -0.01841
@@ -295,7 +295,7 @@ kids 0
 OBJECT poly
 name "auto_heading"
 loc 0.00030888 -0.0381284 0.0375741
-texture "auto.png"
+texture "auto.webp"
 crease 100.000000
 numvert 4
 -2.08733e-07 -0.0169296 0.01841
@@ -314,7 +314,7 @@ kids 0
 OBJECT poly
 name "auto_pitch"
 loc 0.00030888 -0.0381284 -0.0600865
-texture "auto.png"
+texture "auto.webp"
 crease 100.000000
 numvert 4
 -2.20607e-07 -0.0169296 -0.01841
@@ -333,7 +333,7 @@ kids 0
 OBJECT poly
 name "v"
 loc 0.000308881 -0.0873639 -0.01046
-texture "v.png"
+texture "v.webp"
 crease 100.000000
 numvert 4
 -2.09722e-07 -0.0156027 0.0170831
@@ -3355,7 +3355,7 @@ kids 0
 OBJECT poly
 name "cover_up"
 loc 0.0389587 0.00575757 -0.0133989
-texture "base_pn-5.png"
+texture "base_pn-5.webp"
 crease 100.000000
 numvert 4
 -3.72529e-09 0.0238867 -0.013465
@@ -3510,7 +3510,7 @@ kids 0
 OBJECT poly
 name "text"
 loc 0.00023459 0.0089135 -0.0118183
-texture "text_pn-5.png"
+texture "text_pn-5.webp"
 crease 100.000000
 numvert 4
 -2.08238e-07 -0.208977 0.0727811
@@ -15272,7 +15272,7 @@ kids 0
 OBJECT poly
 name "cover_up"
 loc 0.0402438 0.00575756 -0.011922
-texture "base_pn-5.png"
+texture "base_pn-5.webp"
 crease 100.000000
 numvert 4
 -1.86265e-09 -0.0238867 -0.013465
@@ -15985,7 +15985,7 @@ kids 0
 OBJECT poly
 name "kurs_handle"
 loc 0.00163366 -0.150812 0.0225378
-texture "handle.png"
+texture "handle.webp"
 crease 100.000000
 numvert 4
 -2.22004e-07 -0.0275532 -0.0287812
@@ -16004,7 +16004,7 @@ kids 0
 OBJECT poly
 name "pitch_wheel"
 loc -4.41209e-05 -0.149811 -0.0631104
-texture "gray_cover.png"
+texture "gray_cover.webp"
 crease 100.000000
 numvert 66
 0.0341555 0.00374064 -0.00549261
@@ -16686,7 +16686,7 @@ kids 0
 OBJECT poly
 name "pitch_nandle_base"
 loc -4.41209e-05 -0.149811 -0.0631104
-texture "gray_cover.png"
+texture "gray_cover.webp"
 crease 100.000000
 numvert 34
 0.0162531 0.00673226 -0.0137439
@@ -17288,7 +17288,7 @@ kids 0
 OBJECT poly
 name "_handle_1"
 loc 0.00689745 -0.0046128 0.000127968
-texture "handle_2.png"
+texture "handle_2.webp"
 crease 100.000000
 numvert 34
 0.00416201 0 0
@@ -17634,7 +17634,7 @@ kids 0
 OBJECT poly
 name "_handle_2"
 loc -0.00374635 0.00230639 0.000127968
-texture "handle_2.png"
+texture "handle_2.webp"
 crease 100.000000
 numvert 20
 0.0155532 0.00696014 -0.00504516

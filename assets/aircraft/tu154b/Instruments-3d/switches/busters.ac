@@ -2211,7 +2211,7 @@ kids 0
 OBJECT poly
 name "rect"
 loc 0.000233203 0.000203299 -3.94136e-06
-texture "sw_base.png"
+texture "sw_base.webp"
 crease 100.000000
 numvert 4
 0 -0.00993137 0.0100317
@@ -3251,7 +3251,7 @@ kids 0
 OBJECT poly
 name "rect"
 loc 0.000233196 0.000203299 -3.94147e-06
-texture "sw_base.png"
+texture "sw_base.webp"
 crease 100.000000
 numvert 4
 0 0.00993137 0.0100317
@@ -6653,7 +6653,7 @@ kids 0
 OBJECT poly
 name "rect"
 loc 0.000233196 0.000203299 -3.94136e-06
-texture "sw_base.png"
+texture "sw_base.webp"
 crease 100.000000
 numvert 4
 9.31323e-10 -0.00993137 0.0100317
@@ -6672,7 +6672,7 @@ kids 0
 OBJECT poly
 name "base_4"
 loc 0.000438835 0.00215382 0.000477592
-texture "busters.png"
+texture "busters.webp"
 crease 100.000000
 numvert 4
 -1.86265e-08 -0.0376856 0.0703441
@@ -6713,7 +6713,7 @@ kids 0
 OBJECT poly
 name "cover_out"
 loc -0.0266171 -0.000657216 -6.98492e-10
-texture "busters.png"
+texture "busters.webp"
 crease 100.000000
 numvert 8
 -0.0217366 0.0363062 0.0700395
@@ -6764,7 +6764,7 @@ kids 0
 OBJECT poly
 name "box"
 loc 0.00724816 0.000367351 0.00050682
-texture "busters.png"
+texture "busters.webp"
 crease 100.000000
 numvert 8
 -0.00593072 -0.0266224 0.0606742

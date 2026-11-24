@@ -14,7 +14,7 @@ name "Aircraft"
 data 12
 meshId7_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 14446
 -1.72656 -0.51385 -4.12177
 -1.72656 -0.81438 -4.12177
@@ -119677,7 +119677,7 @@ name "Cargodoor1Ext"
 data 18
 meshId318_name.004
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 150
 17.22569 1.47365 -1.01889
 17.13536 1.47056 -1.02681
@@ -120736,7 +120736,7 @@ name "CollisionlightB"
 data 16
 meshId7_name.028
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 37
 -0.11079 -2.18322 2.88714
 -0.12536 -2.14229 2.89385
@@ -121142,7 +121142,7 @@ name "CollisionlightBOff"
 data 16
 meshId7_name.032
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 37
 -0.11079 -2.18322 2.88714
 -0.12536 -2.14229 2.89385
@@ -121548,7 +121548,7 @@ name "CollisionlightT"
 data 16
 meshId7_name.013
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 15
 -0.51113 2.41979 0
 -0.51113 2.38026 0.08787
@@ -121698,7 +121698,7 @@ name "CollisionlightTOff"
 data 16
 meshId7_name.029
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 15
 -0.51113 2.41979 0
 -0.51113 2.38026 0.08787
@@ -121851,7 +121851,7 @@ name "Door0Ext"
 data 18
 meshId188_name.002
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 25
 -21.8344 -0.06289 1.41439
 -21.74921 -0.02674 1.43621
@@ -122026,7 +122026,7 @@ name "Door1Ext"
 data 18
 meshId184_name.002
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 22
 -22.61539 1.14587 -1.47241
 -23.26023 1.157 -1.41647
@@ -122180,7 +122180,7 @@ name "Door2Ext"
 data 18
 meshId126_name.002
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 30
 -9.43045 0.16405 1.67769
 -8.88764 0.16405 1.70128
@@ -122378,7 +122378,7 @@ name "Door3Ext"
 data 16
 meshId7_name.015
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 24
 -8.83308 0.27542 -1.64235
 -8.87713 0.23214 -1.6535
@@ -122630,7 +122630,7 @@ name "Apu"
 data 14
 meshId242_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 58
 9.38047 -0.27063 -3.02725
 9.37933 -0.27334 -2.73444
@@ -122937,7 +122937,7 @@ name "ApuAxis"
 data 18
 meshId242_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 9.03093 -0.1393 -2.87651
 9.03093 -0.1393 -1.87651
@@ -122953,7 +122953,7 @@ name "Cbody0"
 data 14
 meshId293_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 272
 16.71721 -0.94788 3.75904
 16.84563 -0.95322 3.69541
@@ -125370,7 +125370,7 @@ name "Cbody1"
 data 14
 meshId291_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 240
 15.99062 -1.02006 2.4374
 16.29037 -1.02909 2.32818
@@ -127755,7 +127755,7 @@ name "Cbody2"
 data 14
 meshId288_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 240
 15.99065 -1.02007 -2.43743
 15.99037 -0.85433 -2.39861
@@ -130140,7 +130140,7 @@ name "Cbody3"
 data 14
 meshId285_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 240
 15.99065 -0.91003 -4.20637
 15.99037 -0.74429 -4.16755
@@ -132525,7 +132525,7 @@ name "Chutedoor"
 data 14
 meshId139_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 449
 27.87587 1.16192 -0.00941
 27.87587 1.1791 -0.01663
@@ -136907,7 +136907,7 @@ name "ChutedoorAxis"
 data 18
 meshId139_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 26.50245 1.73324 -0.00001
 26.50245 1.73324 0.99999
@@ -136923,7 +136923,7 @@ name "NavlightTail"
 data 18
 meshId139_name.002
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 30
 27.0451 1.82126 -0.0137
 27.04511 1.82126 -0.00001
@@ -137250,7 +137250,7 @@ name "Cone"
 data 14
 meshId192_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 1313
 -28.46078 1.26704 -0.86953
 -29.39276 1.14261 -0.71304
@@ -148762,7 +148762,7 @@ name "ConeAxis"
 data 18
 meshId192_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -26.5564 -0.35723 -0.00001
 -26.5564 -0.35723 -1.00001
@@ -148778,7 +148778,7 @@ name "ConeInt"
 data 18
 meshId192_name.003
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 458
 -30.86439 0.67496 -0.6747
 -32.15021 0.75414 -0.04229
@@ -152569,7 +152569,7 @@ name "Elevon0L"
 data 14
 meshId130_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 272
 13.72041 -1.07544 13.99237
 13.69588 -1.09033 13.99338
@@ -154818,7 +154818,7 @@ name "Elevon0AxisL"
 data 18
 meshId130_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 13.74734 -0.77683 11.33976
 13.74734 -0.90884 12.331
@@ -154834,7 +154834,7 @@ name "Elevon0R"
 data 14
 meshId133_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 274
 13.67615 -1.11602 -13.99453
 13.71383 -1.07274 -13.99374
@@ -157085,7 +157085,7 @@ name "Elevon0AxisR"
 data 18
 meshId133_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 13.74779 -0.77683 -11.34092
 13.74779 -0.6448 -10.34967
@@ -157101,7 +157101,7 @@ name "Elevon1L"
 data 14
 meshId129_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 184
 13.73108 -0.82232 11.34028
 13.74906 -0.72668 11.3406
@@ -158626,7 +158626,7 @@ name "Elevon1AxisL"
 data 18
 meshId129_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 13.74683 -0.46584 9.0756
 13.74683 -0.60535 10.06582
@@ -158642,7 +158642,7 @@ name "Elevon1R"
 data 14
 meshId132_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 184
 13.68093 -0.76211 -11.34512
 13.69333 -0.73521 -11.34472
@@ -160167,7 +160167,7 @@ name "Elevon1AxisR"
 data 18
 meshId132_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 13.74683 -0.46584 -9.07593
 13.74683 -0.32633 -8.08571
@@ -160183,7 +160183,7 @@ name "Elevon2L"
 data 14
 meshId244_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 184
 13.67515 -0.16331 6.89551
 13.67115 -0.12338 6.89635
@@ -161708,7 +161708,7 @@ name "Elevon2AxisL"
 data 18
 meshId244_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 13.74721 -0.13288 6.89147
 13.74721 -0.28854 7.87928
@@ -161724,7 +161724,7 @@ name "Elevon2R"
 data 14
 meshId243_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 184
 13.779 -0.07958 -6.89095
 13.7215 -0.06238 -6.89485
@@ -163249,7 +163249,7 @@ name "Elevon2AxisR"
 data 18
 meshId243_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 13.74721 -0.13288 -6.89213
 13.74721 0.02279 -5.90432
@@ -163265,7 +163265,7 @@ name "Elevon3L"
 data 14
 meshId128_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 217
 13.71028 -0.19415 4.43119
 13.68225 -0.18216 4.43064
@@ -165135,7 +165135,7 @@ name "Elevon3AxisL"
 data 18
 meshId128_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 13.74657 -0.09691 5.8072
 13.74657 -0.09691 6.8072
@@ -165151,7 +165151,7 @@ name "Elevon3R"
 data 14
 meshId131_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 217
 13.68277 -0.18787 -4.4327
 13.74561 -0.05294 -4.43206
@@ -167021,7 +167021,7 @@ name "Elevon3AxisR"
 data 18
 meshId131_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 13.74657 -0.09691 -5.8175
 13.74657 -0.05123 -4.81854
@@ -167037,7 +167037,7 @@ name "Inflap00"
 data 14
 meshId267_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 48
 -0.00173 -2.00874 3.89582
 -0.00188 -2.0452 3.21079
@@ -167358,7 +167358,7 @@ name "Inflap0AxisL"
 data 18
 meshId267_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -0.31828 -2.20911 1.50149
 -0.31828 -2.15429 2.49999
@@ -167374,7 +167374,7 @@ name "Inflap01"
 data 14
 meshId261_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 48
 -0.23787 -2.14164 1.44778
 -0.26905 -2.14063 1.46717
@@ -167695,7 +167695,7 @@ name "Inflap02"
 data 14
 meshId163_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 48
 -0.23787 -2.14165 -1.44808
 -0.05004 -2.14313 -1.42583
@@ -168016,7 +168016,7 @@ name "Inflap03"
 data 14
 meshId167_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 48
 -0.2852 -2.00924 -3.8673
 -0.28565 -2.04861 -3.15702
@@ -168337,7 +168337,7 @@ name "Inflap0AxisR"
 data 18
 meshId167_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -0.31828 -2.20911 -1.50179
 -0.31828 -2.26393 -0.50329
@@ -168353,7 +168353,7 @@ name "Inflap10"
 data 14
 meshId279_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 64
 -0.29454 -1.64039 4.23637
 -0.29464 -1.09161 4.21572
@@ -168786,7 +168786,7 @@ name "Inflap10Axis"
 data 18
 meshId279_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -0.337 -1.63151 4.31574
 -0.337 -0.63217 4.27916
@@ -168802,7 +168802,7 @@ name "Inflap11"
 data 14
 meshId273_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 64
 -0.30124 -1.80579 1.06971
 -0.29185 -1.82762 1.0709
@@ -169235,7 +169235,7 @@ name "Inflap11Axis"
 data 18
 meshId273_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -0.34236 -1.80269 0.98649
 -0.33365 -0.80411 0.93401
@@ -169251,7 +169251,7 @@ name "Inflap12"
 data 14
 meshId152_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 64
 -0.29661 -1.25737 -1.04306
 -0.28745 -1.23506 -1.04197
@@ -169684,7 +169684,7 @@ name "Inflap12Axis"
 data 18
 meshId152_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -0.34465 -1.80269 -0.98168
 -0.35336 -2.80128 -1.03417
@@ -169700,7 +169700,7 @@ name "Inflap13"
 data 14
 meshId146_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 64
 -0.28498 -1.66214 -4.23839
 -0.27124 -1.67479 -4.23973
@@ -170133,7 +170133,7 @@ name "Inflap13Axis"
 data 18
 meshId146_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -0.3339 -1.63151 -4.32538
 -0.3339 -2.63084 -4.36197
@@ -170149,7 +170149,7 @@ name "Inflap20"
 data 14
 meshId277_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 64
 0.29064 -1.01466 4.25201
 0.31299 -1.02294 4.25366
@@ -170582,7 +170582,7 @@ name "Inflap20Axis"
 data 18
 meshId277_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 0.14495 -1.6315 4.33596
 0.14495 -0.63225 4.29746
@@ -170598,7 +170598,7 @@ name "Inflap21"
 data 14
 meshId269_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 64
 0.18013 -1.19844 1.03843
 0.16498 -1.21405 1.03911
@@ -171031,7 +171031,7 @@ name "Inflap21Axis"
 data 18
 meshId269_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 0.13988 -1.80519 0.9988
 0.14846 -0.80651 0.94822
@@ -171047,7 +171047,7 @@ name "Inflap22"
 data 14
 meshId156_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 64
 0.20217 -1.18852 -1.04022
 0.29061 -1.18505 -1.04084
@@ -171480,7 +171480,7 @@ name "Inflap22Axis"
 data 18
 meshId156_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 0.1376 -1.80519 -0.99399
 0.12898 -2.80388 -1.04457
@@ -171496,7 +171496,7 @@ name "Inflap23"
 data 14
 meshId148_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 64
 0.18046 -1.02908 -4.24612
 0.16547 -1.04486 -4.24584
@@ -171929,7 +171929,7 @@ name "Inflap23Axis"
 data 18
 meshId148_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 0.14806 -1.63151 -4.34559
 0.14806 -2.63076 -4.38409
@@ -171945,7 +171945,7 @@ name "Inflap30"
 data 14
 meshId275_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 64
 0.69833 -1.55404 4.2969
 0.67421 -1.59321 4.29696
@@ -172378,7 +172378,7 @@ name "Inflap30Axis"
 data 18
 meshId275_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 0.50275 -1.63151 4.35616
 0.50275 -0.63225 4.31767
@@ -172394,7 +172394,7 @@ name "Inflap31"
 data 14
 meshId271_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 64
 0.6906 -1.19112 1.04361
 0.67663 -1.17756 1.04283
@@ -172827,7 +172827,7 @@ name "Inflap31Axis"
 data 18
 meshId271_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 0.49813 -1.80706 1.00451
 0.50671 -0.80838 0.95392
@@ -172843,7 +172843,7 @@ name "Inflap32"
 data 14
 meshId154_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 64
 0.69437 -1.72678 -1.07169
 0.68532 -1.74922 -1.07274
@@ -173276,7 +173276,7 @@ name "Inflap32Axis"
 data 18
 meshId154_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 0.49585 -1.80706 -0.99969
 0.48726 -2.80574 -1.05028
@@ -173292,7 +173292,7 @@ name "Inflap33"
 data 14
 meshId150_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 64
 0.69002 -1.01823 -4.27563
 0.67596 -1.0048 -4.27424
@@ -173725,7 +173725,7 @@ name "Inflap33Axis"
 data 18
 meshId150_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 0.50585 -1.63151 -4.36579
 0.50585 -2.63076 -4.40429
@@ -173741,7 +173741,7 @@ name "MlgBarrelR"
 data 14
 meshId248_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 80
 4.11053 -1.56817 -2.50469
 4.10017 -1.55229 -2.48518
@@ -174214,7 +174214,7 @@ name "MlgDoor0L"
 data 14
 meshId252_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 340
 1.12898 -2.10788 3.33858
 1.12924 -2.17646 2.74612
@@ -176243,7 +176243,7 @@ name "MlgDoor0AxisL"
 data 18
 meshId252_name.003
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 4.41516 -2.07388 3.3701
 3.41516 -2.07454 3.3701
@@ -176259,7 +176259,7 @@ name "MlgDoor0RodL"
 data 14
 meshId253_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 92
 2.27946 -1.79791 3.16736
 2.32808 -1.79788 3.16733
@@ -176828,7 +176828,7 @@ name "MlgDoor0RodAxisL"
 data 18
 meshId253_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 2.31046 -2.02325 3.18367
 1.31046 -2.02384 3.18429
@@ -176844,7 +176844,7 @@ name "MlgDoor0R"
 data 14
 meshId198_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 340
 1.13489 -2.10831 -3.34523
 4.42142 -2.11196 -3.34547
@@ -178873,7 +178873,7 @@ name "MlgDoor0AxisR"
 data 18
 meshId198_name.003
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 4.42108 -2.07433 -3.37671
 5.42108 -2.07367 -3.3767
@@ -178889,7 +178889,7 @@ name "MlgDoor0RodR"
 data 14
 meshId199_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 92
 2.28538 -1.79835 -3.17401
 2.28988 -2.02515 -3.1744
@@ -179458,7 +179458,7 @@ name "MlgDoor0RodAxisR"
 data 18
 meshId199_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 2.31638 -2.02369 -3.1903
 3.31637 -2.02312 -3.18967
@@ -179474,7 +179474,7 @@ name "MlgDoor1L"
 data 14
 meshId249_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 340
 1.12899 -2.17239 2.14972
 4.41553 -2.17603 2.14986
@@ -181503,7 +181503,7 @@ name "MlgDoor1AxisL"
 data 18
 meshId249_name.003
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 1.18154 -2.142 2.11474
 2.18154 -2.1431 2.11474
@@ -181519,7 +181519,7 @@ name "MlgDoor1RodL"
 data 14
 meshId250_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 92
 2.28053 -1.85312 2.24972
 2.32915 -1.85318 2.24966
@@ -182088,7 +182088,7 @@ name "MlgDoor1RodAxisL"
 data 18
 meshId250_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 2.29837 -2.07426 2.29723
 1.29837 -2.07313 2.29854
@@ -182104,7 +182104,7 @@ name "MlgDoor1R"
 data 14
 meshId195_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 340
 1.12899 -2.17239 -2.15257
 1.12924 -2.17646 -2.74898
@@ -184133,7 +184133,7 @@ name "MlgDoor1AxisR"
 data 18
 meshId195_name.003
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 1.18154 -2.142 -2.11758
 0.18154 -2.14089 -2.11758
@@ -184149,7 +184149,7 @@ name "MlgDoor1RodR"
 data 14
 meshId196_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 92
 2.28054 -1.85313 -2.25257
 2.32916 -1.85318 -2.25252
@@ -184718,7 +184718,7 @@ name "MlgDoor1RodAxisR"
 data 18
 meshId196_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 2.29837 -2.07426 -2.30007
 1.29837 -2.07318 -2.30099
@@ -184734,7 +184734,7 @@ name "MlgDoor2L"
 data 14
 meshId259_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 100
 4.95081 -2.11288 3.24188
 4.95074 -2.16316 2.74634
@@ -185251,7 +185251,7 @@ name "MlgDoor2LinkL"
 data 14
 meshId256_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 138
 5.07489 -2.07343 3.0667
 4.99476 -2.03079 3.06369
@@ -186070,7 +186070,7 @@ name "MlgDoor3L"
 data 14
 meshId258_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 202
 4.41332 -2.1204 3.24184
 4.41456 -2.17471 2.74594
@@ -187325,7 +187325,7 @@ name "MlgDoor3LinkL"
 data 14
 meshId260_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 26
 4.49918 -1.91539 3.17266
 4.98845 -1.95394 3.17795
@@ -187480,7 +187480,7 @@ name "MlgDoor2R"
 data 14
 meshId205_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 100
 4.95079 -2.11147 -3.24458
 5.49002 -2.15247 -2.74941
@@ -187997,7 +187997,7 @@ name "MlgDoor2LinkR"
 data 14
 meshId204_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 108
 5.07501 -2.07235 -3.06942
 5.07192 -2.07835 -3.06617
@@ -188786,7 +188786,7 @@ name "MlgDoor3R"
 data 14
 meshId203_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 202
 4.41329 -2.11759 -3.24326
 4.94995 -2.11295 -3.24416
@@ -190041,7 +190041,7 @@ name "MlgDoor3LinkR"
 data 14
 meshId247_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 26
 4.49918 -1.91539 -3.1755
 4.49956 -1.90956 -3.18362
@@ -190196,7 +190196,7 @@ name "NgBarrel"
 data 14
 meshId245_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 100
 -16.24184 -0.45336 0.04001
 -16.23771 -0.46324 0.00001
@@ -190845,7 +190845,7 @@ name "NgDoorL"
 data 14
 meshId207_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 367
 -20.85299 -0.90532 0.32349
 -19.54056 -0.90532 0.32349
@@ -193027,7 +193027,7 @@ name "NgDoorAxisL"
 data 18
 meshId207_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -19.72952 -0.80062 0.57999
 -18.72952 -0.80062 0.58004
@@ -193043,7 +193043,7 @@ name "NgDoorR"
 data 14
 meshId229_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 367
 -20.84857 -0.90487 -0.32344
 -20.84854 -0.83404 -0.55967
@@ -195225,7 +195225,7 @@ name "NgDoorAxisR"
 data 18
 meshId229_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -19.72952 -0.80062 -0.58021
 -18.72952 -0.80062 -0.58016
@@ -195241,7 +195241,7 @@ name "NgStrut"
 data 14
 meshId227_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 3098
 -15.74998 -0.56181 0.62066
 -15.69473 -0.58863 0.62066
@@ -214518,7 +214518,7 @@ name "Landinglight"
 data 14
 meshId208_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 116
 -17.15652 -0.29819 0.32574
 -17.1017 -0.29784 0.34781
@@ -215651,7 +215651,7 @@ name "NgLink0"
 data 14
 meshId220_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 460
 -19.01759 -0.27654 -0.04633
 -19.00604 -0.30246 -0.04633
@@ -218400,7 +218400,7 @@ name "NgBase0"
 data 14
 meshId223_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 344
 -16.51308 -0.20732 0.07704
 -16.50209 -0.18506 0.07704
@@ -220625,7 +220625,7 @@ name "NgLink1"
 data 14
 meshId221_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 236
 -16.8252 -0.35692 -0.03923
 -16.52063 -0.24954 -0.03696
@@ -222070,7 +222070,7 @@ name "NgBase1"
 data 14
 meshId222_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 100
 -17.08804 -0.55436 -0.12548
 -17.04341 -0.55905 -0.12548
@@ -222707,7 +222707,7 @@ name "NgRod"
 data 14
 meshId226_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 78
 -17.21259 -0.8113 -0.01675
 -17.23031 -0.79392 -0.01675
@@ -223190,7 +223190,7 @@ name "NgSteerer"
 data 14
 meshId209_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 652
 -19.60915 -0.50252 -0.11202
 -19.60731 -0.49326 -0.09583
@@ -227547,7 +227547,7 @@ name "NgBogey"
 data 14
 meshId218_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 144
 -20.17601 -0.45842 -0.00065
 -19.6211 -0.49165 -0.00101
@@ -228612,7 +228612,7 @@ name "NgBogeyAxis"
 data 18
 meshId218_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -20.33979 -0.36926 -0.00006
 -21.33803 -0.30989 -0.00006
@@ -228628,7 +228628,7 @@ name "NgChocks"
 data 15
 Chocks.mesh.001
 crease 40.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 24
 -20.7863 -0.29273 -0.66369
 -20.6086 -0.25323 -0.57715
@@ -228804,7 +228804,7 @@ name "NgWheel"
 data 14
 meshId214_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 756
 -20.51124 -0.68069 -0.02476
 -20.56229 -0.646 0.02996
@@ -236001,7 +236001,7 @@ name "NgWheelAxis"
 data 18
 meshId214_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -20.33979 -0.36926 -0.00006
 -20.39121 -1.23373 0.49998
@@ -236017,7 +236017,7 @@ name "NgWheelRun"
 data 14
 meshId216_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 756
 -20.51124 -0.68069 -0.02476
 -20.56229 -0.646 0.02996
@@ -243214,7 +243214,7 @@ name "NgScissor0"
 data 18
 meshId219_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 240
 -19.5824 -0.59699 -0.10247
 -19.55518 -0.58952 -0.08492
@@ -244759,7 +244759,7 @@ name "NgScissor1"
 data 18
 meshId213_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 208
 -20.26157 -0.35512 -0.18281
 -20.29485 -0.34481 -0.16848
@@ -246104,7 +246104,7 @@ name "NgSteerlinkL"
 data 14
 meshId211_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 128
 -19.34961 -0.55439 0.13369
 -19.37266 -0.60569 0.17621
@@ -246913,7 +246913,7 @@ name "NgSteerlinkAxisL"
 data 18
 meshId211_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -19.34947 -0.55202 0.07922
 -20.34771 -0.49266 0.07922
@@ -246929,7 +246929,7 @@ name "NgSteerlinkR"
 data 14
 meshId210_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 128
 -19.33774 -0.35474 -0.16404
 -19.35767 -0.35356 -0.16404
@@ -247738,7 +247738,7 @@ name "NgSteerlinkAxisR"
 data 18
 meshId210_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -19.33448 -0.29989 -0.06705
 -20.33271 -0.24052 -0.06705
@@ -247754,7 +247754,7 @@ name "NgStrutAxis"
 data 18
 meshId227_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -15.75474 -0.64191 -0.00001
 -15.75474 -0.64191 -1.00001
@@ -247773,7 +247773,7 @@ name "NgRocker"
 data 14
 meshId224_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 80
 -19.36209 -0.71911 -0.05091
 -19.36405 -0.75199 -0.02281
@@ -248318,7 +248318,7 @@ name "NgRockerAxis"
 data 18
 meshId224_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -19.36036 -0.68977 0
 -20.35859 -0.6304 0
@@ -248352,7 +248352,7 @@ name "Taxilight"
 data 18
 meshId208_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 58
 -17.38948 -0.33576 0.29997
 -17.34874 -0.34036 0.31632
@@ -248926,7 +248926,7 @@ name "Chute0"
 data 14
 meshId295_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 442
 35.65847 4.35422 -0.12954
 25.81829 1.08082 0.01836
@@ -251933,7 +251933,7 @@ name "Chute0Axis"
 data 18
 meshId295_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 25.94842 1.14472 0.00402
 26.93232 1.43271 0.01248
@@ -251949,7 +251949,7 @@ name "ChuteTranslAxis"
 data 18
 meshId295_name.002
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 25.94842 1.14472 0.00402
 26.54842 1.69472 0.00402
@@ -251965,7 +251965,7 @@ name "Chute1"
 data 14
 meshId299_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 442
 36.03459 1.99984 -1.45942
 25.81023 1.12934 0.04749
@@ -254972,7 +254972,7 @@ name "Chute1Axis"
 data 18
 meshId299_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 25.94842 1.14472 0.00402
 26.93553 1.24248 -0.12271
@@ -254988,7 +254988,7 @@ name "Chute2"
 data 14
 meshId297_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 448
 25.81125 1.1515 -0.05286
 35.98839 2.08899 1.74118
@@ -258001,7 +258001,7 @@ name "Chute2Axis"
 data 18
 meshId297_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 25.94842 1.14472 0.00402
 26.93103 1.24003 0.16336
@@ -258017,7 +258017,7 @@ name "Ramp0"
 data 14
 meshId239_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 98
 -5.71147 -0.68648 3.74399
 -5.65997 -0.75989 2.32645
@@ -258605,7 +258605,7 @@ name "RampAxisL"
 data 18
 meshId239_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -5.65997 -0.75416 2.97734
 -5.69622 -0.70247 3.97534
@@ -258621,7 +258621,7 @@ name "Ramp1"
 data 14
 meshId238_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 98
 -4.24002 -1.56261 2.41332
 -5.26217 -0.94191 2.34837
@@ -259209,7 +259209,7 @@ name "Ramp2"
 data 14
 meshId158_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 98
 -4.2468 -1.58433 -2.42866
 -4.19077 -1.66445 -1.01892
@@ -259797,7 +259797,7 @@ name "Ramp3"
 data 14
 meshId141_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 98
 -5.70695 -0.69676 -3.75272
 -5.33241 -0.88748 -3.78289
@@ -260385,7 +260385,7 @@ name "RampAxisR"
 data 18
 meshId141_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -5.65547 -0.77018 -2.33518
 -5.61921 -0.82187 -1.33718
@@ -260401,7 +260401,7 @@ name "RampRear0"
 data 14
 meshId230_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 8
 -3.69737 -1.58702 3.88085
 -3.62547 -1.54198 3.88043
@@ -260442,7 +260442,7 @@ name "RampCurtain00"
 data 14
 meshId231_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 4
 -3.62548 -1.54202 3.88044
 -3.80959 -1.32543 3.86477
@@ -260467,7 +260467,7 @@ name "RampCurtain0AxisL"
 data 18
 meshId231_name.002
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -3.62548 -1.54201 3.88044
 -3.57543 -1.59428 2.4758
@@ -260483,7 +260483,7 @@ name "RampCurtain10"
 data 14
 meshId232_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 4
 -3.67494 -1.09329 3.862
 -3.62866 -1.14444 2.4572
@@ -260508,7 +260508,7 @@ name "RampCurtain1AxisL"
 data 18
 meshId232_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -3.76302 -1.37661 2.45997
 -3.80932 -1.32546 3.86478
@@ -260524,7 +260524,7 @@ name "RampRearAxisL"
 data 18
 meshId230_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -1.78033 -0.82116 1.2084
 -1.74819 -0.86489 0.20988
@@ -260540,7 +260540,7 @@ name "RampRear1"
 data 14
 meshId234_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 8
 -3.64985 -1.64064 2.43287
 -3.57794 -1.5956 2.43246
@@ -260581,7 +260581,7 @@ name "RampCurtain01"
 data 14
 meshId235_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 4
 -3.75957 -1.37962 2.4169
 -3.70615 -1.46094 1.03978
@@ -260606,7 +260606,7 @@ name "RampCurtain11"
 data 14
 meshId236_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 4
 -3.76293 -1.37905 2.41677
 -3.62856 -1.14688 2.41398
@@ -260631,7 +260631,7 @@ name "RampRear2"
 data 14
 meshId159_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 8
 -3.64985 -1.64062 -2.44061
 -3.59131 -1.71888 -1.06352
@@ -260672,7 +260672,7 @@ name "RampCurtain02"
 data 14
 meshId160_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 4
 -3.57547 -1.59619 -2.44029
 -3.52204 -1.67751 -1.06318
@@ -260697,7 +260697,7 @@ name "RampCurtain12"
 data 14
 meshId161_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 4
 -3.76293 -1.37902 -2.4245
 -3.70239 -1.4555 -1.0474
@@ -260722,7 +260722,7 @@ name "RampRear3"
 data 14
 meshId142_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 8
 -3.69738 -1.587 -3.88858
 -3.64987 -1.63833 -2.48382
@@ -260763,7 +260763,7 @@ name "RampCurtain03"
 data 14
 meshId143_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 4
 -3.6255 -1.54199 -3.88816
 -3.57544 -1.59427 -2.48353
@@ -260788,7 +260788,7 @@ name "RampCurtain0AxisR"
 data 18
 meshId143_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -3.6256 -1.54188 -3.88806
 -3.65775 -1.49815 -4.88659
@@ -260804,7 +260804,7 @@ name "RampCurtain13"
 data 14
 meshId144_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 4
 -3.80932 -1.32544 -3.87251
 -3.76302 -1.37658 -2.46771
@@ -260829,7 +260829,7 @@ name "RampCurtain1AxisR"
 data 18
 meshId144_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -3.80938 -1.32464 -3.87251
 -3.84152 -1.28092 -4.87104
@@ -260845,7 +260845,7 @@ name "RampRearAxisR"
 data 18
 meshId159_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -1.78033 -0.82116 -4.1051
 -1.81247 -0.77743 -5.10363
@@ -260861,7 +260861,7 @@ name "Rudder0"
 data 14
 meshId137_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 440
 25.49922 7.89049 0.59194
 25.80749 5.14829 0.7041
@@ -263734,7 +263734,7 @@ name "Rudder0Axis"
 data 18
 meshId137_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 23.85384 6.51939 0.00001
 23.85384 5.51939 0.00001
@@ -263750,7 +263750,7 @@ name "Rudder1"
 data 14
 meshId134_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 176
 25.80804 5.13825 0.70098
 26.15184 2.20063 0.82607
@@ -265159,7 +265159,7 @@ name "Rudder1Axis"
 data 18
 meshId134_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 23.86301 3.40829 0.00001
 23.86301 2.40829 0.00001
@@ -265175,7 +265175,7 @@ name "Shield"
 data 14
 meshId169_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 187
 25.40976 0.66481 0.04075
 25.39768 0.69325 0.04075
@@ -266202,7 +266202,7 @@ name "ShieldRod"
 data 14
 meshId170_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 142
 25.40449 0.65405 0.03768
 25.40449 0.65405 0.01368
@@ -267097,7 +267097,7 @@ name "ShieldAxis"
 data 18
 meshId169_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 24.38051 0.46113 -0.00254
 24.38051 0.46113 0.99746
@@ -267113,7 +267113,7 @@ name "ShieldTyre"
 data 14
 meshId172_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 196
 25.61307 0.60771 0.07887
 25.61275 0.61978 0.13261
@@ -268146,7 +268146,7 @@ name "ShieldTyreAxis"
 data 18
 meshId172_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 25.35995 0.66045 -0.00002
 25.35995 0.66044 -1.00002
@@ -268162,7 +268162,7 @@ name "ShieldTyreBarrel"
 data 14
 meshId173_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 28
 25.37645 0.73027 0.10728
 25.37374 0.74567 0.09975
@@ -268343,7 +268343,7 @@ name "ShieldTyreRod"
 data 14
 meshId174_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 28
 25.24863 0.70773 0.09728
 25.24727 0.71543 0.09352
@@ -268524,7 +268524,7 @@ name "ShieldBarrel"
 data 14
 meshId180_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 50
 25.16751 0.71377 -0.01751
 25.16519 0.69828 -0.02768
@@ -268943,7 +268943,7 @@ name "Spill0"
 data 14
 meshId265_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 120
 0.68848 -2.05196 4.08318
 0.62138 -2.04441 4.10128
@@ -269612,7 +269612,7 @@ name "Spill0Axis"
 data 18
 meshId265_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 0.30342 -2.11946 3.3235
 0.25632 -2.04236 4.31941
@@ -269628,7 +269628,7 @@ name "Spill1"
 data 14
 meshId263_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 120
 0.69035 -2.19464 1.29272
 0.74785 -2.20762 1.34379
@@ -270297,7 +270297,7 @@ name "Spill1Axis"
 data 18
 meshId263_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 0.28794 -2.21167 1.41454
 0.28794 -2.16188 2.4133
@@ -270313,7 +270313,7 @@ name "Spill2"
 data 14
 meshId165_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 120
 0.69035 -2.19465 -1.29302
 0.62102 -2.18949 -1.27387
@@ -270982,7 +270982,7 @@ name "Spill2Axis"
 data 18
 meshId165_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 0.28794 -2.21167 -1.41483
 0.28794 -2.26147 -0.41607
@@ -270998,7 +270998,7 @@ name "Spill3"
 data 14
 meshId240_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 120
 0.68847 -2.05196 -4.08349
 0.74741 -2.07447 -4.02873
@@ -271667,7 +271667,7 @@ name "Spill3Axis"
 data 18
 meshId240_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 0.30342 -2.11946 -3.32379
 0.35051 -2.19657 -2.32788
@@ -271683,7 +271683,7 @@ name "Turb00"
 data 14
 meshId323_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 32
 14.55067 -0.22834 3.61137
 14.55067 -0.5953 3.61137
@@ -271916,7 +271916,7 @@ name "Eng0Axis"
 data 18
 meshId323_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 14.55067 -0.962 3.61137
 15.55067 -0.962 3.61137
@@ -271932,7 +271932,7 @@ name "Turb01"
 data 14
 meshId326_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 32
 14.55067 -0.33738 1.84192
 14.55067 -0.70434 1.84192
@@ -272165,7 +272165,7 @@ name "Eng1Axis"
 data 18
 meshId326_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 14.55067 -1.07103 1.84192
 15.55067 -1.07103 1.84192
@@ -272181,7 +272181,7 @@ name "Turb02"
 data 14
 meshId329_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 32
 14.55067 -0.33738 -1.84033
 14.55067 -0.70434 -1.84033
@@ -272414,7 +272414,7 @@ name "Eng2Axis"
 data 18
 meshId329_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 14.55067 -1.07103 -1.84033
 15.55067 -1.07103 -1.84033
@@ -272430,7 +272430,7 @@ name "Turb03"
 data 14
 meshId321_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 32
 14.55067 -0.22834 -3.61059
 14.55067 -0.5953 -3.6106
@@ -272663,7 +272663,7 @@ name "Eng3Axis"
 data 18
 meshId321_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 14.55067 -0.96199 -3.61059
 15.55067 -0.96199 -3.61059
@@ -272679,7 +272679,7 @@ name "Turb10"
 data 14
 meshId322_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 32
 14.51737 -0.22834 3.61137
 14.51737 -0.5953 3.61137
@@ -272912,7 +272912,7 @@ name "Turb11"
 data 14
 meshId325_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 32
 14.51737 -0.33738 1.84192
 14.51737 -0.70434 1.84192
@@ -273145,7 +273145,7 @@ name "Turb12"
 data 14
 meshId328_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 32
 14.51737 -0.33738 -1.84033
 14.51737 -0.70434 -1.84033
@@ -273378,7 +273378,7 @@ name "Turb13"
 data 14
 meshId320_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 32
 14.51737 -0.22834 -3.61059
 14.51737 -0.5953 -3.6106
@@ -273611,7 +273611,7 @@ name "Turb20"
 data 14
 meshId324_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 32
 14.49428 -0.22834 3.61137
 14.49428 -0.5953 3.61137
@@ -273844,7 +273844,7 @@ name "Turb21"
 data 14
 meshId327_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 32
 14.49428 -0.33738 1.84192
 14.49428 -0.70434 1.84192
@@ -274077,7 +274077,7 @@ name "Turb22"
 data 14
 meshId330_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 32
 14.49428 -0.33738 -1.84033
 14.49428 -0.70434 -1.84033
@@ -274310,7 +274310,7 @@ name "Turb23"
 data 14
 meshId319_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 32
 14.49428 -0.22834 -3.61059
 14.49428 -0.5953 -3.6106
@@ -274543,7 +274543,7 @@ name "WiperR"
 data 14
 meshId282_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 82
 -28.94364 0.69237 -0.53877
 -28.96198 0.7063 -0.54902
@@ -274946,7 +274946,7 @@ name "WiperAxisR"
 data 18
 meshId282_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -28.94953 0.69232 -0.52831
 -29.7553 1.11566 -0.94244
@@ -274965,7 +274965,7 @@ name "MlgBaseL"
 data 13
 meshId88_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 382
 4.14461 -0.75259 2.28613
 4.82008 -0.99167 2.29313
@@ -277012,7 +277012,7 @@ name "MlgBaseAxisL"
 data 17
 meshId88_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 4.04496 -0.63019 3.25452
 4.05355 -0.56931 4.25263
@@ -277028,7 +277028,7 @@ name "MlgStrutL"
 data 14
 meshId116_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2893
 3.44681 -1.04207 3.06755
 3.47978 -1.04181 3.06731
@@ -293682,7 +293682,7 @@ name "MlgActL"
 data 14
 meshId114_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 236
 4.62979 -1.88607 2.98083
 4.63012 -1.8882 2.94969
@@ -295055,7 +295055,7 @@ name "MlgOleoL"
 data 14
 meshId111_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 250
 2.91732 -1.03471 3.02614
 2.9174 -0.98666 3.03403
@@ -296850,7 +296850,7 @@ name "MlgHingeL"
 data 13
 meshId91_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 624
 2.73817 -0.86344 2.92012
 2.73891 -0.80896 2.91695
@@ -300285,7 +300285,7 @@ name "MlgBogeyL"
 data 13
 meshId92_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 1516
 2.76101 -0.1987 2.67583
 2.5293 -0.19699 2.67624
@@ -310090,7 +310090,7 @@ name "MlgBogeyAxisL"
 data 17
 meshId92_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 2.63983 -1.00893 2.61183
 3.6398 -1.01632 2.61022
@@ -310106,7 +310106,7 @@ name "MlgChocksL"
 data 15
 Chocks.mesh.002
 crease 40.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 24
 2.18191 -0.89092 2.19067
 2.18192 -0.79092 2.36567
@@ -310282,7 +310282,7 @@ name "MlgBogeyRodL"
 data 17
 meshId95_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 84
 2.61142 -1.83681 2.88503
 2.61203 -1.82105 2.85426
@@ -310834,7 +310834,7 @@ name "MlgWheel0L"
 data 13
 meshId97_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 1520
 3.99626 -0.10548 2.77686
 3.99596 -0.15983 2.84419
@@ -325275,7 +325275,7 @@ name "MlgWheel0AxisL"
 data 17
 meshId97_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 3.59831 -0.34092 2.64067
 2.59839 -0.32955 2.64553
@@ -325291,7 +325291,7 @@ name "MlgWheel1L"
 data 13
 meshId99_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 1520
 3.98145 -1.38549 2.72783
 3.98153 -1.41354 2.80968
@@ -339732,7 +339732,7 @@ name "MlgWheel1AxisL"
 data 17
 meshId99_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 3.58358 -1.65372 2.68206
 2.58366 -1.64242 2.68703
@@ -339748,7 +339748,7 @@ name "MlgWheelRun0L"
 data 14
 meshId103_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 1520
 3.99593 -0.16717 2.85056
 3.9953 -0.24127 2.89523
@@ -354189,7 +354189,7 @@ name "MlgWheelRun1L"
 data 14
 meshId101_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 1520
 3.9812 -1.47997 2.89195
 3.98057 -1.55407 2.93663
@@ -368630,7 +368630,7 @@ name "MlgBogeyScissor00L"
 data 14
 meshId107_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 304
 2.79017 -0.35919 2.83216
 2.79023 -0.36717 2.86055
@@ -370095,7 +370095,7 @@ name "MlgBogeyScissor10L"
 data 13
 meshId93_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 160
 2.77724 -0.16048 2.63192
 2.77805 -0.16648 2.6965
@@ -371080,7 +371080,7 @@ name "MlgBogeyScissor01L"
 data 14
 meshId106_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 224
 2.78095 -1.58437 2.94007
 2.79056 -1.30467 2.91813
@@ -372321,7 +372321,7 @@ name "MlgBogeyScissor11L"
 data 13
 meshId96_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 208
 2.52441 -1.79684 2.6298
 2.53229 -1.8126 2.69329
@@ -373690,7 +373690,7 @@ name "MlgHingeAxisL"
 data 17
 meshId91_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 2.6396 -0.83916 2.8853
 2.63965 -1.83807 2.93198
@@ -373706,7 +373706,7 @@ name "MlgHingeRodL"
 data 14
 meshId109_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 132
 2.96765 -1.03625 2.63337
 2.9719 -1.03898 2.59825
@@ -374402,7 +374402,7 @@ name "MlgBogeyBarrelL"
 data 14
 meshId105_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 146
 2.56996 -1.61317 2.93188
 2.59758 -1.61683 2.96722
@@ -375205,7 +375205,7 @@ name "MlgOleoAxisL"
 data 18
 meshId111_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 3.4477 -0.99391 2.92289
 4.44757 -0.99461 2.90696
@@ -375221,7 +375221,7 @@ name "MlgRodL"
 data 14
 meshId115_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 24
 4.02532 -1.2003 2.8121
 4.07289 -1.56748 2.48532
@@ -375386,7 +375386,7 @@ name "MlgScissor0L"
 data 14
 meshId112_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 146
 3.55499 -1.1091 3.04413
 3.55865 -1.18507 3.0572
@@ -376285,7 +376285,7 @@ name "MlgScissor1L"
 data 14
 meshId110_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 299
 2.78369 -1.10614 3.15361
 2.78267 -1.18319 3.14936
@@ -377793,7 +377793,7 @@ name "MlgStrutAxisL"
 data 18
 meshId116_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 4.96068 -1.02273 2.30623
 4.96274 -1.08381 1.3081
@@ -377812,7 +377812,7 @@ name "MlgHingeBarrelL"
 data 14
 meshId113_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 214
 3.08972 -1.06343 2.5925
 3.12441 -1.06331 2.59525
@@ -379394,7 +379394,7 @@ name "MlgBaseR"
 data 13
 meshId60_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 382
 4.14461 -0.75259 -2.28897
 4.15975 -0.7082 -2.28381
@@ -381441,7 +381441,7 @@ name "MlgBaseAxisR"
 data 17
 meshId60_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 4.04496 -0.63019 -3.25735
 4.03637 -0.69107 -2.25925
@@ -381457,7 +381457,7 @@ name "MlgStrutR"
 data 13
 meshId87_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2859
 3.44682 -1.04207 -3.07039
 3.4464 -0.98306 -3.07841
@@ -398077,7 +398077,7 @@ name "MlgActR"
 data 14
 meshId246_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 234
 4.61405 -1.89171 -3.0057
 4.63881 -1.85816 -3.00319
@@ -399448,7 +399448,7 @@ name "MlgOleoR"
 data 13
 meshId85_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 250
 2.91736 -1.03476 -3.02896
 2.83657 -1.0347 -3.02926
@@ -401243,7 +401243,7 @@ name "MlgHingeR"
 data 13
 meshId66_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 622
 2.73834 -0.86423 -2.92225
 2.70727 -0.86162 -2.95633
@@ -404676,7 +404676,7 @@ name "MlgBogeyBarrelR"
 data 13
 meshId67_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 146
 2.70496 -1.61293 -2.93327
 2.67754 -1.61602 -2.96882
@@ -405479,7 +405479,7 @@ name "MlgBogeyR"
 data 13
 meshId72_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 1514
 2.76102 -0.19875 -2.67868
 2.76086 -0.23171 -2.73955
@@ -415282,7 +415282,7 @@ name "MlgBogeyAxisR"
 data 17
 meshId72_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 2.63984 -1.00897 -2.61466
 1.63987 -1.00158 -2.61626
@@ -415298,7 +415298,7 @@ name "MlgBogeyRodR"
 data 13
 meshId76_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 84
 2.65841 -1.83563 -2.88671
 2.65789 -1.81985 -2.85594
@@ -415847,7 +415847,7 @@ name "MlgChocksR"
 data 15
 Chocks.mesh.003
 crease 40.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 24
 2.08444 0.19889 -2.16687
 2.08411 0.10977 -2.34765
@@ -416023,7 +416023,7 @@ name "MlgWheel0R"
 data 13
 meshId78_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 1520
 1.56325 0.09226 -2.88966
 1.56296 -0.00113 -3.00527
@@ -430464,7 +430464,7 @@ name "MlgWheel0AxisR"
 data 17
 meshId78_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 1.69825 -0.32067 -2.65198
 2.6982 -0.32934 -2.64751
@@ -430480,7 +430480,7 @@ name "MlgWheel1R"
 data 13
 meshId83_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 1520
 1.2951 -1.35739 -2.74258
 1.29522 -1.38546 -2.82443
@@ -444921,7 +444921,7 @@ name "MlgWheel1AxisR"
 data 17
 meshId83_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 1.68707 -1.63352 -2.69306
 2.68702 -1.64224 -2.68869
@@ -444937,7 +444937,7 @@ name "MlgWheelRun0R"
 data 13
 meshId79_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 1520
 1.30617 -0.13906 -2.8656
 1.30573 -0.21317 -2.91026
@@ -459378,7 +459378,7 @@ name "MlgWheelRun1R"
 data 13
 meshId81_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 1520
 1.29499 -1.45191 -2.90669
 1.29455 -1.52602 -2.95134
@@ -473819,7 +473819,7 @@ name "MlgBogeyScissor00R"
 data 13
 meshId68_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 304
 2.51063 -0.35453 -2.83545
 2.51062 -0.36252 -2.86383
@@ -475284,7 +475284,7 @@ name "MlgBogeyScissor10R"
 data 13
 meshId73_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 160
 2.52622 -0.15608 -2.63514
 2.52578 -0.16209 -2.69973
@@ -476269,7 +476269,7 @@ name "MlgBogeyScissor01R"
 data 13
 meshId69_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 224
 2.4947 -1.57967 -2.9431
 2.48604 -1.2998 -2.92137
@@ -477510,7 +477510,7 @@ name "MlgBogeyScissor11R"
 data 13
 meshId74_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 208
 2.74426 -1.79744 -2.63082
 2.73654 -1.81305 -2.69437
@@ -478879,7 +478879,7 @@ name "MlgHingeAxisR"
 data 17
 meshId66_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 2.63962 -0.83921 -2.88813
 2.63958 0.1597 -2.84143
@@ -478895,7 +478895,7 @@ name "MlgHingeRodR"
 data 13
 meshId71_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 134
 2.9692 -0.98777 -2.63908
 2.97041 -0.97938 -2.62766
@@ -479590,7 +479590,7 @@ name "MlgOleoAxisR"
 data 17
 meshId85_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 3.44775 -0.99397 -2.92572
 2.44787 -0.99327 -2.94165
@@ -479606,7 +479606,7 @@ name "MlgRodR"
 data 13
 meshId86_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 24
 4.0305 -1.19733 -2.81743
 4.01785 -1.20173 -2.82053
@@ -479771,7 +479771,7 @@ name "MlgStrutAxisR"
 data 17
 meshId87_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 4.96068 -1.02274 -2.30906
 4.95862 -0.96166 -3.30719
@@ -479790,7 +479790,7 @@ name "MlgScissor0R"
 data 13
 meshId62_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 146
 3.55599 -1.10859 -3.04409
 3.51797 -1.10661 -3.08132
@@ -480692,7 +480692,7 @@ name "MlgScissor1R"
 data 13
 meshId65_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 297
 2.78461 -1.10089 -3.1547
 2.82913 -1.10242 -3.12552
@@ -482201,7 +482201,7 @@ name "MlgHingeBarrelR"
 data 13
 meshId63_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 214
 3.093 -1.07596 -2.55142
 3.08866 -1.08387 -2.58732
@@ -483783,7 +483783,7 @@ name "MlgBarrelL"
 data 14
 meshId117_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 80
 4.11403 -1.5721 2.50999
 4.15643 -1.91149 2.20824
@@ -484259,7 +484259,7 @@ name "CanardDoorL"
 data 14
 meshId122_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 73
 -26.47589 1.60659 0.96074
 -26.48266 1.71405 0.78575
@@ -484701,7 +484701,7 @@ name "CanardDoorAxisL"
 data 18
 meshId122_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -26.93955 1.63834 0.77001
 -27.92511 1.47502 0.72526
@@ -484717,7 +484717,7 @@ name "CanardDoorRodL"
 data 14
 meshId120_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 22
 -26.75979 1.50931 1.01041
 -26.78015 1.26595 0.78805
@@ -484868,7 +484868,7 @@ name "CanardDoorRodAxisL"
 data 18
 meshId122_name.002
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -26.75979 1.50931 1.01041
 -27.74534 1.34599 0.96565
@@ -484887,7 +484887,7 @@ name "CanardL"
 data 13
 meshId38_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 689
 -22.61932 1.88301 0.93345
 -23.90664 1.74532 0.9314
@@ -488789,7 +488789,7 @@ name "CanardAxisL"
 data 17
 meshId38_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -26.70639 1.37544 0.77624
 -26.63008 2.24727 1.26007
@@ -488808,7 +488808,7 @@ name "CanardFlap20L"
 data 13
 meshId39_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 165
 -22.64129 2.148 0.4884
 -22.68403 2.13922 0.48938
@@ -489786,7 +489786,7 @@ name "CanardFlap21L"
 data 13
 meshId40_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 81
 -26.37997 1.80804 0.46649
 -26.38359 1.793 0.50361
@@ -490272,7 +490272,7 @@ name "CanardFlap2AxisL"
 data 17
 meshId39_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -26.40465 1.70324 0.47196
 -27.3999 1.60992 0.44418
@@ -490291,7 +490291,7 @@ name "CanardFlap10L"
 data 13
 meshId43_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 26
 -22.66719 2.1275 0.63738
 -22.67486 2.15145 0.57944
@@ -490458,7 +490458,7 @@ name "CanardFlap11L"
 data 13
 meshId44_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 28
 -26.38516 1.80395 0.52534
 -26.38007 1.80776 0.46902
@@ -490627,7 +490627,7 @@ name "CanardFlap1AxisL"
 data 17
 meshId43_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -26.40452 1.66797 0.60842
 -27.39956 1.57094 0.58655
@@ -490646,7 +490646,7 @@ name "CanardFlap0L"
 data 13
 meshId45_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 38
 -22.60447 1.79171 1.05113
 -22.60081 1.78829 1.08316
@@ -490885,7 +490885,7 @@ name "CanardFlap0AxisL"
 data 17
 meshId45_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -26.42848 1.42993 1.10879
 -27.4222 1.31834 1.11689
@@ -490904,7 +490904,7 @@ name "CanardR"
 data 13
 meshId47_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 689
 -22.6194 1.88294 -0.93094
 -22.63157 1.93311 -0.84782
@@ -494806,7 +494806,7 @@ name "CanardAxisR"
 data 17
 meshId47_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -26.70639 1.37544 -0.74551
 -26.63007 2.24727 -1.22934
@@ -494825,7 +494825,7 @@ name "CanardFlap20R"
 data 13
 meshId48_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 165
 -22.64286 2.14787 -0.4877
 -22.65257 2.16932 -0.41992
@@ -495803,7 +495803,7 @@ name "CanardFlap21R"
 data 13
 meshId49_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 84
 -26.37904 1.80746 -0.46644
 -25.36558 1.89914 -0.497
@@ -496292,7 +496292,7 @@ name "CanardFlap2AxisR"
 data 17
 meshId48_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -26.40493 1.70352 -0.44153
 -25.40969 1.79685 -0.46931
@@ -496311,7 +496311,7 @@ name "CanardFlap10R"
 data 13
 meshId52_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 26
 -22.66728 2.12729 -0.63507
 -22.66524 2.14065 -0.6621
@@ -496478,7 +496478,7 @@ name "CanardFlap11R"
 data 13
 meshId53_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 26
 -26.41203 1.73838 -0.62641
 -26.41052 1.70885 -0.6201
@@ -496645,7 +496645,7 @@ name "CanardFlap1AxisR"
 data 17
 meshId52_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -26.40479 1.66824 -0.57799
 -25.40975 1.76527 -0.59985
@@ -496664,7 +496664,7 @@ name "CanardFlap0R"
 data 13
 meshId54_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 38
 -22.60511 1.79577 -1.05107
 -26.44787 1.31884 -1.06027
@@ -496903,7 +496903,7 @@ name "CanardFlap0AxisR"
 data 17
 meshId54_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -26.42876 1.43021 -1.07836
 -25.43504 1.54181 -1.07026
@@ -496922,7 +496922,7 @@ name "CanardDoorR"
 data 13
 meshId58_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 73
 -26.47627 1.6061 -0.95812
 -26.89939 1.5616 -0.94733
@@ -497364,7 +497364,7 @@ name "CanardDoorAxisR"
 data 17
 meshId58_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -26.93913 1.63834 -0.76625
 -25.95358 1.80167 -0.811
@@ -497380,7 +497380,7 @@ name "CanardDoorRodR"
 data 13
 meshId56_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 22
 -26.75684 1.48855 -1.0276
 -26.77926 1.25969 -0.79054
@@ -497531,7 +497531,7 @@ name "CanardDoorRodAxisR"
 data 17
 meshId58_name.002
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -26.75954 1.50751 -1.00838
 -25.77398 1.67083 -1.05313
@@ -497550,7 +497550,7 @@ name "WiperL"
 data 14
 meshId119_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 80
 -28.94357 0.69233 0.53066
 -28.94124 0.69941 0.52528
@@ -497951,7 +497951,7 @@ name "WiperAxisL"
 data 18
 meshId119_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -28.94952 0.69232 0.52024
 -29.75198 1.11478 0.94165
@@ -497967,7 +497967,7 @@ name "WindowExtL"
 data 16
 meshId7_name.023
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 38
 -28.15385 0.81491 1.07532
 -28.13599 0.79051 1.08684
@@ -498242,7 +498242,7 @@ name "WindowTranslAxis0L"
 data 16
 meshId7_name.027
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -27.88432 1.03955 1.03399
 -27.74206 0.70143 0.10372
@@ -498258,7 +498258,7 @@ name "WindowExtR"
 data 16
 meshId7_name.024
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 38
 -28.12563 0.80504 -1.08449
 -28.13599 0.79051 -1.08817
@@ -498533,7 +498533,7 @@ name "WindowTranslAxis0R"
 data 16
 meshId7_name.033
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -27.88432 1.03955 -1.03532
 -27.74205 0.70143 -0.10504
@@ -498549,7 +498549,7 @@ name "WindowTranslAxis1L"
 data 16
 meshId7_name.030
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -27.65412 1.00095 1.02981
 -26.67279 1.17262 1.11656
@@ -498565,7 +498565,7 @@ name "WindowTranslAxis1R"
 data 16
 meshId7_name.031
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -27.65412 1.00094 -1.03114
 -26.67277 1.17253 -1.11778
@@ -498581,7 +498581,7 @@ name "Cabin"
 data 16
 meshId7_name.014
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2855
 2.38643 1.09644 -1.56939
 2.35522 1.11536 -1.56509
@@ -518479,7 +518479,7 @@ name "CabinWindowDummy"
 data 16
 meshId7_name.018
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 1088
 2.35246 1.1832 -1.46387
 2.35527 1.22759 -1.45024
@@ -525288,7 +525288,7 @@ name "Hinge0"
 data 14
 meshId185_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 106
 -21.62827 0.56717 1.51421
 -21.61065 0.56717 1.50843
@@ -525979,7 +525979,7 @@ name "Hinge0Axis"
 data 18
 meshId185_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -21.62834 0.56716 1.48421
 -21.62834 1.56716 1.48421
@@ -525998,7 +525998,7 @@ name "Door0"
 data 14
 meshId188_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 25
 -21.68534 0.08146 1.38427
 -21.75216 0.03175 1.35225
@@ -526170,7 +526170,7 @@ name "Door0Axis"
 data 18
 meshId188_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -22.04575 0.56437 1.46324
 -22.04575 1.56437 1.46324
@@ -526186,7 +526186,7 @@ name "Hinge1"
 data 14
 meshId181_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 104
 -23.3124 0.33531 -1.42626
 -23.33003 0.33531 -1.42053
@@ -526851,7 +526851,7 @@ name "Hinge1Axis"
 data 18
 meshId181_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -23.3124 0.33531 -1.39626
 -23.3124 1.33531 -1.39626
@@ -526870,7 +526870,7 @@ name "Door1"
 data 14
 meshId184_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 22
 -22.60973 1.11202 -1.37598
 -22.67687 1.18372 -1.34252
@@ -527021,7 +527021,7 @@ name "Door1Axis"
 data 18
 meshId184_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -22.94922 0.26938 -1.39863
 -22.9487 1.26841 -1.44252
@@ -527037,7 +527037,7 @@ name "Hinge2"
 data 14
 meshId124_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 104
 -8.63011 0.59524 1.55771
 -8.61249 0.59524 1.55193
@@ -527702,7 +527702,7 @@ name "Hinge2Axis"
 data 18
 meshId124_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -8.63018 0.59524 1.52771
 -8.63018 1.59524 1.52771
@@ -527721,7 +527721,7 @@ name "Door2"
 data 14
 meshId126_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 26
 -8.78124 0.15284 1.59445
 -8.88398 0.11026 1.61705
@@ -527900,7 +527900,7 @@ name "Door2Axis"
 data 18
 meshId126_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -9.14569 0.59341 1.50674
 -9.14569 1.59341 1.50674
@@ -527916,7 +527916,7 @@ name "Hinge3"
 data 16
 meshId7_name.003
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 104
 -9.14085 0.63779 -1.46666
 -9.11678 0.63779 -1.47841
@@ -528581,7 +528581,7 @@ name "Door3"
 data 16
 meshId7_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 21
 -9.40698 0.20292 -1.54792
 -8.87473 0.19794 -1.55923
@@ -528725,7 +528725,7 @@ name "Door3Axis"
 data 16
 meshId7_name.004
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -9.1422 0.63839 -1.50158
 -9.1422 1.63839 -1.50158
@@ -528741,7 +528741,7 @@ name "Hinge3Axis"
 data 16
 meshId7_name.002
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -8.76581 0.63898 -1.51324
 -8.76581 1.63898 -1.51324
@@ -528763,7 +528763,7 @@ name "Door0U"
 data 18
 meshId188_name.003
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 50
 -21.8345 -0.00624 1.32939
 -21.75216 0.03175 1.35225
@@ -529125,7 +529125,7 @@ name "Door1U"
 data 18
 meshId184_name.003
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 44
 -23.10136 1.20962 -1.29496
 -23.10944 1.25696 -1.38394
@@ -529445,7 +529445,7 @@ name "Door2U"
 data 18
 meshId126_name.003
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 52
 -9.42691 0.11238 1.59215
 -8.88398 0.11026 1.61705
@@ -529821,7 +529821,7 @@ name "Door3U"
 data 16
 meshId7_name.017
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 43
 -8.79528 0.35557 -1.51818
 -8.83065 0.24794 -1.54591
@@ -530131,7 +530131,7 @@ name "CabinGlassPrecip"
 data 17
 meshId37_name.010
 crease 180.0
-texture "Tu-144D_alpha_d.png"
+texture "Tu-144D_alpha_d.webp"
 numvert 1088
 2.34237 1.15395 -1.55445
 2.34102 1.206 -1.54003
@@ -536940,7 +536940,7 @@ name "Cargo"
 data 16
 meshId7_name.016
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 346
 18.61546 1.5746 0.45978
 18.61546 1.67609 0.33873
@@ -539164,7 +539164,7 @@ name "Cargodoor1"
 data 14
 meshId318_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 82
 17.21974 1.41876 -0.93624
 17.19715 1.53933 -0.83248
@@ -539759,7 +539759,7 @@ name "Cargodoor1Axis"
 data 18
 meshId318_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 17.8597 0.86937 -1.01603
 17.82313 1.86871 -1.01603
@@ -539775,7 +539775,7 @@ name "Cargodoor1TranslAxis"
 data 18
 meshId318_name.003
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 17.8597 0.86937 -1.01603
 17.8597 0.86937 -0.01603
@@ -539791,7 +539791,7 @@ name "Cargohinge1Axis"
 data 18
 meshId318_name.002
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 17.15018 0.12188 22.90453
 17.15018 1.12188 22.90453
@@ -539807,7 +539807,7 @@ name "Cockpit"
 data 16
 meshId7_name.005
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 1383
 -26.47932 1.21101 1.18296
 -28.59027 0.06793 0.16106
@@ -547857,7 +547857,7 @@ name "ChairArmL"
 data 16
 meshId7_name.020
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 48
 -27.67683 0.58873 0.7688
 -27.67683 0.52343 0.75913
@@ -548058,7 +548058,7 @@ name "ChairArmAxis"
 data 16
 meshId7_name.019
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -27.70948 0.55608 0
 -27.70948 0.55608 -1
@@ -548074,7 +548074,7 @@ name "ChairArmR"
 data 16
 meshId7_name.021
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 48
 -27.67683 0.58873 -0.25658
 -27.67683 0.52343 -0.26624
@@ -548275,7 +548275,7 @@ name "Cockpitexterior"
 data 16
 meshId7_name.006
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 160
 -28.69157 0.96091 -0.00002
 -28.4835 0.99141 -0.00002
@@ -549080,7 +549080,7 @@ name "WindowL"
 data 16
 meshId7_name.022
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 114
 -27.72845 1.23701 0.95432
 -27.71916 1.25115 0.95057
@@ -549602,7 +549602,7 @@ name "WindowR"
 data 16
 meshId7_name.025
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 114
 -28.10182 0.79126 -1.06082
 -28.12142 0.79495 -1.05655
@@ -550124,7 +550124,7 @@ name "Yoke"
 data 16
 meshId7_name.007
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 90
 -28.32369 0.61973 0.45233
 -28.31656 0.65446 0.46524
@@ -550715,7 +550715,7 @@ name "YokeAxis"
 data 16
 meshId7_name.012
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -28.35651 0.0513 0.56281
 -28.35651 0.0513 -0.43719
@@ -550731,7 +550731,7 @@ name "YokeWheel0"
 data 16
 meshId7_name.009
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 445
 -28.36493 0.68686 0.41019
 -28.33747 0.71251 0.32837
@@ -554821,7 +554821,7 @@ name "YokeWheel0Axis"
 data 16
 meshId7_name.008
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -28.32369 0.61972 0.50582
 -28.18454 0.59117 0.50582
@@ -554837,7 +554837,7 @@ name "YokeWheel1"
 data 16
 meshId7_name.010
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 445
 -28.36493 0.68686 -0.61354
 -28.33746 0.71251 -0.69536
@@ -558927,7 +558927,7 @@ name "YokeWheel1Axis"
 data 16
 meshId7_name.011
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -28.32369 0.61973 -0.51625
 -28.18454 0.59117 -0.51791
@@ -558943,7 +558943,7 @@ name "ConeGlass"
 data 14
 meshId193_name
 crease 180.0
-texture "Tu-144D_alpha_d.png"
+texture "Tu-144D_alpha_d.webp"
 numvert 100
 -31.59432 0.70041 0.51663
 -30.86083 0.71092 0.64898
@@ -559580,7 +559580,7 @@ name "ConeGlass_DoNotMergeMe"
 data 18
 meshId193_name.004
 crease 180.0
-texture "Tu-144D_alpha_d.png"
+texture "Tu-144D_alpha_d.webp"
 numvert 100
 -31.59431 0.70062 -0.51707
 -31.61163 0.70928 -0.49596
@@ -560217,7 +560217,7 @@ name "ConeGlassPrecip"
 data 18
 meshId193_name.001
 crease 180.0
-texture "Tu-144D_alpha_d.png"
+texture "Tu-144D_alpha_d.webp"
 numvert 100
 -31.58871 0.71305 0.52731
 -30.88333 0.71904 0.65694
@@ -560854,7 +560854,7 @@ name "ConeGlassPrecip_DoNotMergeMe"
 data 18
 meshId193_name.003
 crease 180.0
-texture "Tu-144D_alpha_d.png"
+texture "Tu-144D_alpha_d.webp"
 numvert 100
 -31.58871 0.71324 -0.52778
 -31.59814 0.71604 -0.51994
@@ -561491,7 +561491,7 @@ name "Glass"
 data 13
 meshId37_name
 crease 180.0
-texture "Tu-144D_alpha_d.png"
+texture "Tu-144D_alpha_d.webp"
 numvert 34
 -28.7796 1.32255 0.12842
 -28.51301 1.30388 0.65774
@@ -561714,7 +561714,7 @@ name "Glass_DoNotMergeMe0"
 data 17
 meshId37_name.013
 crease 180.0
-texture "Tu-144D_alpha_d.png"
+texture "Tu-144D_alpha_d.webp"
 numvert 34
 -28.7796 1.32255 -0.12974
 -28.84403 1.25638 -0.07697
@@ -561937,7 +561937,7 @@ name "Glass_DoNotMergeMe1"
 data 17
 meshId37_name.009
 crease 180.0
-texture "Tu-144D_alpha_d.png"
+texture "Tu-144D_alpha_d.webp"
 numvert 38
 -28.30618 0.76005 1.05097
 -28.2619 0.78383 1.04894
@@ -562188,7 +562188,7 @@ name "Glass_DoNotMergeMe2"
 data 17
 meshId37_name.015
 crease 180.0
-texture "Tu-144D_alpha_d.png"
+texture "Tu-144D_alpha_d.webp"
 numvert 38
 -28.30618 0.76006 -1.0523
 -28.55129 0.74518 -1.02099
@@ -562439,7 +562439,7 @@ name "WindowGlassL"
 data 17
 meshId37_name.001
 crease 180.0
-texture "Tu-144D_alpha_d.png"
+texture "Tu-144D_alpha_d.webp"
 numvert 38
 -27.74471 0.82513 1.11129
 -27.71675 0.84641 1.10786
@@ -562690,7 +562690,7 @@ name "WindowGlassLOpen"
 data 17
 meshId37_name.018
 crease 180.0
-texture "Tu-144D_alpha_d.png"
+texture "Tu-144D_alpha_d.webp"
 numvert 38
 -27.74881 0.83362 1.12908
 -27.73469 0.84042 1.12875
@@ -562941,7 +562941,7 @@ name "WindowGlassR"
 data 17
 meshId37_name.002
 crease 180.0
-texture "Tu-144D_alpha_d.png"
+texture "Tu-144D_alpha_d.webp"
 numvert 38
 -27.74471 0.82513 -1.11262
 -28.12528 0.7962 -1.06626
@@ -563192,7 +563192,7 @@ name "WindowGlassROpen"
 data 17
 meshId37_name.019
 crease 180.0
-texture "Tu-144D_alpha_d.png"
+texture "Tu-144D_alpha_d.webp"
 numvert 38
 -27.74881 0.83362 -1.13041
 -28.106 0.80133 -1.08877
@@ -563443,7 +563443,7 @@ name "WindshieldGlassConeClosed"
 data 17
 meshId37_name.012
 crease 180.0
-texture "Tu-144D_alpha_d.png"
+texture "Tu-144D_alpha_d.webp"
 numvert 34
 -28.79849 1.32615 0.14396
 -28.82721 1.30691 0.10804
@@ -563666,7 +563666,7 @@ name "WindshieldGlassConeClosed_DoNotMergeMe"
 data 17
 meshId37_name.016
 crease 180.0
-texture "Tu-144D_alpha_d.png"
+texture "Tu-144D_alpha_d.webp"
 numvert 34
 -28.79773 1.32575 -0.1449
 -28.76558 1.33767 -0.19519
@@ -563889,7 +563889,7 @@ name "GlassPrecip"
 data 17
 meshId37_name.005
 crease 180.0
-texture "Tu-144D_alpha_d.png"
+texture "Tu-144D_alpha_d.webp"
 numvert 38
 -28.30907 0.76895 1.06878
 -28.2874 0.77692 1.06912
@@ -564140,7 +564140,7 @@ name "GlassPrecip_DoNotMergeMe"
 data 17
 meshId37_name.014
 crease 180.0
-texture "Tu-144D_alpha_d.png"
+texture "Tu-144D_alpha_d.webp"
 numvert 38
 -28.30907 0.76895 -1.07011
 -28.52074 0.74992 -1.04541
@@ -564391,7 +564391,7 @@ name "WindowGlassLClosed"
 data 17
 meshId37_name.003
 crease 180.0
-texture "Tu-144D_alpha_d.png"
+texture "Tu-144D_alpha_d.webp"
 numvert 38
 -27.74881 0.83362 1.12908
 -27.73469 0.84042 1.12875
@@ -564642,7 +564642,7 @@ name "WindowGlassRClosed"
 data 17
 meshId37_name.004
 crease 180.0
-texture "Tu-144D_alpha_d.png"
+texture "Tu-144D_alpha_d.webp"
 numvert 38
 -27.74881 0.83362 -1.13041
 -28.106 0.80133 -1.08877
@@ -564893,7 +564893,7 @@ name "WindshieldGlassConeOpen"
 data 17
 meshId37_name.011
 crease 180.0
-texture "Tu-144D_alpha_d.png"
+texture "Tu-144D_alpha_d.webp"
 numvert 34
 -28.79849 1.32615 0.14396
 -28.82721 1.30691 0.10804
@@ -565116,7 +565116,7 @@ name "WindshieldGlassConeOpen_DoNotMergeMe"
 data 17
 meshId37_name.017
 crease 180.0
-texture "Tu-144D_alpha_d.png"
+texture "Tu-144D_alpha_d.webp"
 numvert 34
 -28.79773 1.32575 -0.1449
 -28.76558 1.33767 -0.19519
@@ -565360,7 +565360,7 @@ name "SPT-154_0"
 data 14
 meshId312_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 946
 -22.95492 -1.75151 2.91753
 -22.95558 -1.7611 2.88124
@@ -571739,7 +571739,7 @@ name "SPT-154_1"
 data 14
 meshId313_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 972
 -10.04832 -2.72126 5.14449
 -10.0236 -2.65091 5.14454
@@ -578147,7 +578147,7 @@ name "BelAZ-74212"
 data 14
 meshId308_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 740
 -21.3065 -1.89245 -9.57487
 -21.2818 -1.90341 -9.54484
@@ -582088,7 +582088,7 @@ name "BelAZ-74212Whl0L"
 data 14
 meshId302_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 56
 -23.88622 -2.47634 -6.74691
 -23.65987 -2.6787 -6.46501
@@ -582465,7 +582465,7 @@ name "BelAZ-74212Whl0AxisL"
 data 18
 meshId302_name.002
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -23.45997 -1.79604 -6.28453
 -22.69565 -1.83756 -6.92804
@@ -582481,7 +582481,7 @@ name "BelAZ-74212Whl0SteerAxisL"
 data 18
 meshId302_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -23.18366 -1.81105 -6.51717
 -23.2581 -2.80798 -6.54126
@@ -582497,7 +582497,7 @@ name "BelAZ-74212Whl0R"
 data 14
 meshId305_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 56
 -21.66218 -2.59717 -8.61943
 -21.43583 -2.79953 -8.33753
@@ -582874,7 +582874,7 @@ name "BelAZ-74212Whl0AxisR"
 data 18
 meshId305_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -21.23592 -1.91687 -8.15705
 -20.47161 -1.9584 -8.80056
@@ -582890,7 +582890,7 @@ name "BelAZ-74212Whl0SteerAxisR"
 data 18
 meshId305_name.002
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -20.95961 -1.93188 -8.38969
 -21.03405 -2.92882 -8.41378
@@ -582906,7 +582906,7 @@ name "BelAZ-74212Whl1L"
 data 14
 meshId303_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 56
 -22.0393 -2.66755 -4.54092
 -21.81295 -2.86991 -4.25902
@@ -583283,7 +583283,7 @@ name "BelAZ-74212Whl1AxisL"
 data 18
 meshId303_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -21.61304 -1.98725 -4.07855
 -20.84872 -2.02878 -4.72205
@@ -583299,7 +583299,7 @@ name "BelAZ-74212Whl1SteerAxisL"
 data 18
 meshId303_name.002
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -21.33672 -2.00227 -4.31118
 -21.41117 -2.9992 -4.33527
@@ -583315,7 +583315,7 @@ name "BelAZ-74212Whl1R"
 data 14
 meshId304_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 56
 -19.81525 -2.78839 -6.41344
 -19.5889 -2.99075 -6.13154
@@ -583692,7 +583692,7 @@ name "BelAZ-74212Whl1AxisR"
 data 18
 meshId304_name.001
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -19.38899 -2.10809 -5.95106
 -18.62468 -2.14961 -6.59457
@@ -583708,7 +583708,7 @@ name "BelAZ-74212Whl1SteerAxisR"
 data 18
 meshId304_name.002
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 2
 -19.11268 -2.1231 -6.1837
 -19.18712 -3.12003 -6.20779
@@ -583724,7 +583724,7 @@ name "BelAZ-74212Lights"
 data 14
 meshId301_name
 crease 180.0
-texture "Tu-144D_d.png"
+texture "Tu-144D_d.webp"
 numvert 63
 -23.86025 -0.04812 -7.41653
 -23.78455 0.14068 -7.4168

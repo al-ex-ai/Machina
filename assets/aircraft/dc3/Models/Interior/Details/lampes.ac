@@ -7,7 +7,7 @@ name "lampes"
 loc 0 0 -0
 data 6
 lampes
-texture "details.png"
+texture "details.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 322

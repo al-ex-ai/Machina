@@ -6,7 +6,7 @@ kids 9
 OBJECT poly
 name "text_1"
 loc -5.83529e-05 0.0212341 0.0196342
-texture "26.png"
+texture "26.webp"
 crease 100.000000
 numvert 4
 4.32192e-09 -0.00858251 0.0142347
@@ -25,7 +25,7 @@ kids 0
 OBJECT poly
 name "text_2"
 loc -5.83529e-05 0.0207715 -0.0175556
-texture "29.png"
+texture "29.webp"
 crease 100.000000
 numvert 4
 4.88944e-09 0.0094463 0.0147468
@@ -44,7 +44,7 @@ kids 0
 OBJECT poly
 name "text_4"
 loc -5.83529e-05 0.0001055 -0.0182357
-texture "30.png"
+texture "30.webp"
 crease 100.000000
 numvert 4
 4.83851e-09 -0.00944629 0.01384
@@ -63,7 +63,7 @@ kids 0
 OBJECT poly
 name "text_3"
 loc -5.83529e-05 0.000285499 0.0196145
-texture "27.png"
+texture "27.webp"
 crease 100.000000
 numvert 4
 4.32556e-09 0.00886529 0.0142545
@@ -82,7 +82,7 @@ kids 0
 OBJECT poly
 name "text_5"
 loc -5.83529e-05 -0.0201385 0.0195012
-texture "28.png"
+texture "28.webp"
 crease 100.000000
 numvert 4
 4.32919e-09 -0.00821679 0.0143678
@@ -101,7 +101,7 @@ kids 0
 OBJECT poly
 name "text_6"
 loc -5.83529e-05 -0.020967 -0.0177823
-texture "31.png"
+texture "31.webp"
 crease 100.000000
 numvert 4
 4.904e-09 0.00814931 0.0149736
@@ -120,7 +120,7 @@ kids 0
 OBJECT poly
 name "cover_3"
 loc 5.83469e-05 -0.0208692 -4.88799e-08
-texture "segment.png"
+texture "segment.webp"
 crease 100.000000
 numvert 4
 1.17543e-08 0.0102995 0.0364905
@@ -139,7 +139,7 @@ kids 0
 OBJECT poly
 name "cover_2"
 loc 5.83469e-05 0.000203397 -4.88799e-08
-texture "segment.png"
+texture "segment.webp"
 crease 100.000000
 numvert 4
 1.17543e-08 -0.0102995 0.0364905
@@ -158,7 +158,7 @@ kids 0
 OBJECT poly
 name "cover_1"
 loc 5.83469e-05 0.0208692 -4.88799e-08
-texture "segment.png"
+texture "segment.webp"
 crease 100.000000
 numvert 4
 1.17543e-08 0.0102995 0.0364905

@@ -7,7 +7,7 @@ name "detail"
 loc 0 0 -0
 data 6
 detail
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 919
@@ -7768,7 +7768,7 @@ name "overhead"
 loc 0 0 -0
 data 8
 overhead
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 79
@@ -8375,7 +8375,7 @@ name "radio"
 loc 0 0 -0
 data 5
 radio
-texture "overhead.png"
+texture "overhead.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 56

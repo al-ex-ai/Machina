@@ -7,7 +7,7 @@ name "axeL"
 loc 0 0 -0
 data 4
 axeL
-texture "pedals.png"
+texture "pedals.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 421
@@ -3399,7 +3399,7 @@ name "axeR"
 loc 0 0 -0
 data 4
 axeR
-texture "pedals.png"
+texture "pedals.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 421
@@ -6791,7 +6791,7 @@ name "brakeL"
 loc 0 0 -0
 data 6
 brakeL
-texture "pedals.png"
+texture "pedals.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 65
@@ -7283,7 +7283,7 @@ name "brakeR"
 loc 0 0 -0
 data 6
 brakeR
-texture "pedals.png"
+texture "pedals.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 65
@@ -7775,7 +7775,7 @@ name "guide-pieds"
 loc 0 0 -0
 data 11
 guide-pieds
-texture "pedals.png"
+texture "pedals.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 40
@@ -8014,7 +8014,7 @@ name "mec-freins"
 loc 0 0 -0
 data 10
 mec-freins
-texture "pedals.png"
+texture "pedals.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 96
@@ -8723,7 +8723,7 @@ name "pedalsL"
 loc 0 0 -0
 data 7
 pedalsL
-texture "pedals.png"
+texture "pedals.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 214
@@ -10339,7 +10339,7 @@ name "pedalsR"
 loc 0 0 -0
 data 7
 pedalsR
-texture "pedals.png"
+texture "pedals.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 214

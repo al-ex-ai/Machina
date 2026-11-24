@@ -8,7 +8,7 @@ name "box"
 loc 0 0 -0
 data 3
 box
-texture "cap2.png"
+texture "cap2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 20
@@ -74,7 +74,7 @@ name "compass"
 loc 0 0 -0
 data 7
 compass
-texture "cap2.png"
+texture "cap2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 32
@@ -229,7 +229,7 @@ name "conserv"
 loc 0 0 -0
 data 7
 conserv
-texture "cap2.png"
+texture "cap2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 32
@@ -384,7 +384,7 @@ name "face"
 loc 0 0 -0
 data 4
 face
-texture "cap2.png"
+texture "cap2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 32
@@ -613,7 +613,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "cap2.png"
+texture "cap2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 97

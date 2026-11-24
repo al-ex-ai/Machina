@@ -7,7 +7,7 @@ name "LH"
 loc -0.067531 0 0.054574
 data 2
 LH
-texture "cowl-flaps.png"
+texture "cowl-flaps.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 86
@@ -650,7 +650,7 @@ name "RH"
 loc 0.062765 0 -0.051959
 data 2
 RH
-texture "cowl-flaps.png"
+texture "cowl-flaps.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 86
@@ -1293,7 +1293,7 @@ name "plaque"
 loc 0 0 -0
 data 6
 plaque
-texture "cowl-flaps.png"
+texture "cowl-flaps.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 40
@@ -1547,7 +1547,7 @@ name "vanne"
 loc 0 0 -0
 data 5
 vanne
-texture "cowl-flaps.png"
+texture "cowl-flaps.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 144

@@ -7,7 +7,7 @@ OBJECT poly
 name "cover"
 data 5
 cover
-texture "ind_2.png"
+texture "ind_2.webp"
 texrep 1 1
 crease 30.000000
 numvert 4

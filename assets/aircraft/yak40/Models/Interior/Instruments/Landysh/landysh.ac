@@ -1300,7 +1300,7 @@ kids 0
 OBJECT poly
 name "landyshfreq3disc"
 loc -0.00394403 0.0162487 -0.0133244
-texture "landysh.png"
+texture "landysh.webp"
 crease 45.000000
 numvert 41
 0.000190428 -0.000482675 0.00772383
@@ -2984,7 +2984,7 @@ kids 0
 OBJECT poly
 name "landyshfreq2disc"
 loc -0.00394403 0.0162487 0.00708354
-texture "landysh.png"
+texture "landysh.webp"
 crease 45.000000
 numvert 41
 0.000190428 -0.000482555 -0.00753844
@@ -5805,7 +5805,7 @@ kids 0
 OBJECT poly
 name "landyshfreq1disc"
 loc -0.00388577 0.0157768 0.00749591
-texture "landysh.png"
+texture "landysh.webp"
 crease 45.000000
 numvert 36
 0.0115469 -0.00983845 0.0119315
@@ -5975,7 +5975,7 @@ kids 0
 OBJECT poly
 name "landyshfreq4disc"
 loc -0.00398204 0.0162402 -0.0137447
-texture "landysh.png"
+texture "landysh.webp"
 crease 45.000000
 numvert 40
 0.00695572 -0.0139369 0.000408283
@@ -6163,7 +6163,7 @@ kids 0
 OBJECT poly
 name "landyshfreq2disc"
 loc -0.00394403 0.0162487 0.00873408
-texture "landysh.png"
+texture "landysh.webp"
 crease 45.000000
 numvert 8
 0.0152638 -0.000482555 -0.0138841
@@ -6224,7 +6224,7 @@ kids 0
 OBJECT poly
 name "disk"
 loc 0.00189813 -2.93099e-14 -0.0018466
-texture "landysh.png"
+texture "landysh.webp"
 crease 45.000000
 numvert 141
 -0.00276905 -0.0204147 0.00912287

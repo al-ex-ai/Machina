@@ -7,7 +7,7 @@ OBJECT poly
 name "Circle"
 data 6
 Circle
-texture "back.png"
+texture "back.webp"
 crease 30.000000
 numvert 17
 0.000677254 -0.0212402 -0.0212412
@@ -129,7 +129,7 @@ OBJECT poly
 name "Circle.001"
 data 10
 Circle.001
-texture "back.png"
+texture "back.webp"
 crease 30.000000
 numvert 22
 0.00197295 0.011433 0.0123994
@@ -291,7 +291,7 @@ OBJECT poly
 name "Circle.002"
 data 10
 Circle.002
-texture "back.png"
+texture "back.webp"
 crease 30.000000
 numvert 22
 0.00197295 -0.011434 -0.0124024
@@ -585,7 +585,7 @@ OBJECT poly
 name "bezel.037"
 data 8
 Mesh.358
-texture "back.png"
+texture "back.webp"
 crease 30.000000
 numvert 96
 -0.000915 0.0162737 -0.02819

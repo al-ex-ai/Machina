@@ -3014,7 +3014,7 @@ kids 0
 OBJECT poly
 name "cover_up"
 loc 0.0115427 0.00442419 -0.0108596
-texture "red_cover.png"
+texture "red_cover.webp"
 crease 100.000000
 numvert 4
 -1.86265e-09 -0.0183549 -0.00907487
@@ -3037,7 +3037,7 @@ kids 3
 OBJECT poly
 name "rect"
 loc 4.7531e-05 0.000469591 -0.0023524
-texture "base.png"
+texture "base.webp"
 crease 100.000000
 numvert 4
 0 -0.0159087 0.00799406

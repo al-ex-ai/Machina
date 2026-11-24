@@ -7,7 +7,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "switch.png"
+texture "switch.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 242
@@ -1896,7 +1896,7 @@ name "switch"
 loc 0 0 -0
 data 6
 switch
-texture "switch.png"
+texture "switch.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 513

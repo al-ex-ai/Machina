@@ -1540,7 +1540,7 @@ kids 0
 OBJECT poly
 name "housing"
 loc -9.92604e-05 -1.86263e-09 0
-texture "uvid-15m.png"
+texture "uvid-15m.webp"
 crease 45.000000
 numvert 68
 -0.00353552 0.0301434 0.0174034
@@ -2176,7 +2176,7 @@ name "dig_a_decths"
 loc -0.00335033 -0.00052116 -0.000613298
 data 8
 Mesh.004
-texture "digit.png"
+texture "digit.webp"
 crease 80.000000
 numvert 32
 -0.000324001 0.003623 0.0157057
@@ -2330,7 +2330,7 @@ name "dig_a_ths"
 loc -0.00335033 -0.00052116 -0.000613298
 data 8
 Mesh.009
-texture "digit.png"
+texture "digit.webp"
 crease 80.000000
 numvert 32
 -0.001259 0.009955 0.00082422
@@ -2484,7 +2484,7 @@ name "dig_a_hund"
 loc -0.00335033 -0.00052116 0.000187032
 data 8
 Mesh.003
-texture "digit.png"
+texture "digit.webp"
 crease 80.000000
 numvert 32
 -0.000324001 0.003623 -0.00152753
@@ -2638,7 +2638,7 @@ name "dig_a_dec"
 loc -0.00335033 -0.00052116 0.000187032
 data 8
 Mesh.005
-texture "digit.png"
+texture "digit.webp"
 crease 80.000000
 numvert 32
 -0.001259 0.009955 -0.0195017
@@ -2792,7 +2792,7 @@ name "dig_p_hund"
 loc -0.00452572 -0.00172602 -0.000667438
 data 8
 Mesh.002
-texture "digit.png"
+texture "digit.webp"
 crease 80.000000
 numvert 32
 2.65706e-05 -0.0269863 0.0108196
@@ -2946,7 +2946,7 @@ name "dig_p_dec"
 loc -0.00452572 -0.00172602 -0.000667438
 data 8
 Mesh.001
-texture "digit.png"
+texture "digit.webp"
 crease 80.000000
 numvert 32
 -0.000618566 -0.0226149 -0.00124609
@@ -3100,7 +3100,7 @@ name "dig_p_ones"
 loc -0.00452572 -0.00172602 -0.000667438
 data 4
 Mesh
-texture "digit.png"
+texture "digit.webp"
 crease 80.000000
 numvert 32
 2.65706e-05 -0.0269863 -0.00153669
@@ -3252,7 +3252,7 @@ kids 0
 OBJECT poly
 name "needle"
 loc -0.00226851 9.31323e-10 0
-texture "uvid-15m.png"
+texture "uvid-15m.webp"
 crease 45.000000
 numvert 30
 0 0.00255418 0

@@ -6,7 +6,7 @@ kids 21
 OBJECT poly
 name "text_1"
 loc -5.8353e-05 0.0692825 0.02214
-texture "74.png"
+texture "74.webp"
 crease 100.000000
 numvert 4
 4.32919e-09 -0.00769094 0.0145571
@@ -25,7 +25,7 @@ kids 0
 OBJECT poly
 name "text_2"
 loc -5.83532e-05 0.0696242 -0.0217207
-texture "80.png"
+texture "80.webp"
 crease 100.000000
 numvert 4
 4.9331e-09 0.00884606 0.0157591
@@ -44,7 +44,7 @@ kids 0
 OBJECT poly
 name "cover_1"
 loc 5.83468e-05 0.0695564 -4.45185e-08
-texture "segment.png"
+texture "segment.webp"
 crease 100.000000
 numvert 4
 1.20563e-08 0.0113689 0.0431904
@@ -63,7 +63,7 @@ kids 0
 OBJECT poly
 name "cover_2"
 loc 5.83468e-05 0.0467448 -4.45185e-08
-texture "segment.png"
+texture "segment.webp"
 crease 100.000000
 numvert 4
 1.20563e-08 -0.0113689 0.0431904
@@ -82,7 +82,7 @@ kids 0
 OBJECT poly
 name "text_4"
 loc -5.83531e-05 0.0471638 -0.0213956
-texture "76.png"
+texture "76.webp"
 crease 100.000000
 numvert 4
 4.89672e-09 -0.00814338 0.0154393
@@ -101,7 +101,7 @@ kids 0
 OBJECT poly
 name "text_3"
 loc -5.8353e-05 0.0468355 0.0222741
-texture "72.png"
+texture "72.webp"
 crease 100.000000
 numvert 4
 4.26371e-09 0.00697504 0.012916
@@ -120,7 +120,7 @@ kids 0
 OBJECT poly
 name "text_5"
 loc -5.8353e-05 0.0228854 0.02214
-texture "77.png"
+texture "77.webp"
 crease 100.000000
 numvert 4
 4.36557e-09 -0.00801591 0.0153106
@@ -139,7 +139,7 @@ kids 0
 OBJECT poly
 name "text_6"
 loc -5.83532e-05 0.023025 -0.0218008
-texture "71.png"
+texture "71.webp"
 crease 100.000000
 numvert 4
 4.92582e-09 0.00829276 0.0154625
@@ -158,7 +158,7 @@ kids 0
 OBJECT poly
 name "cover_3"
 loc 5.83468e-05 0.0234843 -4.45185e-08
-texture "segment.png"
+texture "segment.webp"
 crease 100.000000
 numvert 4
 1.20563e-08 0.0113689 0.0431904
@@ -177,7 +177,7 @@ kids 0
 OBJECT poly
 name "cover_4"
 loc 5.83468e-05 0.000232977 -4.45185e-08
-texture "segment.png"
+texture "segment.webp"
 crease 100.000000
 numvert 4
 1.20563e-08 -0.0113689 0.0431904
@@ -196,7 +196,7 @@ kids 0
 OBJECT poly
 name "text_8"
 loc -5.83531e-05 -0.000226443 -0.0215041
-texture "75.png"
+texture "75.webp"
 crease 100.000000
 numvert 4
 4.85306e-09 -0.0079677 0.0142008
@@ -215,7 +215,7 @@ kids 0
 OBJECT poly
 name "text_7"
 loc -5.8353e-05 0.000310353 0.021843
-texture "82.png"
+texture "82.webp"
 crease 100.000000
 numvert 4
 4.32919e-09 0.00839363 0.0144772
@@ -234,7 +234,7 @@ kids 0
 OBJECT poly
 name "text_9"
 loc -5.8353e-05 -0.023995 0.0223283
-texture "83.png"
+texture "83.webp"
 crease 100.000000
 numvert 4
 4.3583e-09 -0.00804228 0.0151222
@@ -253,7 +253,7 @@ kids 0
 OBJECT poly
 name "cover_5"
 loc 5.83468e-05 -0.0230184 -4.45185e-08
-texture "segment.png"
+texture "segment.webp"
 crease 100.000000
 numvert 4
 1.20563e-08 0.0113689 0.0431904
@@ -272,7 +272,7 @@ kids 0
 OBJECT poly
 name "text_10"
 loc -5.83549e-05 -0.0233005 -0.0217082
-texture "84.png"
+texture "84.webp"
 crease 100.000000
 numvert 4
 4.36557e-09 0.00745462 0.0153573
@@ -291,7 +291,7 @@ kids 0
 OBJECT poly
 name "text_12"
 loc -5.83549e-05 -0.0467393 -0.0217082
-texture "79.png"
+texture "79.webp"
 crease 100.000000
 numvert 4
 4.36557e-09 -0.00745461 0.0153573
@@ -310,7 +310,7 @@ kids 0
 OBJECT poly
 name "cover_6"
 loc 5.83468e-05 -0.0464572 -4.45185e-08
-texture "segment.png"
+texture "segment.webp"
 crease 100.000000
 numvert 4
 1.20563e-08 -0.0113689 0.0431904
@@ -329,7 +329,7 @@ kids 0
 OBJECT poly
 name "text_11"
 loc -5.8353e-05 -0.0474338 0.0224982
-texture "73.png"
+texture "73.webp"
 crease 100.000000
 numvert 4
 4.3583e-09 0.00804229 0.0149524
@@ -348,7 +348,7 @@ kids 0
 OBJECT poly
 name "text_13"
 loc -5.8353e-05 -0.070533 0.0223283
-texture "85.png"
+texture "85.webp"
 crease 100.000000
 numvert 4
 4.3583e-09 -0.00804228 0.0151222
@@ -367,7 +367,7 @@ kids 0
 OBJECT poly
 name "cover_7"
 loc 5.83468e-05 -0.0695564 -4.45185e-08
-texture "segment.png"
+texture "segment.webp"
 crease 100.000000
 numvert 4
 1.20563e-08 0.0113689 0.0431904
@@ -386,7 +386,7 @@ kids 0
 OBJECT poly
 name "text_14"
 loc -5.83549e-05 -0.0698384 -0.0215383
-texture "81.png"
+texture "81.webp"
 crease 100.000000
 numvert 4
 4.3583e-09 0.00745462 0.0151874

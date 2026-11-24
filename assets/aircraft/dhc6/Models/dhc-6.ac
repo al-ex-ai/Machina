@@ -16,7 +16,7 @@ kids 102
 OBJECT poly
 name "RRdoor"
 loc 1.79073 0.0481775 -0.831182
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 88.000000
 numvert 36
 0.0231049 -0.134194 0.000396073
@@ -324,7 +324,7 @@ kids 0
 OBJECT poly
 name "fuselage"
 loc 1.81395 -0.0775194 -0.820189
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 180.000000
 numvert 20
 0.0082022 -0.00217175 -0.00602818
@@ -504,7 +504,7 @@ kids 0
 OBJECT poly
 name "fuselage"
 loc 1.81359 -0.0806055 -0.830508
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 180.000000
 numvert 34
 0 0.00587487 0
@@ -850,7 +850,7 @@ kids 0
 OBJECT poly
 name "fuselage"
 loc 1.81359 0.43852 -0.830508
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 180.000000
 numvert 34
 0.00396097 -0.00587463 -0.00102419
@@ -1196,7 +1196,7 @@ kids 0
 OBJECT poly
 name "fuselage"
 loc 1.81395 0.441606 -0.820189
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 180.000000
 numvert 20
 0.00062561 0.00217152 0.00320542
@@ -1376,7 +1376,7 @@ kids 0
 OBJECT poly
 name "RRdoor"
 loc 1.79073 0.567303 -0.831182
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 88.000000
 numvert 36
 0.108711 -0.134194 0.020913
@@ -1684,7 +1684,7 @@ kids 0
 OBJECT poly
 name "fuselage"
 loc 2.55925 -0.360264 0.767985
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 180.000000
 numvert 34
 -0.00377989 -0.00587469 0.00156546
@@ -2030,7 +2030,7 @@ kids 0
 OBJECT poly
 name "fuselage"
 loc 2.55746 -0.357178 0.757816
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 180.000000
 numvert 20
 0.013762 0.00217164 -0.064176
@@ -2210,7 +2210,7 @@ kids 0
 OBJECT poly
 name "fuselage"
 loc 2.55925 0.43852 0.767985
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 180.000000
 numvert 34
 0 0.00587475 0
@@ -2556,7 +2556,7 @@ kids 0
 OBJECT poly
 name "fuselage"
 loc 2.55746 0.441606 0.757816
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 180.000000
 numvert 20
 -0.00728345 -0.00217158 0.00711107
@@ -2736,7 +2736,7 @@ kids 0
 OBJECT poly
 name "fuselage"
 loc -3.91319 -0.15263 0.825301
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 180.000000
 numvert 34
 0.00377989 0.00587472 0.00156546
@@ -3082,7 +3082,7 @@ kids 0
 OBJECT poly
 name "fuselage"
 loc -3.9114 -0.155715 0.815131
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 180.000000
 numvert 20
 -0.000429153 -0.00217158 -0.000897586
@@ -3591,7 +3591,7 @@ kids 0
 OBJECT poly
 name "rear-tiedown-fasteningpoint"
 loc 5.3812 -0.444905 -2.38419e-07
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 144
 -0.0385861 0.0132579 0.00461197
@@ -4639,7 +4639,7 @@ kids 0
 OBJECT poly
 name "wings"
 loc -0.0779285 1.07809 0
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 1006
 -0.895021 0.402713 -9.47846
@@ -11787,7 +11787,7 @@ kids 0
 OBJECT poly
 name "left-tiedown-fasteningpoint"
 loc -0.522022 1.04777 4.83618
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 144
 0.00426066 0.0200677 -0.0337591
@@ -12835,7 +12835,7 @@ kids 0
 OBJECT poly
 name "right-pitot-tube"
 loc 2.21635 1.40882 -0.0132495
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 240
 -6.24221 -1.35152 -0.866763
@@ -14670,7 +14670,7 @@ kids 0
 OBJECT poly
 name "left-pitot-tube"
 loc 2.21635 1.50882 -0.0132542
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 240
 -6.41494 -1.45074 0.895036
@@ -16505,7 +16505,7 @@ kids 0
 OBJECT poly
 name "wingbrace"
 loc -2.09345 0.727603 -1.99468
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 64
 1.99189 0.0920181 4.70041
@@ -18832,7 +18832,7 @@ kids 0
 OBJECT poly
 name "aerial"
 loc 4.5638 2.38162 0.000193596
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 26
 -3.27244 -1.06101 0.00625229
@@ -18991,7 +18991,7 @@ refs 4
 kids 0
 OBJECT poly
 name "beacon"
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 41
 8.13265 3.96515 0
@@ -19312,7 +19312,7 @@ kids 0
 OBJECT poly
 name "bluntnose"
 loc 4.76837e-07 0 0
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 180.000000
 numvert 236
 -4.69674 0.413773 -0.31556
@@ -21195,7 +21195,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Elevator"
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 38
 7.59307 1.24564 -2.86346
@@ -21509,7 +21509,7 @@ kids 0
 OBJECT poly
 name "RHEngine"
 loc -1.06848 0.889725 0
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 393
 0.0795975 0.515574 -2.86285
@@ -24485,7 +24485,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Engine.cowl.001_0"
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 54
 -2.3263 0.654966 3.03636
@@ -24858,7 +24858,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Engine.cowl.001_1"
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 46
 -1.12526 0.434744 2.85652
@@ -25179,7 +25179,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Exhaust"
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 448
 -2.08728 1.10856 2.57272
@@ -27818,7 +27818,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Exhaust.001"
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 100
 -2.03298 1.08688 -2.54953
@@ -28501,7 +28501,7 @@ refs 3
 kids 0
 OBJECT poly
 name "float.fairing"
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 96
 0.773157 -0.768157 -0.546346
@@ -28940,7 +28940,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Hstab"
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 68
 7.06293 1.29462 0.106524
@@ -29451,7 +29451,7 @@ refs 3
 kids 0
 OBJECT poly
 name "L.aileron"
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 42
 0.985973 1.12697 6.04313
@@ -29690,7 +29690,7 @@ refs 3
 kids 0
 OBJECT poly
 name "L.flap"
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 42
 0.662546 0.951122 0.913139
@@ -29929,7 +29929,7 @@ refs 3
 kids 0
 OBJECT poly
 name "L.slat"
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 208
 0.487751 1.27869 9.47651
@@ -31408,7 +31408,7 @@ refs 4
 kids 0
 OBJECT poly
 name "LFdoor"
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 148.000000
 numvert 68
 -3.81704 0.391076 0.77536
@@ -31870,7 +31870,7 @@ kids 0
 OBJECT poly
 name "longnose"
 loc 4.76837e-07 0 0
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 169.000000
 numvert 252
 -4.72541 0.428267 -0.329972
@@ -33881,7 +33881,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Lprop.1"
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 81
 -2.66023 2.24923 2.85374
@@ -34521,7 +34521,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Lprop.2"
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 81
 -2.66023 0.390938 1.78737
@@ -35161,7 +35161,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Lprop.3"
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 81
 -2.66023 0.396578 3.92989
@@ -35801,7 +35801,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Lrdoor-frt"
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 12
 1.83125 0.527021 0.817596
@@ -35855,7 +35855,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Lrdoor-rear"
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 20
 2.11347 0.470324 0.794912
@@ -35982,7 +35982,7 @@ refs 3
 kids 0
 OBJECT poly
 name "navlights"
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 32
 -0.579149 1.45357 -9.78273
@@ -36205,7 +36205,7 @@ refs 3
 kids 0
 OBJECT poly
 name "R.aileron"
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 42
 0.985973 1.12697 -6.04313
@@ -36444,7 +36444,7 @@ refs 3
 kids 0
 OBJECT poly
 name "R.flap"
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 42
 0.662546 0.951122 -0.913138
@@ -36683,7 +36683,7 @@ refs 3
 kids 0
 OBJECT poly
 name "R.slat"
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 208
 0.487751 1.27869 -9.47651
@@ -38079,7 +38079,7 @@ refs 3
 kids 0
 OBJECT poly
 name "RFdoor"
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 68
 -3.81663 0.3915 -0.77257
@@ -38479,7 +38479,7 @@ refs 3
 kids 0
 OBJECT poly
 name "RFdoor_0"
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 12
 -3.15771 0.292116 -0.871374
@@ -38526,7 +38526,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Rprop.1"
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 81
 -2.66023 2.24923 -2.85997
@@ -39166,7 +39166,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Rprop.2"
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 81
 -2.66023 0.390938 -3.92634
@@ -39806,7 +39806,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Rprop.3"
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 81
 -2.66023 0.396578 -1.78382
@@ -40446,7 +40446,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rudder"
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 56
 8.24762 3.89442 0
@@ -40943,7 +40943,7 @@ kids 0
 OBJECT poly
 name "SpinnerInteriorL"
 loc -2.6453 1.01489 2.85374
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 34
 -0.0364418 -0.118259 -5.06053
@@ -41097,7 +41097,7 @@ kids 0
 OBJECT poly
 name "SpinnerL"
 loc -2.77577 1.01521 2.85311
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 121
 0.0998716 0.227055 0.0590734
@@ -41974,7 +41974,7 @@ kids 0
 OBJECT poly
 name "SpinnerLRot"
 loc -2.81516 1.0148 2.85384
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 83
 0.130104 -0.128933 -5.52102
@@ -42609,7 +42609,7 @@ kids 0
 OBJECT poly
 name "SpinnerR"
 loc -2.77577 1.01521 -2.85881
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 121
 0.0998716 0.226044 0.0590739
@@ -43486,7 +43486,7 @@ kids 0
 OBJECT poly
 name "SpinnerRRot"
 loc -2.81516 1.0148 2.85384
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 83
 -0.207006 0.0474777 -5.74552
@@ -44154,7 +44154,7 @@ refs 4
 kids 0
 OBJECT poly
 name "wheel.fairing"
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 98
 1.12298 -0.687902 -0.641133
@@ -44884,7 +44884,7 @@ kids 0
 OBJECT poly
 name "SpinnerInteriorR"
 loc -2.6453 1.01489 -2.85893
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 34
 -0.0364418 -0.118259 -5.06053
@@ -45534,7 +45534,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -3.54864 -0.788109 0.961114
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 34
 -0.103044 -0.000156403 0.000599861
@@ -45768,7 +45768,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -3.54864 -0.788109 0.961114
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 240
 0.0857849 -0.00590897 0.0146294
@@ -47584,7 +47584,7 @@ kids 0
 OBJECT poly
 name "fuselage"
 loc 2.22258 1.50882 0.00792027
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 32
 -5.69242 -2.28986 0.948059
@@ -47736,7 +47736,7 @@ kids 0
 OBJECT poly
 name "cylinder"
 loc -3.72826 -0.634675 -0.797187
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 272
 -0.284087 0.160542 0.124434
@@ -49696,7 +49696,7 @@ kids 0
 OBJECT poly
 name "right-tiedown-fasteningpoint"
 loc -0.51741 1.04777 4.83618
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 144
 0 0.0200672 -9.70789
@@ -50743,7 +50743,7 @@ refs 4
 kids 0
 OBJECT poly
 name "fuel.caps"
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 180.000000
 numvert 322
 -2.44842 -0.304857 0.835791
@@ -53043,7 +53043,7 @@ kids 0
 OBJECT poly
 name "LHEngine"
 loc -1.06848 0.889725 0
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 393
 -0.0731926 -0.391479 2.75005
@@ -56024,7 +56024,7 @@ kids 2
 OBJECT poly
 name "fuselage"
 loc 0.00174379 0.00713831 -0.00508481
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 180.000000
 numvert 20
 0.00728345 0.00217161 0.00711119
@@ -56204,7 +56204,7 @@ kids 0
 OBJECT poly
 name "fuselage"
 loc -4.64916e-05 0.0102241 0.00508481
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 180.000000
 numvert 34
 0 -0.00587472 0
@@ -56550,7 +56550,7 @@ kids 0
 OBJECT poly
 name "RFdoor"
 loc -3.93593 0.0411431 0.825988
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 87.000000
 numvert 36
 0.0229352 0.134194 -1.6484
@@ -56869,7 +56869,7 @@ kids 2
 OBJECT poly
 name "fuselage"
 loc 0.00174379 0.00713831 -0.00188363
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 180.000000
 numvert 20
 -0.00030756 -0.00217161 -1.62842
@@ -57049,7 +57049,7 @@ kids 0
 OBJECT poly
 name "fuselage"
 loc -4.64916e-05 0.0102241 0.008286
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 180.000000
 numvert 34
 0.00377989 0.00587472 -1.65217
@@ -57395,7 +57395,7 @@ kids 0
 OBJECT poly
 name "fuselage"
 loc -3.9114 -0.155715 0.818333
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 180.000000
 numvert 20
 0.00728345 0.00217164 -1.63737
@@ -57575,7 +57575,7 @@ kids 0
 OBJECT poly
 name "fuselage"
 loc -3.91319 -0.15263 0.828502
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 180.000000
 numvert 34
 0 -0.00587472 -1.6506
@@ -57921,7 +57921,7 @@ kids 0
 OBJECT poly
 name "RFdoor"
 loc -3.93593 -0.281413 0.825988
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 87.000000
 numvert 36
 0.0987687 0.134194 -1.64517
@@ -58235,7 +58235,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Baggage.door"
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 10
 2.96806 -0.312788 0.657817
@@ -58281,7 +58281,7 @@ kids 0
 OBJECT poly
 name "fuselage"
 loc 2.28562 1.50882 -0.0132546
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 154.000000
 numvert 1537
 4.35698 -1.93187 0.0143894
@@ -70883,7 +70883,7 @@ kids 0
 OBJECT poly
 name "Lrdoor-rear"
 loc 2.58198 -0.231481 0.765471
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 87.000000
 numvert 36
 -0.149963 -0.134194 -0.0617653
@@ -71191,7 +71191,7 @@ kids 0
 OBJECT poly
 name "Lrdoor-rear"
 loc 2.58198 0.567303 0.765471
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 88.000000
 numvert 36
 -0.0229352 -0.134194 0.00282335
@@ -71499,7 +71499,7 @@ kids 0
 OBJECT poly
 name "LFdoor"
 loc -3.93593 0.0411431 0.822787
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 87.000000
 numvert 36
 0.0229352 0.134194 0.00282335
@@ -71807,7 +71807,7 @@ kids 0
 OBJECT poly
 name "LFdoor"
 loc -3.93593 -0.281413 0.822787
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 87.000000
 numvert 36
 0.0987687 0.134194 -0.000407159
@@ -72115,7 +72115,7 @@ kids 0
 OBJECT poly
 name "RRdoor"
 loc 2.28562 1.50882 -0.0132546
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 154.000000
 numvert 22
 -0.45437 -1.25253 -0.806479

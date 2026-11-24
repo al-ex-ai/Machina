@@ -7,7 +7,7 @@ name "divers"
 loc 0 0 -0
 data 6
 divers
-texture "panel.png"
+texture "panel.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 16
@@ -62,7 +62,7 @@ name "panel"
 loc 0 0 -0
 data 5
 panel
-texture "panel.png"
+texture "panel.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 44
@@ -404,7 +404,7 @@ name "visses"
 loc 0 0 -0
 data 6
 visses
-texture "panel.png"
+texture "panel.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 1517

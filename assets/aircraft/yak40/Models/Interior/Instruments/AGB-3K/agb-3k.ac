@@ -4256,7 +4256,7 @@ kids 0
 OBJECT poly
 name "housing"
 loc 0.00170616 -5.7742e-08 -0.00199997
-texture "agb-3k.png"
+texture "agb-3k.webp"
 crease 45.000000
 numvert 1195
 0.00279274 -0.0436931 0.0238035
@@ -17594,7 +17594,7 @@ kids 0
 OBJECT poly
 name "PitchScale"
 loc -0.11734 -0.00850219 -3.49148e-09
-texture "agb-3k.png"
+texture "agb-3k.webp"
 crease 45.000000
 numvert 64
 0.0036723 0.0113602 0.0451039

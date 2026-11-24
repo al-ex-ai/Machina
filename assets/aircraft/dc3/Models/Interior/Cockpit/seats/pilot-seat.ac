@@ -7,7 +7,7 @@ name "acoudoir"
 loc 0 0 -0
 data 8
 acoudoir
-texture "pilot-seat.png"
+texture "pilot-seat.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 20
@@ -160,7 +160,7 @@ name "coussin"
 loc 0 0 -0
 data 7
 coussin
-texture "pilot-seat.png"
+texture "pilot-seat.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 44
@@ -483,7 +483,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "pilot-seat.png"
+texture "pilot-seat.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 46
@@ -884,7 +884,7 @@ name "seatbar"
 loc 0 0 -0
 data 7
 seatbar
-texture "pilot-seat.png"
+texture "pilot-seat.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 142

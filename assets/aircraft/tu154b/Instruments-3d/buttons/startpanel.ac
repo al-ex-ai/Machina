@@ -9,7 +9,7 @@ name "Blender_export__startpanel.ac"
 kids 22
 OBJECT poly
 name "base"
-texture "startpanel1.png"
+texture "startpanel1.webp"
 texrep 1 1
 numvert 4
 0.0003460 -0.0744675 0.0490480
@@ -30,7 +30,7 @@ name "base.001"
 kids 2
 OBJECT poly
 name "base_hs_10"
-texture "sw_base.png"
+texture "sw_base.webp"
 texrep 1 1
 numvert 4
 0.0004430 -0.0179700 0.0061810
@@ -1067,7 +1067,7 @@ name "base.002"
 kids 2
 OBJECT poly
 name "rect.002"
-texture "sw_base.png"
+texture "sw_base.webp"
 texrep 1 1
 numvert 4
 0.0004430 0.0337276 -0.0115900
@@ -2104,7 +2104,7 @@ name "base.003"
 kids 2
 OBJECT poly
 name "rect.001"
-texture "sw_base.png"
+texture "sw_base.webp"
 texrep 1 1
 numvert 4
 0.0004430 0.0205218 0.0345040
@@ -3141,7 +3141,7 @@ name "base.004"
 kids 2
 OBJECT poly
 name "rect"
-texture "sw_base.png"
+texture "sw_base.webp"
 texrep 1 1
 numvert 4
 0.0004430 0.0646225 0.0345040
@@ -4178,7 +4178,7 @@ name "button_1"
 kids 3
 OBJECT poly
 name "b_1"
-texture "knob_1.png"
+texture "knob_1.webp"
 texrep 1 1
 numvert 14
 0.0056300 -0.0606909 0.0259450
@@ -4658,7 +4658,7 @@ refs 3
 kids 0
 OBJECT poly
 name "b_3_1"
-texture "knob_1.png"
+texture "knob_1.webp"
 texrep 1 1
 numvert 34
 0.0024780 -0.0588751 0.0212630
@@ -5006,7 +5006,7 @@ name "button_2"
 kids 3
 OBJECT poly
 name "b_1.001"
-texture "knob_1.png"
+texture "knob_1.webp"
 texrep 1 1
 numvert 14
 0.0008410 -0.0673293 -0.0333000
@@ -5486,7 +5486,7 @@ refs 4
 kids 0
 OBJECT poly
 name "b_3_2"
-texture "knob_1.png"
+texture "knob_1.webp"
 texrep 1 1
 numvert 34
 0.0133920 -0.0606325 -0.0246170
@@ -5834,7 +5834,7 @@ name "cover"
 kids 2
 OBJECT poly
 name "c_1"
-texture "startpanel2.png"
+texture "startpanel2.webp"
 texrep 1 1
 numvert 33
 0.0178010 -0.0665131 0.0358820
@@ -6082,7 +6082,7 @@ refs 4
 kids 0
 OBJECT poly
 name "c_2"
-texture "startpanel2.png"
+texture "startpanel2.webp"
 texrep 1 1
 numvert 33
 0.0005870 -0.0731406 -0.0458520
@@ -11747,7 +11747,7 @@ kids 0
 OBJECT poly
 name "_d_1"
 loc 0.0000000 0.0028800 0.0000000
-texture "green_lamp_off.png"
+texture "green_lamp_off.webp"
 texrep 1 1
 numvert 17
 0.0208680 -0.1005254 0.0390740
@@ -11868,7 +11868,7 @@ kids 0
 OBJECT poly
 name "_d_2"
 loc 0.0000000 0.0028800 0.0000000
-texture "green_lamp_on.png"
+texture "green_lamp_on.webp"
 texrep 1 1
 numvert 17
 0.0209730 -0.1005254 0.0327290

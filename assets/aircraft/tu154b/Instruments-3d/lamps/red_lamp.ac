@@ -706,7 +706,7 @@ OBJECT poly
 name "_d_1"
 data 8
 Mesh.001
-texture "red_lamp_off.png"
+texture "red_lamp_off.webp"
 texrep 1 1
 crease 80.000000
 numvert 17
@@ -829,7 +829,7 @@ OBJECT poly
 name "_d_2"
 data 4
 Mesh
-texture "red_lamp_on.png"
+texture "red_lamp_on.webp"
 texrep 1 1
 crease 80.000000
 numvert 17

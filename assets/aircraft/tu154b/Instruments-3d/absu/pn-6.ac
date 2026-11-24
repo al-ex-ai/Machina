@@ -1792,7 +1792,7 @@ OBJECT poly
 name "cover_up"
 data 8
 Mesh.014
-texture "gray_cover.png"
+texture "gray_cover.webp"
 texrep 1 1
 crease 80.000000
 numvert 4
@@ -2622,7 +2622,7 @@ OBJECT poly
 name "cover_up.001"
 data 8
 Mesh.027
-texture "gray_cover.png"
+texture "gray_cover.webp"
 texrep 1 1
 crease 80.000000
 numvert 4
@@ -2646,7 +2646,7 @@ OBJECT poly
 name "_handle_1"
 data 8
 Mesh.041
-texture "handle_2.png"
+texture "handle_2.webp"
 texrep 1 1
 crease 80.000000
 numvert 34
@@ -2994,7 +2994,7 @@ OBJECT poly
 name "_handle_2"
 data 8
 Mesh.042
-texture "handle_2.png"
+texture "handle_2.webp"
 texrep 1 1
 crease 80.000000
 numvert 20
@@ -3213,7 +3213,7 @@ OBJECT poly
 name "at_wheel"
 data 8
 Mesh.005
-texture "gray_cover.png"
+texture "gray_cover.webp"
 texrep 1 1
 crease 80.000000
 numvert 66
@@ -3897,7 +3897,7 @@ OBJECT poly
 name "base"
 data 4
 Mesh
-texture "base_pn-6.png"
+texture "base_pn-6.webp"
 texrep 1 1
 crease 80.000000
 numvert 4
@@ -6969,7 +6969,7 @@ OBJECT poly
 name "g1"
 data 8
 Mesh.018
-texture "g1.png"
+texture "g1.webp"
 texrep 1 1
 crease 80.000000
 numvert 4
@@ -6990,7 +6990,7 @@ OBJECT poly
 name "g2"
 data 8
 Mesh.017
-texture "g2.png"
+texture "g2.webp"
 texrep 1 1
 crease 80.000000
 numvert 4
@@ -7011,7 +7011,7 @@ OBJECT poly
 name "g3"
 data 8
 Mesh.020
-texture "g3.png"
+texture "g3.webp"
 texrep 1 1
 crease 80.000000
 numvert 4
@@ -11196,7 +11196,7 @@ OBJECT poly
 name "stab"
 data 8
 Mesh.019
-texture "c.png"
+texture "c.webp"
 texrep 1 1
 crease 80.000000
 numvert 4
@@ -11217,7 +11217,7 @@ OBJECT poly
 name "text"
 data 8
 Mesh.001
-texture "text_pn-6.png"
+texture "text_pn-6.webp"
 texrep 1 1
 crease 80.000000
 numvert 4

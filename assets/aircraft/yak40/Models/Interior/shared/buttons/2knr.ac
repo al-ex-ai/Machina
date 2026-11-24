@@ -10,7 +10,7 @@ kids 5
 OBJECT poly
 name "disk"
 loc 0.00619155 0 0
-texture "2knr.png"
+texture "2knr.webp"
 crease 45.000000
 numvert 72
 -4.25139e-05 -0.00516327 0.000896564

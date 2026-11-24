@@ -9,7 +9,7 @@ name "da-30_plane"
 loc -0.000214 -0.000279 0.000236
 data 5
 Plane
-texture "back.png"
+texture "back.webp"
 crease 179.000000
 numvert 50
 7.42395e-05 -0.0117216 -0.00373178
@@ -1667,7 +1667,7 @@ name "da-30_roll-needle"
 loc 0.001747 0 0
 data 4
 kren
-texture "needle.png"
+texture "needle.webp"
 crease 179.000000
 numvert 217
 0.000236721 -0.0182779 0.0010468

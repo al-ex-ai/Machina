@@ -11,7 +11,7 @@ OBJECT poly
 name "b1"
 data 8
 Mesh.003
-texture "handle.png"
+texture "handle.webp"
 texrep 1 1
 crease 80.000000
 numvert 8
@@ -420,7 +420,7 @@ OBJECT poly
 name "b2"
 data 8
 Mesh.005
-texture "handle.png"
+texture "handle.webp"
 texrep 1 1
 crease 80.000000
 numvert 8
@@ -826,7 +826,7 @@ OBJECT poly
 name "base"
 data 4
 Mesh
-texture "base.png"
+texture "base.webp"
 texrep 1 1
 crease 80.000000
 numvert 4
@@ -866,7 +866,7 @@ OBJECT poly
 name "text"
 data 8
 Mesh.001
-texture "text.png"
+texture "text.webp"
 texrep 1 1
 crease 80.000000
 numvert 4

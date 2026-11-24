@@ -7,7 +7,7 @@ name "turnme"
 loc 0.00206348 1.5703e-07 -5.23435e-08
 data 12
 Cylinder.026
-texture "ppb.png"
+texture "ppb.webp"
 crease 30.000000
 numvert 201
 0.0271708 -0.00961146 -0.00961235

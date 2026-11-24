@@ -7,7 +7,7 @@ kids 10
 OBJECT poly
 name "base"
 loc 0.00134722 -0.0012397 -0.000796868
-texture "base_b-8m.png"
+texture "base_b-8m.webp"
 crease 100.000000
 numvert 4
 2.32831e-09 0.0498809 0.0498465
@@ -26,7 +26,7 @@ kids 0
 OBJECT poly
 name "outer"
 loc 0.000345332 -0.00123971 -0.000796865
-texture "text2_b-8m.png"
+texture "text2_b-8m.webp"
 crease 100.000000
 numvert 17
 -1.86265e-09 0 -0.0410851
@@ -147,7 +147,7 @@ kids 0
 OBJECT poly
 name "inner"
 loc 0.000765389 -0.00123971 -0.000796865
-texture "text1_b-8m.png"
+texture "text1_b-8m.webp"
 crease 100.000000
 numvert 17
 0 0 0
@@ -268,7 +268,7 @@ kids 0
 OBJECT poly
 name "text"
 loc 0.00177335 0.0105742 -0.000796868
-texture "text3_b-8m.png"
+texture "text3_b-8m.webp"
 crease 100.000000
 numvert 4
 1.86265e-09 -0.0319413 0.037595

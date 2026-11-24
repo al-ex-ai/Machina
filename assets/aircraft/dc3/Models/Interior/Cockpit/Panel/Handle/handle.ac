@@ -7,7 +7,7 @@ name "ecrousD"
 loc 0 0 -0
 data 7
 ecrousD
-texture "handle.png"
+texture "handle.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 207
@@ -1473,7 +1473,7 @@ name "ecrousG"
 loc 0 0 -0
 data 7
 ecrousG
-texture "handle.png"
+texture "handle.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 207
@@ -2754,7 +2754,7 @@ name "mancheD"
 loc 0 0 -0
 data 7
 mancheD
-texture "handle.png"
+texture "handle.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 694
@@ -7798,7 +7798,7 @@ name "mancheG"
 loc 0 0 -0
 data 7
 mancheG
-texture "handle.png"
+texture "handle.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 697
@@ -12819,7 +12819,7 @@ name "volantDD"
 loc 0 0 -0
 data 8
 volantDD
-texture "handle.png"
+texture "handle.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 530
@@ -16612,7 +16612,7 @@ name "volantDG"
 loc 0 0 -0
 data 8
 volantDG
-texture "handle.png"
+texture "handle.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 470
@@ -19873,7 +19873,7 @@ name "volantGD"
 loc 0 0 -0
 data 8
 volantGD
-texture "handle.png"
+texture "handle.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 470
@@ -23134,7 +23134,7 @@ name "volantGG"
 loc 0 0 -0
 data 8
 volantGG
-texture "handle.png"
+texture "handle.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 536

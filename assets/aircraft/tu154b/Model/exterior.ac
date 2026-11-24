@@ -41,7 +41,7 @@ OBJECT poly
 name "Door_Carg1_1"
 data 4
 Mesh
-texture "mainb_t.png"
+texture "mainb_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 68
@@ -628,7 +628,7 @@ OBJECT poly
 name "rudder"
 data 8
 Mesh.051
-texture "mainb_t.png"
+texture "mainb_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 56
@@ -937,7 +937,7 @@ OBJECT poly
 name "engine1_ME"
 data 8
 Mesh.054
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 14
@@ -1039,7 +1039,7 @@ OBJECT poly
 name "engine0_ME"
 data 8
 Mesh.055
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 14
@@ -1138,7 +1138,7 @@ OBJECT poly
 name "engine0_M0"
 data 8
 Mesh.056
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 14
@@ -1237,7 +1237,7 @@ OBJECT poly
 name "engine0_M1"
 data 8
 Mesh.057
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 12
@@ -1322,7 +1322,7 @@ OBJECT poly
 name "engine0_M2"
 data 8
 Mesh.058
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 12
@@ -1404,7 +1404,7 @@ OBJECT poly
 name "lever_pr10"
 data 8
 Mesh.059
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 6
@@ -1444,7 +1444,7 @@ OBJECT poly
 name "lever_pro0"
 data 8
 Mesh.060
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 6
@@ -1484,7 +1484,7 @@ OBJECT poly
 name "lever_pro1"
 data 8
 Mesh.061
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 6
@@ -1524,7 +1524,7 @@ OBJECT poly
 name "lever_pro2"
 data 8
 Mesh.062
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 8
@@ -1566,7 +1566,7 @@ OBJECT poly
 name "lever_pro3"
 data 8
 Mesh.063
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 6
@@ -1606,7 +1606,7 @@ OBJECT poly
 name "lever_pro4"
 data 8
 Mesh.064
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 8
@@ -1648,7 +1648,7 @@ OBJECT poly
 name "lever_pro5"
 data 8
 Mesh.065
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 6
@@ -1688,7 +1688,7 @@ OBJECT poly
 name "lever_pro6"
 data 8
 Mesh.066
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 6
@@ -1728,7 +1728,7 @@ OBJECT poly
 name "lever_pro7"
 data 8
 Mesh.067
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 6
@@ -1768,7 +1768,7 @@ OBJECT poly
 name "lever_pro8"
 data 8
 Mesh.068
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 6
@@ -1808,7 +1808,7 @@ OBJECT poly
 name "lever_pro9"
 data 8
 Mesh.069
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 8
@@ -1850,7 +1850,7 @@ OBJECT poly
 name "lever_prop"
 data 8
 Mesh.070
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 6
@@ -1896,7 +1896,7 @@ OBJECT poly
 name "engine2_ME"
 data 8
 Mesh.071
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 14
@@ -1995,7 +1995,7 @@ OBJECT poly
 name "engine2_M0"
 data 8
 Mesh.072
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 14
@@ -2094,7 +2094,7 @@ OBJECT poly
 name "engine2_M1"
 data 8
 Mesh.073
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 12
@@ -2179,7 +2179,7 @@ OBJECT poly
 name "engine2_M2"
 data 8
 Mesh.074
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 12
@@ -2261,7 +2261,7 @@ OBJECT poly
 name "lever_pr11"
 data 8
 Mesh.075
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 6
@@ -2301,7 +2301,7 @@ OBJECT poly
 name "lever_pr12"
 data 8
 Mesh.076
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 6
@@ -2341,7 +2341,7 @@ OBJECT poly
 name "lever_pr13"
 data 8
 Mesh.077
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 6
@@ -2381,7 +2381,7 @@ OBJECT poly
 name "lever_pr14"
 data 8
 Mesh.078
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 6
@@ -2421,7 +2421,7 @@ OBJECT poly
 name "lever_pr15"
 data 8
 Mesh.079
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 8
@@ -2463,7 +2463,7 @@ OBJECT poly
 name "lever_pr16"
 data 8
 Mesh.080
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 6
@@ -2503,7 +2503,7 @@ OBJECT poly
 name "lever_pr17"
 data 8
 Mesh.081
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 6
@@ -2543,7 +2543,7 @@ OBJECT poly
 name "lever_pr18"
 data 8
 Mesh.082
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 6
@@ -2583,7 +2583,7 @@ OBJECT poly
 name "lever_pr19"
 data 8
 Mesh.083
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 6
@@ -2623,7 +2623,7 @@ OBJECT poly
 name "lever_pr20"
 data 8
 Mesh.084
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 8
@@ -2665,7 +2665,7 @@ OBJECT poly
 name "lever_pr21"
 data 8
 Mesh.085
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 6
@@ -2705,7 +2705,7 @@ OBJECT poly
 name "lever_pr22"
 data 8
 Mesh.086
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 8
@@ -2750,7 +2750,7 @@ OBJECT poly
 name "engine1_M0"
 data 8
 Mesh.087
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 14
@@ -2849,7 +2849,7 @@ OBJECT poly
 name "engine1_M1"
 data 8
 Mesh.088
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 12
@@ -2934,7 +2934,7 @@ OBJECT poly
 name "engine1_M2"
 data 8
 Mesh.089
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 12
@@ -4656,7 +4656,7 @@ OBJECT poly
 name "c_gear_ME2"
 data 8
 Mesh.046
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 64
@@ -5090,7 +5090,7 @@ OBJECT poly
 name "c_gear_ME3"
 data 8
 Mesh.047
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 88
@@ -5644,7 +5644,7 @@ OBJECT poly
 name "c_gear_ME4"
 data 8
 Mesh.048
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 72
@@ -6146,7 +6146,7 @@ OBJECT poly
 name "c_tire_MES"
 data 8
 Mesh.042
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 440
@@ -9908,7 +9908,7 @@ OBJECT poly
 name "c_gear_MES"
 data 8
 Mesh.043
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 132
@@ -10818,7 +10818,7 @@ OBJECT poly
 name "c_gear_ME0"
 data 8
 Mesh.044
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 72
@@ -11272,7 +11272,7 @@ OBJECT poly
 name "c_gear_ME1"
 data 8
 Mesh.045
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 232
@@ -12810,7 +12810,7 @@ OBJECT poly
 name "c_gear_ME5"
 data 8
 Mesh.049
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 104
@@ -13500,7 +13500,7 @@ OBJECT poly
 name "c_wheel_ME"
 data 8
 Mesh.050
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 189
@@ -14734,7 +14734,7 @@ OBJECT poly
 name "lever_sti2"
 data 8
 Mesh.034
-texture "maina_t.png"
+texture "maina_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 191
@@ -16372,7 +16372,7 @@ OBJECT poly
 name "lever_sti0"
 data 8
 Mesh.033
-texture "maina_t.png"
+texture "maina_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 191
@@ -18007,7 +18007,7 @@ OBJECT poly
 name "lever_sti3"
 data 8
 Mesh.035
-texture "maina_t.png"
+texture "maina_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 37
@@ -18378,7 +18378,7 @@ OBJECT poly
 name "lever_sti4"
 data 8
 Mesh.036
-texture "maina_t.png"
+texture "maina_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 37
@@ -18749,7 +18749,7 @@ OBJECT poly
 name "MESH178"
 data 8
 Mesh.031
-texture "maina_t.png"
+texture "maina_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 88
@@ -19243,7 +19243,7 @@ OBJECT poly
 name "MESH17external"
 data 8
 Mesh.030
-texture "maina_t.png"
+texture "maina_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 820
@@ -23553,7 +23553,7 @@ OBJECT poly
 name "MESH18"
 data 8
 Mesh.032
-texture "mainb_t.png"
+texture "mainb_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 2030
@@ -35253,7 +35253,7 @@ OBJECT poly
 name "crew"
 data 8
 Mesh.029
-texture "pilots.png"
+texture "pilots.webp"
 texrep 1 1
 crease 80.000000
 numvert 1588
@@ -51533,7 +51533,7 @@ OBJECT poly
 name "l_gear_ME9"
 data 8
 Mesh.121
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 92
@@ -52151,7 +52151,7 @@ OBJECT poly
 name "l_gear_M10"
 data 8
 Mesh.122
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 204
@@ -53505,7 +53505,7 @@ OBJECT poly
 name "l_gear_M11"
 data 8
 Mesh.123
-texture "wingl_t.png"
+texture "wingl_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 99
@@ -54319,7 +54319,7 @@ OBJECT poly
 name "l_tire_MES"
 data 8
 Mesh.108
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 440
@@ -58084,7 +58084,7 @@ OBJECT poly
 name "l_tire_ME0"
 data 8
 Mesh.109
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 440
@@ -61849,7 +61849,7 @@ OBJECT poly
 name "l_tire_ME1"
 data 8
 Mesh.110
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 440
@@ -65614,7 +65614,7 @@ OBJECT poly
 name "l_gear_MES"
 data 8
 Mesh.107
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 72
@@ -66068,7 +66068,7 @@ OBJECT poly
 name "l_gear_ME0"
 data 8
 Mesh.111
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 80
@@ -66557,7 +66557,7 @@ OBJECT poly
 name "l_gear_ME1"
 data 8
 Mesh.112
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 210
@@ -67905,7 +67905,7 @@ OBJECT poly
 name "l_gear_ME2"
 data 8
 Mesh.113
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 256
@@ -69443,7 +69443,7 @@ OBJECT poly
 name "l_gear_ME3"
 data 8
 Mesh.114
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 112
@@ -70141,7 +70141,7 @@ OBJECT poly
 name "MESH138"
 data 8
 Mesh.115
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 360
@@ -72446,7 +72446,7 @@ OBJECT poly
 name "l_gear_ME4"
 data 8
 Mesh.116
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 48
@@ -72771,7 +72771,7 @@ OBJECT poly
 name "l_gear_ME5"
 data 8
 Mesh.117
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 32
@@ -72957,7 +72957,7 @@ OBJECT poly
 name "l_gear_ME6"
 data 8
 Mesh.118
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 112
@@ -73655,7 +73655,7 @@ OBJECT poly
 name "l_gear_ME7"
 data 8
 Mesh.119
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 48
@@ -73977,7 +73977,7 @@ OBJECT poly
 name "l_gear_ME8"
 data 8
 Mesh.120
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 184
@@ -75206,7 +75206,7 @@ OBJECT poly
 name "l_pct_lea2"
 data 8
 Mesh.125
-texture "wingl_t.png"
+texture "wingl_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 135
@@ -75918,7 +75918,7 @@ OBJECT poly
 name "l_pct_lea0"
 data 8
 Mesh.124
-texture "wingl_t.png"
+texture "wingl_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 144
@@ -76702,7 +76702,7 @@ OBJECT poly
 name "l_pct_tra3"
 data 8
 Mesh.126
-texture "wingl_t.png"
+texture "wingl_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 140
@@ -77740,7 +77740,7 @@ OBJECT poly
 name "l_pct_tra4"
 data 8
 Mesh.127
-texture "wingl_t.png"
+texture "wingl_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 372
@@ -79757,7 +79757,7 @@ OBJECT poly
 name "l_pct_tra6"
 data 8
 Mesh.128
-texture "wingl_t.png"
+texture "wingl_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 134
@@ -80483,7 +80483,7 @@ OBJECT poly
 name "l_pct_tr10"
 data 8
 Mesh.129
-texture "wingl_t.png"
+texture "wingl_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 8
@@ -80549,7 +80549,7 @@ OBJECT poly
 name "l_pct_tr11"
 data 8
 Mesh.130
-texture "wingl_t.png"
+texture "wingl_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 8
@@ -80615,7 +80615,7 @@ OBJECT poly
 name "l_pct_tra9"
 data 8
 Mesh.131
-texture "wingl_t.png"
+texture "wingl_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 218
@@ -82397,7 +82397,7 @@ OBJECT poly
 name "l_pct_tr12"
 data 8
 Mesh.132
-texture "wingl_t.png"
+texture "wingl_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 518
@@ -85898,7 +85898,7 @@ OBJECT poly
 name "elevator_left"
 data 8
 Mesh.052
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 53
@@ -86267,7 +86267,7 @@ OBJECT poly
 name "elevator_right"
 data 8
 Mesh.053
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 51
@@ -86643,7 +86643,7 @@ OBJECT poly
 name "r_tire_MES"
 data 8
 Mesh.151
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 440
@@ -90408,7 +90408,7 @@ OBJECT poly
 name "r_tire_ME0"
 data 8
 Mesh.152
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 440
@@ -94173,7 +94173,7 @@ OBJECT poly
 name "r_tire_ME1"
 data 8
 Mesh.153
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 440
@@ -97938,7 +97938,7 @@ OBJECT poly
 name "r_gear_ME2"
 data 8
 Mesh.154
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 72
@@ -98392,7 +98392,7 @@ OBJECT poly
 name "r_gear_ME3"
 data 8
 Mesh.155
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 80
@@ -98881,7 +98881,7 @@ OBJECT poly
 name "r_gear_ME4"
 data 8
 Mesh.156
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 210
@@ -100229,7 +100229,7 @@ OBJECT poly
 name "r_gear_ME5"
 data 8
 Mesh.157
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 256
@@ -101767,7 +101767,7 @@ OBJECT poly
 name "r_gear_ME6"
 data 8
 Mesh.158
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 112
@@ -102465,7 +102465,7 @@ OBJECT poly
 name "MESH98"
 data 8
 Mesh.159
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 360
@@ -104770,7 +104770,7 @@ OBJECT poly
 name "r_gear_ME7"
 data 8
 Mesh.160
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 32
@@ -104959,7 +104959,7 @@ OBJECT poly
 name "r_gear_ME8"
 data 8
 Mesh.161
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 48
@@ -105281,7 +105281,7 @@ OBJECT poly
 name "r_gear_M10"
 data 8
 Mesh.162
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 48
@@ -105603,7 +105603,7 @@ OBJECT poly
 name "r_gear_M11"
 data 8
 Mesh.163
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 112
@@ -106301,7 +106301,7 @@ OBJECT poly
 name "r_gear_ME9"
 data 8
 Mesh.164
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 184
@@ -107533,7 +107533,7 @@ OBJECT poly
 name "r_gear_MES"
 data 8
 Mesh.148
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 92
@@ -108151,7 +108151,7 @@ OBJECT poly
 name "r_gear_ME0"
 data 8
 Mesh.149
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 204
@@ -109505,7 +109505,7 @@ OBJECT poly
 name "r_gear_ME1"
 data 8
 Mesh.150
-texture "wingr_t.png"
+texture "wingr_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 99
@@ -110307,7 +110307,7 @@ OBJECT poly
 name "r_pct_lea2"
 data 8
 Mesh.173
-texture "wingr_t.png"
+texture "wingr_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 144
@@ -111088,7 +111088,7 @@ OBJECT poly
 name "r_pct_lea0"
 data 8
 Mesh.172
-texture "wingr_t.png"
+texture "wingr_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 135
@@ -111803,7 +111803,7 @@ OBJECT poly
 name "l_pct_tra0"
 data 8
 Mesh.167
-texture "wingr_t.png"
+texture "wingr_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 8
@@ -111869,7 +111869,7 @@ OBJECT poly
 name "r_pct_tra5"
 data 8
 Mesh.168
-texture "wingr_t.png"
+texture "wingr_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 8
@@ -111935,7 +111935,7 @@ OBJECT poly
 name "r_pct_tra6"
 data 8
 Mesh.169
-texture "wingr_t.png"
+texture "wingr_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 218
@@ -113717,7 +113717,7 @@ OBJECT poly
 name "r_pct_tra7"
 data 8
 Mesh.170
-texture "wingr_t.png"
+texture "wingr_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 518
@@ -117212,7 +117212,7 @@ OBJECT poly
 name "r_pct_tra9"
 data 8
 Mesh.171
-texture "wingr_t.png"
+texture "wingr_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 134
@@ -117938,7 +117938,7 @@ OBJECT poly
 name "r_pct_tra1"
 data 8
 Mesh.165
-texture "wingr_t.png"
+texture "wingr_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 140
@@ -118976,7 +118976,7 @@ OBJECT poly
 name "r_pct_tra2"
 data 8
 Mesh.166
-texture "wingr_t.png"
+texture "wingr_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 372
@@ -120990,7 +120990,7 @@ OBJECT poly
 name "Door_Carg0"
 data 8
 Mesh.090
-texture "mainb_t.png"
+texture "mainb_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 79
@@ -121451,7 +121451,7 @@ OBJECT poly
 name "Door_Cargo"
 data 8
 Mesh.092
-texture "maina_t.png"
+texture "maina_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 48
@@ -121773,7 +121773,7 @@ OBJECT poly
 name "Door_Passe"
 data 8
 Mesh.093
-texture "maina_t.png"
+texture "maina_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 78
@@ -122317,7 +122317,7 @@ OBJECT poly
 name "MESH134"
 data 8
 Mesh.094
-texture "maina_t.png"
+texture "maina_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 127
@@ -123036,7 +123036,7 @@ OBJECT poly
 name "MESH135"
 data 8
 Mesh.095
-texture "wingl_t.png"
+texture "wingl_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 2054
@@ -139662,7 +139662,7 @@ OBJECT poly
 name "MESH23external"
 data 8
 Mesh.039
-texture "maina_t.png"
+texture "maina_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 1567
@@ -152249,7 +152249,7 @@ OBJECT poly
 name "MESH24"
 data 8
 Mesh.038
-texture "mainb_t.png"
+texture "mainb_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 1648
@@ -167371,7 +167371,7 @@ OBJECT poly
 name "MESH25external"
 data 8
 Mesh.037
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 1907
@@ -182488,7 +182488,7 @@ OBJECT poly
 name "MESH90"
 data 8
 Mesh.096
-texture "maina_t.png"
+texture "maina_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 127
@@ -183207,7 +183207,7 @@ OBJECT poly
 name "MESH91"
 data 8
 Mesh.097
-texture "wingr_t.png"
+texture "wingr_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 2054
@@ -199833,7 +199833,7 @@ OBJECT poly
 name "ailer_interc_left"
 data 8
 Mesh.146
-texture "wingl_t.png"
+texture "wingl_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 150
@@ -200545,7 +200545,7 @@ OBJECT poly
 name "ailer_interc_right"
 data 8
 Mesh.175
-texture "wingr_t.png"
+texture "wingr_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 150
@@ -201257,7 +201257,7 @@ OBJECT poly
 name "aileron_left"
 data 8
 Mesh.145
-texture "wingl_t.png"
+texture "wingl_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 233
@@ -202928,7 +202928,7 @@ OBJECT poly
 name "aileron_right"
 data 8
 Mesh.174
-texture "wingr_t.png"
+texture "wingr_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 236
@@ -204602,7 +204602,7 @@ OBJECT poly
 name "ano_rear"
 data 8
 Cylinder
-texture "mainb_t.png"
+texture "mainb_t.webp"
 texrep 1 1
 crease 30.000000
 numvert 66
@@ -205286,7 +205286,7 @@ OBJECT poly
 name "c_gear_M11"
 data 8
 Mesh.098
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 657
@@ -209889,7 +209889,7 @@ OBJECT poly
 name "c_gear_ME6"
 data 8
 Mesh.099
-texture "maina_t.png"
+texture "maina_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 34
@@ -210071,7 +210071,7 @@ OBJECT poly
 name "c_gear_ME7"
 data 8
 Mesh.100
-texture "maina_t.png"
+texture "maina_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 34
@@ -210253,7 +210253,7 @@ OBJECT poly
 name "c_gear_ME8"
 data 8
 Mesh.101
-texture "maina_t.png"
+texture "maina_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 34
@@ -210435,7 +210435,7 @@ OBJECT poly
 name "c_gear_ME9"
 data 8
 Mesh.102
-texture "maina_t.png"
+texture "maina_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 34
@@ -210617,7 +210617,7 @@ OBJECT poly
 name "interceptor_left"
 data 8
 Mesh.147
-texture "wingl_t.png"
+texture "wingl_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 36
@@ -210783,7 +210783,7 @@ OBJECT poly
 name "interceptor_right"
 data 8
 Mesh.188
-texture "wingr_t.png"
+texture "wingr_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 36
@@ -210949,7 +210949,7 @@ OBJECT poly
 name "l_gear_M12"
 data 8
 Mesh.133
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 460
@@ -214023,7 +214023,7 @@ OBJECT poly
 name "l_gear_M13"
 data 8
 Mesh.134
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 476
@@ -217533,7 +217533,7 @@ OBJECT poly
 name "l_gear_M14"
 data 8
 Mesh.135
-texture "wingl_t.png"
+texture "wingl_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 28
@@ -217667,7 +217667,7 @@ OBJECT poly
 name "l_gear_M15"
 data 8
 Mesh.136
-texture "wingl_t.png"
+texture "wingl_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 64
@@ -218101,7 +218101,7 @@ OBJECT poly
 name "l_gear_M16"
 data 8
 Mesh.137
-texture "wingl_t.png"
+texture "wingl_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 28
@@ -218235,7 +218235,7 @@ OBJECT poly
 name "l_gear_M17"
 data 8
 Mesh.138
-texture "wingl_t.png"
+texture "wingl_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 64
@@ -218669,7 +218669,7 @@ OBJECT poly
 name "l_pct_lea3"
 data 8
 Mesh.139
-texture "wingl_t.png"
+texture "wingl_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 136
@@ -219403,7 +219403,7 @@ OBJECT poly
 name "l_pct_tr13"
 data 8
 Mesh.140
-texture "wingl_t.png"
+texture "wingl_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 136
@@ -220197,7 +220197,7 @@ OBJECT poly
 name "l_pct_tr14"
 data 8
 Mesh.141
-texture "wingl_t.png"
+texture "wingl_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 24
@@ -220291,7 +220291,7 @@ OBJECT poly
 name "l_pct_tr15"
 data 8
 Mesh.142
-texture "wingl_t.png"
+texture "wingl_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 20
@@ -220369,7 +220369,7 @@ OBJECT poly
 name "l_pct_tr16"
 data 8
 Mesh.103
-texture "mainb_t.png"
+texture "mainb_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 104
@@ -221395,7 +221395,7 @@ OBJECT poly
 name "l_spoiler0"
 data 8
 Mesh.143
-texture "wingl_t.png"
+texture "wingl_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 148
@@ -222105,7 +222105,7 @@ OBJECT poly
 name "l_spoiler_"
 data 8
 Mesh.144
-texture "wingl_t.png"
+texture "wingl_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 148
@@ -222815,7 +222815,7 @@ OBJECT poly
 name "lever_cow0"
 data 8
 Mesh.105
-texture "mainb_t.png"
+texture "mainb_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 24
@@ -222921,7 +222921,7 @@ OBJECT poly
 name "lever_cowl"
 data 8
 Mesh.106
-texture "mainb_t.png"
+texture "mainb_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 24
@@ -223027,7 +223027,7 @@ OBJECT poly
 name "r_gear_M12"
 data 8
 Mesh.176
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 476
@@ -226537,7 +226537,7 @@ OBJECT poly
 name "r_gear_M13"
 data 8
 Mesh.177
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 460
@@ -229611,7 +229611,7 @@ OBJECT poly
 name "r_gear_M14"
 data 8
 Mesh.178
-texture "wingr_t.png"
+texture "wingr_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 64
@@ -230045,7 +230045,7 @@ OBJECT poly
 name "r_gear_M15"
 data 8
 Mesh.179
-texture "wingr_t.png"
+texture "wingr_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 64
@@ -230479,7 +230479,7 @@ OBJECT poly
 name "r_gear_M16"
 data 8
 Mesh.180
-texture "wingr_t.png"
+texture "wingr_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 28
@@ -230613,7 +230613,7 @@ OBJECT poly
 name "r_gear_M17"
 data 8
 Mesh.181
-texture "wingr_t.png"
+texture "wingr_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 28
@@ -230747,7 +230747,7 @@ OBJECT poly
 name "r_pct_lea3"
 data 8
 Mesh.182
-texture "wingr_t.png"
+texture "wingr_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 136
@@ -231481,7 +231481,7 @@ OBJECT poly
 name "r_pct_tr10"
 data 8
 Mesh.183
-texture "wingr_t.png"
+texture "wingr_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 136
@@ -232275,7 +232275,7 @@ OBJECT poly
 name "r_pct_tr11"
 data 8
 Mesh.184
-texture "wingr_t.png"
+texture "wingr_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 24
@@ -232369,7 +232369,7 @@ OBJECT poly
 name "r_pct_tr12"
 data 8
 Mesh.185
-texture "wingr_t.png"
+texture "wingr_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 20
@@ -232447,7 +232447,7 @@ OBJECT poly
 name "r_spoiler0"
 data 8
 Mesh.186
-texture "wingr_t.png"
+texture "wingr_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 148
@@ -233157,7 +233157,7 @@ OBJECT poly
 name "r_spoiler_"
 data 8
 Mesh.187
-texture "wingr_t.png"
+texture "wingr_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 148
@@ -237940,7 +237940,7 @@ OBJECT poly
 name "stabilizer"
 data 8
 Mesh.104
-texture "var_t.png"
+texture "var_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 172
@@ -239205,7 +239205,7 @@ OBJECT poly
 name "l_f_win"
 data 8
 Mesh.196
-texture "night_win.png"
+texture "night_win.webp"
 texrep 1 1
 crease 80.000000
 numvert 4
@@ -239226,7 +239226,7 @@ OBJECT poly
 name "l_r_win"
 data 8
 Mesh.195
-texture "night_win.png"
+texture "night_win.webp"
 texrep 1 1
 crease 80.000000
 numvert 4
@@ -239247,7 +239247,7 @@ OBJECT poly
 name "r_f_win"
 data 8
 Mesh.193
-texture "night_win.png"
+texture "night_win.webp"
 texrep 1 1
 crease 80.000000
 numvert 4
@@ -239268,7 +239268,7 @@ OBJECT poly
 name "r_r_win"
 data 8
 Mesh.194
-texture "night_win.png"
+texture "night_win.webp"
 texrep 1 1
 crease 80.000000
 numvert 4
@@ -239289,7 +239289,7 @@ OBJECT poly
 name "c_gear_M10"
 data 8
 Mesh.013
-texture "maina_t.png"
+texture "maina_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 216
@@ -240847,7 +240847,7 @@ OBJECT poly
 name "visor_MES0"
 data 8
 Mesh.011
-texture "maina_t.png"
+texture "maina_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 135
@@ -241640,7 +241640,7 @@ OBJECT poly
 name "visor_MES1"
 data 8
 Mesh.009
-texture "maina_t.png"
+texture "maina_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 135
@@ -242433,7 +242433,7 @@ OBJECT poly
 name "visor_MES2"
 data 8
 Mesh.010
-texture "maina_t.png"
+texture "maina_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 135
@@ -243226,7 +243226,7 @@ OBJECT poly
 name "visor_MESH"
 data 8
 Mesh.012
-texture "maina_t.png"
+texture "maina_t.webp"
 texrep 1 1
 crease 80.000000
 numvert 135
@@ -244019,7 +244019,7 @@ OBJECT poly
 name "w_nav_light_halo"
 data 8
 Mesh.197
-texture "white_halo.png"
+texture "white_halo.webp"
 texrep 1 1
 crease 80.000000
 numvert 4

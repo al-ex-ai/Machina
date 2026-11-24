@@ -2209,7 +2209,7 @@ kids 0
 OBJECT poly
 name "rect"
 loc 0.000233199 0.000203299 -3.94136e-06
-texture "sw_base.png"
+texture "sw_base.webp"
 crease 100.000000
 numvert 4
 9.31323e-10 -0.00993137 0.0100317
@@ -3249,7 +3249,7 @@ kids 0
 OBJECT poly
 name "rect"
 loc 0.000233199 0.000203299 -3.94136e-06
-texture "sw_base.png"
+texture "sw_base.webp"
 crease 100.000000
 numvert 4
 0 0.00993137 0.0100317
@@ -6651,7 +6651,7 @@ kids 0
 OBJECT poly
 name "rect"
 loc 0.000233199 0.000203299 -3.94136e-06
-texture "sw_base.png"
+texture "sw_base.webp"
 crease 100.000000
 numvert 4
 0 -0.00993137 0.0100317
@@ -6670,7 +6670,7 @@ kids 0
 OBJECT poly
 name "base_4"
 loc 0.000104609 -0.00385829 0.000639552
-texture "bano.png"
+texture "bano.webp"
 crease 100.000000
 numvert 4
 0 -0.0436977 0.0853744

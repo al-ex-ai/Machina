@@ -130,7 +130,7 @@ OBJECT poly
 name "back"
 data 5
 Plane
-texture "tst-2.png"
+texture "tst-2.webp"
 crease 30.000000
 numvert 4
 0.00249503 -0.0312458 -0.0315697
@@ -150,7 +150,7 @@ OBJECT poly
 name "bezel"
 data 4
 Mesh
-texture "tst-2a.png"
+texture "tst-2a.webp"
 crease 30.000000
 numvert 96
 0.005333 0.0261704 -0.0148893

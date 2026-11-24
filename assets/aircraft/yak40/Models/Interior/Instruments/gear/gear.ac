@@ -6,7 +6,7 @@ OBJECT poly
 name "back"
 data 9
 Plane.070
-texture "gear.png"
+texture "gear.webp"
 crease 30.000000
 numvert 122
 0.003564 0.01701 -0.039104
@@ -1033,7 +1033,7 @@ OBJECT poly
 name "g_l"
 data 9
 Plane.001
-texture "gear.png"
+texture "gear.webp"
 crease 30.000000
 numvert 4
 0.003077 -0.008016 0.026456
@@ -1053,7 +1053,7 @@ OBJECT poly
 name "g_n"
 data 9
 Plane.002
-texture "gear.png"
+texture "gear.webp"
 crease 30.000000
 numvert 4
 0.003491 -0.001963 0.007641
@@ -1079,7 +1079,7 @@ OBJECT poly
 name "g_r"
 data 9
 Plane.003
-texture "gear.png"
+texture "gear.webp"
 crease 30.000000
 numvert 4
 0.003077 -0.008016 -0.006689
@@ -1100,7 +1100,7 @@ name "knob"
 loc 0.0021969 0 0
 data 6
 Sphere
-texture "gear.png"
+texture "gear.webp"
 crease 30.000000
 numvert 49
 0.0107104 -0.006255 -0.032825
@@ -1478,7 +1478,7 @@ OBJECT poly
 name "r_l"
 data 9
 Plane.006
-texture "gear.png"
+texture "gear.webp"
 crease 30.000000
 numvert 4
 0.003534 0.004537 0.026648
@@ -1498,7 +1498,7 @@ OBJECT poly
 name "r_n"
 data 9
 Plane.005
-texture "gear.png"
+texture "gear.webp"
 crease 30.000000
 numvert 4
 0.003534 0.006591 0.011259
@@ -1518,7 +1518,7 @@ OBJECT poly
 name "r_r"
 data 9
 Plane.004
-texture "gear.png"
+texture "gear.webp"
 crease 30.000000
 numvert 4
 0.003534 0.001305 -0.001885

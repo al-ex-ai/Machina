@@ -1777,7 +1777,7 @@ kids 0
 OBJECT poly
 name "rect"
 loc -0.00666917 0.00442803 -0.000166297
-texture "ark-9.png"
+texture "ark-9.webp"
 crease 45.000000
 numvert 4
 0.00337407 -0.055611 -0.0374215
@@ -1796,7 +1796,7 @@ kids 0
 OBJECT poly
 name "mainFreqOuterHandle"
 loc 0.0129086 -0.0314279 -0.067008
-texture "ark-9.png"
+texture "ark-9.webp"
 crease 45.000000
 numvert 288
 -0.0153981 -0.00385401 0.0288123
@@ -4012,7 +4012,7 @@ kids 0
 OBJECT poly
 name "mainFreqInnerScale"
 loc 0.00684016 -0.0314279 -0.0670078
-texture "ark-9.png"
+texture "ark-9.webp"
 crease 45.000000
 numvert 121
 0.00391441 1.49012e-08 2.23517e-08
@@ -6185,7 +6185,7 @@ kids 0
 OBJECT poly
 name "disk"
 loc 0.0104746 -0.0314409 -0.066841
-texture "ark-9.png"
+texture "ark-9.webp"
 crease 45.000000
 numvert 268
 0.00149803 -0.00244717 -0.00753053
@@ -13358,7 +13358,7 @@ kids 0
 OBJECT poly
 name "disk"
 loc 0.0104746 -0.0314409 0.027492
-texture "ark-9.png"
+texture "ark-9.webp"
 crease 45.000000
 numvert 268
 0.00084882 0.00276479 0.023935
@@ -23797,7 +23797,7 @@ kids 0
 OBJECT poly
 name "rsrvFreqInnerScale"
 loc 0.00684016 -0.0314279 0.0273252
-texture "ark-9.png"
+texture "ark-9.webp"
 crease 45.000000
 numvert 121
 -0.00391441 -0.011684 0.011684
@@ -24726,7 +24726,7 @@ kids 0
 OBJECT poly
 name "rect"
 loc -0.00666917 0.00442803 -0.000166297
-texture "ark-9.png"
+texture "ark-9.webp"
 crease 45.000000
 numvert 39
 -2.79397e-09 0.0306417 0.00734294
@@ -24844,7 +24844,7 @@ kids 0
 OBJECT poly
 name "rsrvFreqOuterHandle"
 loc 0.0129086 -0.0314279 0.027325
-texture "ark-9.png"
+texture "ark-9.webp"
 crease 45.000000
 numvert 288
 -0.0150698 -0.0100758 0.0131311

@@ -7,7 +7,7 @@ name "accoudoirs"
 loc 0 0 -0
 data 10
 accoudoirs
-texture "seat.png"
+texture "seat.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 88
@@ -660,7 +660,7 @@ name "reposetete"
 loc 0 0 -0
 data 10
 reposetete
-texture "seat.png"
+texture "seat.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 35
@@ -874,7 +874,7 @@ name "siege"
 loc 0 0 -0
 data 5
 siege
-texture "seat.png"
+texture "seat.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 185
@@ -2362,7 +2362,7 @@ name "tablette"
 loc 0 0 -0
 data 8
 tablette
-texture "seat.png"
+texture "seat.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8

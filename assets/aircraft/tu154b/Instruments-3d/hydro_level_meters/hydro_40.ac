@@ -632,7 +632,7 @@ kids 0
 OBJECT poly
 name "base"
 loc 0.000546622 -1.67639e-09 4.39011e-10
-texture "base_40.png"
+texture "base_40.webp"
 crease 100.000000
 numvert 17
 5.82077e-09 0 -0.0364336

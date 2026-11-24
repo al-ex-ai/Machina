@@ -70,7 +70,7 @@ name "FrtWheel"
 loc -5.00008 -0.00153983 -0.00323081
 data 8
 FrtWheel
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 60.000004
 numvert 662
 0.53172 -1.27531 -0.098756
@@ -4342,7 +4342,7 @@ name "FrtStrut"
 loc -9.429 -1.00925 0.0575972
 data 8
 FrtStrut
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 30.000002
 numvert 510
 4.95816 -0.0446346 0.093679
@@ -7383,7 +7383,7 @@ OBJECT poly
 name "LHstrut"
 data 7
 LHstrut
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 96
 0.334351 -0.804014 0.927466
@@ -7992,7 +7992,7 @@ OBJECT poly
 name "Lwheel"
 data 6
 Lwheel
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 1314
 -0.337292 -1.49617 1.95889
@@ -18051,7 +18051,7 @@ OBJECT poly
 name "RHstrut"
 data 7
 RHstrut
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 96
 0.334351 -0.804014 -0.927466
@@ -18660,7 +18660,7 @@ OBJECT poly
 name "Rwheel"
 data 6
 Rwheel
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 45.000000
 numvert 1314
 -0.337292 -1.49617 -1.95889
@@ -28720,7 +28720,7 @@ name "frt.d1"
 loc -5 0 0
 data 6
 frt.d1
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 30.000002
 numvert 64
 0.52736 -1.02149 -0.030511
@@ -29295,7 +29295,7 @@ name "frt.d2"
 loc -5 0 0
 data 6
 frt.d2
-texture "paint2-R.png"
+texture "paint2-R.webp"
 crease 30.000002
 numvert 64
 0.58667 -0.721522 -0.042814
@@ -39645,7 +39645,7 @@ name "taxilight.flare"
 loc -5 0 0
 data 15
 taxilight.flare
-texture "transparent.png"
+texture "transparent.webp"
 crease 30.000002
 numvert 4
 0.49622 -0.735278 -0.0787392

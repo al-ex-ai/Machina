@@ -8,7 +8,7 @@ kids 14
 OBJECT poly
 name "n_needle"
 loc 0.00304717 2.14204e-08 -0.0139685
-texture "needle.png"
+texture "needle.webp"
 crease 100.000000
 numvert 4
 -1.55997e-08 -0.00352415 0.0163483
@@ -27,7 +27,7 @@ kids 0
 OBJECT poly
 name "a_txt"
 loc 0.00143129 0 0.0212057
-texture "a_text.png"
+texture "a_text.webp"
 crease 100.000000
 numvert 4
 -6.17001e-09 -0.04 0.0197552
@@ -653,7 +653,7 @@ kids 0
 OBJECT poly
 name "n_txt"
 loc 0.00268838 0 -0.0204828
-texture "n_text.png"
+texture "n_text.webp"
 crease 100.000000
 numvert 4
 -5.82077e-09 0.04 0.0197552
@@ -672,7 +672,7 @@ kids 0
 OBJECT poly
 name "base"
 loc 0.000894417 -0.00145765 -7.37506e-05
-texture "face.png"
+texture "face.webp"
 crease 100.000000
 numvert 4
 1.86265e-09 -0.0395229 0.0407503
@@ -691,7 +691,7 @@ kids 0
 OBJECT poly
 name "n_blank"
 loc 0.00232959 0 -0.0204828
-texture "face.png"
+texture "face.webp"
 crease 100.000000
 numvert 4
 -6.51926e-09 -0.04 0.0197552
@@ -710,7 +710,7 @@ kids 0
 OBJECT poly
 name "sector"
 loc 0.0015203 0.00466262 -0.0142858
-texture "a_limit.png"
+texture "a_limit.webp"
 crease 100.000000
 numvert 4
 9.31323e-10 -0.0316652 0.0232067
@@ -729,7 +729,7 @@ kids 0
 OBJECT poly
 name "center"
 loc 0.00340596 7.27596e-10 0.000156475
-texture "face.png"
+texture "face.webp"
 crease 100.000000
 numvert 17
 -2.32831e-10 0 -0.00610615
@@ -850,7 +850,7 @@ kids 0
 OBJECT poly
 name "a_needle"
 loc 0.00235114 -0.014125 0.000156456
-texture "needle.png"
+texture "needle.webp"
 crease 100.000000
 numvert 4
 -1.6531e-08 0.0164629 -0.00349963
@@ -907,7 +907,7 @@ kids 0
 OBJECT poly
 name "corner"
 loc 0.000894418 -0.0213861 0.0212756
-texture "corner.png"
+texture "corner.webp"
 crease 100.000000
 numvert 4
 9.31323e-10 -0.0198384 0.0200746
@@ -926,7 +926,7 @@ kids 0
 OBJECT poly
 name "lamp"
 loc 0.00139802 -0.0343047 0.0338337
-texture "lamp.png"
+texture "lamp.webp"
 crease 100.000000
 numvert 4
 2.32831e-10 -0.0055026 0.00574097

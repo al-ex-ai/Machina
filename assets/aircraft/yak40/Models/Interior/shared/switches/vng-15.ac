@@ -46,7 +46,7 @@ kids 0
 OBJECT poly
 name "box"
 loc -0.0106257 3.1665e-08 0
-texture "vng-15.png"
+texture "vng-15.webp"
 crease 45.000000
 numvert 128
 0.0126284 -0.00337465 0.00130155
@@ -1262,7 +1262,7 @@ kids 0
 OBJECT poly
 name "lever"
 loc -0.000263863 3.1665e-08 -1.34359e-17
-texture "vng-15.png"
+texture "vng-15.webp"
 crease 45.000000
 numvert 145
 0.0200268 0 0

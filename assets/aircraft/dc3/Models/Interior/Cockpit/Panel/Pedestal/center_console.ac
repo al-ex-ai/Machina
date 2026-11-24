@@ -7,7 +7,7 @@ name "Ail_trim_needle"
 loc 0 0 -0
 data 15
 Ail_trim_needle
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 33
@@ -259,7 +259,7 @@ name "Aileron_trim"
 loc 0 0.062705 0.036882
 data 12
 Aileron_trim
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 409
@@ -3366,7 +3366,7 @@ name "Grad_mixt"
 loc 0 0 -0
 data 9
 Grad_mixt
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 64
@@ -3756,7 +3756,7 @@ name "Mixt_D"
 loc 0 0 -0
 data 6
 Mixt_D
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 140
@@ -4924,7 +4924,7 @@ name "Mixt_G"
 loc 0 0 -0
 data 6
 Mixt_G
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 141
@@ -6100,7 +6100,7 @@ name "Prop_D"
 loc 0 0 -0
 data 6
 Prop_D
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 181
@@ -7621,7 +7621,7 @@ name "Prop_G"
 loc 0 0 -0
 data 6
 Prop_G
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 179
@@ -9131,7 +9131,7 @@ name "Rud_trim_needle"
 loc 0 0 -0
 data 15
 Rud_trim_needle
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 33
@@ -9383,7 +9383,7 @@ name "Rudder_trim"
 loc 0 0 -0
 data 11
 Rudder_trim
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 409
@@ -12490,7 +12490,7 @@ name "Throt_D"
 loc 0 0 -0
 data 7
 Throt_D
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 143
@@ -13675,7 +13675,7 @@ name "Throt_G"
 loc 0 0 -0
 data 7
 Throt_G
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 143
@@ -14860,7 +14860,7 @@ name "aileron"
 loc 0 0 -0
 data 7
 aileron
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -14882,7 +14882,7 @@ name "aileron-trim"
 loc 0 0 -0
 data 12
 aileron-trim
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 47
@@ -15318,7 +15318,7 @@ name "axe"
 loc 0 0 -0
 data 3
 axe
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 24
@@ -15437,7 +15437,7 @@ name "brake_parking"
 loc 0 0 -0
 data 13
 brake_parking
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 248
@@ -17664,7 +17664,7 @@ name "brake_throttle"
 loc 0 0 -0
 data 14
 brake_throttle
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 304
@@ -20219,7 +20219,7 @@ name "carter-trim"
 loc 0 0 -0
 data 11
 carter-trim
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 104
@@ -21104,7 +21104,7 @@ name "cons_bas"
 loc 0 0 -0
 data 8
 cons_bas
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 95
@@ -21729,7 +21729,7 @@ name "corps-haut"
 loc 0 0 -0
 data 10
 corps-haut
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 206
@@ -23686,7 +23686,7 @@ name "corps-milieu"
 loc 0 0 -0
 data 12
 corps-milieu
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 24
@@ -23805,7 +23805,7 @@ name "elev_trim"
 loc 0 0 -0
 data 9
 elev_trim
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 8
@@ -23866,7 +23866,7 @@ name "elev_trim_index"
 loc 0 0 -0
 data 15
 elev_trim_index
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10
@@ -23945,7 +23945,7 @@ name "fuel_left"
 loc 0 0 -0
 data 9
 fuel_left
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 90
@@ -24624,7 +24624,7 @@ name "fuel_right"
 loc 0 0 -0
 data 10
 fuel_right
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 90
@@ -25303,7 +25303,7 @@ name "guideM"
 loc 0 0 -0
 data 6
 guideM
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 84
@@ -25929,7 +25929,7 @@ name "guideM2"
 loc 0 0 -0
 data 7
 guideM2
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 84
@@ -26555,7 +26555,7 @@ name "guideP"
 loc 0 0 -0
 data 6
 guideP
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 36
@@ -26756,7 +26756,7 @@ name "guideP2"
 loc 0 0 -0
 data 7
 guideP2
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 36
@@ -26957,7 +26957,7 @@ name "guideT"
 loc 0 0 -0
 data 6
 guideT
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 48
@@ -27247,7 +27247,7 @@ name "guideT2"
 loc 0 0 -0
 data 7
 guideT2
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 48
@@ -27537,7 +27537,7 @@ name "lev1"
 loc 0 0 -0
 data 4
 lev1
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 90
@@ -28211,7 +28211,7 @@ name "levierM_D"
 loc 0 0 -0
 data 9
 levierM_D
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 112
@@ -29303,7 +29303,7 @@ name "levierM_G"
 loc 0 0 -0
 data 9
 levierM_G
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 110
@@ -30403,7 +30403,7 @@ name "manette1"
 loc 0 0 -0
 data 8
 manette1
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 149
@@ -31629,7 +31629,7 @@ name "manette2"
 loc 0 0 -0
 data 8
 manette2
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 149
@@ -32865,7 +32865,7 @@ name "manette3"
 loc 0 0 -0
 data 8
 manette3
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 151
@@ -34107,7 +34107,7 @@ name "onoff"
 loc 0 0 -0
 data 5
 onoff
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 13
@@ -34203,7 +34203,7 @@ name "plaque"
 loc 0 0 -0
 data 6
 plaque
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -34225,7 +34225,7 @@ name "rudder"
 loc 0 0 -0
 data 6
 rudder
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 4
@@ -34247,7 +34247,7 @@ name "rudder-trim"
 loc 0 0 -0
 data 11
 rudder-trim
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 47
@@ -34683,7 +34683,7 @@ name "souslevierM_D"
 loc 0 0 -0
 data 13
 souslevierM_D
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 63
@@ -35204,7 +35204,7 @@ name "souslevierM_G"
 loc 0 0 -0
 data 13
 souslevierM_G
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 64
@@ -35722,7 +35722,7 @@ name "support"
 loc 0 0 -0
 data 7
 support
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 86
@@ -36204,7 +36204,7 @@ name "tailwheel_lock"
 loc 0 0 -0
 data 14
 tailwheel_lock
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 238
@@ -38096,7 +38096,7 @@ name "textmanL"
 loc 0 0 -0
 data 8
 textmanL
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 19
@@ -38234,7 +38234,7 @@ name "textmanR"
 loc 0 0 -0
 data 8
 textmanR
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 19
@@ -38372,7 +38372,7 @@ name "volantTrim"
 loc 0 0 -0
 data 10
 volantTrim
-texture "pedestal.png"
+texture "pedestal.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 570

@@ -16,7 +16,7 @@ OBJECT poly
 name "BigRadom"
 data 6
 Circle
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 80.000000
 numvert 217
@@ -1737,7 +1737,7 @@ OBJECT poly
 name "DoubleCargoHook"
 data 15
 Plane.001_Plane
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 30.000000
 numvert 198
@@ -3463,7 +3463,7 @@ OBJECT poly
 name "EmergFloats"
 data 12
 Cylinder.008
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 80.000000
 numvert 96
@@ -4405,7 +4405,7 @@ OBJECT poly
 name "IBF"
 data 8
 Mesh.255
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 30.000000
 numvert 306
@@ -6699,7 +6699,7 @@ OBJECT poly
 name "Loudspeaker"
 data 9
 Plane.003
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 80.000000
 numvert 112
@@ -7733,7 +7733,7 @@ OBJECT poly
 name "Plane"
 data 8
 Mesh.256
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 30.000000
 numvert 252
@@ -8913,7 +8913,7 @@ OBJECT poly
 name "SLLight_Cover.L"
 data 8
 Mesh.257
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 80.000000
 numvert 53
@@ -9278,7 +9278,7 @@ OBJECT poly
 name "SLLight_Cover.R"
 data 8
 Mesh.258
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 80.000000
 numvert 53
@@ -9643,7 +9643,7 @@ OBJECT poly
 name "backdoor.L"
 data 8
 Mesh.259
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 80.000000
 numvert 412
@@ -12558,7 +12558,7 @@ OBJECT poly
 name "backdoor.R"
 data 8
 Mesh.260
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 80.000000
 numvert 418
@@ -15531,7 +15531,7 @@ OBJECT poly
 name "buckle"
 data 9
 Plane.005
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 30.000000
 numvert 87
@@ -16212,7 +16212,7 @@ OBJECT poly
 name "frontdoor.L"
 data 8
 Mesh.261
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 80.000000
 numvert 266
@@ -17802,7 +17802,7 @@ OBJECT poly
 name "frontdoor.R"
 data 8
 Mesh.262
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 80.000000
 numvert 266
@@ -19392,7 +19392,7 @@ OBJECT poly
 name "fuselage"
 data 8
 Mesh.000
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 80.000000
 numvert 5755
@@ -65015,7 +65015,7 @@ OBJECT poly
 name "highskid"
 data 12
 Cylinder.023
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 80.000000
 numvert 1758
@@ -79149,7 +79149,7 @@ OBJECT poly
 name "longskid_floats"
 data 12
 Cylinder.024
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 80.000000
 numvert 1670
@@ -92605,7 +92605,7 @@ OBJECT poly
 name "lowskid"
 data 12
 Cylinder.025
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 80.000000
 numvert 1718
@@ -106447,7 +106447,7 @@ OBJECT poly
 name "midskid"
 data 12
 Cylinder.026
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 80.000000
 numvert 1718
@@ -120289,7 +120289,7 @@ OBJECT poly
 name "multifunctioncarrier"
 data 12
 Cylinder.027
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 80.000000
 numvert 218
@@ -121985,7 +121985,7 @@ OBJECT poly
 name "nonIBF"
 data 8
 Mesh.263
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 80.000000
 numvert 460
@@ -125029,7 +125029,7 @@ OBJECT poly
 name "nose"
 data 8
 Mesh.264
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 30.000000
 numvert 76
@@ -125533,7 +125533,7 @@ OBJECT poly
 name "nosefl"
 data 8
 Mesh.265
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 30.000000
 numvert 140
@@ -126599,7 +126599,7 @@ OBJECT poly
 name "reardoor.L"
 data 8
 Mesh.266
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 80.000000
 numvert 151
@@ -127681,7 +127681,7 @@ OBJECT poly
 name "reardoor.R"
 data 8
 Mesh.267
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 80.000000
 numvert 151
@@ -128763,7 +128763,7 @@ OBJECT poly
 name "reardoor_win.L"
 data 8
 Mesh.268
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 80.000000
 numvert 160
@@ -129855,7 +129855,7 @@ OBJECT poly
 name "reardoor_win.R"
 data 8
 Mesh.269
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 80.000000
 numvert 160
@@ -131477,7 +131477,7 @@ OBJECT poly
 name "rotorcap"
 data 10
 Sphere.004
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 80.000000
 numvert 66
@@ -132065,7 +132065,7 @@ OBJECT poly
 name "roundstep"
 data 12
 Cylinder.028
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 80.000000
 numvert 154
@@ -133249,7 +133249,7 @@ OBJECT poly
 name "sandfilter"
 data 8
 Mesh.272
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 80.000000
 numvert 382
@@ -136357,7 +136357,7 @@ OBJECT poly
 name "smallradom"
 data 8
 Mesh.273
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 80.000000
 numvert 117
@@ -137404,7 +137404,7 @@ OBJECT poly
 name "snowboard_highskid"
 data 12
 Cylinder.029
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 80.000000
 numvert 302
@@ -139404,7 +139404,7 @@ OBJECT poly
 name "snowboard_lowskid"
 data 12
 Cylinder.030
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 80.000000
 numvert 302
@@ -141404,7 +141404,7 @@ OBJECT poly
 name "snowboard_midskid"
 data 12
 Cylinder.031
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 80.000000
 numvert 302
@@ -143404,7 +143404,7 @@ OBJECT poly
 name "standardstep"
 data 9
 Plane.006
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 30.000000
 numvert 52
@@ -143822,7 +143822,7 @@ OBJECT poly
 name "triangle"
 data 8
 Mesh.274
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 30.000000
 numvert 24
@@ -143956,7 +143956,7 @@ OBJECT poly
 name "winch"
 data 21
 Sphere.001_Sphere.001
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 80.000000
 numvert 1134
@@ -153274,7 +153274,7 @@ OBJECT poly
 name "winchfix"
 data 21
 Cylinder.003_Cylinder
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 80.000000
 numvert 122
@@ -154298,7 +154298,7 @@ OBJECT poly
 name "winchhook"
 data 17
 Sphere.001_Sphere
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 80.000000
 numvert 318
@@ -161952,7 +161952,7 @@ OBJECT poly
 name "wirecutter_down"
 data 8
 Mesh.275
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 80.000000
 numvert 21
@@ -162083,7 +162083,7 @@ OBJECT poly
 name "wirecutter_highskid"
 data 9
 Plane.008
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 80.000000
 numvert 44
@@ -162377,7 +162377,7 @@ OBJECT poly
 name "wirecutter_midskid"
 data 9
 Plane.012
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 80.000000
 numvert 44
@@ -162671,7 +162671,7 @@ OBJECT poly
 name "wirecutter_skid"
 data 9
 Plane.054
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 80.000000
 numvert 44
@@ -162965,7 +162965,7 @@ OBJECT poly
 name "wirecutter_up"
 data 8
 Mesh.276
-texture "WhiteDefault.png"
+texture "WhiteDefault.webp"
 texrep 1 1
 crease 80.000000
 numvert 26
@@ -165630,7 +165630,7 @@ OBJECT poly
 name "Hellas"
 data 9
 Plane.013
-texture "addparts.png"
+texture "addparts.webp"
 texrep 1 1
 crease 30.000000
 numvert 48
@@ -166010,7 +166010,7 @@ OBJECT poly
 name "Plane.001X0"
 data 18
 Plane.001Xmesh.002
-texture "lights.png"
+texture "lights.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -166036,7 +166036,7 @@ OBJECT poly
 name "Plane.001X1"
 data 14
 Plane.001Xmesh
-texture "lights.png"
+texture "lights.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -166078,7 +166078,7 @@ OBJECT poly
 name "Plane.003X"
 data 14
 Plane.003Xmesh
-texture "lights.png"
+texture "lights.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -166104,7 +166104,7 @@ OBJECT poly
 name "SLLight.L"
 data 10
 Sphere.005
-texture "addparts.png"
+texture "addparts.webp"
 texrep 1 1
 crease 80.000000
 numvert 105
@@ -166941,7 +166941,7 @@ OBJECT poly
 name "SLLight.R"
 data 10
 Sphere.006
-texture "addparts.png"
+texture "addparts.webp"
 texrep 1 1
 crease 30.000000
 numvert 105
@@ -173438,7 +173438,7 @@ OBJECT poly
 name "backdoorhandle.L"
 data 9
 Plane.016
-texture "addparts.png"
+texture "addparts.webp"
 texrep 1 1
 crease 80.000000
 numvert 54
@@ -173895,7 +173895,7 @@ OBJECT poly
 name "backdoorhandle.R"
 data 9
 Plane.049
-texture "addparts.png"
+texture "addparts.webp"
 texrep 1 1
 crease 80.000000
 numvert 54
@@ -174352,7 +174352,7 @@ OBJECT poly
 name "backlight.flare"
 data 10
 Circle.010
-texture "lights.png"
+texture "lights.webp"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -174419,7 +174419,7 @@ OBJECT poly
 name "backlight.glare"
 data 10
 Circle.009
-texture "lights.png"
+texture "lights.webp"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -174897,7 +174897,7 @@ OBJECT poly
 name "exhaust"
 data 8
 Mesh.279
-texture "addparts.png"
+texture "addparts.webp"
 texrep 1 1
 crease 30.000000
 numvert 488
@@ -183655,7 +183655,7 @@ OBJECT poly
 name "frontdoorhandle.L"
 data 9
 Plane.021
-texture "addparts.png"
+texture "addparts.webp"
 texrep 1 1
 crease 80.000000
 numvert 54
@@ -184112,7 +184112,7 @@ OBJECT poly
 name "frontdoorhandle.R"
 data 9
 Plane.053
-texture "addparts.png"
+texture "addparts.webp"
 texrep 1 1
 crease 80.000000
 numvert 54
@@ -184569,7 +184569,7 @@ OBJECT poly
 name "frontlight"
 data 10
 Sphere.007
-texture "addparts.png"
+texture "addparts.webp"
 texrep 1 1
 crease 30.000000
 numvert 97
@@ -185356,7 +185356,7 @@ OBJECT poly
 name "frontlight.flare"
 data 10
 Circle.002
-texture "lights.png"
+texture "lights.webp"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -185423,7 +185423,7 @@ OBJECT poly
 name "frontlight.flare.001"
 data 10
 Circle.004
-texture "lights.png"
+texture "lights.webp"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -185490,7 +185490,7 @@ OBJECT poly
 name "frontlight.flare.002"
 data 10
 Circle.006
-texture "lights.png"
+texture "lights.webp"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -185557,7 +185557,7 @@ OBJECT poly
 name "frontlight.flare.003"
 data 10
 Circle.007
-texture "lights.png"
+texture "lights.webp"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -185624,7 +185624,7 @@ OBJECT poly
 name "frontlight.glare"
 data 10
 Circle.001
-texture "lights.png"
+texture "lights.webp"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -185691,7 +185691,7 @@ OBJECT poly
 name "frontlight.glare.001"
 data 10
 Circle.003
-texture "lights.png"
+texture "lights.webp"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -185758,7 +185758,7 @@ OBJECT poly
 name "frontlight.glare.002"
 data 10
 Circle.005
-texture "lights.png"
+texture "lights.webp"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -185825,7 +185825,7 @@ OBJECT poly
 name "frontlight.glare.003"
 data 10
 Circle.008
-texture "lights.png"
+texture "lights.webp"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -185892,7 +185892,7 @@ OBJECT poly
 name "frontlight2"
 data 10
 Sphere.009
-texture "addparts.png"
+texture "addparts.webp"
 texrep 1 1
 crease 30.000000
 numvert 97
@@ -188243,7 +188243,7 @@ OBJECT poly
 name "navlight_left"
 data 4
 Cone
-texture "lights.png"
+texture "lights.webp"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -188310,7 +188310,7 @@ OBJECT poly
 name "navlight_right"
 data 8
 Cone.001
-texture "lights.png"
+texture "lights.webp"
 texrep 1 1
 crease 30.000000
 numvert 9

@@ -8,7 +8,7 @@ OBJECT poly
 name "Sphere"
 data 6
 Sphere
-texture "150_v.png"
+texture "150_v.webp"
 texrep 1 1
 crease 30.000000
 numvert 129
@@ -1011,7 +1011,7 @@ OBJECT poly
 name "back"
 data 5
 Plane
-texture "150_v.png"
+texture "150_v.webp"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -1032,7 +1032,7 @@ OBJECT poly
 name "bezel"
 data 4
 Mesh
-texture "150_v.png"
+texture "150_v.webp"
 texrep 1 1
 crease 30.000000
 numvert 96

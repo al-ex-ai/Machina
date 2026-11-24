@@ -8,7 +8,7 @@ name "face"
 loc 0 0 -0
 data 4
 face
-texture "fuel.png"
+texture "fuel.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 97
@@ -772,7 +772,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "fuel.png"
+texture "fuel.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 188
@@ -2247,7 +2247,7 @@ name "knob"
 loc 0 0 -0
 data 4
 knob
-texture "fuel.png"
+texture "fuel.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 17
@@ -2359,7 +2359,7 @@ name "needle"
 loc -0.001793 0 -0
 data 6
 needle
-texture "fuel.png"
+texture "fuel.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 26

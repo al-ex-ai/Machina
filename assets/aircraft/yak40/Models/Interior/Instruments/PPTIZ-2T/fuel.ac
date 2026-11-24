@@ -7,7 +7,7 @@ name "H_btn"
 loc 0.00202508 0 0
 data 8
 Cylinder
-texture "back.png"
+texture "back.webp"
 crease 30.000000
 numvert 33
 -0.000432964 -0.0406124 0.0148493
@@ -258,7 +258,7 @@ name "P_btn"
 loc 0.00202508 0 0
 data 12
 Cylinder.001
-texture "back.png"
+texture "back.webp"
 crease 30.000000
 numvert 33
 -0.000432964 -0.0406124 -0.0209309
@@ -508,7 +508,7 @@ OBJECT poly
 name "bezel"
 data 8
 Mesh.009
-texture "back.png"
+texture "back.webp"
 crease 30.000000
 numvert 96
 -0.000302787 0.0201269 -0.0347035
@@ -1117,7 +1117,7 @@ OBJECT poly
 name "center"
 data 8
 Mesh.001
-texture "back.png"
+texture "back.webp"
 crease 80.000000
 numvert 34
 0.00156564 0.000121174 -0.00967766
@@ -1428,7 +1428,7 @@ OBJECT poly
 name "scale"
 data 6
 Circle
-texture "back.png"
+texture "back.webp"
 crease 30.000000
 numvert 17
 0.000181824 -0.026108 -0.0261872

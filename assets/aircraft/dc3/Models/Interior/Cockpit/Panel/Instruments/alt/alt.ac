@@ -8,7 +8,7 @@ name "alt-Needle1"
 loc 0 0 -0
 data 11
 alt-Needle1
-texture "alt.png"
+texture "alt.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 47
@@ -335,7 +335,7 @@ name "alt-Needle2"
 loc 0 0 -0
 data 11
 alt-Needle2
-texture "alt.png"
+texture "alt.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 47
@@ -662,7 +662,7 @@ name "alt-Needle3"
 loc 0 0 -0
 data 11
 alt-Needle3
-texture "alt.png"
+texture "alt.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 47
@@ -989,7 +989,7 @@ name "face"
 loc 0.001852 0 -0
 data 4
 face
-texture "alt.png"
+texture "alt.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 17
@@ -1113,7 +1113,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "alt.png"
+texture "alt.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 239
@@ -2779,7 +2779,7 @@ name "ingh"
 loc 0 0 -0
 data 4
 ingh
-texture "alt.png"
+texture "alt.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 25

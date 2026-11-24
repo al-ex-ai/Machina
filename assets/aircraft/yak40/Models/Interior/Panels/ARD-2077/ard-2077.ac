@@ -7,7 +7,7 @@ name "al"
 loc -0.000640846 0.00611123 0.0851771
 data 2
 al
-texture "ard-2077.png"
+texture "ard-2077.webp"
 crease 179.000000
 numvert 64
 -0.00507617 -0.00469115 0
@@ -436,7 +436,7 @@ name "ar"
 loc -0.000640846 0.00611123 -0.0855513
 data 2
 ar
-texture "ard-2077.png"
+texture "ard-2077.webp"
 crease 179.000000
 numvert 64
 -0.00507617 -0.00469115 -1.19209e-07
@@ -865,7 +865,7 @@ name "back"
 loc 0.7155 -0.966244 -5.80369
 data 4
 back
-texture "ard-2077.png"
+texture "ard-2077.webp"
 crease 179.000000
 numvert 136
 -0.666565 0.967758 5.89426
@@ -1902,7 +1902,7 @@ name "bl"
 loc 1.21491e-06 0.00224328 -3.57628e-05
 data 2
 bl
-texture "ard-2077.png"
+texture "ard-2077.webp"
 crease 179.000000
 numvert 192
 -0.0296853 -0.00197744 0.0460412
@@ -3112,7 +3112,7 @@ name "knob_center"
 loc 0.0256102 0.0142523 0.000284612
 data 11
 knob_center
-texture "ard-2077.png"
+texture "ard-2077.webp"
 crease 179.000000
 numvert 417
 0.0095818 -0.00158441 -0.00183249
@@ -6207,7 +6207,7 @@ name "knob_diff"
 loc 0.0256102 0.0142523 0.0752374
 data 9
 knob_left
-texture "ard-2077.png"
+texture "ard-2077.webp"
 crease 179.000000
 numvert 417
 0.0095818 -0.00158441 -0.00183254
@@ -9302,7 +9302,7 @@ name "knob_right"
 loc 0.0256102 0.0142523 -0.073849
 data 10
 knob_right
-texture "ard-2077.png"
+texture "ard-2077.webp"
 crease 179.000000
 numvert 417
 0.00958204 -0.00158441 -0.00183249
@@ -12397,7 +12397,7 @@ name "needle_left"
 loc 0.00132396 0.00199682 0.0381069
 data 11
 needle_left
-texture "ard-2077.png"
+texture "ard-2077.webp"
 crease 179.000000
 numvert 196
 -0.00409105 -0.000239198 -0.00115178
@@ -13817,7 +13817,7 @@ name "needle_right"
 loc 0.00132396 0.00199682 -0.0379897
 data 12
 needle_right
-texture "ard-2077.png"
+texture "ard-2077.webp"
 crease 179.000000
 numvert 181
 -0.00164342 0.000480086 -0.000715196
@@ -15124,7 +15124,7 @@ name "switch"
 loc -0.052684 0.0106066 0.000518918
 data 6
 switch
-texture "ard-2077.png"
+texture "ard-2077.webp"
 crease 179.000000
 numvert 182
 0.0105486 -0.00158432 -0.00155687

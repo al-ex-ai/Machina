@@ -26,7 +26,7 @@ kids 0
 OBJECT poly
 name "base"
 loc 1.09877e-05 0.000302436 -6.15352e-06
-texture "base.png"
+texture "base.webp"
 crease 100.000000
 numvert 4
 3.72529e-09 -0.0480543 0.0480567
@@ -64,7 +64,7 @@ kids 0
 OBJECT poly
 name "blanker"
 loc 0.000274367 0.0199901 -0.025214
-texture "blanker.png"
+texture "blanker.webp"
 crease 100.000000
 numvert 4
 0 -0.00518097 0.00587176
@@ -83,7 +83,7 @@ kids 0
 OBJECT poly
 name "sphere"
 loc -0.0804587 2.34074e-05 -6.14607e-06
-texture "pkp3.png"
+texture "pkp3.webp"
 crease 100.000000
 numvert 541
 0 0.0787507 0

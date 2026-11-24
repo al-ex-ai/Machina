@@ -7,7 +7,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "checklist.png"
+texture "checklist.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 16
@@ -111,7 +111,7 @@ name "texte"
 loc 0 0 -0
 data 5
 texte
-texture "checklist.png"
+texture "checklist.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4

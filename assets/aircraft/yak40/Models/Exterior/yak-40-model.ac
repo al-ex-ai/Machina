@@ -1506,7 +1506,7 @@ kids 0
 OBJECT poly
 name "maingeardoorinnerL"
 loc 0.284483 0.065536 1.33357
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 18
 0.271044 0.0267523 -0.0226263
@@ -1606,7 +1606,7 @@ kids 0
 OBJECT poly
 name "maingeardoorouterL"
 loc 0.275103 -0.15415 1.70719
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 12
 -0.138304 -0.0443184 -0.351775
@@ -3306,7 +3306,7 @@ kids 0
 OBJECT poly
 name "StrutR"
 loc 0.142058 1.20196 0.03488
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 126
 0.0778949 -1.19453 -2.03684
@@ -4278,7 +4278,7 @@ kids 0
 OBJECT poly
 name "DamperL"
 loc 0.142057 1.20195 -0.0351199
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 16
 0.117373 -1.98265 2.03522
@@ -5100,7 +5100,7 @@ kids 0
 OBJECT poly
 name "LateralStrutL"
 loc 0.182847 -0.094375 1.56526
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 74
 0.137265 -0.171535 0.477615
@@ -5882,7 +5882,7 @@ kids 0
 OBJECT poly
 name "LateralStrutR"
 loc 0.182124 -0.094375 -1.56582
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 74
 -0.126271 0.012355 -0.061325
@@ -12633,7 +12633,7 @@ kids 0
 OBJECT poly
 name "MiddleStrutF"
 loc 0.142057 1.20196 -0.0001218
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 42
 -7.65099 -1.26505 3.00002e-07
@@ -12963,7 +12963,7 @@ kids 0
 OBJECT poly
 name "V-StrutF"
 loc 0.142057 1.20196 -0.0001218
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 80
 -7.62732 -1.24833 -0.0538307
@@ -40833,7 +40833,7 @@ kids 0
 OBJECT poly
 name "MainStrutF"
 loc 0.14206 1.20196 -0.0001218
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 156
 -7.37672 -1.61444 -0.0350097
@@ -42171,7 +42171,7 @@ kids 0
 OBJECT poly
 name "SteerAxisF"
 loc 0.142063 1.20196 -0.0001218
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 112
 -7.34525 -1.62194 -0.0530267
@@ -43057,7 +43057,7 @@ kids 0
 OBJECT poly
 name "DamperF"
 loc 0.142063 1.20196 -0.0001218
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 33
 -7.29144 -1.90803 3.00002e-07
@@ -43306,7 +43306,7 @@ kids 0
 OBJECT poly
 name "DampingStrutL"
 loc 0.142057 1.20195 -0.0351199
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 156
 0.209592 -2.06037 2.00642
@@ -44609,7 +44609,7 @@ kids 0
 OBJECT poly
 name "StrutL"
 loc 0.142057 1.20195 -0.0351199
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 126
 0.159347 -1.19399 1.993
@@ -45581,7 +45581,7 @@ kids 0
 OBJECT poly
 name "DamperStrutF"
 loc 0.142063 1.20196 -0.0001218
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 214
 -7.29516 -1.98122 9.3e-06
@@ -47497,7 +47497,7 @@ kids 0
 OBJECT poly
 name "WheelF"
 loc 0.142063 1.20196 -0.0001218
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 658
 -7.02112 -2.67714 0.0630773
@@ -52387,7 +52387,7 @@ kids 0
 OBJECT poly
 name "DamperR"
 loc 0.142058 1.20196 0.03488
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 16
 0.100638 -1.66989 -1.99488
@@ -52488,7 +52488,7 @@ kids 0
 OBJECT poly
 name "DampingStrutR"
 loc 0.142058 1.20196 0.03488
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 156
 0.209592 -2.06037 -2.00631
@@ -53791,7 +53791,7 @@ kids 0
 OBJECT poly
 name "WheelR"
 loc 0.142058 1.20196 0.0348801
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 914
 0.282173 -2.59471 -2.24744
@@ -60697,7 +60697,7 @@ kids 0
 OBJECT poly
 name "WheelL"
 loc 0.142057 1.20195 -0.0351199
-texture "gear.png"
+texture "gear.webp"
 crease 45.000000
 numvert 914
 0.282173 -2.59471 2.2475
@@ -67603,7 +67603,7 @@ kids 0
 OBJECT poly
 name "enginenacelles1_3"
 loc 4.12959 1.4855 0
-texture "exterior.png"
+texture "exterior.webp"
 crease 45.000000
 numvert 1670
 0.656215 0.285495 1.59263
@@ -81293,7 +81293,7 @@ kids 0
 OBJECT poly
 name "wings"
 loc 0.142057 1.20196 -0.000121832
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 815
 0.127897 -0.990797 -1.35572
@@ -87844,7 +87844,7 @@ kids 0
 OBJECT poly
 name "maingeardoorinnerR"
 loc 0.284483 0.065536 -1.33357
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 18
 0.271044 0.0267523 0.0226263
@@ -87944,7 +87944,7 @@ kids 0
 OBJECT poly
 name "maingeardoorouterR"
 loc 0.275103 -0.15415 -1.70719
-texture "wings.png"
+texture "wings.webp"
 crease 45.000000
 numvert 12
 -0.138304 -0.0443184 0.351775

@@ -7,7 +7,7 @@ name "boutton"
 loc 0 0 -0
 data 7
 boutton
-texture "ignition.png"
+texture "ignition.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 384
@@ -2822,7 +2822,7 @@ name "decrease-keyL"
 loc 0 0 -0
 data 13
 decrease-keyL
-texture "ignition.png"
+texture "ignition.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 218
@@ -4557,7 +4557,7 @@ name "decrease-keyR"
 loc 0 0 -0
 data 13
 decrease-keyR
-texture "ignition.png"
+texture "ignition.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 219
@@ -6304,7 +6304,7 @@ name "face"
 loc 0 0 -0
 data 4
 face
-texture "ignition.png"
+texture "ignition.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 160
@@ -7551,7 +7551,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "ignition.png"
+texture "ignition.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 108
@@ -8352,7 +8352,7 @@ name "increase-keyL"
 loc 0 0 -0
 data 13
 increase-keyL
-texture "ignition.png"
+texture "ignition.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 220
@@ -10118,7 +10118,7 @@ name "increase-keyR"
 loc 0 0 -0
 data 13
 increase-keyR
-texture "ignition.png"
+texture "ignition.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 220
@@ -11878,7 +11878,7 @@ name "screws"
 loc 0 0 -0
 data 6
 screws
-texture "ignition.png"
+texture "ignition.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 3542

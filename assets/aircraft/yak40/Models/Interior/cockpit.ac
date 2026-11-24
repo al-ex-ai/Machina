@@ -21925,7 +21925,7 @@ kids 0
 OBJECT poly
 name "yoke_lever"
 loc -7.90085 1.07726 0
-texture "cockpit.png"
+texture "cockpit.webp"
 crease 45.000000
 numvert 1174
 -0.00826931 0.293503 0.792746
@@ -31135,7 +31135,7 @@ kids 0
 OBJECT poly
 name "yokeR"
 loc -0.15412 -0.72246 0.487949
-texture "cockpit.png"
+texture "cockpit.webp"
 crease 45.000000
 numvert 355
 -7.67421 2.28363 -0.88045
@@ -115928,7 +115928,7 @@ kids 0
 OBJECT poly
 name "yokeL"
 loc -0.15412 -0.72246 0.487949
-texture "cockpit.png"
+texture "cockpit.webp"
 crease 45.000000
 numvert 355
 -7.67421 2.28363 -0.0954468
@@ -118779,7 +118779,7 @@ kids 0
 OBJECT poly
 name "armrest"
 loc -7.33713 1.25202 0.0324495
-texture "cockpit.png"
+texture "cockpit.webp"
 crease 45.000000
 numvert 1544
 0.0707483 -0.0256987 -0.294569
@@ -132506,7 +132506,7 @@ kids 0
 OBJECT poly
 name "seats"
 loc -7.37706 1.30486 0.03157
-texture "cockpit.png"
+texture "cockpit.webp"
 crease 45.000000
 numvert 6184
 0.162868 -0.26568 -0.365723
@@ -181874,7 +181874,7 @@ kids 0
 OBJECT poly
 name "cabin.010"
 loc -7.90508 1.49238 0.000554502
-texture "cockpit.png"
+texture "cockpit.webp"
 crease 45.000000
 numvert 10
 0.880438 -0.774722 -0.992956
@@ -182551,7 +182551,7 @@ kids 0
 OBJECT poly
 name "pedalR"
 loc -8.20053 0.825219 -0.141656
-texture "cockpit.png"
+texture "cockpit.webp"
 crease 45.000000
 numvert 462
 -0.00374413 -0.00184554 0.455675
@@ -186285,7 +186285,7 @@ kids 0
 OBJECT poly
 name "pedalL"
 loc -8.20053 0.825219 0.141681
-texture "cockpit.png"
+texture "cockpit.webp"
 crease 45.000000
 numvert 462
 -0.0086937 -0.00470841 -0.519538
@@ -200143,7 +200143,7 @@ kids 0
 OBJECT poly
 name "object"
 loc -7.5862 1.98371 0.118428
-texture "cockpit.png"
+texture "cockpit.webp"
 crease 45.000000
 numvert 147
 0.561558 0.335649 -0.118428

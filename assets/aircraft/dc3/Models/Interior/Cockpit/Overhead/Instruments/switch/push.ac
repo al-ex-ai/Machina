@@ -7,7 +7,7 @@ name "poussoir"
 loc 0 0 -0
 data 8
 poussoir
-texture "switch.png"
+texture "switch.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 385
@@ -3059,7 +3059,7 @@ name "tour"
 loc 0 0 -0
 data 4
 tour
-texture "switch.png"
+texture "switch.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 266

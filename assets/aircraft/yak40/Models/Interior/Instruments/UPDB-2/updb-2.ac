@@ -6,7 +6,7 @@ kids 6
 OBJECT poly
 name "needle2nav"
 loc -0.00145802 0.00710703 -3.70288e-10
-texture "updb-2.png"
+texture "updb-2.webp"
 crease 45.000000
 numvert 49
 0 -0.0151739 0.00177514
@@ -347,7 +347,7 @@ kids 0
 OBJECT poly
 name "needle1nav"
 loc 0.000395157 0.00710703 -3.70288e-10
-texture "updb-2.png"
+texture "updb-2.webp"
 crease 45.000000
 numvert 49
 0 0.0257488 6.96248e-08
@@ -2221,7 +2221,7 @@ kids 0
 OBJECT poly
 name "needle2ark"
 loc -0.00145802 0.00710703 -3.70288e-10
-texture "updb-2.png"
+texture "updb-2.webp"
 crease 45.000000
 numvert 49
 0 0.0257488 6.96499e-08
@@ -2562,7 +2562,7 @@ kids 0
 OBJECT poly
 name "housing"
 loc -1.08597 -0.0223001 -0.0602665
-texture "updb-2.png"
+texture "updb-2.webp"
 crease 45.000000
 numvert 53
 1.0828 0.0223 0.0602665
@@ -3103,7 +3103,7 @@ kids 0
 OBJECT poly
 name "needle1ark"
 loc 0.000395157 0.00710703 -3.70288e-10
-texture "updb-2.png"
+texture "updb-2.webp"
 crease 45.000000
 numvert 49
 0 -0.0151739 0.00177514

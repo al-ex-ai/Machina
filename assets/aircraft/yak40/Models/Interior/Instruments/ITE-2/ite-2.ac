@@ -1540,7 +1540,7 @@ kids 0
 OBJECT poly
 name "needle_2"
 loc -0.00104859 -0.00474877 0
-texture "ite-2.png"
+texture "ite-2.webp"
 crease 45.000000
 numvert 39
 0 0.00474877 0.0024445
@@ -1821,7 +1821,7 @@ kids 0
 OBJECT poly
 name "needle_1"
 loc 0.00057418 -0.00504534 0
-texture "ite-2.png"
+texture "ite-2.webp"
 crease 45.000000
 numvert 39
 0 0.0363209 -1.04308e-07
@@ -2102,7 +2102,7 @@ kids 0
 OBJECT poly
 name "housing"
 loc -0.987694 -0.0202839 -0.0548177
-texture "ite-2.png"
+texture "ite-2.webp"
 crease 45.000000
 numvert 53
 0.984147 0.0202838 0.0548177

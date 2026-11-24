@@ -6,7 +6,7 @@ kids 6
 OBJECT poly
 name "base"
 loc -0.00024201 0 -0.00677157
-texture "base_v-140.png"
+texture "base_v-140.webp"
 crease 100.000000
 numvert 4
 -1.06171e-07 -0.0556547 -0.0606845
@@ -25,7 +25,7 @@ kids 0
 OBJECT poly
 name "text"
 loc 0.000115581 0.00867701 -0.00916616
-texture "text_v-140.png"
+texture "text_v-140.webp"
 crease 100.000000
 numvert 4
 -1.09896e-07 -0.0467045 0.0254213
@@ -44,7 +44,7 @@ kids 0
 OBJECT poly
 name "I"
 loc -8.31913e-05 0.0243852 0.0362069
-texture "I.png"
+texture "I.webp"
 crease 100.000000
 numvert 4
 -1.11759e-07 -0.00827329 -0.00618009
@@ -63,7 +63,7 @@ kids 0
 OBJECT poly
 name "II"
 loc 0.000115583 -0.0206476 0.0362069
-texture "II.png"
+texture "II.webp"
 crease 100.000000
 numvert 4
 -1.11759e-07 -0.00827329 0.00618009
@@ -198,7 +198,7 @@ kids 8
 OBJECT poly
 name "dig_2_dec"
 loc 1.86265e-09 -0.0224572 0.00601093
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0.0236048 0.00830088 -0.00507709
@@ -544,7 +544,7 @@ kids 0
 OBJECT poly
 name "dig_2_min"
 loc 1.86265e-09 -0.0224572 -0.0177536
-texture "digits_min.png"
+texture "digits_min.webp"
 crease 100.000000
 numvert 34
 0.0236048 0.00830088 -0.00663465
@@ -890,7 +890,7 @@ kids 0
 OBJECT poly
 name "dig_2_hund"
 loc 0 -0.0224572 0.0168284
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0 0 0.00507694
@@ -1236,7 +1236,7 @@ kids 0
 OBJECT poly
 name "dig_2_ones"
 loc 1.86265e-09 -0.0224572 -0.00508573
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 -1.86265e-09 0 0.00507693
@@ -1582,7 +1582,7 @@ kids 0
 OBJECT poly
 name "dig_1_ones"
 loc 1.86265e-09 0.0224571 -0.00508573
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0.0236048 0.00830088 -0.0050771
@@ -1928,7 +1928,7 @@ kids 0
 OBJECT poly
 name "dig_1_hund"
 loc 0 0.0224571 0.0168284
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0.0236048 0.00830088 -0.00507708
@@ -2274,7 +2274,7 @@ kids 0
 OBJECT poly
 name "dig_1_min"
 loc 1.86265e-09 0.0224571 -0.0177536
-texture "digits_min.png"
+texture "digits_min.webp"
 crease 100.000000
 numvert 34
 -1.86265e-09 0 0.00663443
@@ -2620,7 +2620,7 @@ kids 0
 OBJECT poly
 name "dig_1_dec"
 loc 1.86265e-09 0.0224571 0.00601093
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 -5.58794e-09 0 0.00507694

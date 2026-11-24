@@ -9,7 +9,7 @@ name "back"
 loc 0.002495 0.000345 0.000021
 data 4
 back
-texture "back.png"
+texture "back.webp"
 texrep 1 1
 crease 179.000000
 numvert 4
@@ -31,7 +31,7 @@ name "bezel"
 loc 0.002583 0.000345 0.000021
 data 5
 bezel
-texture "back.png"
+texture "back.webp"
 texrep 1 1
 crease 30.000001
 numvert 96

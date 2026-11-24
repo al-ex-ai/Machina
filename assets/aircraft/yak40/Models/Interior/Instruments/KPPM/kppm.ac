@@ -11,7 +11,7 @@ kids 17
 OBJECT poly
 name "kppm_hs_no_blenker"
 loc -0.000163732 -1.049e-05 9.98424e-06
-texture "kppm.png"
+texture "kppm.webp"
 crease 45.000000
 numvert 61
 -0.00104499 0.00819153 -0.00331602
@@ -480,7 +480,7 @@ kids 0
 OBJECT poly
 name "kppm_hs_blenker"
 loc 2.03156 0.953227 -0.59582
-texture "kppm.png"
+texture "kppm.webp"
 crease 45.000000
 numvert 82
 -2.03335 -0.946539 0.587922
@@ -2169,7 +2169,7 @@ name "kppm_knob"
 loc 2.08174 0.967294 -0.599214
 data 10
 Circle.011
-texture "kppm.png"
+texture "kppm.webp"
 crease 30.000000
 numvert 49
 -2.07395 -0.998772 0.564129
@@ -5785,7 +5785,7 @@ name "kppm_scale"
 loc 2.07442 0.966436 -0.600282
 data 10
 Circle.002
-texture "kppm.png"
+texture "kppm.webp"
 crease 30.000000
 numvert 96
 -2.07396 -0.951584 0.585427
@@ -8700,7 +8700,7 @@ kids 0
 OBJECT poly
 name "kppm_centre"
 loc 2.88984 0.955791 -0.59367
-texture "kppm.png"
+texture "kppm.webp"
 crease 45.000000
 numvert 245
 -2.90171 -0.934585 0.593668
@@ -13764,7 +13764,7 @@ kids 0
 OBJECT poly
 name "kppm_gs_blenker"
 loc 2.03156 0.939829 -0.580003
-texture "kppm.png"
+texture "kppm.webp"
 crease 45.000000
 numvert 61
 -2.03236 -0.946539 0.592751
@@ -14233,7 +14233,7 @@ kids 0
 OBJECT poly
 name "kppm_gs_no_blenker"
 loc -0.000163732 -1.049e-05 9.98424e-06
-texture "kppm.png"
+texture "kppm.webp"
 crease 45.000000
 numvert 61
 0.00104499 -0.0066995 0.00790897

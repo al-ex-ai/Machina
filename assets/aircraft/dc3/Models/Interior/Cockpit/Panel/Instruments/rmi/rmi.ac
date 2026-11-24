@@ -8,7 +8,7 @@ name "RMI.Needle1"
 loc 0.007237 0 -0
 data 11
 RMI.Needle1
-texture "rmi.png"
+texture "rmi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 14
@@ -95,7 +95,7 @@ name "RMI.Needle2"
 loc 0.007237 0 -0
 data 11
 RMI.Needle2
-texture "rmi.png"
+texture "rmi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 28
@@ -278,7 +278,7 @@ name "face"
 loc 0.00669 0 -0.000054
 data 4
 face
-texture "rmi.png"
+texture "rmi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 17
@@ -402,7 +402,7 @@ name "fond"
 loc -0.001552 0 -0
 data 4
 fond
-texture "rmi.png"
+texture "rmi.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 260

@@ -613,7 +613,7 @@ kids 0
 OBJECT poly
 name "needle"
 loc 0.00136086 0.0204401 -0.000426844
-texture "s.png"
+texture "s.webp"
 crease 100.000000
 numvert 4
 -1.16415e-10 -0.0124131 -0.0024462
@@ -632,7 +632,7 @@ kids 0
 OBJECT poly
 name "base"
 loc -0.000421082 -0.00020547 -0.000416044
-texture "utd4-3t.png"
+texture "utd4-3t.webp"
 crease 100.000000
 numvert 17
 5.58794e-09 0 -0.0409094
@@ -753,7 +753,7 @@ kids 0
 OBJECT poly
 name "cover"
 loc 0.00532893 0.000324047 -0.000416048
-texture "cover.png"
+texture "cover.webp"
 crease 100.000000
 numvert 17
 0 0 0

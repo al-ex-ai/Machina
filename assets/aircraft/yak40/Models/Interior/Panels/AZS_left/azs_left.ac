@@ -6,7 +6,7 @@ kids 2
 OBJECT poly
 name "disk"
 loc 0.00505297 -1.59186e-06 -0.655115
-texture "azs_l.png"
+texture "azs_l.webp"
 crease 45.000000
 numvert 895
 0.00153446 0.156327 0.773029

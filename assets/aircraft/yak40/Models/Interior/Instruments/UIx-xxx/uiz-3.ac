@@ -1647,7 +1647,7 @@ kids 0
 OBJECT poly
 name "housing"
 loc -0.987694 -0.0202839 -0.0548177
-texture "uiz-3.png"
+texture "uiz-3.webp"
 crease 45.000000
 numvert 53
 0.984147 0.0202838 0.0548177
@@ -2188,7 +2188,7 @@ kids 0
 OBJECT poly
 name "covers"
 loc 0.000488709 -0.00312519 0.0001769
-texture "uiz-3.png"
+texture "uiz-3.webp"
 crease 45.000000
 numvert 51
 0.0006891 0.00884431 -0.0001769

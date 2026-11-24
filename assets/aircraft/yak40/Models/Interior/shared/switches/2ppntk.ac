@@ -43,7 +43,7 @@ kids 0
 OBJECT poly
 name "box"
 loc -0.0106257 3.1665e-08 0
-texture "2ppntk.png"
+texture "2ppntk.webp"
 crease 45.000000
 numvert 112
 0.0116671 0.0152261 -0.0164876

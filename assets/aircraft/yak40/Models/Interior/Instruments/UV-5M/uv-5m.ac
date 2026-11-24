@@ -6,7 +6,7 @@ kids 7
 OBJECT poly
 name "housing"
 loc 0.000128875 -5.04594e-08 3.72529e-09
-texture "uv-5.png"
+texture "uv-5.webp"
 crease 45.000000
 numvert 61
 -0.00655083 0.0141531 0.00472105
@@ -619,7 +619,7 @@ kids 0
 OBJECT poly
 name "flag"
 loc -0.00563125 0.00985054 -0.03605
-texture "uv-5.png"
+texture "uv-5.webp"
 crease 45.000000
 numvert 4
 -0.00033564 0.000171845 0.030451
@@ -681,7 +681,7 @@ kids 0
 OBJECT poly
 name "cover"
 loc 0.000128907 4.36916e-09 -5.58427e-10
-texture "uv-5.png"
+texture "uv-5.webp"
 crease 45.000000
 numvert 17
 -0.000160661 1.71703e-09 0.00902501
@@ -802,7 +802,7 @@ kids 0
 OBJECT poly
 name "pointer"
 loc -0.000589079 0.0195813 0.000587445
-texture "uv-5.png"
+texture "uv-5.webp"
 crease 30.000000
 numvert 8
 -0.000182471 0.0165744 -0.00489363
@@ -839,7 +839,7 @@ kids 0
 OBJECT poly
 name "alt-select"
 loc 0.0113261 -0.0319777 -0.0316763
-texture "uv-5.png"
+texture "uv-5.webp"
 crease 45.000000
 numvert 25
 0.00593129 0.00280242 0.0055742

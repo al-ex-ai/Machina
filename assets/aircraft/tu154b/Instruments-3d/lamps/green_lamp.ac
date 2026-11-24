@@ -10,7 +10,7 @@ kids 4
 OBJECT poly
 name "_d_2"
 loc 0.00318101 2.19692e-11 -5.71666e-05
-texture "green_lamp_on.png"
+texture "green_lamp_on.webp"
 crease 100.000000
 numvert 17
 0 0 0
@@ -131,7 +131,7 @@ kids 0
 OBJECT poly
 name "_d_1"
 loc 0.00307614 5.96046e-11 -1.33078e-05
-texture "green_lamp_off.png"
+texture "green_lamp_off.webp"
 crease 100.000000
 numvert 17
 0 0 -0.0081

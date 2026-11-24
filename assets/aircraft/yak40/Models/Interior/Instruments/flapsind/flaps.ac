@@ -7,7 +7,7 @@ name "back"
 loc 0.00288502 0 0
 data 5
 bezel
-texture "flaps_bg.png"
+texture "flaps_bg.webp"
 crease 30.000002
 numvert 25
 -0.00176818 0.00882116 -0.0152781
@@ -186,7 +186,7 @@ name "Circle.004"
 loc 0.00239321 -8.2e-05 0.003464
 data 10
 Circle.004
-texture "flaps_up.png"
+texture "flaps_up.webp"
 crease 179.000000
 numvert 17
 0 -0.004244 -0.00325
@@ -367,7 +367,7 @@ name "bezel"
 loc 0.00183421 0 0
 data 5
 bezel
-texture "flaps_up.png"
+texture "flaps_up.webp"
 crease 30.000002
 numvert 96
 -0.00176 0.009257 -0.016033

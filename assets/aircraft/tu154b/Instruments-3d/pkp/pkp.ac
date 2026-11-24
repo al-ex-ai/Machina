@@ -10,7 +10,7 @@ OBJECT poly
 name "ag_flag"
 data 8
 Mesh.017
-texture "sym.png"
+texture "sym.webp"
 texrep 1 1
 crease 80.000000
 numvert 4
@@ -166,7 +166,7 @@ OBJECT poly
 name "center"
 data 8
 Mesh.014
-texture "sym.png"
+texture "sym.webp"
 texrep 1 1
 crease 80.000000
 numvert 22
@@ -268,7 +268,7 @@ OBJECT poly
 name "cover"
 data 4
 Mesh
-texture "pkp1.png"
+texture "pkp1.webp"
 texrep 1 1
 crease 80.000000
 numvert 4
@@ -389,7 +389,7 @@ OBJECT poly
 name "cylinder_1_t"
 data 8
 Mesh.007
-texture "sym.png"
+texture "sym.webp"
 texrep 1 1
 crease 80.000000
 numvert 22
@@ -591,7 +591,7 @@ OBJECT poly
 name "cylinder_2_t"
 data 8
 Mesh.008
-texture "sym.png"
+texture "sym.webp"
 texrep 1 1
 crease 80.000000
 numvert 22
@@ -793,7 +793,7 @@ OBJECT poly
 name "cylinder_3_t"
 data 8
 Mesh.009
-texture "sym.png"
+texture "sym.webp"
 texrep 1 1
 crease 80.000000
 numvert 22
@@ -895,7 +895,7 @@ OBJECT poly
 name "gliss_director"
 data 8
 Mesh.021
-texture "sym.png"
+texture "sym.webp"
 texrep 1 1
 crease 80.000000
 numvert 4
@@ -916,7 +916,7 @@ OBJECT poly
 name "gliss_flag"
 data 8
 Mesh.015
-texture "sym.png"
+texture "sym.webp"
 texrep 1 1
 crease 80.000000
 numvert 4
@@ -937,7 +937,7 @@ OBJECT poly
 name "gliss_marker"
 data 8
 Mesh.019
-texture "sym.png"
+texture "sym.webp"
 texrep 1 1
 crease 80.000000
 numvert 4
@@ -958,7 +958,7 @@ OBJECT poly
 name "gliss_ring"
 data 8
 Mesh.020
-texture "sym.png"
+texture "sym.webp"
 texrep 1 1
 crease 80.000000
 numvert 4
@@ -979,7 +979,7 @@ OBJECT poly
 name "handle_marker"
 data 8
 Mesh.024
-texture "sym.png"
+texture "sym.webp"
 texrep 1 1
 crease 80.000000
 numvert 4
@@ -1068,7 +1068,7 @@ OBJECT poly
 name "internal"
 data 8
 Mesh.001
-texture "pkp2.png"
+texture "pkp2.webp"
 texrep 1 1
 crease 80.000000
 numvert 4
@@ -1089,7 +1089,7 @@ OBJECT poly
 name "kurs_director"
 data 8
 Mesh.022
-texture "sym.png"
+texture "sym.webp"
 texrep 1 1
 crease 80.000000
 numvert 4
@@ -1110,7 +1110,7 @@ OBJECT poly
 name "kurs_flag"
 data 8
 Mesh.016
-texture "sym.png"
+texture "sym.webp"
 texrep 1 1
 crease 80.000000
 numvert 4
@@ -1131,7 +1131,7 @@ OBJECT poly
 name "kurs_marker"
 data 8
 Mesh.018
-texture "sym.png"
+texture "sym.webp"
 texrep 1 1
 crease 80.000000
 numvert 4
@@ -1152,7 +1152,7 @@ OBJECT poly
 name "right_face_t"
 data 8
 Mesh.010
-texture "sym.png"
+texture "sym.webp"
 texrep 1 1
 crease 80.000000
 numvert 4
@@ -1173,7 +1173,7 @@ OBJECT poly
 name "right_h_t"
 data 8
 Mesh.011
-texture "sym.png"
+texture "sym.webp"
 texrep 1 1
 crease 80.000000
 numvert 4
@@ -1194,7 +1194,7 @@ OBJECT poly
 name "right_v_t"
 data 8
 Mesh.012
-texture "sym.png"
+texture "sym.webp"
 texrep 1 1
 crease 80.000000
 numvert 4
@@ -1215,7 +1215,7 @@ OBJECT poly
 name "roll_marker"
 data 8
 Mesh.023
-texture "sym.png"
+texture "sym.webp"
 texrep 1 1
 crease 80.000000
 numvert 4
@@ -1357,7 +1357,7 @@ OBJECT poly
 name "sphere"
 data 8
 Mesh.004
-texture "ag.png"
+texture "ag.webp"
 texrep 1 1
 crease 80.000000
 numvert 541
@@ -5584,7 +5584,7 @@ OBJECT poly
 name "test_t"
 data 8
 Mesh.013
-texture "sym.png"
+texture "sym.webp"
 texrep 1 1
 crease 80.000000
 numvert 4
@@ -5605,7 +5605,7 @@ OBJECT poly
 name "text_1"
 data 8
 Mesh.006
-texture "sym.png"
+texture "sym.webp"
 texrep 1 1
 crease 80.000000
 numvert 4

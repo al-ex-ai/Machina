@@ -8,7 +8,7 @@ name "axe"
 loc 0.002299 -0.001194 -0.000002
 data 3
 axe
-texture "ai2.png"
+texture "ai2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8
@@ -62,7 +62,7 @@ name "cadran"
 loc 0.002617 0 -0.000002
 data 6
 cadran
-texture "ai2.png"
+texture "ai2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 143
@@ -965,7 +965,7 @@ name "face"
 loc -0.001793 0 -0.000002
 data 4
 face
-texture "ai2.png"
+texture "ai2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 17
@@ -1089,7 +1089,7 @@ name "fond"
 loc -0.000269 0 -0.000002
 data 4
 fond
-texture "ai2.png"
+texture "ai2.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 128

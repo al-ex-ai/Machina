@@ -7,7 +7,7 @@ name "Circle"
 loc 0 0.026132 0.064121
 data 6
 Circle
-texture "panel.png"
+texture "panel.webp"
 crease 179.000000
 numvert 65
 0 0 -0.007256
@@ -514,7 +514,7 @@ name "Circle.001"
 loc 0 0.026132 -0.06388
 data 10
 Circle.001
-texture "panel.png"
+texture "panel.webp"
 crease 179.000000
 numvert 65
 0 0 -0.007256
@@ -1021,7 +1021,7 @@ name "Circle.002"
 loc 0 0.018604 -0.028334
 data 10
 Circle.002
-texture "panel.png"
+texture "panel.webp"
 crease 179.000000
 numvert 65
 0 0 -0.007256
@@ -1528,7 +1528,7 @@ name "Circle.003"
 loc 1e-06 -0.029753 0.065915
 data 10
 Circle.003
-texture "panel.png"
+texture "panel.webp"
 crease 179.000000
 numvert 108
 0 0.002011 -0.019068
@@ -2081,7 +2081,7 @@ name "Circle.004"
 loc 0 -0.02458 -0.055774
 data 10
 Circle.004
-texture "panel.png"
+texture "panel.webp"
 crease 179.000000
 numvert 65
 0 0 -0.007256
@@ -2588,7 +2588,7 @@ name "Circle.005"
 loc 0 -0.02503 0.016425
 data 10
 Circle.005
-texture "panel.png"
+texture "panel.webp"
 crease 179.000000
 numvert 65
 0 0 -0.007256
@@ -3095,7 +3095,7 @@ name "knob_c"
 loc 0.011956 0 0
 data 6
 knob_c
-texture "panel.png"
+texture "panel.webp"
 crease 179.000000
 numvert 44
 -0.009408 -0.015979 0.002886
@@ -3350,7 +3350,7 @@ name "knob_l"
 loc 0.011956 0 0.041225
 data 6
 knob_l
-texture "panel.png"
+texture "panel.webp"
 crease 179.000000
 numvert 44
 -0.009408 -0.015979 0.002886
@@ -3605,7 +3605,7 @@ name "knob_r"
 loc 0.011956 0 -0.043958
 data 6
 knob_r
-texture "panel.png"
+texture "panel.webp"
 crease 179.000000
 numvert 44
 -0.009408 -0.015979 0.002886

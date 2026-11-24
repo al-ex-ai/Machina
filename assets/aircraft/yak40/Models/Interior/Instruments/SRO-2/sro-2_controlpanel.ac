@@ -33504,7 +33504,7 @@ kids 0
 OBJECT poly
 name "sro_lightplate"
 loc 6.00293e-05 -0.0075699 0.00141161
-texture "sro-2.png"
+texture "sro-2.webp"
 crease 45.000000
 numvert 41
 -0.0588381 0.00661502 -0.0161562
@@ -33674,7 +33674,7 @@ kids 0
 OBJECT poly
 name "code_disk"
 loc 0.110831 0.00474619 0.0331367
-texture "sro-2.png"
+texture "sro-2.webp"
 crease 45.000000
 numvert 25
 -0.0939353 9.31323e-10 -0.0331367

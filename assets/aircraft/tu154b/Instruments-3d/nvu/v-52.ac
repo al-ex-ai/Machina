@@ -5,7 +5,7 @@ kids 7
 OBJECT poly
 name "base"
 loc -0.000124849 -0.00563379 0.000252645
-texture "base_v-52.png"
+texture "base_v-52.webp"
 crease 100.000000
 numvert 4
 -1.19209e-07 -0.049898 -0.0587927
@@ -24,7 +24,7 @@ kids 0
 OBJECT poly
 name "text"
 loc 0.00023273 -0.00376327 0.00810178
-texture "text_v-52.png"
+texture "text_v-52.webp"
 crease 100.000000
 numvert 4
 -1.03377e-07 -0.0477825 0.0504063
@@ -43,7 +43,7 @@ kids 0
 OBJECT poly
 name "aircraft"
 loc 0.000353376 -0.000828381 -0.00094091
-texture "aircraft.png"
+texture "aircraft.webp"
 crease 100.000000
 numvert 4
 -1.1269e-07 -0.00482761 -0.0240839
@@ -62,7 +62,7 @@ kids 0
 OBJECT poly
 name "beacon"
 loc 0.000353377 -0.0471245 -0.000890758
-texture "beacon.png"
+texture "beacon.webp"
 crease 100.000000
 numvert 4
 -1.1269e-07 -0.00482761 -0.0166736
@@ -81,7 +81,7 @@ kids 0
 OBJECT poly
 name "point"
 loc 0.000300024 -0.0353561 -0.000940911
-texture "point.png"
+texture "point.webp"
 crease 100.000000
 numvert 4
 -1.05239e-07 -0.00440662 0.0166746
@@ -104,7 +104,7 @@ kids 32
 OBJECT poly
 name "z_hund_5"
 loc 3.72529e-09 -0.020572 0.0450084
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0.0139384 0.00490158 -0.00289369
@@ -450,7 +450,7 @@ kids 0
 OBJECT poly
 name "z_ths_5"
 loc 3.72529e-09 -0.020572 0.0511738
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0 0 0.00289361
@@ -796,7 +796,7 @@ kids 0
 OBJECT poly
 name "z_dec_5"
 loc 3.72529e-09 -0.020572 0.0388431
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0 0 0.0028936
@@ -1142,7 +1142,7 @@ kids 0
 OBJECT poly
 name "z_ones_5"
 loc 3.72529e-09 -0.020572 0.0326704
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0.0139384 0.00490158 -0.00289369
@@ -1488,7 +1488,7 @@ kids 0
 OBJECT poly
 name "z_ones_6"
 loc 3.72529e-09 -0.020572 0.00630271
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0 0 0.00289359
@@ -1834,7 +1834,7 @@ kids 0
 OBJECT poly
 name "z_dec_6"
 loc 3.72529e-09 -0.020572 0.0124754
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0.0139384 0.00490158 -0.00289369
@@ -2180,7 +2180,7 @@ kids 0
 OBJECT poly
 name "z_ths_6"
 loc 3.72529e-09 -0.020572 0.0248061
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0.0139384 0.00490158 -0.00289368
@@ -2526,7 +2526,7 @@ kids 0
 OBJECT poly
 name "z_hund_6"
 loc 1.86265e-09 -0.020572 0.0186407
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0 0 0.00289361
@@ -2872,7 +2872,7 @@ kids 0
 OBJECT poly
 name "s_hund_7"
 loc 1.86265e-09 -0.020572 -0.0121004
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0.0139384 0.00490158 -0.00289369
@@ -3218,7 +3218,7 @@ kids 0
 OBJECT poly
 name "s_ths_7"
 loc 1.86265e-09 -0.020572 -0.00593497
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0 0 0.00289361
@@ -3564,7 +3564,7 @@ kids 0
 OBJECT poly
 name "s_dec_7"
 loc 1.86265e-09 -0.020572 -0.0182657
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0 0 0.0028936
@@ -3910,7 +3910,7 @@ kids 0
 OBJECT poly
 name "s_ones_7"
 loc 1.86265e-09 -0.020572 -0.0244384
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0.0139384 0.00490158 -0.00289369
@@ -4256,7 +4256,7 @@ kids 0
 OBJECT poly
 name "s_ones_8"
 loc 0 -0.020572 -0.0515488
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0 0 0.00289359
@@ -4602,7 +4602,7 @@ kids 0
 OBJECT poly
 name "s_dec_8"
 loc 0 -0.020572 -0.0453761
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0.0139384 0.00490158 -0.00289369
@@ -4948,7 +4948,7 @@ kids 0
 OBJECT poly
 name "s_ths_8"
 loc 0 -0.020572 -0.0330454
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0.0139384 0.00490158 -0.00289368
@@ -5294,7 +5294,7 @@ kids 0
 OBJECT poly
 name "s_hund_8"
 loc 0 -0.020572 -0.0392108
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0 0 0.00289362
@@ -5640,7 +5640,7 @@ kids 0
 OBJECT poly
 name "s_hund_4"
 loc 0 0.020572 -0.0392108
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0.0139384 0.00490158 -0.00289369
@@ -5986,7 +5986,7 @@ kids 0
 OBJECT poly
 name "s_ths_4"
 loc 0 0.020572 -0.0330454
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0 0 0.00289361
@@ -6332,7 +6332,7 @@ kids 0
 OBJECT poly
 name "s_dec_4"
 loc 0 0.020572 -0.0453761
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 1.86265e-09 0 0.0028936
@@ -6678,7 +6678,7 @@ kids 0
 OBJECT poly
 name "s_ones_4"
 loc 0 0.020572 -0.0515488
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0.0139384 0.00490158 -0.00289369
@@ -7024,7 +7024,7 @@ kids 0
 OBJECT poly
 name "s_ones_3"
 loc 1.86265e-09 0.020572 -0.0244384
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0 0 0.00289359
@@ -7370,7 +7370,7 @@ kids 0
 OBJECT poly
 name "s_dec_3"
 loc 1.86265e-09 0.020572 -0.0182657
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0.0139384 0.00490158 -0.00289369
@@ -7716,7 +7716,7 @@ kids 0
 OBJECT poly
 name "s_ths_3"
 loc 1.86265e-09 0.020572 -0.00593497
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0.0139384 0.00490158 -0.00289368
@@ -8062,7 +8062,7 @@ kids 0
 OBJECT poly
 name "s_hund_3"
 loc 1.86265e-09 0.020572 -0.0121004
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 -1.86265e-09 0 0.00289361
@@ -8408,7 +8408,7 @@ kids 0
 OBJECT poly
 name "z_hund_2"
 loc 1.86265e-09 0.020572 0.0186407
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0.0139384 0.00490158 -0.00289369
@@ -8754,7 +8754,7 @@ kids 0
 OBJECT poly
 name "z_ths_2"
 loc 3.72529e-09 0.020572 0.0248061
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0 0 0.00289361
@@ -9100,7 +9100,7 @@ kids 0
 OBJECT poly
 name "z_dec_2"
 loc 3.72529e-09 0.020572 0.0124754
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0 0 0.0028936
@@ -9446,7 +9446,7 @@ kids 0
 OBJECT poly
 name "z_ones_2"
 loc 3.72529e-09 0.020572 0.00630271
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0.0139384 0.00490158 -0.00289369
@@ -9792,7 +9792,7 @@ kids 0
 OBJECT poly
 name "z_ones_1"
 loc 3.72529e-09 0.020572 0.0326704
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0 0 0.0028936
@@ -10138,7 +10138,7 @@ kids 0
 OBJECT poly
 name "z_dec_1"
 loc 3.72529e-09 0.020572 0.0388431
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0.0139384 0.00490158 -0.00289369
@@ -10484,7 +10484,7 @@ kids 0
 OBJECT poly
 name "z_ths_1"
 loc 3.72529e-09 0.020572 0.0511738
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0.0139384 0.00490158 -0.00289368
@@ -10830,7 +10830,7 @@ kids 0
 OBJECT poly
 name "z_hund_1"
 loc 3.72529e-09 0.020572 0.0450084
-texture "digit.png"
+texture "digit.webp"
 crease 100.000000
 numvert 34
 0 0 0.00289361
@@ -11176,7 +11176,7 @@ kids 0
 OBJECT poly
 name "blanker"
 loc -0.00066382 0.00117448 3.30247e-05
-texture "base_v-52.png"
+texture "base_v-52.webp"
 crease 100.000000
 numvert 12
 -1.16415e-07 -0.0365011 -0.0490029

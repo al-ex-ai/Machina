@@ -7,7 +7,7 @@ name "doors.open"
 loc 0 0 -0
 data 10
 doors.open
-texture "warning.png"
+texture "warning.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 65
@@ -499,7 +499,7 @@ name "heat.left"
 loc 0 0 -0
 data 9
 heat.left
-texture "warning.png"
+texture "warning.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 31
@@ -707,7 +707,7 @@ name "heat.right"
 loc 0 0 -0
 data 10
 heat.right
-texture "warning.png"
+texture "warning.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 31
@@ -915,7 +915,7 @@ name "text"
 loc 0 0 -0
 data 4
 text
-texture "warning.png"
+texture "warning.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 20
@@ -981,7 +981,7 @@ name "wheels.locked"
 loc 0 0 -0
 data 13
 wheels.locked
-texture "warning.png"
+texture "warning.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 32
@@ -1204,7 +1204,7 @@ name "wheels.unlock"
 loc 0 0 -0
 data 13
 wheels.unlock
-texture "warning.png"
+texture "warning.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 31

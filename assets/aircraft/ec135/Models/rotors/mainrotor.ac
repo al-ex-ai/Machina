@@ -1625,7 +1625,7 @@ OBJECT poly
 name "blade1"
 data 10
 Circle.023
-texture "Rotorblade.png"
+texture "Rotorblade.webp"
 texrep 1 1
 crease 80.000000
 numvert 234
@@ -3385,7 +3385,7 @@ OBJECT poly
 name "blade1a"
 data 10
 Circle.025
-texture "Rotorblade.png"
+texture "Rotorblade.webp"
 texrep 1 1
 crease 80.000000
 numvert 48
@@ -3667,7 +3667,7 @@ OBJECT poly
 name "blade1b"
 data 10
 Circle.026
-texture "Rotorblade.png"
+texture "Rotorblade.webp"
 texrep 1 1
 crease 80.000000
 numvert 32
@@ -3821,7 +3821,7 @@ OBJECT poly
 name "blade1c"
 data 10
 Circle.027
-texture "Rotorblade.png"
+texture "Rotorblade.webp"
 texrep 1 1
 crease 80.000000
 numvert 32
@@ -3975,7 +3975,7 @@ OBJECT poly
 name "blade1d"
 data 10
 Circle.028
-texture "Rotorblade.png"
+texture "Rotorblade.webp"
 texrep 1 1
 crease 80.000000
 numvert 186
@@ -5450,7 +5450,7 @@ OBJECT poly
 name "blade2"
 data 10
 Circle.029
-texture "Rotorblade.png"
+texture "Rotorblade.webp"
 texrep 1 1
 crease 80.000000
 numvert 233
@@ -7201,7 +7201,7 @@ OBJECT poly
 name "blade2a"
 data 10
 Circle.030
-texture "Rotorblade.png"
+texture "Rotorblade.webp"
 texrep 1 1
 crease 80.000000
 numvert 48
@@ -7483,7 +7483,7 @@ OBJECT poly
 name "blade2b"
 data 10
 Circle.031
-texture "Rotorblade.png"
+texture "Rotorblade.webp"
 texrep 1 1
 crease 80.000000
 numvert 32
@@ -7637,7 +7637,7 @@ OBJECT poly
 name "blade2c"
 data 10
 Circle.032
-texture "Rotorblade.png"
+texture "Rotorblade.webp"
 texrep 1 1
 crease 80.000000
 numvert 32
@@ -7791,7 +7791,7 @@ OBJECT poly
 name "blade2d"
 data 10
 Circle.033
-texture "Rotorblade.png"
+texture "Rotorblade.webp"
 texrep 1 1
 crease 80.000000
 numvert 186
@@ -9266,7 +9266,7 @@ OBJECT poly
 name "blade3"
 data 10
 Circle.034
-texture "Rotorblade.png"
+texture "Rotorblade.webp"
 texrep 1 1
 crease 80.000000
 numvert 233
@@ -11017,7 +11017,7 @@ OBJECT poly
 name "blade3a"
 data 10
 Circle.035
-texture "Rotorblade.png"
+texture "Rotorblade.webp"
 texrep 1 1
 crease 80.000000
 numvert 48
@@ -11299,7 +11299,7 @@ OBJECT poly
 name "blade3b"
 data 10
 Circle.036
-texture "Rotorblade.png"
+texture "Rotorblade.webp"
 texrep 1 1
 crease 80.000000
 numvert 32
@@ -11453,7 +11453,7 @@ OBJECT poly
 name "blade3c"
 data 10
 Circle.037
-texture "Rotorblade.png"
+texture "Rotorblade.webp"
 texrep 1 1
 crease 80.000000
 numvert 32
@@ -11607,7 +11607,7 @@ OBJECT poly
 name "blade3d"
 data 10
 Circle.038
-texture "Rotorblade.png"
+texture "Rotorblade.webp"
 texrep 1 1
 crease 80.000000
 numvert 186
@@ -13082,7 +13082,7 @@ OBJECT poly
 name "blade4"
 data 10
 Circle.039
-texture "Rotorblade.png"
+texture "Rotorblade.webp"
 texrep 1 1
 crease 80.000000
 numvert 233
@@ -14833,7 +14833,7 @@ OBJECT poly
 name "blade4a"
 data 10
 Circle.040
-texture "Rotorblade.png"
+texture "Rotorblade.webp"
 texrep 1 1
 crease 80.000000
 numvert 48
@@ -15115,7 +15115,7 @@ OBJECT poly
 name "blade4b"
 data 10
 Circle.041
-texture "Rotorblade.png"
+texture "Rotorblade.webp"
 texrep 1 1
 crease 80.000000
 numvert 32
@@ -15269,7 +15269,7 @@ OBJECT poly
 name "blade4c"
 data 10
 Circle.042
-texture "Rotorblade.png"
+texture "Rotorblade.webp"
 texrep 1 1
 crease 80.000000
 numvert 32
@@ -15423,7 +15423,7 @@ OBJECT poly
 name "blade4d"
 data 10
 Circle.043
-texture "Rotorblade.png"
+texture "Rotorblade.webp"
 texrep 1 1
 crease 80.000000
 numvert 186
@@ -16920,7 +16920,7 @@ OBJECT poly
 name "blurred1a_1"
 data 9
 Plane.001
-texture "rotorblur.png"
+texture "rotorblur.webp"
 texrep 1 1
 crease 80.000000
 numvert 18
@@ -17037,7 +17037,7 @@ OBJECT poly
 name "blurred1b"
 data 9
 Plane.010
-texture "rotorblur.png"
+texture "rotorblur.webp"
 texrep 1 1
 crease 80.000000
 numvert 16
@@ -17119,7 +17119,7 @@ OBJECT poly
 name "blurred1c"
 data 9
 Plane.009
-texture "rotorblur.png"
+texture "rotorblur.webp"
 texrep 1 1
 crease 80.000000
 numvert 16
@@ -17201,7 +17201,7 @@ OBJECT poly
 name "blurred1d"
 data 9
 Plane.008
-texture "rotorblur.png"
+texture "rotorblur.webp"
 texrep 1 1
 crease 80.000000
 numvert 16
@@ -17331,7 +17331,7 @@ OBJECT poly
 name "blurred2a_1"
 data 9
 Plane.011
-texture "rotorblur.png"
+texture "rotorblur.webp"
 texrep 1 1
 crease 80.000000
 numvert 18
@@ -17448,7 +17448,7 @@ OBJECT poly
 name "blurred2b"
 data 9
 Plane.012
-texture "rotorblur.png"
+texture "rotorblur.webp"
 texrep 1 1
 crease 80.000000
 numvert 16
@@ -17530,7 +17530,7 @@ OBJECT poly
 name "blurred2c"
 data 9
 Plane.013
-texture "rotorblur.png"
+texture "rotorblur.webp"
 texrep 1 1
 crease 80.000000
 numvert 16
@@ -17612,7 +17612,7 @@ OBJECT poly
 name "blurred2d"
 data 9
 Plane.005
-texture "rotorblur.png"
+texture "rotorblur.webp"
 texrep 1 1
 crease 80.000000
 numvert 16
@@ -17742,7 +17742,7 @@ OBJECT poly
 name "blurred3a_1"
 data 9
 Plane.006
-texture "rotorblur.png"
+texture "rotorblur.webp"
 texrep 1 1
 crease 80.000000
 numvert 18
@@ -17859,7 +17859,7 @@ OBJECT poly
 name "blurred3b"
 data 9
 Plane.016
-texture "rotorblur.png"
+texture "rotorblur.webp"
 texrep 1 1
 crease 80.000000
 numvert 16
@@ -17941,7 +17941,7 @@ OBJECT poly
 name "blurred3c"
 data 9
 Plane.015
-texture "rotorblur.png"
+texture "rotorblur.webp"
 texrep 1 1
 crease 80.000000
 numvert 16
@@ -18023,7 +18023,7 @@ OBJECT poly
 name "blurred3d"
 data 9
 Plane.014
-texture "rotorblur.png"
+texture "rotorblur.webp"
 texrep 1 1
 crease 80.000000
 numvert 16
@@ -18153,7 +18153,7 @@ OBJECT poly
 name "blurred4a_1"
 data 9
 Plane.017
-texture "rotorblur.png"
+texture "rotorblur.webp"
 texrep 1 1
 crease 80.000000
 numvert 18
@@ -18270,7 +18270,7 @@ OBJECT poly
 name "blurred4b"
 data 9
 Plane.018
-texture "rotorblur.png"
+texture "rotorblur.webp"
 texrep 1 1
 crease 80.000000
 numvert 16
@@ -18352,7 +18352,7 @@ OBJECT poly
 name "blurred4c"
 data 9
 Plane.019
-texture "rotorblur.png"
+texture "rotorblur.webp"
 texrep 1 1
 crease 80.000000
 numvert 16
@@ -18434,7 +18434,7 @@ OBJECT poly
 name "blurred4d"
 data 9
 Plane.007
-texture "rotorblur.png"
+texture "rotorblur.webp"
 texrep 1 1
 crease 80.000000
 numvert 16
@@ -19755,7 +19755,7 @@ OBJECT poly
 name "pitchlink1"
 data 12
 Cylinder.008
-texture "Rotorblade.png"
+texture "Rotorblade.webp"
 texrep 1 1
 crease 80.000000
 numvert 66
@@ -20359,7 +20359,7 @@ OBJECT poly
 name "pitchlink2"
 data 12
 Cylinder.009
-texture "Rotorblade.png"
+texture "Rotorblade.webp"
 texrep 1 1
 crease 80.000000
 numvert 66
@@ -20963,7 +20963,7 @@ OBJECT poly
 name "pitchlink3"
 data 12
 Cylinder.010
-texture "Rotorblade.png"
+texture "Rotorblade.webp"
 texrep 1 1
 crease 80.000000
 numvert 66
@@ -21567,7 +21567,7 @@ OBJECT poly
 name "pitchlink4"
 data 12
 Cylinder.011
-texture "Rotorblade.png"
+texture "Rotorblade.webp"
 texrep 1 1
 crease 80.000000
 numvert 66

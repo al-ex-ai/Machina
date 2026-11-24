@@ -411,7 +411,7 @@ kids 0
 OBJECT poly
 name "timer_min_needle"
 loc 0.00266088 0.00425778 -0.00322556
-texture "achs-1.png"
+texture "achs-1.webp"
 crease 45.000000
 numvert 31
 0 -0.021579 0.00322555
@@ -630,7 +630,7 @@ kids 0
 OBJECT poly
 name "ft_min_needle"
 loc 0.00261914 0.0174128 0
-texture "achs-1.png"
+texture "achs-1.webp"
 crease 45.000000
 numvert 28
 0 0 0
@@ -804,7 +804,7 @@ kids 0
 OBJECT poly
 name "ft_hour_needle"
 loc 0.00242765 0.0174128 0
-texture "achs-1.png"
+texture "achs-1.webp"
 crease 45.000000
 numvert 47
 0 0 0
@@ -1095,7 +1095,7 @@ kids 0
 OBJECT poly
 name "hour_needle"
 loc 0.00373754 5.74701e-05 9.8221e-05
-texture "achs-1.png"
+texture "achs-1.webp"
 crease 45.000000
 numvert 47
 0 0.0380047 0.000266939
@@ -1386,7 +1386,7 @@ kids 0
 OBJECT poly
 name "min_needle"
 loc 0.003919 5.74698e-05 9.82239e-05
-texture "achs-1.png"
+texture "achs-1.webp"
 crease 45.000000
 numvert 28
 0 0.0333207 0.000205516
@@ -1560,7 +1560,7 @@ kids 0
 OBJECT poly
 name "timer_sec_needle"
 loc 0.00296673 -0.0140471 -9.77889e-09
-texture "achs-1.png"
+texture "achs-1.webp"
 crease 45.000000
 numvert 49
 0 -0.00319717 0.000362342
@@ -1841,7 +1841,7 @@ kids 0
 OBJECT poly
 name "sec_needle"
 loc 0.00457808 0.0089573 9.82238e-05
-texture "achs-1.png"
+texture "achs-1.webp"
 crease 45.000000
 numvert 69
 0 0.0246906 -9.2281e-05
@@ -2248,7 +2248,7 @@ kids 0
 OBJECT poly
 name "l-press"
 loc 0.0183927 -0.0193529 0.0399911
-texture "achs-1.png"
+texture "achs-1.webp"
 crease 45.000000
 numvert 49
 0.00120731 -0.00341189 0.0034119
@@ -2625,7 +2625,7 @@ kids 0
 OBJECT poly
 name "left_knob"
 loc 0.0102755 -0.0193529 0.0399911
-texture "achs-1.png"
+texture "achs-1.webp"
 crease 45.000000
 numvert 56
 9.42554e-05 -0.00405398 0.00405392
@@ -2885,7 +2885,7 @@ kids 0
 OBJECT poly
 name "right_knob"
 loc 0.0102755 -0.0193529 -0.0399911
-texture "achs-1.png"
+texture "achs-1.webp"
 crease 45.000000
 numvert 56
 9.42554e-05 -0.00529677 -0.00219395
@@ -3145,7 +3145,7 @@ kids 0
 OBJECT poly
 name "r-press"
 loc 0.0196 -0.0193529 -0.0399911
-texture "achs-1.png"
+texture "achs-1.webp"
 crease 45.000000
 numvert 48
 3.72529e-09 -0.0040539 -0.00405389
@@ -3297,7 +3297,7 @@ kids 0
 OBJECT poly
 name "achs-face"
 loc 0.0011341 0 0
-texture "achs-1.png"
+texture "achs-1.webp"
 crease 45.000000
 numvert 41
 0.000936225 0.0139125 0.00326226
@@ -3602,7 +3602,7 @@ kids 0
 OBJECT poly
 name "achs-housing"
 loc 0.00442936 0 0
-texture "achs-1.png"
+texture "achs-1.webp"
 crease 45.000000
 numvert 128
 -0.00349163 -0.00746656 -0.037537
@@ -4410,7 +4410,7 @@ kids 0
 OBJECT poly
 name "mode_ind_flag"
 loc 0 0.0103665 -0.000141907
-texture "achs-1.png"
+texture "achs-1.webp"
 crease 45.000000
 numvert 6
 0 0.00526742 -0.0118879
@@ -4438,7 +4438,7 @@ kids 0
 OBJECT poly
 name "case"
 loc 0.00369472 0 0.0023433
-texture "achs-1.png"
+texture "achs-1.webp"
 crease 45.000000
 numvert 180
 -0.00321375 -0.00827621 0.0392635

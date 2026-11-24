@@ -613,7 +613,7 @@ kids 0
 OBJECT poly
 name "base"
 loc 0.00087246 -0.0090392 -1.05722e-06
-texture "base.png"
+texture "base.webp"
 crease 100.000000
 numvert 4
 2.09548e-09 -0.0474193 0.0473362
@@ -651,7 +651,7 @@ kids 0
 OBJECT poly
 name "cover"
 loc 0.00511725 -0.00947745 -0.000667118
-texture "cover.png"
+texture "cover.webp"
 crease 100.000000
 numvert 4
 1.86265e-09 0.0474193 0.0473362

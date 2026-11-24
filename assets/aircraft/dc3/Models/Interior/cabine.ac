@@ -8,7 +8,7 @@ name "HDRintvitres"
 loc 0 0 -0
 data 12
 HDRintvitres
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 96
@@ -339,7 +339,7 @@ name "bagageD"
 loc 0 0 -0
 data 7
 bagageD
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 58
@@ -760,7 +760,7 @@ name "bagageG"
 loc 0 0 -0
 data 7
 bagageG
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 51
@@ -1133,7 +1133,7 @@ name "cloisons"
 loc 0 0 -0
 data 8
 cloisons
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 130
@@ -1993,7 +1993,7 @@ name "intcargoA"
 loc 0 0 -0
 data 9
 intcargoA
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 232
@@ -2970,7 +2970,7 @@ name "intcargoB"
 loc 0 0 -0
 data 9
 intcargoB
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 180.000005
 numvert 72
@@ -3329,7 +3329,7 @@ name "interieur"
 loc 0 0 -0
 data 9
 interieur
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 469
@@ -6515,7 +6515,7 @@ name "intporteA"
 loc 0 0 -0
 data 9
 intporteA
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 73
@@ -6836,7 +6836,7 @@ name "intporteB"
 loc 0 0 -0
 data 9
 intporteB
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 47
@@ -7104,7 +7104,7 @@ name "inttour"
 loc 0 0 -0
 data 7
 inttour
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 450
@@ -8636,7 +8636,7 @@ name "intvitres"
 loc 0 0 -0
 data 9
 intvitres
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 96
@@ -8967,7 +8967,7 @@ name "planchet"
 loc 0 0 -0
 data 8
 planchet
-texture "interior.png"
+texture "interior.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 45

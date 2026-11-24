@@ -8,7 +8,7 @@ name "face"
 loc -2.05385e-06 6.64477e-08 1.99343e-07
 data 6
 Circle
-texture "ui2-240.png"
+texture "ui2-240.webp"
 crease 30.000000
 numvert 17
 0.000692494 -0.0212401 -0.0212412
@@ -131,7 +131,7 @@ name "Circle"
 loc 0.0012737 6.64477e-08 -1.50036e-06
 data 10
 Circle.001
-texture "ui2-240.png"
+texture "ui2-240.webp"
 crease 30.000000
 numvert 44
 -0.00071254 -0.0139433 -0.0105758

@@ -8,7 +8,7 @@ name "ElapsedMinutesHand"
 loc -0.001136 0.0171 -0
 data 18
 ElapsedMinutesHand
-texture "chronograph.png"
+texture "chronograph.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 24
@@ -139,7 +139,7 @@ name "HourHand"
 loc -0.001809 0.010522 -0
 data 8
 HourHand
-texture "chronograph.png"
+texture "chronograph.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 12
@@ -218,7 +218,7 @@ name "MinuteHand"
 loc -0.001481 0.015342 -0
 data 10
 MinuteHand
-texture "chronograph.png"
+texture "chronograph.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 12
@@ -290,7 +290,7 @@ name "SecondHand"
 loc -0.000723 0.014712 -0
 data 10
 SecondHand
-texture "chronograph.png"
+texture "chronograph.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8
@@ -337,7 +337,7 @@ name "bkg"
 loc -0.004612 0 -0
 data 3
 bkg
-texture "chronograph.png"
+texture "chronograph.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -359,7 +359,7 @@ name "chronometer-button"
 loc 0.005007 0.02568 -0.027445
 data 18
 chronometer-button
-texture "chronograph.png"
+texture "chronograph.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 17
@@ -491,7 +491,7 @@ name "disk"
 loc -0.001142 0 -0
 data 4
 disk
-texture "chronograph.png"
+texture "chronograph.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 26
@@ -736,7 +736,7 @@ name "face"
 loc -0.001818 0 -0
 data 4
 face
-texture "chronograph.png"
+texture "chronograph.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 36
@@ -902,7 +902,7 @@ name "knob"
 loc 0.007381 -0.029461 0.024856
 data 4
 knob
-texture "chronograph.png"
+texture "chronograph.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 17
@@ -1034,7 +1034,7 @@ name "mount"
 loc -0.001802 0 -0
 data 5
 mount
-texture "chronograph.png"
+texture "chronograph.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 60

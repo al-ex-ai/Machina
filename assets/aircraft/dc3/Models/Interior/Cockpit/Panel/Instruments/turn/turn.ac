@@ -8,7 +8,7 @@ name "background"
 loc 0.006784 0 -0
 data 10
 background
-texture "turn.png"
+texture "turn.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8
@@ -62,7 +62,7 @@ name "ball"
 loc 0.006784 0 -0
 data 4
 ball
-texture "turn.png"
+texture "turn.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 37
@@ -306,7 +306,7 @@ name "face"
 loc 0.006784 0 -0
 data 4
 face
-texture "turn.png"
+texture "turn.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 56
@@ -622,7 +622,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "turn.png"
+texture "turn.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 260
@@ -2429,7 +2429,7 @@ name "needle"
 loc 0.006784 -0.024101 -0
 data 6
 needle
-texture "turn.png"
+texture "turn.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 32

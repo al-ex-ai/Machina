@@ -7,7 +7,7 @@ kids 5
 OBJECT poly
 name "text"
 loc -0.0602534 4.11645e-09 -0.000474709
-texture "ias.png"
+texture "ias.webp"
 crease 100.000000
 numvert 33
 0.0605 0.00944237 -0.04747

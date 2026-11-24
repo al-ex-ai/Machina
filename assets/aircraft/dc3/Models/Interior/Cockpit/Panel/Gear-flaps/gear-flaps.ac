@@ -7,7 +7,7 @@ name "Plane"
 loc 0 0 -0
 data 5
 Plane
-texture "gear-flaps.png"
+texture "gear-flaps.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8
@@ -61,7 +61,7 @@ name "Tube"
 loc 0 0 -0
 data 4
 Tube
-texture "gear-flaps.png"
+texture "gear-flaps.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 114
@@ -804,7 +804,7 @@ name "ap-press"
 loc 0 0 -0
 data 8
 ap-press
-texture "gear-flaps.png"
+texture "gear-flaps.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 90
@@ -1478,7 +1478,7 @@ name "coude-jauge"
 loc 0 0 -0
 data 11
 coude-jauge
-texture "gear-flaps.png"
+texture "gear-flaps.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 192
@@ -2918,7 +2918,7 @@ name "flap-lev"
 loc 0 0 -0
 data 8
 flap-lev
-texture "gear-flaps.png"
+texture "gear-flaps.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 141
@@ -4307,7 +4307,7 @@ name "gear-lev"
 loc 0 0 -0
 data 8
 gear-lev
-texture "gear-flaps.png"
+texture "gear-flaps.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 147
@@ -5581,7 +5581,7 @@ name "gear-lev2"
 loc 0 0 -0
 data 9
 gear-lev2
-texture "gear-flaps.png"
+texture "gear-flaps.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 105
@@ -6565,7 +6565,7 @@ name "hyd"
 loc 0 0 -0
 data 3
 hyd
-texture "gear-flaps.png"
+texture "gear-flaps.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 28
@@ -6783,7 +6783,7 @@ name "hyd-vanne"
 loc 0 0 -0
 data 9
 hyd-vanne
-texture "gear-flaps.png"
+texture "gear-flaps.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 1194
@@ -14780,7 +14780,7 @@ name "hydpumps-lev"
 loc 0 0 -0
 data 12
 hydpumps-lev
-texture "gear-flaps.png"
+texture "gear-flaps.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 105
@@ -15647,7 +15647,7 @@ name "plaque-jauge"
 loc 0 0 -0
 data 12
 plaque-jauge
-texture "gear-flaps.png"
+texture "gear-flaps.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 40
@@ -15957,7 +15957,7 @@ name "raccord-jauge"
 loc 0 0 -0
 data 13
 raccord-jauge
-texture "gear-flaps.png"
+texture "gear-flaps.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 60
@@ -16280,7 +16280,7 @@ name "sol_cent"
 loc 0 0 -0
 data 8
 sol_cent
-texture "gear-flaps.png"
+texture "gear-flaps.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 16
@@ -16377,7 +16377,7 @@ name "sol_ext"
 loc 0 0 -0
 data 7
 sol_ext
-texture "gear-flaps.png"
+texture "gear-flaps.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 16
@@ -16481,7 +16481,7 @@ name "sup-jauge"
 loc 0 0 -0
 data 9
 sup-jauge
-texture "gear-flaps.png"
+texture "gear-flaps.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 56
@@ -16927,7 +16927,7 @@ name "tube-ext"
 loc 0 0 -0
 data 8
 tube-ext
-texture "gear-flaps.png"
+texture "gear-flaps.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 40
@@ -17135,7 +17135,7 @@ name "tube-int"
 loc 0 0 -0
 data 8
 tube-int
-texture "gear-flaps.png"
+texture "gear-flaps.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 32
@@ -17290,7 +17290,7 @@ name "vanne"
 loc 0 0 -0
 data 5
 vanne
-texture "gear-flaps.png"
+texture "gear-flaps.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 57
@@ -17658,7 +17658,7 @@ name "vis-jauge"
 loc 0 0 -0
 data 9
 vis-jauge
-texture "gear-flaps.png"
+texture "gear-flaps.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 56

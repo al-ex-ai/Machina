@@ -27,7 +27,7 @@ name "contr_back"
 loc -0.002974 -0.05327 0.047893
 data 10
 contr_back
-texture "pu_27.png"
+texture "pu_27.webp"
 crease 179.000000
 numvert 64
 2.00002e-06 0.030924 -0.014549
@@ -437,7 +437,7 @@ name "contr_front"
 loc -0.002974 -0.05327 0.047893
 data 11
 contr_front
-texture "pu_27.png"
+texture "pu_27.webp"
 crease 179.000000
 numvert 81
 0.019104 0.025879 -0.002369
@@ -1072,7 +1072,7 @@ name "l_osn"
 loc -0.000711 0.031574 -0.025063
 data 5
 l_osn
-texture "pu_27.png"
+texture "pu_27.webp"
 crease 179.000000
 numvert 33
 0 0 -0.006492
@@ -1323,7 +1323,7 @@ name "l_zap"
 loc -0.000711 0.031574 0.020465
 data 5
 l_zap
-texture "pu_27.png"
+texture "pu_27.webp"
 crease 179.000000
 numvert 33
 0 0 -0.006492
@@ -1574,7 +1574,7 @@ name "plate"
 loc 0.000252 0.000129 -0.030558
 data 5
 plate
-texture "pu_27.png"
+texture "pu_27.webp"
 crease 179.000000
 numvert 1020
 0 0 -0.006624
@@ -9466,7 +9466,7 @@ name "s-n_back"
 loc -0.002974 1e-06 0.047308
 data 8
 s-n_back
-texture "pu_27.png"
+texture "pu_27.webp"
 crease 179.000000
 numvert 64
 2.00002e-06 0.030924 -0.014549
@@ -9876,7 +9876,7 @@ name "s-n_front"
 loc -0.002974 1e-06 0.047308
 data 9
 s-n_front
-texture "pu_27.png"
+texture "pu_27.webp"
 crease 179.000000
 numvert 81
 0.019104 0.025879 -0.002369
@@ -10511,7 +10511,7 @@ name "shirota"
 loc -0.000929 -0.014141 -0.002086
 data 7
 shirota
-texture "pu_27.png"
+texture "pu_27.webp"
 crease 179.000000
 numvert 114
 0 0 0.025277
@@ -11467,7 +11467,7 @@ name "sw_back"
 loc -0.002974 1e-06 -6e-06
 data 7
 sw_back
-texture "pu_27.png"
+texture "pu_27.webp"
 crease 179.000000
 numvert 64
 2.00002e-06 0.030924 -0.014549
@@ -11877,7 +11877,7 @@ name "sw_front"
 loc -0.002974 1e-06 -6e-06
 data 8
 sw_front
-texture "pu_27.png"
+texture "pu_27.webp"
 crease 179.000000
 numvert 81
 0.019104 0.025879 -0.002369
@@ -12512,7 +12512,7 @@ name "vybor_back"
 loc -0.002974 -0.000212 -0.045813
 data 10
 vybor_back
-texture "pu_27.png"
+texture "pu_27.webp"
 crease 179.000000
 numvert 64
 2.00002e-06 0.030924 -0.014549
@@ -12922,7 +12922,7 @@ name "vybor_front"
 loc -0.002974 -0.000212 -0.045813
 data 11
 vybor_front
-texture "pu_27.png"
+texture "pu_27.webp"
 crease 179.000000
 numvert 81
 0.019104 0.025879 -0.002369
@@ -13557,7 +13557,7 @@ name "zk_back"
 loc -0.002974 -0.05327 -0.045651
 data 7
 zk_back
-texture "pu_27.png"
+texture "pu_27.webp"
 crease 179.000000
 numvert 64
 2.00002e-06 0.030924 -0.014549
@@ -13967,7 +13967,7 @@ name "zk_front"
 loc -0.002974 -0.05327 -0.045651
 data 8
 zk_front
-texture "pu_27.png"
+texture "pu_27.webp"
 crease 179.000000
 numvert 81
 0.019104 0.025879 -0.002369

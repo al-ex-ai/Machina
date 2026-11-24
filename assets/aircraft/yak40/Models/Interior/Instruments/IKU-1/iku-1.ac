@@ -9,7 +9,7 @@ name "iku_tube"
 loc -0.000246408 0.000366059 1.15194e-05
 data 8
 Cylinder
-texture "base.png"
+texture "base.webp"
 crease 30.000000
 numvert 56
 0.0027468 -0.0395075 -0.0214803
@@ -395,7 +395,7 @@ name "iku_base"
 loc -0.000246408 0.000366059 1.15186e-05
 data 4
 Mesh
-texture "base.png"
+texture "base.webp"
 crease 80.000000
 numvert 4
 -0.000278597 -0.0494053 0.0447508
@@ -1025,7 +1025,7 @@ name "iku_compass"
 loc -0.000246408 0.000366059 1.15194e-05
 data 6
 Circle
-texture "compass.png"
+texture "compass.webp"
 crease 30.000000
 numvert 33
 -0.000129504 -0.0197608 -0.0198631
@@ -1260,7 +1260,7 @@ name "iku_l_src"
 loc -0.000246408 0.000366059 1.15194e-05
 data 8
 Mesh.004
-texture "src.png"
+texture "src.webp"
 crease 80.000000
 numvert 8
 1.08831e-06 -0.0433012 0.0163241
@@ -1335,7 +1335,7 @@ name "iku_r_handle"
 loc -0.000246408 0.000366059 1.15194e-05
 data 8
 Mesh.016
-texture "handles.png"
+texture "handles.webp"
 crease 80.000000
 numvert 53
 0.00523458 -0.0426395 -0.0279163
@@ -1704,7 +1704,7 @@ name "iku_r_src"
 loc -0.000246408 0.000366059 1.15194e-05
 data 8
 Mesh.005
-texture "src.png"
+texture "src.webp"
 crease 80.000000
 numvert 8
 0.00148658 -0.0407285 -0.0154164
@@ -1779,7 +1779,7 @@ name "iku_needle2"
 loc -0.000246408 0.000366059 1.15194e-05
 data 10
 Circle.002
-texture "needles.png"
+texture "needles.webp"
 crease 30.000000
 numvert 143
 0.000883676 -0.0029601 -0.0035347
@@ -2842,7 +2842,7 @@ name "iku_needle1"
 loc -0.000246408 0.000366059 1.15194e-05
 data 10
 Circle.001
-texture "needles.png"
+texture "needles.webp"
 crease 30.000000
 numvert 51
 0.00128416 -0.00189794 -0.00251826
@@ -3208,7 +3208,7 @@ name "iku_l_handle"
 loc -0.000246408 0.000366059 1.15194e-05
 data 8
 Mesh.002
-texture "handles.png"
+texture "handles.webp"
 crease 80.000000
 numvert 53
 0.00505284 -0.0349237 0.0404663

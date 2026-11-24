@@ -7,7 +7,7 @@ name "Ail"
 loc 0 0 -0
 data 3
 Ail
-texture "sperry.png"
+texture "sperry.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 65
@@ -499,7 +499,7 @@ name "Conserv"
 loc 0 0 -0
 data 7
 Conserv
-texture "sperry.png"
+texture "sperry.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 65
@@ -991,7 +991,7 @@ name "Ele"
 loc 0 0 -0
 data 3
 Ele
-texture "sperry.png"
+texture "sperry.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 65
@@ -1483,7 +1483,7 @@ name "OnOff"
 loc 0 0 -0
 data 5
 OnOff
-texture "sperry.png"
+texture "sperry.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 68
@@ -1984,7 +1984,7 @@ name "Rud"
 loc 0 0 -0
 data 3
 Rud
-texture "sperry.png"
+texture "sperry.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 65
@@ -2476,7 +2476,7 @@ name "marker"
 loc 0 0 -0
 data 6
 marker
-texture "sperry.png"
+texture "sperry.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 81
@@ -2956,7 +2956,7 @@ name "sensitivity1"
 loc 0 0 -0
 data 12
 sensitivity1
-texture "sperry.png"
+texture "sperry.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 18
@@ -3081,7 +3081,7 @@ name "sensitivity2"
 loc 0 0 -0
 data 12
 sensitivity2
-texture "sperry.png"
+texture "sperry.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 18
@@ -3206,7 +3206,7 @@ name "sensitivity3"
 loc 0 0 -0
 data 12
 sensitivity3
-texture "sperry.png"
+texture "sperry.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 18
@@ -3331,7 +3331,7 @@ name "sperry"
 loc 0 0 -0
 data 6
 sperry
-texture "sperry.png"
+texture "sperry.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 68

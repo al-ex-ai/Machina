@@ -162,7 +162,7 @@ kids 0
 OBJECT poly
 name "housing"
 loc -0.753 -0.015463 -0.04179
-texture "v-1.png"
+texture "v-1.webp"
 crease 45.000000
 numvert 53
 0.750736 0.0154631 0.0417899

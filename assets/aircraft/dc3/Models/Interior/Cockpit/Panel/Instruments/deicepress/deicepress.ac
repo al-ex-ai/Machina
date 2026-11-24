@@ -8,7 +8,7 @@ name "face"
 loc 0.002639 0.000002 -0
 data 4
 face
-texture "deicepress.png"
+texture "deicepress.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 17
@@ -132,7 +132,7 @@ name "fond"
 loc 0 0.000001 0.000002
 data 4
 fond
-texture "deicepress.png"
+texture "deicepress.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 260
@@ -1939,7 +1939,7 @@ name "needle"
 loc 0.000976 0.000002 -0
 data 6
 needle
-texture "deicepress.png"
+texture "deicepress.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 34

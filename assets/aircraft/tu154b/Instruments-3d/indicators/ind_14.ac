@@ -6,7 +6,7 @@ kids 2
 OBJECT poly
 name "base"
 loc -0.000257183 -5.2387e-10 -8.23839e-10
-texture "gear.png"
+texture "gear.webp"
 crease 100.000000
 numvert 4
 1.45519e-09 0.0232461 0.0332615
@@ -29,7 +29,7 @@ kids 7
 OBJECT poly
 name "rl_1"
 loc 9.31323e-10 0.0036281 0.020452
-texture "68.png"
+texture "68.webp"
 crease 100.000000
 numvert 4
 3.49246e-10 0.00373344 0.0080527
@@ -48,7 +48,7 @@ kids 0
 OBJECT poly
 name "rl_2"
 loc 0 0.0036281 0.000175553
-texture "68.png"
+texture "68.webp"
 crease 100.000000
 numvert 4
 4.07454e-10 -0.00373344 0.0080527
@@ -67,7 +67,7 @@ kids 0
 OBJECT poly
 name "rl_3"
 loc -8.73115e-10 0.0036281 -0.0207153
-texture "68.png"
+texture "68.webp"
 crease 100.000000
 numvert 4
 3.49246e-10 0.00373344 0.0080527
@@ -86,7 +86,7 @@ kids 0
 OBJECT poly
 name "go_gear"
 loc 0 0.0157121 0.000175553
-texture "69.png"
+texture "69.webp"
 crease 100.000000
 numvert 4
 4.07454e-10 -0.00373344 0.0080527
@@ -105,7 +105,7 @@ kids 0
 OBJECT poly
 name "gl_3"
 loc -8.73115e-10 -0.00886545 -0.0207153
-texture "67.png"
+texture "67.webp"
 crease 100.000000
 numvert 4
 3.49246e-10 -0.00373344 0.0080527
@@ -124,7 +124,7 @@ kids 0
 OBJECT poly
 name "gl_2"
 loc 0 -0.00886545 0.000175553
-texture "67.png"
+texture "67.webp"
 crease 100.000000
 numvert 4
 4.07454e-10 0.00373344 0.0080527
@@ -143,7 +143,7 @@ kids 0
 OBJECT poly
 name "gl_1"
 loc 9.31323e-10 -0.00886545 0.020452
-texture "67.png"
+texture "67.webp"
 crease 100.000000
 numvert 4
 3.49246e-10 -0.00373344 0.0080527

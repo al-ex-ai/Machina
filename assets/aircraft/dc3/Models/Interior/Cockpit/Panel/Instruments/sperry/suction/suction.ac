@@ -8,7 +8,7 @@ name "face"
 loc 0.009174 0.000168 0.00014
 data 4
 face
-texture "suction.png"
+texture "suction.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 100
@@ -574,7 +574,7 @@ name "fond"
 loc 0.003386 0.000168 0.00014
 data 4
 fond
-texture "suction.png"
+texture "suction.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 129
@@ -1386,7 +1386,7 @@ name "needle"
 loc 0.001324 0.000168 0.00014
 data 6
 needle
-texture "suction.png"
+texture "suction.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10

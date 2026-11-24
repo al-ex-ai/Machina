@@ -8,7 +8,7 @@ name "Compass.Ball"
 loc 0 0 -0
 data 12
 Compass.Ball
-texture "cap.png"
+texture "cap.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 34
@@ -357,7 +357,7 @@ name "Compass.Case"
 loc 0 0 -0
 data 12
 Compass.Case
-texture "cap.png"
+texture "cap.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 16
@@ -466,7 +466,7 @@ name "Compass.Index"
 loc 0 0 -0
 data 13
 Compass.Index
-texture "cap.png"
+texture "cap.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 32
@@ -670,7 +670,7 @@ name "face"
 loc 0 0 -0
 data 4
 face
-texture "cap.png"
+texture "cap.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 92
@@ -1261,7 +1261,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "cap.png"
+texture "cap.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 96

@@ -8,7 +8,7 @@ name "bol"
 loc -0.11465 0 -0
 data 3
 bol
-texture "propeller.png"
+texture "propeller.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 964
@@ -7575,7 +7575,7 @@ name "pale1"
 loc 0 0.153242 -0
 data 5
 pale1
-texture "propeller.png"
+texture "propeller.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 417
@@ -10883,7 +10883,7 @@ name "pale2"
 loc 0 -0.076621 -0.132711
 data 5
 pale2
-texture "propeller.png"
+texture "propeller.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 417
@@ -14191,7 +14191,7 @@ name "pale3"
 loc 0 -0.087896 0.125529
 data 5
 pale3
-texture "propeller.png"
+texture "propeller.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 417
@@ -17499,7 +17499,7 @@ name "propblur"
 loc 0 0 -0
 data 8
 propblur
-texture "propeller.png"
+texture "propeller.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 48
@@ -17684,7 +17684,7 @@ name "propdisc"
 loc 0 0 -0
 data 8
 propdisc
-texture "propeller.png"
+texture "propeller.webp"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 272
