@@ -1,94 +1,118 @@
 {
   "a320neo": {
-    "hash": "12f68c22ad",
-    "parts": 29
-  },
-  "a380-800": {
-    "hash": "b847f5c2ba",
-    "parts": 21
-  },
-  "an225": {
-    "hash": "93cffbb212",
-    "parts": 17
-  },
-  "b707": {
-    "hash": "4805aacfd7",
-    "parts": 21
-  },
-  "b737-300": {
-    "hash": "4e2eef3c3d",
-    "parts": 24
-  },
-  "b747-400": {
-    "hash": "a9b9d6f411",
+    "hash": "403b3e5df3",
     "parts": 30
   },
-  "b777": {
-    "hash": "74bfb7e50b",
+  "a380-800": {
+    "hash": "e498d52377",
     "parts": 23
   },
+  "an225": {
+    "hash": "d8f6ed60b4",
+    "parts": 18
+  },
+  "b707": {
+    "hash": "3e95fd6dab",
+    "parts": 22
+  },
+  "b737-300": {
+    "hash": "65eb879022",
+    "parts": 25
+  },
+  "b747-400": {
+    "hash": "dcd32c5451",
+    "parts": 32
+  },
+  "b777": {
+    "hash": "c4b8972bd5",
+    "parts": 25
+  },
   "b787-8": {
-    "hash": "5410e65f8c",
-    "parts": 26
+    "hash": "f5e67bad55",
+    "parts": 28
   },
   "cessna-172s": {
-    "hash": "99052a8cf9",
-    "parts": 26
+    "hash": "8b2389a314",
+    "parts": 27
   },
   "cessna337": {
-    "hash": "a4e7db0872",
-    "parts": 21
+    "hash": "4be93e7377",
+    "parts": 22
   },
   "concorde": {
-    "hash": "01a6130b17",
-    "parts": 11
+    "hash": "d250457727",
+    "parts": 13
+  },
+  "dc3": {
+    "hash": "8fb5ec9a66",
+    "parts": 14
+  },
+  "dhc6": {
+    "hash": "26cfe15a10",
+    "parts": 20
   },
   "dr400": {
-    "hash": "9dbe7d877c",
+    "hash": "d0c333da96",
     "parts": 18
   },
   "ec130": {
     "hash": "11ecdb0803",
     "parts": 12
   },
+  "ec135": {
+    "hash": "1df59638f5",
+    "parts": 15
+  },
   "ercoupe": {
-    "hash": "66d90f6524",
-    "parts": 18
+    "hash": "a4a1a26135",
+    "parts": 19
   },
   "il76": {
-    "hash": "96dc49e9ce",
+    "hash": "b2a31226a6",
     "parts": 23
   },
   "j3-cub": {
-    "hash": "2f93d36b02",
-    "parts": 20
+    "hash": "8cd619b320",
+    "parts": 21
   },
   "ju52": {
-    "hash": "c2264fa29e",
-    "parts": 18
+    "hash": "ba08d0c8ea",
+    "parts": 19
   },
   "l1049h": {
-    "hash": "09bba78e0d",
-    "parts": 20
+    "hash": "7179f76474",
+    "parts": 22
   },
   "p51d": {
-    "hash": "b227d9b440",
+    "hash": "22dff3741a",
     "parts": 20
   },
   "spitfire-ix": {
-    "hash": "e0b1585ab1",
-    "parts": 19
+    "hash": "86c81f665e",
+    "parts": 21
   },
   "sr71": {
-    "hash": "b331fcae26",
+    "hash": "9f847d345a",
     "parts": 15
   },
   "tu134": {
-    "hash": "a3c1316834",
+    "hash": "23ee515afb",
     "parts": 19
   },
+  "tu144d": {
+    "hash": "4ca6021583",
+    "parts": 15
+  },
+  "tu154b": {
+    "hash": "c422d4e0d2",
+    "parts": 14
+  },
   "wright-flyer": {
-    "hash": "c92ee126a8",
+    "hash": "92f8ad685b",
     "parts": 10
+  },
+  "yak40": {
+    "hash": "5c23ee4541",
+    "parts": 18
   }
 }
