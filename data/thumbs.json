@@ -1,14 +1,14 @@
 {
   "a320neo": {
-    "hash": "403b3e5df3",
+    "hash": "eaac4aa6b8",
     "parts": 30
   },
   "a380-800": {
-    "hash": "e498d52377",
+    "hash": "746e6dbf3e",
     "parts": 23
   },
   "an225": {
-    "hash": "d8f6ed60b4",
+    "hash": "0493436ac3",
     "parts": 18
   },
   "b707": {
@@ -24,11 +24,11 @@
     "parts": 32
   },
   "b777": {
-    "hash": "c4b8972bd5",
+    "hash": "6a83b77888",
     "parts": 25
   },
   "b787-8": {
-    "hash": "f5e67bad55",
+    "hash": "a5ac44a977",
     "parts": 28
   },
   "cessna-172s": {
@@ -40,7 +40,7 @@
     "parts": 22
   },
   "concorde": {
-    "hash": "d250457727",
+    "hash": "e35589ee69",
     "parts": 13
   },
   "dc3": {
@@ -72,7 +72,7 @@
     "parts": 23
   },
   "j3-cub": {
-    "hash": "8cd619b320",
+    "hash": "ac31f30b30",
     "parts": 21
   },
   "ju52": {
@@ -84,7 +84,7 @@
     "parts": 22
   },
   "p51d": {
-    "hash": "22dff3741a",
+    "hash": "927c360a8f",
     "parts": 20
   },
   "spitfire-ix": {
@@ -100,11 +100,11 @@
     "parts": 19
   },
   "tu144d": {
-    "hash": "4ca6021583",
+    "hash": "e4eac4ebb1",
     "parts": 15
   },
   "tu154b": {
-    "hash": "c422d4e0d2",
+    "hash": "7f52f40858",
     "parts": 14
   },
   "wright-flyer": {

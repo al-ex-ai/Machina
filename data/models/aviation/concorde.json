@@ -34,7 +34,14 @@
     "climb_deg": 8,
     "gear_s": 10,
     "jet": true,
-    "note": "Approximate: reheat takeoff, mid weight"
+    "note": "Approximate: reheat takeoff, mid weight",
+    "cockpit": {
+      "hide": [
+        "Front_1",
+        "Screen_0",
+        "Screen_1"
+      ]
+    }
   },
   "sources": [
     {

@@ -33,7 +33,12 @@
     "climb_deg": 8,
     "gear_s": 8,
     "jet": true,
-    "note": "Approximate: mid-weight takeoff, CONF 1+F"
+    "note": "Approximate: mid-weight takeoff, CONF 1+F",
+    "cockpit": {
+      "hide": [
+        "hud_screen"
+      ]
+    }
   },
   "geometry": {
     "fuselage": {

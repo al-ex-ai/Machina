@@ -30,7 +30,17 @@
     "climb_deg": 7,
     "gear_s": 12,
     "jet": true,
-    "note": "Approximate: afterburner takeoff, mid weight"
+    "note": "Approximate: afterburner takeoff, mid weight",
+    "cockpit": {
+      "offset": [
+        0,
+        0.05,
+        0
+      ],
+      "hide": [
+        "/^WindshieldGlassConeClosed/"
+      ]
+    }
   },
   "sources": [
     {

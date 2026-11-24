@@ -31,7 +31,14 @@
     "climb_deg": 8,
     "gear_s": 6,
     "rpm": 3000,
-    "note": "Approximate: clean, mid weight, tail raised on the roll"
+    "note": "Approximate: clean, mid weight, tail raised on the roll",
+    "cockpit": {
+      "offset": [
+        0.12,
+        0.06,
+        0
+      ]
+    }
   },
   "sources": [
     {

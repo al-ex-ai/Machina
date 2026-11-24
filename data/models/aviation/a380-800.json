@@ -33,7 +33,12 @@
     "climb_deg": 6,
     "gear_s": 10,
     "jet": true,
-    "note": "Approximate: mid-weight takeoff"
+    "note": "Approximate: mid-weight takeoff",
+    "cockpit": {
+      "hide": [
+        "/fd_hud.ac$/"
+      ]
+    }
   },
   "parts": {
     "engines": {

@@ -30,7 +30,14 @@
     "climb_deg": 8,
     "gear_s": 9,
     "jet": true,
-    "note": "Approximate: mid-weight takeoff"
+    "note": "Approximate: mid-weight takeoff",
+    "cockpit": {
+      "offset": [
+        0,
+        -0.08,
+        0
+      ]
+    }
   },
   "asset": {
     "path": "assets/aircraft/787-8",

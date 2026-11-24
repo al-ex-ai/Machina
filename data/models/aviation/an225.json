@@ -27,7 +27,12 @@
     "climb_deg": 5,
     "gear_s": 14,
     "jet": true,
-    "note": "Approximate: well below maximum weight"
+    "note": "Approximate: well below maximum weight",
+    "cockpit": {
+      "hide": [
+        "Fuselage.001"
+      ]
+    }
   },
   "asset": {
     "path": "assets/aircraft/an225b",

@@ -9682,7 +9682,8 @@
     },
     "hide": [
       "/_nav$/",
-      "/halo/i"
+      "/halo/i",
+      "crew"
     ],
     "parts": [
       {

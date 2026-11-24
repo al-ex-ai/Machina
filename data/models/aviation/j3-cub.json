@@ -31,7 +31,14 @@
     "pitch_deg": -6,
     "climb_deg": 5,
     "rpm": 2150,
-    "note": "Approximate: solo, sea level, tail raised on the roll"
+    "note": "Approximate: solo, sea level, tail raised on the roll",
+    "cockpit": {
+      "offset": [
+        0,
+        0.1,
+        0
+      ]
+    }
   },
   "asset": {
     "path": "assets/aircraft/j3cub",
