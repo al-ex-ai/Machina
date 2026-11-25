@@ -511,6 +511,61 @@
           "id": "cabin",
           "label": "Cabin interior and panel",
           "system": "interior"
+        },
+        "anim": [
+          {
+            "type": "translate",
+            "objects": [
+              "Throttle",
+              "Throttle-fg1000"
+            ],
+            "prop": "controls/engines/engine[0]/throttle",
+            "factor": -0.08,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "Mixture",
+              "Mixture-fg1000"
+            ],
+            "prop": "controls/engines/engine[0]/mixture",
+            "factor": -0.08,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {},
+        "groups": {
+          "LeftFrontGear": [
+            "Lstrut.001",
+            "Ldamper",
+            "LAxle",
+            "LFrontWheel"
+          ],
+          "RightFrontGear": [
+            "Rstrut.001",
+            "Rdamper",
+            "RAxle",
+            "RFrontWheel"
+          ]
         }
       },
       {
@@ -534,6 +589,875 @@
           "label": "Pilots",
           "system": "interior"
         }
+      },
+      {
+        "file": "Models/Interior/Panel/Instruments/asi/asi-fg1000.ac",
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "Needle"
+            ],
+            "prop": "velocities/airspeed-kt",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                35,
+                27
+              ],
+              [
+                40,
+                41
+              ],
+              [
+                60,
+                91
+              ],
+              [
+                80,
+                143
+              ],
+              [
+                100,
+                197
+              ],
+              [
+                120,
+                240
+              ],
+              [
+                140,
+                282
+              ],
+              [
+                160,
+                324
+              ],
+              [
+                190,
+                331
+              ]
+            ],
+            "origin": [
+              -0.365,
+              -0.1064,
+              0.0326
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
+      },
+      {
+        "file": "Models/Interior/Panel/Instruments/alt/alt-fg1000.ac",
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "Needle100"
+            ],
+            "prop": "instrumentation/altimeter/indicated-altitude-ft",
+            "factor": 0.36,
+            "origin": [
+              -0.3647,
+              -0.1079,
+              -0.1468
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Needle1000"
+            ],
+            "prop": "instrumentation/altimeter/indicated-altitude-ft",
+            "factor": 0.036,
+            "origin": [
+              -0.3647,
+              -0.1079,
+              -0.1468
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Needle10000"
+            ],
+            "prop": "instrumentation/altimeter/indicated-altitude-ft",
+            "factor": 0.0036,
+            "origin": [
+              -0.3647,
+              -0.1079,
+              -0.1468
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "inhg"
+            ],
+            "steps": [
+              {
+                "kind": "rotate",
+                "prop": "instrumentation/altimeter/setting-inhg",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  0,
+                  -1
+                ],
+                "table": [
+                  [
+                    27.9,
+                    0
+                  ],
+                  [
+                    28,
+                    9.35
+                  ],
+                  [
+                    28.5,
+                    59
+                  ],
+                  [
+                    29,
+                    109
+                  ],
+                  [
+                    29.5,
+                    159.5
+                  ],
+                  [
+                    29.9,
+                    200
+                  ],
+                  [
+                    30,
+                    210
+                  ],
+                  [
+                    30.5,
+                    261
+                  ],
+                  [
+                    31,
+                    310
+                  ],
+                  [
+                    31.4,
+                    350
+                  ]
+                ],
+                "center": [
+                  0.25,
+                  0.25
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
+      },
+      {
+        "file": "Models/Interior/Panel/Instruments/kap140/kap140-fg1000.ac",
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        },
+        "anim": [],
+        "select": [
+          {
+            "objects": [
+              "btn-alt",
+              "btn-down",
+              "btn-up",
+              "base-frame-inner"
+            ],
+            "cond": [
+              "and",
+              [
+                "prop",
+                ""
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "btn-arm",
+              "btn-baro",
+              "knob-inner",
+              "knob-outer"
+            ],
+            "cond": [
+              "and",
+              [
+                "prop",
+                ""
+              ]
+            ]
+          }
+        ],
+        "poseState": {}
+      },
+      {
+        "file": "Models/Interior/Panel/Instruments/kr87-adf/kr87-fg1000.ac",
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        },
+        "anim": [
+          {
+            "type": "translate",
+            "objects": [
+              "knobs.ADF"
+            ],
+            "prop": "instrumentation/adf[0]/adf-btn",
+            "factor": -0.004,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "knobs.BFO"
+            ],
+            "prop": "instrumentation/adf[0]/bfo-btn",
+            "factor": -0.004,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "knobs.FRQ"
+            ],
+            "prop": "instrumentation/adf[0]/frq-btn",
+            "factor": -0.004,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "knobs.FLT"
+            ],
+            "prop": "instrumentation/adf[0]/flt-btn",
+            "factor": -0.004,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "knobs.SET"
+            ],
+            "prop": "instrumentation/adf[0]/set-btn",
+            "factor": -0.004,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "indicator.Use.1000"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/adf[0]/frequencies/selected-khz",
+                "factor": 0.0001,
+                "offset": 0,
+                "step": 1000,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "indicator.Use.100"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/adf[0]/frequencies/selected-khz",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "indicator.Use.10"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/adf[0]/frequencies/selected-khz",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "indicator.Use.1"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/adf[0]/frequencies/selected-khz",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
+      },
+      {
+        "file": "Models/Interior/Panel/Instruments/magneto-switch/magneto-switch-fg1000.ac",
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Interior/Panel/Instruments/hobbs/hobbs-fg1000.ac",
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        },
+        "anim": [],
+        "texanim": [
+          {
+            "objects": [
+              "Drum.0"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/hobbs-meter/digits0",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  0,
+                  -1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Drum.1"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/hobbs-meter/digits1",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  0,
+                  -1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Drum.2"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/hobbs-meter/digits2",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  0,
+                  -1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Drum.3"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/hobbs-meter/digits3",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  0,
+                  -1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Drum.4"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/hobbs-meter/digits4",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  0,
+                  -1,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
+      },
+      {
+        "file": "Models/Interior/FE-ELT/elt-fg1000.ac",
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        }
+      },
+      {
+        "file": "Models/Interior/Panel/Instruments/gear/gear-ctl-fg1000.ac",
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        },
+        "anim": [],
+        "poseState": {}
+      },
+      {
+        "file": "Models/Interior/Yoke/yoke-fg1000.ac",
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        },
+        "anim": [
+          {
+            "type": "translate",
+            "objects": [
+              "LeftYoke",
+              "LeftYokeMain",
+              "RightYoke",
+              "RightYokeMain"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": -0.1,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LeftYoke",
+              "LeftYokeMain"
+            ],
+            "prop": "controls/flight/aileron",
+            "factor": -90,
+            "origin": [
+              -0.3471,
+              -0.0979,
+              0.2207
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RightYoke",
+              "RightYokeMain"
+            ],
+            "prop": "controls/flight/aileron",
+            "factor": -90,
+            "origin": [
+              -0.346,
+              -0.0958,
+              -0.2395
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "YokeCordLeft"
+            ],
+            "prop": "controls/flight/aileron",
+            "factor": -9,
+            "origin": [
+              -0.3613,
+              -0.1391,
+              0.2213
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "YokeCordLeft"
+            ],
+            "prop": "controls/flight/aileron",
+            "factor": -8,
+            "origin": [
+              -0.3613,
+              -0.1391,
+              0.2213
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "YokeCordRight"
+            ],
+            "prop": "controls/flight/aileron",
+            "factor": -9,
+            "origin": [
+              -0.3609,
+              -0.1196,
+              -0.2381
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "YokeCordRight"
+            ],
+            "prop": "controls/flight/aileron",
+            "factor": -8,
+            "origin": [
+              -0.3609,
+              -0.1196,
+              -0.2381
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          }
+        ],
+        "poseState": {}
+      },
+      {
+        "file": "Models/Interior/Panel/Flaps/flaps.ac",
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        },
+        "anim": [
+          {
+            "type": "translate",
+            "objects": [
+              "FlapPos"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.333333,
+                0.022
+              ],
+              [
+                0.666666,
+                0.034
+              ],
+              [
+                1,
+                0.045
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "FlapSwitch"
+            ],
+            "prop": "controls/flight/flaps",
+            "table": [
+              [
+                0,
+                -0.001
+              ],
+              [
+                0.333333,
+                -0.001
+              ],
+              [
+                0.345,
+                0.0035
+              ],
+              [
+                0.666666,
+                0.0035
+              ],
+              [
+                0.675,
+                0.0055
+              ],
+              [
+                1,
+                0.0055
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          }
+        ],
+        "poseState": {}
+      },
+      {
+        "file": "Models/Interior/Panel/Instruments/mag-compass/mag-compass.ac",
+        "fallback": {
+          "id": "cabin",
+          "label": "Cockpit and cabin",
+          "system": "interior"
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "Ring"
+            ],
+            "prop": "instrumentation/magnetic-compass/roll-deg",
+            "expr": [
+              "clip",
+              [
+                "clipMin"
+              ],
+              [
+                "clipMax"
+              ],
+              "p"
+            ],
+            "origin": [
+              -0.3769,
+              0.2405,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Ring"
+            ],
+            "prop": "instrumentation/magnetic-compass/pitch-deg",
+            "expr": [
+              "clip",
+              [
+                "clipMin"
+              ],
+              [
+                "clipMax"
+              ],
+              "p"
+            ],
+            "origin": [
+              -0.3769,
+              0.2405,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Ring"
+            ],
+            "prop": "instrumentation/magnetic-compass/indicated-heading-deg-final",
+            "factor": -1,
+            "origin": [
+              -0.3647,
+              0.2468,
+              0
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       }
     ],
     "recolor": {
@@ -545,5 +1469,13 @@
         236
       ]
     }
+  },
+  "landing": {
+    "vapp_kt": 65,
+    "roll_m": 175,
+    "flaps": 1,
+    "pitch_deg": 1.5,
+    "flare_deg": 6,
+    "note": "Approximate: flaps 30, short-field technique off"
   }
 }

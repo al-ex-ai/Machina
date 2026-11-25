@@ -37,7 +37,10 @@
     "cockpit": {
       "hide": [
         "hud_screen"
-      ]
+      ],
+      "still": {
+        "gauges": "glass cockpit: the displays have no drawn picture yet, and the standby instruments are glass too"
+      }
     }
   },
   "geometry": {
@@ -1904,7 +1907,533 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "translate",
+            "objects": [
+              "RRudderPedalL",
+              "RRudderPedalR"
+            ],
+            "prop": "controls/cockpit/rudder-pedal",
+            "factor": 0.05,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "LRudderPedalL",
+              "LRudderPedalR"
+            ],
+            "prop": "controls/cockpit/rudder-pedal",
+            "factor": -0.05,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LRudderPedalL",
+              "LRudderPedalR"
+            ],
+            "prop": "controls/cockpit/brake-pedal-left",
+            "factor": -15,
+            "sign": -1,
+            "origin": [
+              -0.6594,
+              -0.4242,
+              0.5716
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RRudderPedalL",
+              "RRudderPedalR"
+            ],
+            "prop": "controls/cockpit/brake-pedal-right",
+            "factor": -15,
+            "sign": -1,
+            "origin": [
+              -0.6594,
+              -0.4242,
+              0.4732
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "vor-adf1"
+            ],
+            "prop": "instrumentation/efis[0]/input/lh-vor-adf-pos",
+            "factor": 25,
+            "sign": -1,
+            "origin": [
+              -0.3608,
+              0.4484,
+              0.2035
+            ],
+            "axis": [
+              0.297067,
+              -0.954857,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "vor-adf-1-right"
+            ],
+            "prop": "instrumentation/efis[1]/input/lh-vor-adf-pos",
+            "factor": 25,
+            "sign": -1,
+            "origin": [
+              -0.3608,
+              0.4484,
+              -0.1545
+            ],
+            "axis": [
+              0.297067,
+              -0.954857,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "vor-adf2"
+            ],
+            "prop": "instrumentation/efis[0]/input/rh-vor-adf-pos",
+            "factor": 25,
+            "sign": -1,
+            "origin": [
+              -0.3608,
+              0.4484,
+              0.1544
+            ],
+            "axis": [
+              0.297067,
+              -0.954857,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "vor-adf-2-right"
+            ],
+            "prop": "instrumentation/efis[1]/input/rh-vor-adf-pos",
+            "factor": 25,
+            "sign": -1,
+            "origin": [
+              -0.3608,
+              0.4484,
+              -0.2036
+            ],
+            "axis": [
+              0.297067,
+              -0.954857,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "clock_set"
+            ],
+            "prop": "instrumentation/clock/set-knb-pos",
+            "factor": 11.25,
+            "sign": -1,
+            "origin": [
+              -0.5467,
+              0.198,
+              -0.1297
+            ],
+            "axis": [
+              0.958336,
+              0.285644,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "iesi_btn_rst"
+            ],
+            "prop": "instrumentation/iesi/att-reset-cmd",
+            "factor": 0.0025,
+            "origin": [
+              -0.5331,
+              0.1696,
+              0.1617
+            ],
+            "axis": [
+              -0.961141,
+              -0.276057,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "iesi_btn_plus"
+            ],
+            "prop": "instrumentation/iesi/plus",
+            "factor": 0.0025,
+            "origin": [
+              -0.5331,
+              0.1696,
+              0.1617
+            ],
+            "axis": [
+              -0.961141,
+              -0.276057,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "iesi_btn_minus"
+            ],
+            "prop": "instrumentation/iesi/minus",
+            "factor": 0.0025,
+            "origin": [
+              -0.5331,
+              0.1696,
+              0.1617
+            ],
+            "axis": [
+              -0.961141,
+              -0.276057,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "ddrmi_hdg"
+            ],
+            "prop": "instrumentation/ddrmi/heading",
+            "factor": -1,
+            "sign": -1,
+            "origin": [
+              -0.5201,
+              0.0918,
+              0.1425
+            ],
+            "axis": [
+              0.958659,
+              0.284559,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "ddrmi_pointer_1"
+            ],
+            "prop": "instrumentation/ddrmi/needle-1",
+            "factor": -1,
+            "sign": -1,
+            "origin": [
+              -0.5201,
+              0.0918,
+              0.1425
+            ],
+            "axis": [
+              0.958659,
+              0.284559,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "ddrmi_pointer_2"
+            ],
+            "prop": "instrumentation/ddrmi/needle-2",
+            "factor": -1,
+            "sign": -1,
+            "origin": [
+              -0.5201,
+              0.0918,
+              0.1425
+            ],
+            "axis": [
+              0.958659,
+              0.284559,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "ddrmi_hdg_flag"
+            ],
+            "prop": "instrumentation/ddrmi/flag-hdg",
+            "factor": 180,
+            "offset": -180,
+            "sign": -1,
+            "origin": [
+              -0.5358,
+              0.1284,
+              0.1425
+            ],
+            "axis": [
+              0.958647,
+              0.284598,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "ddrmi_vor_adf_flag_1"
+            ],
+            "prop": "instrumentation/ddrmi/flag-1",
+            "factor": 45,
+            "offset": -45,
+            "sign": -1,
+            "origin": [
+              -0.5211,
+              0.1048,
+              0.173
+            ],
+            "axis": [
+              -0.959506,
+              -0.28169,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "ddrmi_vor_adf_flag_2"
+            ],
+            "prop": "instrumentation/ddrmi/flag-2",
+            "factor": -45,
+            "offset": 45,
+            "sign": -1,
+            "origin": [
+              -0.5211,
+              0.1048,
+              0.112
+            ],
+            "axis": [
+              -0.959506,
+              -0.28169,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "gear_lever"
+            ],
+            "prop": "controls/cockpit/gear-lever",
+            "table": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                -50
+              ]
+            ],
+            "sign": -1,
+            "origin": [
+              -0.5506,
+              0.0993,
+              -0.1413
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "gear_lever"
+            ],
+            "prop": "controls/cockpit/gear-lever",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                0.01
+              ],
+              [
+                2,
+                0.01
+              ],
+              [
+                3,
+                0
+              ]
+            ],
+            "origin": [
+              -0.5506,
+              0.0993,
+              0.1475
+            ],
+            "axis": [
+              0.806313,
+              0.591489,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "SpdBrk"
+            ],
+            "prop": "controls/cockpit/spoilers-lever-rotate",
+            "factor": 45,
+            "sign": -1,
+            "origin": [
+              0.087,
+              -0.2062,
+              0.0737
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "SpdBrk"
+            ],
+            "prop": "controls/cockpit/spoilers-lever-translate",
+            "factor": -0.006,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0.707107,
+              -0.707107,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "FlapsLever",
+              "FlapsLever_low"
+            ],
+            "prop": "controls/cockpit/flaps-lever-rotate",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                14
+              ],
+              [
+                2,
+                28
+              ],
+              [
+                3,
+                42
+              ],
+              [
+                4,
+                56
+              ]
+            ],
+            "sign": -1,
+            "origin": [
+              0.087,
+              -0.1877,
+              -0.0995
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "thr_l"
+            ],
+            "prop": "controls/engines/engine[0]/throttle",
+            "factor": 28,
+            "origin": [
+              -0.0974,
+              -0.0588,
+              0.024
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ],
+            "note": "Machina rig: the package draws this control but does not animate it"
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "thr_r"
+            ],
+            "prop": "controls/engines/engine[0]/throttle",
+            "factor": 28,
+            "origin": [
+              -0.0974,
+              -0.0588,
+              -0.0241
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ],
+            "note": "Machina rig: the package draws this control but does not animate it"
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Instruments/OHpanel/res/ohpanel.ac",
@@ -2995,5 +3524,12 @@
         "sharklets"
       ]
     }
+  },
+  "landing": {
+    "vapp_kt": 133,
+    "roll_m": 800,
+    "flaps": 1,
+    "pitch_deg": 2.5,
+    "note": "Approximate: flaps full"
   }
 }

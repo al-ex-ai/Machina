@@ -217,6 +217,68 @@
           {
             "type": "rotate",
             "objects": [
+              "elevators"
+            ],
+            "prop": "surface-positions/elevator-pos-norm",
+            "table": [
+              [
+                1,
+                25
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                -1,
+                -25
+              ]
+            ],
+            "origin": [
+              9.984,
+              5.04,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rudder"
+            ],
+            "prop": "surface-positions/rudder-pos-norm",
+            "table": [
+              [
+                1,
+                30
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                -1,
+                -30
+              ]
+            ],
+            "origin": [
+              7.15,
+              1.41,
+              0
+            ],
+            "axis": [
+              0.612034,
+              0.790831,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
               "WheelF",
               "DamperStrutF",
               "MainStrutF",
@@ -787,7 +849,93 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "yoke_lever",
+              "yokeL",
+              "yokeR",
+              "yokeknobsL",
+              "yokewheelsL",
+              "yokeknobsR",
+              "yokewheelsR"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": 16,
+            "origin": [
+              -7.877,
+              0.703,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "yokeL",
+              "yokeknobsL",
+              "yokewheelsL"
+            ],
+            "prop": "controls/flight/aileron",
+            "factor": 90,
+            "origin": [
+              0,
+              1.464,
+              0.5137
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "yokeR",
+              "yokeknobsR",
+              "yokewheelsR"
+            ],
+            "prop": "controls/flight/aileron",
+            "factor": 90,
+            "origin": [
+              0,
+              1.464,
+              -0.5137
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "thrustlever2"
+            ],
+            "prop": "controls/engines/engine[0]/throttle",
+            "factor": 28,
+            "origin": [
+              -7.8201,
+              1.1634,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ],
+            "note": "Machina rig: the package draws this control but does not animate it"
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/Instruments/KUS-730-1100/kus-730-1100.ac",
@@ -821,7 +969,96 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "short_needle"
+            ],
+            "prop": "instrumentation/airspeed-indicator[0]/true-speed-kt",
+            "table": [
+              [
+                199,
+                180
+              ],
+              [
+                215.98,
+                196
+              ],
+              [
+                269.98,
+                244
+              ],
+              [
+                323.97,
+                292
+              ],
+              [
+                377.97,
+                338
+              ],
+              [
+                593.95,
+                527
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "long_needle"
+            ],
+            "prop": "instrumentation/airspeed-indicator[0]/indicated-speed-kt",
+            "table": [
+              [
+                27,
+                5
+              ],
+              [
+                54,
+                23
+              ],
+              [
+                108,
+                75
+              ],
+              [
+                215.98,
+                181
+              ],
+              [
+                323.97,
+                274
+              ],
+              [
+                404.96,
+                340
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/shared/lamps/s-80.ac",
@@ -877,7 +1114,53 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "PitchScale"
+            ],
+            "prop": "instrumentation/AGB-3K/indicated-pitch-deg",
+            "expr": [
+              "product",
+              [
+                "sum",
+                "p",
+                "p"
+              ],
+              2
+            ],
+            "origin": [
+              -0.0602,
+              0.0029,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Plane"
+            ],
+            "prop": "instrumentation/AGB-3K/indicated-roll-deg",
+            "origin": [
+              0,
+              0.0027,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/Instruments/DA-30/da-30.ac",
@@ -899,7 +1182,139 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "da-30_vs-needle"
+            ],
+            "prop": "instrumentation/vertical-speed-indicator[0]/indicated-speed-fpm",
+            "table": [
+              [
+                5708.66,
+                173
+              ],
+              [
+                3937,
+                142
+              ],
+              [
+                1968.5,
+                82
+              ],
+              [
+                984.25,
+                42
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                -984.25,
+                -42
+              ],
+              [
+                -1968.5,
+                -82
+              ],
+              [
+                -3937,
+                -142
+              ],
+              [
+                -5708.66,
+                -172
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "da-30_roll-needle"
+            ],
+            "prop": "instrumentation/AGB-3K/indicated-roll-deg",
+            "table": [
+              [
+                45,
+                25
+              ],
+              [
+                30,
+                17
+              ],
+              [
+                15,
+                8
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                -15,
+                -8
+              ],
+              [
+                -30,
+                -17
+              ],
+              [
+                -45,
+                -25
+              ]
+            ],
+            "origin": [
+              0,
+              -0.0287,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "da-30_ball"
+            ],
+            "prop": "instrumentation/slip-skid-ball/indicated-slip-skid",
+            "table": [
+              [
+                -10,
+                -10
+              ],
+              [
+                10,
+                10
+              ]
+            ],
+            "origin": [
+              0,
+              0.07,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/shared/lamps/s-80.ac",
@@ -955,7 +1370,90 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "needle"
+            ],
+            "prop": "instrumentation/radar-altimeter/radar-altitude-ft",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                328.1,
+                150
+              ],
+              [
+                2460.6,
+                310
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "pointer"
+            ],
+            "prop": "instrumentation/radar-altimeter/pointer-anim",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.5,
+                150
+              ],
+              [
+                1,
+                310
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "flag"
+            ],
+            "prop": "instrumentation/radar-altimeter/sw-on",
+            "factor": 0.01,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/shared/switches/azs.ac",
@@ -1011,7 +1509,670 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "needle"
+            ],
+            "prop": "instrumentation/altimeter[0]/indicated-altitude-ft",
+            "factor": 0.36,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "dig_a_dec"
+            ],
+            "prop": "instrumentation/altimeter[0]/indicated-altitude-ft",
+            "factor": 3.6,
+            "origin": [
+              -0.0222,
+              0.0051,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "dig_a_hund"
+            ],
+            "prop": "instrumentation/altimeter[0]/indicated-altitude-ft",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                90,
+                0
+              ],
+              [
+                100,
+                36
+              ],
+              [
+                190,
+                36
+              ],
+              [
+                200,
+                72
+              ],
+              [
+                290,
+                72
+              ],
+              [
+                300,
+                108
+              ],
+              [
+                390,
+                108
+              ],
+              [
+                400,
+                144
+              ],
+              [
+                490,
+                144
+              ],
+              [
+                500,
+                180
+              ],
+              [
+                590,
+                180
+              ],
+              [
+                600,
+                216
+              ],
+              [
+                690,
+                216
+              ],
+              [
+                700,
+                252
+              ],
+              [
+                790,
+                252
+              ],
+              [
+                800,
+                288
+              ],
+              [
+                890,
+                288
+              ],
+              [
+                900,
+                324
+              ],
+              [
+                990,
+                324
+              ],
+              [
+                999,
+                359.9
+              ]
+            ],
+            "origin": [
+              -0.0222,
+              0.0051,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "dig_a_ths"
+            ],
+            "prop": "instrumentation/altimeter[0]/indicated-altitude-ft",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                990,
+                0
+              ],
+              [
+                1000,
+                36
+              ],
+              [
+                1990,
+                36
+              ],
+              [
+                2000,
+                72
+              ],
+              [
+                2990,
+                72
+              ],
+              [
+                3000,
+                108
+              ],
+              [
+                3990,
+                108
+              ],
+              [
+                4000,
+                144
+              ],
+              [
+                4990,
+                144
+              ],
+              [
+                5000,
+                180
+              ],
+              [
+                5990,
+                180
+              ],
+              [
+                6000,
+                216
+              ],
+              [
+                6990,
+                216
+              ],
+              [
+                7000,
+                252
+              ],
+              [
+                7990,
+                252
+              ],
+              [
+                8000,
+                288
+              ],
+              [
+                8990,
+                288
+              ],
+              [
+                9000,
+                324
+              ],
+              [
+                9990,
+                324
+              ],
+              [
+                9999,
+                359.9
+              ]
+            ],
+            "origin": [
+              -0.0222,
+              0.0051,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "dig_a_decths"
+            ],
+            "prop": "instrumentation/altimeter[0]/indicated-altitude-ft",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                9990,
+                0
+              ],
+              [
+                10000,
+                36
+              ],
+              [
+                19990,
+                36
+              ],
+              [
+                20000,
+                72
+              ],
+              [
+                29990,
+                72
+              ],
+              [
+                30000,
+                108
+              ],
+              [
+                39990,
+                108
+              ],
+              [
+                40000,
+                144
+              ],
+              [
+                49990,
+                144
+              ],
+              [
+                50000,
+                180
+              ],
+              [
+                59990,
+                180
+              ],
+              [
+                60000,
+                216
+              ],
+              [
+                69990,
+                216
+              ],
+              [
+                70000,
+                252
+              ],
+              [
+                79990,
+                252
+              ],
+              [
+                80000,
+                288
+              ],
+              [
+                89990,
+                288
+              ],
+              [
+                90000,
+                324
+              ],
+              [
+                99990,
+                324
+              ],
+              [
+                99999,
+                359.9
+              ]
+            ],
+            "origin": [
+              -0.0222,
+              0.0051,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "dig_p_ths"
+            ],
+            "prop": "instrumentation/altimeter[0]/setting-inhg",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                9.99,
+                0
+              ],
+              [
+                10,
+                36
+              ],
+              [
+                19.99,
+                36
+              ],
+              [
+                20,
+                72
+              ],
+              [
+                29.99,
+                72
+              ],
+              [
+                30,
+                108
+              ],
+              [
+                39.99,
+                108
+              ],
+              [
+                40,
+                144
+              ],
+              [
+                49.99,
+                144
+              ],
+              [
+                50,
+                180
+              ],
+              [
+                59.99,
+                180
+              ],
+              [
+                60,
+                216
+              ],
+              [
+                69.99,
+                216
+              ],
+              [
+                70,
+                252
+              ],
+              [
+                79.99,
+                252
+              ],
+              [
+                80,
+                288
+              ],
+              [
+                89.99,
+                288
+              ],
+              [
+                90,
+                324
+              ],
+              [
+                99.99,
+                324
+              ]
+            ],
+            "origin": [
+              -0.0133,
+              -0.0211,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "dig_p_hund"
+            ],
+            "prop": "instrumentation/altimeter[0]/setting-inhg",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.99,
+                0
+              ],
+              [
+                1,
+                36
+              ],
+              [
+                1.99,
+                36
+              ],
+              [
+                2,
+                72
+              ],
+              [
+                2.99,
+                72
+              ],
+              [
+                3,
+                108
+              ],
+              [
+                3.99,
+                108
+              ],
+              [
+                4,
+                144
+              ],
+              [
+                4.99,
+                144
+              ],
+              [
+                5,
+                180
+              ],
+              [
+                5.99,
+                180
+              ],
+              [
+                6,
+                216
+              ],
+              [
+                6.99,
+                216
+              ],
+              [
+                7,
+                252
+              ],
+              [
+                7.99,
+                252
+              ],
+              [
+                8,
+                288
+              ],
+              [
+                8.99,
+                288
+              ],
+              [
+                9,
+                324
+              ],
+              [
+                9.99,
+                324
+              ]
+            ],
+            "origin": [
+              -0.0133,
+              -0.0211,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "dig_p_dec"
+            ],
+            "prop": "instrumentation/altimeter[0]/setting-inhg",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.099,
+                0
+              ],
+              [
+                0.1,
+                36
+              ],
+              [
+                0.199,
+                36
+              ],
+              [
+                0.2,
+                72
+              ],
+              [
+                0.299,
+                72
+              ],
+              [
+                0.3,
+                108
+              ],
+              [
+                0.399,
+                108
+              ],
+              [
+                0.4,
+                144
+              ],
+              [
+                0.499,
+                144
+              ],
+              [
+                0.5,
+                180
+              ],
+              [
+                0.599,
+                180
+              ],
+              [
+                0.6,
+                216
+              ],
+              [
+                0.699,
+                216
+              ],
+              [
+                0.7,
+                252
+              ],
+              [
+                0.799,
+                252
+              ],
+              [
+                0.8,
+                288
+              ],
+              [
+                0.899,
+                288
+              ],
+              [
+                0.9,
+                324
+              ],
+              [
+                0.999,
+                324
+              ]
+            ],
+            "origin": [
+              -0.0133,
+              -0.0211,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "dig_p_ones"
+            ],
+            "prop": "instrumentation/altimeter[0]/setting-inhg",
+            "factor": 3600,
+            "origin": [
+              -0.0133,
+              -0.0211,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/shared/lamps/s-80.ac",
@@ -1067,7 +2228,63 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "kppm_scale"
+            ],
+            "prop": "instrumentation/nav/radials/selected-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "kppm_hs_needle"
+            ],
+            "prop": "instrumentation/nav/heading-needle-deflection-norm",
+            "factor": -15,
+            "origin": [
+              -0.06,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "kppm_gs_needle"
+            ],
+            "prop": "instrumentation/nav/gs-needle-deflection-norm",
+            "factor": 15,
+            "origin": [
+              -0.06,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/Instruments/IKU-1/iku-1.ac",
@@ -1089,7 +2306,9 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/shared/lamps/s-80.ac",
@@ -1289,7 +2508,53 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "PitchScale"
+            ],
+            "prop": "instrumentation/AGB-3K/indicated-pitch-deg",
+            "expr": [
+              "product",
+              [
+                "sum",
+                "p",
+                "p"
+              ],
+              2
+            ],
+            "origin": [
+              -0.0602,
+              0.0029,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Plane"
+            ],
+            "prop": "instrumentation/AGB-3K/indicated-roll-deg",
+            "origin": [
+              0,
+              0.0027,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/Instruments/gear/gear.ac",
@@ -1433,7 +2698,184 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "needle_1"
+            ],
+            "prop": "engines/engine/n1",
+            "table": [
+              [
+                0,
+                47
+              ],
+              [
+                10,
+                80
+              ],
+              [
+                20,
+                110
+              ],
+              [
+                30,
+                142
+              ],
+              [
+                40,
+                173
+              ],
+              [
+                50,
+                204
+              ],
+              [
+                60,
+                235
+              ],
+              [
+                65,
+                250
+              ],
+              [
+                70,
+                266
+              ],
+              [
+                75,
+                282
+              ],
+              [
+                80,
+                298
+              ],
+              [
+                84,
+                310
+              ],
+              [
+                90,
+                328
+              ],
+              [
+                94,
+                341
+              ],
+              [
+                97,
+                350
+              ],
+              [
+                100,
+                360
+              ],
+              [
+                110,
+                391.5
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "needle_2"
+            ],
+            "prop": "engines/engine/n2",
+            "table": [
+              [
+                0,
+                47
+              ],
+              [
+                10,
+                80
+              ],
+              [
+                20,
+                110
+              ],
+              [
+                30,
+                142
+              ],
+              [
+                40,
+                173
+              ],
+              [
+                50,
+                204
+              ],
+              [
+                60,
+                235
+              ],
+              [
+                65,
+                250
+              ],
+              [
+                70,
+                266
+              ],
+              [
+                75,
+                282
+              ],
+              [
+                80,
+                298
+              ],
+              [
+                84,
+                310
+              ],
+              [
+                90,
+                328
+              ],
+              [
+                94,
+                341
+              ],
+              [
+                97,
+                350
+              ],
+              [
+                100,
+                360
+              ],
+              [
+                110,
+                391.5
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/shared/lamps/s-80.ac",
@@ -1489,7 +2931,184 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "needle_1"
+            ],
+            "prop": "engines/engine[1]/n1",
+            "table": [
+              [
+                0,
+                47
+              ],
+              [
+                10,
+                80
+              ],
+              [
+                20,
+                110
+              ],
+              [
+                30,
+                142
+              ],
+              [
+                40,
+                173
+              ],
+              [
+                50,
+                204
+              ],
+              [
+                60,
+                235
+              ],
+              [
+                65,
+                250
+              ],
+              [
+                70,
+                266
+              ],
+              [
+                75,
+                282
+              ],
+              [
+                80,
+                298
+              ],
+              [
+                84,
+                310
+              ],
+              [
+                90,
+                328
+              ],
+              [
+                94,
+                341
+              ],
+              [
+                97,
+                350
+              ],
+              [
+                100,
+                360
+              ],
+              [
+                110,
+                391.5
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "needle_2"
+            ],
+            "prop": "engines/engine[1]/n2",
+            "table": [
+              [
+                0,
+                47
+              ],
+              [
+                10,
+                80
+              ],
+              [
+                20,
+                110
+              ],
+              [
+                30,
+                142
+              ],
+              [
+                40,
+                173
+              ],
+              [
+                50,
+                204
+              ],
+              [
+                60,
+                235
+              ],
+              [
+                65,
+                250
+              ],
+              [
+                70,
+                266
+              ],
+              [
+                75,
+                282
+              ],
+              [
+                80,
+                298
+              ],
+              [
+                84,
+                310
+              ],
+              [
+                90,
+                328
+              ],
+              [
+                94,
+                341
+              ],
+              [
+                97,
+                350
+              ],
+              [
+                100,
+                360
+              ],
+              [
+                110,
+                391.5
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/shared/lamps/s-80.ac",
@@ -1545,7 +3164,184 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "needle_1"
+            ],
+            "prop": "engines/engine[2]/n1",
+            "table": [
+              [
+                0,
+                47
+              ],
+              [
+                10,
+                80
+              ],
+              [
+                20,
+                110
+              ],
+              [
+                30,
+                142
+              ],
+              [
+                40,
+                173
+              ],
+              [
+                50,
+                204
+              ],
+              [
+                60,
+                235
+              ],
+              [
+                65,
+                250
+              ],
+              [
+                70,
+                266
+              ],
+              [
+                75,
+                282
+              ],
+              [
+                80,
+                298
+              ],
+              [
+                84,
+                310
+              ],
+              [
+                90,
+                328
+              ],
+              [
+                94,
+                341
+              ],
+              [
+                97,
+                350
+              ],
+              [
+                100,
+                360
+              ],
+              [
+                110,
+                391.5
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "needle_2"
+            ],
+            "prop": "engines/engine[2]/n2",
+            "table": [
+              [
+                0,
+                47
+              ],
+              [
+                10,
+                80
+              ],
+              [
+                20,
+                110
+              ],
+              [
+                30,
+                142
+              ],
+              [
+                40,
+                173
+              ],
+              [
+                50,
+                204
+              ],
+              [
+                60,
+                235
+              ],
+              [
+                65,
+                250
+              ],
+              [
+                70,
+                266
+              ],
+              [
+                75,
+                282
+              ],
+              [
+                80,
+                298
+              ],
+              [
+                84,
+                310
+              ],
+              [
+                90,
+                328
+              ],
+              [
+                94,
+                341
+              ],
+              [
+                97,
+                350
+              ],
+              [
+                100,
+                360
+              ],
+              [
+                110,
+                391.5
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/shared/lamps/s-80.ac",
@@ -1601,7 +3397,68 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "oil_press_needle"
+            ],
+            "prop": "engines/engine[0]/oil-pressure-psi",
+            "factor": 1.0546,
+            "offset": -60,
+            "origin": [
+              0,
+              -0.012,
+              0.019
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "oil_temp_needle"
+            ],
+            "prop": "engines/engine[0]/oil-temperature-degf",
+            "table": [
+              [
+                -58,
+                -65
+              ],
+              [
+                32,
+                -36
+              ],
+              [
+                122,
+                0
+              ],
+              [
+                212,
+                38
+              ],
+              [
+                302,
+                63
+              ]
+            ],
+            "origin": [
+              0,
+              -0.012,
+              -0.019
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/Instruments/UIx-xxx/uiz-3.ac",
@@ -1635,7 +3492,68 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "oil_press_needle"
+            ],
+            "prop": "engines/engine[0]/oil-pressure-psi",
+            "factor": 1.0546,
+            "offset": -60,
+            "origin": [
+              0,
+              -0.012,
+              0.019
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "oil_temp_needle"
+            ],
+            "prop": "engines/engine[0]/oil-temperature-degf",
+            "table": [
+              [
+                -58,
+                -65
+              ],
+              [
+                32,
+                -36
+              ],
+              [
+                122,
+                0
+              ],
+              [
+                212,
+                38
+              ],
+              [
+                302,
+                63
+              ]
+            ],
+            "origin": [
+              0,
+              -0.012,
+              -0.019
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/Instruments/UIx-xxx/uiz-3.ac",
@@ -1669,7 +3587,68 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "oil_press_needle"
+            ],
+            "prop": "engines/engine[0]/oil-pressure-psi",
+            "factor": 1.0546,
+            "offset": -60,
+            "origin": [
+              0,
+              -0.012,
+              0.019
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "oil_temp_needle"
+            ],
+            "prop": "engines/engine[0]/oil-temperature-degf",
+            "table": [
+              [
+                -58,
+                -65
+              ],
+              [
+                32,
+                -36
+              ],
+              [
+                122,
+                0
+              ],
+              [
+                212,
+                38
+              ],
+              [
+                302,
+                63
+              ]
+            ],
+            "origin": [
+              0,
+              -0.012,
+              -0.019
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/Instruments/UPDB-2/updb-2.ac",
@@ -1759,7 +3738,96 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "short_needle"
+            ],
+            "prop": "instrumentation/airspeed-indicator[0]/true-speed-kt",
+            "table": [
+              [
+                199,
+                180
+              ],
+              [
+                215.98,
+                196
+              ],
+              [
+                269.98,
+                244
+              ],
+              [
+                323.97,
+                292
+              ],
+              [
+                377.97,
+                338
+              ],
+              [
+                593.95,
+                527
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "long_needle"
+            ],
+            "prop": "instrumentation/airspeed-indicator[0]/indicated-speed-kt",
+            "table": [
+              [
+                27,
+                5
+              ],
+              [
+                54,
+                23
+              ],
+              [
+                108,
+                75
+              ],
+              [
+                215.98,
+                181
+              ],
+              [
+                323.97,
+                274
+              ],
+              [
+                404.96,
+                340
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/Instruments/AGB-3K/agb-3k.ac",
@@ -1793,7 +3861,53 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "PitchScale"
+            ],
+            "prop": "instrumentation/AGB-3K[1]/indicated-pitch-deg",
+            "expr": [
+              "product",
+              [
+                "sum",
+                "p",
+                "p"
+              ],
+              2
+            ],
+            "origin": [
+              -0.0602,
+              0.0029,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Plane"
+            ],
+            "prop": "instrumentation/AGB-3K[1]/indicated-roll-deg",
+            "origin": [
+              0,
+              0.0027,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/Instruments/VAR-30MK/var-30.ac",
@@ -1815,7 +3929,65 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "needle"
+            ],
+            "prop": "instrumentation/vertical-speed-indicator/indicated-speed-fpm",
+            "table": [
+              [
+                5708.66,
+                177
+              ],
+              [
+                3937,
+                142
+              ],
+              [
+                1968.5,
+                83
+              ],
+              [
+                984.25,
+                44
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                -984.25,
+                -44
+              ],
+              [
+                -1968.5,
+                -83
+              ],
+              [
+                -3937,
+                -142
+              ],
+              [
+                -5708.66,
+                -177
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/shared/lamps/s-80.ac",
@@ -1927,7 +4099,579 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "needle"
+            ],
+            "prop": "instrumentation/altimeter[0]/indicated-altitude-ft",
+            "factor": 0.10973,
+            "origin": [
+              0.0002,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "dig_a_dec"
+            ],
+            "prop": "instrumentation/altimeter[0]/indicated-altitude-ft",
+            "factor": 1.0973,
+            "origin": [
+              -0.02,
+              0.004,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "dig_a_hund"
+            ],
+            "prop": "instrumentation/altimeter[0]/indicated-altitude-ft",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                90,
+                0
+              ],
+              [
+                100,
+                36
+              ],
+              [
+                190,
+                36
+              ],
+              [
+                200,
+                72
+              ],
+              [
+                290,
+                72
+              ],
+              [
+                300,
+                108
+              ],
+              [
+                390,
+                108
+              ],
+              [
+                400,
+                144
+              ],
+              [
+                490,
+                144
+              ],
+              [
+                500,
+                180
+              ],
+              [
+                590,
+                180
+              ],
+              [
+                600,
+                216
+              ],
+              [
+                690,
+                216
+              ],
+              [
+                700,
+                252
+              ],
+              [
+                790,
+                252
+              ],
+              [
+                800,
+                288
+              ],
+              [
+                890,
+                288
+              ],
+              [
+                900,
+                324
+              ],
+              [
+                990,
+                324
+              ],
+              [
+                999,
+                359.9
+              ]
+            ],
+            "origin": [
+              -0.02,
+              0.004,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "dig_a_ths"
+            ],
+            "prop": "instrumentation/altimeter[0]/indicated-altitude-ft",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                990,
+                0
+              ],
+              [
+                1000,
+                36
+              ],
+              [
+                1990,
+                36
+              ],
+              [
+                2000,
+                72
+              ],
+              [
+                2990,
+                72
+              ],
+              [
+                3000,
+                108
+              ],
+              [
+                3990,
+                108
+              ],
+              [
+                4000,
+                144
+              ],
+              [
+                4990,
+                144
+              ],
+              [
+                5000,
+                180
+              ],
+              [
+                5990,
+                180
+              ],
+              [
+                6000,
+                216
+              ],
+              [
+                6990,
+                216
+              ],
+              [
+                7000,
+                252
+              ],
+              [
+                7990,
+                252
+              ],
+              [
+                8000,
+                288
+              ],
+              [
+                8990,
+                288
+              ],
+              [
+                9000,
+                324
+              ],
+              [
+                9990,
+                324
+              ],
+              [
+                9999,
+                359.9
+              ]
+            ],
+            "origin": [
+              -0.02,
+              0.004,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "dig_a_decths"
+            ],
+            "prop": "instrumentation/altimeter[0]/indicated-altitude-ft",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                9990,
+                0
+              ],
+              [
+                10000,
+                36
+              ],
+              [
+                19990,
+                36
+              ],
+              [
+                20000,
+                72
+              ],
+              [
+                29990,
+                72
+              ],
+              [
+                30000,
+                108
+              ],
+              [
+                39990,
+                108
+              ],
+              [
+                40000,
+                144
+              ],
+              [
+                49990,
+                144
+              ],
+              [
+                50000,
+                180
+              ],
+              [
+                59990,
+                180
+              ],
+              [
+                60000,
+                216
+              ],
+              [
+                69990,
+                216
+              ],
+              [
+                70000,
+                252
+              ],
+              [
+                79990,
+                252
+              ],
+              [
+                80000,
+                288
+              ],
+              [
+                89990,
+                288
+              ],
+              [
+                90000,
+                324
+              ],
+              [
+                99990,
+                324
+              ],
+              [
+                99999,
+                359.9
+              ]
+            ],
+            "origin": [
+              -0.02,
+              0.004,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "dig_p_ones"
+            ],
+            "prop": "instrumentation/altimeter[0]/setting-hpa",
+            "factor": 27.0088845014,
+            "origin": [
+              -0.0158,
+              -0.0281,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "dig_p_dec"
+            ],
+            "prop": "instrumentation/altimeter[0]/setting-hpa",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                9,
+                0
+              ],
+              [
+                10,
+                36
+              ],
+              [
+                19,
+                36
+              ],
+              [
+                20,
+                72
+              ],
+              [
+                29,
+                72
+              ],
+              [
+                30,
+                108
+              ],
+              [
+                39,
+                108
+              ],
+              [
+                40,
+                144
+              ],
+              [
+                49,
+                144
+              ],
+              [
+                50,
+                180
+              ],
+              [
+                59,
+                180
+              ],
+              [
+                60,
+                216
+              ],
+              [
+                69,
+                216
+              ],
+              [
+                70,
+                252
+              ],
+              [
+                79,
+                252
+              ],
+              [
+                80,
+                288
+              ],
+              [
+                89,
+                288
+              ],
+              [
+                90,
+                324
+              ],
+              [
+                99,
+                324
+              ],
+              [
+                99.9,
+                359.9
+              ]
+            ],
+            "origin": [
+              -0.0158,
+              -0.0281,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "dig_p_hund"
+            ],
+            "prop": "instrumentation/altimeter[0]/setting-hpa",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                99,
+                0
+              ],
+              [
+                100,
+                36
+              ],
+              [
+                199,
+                36
+              ],
+              [
+                200,
+                72
+              ],
+              [
+                299,
+                72
+              ],
+              [
+                300,
+                108
+              ],
+              [
+                399,
+                108
+              ],
+              [
+                400,
+                144
+              ],
+              [
+                499,
+                144
+              ],
+              [
+                500,
+                180
+              ],
+              [
+                599,
+                180
+              ],
+              [
+                600,
+                216
+              ],
+              [
+                699,
+                216
+              ],
+              [
+                700,
+                252
+              ],
+              [
+                799,
+                252
+              ],
+              [
+                800,
+                288
+              ],
+              [
+                899,
+                288
+              ],
+              [
+                900,
+                324
+              ],
+              [
+                999,
+                324
+              ],
+              [
+                999.9,
+                359.9
+              ]
+            ],
+            "origin": [
+              -0.0158,
+              -0.0281,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/Instruments/KPPM/kppm.ac",
@@ -1961,7 +4705,63 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "kppm_scale"
+            ],
+            "prop": "instrumentation/nav[1]/radials/selected-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "kppm_hs_needle"
+            ],
+            "prop": "instrumentation/nav[1]/heading-needle-deflection-norm",
+            "factor": -15,
+            "origin": [
+              -0.06,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "kppm_gs_needle"
+            ],
+            "prop": "instrumentation/nav[1]/gs-needle-deflection-norm",
+            "factor": 15,
+            "origin": [
+              -0.06,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/Instruments/URVK-18/urvk-18.ac",
@@ -2051,7 +4851,30 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "needle"
+            ],
+            "prop": "instrumentation/vertical-speed-indicator/indicated-speed-fpm",
+            "factor": -0.093,
+            "min": -180,
+            "max": 180,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/Instruments/TUE-48K/tue-48k.ac",
@@ -3715,7 +6538,64 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "hour_needle"
+            ],
+            "prop": "instrumentation/clock/indicated-min",
+            "factor": -0.5,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "hour_needle"
+            ],
+            "prop": "instrumentation/clock/indicated-hour",
+            "factor": -30,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "min_needle"
+            ],
+            "prop": "instrumentation/clock/indicated-sec",
+            "factor": -0.1,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/Instruments/ARK-9/ark-9.ac",
@@ -9340,5 +12220,12 @@
       "minTextured": 0.28
     },
     "reason": "The FlightGear Yak-40 leaves its wings, engines and tail planes as plain white with no texture: 63% of the surface, 29% textured. Listed on request with that gap; the Machina livery paints the fuselage and fin."
+  },
+  "landing": {
+    "vapp_kt": 110,
+    "roll_m": 360,
+    "flaps": 1,
+    "pitch_deg": 2.5,
+    "note": "Approximate: full flaps"
   }
 }

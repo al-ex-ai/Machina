@@ -370,7 +370,9 @@
           "id": "wing-center",
           "label": "Wing center section",
           "system": "surfaces"
-        }
+        },
+        "anim": [],
+        "poseState": {}
       },
       {
         "file": "Models/747-400_gear.ac",
@@ -1253,7 +1255,295 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "throttle_eng.1",
+              "reverser_eng.1"
+            ],
+            "prop": "controls/engines/engine[0]/throttle",
+            "factor": 55,
+            "origin": [
+              1.133,
+              0.362,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "reverser_eng.1"
+            ],
+            "prop": "controls/engines/engine[0]/reverser",
+            "factor": 40,
+            "origin": [
+              1.211,
+              0.53,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "throttle_eng.2",
+              "reverser_eng.2"
+            ],
+            "prop": "controls/engines/engine[1]/throttle",
+            "factor": 55,
+            "origin": [
+              1.133,
+              0.362,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "reverser_eng.2"
+            ],
+            "prop": "controls/engines/engine[1]/reverser",
+            "factor": 40,
+            "origin": [
+              1.211,
+              0.53,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "throttle_eng.3",
+              "reverser_eng.3"
+            ],
+            "prop": "controls/engines/engine[2]/throttle",
+            "factor": 55,
+            "origin": [
+              1.133,
+              0.362,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "reverser_eng.3"
+            ],
+            "prop": "controls/engines/engine[2]/reverser",
+            "factor": 40,
+            "origin": [
+              1.211,
+              0.53,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "throttle_eng.4",
+              "reverser_eng.4"
+            ],
+            "prop": "controls/engines/engine[3]/throttle",
+            "factor": 55,
+            "origin": [
+              1.133,
+              0.362,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "reverser_eng.4"
+            ],
+            "prop": "controls/engines/engine[3]/reverser",
+            "factor": 40,
+            "origin": [
+              1.211,
+              0.53,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "left_chart",
+              "left_column",
+              "left_yoke",
+              "EFB1",
+              "right_chart",
+              "right_column",
+              "right_yoke",
+              "EFB2"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": 12.5,
+            "origin": [
+              1.1,
+              -0.025,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "left_chart",
+              "left_yoke",
+              "EFB1"
+            ],
+            "prop": "controls/flight/aileron",
+            "factor": 88,
+            "origin": [
+              1.048,
+              0.724,
+              0.533
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "right_chart",
+              "right_yoke",
+              "EFB2"
+            ],
+            "prop": "controls/flight/aileron",
+            "factor": 88,
+            "origin": [
+              1.048,
+              0.724,
+              -0.533
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "pedals_l"
+            ],
+            "prop": "controls/flight/rudder",
+            "factor": 0.06,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "pedals_r"
+            ],
+            "prop": "controls/flight/rudder",
+            "factor": -0.06,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "pedals_l"
+            ],
+            "prop": "controls/gear/brake-left",
+            "factor": -10,
+            "origin": [
+              0.757,
+              0.057,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "pedals_r"
+            ],
+            "prop": "controls/gear/brake-right",
+            "factor": -10,
+            "origin": [
+              0.757,
+              0.057,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Cockpit/overhead.ac",
@@ -1287,7 +1577,9 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "poseState": {}
       },
       {
         "file": "Models/Cockpit/forward.ac",
@@ -1321,7 +1613,9 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "poseState": {}
       },
       {
         "file": "Models/Cockpit/Instruments/brake-pressure.ac",
@@ -1413,7 +1707,61 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "ball"
+            ],
+            "prop": "orientation/roll-deg",
+            "origin": [
+              -0.042,
+              -0.004,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "ball"
+            ],
+            "prop": "orientation/pitch-deg",
+            "origin": [
+              -0.042,
+              -0.004,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "rollarrow"
+            ],
+            "prop": "orientation/roll-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Cockpit/Instruments/stby-asi.ac",
@@ -1459,7 +1807,49 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "Needle1"
+            ],
+            "prop": "instrumentation/airspeed-indicator/indicated-speed-kt",
+            "table": [
+              [
+                0,
+                -9.5
+              ],
+              [
+                60,
+                0
+              ],
+              [
+                250,
+                244
+              ],
+              [
+                300,
+                265.5
+              ],
+              [
+                450,
+                331
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Cockpit/Instruments/stby-alt.ac",
@@ -1505,7 +1895,184 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "Needle1"
+            ],
+            "prop": "instrumentation/altimeter/indicated-altitude-ft",
+            "factor": 0.36,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "alt1"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicated-altitude-ft",
+                "factor": 0.01,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "alt2"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicated-altitude-ft",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "scroll": 20,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "alt3"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicated-altitude-ft",
+                "factor": 0.0001,
+                "offset": 0,
+                "step": 1000,
+                "scroll": 20,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "alt4"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicated-altitude-ft",
+                "factor": 0.00001,
+                "offset": 0,
+                "step": 10000,
+                "scroll": 20,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "press1"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/setting-inhg",
+                "factor": 10,
+                "offset": 0,
+                "step": 0.01,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "press2"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/setting-inhg",
+                "factor": 1,
+                "offset": 0,
+                "step": 0.1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "press3"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/setting-inhg",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "press4"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/setting-inhg",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Cockpit/Instruments/chronometer.ac",
@@ -1551,7 +2118,279 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "Chrono.needle"
+            ],
+            "prop": "instrumentation/clock/ET-sec",
+            "factor": 6,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "ET.switch"
+            ],
+            "prop": "instrumentation/clock/et-knob",
+            "table": [
+              [
+                -1,
+                -144
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                35
+              ]
+            ],
+            "origin": [
+              0,
+              -0.033,
+              0.032
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "SET.switch"
+            ],
+            "prop": "instrumentation/clock/set-knob",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                30
+              ],
+              [
+                2,
+                60
+              ],
+              [
+                3,
+                90
+              ]
+            ],
+            "origin": [
+              0,
+              -0.033,
+              -0.029
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "UTC.switch"
+            ],
+            "prop": "instrumentation/clock/time-knob",
+            "table": [
+              [
+                -1,
+                -135
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                35
+              ]
+            ],
+            "origin": [
+              0,
+              0.034,
+              -0.032
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "Hr.10"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/indicated-hour",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Hr.01"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/indicated-hour",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Mn.10"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/indicated-min",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Mn.01"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/indicated-min",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ET10"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/ET-display",
+                "factor": 0.0001,
+                "offset": 0,
+                "step": 1000,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ET01"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/ET-display",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ET.10"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/ET-display",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ET.01"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/ET-display",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Cockpit/Instruments/chronometer.ac",
@@ -1597,7 +2436,279 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "Chrono.needle"
+            ],
+            "prop": "instrumentation/clock/ET-sec",
+            "factor": 6,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "ET.switch"
+            ],
+            "prop": "instrumentation/clock/et-knob",
+            "table": [
+              [
+                -1,
+                -144
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                35
+              ]
+            ],
+            "origin": [
+              0,
+              -0.033,
+              0.032
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "SET.switch"
+            ],
+            "prop": "instrumentation/clock/set-knob",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                30
+              ],
+              [
+                2,
+                60
+              ],
+              [
+                3,
+                90
+              ]
+            ],
+            "origin": [
+              0,
+              -0.033,
+              -0.029
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "UTC.switch"
+            ],
+            "prop": "instrumentation/clock/time-knob",
+            "table": [
+              [
+                -1,
+                -135
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                35
+              ]
+            ],
+            "origin": [
+              0,
+              0.034,
+              -0.032
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "Hr.10"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/indicated-hour",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Hr.01"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/indicated-hour",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Mn.10"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/indicated-min",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Mn.01"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/indicated-min",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ET10"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/ET-display",
+                "factor": 0.0001,
+                "offset": 0,
+                "step": 1000,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ET01"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/ET-display",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ET.10"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/ET-display",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ET.01"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/ET-display",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "../crew/liner_pilot.ac",
@@ -4398,5 +5509,12 @@
       "maxPlainGear": 0.5
     },
     "reason": "The FlightGear 747-400 models its gear legs and doors untextured white; the legs of the real aircraft are painted light grey."
+  },
+  "landing": {
+    "vapp_kt": 150,
+    "roll_m": 1100,
+    "flaps": 1,
+    "pitch_deg": 2.5,
+    "note": "Approximate: flaps 30, autobrake 2 with reversers"
   }
 }

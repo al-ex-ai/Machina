@@ -269,6 +269,7 @@ export function createCompare(ctx) {
     viewer.setXray(false);
     viewer.setPicking(false);
     // An overlay fits whole; a line-up fits its width to the stage, which brings a long row much closer.
+    group.userData.keepTextures = true; // cached models: disposeDeep frees them when they leave the selection
     viewer.setModel(group, { xray: false, fit: current.mode === 'lineup' ? lineupFit(group) : (innerWidth < 760 ? 0.9 : 0.76) });
     // Framed at the parked positions; now roll the smaller models in.
     if (current.mode === 'overlay' && animate) taxiIn(viewer, stack);

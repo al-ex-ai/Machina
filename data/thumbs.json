@@ -1,58 +1,58 @@
 {
   "a320neo": {
-    "hash": "eaac4aa6b8",
+    "hash": "158245e593",
     "parts": 30
   },
   "a380-800": {
-    "hash": "746e6dbf3e",
+    "hash": "95fe99066c",
     "parts": 23
   },
   "an225": {
-    "hash": "0493436ac3",
+    "hash": "ec4c9004af",
     "parts": 18
   },
   "b707": {
-    "hash": "3e95fd6dab",
+    "hash": "b7243deb37",
     "parts": 22
   },
   "b737-300": {
-    "hash": "c7fa9bfa32",
+    "hash": "b9fc56fd43",
     "parts": 25
   },
   "b747-400": {
-    "hash": "dcd32c5451",
+    "hash": "cbf50b33eb",
     "parts": 32
   },
   "b777": {
-    "hash": "6a83b77888",
+    "hash": "c4cd73f0a7",
     "parts": 25
   },
   "b787-8": {
-    "hash": "a5ac44a977",
+    "hash": "ecd355c490",
     "parts": 28
   },
   "cessna-172s": {
-    "hash": "aeac070edf",
+    "hash": "b1e46455d6",
     "parts": 27
   },
   "cessna337": {
-    "hash": "4be93e7377",
+    "hash": "0493d64ebe",
     "parts": 22
   },
   "concorde": {
-    "hash": "0d47c2a02d",
+    "hash": "065baa4a74",
     "parts": 13
   },
   "dc3": {
-    "hash": "8fb5ec9a66",
+    "hash": "7b9e8be67d",
     "parts": 14
   },
   "dhc6": {
-    "hash": "26cfe15a10",
+    "hash": "d0973a901d",
     "parts": 20
   },
   "dr400": {
-    "hash": "d0c333da96",
+    "hash": "a63c3b5b3b",
     "parts": 18
   },
   "ec130": {
@@ -64,55 +64,55 @@
     "parts": 15
   },
   "ercoupe": {
-    "hash": "a4a1a26135",
+    "hash": "1185ee9390",
     "parts": 19
   },
   "il76": {
-    "hash": "b2a31226a6",
+    "hash": "c844d34dbc",
     "parts": 23
   },
   "j3-cub": {
-    "hash": "ac31f30b30",
+    "hash": "265d0fb03a",
     "parts": 21
   },
   "ju52": {
-    "hash": "ba08d0c8ea",
+    "hash": "d13214d894",
     "parts": 19
   },
   "l1049h": {
-    "hash": "716672aaf2",
+    "hash": "01f52a7006",
     "parts": 23
   },
   "p51d": {
-    "hash": "927c360a8f",
+    "hash": "84a438b259",
     "parts": 20
   },
   "spitfire-ix": {
-    "hash": "86c81f665e",
+    "hash": "905cf6874f",
     "parts": 21
   },
   "sr71": {
-    "hash": "9f847d345a",
+    "hash": "042ad4a725",
     "parts": 15
   },
   "tu134": {
-    "hash": "23ee515afb",
+    "hash": "9173e04178",
     "parts": 19
   },
   "tu144d": {
-    "hash": "5a4795d0e0",
+    "hash": "3b2f311a7c",
     "parts": 15
   },
   "tu154b": {
-    "hash": "7f52f40858",
+    "hash": "0e044ff7a9",
     "parts": 14
   },
   "wright-flyer": {
-    "hash": "92f8ad685b",
+    "hash": "62c04005d3",
     "parts": 10
   },
   "yak40": {
-    "hash": "5c23ee4541",
+    "hash": "1a604cbcdc",
     "parts": 18
   }
 }

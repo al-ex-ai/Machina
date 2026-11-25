@@ -18,12 +18,18 @@ const keepAnim = rest.includes('--anim');
 const noGuess = rest.includes('--no-guess');
 // --instruments: an instrument XML (a gauge on the panel): keep its needles and its texture animations
 // (digit drums, the attitude ball) on the flight values the takeoff and landing scenes give.
-const instruments = rest.includes('--instruments');
-const INSTR = /^(instrumentation\/|orientation\/(pitch|roll)-deg$|velocities\/airspeed-kt$|autopilot\/internal\/current-vertical-speed-fpm$|engines\/engine(\[\d+\])?\/(n1|n2|egt-degf|fuel-flow_pph)$|surface-positions\/flap-pos-norm$)/;
+// --cockpit: the airframe XML that also animates the cockpit drawn in the same file (the Cub, the C172's
+// throttle and pedals): instrument props kept as with --instruments, while the airframe's surfaces still
+// get their rest positions.
+const cockpitMain = rest.includes('--cockpit');
+const instruments = rest.includes('--instruments') || cockpitMain;
+// Cockpit files also keep what the crew moves: yoke or stick, pedals, throttles and the other engine levers,
+// flap and gear levers, brakes; and the engine gauges. The takeoff and landing scenes drive them all.
+const INSTR = /^(instrumentation\/|orientation\/(pitch|roll|heading)-deg$|velocities\/(airspeed-kt|vertical-speed-fps)$|position\/altitude-agl-ft$|autopilot\/internal\/current-vertical-speed-fpm$|engines\/engine(\[\d+\])?\/(n1|n2|rpm|egt-degf|egt-degc|fuel-flow_pph|fuel-flow-gph|mp-osi|mp-inhg|oil-pressure-psi|oil-temperature-degf|cht-degf|epr|thrust_lb|torque-ftlb)$|surface-positions\/[\w-]+-pos-norm$|controls\/flight\/(elevator|aileron|rudder|flaps|speedbrake|spoilers|elevator-trim)$|controls\/engines\/engine(\[\d+\])?\/(throttle|mixture|propeller-pitch|condition|reverser)$|controls\/gear\/(gear-down|brake-left|brake-right|brake-parking)$|fcs\/(elevator|rudder|left-aileron|right-aileron)-pos-(rad|deg|norm)$|controls\/cockpit\/(flaps-lever(-rotate)?|gear-lever|rudder-pedal|brake-pedal-(left|right)|spoilers-lever-(rotate|translate))$)/;
 // /params/x=property: the value of an alias the including model sets (e.g. a shared propeller XML's
 // /params/rpm, given per engine by the airframe XML that includes it).
 const paramArgs = rest.filter(s => s.startsWith('/params/'));
-const sets = rest.filter(s => s !== '--anim' && s !== '--no-guess' && s !== '--instruments' && !s.startsWith('/params/'));
+const sets = rest.filter(s => !s.startsWith('--') && !s.startsWith('/params/'));
 const exact = k => new RegExp(`^${k.replace(/[.*+?^${}()|[\]\\/]/g, '\\$&')}$`);
 const POSE = [ // property pattern -> value
   ...sets.map(kv => { const i = kv.lastIndexOf('='); return [exact(kv.slice(0, i)), Number(kv.slice(i + 1)), kv.slice(0, i)]; }),
@@ -45,7 +51,27 @@ const params = new Map();
 }
 const propertyOf = a => {
   const s = a.replace(/<condition>[\s\S]*?<\/condition>/g, '');
-  return /<property>\s*([^<]+?)\s*<\/property>/.exec(s)?.[1] ?? params.get(/<property\s+alias="([^"]+)"/.exec(s)?.[1])?.replace(/^\//, '');
+  // Absolute paths (/controls/flight/elevator) are the same properties as relative ones.
+  return canonical(/<property>\s*([^<]+?)\s*<\/property>/.exec(s)?.[1] ?? params.get(/<property\s+alias="([^"]+)"/.exec(s)?.[1]))?.replace(/^\//, '');
+};
+// A package's own copies of standard properties (the C172 smooths its yoke into sim/model/c172p/cockpit/...,
+// its airspeed needle reads JSBSim's): played as the standard ones.
+const CANON = [
+  [/(^|\/)cockpit\/yoke-aileron(-abs)?$/, 'controls/flight/aileron'],
+  [/(^|\/)cockpit\/yoke-elevator(-norm)?$/, 'controls/flight/elevator'],
+  [/(^|\/)cockpit\/pedals?-rudder$/, 'controls/flight/rudder'],
+  [/(^|\/)cockpit\/flaps?-lever$/, 'controls/flight/flaps'],
+  [/^fdm\/jsbsim\/velocities\/vias-kts$/, 'velocities/airspeed-kt'],
+  [/^controls\/engines\/current-engine\//, p => p.replace(/^controls\/engines\/current-engine\//, 'controls/engines/engine[0]/')],
+  // Throttle levers under the package's own names (the Twin Otter's throttle-fwd, the 777's throttle-lever).
+  [/^controls\/engines\/engine(\[\d+\])?\/throttle-(fwd|lever|pos|norm)$/, p => p.replace(/throttle-\w+$/, 'throttle')],
+  [/^fdm\/jsbsim\/fcs\//, p => p.replace(/^fdm\/jsbsim\//, '')],
+];
+const canonical = p => {
+  if (p === undefined) return p;
+  p = p.replace(/^\//, '');
+  const to = CANON.find(([re]) => re.test(p))?.[1];
+  return typeof to === 'function' ? to(p) : to ?? p;
 };
 const num = (s, tag) => { const m = new RegExp(`<${tag}>\\s*([-\\d.eE+]+)\\s*</${tag}>`).exec(s); return m ? Number(m[1]) : undefined; };
 const fgToAc = ([x, y, z]) => [x, z, -y]; // FlightGear x aft, y right, z up -> AC x aft, y up, z left
@@ -110,7 +136,10 @@ function parseExpr(s) {
 const out = [], anim = [], texanim = [];
 // Named groups: an animation with a <name> gathers its objects (or other groups) under one node
 // that later animations can name. Kept on the asset file for src/assets.js to nest the same way.
-const objectNames = a => [...a.replace(/<axis>[\s\S]*?<\/axis>/g, '').matchAll(/<object-name>\s*([^<]+?)\s*<\/object-name>/g)].map(m => m[1]);
+// An object named in another case than the mesh has it (the Spitfire's throttle XML says "throttle", the
+// mesh "Throttle") is the mesh's object, when the mesh has no exact match.
+const caseOf = n => { if (acVerts.has(n) || !acVerts.size) return n; const l = n.toLowerCase(); for (const k of acVerts.keys()) if (k.toLowerCase() === l) return k; return n; };
+const objectNames = a => [...a.replace(/<axis>[\s\S]*?<\/axis>/g, '').matchAll(/<object-name>\s*([^<]+?)\s*<\/object-name>/g)].map(m => caseOf(m[1]));
 const groups = {};
 for (const [, a] of xml.matchAll(/<animation>([\s\S]*?)<\/animation>/g)) {
   const name = /<name>\s*([^<]+?)\s*<\/name>/.exec(a)?.[1];
@@ -164,7 +193,10 @@ for (const [, a] of xml.matchAll(/<animation>([\s\S]*?)<\/animation>/g)) {
   const rule = type !== 'spin' && POSE.find(([re]) => re.test(prop));
   // Engine properties only turn things (propellers, fans); some models also hang blade pitch or
   // instrument needles on them.
-  const animated = keepAnim && ((ANIM.test(prop) && (type === 'spin' || !prop.startsWith('engines/'))) || (instruments && INSTR.test(prop) && type !== 'spin'));
+  // In an airframe XML (--cockpit) only the crew's controls and true instruments: JSBSim models reuse spare
+  // engine slots for gear legs (the Cub's engine[3..6]), which the engine gauges would swing.
+  const cockpitProp = !cockpitMain || /^(controls|instrumentation)\//.test(prop);
+  const animated = keepAnim && ((ANIM.test(prop) && (type === 'spin' || !prop.startsWith('engines/'))) || (instruments && INSTR.test(prop) && type !== 'spin' && cockpitProp));
   if (!rule && !animated) continue;
   const objects = objectNames(a);
   if (!objects.length) continue;
@@ -352,12 +384,13 @@ if (keepAnim) {
   // Control surfaces are not baked either: the Tu-144D rudder (23 v + 20 deg) rests where v = -0.87.
   const byProp = new Map();
   for (const t of anim) {
-    if (!/(compression|surface-positions\/\w+-pos)-norm$/.test(t.prop) || t.prop in file.poseState || t.fixed !== undefined) continue;
+    // Blade pitch on an airframe (the 337's and Twin Otter's propellers) rests where the blades are drawn too.
+    if (!(/(compression|surface-positions\/\w+-pos)-norm$/.test(t.prop) || (cockpitMain && /propeller-pitch$/.test(t.prop))) || t.prop in file.poseState || t.fixed !== undefined) continue;
     byProp.set(t.prop, [...(byProp.get(t.prop) ?? []), t]);
   }
   // An instrument shares the airplane's properties (the flap gauge reads the flap position): its needles
   // never decide where the airplane's own surfaces rest.
-  if (instruments) byProp.clear();
+  if (instruments && !cockpitMain) byProp.clear();
   for (const [prop, ts] of byProp) {
     const off = c => Math.max(...ts.map(t => Math.abs(curveAt(t, c))));
     if (off(0) < 1e-6) continue;
@@ -365,6 +398,9 @@ if (keepAnim) {
     for (let c = /compression/.test(prop) ? 0 : -1; c <= 3; c += 0.001) if (off(c) < off(best)) best = c;
     for (let c = best - 0.001, b = best; c <= b + 0.001; c += 1e-6) if (off(c) < off(best)) best = c;
     if (off(best) < 1e-3) file.poseState[prop] = r6(best);
+    // Blades with no pitch where all of them sit as drawn (the 337's front propeller) keep their drawn pitch:
+    // their pitch animations go, the cockpit's pitch levers (zero at 0) stay.
+    else if (cockpitMain && /propeller-pitch$/.test(prop)) for (const t of ts) if (Math.abs(curveAt(t, 0)) > 1e-6) anim.splice(anim.indexOf(t), 1);
   }
 }
 model.asset.files = files;

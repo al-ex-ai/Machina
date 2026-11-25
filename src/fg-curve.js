@@ -4,12 +4,16 @@
  * The animated value at property value v: interpolation table, or factor and offset, then clamps.
  * @param {{ table?: number[][], factor?: number, offset?: number, min?: number, max?: number, sign?: number }} c
  */
+const sorted = new WeakMap();
+const sortedTable = t => { if (!sorted.has(t)) sorted.set(t, [...t].sort((a, b) => a[0] - b[0])); return sorted.get(t); };
+
 export function curveAt(c, v) {
   let val;
   if (c.fixed !== undefined) val = c.fixed;
   else if (c.expr) val = evalExpr(c.expr, v);
   else if (c.table) {
-    const e = c.table;
+    // FlightGear reads a table in either order (the Yak-40's rudder runs from 1 down to -1).
+    const e = c.table.length > 1 && c.table[0][0] > c.table.at(-1)[0] ? sortedTable(c.table) : c.table;
     if (v <= e[0][0]) val = e[0][1];
     else if (v >= e.at(-1)[0]) val = e.at(-1)[1];
     else for (let i = 0; i < e.length - 1; i++) if (v <= e[i + 1][0]) { const f = (v - e[i][0]) / (e[i + 1][0] - e[i][0]); val = e[i][1] + (e[i + 1][1] - e[i][1]) * f; break; }

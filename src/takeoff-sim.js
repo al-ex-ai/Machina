@@ -103,23 +103,71 @@ export function createTakeoffSim(root, model, opts = {}) {
   const rest = anim ? { ...anim.values } : {};
   const blur = { set: opts.blur ?? (() => {}) };
 
-  // Panel instruments (src/fg-anim.js moves their needles and digit drums): what the airplane is doing,
-  // and engine readings from how far the engines are spun up (power 0 idle .. 1 takeoff).
-  const gauges = (kt, ft, fpm, pitch, power) => {
-    if (!anim) return;
-    for (const p of anim.props) {
-      if (/airspeed-indicator\/indicated-speed(-numbers)?-kt$|^velocities\/airspeed-kt$/.test(p)) anim.values[p] = kt;
-      else if (/indicated-mach$/.test(p)) anim.values[p] = kt / 661.5;
-      else if (/altimeter(\[\d+\])?\/indicated-altitude-ft$/.test(p)) anim.values[p] = ft;
-      else if (/setting-inhg$/.test(p)) anim.values[p] = 29.92;
-      else if (/vertical-speed-fpm$|indicated-speed-fpm$/.test(p)) anim.values[p] = fpm;
-      else if (/^orientation\/pitch-deg$/.test(p)) anim.values[p] = pitch;
-      else if (/^engines\/engine(\[\d+\])?\/n1$/.test(p)) anim.values[p] = lerp(21, 92, power);
-      else if (/^engines\/engine(\[\d+\])?\/n2$/.test(p)) anim.values[p] = lerp(60, 97, power);
-      else if (/egt-degf$/.test(p)) anim.values[p] = lerp(850, 1550, power);
-      else if (/fuel-flow_pph$/.test(p)) anim.values[p] = lerp(900, 6800, power);
-    }
-  };
+  // The cockpit (src/fg-anim.js moves its needles, digit drums, levers and controls): what the airplane is
+  // doing, engine readings from how far the engines are spun up (power 0 idle .. 1 takeoff), and what the
+  // crew does with the yoke, pedals, throttles, flap and gear levers, brakes and speedbrake.
+  // One setter per property, matched once; the props the airframe animates itself are not touched here.
+  const RULES = [
+    [/airspeed-indicator\/indicated-speed(-numbers)?-kt$|^velocities\/airspeed-kt$/, c => c.kt],
+    [/indicated-mach$/, c => c.kt / 661.5],
+    [/altimeter(\[\d+\])?\/indicated-altitude-ft$|^position\/altitude-agl-ft$|radar-altitude-ft$/, c => c.ft],
+    [/setting-inhg$/, () => 29.92],
+    [/setting-hpa$/, () => 1013],
+    [/vertical-speed-fpm$|indicated-speed-fpm$/, c => c.fpm],
+    [/^velocities\/vertical-speed-fps$/, c => c.fpm / 60],
+    [/^orientation\/pitch-deg$|attitude-indicator(\[\d+\])?\/indicated-pitch-deg$/, c => c.pitch],
+    [/heading(-indicator)?.*heading-deg$|magnetic-compass\/indicated-heading-deg$|^orientation\/heading-deg$/, () => 270],
+    [/^engines\/engine(\[\d+\])?\/n1$/, c => lerp(21, 92, c.power)],
+    [/^engines\/engine(\[\d+\])?\/n2$/, c => lerp(60, 97, c.power)],
+    [/^engines\/engine(\[\d+\])?\/rpm$/, c => c.rpm],
+    [/egt-degf$/, c => lerp(850, 1550, c.power)],
+    [/egt-degc$/, c => lerp(450, 850, c.power)],
+    [/fuel-flow_pph$/, c => lerp(900, 6800, c.power)],
+    [/fuel-flow-gph$/, c => lerp(2, 14, c.power)],
+    [/mp-(osi|inhg)$/, c => lerp(14, 29, c.power)],
+    [/oil-pressure-psi$/, () => 62],
+    [/oil-temperature-degf$/, () => 175],
+    [/cht-degf$/, c => lerp(300, 400, c.power)],
+    [/epr$/, c => lerp(1.02, 1.6, c.power)],
+    [/torque-ftlb$/, c => lerp(150, 1900, c.power)],
+    [/thrust_lb$/, c => lerp(1000, 20000, c.power)],
+    // Soviet panels in metric units (the Tu-144D's JSBSim gauges).
+    [/\/V(target)?-km_h$|\/V_g-km_h(\[\d+\])?$/, c => c.kt * 1.852],
+    [/\/H-m$/, c => c.ft / 3.28084],
+    [/\/Habs-dot-m_s$/, c => c.fpm / 196.85],
+    [/\/gauge\/M$/, c => c.kt / 661.5],
+    [/propulsion\/engine(\[\d+\])?\/panel\/gauge\/n$/, c => lerp(60, 97, c.power)],
+    [/propulsion\/engine(\[\d+\])?\/panel\/gauge\/egt-degC$/, c => lerp(450, 850, c.power)],
+    [/propulsion\/engine(\[\d+\])?\/panel\/gauge\/throttle-pos-deg$/, c => c.throttle * 70],
+    [/hydr\/panel\/gauge\/P-kgf_cm2(\[\d+\])?$/, () => 210],
+    [/gear\/panel\/gauge\/brake-kgf_cm2(\[\d+\])?$/, c => c.brake * 100],
+    [/^controls\/flight\/elevator$/, c => c.ele],
+    [/^controls\/flight\/aileron$/, c => c.ail],
+    [/^surface-positions\/left-aileron-pos-norm$/, c => c.ail],
+    [/^surface-positions\/right-aileron-pos-norm$/, c => -c.ail],
+    [/^controls\/flight\/rudder$/, c => c.rud],
+    // JSBSim's surface angles, which some yokes and pedals follow (about 20 degrees of travel each way).
+    [/^fcs\/elevator-pos-rad$/, c => c.ele * 0.35], [/^fcs\/elevator-pos-deg$/, c => c.ele * 20], [/^fcs\/elevator-pos-norm$/, c => c.ele],
+    [/^fcs\/left-aileron-pos-rad$/, c => c.ail * 0.3], [/^fcs\/right-aileron-pos-rad$/, c => -c.ail * 0.3],
+    [/^fcs\/left-aileron-pos-deg$/, c => c.ail * 17], [/^fcs\/right-aileron-pos-deg$/, c => -c.ail * 17],
+    [/^fcs\/(left|right)-aileron-pos-norm$/, (c, p) => (/right/.test(p) ? -c.ail : c.ail)],
+    [/^fcs\/rudder-pos-rad$/, c => c.rud * 0.4], [/^fcs\/rudder-pos-deg$/, c => c.rud * 23], [/^fcs\/rudder-pos-norm$/, c => c.rud],
+    [/^controls\/flight\/flaps$/, c => c.flapLever],
+    [/^controls\/flight\/(speedbrake|spoilers)$|^surface-positions\/speedbrake-pos-norm$|spoiler.*-pos-norm$/, c => c.speedbrake],
+    [/^controls\/engines\/engine(\[\d+\])?\/throttle$/, c => c.throttle],
+    [/^controls\/engines\/engine(\[\d+\])?\/(mixture|condition)$/, () => 1], // propeller pitch stays where drawn: on some models it turns the blades
+    [/^controls\/engines\/engine(\[\d+\])?\/reverser$/, c => c.reverse],
+    [/^controls\/gear\/gear-down$/, c => c.gearLever],
+    [/^controls\/gear\/brake-(left|right)$/, c => c.brake],
+    // The A320's own cockpit lever properties: flap lever in its five detents, gear lever 1 down and 2 up.
+    [/^controls\/cockpit\/flaps-lever(-rotate)?$/, c => c.flapLever * 4],
+    [/^controls\/cockpit\/gear-lever$/, c => (c.gearLever ? 1 : 2)],
+    [/^controls\/cockpit\/rudder-pedal$/, c => c.rud],
+    [/^controls\/cockpit\/brake-pedal-(left|right)$/, c => c.brake],
+    [/^controls\/cockpit\/spoilers-lever-(rotate|translate)$/, c => c.speedbrake],
+  ];
+  const setters = anim ? anim.props.flatMap(p => { const r = RULES.find(([re]) => re.test(p)); return r ? [[p, r[1]]] : []; }) : [];
+  const cockpit = c => { for (const [p, f] of setters) anim.values[p] = f(c, p); };
   let s; // simulation state
   const reset = () => {
     s = { t: 0, x: 0, v: 0, h: 0, gamma: 0, pitch: 0, tR: null, tL: null, yLift: 0, wheel: 0, prop: 0, done: false };
@@ -189,7 +237,16 @@ export function createTakeoffSim(root, model, opts = {}) {
         else if (/velocities\/uBody-fps$/.test(p)) anim.spin[p] = s.wheel;
       }
       for (const p of rpmProps) anim.spin[p] = s.prop;
-      gauges(s.v / KT, s.h * FT, s.v * Math.sin(s.gamma) * FT * 60, s.pitch, power);
+      // The crew: brakes held through the run-up and released, throttles forward ahead of the engines, small
+      // pedal and aileron corrections down the runway, gear lever up once climbing, flap lever ahead of the flaps.
+      const wob = s.v > 2 && (tL === null || after < 6) ? 1 : 0.3;
+      cockpit({
+        kt: s.v / KT, ft: s.h * FT, fpm: s.v * Math.sin(s.gamma) * FT * 60, pitch: s.pitch, power, rpm,
+        ele, ail: 0.06 * wob * Math.sin(t * 1.1 + 0.6), rud: (tL === null ? 0.1 : 0.03) * Math.sin(t * 0.8),
+        throttle: tL !== null && after > 20 ? lerp(1, 0.88, smooth(20, 23, after)) : smooth(1.2, 3, t),
+        reverse: 0, brake: t < RUNUP ? 1 : 0, speedbrake: 0,
+        gearLever: after < 2.5 ? 1 : 0, flapLever: flaps * (after < 13 ? 1 : 0),
+      });
       anim.apply();
     }
     if (s.tL !== null && t - s.tL > 32) s.done = true;
@@ -220,9 +277,12 @@ export function createTakeoffSim(root, model, opts = {}) {
    * takes the sink down to a metre a second, the mains first, the nose lowered, and a braked rollout.
    */
   function landing() {
-    const lc = model.landing, KT_ = 0.514444;
+    const lc = model.landing, KT_ = 0.514444, jet = Boolean(cfg.jet);
     const vapp = lc.vapp_kt * KT_, decel = (0.97 * vapp) ** 2 / (2 * lc.roll_m), glide = THREE.MathUtils.degToRad(lc.glide_deg ?? 3);
-    const H0 = 50, FLARE = lc.flare_m ?? 7, SINK_TD = 1.0, appPitch = lc.pitch_deg ?? 2.5, flarePitch = Math.min(lc.flare_deg ?? appPitch + 3, tailClear - 1);
+    // A tailwheel airplane comes in with its tail up (nose down from its three-point rest, pitch 0 here) and
+    // flares onto all three wheels at once.
+    const H0 = lc.from_m ?? 50, FLARE = Math.min(lc.flare_m ?? 7, H0 * 0.5), SINK_TD = 1.0, appPitch = lc.pitch_deg ?? (tail ? -0.8 * tail : 2.5);
+    const flarePitch = Math.min(lc.flare_deg ?? (tail ? 0 : appPitch + 3), tailClear - 1);
     const TD = lc.touchdown_m ?? 400; // past the threshold, which is 100 m behind the takeoff's start
     // Where the approach starts: far enough out that the mains, after the flare, touch down TD metres past the
     // threshold (a quick run of the vertical profile alone gives the distance flown to touchdown).
@@ -276,7 +336,17 @@ export function createTakeoffSim(root, model, opts = {}) {
           else if (/velocities\/uBody-fps$/.test(p)) anim.spin[p] = L.wheel;
         }
         for (const p of rpmProps) anim.spin[p] = L.prop;
-        gauges(L.v / KT_, L.h * FT, L.tD === null ? -L.sink * FT * 60 : 0, L.pitch, L.tD === null ? 0.35 : L.v > 0.5 * vapp ? 0.55 : 0.05);
+        // The crew: approach power, throttles closed in the flare, then (jets) reversers and speedbrake on
+        // touchdown, reversers stowed by 60 kt, brakes once the nose is down; small corrections on the way in.
+        const power = L.tD === null ? (L.tF === null ? 0.35 : 0.35 * (1 - smooth(L.tF, L.tF + 2, L.t))) : jet && L.v > 60 * KT_ ? 0.55 : 0.05;
+        const rev = jet && L.tD !== null && L.v > 60 * KT_ ? smooth(tD, tD + 1.5, L.t) : 0;
+        cockpit({
+          kt: L.v / KT_, ft: L.h * FT, fpm: L.tD === null ? -L.sink * FT * 60 : 0, pitch: L.pitch, power, rpm: lerp(700, cfg.rpm ?? 2800, power),
+          ele, ail: L.tD === null ? 0.07 * Math.sin(L.t * 0.9) : 0, rud: L.tD === null ? 0.05 * Math.sin(L.t * 0.6 + 1) : 0.06 * Math.sin(L.t * 1.2) * (L.v > 5 ? 1 : 0),
+          throttle: L.tD === null ? (L.tF === null ? 0.35 : 0.35 * (1 - smooth(L.tF, L.tF + 2, L.t))) : 0,
+          reverse: rev > 0.5 ? 1 : 0, brake: L.tN !== null && L.v > 0 ? 0.8 : 0, speedbrake: jet && L.tD !== null ? smooth(tD, tD + 1, L.t) : 0,
+          gearLever: 1, flapLever: lc.flaps ?? 1,
+        });
         anim.apply();
       }
     };

@@ -29,7 +29,12 @@
     "pitch_deg": 8,
     "climb_deg": 7,
     "rpm": 2200,
-    "note": "Approximate: mid-weight takeoff, flaps 10"
+    "note": "Approximate: mid-weight takeoff, flaps 10",
+    "cockpit": {
+      "still": {
+        "throttle": "the package animates RHthrottle and LHthrottle, but its cockpit mesh does not contain them"
+      }
+    }
   },
   "asset": {
     "path": "assets/aircraft/dhc6",
@@ -129,6 +134,87 @@
             ]
           },
           {
+            "type": "rotate",
+            "objects": [
+              "Lprop.1"
+            ],
+            "prop": "controls/engines/engine[0]/propeller-pitch",
+            "table": [
+              [
+                0,
+                20
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -2.66,
+              1.012,
+              2.857
+            ],
+            "axis": [
+              0,
+              0.999995,
+              -0.003313
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Lprop.2"
+            ],
+            "prop": "controls/engines/engine[0]/propeller-pitch",
+            "table": [
+              [
+                0,
+                20
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -2.66,
+              1.012,
+              2.857
+            ],
+            "axis": [
+              0,
+              -0.502155,
+              -0.864778
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Lprop.3"
+            ],
+            "prop": "controls/engines/engine[0]/propeller-pitch",
+            "table": [
+              [
+                0,
+                20
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -2.66,
+              1.012,
+              2.857
+            ],
+            "axis": [
+              0,
+              -0.497622,
+              0.867394
+            ]
+          },
+          {
             "type": "spin",
             "objects": [
               "LpropParent",
@@ -145,6 +231,87 @@
               1,
               0,
               0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Rprop.1"
+            ],
+            "prop": "controls/engines/engine[1]/propeller-pitch",
+            "table": [
+              [
+                0,
+                20
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -2.66,
+              1.012,
+              -2.857
+            ],
+            "axis": [
+              0,
+              0.999985,
+              0.005501
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Rprop.2"
+            ],
+            "prop": "controls/engines/engine[1]/propeller-pitch",
+            "table": [
+              [
+                0,
+                20
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -2.66,
+              1.012,
+              -2.857
+            ],
+            "axis": [
+              0,
+              -0.502423,
+              -0.864622
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Rprop.3"
+            ],
+            "prop": "controls/engines/engine[1]/propeller-pitch",
+            "table": [
+              [
+                0,
+                20
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              -2.66,
+              1.012,
+              -2.857
+            ],
+            "axis": [
+              0,
+              -0.497535,
+              0.867444
             ]
           },
           {
@@ -167,7 +334,10 @@
             ]
           }
         ],
-        "poseState": {}
+        "poseState": {
+          "controls/engines/engine[0]/propeller-pitch": 1,
+          "controls/engines/engine[1]/propeller-pitch": 1
+        }
       },
       {
         "file": "Models/wheels.ac",
@@ -243,7 +413,155 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "Gearswitch"
+            ],
+            "prop": "controls/gear/gear-down",
+            "factor": 180,
+            "origin": [
+              0,
+              -0.018,
+              -0.015
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "select": [
+          {
+            "objects": [
+              "nosedn1"
+            ],
+            "cond": [
+              "and",
+              [
+                "eq",
+                "gear/gear[4]/position-norm",
+                1
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "nosedn2"
+            ],
+            "cond": [
+              "and",
+              [
+                "eq",
+                "gear/gear[5]/position-norm",
+                1
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "maindn1"
+            ],
+            "cond": [
+              "and",
+              [
+                "eq",
+                "gear/gear[6]/position-norm",
+                1
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "maindn2"
+            ],
+            "cond": [
+              "and",
+              [
+                "eq",
+                "gear/gear[7]/position-norm",
+                1
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "noseup1"
+            ],
+            "cond": [
+              "and",
+              [
+                "eq",
+                "gear/gear[4]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "noseup2"
+            ],
+            "cond": [
+              "and",
+              [
+                "eq",
+                "gear/gear[5]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "mainup1"
+            ],
+            "cond": [
+              "and",
+              [
+                "eq",
+                "gear/gear[6]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "mainup2"
+            ],
+            "cond": [
+              "and",
+              [
+                "eq",
+                "gear/gear[7]/position-norm",
+                0
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "pump"
+            ],
+            "cond": [
+              "and",
+              [
+                "and",
+                [
+                  "gt",
+                  "gear/gear[4]/position-norm",
+                  0
+                ],
+                [
+                  "lt",
+                  "gear/gear[4]/position-norm",
+                  1
+                ]
+              ]
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/flaps/flap-gauge.ac",
@@ -289,7 +607,28 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "translate",
+            "objects": [
+              "FlapLever"
+            ],
+            "prop": "surface-positions/flap-pos-norm",
+            "factor": 0.1085,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/compass/magcompass.ac",
@@ -335,7 +674,27 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "Compass.ball"
+            ],
+            "prop": "instrumentation/magnetic-compass/indicated-heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/asi/asi-gauge.ac",
@@ -381,7 +740,57 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "ASIneedle"
+            ],
+            "prop": "instrumentation/airspeed-indicator[0]/indicated-speed-kt",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                20,
+                0
+              ],
+              [
+                60,
+                36
+              ],
+              [
+                80,
+                72
+              ],
+              [
+                170,
+                234
+              ],
+              [
+                200,
+                288
+              ],
+              [
+                240,
+                326
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/alt/alt2.ac",
@@ -427,7 +836,128 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "needle100"
+            ],
+            "prop": "instrumentation/altimeter[0]/indicated-altitude-ft",
+            "factor": 0.36,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "needle1000"
+            ],
+            "prop": "instrumentation/altimeter[0]/indicated-altitude-ft",
+            "factor": 0.036,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "needle10000"
+            ],
+            "prop": "instrumentation/altimeter[0]/indicated-altitude-ft",
+            "factor": 0.0036,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "inhgknob"
+            ],
+            "prop": "instrumentation/altimeter[0]/setting-hpa",
+            "factor": 5,
+            "origin": [
+              0.001,
+              -0.0374,
+              0.0352
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "inhg"
+            ],
+            "steps": [
+              {
+                "kind": "rotate",
+                "prop": "instrumentation/altimeter[0]/setting-hpa",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  0,
+                  -1
+                ],
+                "table": [
+                  [
+                    950,
+                    90
+                  ],
+                  [
+                    975,
+                    45
+                  ],
+                  [
+                    1000,
+                    0
+                  ],
+                  [
+                    1025,
+                    -45
+                  ],
+                  [
+                    1050,
+                    -90
+                  ]
+                ],
+                "center": [
+                  0.666,
+                  0.333
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/vsi/vsi.ac",
@@ -473,7 +1003,66 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "PointerCentre",
+              "PointerTip"
+            ],
+            "prop": "instrumentation/vertical-speed-indicator/indicated-speed-fpm",
+            "table": [
+              [
+                -2000,
+                -172
+              ],
+              [
+                -1500,
+                -130
+              ],
+              [
+                -1000,
+                -79
+              ],
+              [
+                -500,
+                -33
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                500,
+                33
+              ],
+              [
+                1000,
+                79
+              ],
+              [
+                1500,
+                130
+              ],
+              [
+                2000,
+                172
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/clock/m877.ac",
@@ -519,7 +1108,87 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "texanim": [
+          {
+            "objects": [
+              "HR.001"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/m877/indicated-hour",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "HR.002"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/m877/indicated-hour",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "MN.001"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/m877/indicated-min",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "MN.002"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/m877/indicated-min",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/hi/hi.ac",
@@ -565,7 +1234,63 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "face"
+            ],
+            "prop": "instrumentation/heading-indicator-real-dg/indicated-heading-deg",
+            "factor": -1,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "HdgBug"
+            ],
+            "prop": "instrumentation/heading-indicator-real-dg/indicated-heading-deg",
+            "factor": -1,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "HdgBug"
+            ],
+            "prop": "instrumentation/heading-indicator-real-dg/heading-bug-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/ki206/ki206.ac",
@@ -611,7 +1336,115 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "KI206card"
+            ],
+            "prop": "instrumentation/nav[0]/radials/selected-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "KI206.locneedle"
+            ],
+            "prop": "instrumentation/nav[0]/heading-needle-deflection",
+            "table": [
+              [
+                -10,
+                -0.0113
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                10,
+                0.0113
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "KI206.gsneedle"
+            ],
+            "prop": "instrumentation/nav[0]/gs-needle-deflection",
+            "table": [
+              [
+                -9999,
+                -0.0113
+              ],
+              [
+                -3.5,
+                -0.0113
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                3.5,
+                0.0113
+              ],
+              [
+                9999,
+                0.0113
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "KI206.knob"
+            ],
+            "prop": "instrumentation/nav[0]/radials/selected-deg",
+            "factor": 5,
+            "origin": [
+              0,
+              -0.0375,
+              0.0383
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/ki206/ki206.ac",
@@ -657,7 +1490,115 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "KI206card"
+            ],
+            "prop": "instrumentation/nav[1]/radials/selected-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "KI206.locneedle"
+            ],
+            "prop": "instrumentation/nav[1]/heading-needle-deflection",
+            "table": [
+              [
+                -10,
+                -0.0113
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                10,
+                0.0113
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "KI206.gsneedle"
+            ],
+            "prop": "instrumentation/nav[1]/gs-needle-deflection",
+            "table": [
+              [
+                -9999,
+                -0.0113
+              ],
+              [
+                -3.5,
+                -0.0113
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                3.5,
+                0.0113
+              ],
+              [
+                9999,
+                0.0113
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "KI206.knob"
+            ],
+            "prop": "instrumentation/nav[1]/radials/selected-deg",
+            "factor": 5,
+            "origin": [
+              0,
+              -0.0375,
+              0.0383
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/rmi/rmi.ac",
@@ -703,7 +1644,147 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "RMI.face"
+            ],
+            "prop": "instrumentation/heading-indicator-real-dg/indicated-heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RMI.adf"
+            ],
+            "prop": "instrumentation/adf/indicated-bearing-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RMI.brgN1"
+            ],
+            "prop": "instrumentation/heading-indicator-real-dg/indicated-heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RMI.brgN1"
+            ],
+            "prop": "instrumentation/nav[0]/radials/reciprocal-radial-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RMI.brgN2"
+            ],
+            "prop": "instrumentation/heading-indicator-real-dg/indicated-heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RMI.brgN2"
+            ],
+            "prop": "instrumentation/nav[1]/radials/reciprocal-radial-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RMI-bug"
+            ],
+            "prop": "instrumentation/heading-indicator-real-dg/indicated-heading-deg",
+            "factor": -1,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RMI-bug"
+            ],
+            "prop": "instrumentation/heading-indicator-real-dg/heading-bug-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/radar-alt/radar-alt.ac",
@@ -749,7 +1830,94 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "DH.bug"
+            ],
+            "prop": "instrumentation/altimeter/decision-height",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                500,
+                180
+              ],
+              [
+                1000,
+                207
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RALT.needle"
+            ],
+            "prop": "instrumentation/radar-altimeter/indicated-agl-ft",
+            "table": [
+              [
+                -20,
+                -7.5
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                500,
+                180
+              ],
+              [
+                2500,
+                290
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RALT.knob"
+            ],
+            "prop": "instrumentation/altimeter/decision-height",
+            "factor": 0.2,
+            "origin": [
+              0.0041,
+              -0.0277,
+              -0.0275
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/ki266/ki266.ac",
@@ -783,7 +1951,49 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "SourceSelectorKnob"
+            ],
+            "prop": "instrumentation/dme/switch-position-pos",
+            "factor": -30,
+            "offset": 30,
+            "min": -60,
+            "max": 0,
+            "origin": [
+              0.005,
+              0,
+              0.0589
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "ModeSwitch"
+            ],
+            "prop": "instrumentation/dme/switch-min-kts-pos",
+            "factor": -0.003,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/nav1_gps_slave/nav1_gps_slave.ac",
@@ -829,7 +2039,28 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "PowerSwitch.Lever"
+            ],
+            "prop": "instrumentation/nav/slaved-to-gps-pos",
+            "factor": -60,
+            "origin": [
+              -0.0018,
+              0,
+              0.0328
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/nav1_gps_slave/slave_lamp.ac",
@@ -863,7 +2094,9 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/VHF-22/ctl22.ac",
@@ -909,7 +2142,338 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "ctl22.pwr"
+            ],
+            "prop": "instrumentation/ctl22[0]/power-knob",
+            "factor": 32,
+            "sign": -1,
+            "origin": [
+              0.007,
+              -0.0184,
+              0.0138
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "ctl22.vol"
+            ],
+            "prop": "instrumentation/comm[0]/volume",
+            "factor": 270,
+            "sign": -1,
+            "origin": [
+              0.007,
+              -0.0184,
+              0.0138
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "ctl22.toggle"
+            ],
+            "prop": "instrumentation/ctl22[0]/toggle",
+            "factor": -20,
+            "sign": -1,
+            "origin": [
+              -0.001,
+              0.0127,
+              -0.0174
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "ctl22.mem.ch.5",
+              "ctl22.mem.ch.6"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/ctl22[0]/mem-pos",
+                "factor": 0.1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl22.freq.51",
+              "ctl22.freq.61"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/comm[0]/frequencies/selected-mhz",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl22.freq.52",
+              "ctl22.freq.62"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/comm[0]/frequencies/selected-mhz",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl22.freq.53",
+              "ctl22.freq.63"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/comm[0]/frequencies/selected-mhz",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl22.freq.54",
+              "ctl22.freq.64"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/comm[0]/frequencies/selected-mhz",
+                "factor": 1,
+                "offset": 0,
+                "step": 0.1,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl22.freq.55",
+              "ctl22.freq.65"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/comm[0]/frequencies/selected-mhz",
+                "factor": 10,
+                "offset": 0,
+                "step": 0.01,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl22.freq.66"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/comm[0]/frequencies/selected-mhz",
+                "factor": 100,
+                "offset": 0,
+                "step": 0.001,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl22.stby.51",
+              "ctl22.stby.61"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/comm[0]/frequencies/standby-mhz",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl22.stby.52",
+              "ctl22.stby.62"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/comm[0]/frequencies/standby-mhz",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl22.stby.53",
+              "ctl22.stby.63"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/comm[0]/frequencies/standby-mhz",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl22.stby.54",
+              "ctl22.stby.64"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/comm[0]/frequencies/standby-mhz",
+                "factor": 1,
+                "offset": 0,
+                "step": 0.1,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl22.stby.55",
+              "ctl22.stby.65"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/comm[0]/frequencies/standby-mhz",
+                "factor": 10,
+                "offset": 0,
+                "step": 0.01,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl22.stby.66"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/comm[0]/frequencies/standby-mhz",
+                "factor": 100,
+                "offset": 0,
+                "step": 0.001,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/VHF-22/ctl22.ac",
@@ -955,7 +2519,338 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "ctl22.pwr"
+            ],
+            "prop": "instrumentation/ctl22[1]/power-knob",
+            "factor": 32,
+            "sign": -1,
+            "origin": [
+              0.007,
+              -0.0184,
+              0.0138
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "ctl22.vol"
+            ],
+            "prop": "instrumentation/comm[1]/volume",
+            "factor": 270,
+            "sign": -1,
+            "origin": [
+              0.007,
+              -0.0184,
+              0.0138
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "ctl22.toggle"
+            ],
+            "prop": "instrumentation/ctl22[1]/toggle",
+            "factor": -20,
+            "sign": -1,
+            "origin": [
+              -0.001,
+              0.0127,
+              -0.0174
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "ctl22.mem.ch.5",
+              "ctl22.mem.ch.6"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/ctl22[1]/mem-pos",
+                "factor": 0.1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl22.freq.51",
+              "ctl22.freq.61"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/comm[1]/frequencies/selected-mhz",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl22.freq.52",
+              "ctl22.freq.62"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/comm[1]/frequencies/selected-mhz",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl22.freq.53",
+              "ctl22.freq.63"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/comm[1]/frequencies/selected-mhz",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl22.freq.54",
+              "ctl22.freq.64"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/comm[1]/frequencies/selected-mhz",
+                "factor": 1,
+                "offset": 0,
+                "step": 0.1,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl22.freq.55",
+              "ctl22.freq.65"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/comm[1]/frequencies/selected-mhz",
+                "factor": 10,
+                "offset": 0,
+                "step": 0.01,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl22.freq.66"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/comm[1]/frequencies/selected-mhz",
+                "factor": 100,
+                "offset": 0,
+                "step": 0.001,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl22.stby.51",
+              "ctl22.stby.61"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/comm[1]/frequencies/standby-mhz",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl22.stby.52",
+              "ctl22.stby.62"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/comm[1]/frequencies/standby-mhz",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl22.stby.53",
+              "ctl22.stby.63"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/comm[1]/frequencies/standby-mhz",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl22.stby.54",
+              "ctl22.stby.64"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/comm[1]/frequencies/standby-mhz",
+                "factor": 1,
+                "offset": 0,
+                "step": 0.1,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl22.stby.55",
+              "ctl22.stby.65"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/comm[1]/frequencies/standby-mhz",
+                "factor": 10,
+                "offset": 0,
+                "step": 0.01,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl22.stby.66"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/comm[1]/frequencies/standby-mhz",
+                "factor": 100,
+                "offset": 0,
+                "step": 0.001,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/VIR-32/ctl32.ac",
@@ -1001,7 +2896,249 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "ctl32.toggle"
+            ],
+            "prop": "instrumentation/ctl32[0]/toggle",
+            "factor": 20,
+            "sign": -1,
+            "origin": [
+              -0.001,
+              0.0127,
+              -0.0174
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "ctl32.mem.ch"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/ctl32[0]/mem-pos",
+                "factor": 0.1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl32.freq.001"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/nav[0]/frequencies/selected-mhz",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl32.freq.002"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/nav[0]/frequencies/selected-mhz",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl32.freq.003"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/nav[0]/frequencies/selected-mhz",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl32.freq.004"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/nav[0]/frequencies/selected-mhz",
+                "factor": 1,
+                "offset": 0,
+                "step": 0.1,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl32.freq.005"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/nav[0]/frequencies/selected-mhz",
+                "factor": 10,
+                "offset": 0,
+                "step": 0.01,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl32.stby.001"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/nav[0]/frequencies/standby-mhz",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl32.stby.002"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/nav[0]/frequencies/standby-mhz",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl32.stby.003"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/nav[0]/frequencies/standby-mhz",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl32.stby.004"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/nav[0]/frequencies/standby-mhz",
+                "factor": 1,
+                "offset": 0,
+                "step": 0.1,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl32.stby.005"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/nav[0]/frequencies/standby-mhz",
+                "factor": 10,
+                "offset": 0,
+                "step": 0.01,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/VIR-32/ctl32.ac",
@@ -1047,7 +3184,249 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "ctl32.toggle"
+            ],
+            "prop": "instrumentation/ctl32[1]/toggle",
+            "factor": 20,
+            "sign": -1,
+            "origin": [
+              -0.001,
+              0.0127,
+              -0.0174
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "ctl32.mem.ch"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/ctl32[1]/mem-pos",
+                "factor": 0.1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl32.freq.001"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/nav[1]/frequencies/selected-mhz",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl32.freq.002"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/nav[1]/frequencies/selected-mhz",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl32.freq.003"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/nav[1]/frequencies/selected-mhz",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl32.freq.004"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/nav[1]/frequencies/selected-mhz",
+                "factor": 1,
+                "offset": 0,
+                "step": 0.1,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl32.freq.005"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/nav[1]/frequencies/selected-mhz",
+                "factor": 10,
+                "offset": 0,
+                "step": 0.01,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl32.stby.001"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/nav[1]/frequencies/standby-mhz",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl32.stby.002"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/nav[1]/frequencies/standby-mhz",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl32.stby.003"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/nav[1]/frequencies/standby-mhz",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl32.stby.004"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/nav[1]/frequencies/standby-mhz",
+                "factor": 1,
+                "offset": 0,
+                "step": 0.1,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl32.stby.005"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/nav[1]/frequencies/standby-mhz",
+                "factor": 10,
+                "offset": 0,
+                "step": 0.01,
+                "bias": 0.0005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/ADF-462/ctl62.ac",
@@ -1093,7 +3472,249 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "ctl62.toggle"
+            ],
+            "prop": "instrumentation/ctl62[0]/toggle",
+            "factor": -20,
+            "sign": -1,
+            "origin": [
+              -0.001,
+              0.0127,
+              -0.0174
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "ctl62.mem.ch"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/ctl62[0]/mem-pos",
+                "factor": 0.1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl62.freq.001"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/adf[0]/frequencies/selected-khz",
+                "factor": 0.0001,
+                "offset": 0,
+                "step": 1000,
+                "bias": 0.05,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl62.freq.002"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/adf[0]/frequencies/selected-khz",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "bias": 0.05,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl62.freq.003"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/adf[0]/frequencies/selected-khz",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "bias": 0.05,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl62.freq.004"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/adf[0]/frequencies/selected-khz",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "bias": 0.05,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl62.freq.005"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/adf[0]/frequencies/selected-khz",
+                "factor": 1,
+                "offset": 0,
+                "step": 0.1,
+                "bias": 0.05,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl62.stby.001"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/adf[0]/frequencies/standby-khz",
+                "factor": 0.0001,
+                "offset": 0,
+                "step": 1000,
+                "bias": 0.05,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl62.stby.002"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/adf[0]/frequencies/standby-khz",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "bias": 0.05,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl62.stby.003"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/adf[0]/frequencies/standby-khz",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "bias": 0.05,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl62.stby.004"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/adf[0]/frequencies/standby-khz",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "bias": 0.05,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl62.stby.005"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/adf[0]/frequencies/standby-khz",
+                "factor": 10,
+                "offset": 0,
+                "step": 0.1,
+                "bias": 0.05,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/ADF-462/ctl62.ac",
@@ -1139,7 +3760,249 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "ctl62.toggle"
+            ],
+            "prop": "instrumentation/ctl62[1]/toggle",
+            "factor": -20,
+            "sign": -1,
+            "origin": [
+              -0.001,
+              0.0127,
+              -0.0174
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "ctl62.mem.ch"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/ctl62[1]/mem-pos",
+                "factor": 0.1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl62.freq.001"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/adf[1]/frequencies/selected-khz",
+                "factor": 0.0001,
+                "offset": 0,
+                "step": 1000,
+                "bias": 0.05,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl62.freq.002"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/adf[1]/frequencies/selected-khz",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "bias": 0.05,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl62.freq.003"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/adf[1]/frequencies/selected-khz",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "bias": 0.05,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl62.freq.004"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/adf[1]/frequencies/selected-khz",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "bias": 0.05,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl62.freq.005"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/adf[1]/frequencies/selected-khz",
+                "factor": 1,
+                "offset": 0,
+                "step": 0.1,
+                "bias": 0.05,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl62.stby.001"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/adf[1]/frequencies/standby-khz",
+                "factor": 0.0001,
+                "offset": 0,
+                "step": 1000,
+                "bias": 0.05,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl62.stby.002"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/adf[1]/frequencies/standby-khz",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "bias": 0.05,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl62.stby.003"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/adf[1]/frequencies/standby-khz",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "bias": 0.05,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl62.stby.004"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/adf[1]/frequencies/standby-khz",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "bias": 0.05,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ctl62.stby.005"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/adf[1]/frequencies/standby-khz",
+                "factor": 10,
+                "offset": 0,
+                "step": 0.1,
+                "bias": 0.05,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/oat/oat.ac",
@@ -1231,7 +4094,9 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/ias-set/ias-set.ac",
@@ -1369,7 +4234,72 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "TCneedle"
+            ],
+            "prop": "instrumentation/turn-indicator/indicated-turn-rate",
+            "table": [
+              [
+                -5,
+                -30
+              ],
+              [
+                -1.5,
+                -30
+              ],
+              [
+                1.5,
+                30
+              ],
+              [
+                5,
+                30
+              ]
+            ],
+            "origin": [
+              0.0029,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Ball"
+            ],
+            "prop": "instrumentation/slip-skid-ball/indicated-slip-skid",
+            "table": [
+              [
+                -2.5,
+                -4.5
+              ],
+              [
+                2.5,
+                4.5
+              ]
+            ],
+            "origin": [
+              0,
+              0.3,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/transponder/gtx320a.ac",
@@ -1403,7 +4333,9 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/airtemp/airtemp.ac",
@@ -1495,7 +4427,87 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "texanim": [
+          {
+            "objects": [
+              "HR.001"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/m877/indicated-hour",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "HR.002"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/m877/indicated-hour",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "MN.001"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/m877/indicated-min",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "MN.002"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/m877/indicated-min",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/ki206/ki206.ac",
@@ -1541,7 +4553,115 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "KI206card"
+            ],
+            "prop": "instrumentation/nav[0]/radials/selected-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "KI206.locneedle"
+            ],
+            "prop": "instrumentation/nav[0]/heading-needle-deflection",
+            "table": [
+              [
+                -10,
+                -0.0113
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                10,
+                0.0113
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "KI206.gsneedle"
+            ],
+            "prop": "instrumentation/nav[0]/gs-needle-deflection",
+            "table": [
+              [
+                -9999,
+                -0.0113
+              ],
+              [
+                -3.5,
+                -0.0113
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                3.5,
+                0.0113
+              ],
+              [
+                9999,
+                0.0113
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "KI206.knob"
+            ],
+            "prop": "instrumentation/nav[0]/radials/selected-deg",
+            "factor": 5,
+            "origin": [
+              0,
+              -0.0375,
+              0.0383
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/ki206/ki206.ac",
@@ -1587,7 +4707,115 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "KI206card"
+            ],
+            "prop": "instrumentation/nav[1]/radials/selected-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "KI206.locneedle"
+            ],
+            "prop": "instrumentation/nav[1]/heading-needle-deflection",
+            "table": [
+              [
+                -10,
+                -0.0113
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                10,
+                0.0113
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "KI206.gsneedle"
+            ],
+            "prop": "instrumentation/nav[1]/gs-needle-deflection",
+            "table": [
+              [
+                -9999,
+                -0.0113
+              ],
+              [
+                -3.5,
+                -0.0113
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                3.5,
+                0.0113
+              ],
+              [
+                9999,
+                0.0113
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "KI206.knob"
+            ],
+            "prop": "instrumentation/nav[1]/radials/selected-deg",
+            "factor": 5,
+            "origin": [
+              0,
+              -0.0375,
+              0.0383
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/rmi/rmi.ac",
@@ -1633,7 +4861,147 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "RMI.face"
+            ],
+            "prop": "instrumentation/heading-indicator-real-dg/indicated-heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RMI.adf"
+            ],
+            "prop": "instrumentation/adf[1]/indicated-bearing-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RMI.brgN1"
+            ],
+            "prop": "instrumentation/heading-indicator-real-dg/indicated-heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RMI.brgN1"
+            ],
+            "prop": "instrumentation/nav[0]/radials/reciprocal-radial-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RMI.brgN2"
+            ],
+            "prop": "instrumentation/heading-indicator-real-dg/indicated-heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RMI.brgN2"
+            ],
+            "prop": "instrumentation/nav[1]/radials/reciprocal-radial-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RMI-bug"
+            ],
+            "prop": "instrumentation/heading-indicator-real-dg/indicated-heading-deg",
+            "factor": -1,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RMI-bug"
+            ],
+            "prop": "instrumentation/heading-indicator-real-dg/heading-bug-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/asi/asi-gauge.ac",
@@ -1679,7 +5047,57 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "ASIneedle"
+            ],
+            "prop": "instrumentation/airspeed-indicator[1]/indicated-speed-kt",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                20,
+                0
+              ],
+              [
+                60,
+                36
+              ],
+              [
+                80,
+                72
+              ],
+              [
+                170,
+                234
+              ],
+              [
+                200,
+                288
+              ],
+              [
+                240,
+                326
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/alt/alt2.ac",
@@ -1725,7 +5143,128 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "needle100"
+            ],
+            "prop": "instrumentation/altimeter[1]/indicated-altitude-ft",
+            "factor": 0.36,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "needle1000"
+            ],
+            "prop": "instrumentation/altimeter[1]/indicated-altitude-ft",
+            "factor": 0.036,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "needle10000"
+            ],
+            "prop": "instrumentation/altimeter[1]/indicated-altitude-ft",
+            "factor": 0.0036,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "inhgknob"
+            ],
+            "prop": "instrumentation/altimeter[1]/setting-hpa",
+            "factor": 5,
+            "origin": [
+              0.001,
+              -0.0374,
+              0.0352
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "inhg"
+            ],
+            "steps": [
+              {
+                "kind": "rotate",
+                "prop": "instrumentation/altimeter[1]/setting-hpa",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  0,
+                  -1
+                ],
+                "table": [
+                  [
+                    950,
+                    90
+                  ],
+                  [
+                    975,
+                    45
+                  ],
+                  [
+                    1000,
+                    0
+                  ],
+                  [
+                    1025,
+                    -45
+                  ],
+                  [
+                    1050,
+                    -90
+                  ]
+                ],
+                "center": [
+                  0.666,
+                  0.333
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/vsi/vsi.ac",
@@ -1771,7 +5310,66 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "PointerCentre",
+              "PointerTip"
+            ],
+            "prop": "instrumentation/vertical-speed-indicator/indicated-speed-fpm",
+            "table": [
+              [
+                -2000,
+                -172
+              ],
+              [
+                -1500,
+                -130
+              ],
+              [
+                -1000,
+                -79
+              ],
+              [
+                -500,
+                -33
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                500,
+                33
+              ],
+              [
+                1000,
+                79
+              ],
+              [
+                1500,
+                130
+              ],
+              [
+                2000,
+                172
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/hi/hi.ac",
@@ -1817,7 +5415,63 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "face"
+            ],
+            "prop": "instrumentation/heading-indicator-real-dg/indicated-heading-deg",
+            "factor": -1,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "HdgBug"
+            ],
+            "prop": "instrumentation/heading-indicator-real-dg/indicated-heading-deg",
+            "factor": -1,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "HdgBug"
+            ],
+            "prop": "instrumentation/heading-indicator-real-dg/heading-bug-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/tc/tc.ac",
@@ -1863,7 +5517,72 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "TCneedle"
+            ],
+            "prop": "instrumentation/turn-indicator/indicated-turn-rate",
+            "table": [
+              [
+                -5,
+                -30
+              ],
+              [
+                -1.5,
+                -30
+              ],
+              [
+                1.5,
+                30
+              ],
+              [
+                5,
+                30
+              ]
+            ],
+            "origin": [
+              0.0029,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Ball"
+            ],
+            "prop": "instrumentation/slip-skid-ball/indicated-slip-skid",
+            "table": [
+              [
+                -2.5,
+                -4.5
+              ],
+              [
+                2.5,
+                4.5
+              ]
+            ],
+            "origin": [
+              0,
+              0.3,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/nav1_gps_slave/nav1_gps_slave.ac",
@@ -1909,7 +5628,28 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "PowerSwitch.Lever"
+            ],
+            "prop": "instrumentation/nav/slaved-to-gps-pos",
+            "factor": -60,
+            "origin": [
+              -0.0018,
+              0,
+              0.0328
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/nav1_gps_slave/slave_lamp.ac",
@@ -1943,7 +5683,9 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/kma20_AudioPanel/audiopanel_support.ac",
@@ -2023,7 +5765,9 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/ELT/ArtexELT.ac",
@@ -2069,7 +5813,28 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "Switch"
+            ],
+            "prop": "instrumentation/elt/on-pos",
+            "factor": 10,
+            "origin": [
+              0.003,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/torque/torque.ac",
@@ -2115,7 +5880,37 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "TQneedle"
+            ],
+            "prop": "instrumentation/engine-instruments/torque[0]/indicated-torque-ftlb",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                2000,
+                228
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/torque/torque.ac",
@@ -2161,7 +5956,37 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "TQneedle"
+            ],
+            "prop": "instrumentation/engine-instruments/torque[1]/indicated-torque-ftlb",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                2000,
+                228
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/prop/prop-rpm.ac",
@@ -2207,7 +6032,64 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "PropRPMneedle"
+            ],
+            "prop": "instrumentation/engine-instruments/propeller[0]/indicated-rpm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                2300,
+                282.273
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Prpm.1"
+            ],
+            "prop": "instrumentation/engine-instruments/propeller[0]/indicated-rpm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                2300,
+                3763.6364
+              ]
+            ],
+            "origin": [
+              0,
+              -0.0096,
+              0.013
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/prop/prop-rpm.ac",
@@ -2253,7 +6135,64 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "PropRPMneedle"
+            ],
+            "prop": "instrumentation/engine-instruments/propeller[1]/indicated-rpm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                2300,
+                282.273
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Prpm.1"
+            ],
+            "prop": "instrumentation/engine-instruments/propeller[1]/indicated-rpm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                2300,
+                3763.6364
+              ]
+            ],
+            "origin": [
+              0,
+              -0.0096,
+              0.013
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/torque/T5.ac",
@@ -2299,7 +6238,81 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "T5needle"
+            ],
+            "prop": "instrumentation/engine-instruments/t5[0]/indicated-t5-degc",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                300,
+                28
+              ],
+              [
+                400,
+                36
+              ],
+              [
+                500,
+                50
+              ],
+              [
+                600,
+                92
+              ],
+              [
+                650,
+                115
+              ],
+              [
+                720,
+                150
+              ],
+              [
+                725,
+                152
+              ],
+              [
+                800,
+                188
+              ],
+              [
+                900,
+                202
+              ],
+              [
+                1000,
+                213
+              ],
+              [
+                1100,
+                225
+              ],
+              [
+                1200,
+                232
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/torque/T5.ac",
@@ -2345,7 +6358,81 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "T5needle"
+            ],
+            "prop": "instrumentation/engine-instruments/t5[1]/indicated-t5-degc",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                300,
+                28
+              ],
+              [
+                400,
+                36
+              ],
+              [
+                500,
+                50
+              ],
+              [
+                600,
+                92
+              ],
+              [
+                650,
+                115
+              ],
+              [
+                720,
+                150
+              ],
+              [
+                725,
+                152
+              ],
+              [
+                800,
+                188
+              ],
+              [
+                900,
+                202
+              ],
+              [
+                1000,
+                213
+              ],
+              [
+                1100,
+                225
+              ],
+              [
+                1200,
+                232
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/torque/gg-rpm.ac",
@@ -2391,7 +6478,64 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "ggRPMneedle"
+            ],
+            "prop": "instrumentation/engine-instruments/turbine[0]/indicated-speed",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                105,
+                282.772
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "ggRpm"
+            ],
+            "prop": "instrumentation/engine-instruments/turbine[0]/indicated-speed",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                105,
+                3780
+              ]
+            ],
+            "origin": [
+              0,
+              -0.0096,
+              0.013
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/torque/gg-rpm.ac",
@@ -2437,7 +6581,64 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "ggRPMneedle"
+            ],
+            "prop": "instrumentation/engine-instruments/turbine[1]/indicated-speed",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                105,
+                282.772
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "ggRpm"
+            ],
+            "prop": "instrumentation/engine-instruments/turbine[1]/indicated-speed",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                105,
+                3780
+              ]
+            ],
+            "origin": [
+              0,
+              -0.0096,
+              0.013
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/fuel/fuelflow.ac",
@@ -2483,7 +6684,37 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "FFneedle"
+            ],
+            "prop": "instrumentation/engine-instruments/fuel-flow[0]/indicated-fuel-flow-pph",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                500,
+                255
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/fuel/fuelflow.ac",
@@ -2529,7 +6760,37 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "FFneedle"
+            ],
+            "prop": "instrumentation/engine-instruments/fuel-flow[1]/indicated-fuel-flow-pph",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                500,
+                255
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/oil/oiltemp.ac",
@@ -2575,7 +6836,37 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "OTneedle"
+            ],
+            "prop": "instrumentation/engine-instruments/oil-temp[0]/indicated-temp-degc",
+            "table": [
+              [
+                -80,
+                -12
+              ],
+              [
+                150,
+                264
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/oil/oiltemp.ac",
@@ -2621,7 +6912,37 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "OTneedle"
+            ],
+            "prop": "instrumentation/engine-instruments/oil-temp[1]/indicated-temp-degc",
+            "table": [
+              [
+                -80,
+                -12
+              ],
+              [
+                150,
+                264
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/oil/oilpsi.ac",
@@ -2667,7 +6988,37 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "OPneedle"
+            ],
+            "prop": "instrumentation/engine-instruments/oil-press[0]/indicated-pressure-psi",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                120,
+                307.5
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/oil/oilpsi.ac",
@@ -2713,7 +7064,37 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "OPneedle"
+            ],
+            "prop": "instrumentation/engine-instruments/oil-press[1]/indicated-pressure-psi",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                120,
+                307.5
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/fuel/fuel-qty.ac",
@@ -2759,7 +7140,37 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "FuelQTY.needle"
+            ],
+            "prop": "instrumentation/engine-instruments/fuel-qty-aft/indicated-fuelqty-lbs",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                1400,
+                320
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/fuel/fuel-qty.ac",
@@ -2805,7 +7216,37 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "FuelQTY.needle"
+            ],
+            "prop": "instrumentation/engine-instruments/fuel-qty-fwd/indicated-fuelqty-lbs",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                1400,
+                320
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/volts/voltmeter.ac",
@@ -2851,7 +7292,37 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "voltneedle"
+            ],
+            "prop": "instrumentation/volt-amp-meter/indicated-volts",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                30,
+                86.2
+              ]
+            ],
+            "origin": [
+              0.0015,
+              -0.0085,
+              0.0003
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/volts/ammeter.ac",
@@ -2897,7 +7368,37 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "ampneedle"
+            ],
+            "prop": "instrumentation/volt-amp-meter/indicated-amps",
+            "table": [
+              [
+                -100,
+                -42.5
+              ],
+              [
+                100,
+                42.5
+              ]
+            ],
+            "origin": [
+              0,
+              -0.007,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Flightdeck/Instruments/hyd/hydpress.ac",
@@ -3055,7 +7556,275 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "Lforearm",
+              "Rforearm"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": 10,
+            "origin": [
+              -0.52,
+              -0.36,
+              0.06
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "glasses",
+              "headset",
+              "Pelvis",
+              "Torso",
+              "Head",
+              "Larm",
+              "Rarm"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": 10,
+            "origin": [
+              0.05,
+              0.02,
+              0.01
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Larm",
+              "Rarm"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": 28,
+            "origin": [
+              0.1,
+              0.59,
+              0.01
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Larm",
+              "Rarm"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": 22,
+            "origin": [
+              0.1,
+              0.59,
+              0.01
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Lforearm"
+            ],
+            "prop": "controls/flight/aileron",
+            "factor": -40,
+            "origin": [
+              -0.419,
+              0.3,
+              0.07
+            ],
+            "axis": [
+              0.810321,
+              0.336641,
+              0.479638
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Rforearm"
+            ],
+            "prop": "controls/flight/aileron",
+            "factor": -40,
+            "origin": [
+              -0.419,
+              0.3,
+              0.07
+            ],
+            "axis": [
+              0.700524,
+              0.291026,
+              -0.65159
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Head",
+              "headset",
+              "glasses"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": 8,
+            "origin": [
+              0.076,
+              0.676,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Head",
+              "headset",
+              "glasses"
+            ],
+            "prop": "controls/flight/aileron",
+            "factor": 30,
+            "origin": [
+              0.076,
+              0.676,
+              0
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "Lfoot"
+            ],
+            "prop": "controls/flight/rudder",
+            "factor": 0.025,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Lfoot"
+            ],
+            "prop": "controls/flight/rudder",
+            "factor": 10,
+            "origin": [
+              -0.98,
+              -0.2,
+              0.1
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Lcalf"
+            ],
+            "prop": "controls/flight/rudder",
+            "factor": 3,
+            "origin": [
+              -0.38,
+              0.06,
+              0.1
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "Rfoot"
+            ],
+            "prop": "controls/flight/rudder",
+            "factor": 0.025,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Rfoot"
+            ],
+            "prop": "controls/flight/rudder",
+            "factor": 10,
+            "origin": [
+              -0.98,
+              -0.2,
+              -0.12
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Rcalf"
+            ],
+            "prop": "controls/flight/rudder",
+            "factor": 3,
+            "origin": [
+              -0.38,
+              0.06,
+              -0.12
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Pilot/copilot.ac",
@@ -3089,7 +7858,275 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "Lforearm",
+              "Rforearm"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": 10,
+            "origin": [
+              -0.52,
+              -0.36,
+              -0.06
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "glasses",
+              "headset",
+              "Pelvis",
+              "Torso",
+              "Head",
+              "Larm",
+              "Rarm"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": 10,
+            "origin": [
+              0.05,
+              0.02,
+              -0.01
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Larm",
+              "Rarm"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": 28,
+            "origin": [
+              0.1,
+              0.59,
+              -0.01
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Larm",
+              "Rarm"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": 22,
+            "origin": [
+              0.1,
+              0.59,
+              -0.01
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Lforearm"
+            ],
+            "prop": "controls/flight/aileron",
+            "factor": -40,
+            "origin": [
+              -0.419,
+              0.3,
+              -0.07
+            ],
+            "axis": [
+              0.700524,
+              0.291026,
+              0.65159
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Rforearm"
+            ],
+            "prop": "controls/flight/aileron",
+            "factor": -40,
+            "origin": [
+              -0.419,
+              0.3,
+              -0.07
+            ],
+            "axis": [
+              0.810321,
+              0.336641,
+              -0.479638
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Head",
+              "headset",
+              "glasses"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": 8,
+            "origin": [
+              0.076,
+              0.676,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Head",
+              "headset",
+              "glasses"
+            ],
+            "prop": "controls/flight/aileron",
+            "factor": 30,
+            "origin": [
+              0.076,
+              0.676,
+              0
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "Lfoot"
+            ],
+            "prop": "controls/flight/rudder",
+            "factor": 0.025,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Lfoot"
+            ],
+            "prop": "controls/flight/rudder",
+            "factor": 10,
+            "origin": [
+              -0.98,
+              -0.2,
+              -0.1
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Lcalf"
+            ],
+            "prop": "controls/flight/rudder",
+            "factor": 3,
+            "origin": [
+              -0.38,
+              0.06,
+              -0.1
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "Rfoot"
+            ],
+            "prop": "controls/flight/rudder",
+            "factor": 0.025,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Rfoot"
+            ],
+            "prop": "controls/flight/rudder",
+            "factor": 10,
+            "origin": [
+              -0.98,
+              -0.2,
+              0.12
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Rcalf"
+            ],
+            "prop": "controls/flight/rudder",
+            "factor": 3,
+            "origin": [
+              -0.38,
+              0.06,
+              0.12
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          }
+        ],
+        "poseState": {}
       }
     ],
     "fallback": {
@@ -3296,5 +8333,13 @@
       "label": "Wikipedia: de Havilland Canada DHC-6 Twin Otter",
       "url": "https://en.wikipedia.org/wiki/De_Havilland_Canada_DHC-6_Twin_Otter"
     }
-  ]
+  ],
+  "landing": {
+    "vapp_kt": 75,
+    "roll_m": 300,
+    "flaps": 1,
+    "pitch_deg": 1.5,
+    "flare_deg": 6,
+    "note": "Approximate: full flaps"
+  }
 }

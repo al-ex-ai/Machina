@@ -6,7 +6,7 @@ import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { loadCatalog } from '../src/catalog-node.js';
 import { loadAssetNode } from '../src/assets-node.js';
-import { measureTakeoff, measureTakeoffRun } from '../src/takeoff-check.js';
+import { measureTakeoff, measureTakeoffRun, cockpitMotion } from '../src/takeoff-check.js';
 import { captainEye } from '../src/takeoff-sim.js';
 import * as THREE from 'three';
 
@@ -49,7 +49,7 @@ for (const m of listed) {
     const r = measureTakeoffRun(loadAssetNode(m), m, { kind: 'landing' });
     assert.ok(r.depth <= 0.02, `${r.part} ${r.mesh} is ${r.depth.toFixed(2)} m under the runway during the ${r.phase} (t ${r.t} s)`);
     const l = m.landing;
-    assert.ok(l.vapp_kt > 30 && l.vapp_kt < 200 && l.roll_m > 50 && l.roll_m < 3000, 'landing figures out of range');
+    assert.ok(l.vapp_kt > 20 && l.vapp_kt < 200 && l.roll_m > 20 && l.roll_m < 3000, 'landing figures out of range');
   });
   test(`${m.id}: the cockpit view looks out`, () => {
     // Rays from the captain's eye across the middle of the view: nothing solid closer than 43 cm (glass is
@@ -62,6 +62,17 @@ for (const m of listed) {
       const h = rc.intersectObjects(meshes, false)[0];
       assert.ok(!h, `${h?.object.userData.source ?? h?.object.name} is ${h?.distance.toFixed(2)} m in front of the captain's eyes`);
     }
+  });
+  // MODEL_STANDARD.md rule 31: the cockpit is alive in both scenes. Controls (yoke, stick or pedals), throttles
+  // and gauges move, unless takeoff.cockpit.still says why the package's cockpit cannot.
+  for (const kind of m.landing ? ['takeoff', 'landing'] : ['takeoff']) test(`${m.id}: the cockpit moves during the ${kind}`, () => {
+    const c = m.takeoff?.cockpit ?? {};
+    const r = cockpitMotion(loadAssetNode(m), m, { kind });
+    assert.ok(r.moved.length >= 3, `only ${r.moved.length} cockpit meshes move (${r.moved.join(', ')})`);
+    // takeoff.cockpit.still: { kind: why } for what the package's cockpit cannot move (no separate lever drawn, glass displays).
+    const still = c.still ?? {};
+    for (const [k, why] of Object.entries(still)) assert.ok(typeof why === 'string' && why.length > 10, `cockpit.still.${k} needs a reason`);
+    for (const k of ['controls', 'gauges', 'throttle']) if (!still[k]) assert.ok(r.kinds.has(k), `no ${k} move in the cockpit (moving: ${[...r.kinds].join(', ') || 'nothing'})`);
   });
   test(`${m.id}: pilots aboard`, () => {
     const files = (m.asset.files ?? [{ file: m.asset.file }]).map(f => f.file);

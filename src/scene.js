@@ -90,9 +90,33 @@ export function studioEnvironment(renderer) {
   return tex;
 }
 
+const TEXTURE_KEYS = ['map', 'normalMap', 'roughnessMap', 'metalnessMap', 'aoMap', 'emissiveMap', 'alphaMap', 'lightMap', 'bumpMap', 'specularMap'];
+
+/**
+ * Free everything a model holds on the GPU: geometry, materials and their textures. A material's
+ * dispose() leaves its textures uploaded, and every asset load makes its own, so without this each
+ * model switch kept the last one's textures until a phone ran out of memory and lost the context.
+ * The scene's environment map is shared and never freed here.
+ */
+export function disposeObject(root, { textures = true, skip } = {}) {
+  root.traverse(o => {
+    if (!o.isMesh && !o.isLineSegments && !o.isPoints) return;
+    o.geometry?.dispose();
+    for (const m of new Set([o.material, o.userData.solid].flat())) {
+      if (!m || skip?.has(m)) continue;
+      if (textures || m.userData?.ownsMap) for (const k of TEXTURE_KEYS) m[k]?.dispose?.();
+      m.dispose();
+    }
+  });
+}
+
+// Phones and tablets: ambient occlusion off (several mobile GPUs return zero occlusion at their
+// precision, which painted the whole model black once the camera came to rest), smaller shadow map.
+const MOBILE = typeof matchMedia === 'function' && matchMedia('(hover: none) and (pointer: coarse)').matches;
+
 export function createViewer(container) {
-  const renderer = new THREE.WebGLRenderer({ antialias: true });
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5));
+  const renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, MOBILE ? 1.25 : 1.5));
   renderer.shadowMap.enabled = true;
   renderer.shadowMap.type = THREE.PCFSoftShadowMap;
   renderer.outputColorSpace = THREE.SRGBColorSpace;
@@ -101,20 +125,32 @@ export function createViewer(container) {
   container.appendChild(renderer.domElement);
 
   const scene = new THREE.Scene();
-  scene.environment = studioEnvironment(renderer);
   scene.background = backdrop(document.documentElement.dataset.theme);
-  new RGBELoader().load(HDRI, hdr => {
-    const pmrem = new THREE.PMREMGenerator(renderer);
-    scene.environment = pmrem.fromEquirectangular(hdr).texture;
-    scene.environmentIntensity = 0.9;
-    hdr.dispose();
-    pmrem.dispose();
-    invalidate(true);
-  });
+  // The environment lives in render targets, which a lost context empties; it is built again on restore.
+  let hdrSeq = 0;
+  function buildEnvironment() {
+    scene.environment?.dispose();
+    scene.environment = studioEnvironment(renderer);
+    const seq = ++hdrSeq;
+    new RGBELoader().load(HDRI, hdr => {
+      if (seq !== hdrSeq) { hdr.dispose(); return; }
+      const pmrem = new THREE.PMREMGenerator(renderer);
+      scene.environment.dispose();
+      scene.environment = pmrem.fromEquirectangular(hdr).texture;
+      scene.environmentIntensity = 0.9;
+      hdr.dispose();
+      pmrem.dispose();
+      invalidate(true);
+    });
+  }
+  buildEnvironment();
   const camera = new THREE.PerspectiveCamera(40, 1, 0.1, 5000);
   // Every frame goes through the composer, so the canvas's own antialiasing never
-  // applies. Multisampled render targets smooth the edges instead.
-  const composer = new EffectComposer(renderer, new THREE.WebGLRenderTarget(1, 1, { type: THREE.HalfFloatType, samples: 4 }));
+  // applies. Multisampled render targets smooth the edges instead. Half float needs a colour-buffer
+  // extension that some phones lack; without it the frame would be blank, so fall back to 8 bit.
+  const gl = renderer.getContext();
+  const halfFloat = gl.getExtension('EXT_color_buffer_half_float') || gl.getExtension('EXT_color_buffer_float');
+  const composer = new EffectComposer(renderer, new THREE.WebGLRenderTarget(1, 1, { type: halfFloat ? THREE.HalfFloatType : THREE.UnsignedByteType, samples: MOBILE ? 2 : 4 }));
   composer.addPass(new RenderPass(scene, camera));
   const gtao = new GTAOPass(scene, camera, 1, 1);
   gtao.output = GTAOPass.OUTPUT.Default;
@@ -152,7 +188,7 @@ export function createViewer(container) {
   scene.add(new THREE.HemisphereLight('#ffffff', '#b9c2cc', 0.35));
   const sun = new THREE.DirectionalLight('#fff6ea', 2.2);
   sun.castShadow = true;
-  sun.shadow.mapSize.set(2048, 2048);
+  sun.shadow.mapSize.set(MOBILE ? 1024 : 2048, MOBILE ? 1024 : 2048);
   sun.shadow.bias = -0.0004;
   sun.shadow.autoUpdate = false; // shadows only change with the model, not the camera
   scene.add(sun, sun.target);
@@ -174,7 +210,8 @@ export function createViewer(container) {
 
   // X-ray view: translucent fill plus cyan edges; the selected part stays solid.
   let xray = false;
-  let ao = true;
+  let ao = !MOBILE && !/[?&#]noao\b/.test(globalThis.location?.href ?? '');
+  gtao.enabled = ao;
   const XRAY_FILL = new THREE.MeshBasicMaterial({ color: '#5ec8ff', transparent: true, opacity: 0.05, depthWrite: false, side: THREE.DoubleSide });
   const XRAY_EDGE = new THREE.LineBasicMaterial({ color: '#7fd4ff', transparent: true, opacity: 0.45, depthWrite: false });
   // The interior (seats, consoles, cabin) is what x-ray is for: a stronger fill and finer edges,
@@ -463,14 +500,9 @@ export function createViewer(container) {
     anims.clear();
     if (!model) return;
     scene.remove(model);
-    // Textures are usually shared with a loader cache, so only those a material owns outright
-    // (userData.ownsMap, like Compare's ground labels) are freed here.
     xrayGen++; // x-ray builds still queued for this model are dropped
-    model.traverse(o => {
-      if (!o.isMesh && !o.isLineSegments) return;
-      o.geometry.dispose();
-      for (const m of new Set([o.material, o.userData.solid].flat())) { if (!m || SHARED.has(m)) continue; if (m.userData?.ownsMap) m.map?.dispose(); m.dispose(); }
-    });
+    // Compare keeps its models cached between line-ups and frees their textures itself (keepTextures).
+    disposeObject(model, { textures: !model.userData.keepTextures, skip: SHARED });
     model = null;
     parts = [];
     selected = hovered = null;
@@ -528,6 +560,16 @@ export function createViewer(container) {
     requestAnimationFrame(loop);
   }
   loop();
+
+  // A phone that runs short of GPU memory, or backgrounds the tab, can drop the WebGL context. Three
+  // re-uploads geometry and textures on restore, but render-target contents (the environment, the
+  // shadow map) come back empty, which left the model unlit and black.
+  renderer.domElement.addEventListener('webglcontextlost', e => e.preventDefault());
+  renderer.domElement.addEventListener('webglcontextrestored', () => {
+    buildEnvironment();
+    refreshShadows();
+    invalidate(true);
+  });
 
   return {
     setModel,
@@ -618,7 +660,7 @@ export function createViewer(container) {
     getModel: () => model,
     /** Ambient occlusion on or off. Compare turns it off for its stacked overlay. */
     setAmbientOcclusion(on) {
-      ao = on;
+      ao = on && !MOBILE;
       gtao.enabled = !xray && ao && !outdoor;
       invalidate(true);
     },

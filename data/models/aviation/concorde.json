@@ -40,7 +40,10 @@
         "Front_1",
         "Screen_0",
         "Screen_1"
-      ]
+      ],
+      "still": {
+        "gauges": "the main instrument panel is a 2D panel in FlightGear, so the 3D flight deck has no gauges to move"
+      }
     }
   },
   "sources": [
@@ -1899,7 +1902,9 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "poseState": {}
       },
       {
         "file": "Instruments/INS/INS.ac",
@@ -1933,7 +1938,9 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "poseState": {}
       },
       {
         "file": "Instruments/pedestal/temperature.ac",
@@ -2089,7 +2096,28 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "PitchTrimWheel"
+            ],
+            "prop": "controls/flight/elevator-trim",
+            "factor": 540,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Instruments/pedestal/throttle-cylinder.ac",
@@ -2111,7 +2139,158 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "Reverse1"
+            ],
+            "prop": "controls/engines/engine[0]/reverser",
+            "factor": 92,
+            "origin": [
+              0.06,
+              0.167,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Reverse2"
+            ],
+            "prop": "controls/engines/engine[1]/reverser",
+            "factor": 92,
+            "origin": [
+              0.06,
+              0.167,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Reverse3"
+            ],
+            "prop": "controls/engines/engine[2]/reverser",
+            "factor": 92,
+            "origin": [
+              0.06,
+              0.167,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Reverse4"
+            ],
+            "prop": "controls/engines/engine[3]/reverser",
+            "factor": 92,
+            "origin": [
+              0.06,
+              0.167,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Throttle1"
+            ],
+            "prop": "controls/engines/engine[0]/throttle",
+            "factor": 28,
+            "origin": [
+              0.0713,
+              0.0261,
+              0.0581
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ],
+            "note": "Machina rig: the package draws this control but does not animate it"
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Throttle2"
+            ],
+            "prop": "controls/engines/engine[0]/throttle",
+            "factor": 28,
+            "origin": [
+              0.0713,
+              0.0261,
+              0.0144
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ],
+            "note": "Machina rig: the package draws this control but does not animate it"
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Throttle3"
+            ],
+            "prop": "controls/engines/engine[0]/throttle",
+            "factor": 28,
+            "origin": [
+              0.0713,
+              0.0261,
+              -0.0147
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ],
+            "note": "Machina rig: the package draws this control but does not animate it"
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Throttle4"
+            ],
+            "prop": "controls/engines/engine[0]/throttle",
+            "factor": 28,
+            "origin": [
+              0.0713,
+              0.0261,
+              -0.0581
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ],
+            "note": "Machina rig: the package draws this control but does not animate it"
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Instruments/pedestal/brake-cylinder.ac",
@@ -2133,7 +2312,9 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "poseState": {}
       },
       {
         "file": "Instruments/pedestal/wiper.ac",
@@ -2155,7 +2336,9 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "poseState": {}
       },
       {
         "file": "Instruments/pedestal/VHF.ac",
@@ -2189,7 +2372,9 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "poseState": {}
       },
       {
         "file": "Instruments/pedestal/VHF.ac",
@@ -2223,7 +2408,9 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "poseState": {}
       },
       {
         "file": "Instruments/INS/INS.ac",
@@ -2257,7 +2444,9 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "poseState": {}
       },
       {
         "file": "Instruments/pedestal/ADF.ac",
@@ -2291,7 +2480,9 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "poseState": {}
       },
       {
         "file": "Instruments/pedestal/UHF.ac",
@@ -2347,7 +2538,29 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "Steering"
+            ],
+            "prop": "controls/flight/rudder",
+            "factor": -15,
+            "offset": 0,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Instruments/yoke/steering.ac",
@@ -2369,7 +2582,29 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "Steering"
+            ],
+            "prop": "controls/flight/rudder",
+            "factor": -15,
+            "offset": 0,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Instruments/seat/seat.ac",
@@ -2501,7 +2736,73 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "groups": {
+          "YokePillar": [
+            "Yoke",
+            "Pillar"
+          ]
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "YokePillar"
+            ],
+            "prop": "controls/flight/elevator-trim",
+            "factor": -5,
+            "offset": -10,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "YokePillar"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": -5,
+            "offset": 0,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Yoke"
+            ],
+            "prop": "controls/flight/aileron",
+            "factor": -45,
+            "offset": 0,
+            "origin": [
+              0,
+              0.616,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Instruments/yoke/yoke.ac",
@@ -2523,7 +2824,73 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "groups": {
+          "YokePillar": [
+            "Yoke",
+            "Pillar"
+          ]
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "YokePillar"
+            ],
+            "prop": "controls/flight/elevator-trim",
+            "factor": -5,
+            "offset": -10,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "YokePillar"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": -5,
+            "offset": 0,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Yoke"
+            ],
+            "prop": "controls/flight/aileron",
+            "factor": -45,
+            "offset": 0,
+            "origin": [
+              0,
+              0.616,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Instruments/pressure/outlet.ac",
@@ -2985,7 +3352,9 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/steward/steward.ac",
@@ -3778,5 +4147,13 @@
       ],
       "sat": 0
     }
+  },
+  "landing": {
+    "vapp_kt": 162,
+    "roll_m": 1500,
+    "flaps": 0,
+    "pitch_deg": 10,
+    "flare_deg": 11.5,
+    "note": "Approximate: no flaps; approach at about 11 degrees nose up, nose drooped"
   }
 }

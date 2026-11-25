@@ -1579,7 +1579,103 @@
               "roll": 0
             }
           }
-        ]
+        ],
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "MC_Ring"
+            ],
+            "prop": "instrumentation/magnetic-compass/indicated-heading-deg",
+            "origin": [
+              -1.77,
+              0.919,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "Yoke"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": -0.12,
+            "origin": [
+              -1.5448,
+              0.345,
+              -0.5389
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ],
+            "note": "Machina rig: the package draws this control but does not animate it"
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Yoke"
+            ],
+            "prop": "controls/flight/aileron",
+            "factor": -45,
+            "origin": [
+              -1.5448,
+              0.345,
+              -0.5389
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ],
+            "note": "Machina rig: the package draws this control but does not animate it"
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "Yoke.001"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": -0.12,
+            "origin": [
+              -1.5448,
+              0.3452,
+              0.5389
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ],
+            "note": "Machina rig: the package draws this control but does not animate it"
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Yoke.001"
+            ],
+            "prop": "controls/flight/aileron",
+            "factor": -45,
+            "origin": [
+              -1.5448,
+              0.3452,
+              0.5389
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ],
+            "note": "Machina rig: the package draws this control but does not animate it"
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/pedestal.ac",
@@ -1608,7 +1704,332 @@
               "roll": 0
             }
           }
-        ]
+        ],
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "LHRevThrust.lever"
+            ],
+            "prop": "controls/engines/engine/throttle",
+            "factor": 25,
+            "origin": [
+              -0.1266,
+              0.591,
+              -0.018
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RHRevThrust.lever"
+            ],
+            "prop": "controls/engines/engine[1]/throttle",
+            "factor": 25,
+            "origin": [
+              -0.1266,
+              0.591,
+              -0.018
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LHThrottle",
+              "LHRevThrust.lever"
+            ],
+            "prop": "controls/engines/engine/throttle",
+            "factor": 42.4,
+            "origin": [
+              -0.1396,
+              0.3787,
+              null
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RHThrottle",
+              "RHRevThrust.lever"
+            ],
+            "prop": "controls/engines/engine[1]/throttle",
+            "factor": 42.4,
+            "origin": [
+              -0.1396,
+              0.3787,
+              null
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "FlapLever"
+            ],
+            "prop": "controls/flight/flaps",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.033,
+                19
+              ],
+              [
+                0.166,
+                25.91
+              ],
+              [
+                0.5,
+                32.93
+              ],
+              [
+                0.666,
+                39.86
+              ],
+              [
+                0.833,
+                46.86
+              ],
+              [
+                1,
+                53.9
+              ]
+            ],
+            "origin": [
+              -0.1402,
+              0.3729,
+              -0.1149
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "BrkLever"
+            ],
+            "prop": "controls/gear/brake-parking",
+            "factor": 60,
+            "origin": [
+              -0.0064,
+              0.4068,
+              0.1988
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "PitchTrim"
+            ],
+            "prop": "controls/flight/elevator-trim",
+            "table": [
+              [
+                -1,
+                -30
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                30
+              ]
+            ],
+            "origin": [
+              -0.1396,
+              0.3787,
+              -0.0002
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AudioPnl_L_VhfL.knob",
+              "Lettering_CS.Audio_1_VhfL"
+            ],
+            "prop": "instrumentation/comm/volume",
+            "table": [
+              [
+                0,
+                -165
+              ],
+              [
+                0.5,
+                0
+              ],
+              [
+                1,
+                165
+              ]
+            ],
+            "origin": [
+              0.0904,
+              0.4148,
+              0.1822
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AudioPnl_L_VhfC.knob",
+              "Lettering_CS.Audio_1_VhfC"
+            ],
+            "prop": "instrumentation/comm[2]/volume",
+            "table": [
+              [
+                0,
+                -165
+              ],
+              [
+                0.5,
+                0
+              ],
+              [
+                1,
+                165
+              ]
+            ],
+            "origin": [
+              0.0904,
+              0.4148,
+              0.1647
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AudioPnl_L_VhfR.knob",
+              "Lettering_CS.Audio_1_VhfR"
+            ],
+            "prop": "instrumentation/comm[1]/volume",
+            "table": [
+              [
+                0,
+                -165
+              ],
+              [
+                0.5,
+                0
+              ],
+              [
+                1,
+                165
+              ]
+            ],
+            "origin": [
+              0.0904,
+              0.4148,
+              0.1473
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "ACP_Vhf_L.Led"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/comm/power-btn",
+                "factor": 0.089,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ACP_Vhf_C.Led.001"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/comm[2]/power-btn",
+                "factor": 0.089,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ACP_Vhf_R.Led"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/comm[1]/power-btn",
+                "factor": 0.089,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Instruments/MFD/mfd.ac",
@@ -1700,7 +2121,9 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "poseState": {}
       },
       {
         "file": "Models/Instruments/CDU/boeing.ac",
@@ -1746,7 +2169,9 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "poseState": {}
       },
       {
         "file": "Models/Instruments/CDU/boeing.ac",
@@ -1792,7 +2217,9 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "poseState": {}
       },
       {
         "file": "Models/Instruments/radio.ac",
@@ -1838,7 +2265,338 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "texanim": [
+          {
+            "objects": [
+              "freq.001"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit/selected-mhz",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "freq.002"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit/selected-mhz",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "freq.003"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit/selected-mhz",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "freq.004"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit/selected-mhz",
+                "factor": 1,
+                "offset": 0,
+                "step": 0.1,
+                "bias": 0.0005,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "freq.005"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit/selected-mhz",
+                "factor": 10,
+                "offset": 0,
+                "step": 0.01,
+                "bias": 0.0005,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "freq.006"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit/selected-mhz",
+                "factor": 100,
+                "offset": 0,
+                "step": 0.001,
+                "bias": 0.0005,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "stby.001"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit/standby-mhz",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "bias": 0.0005,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "stby.002"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit/standby-mhz",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "bias": 0.0005,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "stby.003"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit/standby-mhz",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "bias": 0.0005,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "stby.004"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit/standby-mhz",
+                "factor": 1,
+                "offset": 0,
+                "step": 0.1,
+                "bias": 0.0005,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "stby.005"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit/standby-mhz",
+                "factor": 10,
+                "offset": 0,
+                "step": 0.01,
+                "bias": 0.0005,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "stby.006"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit/standby-mhz",
+                "factor": 100,
+                "offset": 0,
+                "step": 0.001,
+                "bias": 0.0005,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "vhf-l.toggle"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit/vhf-l",
+                "factor": 0.0257,
+                "offset": 0,
+                "axis": [
+                  0,
+                  -1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "vhf-r.toggle"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit/vhf-r",
+                "factor": 0.0257,
+                "offset": 0,
+                "axis": [
+                  0,
+                  -1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "vhf-c.toggle"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit/vhf-c",
+                "factor": 0.0257,
+                "offset": 0,
+                "axis": [
+                  0,
+                  -1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "hf-l.toggle"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit/hf-l",
+                "factor": 0.0257,
+                "offset": 0,
+                "axis": [
+                  0,
+                  -1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "hf-r.toggle"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit/hf-r",
+                "factor": 0.0257,
+                "offset": 0,
+                "axis": [
+                  0,
+                  -1,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Instruments/radio.ac",
@@ -1884,7 +2642,338 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "texanim": [
+          {
+            "objects": [
+              "freq.001"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit[1]/selected-mhz",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "freq.002"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit[1]/selected-mhz",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "freq.003"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit[1]/selected-mhz",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "freq.004"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit[1]/selected-mhz",
+                "factor": 1,
+                "offset": 0,
+                "step": 0.1,
+                "bias": 0.0005,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "freq.005"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit[1]/selected-mhz",
+                "factor": 10,
+                "offset": 0,
+                "step": 0.01,
+                "bias": 0.0005,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "freq.006"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit[1]/selected-mhz",
+                "factor": 100,
+                "offset": 0,
+                "step": 0.001,
+                "bias": 0.0005,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "stby.001"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit[1]/standby-mhz",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "bias": 0.0005,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "stby.002"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit[1]/standby-mhz",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "bias": 0.0005,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "stby.003"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit[1]/standby-mhz",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "bias": 0.0005,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "stby.004"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit[1]/standby-mhz",
+                "factor": 1,
+                "offset": 0,
+                "step": 0.1,
+                "bias": 0.0005,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "stby.005"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit[1]/standby-mhz",
+                "factor": 10,
+                "offset": 0,
+                "step": 0.01,
+                "bias": 0.0005,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "stby.006"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit[1]/standby-mhz",
+                "factor": 100,
+                "offset": 0,
+                "step": 0.001,
+                "bias": 0.0005,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "vhf-l.toggle"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit[1]/vhf-l",
+                "factor": 0.0257,
+                "offset": 0,
+                "axis": [
+                  0,
+                  -1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "vhf-r.toggle"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit[1]/vhf-r",
+                "factor": 0.0257,
+                "offset": 0,
+                "axis": [
+                  0,
+                  -1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "vhf-c.toggle"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit[1]/vhf-c",
+                "factor": 0.0257,
+                "offset": 0,
+                "axis": [
+                  0,
+                  -1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "hf-l.toggle"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit[1]/hf-l",
+                "factor": 0.0257,
+                "offset": 0,
+                "axis": [
+                  0,
+                  -1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "hf-r.toggle"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit[1]/hf-r",
+                "factor": 0.0257,
+                "offset": 0,
+                "axis": [
+                  0,
+                  -1,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Instruments/radio.ac",
@@ -1930,7 +3019,338 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "texanim": [
+          {
+            "objects": [
+              "freq.001"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit[2]/selected-mhz",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "freq.002"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit[2]/selected-mhz",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "freq.003"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit[2]/selected-mhz",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "freq.004"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit[2]/selected-mhz",
+                "factor": 1,
+                "offset": 0,
+                "step": 0.1,
+                "bias": 0.0005,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "freq.005"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit[2]/selected-mhz",
+                "factor": 10,
+                "offset": 0,
+                "step": 0.01,
+                "bias": 0.0005,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "freq.006"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit[2]/selected-mhz",
+                "factor": 100,
+                "offset": 0,
+                "step": 0.001,
+                "bias": 0.0005,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "stby.001"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit[2]/standby-mhz",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "bias": 0.0005,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "stby.002"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit[2]/standby-mhz",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "bias": 0.0005,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "stby.003"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit[2]/standby-mhz",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "bias": 0.0005,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "stby.004"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit[2]/standby-mhz",
+                "factor": 1,
+                "offset": 0,
+                "step": 0.1,
+                "bias": 0.0005,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "stby.005"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit[2]/standby-mhz",
+                "factor": 10,
+                "offset": 0,
+                "step": 0.01,
+                "bias": 0.0005,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "stby.006"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit[2]/standby-mhz",
+                "factor": 100,
+                "offset": 0,
+                "step": 0.001,
+                "bias": 0.0005,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "vhf-l.toggle"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit[2]/vhf-l",
+                "factor": 0.0257,
+                "offset": 0,
+                "axis": [
+                  0,
+                  -1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "vhf-r.toggle"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit[2]/vhf-r",
+                "factor": 0.0257,
+                "offset": 0,
+                "axis": [
+                  0,
+                  -1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "vhf-c.toggle"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit[2]/vhf-c",
+                "factor": 0.0257,
+                "offset": 0,
+                "axis": [
+                  0,
+                  -1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "hf-l.toggle"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit[2]/hf-l",
+                "factor": 0.0257,
+                "offset": 0,
+                "axis": [
+                  0,
+                  -1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "hf-r.toggle"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/rmu/unit[2]/hf-r",
+                "factor": 0.0257,
+                "offset": 0,
+                "axis": [
+                  0,
+                  -1,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Instruments/tcas-ctl.ac",
@@ -1976,7 +3396,232 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "XPNDR_LR.knob"
+            ],
+            "prop": "instrumentation/transponder/tx-switch",
+            "factor": -30,
+            "origin": [
+              -0.009,
+              0.0037,
+              0.0473
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "ATC_alt_src.knob"
+            ],
+            "prop": "instrumentation/transponder/src-switch",
+            "factor": -30,
+            "origin": [
+              0.0162,
+              0.0037,
+              0.0473
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "XPNDR_Mode.knob"
+            ],
+            "prop": "instrumentation/transponder/mode-switch",
+            "factor": -30,
+            "origin": [
+              -0.0014,
+              0.0042,
+              -0.0422
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "XPNDR_RSEL_1000.knob"
+            ],
+            "prop": "instrumentation/transponder/id-code-digit3",
+            "factor": -30,
+            "origin": [
+              0.0173,
+              0.0033,
+              -0.0185
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "XPNDR_RSEL_100.knob"
+            ],
+            "prop": "instrumentation/transponder/id-code-digit2",
+            "factor": -30,
+            "origin": [
+              0.0173,
+              0.0033,
+              -0.0185
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "XPNDR_LSEL_1000.knob"
+            ],
+            "prop": "instrumentation/transponder/id-code-digit1",
+            "factor": -30,
+            "origin": [
+              0.0173,
+              0.0044,
+              0.0215
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "XPNDR_LSEL_100.knob"
+            ],
+            "prop": "instrumentation/transponder/id-code-digit0",
+            "factor": -30,
+            "origin": [
+              0.0173,
+              0.0044,
+              0.0215
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "TCAS_digit0"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/transponder/id-code-digit0",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "TCAS_digit1"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/transponder/id-code-digit1",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "TCAS_digit2"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/transponder/id-code-digit2",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "TCAS_digit3"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/transponder/id-code-digit3",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "XPNDR_Operating"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/transponder/tx-switch",
+                "factor": 0.23,
+                "offset": 0,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/lowpedestal.ac",
@@ -2039,7 +3684,166 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "translate",
+            "objects": [
+              "IN_Marker"
+            ],
+            "prop": "instrumentation/efb/VK_IN_Marker",
+            "table": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                -0.0122
+              ],
+              [
+                3,
+                -0.0243
+              ],
+              [
+                4,
+                -0.0365
+              ],
+              [
+                5,
+                -0.0487
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "OUT_Marker"
+            ],
+            "prop": "instrumentation/efb/VK_OUT_Marker",
+            "table": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                -0.0122
+              ],
+              [
+                3,
+                -0.0243
+              ],
+              [
+                4,
+                -0.0365
+              ],
+              [
+                5,
+                -0.0487
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "DRC_MarkerL"
+            ],
+            "prop": "instrumentation/efb/VK_DRC_MarkerL",
+            "table": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                -0.0246
+              ],
+              [
+                3,
+                -0.0493
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "DRC_MarkerR"
+            ],
+            "prop": "instrumentation/efb/VK_DRC_MarkerR",
+            "table": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                -0.0246
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "ProcManual"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/efb/manual-page",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  -1,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Instruments/EFB/EFB.ac",
@@ -2073,7 +3877,166 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "translate",
+            "objects": [
+              "IN_Marker"
+            ],
+            "prop": "instrumentation/efb/VK_IN_Marker",
+            "table": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                -0.0122
+              ],
+              [
+                3,
+                -0.0243
+              ],
+              [
+                4,
+                -0.0365
+              ],
+              [
+                5,
+                -0.0487
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "OUT_Marker"
+            ],
+            "prop": "instrumentation/efb/VK_OUT_Marker",
+            "table": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                -0.0122
+              ],
+              [
+                3,
+                -0.0243
+              ],
+              [
+                4,
+                -0.0365
+              ],
+              [
+                5,
+                -0.0487
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "DRC_MarkerL"
+            ],
+            "prop": "instrumentation/efb/VK_DRC_MarkerL",
+            "table": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                -0.0246
+              ],
+              [
+                3,
+                -0.0493
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "DRC_MarkerR"
+            ],
+            "prop": "instrumentation/efb/VK_DRC_MarkerR",
+            "table": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                -0.0246
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "ProcManual"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/efb/manual-page",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  -1,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/OHpanel.ac",
@@ -2107,7 +4070,9 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "poseState": {}
       },
       {
         "file": "Models/APpanel.ac",
@@ -2141,7 +4106,238 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "BLimit.knob",
+              "BLimit.knob.001"
+            ],
+            "prop": "instrumentation/afds/inputs/bank-limit-switch",
+            "factor": -30,
+            "origin": [
+              0.0088,
+              -0.0065,
+              0.0128
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "ALTmode.knob",
+              "ALTmode.knob.001"
+            ],
+            "prop": "instrumentation/afds/inputs/alt-knob",
+            "factor": 40,
+            "origin": [
+              0.0088,
+              -0.0065,
+              -0.1319
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "FD_toggle"
+            ],
+            "prop": "instrumentation/afds/inputs/FD",
+            "factor": -30,
+            "origin": [
+              0,
+              -0.02,
+              0.207
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "THARM.switch"
+            ],
+            "prop": "instrumentation/afds/inputs/at-armed",
+            "factor": -30,
+            "origin": [
+              0,
+              0.025,
+              0.179
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "THARM1.switch"
+            ],
+            "prop": "instrumentation/afds/inputs/at-armed[1]",
+            "factor": -30,
+            "origin": [
+              0,
+              0.025,
+              0.179
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "AP.disengage"
+            ],
+            "prop": "instrumentation/afds/inputs/AP-disengage",
+            "factor": 0.011,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "VS.led1"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/afds/settings/vs-display",
+                "factor": 0.0001,
+                "offset": 0,
+                "step": 1000,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "VS.led2"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/afds/settings/vs-display",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "VS.led3"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/afds/settings/vs-display",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "VS.led4"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/afds/settings/vs-display",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "FPA.led1"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/afds/settings/fpa-display",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "bias": 0.05,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "FPA.led2"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/afds/settings/fpa-display",
+                "factor": 1,
+                "offset": 0,
+                "step": 0.1,
+                "bias": 0.05,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Panel3.ac",
@@ -2209,7 +4405,164 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "BARO.knob"
+            ],
+            "prop": "instrumentation/efis/inputs/kpa-mode",
+            "factor": 80,
+            "origin": [
+              0.0126,
+              0.0278,
+              -0.0438
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Range.knob"
+            ],
+            "prop": "instrumentation/efis/inputs/range-nm",
+            "table": [
+              [
+                10,
+                0
+              ],
+              [
+                20,
+                30
+              ],
+              [
+                40,
+                60
+              ],
+              [
+                80,
+                90
+              ],
+              [
+                160,
+                120
+              ],
+              [
+                320,
+                150
+              ],
+              [
+                640,
+                180
+              ]
+            ],
+            "origin": [
+              0.0125,
+              -0.0025,
+              -0.0237
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MINS.knob"
+            ],
+            "prop": "instrumentation/efis/inputs/minimums-mode",
+            "factor": 80,
+            "origin": [
+              0.0126,
+              0.0278,
+              0.043
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MODE.knob"
+            ],
+            "prop": "instrumentation/efis/mfd/mode-num",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                30
+              ],
+              [
+                2,
+                60
+              ],
+              [
+                3,
+                90
+              ]
+            ],
+            "origin": [
+              0.0123,
+              -0.0023,
+              0.0218
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "LVOR.toggle"
+            ],
+            "prop": "instrumentation/efis/inputs/lh-vor-adf",
+            "factor": 0.003,
+            "origin": [
+              -0.0007,
+              -0.0026,
+              0.0371
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "RVOR.toggle"
+            ],
+            "prop": "instrumentation/efis/inputs/rh-vor-adf",
+            "factor": 0.003,
+            "origin": [
+              -0.0008,
+              -0.0026,
+              -0.0017
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Instruments/EFIS/efis-ctl.ac",
@@ -2243,7 +4596,164 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "BARO.knob"
+            ],
+            "prop": "instrumentation/efis[1]/inputs/kpa-mode",
+            "factor": 80,
+            "origin": [
+              0.0126,
+              0.0278,
+              -0.0438
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Range.knob"
+            ],
+            "prop": "instrumentation/efis[1]/inputs/range-nm",
+            "table": [
+              [
+                10,
+                0
+              ],
+              [
+                20,
+                30
+              ],
+              [
+                40,
+                60
+              ],
+              [
+                80,
+                90
+              ],
+              [
+                160,
+                120
+              ],
+              [
+                320,
+                150
+              ],
+              [
+                640,
+                180
+              ]
+            ],
+            "origin": [
+              0.0125,
+              -0.0025,
+              -0.0237
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MINS.knob"
+            ],
+            "prop": "instrumentation/efis[1]/inputs/minimums-mode",
+            "factor": 80,
+            "origin": [
+              0.0126,
+              0.0278,
+              0.043
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MODE.knob"
+            ],
+            "prop": "instrumentation/efis[1]/mfd/mode-num",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                30
+              ],
+              [
+                2,
+                60
+              ],
+              [
+                3,
+                90
+              ]
+            ],
+            "origin": [
+              0.0123,
+              -0.0023,
+              0.0218
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "LVOR.toggle"
+            ],
+            "prop": "instrumentation/efis[1]/inputs/lh-vor-adf",
+            "factor": 0.003,
+            "origin": [
+              -0.0007,
+              -0.0026,
+              0.0371
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "RVOR.toggle"
+            ],
+            "prop": "instrumentation/efis[1]/inputs/rh-vor-adf",
+            "factor": 0.003,
+            "origin": [
+              -0.0008,
+              -0.0026,
+              -0.0017
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/L_MidSidePanel_Base.ac",
@@ -2345,7 +4855,279 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "Chrono.needle"
+            ],
+            "prop": "instrumentation/clock/ET-sec",
+            "factor": 6,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "ET.switch"
+            ],
+            "prop": "instrumentation/clock/et-knob",
+            "table": [
+              [
+                -1,
+                -144
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                35
+              ]
+            ],
+            "origin": [
+              0,
+              -0.033,
+              0.032
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "SET.switch"
+            ],
+            "prop": "instrumentation/clock/set-knob",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                30
+              ],
+              [
+                2,
+                60
+              ],
+              [
+                3,
+                90
+              ]
+            ],
+            "origin": [
+              0,
+              -0.033,
+              -0.029
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "UTC.switch"
+            ],
+            "prop": "instrumentation/clock/time-knob",
+            "table": [
+              [
+                -1,
+                -135
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                35
+              ]
+            ],
+            "origin": [
+              0,
+              0.034,
+              -0.032
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "Hr.10"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/indicated-hour",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Hr.01"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/indicated-hour",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Mn.10"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/indicated-min",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Mn.01"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/indicated-min",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ET10"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/ET-display",
+                "factor": 0.0001,
+                "offset": 0,
+                "step": 1000,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ET01"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/ET-display",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ET.10"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/ET-display",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ET.01"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/ET-display",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Instruments/clock.ac",
@@ -2379,7 +5161,279 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "Chrono.needle"
+            ],
+            "prop": "instrumentation/clock/ET-sec",
+            "factor": 6,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "ET.switch"
+            ],
+            "prop": "instrumentation/clock/et-knob",
+            "table": [
+              [
+                -1,
+                -144
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                35
+              ]
+            ],
+            "origin": [
+              0,
+              -0.033,
+              0.032
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "SET.switch"
+            ],
+            "prop": "instrumentation/clock/set-knob",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                30
+              ],
+              [
+                2,
+                60
+              ],
+              [
+                3,
+                90
+              ]
+            ],
+            "origin": [
+              0,
+              -0.033,
+              -0.029
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "UTC.switch"
+            ],
+            "prop": "instrumentation/clock/time-knob",
+            "table": [
+              [
+                -1,
+                -135
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                35
+              ]
+            ],
+            "origin": [
+              0,
+              0.034,
+              -0.032
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "Hr.10"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/indicated-hour",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Hr.01"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/indicated-hour",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Mn.10"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/indicated-min",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Mn.01"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/indicated-min",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ET10"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/ET-display",
+                "factor": 0.0001,
+                "offset": 0,
+                "step": 1000,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ET01"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/ET-display",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ET.10"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/ET-display",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ET.01"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/clock/ET-display",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Instruments/stby-ai.ac",
@@ -2413,7 +5467,81 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "Roll.needle",
+              "Slip.needle"
+            ],
+            "prop": "orientation/roll-deg",
+            "origin": [
+              0.002,
+              0.009,
+              0.011
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "Slip.needle"
+            ],
+            "prop": "instrumentation/pfd/slip-skid",
+            "factor": 0.0008,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "AI"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "orientation/pitch-deg",
+                "factor": 0.00435,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              },
+              {
+                "kind": "rotate",
+                "prop": "orientation/roll-deg",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  0,
+                  -1
+                ],
+                "center": [
+                  0.25,
+                  0.5
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Instruments/stby-asi.ac",
@@ -2447,7 +5575,113 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "Stbyneedle"
+            ],
+            "prop": "instrumentation/airspeed-indicator/indicator-speed-kt",
+            "table": [
+              [
+                30,
+                0
+              ],
+              [
+                80,
+                25
+              ],
+              [
+                160,
+                130
+              ],
+              [
+                250,
+                245
+              ],
+              [
+                300,
+                270
+              ],
+              [
+                450,
+                330
+              ]
+            ],
+            "origin": [
+              0.0128,
+              0.0007,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "stbytxt.100"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/airspeed-indicator/indicator-speed-kt",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "scroll": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "stbytxt.10"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/airspeed-indicator/indicator-speed-kt",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "scroll": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "stbytxt.1"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/airspeed-indicator/indicator-speed-kt",
+                "factor": 0.1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Instruments/stby-alt.ac",
@@ -2481,7 +5715,262 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "StbyAltneedle"
+            ],
+            "prop": "instrumentation/altimeter/indicated-altitude-ft",
+            "factor": 0.36,
+            "origin": [
+              0,
+              0.001,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "atxt10000"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicator-altitude-ft",
+                "factor": 0.00001,
+                "offset": 0,
+                "step": 10000,
+                "scroll": 20,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "atxt1000"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicator-altitude-ft",
+                "factor": 0.0001,
+                "offset": 0,
+                "step": 1000,
+                "scroll": 20,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "atxt100"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicator-altitude-ft",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "scroll": 20,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "atxt10"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicator-altitude-ft",
+                "factor": 0.01,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "kpa1000"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/efis/inhg-kpa",
+                "factor": 0.0001,
+                "offset": 0,
+                "step": 1000,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "kpa100"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/efis/inhg-kpa",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "kpa10"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/efis/inhg-kpa",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "kpa1"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/efis/inhg-kpa",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "in1000"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/setting-inhg",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "in100"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/setting-inhg",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "in10"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/setting-inhg",
+                "factor": 1,
+                "offset": 0,
+                "step": 0.1,
+                "bias": 0.005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "in1"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/setting-inhg",
+                "factor": 10,
+                "offset": 0,
+                "step": 0.01,
+                "bias": 0.005,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/gear-ctl.ac",
@@ -2510,7 +5999,29 @@
               "roll": 0
             }
           }
-        ]
+        ],
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "GearLever",
+              "GearLever.001"
+            ],
+            "prop": "controls/gear/gear-down",
+            "factor": 30,
+            "origin": [
+              -0.0338,
+              0.0118,
+              0.0286
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Instruments/PFD/PFD_L.ac",
@@ -2544,7 +6055,908 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "translate",
+            "objects": [
+              "gspointer",
+              "coarseGSPointer"
+            ],
+            "prop": "instrumentation/nav/gs-needle-deflection-norm",
+            "factor": 0.04,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "VrefMark"
+            ],
+            "prop": "instrumentation/pfd/vref-diff",
+            "factor": 0.00102,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "vref-text"
+            ],
+            "prop": "instrumentation/pfd/vref-text-diff",
+            "factor": 0.00102,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "fbw-text"
+            ],
+            "prop": "instrumentation/pfd/fbw-diff",
+            "factor": 0.00102,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "v1-text"
+            ],
+            "prop": "instrumentation/pfd/v1-diff",
+            "factor": 0.00102,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "vr-text"
+            ],
+            "prop": "instrumentation/pfd/vr-diff",
+            "factor": 0.00102,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "v2-text"
+            ],
+            "prop": "instrumentation/pfd/v2-diff",
+            "factor": 0.00102,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "flap-text"
+            ],
+            "prop": "instrumentation/pfd/flap-diff",
+            "factor": 0.00102,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "fl1-text"
+            ],
+            "prop": "instrumentation/pfd/fl1-diff",
+            "factor": 0.00102,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "fl5-text"
+            ],
+            "prop": "instrumentation/pfd/fl5-diff",
+            "factor": 0.00102,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "fl15-text"
+            ],
+            "prop": "instrumentation/pfd/fl15-diff",
+            "factor": 0.00102,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "SpeedTarget"
+            ],
+            "prop": "instrumentation/pfd/target-speed-diff",
+            "factor": 0.00102,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "StallSpeedInd"
+            ],
+            "prop": "instrumentation/pfd/stallspeed-diff",
+            "factor": 0.001,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "locpointer",
+              "coarseLocPointer"
+            ],
+            "prop": "instrumentation/nav/heading-needle-deflection-ptr",
+            "factor": -0.04,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "VSI.needle"
+            ],
+            "prop": "velocities/vertical-speed-fps",
+            "table": [
+              [
+                -100,
+                -0.0385
+              ],
+              [
+                -33.3333,
+                -0.0265
+              ],
+              [
+                -16.6666,
+                -0.0147
+              ],
+              [
+                16.6666,
+                0.0147
+              ],
+              [
+                33.3333,
+                0.0265
+              ],
+              [
+                100,
+                0.0385
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "VSI.needle"
+            ],
+            "prop": "velocities/vertical-speed-fps",
+            "table": [
+              [
+                -100,
+                -60
+              ],
+              [
+                -33.3333,
+                -50
+              ],
+              [
+                -16.6666,
+                -34
+              ],
+              [
+                16.6666,
+                34
+              ],
+              [
+                33.3333,
+                50
+              ],
+              [
+                100,
+                60
+              ]
+            ],
+            "origin": [
+              0.002,
+              0.007,
+              -0.082
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Roll.needle",
+              "Slip.needle"
+            ],
+            "prop": "orientation/roll-deg",
+            "origin": [
+              0.002,
+              0.009,
+              0.011
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "Slip.needle"
+            ],
+            "prop": "instrumentation/pfd/slip-skid",
+            "factor": 0.001,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "AltitudeCursor"
+            ],
+            "prop": "instrumentation/pfd/target-altitude-diff",
+            "factor": 0.000142,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "runway"
+            ],
+            "prop": "instrumentation/pfd/runway-elevation-diff",
+            "factor": 0.000142,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "minimum_head",
+              "minimum_tail",
+              "minimum_head_a",
+              "minimum_tail_a"
+            ],
+            "prop": "instrumentation/pfd/minimum-diff",
+            "factor": 0.000142,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "OverSpeedInd"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/pfd/overspeed-diff",
+                "factor": 0.00197,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "AI"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "orientation/pitch-deg",
+                "factor": 0.00468234,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              },
+              {
+                "kind": "rotate",
+                "prop": "orientation/roll-deg",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  0,
+                  -1
+                ],
+                "center": [
+                  0.25,
+                  0.5
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Hsi"
+            ],
+            "steps": [
+              {
+                "kind": "rotate",
+                "prop": "instrumentation/afds/inputs/reference-deg",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  0,
+                  -1
+                ],
+                "center": [
+                  0.75,
+                  0.75
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ASI"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/airspeed-indicator/indicator-speed-kt",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ],
+                "table": [
+                  [
+                    0,
+                    0
+                  ],
+                  [
+                    560,
+                    0.752
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Alt1"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicated-altitude-ft",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ],
+                "table": [
+                  [
+                    -200,
+                    -0.0187
+                  ],
+                  [
+                    0,
+                    0
+                  ],
+                  [
+                    9600,
+                    0.9035
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Alt2"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicated-altitude-ft",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ],
+                "table": [
+                  [
+                    9600,
+                    0
+                  ],
+                  [
+                    19200,
+                    0.9035
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Alt3"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicated-altitude-ft",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ],
+                "table": [
+                  [
+                    19200,
+                    0
+                  ],
+                  [
+                    28800,
+                    0.9035
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Alt4"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicated-altitude-ft",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ],
+                "table": [
+                  [
+                    28800,
+                    0
+                  ],
+                  [
+                    38400,
+                    0.9035
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Alt5"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicated-altitude-ft",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ],
+                "table": [
+                  [
+                    38400,
+                    0
+                  ],
+                  [
+                    48000,
+                    0.9035
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Alt6"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicated-altitude-ft",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ],
+                "table": [
+                  [
+                    48000,
+                    0
+                  ],
+                  [
+                    57600,
+                    0.9035
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "runway_bar"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/pfd/runway-elevation-diff",
+                "factor": 0.00038,
+                "offset": 0,
+                "axis": [
+                  0,
+                  -1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Asitext.100"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/airspeed-indicator/indicator-speed-kt",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "scroll": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Asitext.010"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/airspeed-indicator/indicator-speed-kt",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "scroll": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Asitext.001"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/airspeed-indicator/indicator-speed-kt",
+                "factor": 0.1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Alttext10"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicator-altitude-ft",
+                "factor": 0.01,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Alttext100"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicator-altitude-ft",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "scroll": 20,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Alttext1000"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicator-altitude-ft",
+                "factor": 0.0001,
+                "offset": 0,
+                "step": 1000,
+                "scroll": 20,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Alttext10000"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicator-altitude-ft",
+                "factor": 0.00001,
+                "offset": 0,
+                "step": 10000,
+                "scroll": 20,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "speedtrend.up"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/pfd/speed-trend-up",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  0.8,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "speedtrend.down"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/pfd/speed-trend-down",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Instruments/PFD/PFD_R.ac",
@@ -2578,7 +6990,908 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "translate",
+            "objects": [
+              "gspointer",
+              "coarseGSPointer"
+            ],
+            "prop": "instrumentation/nav/gs-needle-deflection-norm",
+            "factor": 0.04,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "VrefMark"
+            ],
+            "prop": "instrumentation/pfd/vref-diff",
+            "factor": 0.00102,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "vref-text"
+            ],
+            "prop": "instrumentation/pfd/vref-text-diff",
+            "factor": 0.00102,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "fbw-text"
+            ],
+            "prop": "instrumentation/pfd/fbw-diff",
+            "factor": 0.00102,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "v1-text"
+            ],
+            "prop": "instrumentation/pfd/v1-diff",
+            "factor": 0.00102,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "vr-text"
+            ],
+            "prop": "instrumentation/pfd/vr-diff",
+            "factor": 0.00102,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "v2-text"
+            ],
+            "prop": "instrumentation/pfd/v2-diff",
+            "factor": 0.00102,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "flap-text"
+            ],
+            "prop": "instrumentation/pfd/flap-diff",
+            "factor": 0.00102,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "fl1-text"
+            ],
+            "prop": "instrumentation/pfd/fl1-diff",
+            "factor": 0.00102,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "fl5-text"
+            ],
+            "prop": "instrumentation/pfd/fl5-diff",
+            "factor": 0.00102,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "fl15-text"
+            ],
+            "prop": "instrumentation/pfd/fl15-diff",
+            "factor": 0.00102,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "SpeedTarget"
+            ],
+            "prop": "instrumentation/pfd/target-speed-diff",
+            "factor": 0.00102,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "StallSpeedInd"
+            ],
+            "prop": "instrumentation/pfd/stallspeed-diff",
+            "factor": 0.001,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "locpointer",
+              "coarseLocPointer"
+            ],
+            "prop": "instrumentation/nav/heading-needle-deflection-ptr",
+            "factor": -0.04,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "VSI.needle"
+            ],
+            "prop": "velocities/vertical-speed-fps",
+            "table": [
+              [
+                -100,
+                -0.0385
+              ],
+              [
+                -33.3333,
+                -0.0265
+              ],
+              [
+                -16.6666,
+                -0.0147
+              ],
+              [
+                16.6666,
+                0.0147
+              ],
+              [
+                33.3333,
+                0.0265
+              ],
+              [
+                100,
+                0.0385
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "VSI.needle"
+            ],
+            "prop": "velocities/vertical-speed-fps",
+            "table": [
+              [
+                -100,
+                -60
+              ],
+              [
+                -33.3333,
+                -50
+              ],
+              [
+                -16.6666,
+                -34
+              ],
+              [
+                16.6666,
+                34
+              ],
+              [
+                33.3333,
+                50
+              ],
+              [
+                100,
+                60
+              ]
+            ],
+            "origin": [
+              0.002,
+              0.007,
+              -0.082
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Roll.needle",
+              "Slip.needle"
+            ],
+            "prop": "orientation/roll-deg",
+            "origin": [
+              0.002,
+              0.009,
+              0.011
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "Slip.needle"
+            ],
+            "prop": "instrumentation/pfd/slip-skid",
+            "factor": 0.001,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "AltitudeCursor"
+            ],
+            "prop": "instrumentation/pfd/target-altitude-diff",
+            "factor": 0.000142,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "runway"
+            ],
+            "prop": "instrumentation/pfd/runway-elevation-diff",
+            "factor": 0.000142,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "minimum_head",
+              "minimum_tail",
+              "minimum_head_a",
+              "minimum_tail_a"
+            ],
+            "prop": "instrumentation/pfd/minimum-diff",
+            "factor": 0.000142,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "OverSpeedInd"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/pfd/overspeed-diff",
+                "factor": 0.00197,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "AI"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "orientation/pitch-deg",
+                "factor": 0.00468234,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              },
+              {
+                "kind": "rotate",
+                "prop": "orientation/roll-deg",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  0,
+                  -1
+                ],
+                "center": [
+                  0.25,
+                  0.5
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Hsi"
+            ],
+            "steps": [
+              {
+                "kind": "rotate",
+                "prop": "instrumentation/afds/inputs/reference-deg",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  0,
+                  -1
+                ],
+                "center": [
+                  0.75,
+                  0.75
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "ASI"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/airspeed-indicator/indicator-speed-kt",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ],
+                "table": [
+                  [
+                    0,
+                    0
+                  ],
+                  [
+                    560,
+                    0.752
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Alt1"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicated-altitude-ft",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ],
+                "table": [
+                  [
+                    -200,
+                    -0.0187
+                  ],
+                  [
+                    0,
+                    0
+                  ],
+                  [
+                    9600,
+                    0.9035
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Alt2"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicated-altitude-ft",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ],
+                "table": [
+                  [
+                    9600,
+                    0
+                  ],
+                  [
+                    19200,
+                    0.9035
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Alt3"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicated-altitude-ft",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ],
+                "table": [
+                  [
+                    19200,
+                    0
+                  ],
+                  [
+                    28800,
+                    0.9035
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Alt4"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicated-altitude-ft",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ],
+                "table": [
+                  [
+                    28800,
+                    0
+                  ],
+                  [
+                    38400,
+                    0.9035
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Alt5"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicated-altitude-ft",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ],
+                "table": [
+                  [
+                    38400,
+                    0
+                  ],
+                  [
+                    48000,
+                    0.9035
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Alt6"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicated-altitude-ft",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ],
+                "table": [
+                  [
+                    48000,
+                    0
+                  ],
+                  [
+                    57600,
+                    0.9035
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "runway_bar"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/pfd/runway-elevation-diff",
+                "factor": 0.00038,
+                "offset": 0,
+                "axis": [
+                  0,
+                  -1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Asitext.100"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/airspeed-indicator/indicator-speed-kt",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "scroll": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Asitext.010"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/airspeed-indicator/indicator-speed-kt",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "scroll": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Asitext.001"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/airspeed-indicator/indicator-speed-kt",
+                "factor": 0.1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Alttext10"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicator-altitude-ft",
+                "factor": 0.01,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Alttext100"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicator-altitude-ft",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "scroll": 20,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Alttext1000"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicator-altitude-ft",
+                "factor": 0.0001,
+                "offset": 0,
+                "step": 1000,
+                "scroll": 20,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "Alttext10000"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicator-altitude-ft",
+                "factor": 0.00001,
+                "offset": 0,
+                "step": 10000,
+                "scroll": 20,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "speedtrend.up"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/pfd/speed-trend-up",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  0.8,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "speedtrend.down"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/pfd/speed-trend-down",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Instruments/ND/ND_L.ac",
@@ -2726,7 +8039,118 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "LH_ind1"
+            ],
+            "prop": "engines/engine[0]/rpm",
+            "factor": 2.085,
+            "origin": [
+              0,
+              0,
+              0.022
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LH_ind2"
+            ],
+            "prop": "engines/engine[0]/rpm",
+            "factor": 1.33,
+            "origin": [
+              0,
+              0,
+              0.022
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LH_ind3"
+            ],
+            "prop": "engines/engine[0]/rpm",
+            "factor": 0.66,
+            "origin": [
+              0,
+              0,
+              0.022
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RH_ind1"
+            ],
+            "prop": "engines/engine[1]/rpm",
+            "factor": 2.085,
+            "origin": [
+              0,
+              0,
+              -0.022
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RH_ind2"
+            ],
+            "prop": "engines/engine[1]/rpm",
+            "factor": 1.33,
+            "origin": [
+              0,
+              0,
+              -0.022
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RH_ind3"
+            ],
+            "prop": "engines/engine[1]/rpm",
+            "factor": 0.66,
+            "origin": [
+              0,
+              0,
+              -0.022
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Instruments/UEICAS/analog1.ac",
@@ -2772,7 +8196,9 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "poseState": {}
       },
       {
         "file": "Models/Instruments/UEICAS/flap-gear.ac",
@@ -2818,7 +8244,57 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "texanim": [
+          {
+            "objects": [
+              "flap.slider"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "surface-positions/flap-pos-norm",
+                "factor": 0.2388,
+                "offset": 0,
+                "axis": [
+                  0,
+                  -1,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "select": [
+          {
+            "objects": [
+              "Gr-on"
+            ],
+            "cond": [
+              "and",
+              [
+                "gt",
+                "gear/gear[0]/position-norm",
+                0.0001
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "gearlocked"
+            ],
+            "cond": [
+              "and",
+              [
+                "eq",
+                "gear/gear[0]/position-norm",
+                1
+              ]
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "../cabin/cabin_seat.ac",
@@ -5340,5 +10816,12 @@
         "rudder"
       ]
     }
+  },
+  "landing": {
+    "vapp_kt": 145,
+    "roll_m": 1000,
+    "flaps": 1,
+    "pitch_deg": 2.5,
+    "note": "Approximate: flaps 30"
   }
 }

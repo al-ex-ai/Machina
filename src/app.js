@@ -6,10 +6,10 @@ installPickers();
 
 // The 3D engine (Three.js, builders, viewer) loads on demand: the catalog only shows prerendered
 // thumbnails, so it renders without it. Model pages wait for it; the home page fetches it when idle.
-let buildModel, finalize, partCount, loadAssetModel, createViewer, SYSTEMS, thumbnail, createCompare, startTakeoff;
+let buildModel, finalize, partCount, loadAssetModel, createViewer, disposeObject, SYSTEMS, thumbnail, createCompare, startTakeoff;
 let engine = null;
 const loadEngine = () => (engine ??= import('./engine.js').then(e => {
-  ({ buildModel, finalize, partCount, loadAssetModel, createViewer, SYSTEMS, thumbnail, createCompare, startTakeoff } = e);
+  ({ buildModel, finalize, partCount, loadAssetModel, createViewer, disposeObject, SYSTEMS, thumbnail, createCompare, startTakeoff } = e);
 }));
 const needsEngine = route => route.name === 'model' || route.name === 'compare';
 let compareView = null;
@@ -524,6 +524,7 @@ function renderModel(id, partId) {
               <button type="button" class="icon-sm" data-tree-all="open" title="Expand all" aria-label="Expand all groups">${icon('expand', 15)}</button>
               <button type="button" class="icon-sm" data-tree-all="close" title="Collapse all" aria-label="Collapse all groups">${icon('collapse', 15)}</button>
               <button type="button" class="icon-sm" data-drawer="rail" title="Hide parts" aria-label="Hide the parts panel">${icon('left', 15)}</button>
+              <button type="button" class="icon-sm rail-close" data-parts-sheet title="Close" aria-label="Close the parts list">&times;</button>
             </span></div>
             <label class="filter">${icon('search', 15)}<input id="part-filter" type="search" placeholder="Filter parts" aria-label="Filter parts" autocomplete="off"></label>
           </div>
@@ -547,6 +548,7 @@ function renderModel(id, partId) {
           <div class="dock" role="toolbar" aria-label="Viewer tools">
             <label class="tool" title="Pull parts apart (E)">Explode <input id="explode" type="range" min="0" max="1" step="0.01" value="0"></label>
             <span class="sep"></span>
+            <button class="tool parts-tool" type="button" data-parts-sheet aria-label="Show the parts list">Parts</button>
             <button class="tool" id="pick" type="button" aria-pressed="${state.pick}" title="Click parts in the view to select them (S)">Select <kbd>S</kbd></button>
             <button class="tool" id="xray" type="button" aria-pressed="${state.xray}" title="See through the airframe (X)">X-ray <kbd>X</kbd></button>
             <button class="tool" id="person" type="button" aria-pressed="false" title="Show a 1.8 m person (P)">Person <kbd>P</kbd></button>
@@ -554,6 +556,7 @@ function renderModel(id, partId) {
             ${m.takeoff && m.asset ? '<span class="sep"></span><button class="tool" id="takeoff" type="button" aria-pressed="false" title="Watch it take off (T)">Takeoff <kbd>T</kbd></button>' : ''}
           </div>
         </section>
+        <button type="button" class="parts-scrim" data-parts-sheet tabindex="-1" aria-label="Close the parts list"></button>
         <aside class="sheet">
           <div class="panel" id="sheet" role="tabpanel" aria-live="polite"></div>
           <nav class="vtabs" id="tabs" role="tablist" aria-orientation="vertical" aria-label="Model information"></nav>
@@ -640,7 +643,7 @@ function showModel(m, partId) {
   endTakeoff();
   const token = ++state.loadToken;
   const done = obj => {
-    if (token !== state.loadToken) return;
+    if (token !== state.loadToken) return disposeObject(obj); // a newer pick won; free this one's GPU memory
     state.shownDetailed = Boolean(obj.userData.detailed);
     viewer.setModel(obj);
     viewer.setExplode(Number($('#explode')?.value ?? 0));
@@ -674,7 +677,7 @@ function setLivery(id) {
   if (m.asset) {
     const token = ++state.loadToken;
     loadAssetModel(m, { accent: isAccent(state.livery) ? state.livery : undefined, original: state.livery === 'original' }).then(o => {
-      if (token !== state.loadToken) return;
+      if (token !== state.loadToken) return disposeObject(o);
       const f = finalize(o, m); f.userData.detailed = true;
       viewer.setModel(f, { keepView: true });
       viewer.setExplode(Number($('#explode')?.value ?? 0));
@@ -898,11 +901,20 @@ function partPanel(m, p) {
     <p class="note">Press Esc to return to the full model.</p>`;
 }
 
+/** Phones: the parts list is a bottom sheet over the stage, opened from the tool dock. */
+function setPartsSheet(open) {
+  const page = document.querySelector('.model-page');
+  if (!page || page.classList.contains('parts-open') === open) return;
+  page.classList.toggle('parts-open', open);
+  if (open) document.querySelector('.rail .tree')?.scrollTo(0, 0);
+}
+
 // ── Events ─────────────────────────────────────────────
 document.addEventListener('click', e => {
-  const t = e.target.closest('[data-part],[data-toggle],[data-back],[data-livery],[data-tab],[data-tree-all],[data-drawer]');
+  const t = e.target.closest('[data-part],[data-toggle],[data-back],[data-livery],[data-tab],[data-tree-all],[data-drawer],[data-parts-sheet]');
   if (!t) return;
-  if (t.dataset.livery !== undefined) setLivery(t.dataset.livery);
+  if (t.dataset.partsSheet !== undefined) setPartsSheet(!document.querySelector('.model-page')?.classList.contains('parts-open'));
+  else if (t.dataset.livery !== undefined) setLivery(t.dataset.livery);
   else if (t.dataset.drawer !== undefined) { drawers[t.dataset.drawer] = !drawers[t.dataset.drawer]; applyDrawers(); }
   else if (t.dataset.tab !== undefined) {
     const active = t.getAttribute('aria-selected') === 'true';
@@ -915,7 +927,7 @@ document.addEventListener('click', e => {
     const open = t.dataset.treeAll === 'open';
     document.querySelectorAll('#tree .tree-sys').forEach(g => { g.dataset.open = String(open); g.querySelector('[data-toggle]').setAttribute('aria-expanded', String(open)); });
   }
-  else if (t.dataset.part !== undefined) viewer?.select(t.dataset.part);
+  else if (t.dataset.part !== undefined) { viewer?.select(t.dataset.part); setPartsSheet(false); }
   else if (t.dataset.toggle !== undefined) {
     const li = t.closest('.tree-sys');
     li.dataset.open = String(li.dataset.open !== 'true');
@@ -957,7 +969,7 @@ document.addEventListener('mouseout', e => {
 
 document.addEventListener('keydown', e => {
   if (parseRoute().name !== 'model' || e.target.matches('input, textarea') || e.target.closest('.vtab, .paint-btn')) return;
-  if (e.key === 'Escape') { if (stopTakeoff) endTakeoff(); else viewer?.select(null); }
+  if (e.key === 'Escape') { if (document.querySelector('.model-page.parts-open')) setPartsSheet(false); else if (stopTakeoff) endTakeoff(); else viewer?.select(null); }
   else if (e.key === 't' || e.key === 'T') $('#takeoff')?.click();
   else if (e.key === 'r' || e.key === 'R') viewer?.resetView();
   else if (e.key === 'p' || e.key === 'P') $('#person')?.click();

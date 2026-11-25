@@ -182,10 +182,23 @@
         "The 737's cockpit comes alive: airspeed, altimeter, vertical speed, the attitude display and the engine and flap gauges move with the flight, from the model's own FlightGear instrument animations, digit drums and the attitude ball included",
         "Cockpits filled in: the Concorde's whole flight deck had been placed 31 m down the cabin by a doubled offset and is back in the nose, and the Constellation's instruments and the Tu-144D's flight deck are imported. The Cessna 172's propeller turns, and its cockpit camera now sees over the cowling"
       ]
+    },
+    {
+      "date": "2026-11-24",
+      "title": "Landings, live cockpits and a phone-friendly viewer",
+      "items": [
+        "Every airplane now lands as well as takes off, from published approach speeds and ground rolls: airliners on a 3 degree glide with a flare, tailwheel airplanes coming in tail up onto all three wheels, the Concorde, Tu-144D and SR-71 nose-high, the Wright Flyer in a short glide onto its skids",
+        "The cockpits move in both scenes: yokes, sticks and pedals follow the controls, throttles follow the power with reversers and speedbrakes on a jet rollout, flap and gear levers lead the surfaces, and the gauges read speed, height, climb and engine power",
+        "Each cockpit file now keeps the animations of its own FlightGear XML, including the ones drawn inside an airframe file (the Cub, the 337); the C172 got its yoke, flap lever and gauges imported. Controls a package draws but never animates get a plain hinge from their own shape",
+        "Model standard rules 30 and 31 (landing, live cockpit), with a test that plays each scene and checks the cockpit moves",
+        "Phones: the model no longer turns black. Old textures were never freed between models, so a phone ran out of graphics memory; the lost context now rebuilds itself, and ambient occlusion, which some phone GPUs render black, is off on touch screens",
+        "Phones: the parts list is a bottom sheet opened from the tool dock, the dock fits on two rows instead of scrolling off screen, the takeoff controls sit along the bottom, landscape fills the screen with the stage, and stray scrollbars are gone",
+        "Fixed along the way: animation tables written high to low and object names in another case now play as FlightGear plays them, and the takeoff controls wrap on a narrow desktop stage instead of clipping"
+      ]
     }
   ],
   "next": [
-    "Landing: approach, flare, touchdown and rollout, from the same scene and checks as the takeoff",
+    "Glass cockpits: drawn displays, so the screens read the flight like the dials do",
     "Next real aircraft: Boeing 314 Clipper, DC-6, CH-47, Alouette III, Bell X-1 and ATR 72, each held to the model standard",
     "M4 Deeper detail: labels and a measure tool, cutaway view"
   ]

@@ -28,7 +28,13 @@
     "climb_deg": 8,
     "gear_s": 8,
     "jet": true,
-    "note": "Approximate: afterburner takeoff, partial fuel"
+    "note": "Approximate: afterburner takeoff, partial fuel",
+    "cockpit": {
+      "still": {
+        "throttle": "the package draws its throttle quadrant without separate levers, so there is nothing to move",
+        "controls": "the package draws no control stick or rudder pedals in its cockpit"
+      }
+    }
   },
   "asset": {
     "path": "assets/aircraft/sr71",
@@ -699,7 +705,169 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "AIball",
+              "AI.ring"
+            ],
+            "prop": "orientation/roll-deg",
+            "origin": [
+              -0.0276,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AIball"
+            ],
+            "prop": "orientation/pitch-deg",
+            "origin": [
+              -0.0276,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI.slipball"
+            ],
+            "prop": "instrumentation/slip-skid-ball/indicated-slip-skid",
+            "table": [
+              [
+                -1,
+                -8
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                8
+              ]
+            ],
+            "origin": [
+              0,
+              0.02,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "LOC.needle"
+            ],
+            "prop": "instrumentation/nav/heading-needle-deflection",
+            "table": [
+              [
+                -5,
+                -0.0124
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                5,
+                0.0124
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "AI.gsneedle"
+            ],
+            "prop": "instrumentation/nav/gs-needle-deflection",
+            "table": [
+              [
+                -2,
+                -0.0155
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                2,
+                0.0155
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "turn.needle"
+            ],
+            "prop": "instrumentation/turn-indicator/indicated-turn-rate",
+            "table": [
+              [
+                -2,
+                -0.007
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                2,
+                0.007
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/Panel/Instruments/altimeter/altimeter.ac",
@@ -733,7 +901,182 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "needle"
+            ],
+            "prop": "instrumentation/altimeter/indicated-altitude-ft",
+            "factor": 0.036,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "inHG1"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/setting-inhg",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "inHG2"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/setting-inhg",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "inHG3"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/setting-inhg",
+                "factor": 1,
+                "offset": 0,
+                "step": 0.1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "inHG4"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/setting-inhg",
+                "factor": 10,
+                "offset": 0,
+                "step": 0.01,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "feet1"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicated-altitude-ft",
+                "factor": 0.00001,
+                "offset": 0,
+                "step": 10000,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "feet2"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicated-altitude-ft",
+                "factor": 0.0001,
+                "offset": 0,
+                "step": 1000,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "feet3"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicated-altitude-ft",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "feet4"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicated-altitude-ft",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/Panel/Instruments/aoa/aoa.ac",
@@ -767,7 +1110,9 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/Panel/Instruments/asi/asi.ac",
@@ -801,7 +1146,141 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "Index"
+            ],
+            "prop": "instrumentation/airspeed-indicator/indicated-speed-kt",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                80,
+                37
+              ],
+              [
+                100,
+                45
+              ],
+              [
+                150,
+                90
+              ],
+              [
+                200,
+                135
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "needle",
+              "Knot-Masque"
+            ],
+            "prop": "instrumentation/airspeed-indicator/indicated-speed-kt",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                80,
+                37
+              ],
+              [
+                100,
+                45
+              ],
+              [
+                150,
+                90
+              ],
+              [
+                200,
+                135
+              ],
+              [
+                300,
+                167
+              ],
+              [
+                400,
+                199
+              ],
+              [
+                800,
+                327
+              ],
+              [
+                3000,
+                327
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Mach",
+              "Mach-Masque"
+            ],
+            "prop": "instrumentation/airspeed-indicator/indicated-speed-kt",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                300,
+                0
+              ],
+              [
+                800,
+                160
+              ],
+              [
+                975,
+                160
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/Panel/Instruments/clock/clock.ac",
@@ -1209,7 +1688,9 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/Panel/Instruments/egt/egt.ac",
@@ -1243,7 +1724,9 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/Panel/Instruments/fuel/fuel.ac",
@@ -1277,7 +1760,9 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/Panel/Instruments/fuelflow/fuelflow.ac",
@@ -1311,7 +1796,134 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "needle"
+            ],
+            "prop": "engines/engine[0]/fuel-flow-gph",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                100000,
+                295
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "number1"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "engines/engine[0]/fuel-flow-gph",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "number10"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "engines/engine[0]/fuel-flow-gph",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "number100"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "engines/engine[0]/fuel-flow-gph",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "number1000"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "engines/engine[0]/fuel-flow-gph",
+                "factor": 0.0001,
+                "offset": 0,
+                "step": 1000,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "number10000"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "engines/engine[0]/fuel-flow-gph",
+                "factor": 0.00001,
+                "offset": 0,
+                "step": 10000,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/Panel/Instruments/fuelflow/fuelflow.ac",
@@ -1345,7 +1957,134 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "needle"
+            ],
+            "prop": "engines/engine[1]/fuel-flow-gph",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                100000,
+                295
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "number1"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "engines/engine[1]/fuel-flow-gph",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "number10"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "engines/engine[1]/fuel-flow-gph",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "number100"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "engines/engine[1]/fuel-flow-gph",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "number1000"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "engines/engine[1]/fuel-flow-gph",
+                "factor": 0.0001,
+                "offset": 0,
+                "step": 1000,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "number10000"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "engines/engine[1]/fuel-flow-gph",
+                "factor": 0.00001,
+                "offset": 0,
+                "step": 10000,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/Panel/Instruments/gear/gear.ac",
@@ -1379,7 +2118,145 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "pose": [
+          {
+            "type": "translate",
+            "objects": [
+              "lever"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "value": 0.034,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ]
+          }
+        ],
+        "anim": [
+          {
+            "type": "translate",
+            "objects": [
+              "lever"
+            ],
+            "prop": "gear/gear[0]/position-norm",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                0.034
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ]
+          }
+        ],
+        "select": [
+          {
+            "objects": [
+              "gearNon"
+            ],
+            "cond": [
+              "and",
+              [
+                "eq",
+                "gear/gear[0]/position-norm",
+                1
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "gearLon"
+            ],
+            "cond": [
+              "and",
+              [
+                "eq",
+                "gear/gear[1]/position-norm",
+                1
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "gearRon"
+            ],
+            "cond": [
+              "and",
+              [
+                "eq",
+                "gear/gear[2]/position-norm",
+                1
+              ]
+            ]
+          },
+          {
+            "objects": [
+              "gearon"
+            ],
+            "cond": [
+              "and",
+              [
+                "and",
+                [
+                  "or",
+                  [
+                    "gt",
+                    "gear/gear[0]/position-norm",
+                    0
+                  ],
+                  [
+                    "gt",
+                    "gear/gear[1]/position-norm",
+                    0
+                  ],
+                  [
+                    "gt",
+                    "gear/gear[2]/position-norm",
+                    0
+                  ]
+                ],
+                [
+                  "or",
+                  [
+                    "lt",
+                    "gear/gear[0]/position-norm",
+                    1
+                  ],
+                  [
+                    "lt",
+                    "gear/gear[1]/position-norm",
+                    1
+                  ],
+                  [
+                    "lt",
+                    "gear/gear[2]/position-norm",
+                    1
+                  ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/Panel/Instruments/hsi/hsi.ac",
@@ -1413,7 +2290,318 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "bearing-bug"
+            ],
+            "prop": "instrumentation/heading-indicator/bearing-deg",
+            "origin": [
+              0,
+              0.002,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "HDGneedle",
+              "HDGneedle2"
+            ],
+            "prop": "instrumentation/nav[0]/radials/selected-deg",
+            "origin": [
+              0,
+              0.002,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "HDGneedle2"
+            ],
+            "prop": "instrumentation/nav[0]/heading-needle-deflection",
+            "table": [
+              [
+                -10,
+                -0.0253
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                10,
+                0.0253
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "GSpointer"
+            ],
+            "prop": "instrumentation/nav/gs-needle-deflection",
+            "table": [
+              [
+                -9,
+                -0.03
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                9,
+                0.03
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "dist01"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/dme/indicated-distance-nm",
+                "factor": 0.0001,
+                "offset": 0,
+                "step": 1000,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "dist01"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/tacan/indicated-distance-nm",
+                "factor": 0.0001,
+                "offset": 0,
+                "step": 1000,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "dist02"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/dme/indicated-distance-nm",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "dist02"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/tacan/indicated-distance-nm",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "dist03"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/dme/indicated-distance-nm",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "dist03"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/tacan/indicated-distance-nm",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "dist04"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/dme/indicated-distance-nm",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "dist04"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/tacan/indicated-distance-nm",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "crs01"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/nav[0]/radials/selected-deg",
+                "factor": 0.001,
+                "offset": 0,
+                "step": 100,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "crs02"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/nav[0]/radials/selected-deg",
+                "factor": 0.01,
+                "offset": 0,
+                "step": 10,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "crs03"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/nav[0]/radials/selected-deg",
+                "factor": 0.1,
+                "offset": 0,
+                "step": 1,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/Panel/Instruments/mach/mach.ac",
@@ -1481,7 +2669,27 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "ring"
+            ],
+            "prop": "instrumentation/magnetic-compass/indicated-heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/Panel/Instruments/oilpressure/oilpressure.ac",
@@ -1515,7 +2723,9 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/Panel/Instruments/oilpressure/oilpressure.ac",
@@ -1549,7 +2759,9 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/Panel/Instruments/oiltemp/oiltemp.ac",
@@ -1583,7 +2795,9 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/Panel/Instruments/oiltemp/oiltemp.ac",
@@ -1617,7 +2831,9 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/Panel/Instruments/radar/radar.ac",
@@ -1651,7 +2867,1559 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "groups": {
+          "PLOTS": [
+            "plots_s0",
+            "plots_s1",
+            "plots_s2",
+            "plots_s3",
+            "plots_s4",
+            "plots_s5",
+            "plots_s6",
+            "plots_s7",
+            "plots_s8",
+            "plots_s9",
+            "plots_s10",
+            "plots_s11",
+            "plots_s12",
+            "plots_s13",
+            "plots_s14",
+            "plots_s15",
+            "plots_s16",
+            "plots_s17",
+            "plots_s18",
+            "plots_s19",
+            "plots_s20",
+            "plots_s21",
+            "plots_s22",
+            "plots_s23",
+            "plots_s24",
+            "plots_s25",
+            "plots_s26",
+            "plots_s27",
+            "plots_s28",
+            "plots_s29",
+            "plots_s30",
+            "plots_s31",
+            "plots_s32",
+            "plots_s33",
+            "plots_s34",
+            "plots_s35",
+            "plots_s36",
+            "plots_s37",
+            "plots_s38",
+            "plots_s39",
+            "plots_s40",
+            "plots_s41",
+            "plots_s42",
+            "plots_s43",
+            "plots_s44",
+            "plots_s45",
+            "plots_s46",
+            "plots_s47",
+            "plots_s48",
+            "plots_s49",
+            "plots_s50",
+            "plots_s51",
+            "plots_s52",
+            "plots_s53",
+            "plots_s54",
+            "plots_s55",
+            "plots_s56",
+            "plots_s57",
+            "plots_s58",
+            "plots_s59",
+            "plots_s60",
+            "plots_s61",
+            "plots_s62",
+            "plots_s63",
+            "plots_s64",
+            "plots_s65",
+            "plots_s66",
+            "plots_s67",
+            "plots_s68",
+            "plots_s69",
+            "plots_s70",
+            "plots_s71",
+            "plots_s72",
+            "plots_s73",
+            "plots_s74",
+            "plots_s75",
+            "plots_s76",
+            "plots_s77",
+            "plots_s78",
+            "plots_s79",
+            "plots_s80",
+            "plots_s81",
+            "plots_s82",
+            "plots_s83",
+            "plots_s84",
+            "plots_s85",
+            "plots_s86",
+            "plots_s87",
+            "plots_s88",
+            "plots_s89",
+            "plots_s90",
+            "plots_s91",
+            "plots_s92",
+            "plots_s93",
+            "plots_s94",
+            "plots_s95",
+            "plots_s96",
+            "plots_s97",
+            "plots_s98",
+            "plots_s99"
+          ]
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "AI1a"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI2a"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI3a"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI4a"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI5a"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI6a"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI1b"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI2b"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI3b"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI4b"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI5b"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI6b"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI1c"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI2c"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI3c"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI4c"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI5c"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI6c"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI1d"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI2d"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI3d"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI4d"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI5d"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI6d"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI1e"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI1e"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI3e"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI4e"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI5e"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI6e"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI1f"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI2f"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI3f"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI4f"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI5f"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI6f"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI1g"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI2g"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI3g"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI4g"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI5g"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "AI6g"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP1a"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP2a"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP3a"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP4a"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP5a"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP6a"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP1b"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP2b"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP3b"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP4b"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP5b"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP5b"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP1c"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP2c"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP3c"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP4c"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP5c"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP6c"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP1d"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP2d"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP3d"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP4d"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP5d"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP6d"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP1e"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP2e"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP3e"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP4e"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP5e"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP6e"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP1f"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP2f"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP3f"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP4f"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP5f"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP6f"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP1g"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP2g"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP3g"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP4g"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP5g"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MP6g"
+            ],
+            "prop": "orientation/heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "PLOTS"
+            ],
+            "prop": "orientation/roll-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/Panel/Instruments/rpm/rpm.ac",
@@ -1685,7 +4453,46 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "needle1"
+            ],
+            "prop": "engines/engine[0]/n1",
+            "factor": 2.77,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "needle2"
+            ],
+            "prop": "engines/engine[0]/n2",
+            "factor": 36,
+            "origin": [
+              0,
+              0.0115,
+              0.0089
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/Panel/Instruments/rpm/rpm.ac",
@@ -1719,7 +4526,46 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "needle1"
+            ],
+            "prop": "engines/engine[1]/n1",
+            "factor": 2.77,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "needle2"
+            ],
+            "prop": "engines/engine[1]/n2",
+            "factor": 36,
+            "origin": [
+              0,
+              0.0115,
+              0.0089
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/Panel/Instruments/spyke/spyke.ac",
@@ -1787,7 +4633,41 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "needle"
+            ],
+            "prop": "controls/flight/elevator-trim",
+            "table": [
+              [
+                1,
+                55
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                -1,
+                -55
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/Panel/Instruments/trim/aileron.ac",
@@ -1821,7 +4701,9 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/Panel/Instruments/trim/rudder.ac",
@@ -1855,7 +4737,9 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "poseState": {}
       },
       {
         "file": "Models/Interior/Panel/Instruments/vsi/vsi.ac",
@@ -1889,7 +4773,97 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "needle"
+            ],
+            "prop": "instrumentation/vertical-speed-indicator/indicated-speed-fpm",
+            "table": [
+              [
+                -6000,
+                -180
+              ],
+              [
+                -5000,
+                -162
+              ],
+              [
+                -4000,
+                -142
+              ],
+              [
+                -3000,
+                -114
+              ],
+              [
+                -2000,
+                -83
+              ],
+              [
+                -1500,
+                -60
+              ],
+              [
+                -1000,
+                -40
+              ],
+              [
+                -500,
+                -20
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                500,
+                20
+              ],
+              [
+                1000,
+                40
+              ],
+              [
+                1500,
+                60
+              ],
+              [
+                2000,
+                83
+              ],
+              [
+                3000,
+                114
+              ],
+              [
+                4000,
+                142
+              ],
+              [
+                5000,
+                162
+              ],
+              [
+                6000,
+                180
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Pilot/fighter_default.ac",
@@ -2082,5 +5056,13 @@
       "label": "Wikipedia: Lockheed SR-71 Blackbird",
       "url": "https://en.wikipedia.org/wiki/Lockheed_SR-71_Blackbird"
     }
-  ]
+  ],
+  "landing": {
+    "vapp_kt": 175,
+    "roll_m": 1500,
+    "flaps": 0,
+    "pitch_deg": 9,
+    "flare_deg": 10.5,
+    "note": "Approximate: no flaps; drag chute on the rollout"
+  }
 }

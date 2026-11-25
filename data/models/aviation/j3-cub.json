@@ -736,6 +736,190 @@
           {
             "type": "rotate",
             "objects": [
+              "stick_front"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": -8,
+            "origin": [
+              -0.05,
+              -1.135,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "stick_front"
+            ],
+            "prop": "controls/flight/aileron",
+            "factor": -8,
+            "origin": [
+              -0.05,
+              -1.135,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "stick_back"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": -8,
+            "origin": [
+              0.655,
+              -1.135,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "stick_back"
+            ],
+            "prop": "controls/flight/aileron",
+            "factor": -8,
+            "origin": [
+              0.655,
+              -1.135,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "brake_front_l",
+              "floor_lever_l"
+            ],
+            "prop": "controls/gear/brake-left",
+            "factor": 30,
+            "origin": [
+              -0.5326,
+              -1.058,
+              0.2194
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "brake_front_r",
+              "floor_lever_r"
+            ],
+            "prop": "controls/gear/brake-right",
+            "factor": 30,
+            "origin": [
+              -0.5325,
+              -1.058,
+              -0.204
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "brake_rear_l",
+              "floor_lever_rear_l"
+            ],
+            "prop": "controls/gear/brake-left",
+            "factor": 30,
+            "origin": [
+              0.2925,
+              -1.1382,
+              0.2721
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "brake_rear_r",
+              "floor_lever_rear_r"
+            ],
+            "prop": "controls/gear/brake-right",
+            "factor": 30,
+            "origin": [
+              0.2926,
+              -1.1382,
+              -0.264
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "cabin_cable_l"
+            ],
+            "prop": "controls/gear/brake-left",
+            "factor": 0.02,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "cabin_cable_r"
+            ],
+            "prop": "controls/gear/brake-right",
+            "factor": 0.02,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
               "rudderpedal_l"
             ],
             "prop": "surface-positions/rudder-pos-norm",
@@ -861,6 +1045,120 @@
               0.957826,
               0
             ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "throttle_front"
+            ],
+            "prop": "controls/engines/engine[0]/throttle",
+            "factor": 0.08,
+            "origin": [
+              0.1085,
+              -0.4731,
+              0.3063
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ],
+            "note": "Machina rig: the package draws this control but does not animate it"
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "throttle_back"
+            ],
+            "prop": "controls/engines/engine[0]/throttle",
+            "factor": 0.08,
+            "origin": [
+              0.7675,
+              -0.4731,
+              0.3063
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ],
+            "note": "Machina rig: the package draws this control but does not animate it"
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "rudderpedal_l"
+            ],
+            "prop": "controls/flight/rudder",
+            "factor": 0.07,
+            "origin": [
+              -0.5834,
+              -0.9809,
+              0.2571
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ],
+            "note": "Machina rig: the package draws this control but does not animate it"
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "rudderpedal_r"
+            ],
+            "prop": "controls/flight/rudder",
+            "factor": 0.07,
+            "origin": [
+              -0.5834,
+              -0.9809,
+              -0.2438
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ],
+            "note": "Machina rig: the package draws this control but does not animate it"
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "rudderpedal_rear_l"
+            ],
+            "prop": "controls/flight/rudder",
+            "factor": 0.07,
+            "origin": [
+              0.2472,
+              -1.0727,
+              0.2617
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ],
+            "note": "Machina rig: the package draws this control but does not animate it"
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "rudderpedal_rear_r"
+            ],
+            "prop": "controls/flight/rudder",
+            "factor": 0.07,
+            "origin": [
+              0.2472,
+              -1.0727,
+              -0.2606
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ],
+            "note": "Machina rig: the package draws this control but does not animate it"
           }
         ],
         "poseState": {
@@ -1276,5 +1574,11 @@
       "label": "Wikipedia: Piper J-3 Cub",
       "url": "https://en.wikipedia.org/wiki/Piper_J-3_Cub"
     }
-  ]
+  ],
+  "landing": {
+    "vapp_kt": 45,
+    "roll_m": 90,
+    "flaps": 0,
+    "note": "Approximate: no flaps, three-point landing"
+  }
 }

@@ -828,7 +828,44 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "Head"
+            ],
+            "prop": "engines/engine[5]/n1",
+            "origin": [
+              0.3,
+              0.307,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Head"
+            ],
+            "prop": "engines/engine[5]/n2",
+            "origin": [
+              0.3,
+              0.307,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/prop.ac",
@@ -897,7 +934,95 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "Needle1"
+            ],
+            "prop": "instrumentation/altimeter/indicated-altitude-ft",
+            "factor": 0.36,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Needle2"
+            ],
+            "prop": "instrumentation/altimeter/indicated-altitude-ft",
+            "factor": 0.036,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Needle3"
+            ],
+            "prop": "instrumentation/altimeter/indicated-altitude-ft",
+            "factor": 0.0036,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "PressureDial"
+            ],
+            "prop": "instrumentation/altimeter/setting-inhg",
+            "table": [
+              [
+                28,
+                -200
+              ],
+              [
+                30,
+                0
+              ],
+              [
+                31.3,
+                130
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Instruments/Compass/p51d-jw-compass.ac",
@@ -919,7 +1044,27 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "Compass"
+            ],
+            "prop": "instrumentation/heading-indicator/indicated-heading-deg",
+            "origin": [
+              -0.02,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Instruments/Attitude/p51d-jw-attitude.ac",
@@ -941,7 +1086,45 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "Face"
+            ],
+            "prop": "instrumentation/attitude-indicator/indicated-roll-deg",
+            "origin": [
+              0,
+              0,
+              0.005
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "OnOffKnob"
+            ],
+            "prop": "instrumentation/attitude-indicator/serviceable",
+            "factor": 60,
+            "origin": [
+              0,
+              -0.045,
+              -0.041
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Instruments/CarbAndCoolingTemp/p51d-jw-temp.ac",
@@ -1007,7 +1190,49 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "needle"
+            ],
+            "prop": "instrumentation/airspeed-indicator/ias-mph",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                50,
+                14
+              ],
+              [
+                100,
+                42
+              ],
+              [
+                300,
+                231
+              ],
+              [
+                700,
+                341
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Instruments/Tachometer/p51d-jw-tach.ac",
@@ -1029,7 +1254,37 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "needle"
+            ],
+            "prop": "engines/engine/rpm",
+            "table": [
+              [
+                0,
+                -160
+              ],
+              [
+                4500,
+                160
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Instruments/EngineCluster/p51d-jw-engine.ac",
@@ -1095,7 +1350,65 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "needle"
+            ],
+            "prop": "instrumentation/vertical-speed-indicator/indicated-speed-fpm",
+            "table": [
+              [
+                -6000,
+                262
+              ],
+              [
+                -2000,
+                172
+              ],
+              [
+                -1000,
+                136
+              ],
+              [
+                -500,
+                113
+              ],
+              [
+                0,
+                90
+              ],
+              [
+                500,
+                67
+              ],
+              [
+                1000,
+                44
+              ],
+              [
+                2000,
+                8
+              ],
+              [
+                6000,
+                -82
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Instruments/BankAndTurn/p51d-jw-turn.ac",
@@ -1117,7 +1430,55 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "Ball"
+            ],
+            "prop": "instrumentation/slip-skid-ball/indicated-slip-skid",
+            "table": [
+              [
+                -1.1,
+                -7.2
+              ],
+              [
+                1.1,
+                7.2
+              ]
+            ],
+            "origin": [
+              0,
+              0.22,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Needle1"
+            ],
+            "prop": "instrumentation/turn-indicator/indicated-turn-rate",
+            "factor": 8,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Instruments/RemoteCompass/p51d-jw-remote.ac",
@@ -1139,7 +1500,44 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "Needle1"
+            ],
+            "prop": "instrumentation/remote-compass-indicator/indicated-heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Needle2"
+            ],
+            "prop": "instrumentation/magnetic-compass/bookmark-heading-deg",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Instruments/Vacuum/p51d-jw-vac.ac",
@@ -1183,7 +1581,64 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "HourHand"
+            ],
+            "prop": "instrumentation/clock/local-sec",
+            "factor": 0.00833333333333333,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "MinuteHand"
+            ],
+            "prop": "instrumentation/clock/local-sec",
+            "factor": 0.1,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "SecondHand"
+            ],
+            "prop": "instrumentation/clock/local-sec",
+            "factor": 6,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Instruments/ManifoldPressure/p51d-jw-man.ac",
@@ -1205,7 +1660,37 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "needle"
+            ],
+            "prop": "engines/engine/mp-osi",
+            "table": [
+              [
+                15,
+                -60
+              ],
+              [
+                100,
+                290
+              ]
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Instruments/MagCompass/p51d-jw-magcompass.ac",
@@ -1227,7 +1712,27 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "Compass"
+            ],
+            "prop": "instrumentation/magnetic-compass/indicated-heading-deg",
+            "origin": [
+              -0.03,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Instruments/GearWarning/p51d-jw-gearwarn.ac",
@@ -1249,7 +1754,9 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "poseState": {}
       },
       {
         "file": "Models/Instruments/OxBlinker/blinker.ac",
@@ -1317,7 +1824,573 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "LeftRudderPedal"
+            ],
+            "prop": "controls/gear/brake-left",
+            "factor": -5,
+            "origin": [
+              2.5081,
+              -0.2912,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RightRudderPedal"
+            ],
+            "prop": "controls/gear/brake-right",
+            "factor": -5,
+            "origin": [
+              2.5081,
+              -0.2912,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "throttle-grip",
+              "throttle-mic-button",
+              "throttle-lever",
+              "throttle-range-lever",
+              "throttle-range-cable",
+              "throttle-range-cable-housing"
+            ],
+            "prop": "controls/engines/engine[0]/throttle",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                70
+              ]
+            ],
+            "origin": [
+              2.8342,
+              0.115,
+              0.32
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "throttle-rangle-cable-housing"
+            ],
+            "prop": "controls/engines/engine[0]/throttle",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.5,
+                0.115
+              ],
+              [
+                0.8,
+                0.18
+              ],
+              [
+                1,
+                0.205
+              ]
+            ],
+            "origin": [
+              2.8342,
+              0.115,
+              0.32
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "throttle-rangle-cable-housing"
+            ],
+            "prop": "controls/engines/engine[0]/throttle",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                0.1,
+                -0.75
+              ],
+              [
+                0.2,
+                -1.2
+              ],
+              [
+                0.25,
+                -1.2
+              ],
+              [
+                0.3,
+                -1
+              ],
+              [
+                0.4,
+                -0.25
+              ],
+              [
+                0.5,
+                0.7
+              ],
+              [
+                0.6,
+                2.5
+              ],
+              [
+                0.7,
+                4.5
+              ],
+              [
+                0.8,
+                7
+              ],
+              [
+                1,
+                13
+              ]
+            ],
+            "origin": [
+              2.5726,
+              0.2425,
+              0.3155
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "prop-handle",
+              "prop-knob"
+            ],
+            "prop": "controls/engines/engine[0]/propeller-pitch",
+            "table": [
+              [
+                0,
+                -80
+              ],
+              [
+                1,
+                -10
+              ]
+            ],
+            "origin": [
+              2.8342,
+              0.115,
+              0.32
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "mixture-handle",
+              "mixture-knob"
+            ],
+            "prop": "controls/engines/engine[0]/mixture",
+            "table": [
+              [
+                0,
+                -10
+              ],
+              [
+                0.1,
+                -10
+              ],
+              [
+                0.11,
+                50
+              ],
+              [
+                0.89,
+                50
+              ],
+              [
+                0.9,
+                70
+              ],
+              [
+                1,
+                70
+              ]
+            ],
+            "origin": [
+              2.8342,
+              0.115,
+              0.32
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "throttle-mic-button"
+            ],
+            "prop": "instrumentation/comm/SCR-522C/remote-pushed",
+            "factor": -0.005,
+            "origin": [
+              2.8342,
+              0.115,
+              0.32
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "trim-elevator-needle"
+            ],
+            "prop": "controls/flight/elevator-trim",
+            "factor": 70,
+            "offset": -20,
+            "origin": [
+              2.9254,
+              -0.13,
+              0.297
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "SCR-522C-OFF"
+            ],
+            "prop": "instrumentation/comm/SCR-522C/frequencies/channel-selected",
+            "table": [
+              [
+                0,
+                -0.005
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                4,
+                0
+              ]
+            ],
+            "origin": [
+              3.0745,
+              0.0668,
+              -0.3411
+            ],
+            "axis": [
+              0,
+              0.965732,
+              0.259541
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "SCR-522C-A"
+            ],
+            "prop": "instrumentation/comm/SCR-522C/frequencies/channel-selected",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                -0.005
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                4,
+                0
+              ]
+            ],
+            "origin": [
+              3.0931,
+              0.0668,
+              -0.3411
+            ],
+            "axis": [
+              0,
+              0.965732,
+              0.259541
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "SCR-522C-B"
+            ],
+            "prop": "instrumentation/comm/SCR-522C/frequencies/channel-selected",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                -0.005
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                4,
+                0
+              ]
+            ],
+            "origin": [
+              3.1116,
+              0.0668,
+              -0.3411
+            ],
+            "axis": [
+              0,
+              0.965732,
+              0.259541
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "SCR-522C-C"
+            ],
+            "prop": "instrumentation/comm/SCR-522C/frequencies/channel-selected",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                3,
+                -0.005
+              ],
+              [
+                4,
+                0
+              ]
+            ],
+            "origin": [
+              3.1307,
+              0.0668,
+              -0.3411
+            ],
+            "axis": [
+              0,
+              0.965732,
+              0.259541
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "SCR-522C-D"
+            ],
+            "prop": "instrumentation/comm/SCR-522C/frequencies/channel-selected",
+            "table": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                4,
+                -0.005
+              ]
+            ],
+            "origin": [
+              3.1484,
+              0.0668,
+              -0.3411
+            ],
+            "axis": [
+              0,
+              0.965732,
+              0.259541
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "SCR-522C-mask-1"
+            ],
+            "prop": "instrumentation/comm/SCR-522C/mask",
+            "factor": 0.007,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "SCR-522-T-Lock"
+            ],
+            "prop": "instrumentation/comm/SCR-522C/tr-lock",
+            "factor": 0.007,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Stick"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": 14,
+            "origin": [
+              2.9011,
+              -0.3111,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ],
+            "note": "Machina rig: the package draws this control but does not animate it"
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "LeftRudderPedal"
+            ],
+            "prop": "controls/flight/rudder",
+            "factor": 0.07,
+            "origin": [
+              2.4739,
+              -0.1855,
+              0.2238
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ],
+            "note": "Machina rig: the package draws this control but does not animate it"
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "RightRudderPedal"
+            ],
+            "prop": "controls/flight/rudder",
+            "factor": 0.07,
+            "origin": [
+              2.4739,
+              -0.1855,
+              -0.2244
+            ],
+            "axis": [
+              -1,
+              0,
+              0
+            ],
+            "note": "Machina rig: the package draws this control but does not animate it"
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Cockpit/canopy.ac",
@@ -1512,5 +2585,11 @@
         0.45
       ]
     }
+  },
+  "landing": {
+    "vapp_kt": 105,
+    "roll_m": 600,
+    "flaps": 1,
+    "note": "Approximate: full flaps, three-point landing"
   }
 }

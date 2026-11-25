@@ -3,7 +3,7 @@
 import './builders/index.js';
 export { buildModel, finalize, partCount } from './registry.js';
 export { loadAssetModel } from './assets.js';
-export { createViewer } from './scene.js';
+export { createViewer, disposeObject } from './scene.js';
 export { SYSTEMS } from './parts/common.js';
 export { thumbnail } from './thumbs.js';
 export { createCompare } from './compare.js';

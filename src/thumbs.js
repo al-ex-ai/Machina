@@ -2,7 +2,7 @@
 import * as THREE from 'three';
 import { buildModel, finalize } from './registry.js';
 import { loadAssetModel } from './assets.js';
-import { studioEnvironment } from './scene.js';
+import { studioEnvironment, disposeObject } from './scene.js';
 
 const W = 640;
 const H = 400;
@@ -101,7 +101,9 @@ export async function profile(model) {
   let obj = null;
   if (model.asset) obj = await loadAssetModel(model).then(o => finalize(o, model)).catch(() => null);
   obj ??= buildModel(model);
-  return renderProfile(obj);
+  const url = renderProfile(obj);
+  disposeObject(obj);
+  return url;
 }
 
 /** Thumbnail data URL for a model, rendered once and cached. Renders run one at a time. */
@@ -112,7 +114,7 @@ export function thumbnail(model) {
     if (model.asset) obj = await loadAssetModel(model).then(o => finalize(o, model)).catch(() => null);
     if (!obj && model.builder === 'asset') throw new Error(`no thumbnail for ${model.id}`);
     obj ??= buildModel(model);
-    return new Promise(resolve => (window.requestIdleCallback ?? setTimeout)(() => resolve(render(model, obj))));
+    return new Promise(resolve => (window.requestIdleCallback ?? setTimeout)(() => { const url = render(model, obj); disposeObject(obj); resolve(url); }));
   }));
   cache.set(model.id, p);
   return p;

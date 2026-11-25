@@ -60,7 +60,10 @@ Fixed-wing models only. `npm run takeoff-check` prints the measurements and `npm
 28. Takeoff screenshots looked at before the model is called done: follow camera at the start, rotation and liftoff, chase camera with the gear coming up, the wheels close up while rolling, and the cockpit camera at the start, rotation and climb. The cockpit camera sits at the captain's eyes (the captain figure hidden); nothing solid may sit within 43 cm in front of them (tested), and anything that blocks the view, like a head-up display or a raised visor, is hidden in it by `takeoff.cockpit`.
 29. Pilots aboard: the package's own pilot figures where it has them, otherwise a FlightGear pilot from `assets/aircraft/crew` (airline, light-aircraft or WWII) with its head at the aircraft's captain eye point, a first officer mirrored where the type has two. Checked in close-ups: seated, nothing through the skin, visible through the windshield. A model with no fitting pilot states why in `asset.noCrew`.
 
+30. A `landing` block with the published figures (approach speed, ground roll, landing flaps, approach and flare attitude where they differ from the airliner defaults). The landing plays the same checks as the takeoff: nothing through the runway from the approach to the stop. Tailwheel airplanes come in tail up and touch down on all three wheels.
+31. The cockpit is alive in both scenes: the yoke or stick and pedals follow the elevator, aileron and rudder, the throttles follow the power (reversers and speedbrake on a jet's rollout), the flap and gear levers lead the surfaces, and the gauges read what the airplane is doing. Every cockpit file keeps the animations of its own FlightGear XML (`scripts/fg-cockpit.js`). Controls a package draws but never animates get a plain hinge from their own geometry (`scripts/rig-cockpit.js`). Tested: at least three cockpit meshes move, with controls, throttles and gauges among them, unless `takeoff.cockpit.still` gives the reason for one kind (no separate lever in the package's mesh, glass displays). Glass displays without a drawn picture stay dark until they get one.
+
 ## Gate
 
-30. `npm run validate` and `npm test` pass.
-31. Only after rules 1 to 30 pass does the model move from "workshop" to "models".
+32. `npm run validate` and `npm test` pass.
+33. Only after rules 1 to 32 pass does the model move from "workshop" to "models".

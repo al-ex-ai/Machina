@@ -30,7 +30,13 @@
     "climb_deg": 1.5,
     "rpm": 350,
     "mains": "skids",
-    "note": "Approximate: Dec 17 1903, the headwind left out, so the roll here is longer than the 12 m on the rail"
+    "note": "Approximate: Dec 17 1903, the headwind left out, so the roll here is longer than the 12 m on the rail",
+    "cockpit": {
+      "still": {
+        "throttle": "the 1903 Flyer had no throttle: its engine ran at one speed",
+        "gauges": "the 1903 Flyer carried no flight instruments"
+      }
+    }
   },
   "asset": {
     "path": "assets/aircraft/wright-flyer",
@@ -77,6 +83,212 @@
               1,
               0,
               0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "Rudder"
+            ],
+            "prop": "controls/flight/rudder",
+            "factor": 20,
+            "origin": [
+              2.96,
+              0.16,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "ElevatorTop"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": -11,
+            "origin": [
+              -2.98,
+              0.37,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "ElevatorBottom"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": -11,
+            "origin": [
+              -2.98,
+              -0.32,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "ElevatorTieCenter",
+              "ElevatorTieRight",
+              "ElevatorTieLeft",
+              "ElevatorSprocket"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": -11,
+            "origin": [
+              -2.95,
+              0.02,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "ElevatorRearPostCenter",
+              "ElevatorRearPostRight",
+              "ElevatorRearPostLeft"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": 0.075,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "ElevatorSpringPostCenter",
+              "ElevatorSpringPostRight",
+              "ElevatorSpringPostLeft"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": -0.05,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "ElevatorControlStick"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": -11,
+            "origin": [
+              -0.91,
+              -0.61,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "OrvilleLeftArm",
+              "OrvilleLeftForeArm"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": 5.5,
+            "origin": [
+              -0.56,
+              -0.27,
+              -0.75
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "OrvilleLeftForeArm"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": -8,
+            "origin": [
+              -0.62,
+              -0.58,
+              -0.75
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "OrvilleLeftHand"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": 11,
+            "origin": [
+              -1,
+              -0.37,
+              -0.75
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "OrvilleLeftHand"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": -11,
+            "origin": [
+              -0.91,
+              -0.61,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
             ]
           }
         ],
@@ -223,5 +435,16 @@
       "interior": false
     },
     "reason": "Open frame with no cabin: the pilot lies on the lower wing, and the hip cradle and controls are modelled."
+  },
+  "landing": {
+    "vapp_kt": 27,
+    "roll_m": 25,
+    "flaps": 0,
+    "pitch_deg": 0,
+    "flare_deg": 1.5,
+    "from_m": 4,
+    "glide_deg": 2,
+    "touchdown_m": 150,
+    "note": "Approximate: a short glide onto the skids, as on 17 December 1903"
   }
 }

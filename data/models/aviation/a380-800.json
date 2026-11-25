@@ -263,6 +263,30 @@
           {
             "type": "rotate",
             "objects": [
+              "elev1",
+              "elev2",
+              "elev3",
+              "elev4",
+              "leading",
+              "stabilizer",
+              "tips"
+            ],
+            "prop": "controls/flight/elevator-trim",
+            "factor": 6,
+            "origin": [
+              70,
+              7.7,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
               "nosegrdoor_fl"
             ],
             "prop": "gear/gear[0]/position-norm",
@@ -928,6 +952,159 @@
             ]
           },
           {
+            "type": "rotate",
+            "objects": [
+              "NoseWheel",
+              "NGearStrut"
+            ],
+            "prop": "controls/flight/rudder",
+            "factor": -70,
+            "origin": [
+              12.3321,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LeftWheelFront",
+              "LeftWheelBack",
+              "LeftGearBaseRod"
+            ],
+            "prop": "gear/gear[1]/position-norm",
+            "table": [
+              [
+                0,
+                -20
+              ],
+              [
+                0.8,
+                -20
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              40.3448,
+              -0.0855,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RightWheelFront",
+              "RightWheelBack",
+              "RightGearBaseRod"
+            ],
+            "prop": "gear/gear[2]/position-norm",
+            "table": [
+              [
+                0,
+                -20
+              ],
+              [
+                0.8,
+                -20
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              40.3448,
+              -0.0855,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "LeftWheel2Front",
+              "LeftWheel2Mid",
+              "LeftWheel2Back",
+              "L2GearBaseRod"
+            ],
+            "prop": "gear/gear[3]/position-norm",
+            "table": [
+              [
+                0,
+                15
+              ],
+              [
+                0.9,
+                15
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              43.4995,
+              0.4713,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "RightWheel2Front",
+              "RightWheel2Mid",
+              "RightWheel2Back",
+              "R2GearBaseRod"
+            ],
+            "prop": "gear/gear[4]/position-norm",
+            "table": [
+              [
+                0,
+                15
+              ],
+              [
+                0.9,
+                15
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "origin": [
+              43.4995,
+              0.4713,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
             "type": "spin",
             "objects": [
               "NoseWheel"
@@ -1588,7 +1765,624 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "efis.l.baro.mode"
+            ],
+            "prop": "instrumentation/efis/baro-mode",
+            "factor": 45,
+            "origin": [
+              -0.6808,
+              -0.0141,
+              0.2605
+            ],
+            "axis": [
+              -0.962272,
+              -0.272091,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "efis.r.baro.mode"
+            ],
+            "prop": "instrumentation/efis/baro-mode",
+            "factor": 45,
+            "origin": [
+              -0.6808,
+              -0.0141,
+              -0.3159
+            ],
+            "axis": [
+              -0.962272,
+              -0.272091,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "efis.l.baro.knob"
+            ],
+            "prop": "instrumentation/altimeter/setting-inhg",
+            "factor": 15,
+            "origin": [
+              -0.6808,
+              -0.0141,
+              0.2605
+            ],
+            "axis": [
+              -0.962272,
+              -0.272091,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "efis.r.baro.knob"
+            ],
+            "prop": "instrumentation/altimeter/setting-inhg",
+            "factor": 15,
+            "origin": [
+              -0.6808,
+              -0.0141,
+              -0.3159
+            ],
+            "axis": [
+              -0.962272,
+              -0.272091,
+              0
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "efis.l.taxi"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/efis/inputs/taxi",
+                "factor": 0.5,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "efis.l.cstr"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/efis/inputs/cstr",
+                "factor": 0.5,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "efis.l.wpt"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/efis/inputs/wpt",
+                "factor": 0.5,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "efis.l.vord"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/efis/inputs/vord",
+                "factor": 0.5,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "efis.l.ndb"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/efis/inputs/ndb",
+                "factor": 0.5,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "efis.l.arpt"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/efis/inputs/arpt",
+                "factor": 0.5,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "efis.l.wx"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/efis/inputs/wx",
+                "factor": 0.5,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "efis.l.terr"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/efis/inputs/terr",
+                "factor": 0.5,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "efis.l.traf"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/efis/inputs/traf",
+                "factor": 0.5,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "efis.l.vord"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/efis/inputs/vord",
+                "factor": 0.5,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "efis.l.ndb"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/efis/inputs/ndb",
+                "factor": 0.5,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "efis.l.ind.lmode"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/efis/inputs/lh-vor-adf",
+                "factor": 0.33,
+                "offset": 0,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "efis.l.ind.rmode"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/efis/inputs/rh-vor-adf",
+                "factor": 0.33,
+                "offset": 0,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "efis.l.ls"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/efis/inputs/ls",
+                "factor": 0.5,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "efis.l.w"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/efis/inputs/vv",
+                "factor": 0.5,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "efis.r.taxi"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/efis[1]/inputs/taxi",
+                "factor": 0.5,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "efis.r.cstr"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/efis[1]/inputs/cstr",
+                "factor": 0.5,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "efis.r.wpt"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/efis[1]/inputs/wpt",
+                "factor": 0.5,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "efis.r.vord"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/efis[1]/inputs/vord",
+                "factor": 0.5,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "efis.r.ndb"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/efis[1]/inputs/ndb",
+                "factor": 0.5,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "efis.r.arpt"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/efis[1]/inputs/arpt",
+                "factor": 0.5,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "efis.r.wx"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/efis[1]/inputs/wx",
+                "factor": 0.5,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "efis.r.terr"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/efis[1]/inputs/terr",
+                "factor": 0.5,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "efis.r.traf"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/efis[1]/inputs/traf",
+                "factor": 0.5,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "efis.r.vord"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/efis[1]/inputs/vord",
+                "factor": 0.5,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "efis.r.ndb"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/efis[1]/inputs/ndb",
+                "factor": 0.5,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "efis.r.ind.lmode"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/efis[1]/inputs/lh-vor-adf",
+                "factor": 0.33,
+                "offset": 0,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "efis.r.ind.rmode"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/efis[1]/inputs/rh-vor-adf",
+                "factor": 0.33,
+                "offset": 0,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "efis.r.ls"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/efis[1]/inputs/ls",
+                "factor": 0.5,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "efis.r.w"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/efis[1]/inputs/vv",
+                "factor": 0.5,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/FlightDeck/fd_glare.ac",
@@ -1726,7 +2520,302 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "sidestickL_1",
+              "sidestickL_2"
+            ],
+            "prop": "controls/flight/aileron",
+            "factor": -20,
+            "origin": [
+              -0.5207,
+              -0.4855,
+              0.827
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "sidestickL_3"
+            ],
+            "prop": "controls/flight/aileron",
+            "factor": -10,
+            "origin": [
+              -0.5207,
+              -0.4855,
+              0.827
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "sidestickL_4"
+            ],
+            "prop": "controls/flight/aileron",
+            "factor": -5,
+            "origin": [
+              -0.5207,
+              -0.4855,
+              0.827
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "sidestickL_5"
+            ],
+            "prop": "controls/flight/aileron",
+            "factor": -2.5,
+            "origin": [
+              -7.8148,
+              -0.3474,
+              0.8755
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "sidestickL_1",
+              "sidestickL_2"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": -20,
+            "origin": [
+              -0.5207,
+              -0.4855,
+              0.827
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "sidestickL_3"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": -10,
+            "origin": [
+              -0.5207,
+              -0.4855,
+              0.827
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "sidestickL_4"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": -5,
+            "origin": [
+              -0.5207,
+              -0.4855,
+              0.827
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "sidestickL_5"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": -2.5,
+            "origin": [
+              -0.5207,
+              -0.4855,
+              0.827
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "sidestickR_1",
+              "sidestickR_2"
+            ],
+            "prop": "controls/flight/aileron",
+            "factor": -20,
+            "origin": [
+              -0.5207,
+              -0.4855,
+              -0.8837
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "sidestickR_3"
+            ],
+            "prop": "controls/flight/aileron",
+            "factor": -10,
+            "origin": [
+              -0.5207,
+              -0.4855,
+              -0.8837
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "sidestickR_4"
+            ],
+            "prop": "controls/flight/aileron",
+            "factor": -5,
+            "origin": [
+              -0.5207,
+              -0.4855,
+              -0.8837
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "sidestickR_5"
+            ],
+            "prop": "controls/flight/aileron",
+            "factor": -2.5,
+            "origin": [
+              -0.5207,
+              -0.4855,
+              -0.8837
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "sidestickR_1",
+              "sidestickR_2"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": -20,
+            "origin": [
+              -0.5207,
+              -0.4855,
+              -0.8837
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "sidestickR_3"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": -10,
+            "origin": [
+              -0.5207,
+              -0.4855,
+              -0.8837
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "sidestickR_4"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": -5,
+            "origin": [
+              -0.5207,
+              -0.4855,
+              -0.8837
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "sidestickR_5"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": -2.5,
+            "origin": [
+              -0.5207,
+              -0.4855,
+              -0.8837
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/FlightDeck/fd_misc.ac",
@@ -1818,7 +2907,9 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [],
+        "poseState": {}
       },
       {
         "file": "Models/FlightDeck/fd_panel.ac",
@@ -1864,7 +2955,37 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "lever.gear"
+            ],
+            "prop": "controls/gear/gear-down",
+            "table": [
+              [
+                0,
+                -30
+              ],
+              [
+                1,
+                30
+              ]
+            ],
+            "origin": [
+              -0.8532,
+              -0.3624,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/FlightDeck/fd_pedals.ac",
@@ -1910,7 +3031,86 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "pedalL_R",
+              "pedalR_R"
+            ],
+            "prop": "controls/gear/brake-right",
+            "factor": -20,
+            "origin": [
+              -1.0894,
+              -0.8454,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "pedalL_L",
+              "pedalR_L"
+            ],
+            "prop": "controls/gear/brake-left",
+            "factor": -20,
+            "origin": [
+              -1.0894,
+              -0.8454,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "pedalL_L",
+              "pedalR_L"
+            ],
+            "prop": "controls/flight/rudder",
+            "factor": 0.1,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "pedalL_R",
+              "pedalR_R"
+            ],
+            "prop": "controls/flight/rudder",
+            "factor": -0.1,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/FlightDeck/fd_pedestal.ac",
@@ -1956,7 +3156,142 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "throttle_1"
+            ],
+            "prop": "controls/engines/engine[0]/throttle",
+            "factor": -40,
+            "origin": [
+              -0.4776,
+              -0.6022,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "throttle_2",
+              "throttle2_1",
+              "throttle2_2"
+            ],
+            "prop": "controls/engines/engine[1]/throttle",
+            "factor": -40,
+            "origin": [
+              -0.4776,
+              -0.6022,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "throttle_3",
+              "throttle3_1",
+              "throttle3_2"
+            ],
+            "prop": "controls/engines/engine[2]/throttle",
+            "factor": -40,
+            "origin": [
+              -0.4776,
+              -0.6022,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "throttle_4"
+            ],
+            "prop": "controls/engines/engine[3]/throttle",
+            "factor": -40,
+            "origin": [
+              -0.4776,
+              -0.6022,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "brake_selector"
+            ],
+            "prop": "controls/gear/brake-parking",
+            "factor": 90,
+            "origin": [
+              -0.0176,
+              0,
+              0.1253
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "flapselector"
+            ],
+            "prop": "controls/flight/flaps",
+            "factor": 60,
+            "offset": -20,
+            "origin": [
+              -0.1346,
+              -0.6402,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "type": "rotate",
+            "objects": [
+              "speed_brake"
+            ],
+            "prop": "controls/flight/spoilers",
+            "factor": 60,
+            "offset": -20,
+            "origin": [
+              -0.1435,
+              -0.641,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Instruments/PFD/pfd-3d.ac",
@@ -2014,7 +3349,320 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "bank"
+            ],
+            "prop": "orientation/roll-deg",
+            "origin": [
+              0,
+              0.0005,
+              0.0049
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "gspointer"
+            ],
+            "prop": "instrumentation/nav/gs-needle-deflection-norm",
+            "factor": 0.0322,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "locpointer"
+            ],
+            "prop": "instrumentation/nav/heading-needle-deflection-norm",
+            "factor": -0.0322,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "sidestick-pos",
+              "fd_pitch"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": 0.0258,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "sidestick-pos",
+              "fd_roll"
+            ],
+            "prop": "controls/flight/aileron",
+            "factor": 0.026,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "spdtrnd-up"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/pfd/speed-trend-up",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  -1,
+                  0
+                ],
+                "table": [
+                  [
+                    0.24,
+                    0
+                  ],
+                  [
+                    0,
+                    0.5
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "spdtrnd-down"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/pfd/speed-trend-down",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  -1,
+                  0
+                ],
+                "table": [
+                  [
+                    -0.24,
+                    0
+                  ],
+                  [
+                    0,
+                    0.5
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "horizon"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "orientation/pitch-deg",
+                "factor": 0.003955078,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              },
+              {
+                "kind": "rotate",
+                "prop": "orientation/roll-deg",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  0,
+                  -1
+                ],
+                "center": [
+                  0.5,
+                  0.5
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "spd-tape",
+              "stall-tape"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/airspeed-indicator/indicated-speed-kt",
+                "factor": 0.001965953,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "vfe-tape"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/airspeed-indicator/indicated-speed-kt",
+                "factor": 0.002001953,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              },
+              {
+                "kind": "translate",
+                "prop": "controls/flight/flaps",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ],
+                "table": [
+                  [
+                    0,
+                    0
+                  ],
+                  [
+                    0.2424,
+                    0.0703125
+                  ],
+                  [
+                    0.5151,
+                    0.140625
+                  ],
+                  [
+                    0.7878,
+                    0.2109375
+                  ],
+                  [
+                    1,
+                    0.28125
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "alt-tape-1"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicated-altitude-ft",
+                "factor": 0.000019141,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "alt-tape-2"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicated-altitude-ft",
+                "factor": 0.009765625,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "vsi"
+            ],
+            "steps": [
+              {
+                "kind": "rotate",
+                "prop": "velocities/vertical-speed-fps",
+                "factor": -0.75,
+                "offset": 0,
+                "axis": [
+                  0,
+                  0,
+                  -1
+                ],
+                "center": [
+                  0.76,
+                  0.463
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/Instruments/PFD/pfd-3d.ac",
@@ -2072,7 +3720,320 @@
           "id": "cabin",
           "label": "Cockpit and cabin",
           "system": "interior"
-        }
+        },
+        "anim": [
+          {
+            "type": "rotate",
+            "objects": [
+              "bank"
+            ],
+            "prop": "orientation/roll-deg",
+            "origin": [
+              0,
+              0.0005,
+              0.0049
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "gspointer"
+            ],
+            "prop": "instrumentation/nav/gs-needle-deflection-norm",
+            "factor": 0.0322,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "locpointer"
+            ],
+            "prop": "instrumentation/nav/heading-needle-deflection-norm",
+            "factor": -0.0322,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "sidestick-pos",
+              "fd_pitch"
+            ],
+            "prop": "controls/flight/elevator",
+            "factor": 0.0258,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ]
+          },
+          {
+            "type": "translate",
+            "objects": [
+              "sidestick-pos",
+              "fd_roll"
+            ],
+            "prop": "controls/flight/aileron",
+            "factor": 0.026,
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ]
+          }
+        ],
+        "texanim": [
+          {
+            "objects": [
+              "spdtrnd-up"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/pfd/speed-trend-up",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  -1,
+                  0
+                ],
+                "table": [
+                  [
+                    0.24,
+                    0
+                  ],
+                  [
+                    0,
+                    0.5
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "spdtrnd-down"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/pfd/speed-trend-down",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  -1,
+                  0
+                ],
+                "table": [
+                  [
+                    -0.24,
+                    0
+                  ],
+                  [
+                    0,
+                    0.5
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "horizon"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "orientation/pitch-deg",
+                "factor": 0.003955078,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              },
+              {
+                "kind": "rotate",
+                "prop": "orientation/roll-deg",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  0,
+                  0,
+                  -1
+                ],
+                "center": [
+                  0.5,
+                  0.5
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "spd-tape",
+              "stall-tape"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/airspeed-indicator/indicated-speed-kt",
+                "factor": 0.001965953,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "vfe-tape"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/airspeed-indicator/indicated-speed-kt",
+                "factor": 0.002001953,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              },
+              {
+                "kind": "translate",
+                "prop": "controls/flight/flaps",
+                "factor": 1,
+                "offset": 0,
+                "axis": [
+                  1,
+                  0,
+                  0
+                ],
+                "table": [
+                  [
+                    0,
+                    0
+                  ],
+                  [
+                    0.2424,
+                    0.0703125
+                  ],
+                  [
+                    0.5151,
+                    0.140625
+                  ],
+                  [
+                    0.7878,
+                    0.2109375
+                  ],
+                  [
+                    1,
+                    0.28125
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "alt-tape-1"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicated-altitude-ft",
+                "factor": 0.000019141,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "alt-tape-2"
+            ],
+            "steps": [
+              {
+                "kind": "translate",
+                "prop": "instrumentation/altimeter/indicated-altitude-ft",
+                "factor": 0.009765625,
+                "offset": 0,
+                "axis": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "objects": [
+              "vsi"
+            ],
+            "steps": [
+              {
+                "kind": "rotate",
+                "prop": "velocities/vertical-speed-fps",
+                "factor": -0.75,
+                "offset": 0,
+                "axis": [
+                  0,
+                  0,
+                  -1
+                ],
+                "center": [
+                  0.76,
+                  0.463
+                ]
+              }
+            ]
+          }
+        ],
+        "poseState": {}
       },
       {
         "file": "Models/FlightDeck/fd_brk.ac",
@@ -6350,5 +8311,12 @@
       "titleY": 0.6,
       "titleSize": 0.75
     }
+  },
+  "landing": {
+    "vapp_kt": 138,
+    "roll_m": 1250,
+    "flaps": 1,
+    "pitch_deg": 2.5,
+    "note": "Approximate: flaps 3, typical landing weight"
   }
 }
